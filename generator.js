@@ -29,7 +29,7 @@ var readline = require('readline');
 var recognizer = require('./index.js');
 
 var defaultCortanaConfig = {
-  "helpIntent": {
+  "AMAZON.HelpIntent": {
     "generate": true,
     "utterances": ["help", "help."]
   }
@@ -41,7 +41,38 @@ var usage = function(){
   console.log('  -i --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.');
   console.log('  -u --utterances UtterancesFileName specify utterances file name, optional.  This is "optional" only in the sense that it CAN be omitted, but in practice it is required.  There only time you would invoke this function without an utterance file argument is if your skill generates only build in intents, which would make it rather useless.');
 }
-
+var _loadStringListFromFile = function(fileName){
+  var fileExist = false;
+  if (fs.existsSync(fileName)) {
+    // The file name exists and is complete
+    fileExist = true;
+  }
+  else if(fs.existsSync("./" + fileName)){
+    // Need to prepend "./"
+    fileName = "./" + fileName;
+    fileExist = true;
+  }
+  if(fileExist == true){
+    // TODO replace with a lean solution that doesn't have to read the whole file
+    // at once
+    var lines = fs.readFileSync(fileName, 'utf-8')
+    .split(/\n\r|\n|\r/);
+    console.log("Loaded lines from file: " + JSON.stringify(lines, null, 2))
+    var result = [];
+    var skipCount = 0;
+    for(var i = 0; i < lines.length; i++){
+      if(lines[i].trim().length > 0){
+        result[i - skipCount] = lines[i];
+      }
+      else {
+        skipCount++;
+      }
+    }
+    console.log("Resulting lines from file: " + JSON.stringify(result, null, 2))
+    return result;
+  }
+  return; // nothing
+}
 // Make sure we got all the arguments on the command line.
 if (process.argv.length < 4) {
   usage();
@@ -59,23 +90,29 @@ for(var i = 2; i < process.argv.length - 1; i += 2){
     var utterancesFileName = process.argv[j];
   }
 }
-console.log("CONFIG file name: " + configFileName);
 var config;
 if(typeof configFileName == "undefined"){
-  console.log("CONFIG, 1");
   config = defaultCortanaConfig;
-  console.log("CONFIG, 2");
 }
 else {
   try {
-    console.log("CONFIG, 3");
     config = require(configFileName);
-    console.log("CONFIG, 4");
   }
   catch(e){
-    console.log("CONFIG, 5");
     config = require("./" + configFileName);
-    console.log("CONFIG, 6, config: " + JSON.stringify(config, null, 2));
+  }
+}
+// Now crawl over the config and load any custom slot values where they have
+// been specified via file name rather than directly.
+if(Array.isArray(config.customSlotTypes)){
+  for(var i = 0; i < config.customSlotTypes.length; i++){
+    var customSlotType = config.customSlotTypes[i];
+    if(typeof customSlotType.filename != "undefined"){
+      var values = _loadStringListFromFile(customSlotType.filename);
+      if(typeof values != "undefined"){
+        customSlotType.values = values;
+      }
+    }
   }
 }
 if(typeof intentsFileName == "undefined"){
@@ -113,18 +150,14 @@ if(typeof utterancesFileName != "undefined"){
 
     rd.on('line', function(line) {
       utterances.push(line);
-      console.log("line read: ", line);
     });
     rd.on('close', function(line) {
-      console.log("about to call doTheProcessing, 1");
       resultJson = doTheProcessing();
       fs.writeFile('recognizer.json', JSON.stringify(resultJson, null, 2), 'utf8', _done(resultJson));
     });
   }
-
 }
 else {
-  console.log("about to call doTheProcessing, 2");
   resultJson = doTheProcessing();
   fs.writeFile('recognizer.json', JSON.stringify(resultJson, null, 2), 'utf8', _done(resultJson));
 }

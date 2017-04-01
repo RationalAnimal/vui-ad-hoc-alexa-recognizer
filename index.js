@@ -58,7 +58,6 @@ recognizer.builtInValues.NUMBER.replacementRegExpString = _makeReplacementRegExp
 recognizer.builtInValues.NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.NUMBER.replacementRegExpString, "ig");
 
 var _getReplacementRegExpStringForSlotType = function(slotType, config){
-  console.log("_getReplacementRegExpStringForSlotType, slotType: " + slotType);
   if(slotType == "AMAZON.NUMBER"){
     return recognizer.builtInValues.NUMBER.replacementRegExpString;
   }
@@ -79,7 +78,6 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config){
     }
   }
   // Default fallback
-  console.log("BUILDING REPLACEMENT REG EXP, 10");
   return "((?:\\w|\\s|[0-9])+)";
 }
 
@@ -238,13 +236,11 @@ var _generateRunTimeJson = function(config, intents, utterances, customSlots){
     while(slotMatchExecResult = slotRegExp.exec(currentUtterance)){
       slotMatches.push(slotMatchExecResult[0]);
       slots.push(slotMatchExecResult[1]);
-      console.log("slotMatchExecResult: " + JSON.stringify(slotMatchExecResult, null, 2));
     }
     currentValue.slots = [];
 
     for(var j = 0; j < slots.length; j ++){
       var slotType = _getSlotType(intents, currentIntent, slots[j]);
-      console.log(slots[j] + " slot type: " + slotType);
       currentValue.slots.push({"name": slots[j], "type": slotType});
     }
     var regExString = currentUtterance;
@@ -286,15 +282,10 @@ recognizer.Recognizer.matchText = _matchText;
 recognizer.Recognizer.prototype.matchText = _matchText;
 
 var _getSlotType = function(intents, intent, slot){
-  console.log("_getSlotType, slot: " + slot);
   for(var i = 0; i < intents.intents.length; i++){
-    console.log("_getSlotType, 1, i: " + i);
     if(intents.intents[i].intent == intent){
-      console.log("_getSlotType, 2");
       for(var j = 0; j < intents.intents[i].slots.length; j ++){
-        console.log("_getSlotType, 3, j: " + j);
         if(intents.intents[i].slots[j].name == slot){
-          console.log("_getSlotType, 4");
           return intents.intents[i].slots[j].type;
         }
       }

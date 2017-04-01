@@ -3,6 +3,8 @@ TestIntent test me
 TestIntent test please
 TestIntent	test pretty please
 TestIntent       test pleeeeeeease
+MinionIntent One of the minions is {MinionSlot}
+MinionIntent {MinionSlot}
 BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it
 BlahIntent here is {BlahSlot} and {BlehSlot}
-AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot} 
+AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}

@@ -16,6 +16,10 @@
 				"petunia",
 				"dandelion"
 			]
+		},
+		{
+			"name": "MINIONS",
+			"filename": "test/minions.txt"
 		}
 	]
 }

@@ -29,6 +29,16 @@
           "type": "SOMEOTHER"
         }
       ]
+    },
+    {
+      "intent": "MinionIntent",
+      "slots": [
+        {
+          "name": "MinionSlot",
+          "type": "MINIONS"
+        }
+      ]
     }
+
   ]
 }
