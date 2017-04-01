@@ -82,7 +82,7 @@ result:  {
 or
 
 ````shell
-node matcher.js "here is three hundred thousand five hundred twelve and six oh three five five five one two one two"
+node matcher.js "here is four hundred eighty eight million three hundred fifty two thousand five hundred twelve and six oh three five five five one two one two"
 ````
 which will produce:
 
@@ -92,7 +92,7 @@ result:  {
   "slots": {
     "BlahSlot": {
       "name": "BlahSlot",
-      "value": "300000512"
+      "value": "488352512"
     },
     "BlehSlot": {
       "name": "BlehSlot",
@@ -106,12 +106,8 @@ You will NOT be using it at run time (most likely, though some might find the us
 for it).  You will probably deploy it to some middleware layer, like this:
 
 ````shell
-  Alexa  --------------> Alexa
-  Skill  <-------------- AWS Lambda
-                           ^   |
-                           |   |
-  Cortana --> middleware --/   /
-  Skill <---- AWS Lambda <-----
+  Alexa  -------------->    Alexa   <-- middleware <---- Cortana
+  Skill  <-------------- AWS Lambda --> AWS Lambda ---->  Skill
 ````
 
 Where in the middleware AWS Lambda (exposed via API Gateway) you will be able to
