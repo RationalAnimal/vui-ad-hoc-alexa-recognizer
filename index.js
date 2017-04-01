@@ -81,107 +81,156 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config){
   return "((?:\\w|\\s|[0-9])+)";
 }
 
+var _getOrderOfMagnitude = function(number){
+  var oom = Math.floor(Math.log10(number));
+//  console.log("_getOrderOfMagnitude, number: " + number + ", oom: " + oom);
+  return oom;
+}
+
+var _processMatchedNumericSlotValue = function(value){
+  // Here we may have a mixture of words, numbers, and white spaces.
+  // Also we are not sure what the capitalization will be.
+  // Convert all words to their numeric equivalents
+  // Then split the string into individual parts and convert each to an
+  // actual integer.
+  // Then multiply any number by the following IFF the following is a hundred,
+  // thousand, million, billion, trillion.  That's because people say
+  // "two hundred", which would become "200", not "2 100".
+  // Then convert the numbers to strings (NOT spelled out) and concatenate
+  // these strings together.
+  // Then convert the result to an integer and return.
+  value = value.replace(/zero/ig, 0);
+  value = value.replace(/oh/ig, 0);
+  value = value.replace(/one/ig, 1);
+  value = value.replace(/two/ig, 2);
+  value = value.replace(/three/ig, 3);
+  value = value.replace(/four/ig, 4);
+  value = value.replace(/five/ig, 5);
+  value = value.replace(/six/ig, 6);
+  value = value.replace(/seven/ig, 7);
+  value = value.replace(/eight/ig, 8);
+  value = value.replace(/nine/ig, 9);
+  value = value.replace(/ten/ig, 10);
+  value = value.replace(/eleven/ig, 11);
+  value = value.replace(/twelve/ig, 12);
+  value = value.replace(/thirteen/ig, 13);
+  value = value.replace(/fourteen/ig, 14);
+  value = value.replace(/fifteen/ig, 15);
+  value = value.replace(/sixteen/ig, 16);
+  value = value.replace(/seventeen/ig, 17);
+  value = value.replace(/eighteen/ig, 18);
+  value = value.replace(/nineteen/ig, 19);
+  value = value.replace(/twenty/ig, 20);
+  value = value.replace(/thirty/ig, 30);
+  value = value.replace(/forty/ig, 40);
+  value = value.replace(/fifty/ig, 50);
+  value = value.replace(/sixty/ig, 60);
+  value = value.replace(/seventy/ig, 70);
+  value = value.replace(/eighty/ig, 80);
+  value = value.replace(/ninety/ig, 90);
+  value = value.replace(/hundred/ig, 100);
+  value = value.replace(/thousand/ig, 1000);
+  value = value.replace(/million/ig, 1000000);
+  value = value.replace(/billion/ig, 1000000000);
+  value = value.replace(/trillion/ig, 1000000000000);
+  value = value.split(/\s+/);
+  var convertedValues = [];
+  for(var i = 0; i < value.length; i ++){
+    convertedValues.push(parseInt(value[i]));
+  }
+  value = convertedValues;
+  var scratchValues = [];
+  var haveAccumulatedValue = false;
+  var accummulatedStack = [];
+  var lastOrderOfMagnitude = 0;
+  for(var i = 0; i < value.length; i ++){
+    if(haveAccumulatedValue == false){
+      if(value[i] == 0){
+        scratchValues.push(value[i]);
+        continue;
+      }
+      haveAccumulatedValue = true;
+      accummulatedStack.push(value[i]);
+      lastOrderOfMagnitude = _getOrderOfMagnitude(value[i]);
+    }
+    else {
+      // We have a currently accumulating value.
+      if(value[i] == 0){
+        if(accummulatedStack.length == 2){
+          scratchValues.push(accummulatedStack[0] + accummulatedStack[1]);
+        }
+        else {
+          scratchValues.push(accummulatedStack[0]);
+        }
+        scratchValues.push(value[i]);
+        haveAccumulatedValue = false;
+        accummulatedStack = [];
+        lastOrderOfMagnitude = 0;
+        continue;
+      }
+      let currentOrderOfMagnitude = _getOrderOfMagnitude(value[i]);
+
+      if(currentOrderOfMagnitude < lastOrderOfMagnitude){
+        // The new value is smaller than the last value - push it.
+        if(accummulatedStack.length == 2){
+          accummulatedStack[0] += accummulatedStack[1];
+          accummulatedStack.splice(1, 1);
+        }
+        accummulatedStack.push(value[i]);
+        lastOrderOfMagnitude = currentOrderOfMagnitude;
+        continue;
+      }
+      let accummulatedOrderOfMagnitude = _getOrderOfMagnitude(accummulatedStack[accummulatedStack.length - 1]);
+      if((accummulatedOrderOfMagnitude < currentOrderOfMagnitude) && currentOrderOfMagnitude >= 2){
+        // The new value's order of magnitune is larger than the entire accummulated
+        // value and new value's order of magnitude is at least 2.  This means
+        // we multiply them.
+        accummulatedStack[accummulatedStack.length - 1] *= value[i];
+        lastOrderOfMagnitude = currentOrderOfMagnitude;
+        // Need to verify that multiplying does not trigger writing earlier value out.
+        if(accummulatedStack.length == 2 && _getOrderOfMagnitude(accummulatedStack[0]) <= _getOrderOfMagnitude(accummulatedStack[1]) + 3){
+          scratchValues.push(accummulatedStack[0])
+          accummulatedStack.splice(0, 1);
+        }
+
+        continue;
+      }
+      // If we are here that means we are not combining the accumulated value and
+      // the current value. Write out the last value and set the accummulated
+      // value to the current one.
+      if(accummulatedStack.length == 2){
+        accummulatedStack[0] += accummulatedStack[1];
+        accummulatedStack.splice(1, 1);
+      }
+      scratchValues.push(accummulatedStack[0]);
+      accummulatedStack.splice(0, 1);
+      accummulatedStack.push(value[i]);
+      lastOrderOfMagnitude = currentOrderOfMagnitude;
+    }
+  }
+  // May need to write out last value
+  if(haveAccumulatedValue){
+    if(accummulatedStack.length == 2){
+      accummulatedStack[0] += accummulatedStack[1];
+      accummulatedStack.splice(1, 1);
+    }
+    scratchValues.push(accummulatedStack[0]);
+  }
+  haveAccumulatedValue = false;
+  accummulatedStack = [];
+  lastOrderOfMagnitude = 0;
+
+  value = "";
+  for(var i = 0; i < scratchValues.length; i++){
+    value += ("" + scratchValues[i]);
+  }
+  return value;
+}
 var _processMatchedSlotValueByType = function(value, slotType){
   if(slotType == "AMAZON.NUMBER"){
-    // Here we may have a mixture of words, numbers, and white spaces.
-    // Also we are not sure what the capitalization will be.
-    // Convert all words to their numeric equivalents
-    // Then split the string into individual parts and convert each to an
-    // actual integer.
-    // Then multiply any number by the following IFF the following is a hundred,
-    // thousand, million, billion, trillion.  That's because people say
-    // "two hundred", which would become "200", not "2 100".
-    // Then convert the numbers to strings (NOT spelled out) and concatenate
-    // these strings together.
-    // Then convert the result to an integer and return.
-    value = value.replace(/zero/ig, 0);
-    value = value.replace(/oh/ig, 0);
-    value = value.replace(/one/ig, 1);
-    value = value.replace(/two/ig, 2);
-    value = value.replace(/three/ig, 3);
-    value = value.replace(/four/ig, 4);
-    value = value.replace(/five/ig, 5);
-    value = value.replace(/six/ig, 6);
-    value = value.replace(/seven/ig, 7);
-    value = value.replace(/eight/ig, 8);
-    value = value.replace(/nine/ig, 9);
-    value = value.replace(/ten/ig, 10);
-    value = value.replace(/eleven/ig, 11);
-    value = value.replace(/twelve/ig, 12);
-    value = value.replace(/thirteen/ig, 13);
-    value = value.replace(/fourteen/ig, 14);
-    value = value.replace(/fifteen/ig, 15);
-    value = value.replace(/sixteen/ig, 16);
-    value = value.replace(/seventeen/ig, 17);
-    value = value.replace(/eighteen/ig, 18);
-    value = value.replace(/nineteen/ig, 19);
-    value = value.replace(/twenty/ig, 20);
-    value = value.replace(/thirty/ig, 30);
-    value = value.replace(/forty/ig, 40);
-    value = value.replace(/fifty/ig, 50);
-    value = value.replace(/sixty/ig, 60);
-    value = value.replace(/seventy/ig, 70);
-    value = value.replace(/eighty/ig, 80);
-    value = value.replace(/ninety/ig, 90);
-    value = value.replace(/hundred/ig, 100);
-    value = value.replace(/thousand/ig, 1000);
-    value = value.replace(/million/ig, 1000000);
-    value = value.replace(/billion/ig, 1000000000);
-    value = value.replace(/trillion/ig, 1000000000000);
-    value = value.split(/\s+/);
-    var convertedValue = [];
-    for(var i = 0; i < value.length; i ++){
-      convertedValue.push(parseInt(value[i]));
-    }
-    value = convertedValue;
-    var scratchValue = [];
-    var skipIncrement = 0;
-    for(var i = 0; i < value.length; i ++){
-      if(value.length - i == 1){
-        // One value left - just copy it
-        scratchValue[i - skipIncrement] = value[i];
-      }
-      // TODO add handling of 0 - we don't multiply it, simply concatenate later
-      else if(value.length - i == 2){
-        // Two values left - either copy then or multiply them
-        if((value[i] < 100 && value[i + 1] >= 100) ||
-                ((value[i] >= 100 && value[i + 1] >= 100) && (value[i] <  value[i + 1]))){
-          scratchValue[i - skipIncrement] = value[i] * value[i + 1];
-        }
-        else {
-          scratchValue[i - skipIncrement] = value[i];
-          scratchValue[i + 1 - skipIncrement] = value[i + 1];
-        }
-        i++;
-        skipIncrement++;
-      }
-      else if(value.length - i >= 3){
-        // At least 3 values left.  Process the minimum and leave it for the next
-        // iteration of the loop.
-        if(value[i + 1] < 100 || value[i] >= value[i + 1]){
-          // Process just a single number
-          scratchValue[i - skipIncrement] = value[i];
-        }
-        else if(value[i + 2] < 100 || value[i + 1] >= value[i + 2]){
-          // Process just two numbers by multiplying them
-          scratchValue[i - skipIncrement] = value[i] * value[i + 1];
-          i++;
-          skipIncrement++;
-        }
-        else {
-          // Process three numbers by multiplying them
-          scratchValue[i - skipIncrement] = value[i] * value[i + 1] * value[i + 2];
-          i += 2;
-          skipIncrement += 2;
-        }
-      }
-    }
-    value = "";
-    for(var i = 0; i < scratchValue.length; i++){
-      value += ("" + scratchValue[i]);
-    }
-    return value;
+    return _processMatchedNumericSlotValue(value);
   }
+
   return value;
 }
 
@@ -207,6 +256,7 @@ var _matchText = function(stringToMatch){
         returnValue.slots = {};
         for(var j = 1; j < matchResult.length; j++){
           var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type)
+          console.log("processedMatchResult: " + processedMatchResult);
           returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
         }
         return returnValue;

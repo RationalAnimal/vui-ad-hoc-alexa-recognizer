@@ -82,7 +82,7 @@ result:  {
 or
 
 ````shell
-node matcher.js "here is one hundred thousand and two three four"
+node matcher.js "here is three hundred thousand five hundred twelve and six oh three five five five one two one two"
 ````
 which will produce:
 
@@ -92,11 +92,11 @@ result:  {
   "slots": {
     "BlahSlot": {
       "name": "BlahSlot",
-      "value": "100000"
+      "value": "300000512"
     },
     "BlehSlot": {
       "name": "BlehSlot",
-      "value": "234"
+      "value": "6035551212"
     }
   }
 }
