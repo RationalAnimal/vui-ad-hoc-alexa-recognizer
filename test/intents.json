@@ -12,7 +12,7 @@
           "type": "AMAZON.NUMBER"
         },
         {
-          "name": "BlahSlot",
+          "name": "BlehSlot",
           "type": "AMAZON.NUMBER"
         }
       ]
@@ -22,11 +22,11 @@
       "slots": [
         {
           "name": "SomeSlot",
-          "type": "CUSTOM"
+          "type": "SOME"
         },
         {
           "name": "SomeOtherSlot",
-          "type": "CUSTOM"
+          "type": "SOMEOTHER"
         }
       ]
     }

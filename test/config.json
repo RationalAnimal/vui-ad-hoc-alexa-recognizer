@@ -1,0 +1,21 @@
+{
+	"customSlotTypes":[
+		{
+			"name": "SOME",
+			"values": [
+				"apple",
+				"star fruit",
+				"pear",
+				"orange"
+			]
+		},
+		{
+			"name": "SOMEOTHER",
+			"values": [
+				"rose",
+				"petunia",
+				"dandelion"
+			]
+		}
+	]
+}

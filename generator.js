@@ -59,15 +59,23 @@ for(var i = 2; i < process.argv.length - 1; i += 2){
     var utterancesFileName = process.argv[j];
   }
 }
+console.log("CONFIG file name: " + configFileName);
+var config;
 if(typeof configFileName == "undefined"){
-  var config = defaultCortanaConfig;
+  console.log("CONFIG, 1");
+  config = defaultCortanaConfig;
+  console.log("CONFIG, 2");
 }
 else {
   try {
+    console.log("CONFIG, 3");
     config = require(configFileName);
+    console.log("CONFIG, 4");
   }
   catch(e){
+    console.log("CONFIG, 5");
     config = require("./" + configFileName);
+    console.log("CONFIG, 6, config: " + JSON.stringify(config, null, 2));
   }
 }
 if(typeof intentsFileName == "undefined"){

@@ -57,10 +57,29 @@ recognizer.builtInValues.NUMBER = {
 recognizer.builtInValues.NUMBER.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.NUMBER.values);
 recognizer.builtInValues.NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.NUMBER.replacementRegExpString, "ig");
 
-var _getReplacementRegExpStringForSlotType = function(slotType){
+var _getReplacementRegExpStringForSlotType = function(slotType, config){
+  console.log("_getReplacementRegExpStringForSlotType, slotType: " + slotType);
   if(slotType == "AMAZON.NUMBER"){
     return recognizer.builtInValues.NUMBER.replacementRegExpString;
   }
+  else if(slotType.startsWith("AMAZON.")){
+    // TODO add handling of other built in Amazon slot types, for now just return the value
+    return "((?:\\w|\\s|[0-9])+)";
+  }
+  // Here we are dealing with custom slots.
+  if(typeof config != "undefined" && Array.isArray(config.customSlotTypes)){
+    for(var i = 0; i < config.customSlotTypes.length; i++){
+      var customSlotType = config.customSlotTypes[i];
+      if(customSlotType.name == slotType){
+        if(typeof customSlotType.replacementRegExp == "undefined"){
+          customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values);
+        }
+        return customSlotType.replacementRegExp;
+      }
+    }
+  }
+  // Default fallback
+  console.log("BUILDING REPLACEMENT REG EXP, 10");
   return "((?:\\w|\\s|[0-9])+)";
 }
 
@@ -117,7 +136,6 @@ var _processMatchedSlotValueByType = function(value, slotType){
       convertedValue.push(parseInt(value[i]));
     }
     value = convertedValue;
-    console.log("converted value: " + JSON.stringify(value));
     var scratchValue = [];
     var skipIncrement = 0;
     for(var i = 0; i < value.length; i ++){
@@ -125,6 +143,7 @@ var _processMatchedSlotValueByType = function(value, slotType){
         // One value left - just copy it
         scratchValue[i - skipIncrement] = value[i];
       }
+      // TODO add handling of 0 - we don't multiply it, simply concatenate later
       else if(value.length - i == 2){
         // Two values left - either copy then or multiply them
         if((value[i] < 100 && value[i + 1] >= 100) ||
@@ -169,23 +188,22 @@ var _processMatchedSlotValueByType = function(value, slotType){
 }
 
 var _matchText = function(stringToMatch){
-  console.log("_matchText, 1");
+//  console.log("_matchText, 1");
   var recognizerSet = require("./recognizer.json");
-  console.log("_matchText, 2, recognizerSet: " + JSON.stringify(recognizerSet));
+//  console.log("_matchText, 2, recognizerSet: " + JSON.stringify(recognizerSet));
   for(var i = 0; i < recognizerSet.matchConfig.length; i++){
-    console.log("_matchText, 3, i: " + i);
+//    console.log("_matchText, 3, i: " + i);
     var scratch = recognizerSet.matchConfig[i];
-    console.log("_matchText, 4, scratch: " + JSON.stringify(scratch));
-    console.log("_matchText, 4.1, scratch.regExString: " + JSON.stringify(scratch.regExString));
+//    console.log("_matchText, 4, scratch: " + JSON.stringify(scratch));
+//    console.log("_matchText, 4.1, scratch.regExString: " + JSON.stringify(scratch.regExString));
     var scratchRegExp = new RegExp(scratch.regExString, "ig");
-    console.log("_matchText, 4.2, scratchRegExp: " + scratchRegExp);
+//    console.log("_matchText, 4.2, scratchRegExp: " + scratchRegExp);
     var matchResult;
     var slotValues = [];
     while(matchResult = scratchRegExp.exec(stringToMatch)){
-      console.log("_matchText, 5, matchResult: " + JSON.stringify(matchResult));
-
+//      console.log("_matchText, 5, matchResult: " + JSON.stringify(matchResult));
       if(matchResult != null){
-        console.log("FOUND A MATCH: " + JSON.stringify(matchResult));
+//        console.log("FOUND A MATCH: " + JSON.stringify(matchResult));
         var returnValue = {};
         returnValue.name = scratch.intent;
         returnValue.slots = {};
@@ -199,7 +217,7 @@ var _matchText = function(stringToMatch){
   }
 };
 
-var _generateRunTimeJson = function(config, intents, utterances){
+var _generateRunTimeJson = function(config, intents, utterances, customSlots){
   //  console.log("_generateRunTimeJson, config: ", JSON.stringify(config));
   //  console.log("_generateRunTimeJson, intents: ", JSON.stringify(intents));
   //  console.log("_generateRunTimeJson, utterances: ", JSON.stringify(utterances));
@@ -233,8 +251,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
     if(slots.length > 0){
       // Need to create a different regExString
       for(var j = 0; j < slotMatches.length; j++){
-//        var replacementString = "((?:\\w|\\s|[0-9])+)";
-        var replacementString = _getReplacementRegExpStringForSlotType(_getSlotType(intents, currentIntent, slots[j]))
+        var replacementString = _getReplacementRegExpStringForSlotType(_getSlotType(intents, currentIntent, slots[j]), config)
         regExString = regExString.replace(slotMatches[j], replacementString);
       }
     }
@@ -243,9 +260,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
     // reg exp.
     var splitRegEx = regExString.split(/\s+/);
     var reconstructedRegEx = "^\\s*";
-    console.log("splitting regExString: " + regExString);
     for(var j = 0; j < splitRegEx.length; j++){
-      console.log("splitRegEx[" + j + "]: <" + splitRegEx[j] + ">, length: " + splitRegEx[j].length);
       if(splitRegEx[j].length > 0){
         if(j > 0){
           reconstructedRegEx += "\\s+";
@@ -271,10 +286,15 @@ recognizer.Recognizer.matchText = _matchText;
 recognizer.Recognizer.prototype.matchText = _matchText;
 
 var _getSlotType = function(intents, intent, slot){
+  console.log("_getSlotType, slot: " + slot);
   for(var i = 0; i < intents.intents.length; i++){
+    console.log("_getSlotType, 1, i: " + i);
     if(intents.intents[i].intent == intent){
+      console.log("_getSlotType, 2");
       for(var j = 0; j < intents.intents[i].slots.length; j ++){
-        if(intents.intents[i].slots[j].name = slot){
+        console.log("_getSlotType, 3, j: " + j);
+        if(intents.intents[i].slots[j].name == slot){
+          console.log("_getSlotType, 4");
           return intents.intents[i].slots[j].type;
         }
       }
@@ -287,7 +307,7 @@ var _getSlotTypeFromRecognizer = function(recognizer, intent, slot){
   for(var i = 0; i < recognizer.matchConfig.length; i++){
     if(recognizer.matchConfig[i].intent == intent){
       for(var j = 0; j < recognizer.matchConfig[i].slots.length; j ++){
-        if(recognizer.matchConfig[i].slots[j].name = slot){
+        if(recognizer.matchConfig[i].slots[j].name == slot){
           return recognizer.matchConfig[i].slots[j].type;
         }
       }
