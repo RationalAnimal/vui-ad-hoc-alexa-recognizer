@@ -88,7 +88,6 @@ var _getOrderOfMagnitude = function(number){
 }
 
 var _processMatchedNumericSlotValue = function(value){
-  console.log("_processMatchedNumericSlotValue, 1, value: " + JSON.stringify(value));
   // Here we may have a mixture of words, numbers, and white spaces.
   // Also we are not sure what the capitalization will be.
   // Convert all words to their numeric equivalents
@@ -140,18 +139,14 @@ var _processMatchedNumericSlotValue = function(value){
     convertedValues.push(parseInt(value[i]));
   }
   value = convertedValues;
-  console.log("_processMatchedNumericSlotValue, 2, value: " + JSON.stringify(value));
   var scratchValues = [];
   var haveAccumulatedValue = false;
   var accummulatedStack = [];
   var lastValue = 0;
   var lastOrderOfMagnitude = 0;
   for(var i = 0; i < value.length; i ++){
-    console.log("_processMatchedNumericSlotValue, 3, i: " + i + ", value[i]" + value[i]);
     if(haveAccumulatedValue == false){
-      console.log("_processMatchedNumericSlotValue, 4");
       if(value[i] == 0){
-        console.log("_processMatchedNumericSlotValue, 5");
         scratchValues.push(value[i]);
         continue;
       }
@@ -161,19 +156,14 @@ var _processMatchedNumericSlotValue = function(value){
       lastValue = value[i];
     }
     else {
-      console.log("_processMatchedNumericSlotValue, 6");
       // We have a currently accumulating value.
       if(value[i] == 0){
-        console.log("_processMatchedNumericSlotValue, 7");
         if(accummulatedStack.length == 2){
-          console.log("_processMatchedNumericSlotValue, 8");
           scratchValues.push(accummulatedStack[0] + accummulatedStack[1]);
         }
         else {
-          console.log("_processMatchedNumericSlotValue, 9");
           scratchValues.push(accummulatedStack[0]);
         }
-        console.log("_processMatchedNumericSlotValue, 10");
         scratchValues.push(value[i]);
         haveAccumulatedValue = false;
         accummulatedStack = [];
@@ -181,11 +171,9 @@ var _processMatchedNumericSlotValue = function(value){
         lastValue = 0;
         continue;
       }
-      console.log("_processMatchedNumericSlotValue, 11");
       let currentOrderOfMagnitude = _getOrderOfMagnitude(value[i]);
       let accummulatedOrderOfMagnitude = _getOrderOfMagnitude(accummulatedStack[accummulatedStack.length - 1]);
       if((accummulatedOrderOfMagnitude < currentOrderOfMagnitude) && currentOrderOfMagnitude >= 2){
-        console.log("_processMatchedNumericSlotValue, 12");
         // The new value's order of magnitune is larger than the entire accummulated
         // value and new value's order of magnitude is at least 2.  This means
         // we multiply them.
@@ -194,13 +182,11 @@ var _processMatchedNumericSlotValue = function(value){
         lastValue = value[i];
         // Need to verify that multiplying does not trigger writing earlier value out.
         if(accummulatedStack.length == 2 && _getOrderOfMagnitude(accummulatedStack[0]) < _getOrderOfMagnitude(accummulatedStack[1]) + 3){
-          console.log("_processMatchedNumericSlotValue, 13");
           scratchValues.push(accummulatedStack[0])
           accummulatedStack.splice(0, 1);
         }
         // Now, if the current value, value[i] is >= 1000 then we also need to collapse the stack by adding its values
         if(accummulatedStack.length == 2 && currentOrderOfMagnitude >= 3){
-          console.log("_processMatchedNumericSlotValue, 14");
           accummulatedStack[0] += accummulatedStack[1];
           accummulatedStack.splice(1, 1);
         }
@@ -213,11 +199,8 @@ var _processMatchedNumericSlotValue = function(value){
         // single digits, it still should NOT be added, rather it triggers an
         // output of the prior values and starts a new stack.
         // Other than that, if the last OOM was >= 300 - push it, else add it.
-        console.log("_processMatchedNumericSlotValue, 15");
         if(lastValue >= 11 && lastValue <= 19){
-          console.log("_processMatchedNumericSlotValue, 16");
           if(accummulatedStack.length == 2){
-            console.log("_processMatchedNumericSlotValue, 16.1");
             accummulatedStack[0] += accummulatedStack[1];
             accummulatedStack.splice(1, 1);
           }
@@ -226,27 +209,22 @@ var _processMatchedNumericSlotValue = function(value){
           accummulatedStack.push(value[i]);
         }
         else if(lastOrderOfMagnitude >= 3){
-          console.log("_processMatchedNumericSlotValue, 17");
           accummulatedStack.push(value[i]);
         }
         else {
-          console.log("_processMatchedNumericSlotValue, 17.1");
           accummulatedStack[accummulatedStack.length - 1] += value[i];
         }
         lastOrderOfMagnitude = currentOrderOfMagnitude;
         lastValue = value[i];
         continue;
       }
-      console.log("_processMatchedNumericSlotValue, 18");
       // If we are here that means we are not combining the accumulated value and
       // the current value. Write out the last value and set the accummulated
       // value to the current one.
       if(accummulatedStack.length == 2){
-        console.log("_processMatchedNumericSlotValue, 19");
         accummulatedStack[0] += accummulatedStack[1];
         accummulatedStack.splice(1, 1);
       }
-      console.log("_processMatchedNumericSlotValue, 20");
       scratchValues.push(accummulatedStack[0]);
       accummulatedStack.splice(0, 1);
       accummulatedStack.push(value[i]);
@@ -255,17 +233,13 @@ var _processMatchedNumericSlotValue = function(value){
     }
   }
   // May need to write out last value
-  console.log("_processMatchedNumericSlotValue, 21");
   if(haveAccumulatedValue){
-    console.log("_processMatchedNumericSlotValue, 22, accummulatedStack: " + JSON.stringify(accummulatedStack));
     if(accummulatedStack.length == 2){
-      console.log("_processMatchedNumericSlotValue, 23");
       accummulatedStack[0] += accummulatedStack[1];
       accummulatedStack.splice(1, 1);
     }
     scratchValues.push(accummulatedStack[0]);
   }
-  console.log("_processMatchedNumericSlotValue, 24");
   haveAccumulatedValue = false;
   accummulatedStack = [];
   lastOrderOfMagnitude = 0;
@@ -275,6 +249,7 @@ var _processMatchedNumericSlotValue = function(value){
   for(var i = 0; i < scratchValues.length; i++){
     value += ("" + scratchValues[i]);
   }
+  value = parseInt(value);
   return value;
 }
 var _processMatchedSlotValueByType = function(value, slotType){

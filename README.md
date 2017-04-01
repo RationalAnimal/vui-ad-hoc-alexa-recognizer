@@ -33,6 +33,80 @@ text at run time using the generated json file.
 
 # Usage
 
+Imaging you already have an Alexa skill and you would like to port it to Cortana
+or Google Assistant.  Here are examples of files that you will have for your
+Alexa skill:
+
+````shell
+>cat test/utterances.txt
+
+TestIntent test
+TestIntent test me
+TestIntent test please
+TestIntent	test pretty please
+TestIntent       test pleeeeeeease
+MinionIntent One of the minions is {MinionSlot}
+MinionIntent {MinionSlot}
+BlahIntent here is {BlahSlot} and {BlehSlot}
+AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
+
+> cat test/intents.json
+{
+  "intents": [
+    {
+      "intent": "TestIntent",
+      "slots": []
+    },
+    {
+      "intent": "BlahIntent",
+      "slots": [
+        {
+          "name": "BlahSlot",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "BlehSlot",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "AnotherIntent",
+      "slots": [
+        {
+          "name": "SomeSlot",
+          "type": "SOME"
+        },
+        {
+          "name": "SomeOtherSlot",
+          "type": "SOMEOTHER"
+        }
+      ]
+    },
+    {
+      "intent": "MinionIntent",
+      "slots": [
+        {
+          "name": "MinionSlot",
+          "type": "MINIONS"
+        }
+      ]
+    }
+
+  ]
+}
+
+````
+and also here is an example of a custom slot type file:
+
+````shell
+>cat test/minions.txt
+
+Bob
+Steve
+Stewart
+````
+
 ## Generate recognizer.json file
 
 The first step is to generate a run time file - recognizer.json.  This file has
@@ -119,3 +193,12 @@ then process it further.
 Notice that this module currently is being written as a primarily stand alone
 solution for the Alexa to Cortana (or Google Assistant) porting.  However, it
 will be retrofitted later to fit into the vui-xxx framework.
+
+## Alexa features supported
+
+Currently, you can parse:
+1. Utterances without slots
+2. Utterances with custom slots
+3. Utterances with AMAZON.NUMBER type slots.
+
+More is coming shortly
