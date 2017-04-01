@@ -1,0 +1,34 @@
+{
+  "intents": [
+    {
+      "intent": "TestIntent",
+      "slots": []
+    },
+    {
+      "intent": "BlahIntent",
+      "slots": [
+        {
+          "name": "BlahSlot",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "BlahSlot",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "AnotherIntent",
+      "slots": [
+        {
+          "name": "SomeSlot",
+          "type": "CUSTOM"
+        },
+        {
+          "name": "SomeOtherSlot",
+          "type": "CUSTOM"
+        }
+      ]
+    }
+  ]
+}

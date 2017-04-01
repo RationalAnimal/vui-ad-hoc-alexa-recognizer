@@ -1,0 +1,31 @@
+{
+  "name": "vui-ad-hoc-alexa-recognizer",
+  "version": "0.0.1",
+  "description": "npm module that provides 'recognizer' functionality for parsing user spoken text and maps it to Alexa intents. Can be used by itself or included into other vui-xxx projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "author": "Ilya Shubentsov",
+  "copyright": "Copyright 2017 Ilya Shubentsov",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/RationalAnimal/vui-ad-hoc-alexa-recognizer"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0"
+  },
+  "keywords": [
+    "vui",
+    "alexa",
+    "cortana",
+    "alexa to cortana porting",
+    "google assistant",
+    "alexa to google assistant porting",
+    "recognizer"
+  ]
+}
