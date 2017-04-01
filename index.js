@@ -207,12 +207,30 @@ var _processMatchedNumericSlotValue = function(value){
         continue;
       }
       if(currentOrderOfMagnitude < lastOrderOfMagnitude){
-        // The new value is smaller than the last value.  If the last OOM was >= 300 - push it, else add it.
+        // The new value is smaller than the last value.
+        // There are 3 possible cases here. First is a special exception for
+        // when the previous value was a "teen" value and the current one is in
+        // single digits, it still should NOT be added, rather it triggers an
+        // output of the prior values and starts a new stack.
+        // Other than that, if the last OOM was >= 300 - push it, else add it.
         console.log("_processMatchedNumericSlotValue, 15");
-        if(lastOrderOfMagnitude >= 3){
+        if(lastValue >= 11 && lastValue <= 19){
+          console.log("_processMatchedNumericSlotValue, 16");
+          if(accummulatedStack.length == 2){
+            console.log("_processMatchedNumericSlotValue, 16.1");
+            accummulatedStack[0] += accummulatedStack[1];
+            accummulatedStack.splice(1, 1);
+          }
+          scratchValues.push(accummulatedStack[0]);
+          accummulatedStack.splice(0, 1);
+          accummulatedStack.push(value[i]);
+        }
+        else if(lastOrderOfMagnitude >= 3){
+          console.log("_processMatchedNumericSlotValue, 17");
           accummulatedStack.push(value[i]);
         }
         else {
+          console.log("_processMatchedNumericSlotValue, 17.1");
           accummulatedStack[accummulatedStack.length - 1] += value[i];
         }
         lastOrderOfMagnitude = currentOrderOfMagnitude;
