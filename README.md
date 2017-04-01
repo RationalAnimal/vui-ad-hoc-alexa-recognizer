@@ -15,7 +15,7 @@ https://github.com/RationalAnimal
 # Installation
 
 ```shell
-	npm vui-ad-hoc-alexa-recognizer --save
+npm vui-ad-hoc-alexa-recognizer --save
 ```
 
 # Summary
@@ -166,22 +166,36 @@ result:  {
   "slots": {
     "BlahSlot": {
       "name": "BlahSlot",
-      "value": "488352512"
+      "value": 488352512
     },
     "BlehSlot": {
       "name": "BlehSlot",
-      "value": "6035551212"
+      "value": 6035551212
     }
   }
 }
+
 ````
+
+````shell
+node matcher.js "sure"
+````
+which will produce:
+
+````shell
+result:  {
+  "name": "AMAZON.YesIntent",
+  "slots": {}
+}
+````
+
 Please note that matcher.js is just a convenience and also serves as an example.
 You will NOT be using it at run time (most likely, though some might find the use
 for it).  You will probably deploy it to some middleware layer, like this:
 
 ````shell
-  Alexa  -------------->    Alexa   <-- middleware <---- Cortana
-  Skill  <-------------- AWS Lambda --> AWS Lambda ---->  Skill
+Alexa  -------------->    Alexa   <-- middleware <---- Cortana
+Skill  <-------------- AWS Lambda --> AWS Lambda ---->  Skill
 ````
 
 Where in the middleware AWS Lambda (exposed via API Gateway) you will be able to
@@ -197,8 +211,9 @@ will be retrofitted later to fit into the vui-xxx framework.
 ## Alexa features supported
 
 Currently, you can parse:
-1. Utterances without slots
-2. Utterances with custom slots
-3. Utterances with AMAZON.NUMBER type slots.
+1. All Alexa built in intents
+2. Utterances without slots
+3. Utterances with custom slots
+4. Utterances with AMAZON.NUMBER type slots.
 
-More is coming shortly
+More Amazon built in slot types are coming shortly

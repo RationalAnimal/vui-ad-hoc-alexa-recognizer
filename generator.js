@@ -57,7 +57,7 @@ var _loadStringListFromFile = function(fileName){
     // at once
     var lines = fs.readFileSync(fileName, 'utf-8')
     .split(/\n\r|\n|\r/);
-    console.log("Loaded lines from file: " + JSON.stringify(lines, null, 2))
+//    console.log("Loaded lines from file: " + JSON.stringify(lines, null, 2))
     var result = [];
     var skipCount = 0;
     for(var i = 0; i < lines.length; i++){
@@ -68,7 +68,7 @@ var _loadStringListFromFile = function(fileName){
         skipCount++;
       }
     }
-    console.log("Resulting lines from file: " + JSON.stringify(result, null, 2))
+//    console.log("Resulting lines from file: " + JSON.stringify(result, null, 2))
     return result;
   }
   return; // nothing

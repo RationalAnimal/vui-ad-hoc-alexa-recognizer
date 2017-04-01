@@ -38,6 +38,25 @@ var _makeReplacementRegExpString = function(arrayToConvert){
   return returnValue;
 }
 
+var _makeFullRegExpString = function(arrayToConvert){
+  let regExString = _makeReplacementRegExpString(arrayToConvert);
+  // Now split regExString into non-white space parts and reconstruct the
+  // whole thing with any sequence of white spaces replaced with a white space
+  // reg exp.
+  var splitRegEx = regExString.split(/\s+/);
+  var reconstructedRegEx = "^\\s*";
+  for(var j = 0; j < splitRegEx.length; j++){
+    if(splitRegEx[j].length > 0){
+      if(j > 0){
+        reconstructedRegEx += "\\s+";
+      }
+      reconstructedRegEx += splitRegEx[j];
+    }
+  }
+  reconstructedRegEx += "\\s*[.]?\\s*$";
+  return reconstructedRegEx;
+}
+
 recognizer.Recognizer = class {
 };
 
@@ -282,13 +301,30 @@ var _matchText = function(stringToMatch){
         returnValue.slots = {};
         for(var j = 1; j < matchResult.length; j++){
           var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type)
-          console.log("processedMatchResult: " + processedMatchResult);
+//          console.log("processedMatchResult: " + processedMatchResult);
           returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
         }
         return returnValue;
       }
     }
   }
+  // Now try the built in intents
+  for(var i = 0; i < recognizerSet.builtInIntents.length; i ++){
+    let scratch = recognizerSet.builtInIntents[i];
+    if(typeof scratch.regExp == "undefined"){
+      scratch.regExp = new RegExp(scratch.regExpString, "ig");
+//      scratch.regExp = new RegExp("^\\s*((?:help\\s*|help\\s+me\\s*|can\\s+you\\s+help\\s+me\\s*)+)\\s*[.]?\\s*$", "ig");
+    }
+    let matchResult;
+    if(matchResult = scratch.regExp.exec(stringToMatch)){
+//      console.log("matchResult: " + JSON.stringify(matchResult));
+      var returnValue = {};
+      returnValue.name = scratch.name;
+      returnValue.slots = {};
+      return returnValue;
+    }
+  }
+
 };
 
 var _generateRunTimeJson = function(config, intents, utterances, customSlots){
@@ -347,6 +383,142 @@ var _generateRunTimeJson = function(config, intents, utterances, customSlots){
   }
   // Now process all the built in intents.  Note that their triggering
   // utterances will NOT be part of "utterances" arg, but instead will be in config.
+  recognizerSet.builtInIntents = [];
+
+  var cancelIntent = {
+    "name": "AMAZON.CancelIntent",
+    "utterances": [
+      "cancel", "never mind", "forget it"
+    ]
+  }
+  cancelIntent.regExpString = _makeFullRegExpString(cancelIntent.utterances);
+  recognizerSet.builtInIntents.push(cancelIntent);
+
+  var helpIntent = {
+    "name": "AMAZON.HelpIntent",
+    "utterances": [
+      "help", "help me", "can you help me"
+    ]
+  }
+  helpIntent.regExpString = _makeFullRegExpString(helpIntent.utterances);
+  recognizerSet.builtInIntents.push(helpIntent);
+
+  var loopOffIntent = {
+    "name": "AMAZON.LoopOffIntent",
+    "utterances": [
+      "loop off"
+    ]
+  }
+  loopOffIntent.regExpString = _makeFullRegExpString(loopOffIntent.utterances);
+  recognizerSet.builtInIntents.push(loopOffIntent);
+
+  var loopOnIntentIntent = {
+    "name": "AMAZON.LoopOnIntent",
+    "utterances": [
+      "loop", "loop on", "keep repeating this song"
+    ]
+  }
+  loopOnIntentIntent.regExpString = _makeFullRegExpString(loopOnIntentIntent.utterances);
+  recognizerSet.builtInIntents.push(loopOnIntentIntent);
+
+  var nextIntent = {
+    "name": "AMAZON.NextIntent",
+    "utterances": [
+      "next", "skip", "skip forward"
+    ]
+  }
+  nextIntent.regExpString = _makeFullRegExpString(nextIntent.utterances);
+  recognizerSet.builtInIntents.push(nextIntent);
+
+  var noIntent = {
+    "name": "AMAZON.NoIntent",
+    "utterances": [
+      "no", "no thanks"
+    ]
+  }
+  noIntent.regExpString = _makeFullRegExpString(noIntent.utterances);
+  recognizerSet.builtInIntents.push(noIntent);
+
+  var pauseIntent = {
+    "name": "AMAZON.PauseIntent",
+    "utterances": [
+      "pause", "pause that"
+    ]
+  }
+  pauseIntent.regExpString = _makeFullRegExpString(pauseIntent.utterances);
+  recognizerSet.builtInIntents.push(pauseIntent);
+
+  var previousIntent = {
+    "name": "AMAZON.PreviousIntent",
+    "utterances": [
+      "go back", "skip back", "back up"
+    ]
+  }
+  previousIntent.regExpString = _makeFullRegExpString(previousIntent.utterances);
+  recognizerSet.builtInIntents.push(previousIntent);
+
+  var repeatIntent = {
+    "name": "AMAZON.RepeatIntent",
+    "utterances": [
+      "repeat", "say that again", "repeat that"
+    ]
+  }
+  repeatIntent.regExpString = _makeFullRegExpString(repeatIntent.utterances);
+  recognizerSet.builtInIntents.push(repeatIntent);
+
+  var resumeIntent = {
+    "name": "AMAZON.ResumeIntent",
+    "utterances": [
+      "resume", "continue", "keep going"
+    ]
+  }
+  resumeIntent.regExpString = _makeFullRegExpString(resumeIntent.utterances);
+  recognizerSet.builtInIntents.push(resumeIntent);
+
+  var shuffleOffIntent = {
+    "name": "AMAZON.ShuffleOffIntent",
+    "utterances": [
+      "stop shuffling", "shuffle off", "turn off shuffle"
+    ]
+  }
+  shuffleOffIntent.regExpString = _makeFullRegExpString(shuffleOffIntent.utterances);
+  recognizerSet.builtInIntents.push(shuffleOffIntent);
+
+  var shuffleOnIntent = {
+    "name": "AMAZON.ShuffleOnIntent",
+    "utterances": [
+      "shuffle", "shuffle on", "shuffle the music", "shuffle mode"
+    ]
+  }
+  shuffleOnIntent.regExpString = _makeFullRegExpString(shuffleOnIntent.utterances);
+  recognizerSet.builtInIntents.push(shuffleOnIntent);
+
+  var startOverIntent = {
+    "name": "AMAZON.StartOverIntent",
+    "utterances": [
+      "start over", "restart", "start again"
+    ]
+  }
+  startOverIntent.regExpString = _makeFullRegExpString(startOverIntent.utterances);
+  recognizerSet.builtInIntents.push(startOverIntent);
+
+  var stopIntent = {
+    "name": "AMAZON.StopIntent",
+    "utterances": [
+      "stop", "off", "shut up"
+    ]
+  }
+  stopIntent.regExpString = _makeFullRegExpString(stopIntent.utterances);
+  recognizerSet.builtInIntents.push(stopIntent);
+
+  var yesIntent = {
+    "name": "AMAZON.YesIntent",
+    "utterances": [
+      "yes", "yes please", "sure"
+    ]
+  }
+  yesIntent.regExpString = _makeFullRegExpString(yesIntent.utterances);
+  recognizerSet.builtInIntents.push(yesIntent);
 
   return recognizerSet;
 };
