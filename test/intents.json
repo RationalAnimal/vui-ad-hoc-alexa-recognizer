@@ -38,7 +38,24 @@
           "type": "MINIONS"
         }
       ]
+    },
+    {
+      "intent": "FirstNameIntent",
+      "slots": [
+        {
+          "name": "FirstNameSlot",
+          "type": "AMAZON.US_FIRST_NAME"
+        }
+      ]
+    },
+    {
+      "intent": "StateIntent",
+      "slots": [
+        {
+          "name": "StateSlot",
+          "type": "AMAZON.US_STATE"
+        }
+      ]
     }
-
   ]
 }

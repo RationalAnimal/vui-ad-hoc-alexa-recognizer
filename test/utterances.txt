@@ -5,6 +5,9 @@ TestIntent	test pretty please
 TestIntent       test pleeeeeeease
 MinionIntent One of the minions is {MinionSlot}
 MinionIntent {MinionSlot}
+FirstNameIntent My first name is {FirstNameSlot}
+StateIntent {StateSlot}
+StateIntent New England includes {StateSlot} as one of it's states
 BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it
 BlahIntent here is {BlahSlot} and {BlehSlot}
 AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}

@@ -76,9 +76,23 @@ recognizer.builtInValues.NUMBER = {
 recognizer.builtInValues.NUMBER.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.NUMBER.values);
 recognizer.builtInValues.NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.NUMBER.replacementRegExpString, "ig");
 
+recognizer.builtInValues.US_STATE = require("./builtinslottypes/usstates.json");
+recognizer.builtInValues.US_STATE.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_STATE.values);
+recognizer.builtInValues.US_STATE.replacementRegExp = new RegExp(recognizer.builtInValues.US_STATE.replacementRegExpString, "ig");
+
+recognizer.builtInValues.US_FIRST_NAME = require("./builtinslottypes/usfirstnames.json");
+recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
+recognizer.builtInValues.US_FIRST_NAME.replacementRegExp = new RegExp(recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString, "ig");
+
 var _getReplacementRegExpStringForSlotType = function(slotType, config){
   if(slotType == "AMAZON.NUMBER"){
     return recognizer.builtInValues.NUMBER.replacementRegExpString;
+  }
+  else if(slotType == "AMAZON.US_STATE"){
+    return recognizer.builtInValues.US_STATE.replacementRegExpString;
+  }
+  else if(slotType == "AMAZON.US_FIRST_NAME"){
+    return recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString;
   }
   else if(slotType.startsWith("AMAZON.")){
     // TODO add handling of other built in Amazon slot types, for now just return the value

@@ -35,7 +35,8 @@ text at run time using the generated json file.
 
 Imaging you already have an Alexa skill and you would like to port it to Cortana
 or Google Assistant.  Here are examples of files that you will have for your
-Alexa skill:
+Alexa skill (these are NOT complete files, you can find the complete sample
+files in the test directory):
 
 ````shell
 >cat test/utterances.txt
@@ -47,6 +48,9 @@ TestIntent	test pretty please
 TestIntent       test pleeeeeeease
 MinionIntent One of the minions is {MinionSlot}
 MinionIntent {MinionSlot}
+StateIntent {StateSlot}
+StateIntent New England includes {StateSlot} as one of it's states
+BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it
 BlahIntent here is {BlahSlot} and {BlehSlot}
 AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
 
@@ -91,8 +95,16 @@ AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
           "type": "MINIONS"
         }
       ]
+    },
+    {
+      "intent": "StateIntent",
+      "slots": [
+        {
+          "name": "StateSlot",
+          "type": "AMAZON.US_STATE"
+        }
+      ]
     }
-
   ]
 }
 
@@ -100,7 +112,7 @@ AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
 and also here is an example of a custom slot type file:
 
 ````shell
->cat test/minions.txt
+> cat test/minions.txt
 
 Bob
 Steve
@@ -189,6 +201,41 @@ result:  {
 }
 ````
 
+````shell
+> node matcher.js "New England includes New Hampshire as one of it's states"
+````
+which will produce:
+
+````shell
+result:  {
+  "name": "StateIntent",
+  "slots": {
+    "StateSlot": {
+      "name": "StateSlot",
+      "value": "New Hampshire"
+    }
+  }
+}
+````
+
+````shell
+> node matcher.js "My first name is Jim"
+````
+which will produce:
+
+````shell
+result:  {
+  "name": "FirstNameIntent",
+  "slots": {
+    "FirstNameSlot": {
+      "name": "FirstNameSlot",
+      "value": "Jim"
+    }
+  }
+}
+
+````
+
 Please note that matcher.js is just a convenience and also serves as an example.
 You will NOT be using it at run time (most likely, though some might find the use
 for it).  You will probably deploy it to some middleware layer, like this:
@@ -214,6 +261,7 @@ Currently, you can parse:
 1. All Alexa built in intents
 2. Utterances without slots
 3. Utterances with custom slots
-4. Utterances with AMAZON.NUMBER type slots.
+4. Utterances with these built in slot types:
+  AMAZON.NUMBER, AMAZON.US_STATE, AMAZON.US_FIRST_NAME
 
 More Amazon built in slot types are coming shortly
