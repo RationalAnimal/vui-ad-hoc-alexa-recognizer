@@ -63,18 +63,13 @@ recognizer.Recognizer = class {
 // The sections below are for the built in slots support
 recognizer.builtInValues = {};
 // Ommiting AMAZON. prefix
-recognizer.builtInValues.NUMBER = {
-  "values": [
-    "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
-    "zero", "oh", "eleven", "twelve", "thirteen", "fourteen", "fifteen",
-    "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "thirty", "forty",
-    "fifty", "sixty", "seventy", "eighty", "ninety", "hundred", "thousand",
-    "million", "billion", "trillion",
-    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
-  ]
-};
+recognizer.builtInValues.NUMBER = require("./builtinslottypes/numbers.json");
 recognizer.builtInValues.NUMBER.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.NUMBER.values);
 recognizer.builtInValues.NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.NUMBER.replacementRegExpString, "ig");
+
+recognizer.builtInValues.DATE = require("./builtinslottypes/dates.json");
+recognizer.builtInValues.DATE.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.DATE.values);
+recognizer.builtInValues.DATE.replacementRegExp = new RegExp(recognizer.builtInValues.DATE.replacementRegExpString, "ig");
 
 recognizer.builtInValues.US_STATE = require("./builtinslottypes/usstates.json");
 recognizer.builtInValues.US_STATE.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_STATE.values);
@@ -285,9 +280,215 @@ var _processMatchedNumericSlotValue = function(value){
   value = parseInt(value);
   return value;
 }
+
+var _twoDigitFormatter = function(number){
+  let returnValue = "0" + number;
+  returnValue = returnValue.slice(-2);
+  return returnValue;
+}
+var _formatDate = function(date){
+  return "" + date.getFullYear() + "-" + _twoDigitFormatter(date.getMonth() + 1) + "-" + _twoDigitFormatter(date.getDate());
+}
+
+var _processMatchedDateSlotValue = function(value){
+  console.log("_processMatchedDateSlotValue, 1, value: " + value);
+  var matchResult;
+  var regExp = /(right now)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 2");
+    return "PRESENT_REF";
+  }
+  regExp = /(today)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 3");
+    let today = new Date();
+    return _formatDate(today);
+  }
+  regExp = /(yesterday)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 2");
+    let today = new Date();
+    today.setDate(today.getDate() - 1);
+    return _formatDate(today);
+  }
+  regExp = /(tomorrow)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 4");
+    let today = new Date();
+    today.setDate(today.getDate() + 1);
+    return _formatDate(today);
+  }
+
+  regExp = /(^\s*this week\s*\.*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return _getWeekOfYear(new Date());
+  }
+
+  regExp = /(^\s*last week\s*\.*$)/ig
+  if(matchResult = regExp.exec(value)){
+    let today = new Date();
+    today.setDate(today.getDate() - 7);
+    return _getWeekOfYear(today);
+  }
+
+  regExp = /(^\s*next week\s*\.*$)/ig
+  if(matchResult = regExp.exec(value)){
+    let today = new Date();
+    today.setDate(today.getDate() + 7);
+    return _getWeekOfYear(today);
+  }
+
+
+  regExp = /(^\s*this weekend\s*\.*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return (_getWeekOfYear(new Date()) + "-WE");
+  }
+
+  regExp = /(^\s*last weekend\s*\.*$)/ig
+  if(matchResult = regExp.exec(value)){
+    let today = new Date();
+    today.setDate(today.getDate() - 7);
+    return (_getWeekOfYear(today) + "-WE");
+  }
+
+  regExp = /(^\s*next weekend\s*\.*$)/ig
+  if(matchResult = regExp.exec(value)){
+    let today = new Date();
+    today.setDate(today.getDate() + 7);
+    return (_getWeekOfYear(today) + "-WE");
+  }
+
+  regExp = /(this month)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 4");
+    let today = new Date();
+    let year = today.getFullYear();
+    let month = today.getMonth();
+    return "" + year + "-" + _twoDigitFormatter(month + 1);
+  }
+  regExp = /(last month)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 4");
+    let today = new Date();
+    let year = today.getFullYear();
+    let month = today.getMonth();
+    month --;
+    if(month < 0){
+      return "" + (year - 1) + "-12";
+    }
+    else {
+      return "" + year + "-" + _twoDigitFormatter(month + 1);
+    }
+  }
+  regExp = /(next month)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 4");
+    let today = new Date();
+    let year = today.getFullYear();
+    let month = today.getMonth();
+    month ++;
+    if(month > 11){
+      return "" + (year + 1) + "-01";
+    }
+    else {
+      return "" + year + "-" + _twoDigitFormatter(month + 1);
+    }
+  }
+  regExp = /(this year)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 4");
+    let today = new Date();
+    let year = today.getFullYear();
+    return "" + year;
+  }
+  regExp = /(last year)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 4");
+    let today = new Date();
+    let year = today.getFullYear();
+    year--;
+    return "" + year;
+  }
+  regExp = /(next year)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 4");
+    let today = new Date();
+    let year = today.getFullYear();
+    year++;
+    return "" + year;
+  }
+  regExp = /(this decade)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 4");
+    let today = new Date();
+    let year = today.getFullYear();
+    let decade = Math.floor(year / 10);
+    return "" + decade + "X";
+  }
+  regExp = /(last decade)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 4");
+    let today = new Date();
+    let year = today.getFullYear();
+    let decade = Math.floor(year / 10) - 1;
+    return "" + decade + "X";
+  }
+  regExp = /(next decade)/ig
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, 4");
+    let today = new Date();
+    let year = today.getFullYear();
+    let decade = Math.floor(year / 10) + 1;
+    return "" + decade + "X";
+  }
+
+
+
+
+
+  return value;
+}
+
+var _getWeekOfYear = function(dateToProcess){
+  let year = dateToProcess.getFullYear();
+  let firstOfYear = new Date("" + year + "/1/1");
+  let firstOfYearDay = firstOfYear.getDay();
+  // Note that in js day of week begins with Sunday, being 0
+  // For the standard week day calculations, week begins on Monday as 1.
+  let weekStartingValue = 1;
+  if(firstOfYearDay >= 1 && firstOfYearDay <= 4){
+    // 1/1/year is in the current year.
+    weekStartingValue = 1;
+  }
+  else {
+    // 1/1/year is in the last year.
+    weekStartingValue = 0;
+  }
+  // Compute Monday of the week that contains January 1st.  Remember that for
+  // these purposes the week starts on Monday.
+  if(firstOfYearDay == 0){
+    // If Sunday then change to 7.
+    firstOfYearDay = 7;
+  }
+  let monday = new Date(firstOfYear);
+  monday.setDate((-1 * firstOfYearDay) + 1);
+  // Now compute the number of weeks from that Monday to now.
+  let weeksDiff = Math.floor((dateToProcess - monday)/(7 * 24 * 60 * 60 * 1000));
+  let weekNumber = weeksDiff + weekStartingValue;
+  if(weekNumber == 0){
+    // This means it's the last week of previous year.
+    return (_getWeekOfYear(new Date("" + year + "/12/31")))
+  }
+  return "" + year + "-W" + _twoDigitFormatter(weekNumber);
+
+}
+
 var _processMatchedSlotValueByType = function(value, slotType){
   if(slotType == "AMAZON.NUMBER"){
     return _processMatchedNumericSlotValue(value);
+  }
+  if(slotType == "AMAZON.DATE"){
+    return _processMatchedDateSlotValue(value);
   }
 
   return value;

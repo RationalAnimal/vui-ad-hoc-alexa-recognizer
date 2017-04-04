@@ -39,7 +39,7 @@ Alexa skill (these are NOT complete files, you can find the complete sample
 files in the test directory):
 
 ````shell
->cat test/utterances.txt
+> cat test/utterances.txt
 
 TestIntent test
 TestIntent test me
@@ -262,6 +262,6 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with these built in slot types:
-  AMAZON.NUMBER, AMAZON.US_STATE, AMAZON.US_FIRST_NAME
+  AMAZON.NUMBER, AMAZON.US_STATE, AMAZON.US_FIRST_NAME, partial implementation of AMAZON.DATE
 
 More Amazon built in slot types are coming shortly

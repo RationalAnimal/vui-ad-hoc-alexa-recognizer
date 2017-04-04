@@ -56,6 +56,15 @@
           "type": "AMAZON.US_STATE"
         }
       ]
+    },
+    {
+      "intent": "DateIntent",
+      "slots": [
+        {
+          "name": "DateSlot",
+          "type": "AMAZON.DATE"
+        }
+      ]
     }
   ]
 }
