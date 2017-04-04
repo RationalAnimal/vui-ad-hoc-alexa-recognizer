@@ -5,6 +5,8 @@
     "this week", "last week", "next week",
     "this month", "last month", "next month",
     "this year", "last year", "next year",
-    "this decade", "last decade", "next decade"
+    "this decade", "last decade", "next decade",
+    "january", "february", "march", "april", "may", "june", "july", "august",
+    "september", "october", "november", "december"
   ]
 }

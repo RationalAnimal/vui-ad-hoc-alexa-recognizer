@@ -89,6 +89,9 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config){
   else if(slotType == "AMAZON.US_FIRST_NAME"){
     return recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString;
   }
+  else if(slotType == "AMAZON.DATE"){
+    return recognizer.builtInValues.DATE.replacementRegExpString;
+  }
   else if(slotType.startsWith("AMAZON.")){
     // TODO add handling of other built in Amazon slot types, for now just return the value
     return "((?:\\w|\\s|[0-9])+)";
