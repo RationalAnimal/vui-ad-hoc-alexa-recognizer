@@ -132,6 +132,41 @@ var _processMatchedNumericSlotValue = function(value){
   // Then convert the result to an integer and return.
   value = value.replace(/zero/ig, 0);
   value = value.replace(/oh/ig, 0);
+
+  value = value.replace(/tenth/ig, 10);
+  value = value.replace(/eleventh/ig, 11);
+  value = value.replace(/twelfth/ig, 12);
+  value = value.replace(/thirteenth/ig, 13);
+  value = value.replace(/fourteenth/ig, 14);
+  value = value.replace(/fifteenth/ig, 15);
+  value = value.replace(/sixteenth/ig, 16);
+  value = value.replace(/seventeenth/ig, 17);
+  value = value.replace(/eighteenth/ig, 18);
+  value = value.replace(/nineteenth/ig, 19);
+  value = value.replace(/twentieth/ig, 20);
+  value = value.replace(/thirtieth/ig, 30);
+  value = value.replace(/fortieth/ig, 40);
+  value = value.replace(/fiftieth/ig, 50);
+  value = value.replace(/sixtieth/ig, 60);
+  value = value.replace(/seventieth/ig, 70);
+  value = value.replace(/eightieth/ig, 80);
+  value = value.replace(/ninetieth/ig, 90);
+  value = value.replace(/first/ig, 1);
+  value = value.replace(/second/ig, 2);
+  value = value.replace(/third/ig, 3);
+  value = value.replace(/fourth/ig, 4);
+  value = value.replace(/fifth/ig, 5);
+  value = value.replace(/sixth/ig, 6);
+  value = value.replace(/seventh/ig, 7);
+  value = value.replace(/eighth/ig, 8);
+  value = value.replace(/ninth/ig, 9);
+  value = value.replace(/hundredth/ig, 100);
+  value = value.replace(/thousandth/ig, 1000);
+  value = value.replace(/millionth/ig, 1000000);
+  value = value.replace(/billionth/ig, 1000000000);
+  value = value.replace(/trillionth/ig, 1000000000000);
+
+
   value = value.replace(/ten/ig, 10);
   value = value.replace(/eleven/ig, 11);
   value = value.replace(/twelve/ig, 12);
@@ -164,6 +199,8 @@ var _processMatchedNumericSlotValue = function(value){
   value = value.replace(/million/ig, 1000000);
   value = value.replace(/billion/ig, 1000000000);
   value = value.replace(/trillion/ig, 1000000000000);
+
+
   value = value.split(/\s+/);
   var convertedValues = [];
   for(var i = 0; i < value.length; i ++){
