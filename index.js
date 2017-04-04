@@ -338,7 +338,6 @@ var _processMatchedDateSlotValue = function(value){
     return _getWeekOfYear(today);
   }
 
-
   regExp = /(^\s*this weekend\s*\.*$)/ig
   if(matchResult = regExp.exec(value)){
     return (_getWeekOfYear(new Date()) + "-WE");
@@ -394,6 +393,35 @@ var _processMatchedDateSlotValue = function(value){
       return "" + year + "-" + _twoDigitFormatter(month + 1);
     }
   }
+
+  regExp = /^\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s*\.*$/ig;
+  if(matchResult = regExp.exec(value)){
+    console.log("_processMatchedDateSlotValue, month: " + JSON.stringify(matchResult));
+    let month = matchResult[1];
+    console.log("_processMatchedDateSlotValue, month: " + JSON.stringify(month));
+    month = month.replace(/January/ig, 1);
+    month = month.replace(/February/ig, 2);
+    month = month.replace(/March/ig, 3);
+    month = month.replace(/April/ig, 4);
+    month = month.replace(/May/ig, 5);
+    month = month.replace(/June/ig, 6);
+    month = month.replace(/July/ig, 7);
+    month = month.replace(/August/ig, 8);
+    month = month.replace(/September/ig, 9);
+    month = month.replace(/October/ig, 10);
+    month = month.replace(/November/ig, 11);
+    month = month.replace(/December/ig, 12);
+
+    let today = new Date();
+    let year = today.getFullYear();
+    let todaysMonth = today.getMonth();
+    todaysMonth++; // Make it 1-based
+    if(todaysMonth > month){
+      year++;
+    }
+    return "" + year + "-" + _twoDigitFormatter(month);
+  }
+
   regExp = /(this year)/ig
   if(matchResult = regExp.exec(value)){
     console.log("_processMatchedDateSlotValue, 4");

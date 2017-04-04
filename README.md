@@ -15,7 +15,7 @@ https://github.com/RationalAnimal
 # Installation
 
 ```shell
-npm vui-ad-hoc-alexa-recognizer --save
+npm install vui-ad-hoc-alexa-recognizer --save
 ```
 
 # Summary
