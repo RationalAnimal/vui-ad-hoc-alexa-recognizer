@@ -64,7 +64,9 @@ recognizer.Recognizer = class {
 recognizer.builtInValues = {};
 // Ommiting AMAZON. prefix
 recognizer.builtInValues.NUMBER = require("./builtinslottypes/numbers.json");
-recognizer.builtInValues.NUMBER.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.NUMBER.values);
+let numbersWithAnd = recognizer.builtInValues.NUMBER.values.slice();
+numbersWithAnd.push("and");
+recognizer.builtInValues.NUMBER.replacementRegExpString = _makeReplacementRegExpString(numbersWithAnd);
 recognizer.builtInValues.NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.NUMBER.replacementRegExpString, "ig");
 
 recognizer.builtInValues.DATE = require("./builtinslottypes/dates.json");
@@ -200,6 +202,7 @@ var _processMatchedNumericSlotValue = function(value){
   value = value.replace(/billion/ig, 1000000000);
   value = value.replace(/trillion/ig, 1000000000000);
 
+  value = value.replace(/and/ig, "");
 
   value = value.split(/\s+/);
   var convertedValues = [];
@@ -331,29 +334,24 @@ var _formatDate = function(date){
 }
 
 var _processMatchedDateSlotValue = function(value){
-  console.log("_processMatchedDateSlotValue, 1, value: " + value);
   var matchResult;
   var regExp = /(right now)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 2");
     return "PRESENT_REF";
   }
   regExp = /(today)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 3");
     let today = new Date();
     return _formatDate(today);
   }
   regExp = /(yesterday)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 2");
     let today = new Date();
     today.setDate(today.getDate() - 1);
     return _formatDate(today);
   }
   regExp = /(tomorrow)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 4");
     let today = new Date();
     today.setDate(today.getDate() + 1);
     return _formatDate(today);
@@ -399,7 +397,6 @@ var _processMatchedDateSlotValue = function(value){
 
   regExp = /(this month)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 4");
     let today = new Date();
     let year = today.getFullYear();
     let month = today.getMonth();
@@ -407,7 +404,6 @@ var _processMatchedDateSlotValue = function(value){
   }
   regExp = /(last month)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 4");
     let today = new Date();
     let year = today.getFullYear();
     let month = today.getMonth();
@@ -421,7 +417,6 @@ var _processMatchedDateSlotValue = function(value){
   }
   regExp = /(next month)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 4");
     let today = new Date();
     let year = today.getFullYear();
     let month = today.getMonth();
@@ -436,9 +431,7 @@ var _processMatchedDateSlotValue = function(value){
 
   regExp = /^\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s*\.*$/ig;
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, month: " + JSON.stringify(matchResult));
     let month = matchResult[1];
-    console.log("_processMatchedDateSlotValue, month: " + JSON.stringify(month));
     month = month.replace(/January/ig, 1);
     month = month.replace(/February/ig, 2);
     month = month.replace(/March/ig, 3);
@@ -461,6 +454,63 @@ var _processMatchedDateSlotValue = function(value){
     }
     return "" + year + "-" + _twoDigitFormatter(month);
   }
+
+  regExp = /^\s*(last January|last February|last March|last April|last May|last June|last July|last August|last September|last October|last November|last December)\s*\.*$/ig;
+  if(matchResult = regExp.exec(value)){
+    let month = matchResult[1];
+    month = month.replace(/last January/ig, 1);
+    month = month.replace(/last February/ig, 2);
+    month = month.replace(/last March/ig, 3);
+    month = month.replace(/last April/ig, 4);
+    month = month.replace(/last May/ig, 5);
+    month = month.replace(/last June/ig, 6);
+    month = month.replace(/last July/ig, 7);
+    month = month.replace(/last August/ig, 8);
+    month = month.replace(/last September/ig, 9);
+    month = month.replace(/last October/ig, 10);
+    month = month.replace(/last November/ig, 11);
+    month = month.replace(/last December/ig, 12);
+
+    let today = new Date();
+    let year = today.getFullYear();
+    let todaysMonth = today.getMonth();
+    todaysMonth++; // Make it 1-based
+    if(todaysMonth > month){
+      // No need to do anything - already in the past.
+    }
+    else {
+      year--;
+    }
+    return "" + year + "-" + _twoDigitFormatter(month);
+  }
+
+  regExp = /^\s*(next January|next February|next March|next April|next May|next June|next July|next August|next September|next October|next November|next December)\s*\.*$/ig;
+  if(matchResult = regExp.exec(value)){
+    let month = matchResult[1];
+    month = month.replace(/next January/ig, 1);
+    month = month.replace(/next February/ig, 2);
+    month = month.replace(/next March/ig, 3);
+    month = month.replace(/next April/ig, 4);
+    month = month.replace(/next May/ig, 5);
+    month = month.replace(/next June/ig, 6);
+    month = month.replace(/next July/ig, 7);
+    month = month.replace(/next August/ig, 8);
+    month = month.replace(/next September/ig, 9);
+    month = month.replace(/next October/ig, 10);
+    month = month.replace(/next November/ig, 11);
+    month = month.replace(/next December/ig, 12);
+
+    let today = new Date();
+    let year = today.getFullYear();
+    let todaysMonth = today.getMonth();
+    todaysMonth++; // Make it 1-based
+    if(todaysMonth >= month){
+      year++;
+    }
+    return "" + year + "-" + _twoDigitFormatter(month);
+  }
+
+
 
   regExp = /(this year)/ig
   if(matchResult = regExp.exec(value)){

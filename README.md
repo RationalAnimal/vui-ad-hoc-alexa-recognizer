@@ -238,7 +238,10 @@ result:  {
 
 Please note that matcher.js is just a convenience and also serves as an example.
 You will NOT be using it at run time (most likely, though some might find the use
-for it).  You will probably deploy it to some middleware layer, like this:
+for it).
+
+You will probably deploy your code (that uses the parser) to some middleware
+layer, like this:
 
 ````shell
 Alexa  -------------->    Alexa   <-- middleware <---- Cortana

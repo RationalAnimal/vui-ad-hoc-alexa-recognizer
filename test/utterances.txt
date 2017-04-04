@@ -9,7 +9,7 @@ FirstNameIntent My first name is {FirstNameSlot}
 StateIntent {StateSlot}
 StateIntent New England includes {StateSlot} as one of it's states
 BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it
-BlahIntent here is {BlahSlot} and {BlehSlot}
+BlahIntent here is {BlahSlot} and also {BlehSlot}
 DateIntent date is {DateSlot}
 DateIntent {DateSlot}
 AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
