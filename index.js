@@ -548,14 +548,12 @@ var _processMatchedDateSlotValue = function(value){
 
   regExp = /(this year)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 4");
     let today = new Date();
     let year = today.getFullYear();
     return "" + year;
   }
   regExp = /(last year)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 4");
     let today = new Date();
     let year = today.getFullYear();
     year--;
@@ -563,7 +561,6 @@ var _processMatchedDateSlotValue = function(value){
   }
   regExp = /(next year)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 4");
     let today = new Date();
     let year = today.getFullYear();
     year++;
@@ -571,7 +568,6 @@ var _processMatchedDateSlotValue = function(value){
   }
   regExp = /(this decade)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 4");
     let today = new Date();
     let year = today.getFullYear();
     let decade = Math.floor(year / 10);
@@ -579,7 +575,6 @@ var _processMatchedDateSlotValue = function(value){
   }
   regExp = /(last decade)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 4");
     let today = new Date();
     let year = today.getFullYear();
     let decade = Math.floor(year / 10) - 1;
@@ -587,14 +582,11 @@ var _processMatchedDateSlotValue = function(value){
   }
   regExp = /(next decade)/ig
   if(matchResult = regExp.exec(value)){
-    console.log("_processMatchedDateSlotValue, 4");
     let today = new Date();
     let year = today.getFullYear();
     let decade = Math.floor(year / 10) + 1;
     return "" + decade + "X";
   }
-
-
 
   let fullCalendarDateString1 = "^(January|February|March|April|May|June|July|August|September|October|November|December){1}\\s+" +
   "(one|first|two|second|three|third|four|fourth|five|fifth|six|sixth|seven|seventh|eight|eighth|nine|nineth|ten|tenth|" +
@@ -632,24 +624,6 @@ var _processMatchedDateSlotValue = function(value){
 
     return "" + _fourDigitFormatter(year) + "-" + _twoDigitFormatter(month) + "-" + _twoDigitFormatter(dayOfMonth);
   }
-
-/*
-let fullCalendarDateString1 = "(?:January|February|March|April|May|June|July|August|September|October|November|December){1}\\s+" +
-"(?:one|first|two|second|three|third|four|fourth|five|fifth|six|sixth|seven|seventh|eight|eighth|nine|nineth|ten|tenth|" +
-"eleven|eleventh|twelve|twelfth|thirteen|thirteenth|fourteen|fourteenth|fifteen|fifteenth|sixteen|sixteenth|seventeen|seventeenth|eighteen|eighteenth|nineteen|nineteenth|twenty|twentieth|" +
-"twenty one|twenty first|twenty two|twenty second|twenty three|thwenty third|twenty four|twenty fourth|twenty five|twenty fifth|twenty six|twenty sixth|twenty seven|twenty seventh|twenty eight|twenty eighth|twenty nine|twenty ningth|thirty|thirtieth|thirty one|thirty first){1}\\s*" +
-// Now the year, first as spelled out number, e.g. one thousand nine hundred forty five
-"(?:" +
-"(?:" +
-"(?:one thousand|two thousand){0,1}\\s*(?:(?:one|two|three|four|five|six|seven|eight|nine)\\s*hundred){0,1}\\s*" + "(?:and\\s*){0,1}(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,1}\\s*"+
-")" +
-// then as two two digit numbers, e.g. nineteen forty five
-"|" +
-"(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,2}\\s*" +
-")";
-
-*/
-
 
   return value;
 }
