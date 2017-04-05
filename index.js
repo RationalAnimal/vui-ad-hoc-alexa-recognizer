@@ -38,6 +38,18 @@ var _makeReplacementRegExpString = function(arrayToConvert){
   return returnValue;
 }
 
+var _makeReplacementRegExpSubString = function(arrayToConvert, minOccurrence, maxOccurrence){
+  var returnValue = "(?:";
+  for(var i = 0; i < arrayToConvert.length; i++){
+    if(i > 0){
+      returnValue += "|";
+    }
+    returnValue += "" + arrayToConvert[i] + "\\s*";
+  }
+  returnValue += "){" + minOccurrence + "," + maxOccurrence + "}";
+  return returnValue;
+}
+
 var _makeFullRegExpString = function(arrayToConvert){
   let regExString = _makeReplacementRegExpString(arrayToConvert);
   // Now split regExString into non-white space parts and reconstruct the
@@ -70,6 +82,22 @@ recognizer.builtInValues.NUMBER.replacementRegExpString = _makeReplacementRegExp
 recognizer.builtInValues.NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.NUMBER.replacementRegExpString, "ig");
 
 recognizer.builtInValues.DATE = require("./builtinslottypes/dates.json");
+{
+  let fullCalendarDateString1 = "(?:January|February|March|April|May|June|July|August|September|October|November|December){1}\\s+" +
+  "(?:one|first|two|second|three|third|four|fourth|five|fifth|six|sixth|seven|seventh|eight|eighth|nine|nineth|ten|tenth|" +
+  "eleven|eleventh|twelve|twelfth|thirteen|thirteenth|fourteen|fourteenth|fifteen|fifteenth|sixteen|sixteenth|seventeen|seventeenth|eighteen|eighteenth|nineteen|nineteenth|twenty|twentieth|" +
+  "twenty one|twenty first|twenty two|twenty second|twenty three|thwenty third|twenty four|twenty fourth|twenty five|twenty fifth|twenty six|twenty sixth|twenty seven|twenty seventh|twenty eight|twenty eighth|twenty nine|twenty ningth|thirty|thirtieth|thirty one|thirty first){1}\\s*" +
+  // Now the year, first as spelled out number, e.g. one thousand nine hundred forty five
+  "(?:" +
+  "(?:" +
+  "(?:one thousand|two thousand){0,1}\\s*(?:(?:one|two|three|four|five|six|seven|eight|nine)\\s*hundred){0,1}\\s*" + "(?:and\\s*){0,1}(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,1}\\s*"+
+  ")" +
+  // then as two two digit numbers, e.g. nineteen forty five
+  "|" +
+  "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,2}\\s*" +
+  ")";
+  recognizer.builtInValues.DATE.values.push(fullCalendarDateString1);
+}
 recognizer.builtInValues.DATE.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.DATE.values);
 recognizer.builtInValues.DATE.replacementRegExp = new RegExp(recognizer.builtInValues.DATE.replacementRegExpString, "ig");
 
@@ -329,6 +357,12 @@ var _twoDigitFormatter = function(number){
   returnValue = returnValue.slice(-2);
   return returnValue;
 }
+var _fourDigitFormatter = function(number){
+  let returnValue = "0000" + number;
+  returnValue = returnValue.slice(-4);
+  return returnValue;
+}
+
 var _formatDate = function(date){
   return "" + date.getFullYear() + "-" + _twoDigitFormatter(date.getMonth() + 1) + "-" + _twoDigitFormatter(date.getDate());
 }
@@ -562,6 +596,59 @@ var _processMatchedDateSlotValue = function(value){
 
 
 
+  let fullCalendarDateString1 = "^(January|February|March|April|May|June|July|August|September|October|November|December){1}\\s+" +
+  "(one|first|two|second|three|third|four|fourth|five|fifth|six|sixth|seven|seventh|eight|eighth|nine|nineth|ten|tenth|" +
+  "eleven|eleventh|twelve|twelfth|thirteen|thirteenth|fourteen|fourteenth|fifteen|fifteenth|sixteen|sixteenth|seventeen|seventeenth|eighteen|eighteenth|nineteen|nineteenth|twenty|twentieth|" +
+  "twenty one|twenty first|twenty two|twenty second|twenty three|thwenty third|twenty four|twenty fourth|twenty five|twenty fifth|twenty six|twenty sixth|twenty seven|twenty seventh|twenty eight|twenty eighth|twenty nine|twenty ningth|thirty|thirtieth|thirty one|thirty first){1}\\s*" +
+  // Now the year, first as spelled out number, e.g. one thousand nine hundred forty five
+  "(" +
+  "(?:" +
+  "(?:one thousand|two thousand){0,1}\\s*(?:(?:one|two|three|four|five|six|seven|eight|nine)\\s*hundred){0,1}\\s*" + "(?:and\\s*){0,1}(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,1}\\s*"+
+  ")" +
+  // then as two two digit numbers, e.g. nineteen forty five
+  "|" +
+  "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,2}\\s*" +
+  ")\\.*$";
+
+  regExp = new RegExp(fullCalendarDateString1, "ig");
+  if(matchResult = regExp.exec(value)){
+    let month = matchResult[1];
+    month = month.replace(/January/ig, 1);
+    month = month.replace(/February/ig, 2);
+    month = month.replace(/March/ig, 3);
+    month = month.replace(/April/ig, 4);
+    month = month.replace(/May/ig, 5);
+    month = month.replace(/June/ig, 6);
+    month = month.replace(/July/ig, 7);
+    month = month.replace(/August/ig, 8);
+    month = month.replace(/September/ig, 9);
+    month = month.replace(/October/ig, 10);
+    month = month.replace(/November/ig, 11);
+    month = month.replace(/December/ig, 12);
+    let dayOfMonth = matchResult[2];
+    dayOfMonth = _processMatchedNumericSlotValue(dayOfMonth);
+    let year = matchResult[3];
+    year = _processMatchedNumericSlotValue(year);
+
+    return "" + _fourDigitFormatter(year) + "-" + _twoDigitFormatter(month) + "-" + _twoDigitFormatter(dayOfMonth);
+  }
+
+/*
+let fullCalendarDateString1 = "(?:January|February|March|April|May|June|July|August|September|October|November|December){1}\\s+" +
+"(?:one|first|two|second|three|third|four|fourth|five|fifth|six|sixth|seven|seventh|eight|eighth|nine|nineth|ten|tenth|" +
+"eleven|eleventh|twelve|twelfth|thirteen|thirteenth|fourteen|fourteenth|fifteen|fifteenth|sixteen|sixteenth|seventeen|seventeenth|eighteen|eighteenth|nineteen|nineteenth|twenty|twentieth|" +
+"twenty one|twenty first|twenty two|twenty second|twenty three|thwenty third|twenty four|twenty fourth|twenty five|twenty fifth|twenty six|twenty sixth|twenty seven|twenty seventh|twenty eight|twenty eighth|twenty nine|twenty ningth|thirty|thirtieth|thirty one|thirty first){1}\\s*" +
+// Now the year, first as spelled out number, e.g. one thousand nine hundred forty five
+"(?:" +
+"(?:" +
+"(?:one thousand|two thousand){0,1}\\s*(?:(?:one|two|three|four|five|six|seven|eight|nine)\\s*hundred){0,1}\\s*" + "(?:and\\s*){0,1}(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,1}\\s*"+
+")" +
+// then as two two digit numbers, e.g. nineteen forty five
+"|" +
+"(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,2}\\s*" +
+")";
+
+*/
 
 
   return value;
@@ -629,6 +716,7 @@ var _matchText = function(stringToMatch){
 //      console.log("_matchText, 5, matchResult: " + JSON.stringify(matchResult));
       if(matchResult != null){
 //        console.log("FOUND A MATCH: " + JSON.stringify(matchResult));
+//        console.log(JSON.stringify(scratch, null, 2));
         var returnValue = {};
         returnValue.name = scratch.intent;
         returnValue.slots = {};

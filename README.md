@@ -236,6 +236,25 @@ result:  {
 
 ````
 
+````shell
+> node matcher.js "December thirty first nineteen ninety nine"
+````
+which will produce:
+
+````shell
+result:  {
+  "name": "DateIntent",
+  "slots": {
+    "DateSlot": {
+      "name": "DateSlot",
+      "value": "1999-12-31"
+    }
+  }
+}
+
+````
+
+
 Please note that matcher.js is just a convenience and also serves as an example.
 You will NOT be using it at run time (most likely, though some might find the use
 for it).
@@ -265,6 +284,6 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with these built in slot types:
-  AMAZON.NUMBER, AMAZON.US_STATE, AMAZON.US_FIRST_NAME, partial implementation of AMAZON.DATE
+  AMAZON.NUMBER, AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.DATE
 
 More Amazon built in slot types are coming shortly
