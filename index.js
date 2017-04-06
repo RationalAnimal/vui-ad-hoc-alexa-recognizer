@@ -81,6 +81,21 @@ numbersWithAnd.push("and");
 recognizer.builtInValues.NUMBER.replacementRegExpString = _makeReplacementRegExpString(numbersWithAnd);
 recognizer.builtInValues.NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.NUMBER.replacementRegExpString, "ig");
 
+recognizer.builtInValues.FOUR_DIGIT_NUMBER = {};
+recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString =
+  "(?:" +
+    "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine){4})" +
+    "|" +
+    "(?:" +
+      "(?:(?:(?:zero|one|two|three|four|five|six|seven|eight|nine)\\s*){2})" +
+      "|" +
+      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){1}\\s*" +
+    ")" +
+    "|" +
+    "(?:" +
+      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){2}\\s*" +
+    ")" +
+  ")";
 recognizer.builtInValues.DATE = require("./builtinslottypes/dates.json");
 {
   let fullCalendarDateString1 = "(?:January|February|March|April|May|June|July|August|September|October|November|December){1}\\s+" +
@@ -730,9 +745,15 @@ var _generateRunTimeJson = function(config, intents, utterances, customSlots){
   recognizerSet.matchConfig = [];
   // First process all the utterances
   for(var i = 0; i < utterances.length; i ++){
+    if(utterances[i].trim() == ""){
+      continue;
+    }
     var currentValue = {};
     var splitLine = utterances[i].split(/\s+/);
     var currentIntent = splitLine[0];
+    if(typeof currentIntent == "undefined" || currentIntent.trim() ==""){
+      continue;
+    }
     var scratchRegExp = new RegExp("^" + currentIntent + "\\s+");
     var currentUtterance = utterances[i].split(scratchRegExp)[1];
     var slots = [];
