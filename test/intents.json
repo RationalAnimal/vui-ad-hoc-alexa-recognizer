@@ -18,6 +18,15 @@
       ]
     },
     {
+      "intent": "FourDigitIntent",
+      "slots": [
+        {
+          "name": "FooSlot",
+          "type": "AMAZON.FOUR_DIGIT_NUMBER"
+        }
+      ]
+    },
+    {
       "intent": "AnotherIntent",
       "slots": [
         {

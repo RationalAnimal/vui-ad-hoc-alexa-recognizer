@@ -38,18 +38,6 @@ var _makeReplacementRegExpString = function(arrayToConvert){
   return returnValue;
 }
 
-var _makeReplacementRegExpSubString = function(arrayToConvert, minOccurrence, maxOccurrence){
-  var returnValue = "(?:";
-  for(var i = 0; i < arrayToConvert.length; i++){
-    if(i > 0){
-      returnValue += "|";
-    }
-    returnValue += "" + arrayToConvert[i] + "\\s*";
-  }
-  returnValue += "){" + minOccurrence + "," + maxOccurrence + "}";
-  return returnValue;
-}
-
 var _makeFullRegExpString = function(arrayToConvert){
   let regExString = _makeReplacementRegExpString(arrayToConvert);
   // Now split regExString into non-white space parts and reconstruct the
@@ -83,8 +71,8 @@ recognizer.builtInValues.NUMBER.replacementRegExp = new RegExp(recognizer.builtI
 
 recognizer.builtInValues.FOUR_DIGIT_NUMBER = {};
 recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString =
-  "(?:" +
-    "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine){4})" +
+  "(" +
+    "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine)\\s*){4}" +
     "|" +
     "(?:" +
       "(?:(?:(?:zero|one|two|three|four|five|six|seven|eight|nine)\\s*){2})" +
@@ -96,6 +84,8 @@ recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString =
       "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){2}\\s*" +
     ")" +
   ")";
+recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString, "ig");
+
 recognizer.builtInValues.DATE = require("./builtinslottypes/dates.json");
 {
   let fullCalendarDateString1 = "(?:January|February|March|April|May|June|July|August|September|October|November|December){1}\\s+" +
@@ -127,6 +117,9 @@ recognizer.builtInValues.US_FIRST_NAME.replacementRegExp = new RegExp(recognizer
 var _getReplacementRegExpStringForSlotType = function(slotType, config){
   if(slotType == "AMAZON.NUMBER"){
     return recognizer.builtInValues.NUMBER.replacementRegExpString;
+  }
+  else if(slotType == "AMAZON.FOUR_DIGIT_NUMBER"){
+    return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
   }
   else if(slotType == "AMAZON.US_STATE"){
     return recognizer.builtInValues.US_STATE.replacementRegExpString;
@@ -678,7 +671,8 @@ var _getWeekOfYear = function(dateToProcess){
 }
 
 var _processMatchedSlotValueByType = function(value, slotType){
-  if(slotType == "AMAZON.NUMBER"){
+//  console.log("_processMatchedSlotValueByType, value: " + JSON.stringify(value) + ", slotType: " + slotType);
+  if(slotType == "AMAZON.NUMBER" || slotType == "AMAZON.FOUR_DIGIT_NUMBER"){
     return _processMatchedNumericSlotValue(value);
   }
   if(slotType == "AMAZON.DATE"){

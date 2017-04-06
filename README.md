@@ -186,7 +186,24 @@ result:  {
     }
   }
 }
+````
 
+
+````shell
+node matcher.js "thirty five fifty one"
+````
+which will produce:
+
+````shell
+result:  {
+  "name": "FourDigitIntent",
+  "slots": {
+    "FooSlot": {
+      "name": "FooSlot",
+      "value": 3551
+    }
+  }
+}
 ````
 
 ````shell
@@ -284,6 +301,6 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with these built in slot types:
-  AMAZON.NUMBER, AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.DATE
+  AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.US_STATE, AMAZON.US_FIRST_NAME
 
 More Amazon built in slot types are coming shortly
