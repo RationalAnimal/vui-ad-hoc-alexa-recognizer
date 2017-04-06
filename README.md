@@ -271,6 +271,23 @@ result:  {
 
 ````
 
+````shell
+> node matcher.js "lets do it on tuesday"
+````
+which will produce:
+
+````shell
+result:  {
+  "name": "DayOfWeekIntent",
+  "slots": {
+    "DayOfWeekSlot": {
+      "name": "DayOfWeekSlot",
+      "value": "tuesday"
+    }
+  }
+}
+````
+
 
 Please note that matcher.js is just a convenience and also serves as an example.
 You will NOT be using it at run time (most likely, though some might find the use

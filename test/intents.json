@@ -40,6 +40,15 @@
       ]
     },
     {
+      "intent": "DayOfWeekIntent",
+      "slots": [
+        {
+          "name": "DayOfWeekSlot",
+          "type": "AMAZON.DayOfWeek"
+        }
+      ]
+    },
+    {
       "intent": "MinionIntent",
       "slots": [
         {

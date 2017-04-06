@@ -114,6 +114,11 @@ recognizer.builtInValues.US_FIRST_NAME = require("./builtinslottypes/usfirstname
 recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
 recognizer.builtInValues.US_FIRST_NAME.replacementRegExp = new RegExp(recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString, "ig");
 
+recognizer.builtInValues.DayOfWeek = {};
+recognizer.builtInValues.DayOfWeek.values = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+recognizer.builtInValues.DayOfWeek.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.DayOfWeek.values);
+recognizer.builtInValues.DayOfWeek.replacementRegExp = new RegExp(recognizer.builtInValues.DayOfWeek.replacementRegExpString, "ig");
+
 var _getReplacementRegExpStringForSlotType = function(slotType, config){
   if(slotType == "AMAZON.NUMBER"){
     return recognizer.builtInValues.NUMBER.replacementRegExpString;
@@ -129,6 +134,9 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config){
   }
   else if(slotType == "AMAZON.DATE"){
     return recognizer.builtInValues.DATE.replacementRegExpString;
+  }
+  else if(slotType == "AMAZON.DayOfWeek"){
+    return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
   }
   else if(slotType.startsWith("AMAZON.")){
     // TODO add handling of other built in Amazon slot types, for now just return the value
