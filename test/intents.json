@@ -49,6 +49,15 @@
       ]
     },
     {
+      "intent": "CountryIntent",
+      "slots": [
+        {
+          "name": "CountrySlot",
+          "type": "AMAZON.Country"
+        }
+      ]
+    },
+    {
       "intent": "MinionIntent",
       "slots": [
         {

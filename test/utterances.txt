@@ -16,3 +16,4 @@ DateIntent date is {DateSlot}
 DateIntent {DateSlot}
 AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
 DayOfWeekIntent lets do it on {DayOfWeekSlot}
+CountryIntent Have you been to {CountrySlot}
