@@ -24,6 +24,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 'use strict'
+var fs = require('fs');
+
 var recognizer = {};
 
 var _makeReplacementRegExpString = function(arrayToConvert){
@@ -59,6 +61,9 @@ var _makeFullRegExpString = function(arrayToConvert){
 
 recognizer.Recognizer = class {
 };
+
+recognizer.errorCodes = {};
+recognizer.errorCodes.MISSING_RECOGNIZER = 1001;
 
 // The sections below are for the built in slots support
 recognizer.builtInValues = {};
@@ -106,6 +111,9 @@ recognizer.builtInValues.DATE = require("./builtinslottypes/dates.json");
 recognizer.builtInValues.DATE.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.DATE.values);
 recognizer.builtInValues.DATE.replacementRegExp = new RegExp(recognizer.builtInValues.DATE.replacementRegExpString, "ig");
 
+recognizer.builtInValues.TIME = {};
+recognizer.builtInValues.TIME.replacementRegExpString = "";
+
 recognizer.builtInValues.US_STATE = require("./builtinslottypes/usstates.json");
 recognizer.builtInValues.US_STATE.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_STATE.values);
 recognizer.builtInValues.US_STATE.replacementRegExp = new RegExp(recognizer.builtInValues.US_STATE.replacementRegExpString, "ig");
@@ -138,10 +146,10 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config){
   else if(slotType == "AMAZON.DayOfWeek"){
     return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
   }
-  else if(slotType.startsWith("AMAZON.")){
-    // TODO add handling of other built in Amazon slot types, for now just return the value
-    return "((?:\\w|\\s|[0-9])+)";
-  }
+//  else if(slotType.startsWith("AMAZON.")){
+//    // TODO add handling of other built in Amazon slot types, for now just return the value
+//    return "((?:\\w|\\s|[0-9])+)";
+//  }
   // Here we are dealing with custom slots.
   if(typeof config != "undefined" && Array.isArray(config.customSlotTypes)){
     for(var i = 0; i < config.customSlotTypes.length; i++){
@@ -692,7 +700,18 @@ var _processMatchedSlotValueByType = function(value, slotType){
 
 var _matchText = function(stringToMatch){
 //  console.log("_matchText, 1");
-  var recognizerSet = require("./recognizer.json");
+  var recognizerSet;
+  if (fs.existsSync("./recognizer.json")) {
+    console.log("_matchText, 1.1");
+    recognizerSet = require("./recognizer.json");
+  }
+  else if (fs.existsSync("../../recognizer.json")){
+    console.log("_matchText, 1.2");
+    recognizerSet = require("../../recognizer.json");
+  }
+  if(typeof recognizerSet == "undefined"){
+    throw {"error": recognizer.errorCodes.MISSING_RECOGNIZER, "message": "Unable to load recognizer.json"};
+  }
 //  console.log("_matchText, 2, recognizerSet: " + JSON.stringify(recognizerSet));
   for(var i = 0; i < recognizerSet.matchConfig.length; i++){
 //    console.log("_matchText, 3, i: " + i);

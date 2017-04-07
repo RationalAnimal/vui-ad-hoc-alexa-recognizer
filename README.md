@@ -33,7 +33,7 @@ text at run time using the generated json file.
 
 # Usage
 
-Imaging you already have an Alexa skill and you would like to port it to Cortana
+Imagine you already have an Alexa skill and you would like to port it to Cortana
 or Google Assistant.  Here are examples of files that you will have for your
 Alexa skill (these are NOT complete files, you can find the complete sample
 files in the test directory):
@@ -318,6 +318,6 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with these built in slot types:
-  AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.US_STATE, AMAZON.US_FIRST_NAME
+  AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.WeekOfDay
 
 More Amazon built in slot types are coming shortly
