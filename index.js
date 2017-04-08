@@ -380,7 +380,7 @@ var _processMatchedNumericSlotValue = function(value){
   for(var i = 0; i < scratchValues.length; i++){
     value += ("" + scratchValues[i]);
   }
-  value = parseInt(value);
+//  value = parseInt(value);
   return value;
 }
 
@@ -397,6 +397,30 @@ var _fourDigitFormatter = function(number){
 
 var _formatDate = function(date){
   return "" + date.getFullYear() + "-" + _twoDigitFormatter(date.getMonth() + 1) + "-" + _twoDigitFormatter(date.getDate());
+}
+var _processMatchedCustomSlotValueByType = function(value, slotType, recognizerSet){
+  for(var i = 0; i < recognizerSet.customSlotTypes.length; i++){
+    let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
+    if(scratchCustomSlotType.name != slotType){
+      continue;
+    }
+    if(typeof scratchCustomSlotType.regExps == "undefined"){
+      scratchCustomSlotType.regExps = [];
+      for(var j = 0; j < scratchCustomSlotType.regExpStrings.length; j++){
+        scratchCustomSlotType.regExps.push(new RegExp(scratchCustomSlotType.regExpStrings[j], "ig"));
+      }
+    }
+    // Now attempt to match.  If successful - return the corresponding value.
+    let matchResult;
+    for(var j = 0; j < scratchCustomSlotType.regExps.length; j++){
+      if(matchResult = scratchCustomSlotType.regExps[j].exec(value)){
+        return scratchCustomSlotType.values[j];
+      }
+    }
+  }
+
+  // If there is no match, then return the original value
+  return value;
 }
 
 var _processMatchedDateSlotValue = function(value){
@@ -694,7 +718,7 @@ var _getWeekOfYear = function(dateToProcess){
 
 }
 
-var _processMatchedSlotValueByType = function(value, slotType){
+var _processMatchedSlotValueByType = function(value, slotType, recognizerSet){
 //  console.log("_processMatchedSlotValueByType, value: " + JSON.stringify(value) + ", slotType: " + slotType);
   if(slotType == "AMAZON.NUMBER" || slotType == "AMAZON.FOUR_DIGIT_NUMBER"){
     return _processMatchedNumericSlotValue(value);
@@ -702,19 +726,24 @@ var _processMatchedSlotValueByType = function(value, slotType){
   if(slotType == "AMAZON.DATE"){
     return _processMatchedDateSlotValue(value);
   }
+  if(slotType.startsWith("AMAZON.")){
+    return value;
+  }
+  // Here we are dealing with a custom slot value
+  return _processMatchedCustomSlotValueByType(value, slotType, recognizerSet);
 
-  return value;
+//  return value;
 }
 
 var _matchText = function(stringToMatch){
 //  console.log("_matchText, 1");
   var recognizerSet;
   if (fs.existsSync("./recognizer.json")) {
-    console.log("_matchText, 1.1");
+//    console.log("_matchText, 1.1");
     recognizerSet = require("./recognizer.json");
   }
   else if (fs.existsSync("../../recognizer.json")){
-    console.log("_matchText, 1.2");
+//    console.log("_matchText, 1.2");
     recognizerSet = require("../../recognizer.json");
   }
   if(typeof recognizerSet == "undefined"){
@@ -739,7 +768,7 @@ var _matchText = function(stringToMatch){
         returnValue.name = scratch.intent;
         returnValue.slots = {};
         for(var j = 1; j < matchResult.length; j++){
-          var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type)
+          var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type, recognizerSet)
 //          console.log("processedMatchResult: " + processedMatchResult);
           returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
         }
@@ -766,11 +795,26 @@ var _matchText = function(stringToMatch){
 
 };
 
-var _generateRunTimeJson = function(config, intents, utterances, customSlots){
+var _generateRunTimeJson = function(config, intents, utterances){
   //  console.log("_generateRunTimeJson, config: ", JSON.stringify(config));
   //  console.log("_generateRunTimeJson, intents: ", JSON.stringify(intents));
   //  console.log("_generateRunTimeJson, utterances: ", JSON.stringify(utterances));
   var recognizerSet = {};
+  if(typeof config != "undefined" && typeof config.customSlotTypes != "undefined"){
+    recognizerSet.customSlotTypes = config.customSlotTypes;
+    // Iterate over all the values and create a corresponding array of match
+    // regular expressions so that the exact value is returned rather than what
+    // was passed in, say from Cortana.  This is needed because Alexa respects
+    // capitalization, etc, while Cortana gratuitously capitalizes first letters
+    // and adds periods at the end.
+    for(var i = 0; i < recognizerSet.customSlotTypes.length; i++){
+      let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
+      scratchCustomSlotType.regExpStrings = [];
+      for(var j = 0; j < scratchCustomSlotType.values.length; j++){
+        scratchCustomSlotType.regExpStrings.push("(\\s*" +  scratchCustomSlotType.values[j] + "\\s*\.{0,1}){1}");
+      }
+    }
+  }
   recognizerSet.matchConfig = [];
   // First process all the utterances
   for(var i = 0; i < utterances.length; i ++){

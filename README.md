@@ -40,7 +40,8 @@ files in the test directory):
 
 ````shell
 > cat test/utterances.txt
-
+````
+````
 TestIntent test
 TestIntent test me
 TestIntent test please
@@ -53,8 +54,11 @@ StateIntent New England includes {StateSlot} as one of it's states
 BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it
 BlahIntent here is {BlahSlot} and {BlehSlot}
 AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
-
+````
+````shell
 > cat test/intents.json
+````
+````json
 {
   "intents": [
     {
@@ -113,7 +117,8 @@ and also here is an example of a custom slot type file:
 
 ````shell
 > cat test/minions.txt
-
+````
+````
 Bob
 Steve
 Stewart
@@ -154,8 +159,8 @@ node matcher.js "Bob"
 ````
 which will produce:
 
-````shell
-result:  {
+````json
+{
   "name": "MinionIntent",
   "slots": {
     "MinionSlot": {
@@ -168,21 +173,21 @@ result:  {
 or
 
 ````shell
-node matcher.js "here is four hundred eighty eight million three hundred fifty two thousand five hundred twelve and six oh three five five five one two one two"
+node matcher.js "here is four hundred eighty eight million three hundred fifty two thousand five hundred twelve and also six oh three five five five one two one two"
 ````
 which will produce:
 
-````shell
-result:  {
+````json
+{
   "name": "BlahIntent",
   "slots": {
     "BlahSlot": {
       "name": "BlahSlot",
-      "value": 488352512
+      "value": "488352512"
     },
     "BlehSlot": {
       "name": "BlehSlot",
-      "value": 6035551212
+      "value": "6035551212"
     }
   }
 }
@@ -194,13 +199,13 @@ node matcher.js "thirty five fifty one"
 ````
 which will produce:
 
-````shell
-result:  {
+````json
+{
   "name": "FourDigitIntent",
   "slots": {
     "FooSlot": {
       "name": "FooSlot",
-      "value": 3551
+      "value": "3551"
     }
   }
 }
@@ -211,20 +216,20 @@ node matcher.js "sure"
 ````
 which will produce:
 
-````shell
-result:  {
+````json
+{
   "name": "AMAZON.YesIntent",
   "slots": {}
 }
 ````
 
 ````shell
-> node matcher.js "New England includes New Hampshire as one of it's states"
+> node matcher.js "New England includes New Hampshire as one of its states"
 ````
 which will produce:
 
-````shell
-result:  {
+````json
+{
   "name": "StateIntent",
   "slots": {
     "StateSlot": {
@@ -240,8 +245,8 @@ result:  {
 ````
 which will produce:
 
-````shell
-result:  {
+````json
+{
   "name": "FirstNameIntent",
   "slots": {
     "FirstNameSlot": {
@@ -258,8 +263,8 @@ result:  {
 ````
 which will produce:
 
-````shell
-result:  {
+````json
+{
   "name": "DateIntent",
   "slots": {
     "DateSlot": {
@@ -268,7 +273,6 @@ result:  {
     }
   }
 }
-
 ````
 
 ````shell
@@ -276,8 +280,8 @@ result:  {
 ````
 which will produce:
 
-````shell
-result:  {
+````json
+{
   "name": "DayOfWeekIntent",
   "slots": {
     "DayOfWeekSlot": {
@@ -296,7 +300,7 @@ for it).
 You will probably deploy your code (that uses the parser) to some middleware
 layer, like this:
 
-````shell
+````
 Alexa  -------------->    Alexa   <-- middleware <---- Cortana
 Skill  <-------------- AWS Lambda --> AWS Lambda ---->  Skill
 ````
@@ -310,6 +314,17 @@ then process it further.
 Notice that this module currently is being written as a primarily stand alone
 solution for the Alexa to Cortana (or Google Assistant) porting.  However, it
 will be retrofitted later to fit into the vui-xxx framework.
+
+### Matched custom slot values
+
+There are differences between what kind of values different services may send.
+Alexa appears to respect capitalization of the custom slot values (or it send
+lower case versions) while Cortana capitalizes the first letter under some
+circumstances and also adds a period at the end of utterances.  To keep Cortana
+behaving consistently, the returned matches use the capitalization of the custom
+slot values supplied in the config file rather than what Cortana will send.
+Thus, if your custom slot value (in the config file) is "petunia" then "petunia"
+will be returned even if Cortana will send you "Petunia".
 
 ## Alexa features supported
 

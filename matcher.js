@@ -42,4 +42,4 @@ var doTheProcessing = function(){
   return recognizer.Recognizer.matchText(stringToMatch);
 }
 var result = doTheProcessing();
-console.log("result: ", JSON.stringify(result, null, 2));
+console.log(JSON.stringify(result, null, 2));
