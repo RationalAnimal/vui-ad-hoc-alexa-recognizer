@@ -326,7 +326,7 @@ slot values supplied in the config file rather than what Cortana will send.
 Thus, if your custom slot value (in the config file) is "petunia" then "petunia"
 will be returned even if Cortana will send you "Petunia".
 
-### dollar values
+### Dollar values
 
 If a service like Cortana passes a dollar value, e.g. $1000, it will be mapped
 to "1000 dollars" as would be expected by an Alexa skills. (Note that if you

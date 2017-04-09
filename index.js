@@ -852,7 +852,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
       let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
       scratchCustomSlotType.regExpStrings = [];
       for(var j = 0; j < scratchCustomSlotType.values.length; j++){
-        scratchCustomSlotType.regExpStrings.push("(\\s*" +  scratchCustomSlotType.values[j] + "\\s*\.{0,1}){1}");
+        scratchCustomSlotType.regExpStrings.push("(^\\s*" +  scratchCustomSlotType.values[j] + "\\s*\.{0,1}$){1}");
       }
     }
     // Now generate soundex equivalents so that we can match on soundex if the
