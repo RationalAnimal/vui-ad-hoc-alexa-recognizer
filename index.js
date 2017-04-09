@@ -846,7 +846,7 @@ var _processMatchedSlotValueByType = function(value, slotType, recognizerSet){
 //  return value;
 }
 
-var _matchText = function(stringToMatch){
+var _matchText = function(stringToMatch, intentsSequence){
   // First, correct some of Microsoft's "deviations"
   // look for a $ followed by a number and replace it with the number followed by the word "dollars".
   let regExp = /(\$\s*(?:[0-9]\s*)*(?:[0-9])+)/ig;
@@ -901,6 +901,33 @@ var _matchText = function(stringToMatch){
     throw {"error": recognizer.errorCodes.MISSING_RECOGNIZER, "message": "Unable to load recognizer.json"};
   }
 //  console.log("_matchText, 2, recognizerSet: " + JSON.stringify(recognizerSet));
+  if(typeof intentsSequence != "undefined"){
+    if(Array.isArray(intentsSequence) == false){
+      intentsSequence = ["" + intentsSequence];
+    }
+    var sortedMatchConfig = [];
+    for(let currentIntentIndex = 0; currentIntentIndex < intentsSequence.length; currentIntentIndex++){
+      let currentIntent = intentsSequence[currentIntentIndex];
+      for(let currentUtteranceIndex = 0; currentUtteranceIndex < recognizerSet.matchConfig.length; currentUtteranceIndex++){
+        let currentMatchConfig = recognizerSet.matchConfig[currentUtteranceIndex];
+        if(currentMatchConfig.intent == currentIntent){
+          // Remove this from the recognizerSet, push it onto sortedMatchConfig, decrement counter
+          recognizerSet.matchConfig.splice(currentUtteranceIndex, 1);
+          sortedMatchConfig.push(currentMatchConfig);
+          currentUtteranceIndex--;
+        }
+      }
+    }
+    // Now move the remaining match configs to the sorted array.
+    for(let currentUtteranceIndex = 0; currentUtteranceIndex < recognizerSet.matchConfig.length; currentUtteranceIndex++){
+      let currentMatchConfig = recognizerSet.matchConfig[currentUtteranceIndex];
+      recognizerSet.matchConfig.splice(currentUtteranceIndex, 1);
+      sortedMatchConfig.push(currentMatchConfig);
+      currentUtteranceIndex--;
+    }
+    // and finally set the sortedMatchConfig to be THE matchConfig
+    recognizerSet.matchConfig = sortedMatchConfig;
+  }
   for(var i = 0; i < recognizerSet.matchConfig.length; i++){
 //    console.log("_matchText, 3, i: " + i);
     var scratch = recognizerSet.matchConfig[i];

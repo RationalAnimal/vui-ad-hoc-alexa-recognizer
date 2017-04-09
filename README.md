@@ -377,6 +377,15 @@ which will produce:
 }
 ````
 
+## Optimizations
+
+### Intent parsing order
+
+You can pass to the matching call the name(s) of the intents that you want to
+try to match first. (Current it only supports custom intents).  Then this call
+will likely execute much faster.  Since most of the time you know what the next
+likely answers (i.e. utterances) are going to be, you can provide them to the
+matching call.
 
 ## SoundEx support
 
