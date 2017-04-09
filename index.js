@@ -25,7 +25,7 @@ SOFTWARE.
 */
 'use strict'
 var fs = require('fs');
-
+var soundex = require('./soundex.js');
 var recognizer = {};
 
 var _makeReplacementRegExpString = function(arrayToConvert){
@@ -174,6 +174,23 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config){
   return "((?:\\w|\\s|[0-9])+)";
 }
 
+var _getReplacementSoundExRegExpStringForCustomSlotType = function(slotType, config){
+  // Here we are dealing with custom slots.
+  if(typeof config != "undefined" && Array.isArray(config.customSlotTypes)){
+    for(var i = 0; i < config.customSlotTypes.length; i++){
+      var customSlotType = config.customSlotTypes[i];
+      if(customSlotType.name == slotType){
+        if(typeof customSlotType.replacementSoundExpRegExp == "undefined"){
+          customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
+        }
+        return customSlotType.replacementSoundExpRegExp;
+      }
+    }
+  }
+  // Default fallback
+  return "((?:\\w|\\s|[0-9])+)";
+}
+
 var _getOrderOfMagnitude = function(number){
   var oom = Math.floor(Math.log10(number));
 //  console.log("_getOrderOfMagnitude, number: " + number + ", oom: " + oom);
@@ -269,6 +286,7 @@ var _processMatchedNumericSlotValue = function(value){
   for(var i = 0; i < value.length; i ++){
     convertedValues.push(parseInt(value[i]));
   }
+
   value = convertedValues;
   var scratchValues = [];
   var haveAccumulatedValue = false;
@@ -600,8 +618,6 @@ var _processMatchedDateSlotValue = function(value){
     return "" + year + "-" + _twoDigitFormatter(month);
   }
 
-
-
   regExp = /(this year)/ig
   if(matchResult = regExp.exec(value)){
     let today = new Date();
@@ -736,6 +752,31 @@ var _processMatchedSlotValueByType = function(value, slotType, recognizerSet){
 }
 
 var _matchText = function(stringToMatch){
+  // First, correct some of Microsoft's "deviations"
+  // look for a $ followed by a number and replace it with the number followed by the word "dollars".
+  let regExp = /(\$\s*(?:[0-9]\s*)*(?:[0-9])+)/ig;
+  let dollarMatchResult;
+  while(dollarMatchResult = regExp.exec(stringToMatch)){
+    if(dollarMatchResult == null){
+      continue;
+    }
+    let dollarlessMatch = dollarMatchResult[0].substring(1);
+    stringToMatch = stringToMatch.replace(/(\$\s*(?:[0-9]\s*)*(?:[0-9])+)/, dollarlessMatch + " dollars");
+  }
+  // Now replace all digits with strings
+  regExp = /([0-9]+)/ig;
+  let digitMatchResult;
+  let digitReplacements = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+  if(digitMatchResult = regExp.exec(stringToMatch)){
+    let replacementNumberString = "";
+    for(let i = 0; i < digitMatchResult[0].length; i ++){
+      replacementNumberString += digitReplacements[parseInt(digitMatchResult[0].substring(i, i+1))];
+      if(i < digitMatchResult[0].length - 1){
+        replacementNumberString += " ";
+      }
+    }
+    stringToMatch = stringToMatch.replace(/([0-9]+)/, replacementNumberString);
+  }
 //  console.log("_matchText, 1");
   var recognizerSet;
   if (fs.existsSync("./recognizer.json")) {
@@ -814,6 +855,20 @@ var _generateRunTimeJson = function(config, intents, utterances){
         scratchCustomSlotType.regExpStrings.push("(\\s*" +  scratchCustomSlotType.values[j] + "\\s*\.{0,1}){1}");
       }
     }
+    // Now generate soundex equivalents so that we can match on soundex if the
+    // regular match fails
+    for(var i = 0; i < recognizerSet.customSlotTypes.length; i++){
+      let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
+      scratchCustomSlotType.soundExValues = [];
+      scratchCustomSlotType.soundExRegExpStrings = [];
+      for(var j = 0; j < scratchCustomSlotType.values.length; j++){
+        let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j], " ");
+        scratchCustomSlotType.soundExValues.push(soundexValue);
+        let soundexRexExp = soundex.simple.soundEx(scratchCustomSlotType.values[j], "\\s+");
+        scratchCustomSlotType.soundExRegExpStrings.push("(\\s*" +  soundexRexExp + "\\s*\.{0,1}){1}");
+      }
+    }
+
   }
   recognizerSet.matchConfig = [];
   // First process all the utterances

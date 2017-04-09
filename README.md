@@ -326,6 +326,64 @@ slot values supplied in the config file rather than what Cortana will send.
 Thus, if your custom slot value (in the config file) is "petunia" then "petunia"
 will be returned even if Cortana will send you "Petunia".
 
+### dollar values
+
+If a service like Cortana passes a dollar value, e.g. $1000, it will be mapped
+to "1000 dollars" as would be expected by an Alexa skills. (Note that if you
+  want to test it with matcher.js you have to either escape the $ character or
+  enclose the whole string in '' rather than "" to avoid command line handling
+  of $)
+
+````shell
+> node matcher.js 'the first price is $1000 and the second price is $525000'
+````
+which will produce:
+
+````json
+{
+  "name": "PriceIntent",
+  "slots": {
+    "PriceOneSlot": {
+      "name": "PriceOneSlot",
+      "value": "1000"
+    },
+    "PriceTwoSlot": {
+      "name": "PriceTwoSlot",
+      "value": "525000"
+    }
+  }
+}
+````
+Note that this is identical to:
+
+````shell
+> node matcher.js 'the first price is 1000 dollars and the second price is 525000 dollars'
+````
+which will produce:
+
+````json
+{
+  "name": "PriceIntent",
+  "slots": {
+    "PriceOneSlot": {
+      "name": "PriceOneSlot",
+      "value": "1000"
+    },
+    "PriceTwoSlot": {
+      "name": "PriceTwoSlot",
+      "value": "525000"
+    }
+  }
+}
+````
+
+
+## SoundEx support
+
+SoundEx support is in the process of being added, however it's not yet enabled.
+SoundEx will allow matching expressions that are not exact matches, but
+approximate matches.
+
 ## Alexa features supported
 
 Currently, you can parse:

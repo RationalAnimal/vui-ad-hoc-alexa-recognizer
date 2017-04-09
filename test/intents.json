@@ -40,6 +40,19 @@
       ]
     },
     {
+      "intent": "PriceIntent",
+      "slots": [
+        {
+          "name": "PriceOneSlot",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "PriceTwoSlot",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
       "intent": "DayOfWeekIntent",
       "slots": [
         {
