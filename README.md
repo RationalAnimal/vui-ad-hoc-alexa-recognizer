@@ -382,10 +382,14 @@ which will produce:
 ### Intent parsing order
 
 You can pass to the matching call the name(s) of the intents that you want to
-try to match first. (Current it only supports custom intents).  Then this call
+try to match first. (Currently it only supports custom intents).  Then this call
 will likely execute much faster.  Since most of the time you know what the next
 likely answers (i.e. utterances) are going to be, you can provide them to the
 matching call.
+
+````javascript
+var result = _matchText("have you been to France", ["CountryIntent"]);
+````
 
 ### Intent exclusion
 
@@ -393,7 +397,6 @@ In addition to the intent parsing order you can also pass a list of intents to
 be excluded from the matching process.  This is useful if you have intents that
 have very large sets of custom values and you are pretty sure you don't want to
 parse then in a particular place in your skill.
-
 
 ````javascript
 var result = _matchText("have you been to France", ["CountryIntent"], ["FirstNameIntent"]);

@@ -942,6 +942,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
     currentUtteranceIndex--;
   }
   // and finally set the sortedMatchConfig to be THE matchConfig
+  let originalMatchConfig = recognizerSet.matchConfig;
   recognizerSet.matchConfig = sortedMatchConfig;
 
   for(var i = 0; i < recognizerSet.matchConfig.length; i++){
@@ -966,10 +967,14 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
 //          console.log("processedMatchResult: " + processedMatchResult);
           returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
         }
+        // Restore original matchConfig;
+        recognizerSet.matchConfig = originalMatchConfig;
         return returnValue;
       }
     }
   }
+  // Restore original matchConfig;
+  recognizerSet.matchConfig = originalMatchConfig;
   // Now try the built in intents
   for(var i = 0; i < recognizerSet.builtInIntents.length; i ++){
     let scratch = recognizerSet.builtInIntents[i];
