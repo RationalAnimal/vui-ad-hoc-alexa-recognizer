@@ -77,26 +77,54 @@ recognizer.builtInValues.NUMBER.replacementRegExp = new RegExp(recognizer.builtI
 recognizer.builtInValues.FOUR_DIGIT_NUMBER = {};
 recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString =
   "(" +
-    "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine)\\s*){4}" +
+
+    "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){4}" +
     "|" +
+
     "(?:" +
-      "(?:(?:(?:zero|one|two|three|four|five|six|seven|eight|nine)\\s*){2})" +
-      "|" +
-      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){1}\\s*" +
+      "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){2}" +
+      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
     ")" +
     "|" +
+
+
+    "(?:" +
+      "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){1}" +
+      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
+      "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){1}" +
+    ")" +
+    "|" +
+
+    "(?:" +
+      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
+      "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){2}" +
+    ")" +
+    "|" +
+
+
     "(?:" +
       "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){2}\\s*" +
     ")" +
-  ")";
+    "|" +
+
+    "(?:" +
+      "(?:one|two|three|four|five|six|seven|eight|nine|[0-9]){0,1}\\s*thousand\\s*" +
+      "(?:(?:one|two|three|four|five|six|seven|eight|nine|[1-9])\\s*hundred\\s*){0,1}" +
+      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){0,1}\\s*){0,1}\\s*" +
+    ")" +
+
+
+  ")\\s*";
 recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString, "ig");
 
 recognizer.builtInValues.DATE = require("./builtinslottypes/dates.json");
 {
-  let fullCalendarDateString1 = "(?:January|February|March|April|May|June|July|August|September|October|November|December){1}\\s+" +
-  "(?:one|first|two|second|three|third|four|fourth|five|fifth|six|sixth|seven|seventh|eight|eighth|nine|nineth|ten|tenth|" +
-  "eleven|eleventh|twelve|twelfth|thirteen|thirteenth|fourteen|fourteenth|fifteen|fifteenth|sixteen|sixteenth|seventeen|seventeenth|eighteen|eighteenth|nineteen|nineteenth|twenty|twentieth|" +
-  "twenty one|twenty first|twenty two|twenty second|twenty three|thwenty third|twenty four|twenty fourth|twenty five|twenty fifth|twenty six|twenty sixth|twenty seven|twenty seventh|twenty eight|twenty eighth|twenty nine|twenty ningth|thirty|thirtieth|thirty one|thirty first){1}\\s*" +
+  let fullCalendarDateString1 =
+  "(?:January|February|March|April|May|June|July|August|September|October|November|December){1}\\s+" +
+  "(?:first|1st|second|2nd|third|3rd|fourth|4th|fifth|5th|sixth|6th|seventh|7th|eighth|8th|nineth|9th|tenth|10th|" +
+  "eleventh|11th|twelfth|12th|thirteenth|13th|fourteenth|14th|fifteenth|15th|sixteenth|16th|seventeenth|17th|eighteenth|18th|nineteenth|19th|twentieth|20th|" +
+  "twenty first|21st|twenty second|22nd|thwenty third|23rd|twenty fourth|24th|twenty fifth|25th|twenty sixth|26th|twenty seventh|27th|" +
+  "twenty eighth|28th|twenty ningth|29th|thirtieth|30th|thirty first|31st){1}\\s*" +
   // Now the year, first as spelled out number, e.g. one thousand nine hundred forty five
   "(?:" +
   "(?:" +
@@ -284,6 +312,9 @@ var _processMatchedNumericSlotValue = function(value){
   value = value.split(/\s+/);
   var convertedValues = [];
   for(var i = 0; i < value.length; i ++){
+    if(isNaN(value[i]) || typeof value[i] ==  "undefined" || value[i] == null || value[i].trim().length == 0){
+      continue;
+    }
     convertedValues.push(parseInt(value[i]));
   }
 
@@ -330,7 +361,8 @@ var _processMatchedNumericSlotValue = function(value){
         lastOrderOfMagnitude = currentOrderOfMagnitude;
         lastValue = value[i];
         // Need to verify that multiplying does not trigger writing earlier value out.
-        if(accummulatedStack.length == 2 && _getOrderOfMagnitude(accummulatedStack[0]) < _getOrderOfMagnitude(accummulatedStack[1]) + 3){
+        if(accummulatedStack.length == 2 &&
+           (Math.floor(_getOrderOfMagnitude(accummulatedStack[0])/3) < Math.floor(_getOrderOfMagnitude(accummulatedStack[1])/3))){
           scratchValues.push(accummulatedStack[0])
           accummulatedStack.splice(0, 1);
         }
@@ -344,11 +376,11 @@ var _processMatchedNumericSlotValue = function(value){
       if(currentOrderOfMagnitude < lastOrderOfMagnitude){
         // The new value is smaller than the last value.
         // There are 3 possible cases here. First is a special exception for
-        // when the previous value was a "teen" value and the current one is in
+        // when the previous value was a "teen" or ten value and the current one is in
         // single digits, it still should NOT be added, rather it triggers an
         // output of the prior values and starts a new stack.
         // Other than that, if the last OOM was >= 300 - push it, else add it.
-        if(lastValue >= 11 && lastValue <= 19){
+        if(lastValue >= 10 && lastValue <= 19){
           if(accummulatedStack.length == 2){
             accummulatedStack[0] += accummulatedStack[1];
             accummulatedStack.splice(1, 1);
@@ -660,43 +692,100 @@ var _processMatchedDateSlotValue = function(value){
     return "" + decade + "X";
   }
 
-  let fullCalendarDateString1 = "^(January|February|March|April|May|June|July|August|September|October|November|December){1}\\s+" +
-  "(one|first|two|second|three|third|four|fourth|five|fifth|six|sixth|seven|seventh|eight|eighth|nine|nineth|ten|tenth|" +
-  "eleven|eleventh|twelve|twelfth|thirteen|thirteenth|fourteen|fourteenth|fifteen|fifteenth|sixteen|sixteenth|seventeen|seventeenth|eighteen|eighteenth|nineteen|nineteenth|twenty|twentieth|" +
-  "twenty one|twenty first|twenty two|twenty second|twenty three|thwenty third|twenty four|twenty fourth|twenty five|twenty fifth|twenty six|twenty sixth|twenty seven|twenty seventh|twenty eight|twenty eighth|twenty nine|twenty ningth|thirty|thirtieth|thirty one|thirty first){1}\\s*" +
+  let fullCalendarDateString1 =
+  "^(January|February|March|April|May|June|July|August|September|October|November|December){1}\\s+" +
+  "(first|1st|second|2nd|third|3rd|fourth|4th|fifth|5th|sixth|6th|seventh|7th|eighth|8th|nineth|9th|tenth|10th|" +
+  "eleventh|11th|twelfth|12th|thirteenth|13th|fourteenth|14th|fifteenth|15th|sixteenth|16th|seventeenth|17th|eighteenth|18th|nineteenth|19th|twentieth|20th|" +
+  "twenty first|21st|twenty second|22nd|thwenty third|23rd|twenty fourth|24th|twenty fifth|25th|twenty sixth|26th|twenty seventh|27th|" +
+  "twenty eighth|28th|twenty ningth|29th|thirtieth|30th|thirty first|31st){0,1}\\s*" +
+/*
+  "(one|first|1st|two|second|2nd|three|third|3rd|four|fourth|4th|five|fifth|5th|six|sixth|6th|seven|seventh|7th|eight|eighth|8th|nine|nineth|9th|ten|tenth|10th|" +
+  "eleven|eleventh|11th|twelve|twelfth|12th|thirteen|thirteenth|13th|fourteen|fourteenth|14th|fifteen|fifteenth|15th|sixteen|sixteenth|16th|seventeen|seventeenth|17th|eighteen|eighteenth|18th|nineteen|nineteenth|19th|twenty|twentieth|20th|" +
+  "twenty one|twenty first|21st|twenty two|twenty second|22nd|twenty three|thwenty third|23rd|twenty four|twenty fourth|24th|twenty five|twenty fifth|25th|twenty six|twenty sixth|26th|twenty seven|twenty seventh|27th|" +
+  "twenty eight|twenty eighth|28th|twenty nine|twenty ningth|29th|thirty|thirtieth|30th|thirty one|thirty first|31st){1}\\s*" +
+*/
   // Now the year, first as spelled out number, e.g. one thousand nine hundred forty five
   "(" +
-  "(?:" +
-  "(?:one thousand|two thousand){0,1}\\s*(?:(?:one|two|three|four|five|six|seven|eight|nine)\\s*hundred){0,1}\\s*" + "(?:and\\s*){0,1}(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,1}\\s*"+
-  ")" +
+    "(?:" +
+      "(?:one thousand|two thousand){0,1}\\s*(?:(?:one|two|three|four|five|six|seven|eight|nine)\\s*hundred){0,1}\\s*" + "(?:and\\s*){0,1}(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,1}\\s*"+
+    ")" +
   // then as two two digit numbers, e.g. nineteen forty five
-  "|" +
-  "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,2}\\s*" +
+    "|" +
+    "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,2}\\s*" +
   ")\\.*$";
 
   regExp = new RegExp(fullCalendarDateString1, "ig");
   if(matchResult = regExp.exec(value)){
     let month = matchResult[1];
-    month = month.replace(/January/ig, 1);
-    month = month.replace(/February/ig, 2);
-    month = month.replace(/March/ig, 3);
-    month = month.replace(/April/ig, 4);
-    month = month.replace(/May/ig, 5);
-    month = month.replace(/June/ig, 6);
-    month = month.replace(/July/ig, 7);
-    month = month.replace(/August/ig, 8);
-    month = month.replace(/September/ig, 9);
-    month = month.replace(/October/ig, 10);
-    month = month.replace(/November/ig, 11);
-    month = month.replace(/December/ig, 12);
     let dayOfMonth = matchResult[2];
-    dayOfMonth = _processMatchedNumericSlotValue(dayOfMonth);
     let year = matchResult[3];
-    year = _processMatchedNumericSlotValue(year);
+    let monthNotSpecified = false;
 
-    return "" + _fourDigitFormatter(year) + "-" + _twoDigitFormatter(month) + "-" + _twoDigitFormatter(dayOfMonth);
+    if(typeof month == "undefined" || month == null || month.trim().length == 0){
+      monthNotSpecified = true;
+    }
+    else {
+      month = month.replace(/January/ig, 1);
+      month = month.replace(/February/ig, 2);
+      month = month.replace(/March/ig, 3);
+      month = month.replace(/April/ig, 4);
+      month = month.replace(/May/ig, 5);
+      month = month.replace(/June/ig, 6);
+      month = month.replace(/July/ig, 7);
+      month = month.replace(/August/ig, 8);
+      month = month.replace(/September/ig, 9);
+      month = month.replace(/October/ig, 10);
+      month = month.replace(/November/ig, 11);
+      month = month.replace(/December/ig, 12);
+    }
+    let dayOfMonthNotSpecified = false;
+    if(typeof dayOfMonth == "undefined" || dayOfMonth == null || dayOfMonth.trim().length == 0){
+      dayOfMonthNotSpecified = true;
+    }
+    else {
+      dayOfMonth = dayOfMonth.replace(/0th/,0);
+      dayOfMonth = dayOfMonth.replace(/1st/,1);
+      dayOfMonth = dayOfMonth.replace(/2nd/,2);
+      dayOfMonth = dayOfMonth.replace(/3rd/,3);
+      dayOfMonth = dayOfMonth.replace(/1th/,1);
+      dayOfMonth = dayOfMonth.replace(/2th/,2);
+      dayOfMonth = dayOfMonth.replace(/3th/,3);
+      dayOfMonth = dayOfMonth.replace(/4th/,4);
+      dayOfMonth = dayOfMonth.replace(/5th/,5);
+      dayOfMonth = dayOfMonth.replace(/6th/,6);
+      dayOfMonth = dayOfMonth.replace(/7th/,7);
+      dayOfMonth = dayOfMonth.replace(/8th/,8);
+      dayOfMonth = dayOfMonth.replace(/9th/,9);
+      dayOfMonth = _processMatchedNumericSlotValue(dayOfMonth);
+    }
+    let yearNotSpecified = false;
+    if(typeof year == "undefined" || year == null || year.length == 0){
+      yearNotSpecified = true;
+    }
+    else {
+      year = _processMatchedNumericSlotValue(year);
+    }
+    if(monthNotSpecified == false && dayOfMonthNotSpecified == false && yearNotSpecified == false){
+      return "" + _fourDigitFormatter(year) + "-" + _twoDigitFormatter(month) + "-" + _twoDigitFormatter(dayOfMonth);
+    }
+    if(monthNotSpecified == false && dayOfMonthNotSpecified == true && yearNotSpecified == false){
+      // Return just a year and month
+      return "" + _fourDigitFormatter(year) + "-" + _twoDigitFormatter(month);
+    }
+    if(monthNotSpecified == true && dayOfMonthNotSpecified == true && yearNotSpecified == false){
+      // Return just a year
+      return "" + _fourDigitFormatter(year);
+    }
+    if(monthNotSpecified == false && dayOfMonthNotSpecified == false && yearNotSpecified == true){
+      // Get the closest in the future year and return the full date
+      let today = new Date();
+      year = today.getFullYear();
+      if(today.getMonth() + 1 > month || (today.getMonth() + 1 == month && (today.getDate() > dayOfMonth))){
+        year++;
+      }
+      return "" + _fourDigitFormatter(year) + "-" + _twoDigitFormatter(month) + "-" + _twoDigitFormatter(dayOfMonth);
+    }
   }
-
   return value;
 }
 
@@ -763,20 +852,35 @@ var _matchText = function(stringToMatch){
     let dollarlessMatch = dollarMatchResult[0].substring(1);
     stringToMatch = stringToMatch.replace(/(\$\s*(?:[0-9]\s*)*(?:[0-9])+)/, dollarlessMatch + " dollars");
   }
-  // Now replace all digits with strings
-  regExp = /([0-9]+)/ig;
-  let digitMatchResult;
-  let digitReplacements = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
-  if(digitMatchResult = regExp.exec(stringToMatch)){
-    let replacementNumberString = "";
-    for(let i = 0; i < digitMatchResult[0].length; i ++){
-      replacementNumberString += digitReplacements[parseInt(digitMatchResult[0].substring(i, i+1))];
-      if(i < digitMatchResult[0].length - 1){
-        replacementNumberString += " ";
-      }
-    }
-    stringToMatch = stringToMatch.replace(/([0-9]+)/, replacementNumberString);
+  // Now replace all ordinal digits with cardinal numbers
+/*
+  regExp = /([0-9]*(?:1st|2nd|3rd|[0456789]th))/ig
+  let ordinalMatch;
+  if(ordinalMatch = regExp.exec(stringToMatch)){
+    console.log("ordinalMatch: " + JSON.stringify(ordinalMatch));
   }
+*/
+  // Now separate all leading zeros so that they don't get lost later in the parsing.
+  regExp = /(^0[0-9])/;
+  let leadingZeroMatchResult;
+  if(leadingZeroMatchResult = regExp.exec(stringToMatch)){
+    if(leadingZeroMatchResult != null){
+      let replacementString = "0 " + leadingZeroMatchResult[0].substring(1);
+      stringToMatch = stringToMatch.replace(/(^0[0-9])/, replacementString);
+      regExp.lastIndex = 0;
+    }
+  }
+
+  regExp = /([^0-9]0[0-9])/ig;
+  while(leadingZeroMatchResult = regExp.exec(stringToMatch)){
+    if(leadingZeroMatchResult == null){
+      continue;
+    }
+    let replacementString = leadingZeroMatchResult[0].substring(0, 1) + "0 " + leadingZeroMatchResult[0].substring(2);
+    stringToMatch = stringToMatch.replace(/([^0-9]0[0-9])/, replacementString);
+    regExp.lastIndex = 0;
+  }
+
 //  console.log("_matchText, 1");
   var recognizerSet;
   if (fs.existsSync("./recognizer.json")) {
