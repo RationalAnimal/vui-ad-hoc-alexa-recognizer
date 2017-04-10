@@ -901,6 +901,8 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
     throw {"error": recognizer.errorCodes.MISSING_RECOGNIZER, "message": "Unable to load recognizer.json"};
   }
 //  console.log("_matchText, 2, recognizerSet: " + JSON.stringify(recognizerSet));
+  let originalMatchConfig = [].concat(recognizerSet.matchConfig);
+
   if(typeof intentsSequence != "undefined" && intentsSequence != null){
     if(Array.isArray(intentsSequence) == false){
       intentsSequence = ["" + intentsSequence];
@@ -918,13 +920,18 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
     excludeIntents = [];
   }
   var sortedMatchConfig = [];
+  // Now create the list to be used for matching
+  // First, add all the intents that were part of the intentsSequence, in that
+  // order, but exclude any that are also in the excludeIntents.
   for(let currentIntentIndex = 0; currentIntentIndex < intentsSequence.length; currentIntentIndex++){
     let currentIntent = intentsSequence[currentIntentIndex];
-    for(let currentUtteranceIndex = 0; currentUtteranceIndex < recognizerSet.matchConfig.length; currentUtteranceIndex++){
-      let currentMatchConfig = recognizerSet.matchConfig[currentUtteranceIndex];
+    for(let currentUtteranceIndex = 0; currentUtteranceIndex < originalMatchConfig.length; currentUtteranceIndex++){
+      let currentMatchConfig = originalMatchConfig[currentUtteranceIndex];
       if(currentMatchConfig.intent == currentIntent){
-        // Remove this from the recognizerSet, push it onto sortedMatchConfig, decrement counter
-        recognizerSet.matchConfig.splice(currentUtteranceIndex, 1);
+        // Remove this from the recognizerSet, push it onto sortedMatchConfig
+        // (if not being excluded), decrement counter to stay on the same index
+        // since we just removed one item.
+        originalMatchConfig.splice(currentUtteranceIndex, 1);
         if(excludeIntents.indexOf(currentIntent) < 0){
           sortedMatchConfig.push(currentMatchConfig);
         }
@@ -932,22 +939,20 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
       }
     }
   }
-  // Now move the remaining match configs to the sorted array.
-  for(let currentUtteranceIndex = 0; currentUtteranceIndex < recognizerSet.matchConfig.length; currentUtteranceIndex++){
-    let currentMatchConfig = recognizerSet.matchConfig[currentUtteranceIndex];
-    recognizerSet.matchConfig.splice(currentUtteranceIndex, 1);
+  // Now move the remaining match configs to the sorted array but only if they
+  // are not part of the excluded intents.
+  for(let currentUtteranceIndex = 0; currentUtteranceIndex < originalMatchConfig.length; currentUtteranceIndex++){
+    let currentMatchConfig = originalMatchConfig[currentUtteranceIndex];
+    originalMatchConfig.splice(currentUtteranceIndex, 1);
     if(excludeIntents.indexOf(currentMatchConfig.intent) < 0){
       sortedMatchConfig.push(currentMatchConfig);
     }
     currentUtteranceIndex--;
   }
-  // and finally set the sortedMatchConfig to be THE matchConfig
-  let originalMatchConfig = recognizerSet.matchConfig;
-  recognizerSet.matchConfig = sortedMatchConfig;
 
-  for(var i = 0; i < recognizerSet.matchConfig.length; i++){
+  for(var i = 0; i < sortedMatchConfig.length; i++){
 //    console.log("_matchText, 3, i: " + i);
-    var scratch = recognizerSet.matchConfig[i];
+    var scratch = sortedMatchConfig[i];
 //    console.log("_matchText, 4, scratch: " + JSON.stringify(scratch));
 //    console.log("_matchText, 4.1, scratch.regExString: " + JSON.stringify(scratch.regExString));
     var scratchRegExp = new RegExp(scratch.regExString, "ig");
@@ -967,14 +972,11 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
 //          console.log("processedMatchResult: " + processedMatchResult);
           returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
         }
-        // Restore original matchConfig;
-        recognizerSet.matchConfig = originalMatchConfig;
         return returnValue;
       }
     }
   }
-  // Restore original matchConfig;
-  recognizerSet.matchConfig = originalMatchConfig;
+
   // Now try the built in intents
   for(var i = 0; i < recognizerSet.builtInIntents.length; i ++){
     let scratch = recognizerSet.builtInIntents[i];

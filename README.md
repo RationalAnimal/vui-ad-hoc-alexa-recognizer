@@ -318,21 +318,26 @@ will be retrofitted later to fit into the vui-xxx framework.
 ### Matched custom slot values
 
 There are differences between what kind of values different services may send.
-Alexa appears to respect capitalization of the custom slot values (or it send
+Alexa appears to respect capitalization of the custom slot values (or it sends
 lower case versions) while Cortana capitalizes the first letter under some
-circumstances and also adds a period at the end of utterances.  To keep Cortana
+circumstances, but not always, and also adds a period at the end of utterances
+or even other punctuation signs (I've seen entering a zip code changed from
+"12345" to "Is 12345 ?"). To keep Cortana
 behaving consistently, the returned matches use the capitalization of the custom
 slot values supplied in the config file rather than what Cortana will send.
 Thus, if your custom slot value (in the config file) is "petunia" then "petunia"
-will be returned even if Cortana will send you "Petunia".
+will be returned even if Cortana will send you "Petunia".  Note that the builtin
+slot types are not yet configured to do the same (so for and AMAZON.Country you
+could get "france" or "France").  This will be fixed in a later release, but for
+now please use case insensitive conversions.
 
 ### Dollar values
 
 If a service like Cortana passes a dollar value, e.g. $1000, it will be mapped
-to "1000 dollars" as would be expected by an Alexa skills. (Note that if you
-  want to test it with matcher.js you have to either escape the $ character or
-  enclose the whole string in '' rather than "" to avoid command line handling
-  of $)
+to "1000 dollars" as would be expected by an Alexa skill. (Note that if you
+want to test it with matcher.js you have to either escape the $ character or
+enclose the whole string in '' rather than "" to avoid command line handling
+of $)
 
 ````shell
 > node matcher.js 'the first price is $1000 and the second price is $525000'
@@ -382,7 +387,8 @@ which will produce:
 ### Intent parsing order
 
 You can pass to the matching call the name(s) of the intents that you want to
-try to match first. (Currently it only supports custom intents).  Then this call
+try to match first. (Currently it only supports custom intents, but that's not
+a problem since built in intents are very fast).  Then this call
 will likely execute much faster.  Since most of the time you know what the next
 likely answers (i.e. utterances) are going to be, you can provide them to the
 matching call.
@@ -396,7 +402,9 @@ var result = _matchText("have you been to France", ["CountryIntent"]);
 In addition to the intent parsing order you can also pass a list of intents to
 be excluded from the matching process.  This is useful if you have intents that
 have very large sets of custom values and you are pretty sure you don't want to
-parse then in a particular place in your skill.
+parse then in a particular place in your skill (i.e. if you are in a flow that
+does not include some intents then you should be able to exclude them from
+parsing).
 
 ````javascript
 var result = _matchText("have you been to France", ["CountryIntent"], ["FirstNameIntent"]);
