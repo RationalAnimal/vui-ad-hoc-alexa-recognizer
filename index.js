@@ -459,13 +459,14 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, recognizerS
     }
     if(typeof scratchCustomSlotType.regExps == "undefined"){
       scratchCustomSlotType.regExps = [];
-      for(var j = 0; j < scratchCustomSlotType.regExpStrings.length; j++){
+      for(let j = 0; j < scratchCustomSlotType.regExpStrings.length; j++){
         scratchCustomSlotType.regExps.push(new RegExp(scratchCustomSlotType.regExpStrings[j], "ig"));
       }
     }
     // Now attempt to match.  If successful - return the corresponding value.
     let matchResult;
-    for(var j = 0; j < scratchCustomSlotType.regExps.length; j++){
+    for(let j = 0; j < scratchCustomSlotType.regExps.length; j++){
+      scratchCustomSlotType.regExps[j].lastIndex = 0;
       if(matchResult = scratchCustomSlotType.regExps[j].exec(value)){
         return scratchCustomSlotType.values[j];
       }
@@ -1012,7 +1013,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
       let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
       scratchCustomSlotType.regExpStrings = [];
       for(var j = 0; j < scratchCustomSlotType.values.length; j++){
-        scratchCustomSlotType.regExpStrings.push("(^\\s*" +  scratchCustomSlotType.values[j] + "\\s*\.{0,1}$){1}");
+        scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j] + ")\\s*$){1}");
       }
     }
     // Now generate soundex equivalents so that we can match on soundex if the
@@ -1024,8 +1025,8 @@ var _generateRunTimeJson = function(config, intents, utterances){
       for(var j = 0; j < scratchCustomSlotType.values.length; j++){
         let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j], " ");
         scratchCustomSlotType.soundExValues.push(soundexValue);
-        let soundexRexExp = soundex.simple.soundEx(scratchCustomSlotType.values[j], "\\s+");
-        scratchCustomSlotType.soundExRegExpStrings.push("(\\s*" +  soundexRexExp + "\\s*\.{0,1}){1}");
+        let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j], "\\s+");
+        scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
       }
     }
 

@@ -62,8 +62,6 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
-    //'here is twenty five thousand three hundred twelve and also 6035551212'
-    /*
     it("verify simple utterance with a custom slot matches and retains original capitalization", function() {
       let result = recognizer.Recognizer.matchText("One of the minions is bob");
       expect(result).to.eql(
@@ -74,7 +72,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
             "value": "Bob"
           }
         }});
-    });*/
+    });
 
   });
 });
