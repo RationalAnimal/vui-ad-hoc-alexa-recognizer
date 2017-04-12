@@ -244,6 +244,41 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
 
   });
 
+  describe("Wild card processing", function() {
+    it("verify simple utterance with an AMAZON.US_FIRST_NAME slot with INCLUDE_WILDCARD_MATCH matches", function() {
+      let result = recognizer.Recognizer.matchText("My first name is blah blah");
+      expect(result).to.eql(
+        {"name": "FirstNameIntent",
+         "slots": {
+          "FirstNameSlot": {
+            "name": "FirstNameSlot",
+            "value": "blah blah"
+          }
+        }});
+    });
+    it("verify simple utterance with a custom slot with INCLUDE_WILDCARD_MATCH matches", function() {
+      let result = recognizer.Recognizer.matchText("One of the minions is banana");
+      expect(result).to.eql(
+        {"name": "MinionIntent",
+         "slots": {
+          "MinionSlot": {
+            "name": "MinionSlot",
+            "value": "banana"
+          }
+        }});
+    });
+    it("verify simple utterance with a custom slot with INCLUDE_WILDCARD_MATCH matches and retains original capitalization if the name is found in the list", function() {
+      let result = recognizer.Recognizer.matchText("One of the minions is bob");
+      expect(result).to.eql(
+        {"name": "MinionIntent",
+         "slots": {
+          "MinionSlot": {
+            "name": "MinionSlot",
+            "value": "Bob"
+          }
+        }});
+    });
+  });
 
   describe("Special processing", function() {
     it("verify simple utterance with a custom slot matches and retains original capitalization", function() {

@@ -354,7 +354,10 @@ It would typically not be usufull (at this time with only these two sets of flag
 to specify INCLUDE... for both or EXCLUDE... for both.  If you are going to include
 wildcard then there is no reason to include values as well - it will only slow
 down the parsing.  If you exclude both then it will be as if you removed that slot
-from the utterance completely.
+from the utterance completely.  For this reason, parsing ignores these combinations.
+If you specify INCLUDE_WILDCARD_MATCH then only the wild card will be used.
+If you specify both EXCLUDE_VALUES_MATCH and EXCLUDE_WILDCARD_MATCH then only
+EXCLUDE_WILDCARD_MATCH is used.
 
 Also note that you have to be very careful when using wildcards.  For example,
 imagine this utterance instead of the above example:
@@ -370,15 +373,12 @@ than intent level.
 
 Also, you should probably NOT specify wildcard matches on slots of many of the
 built in intents, such as date or number - this will likely not end well and
-it doesn't make sense (you've
-been warned). In the future there will be other flags added, possibly specific to
+it doesn't make sense. For this reason, parsing ignores these flags at this
+time on these slot types.
+In the future there will be other flags added, possibly specific to
 particular built in slot types (e.g. I may add a flag to return only the female
 first names from the AMAZON.US_FIRST_NAME type slot or numeric values within
 a certain range from the AMAZON.NUMBER type slot).
-
-IMPORTANT NOTE: The flags are currently being parsed, but NOT YET used (they are
-ignored as of the current version 0.2.7).  The real parsing functionality will
-be added in a day or two and this README file will be updated.
 
 ### Dollar values
 

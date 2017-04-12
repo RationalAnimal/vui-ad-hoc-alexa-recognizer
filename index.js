@@ -163,27 +163,44 @@ recognizer.builtInValues.Country.replacementRegExpString = _makeReplacementRegEx
 recognizer.builtInValues.Country.replacementRegExp = new RegExp(recognizer.builtInValues.Country.replacementRegExpString, "ig");
 
 
-var _getReplacementRegExpStringForSlotType = function(slotType, config){
+var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlags){
   if(slotType == "AMAZON.NUMBER"){
+    // Ignore flags for now
     return recognizer.builtInValues.NUMBER.replacementRegExpString;
   }
   else if(slotType == "AMAZON.FOUR_DIGIT_NUMBER"){
+    // Ignore flags for now
     return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
   }
   else if(slotType == "AMAZON.US_STATE"){
+    // Ignore flags for now
     return recognizer.builtInValues.US_STATE.replacementRegExpString;
   }
   else if(slotType == "AMAZON.US_FIRST_NAME"){
-    return recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString;
+    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+      // number are used in cases of names like John the 1st
+      return "((?:\\w|\\s|[0-9])+)";
+    }
+    else {
+      return recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString;
+    }
   }
   else if(slotType == "AMAZON.DATE"){
+    // Ignore flags for now
     return recognizer.builtInValues.DATE.replacementRegExpString;
   }
   else if(slotType == "AMAZON.DayOfWeek"){
+    // Ignore flags for now
     return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
   }
   else if(slotType == "AMAZON.Country"){
-    return recognizer.builtInValues.Country.replacementRegExpString;
+    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+      // number are used in cases of names like John the 1st
+      return "((?:\\w|\\s|[0-9])+)";
+    }
+    else {
+      return recognizer.builtInValues.Country.replacementRegExpString;
+    }
   }
 //  else if(slotType.startsWith("AMAZON.")){
 //    // TODO add handling of other built in Amazon slot types, for now just return the value
@@ -194,10 +211,16 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config){
     for(var i = 0; i < config.customSlotTypes.length; i++){
       var customSlotType = config.customSlotTypes[i];
       if(customSlotType.name == slotType){
-        if(typeof customSlotType.replacementRegExp == "undefined"){
-          customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values);
+        if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+          // number are used in cases of names like John the 1st
+          return "((?:\\w|\\s|[0-9])+)";
         }
-        return customSlotType.replacementRegExp;
+        else {
+          if(typeof customSlotType.replacementRegExp == "undefined"){
+            customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values);
+          }
+          return customSlotType.replacementRegExp;
+        }
       }
     }
   }
@@ -452,11 +475,14 @@ var _formatDate = function(date){
   return "" + date.getFullYear() + "-" + _twoDigitFormatter(date.getMonth() + 1) + "-" + _twoDigitFormatter(date.getDate());
 }
 var _processMatchedCustomSlotValueByType = function(value, slotType, recognizerSet){
+//  console.log("_processMatchedCustomSlotValueByType, 1, value: " + value + ", slotType: " + slotType);
   for(var i = 0; i < recognizerSet.customSlotTypes.length; i++){
     let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
     if(scratchCustomSlotType.name != slotType){
+//      console.log("_processMatchedCustomSlotValueByType, 2");
       continue;
     }
+//    console.log("_processMatchedCustomSlotValueByType, 3");
     if(typeof scratchCustomSlotType.regExps == "undefined"){
       scratchCustomSlotType.regExps = [];
       for(let j = 0; j < scratchCustomSlotType.regExpStrings.length; j++){
@@ -831,7 +857,6 @@ var _getWeekOfYear = function(dateToProcess){
 }
 
 var _processMatchedSlotValueByType = function(value, slotType, recognizerSet){
-//  console.log("_processMatchedSlotValueByType, value: " + JSON.stringify(value) + ", slotType: " + slotType);
   if(slotType == "AMAZON.NUMBER" || slotType == "AMAZON.FOUR_DIGIT_NUMBER"){
     return _processMatchedNumericSlotValue(value);
   }
@@ -1102,7 +1127,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
     if(slots.length > 0){
       // Need to create a different regExString
       for(var j = 0; j < slotMatches.length; j++){
-        var replacementString = _getReplacementRegExpStringForSlotType(_getSlotType(intents, currentIntent, slots[j]), config)
+        var replacementString = _getReplacementRegExpStringForSlotType(_getSlotType(intents, currentIntent, slots[j]), config, slotFlags[j])
         regExString = regExString.replace(slotMatches[j], replacementString);
       }
     }

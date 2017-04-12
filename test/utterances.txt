@@ -3,7 +3,7 @@ TestIntent test me
 TestIntent test please
 TestIntent	test pretty please
 TestIntent       test pleeeeeeease
-MinionIntent One of the minions is {MinionSlot}
+MinionIntent One of the minions is {MinionSlot:INCLUDE_WILDCARD_MATCH}
 MinionIntent {MinionSlot}
 FirstNameIntent My first name is {FirstNameSlot: INCLUDE_WILDCARD_MATCH, EXCLUDE_VALUES_MATCH }
 StateIntent {StateSlot}
