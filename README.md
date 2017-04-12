@@ -331,6 +331,55 @@ slot types are not yet configured to do the same (so for and AMAZON.Country you
 could get "france" or "France").  This will be fixed in a later release, but for
 now please use case insensitive conversions.
 
+### Slot flags
+
+In some cases you would like to match on a particular slot differently from the
+standard algorithm.  For example, if you are trying to get the user's first name
+you may way to match on ANYTHING the user says so that unusual names are matched.
+In this case you can modify your utterances file to include special flags, e.g.:
+
+````
+FirstNameIntent My first name is {FirstNameSlot: INCLUDE_WILDCARD_MATCH, EXCLUDE_VALUES_MATCH }
+````
+
+These flags will be used in parsing.  There are only two sets of flags: to
+include/exclude custom slot values in the matching pattern and to include/exclude
+a wildcard in the matching pattern.  If you don't specify either of these, then
+INCLUDE_VALUES_MATCH and EXCLUDE_WILDCARD_MATCH will be used as the default.  Also,
+if you include by mistake both INCLUDE... and EXCLUDE... for the same flag, the
+default value is (silently) going to be used.  If you are concerned you can look
+at the generated recognizer.json to see how the flags were parsed.
+
+It would typically not be usufull (at this time with only these two sets of flags)
+to specify INCLUDE... for both or EXCLUDE... for both.  If you are going to include
+wildcard then there is no reason to include values as well - it will only slow
+down the parsing.  If you exclude both then it will be as if you removed that slot
+from the utterance completely.
+
+Also note that you have to be very careful when using wildcards.  For example,
+imagine this utterance instead of the above example:
+
+````
+FirstNameIntent {FirstNameSlot:INCLUDE_WILDCARD_MATCH,EXCLUDE_VALUES_MATCH}
+````
+
+This will match on ANYTHING the user says.  So, DON'T use wildcards in "naked"
+utterances (ones that use nothing but slots) unless you are absolutely SURE that
+that is what you want. This is why these flags exist at the utterance level rather
+than intent level.
+
+Also, you should probably NOT specify wildcard matches on slots of many of the
+built in intents, such as date or number - this will likely not end well and
+it doesn't make sense (you've
+been warned). In the future there will be other flags added, possibly specific to
+particular built in slot types (e.g. I may add a flag to return only the female
+first names from the AMAZON.US_FIRST_NAME type slot or numeric values within
+a certain range from the AMAZON.NUMBER type slot).
+
+IMPORTANT NOTE: The flags are currently being parsed, but NOT YET used (they are
+ignored as of the current version 0.2.7).  The real parsing functionality will
+be added in a day or two and this README file will be updated.
+
 ### Dollar values
 
 If a service like Cortana passes a dollar value, e.g. $1000, it will be mapped
@@ -415,6 +464,17 @@ var result = _matchText("have you been to France", ["CountryIntent"], ["FirstNam
 SoundEx support is in the process of being added, however it's not yet enabled.
 SoundEx will allow matching expressions that are not exact matches, but
 approximate matches.
+
+## Examples
+
+Right now I am focusing on implementing new features and fixing bugs rather than
+creating documentation and tutorials.  Using it is relatively easy, but if you need
+to find more information than is listed here and don't want to dig through the
+code then you may want to take a look at the test directory.  If you've installed
+the npm module you will NOT have it, but you can go to the GitHub repo and
+clone it to get the full distribution.  Then look at the unit tests to see what
+you can parse and what kinds of results you will be getting. (The unit tests
+  are not yet complete, but it's still a very simple and concise "reference").
 
 ## Alexa features supported
 

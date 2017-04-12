@@ -998,9 +998,9 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
 };
 
 var _generateRunTimeJson = function(config, intents, utterances){
-  //  console.log("_generateRunTimeJson, config: ", JSON.stringify(config));
-  //  console.log("_generateRunTimeJson, intents: ", JSON.stringify(intents));
-  //  console.log("_generateRunTimeJson, utterances: ", JSON.stringify(utterances));
+//  console.log("_generateRunTimeJson, config: ", JSON.stringify(config));
+//  console.log("_generateRunTimeJson, intents: ", JSON.stringify(intents));
+//  console.log("_generateRunTimeJson, utterances: ", JSON.stringify(utterances));
   var recognizerSet = {};
   if(typeof config != "undefined" && typeof config.customSlotTypes != "undefined"){
     recognizerSet.customSlotTypes = config.customSlotTypes;
@@ -1029,9 +1029,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
         scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
       }
     }
-
   }
   recognizerSet.matchConfig = [];
+  let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH"];
   // First process all the utterances
   for(var i = 0; i < utterances.length; i ++){
     if(utterances[i].trim() == ""){
@@ -1046,19 +1046,57 @@ var _generateRunTimeJson = function(config, intents, utterances){
     var scratchRegExp = new RegExp("^" + currentIntent + "\\s+");
     var currentUtterance = utterances[i].split(scratchRegExp)[1];
     var slots = [];
-    var slotRegExp = /\{(\w+)\}/ig;
+    var slotRegExp = /\{(\w+)(?:[:]{1}((?:\s*[A-Z_]\s*,{0,1}\s*)+)+)*\}/ig;
     let slotMatchExecResult;
     var slots = [];
     var slotMatches = [];
+    var slotFlags = [];
     while(slotMatchExecResult = slotRegExp.exec(currentUtterance)){
       slotMatches.push(slotMatchExecResult[0]);
       slots.push(slotMatchExecResult[1]);
+      let slotFlagsString = slotMatchExecResult[2];
+      if(typeof slotFlagsString == "undefined" || slotFlagsString == null){
+        slotFlags.push(["INCLUDE_VALUES_MATCH", "EXCLUDE_WILDCARD_MATCH"]);
+      }
+      else {
+        // parse the flags, create an array, trim it, verify the values, verify
+        // the defaults are used if not specified and then push the result onto
+        // slotFlags;
+        let scratchFlags = slotFlagsString.split(/\s*,\s*/);
+        let cleanedUpFlags = [];
+        for(let j = 0; j < scratchFlags.length; j++){
+          let scratchFlag = scratchFlags[j];
+          if(typeof scratchFlag == "string" && scratchFlag != null){
+            scratchFlag = scratchFlag.replace(/\s*/ig, '');
+            if(allowedSlotFlags.indexOf(scratchFlag) >= 0){
+              cleanedUpFlags.push(scratchFlag);
+            }
+          }
+        }
+        // Now add default flags if there aren't corresponding flags in there
+        // already
+        if(cleanedUpFlags.indexOf("INCLUDE_VALUES_MATCH") < 0 && cleanedUpFlags.indexOf("EXCLUDE_VALUES_MATCH") < 0){
+          cleanedUpFlags.push("INCLUDE_VALUES_MATCH");
+        }
+        else if(cleanedUpFlags.indexOf("INCLUDE_VALUES_MATCH") >= 0 && cleanedUpFlags.indexOf("EXCLUDE_VALUES_MATCH") >= 0){
+          // Remove EXCLUDE_VALUES_MATCH from cleanedUpFlags
+          _removeAllInstancesFromArray(cleanedUpFlags, "EXCLUDE_VALUES_MATCH");
+        }
+        if(cleanedUpFlags.indexOf("INCLUDE_WILDCARD_MATCH") < 0 && cleanedUpFlags.indexOf("EXCLUDE_WILDCARD_MATCH") < 0){
+          cleanedUpFlags.push("EXCLUDE_WILDCARD_MATCH");
+        }
+        else if(cleanedUpFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0 && cleanedUpFlags.indexOf("EXCLUDE_WILDCARD_MATCH") >= 0){
+          // Remove INCLUDE_WILDCARD_MATCH from cleanedUpFlags
+          _removeAllInstancesFromArray(cleanedUpFlags, "INCLUDE_WILDCARD_MATCH");
+        }
+        slotFlags.push(cleanedUpFlags);
+      }
     }
     currentValue.slots = [];
 
     for(var j = 0; j < slots.length; j ++){
       var slotType = _getSlotType(intents, currentIntent, slots[j]);
-      currentValue.slots.push({"name": slots[j], "type": slotType});
+      currentValue.slots.push({"name": slots[j], "type": slotType, "flags": slotFlags[j]});
     }
     var regExString = currentUtterance;
     if(slots.length > 0){
@@ -1260,4 +1298,11 @@ var _getSlotTypeFromRecognizer = function(recognizer, intent, slot){
   }
 }
 
+var _removeAllInstancesFromArray = function(arrayToRemoveFrom, value){
+  for(let i = arrayToRemoveFrom.length - 1; i >= 0; i--){
+    if(arrayToRemoveFrom[i] == value){
+      arrayToRemoveFrom.splice(i, 1);
+    }
+  }
+}
 module.exports = recognizer;
