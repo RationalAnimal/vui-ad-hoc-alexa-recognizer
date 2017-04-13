@@ -1073,7 +1073,6 @@ var _generateRunTimeJson = function(config, intents, utterances){
     var slots = [];
     var slotRegExp = /\{(\w+)(?:[:]{1}((?:\s*[A-Z_]\s*,{0,1}\s*)+)+)*\}/ig;
     let slotMatchExecResult;
-    var slots = [];
     var slotMatches = [];
     var slotFlags = [];
     while(slotMatchExecResult = slotRegExp.exec(currentUtterance)){

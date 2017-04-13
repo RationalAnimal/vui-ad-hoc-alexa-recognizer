@@ -380,6 +380,19 @@ particular built in slot types (e.g. I may add a flag to return only the female
 first names from the AMAZON.US_FIRST_NAME type slot or numeric values within
 a certain range from the AMAZON.NUMBER type slot).
 
+There is also a utility available to "clean up" utterance files for use with
+Alexa.  This may be needed if you want to use a single file as your utterances
+file for both Alexa and porting projects.  Since the slot flags don't exist in
+Alexa, they need to be stripped from the utterance file.  For that use
+alexifyutterances.js utility:
+
+```shell
+> node alexifyutterances.js -i test/utterances.txt -o testutterances.txt
+Result was saved to testutterances.txt
+```
+
+You can now import testutterances.txt into the Alexa developer console.
+
 ### Dollar values
 
 If a service like Cortana passes a dollar value, e.g. $1000, it will be mapped
