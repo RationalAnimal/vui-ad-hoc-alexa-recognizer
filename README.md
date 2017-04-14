@@ -342,16 +342,20 @@ In this case you can modify your utterances file to include special flags, e.g.:
 FirstNameIntent My first name is {FirstNameSlot: INCLUDE_WILDCARD_MATCH, EXCLUDE_VALUES_MATCH }
 ````
 
-These flags will be used in parsing.  There are only two sets of flags: to
-include/exclude custom slot values in the matching pattern and to include/exclude
-a wildcard in the matching pattern.  If you don't specify either of these, then
+These flags will be used in parsing.  There are only three sets of flags: to
+include/exclude custom slot values in the matching pattern, to include/exclude
+a wildcard in the matching pattern, to use SoundEx for matching.
+If you don't specify any of these, then
 INCLUDE_VALUES_MATCH and EXCLUDE_WILDCARD_MATCH will be used as the default.  Also,
 if you include by mistake both INCLUDE... and EXCLUDE... for the same flag, the
 default value is (silently) going to be used.  If you are concerned you can look
 at the generated recognizer.json to see how the flags were parsed.
+Also note that SOUNDEX_MATCH will automatically imply EXCLUDE... flags; but
+SOUNDEX_MATCH is only available for the custom slot types at this time.
 
-It would typically not be usufull (at this time with only these two sets of flags)
-to specify INCLUDE... for both or EXCLUDE... for both.  If you are going to include
+It would typically not be useful (at this time with only these sets of flags)
+to specify INCLUDE... for both or EXCLUDE... for both wildcard and value matches
+unless you are specify SOUNDEX_MATCH.  If you are going to include
 wildcard then there is no reason to include values as well - it will only slow
 down the parsing.  If you exclude both then it will be as if you removed that slot
 from the utterance completely.  For this reason, parsing ignores these combinations.
@@ -374,7 +378,9 @@ than intent level.
 Also, you should probably NOT specify wildcard matches on slots of many of the
 built in intents, such as date or number - this will likely not end well and
 it doesn't make sense. For this reason, parsing ignores these flags at this
-time on these slot types.
+time on these slot types.  Parsing will also ignore SOUNDEX_MATCH on non-custom
+slot types (though this may be added in the future for some built in types).
+
 In the future there will be other flags added, possibly specific to
 particular built in slot types (e.g. I may add a flag to return only the female
 first names from the AMAZON.US_FIRST_NAME type slot or numeric values within
@@ -474,9 +480,26 @@ var result = _matchText("have you been to France", ["CountryIntent"], ["FirstNam
 
 ## SoundEx support
 
-SoundEx support is in the process of being added, however it's not yet enabled.
-SoundEx will allow matching expressions that are not exact matches, but
+SoundEx support has been added at the utterance level for custom slot types.
+You can now specify a SOUNDEX_MATCH flag for a custom slot type and SoundEx match
+will be used.  This allows matching of expressions that are not exact matches, but
 approximate matches.
+
+```shell
+> node matcher.js "another minion is steward"
+```
+will return
+```json
+{
+  "name": "MinionIntent",
+  "slots": {
+    "MinionSlot": {
+      "name": "MinionSlot",
+      "value": "Stewart"
+    }
+  }
+}
+```
 
 ## Examples
 

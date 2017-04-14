@@ -280,6 +280,36 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
   });
 
+  describe("SoundEx processing", function() {
+    it("verify simple utterance with an exact custom slot still matches", function() {
+      let result = recognizer.Recognizer.matchText("Another minion is Bob");
+      expect(result).to.eql(
+        {"name": "MinionIntent",
+         "slots": {
+          "MinionSlot": {
+            "name": "MinionSlot",
+            "value": "Bob"
+          }
+        }});
+    });
+    it("verify simple utterance with an inexact custom slot also matches", function() {
+      let result = recognizer.Recognizer.matchText("Another minion is bop");
+      expect(result).to.eql(
+        {"name": "MinionIntent",
+         "slots": {
+          "MinionSlot": {
+            "name": "MinionSlot",
+            "value": "Bob"
+          }
+        }});
+    });
+    it("verify simple utterance with non-matching custom slot soundex value doesn't match", function() {
+      let result = recognizer.Recognizer.matchText("Another minion is blah");
+      expect(typeof result).to.equal("undefined");
+    });
+  });
+
+
   describe("Special processing", function() {
     it("verify simple utterance with a custom slot matches and retains original capitalization", function() {
       let result = recognizer.Recognizer.matchText("One of the minions is bob");

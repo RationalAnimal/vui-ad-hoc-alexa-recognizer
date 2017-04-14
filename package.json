@@ -1,6 +1,6 @@
 {
   "name": "vui-ad-hoc-alexa-recognizer",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "description": "npm module that provides 'recognizer' functionality for parsing user spoken text and maps it to Alexa intents. Can be used by itself or included into other vui-xxx projects.",
   "main": "index.js",
   "scripts": {
@@ -23,11 +23,19 @@
     "vui",
     "alexa",
     "cortana",
+    "port alexa to cortana",
     "alexa to cortana porting",
     "converting alexa to cortana",
+    "convert alexa to cortana",
     "google assistant",
+    "port alexa to google assistant",
     "alexa to google assistant porting",
     "converting alexa to google assistant",
+    "convert alexa to google assistant",
+    "port alexa to google home",
+    "alexa to google home porting",
+    "converting alexa to google home",
+    "convert alexa to google home",
     "recognizer",
     "mapping speech to intents"
   ]

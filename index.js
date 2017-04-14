@@ -177,6 +177,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     return recognizer.builtInValues.US_STATE.replacementRegExpString;
   }
   else if(slotType == "AMAZON.US_FIRST_NAME"){
+    // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
       return "((?:\\w|\\s|[0-9])+)";
@@ -194,6 +195,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
   }
   else if(slotType == "AMAZON.Country"){
+    // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
       return "((?:\\w|\\s|[0-9])+)";
@@ -211,8 +213,15 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     for(var i = 0; i < config.customSlotTypes.length; i++){
       var customSlotType = config.customSlotTypes[i];
       if(customSlotType.name == slotType){
-        if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
-          // number are used in cases of names like John the 1st
+        if(slotFlags.indexOf("SOUNDEX_MATCH") >= 0){
+          if(typeof customSlotType.replacementSoundExpRegExp == "undefined"){
+            customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
+          }
+          // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
+          return "((?:\\w|\\s|[0-9])+)";
+        }
+        else if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+          // numbers are used in cases of names like John the 1st
           return "((?:\\w|\\s|[0-9])+)";
         }
         else {
@@ -221,23 +230,6 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
           }
           return customSlotType.replacementRegExp;
         }
-      }
-    }
-  }
-  // Default fallback
-  return "((?:\\w|\\s|[0-9])+)";
-}
-
-var _getReplacementSoundExRegExpStringForCustomSlotType = function(slotType, config){
-  // Here we are dealing with custom slots.
-  if(typeof config != "undefined" && Array.isArray(config.customSlotTypes)){
-    for(var i = 0; i < config.customSlotTypes.length; i++){
-      var customSlotType = config.customSlotTypes[i];
-      if(customSlotType.name == slotType){
-        if(typeof customSlotType.replacementSoundExpRegExp == "undefined"){
-          customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
-        }
-        return customSlotType.replacementSoundExpRegExp;
       }
     }
   }
@@ -474,7 +466,7 @@ var _fourDigitFormatter = function(number){
 var _formatDate = function(date){
   return "" + date.getFullYear() + "-" + _twoDigitFormatter(date.getMonth() + 1) + "-" + _twoDigitFormatter(date.getDate());
 }
-var _processMatchedCustomSlotValueByType = function(value, slotType, recognizerSet){
+var _processMatchedCustomSlotValueByType = function(value, slotType, flags, recognizerSet){
 //  console.log("_processMatchedCustomSlotValueByType, 1, value: " + value + ", slotType: " + slotType);
   for(var i = 0; i < recognizerSet.customSlotTypes.length; i++){
     let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
@@ -483,18 +475,42 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, recognizerS
       continue;
     }
 //    console.log("_processMatchedCustomSlotValueByType, 3");
-    if(typeof scratchCustomSlotType.regExps == "undefined"){
-      scratchCustomSlotType.regExps = [];
-      for(let j = 0; j < scratchCustomSlotType.regExpStrings.length; j++){
-        scratchCustomSlotType.regExps.push(new RegExp(scratchCustomSlotType.regExpStrings[j], "ig"));
+    if(flags.indexOf("SOUNDEX_MATCH") >= 0){
+      // do regular expression matching
+      if(typeof scratchCustomSlotType.soundExRegExps == "undefined"){
+        scratchCustomSlotType.soundExRegExps = [];
+        for(let j = 0; j < scratchCustomSlotType.soundExRegExpStrings.length; j++){
+          scratchCustomSlotType.soundExRegExps.push(new RegExp(scratchCustomSlotType.soundExRegExpStrings[j], "ig"));
+        }
       }
+      // Now attempt to match.  If successful - return the corresponding value.
+      let matchResult;
+      let soundexValue = soundex.simple.soundEx(value, " ");
+
+      for(let j = 0; j < scratchCustomSlotType.soundExRegExpStrings.length; j++){
+        scratchCustomSlotType.soundExRegExps[j].lastIndex = 0;
+        if(matchResult = scratchCustomSlotType.soundExRegExps[j].exec(soundexValue)){
+          return scratchCustomSlotType.values[j];
+        }
+      }
+      // If we are here, that means our wildcard pattern didn't match any of the
+      // soundex values.  Return undefined to indicate this.
+      return;
     }
-    // Now attempt to match.  If successful - return the corresponding value.
-    let matchResult;
-    for(let j = 0; j < scratchCustomSlotType.regExps.length; j++){
-      scratchCustomSlotType.regExps[j].lastIndex = 0;
-      if(matchResult = scratchCustomSlotType.regExps[j].exec(value)){
-        return scratchCustomSlotType.values[j];
+    else {
+      if(typeof scratchCustomSlotType.regExps == "undefined"){
+        scratchCustomSlotType.regExps = [];
+        for(let j = 0; j < scratchCustomSlotType.regExpStrings.length; j++){
+          scratchCustomSlotType.regExps.push(new RegExp(scratchCustomSlotType.regExpStrings[j], "ig"));
+        }
+      }
+      // Now attempt to match.  If successful - return the corresponding value.
+      let matchResult;
+      for(let j = 0; j < scratchCustomSlotType.regExps.length; j++){
+        scratchCustomSlotType.regExps[j].lastIndex = 0;
+        if(matchResult = scratchCustomSlotType.regExps[j].exec(value)){
+          return scratchCustomSlotType.values[j];
+        }
       }
     }
   }
@@ -856,7 +872,7 @@ var _getWeekOfYear = function(dateToProcess){
 
 }
 
-var _processMatchedSlotValueByType = function(value, slotType, recognizerSet){
+var _processMatchedSlotValueByType = function(value, slotType, flags, recognizerSet){
   if(slotType == "AMAZON.NUMBER" || slotType == "AMAZON.FOUR_DIGIT_NUMBER"){
     return _processMatchedNumericSlotValue(value);
   }
@@ -867,7 +883,7 @@ var _processMatchedSlotValueByType = function(value, slotType, recognizerSet){
     return value;
   }
   // Here we are dealing with a custom slot value
-  return _processMatchedCustomSlotValueByType(value, slotType, recognizerSet);
+  return _processMatchedCustomSlotValueByType(value, slotType, flags, recognizerSet);
 
 //  return value;
 }
@@ -987,18 +1003,25 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
     var slotValues = [];
     while(matchResult = scratchRegExp.exec(stringToMatch)){
 //      console.log("_matchText, 5, matchResult: " + JSON.stringify(matchResult));
-      if(matchResult != null){
-//        console.log("FOUND A MATCH: " + JSON.stringify(matchResult));
-//        console.log(JSON.stringify(scratch, null, 2));
-        var returnValue = {};
-        returnValue.name = scratch.intent;
-        returnValue.slots = {};
-        for(var j = 1; j < matchResult.length; j++){
-          var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type, recognizerSet)
-//          console.log("processedMatchResult: " + processedMatchResult);
-          returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
+      multistage: {
+        if(matchResult != null){
+  //        console.log("FOUND A MATCH: " + JSON.stringify(matchResult));
+  //        console.log(JSON.stringify(scratch, null, 2));
+          var returnValue = {};
+          returnValue.name = scratch.intent;
+          returnValue.slots = {};
+          for(var j = 1; j < matchResult.length; j++){
+            var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type, scratch.slots[j - 1].flags, recognizerSet);
+  //          console.log("processedMatchResult: " + processedMatchResult);
+            if(typeof processedMatchResult == "undefined"){
+              // This means a multi-stage match, such as SOUNDEX_MATCH, has failed to match on a follow up stage.
+              // Treat it as a no match
+              break multistage;
+            }
+            returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
+          }
+          return returnValue;
         }
-        return returnValue;
       }
     }
   }
@@ -1056,7 +1079,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
     }
   }
   recognizerSet.matchConfig = [];
-  let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH"];
+  let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH"];
   // First process all the utterances
   for(var i = 0; i < utterances.length; i ++){
     if(utterances[i].trim() == ""){
@@ -1099,19 +1122,27 @@ var _generateRunTimeJson = function(config, intents, utterances){
         }
         // Now add default flags if there aren't corresponding flags in there
         // already
-        if(cleanedUpFlags.indexOf("INCLUDE_VALUES_MATCH") < 0 && cleanedUpFlags.indexOf("EXCLUDE_VALUES_MATCH") < 0){
-          cleanedUpFlags.push("INCLUDE_VALUES_MATCH");
-        }
-        else if(cleanedUpFlags.indexOf("INCLUDE_VALUES_MATCH") >= 0 && cleanedUpFlags.indexOf("EXCLUDE_VALUES_MATCH") >= 0){
-          // Remove EXCLUDE_VALUES_MATCH from cleanedUpFlags
-          _removeAllInstancesFromArray(cleanedUpFlags, "EXCLUDE_VALUES_MATCH");
-        }
-        if(cleanedUpFlags.indexOf("INCLUDE_WILDCARD_MATCH") < 0 && cleanedUpFlags.indexOf("EXCLUDE_WILDCARD_MATCH") < 0){
-          cleanedUpFlags.push("EXCLUDE_WILDCARD_MATCH");
-        }
-        else if(cleanedUpFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0 && cleanedUpFlags.indexOf("EXCLUDE_WILDCARD_MATCH") >= 0){
-          // Remove INCLUDE_WILDCARD_MATCH from cleanedUpFlags
+        if(cleanedUpFlags.indexOf("SOUNDEX_MATCH") >= 0){
+          _removeAllInstancesFromArray(cleanedUpFlags, "INCLUDE_VALUES_MATCH");
           _removeAllInstancesFromArray(cleanedUpFlags, "INCLUDE_WILDCARD_MATCH");
+          cleanedUpFlags.push("EXCLUDE_WILDCARD_MATCH");
+          cleanedUpFlags.push("EXCLUDE_VALUES_MATCH");
+        }
+        else {
+          if(cleanedUpFlags.indexOf("INCLUDE_VALUES_MATCH") < 0 && cleanedUpFlags.indexOf("EXCLUDE_VALUES_MATCH")){
+            cleanedUpFlags.push("INCLUDE_VALUES_MATCH");
+          }
+          else if(cleanedUpFlags.indexOf("INCLUDE_VALUES_MATCH") >= 0 && cleanedUpFlags.indexOf("EXCLUDE_VALUES_MATCH") >= 0){
+            // Remove EXCLUDE_VALUES_MATCH from cleanedUpFlags
+            _removeAllInstancesFromArray(cleanedUpFlags, "EXCLUDE_VALUES_MATCH");
+          }
+          if(cleanedUpFlags.indexOf("INCLUDE_WILDCARD_MATCH") < 0 && cleanedUpFlags.indexOf("EXCLUDE_WILDCARD_MATCH") < 0){
+            cleanedUpFlags.push("EXCLUDE_WILDCARD_MATCH");
+          }
+          else if(cleanedUpFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0 && cleanedUpFlags.indexOf("EXCLUDE_WILDCARD_MATCH") >= 0){
+            // Remove INCLUDE_WILDCARD_MATCH from cleanedUpFlags
+            _removeAllInstancesFromArray(cleanedUpFlags, "INCLUDE_WILDCARD_MATCH");
+          }
         }
         slotFlags.push(cleanedUpFlags);
       }

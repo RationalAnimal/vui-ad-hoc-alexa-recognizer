@@ -5,6 +5,7 @@ TestIntent	test pretty please
 TestIntent       test pleeeeeeease
 MinionIntent One of the minions is {MinionSlot:INCLUDE_WILDCARD_MATCH}
 MinionIntent {MinionSlot}
+MinionIntent Another minion is {MinionSlot:SOUNDEX_MATCH}
 FirstNameIntent My first name is {FirstNameSlot: INCLUDE_WILDCARD_MATCH, EXCLUDE_VALUES_MATCH }
 StateIntent {StateSlot}
 StateIntent New England includes {StateSlot: INCLUDE_VALUES_MATCH, EXCLUDE_VALUES_MATCH} as one of its states
