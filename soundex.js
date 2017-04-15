@@ -34,7 +34,7 @@ soundex.simple.two = ["c", "g", "j", "k", "q", "s", "x", "z"];
 soundex.simple.three = ["d", "t"];
 soundex.simple.five = ["m", "n"];
 
-soundex.simple.soundEx = function (stringToConvert, separator) {
+soundex.simple.soundEx = function (stringToConvert, separator, numberOfDigits) {
 	if(typeof stringToConvert != "undefined" && stringToConvert.trim().length > 0){
 		// First check if this string contains multiple values, if so - split them
 		// and return space delimeted concatenation
@@ -126,8 +126,17 @@ soundex.simple.soundEx = function (stringToConvert, separator) {
 			arrayToConvert[0] = firstLetter;
 		}
 		let result = "";
-		if(arrayToConvert.length >= 4){
-			for(let i = 0; i < 4; i++){
+		if(typeof numberOfDigits == "undefined"){
+			numberOfDigits = 3;
+		}
+		else if(isNaN(numberOfDigits) == false){
+			numberOfDigits = parseInt(numberOfDigits);
+		}
+		else {
+			numberOfDigits = 3;
+		}
+		if(arrayToConvert.length >= numberOfDigits + 1){
+			for(let i = 0; i <= numberOfDigits; i++){
 				result += arrayToConvert[i];
 			}
 //			console.log("soundEx, 15, result: " + JSON.stringify(result));
@@ -136,8 +145,10 @@ soundex.simple.soundEx = function (stringToConvert, separator) {
 			for(let i = 0; i < arrayToConvert.length; i++){
 				result += arrayToConvert[i];
 			}
-			result += "0000";
-			result = result.substring(0, 4);
+			for(let i = arrayToConvert.length; i < arrayToConvert.length + numberOfDigits + 1; i++){
+				result += "0";
+			}
+			result = result.substring(0, numberOfDigits + 1);
 //			console.log("soundEx, 16, result: " + JSON.stringify(result));
 		}
 		result = result.toUpperCase();

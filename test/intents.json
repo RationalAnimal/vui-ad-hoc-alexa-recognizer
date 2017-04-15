@@ -105,6 +105,15 @@
           "type": "AMAZON.DATE"
         }
       ]
+    },
+    {
+      "intent": "TimeIntent",
+      "slots": [
+        {
+          "name": "TimeSlot",
+          "type": "AMAZON.TIME"
+        }
+      ]
     }
   ]
 }

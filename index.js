@@ -142,8 +142,9 @@ recognizer.builtInValues.DATE = require("./builtinslottypes/dates.json");
 recognizer.builtInValues.DATE.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.DATE.values);
 recognizer.builtInValues.DATE.replacementRegExp = new RegExp(recognizer.builtInValues.DATE.replacementRegExpString, "ig");
 
-recognizer.builtInValues.TIME = {};
-recognizer.builtInValues.TIME.replacementRegExpString = "";
+recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
+recognizer.builtInValues.TIME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.TIME.values);
+recognizer.builtInValues.TIME.replacementRegExp = new RegExp(recognizer.builtInValues.TIME.replacementRegExpString, "ig");
 
 recognizer.builtInValues.US_STATE = require("./builtinslottypes/usstates.json");
 recognizer.builtInValues.US_STATE.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_STATE.values);
@@ -189,6 +190,10 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
   else if(slotType == "AMAZON.DATE"){
     // Ignore flags for now
     return recognizer.builtInValues.DATE.replacementRegExpString;
+  }
+  else if(slotType == "AMAZON.TIME"){
+    // Ignore flags for now
+    return recognizer.builtInValues.TIME.replacementRegExpString;
   }
   else if(slotType == "AMAZON.DayOfWeek"){
     // Ignore flags for now
@@ -516,6 +521,38 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
   }
 
   // If there is no match, then return the original value
+  return value;
+}
+
+
+var _processMatchedTimeSlotValue = function(value){
+//  console.log("_processMatchedTimeSlotValue, 1");
+  var matchResult;
+  var regExp = /(^\s*noon\s*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return "12:00";
+  }
+  regExp = /(^\s*midnight\s*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return "00:00";
+  }
+  regExp = /(^\s*(?:this\s*){0,1}morning\s*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return "MO";
+  }
+  regExp = /(^\s*(?:this\s*){0,1}night\s*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return "NI";
+  }
+  regExp = /(^\s*(?:this\s*){0,1}after\s*noon\s*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return "AF";
+  }
+  regExp = /(^\s*(?:this\s*){0,1}evening\s*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return "EV";
+  }
+
   return value;
 }
 
@@ -873,11 +910,15 @@ var _getWeekOfYear = function(dateToProcess){
 }
 
 var _processMatchedSlotValueByType = function(value, slotType, flags, recognizerSet){
+//  console.log("_processMatchedSlotValueByType, 1, value: " + value);
   if(slotType == "AMAZON.NUMBER" || slotType == "AMAZON.FOUR_DIGIT_NUMBER"){
     return _processMatchedNumericSlotValue(value);
   }
   if(slotType == "AMAZON.DATE"){
     return _processMatchedDateSlotValue(value);
+  }
+  if(slotType == "AMAZON.TIME"){
+    return _processMatchedTimeSlotValue(value);
   }
   if(slotType.startsWith("AMAZON.")){
     return value;
@@ -1001,18 +1042,19 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
 //    console.log("_matchText, 4.2, scratchRegExp: " + scratchRegExp);
     var matchResult;
     var slotValues = [];
+//    console.log("_matchText, 4.3, stringToMatch: " + stringToMatch);
     while(matchResult = scratchRegExp.exec(stringToMatch)){
 //      console.log("_matchText, 5, matchResult: " + JSON.stringify(matchResult));
       multistage: {
         if(matchResult != null){
-  //        console.log("FOUND A MATCH: " + JSON.stringify(matchResult));
-  //        console.log(JSON.stringify(scratch, null, 2));
+//          console.log("FOUND A MATCH: " + JSON.stringify(matchResult));
+//          console.log(JSON.stringify(scratch, null, 2));
           var returnValue = {};
           returnValue.name = scratch.intent;
           returnValue.slots = {};
           for(var j = 1; j < matchResult.length; j++){
             var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type, scratch.slots[j - 1].flags, recognizerSet);
-  //          console.log("processedMatchResult: " + processedMatchResult);
+//            console.log("processedMatchResult: " + processedMatchResult);
             if(typeof processedMatchResult == "undefined"){
               // This means a multi-stage match, such as SOUNDEX_MATCH, has failed to match on a follow up stage.
               // Treat it as a no match

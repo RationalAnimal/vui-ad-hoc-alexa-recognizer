@@ -240,6 +240,154 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         });
     });
+  });
+
+  describe("AMAZON.TIME Matches", function() {
+    it("verify AMAZON.TIME slot and noon matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does noon work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "12:00"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and midnight matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does midnight work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "00:00"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and morning matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does morning work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "MO"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and this morning matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does this morning work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "MO"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and night matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does night work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "NI"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and this night matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does this night work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "NI"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and afternoon matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does afternoon work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "AF"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and after noon matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does after noon work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "AF"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and this afternoon matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does this afternoon work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "AF"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and this after noon matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does this after noon work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "AF"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and evening matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does evening work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "EV"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and this evening matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does this evening work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "EV"
+            }
+          }
+        });
+    });
+
 
 
   });

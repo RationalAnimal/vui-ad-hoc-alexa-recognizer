@@ -1,11 +1,21 @@
 # vui-ad-hoc-alexa-recognizer
 
 npm module that provides VUI (voice user interface) special ad-hoc recognizer
-designed to parse raw text from the user and map it to the Alexa intents.  It
-uses the two files (intents and utterances) that are used to configure Alexa skills.
+designed to parse raw text from the user and map it to the Alexa intents.  If
+you already have an Alexa skill and would like to duplicate it in Cortana or
+Google assistant, this module makes it really easy. Many skills can be converted
+in less than an hour.  If you don't already have an Alexa skill - don't worry,
+you can still easily use this module, you will simply need to create the
+required intents, utterances, and custom slot value files (equivalent of which
+you'd have to do anyway).
+It uses the two files (intents and utterances) that are used to configure Alexa skills.
 This allows easy "middleware" implementation that can be placed between a Cortana
-or Google assistant skill and the Alexa backend.
-Additional configuration can be added through config file.
+or Google assistant skill and the Alexa backend.  If you have custom slots and
+you want to use exact or SoundEx matches on those slots, then you would also need
+file(s) listing these values.
+Supports many Alexa features - built in intents, major built in slot types -
+as well as "extra" features, such as the ability to match any value or SoundEx
+compatible value. Additional configuration can be added through config file.
 This can be used either by itself or as part of other vui-xxx projects.
 
 # Repository
@@ -519,6 +529,6 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with these built in slot types:
-  AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.WeekOfDay
+  AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME (very limited right now), AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.DayOfWeek
 
 More Amazon built in slot types are coming shortly
