@@ -143,6 +143,13 @@ recognizer.builtInValues.DATE.replacementRegExpString = _makeReplacementRegExpSt
 recognizer.builtInValues.DATE.replacementRegExp = new RegExp(recognizer.builtInValues.DATE.replacementRegExpString, "ig");
 
 recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
+{
+  let hourOnlyString =
+  "\\s*(?:zero|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}(?:\\s*o'clock){0,1}\\s*";
+
+  recognizer.builtInValues.TIME.values.push(hourOnlyString);
+
+}
 recognizer.builtInValues.TIME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.TIME.values);
 recognizer.builtInValues.TIME.replacementRegExp = new RegExp(recognizer.builtInValues.TIME.replacementRegExpString, "ig");
 
@@ -553,7 +560,23 @@ var _processMatchedTimeSlotValue = function(value){
     return "EV";
   }
 
-  return value;
+  let hourOnlyString =
+  "^\\s*(zero|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}(?:\\s*o'clock){0,1}\\s*$";
+
+  regExp = new RegExp(hourOnlyString, "ig");
+  if(matchResult = regExp.exec(value)){
+//    console.log("matching time, just the hour, matchResult: " + JSON.stringify(matchResult));
+    let hour = matchResult[1];
+    if(typeof hour == "undefined" || hour == null || hour.length == 0){
+      // Didn't actually match a real value.
+    }
+    else {
+      hour = _processMatchedNumericSlotValue(hour);
+      return "" + _twoDigitFormatter(hour) + ":00";
+    }
+  }
+
+  return;
 }
 
 var _processMatchedDateSlotValue = function(value){

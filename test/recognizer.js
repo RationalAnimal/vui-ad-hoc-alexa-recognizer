@@ -388,6 +388,34 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
+    it("verify AMAZON.TIME slot and five matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('does five work for you');
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "05:00"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and eleven o'clock matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does eleven o'clock work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "11:00"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and 24 o'clock does not match and returns undefined", function() {
+      let result = recognizer.Recognizer.matchText("does twenty four o'clock work for you");
+      expect(typeof result).to.equal("undefined");
+    });
 
 
   });
