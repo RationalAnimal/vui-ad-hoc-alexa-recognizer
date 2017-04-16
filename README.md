@@ -520,7 +520,7 @@ code then you may want to take a look at the test directory.  If you've installe
 the npm module you will NOT have it, but you can go to the GitHub repo and
 clone it to get the full distribution.  Then look at the unit tests to see what
 you can parse and what kinds of results you will be getting. (The unit tests
-  are not yet complete, but it's still a very simple and concise "reference").
+  are not yet complete, but getting there and it's still a very simple and concise "reference").
 
 ## Alexa features supported
 
@@ -529,6 +529,6 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with these built in slot types:
-  AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME (very limited right now), AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.DayOfWeek
+  AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME (incomplete right now - still missing utterances such as "twenty past five" and "quarter to six"), AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.DayOfWeek
 
 More Amazon built in slot types are coming shortly

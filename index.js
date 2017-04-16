@@ -145,9 +145,22 @@ recognizer.builtInValues.DATE.replacementRegExp = new RegExp(recognizer.builtInV
 recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
 {
   let hourOnlyString =
-  "\\s*(?:zero|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}(?:\\s*o'clock){0,1}\\s*";
+  "\\s*(?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}(?:\\s*o'clock){0,1}\\s*";
 
   recognizer.builtInValues.TIME.values.push(hourOnlyString);
+  let hourAndMinutesString1 =
+  "\\s*" +
+    "(?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}\\s*" +
+    "(?:zero zero|oh oh|zero oh|oh zero|00|zero one|oh one|01|zero two|oh two|02|zero three|oh three|03|zero four|oh four|04|zero five|oh five|05|zero six|oh six|06|zero seven|oh seven|07|zero eight|oh eight|08|zero nine|oh nine|09|" +
+      "ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|" +
+      "twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24|twenty five|25|twenty six|26|twenty seven|27|twenty eight|28|twenty nine|29" +
+      "thirty|30|thirty one|31|thirty two|32|thirty three|33|thirty four|34|thirty five|35|thirty six|36|thirty seven|37|thirty eight|38|thirty nine|39" +
+      "forty|40|forty one|41|forty two|42|forty three|43|forty four|44|forty five|45|forty six|46|forty seven|47|forty eight|48|forty nine|49" +
+      "fifty|50|fifty one|51|fifty two|52|fifty three|53|fifty four|54|fifty five|55|fifty six|56|fifty seven|57|fifty eight|58|fifty nine|59" +
+    "){1}\\s*" +
+    "(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.){0,1}" +
+  "\\s*";
+  recognizer.builtInValues.TIME.values.push(hourAndMinutesString1);
 
 }
 recognizer.builtInValues.TIME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.TIME.values);
@@ -575,6 +588,64 @@ var _processMatchedTimeSlotValue = function(value){
       return "" + _twoDigitFormatter(hour) + ":00";
     }
   }
+
+  /*
+  * This string is meant to match on an informal hour and minute, e.g. five twenty five.
+  * It is assumed that if the person means to say hour and single digit then it will be preceeded by a leading zero, e.g. five oh five or five zero five
+  * AM or PM or o'clock may be included
+  */
+  let hourAndMinutesString1 =
+  "^\\s*" +
+    "(zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}\\s*" +
+    "(zero zero|oh oh|zero oh|oh zero|00|zero one|oh one|01|zero two|oh two|02|zero three|oh three|03|zero four|oh four|04|zero five|oh five|05|zero six|oh six|06|zero seven|oh seven|07|zero eight|oh eight|08|zero nine|oh nine|09|" +
+      "ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|" +
+      "twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24|twenty five|25|twenty six|26|twenty seven|27|twenty eight|28|twenty nine|29" +
+      "thirty|30|thirty one|31|thirty two|32|thirty three|33|thirty four|34|thirty five|35|thirty six|36|thirty seven|37|thirty eight|38|thirty nine|39" +
+      "forty|40|forty one|41|forty two|42|forty three|43|forty four|44|forty five|45|forty six|46|forty seven|47|forty eight|48|forty nine|49" +
+      "fifty|50|fifty one|51|fifty two|52|fifty three|53|fifty four|54|fifty five|55|fifty six|56|fifty seven|57|fifty eight|58|fifty nine|59" +
+    "){1}\\s*" +
+    "(o'clock|am|pm|a\\.m\\.|p\\.m\\.){0,1}" +
+  "\\s*$";
+
+  regExp = new RegExp(hourAndMinutesString1, "ig");
+  if(matchResult = regExp.exec(value)){
+//    console.log("matching time, hour and minutes, matchResult: " + JSON.stringify(matchResult));
+    let hour = matchResult[1];
+    let minutes = matchResult[2];
+    let specifier = matchResult[3];
+    if(typeof hour == "undefined" || hour == null || hour.length == 0 || typeof minutes == "undefined" || minutes == null || minutes.length == 0 ){
+      // Didn't actually match a real value.
+    }
+    else {
+      hour = _processMatchedNumericSlotValue(hour);
+      minutes = _processMatchedNumericSlotValue(minutes);
+//      console.log("matching time, hour and minutes, specifier: " + specifier);
+      let numericHour = parseInt(hour);
+      if(specifier == "am" || specifier == "a.m."){
+//        console.log("matching time, hour and minutes, am...");
+        return "" + _twoDigitFormatter(hour) + ":" + _twoDigitFormatter(minutes);
+      }
+      if(specifier == "pm" || specifier == "p.m."){
+//        console.log("matching time, hour and minutes, pm...");
+        if(numericHour == 12){
+//          console.log("matching time, hour and minutes, pm, hour == 12");
+          hour = "0";
+        }
+        else if(numericHour < 13){
+//          console.log("matching time, hour and minutes, pm, hour < 13");
+          hour = "" + (numericHour + 12);
+//          console.log("matching time, hour and minutes, pm, hour: " + hour);
+        }
+        return "" + _twoDigitFormatter(hour) + ":" + _twoDigitFormatter(minutes);
+      }
+      if(typeof specifier == "undefined" || specifier == "o'clock" || specifier == null || specifier.length == 0){
+//        console.log("matching time, hour and minutes, specifier absent or meaningless");
+        return "" + _twoDigitFormatter(hour) + ":" + _twoDigitFormatter(minutes);
+      }
+
+    }
+  }
+
 
   return;
 }

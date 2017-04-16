@@ -416,6 +416,42 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
       let result = recognizer.Recognizer.matchText("does twenty four o'clock work for you");
       expect(typeof result).to.equal("undefined");
     });
+    it("verify AMAZON.TIME slot and eleven twenty three matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does eleven twenty three work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "11:23"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and 11 23 am matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does 11 23 am work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "11:23"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and 11 oh five pm matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does 11 oh five pm work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "23:05"
+            }
+          }
+        });
+    });
 
 
   });
