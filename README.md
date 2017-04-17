@@ -2,7 +2,7 @@
 
 npm module that provides VUI (voice user interface) special ad-hoc recognizer
 designed to parse raw text from the user and map it to the Alexa intents.  If
-you already have an Alexa skill and would like to duplicate it in Cortana or
+you already have an Alexa skill and would like to convert it to Cortana or to
 Google assistant, this module makes it really easy. Many skills can be converted
 in less than an hour.  If you don't already have an Alexa skill - don't worry,
 you can still easily use this module, you will simply need to create the

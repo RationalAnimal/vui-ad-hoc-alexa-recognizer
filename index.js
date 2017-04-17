@@ -168,6 +168,11 @@ recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
   recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) noon\\s*)");
   recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) noon\\s*)");
 
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) (?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock){0,1}\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) (?:one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24)\\s*(?:o'clock){0,1}\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) (?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock){0,1}\\s*)");
+
+
 }
 recognizer.builtInValues.TIME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.TIME.values);
 recognizer.builtInValues.TIME.replacementRegExp = new RegExp(recognizer.builtInValues.TIME.replacementRegExpString, "ig");
@@ -679,7 +684,56 @@ var _processMatchedTimeSlotValue = function(value){
     return "11:45";
   }
 
+  let quarterPastHour1 = "^\\s*(?:quarter (?:past|after) (zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock){0,1}\\s*$)";
 
+  regExp = new RegExp(quarterPastHour1, "ig");
+  if(matchResult = regExp.exec(value)){
+//    console.log("matching quarter after hour, matchResult: " + JSON.stringify(matchResult));
+    let hour = matchResult[1];
+    hour = _processMatchedNumericSlotValue(hour);
+    let numericHour = parseInt(hour);
+    if(typeof hour == "undefined" || hour == null || hour.length == 0){
+      // Didn't actually match a real value.
+    }
+    else {
+//      console.log("quarter past, hour: " + numericHour);
+      return "" + _twoDigitFormatter(numericHour) + ":15";
+    }
+  }
+
+  let halfPastHour1 = "^\\s*(?:half (?:past|after) (zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock){0,1}\\s*$)";
+
+  regExp = new RegExp(halfPastHour1, "ig");
+  if(matchResult = regExp.exec(value)){
+//    console.log("matching half after hour, matchResult: " + JSON.stringify(matchResult));
+    let hour = matchResult[1];
+    hour = _processMatchedNumericSlotValue(hour);
+    let numericHour = parseInt(hour);
+    if(typeof hour == "undefined" || hour == null || hour.length == 0){
+      // Didn't actually match a real value.
+    }
+    else {
+      return "" + _twoDigitFormatter(numericHour) + ":30";
+    }
+  }
+
+  let quarterToHour1 = "^\\s*(?:quarter (?:to|before) (one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24)\\s*(?:o'clock){0,1}\\s*$)";
+
+  regExp = new RegExp(quarterToHour1, "ig");
+  if(matchResult = regExp.exec(value)){
+//    console.log("matching quarter to hour, matchResult: " + JSON.stringify(matchResult));
+    let hour = matchResult[1];
+    hour = _processMatchedNumericSlotValue(hour);
+    if(typeof hour == "undefined" || hour == null || hour.length == 0){
+      // Didn't actually match a real value.
+    }
+    else {
+      hour = _processMatchedNumericSlotValue(hour);
+      let numericHour = parseInt(hour);
+      numericHour --;
+      return "" + _twoDigitFormatter(numericHour) + ":45";
+    }
+  }
 
 
   return;

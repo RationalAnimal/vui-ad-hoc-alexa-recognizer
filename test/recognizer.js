@@ -528,8 +528,44 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
+    it("verify AMAZON.TIME slot and quarter past five matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does quarter past five work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "05:15"
+            }
+          }
+        });
+    });
 
+    it("verify AMAZON.TIME slot and quarter to 13 matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does quarter to 13 work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "12:45"
+            }
+          }
+        });
+    });
 
+    it("verify AMAZON.TIME slot and half past eighteen matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does half past eighteen work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "18:30"
+            }
+          }
+        });
+    });
 
   });
 
