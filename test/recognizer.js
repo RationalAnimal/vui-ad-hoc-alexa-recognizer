@@ -452,6 +452,83 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         });
     });
+    it("verify AMAZON.TIME slot and quarter past midnight matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does quarter past midnight work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "00:15"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and quarter to midnight matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does quarter to midnight work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "23:45"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and half past midnight matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does half past midnight work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "00:30"
+            }
+          }
+        });
+    });
+
+
+
+    it("verify AMAZON.TIME slot and quarter past noon matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does quarter past noon work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "12:15"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and quarter to noon matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does quarter to noon work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "11:45"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and half past noon matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does half past noon work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "12:30"
+            }
+          }
+        });
+    });
+
+
 
 
   });

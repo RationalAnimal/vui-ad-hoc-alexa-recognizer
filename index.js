@@ -161,6 +161,12 @@ recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
     "(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.){0,1}" +
   "\\s*";
   recognizer.builtInValues.TIME.values.push(hourAndMinutesString1);
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) midnight\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) midnight\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) midnight\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) noon\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) noon\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) noon\\s*)");
 
 }
 recognizer.builtInValues.TIME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.TIME.values);
@@ -642,9 +648,38 @@ var _processMatchedTimeSlotValue = function(value){
 //        console.log("matching time, hour and minutes, specifier absent or meaningless");
         return "" + _twoDigitFormatter(hour) + ":" + _twoDigitFormatter(minutes);
       }
-
     }
   }
+
+  regExp = /(^\s*quarter (?:past|after) midnight\s*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return "00:15";
+  }
+  regExp = /(^\s*half (?:past|after) midnight\s*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return "00:30";
+  }
+  regExp = /(^\s*quarter (?:to|before) midnight\s*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return "23:45";
+  }
+
+
+
+  regExp = /(^\s*quarter (?:past|after) noon\s*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return "12:15";
+  }
+  regExp = /(^\s*half (?:past|after) noon\s*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return "12:30";
+  }
+  regExp = /(^\s*quarter (?:to|before) noon\s*$)/ig
+  if(matchResult = regExp.exec(value)){
+    return "11:45";
+  }
+
+
 
 
   return;
