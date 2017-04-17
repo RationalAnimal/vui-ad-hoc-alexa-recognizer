@@ -82,6 +82,25 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         });
     });
+
+    it("verify simple utterance with two AMAZON.NUMBER slots with commas matches", function() {
+      let result = recognizer.Recognizer.matchText('here is 20,000 and also 123,456,789');
+      expect(result).to.eql(
+        {"name": "BlahIntent",
+           "slots": {
+            "BlahSlot": {
+              "name": "BlahSlot",
+              "value": "20000"
+            },
+            "BlehSlot": {
+              "name": "BlehSlot",
+              "value": "123456789"
+            }
+          }
+        });
+    });
+
+
   });
 
 
@@ -690,5 +709,31 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify that utterances with a period at the end work", function() {
+      let result = recognizer.Recognizer.matchText("One of the minions is stewart.");
+      expect(result).to.eql(
+        {"name": "MinionIntent",
+         "slots": {
+          "MinionSlot": {
+            "name": "MinionSlot",
+            "value": "Stewart"
+          }
+        }});
+    });
+    it("verify that utterances with a question mark at the end work", function() {
+      let result = recognizer.Recognizer.matchText("test me?");
+      expect(result).to.eql(
+        {"name": "TestIntent",
+         "slots": {}
+        });
+    });
+    it("verify that utterances with an exclamation mark at the end work", function() {
+      let result = recognizer.Recognizer.matchText("Help !");
+      expect(result).to.eql(
+        {"name": "AMAZON.HelpIntent",
+         "slots": {}
+        });
+    });
+
   });
 });

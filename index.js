@@ -55,7 +55,7 @@ var _makeFullRegExpString = function(arrayToConvert){
       reconstructedRegEx += splitRegEx[j];
     }
   }
-  reconstructedRegEx += "\\s*[.]?\\s*$";
+  reconstructedRegEx += "\\s*[.?!]?\\s*$";
   return reconstructedRegEx;
 }
 
@@ -71,6 +71,7 @@ recognizer.builtInValues = {};
 recognizer.builtInValues.NUMBER = require("./builtinslottypes/numbers.json");
 let numbersWithAnd = recognizer.builtInValues.NUMBER.values.slice();
 numbersWithAnd.push("and");
+numbersWithAnd.push(",");
 recognizer.builtInValues.NUMBER.replacementRegExpString = _makeReplacementRegExpString(numbersWithAnd);
 recognizer.builtInValues.NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.NUMBER.replacementRegExpString, "ig");
 
@@ -78,39 +79,39 @@ recognizer.builtInValues.FOUR_DIGIT_NUMBER = {};
 recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString =
   "(" +
 
-    "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){4}" +
+    "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){4}" +
     "|" +
 
     "(?:" +
-      "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){2}" +
-      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
+      "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){2}" +
+      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
     ")" +
     "|" +
 
 
     "(?:" +
+      "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){1}" +
+      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
       "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){1}" +
-      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
-      "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){1}" +
     ")" +
     "|" +
 
     "(?:" +
-      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
+      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
       "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){2}" +
     ")" +
     "|" +
 
 
     "(?:" +
-      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){2}\\s*" +
+      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){2}\\s*" +
     ")" +
     "|" +
 
     "(?:" +
-      "(?:one|two|three|four|five|six|seven|eight|nine|[0-9]){0,1}\\s*thousand\\s*" +
+      "(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*thousand\\s*[,]{0,1}\\s*" +
       "(?:(?:one|two|three|four|five|six|seven|eight|nine|[1-9])\\s*hundred\\s*){0,1}" +
-      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){0,1}\\s*){0,1}\\s*" +
+      "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){0,1}\\s*){0,1}\\s*" +
     ")" +
 
 
@@ -280,6 +281,7 @@ var _getOrderOfMagnitude = function(number){
 }
 
 var _processMatchedNumericSlotValue = function(value){
+//  console.log("_processMatchedNumericSlotValue, 1, value: " + JSON.stringify(value));
   // Here we may have a mixture of words, numbers, and white spaces.
   // Also we are not sure what the capitalization will be.
   // Convert all words to their numeric equivalents
@@ -291,6 +293,7 @@ var _processMatchedNumericSlotValue = function(value){
   // Then convert the numbers to strings (NOT spelled out) and concatenate
   // these strings together.
   // Then convert the result to an integer and return.
+  value = value.replace(/,/ig, "");
   value = value.replace(/zero/ig, 0);
   value = value.replace(/oh/ig, 0);
 
@@ -1093,7 +1096,7 @@ var _getWeekOfYear = function(dateToProcess){
 }
 
 var _processMatchedSlotValueByType = function(value, slotType, flags, recognizerSet){
-//  console.log("_processMatchedSlotValueByType, 1, value: " + value);
+//  console.log("_processMatchedSlotValueByType, 1, slotType: " + slotType + ", value: " + value);
   if(slotType == "AMAZON.NUMBER" || slotType == "AMAZON.FOUR_DIGIT_NUMBER"){
     return _processMatchedNumericSlotValue(value);
   }
@@ -1256,9 +1259,11 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
     let scratch = recognizerSet.builtInIntents[i];
     if(typeof scratch.regExp == "undefined"){
       scratch.regExp = new RegExp(scratch.regExpString, "ig");
+//      console.log("scratch.regExp: " + scratch.regExp);
 //      scratch.regExp = new RegExp("^\\s*((?:help\\s*|help\\s+me\\s*|can\\s+you\\s+help\\s+me\\s*)+)\\s*[.]?\\s*$", "ig");
     }
     let matchResult;
+    scratch.regExp.lastIndex = 0;
     if(matchResult = scratch.regExp.exec(stringToMatch)){
 //      console.log("matchResult: " + JSON.stringify(matchResult));
       var returnValue = {};
@@ -1399,7 +1404,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
         reconstructedRegEx += splitRegEx[j];
       }
     }
-    reconstructedRegEx += "\\s*[.]?\\s*$";
+    reconstructedRegEx += "\\s*[.?!]?\\s*$";
     currentValue.regExString = reconstructedRegEx;
     currentValue.intent = currentIntent;
     recognizerSet.matchConfig.push(currentValue);
