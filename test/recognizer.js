@@ -586,6 +586,48 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
+
+
+    it("verify AMAZON.TIME slot and 22 past five pm matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does 22 past five pm work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "17:22"
+            }
+          }
+        });
+    });
+
+    it("verify AMAZON.TIME slot and 22 before five am matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does 22 before five am work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "04:38"
+            }
+          }
+        });
+    });
+
+    it("verify AMAZON.TIME slot and 22 before five am matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does twenty past sixteen work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "16:20"
+            }
+          }
+        });
+    });
+
+
   });
 
   describe("Wild card processing", function() {

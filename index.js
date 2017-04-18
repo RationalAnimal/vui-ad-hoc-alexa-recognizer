@@ -162,6 +162,7 @@ recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
     "(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.){0,1}" +
   "\\s*";
   recognizer.builtInValues.TIME.values.push(hourAndMinutesString1);
+
   recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) midnight\\s*)");
   recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) midnight\\s*)");
   recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) midnight\\s*)");
@@ -173,6 +174,18 @@ recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
   recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) (?:one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24)\\s*(?:o'clock){0,1}\\s*)");
   recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) (?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock){0,1}\\s*)");
 
+  let hourAndMinutesString2 =
+  "\\s*" +
+    "(?:one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|" +
+      "ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|" +
+      "twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24|twenty five|25|twenty six|26|twenty seven|27|twenty eight|28|twenty nine|29" +
+      "thirty|30" +
+    "){1}\\s*" +
+    "(?:past|after|to|before)\\s*" +
+    "(?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24){1}\\s*" +
+    "(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.){0,1}" +
+  "\\s*";
+  recognizer.builtInValues.TIME.values.push(hourAndMinutesString2);
 
 }
 recognizer.builtInValues.TIME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.TIME.values);
@@ -738,6 +751,68 @@ var _processMatchedTimeSlotValue = function(value){
     }
   }
 
+  /*
+  * This string is meant to match on an informal minute before/after the hour, e.g. twenty five past seven.
+  * It is assumed that the range of minutes is 1-30 (not 0-60), since people will NOT be saying 0 past 5 or 45 past 7.
+  * Instead they will say 5 and 15 to 8, respectively
+  * AM or PM or o'clock may be included, but will be ignored if non-sensical (e.g. if 15:15, then it's a 24 hour format and we don't care about a.m./p.m.)
+  */
+  let hourAndMinutesString2 =
+  "^\\s*" +
+    "(one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|" +
+      "ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|" +
+      "twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24|twenty five|25|twenty six|26|twenty seven|27|twenty eight|28|twenty nine|29" +
+      "thirty|30" +
+    "){1}\\s*" +
+    "(past|after|to|before){1}\\s*" +
+    "(zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24){1}\\s*" +
+    "(o'clock|am|pm|a\\.m\\.|p\\.m\\.){0,1}" +
+  "\\s*$";
+  regExp = new RegExp(hourAndMinutesString2, "ig");
+  if(matchResult = regExp.exec(value)){
+//    console.log("matching time, hour and minutes, matchResult: " + JSON.stringify(matchResult));
+    let minutes = matchResult[1];
+    let hour = matchResult[3];
+    let beforeAfter = matchResult[2];
+    let specifier = matchResult[4];
+    hour = _processMatchedNumericSlotValue(hour);
+    minutes = _processMatchedNumericSlotValue(minutes);
+//      console.log("matching time, hour and minutes, specifier: " + specifier);
+    let numericHour = parseInt(hour);
+    if(specifier == "pm" || specifier == "p.m."){
+      if(numericHour == 12){
+        numericHour = 0;
+        hour = "0";
+      }
+      else if(numericHour < 13){
+        numericHour += 12;
+        hour = "" + numericHour;
+      }
+    }
+
+    if(beforeAfter == "after" || beforeAfter == "past"){
+      // Add minutes to hours.
+      if(numericHour == 24){
+        numericHour = 0;
+        hour = "0";
+      }
+      return _twoDigitFormatter(numericHour) + ":" + _twoDigitFormatter(minutes)
+    }
+    else {
+      // Subtract minutes from hour, a.k.a. add minutes + 30 to the previous hour
+      if(numericHour == 0){
+        numericHour = 23;
+        hour = "23";
+      }
+      else {
+        numericHour --;
+        hour = "" + numericHour;
+      }
+      let numericMinute = parseInt(minutes);
+      numericMinute = (60 - numericMinute);
+      return _twoDigitFormatter(numericHour) + ":" + _twoDigitFormatter(numericMinute)
+    }
+  }
 
   return;
 }
