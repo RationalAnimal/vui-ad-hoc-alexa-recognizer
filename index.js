@@ -152,15 +152,25 @@ recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
   let hourAndMinutesString1 =
   "\\s*" +
     "(?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}\\s*" +
-    "(?:zero zero|oh oh|zero oh|oh zero|00|zero one|oh one|01|zero two|oh two|02|zero three|oh three|03|zero four|oh four|04|zero five|oh five|05|zero six|oh six|06|zero seven|oh seven|07|zero eight|oh eight|08|zero nine|oh nine|09|" +
-      "ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|" +
-      "twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24|twenty five|25|twenty six|26|twenty seven|27|twenty eight|28|twenty nine|29" +
-      "thirty|30|thirty one|31|thirty two|32|thirty three|33|thirty four|34|thirty five|35|thirty six|36|thirty seven|37|thirty eight|38|thirty nine|39" +
-      "forty|40|forty one|41|forty two|42|forty three|43|forty four|44|forty five|45|forty six|46|forty seven|47|forty eight|48|forty nine|49" +
-      "fifty|50|fifty one|51|fifty two|52|fifty three|53|fifty four|54|fifty five|55|fifty six|56|fifty seven|57|fifty eight|58|fifty nine|59" +
+    "(?:zero zero|zero oh|zero 0|oh oh|oh zero|oh 0|0 zero|0 oh|00|0 0|" +
+     "zero one|zero 1|oh one|oh 1|0 one|01|0 1|" +
+     "zero two|zero 2|oh two|oh 2|0 two|02|0 2|" +
+     "zero three|zero 3|oh three|oh 3|0 three|03|0 3|" +
+     "zero four|zero 4|oh four|oh 4|0 four|04|0 4|" +
+     "zero five|zero 5|oh five|oh 5|0 five|05|0 5|" +
+     "zero six|zero 6|oh six|oh 6|0 six|06|0 6|" +
+     "zero seven|zero 7|oh seven|oh 7|0 seven|07|0 7|" +
+     "zero eight|zero 8|oh eight|oh 8|0 eight|08|0 8|" +
+     "zero nine|zero 9|oh nine|oh 9|0 nine|09|0 9|" +
+     "ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|" +
+     "twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24|twenty five|25|twenty six|26|twenty seven|27|twenty eight|28|twenty nine|29" +
+     "thirty|30|thirty one|31|thirty two|32|thirty three|33|thirty four|34|thirty five|35|thirty six|36|thirty seven|37|thirty eight|38|thirty nine|39" +
+     "forty|40|forty one|41|forty two|42|forty three|43|forty four|44|forty five|45|forty six|46|forty seven|47|forty eight|48|forty nine|49" +
+     "fifty|50|fifty one|51|fifty two|52|fifty three|53|fifty four|54|fifty five|55|fifty six|56|fifty seven|57|fifty eight|58|fifty nine|59" +
     "){1}\\s*" +
-    "(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.){0,1}" +
+    "(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}" +
   "\\s*";
+
   recognizer.builtInValues.TIME.values.push(hourAndMinutesString1);
 
   recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) midnight\\s*)");
@@ -170,9 +180,9 @@ recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
   recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) noon\\s*)");
   recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) noon\\s*)");
 
-  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) (?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock){0,1}\\s*)");
-  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) (?:one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24)\\s*(?:o'clock){0,1}\\s*)");
-  recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) (?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock){0,1}\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) (?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) (?:one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24)\\s*(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) (?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*)");
 
   let hourAndMinutesString2 =
   "\\s*" +
@@ -183,7 +193,7 @@ recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
     "){1}\\s*" +
     "(?:past|after|to|before)\\s*" +
     "(?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24){1}\\s*" +
-    "(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.){0,1}" +
+    "(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}" +
   "\\s*";
   recognizer.builtInValues.TIME.values.push(hourAndMinutesString2);
 
@@ -655,14 +665,24 @@ var _processMatchedTimeSlotValue = function(value){
   let hourAndMinutesString1 =
   "^\\s*" +
     "(zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}\\s*" +
-    "(zero zero|oh oh|zero oh|oh zero|00|zero one|oh one|01|zero two|oh two|02|zero three|oh three|03|zero four|oh four|04|zero five|oh five|05|zero six|oh six|06|zero seven|oh seven|07|zero eight|oh eight|08|zero nine|oh nine|09|" +
-      "ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|" +
-      "twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24|twenty five|25|twenty six|26|twenty seven|27|twenty eight|28|twenty nine|29" +
-      "thirty|30|thirty one|31|thirty two|32|thirty three|33|thirty four|34|thirty five|35|thirty six|36|thirty seven|37|thirty eight|38|thirty nine|39" +
-      "forty|40|forty one|41|forty two|42|forty three|43|forty four|44|forty five|45|forty six|46|forty seven|47|forty eight|48|forty nine|49" +
-      "fifty|50|fifty one|51|fifty two|52|fifty three|53|fifty four|54|fifty five|55|fifty six|56|fifty seven|57|fifty eight|58|fifty nine|59" +
+    "(zero zero|zero oh|zero 0|oh oh|oh zero|oh 0|0 zero|0 oh|00|0 0|" +
+     "zero one|zero 1|oh one|oh 1|0 one|01|0 1|" +
+     "zero two|zero 2|oh two|oh 2|0 two|02|0 2|" +
+     "zero three|zero 3|oh three|oh 3|0 three|03|0 3|" +
+     "zero four|zero 4|oh four|oh 4|0 four|04|0 4|" +
+     "zero five|zero 5|oh five|oh 5|0 five|05|0 5|" +
+     "zero six|zero 6|oh six|oh 6|0 six|06|0 6|" +
+     "zero seven|zero 7|oh seven|oh 7|0 seven|07|0 7|" +
+     "zero eight|zero 8|oh eight|oh 8|0 eight|08|0 8|" +
+     "zero nine|zero 9|oh nine|oh 9|0 nine|09|0 9|" +
+
+     "ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|" +
+     "twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24|twenty five|25|twenty six|26|twenty seven|27|twenty eight|28|twenty nine|29" +
+     "thirty|30|thirty one|31|thirty two|32|thirty three|33|thirty four|34|thirty five|35|thirty six|36|thirty seven|37|thirty eight|38|thirty nine|39" +
+     "forty|40|forty one|41|forty two|42|forty three|43|forty four|44|forty five|45|forty six|46|forty seven|47|forty eight|48|forty nine|49" +
+     "fifty|50|fifty one|51|fifty two|52|fifty three|53|fifty four|54|fifty five|55|fifty six|56|fifty seven|57|fifty eight|58|fifty nine|59" +
     "){1}\\s*" +
-    "(o'clock|am|pm|a\\.m\\.|p\\.m\\.){0,1}" +
+    "(o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}" +
   "\\s*$";
 
   regExp = new RegExp(hourAndMinutesString1, "ig");
@@ -677,29 +697,34 @@ var _processMatchedTimeSlotValue = function(value){
     else {
       hour = _processMatchedNumericSlotValue(hour);
       minutes = _processMatchedNumericSlotValue(minutes);
-//      console.log("matching time, hour and minutes, specifier: " + specifier);
       let numericHour = parseInt(hour);
       if(specifier == "am" || specifier == "a.m."){
-//        console.log("matching time, hour and minutes, am...");
-        return "" + _twoDigitFormatter(hour) + ":" + _twoDigitFormatter(minutes);
+        // Nothing to do really.  Either we have an hour that's < 12 or the use misspoke but we can't correct it.
       }
-      if(specifier == "pm" || specifier == "p.m."){
-//        console.log("matching time, hour and minutes, pm...");
-        if(numericHour == 12){
-//          console.log("matching time, hour and minutes, pm, hour == 12");
-          hour = "0";
+      else if(specifier == "pm" || specifier == "p.m."){
+        if(numericHour < 12){
+          numericHour += 12;
         }
-        else if(numericHour < 13){
-//          console.log("matching time, hour and minutes, pm, hour < 13");
-          hour = "" + (numericHour + 12);
-//          console.log("matching time, hour and minutes, pm, hour: " + hour);
+      }
+      else if(specifier == "in the afternoon"){
+        if(numericHour >= 1 && numericHour <= 6){
+          numericHour += 12;
         }
-        return "" + _twoDigitFormatter(hour) + ":" + _twoDigitFormatter(minutes);
       }
-      if(typeof specifier == "undefined" || specifier == "o'clock" || specifier == null || specifier.length == 0){
-//        console.log("matching time, hour and minutes, specifier absent or meaningless");
-        return "" + _twoDigitFormatter(hour) + ":" + _twoDigitFormatter(minutes);
+      else if(specifier == "in the evening"){
+        if(numericHour >= 5 && numericHour <= 9){
+          numericHour += 12;
+        }
       }
+      else if(specifier == "at night"){
+        if(numericHour >= 6 && numericHour <= 11){
+          numericHour += 12;
+        }
+        else if(numericHour == 12){
+          numericHour = 0;
+        }
+      }
+      return "" + _twoDigitFormatter(numericHour) + ":" + _twoDigitFormatter(minutes);
     }
   }
 
@@ -731,52 +756,135 @@ var _processMatchedTimeSlotValue = function(value){
     return "11:45";
   }
 
-  let quarterPastHour1 = "^\\s*(?:quarter (?:past|after) (zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock){0,1}\\s*$)";
+  let quarterPastHour1 = "^\\s*(?:quarter (?:past|after) (zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*$)";
 
   regExp = new RegExp(quarterPastHour1, "ig");
   if(matchResult = regExp.exec(value)){
 //    console.log("matching quarter after hour, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
+    let specifier = matchResult[2];
     hour = _processMatchedNumericSlotValue(hour);
     let numericHour = parseInt(hour);
     if(typeof hour == "undefined" || hour == null || hour.length == 0){
       // Didn't actually match a real value.
     }
     else {
+      if(specifier == "am" || specifier == "a.m."){
+        // Nothing to do really.  Either we have an hour that's < 12 or the use misspoke but we can't correct it.
+      }
+      else if(specifier == "pm" || specifier == "p.m."){
+        if(numericHour < 12){
+          numericHour += 12;
+        }
+      }
+      else if(specifier == "in the afternoon"){
+        if(numericHour >= 1 && numericHour <= 6){
+          numericHour += 12;
+        }
+      }
+      else if(specifier == "in the evening"){
+        if(numericHour >= 5 && numericHour <= 9){
+          numericHour += 12;
+        }
+      }
+      else if(specifier == "at night"){
+        if(numericHour >= 6 && numericHour <= 11){
+          numericHour += 12;
+        }
+        else if(numericHour == 12){
+          numericHour = 0;
+        }
+      }
 //      console.log("quarter past, hour: " + numericHour);
       return "" + _twoDigitFormatter(numericHour) + ":15";
     }
   }
 
-  let halfPastHour1 = "^\\s*(?:half (?:past|after) (zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock){0,1}\\s*$)";
+  let halfPastHour1 = "^\\s*(?:half (?:past|after) (zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*$)";
 
   regExp = new RegExp(halfPastHour1, "ig");
   if(matchResult = regExp.exec(value)){
 //    console.log("matching half after hour, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
+    let specifier = matchResult[2];
     hour = _processMatchedNumericSlotValue(hour);
     let numericHour = parseInt(hour);
     if(typeof hour == "undefined" || hour == null || hour.length == 0){
       // Didn't actually match a real value.
     }
     else {
+      if(specifier == "am" || specifier == "a.m."){
+        // Nothing to do really.  Either we have an hour that's < 12 or the use misspoke but we can't correct it.
+      }
+      else if(specifier == "pm" || specifier == "p.m."){
+        if(numericHour < 12){
+          numericHour += 12;
+        }
+      }
+      else if(specifier == "in the afternoon"){
+        if(numericHour >= 1 && numericHour <= 6){
+          numericHour += 12;
+        }
+      }
+      else if(specifier == "in the evening"){
+        if(numericHour >= 5 && numericHour <= 9){
+          numericHour += 12;
+        }
+      }
+      else if(specifier == "at night"){
+        if(numericHour >= 6 && numericHour <= 11){
+          numericHour += 12;
+        }
+        else if(numericHour == 12){
+          numericHour = 0;
+        }
+      }
+
       return "" + _twoDigitFormatter(numericHour) + ":30";
     }
   }
 
-  let quarterToHour1 = "^\\s*(?:quarter (?:to|before) (one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24)\\s*(?:o'clock){0,1}\\s*$)";
+  let quarterToHour1 = "^\\s*(?:quarter (?:to|before) (one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24)\\s*(o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*$)";
 
   regExp = new RegExp(quarterToHour1, "ig");
   if(matchResult = regExp.exec(value)){
 //    console.log("matching quarter to hour, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
     hour = _processMatchedNumericSlotValue(hour);
+
+    let specifier = matchResult[2];
     if(typeof hour == "undefined" || hour == null || hour.length == 0){
       // Didn't actually match a real value.
     }
     else {
       hour = _processMatchedNumericSlotValue(hour);
       let numericHour = parseInt(hour);
+      if(specifier == "am" || specifier == "a.m."){
+        // Nothing to do really.  Either we have an hour that's < 12 or the use misspoke but we can't correct it.
+      }
+      else if(specifier == "pm" || specifier == "p.m."){
+        if(numericHour < 12){
+          numericHour += 12;
+        }
+      }
+      else if(specifier == "in the afternoon"){
+        if(numericHour >= 1 && numericHour <= 6){
+          numericHour += 12;
+        }
+      }
+      else if(specifier == "in the evening"){
+        if(numericHour >= 5 && numericHour <= 9){
+          numericHour += 12;
+        }
+      }
+      else if(specifier == "at night"){
+        if(numericHour >= 6 && numericHour <= 11){
+          numericHour += 12;
+        }
+        else if(numericHour == 12){
+          numericHour = 0;
+        }
+      }
       numericHour --;
       return "" + _twoDigitFormatter(numericHour) + ":45";
     }
@@ -797,7 +905,7 @@ var _processMatchedTimeSlotValue = function(value){
     "){1}\\s*" +
     "(past|after|to|before){1}\\s*" +
     "(zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24){1}\\s*" +
-    "(o'clock|am|pm|a\\.m\\.|p\\.m\\.){0,1}" +
+    "(o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}" +
   "\\s*$";
   regExp = new RegExp(hourAndMinutesString2, "ig");
   if(matchResult = regExp.exec(value)){
@@ -810,14 +918,47 @@ var _processMatchedTimeSlotValue = function(value){
     minutes = _processMatchedNumericSlotValue(minutes);
 //      console.log("matching time, hour and minutes, specifier: " + specifier);
     let numericHour = parseInt(hour);
-    if(specifier == "pm" || specifier == "p.m."){
-      if(numericHour == 12){
-        numericHour = 0;
-        hour = "0";
-      }
-      else if(numericHour < 13){
+    if(specifier == "am" || specifier == "a.m."){
+      // Nothing to do really.  Either we have an hour that's < 12 or the use misspoke but we can't correct it.
+    }
+    else if(specifier == "pm" || specifier == "p.m."){
+      if(numericHour < 12){
         numericHour += 12;
         hour = "" + numericHour;
+      }
+    }
+    else if(specifier == "in the morning"){
+      // Nothing to do really.  Either we have an hour that's < 12 or the user misspoke but we can't correct it.
+    }
+    else if(specifier == "in the afternoon"){
+      if(numericHour >= 1 && numericHour <= 6){
+        numericHour += 12;
+        hour = "" + numericHour;
+      }
+      else {
+        // Nothing to do really.  The user misspoke but we can't correct it.
+      }
+    }
+    else if(specifier == "in the evening"){
+      if(numericHour >= 5 && numericHour <= 9){
+        numericHour += 12;
+        hour = "" + numericHour;
+      }
+      else {
+        // Nothing to do really.  The user misspoke but we can't correct it.
+      }
+    }
+    else if(specifier == "at night"){
+      if(numericHour >= 6 && numericHour <= 11){
+        numericHour += 12;
+        hour = "" + numericHour;
+      }
+      else if(numericHour == 12){
+        numericHour = 0;
+        hour = "" + numericHour;
+      }
+      else {
+        // Nothing to do really.  The user misspoke but we can't correct it.
       }
     }
 

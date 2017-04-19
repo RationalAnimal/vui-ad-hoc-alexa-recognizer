@@ -471,6 +471,31 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         });
     });
+    it("verify AMAZON.TIME slot and 5 oh three at night matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does 5 oh three at night work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "05:03"
+            }
+          }
+        });
+    });
+    it("verify AMAZON.TIME slot and six oh three at night matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does six oh three at night work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "18:03"
+            }
+          }
+        });
+    });
+
     it("verify AMAZON.TIME slot and quarter past midnight matches and returns the correct value", function() {
       let result = recognizer.Recognizer.matchText("does quarter past midnight work for you");
       expect(result).to.eql(
@@ -560,6 +585,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
+    it("verify AMAZON.TIME slot and quarter past 5 in the evening matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does quarter past 5 in the evening work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "17:15"
+            }
+          }
+        });
+    });
+
     it("verify AMAZON.TIME slot and quarter to 13 matches and returns the correct value", function() {
       let result = recognizer.Recognizer.matchText("does quarter to 13 work for you");
       expect(result).to.eql(
@@ -568,6 +606,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
              "TimeSlot": {
                "name": "TimeSlot",
                "value": "12:45"
+            }
+          }
+        });
+    });
+
+    it("verify AMAZON.TIME slot and quarter to 3 in the afternoon matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does quarter to 3 in the afternoon work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "14:45"
             }
           }
         });
@@ -586,6 +637,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
+    it("verify AMAZON.TIME slot and half past seven at night matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does half past seven at night work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "19:30"
+            }
+          }
+        });
+    });
 
 
     it("verify AMAZON.TIME slot and 22 past five pm matches and returns the correct value", function() {
@@ -614,7 +677,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
-    it("verify AMAZON.TIME slot and 22 before five am matches and returns the correct value", function() {
+    it("verify AMAZON.TIME slot and twenty past sixteen am matches and returns the correct value", function() {
       let result = recognizer.Recognizer.matchText("does twenty past sixteen work for you");
       expect(result).to.eql(
         {"name": "TimeIntent",
@@ -622,6 +685,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
              "TimeSlot": {
                "name": "TimeSlot",
                "value": "16:20"
+            }
+          }
+        });
+    });
+
+    it("verify AMAZON.TIME slot and 10 past eleven at night matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does 10 past eleven at night work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "23:10"
             }
           }
         });

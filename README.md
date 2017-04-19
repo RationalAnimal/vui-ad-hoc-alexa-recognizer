@@ -460,6 +460,15 @@ which will produce:
 }
 ````
 
+### Trailing punctuation
+
+Trailing periods (.), exclamation signs (!), and question marks (?) are ignored
+during parsing.
+
+### Commas in numeric slots
+
+Any commas within numeric input, e.g. "20,000", are ignored during parsing.
+
 ## Optimizations
 
 ### Intent parsing order
@@ -529,6 +538,6 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with these built in slot types:
-  AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME (mostly complete, with just a few minor utterances missing), AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.DayOfWeek
+  AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.DayOfWeek
 
 More Amazon built in slot types are coming shortly
