@@ -187,6 +187,37 @@ recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
   "\\s*";
   recognizer.builtInValues.TIME.values.push(hourAndMinutesString2);
 
+  let hourString3 =
+  "\\s*" +
+    "(?:" +
+      "oh one hundred|zero one hundred|one hundred|oh 1 hundred|zero 1 hundred|1 hundred|oh 100|0100|100|" +
+      "oh two hundred|zero two hundred|two hundred|oh 2 hundred|zero 2 hundred|2 hundred|oh 200|0200|200|" +
+      "oh three hundred|zero three hundred|three hundred|oh 3 hundred|zero 3 hundred|3 hundred|oh 300|0300|300|" +
+      "oh four hundred|zero four hundred|four hundred|oh 4 hundred|zero 4 hundred|4 hundred|oh 400|0400|400|" +
+      "oh five hundred|zero five hundred|five hundred|oh 5 hundred|zero 5 hundred|5 hundred|oh 500|0500|500|" +
+      "oh six hundred|zero six hundred|six hundred|oh 6 hundred|zero 6 hundred|6 hundred|oh 600|0600|600|" +
+      "oh seven hundred|zero seven hundred|seven hundred|oh 7 hundred|zero 7 hundred|7 hundred|oh 700|0700|700|" +
+      "oh eight hundred|zero eight hundred|eight hundred|oh 8 hundred|zero 8 hundred|8 hundred|oh 800|0800|800|" +
+      "oh nine hundred|zero nine hundred|nine hundred|oh 9 hundred|zero 9 hundred|9 hundred|oh 900|0900|900|" +
+      "eleven hundred|11 hundred|11 100|1100|" +
+      "twelve hundred|12 hundred|12 100|1200|" +
+      "thirteen hundred|13 hundred|13 100|1300|" +
+      "fourteen hundred|14 hundred|14 100|1400|" +
+      "fifteen hundred|15 hundred|15 100|1500|" +
+      "sixteen hundred|16 hundred|16 100|1600|" +
+      "seventeen hundred|17 hundred|17 100|1700|" +
+      "eighteen hundred|18 hundred|18 100|1800|" +
+      "nineteen hundred|19 hundred|19 100|1900|" +
+      "twenty hundred|20 hundred|20 100|2000|" +
+      "twenty one hundred|21 hundred|21 100|2100|" +
+      "twenty two hundred|22 hundred|22 100|2200|" +
+      "twenty three hundred|23 hundred|23 100|2300|" +
+      "twenty four hundred|24 hundred|24 100|2400" +
+    "){1}\\s*(?:hours|hour){0,1}" +
+  "\\s*";
+  recognizer.builtInValues.TIME.values.push(hourString3);
+
+
 }
 recognizer.builtInValues.TIME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.TIME.values);
 recognizer.builtInValues.TIME.replacementRegExp = new RegExp(recognizer.builtInValues.TIME.replacementRegExpString, "ig");
@@ -812,6 +843,47 @@ var _processMatchedTimeSlotValue = function(value){
       numericMinute = (60 - numericMinute);
       return _twoDigitFormatter(numericHour) + ":" + _twoDigitFormatter(numericMinute)
     }
+  }
+
+
+  /*
+  * This string is meant to match on a military style even hour, e.g. oh one hundred hours or 18 hundred.
+  */
+  let hourString3 =
+  "^\\s*" +
+    "(" +
+      "oh one hundred|zero one hundred|one hundred|oh 1 hundred|zero 1 hundred|1 hundred|oh 100|0100|100|" +
+      "oh two hundred|zero two hundred|two hundred|oh 2 hundred|zero 2 hundred|2 hundred|oh 200|0200|200|" +
+      "oh three hundred|zero three hundred|three hundred|oh 3 hundred|zero 3 hundred|3 hundred|oh 300|0300|300|" +
+      "oh four hundred|zero four hundred|four hundred|oh 4 hundred|zero 4 hundred|4 hundred|oh 400|0400|400|" +
+      "oh five hundred|zero five hundred|five hundred|oh 5 hundred|zero 5 hundred|5 hundred|oh 500|0500|500|" +
+      "oh six hundred|zero six hundred|six hundred|oh 6 hundred|zero 6 hundred|6 hundred|oh 600|0600|600|" +
+      "oh seven hundred|zero seven hundred|seven hundred|oh 7 hundred|zero 7 hundred|7 hundred|oh 700|0700|700|" +
+      "oh eight hundred|zero eight hundred|eight hundred|oh 8 hundred|zero 8 hundred|8 hundred|oh 800|0800|800|" +
+      "oh nine hundred|zero nine hundred|nine hundred|oh 9 hundred|zero 9 hundred|9 hundred|oh 900|0900|900|" +
+      "eleven hundred|11 hundred|11 100|1100|" +
+      "twelve hundred|12 hundred|12 100|1200|" +
+      "thirteen hundred|13 hundred|13 100|1300|" +
+      "fourteen hundred|14 hundred|14 100|1400|" +
+      "fifteen hundred|15 hundred|15 100|1500|" +
+      "sixteen hundred|16 hundred|16 100|1600|" +
+      "seventeen hundred|17 hundred|17 100|1700|" +
+      "eighteen hundred|18 hundred|18 100|1800|" +
+      "nineteen hundred|19 hundred|19 100|1900|" +
+      "twenty hundred|20 hundred|20 100|2000|" +
+      "twenty one hundred|21 hundred|21 100|2100|" +
+      "twenty two hundred|22 hundred|22 100|2200|" +
+      "twenty three hundred|23 hundred|23 100|2300|" +
+      "twenty four hundred|24 hundred|24 100|2400" +
+    "){1}\\s*(?:hours|hour){0,1}" +
+  "\\s*$";
+  regExp = new RegExp(hourString3, "ig");
+  if(matchResult = regExp.exec(value)){
+  //    console.log("matching time, hour and minutes, matchResult: " + JSON.stringify(matchResult));
+    let time = matchResult[1];
+    time = _processMatchedNumericSlotValue(time);
+    let numericTime = parseInt(time);
+    return _twoDigitFormatter(numericTime/100) + ":00";
   }
 
   return;

@@ -627,6 +627,32 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
+    it("verify AMAZON.TIME slot and 11 hundred matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does 11 hundred work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "11:00"
+            }
+          }
+        });
+    });
+
+    it("verify AMAZON.TIME slot and oh 2 hundred matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does oh 2 hundred work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+           "slots": {
+             "TimeSlot": {
+               "name": "TimeSlot",
+               "value": "02:00"
+            }
+          }
+        });
+    });
+
 
   });
 
