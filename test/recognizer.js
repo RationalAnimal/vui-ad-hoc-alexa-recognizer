@@ -259,6 +259,12 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         });
     });
+
+    it("verify simple utterance with AMAZON.DATE slot and year with EXCLUDE_YEAR_ONLY_DATES flag does not match", function() {
+      let result = recognizer.Recognizer.matchText('date that does not accept year only is 2016');
+      expect(typeof result).to.equal("undefined");
+    });
+
   });
 
   describe("AMAZON.TIME Matches", function() {

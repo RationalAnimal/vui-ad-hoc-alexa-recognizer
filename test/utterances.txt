@@ -14,6 +14,7 @@ FourDigitIntent {FooSlot}
 BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it
 BlahIntent here is {BlahSlot} and also {BlehSlot}
 DateIntent date is {DateSlot}
+DateIntent date that does not accept year only is {DateSlot:EXCLUDE_YEAR_ONLY_DATES}
 DateIntent {DateSlot}
 TimeIntent does {TimeSlot} work for you
 AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}

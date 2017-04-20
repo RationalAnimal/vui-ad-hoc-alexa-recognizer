@@ -232,6 +232,24 @@ recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
 recognizer.builtInValues.TIME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.TIME.values);
 recognizer.builtInValues.TIME.replacementRegExp = new RegExp(recognizer.builtInValues.TIME.replacementRegExpString, "ig");
 
+recognizer.builtInValues.DURATION = {};
+recognizer.builtInValues.DURATION.values = [];
+{
+  let generalDurationString =
+  "\\s*" +
+    "(?:.+\\s*years{0,1}){0,1}\\s*" +
+    "(?:.+\\s*months{0,1}){0,1}\\s*" +
+    "(?:.+\\s*weeks{0,1}){0,1}\\s*" +
+    "(?:.+\\s*days{0,1}){0,1}\\s*" +
+    "(?:.+\\s*hours{0,1}){0,1}\\s*" +
+    "(?:.+\\s*minutes{0,1}){0,1}\\s*" +
+    "(?:.+\\s*seconds{0,1}){0,1}\\s*" +
+  "\\s*";
+  recognizer.builtInValues.DURATION.values.push(generalDurationString);
+}
+recognizer.builtInValues.DURATION.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.DURATION.values);
+recognizer.builtInValues.DURATION.replacementRegExp = new RegExp(recognizer.builtInValues.DURATION.replacementRegExpString, "ig");
+
 recognizer.builtInValues.US_STATE = require("./builtinslottypes/usstates.json");
 recognizer.builtInValues.US_STATE.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_STATE.values);
 recognizer.builtInValues.US_STATE.replacementRegExp = new RegExp(recognizer.builtInValues.US_STATE.replacementRegExpString, "ig");
@@ -1030,7 +1048,7 @@ var _processMatchedTimeSlotValue = function(value){
   return;
 }
 
-var _processMatchedDateSlotValue = function(value){
+var _processMatchedDateSlotValue = function(value, flags){
   var matchResult;
   var regExp = /(right now)/ig
   if(matchResult = regExp.exec(value)){
@@ -1334,6 +1352,10 @@ var _processMatchedDateSlotValue = function(value){
     }
     if(monthNotSpecified == true && dayOfMonthNotSpecified == true && yearNotSpecified == false){
       // Return just a year
+      // Test for EXCLUDE_YEAR_ONLY_DATES flag - if there, return undefined;
+      if(flags.indexOf("EXCLUDE_YEAR_ONLY_DATES") >= 0){
+        return;
+      }
       return "" + _fourDigitFormatter(year);
     }
     if(monthNotSpecified == false && dayOfMonthNotSpecified == false && yearNotSpecified == true){
@@ -1389,7 +1411,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, recognizer
     return _processMatchedNumericSlotValue(value);
   }
   if(slotType == "AMAZON.DATE"){
-    return _processMatchedDateSlotValue(value);
+    return _processMatchedDateSlotValue(value, flags);
   }
   if(slotType == "AMAZON.TIME"){
     return _processMatchedTimeSlotValue(value);
@@ -1597,7 +1619,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
     }
   }
   recognizerSet.matchConfig = [];
-  let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH"];
+  let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES"];
   // First process all the utterances
   for(var i = 0; i < utterances.length; i ++){
     if(utterances[i].trim() == ""){
@@ -1669,6 +1691,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
 
     for(var j = 0; j < slots.length; j ++){
       var slotType = _getSlotType(intents, currentIntent, slots[j]);
+      // TODO add code to exclude EXCLUDE_YEAR_ONLY_DATES if slotType is not AMAZON.DATE
       currentValue.slots.push({"name": slots[j], "type": slotType, "flags": slotFlags[j]});
     }
     var regExString = currentUtterance;

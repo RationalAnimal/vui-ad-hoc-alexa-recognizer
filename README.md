@@ -352,16 +352,25 @@ In this case you can modify your utterances file to include special flags, e.g.:
 FirstNameIntent My first name is {FirstNameSlot: INCLUDE_WILDCARD_MATCH, EXCLUDE_VALUES_MATCH }
 ````
 
-These flags will be used in parsing.  There are only three sets of flags: to
-include/exclude custom slot values in the matching pattern, to include/exclude
-a wildcard in the matching pattern, to use SoundEx for matching.
+These flags will be used in parsing. Here are the different currently available
+flags:
+
+1. "INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH" - to include/exclude custom
+slot values in the matching pattern.
+2. "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH" - to include/exclude
+a wildcard in the matching pattern.
+3. "SOUNDEX_MATCH" - to use SoundEx for matching.
+4. "EXCLUDE_YEAR_ONLY_DATES" - this flag is only applied to the AMAZON.DATE type
+slot and turns off parsing of a single number as a year.
+
 If you don't specify any of these, then
 INCLUDE_VALUES_MATCH and EXCLUDE_WILDCARD_MATCH will be used as the default.  Also,
 if you include by mistake both INCLUDE... and EXCLUDE... for the same flag, the
 default value is (silently) going to be used.  If you are concerned you can look
 at the generated recognizer.json to see how the flags were parsed.
-Also note that SOUNDEX_MATCH will automatically imply EXCLUDE... flags; but
-SOUNDEX_MATCH is only available for the custom slot types at this time.
+Also note that SOUNDEX_MATCH will automatically imply EXCLUDE_VALUES_MATCH and
+EXCLUDE_WILDCARD_MATCH flags; however SOUNDEX_MATCH is only available for the
+custom slot types at this time.
 
 It would typically not be useful (at this time with only these sets of flags)
 to specify INCLUDE... for both or EXCLUDE... for both wildcard and value matches
@@ -528,8 +537,7 @@ to find more information than is listed here and don't want to dig through the
 code then you may want to take a look at the test directory.  If you've installed
 the npm module you will NOT have it, but you can go to the GitHub repo and
 clone it to get the full distribution.  Then look at the unit tests to see what
-you can parse and what kinds of results you will be getting. (The unit tests
-  are not yet complete, but getting there and it's still a very simple and concise "reference").
+you can parse and what kinds of results you will be getting.
 
 ## Alexa features supported
 
@@ -537,7 +545,7 @@ Currently, you can parse:
 1. All Alexa built in intents
 2. Utterances without slots
 3. Utterances with custom slots
-4. Utterances with these built in slot types:
-  AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.DayOfWeek
+4. Utterances with these numbers, date, time built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME
+5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.DayOfWeek
 
 More Amazon built in slot types are coming shortly
