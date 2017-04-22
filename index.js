@@ -1534,6 +1534,28 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
     var scratch = sortedMatchConfig[i];
 //    console.log("_matchText, 4, scratch: " + JSON.stringify(scratch));
 //    console.log("_matchText, 4.1, scratch.regExString: " + JSON.stringify(scratch.regExString));
+    // First try the wildcard reg exp if it's there  wildcardRegExString
+    if(typeof scratch.wildcardRegExString != "undefined"){
+//      console.log("_matchText, 4.0.1");
+      let wildcardRegExp = new RegExp(scratch.wildcardRegExString, "ig");
+//      console.log("_matchText, 4.0.2, wildcardRegExp: ", wildcardRegExp);
+      let wildcardMatchResult = wildcardRegExp.exec(stringToMatch);
+      if(wildcardMatchResult){
+        // we are good to try the real one.
+//        console.log("_matchText, 4.0.3, potential match, wildcardRegExp: ", wildcardRegExp);
+      }
+      else {
+        // This is definitely not a match - continue
+//        console.log("_matchText, 4.0.4, NOT a potential match, wildcardRegExp: ", wildcardRegExp);
+        continue;
+      }
+    }
+    else {
+      // No wildcardRegExString, so proceed straight to the actual match.
+//      console.log("_matchText, 4.0.5, NO wildcardRegExString");
+    }
+//    console.log("_matchText, 4.0.6, stringToMatch: " + stringToMatch);
+
     var scratchRegExp = new RegExp(scratch.regExString, "ig");
 //    console.log("_matchText, 4.2, scratchRegExp: " + scratchRegExp);
     var matchResult;
@@ -1554,8 +1576,10 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
             if(typeof processedMatchResult == "undefined"){
               // This means a multi-stage match, such as SOUNDEX_MATCH, has failed to match on a follow up stage.
               // Treat it as a no match
+//              console.log("multi-state mismatch");
               break multistage;
             }
+//            console.log("multi-state match");
             returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
           }
           return returnValue;
@@ -1665,23 +1689,28 @@ var _generateRunTimeJson = function(config, intents, utterances){
         if(cleanedUpFlags.indexOf("SOUNDEX_MATCH") >= 0){
           _removeAllInstancesFromArray(cleanedUpFlags, "INCLUDE_VALUES_MATCH");
           _removeAllInstancesFromArray(cleanedUpFlags, "INCLUDE_WILDCARD_MATCH");
+          _removeAllInstancesFromArray(cleanedUpFlags, "EXCLUDE_VALUES_MATCH");
+          _removeAllInstancesFromArray(cleanedUpFlags, "EXCLUDE_WILDCARD_MATCH");
           cleanedUpFlags.push("EXCLUDE_WILDCARD_MATCH");
           cleanedUpFlags.push("EXCLUDE_VALUES_MATCH");
         }
         else {
-          if(cleanedUpFlags.indexOf("INCLUDE_VALUES_MATCH") < 0 && cleanedUpFlags.indexOf("EXCLUDE_VALUES_MATCH")){
-            cleanedUpFlags.push("INCLUDE_VALUES_MATCH");
-          }
-          else if(cleanedUpFlags.indexOf("INCLUDE_VALUES_MATCH") >= 0 && cleanedUpFlags.indexOf("EXCLUDE_VALUES_MATCH") >= 0){
-            // Remove EXCLUDE_VALUES_MATCH from cleanedUpFlags
+          // We are not doing SOUNDEX_MATCH here
+          if(cleanedUpFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+            _removeAllInstancesFromArray(cleanedUpFlags, "INCLUDE_VALUES_MATCH");
             _removeAllInstancesFromArray(cleanedUpFlags, "EXCLUDE_VALUES_MATCH");
+            _removeAllInstancesFromArray(cleanedUpFlags, "EXCLUDE_WILDCARD_MATCH");
+            cleanedUpFlags.push("EXCLUDE_VALUES_MATCH");
           }
-          if(cleanedUpFlags.indexOf("INCLUDE_WILDCARD_MATCH") < 0 && cleanedUpFlags.indexOf("EXCLUDE_WILDCARD_MATCH") < 0){
+          else if(cleanedUpFlags.indexOf("INCLUDE_VALUES_MATCH") >= 0){
+            _removeAllInstancesFromArray(cleanedUpFlags, "INCLUDE_WILDCARD_MATCH");
+            _removeAllInstancesFromArray(cleanedUpFlags, "EXCLUDE_VALUES_MATCH");
+            _removeAllInstancesFromArray(cleanedUpFlags, "EXCLUDE_WILDCARD_MATCH");
             cleanedUpFlags.push("EXCLUDE_WILDCARD_MATCH");
           }
-          else if(cleanedUpFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0 && cleanedUpFlags.indexOf("EXCLUDE_WILDCARD_MATCH") >= 0){
-            // Remove INCLUDE_WILDCARD_MATCH from cleanedUpFlags
-            _removeAllInstancesFromArray(cleanedUpFlags, "INCLUDE_WILDCARD_MATCH");
+          else {
+            cleanedUpFlags.push("INCLUDE_VALUES_MATCH");
+            cleanedUpFlags.push("EXCLUDE_WILDCARD_MATCH");
           }
         }
         slotFlags.push(cleanedUpFlags);
@@ -1717,6 +1746,38 @@ var _generateRunTimeJson = function(config, intents, utterances){
     }
     reconstructedRegEx += "\\s*[.?!]?\\s*$";
     currentValue.regExString = reconstructedRegEx;
+    // Now add the reg exp with all wildcards
+  //BEGIN
+    let wildcardRegExString = currentUtterance;
+    let wildcardReplacementString = "((?:\\w|\\s|[0-9,'])+)";
+    let addWildcardReplacementString = false;
+    if(slots.length > 0){
+      // Need to create a different regExString that has wildcards instead of slots
+      for(var j = 0; j < slotMatches.length; j++){
+        if(slotFlags[j].indexOf("INCLUDE_WILDCARD_MATCH") < 0){
+          addWildcardReplacementString = true;
+        }
+        wildcardRegExString = wildcardRegExString.replace(slotMatches[j], wildcardReplacementString);
+      }
+    }
+    if(addWildcardReplacementString == true){
+      // Now split regExString into non-white space parts and reconstruct the
+      // whole thing with any sequence of white spaces replaced with a white space
+      // reg exp.
+      let splitRegEx = wildcardRegExString.split(/\s+/);
+      let reconstructedRegEx = "^\\s*";
+      for(let j = 0; j < splitRegEx.length; j++){
+        if(splitRegEx[j].length > 0){
+          if(j > 0){
+            reconstructedRegEx += "\\s+";
+          }
+          reconstructedRegEx += splitRegEx[j];
+        }
+      }
+      reconstructedRegEx += "\\s*[.?!]?\\s*$";
+      currentValue.wildcardRegExString = reconstructedRegEx;
+    }
+  //END
     currentValue.intent = currentIntent;
     recognizerSet.matchConfig.push(currentValue);
   }

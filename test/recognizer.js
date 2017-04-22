@@ -45,6 +45,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.US_FIRST_NAME slot matches", function() {
+      let result = recognizer.Recognizer.matchText("His first name is James");
+      expect(result).to.eql(
+        {"name": "FirstNameIntent",
+         "slots": {
+          "FirstNameSlot": {
+            "name": "FirstNameSlot",
+            "value": "James"
+          }
+        }});
+    });
+
   });
 
 
