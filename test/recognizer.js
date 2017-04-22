@@ -957,4 +957,26 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
 
   });
+
+  describe("Configuration verification", function() {
+    it("verify that a disabled built in intent will not parse", function() {
+      let result = recognizer.Recognizer.matchText("Repeat");
+      expect(typeof result).to.equal("undefined");
+    });
+    it("verify that an enabled built in intent will parse", function() {
+      let result = recognizer.Recognizer.matchText("Stop");
+      expect(result).to.eql(
+        {"name": "AMAZON.StopIntent",
+         "slots": {}
+        });
+    });
+    it("verify that a built in intent without config will parse", function() {
+      let result = recognizer.Recognizer.matchText("Help");
+      expect(result).to.eql(
+        {"name": "AMAZON.HelpIntent",
+         "slots": {}
+        });
+    });
+  });
+
 });

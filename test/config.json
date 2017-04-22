@@ -21,5 +21,16 @@
 			"name": "MINIONS",
 			"filename": "test/minions.txt"
 		}
+	],
+	"builtInIntents":[
+		{
+			"name": "AMAZON.RepeatIntent",
+			"enabled": false
+		},
+		{
+			"name": "AMAZON.StopIntent",
+			"enabled": true,
+			"extentedUtterances": ["enough already", "quit now"]
+		}
 	]
 }

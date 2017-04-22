@@ -153,10 +153,26 @@ node generator.js
 ````
 
 Note here that you should already have the intents.json and utterances.txt files
-as these files are used to configure the Alexa skill.  Config.json is optional,
+as these files are used to configure the Alexa skill.  config.json is optional,
 but highly recommended if you have custom slots that are used by themselves (not
 within a large utterance).  This is where you can provide the values of your
-custom slot types (either directly or by providing a file name to load them from)
+custom slot types (either directly or by providing a file name to load them from).
+
+Also, you can specify how to parse built in intents in the config.json.
+For example:
+
+```json
+{
+	"builtInIntents":[
+		{
+			"name": "AMAZON.RepeatIntent",
+			"enabled": false
+		}
+	]
+}
+```
+
+will turn off parsing of the AMAZON.RepeatIntent.
 
 ## Parse user text
 
@@ -549,7 +565,7 @@ Currently, you can parse:
 1. All Alexa built in intents
 2. Utterances without slots
 3. Utterances with custom slots
-4. Utterances with all numbers, date, time built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.DURATION
+4. Utterances with all the numbers/date/time/duration built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.DURATION
 5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.DayOfWeek
 
 More Amazon built in slot types are coming shortly
