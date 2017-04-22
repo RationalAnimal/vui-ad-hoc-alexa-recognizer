@@ -17,6 +17,7 @@ BlahIntent here is {BlahSlot} and also {BlehSlot}
 DateIntent date is {DateSlot}
 DateIntent date that does not accept year only is {DateSlot:EXCLUDE_YEAR_ONLY_DATES}
 DateIntent {DateSlot}
+DurationIntent Event duration is {DurationSlot}
 TimeIntent does {TimeSlot} work for you
 AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
 PriceIntent The first price is {PriceOneSlot} dollars and the second price is {PriceTwoSlot} dollars

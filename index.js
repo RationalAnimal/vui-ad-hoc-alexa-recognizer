@@ -299,6 +299,10 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     // Ignore flags for now
     return recognizer.builtInValues.TIME.replacementRegExpString;
   }
+  else if(slotType == "AMAZON.DURATION"){
+    // Ignore flags for now
+    return recognizer.builtInValues.DURATION.replacementRegExpString;
+  }
   else if(slotType == "AMAZON.DayOfWeek"){
     // Ignore flags for now
     return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
@@ -629,7 +633,6 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
   // If there is no match, then return the original value
   return value;
 }
-
 
 var _processMatchedTimeSlotValue = function(value){
 //  console.log("_processMatchedTimeSlotValue, 1");
@@ -1048,6 +1051,181 @@ var _processMatchedTimeSlotValue = function(value){
   return;
 }
 
+
+
+
+
+
+
+
+
+var _processMatchedDurationSlotValue = function(value){
+  var matchResult;
+  let generalDurationString =
+  "^\\s*" +
+    "(" +
+       "(?:and|zero|oh|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|million|billion|trillion|\\s|[0-9,])+" +
+       "\\s*(?:years{0,1}|months{0,1}|weeks{0,1}|days{0,1}|hours{0,1}|minutes{0,1}|seconds{0,1})" +
+    ")+\\s*" +
+  "\\s*$";
+
+
+  var regExp = new RegExp(generalDurationString, "ig");
+  let remainingValue = value;
+  matchResult = regExp.exec(remainingValue);
+  let years;
+  let months;
+  let weeks;
+  let days;
+  let hours;
+  let minutes;
+  let seconds;
+  let gotDuration = false;
+  let gotTimePortion = false;
+  while(matchResult){
+    remainingValue = remainingValue.replace(matchResult[1], "");
+    if(/year/ig.exec(matchResult[1])){
+      let scratchSubValue = matchResult[1].replace(/years{0,1}/, "");
+      years = _processMatchedNumericSlotValue(scratchSubValue);
+      years = parseInt(years);
+      if(years == 0){
+        years == undefined;
+      }
+      else {
+        years = "" + years;
+        gotDuration = true;
+      }
+//      console.log("years: " + years);
+    }
+    else if(/month/ig.exec(matchResult[1])){
+      let scratchSubValue = matchResult[1].replace(/months{0,1}/, "");
+      months = _processMatchedNumericSlotValue(scratchSubValue);
+      months = parseInt(months);
+      if(months == 0){
+        months == undefined;
+      }
+      else {
+        months = "" + months;
+        gotDuration = true;
+      }
+//      console.log("months: " + months);
+    }
+    else if(/week/ig.exec(matchResult[1])){
+      let scratchSubValue = matchResult[1].replace(/weeks{0,1}/, "");
+      weeks = _processMatchedNumericSlotValue(scratchSubValue);
+      weeks = parseInt(weeks);
+      if(weeks == 0){
+        weeks == undefined;
+      }
+      else {
+        weeks = "" + weeks;
+        gotDuration = true;
+      }
+//      console.log("weeks: " + weeks);
+    }
+    else if(/day/ig.exec(matchResult[1])){
+      let scratchSubValue = matchResult[1].replace(/days{0,1}/, "");
+      days = _processMatchedNumericSlotValue(scratchSubValue);
+      days = parseInt(days);
+      if(days == 0){
+        days == undefined;
+      }
+      else {
+        days = "" + days;
+        gotDuration = true;
+      }
+//      console.log("days: " + days);
+    }
+    else if(/hour/ig.exec(matchResult[1])){
+      let scratchSubValue = matchResult[1].replace(/hours{0,1}/, "");
+      hours = _processMatchedNumericSlotValue(scratchSubValue);
+      hours = parseInt(hours);
+      if(hours == 0){
+        hours == undefined;
+      }
+      else {
+        hours = "" + hours;
+        gotDuration = true;
+        gotTimePortion = true;
+      }
+//      console.log("hours: " + hours);
+    }
+    else if(/minute/ig.exec(matchResult[1])){
+      let scratchSubValue = matchResult[1].replace(/minutes{0,1}/, "");
+      minutes = _processMatchedNumericSlotValue(scratchSubValue);
+      minutes = parseInt(minutes);
+      if(minutes == 0){
+        minutes == undefined;
+      }
+      else {
+        minutes = "" + minutes;
+        gotDuration = true;
+        gotTimePortion = true;
+      }
+//      console.log("minutes: " + minutes);
+    }
+    else if(/second/ig.exec(matchResult[1])){
+      let scratchSubValue = matchResult[1].replace(/seconds{0,1}/, "");
+      seconds = _processMatchedNumericSlotValue(scratchSubValue);
+      seconds = parseInt(seconds);
+      if(seconds == 0){
+        seconds == undefined;
+      }
+      else {
+        seconds = "" + seconds;
+        gotDuration = true;
+        gotTimePortion = true;
+      }
+//      console.log("seconds: " + seconds);
+    }
+    regExp.lastIndex = 0;
+    matchResult = regExp.exec(remainingValue)
+  }
+  if(gotDuration){
+    let returnValue = "P";
+    if(typeof years != "undefined"){
+      returnValue += (years + "Y");
+    }
+    if(typeof months != "undefined"){
+      returnValue += (months + "M");
+    }
+    if(typeof weeks != "undefined"){
+      returnValue += (weeks + "W");
+    }
+    if(typeof days != "undefined"){
+      returnValue += (days + "D");
+    }
+    if(gotTimePortion){
+      returnValue += "T";
+      if(typeof hours != "undefined"){
+        returnValue += (hours + "H");
+      }
+      if(typeof minutes != "undefined"){
+        returnValue += (minutes + "M");
+      }
+      if(typeof seconds != "undefined"){
+        returnValue += (seconds + "S");
+      }
+    }
+    return returnValue;
+  }
+
+  return;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var _processMatchedDateSlotValue = function(value, flags){
   var matchResult;
   var regExp = /(right now)/ig
@@ -1415,6 +1593,9 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, recognizer
   }
   if(slotType == "AMAZON.TIME"){
     return _processMatchedTimeSlotValue(value);
+  }
+  if(slotType == "AMAZON.DURATION"){
+    return _processMatchedDurationSlotValue(value);
   }
   if(slotType.startsWith("AMAZON.")){
     return value;

@@ -107,6 +107,15 @@
       ]
     },
     {
+      "intent": "DurationIntent",
+      "slots": [
+        {
+          "name": "DurationSlot",
+          "type": "AMAZON.DURATION"
+        }
+      ]
+    },
+    {
       "intent": "TimeIntent",
       "slots": [
         {

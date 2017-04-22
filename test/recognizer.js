@@ -750,6 +750,65 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
 
   });
 
+  describe("AMAZON.DURATION processing", function() {
+    it("verify AMAZON.DURATION slot and full duration specification in order matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("event duration is five years 11 months two weeks one day seven hours twenty three minutes forty seven seconds");
+      expect(result).to.eql(
+        {
+          "name": "DurationIntent",
+          "slots": {
+            "DurationSlot": {
+              "name": "DurationSlot",
+              "value": "P5Y11M2W1DT7H23M47S"
+             }
+           }
+        });
+    });
+    it("verify AMAZON.DURATION slot and full duration specification out of order matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("event duration is twenty three minutes five years two weeks one day seven hours 11 months forty seven seconds");
+      expect(result).to.eql(
+        {
+          "name": "DurationIntent",
+          "slots": {
+            "DurationSlot": {
+              "name": "DurationSlot",
+              "value": "P5Y11M2W1DT7H23M47S"
+             }
+           }
+        });
+    });
+    it("verify AMAZON.DURATION slot and full duration specification with leading zeros, in order, matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("event duration is oh five years 011 months oh two weeks zero one day zero seven hours oh twenty three minutes oh forty seven seconds");
+      expect(result).to.eql(
+        {
+          "name": "DurationIntent",
+          "slots": {
+            "DurationSlot": {
+              "name": "DurationSlot",
+              "value": "P5Y11M2W1DT7H23M47S"
+             }
+           }
+        });
+    });
+    it("verify AMAZON.DURATION slot and full duration specification with zeros does not match and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("event duration is oh years 0 months oh weeks zero day zero hours oh minutes oh seconds");
+      expect(typeof result).to.equal("undefined");
+    });
+    it("verify AMAZON.DURATION slot and partial duration specification out of order matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("event duration is twenty three minutes two weeks one day 11 months forty seven seconds");
+      expect(result).to.eql(
+        {
+          "name": "DurationIntent",
+          "slots": {
+            "DurationSlot": {
+              "name": "DurationSlot",
+              "value": "P11M2W1DT23M47S"
+             }
+           }
+        });
+    });
+  });
+
   describe("Wild card processing", function() {
     it("verify simple utterance with an AMAZON.US_FIRST_NAME slot with INCLUDE_WILDCARD_MATCH matches", function() {
       let result = recognizer.Recognizer.matchText("My first name is blah blah");

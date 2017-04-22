@@ -480,6 +480,10 @@ Any commas within numeric input, e.g. "20,000", are ignored during parsing.
 
 ## Optimizations
 
+Note: now that multi-stage matching has been enabled, the performance should be
+a lot better for many previously slow scenarios.  However, you can still make
+faster by arranging for the parsing order and excluding some intents from parsing.
+
 ### Intent parsing order
 
 You can pass to the matching call the name(s) of the intents that you want to
@@ -545,7 +549,7 @@ Currently, you can parse:
 1. All Alexa built in intents
 2. Utterances without slots
 3. Utterances with custom slots
-4. Utterances with these numbers, date, time built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME
+4. Utterances with all numbers, date, time built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.DURATION
 5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.DayOfWeek
 
 More Amazon built in slot types are coming shortly
