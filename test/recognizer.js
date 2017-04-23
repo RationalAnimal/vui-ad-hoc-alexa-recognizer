@@ -911,7 +911,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
     it("verify that an utterance with a $ and mixture of numbers and spelled out number matches on 'dollars'", function() {
-      let result = recognizer.Recognizer.matchText('the first price is $20 thousand and the second price is $525 million');
+      let result = recognizer.Recognizer.matchText('the first price is $20 thousand and the second price is $525 million 300 thousand five hundred 10');
       expect(result).to.eql(
         {"name": "PriceIntent",
          "slots": {
@@ -921,7 +921,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
            },
            "PriceTwoSlot": {
             "name": "PriceTwoSlot",
-            "value": "525000000"
+            "value": "525300510"
            }
         }});
     });
