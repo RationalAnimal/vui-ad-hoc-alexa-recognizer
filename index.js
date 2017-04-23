@@ -369,7 +369,8 @@ var _processMatchedNumericSlotValue = function(value){
   // Then convert the numbers to strings (NOT spelled out) and concatenate
   // these strings together.
   // Then convert the result to an integer and return.
-  value = value.replace(/,/ig, " ");
+  value = value.replace(/,0/ig, " 0");
+  value = value.replace(/,/ig, "");
   value = value.replace(/zero/ig, 0);
   value = value.replace(/oh/ig, 0);
 
