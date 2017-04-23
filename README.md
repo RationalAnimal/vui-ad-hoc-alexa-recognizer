@@ -174,6 +174,22 @@ For example:
 
 will turn off parsing of the AMAZON.RepeatIntent.
 
+You can also specify additional utterances for built in intents, either directly
+in the config file or in an external file:
+
+```json
+{
+  "builtInIntents":[
+    {
+      "name": "AMAZON.StopIntent",
+      "enabled": true,
+      "extendedUtterances": ["enough already", "quit now"],
+      "extendedUtterancesFilename": "test/stopIntentExtendedUtterances.txt"
+    }
+  ]
+}
+```
+
 ## Parse user text
 
 The second step is to use recognizer.json file at run time to parse the user

@@ -30,7 +30,8 @@
 		{
 			"name": "AMAZON.StopIntent",
 			"enabled": true,
-			"extentedUtterances": ["enough already", "quit now"]
+			"extendedUtterances": ["enough already", "quit now"],
+			"extendedUtterancesFilename": "test/stopIntentExtendedUtterances.txt"
 		}
 	]
 }

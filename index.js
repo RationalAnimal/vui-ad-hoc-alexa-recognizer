@@ -26,6 +26,7 @@ SOFTWARE.
 'use strict'
 var fs = require('fs');
 var soundex = require('./soundex.js');
+var utilities = require('./utilities.js');
 var recognizer = {};
 
 var _makeReplacementRegExpString = function(arrayToConvert){
@@ -1945,8 +1946,8 @@ var _generateRunTimeJson = function(config, intents, utterances){
     }
     reconstructedRegEx += "\\s*[.?!]?\\s*$";
     currentValue.regExString = reconstructedRegEx;
+
     // Now add the reg exp with all wildcards
-  //BEGIN
     let wildcardRegExString = currentUtterance;
     let wildcardReplacementString = "((?:\\w|\\s|[0-9,'])+)";
     let addWildcardReplacementString = false;
@@ -1976,7 +1977,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
       reconstructedRegEx += "\\s*[.?!]?\\s*$";
       currentValue.wildcardRegExString = reconstructedRegEx;
     }
-  //END
+
     currentValue.intent = currentIntent;
     recognizerSet.matchConfig.push(currentValue);
   }
@@ -1987,182 +1988,242 @@ var _generateRunTimeJson = function(config, intents, utterances){
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.CancelIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let cancelIntent = {
+    let builtinIntent = {
       "name": "AMAZON.CancelIntent",
       "utterances": [
         "cancel", "never mind", "forget it"
       ]
     }
-    cancelIntent.regExpString = _makeFullRegExpString(cancelIntent.utterances);
-    recognizerSet.builtInIntents.push(cancelIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.HelpIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let helpIntent = {
+    let builtinIntent = {
       "name": "AMAZON.HelpIntent",
       "utterances": [
         "help", "help me", "can you help me"
       ]
     }
-    helpIntent.regExpString = _makeFullRegExpString(helpIntent.utterances);
-    recognizerSet.builtInIntents.push(helpIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.LoopOffIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let loopOffIntent = {
+    let builtinIntent = {
       "name": "AMAZON.LoopOffIntent",
       "utterances": [
         "loop off"
       ]
     }
-    loopOffIntent.regExpString = _makeFullRegExpString(loopOffIntent.utterances);
-    recognizerSet.builtInIntents.push(loopOffIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.LoopOnIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let loopOnIntentIntent = {
+    let builtinIntent = {
       "name": "AMAZON.LoopOnIntent",
       "utterances": [
         "loop", "loop on", "keep repeating this song"
       ]
     }
-    loopOnIntentIntent.regExpString = _makeFullRegExpString(loopOnIntentIntent.utterances);
-    recognizerSet.builtInIntents.push(loopOnIntentIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.NextIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let nextIntent = {
+    let builtinIntent = {
       "name": "AMAZON.NextIntent",
       "utterances": [
         "next", "skip", "skip forward"
       ]
     }
-    nextIntent.regExpString = _makeFullRegExpString(nextIntent.utterances);
-    recognizerSet.builtInIntents.push(nextIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.NoIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let noIntent = {
+    let builtinIntent = {
       "name": "AMAZON.NoIntent",
       "utterances": [
         "no", "no thanks"
       ]
     }
-    noIntent.regExpString = _makeFullRegExpString(noIntent.utterances);
-    recognizerSet.builtInIntents.push(noIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.PauseIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let pauseIntent = {
+    let builtinIntent = {
       "name": "AMAZON.PauseIntent",
       "utterances": [
         "pause", "pause that"
       ]
     }
-    pauseIntent.regExpString = _makeFullRegExpString(pauseIntent.utterances);
-    recognizerSet.builtInIntents.push(pauseIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.PreviousIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let previousIntent = {
+    let builtinIntent = {
       "name": "AMAZON.PreviousIntent",
       "utterances": [
         "go back", "skip back", "back up"
       ]
     }
-    previousIntent.regExpString = _makeFullRegExpString(previousIntent.utterances);
-    recognizerSet.builtInIntents.push(previousIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.RepeatIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let repeatIntent = {
+    let builtinIntent = {
       "name": "AMAZON.RepeatIntent",
       "utterances": [
         "repeat", "say that again", "repeat that"
       ]
     }
-    repeatIntent.regExpString = _makeFullRegExpString(repeatIntent.utterances);
-    recognizerSet.builtInIntents.push(repeatIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.ResumeIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let resumeIntent = {
+    let builtinIntent = {
       "name": "AMAZON.ResumeIntent",
       "utterances": [
         "resume", "continue", "keep going"
       ]
     }
-    resumeIntent.regExpString = _makeFullRegExpString(resumeIntent.utterances);
-    recognizerSet.builtInIntents.push(resumeIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.ShuffleOffIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let shuffleOffIntent = {
+    let builtinIntent = {
       "name": "AMAZON.ShuffleOffIntent",
       "utterances": [
         "stop shuffling", "shuffle off", "turn off shuffle"
       ]
     }
-    shuffleOffIntent.regExpString = _makeFullRegExpString(shuffleOffIntent.utterances);
-    recognizerSet.builtInIntents.push(shuffleOffIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.ShuffleOnIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let shuffleOnIntent = {
+    let builtinIntent = {
       "name": "AMAZON.ShuffleOnIntent",
       "utterances": [
         "shuffle", "shuffle on", "shuffle the music", "shuffle mode"
       ]
     }
-    shuffleOnIntent.regExpString = _makeFullRegExpString(shuffleOnIntent.utterances);
-    recognizerSet.builtInIntents.push(shuffleOnIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.StartOverIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let startOverIntent = {
+    let builtinIntent = {
       "name": "AMAZON.StartOverIntent",
       "utterances": [
         "start over", "restart", "start again"
       ]
     }
-    startOverIntent.regExpString = _makeFullRegExpString(startOverIntent.utterances);
-    recognizerSet.builtInIntents.push(startOverIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.StopIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let stopIntent = {
+    let builtinIntent = {
       "name": "AMAZON.StopIntent",
       "utterances": [
         "stop", "off", "shut up"
       ]
     }
-    stopIntent.regExpString = _makeFullRegExpString(stopIntent.utterances);
-    recognizerSet.builtInIntents.push(stopIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   intentConfig = _getBuiltInIntentConfig(config, "AMAZON.YesIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
-    let yesIntent = {
+    let builtinIntent = {
       "name": "AMAZON.YesIntent",
       "utterances": [
         "yes", "yes please", "sure"
       ]
     }
-    yesIntent.regExpString = _makeFullRegExpString(yesIntent.utterances);
-    recognizerSet.builtInIntents.push(yesIntent);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
   }
 
   return recognizerSet;
@@ -2221,6 +2282,24 @@ var _getBuiltInIntentConfig = function(config, intentName){
   return;
 }
 
+var _getBuiltInIntentExtendedUtterances = function(intentConfig){
+  let returnValue;
+  if(typeof intentConfig != "undefined" && intentConfig != null){
+    if(typeof intentConfig.extendedUtterances != "undefined"){
+      returnValue = [].concat(intentConfig.extendedUtterances);
+    }
+    if(typeof intentConfig.extendedUtterancesFilename != "undefined"){
+      let loadedFromFile = utilities.loadStringListFromFile(intentConfig.extendedUtterancesFilename);
+      if(typeof loadedFromFile != "undefined" && Array.isArray(loadedFromFile)){
+        if(typeof returnValue == "undefined"){
+          returnValue = [];
+        }
+        returnValue = returnValue.concat(loadedFromFile);
+      }
+    }
+  }
+  return returnValue;
+}
 var _isBuiltInIntentEnabled = function(intentConfig){
   if(typeof intentConfig != "undefined" && (typeof intentConfig.enabled != "undefined" && intentConfig.enabled == false)){
     return false;

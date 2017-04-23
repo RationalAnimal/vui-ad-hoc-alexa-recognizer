@@ -993,6 +993,20 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
          "slots": {}
         });
     });
+    it("verify that an enabled built in intent will parse additional utterances in config file", function() {
+      let result = recognizer.Recognizer.matchText("enough already");
+      expect(result).to.eql(
+        {"name": "AMAZON.StopIntent",
+         "slots": {}
+        });
+    });
+    it("verify that an enabled built in intent will parse additional utterances in external file", function() {
+      let result = recognizer.Recognizer.matchText("leave me alone");
+      expect(result).to.eql(
+        {"name": "AMAZON.StopIntent",
+         "slots": {}
+        });
+    });
     it("verify that a built in intent without config will parse", function() {
       let result = recognizer.Recognizer.matchText("Help");
       expect(result).to.eql(
