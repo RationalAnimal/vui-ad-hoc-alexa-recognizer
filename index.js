@@ -488,7 +488,10 @@ var _processMatchedNumericSlotValue = function(value){
       }
       let currentOrderOfMagnitude = _getOrderOfMagnitude(value[i]);
       let accummulatedOrderOfMagnitude = _getOrderOfMagnitude(accummulatedStack[accummulatedStack.length - 1]);
-      if((accummulatedOrderOfMagnitude < currentOrderOfMagnitude) && currentOrderOfMagnitude >= 2){
+      if(
+          ((accummulatedOrderOfMagnitude < currentOrderOfMagnitude) && value[i] == 100) ||
+          ((accummulatedOrderOfMagnitude < currentOrderOfMagnitude) && currentOrderOfMagnitude > 2)
+        ){
         // The new value's order of magnitune is larger than the entire accummulated
         // value and new value's order of magnitude is at least 2.  This means
         // we multiply them.
