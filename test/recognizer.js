@@ -902,6 +902,21 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
            }
         }});
     });
+    it("verify that an utterance with a $ and a , in the number matches on 'dollars'", function() {
+      let result = recognizer.Recognizer.matchText('the first price is $20,000 and the second price is $525,000,000');
+      expect(result).to.eql(
+        {"name": "PriceIntent",
+         "slots": {
+           "PriceOneSlot": {
+             "name": "PriceOneSlot",
+             "value": "20000"
+           },
+           "PriceTwoSlot": {
+            "name": "PriceTwoSlot",
+            "value": "525000000"
+           }
+        }});
+    });
     it("verify that an utterance with a 'dollars' spelled out also matches", function() {
       let result = recognizer.Recognizer.matchText('the first price is 1000 dollars and the second price is 525000 dollars');
       expect(result).to.eql(

@@ -122,16 +122,17 @@ if(typeof utterancesFileName != "undefined"){
     });
     rd.on('close', function(line) {
       resultJson = doTheProcessing();
-      fs.writeFile('recognizer.json', JSON.stringify(resultJson, null, 2), 'utf8', _done(resultJson));
+      fs.writeFile('recognizer.json', JSON.stringify(resultJson), 'utf8', _done(resultJson));
+//      fs.writeFile('recognizer.json', JSON.stringify(resultJson, null, 2), 'utf8', _done(resultJson));
     });
   }
 }
 else {
   resultJson = doTheProcessing();
-  fs.writeFile('recognizer.json', JSON.stringify(resultJson, null, 2), 'utf8', _done(resultJson));
+  fs.writeFile('recognizer.json', JSON.stringify(resultJson), 'utf8', _done(resultJson));
+//  fs.writeFile('recognizer.json', JSON.stringify(resultJson, null, 2), 'utf8', _done(resultJson));
 }
 var _done = function(json){
   console.log(JSON.stringify(resultJson, null, 2));
   console.log("Was saved to recognizer.json");
 }
-//recognizer.Recognizer.generateRunTimeJson();

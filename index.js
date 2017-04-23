@@ -369,7 +369,7 @@ var _processMatchedNumericSlotValue = function(value){
   // Then convert the numbers to strings (NOT spelled out) and concatenate
   // these strings together.
   // Then convert the result to an integer and return.
-  value = value.replace(/,/ig, "");
+  value = value.replace(/,/ig, " ");
   value = value.replace(/zero/ig, 0);
   value = value.replace(/oh/ig, 0);
 
@@ -440,7 +440,8 @@ var _processMatchedNumericSlotValue = function(value){
   value = value.replace(/billion/ig, 1000000000);
   value = value.replace(/trillion/ig, 1000000000000);
 
-  value = value.replace(/and/ig, "");
+  value = value.replace(/and/ig, " ");
+//  console.log("_processMatchedNumericSlotValue, 1.1, value: " + JSON.stringify(value));
 
   value = value.split(/\s+/);
   var convertedValues = [];
@@ -1609,14 +1610,18 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, recognizer
 var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
   // First, correct some of Microsoft's "deviations"
   // look for a $ followed by a number and replace it with the number followed by the word "dollars".
-  let regExp = /(\$\s*(?:[0-9]\s*)*(?:[0-9])+)/ig;
+  let regExp = /(\$\s*(?:[0-9,]\s*)*(?:[0-9])+)/ig;
   let dollarMatchResult;
   while(dollarMatchResult = regExp.exec(stringToMatch)){
+//    console.log("dollarMatchResult: " + JSON.stringify(dollarMatchResult));
     if(dollarMatchResult == null){
       continue;
     }
     let dollarlessMatch = dollarMatchResult[0].substring(1);
-    stringToMatch = stringToMatch.replace(/(\$\s*(?:[0-9]\s*)*(?:[0-9])+)/, dollarlessMatch + " dollars");
+//    console.log("dollarlessMatch: " + JSON.stringify(dollarlessMatch));
+    stringToMatch = stringToMatch.replace(/(\$\s*(?:[0-9,]\s*)*(?:[0-9])+)/, dollarlessMatch + " dollars");
+//    console.log("stringToMatch: " + JSON.stringify(stringToMatch));
+    regExp.lastIndex = 0;
   }
   // Now replace all ordinal digits with cardinal numbers
 /*
@@ -1720,7 +1725,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
 //      console.log("_matchText, 4.0.1");
       let wildcardRegExp = new RegExp(scratch.wildcardRegExString, "ig");
 //      console.log("_matchText, 4.0.2, wildcardRegExp: ", wildcardRegExp);
-      let wildcardMatchResult = wildcardRegExp.exec(stringToMatch);
+      let wildcardMatchResult = wildcardRegExp.test(stringToMatch);
       if(wildcardMatchResult){
         // we are good to try the real one.
 //        console.log("_matchText, 4.0.3, potential match, wildcardRegExp: ", wildcardRegExp);
