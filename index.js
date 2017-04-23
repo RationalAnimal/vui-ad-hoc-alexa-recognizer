@@ -1610,7 +1610,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, recognizer
 var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
   // First, correct some of Microsoft's "deviations"
   // look for a $ followed by a number and replace it with the number followed by the word "dollars".
-  let regExp = /(\$\s*(?:[0-9,]\s*)*(?:[0-9])+)/ig;
+  let regExp = /(\$\s*(?:[0-9,]\s*)*(?:[0-9]|\sthousand|\smillion|\sbillion|\strillion)+)/ig;
   let dollarMatchResult;
   while(dollarMatchResult = regExp.exec(stringToMatch)){
 //    console.log("dollarMatchResult: " + JSON.stringify(dollarMatchResult));
@@ -1619,7 +1619,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
     }
     let dollarlessMatch = dollarMatchResult[0].substring(1);
 //    console.log("dollarlessMatch: " + JSON.stringify(dollarlessMatch));
-    stringToMatch = stringToMatch.replace(/(\$\s*(?:[0-9,]\s*)*(?:[0-9])+)/, dollarlessMatch + " dollars");
+    stringToMatch = stringToMatch.replace(/(\$\s*(?:[0-9,]\s*)*(?:[0-9]|\sthousand|\smillion|\sbillion|\strillion)+)/, dollarlessMatch + " dollars");
 //    console.log("stringToMatch: " + JSON.stringify(stringToMatch));
     regExp.lastIndex = 0;
   }
