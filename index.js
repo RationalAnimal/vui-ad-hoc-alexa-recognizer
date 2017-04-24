@@ -273,6 +273,9 @@ recognizer.builtInValues.Country = require("./builtinslottypes/countries.json");
 recognizer.builtInValues.Country.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Country.values);
 recognizer.builtInValues.Country.replacementRegExp = new RegExp(recognizer.builtInValues.Country.replacementRegExpString, "ig");
 
+recognizer.builtInValues.Room = require("./builtinslottypes/rooms.json");
+recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Room.values);
+recognizer.builtInValues.Room.replacementRegExp = new RegExp(recognizer.builtInValues.Room.replacementRegExpString, "ig");
 
 var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlags){
   if(slotType == "AMAZON.NUMBER"){
@@ -320,13 +323,22 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
   else if(slotType == "AMAZON.Country"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
-      // number are used in cases of names like John the 1st
       return "((?:\\w|\\s|[0-9])+)";
     }
     else {
       return recognizer.builtInValues.Country.replacementRegExpString;
     }
   }
+  else if(slotType == "AMAZON.Room"){
+    // Ignore SOUNDEX_MATCH flag for now
+    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+      return "((?:\\w|\\s|[0-9]|')+)";
+    }
+    else {
+      return recognizer.builtInValues.Room.replacementRegExpString;
+    }
+  }
+
 //  else if(slotType.startsWith("AMAZON.")){
 //    // TODO add handling of other built in Amazon slot types, for now just return the value
 //    return "((?:\\w|\\s|[0-9])+)";

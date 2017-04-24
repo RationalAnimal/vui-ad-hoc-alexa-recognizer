@@ -24,3 +24,4 @@ PriceIntent The first price is {PriceOneSlot} dollars and the second price is {P
 DayOfWeekIntent lets do it on {DayOfWeekSlot}
 MonthIntent {MonthSlot} is the best month
 CountryIntent Have you been to {CountrySlot}
+RoomIntent best room is the {RoomSlot}

@@ -100,6 +100,17 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.Room slot matches", function() {
+      let result = recognizer.Recognizer.matchText("Best room is the bedroom");
+      expect(result).to.eql(
+        {"name": "RoomIntent",
+         "slots": {
+          "RoomSlot": {
+            "name": "RoomSlot",
+            "value": "bedroom"
+          }
+        }});
+    });
 
   });
 
