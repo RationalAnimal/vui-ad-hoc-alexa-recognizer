@@ -1844,6 +1844,15 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
   recognizer.builtInValues.US_FIRST_NAME.replacementRegExp = new RegExp(recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString, "ig");
 
+  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Room");
+  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+  if(typeof extendedValues != "undefined"){
+    recognizer.builtInValues.Room.values = recognizer.builtInValues.Room.values.concat(extendedValues);
+  }
+
+  recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Room.values);
+  recognizer.builtInValues.Room.replacementRegExp = new RegExp(recognizer.builtInValues.Room.replacementRegExpString, "ig");
+
   var recognizerSet = {};
   if(typeof config != "undefined" && typeof config.customSlotTypes != "undefined"){
     recognizerSet.customSlotTypes = config.customSlotTypes;

@@ -111,6 +111,31 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.Room slot using extended values matches", function() {
+      let result = recognizer.Recognizer.matchText("Best room is the hobbit hole");
+      expect(result).to.eql(
+        {"name": "RoomIntent",
+         "slots": {
+          "RoomSlot": {
+            "name": "RoomSlot",
+            "value": "hobbit hole"
+          }
+        }});
+    });
+    it("verify simple utterance with an AMAZON.Room slot using extended values from a file matches", function() {
+      let result = recognizer.Recognizer.matchText("Best room is the rabbit hole");
+      expect(result).to.eql(
+        {"name": "RoomIntent",
+         "slots": {
+          "RoomSlot": {
+            "name": "RoomSlot",
+            "value": "rabbit hole"
+          }
+        }});
+    });
+
+
+
 
   });
 

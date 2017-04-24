@@ -41,6 +41,13 @@
 				"Prince Abubu"
 			],
 			"extendedValuesFilename": "test/usFirstNameExtendedValues.txt"
+		},
+		{
+			"name": "AMAZON.Room",
+			"extendedValues": [
+				"hobbit hole"
+			],
+			"extendedValuesFilename": "test/roomExtendedValues.txt"
 		}
 	]
 }
