@@ -22,4 +22,5 @@ TimeIntent does {TimeSlot} work for you
 AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
 PriceIntent The first price is {PriceOneSlot} dollars and the second price is {PriceTwoSlot} dollars
 DayOfWeekIntent lets do it on {DayOfWeekSlot}
+MonthIntent {MonthSlot} is the best month
 CountryIntent Have you been to {CountrySlot}

@@ -259,6 +259,11 @@ recognizer.builtInValues.US_FIRST_NAME = require("./builtinslottypes/usfirstname
 recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
 recognizer.builtInValues.US_FIRST_NAME.replacementRegExp = new RegExp(recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString, "ig");
 
+recognizer.builtInValues.Month = {};
+recognizer.builtInValues.Month.values = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+recognizer.builtInValues.Month.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Month.values);
+recognizer.builtInValues.Month.replacementRegExp = new RegExp(recognizer.builtInValues.Month.replacementRegExpString, "ig");
+
 recognizer.builtInValues.DayOfWeek = {};
 recognizer.builtInValues.DayOfWeek.values = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 recognizer.builtInValues.DayOfWeek.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.DayOfWeek.values);
@@ -303,6 +308,10 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
   else if(slotType == "AMAZON.DURATION"){
     // Ignore flags for now
     return recognizer.builtInValues.DURATION.replacementRegExpString;
+  }
+  else if(slotType == "AMAZON.Month"){
+    // Ignore flags for now
+    return recognizer.builtInValues.Month.replacementRegExpString;
   }
   else if(slotType == "AMAZON.DayOfWeek"){
     // Ignore flags for now

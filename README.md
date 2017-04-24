@@ -568,6 +568,15 @@ will be used.  This allows matching of expressions that are not exact matches, b
 approximate matches.
 
 ```shell
+> cat utterances.txt
+```
+where utterances.txt includes this line:
+
+```
+MinionIntent Another minion is {MinionSlot:SOUNDEX_MATCH}
+```
+then
+```shell
 > node matcher.js "another minion is steward"
 ```
 will return
@@ -600,6 +609,6 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with all the numbers/date/time/duration built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.DURATION
-5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.DayOfWeek
+5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.Month, AMAZON.DayOfWeek
 
 More Amazon built in slot types are coming shortly

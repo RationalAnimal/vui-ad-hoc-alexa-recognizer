@@ -45,6 +45,28 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.Month slot matches", function() {
+      let result = recognizer.Recognizer.matchText("May is the best month");
+      expect(result).to.eql(
+        {"name": "MonthIntent",
+         "slots": {
+          "MonthSlot": {
+            "name": "MonthSlot",
+            "value": "May"
+          }
+        }});
+    });
+    it("verify simple utterance with an AMAZON.DayOfWeek slot matches", function() {
+      let result = recognizer.Recognizer.matchText("lets do it on tuesday");
+      expect(result).to.eql(
+        {"name": "DayOfWeekIntent",
+         "slots": {
+          "DayOfWeekSlot": {
+            "name": "DayOfWeekSlot",
+            "value": "tuesday"
+          }
+        }});
+    });
     it("verify simple utterance with an AMAZON.US_FIRST_NAME slot matches", function() {
       let result = recognizer.Recognizer.matchText("His first name is James");
       expect(result).to.eql(

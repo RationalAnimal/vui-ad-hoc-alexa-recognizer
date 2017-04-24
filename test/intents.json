@@ -53,6 +53,15 @@
       ]
     },
     {
+      "intent": "MonthIntent",
+      "slots": [
+        {
+          "name": "MonthSlot",
+          "type": "AMAZON.Month"
+        }
+      ]
+    },
+    {
       "intent": "DayOfWeekIntent",
       "slots": [
         {
