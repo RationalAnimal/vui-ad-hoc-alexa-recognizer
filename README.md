@@ -194,7 +194,7 @@ Similarly you can affect built in slot types using config:
 
 ```json
 {
-  "buildInSlots": [
+  "builtInSlots": [
     {
       "name": "AMAZON.US_FIRST_NAME",
       "extendedValues": [

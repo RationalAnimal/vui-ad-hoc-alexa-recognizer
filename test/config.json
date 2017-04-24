@@ -34,7 +34,7 @@
 			"extendedUtterancesFilename": "test/stopIntentExtendedUtterances.txt"
 		}
 	],
-	"buildInSlots": [
+	"builtInSlots": [
 		{
 			"name": "AMAZON.US_FIRST_NAME",
 			"extendedValues": [

@@ -2289,9 +2289,9 @@ var _removeAllInstancesFromArray = function(arrayToRemoveFrom, value){
 }
 
 var _getBuiltInSlotConfig = function(config, slotName){
-  if(typeof config != "undefined" && Array.isArray(config.buildInSlots)){
-    for(let i = 0; i < config.buildInSlots.length; i ++){
-      let slotConfig = config.buildInSlots[i];
+  if(typeof config != "undefined" && Array.isArray(config.builtInSlots)){
+    for(let i = 0; i < config.builtInSlots.length; i ++){
+      let slotConfig = config.builtInSlots[i];
       if(slotConfig.name == slotName){
         return slotConfig;
       }
