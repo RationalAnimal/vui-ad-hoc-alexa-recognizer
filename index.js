@@ -1813,6 +1813,16 @@ var _generateRunTimeJson = function(config, intents, utterances){
 //  console.log("_generateRunTimeJson, config: ", JSON.stringify(config));
 //  console.log("_generateRunTimeJson, intents: ", JSON.stringify(intents));
 //  console.log("_generateRunTimeJson, utterances: ", JSON.stringify(utterances));
+  // First, extend the built in slot values with values from config
+  let slotConfig = _getBuiltInSlotConfig(config, "AMAZON.US_FIRST_NAME");
+  let extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+  if(typeof extendedValues != "undefined"){
+    recognizer.builtInValues.US_FIRST_NAME.values = recognizer.builtInValues.US_FIRST_NAME.values.concat(extendedValues);
+  }
+
+  recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
+  recognizer.builtInValues.US_FIRST_NAME.replacementRegExp = new RegExp(recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString, "ig");
+
   var recognizerSet = {};
   if(typeof config != "undefined" && typeof config.customSlotTypes != "undefined"){
     recognizerSet.customSlotTypes = config.customSlotTypes;
@@ -1820,7 +1830,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
     // regular expressions so that the exact value is returned rather than what
     // was passed in, say from Cortana.  This is needed because Alexa respects
     // capitalization, etc, while Cortana gratuitously capitalizes first letters
-    // and adds periods at the end.
+    // and adds periods and other punctuations at the end.
     for(var i = 0; i < recognizerSet.customSlotTypes.length; i++){
       let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
       scratchCustomSlotType.regExpStrings = [];
@@ -2267,6 +2277,38 @@ var _removeAllInstancesFromArray = function(arrayToRemoveFrom, value){
       arrayToRemoveFrom.splice(i, 1);
     }
   }
+}
+
+var _getBuiltInSlotConfig = function(config, slotName){
+  if(typeof config != "undefined" && Array.isArray(config.buildInSlots)){
+    for(let i = 0; i < config.buildInSlots.length; i ++){
+      let slotConfig = config.buildInSlots[i];
+      if(slotConfig.name == slotName){
+        return slotConfig;
+      }
+    }
+  }
+  // Nothing found - return undefined
+  return;
+}
+
+var _getBuiltInSlotExtendedValues = function(slotConfig){
+  let returnValue;
+  if(typeof slotConfig != "undefined" && slotConfig != null){
+    if(typeof slotConfig.extendedValues != "undefined"){
+      returnValue = [].concat(slotConfig.extendedValues);
+    }
+    if(typeof slotConfig.extendedValuesFilename != "undefined"){
+      let loadedFromFile = utilities.loadStringListFromFile(slotConfig.extendedValuesFilename);
+      if(typeof loadedFromFile != "undefined" && Array.isArray(loadedFromFile)){
+        if(typeof returnValue == "undefined"){
+          returnValue = [];
+        }
+        returnValue = returnValue.concat(loadedFromFile);
+      }
+    }
+  }
+  return returnValue;
 }
 
 var _getBuiltInIntentConfig = function(config, intentName){

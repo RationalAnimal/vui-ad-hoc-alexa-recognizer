@@ -56,6 +56,28 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.US_FIRST_NAME slot using extended values matches", function() {
+      let result = recognizer.Recognizer.matchText("His first name is Prince Abubu");
+      expect(result).to.eql(
+        {"name": "FirstNameIntent",
+         "slots": {
+          "FirstNameSlot": {
+            "name": "FirstNameSlot",
+            "value": "Prince Abubu"
+          }
+        }});
+    });
+    it("verify simple utterance with an AMAZON.US_FIRST_NAME slot using extended values from a file matches", function() {
+      let result = recognizer.Recognizer.matchText("His first name is Doppleganger");
+      expect(result).to.eql(
+        {"name": "FirstNameIntent",
+         "slots": {
+          "FirstNameSlot": {
+            "name": "FirstNameSlot",
+            "value": "Doppleganger"
+          }
+        }});
+    });
 
   });
 

@@ -190,6 +190,24 @@ in the config file or in an external file:
 }
 ```
 
+Similarly you can affect built in slot types using config:
+
+```json
+{
+  "buildInSlots": [
+    {
+      "name": "AMAZON.US_FIRST_NAME",
+      "extendedValues": [
+        "Prince Abubu"
+      ],
+      "extendedValuesFilename": "test/usFirstNameExtendedValues.txt"
+    }
+  ]
+}
+```
+This will add "Prince Abubu" and whatever names are found in test/usFirstNameExtendedValues.txt
+file to the list of first names recognized by the AMAZON.US_FIRST_NAME slot.
+
 ## Parse user text
 
 The second step is to use recognizer.json file at run time to parse the user

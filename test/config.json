@@ -33,5 +33,14 @@
 			"extendedUtterances": ["enough already", "quit now"],
 			"extendedUtterancesFilename": "test/stopIntentExtendedUtterances.txt"
 		}
+	],
+	"buildInSlots": [
+		{
+			"name": "AMAZON.US_FIRST_NAME",
+			"extendedValues": [
+				"Prince Abubu"
+			],
+			"extendedValuesFilename": "test/usFirstNameExtendedValues.txt"
+		}
 	]
 }
