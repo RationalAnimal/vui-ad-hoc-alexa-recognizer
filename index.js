@@ -252,8 +252,19 @@ recognizer.builtInValues.DURATION.replacementRegExpString = _makeReplacementRegE
 recognizer.builtInValues.DURATION.replacementRegExp = new RegExp(recognizer.builtInValues.DURATION.replacementRegExpString, "ig");
 
 recognizer.builtInValues.US_STATE = require("./builtinslottypes/usstates.json");
-recognizer.builtInValues.US_STATE.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_STATE.values);
-recognizer.builtInValues.US_STATE.replacementRegExp = new RegExp(recognizer.builtInValues.US_STATE.replacementRegExpString, "ig");
+{
+  let statesAndTerritories = [];
+  let states = [];
+  for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
+    statesAndTerritories.push(recognizer.builtInValues.US_STATE.values[i].name);
+    if(recognizer.builtInValues.US_STATE.values[i].isState){
+      states.push(recognizer.builtInValues.US_STATE.values[i].name);
+    }
+  }
+  recognizer.builtInValues.US_STATE.replacementRegExpString = _makeReplacementRegExpString(statesAndTerritories);
+  recognizer.builtInValues.US_STATE.replacementStatesOnlyRegExpString = _makeReplacementRegExpString(states);
+  recognizer.builtInValues.US_STATE.replacementRegExp = new RegExp(recognizer.builtInValues.US_STATE.replacementRegExpString, "ig");
+}
 
 recognizer.builtInValues.US_FIRST_NAME = require("./builtinslottypes/usfirstnames.json");
 recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
@@ -287,8 +298,13 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
   }
   else if(slotType == "AMAZON.US_STATE"){
-    // Ignore flags for now
-    return recognizer.builtInValues.US_STATE.replacementRegExpString;
+    if(slotFlags.indexOf("EXCLUDE_NON_STATES") >= 0){
+      // number are used in cases of names like John the 1st
+      return recognizer.builtInValues.US_STATE.replacementStatesOnlyRegExpString;
+    }
+    else {
+      return recognizer.builtInValues.US_STATE.replacementRegExpString;
+    }
   }
   else if(slotType == "AMAZON.US_FIRST_NAME"){
     // Ignore SOUNDEX_MATCH flag for now
@@ -1840,7 +1856,6 @@ var _generateRunTimeJson = function(config, intents, utterances){
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.US_FIRST_NAME.values = recognizer.builtInValues.US_FIRST_NAME.values.concat(extendedValues);
   }
-
   recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
   recognizer.builtInValues.US_FIRST_NAME.replacementRegExp = new RegExp(recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString, "ig");
 
@@ -1849,7 +1864,6 @@ var _generateRunTimeJson = function(config, intents, utterances){
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Room.values = recognizer.builtInValues.Room.values.concat(extendedValues);
   }
-
   recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Room.values);
   recognizer.builtInValues.Room.replacementRegExp = new RegExp(recognizer.builtInValues.Room.replacementRegExpString, "ig");
 
@@ -1883,7 +1897,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
     }
   }
   recognizerSet.matchConfig = [];
-  let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES"];
+  let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES"];
   // First process all the utterances
   for(var i = 0; i < utterances.length; i ++){
     if(utterances[i].trim() == ""){

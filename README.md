@@ -411,7 +411,11 @@ slot values in the matching pattern.
 a wildcard in the matching pattern.
 3. "SOUNDEX_MATCH" - to use SoundEx for matching.
 4. "EXCLUDE_YEAR_ONLY_DATES" - this flag is only applied to the AMAZON.DATE type
-slot and turns off parsing of a single number as a year.
+slot and turns off parsing of a single number as a year.  This is useful when
+there are otherwise identical utterances that may match on a number or on a date.  If the year only
+match is allowed then there is no way to differenciate between the two.
+5. "EXCLUDE_NON_STATES" - this flag is only applied to the AMAZON.US_STATE type
+slot and turns off parsing of US territories and D.C.
 
 If you don't specify any of these, then
 INCLUDE_VALUES_MATCH and EXCLUDE_WILDCARD_MATCH will be used as the default.  Also,

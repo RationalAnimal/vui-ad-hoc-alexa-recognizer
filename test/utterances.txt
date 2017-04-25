@@ -10,6 +10,8 @@ FirstNameIntent My first name is {FirstNameSlot: INCLUDE_WILDCARD_MATCH, EXCLUDE
 FirstNameIntent His first name is {FirstNameSlot}
 StateIntent {StateSlot}
 StateIntent New England includes {StateSlot: INCLUDE_VALUES_MATCH, EXCLUDE_VALUES_MATCH} as one of its states
+StateIntent {StateSlot:EXCLUDE_NON_STATES} is definitely a state
+StateIntent {StateSlot} may not be a state
 FourDigitIntent here is {FooSlot:INCLUDE_WILDCARD_MATCH} test
 FourDigitIntent {FooSlot}
 BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it

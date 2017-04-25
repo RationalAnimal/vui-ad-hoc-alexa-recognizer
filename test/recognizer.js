@@ -133,11 +133,67 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
-
-
-
+    it("verify simple utterance with an AMAZON.US_STATE slot matches", function() {
+      let result = recognizer.Recognizer.matchText("Vermont is definitely a state");
+      expect(result).to.eql(
+        {"name": "StateIntent",
+         "slots": {
+          "StateSlot": {
+            "name": "StateSlot",
+            "value": "Vermont"
+          }
+        }});
+    });
+    it("verify simple utterance with an AMAZON.US_STATE slot and EXCLUDE_NON_STATES does not match on non state", function() {
+      let result = recognizer.Recognizer.matchText("Vermont is definitely a state");
+      expect(result).to.eql(
+        {"name": "StateIntent",
+         "slots": {
+          "StateSlot": {
+            "name": "StateSlot",
+            "value": "Vermont"
+          }
+        }});
+    });
 
   });
+
+
+
+  describe("AMAZON.US_STATE Matches", function() {
+    it("verify simple utterance with an AMAZON.US_STATE slot matches", function() {
+      let result = recognizer.Recognizer.matchText("Vermont is definitely a state");
+      expect(result).to.eql(
+        {"name": "StateIntent",
+         "slots": {
+          "StateSlot": {
+            "name": "StateSlot",
+            "value": "Vermont"
+          }
+        }});
+    });
+    it("verify simple utterance with an AMAZON.US_STATE slot and EXCLUDE_NON_STATES does not match on non state", function() {
+      let result = recognizer.Recognizer.matchText("Virgin Islands is definitely a state");
+      expect(typeof result).to.equal("undefined");
+    });
+    it("verify simple utterance with an AMAZON.US_STATE slot without EXCLUDE_NON_STATES does match on non state", function() {
+      let result = recognizer.Recognizer.matchText("Virgin Islands may not be a state");
+      expect(result).to.eql(
+        {"name": "StateIntent",
+         "slots": {
+          "StateSlot": {
+            "name": "StateSlot",
+            "value": "Virgin Islands"
+          }
+        }});
+    });
+
+  });
+
+
+
+
+
 
   describe("AMAZON.NUMBER Matches", function() {
     it("verify simple utterance with two AMAZON.NUMBER slots matches", function() {
