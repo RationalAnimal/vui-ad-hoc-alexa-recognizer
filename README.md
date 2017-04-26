@@ -476,7 +476,7 @@ You can now import testutterances.txt into the Alexa developer console.
 
 You can transform matched values before returning them.  You do this by specifying
 transform functions in the config file, here are examples for the built in and
-custom slot types (note that at this time AMAZON.Room is not yet supported):
+custom slot types:
 
 ```json
 {
