@@ -2389,16 +2389,20 @@ var _getBuiltInSlotConfig = function(config, slotName){
 }
 
 var _getSlotTypeTransformSrcFilename = function(config, slotType){
-  for(let i = 0; i < config.builtInSlots.length; i++){
-    let currentSlot = config.builtInSlots[i];
-    if(currentSlot.name == slotType){
-      return currentSlot.transformSrcFilename;
+  if(typeof config.builtInSlots != "undefined" && Array.isArray(config.builtInSlots)){
+    for(let i = 0; i < config.builtInSlots.length; i++){
+      let currentSlot = config.builtInSlots[i];
+      if(currentSlot.name == slotType){
+        return currentSlot.transformSrcFilename;
+      }
     }
   }
-  for(let i = 0; i < config.customSlotTypes.length; i++){
-    let currentSlot = config.customSlotTypes[i];
-    if(currentSlot.name == slotType){
-      return currentSlot.transformSrcFilename;
+  if(typeof config.customSlotTypes != "undefined" && Array.isArray(config.customSlotTypes)){
+    for(let i = 0; i < config.customSlotTypes.length; i++){
+      let currentSlot = config.customSlotTypes[i];
+      if(currentSlot.name == slotType){
+        return currentSlot.transformSrcFilename;
+      }
     }
   }
   return;
