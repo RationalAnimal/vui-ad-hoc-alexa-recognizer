@@ -8,7 +8,7 @@
 				"pear",
 				"orange"
 			],
-			"transformSrcFilename": "./test/transformSome.js"			
+			"transformSrcFilename": "./test/transformSome.js"
 		},
 		{
 			"name": "SOMEOTHER",

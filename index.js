@@ -1869,6 +1869,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
   recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
   recognizer.builtInValues.US_FIRST_NAME.replacementRegExp = new RegExp(recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString, "ig");
+  recognizer.builtInValues.US_FIRST_NAME.transformSrcFilename = slotConfig.transformSrcFilename;
 
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Room");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
