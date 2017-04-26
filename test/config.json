@@ -41,6 +41,10 @@
 			"transformSrcFilename": "./test/transformUsState.js"
 		},
 		{
+			"name": "AMAZON.Month",
+			"transformSrcFilename": "./test/transformFirstWordTitleCase.js"
+		},
+		{
 			"name": "AMAZON.US_FIRST_NAME",
 			"extendedValues": [
 				"Prince Abubu"

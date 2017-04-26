@@ -1882,6 +1882,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.US_STATE");
   recognizer.builtInValues.US_STATE.transformSrcFilename = slotConfig.transformSrcFilename;
 
+  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Month");
+  recognizer.builtInValues.Month.transformSrcFilename = slotConfig.transformSrcFilename;
+
+
   var recognizerSet = {};
   if(typeof config != "undefined" && typeof config.customSlotTypes != "undefined"){
     recognizerSet.customSlotTypes = config.customSlotTypes;

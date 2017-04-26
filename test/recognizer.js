@@ -1168,6 +1168,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         });
     });
+    it("verify that an intent with a AMAZON.Month slot with a transform function will parse", function() {
+      let result = recognizer.Recognizer.matchText("january is the best month");
+      expect(result).to.eql(
+        {
+          "name": "MonthIntent",
+          "slots": {
+            "MonthSlot": {
+              "name": "MonthSlot",
+              "value": "January"
+            }
+          }
+        });
+    });
 
 
   });

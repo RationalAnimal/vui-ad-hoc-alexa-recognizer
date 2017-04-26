@@ -476,8 +476,8 @@ You can now import testutterances.txt into the Alexa developer console.
 
 You can transform matched values before returning them.  You do this by specifying
 transform functions in the config file, here are examples for the built in and
-custom slot types (note that at this time the only supported built in slot type
-is AMAZON.US_STATE):
+custom slot types (note that at this time the only supported built in slot types
+are AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Month):
 
 ```json
 {
@@ -498,11 +498,35 @@ is AMAZON.US_STATE):
 			"name": "AMAZON.US_STATE",
 			"transformSrcFilename": "./test/transformUsState.js"
 		},
+    {
+			"name": "AMAZON.Month",
+			"transformSrcFilename": "./test/transformFirstWordTitleCase.js.js"
+		}
   ]
 }
 ```
 You then put into the specified "transformSrcFilename" file the source code for
-the function to do the transformation.  See the test directory for examples.
+the function to do the transformation.
+Then, when you type:
+
+```shell
+node matcher.js 'january is the best month'
+```
+
+you will get (note the capitalized first letter of the month):
+
+```json
+{
+  "name": "MonthIntent",
+  "slots": {
+    "MonthSlot": {
+      "name": "MonthSlot",
+      "value": "January"
+    }
+  }
+}
+```
+See the test directory for more examples.
 
 There are many reasons you may want to do this: transforming states into postal
 code or fixing issues with speach recognition, etc.
