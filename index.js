@@ -1869,7 +1869,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
   recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
   recognizer.builtInValues.US_FIRST_NAME.replacementRegExp = new RegExp(recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString, "ig");
-  recognizer.builtInValues.US_FIRST_NAME.transformSrcFilename = slotConfig.transformSrcFilename;
+  if(typeof slotConfig != "undefined" && slotConfig != null){
+    recognizer.builtInValues.US_FIRST_NAME.transformSrcFilename = slotConfig.transformSrcFilename;
+  }
 
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Room");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
@@ -1880,11 +1882,19 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Room.replacementRegExp = new RegExp(recognizer.builtInValues.Room.replacementRegExpString, "ig");
 
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.US_STATE");
-  recognizer.builtInValues.US_STATE.transformSrcFilename = slotConfig.transformSrcFilename;
+  if(typeof slotConfig != "undefined" && slotConfig != null){
+    recognizer.builtInValues.US_STATE.transformSrcFilename = slotConfig.transformSrcFilename;
+  }
 
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Month");
-  recognizer.builtInValues.Month.transformSrcFilename = slotConfig.transformSrcFilename;
+  if(typeof slotConfig != "undefined" && slotConfig != null){
+    recognizer.builtInValues.Month.transformSrcFilename = slotConfig.transformSrcFilename;
+  }
 
+  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.DayOfWeek");
+  if(typeof slotConfig != "undefined" && slotConfig != null){
+    recognizer.builtInValues.DayOfWeek.transformSrcFilename = slotConfig.transformSrcFilename;
+  }
 
   var recognizerSet = {};
   if(typeof config != "undefined" && typeof config.customSlotTypes != "undefined"){
