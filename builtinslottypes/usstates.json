@@ -2,250 +2,312 @@
   "values": [
     {
       "name": "Alabama",
+      "postalCode": "AL",
       "isState": true
     },
     {
       "name": "Alaska",
+      "postalCode": "AK",
       "isState": true
     },
     {
       "name": "American Samoa",
+      "postalCode": "AS",
       "isState": false
     },
     {
       "name": "Arizona",
+      "postalCode": "AZ",
       "isState": true
     },
     {
       "name": "Arkansas",
+      "postalCode": "AR",
       "isState": true
     },
     {
       "name": "California",
+      "postalCode": "CA",
       "isState": true
     },
     {
       "name": "Colorado",
+      "postalCode": "CO",
       "isState": true
     },
     {
       "name": "Connecticut",
+      "postalCode": "CT",
       "isState": true
     },
     {
       "name": "District of Columbia",
+      "postalCode": "DC",
       "isState": false
     },
     {
       "name": "Delaware",
+      "postalCode": "DE",
       "isState": true
     },
     {
       "name": "Florida",
+      "postalCode": "FL",
       "isState": true
     },
     {
       "name": "Georgia",
+      "postalCode": "GA",
       "isState": true
     },
     {
       "name": "Guam",
+      "postalCode": "GU",
       "isState": false
     },
     {
       "name": "Hawaii",
+      "postalCode": "HI",
       "isState": true
     },
     {
       "name": "Idaho",
+      "postalCode": "ID",
       "isState": true
     },
     {
       "name": "Illinois",
+      "postalCode": "IL",
       "isState": true
     },
     {
       "name": "Indiana",
+      "postalCode": "IN",
       "isState": true
     },
     {
       "name": "Iowa",
+      "postalCode": "IA",
       "isState": true
     },
     {
       "name": "Kansas",
+      "postalCode": "KS",
       "isState": true
     },
     {
       "name": "Kentucky",
+      "postalCode": "KY",
       "isState": true
     },
     {
       "name": "Louisiana",
+      "postalCode": "LA",
       "isState": true
     },
     {
       "name": "Maine",
+      "postalCode": "ME",
       "isState": true
     },
     {
       "name": "Maryland",
+      "postalCode": "MD",
       "isState": true
     },
     {
       "name": "Massachusetts",
+      "postalCode": "MA",
       "isState": true
     },
     {
       "name": "Michigan",
+      "postalCode": "MI",
       "isState": true
     },
     {
       "name": "Minnesota",
+      "postalCode": "MN",
       "isState": true
     },
     {
       "name": "Mississippi",
+      "postalCode": "MS",
       "isState": true
     },
     {
       "name": "Missouri",
+      "postalCode": "MO",
       "isState": true
     },
     {
       "name": "Montana",
+      "postalCode": "MT",
       "isState": true
     },
     {
       "name": "Nebraska",
+      "postalCode": "NE",
       "isState": true
     },
     {
       "name": "Nevada",
+      "postalCode": "NV",
       "isState": true
     },
     {
       "name": "New Hampshire",
+      "postalCode": "NH",
       "isState": true
     },
     {
       "name": "New Jersey",
+      "postalCode": "NJ",
       "isState": true
     },
     {
       "name": "New Mexico",
+      "postalCode": "NM",
       "isState": true
     },
     {
       "name": "New York",
+      "postalCode": "NY",
       "isState": true
     },
     {
       "name": "North Carolina",
+      "postalCode": "NC",
       "isState": true
     },
     {
       "name": "North Mariana Islands",
+      "postalCode": "MP",
       "isState": false
     },
     {
       "name": "Northern Mariana Islands",
+      "postalCode": "MP",
       "isState": false
     },
     {
       "name": "North Marianas Islands",
+      "postalCode": "MP",
       "isState": false
     },
     {
       "name": "Northern Marianas Islands",
+      "postalCode": "MP",
       "isState": false
     },
     {
       "name": "North Dakota",
+      "postalCode": "ND",
       "isState": true
     },
     {
       "name": "Ohio",
+      "postalCode": "OH",
       "isState": true
     },
     {
       "name": "Oklahoma",
+      "postalCode": "OK",
       "isState": true
     },
     {
       "name": "Oregon",
+      "postalCode": "OR",
       "isState": true
     },
     {
       "name": "Pennsylvania",
+      "postalCode": "PA",
       "isState": true
     },
     {
       "name": "Puerto Rico",
+      "postalCode": "PR",
       "isState": false
     },
     {
       "name": "Rhode Island",
+      "postalCode": "RI",
       "isState": true
     },
     {
       "name": "South Carolina",
+      "postalCode": "SC",
       "isState": true
     },
     {
       "name": "South Dakota",
+      "postalCode": "SD",
       "isState": true
     },
     {
       "name": "Tennessee",
+      "postalCode": "TN",
       "isState": true
     },
     {
       "name": "Texas",
+      "postalCode": "TX",
       "isState": true
     },
     {
       "name": "Utah",
+      "postalCode": "UT",
       "isState": true
     },
     {
       "name": "Vermont",
+      "postalCode": "VT",
       "isState": true
     },
     {
       "name": "Virginia",
+      "postalCode": "VA",
       "isState": true
     },
     {
       "name": "U.S. Virgin Islands",
+      "postalCode": "VI",
       "isState": false
     },
 		{
       "name": "US Virgin Islands",
+      "postalCode": "VI",
       "isState": false
     },
 		{
       "name": "U S Virgin Islands",
+      "postalCode": "VI",
       "isState": false
     },
     {
       "name": "Virgin Islands",
+      "postalCode": "VI",
       "isState": false
     },
     {
       "name": "Washington",
+      "postalCode": "WA",
       "isState": true
     },
     {
       "name": "West Virginia",
+      "postalCode": "WV",
       "isState": true
     },
     {
       "name": "Wisconsin",
+      "postalCode": "WI",
       "isState": true
     },
     {
       "name": "Wyoming",
+      "postalCode": "WY",
       "isState": true
     }
   ]

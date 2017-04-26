@@ -472,6 +472,47 @@ Result was saved to testutterances.txt
 
 You can now import testutterances.txt into the Alexa developer console.
 
+### Transform functions
+
+You can transform matched values before returning them.  You do this by specifying
+transform functions in the config file, here are examples for the built in and
+custom slot types (note that at this time the only supported built in slot type
+is AMAZON.US_STATE):
+
+```json
+{
+	"customSlotTypes":[
+		{
+			"name": "SOME",
+			"values": [
+				"apple",
+				"star fruit",
+				"pear",
+				"orange"
+			],
+			"transformSrcFilename": "./test/transformSome.js"			
+		}
+	],
+	"builtInSlots": [
+		{
+			"name": "AMAZON.US_STATE",
+			"transformSrcFilename": "./test/transformUsState.js"
+		},
+  ]
+}
+```
+You then put into the specified "transformSrcFilename" file the source code for
+the function to do the transformation.  See the test directory for examples.
+
+There are many reasons you may want to do this: transforming states into postal
+code or fixing issues with speach recognition, etc.
+For example, a particular service may not understand some spoken phrases well.
+One that I've ran into is the word "deductible" is understood to be "the duck tibble".
+This will never match.  Well, you could add this to your list of acceptable values.
+This will only solve half a problem.  Once you match it and send it to your Alexa
+backend, it will choke on this.  So, you can add a transform function to map
+"the duck tibble" to "deductible" before sending it off to Alexa backend.
+
 ### Dollar values
 
 If a service like Cortana passes a dollar value, e.g. $1000, it will be mapped

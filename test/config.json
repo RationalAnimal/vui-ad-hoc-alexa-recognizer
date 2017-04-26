@@ -7,7 +7,8 @@
 				"star fruit",
 				"pear",
 				"orange"
-			]
+			],
+			"transformSrcFilename": "./test/transformSome.js"			
 		},
 		{
 			"name": "SOMEOTHER",
@@ -35,6 +36,10 @@
 		}
 	],
 	"builtInSlots": [
+		{
+			"name": "AMAZON.US_STATE",
+			"transformSrcFilename": "./test/transformUsState.js"
+		},
 		{
 			"name": "AMAZON.US_FIRST_NAME",
 			"extendedValues": [

@@ -1626,27 +1626,38 @@ var _getWeekOfYear = function(dateToProcess){
 
 }
 
-var _processMatchedSlotValueByType = function(value, slotType, flags, recognizerSet){
+var _processMatchedSlotValueByType = function(value, slotType, flags, slot, intent, recognizerSet){
 //  console.log("_processMatchedSlotValueByType, 1, slotType: " + slotType + ", value: " + value);
+  let returnValue = value;
   if(slotType == "AMAZON.NUMBER" || slotType == "AMAZON.FOUR_DIGIT_NUMBER"){
-    return _processMatchedNumericSlotValue(value);
+    returnValue = _processMatchedNumericSlotValue(value);
   }
-  if(slotType == "AMAZON.DATE"){
-    return _processMatchedDateSlotValue(value, flags);
+  else if(slotType == "AMAZON.DATE"){
+    returnValue =  _processMatchedDateSlotValue(value, flags);
   }
-  if(slotType == "AMAZON.TIME"){
-    return _processMatchedTimeSlotValue(value);
+  else if(slotType == "AMAZON.TIME"){
+    returnValue =  _processMatchedTimeSlotValue(value);
   }
-  if(slotType == "AMAZON.DURATION"){
-    return _processMatchedDurationSlotValue(value);
+  else if(slotType == "AMAZON.DURATION"){
+    returnValue =  _processMatchedDurationSlotValue(value);
   }
-  if(slotType.startsWith("AMAZON.")){
-    return value;
+  else if(slotType.startsWith("AMAZON.")){
+    // already did returnValue = value;
   }
-  // Here we are dealing with a custom slot value
-  return _processMatchedCustomSlotValueByType(value, slotType, flags, recognizerSet);
-
-//  return value;
+  else {
+    // Here we are dealing with a custom slot value
+    returnValue =  _processMatchedCustomSlotValueByType(value, slotType, flags, recognizerSet);
+  }
+  let transformFilename = _getSlotTransformSrcFilenameFromRecognizer(recognizerSet, intent, slot);
+  if(typeof transformFilename != "undefined"){
+    try {
+      let transform = require(transformFilename);
+      returnValue = transform(value, intent, slot);
+    }
+    catch(e){
+    }
+  }
+  return returnValue;
 }
 
 var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
@@ -1808,7 +1819,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
           returnValue.name = scratch.intent;
           returnValue.slots = {};
           for(var j = 1; j < matchResult.length; j++){
-            var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type, scratch.slots[j - 1].flags, recognizerSet);
+            var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type, scratch.slots[j - 1].flags, scratch.slots[j - 1].name, scratch.intent, recognizerSet);
 //            console.log("processedMatchResult: " + processedMatchResult);
             if(typeof processedMatchResult == "undefined"){
               // This means a multi-stage match, such as SOUNDEX_MATCH, has failed to match on a follow up stage.
@@ -1866,6 +1877,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
   recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Room.values);
   recognizer.builtInValues.Room.replacementRegExp = new RegExp(recognizer.builtInValues.Room.replacementRegExpString, "ig");
+
+  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.US_STATE");
+  recognizer.builtInValues.US_STATE.transformSrcFilename = slotConfig.transformSrcFilename;
 
   var recognizerSet = {};
   if(typeof config != "undefined" && typeof config.customSlotTypes != "undefined"){
@@ -1975,7 +1989,12 @@ var _generateRunTimeJson = function(config, intents, utterances){
     for(var j = 0; j < slots.length; j ++){
       var slotType = _getSlotType(intents, currentIntent, slots[j]);
       // TODO add code to exclude EXCLUDE_YEAR_ONLY_DATES if slotType is not AMAZON.DATE
-      currentValue.slots.push({"name": slots[j], "type": slotType, "flags": slotFlags[j]});
+      let slotToPush = {"name": slots[j], "type": slotType, "flags": slotFlags[j]};
+      let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, slotType);
+      if(typeof slotTypeTransformSrcFilename != "undefined"){
+        slotToPush.transformSrcFilename = slotTypeTransformSrcFilename;
+      }
+      currentValue.slots.push(slotToPush);
     }
     var regExString = currentUtterance;
     if(slots.length > 0){
@@ -2315,6 +2334,19 @@ var _getSlotTypeFromRecognizer = function(recognizer, intent, slot){
   }
 }
 
+var _getSlotTransformSrcFilenameFromRecognizer = function(recognizer, intent, slot){
+  for(var i = 0; i < recognizer.matchConfig.length; i++){
+    if(recognizer.matchConfig[i].intent == intent){
+      for(var j = 0; j < recognizer.matchConfig[i].slots.length; j ++){
+        if(recognizer.matchConfig[i].slots[j].name == slot){
+          return recognizer.matchConfig[i].slots[j].transformSrcFilename;
+        }
+      }
+      return;
+    }
+  }
+}
+
 var _removeAllInstancesFromArray = function(arrayToRemoveFrom, value){
   for(let i = arrayToRemoveFrom.length - 1; i >= 0; i--){
     if(arrayToRemoveFrom[i] == value){
@@ -2335,6 +2367,23 @@ var _getBuiltInSlotConfig = function(config, slotName){
   // Nothing found - return undefined
   return;
 }
+
+var _getSlotTypeTransformSrcFilename = function(config, slotType){
+  for(let i = 0; i < config.builtInSlots.length; i++){
+    let currentSlot = config.builtInSlots[i];
+    if(currentSlot.name == slotType){
+      return currentSlot.transformSrcFilename;
+    }
+  }
+  for(let i = 0; i < config.customSlotTypes.length; i++){
+    let currentSlot = config.customSlotTypes[i];
+    if(currentSlot.name == slotType){
+      return currentSlot.transformSrcFilename;
+    }
+  }
+  return;
+};
+
 
 var _getBuiltInSlotExtendedValues = function(slotConfig){
   let returnValue;

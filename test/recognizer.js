@@ -140,7 +140,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
          "slots": {
           "StateSlot": {
             "name": "StateSlot",
-            "value": "Vermont"
+            "value": "VT"
           }
         }});
     });
@@ -151,7 +151,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
          "slots": {
           "StateSlot": {
             "name": "StateSlot",
-            "value": "Vermont"
+            "value": "VT"
           }
         }});
     });
@@ -168,7 +168,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
          "slots": {
           "StateSlot": {
             "name": "StateSlot",
-            "value": "Vermont"
+            "value": "VT"
           }
         }});
     });
@@ -1150,6 +1150,26 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
          "slots": {}
         });
     });
+
+    it("verify that an intent with a custom slot with a transform function will parse", function() {
+      let result = recognizer.Recognizer.matchText("First is star fruit and then there is petunia");
+      expect(result).to.eql(
+        {
+          "name": "AnotherIntent",
+          "slots": {
+            "SomeSlot": {
+              "name": "SomeSlot",
+              "value": "star_fruit"
+            },
+            "SomeOtherSlot": {
+              "name": "SomeOtherSlot",
+              "value": "petunia"
+            }
+          }
+        });
+    });
+
+
   });
 
 });
