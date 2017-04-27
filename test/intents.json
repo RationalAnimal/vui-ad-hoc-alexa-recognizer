@@ -53,6 +53,15 @@
       ]
     },
     {
+      "intent": "ColorIntent",
+      "slots": [
+        {
+          "name": "ColorSlot",
+          "type": "AMAZON.Color"
+        }
+      ]
+    },
+    {
       "intent": "MonthIntent",
       "slots": [
         {

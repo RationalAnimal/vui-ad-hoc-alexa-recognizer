@@ -284,6 +284,10 @@ recognizer.builtInValues.Country = require("./builtinslottypes/countries.json");
 recognizer.builtInValues.Country.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Country.values);
 recognizer.builtInValues.Country.replacementRegExp = new RegExp(recognizer.builtInValues.Country.replacementRegExpString, "ig");
 
+recognizer.builtInValues.Color = require("./builtinslottypes/colors.json");
+recognizer.builtInValues.Color.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Color.values);
+recognizer.builtInValues.Color.replacementRegExp = new RegExp(recognizer.builtInValues.Color.replacementRegExpString, "ig");
+
 recognizer.builtInValues.Room = require("./builtinslottypes/rooms.json");
 recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Room.values);
 recognizer.builtInValues.Room.replacementRegExp = new RegExp(recognizer.builtInValues.Room.replacementRegExpString, "ig");
@@ -343,6 +347,15 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     }
     else {
       return recognizer.builtInValues.Country.replacementRegExpString;
+    }
+  }
+  else if(slotType == "AMAZON.Color"){
+    // Ignore SOUNDEX_MATCH flag for now
+    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+      return "((?:\\w|\\s|[0-9])+)";
+    }
+    else {
+      return recognizer.builtInValues.Color.replacementRegExpString;
     }
   }
   else if(slotType == "AMAZON.Room"){
@@ -1780,7 +1793,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
   for(var i = 0; i < sortedMatchConfig.length; i++){
 //    console.log("_matchText, 3, i: " + i);
     var scratch = sortedMatchConfig[i];
-//    console.log("_matchText, 4, scratch: " + JSON.stringify(scratch));
+//    console.log("_matchText, 4, scratch: " + JSON.stringify(scratch, null, 2));
 //    console.log("_matchText, 4.1, scratch.regExString: " + JSON.stringify(scratch.regExString));
     // First try the wildcard reg exp if it's there  wildcardRegExString
     if(typeof scratch.wildcardRegExString != "undefined"){
@@ -1889,6 +1902,11 @@ var _generateRunTimeJson = function(config, intents, utterances){
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Country");
   if(typeof slotConfig != "undefined" && slotConfig != null){
     recognizer.builtInValues.Country.transformSrcFilename = slotConfig.transformSrcFilename;
+  }
+
+  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Color");
+  if(typeof slotConfig != "undefined" && slotConfig != null){
+    recognizer.builtInValues.Color.transformSrcFilename = slotConfig.transformSrcFilename;
   }
 
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Room");

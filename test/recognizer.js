@@ -133,6 +133,17 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.Color slot matches", function() {
+      let result = recognizer.Recognizer.matchText("my favorite color is amber");
+      expect(result).to.eql(
+        {"name": "ColorIntent",
+         "slots": {
+          "ColorSlot": {
+            "name": "ColorSlot",
+            "value": "amber"
+          }
+        }});
+    });
     it("verify simple utterance with an AMAZON.US_STATE slot matches", function() {
       let result = recognizer.Recognizer.matchText("Vermont is definitely a state");
       expect(result).to.eql(
