@@ -1,4 +1,6 @@
 {
+  "attribution" : "these values were partially taken from https://en.wikipedia.org/wiki/Lists_of_colors, content was modified to make it suitable in text matching software and some values have been removed and/or renamed",
+  "license": "This file is released under Creative Commons Attribution-ShareAlike license:  http://creativecommons.org/licenses/by-sa/3.0/",
   "values":[
     "acajou",
     "acid green",
