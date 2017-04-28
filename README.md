@@ -29,6 +29,16 @@ This can be used either by itself or as part of other vui-xxx projects.
 This module as well as related vui modules can be found here:
 https://github.com/RationalAnimal
 
+# Note on licenses
+The code in this project is distributed under the MIT license.  Some data files
+found in the builtinslottypes (e.g. colors.json) use values taken from Wikipedia
+and thus they are licensed under Creative Commons Attribution-ShareAlike license.
+Such files have appropriate attribution and license information within them.
+If you don't wish to deal with these licenses, simply delete such file(s) from
+the builtinslottype directory.  Note that only some of those files have a
+different license - you DON'T need to delete the entire directory to remove them.
+Simply search in builtinslottypes directory for "license" and/or "attribution"
+
 # Installation
 
 ```shell
