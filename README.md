@@ -1,3 +1,5 @@
+https://travis-ci.org/RationalAnimal/vui-ad-hoc-alexa-recognizer#
+
 # vui-ad-hoc-alexa-recognizer
 
 npm module that provides VUI (voice user interface) special ad-hoc recognizer
