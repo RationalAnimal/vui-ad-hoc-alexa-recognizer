@@ -1,4 +1,4 @@
-https://travis-ci.org/RationalAnimal/vui-ad-hoc-alexa-recognizer#
+[![Build Status](https://travis-ci.org/RationalAnimal/vui-ad-hoc-alexa-recognizer.svg?branch=master)](https://travis-ci.org/RationalAnimal/vui-ad-hoc-alexa-recognizer)
 
 # vui-ad-hoc-alexa-recognizer
 
