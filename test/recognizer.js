@@ -45,6 +45,28 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.Country slot matches", function() {
+      let result = recognizer.Recognizer.matchText("have you been to france");
+      expect(result).to.eql(
+        {"name": "CountryIntent",
+         "slots": {
+          "CountrySlot": {
+            "name": "CountrySlot",
+            "value": "France"
+          }
+        }});
+    });
+    it("verify simple utterance with an AMAZON.US_FIRST_NAME slot matches", function() {
+      let result = recognizer.Recognizer.matchText("my first name is jim");
+      expect(result).to.eql(
+        {"name": "FirstNameIntent",
+         "slots": {
+          "FirstNameSlot": {
+            "name": "FirstNameSlot",
+            "value": "Jim"
+          }
+        }});
+    });
     it("verify simple utterance with an AMAZON.Month slot matches", function() {
       let result = recognizer.Recognizer.matchText("May is the best month");
       expect(result).to.eql(

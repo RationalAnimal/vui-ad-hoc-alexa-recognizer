@@ -1656,6 +1656,59 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
   }
   else if(slotType.startsWith("AMAZON.")){
     // already did returnValue = value;
+    // Now need to match the capitalization
+    if(slotType == "AMAZON.Color"){
+      let arrayToSearch = recognizer.builtInValues.Color.values;
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < arrayToSearch.length; i++){
+        if(scratchValue == arrayToSearch[i].toUpperCase()){
+          returnValue = arrayToSearch[i];
+          break;
+        }
+      }
+    }
+    if(slotType == "AMAZON.Country"){
+      let arrayToSearch = recognizer.builtInValues.Country.values;
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < arrayToSearch.length; i++){
+        if(scratchValue == arrayToSearch[i].toUpperCase()){
+          returnValue = arrayToSearch[i];
+          break;
+        }
+      }
+    }
+    else if(slotType == "AMAZON.US_FIRST_NAME"){
+      let arrayToSearch = recognizer.builtInValues.US_FIRST_NAME.values;
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < arrayToSearch.length; i++){
+        if(scratchValue == arrayToSearch[i].toUpperCase()){
+          returnValue = arrayToSearch[i];
+          break;
+        }
+      }
+    }
+    else if(slotType == "AMAZON.US_STATE"){
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
+        if(recognizer.builtInValues.US_STATE.values[i].name.toUpperCase()){
+          returnValue = recognizer.builtInValues.US_STATE.values[i].name;
+          break;
+        }
+      }
+    }
+    /*
+    for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
+      statesAndTerritories.push(recognizer.builtInValues.US_STATE.values[i].name);
+      if(recognizer.builtInValues.US_STATE.values[i].isState){
+        states.push(recognizer.builtInValues.US_STATE.values[i].name);
+      }
+    }
+
+    */
+    else {
+      // All other built in list values use lower case only
+      returnValue = returnValue.toLowerCase();
+    }
   }
   else {
     // Here we are dealing with a custom slot value
