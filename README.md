@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/RationalAnimal/vui-ad-hoc-alexa-recognizer.svg?branch=master)](https://travis-ci.org/RationalAnimal/vui-ad-hoc-alexa-recognizer)
 
+[![OPEN open source software](https://img.shields.io/badge/Open--OSS-%E2%9C%94-brightgreen.svg)](http://open-oss.com)
+
 # vui-ad-hoc-alexa-recognizer
 
 npm module that provides VUI (voice user interface) special ad-hoc recognizer
