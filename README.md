@@ -404,10 +404,7 @@ or even other punctuation signs (I've seen entering a zip code changed from
 behaving consistently, the returned matches use the capitalization of the custom
 slot values supplied in the config file rather than what Cortana will send.
 Thus, if your custom slot value (in the config file) is "petunia" then "petunia"
-will be returned even if Cortana will send you "Petunia".  Note that the builtin
-slot types are not yet configured to do the same (so for and AMAZON.Country you
-could get "france" or "France").  This will be fixed in a later release, but for
-now please use case insensitive conversions.
+will be returned even if Cortana will send you "Petunia".
 
 ### Slot flags
 
@@ -494,7 +491,7 @@ You can now import testutterances.txt into the Alexa developer console.
 
 Many of the list slots (e.g. AMAZON.Actor) have very large value lists.  These
 are often not needed in a typical vui skill.  Thus, a compromize support is
-provided for them.  The are there and can be used, but they only have a few
+provided for them.  They are there and can be used, but they only have a few
 values.  If you actually do have a need for them, you have two options:
 1. You can provide your own expansion list of values in the config.json file
 2. You can use wildcard slot matching to match on any value the user can provide
@@ -705,6 +702,6 @@ Currently, you can parse:
 3. Utterances with custom slots
 4. Utterances with all the numbers/date/time/duration built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.DURATION
 5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.Room, AMAZON.Month, AMAZON.DayOfWeek, AMAZON.Color
-6. Utterances with these list built in slot types with nominal support (see Nominal Support section): AMAZON.Actor
+6. Utterances with these list built in slot types with nominal support (see Nominal Support section): AMAZON.Actor, AMAZON.AdministrativeArea
 
 More Amazon built in slot types are coming shortly

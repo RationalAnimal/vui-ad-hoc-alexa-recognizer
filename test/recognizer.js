@@ -68,6 +68,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.AdministrativeArea slot matches", function() {
+      let result = recognizer.Recognizer.matchText("post office in portsmouth new hampshire");
+      console.log(JSON.stringify(result));
+      expect(result).to.eql(
+        {"name": "AdministrativeAreaIntent",
+         "slots": {
+          "AdministrativeAreaSlot": {
+            "name": "AdministrativeAreaSlot",
+            "value": "portsmouth new hampshire"
+          }
+        }});
+    });
     it("verify simple utterance with an AMAZON.US_FIRST_NAME slot matches", function() {
       let result = recognizer.Recognizer.matchText("my first name is jim");
       expect(result).to.eql(

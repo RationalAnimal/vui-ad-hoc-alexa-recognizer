@@ -71,6 +71,15 @@
       ]
     },
     {
+      "intent": "AdministrativeAreaIntent",
+      "slots": [
+        {
+          "name": "AdministrativeAreaSlot",
+          "type": "AMAZON.AdministrativeArea"
+        }
+      ]
+    },
+    {
       "intent": "MonthIntent",
       "slots": [
         {
