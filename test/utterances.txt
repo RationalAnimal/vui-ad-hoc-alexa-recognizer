@@ -27,4 +27,5 @@ DayOfWeekIntent lets do it on {DayOfWeekSlot}
 MonthIntent {MonthSlot} is the best month
 CountryIntent Have you been to {CountrySlot}
 ColorIntent my favorite color is {ColorSlot}
+ActorIntent another actor who played bond is {ActorSlot}
 RoomIntent best room is the {RoomSlot}

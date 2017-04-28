@@ -56,6 +56,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.Actor slot matches", function() {
+      let result = recognizer.Recognizer.matchText("another actor who played bond is sean connery");
+      console.log(JSON.stringify(result));
+      expect(result).to.eql(
+        {"name": "ActorIntent",
+         "slots": {
+          "ActorSlot": {
+            "name": "ActorSlot",
+            "value": "sean connery"
+          }
+        }});
+    });
     it("verify simple utterance with an AMAZON.US_FIRST_NAME slot matches", function() {
       let result = recognizer.Recognizer.matchText("my first name is jim");
       expect(result).to.eql(
