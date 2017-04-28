@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/RationalAnimal/vui-ad-hoc-alexa-recognizer.svg?branch=master)](https://travis-ci.org/RationalAnimal/vui-ad-hoc-alexa-recognizer)
 [![NPM downloads](http://img.shields.io/npm/dm/vui-ad-hoc-alexa-recognizer.svg?style=flat&label=npm%20downloads)](https://npm-stat.com/charts.html?package=vui-ad-hoc-alexa-recognizer)
 [![OPEN open source software](https://img.shields.io/badge/Open--OSS-%E2%9C%94-brightgreen.svg)](http://open-oss.com)
-[![ghit.me](https://ghit.me/badge.svg?repo=RationalAnimal/vui-ad-hoc-alexa-recognizer)](https://ghit.me/repo/RationalAnimal/vui-ad-hoc-alexa-recognizer)
+[![Release](https://img.shields.io/github/release/RationalAnimal/vui-ad-hoc-alexa-recognizer.svg?label=Last%20release&a)](https://www.npmjs.com/package/vui-ad-hoc-alexa-recognizer)
 
 # vui-ad-hoc-alexa-recognizer
 
