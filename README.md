@@ -490,6 +490,15 @@ Result was saved to testutterances.txt
 
 You can now import testutterances.txt into the Alexa developer console.
 
+### Nominal support for some built in list slots
+
+Many of the list slots (e.g. AMAZON.Actor) have very large value lists.  These
+are often not needed in a typical vui skill.  Thus, a compromize support is
+provided for them.  The are there and can be used, but they only have a few
+values.  If you actually do have a need for them, you have two options:
+1. You can provide your own expansion list of values in the config.json file
+2. You can use wildcard slot matching to match on any value the user can provide
+
 ### Transform functions
 
 You can transform matched values before returning them.  You do this by specifying
@@ -695,6 +704,7 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with all the numbers/date/time/duration built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.DURATION
-5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.Room, AMAZON.Month, AMAZON.DayOfWeek, AMAZON.Color (partial: A through K colors only)
+5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.Room, AMAZON.Month, AMAZON.DayOfWeek, AMAZON.Color
+6. Utterances with these list built in slot types with nominal support (see Nominal Support section): AMAZON.Actor
 
 More Amazon built in slot types are coming shortly

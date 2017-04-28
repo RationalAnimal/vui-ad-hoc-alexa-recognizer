@@ -62,6 +62,15 @@
       ]
     },
     {
+      "intent": "ActorIntent",
+      "slots": [
+        {
+          "name": "ActorSlot",
+          "type": "AMAZON.Actor"
+        }
+      ]
+    },
+    {
       "intent": "MonthIntent",
       "slots": [
         {
