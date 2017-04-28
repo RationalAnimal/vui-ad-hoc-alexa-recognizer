@@ -4,7 +4,7 @@
   "description": "npm module that provides 'recognizer' functionality for parsing user spoken text and maps it to Alexa intents. Useful for converting/porting Alexa skills to Cortana or Google assistant/home. Can be used by itself or included into other vui-xxx projects.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test"
+    "test": "node generator.js -i test/intents.json -u test/utterances.txt -c test/config.json;./node_modules/mocha/bin/mocha test"
   },
   "author": "Ilya Shubentsov",
   "copyright": "Copyright 2017 Ilya Shubentsov",
