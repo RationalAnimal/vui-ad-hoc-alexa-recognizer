@@ -1,5 +1,6 @@
 .git
 .git/
+.travis.yml
 test/
 test
 recognizer.json
