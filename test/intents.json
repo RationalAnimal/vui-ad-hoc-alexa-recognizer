@@ -80,6 +80,15 @@
       ]
     },
     {
+      "intent": "AuthorIntent",
+      "slots": [
+        {
+          "name": "AuthorSlot",
+          "type": "AMAZON.Author"
+        }
+      ]
+    },
+    {
       "intent": "AthleteIntent",
       "slots": [
         {

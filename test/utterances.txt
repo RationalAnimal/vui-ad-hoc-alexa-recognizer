@@ -30,5 +30,6 @@ ColorIntent my favorite color is {ColorSlot}
 ActorIntent another actor who played bond is {ActorSlot}
 ArtistIntent {ArtistSlot} was in Jackson five
 AthleteIntent {AthleteSlot} is a swimmer
+AuthorIntent {AuthorSlot} is a writer
 AdministrativeAreaIntent post office in {AdministrativeAreaSlot}
 RoomIntent best room is the {RoomSlot}
