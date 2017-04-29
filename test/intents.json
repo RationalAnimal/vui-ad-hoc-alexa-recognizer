@@ -71,6 +71,15 @@
       ]
     },
     {
+      "intent": "ArtistIntent",
+      "slots": [
+        {
+          "name": "ArtistSlot",
+          "type": "AMAZON.Artist"
+        }
+      ]
+    },
+    {
       "intent": "AdministrativeAreaIntent",
       "slots": [
         {
