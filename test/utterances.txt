@@ -31,5 +31,6 @@ ActorIntent another actor who played bond is {ActorSlot}
 ArtistIntent {ArtistSlot} was in Jackson five
 AthleteIntent {AthleteSlot} is a swimmer
 AuthorIntent {AuthorSlot} is a writer
+BookIntent my favorite book is {BookSlot}
 AdministrativeAreaIntent post office in {AdministrativeAreaSlot}
 RoomIntent best room is the {RoomSlot}
