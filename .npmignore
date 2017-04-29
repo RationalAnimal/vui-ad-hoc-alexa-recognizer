@@ -4,3 +4,5 @@
 test/
 test
 recognizer.json
+recognizer.js
+staticfilerecognizer.js

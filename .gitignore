@@ -1,3 +1,6 @@
 node_modules
 node_modules/
 recognizer.json
+crap.json
+recognizer.js
+staticfilerecognizer.js

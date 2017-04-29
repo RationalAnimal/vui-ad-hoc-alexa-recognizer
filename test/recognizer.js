@@ -68,6 +68,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.Artist slot matches", function() {
+      let result = recognizer.Recognizer.matchText("michael jackson was in jackson five");
+      console.log(JSON.stringify(result));
+      expect(result).to.eql(
+        {"name": "ArtistIntent",
+         "slots": {
+          "ArtistSlot": {
+            "name": "ArtistSlot",
+            "value": "michael jackson"
+          }
+        }});
+    });
     it("verify simple utterance with an AMAZON.AdministrativeArea slot matches", function() {
       let result = recognizer.Recognizer.matchText("post office in portsmouth new hampshire");
       console.log(JSON.stringify(result));
