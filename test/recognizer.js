@@ -58,7 +58,6 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
     it("verify simple utterance with an AMAZON.Actor slot matches", function() {
       let result = recognizer.Recognizer.matchText("another actor who played bond is sean connery");
-      console.log(JSON.stringify(result));
       expect(result).to.eql(
         {"name": "ActorIntent",
          "slots": {
@@ -70,7 +69,6 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
     it("verify simple utterance with an AMAZON.Artist slot matches", function() {
       let result = recognizer.Recognizer.matchText("michael jackson was in jackson five");
-      console.log(JSON.stringify(result));
       expect(result).to.eql(
         {"name": "ArtistIntent",
          "slots": {
@@ -82,7 +80,6 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
     it("verify simple utterance with an AMAZON.Athlete slot matches", function() {
       let result = recognizer.Recognizer.matchText("michael phelps is a swimmer");
-      console.log(JSON.stringify(result));
       expect(result).to.eql(
         {"name": "AthleteIntent",
          "slots": {
@@ -95,7 +92,6 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
 
     it("verify simple utterance with an AMAZON.Author slot matches", function() {
       let result = recognizer.Recognizer.matchText("mark twain is a writer");
-      console.log(JSON.stringify(result));
       expect(result).to.eql(
         {"name": "AuthorIntent",
          "slots": {
@@ -106,9 +102,20 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Book slot matches", function() {
+      let result = recognizer.Recognizer.matchText("my favorite book is Harry Potter");
+      expect(result).to.eql(
+        {"name": "BookIntent",
+         "slots": {
+          "BookSlot": {
+            "name": "BookSlot",
+            "value": "harry potter"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.AdministrativeArea slot matches", function() {
       let result = recognizer.Recognizer.matchText("post office in portsmouth new hampshire");
-      console.log(JSON.stringify(result));
       expect(result).to.eql(
         {"name": "AdministrativeAreaIntent",
          "slots": {

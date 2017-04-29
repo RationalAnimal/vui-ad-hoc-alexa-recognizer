@@ -89,6 +89,15 @@
       ]
     },
     {
+      "intent": "BookIntent",
+      "slots": [
+        {
+          "name": "BookSlot",
+          "type": "AMAZON.Book"
+        }
+      ]
+    },
+    {
       "intent": "AthleteIntent",
       "slots": [
         {
