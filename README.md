@@ -78,7 +78,7 @@ TestIntent       test pleeeeeeease
 MinionIntent One of the minions is {MinionSlot}
 MinionIntent {MinionSlot}
 StateIntent {StateSlot}
-StateIntent New England includes {StateSlot} as one of it's states
+StateIntent New England includes {StateSlot} as one of its states
 BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it
 BlahIntent here is {BlahSlot} and {BlehSlot}
 AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
@@ -702,6 +702,6 @@ Currently, you can parse:
 3. Utterances with custom slots
 4. Utterances with all the numbers/date/time/duration built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.DURATION
 5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.Room, AMAZON.Month, AMAZON.DayOfWeek, AMAZON.Color
-6. Utterances with these list built in slot types with nominal support (see Nominal Support section): AMAZON.Actor, AMAZON.AdministrativeArea
+6. Utterances with these list built in slot types with nominal support (see Nominal Support section): AMAZON.Actor, AMAZON.AdministrativeArea, AMAZON.Artist, AMAZON.Athlete
 
 More Amazon built in slot types are coming shortly

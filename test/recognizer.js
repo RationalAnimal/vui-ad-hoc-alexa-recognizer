@@ -80,6 +80,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.Athlete slot matches", function() {
+      let result = recognizer.Recognizer.matchText("michael phelps is a swimmer");
+      console.log(JSON.stringify(result));
+      expect(result).to.eql(
+        {"name": "AthleteIntent",
+         "slots": {
+          "AthleteSlot": {
+            "name": "AthleteSlot",
+            "value": "michael phelps"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.AdministrativeArea slot matches", function() {
       let result = recognizer.Recognizer.matchText("post office in portsmouth new hampshire");
       console.log(JSON.stringify(result));

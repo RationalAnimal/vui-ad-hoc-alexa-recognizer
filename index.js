@@ -278,6 +278,9 @@ recognizer.builtInValues.Artist = require("./builtinslottypes/artists.json");
 recognizer.builtInValues.Artist.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Artist.values);
 recognizer.builtInValues.Artist.replacementRegExp = new RegExp(recognizer.builtInValues.Artist.replacementRegExpString, "ig");
 
+recognizer.builtInValues.Athlete = require("./builtinslottypes/athletes.json");
+recognizer.builtInValues.Athlete.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Athlete.values);
+recognizer.builtInValues.Athlete.replacementRegExp = new RegExp(recognizer.builtInValues.Athlete.replacementRegExpString, "ig");
 
 recognizer.builtInValues.AdministrativeArea = require("./builtinslottypes/administrativeareas.json");
 recognizer.builtInValues.AdministrativeArea.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.AdministrativeArea.values);
@@ -351,6 +354,16 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     }
     else {
       return recognizer.builtInValues.Artist.replacementRegExpString;
+    }
+  }
+  else if(slotType == "AMAZON.Athlete"){
+    // Ignore SOUNDEX_MATCH flag for now
+    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+      // number are used in cases of names like John the 1st
+      return "((?:\\w|\\s|[0-9])+)";
+    }
+    else {
+      return recognizer.builtInValues.Athlete.replacementRegExpString;
     }
   }
   else if(slotType == "AMAZON.AdministrativeArea"){
@@ -1750,6 +1763,16 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
+    else if(slotType == "AMAZON.Athlete"){
+      let arrayToSearch = recognizer.builtInValues.Athlete.values;
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < arrayToSearch.length; i++){
+        if(scratchValue == arrayToSearch[i].toUpperCase()){
+          returnValue = arrayToSearch[i];
+          break;
+        }
+      }
+    }
     else if(slotType == "AMAZON.AdministrativeArea"){
       let arrayToSearch = recognizer.builtInValues.AdministrativeArea.values;
       let scratchValue = returnValue.toUpperCase();
@@ -2027,6 +2050,14 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
   recognizer.builtInValues.Artist.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Artist.values);
   recognizer.builtInValues.Artist.replacementRegExp = new RegExp(recognizer.builtInValues.Artist.replacementRegExpString, "ig");
+
+  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Athlete");
+  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+  if(typeof extendedValues != "undefined"){
+    recognizer.builtInValues.Athlete.values = recognizer.builtInValues.Athlete.values.concat(extendedValues);
+  }
+  recognizer.builtInValues.Athlete.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Athlete.values);
+  recognizer.builtInValues.Athlete.replacementRegExp = new RegExp(recognizer.builtInValues.Athlete.replacementRegExpString, "ig");
 
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.AdministrativeArea");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);

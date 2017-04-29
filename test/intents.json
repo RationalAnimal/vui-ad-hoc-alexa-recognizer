@@ -80,6 +80,15 @@
       ]
     },
     {
+      "intent": "AthleteIntent",
+      "slots": [
+        {
+          "name": "AthleteSlot",
+          "type": "AMAZON.Athlete"
+        }
+      ]
+    },
+    {
       "intent": "AdministrativeAreaIntent",
       "slots": [
         {
