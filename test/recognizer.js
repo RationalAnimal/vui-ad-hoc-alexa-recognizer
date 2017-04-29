@@ -93,6 +93,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Author slot matches", function() {
+      let result = recognizer.Recognizer.matchText("mark twain is a writer");
+      console.log(JSON.stringify(result));
+      expect(result).to.eql(
+        {"name": "AuthorIntent",
+         "slots": {
+          "AuthorSlot": {
+            "name": "AuthorSlot",
+            "value": "mark twain"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.AdministrativeArea slot matches", function() {
       let result = recognizer.Recognizer.matchText("post office in portsmouth new hampshire");
       console.log(JSON.stringify(result));
