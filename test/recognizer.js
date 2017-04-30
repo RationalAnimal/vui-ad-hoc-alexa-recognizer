@@ -150,6 +150,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Comicslot matches", function() {
+      let result = recognizer.Recognizer.matchText("have you read x-men");
+      expect(result).to.eql(
+        {"name": "ComicIntent",
+         "slots": {
+          "ComicSlot": {
+            "name": "ComicSlot",
+            "value": "x-men"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.AdministrativeArea slot matches", function() {
       let result = recognizer.Recognizer.matchText("post office in portsmouth new hampshire");
       expect(result).to.eql(
