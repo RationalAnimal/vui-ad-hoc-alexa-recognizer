@@ -107,6 +107,15 @@
       ]
     },
     {
+      "intent": "BroadcastChannelIntent",
+      "slots": [
+        {
+          "name": "BroadcastChannelSlot",
+          "type": "AMAZON.BroadcastChannel"
+        }
+      ]
+    },
+    {
       "intent": "AthleteIntent",
       "slots": [
         {

@@ -126,6 +126,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.BroadcastChannel slot matches", function() {
+      let result = recognizer.Recognizer.matchText("do you like to listen to npr in the morning");
+      expect(result).to.eql(
+        {"name": "BroadcastChannelIntent",
+         "slots": {
+          "BroadcastChannelSlot": {
+            "name": "BroadcastChannelSlot",
+            "value": "npr"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.AdministrativeArea slot matches", function() {
       let result = recognizer.Recognizer.matchText("post office in portsmouth new hampshire");
       expect(result).to.eql(

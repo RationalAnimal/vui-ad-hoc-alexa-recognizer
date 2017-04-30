@@ -278,6 +278,10 @@ recognizer.builtInValues.Artist = require("./builtinslottypes/artists.json");
 recognizer.builtInValues.Artist.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Artist.values);
 recognizer.builtInValues.Artist.replacementRegExp = new RegExp(recognizer.builtInValues.Artist.replacementRegExpString, "ig");
 
+recognizer.builtInValues.BroadcastChannel = require("./builtinslottypes/broadcastchannels.json");
+recognizer.builtInValues.BroadcastChannel.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.BroadcastChannel.values);
+recognizer.builtInValues.BroadcastChannel.replacementRegExp = new RegExp(recognizer.builtInValues.BroadcastChannel.replacementRegExpString, "ig");
+
 recognizer.builtInValues.BookSeries = require("./builtinslottypes/bookseries.json");
 recognizer.builtInValues.BookSeries.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.BookSeries.values);
 recognizer.builtInValues.BookSeries.replacementRegExp = new RegExp(recognizer.builtInValues.BookSeries.replacementRegExpString, "ig");
@@ -367,6 +371,16 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     }
     else {
       return recognizer.builtInValues.Artist.replacementRegExpString;
+    }
+  }
+  else if(slotType == "AMAZON.BroadcastChannel"){
+    // Ignore SOUNDEX_MATCH flag for now
+    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+      // number are used in cases of names like John the 1st
+      return "((?:\\w|\\s|[0-9])+)";
+    }
+    else {
+      return recognizer.builtInValues.BroadcastChannel.replacementRegExpString;
     }
   }
   else if(slotType == "AMAZON.BookSeries"){
@@ -1806,6 +1820,16 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
+    else if(slotType == "AMAZON.BroadcastChannel"){
+      let arrayToSearch = recognizer.builtInValues.BroadcastChannel.values;
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < arrayToSearch.length; i++){
+        if(scratchValue == arrayToSearch[i].toUpperCase()){
+          returnValue = arrayToSearch[i];
+          break;
+        }
+      }
+    }
     else if(slotType == "AMAZON.BookSeries"){
       let arrayToSearch = recognizer.builtInValues.BookSeries.values;
       let scratchValue = returnValue.toUpperCase();
@@ -2123,6 +2147,14 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
   recognizer.builtInValues.Artist.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Artist.values);
   recognizer.builtInValues.Artist.replacementRegExp = new RegExp(recognizer.builtInValues.Artist.replacementRegExpString, "ig");
+
+  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.BroadcastChannel");
+  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+  if(typeof extendedValues != "undefined"){
+    recognizer.builtInValues.BroadcastChannel.values = recognizer.builtInValues.BroadcastChannel.values.concat(extendedValues);
+  }
+  recognizer.builtInValues.BroadcastChannel.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.BroadcastChannel.values);
+  recognizer.builtInValues.BroadcastChannel.replacementRegExp = new RegExp(recognizer.builtInValues.BroadcastChannel.replacementRegExpString, "ig");
 
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.BookSeries");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
