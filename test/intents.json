@@ -116,6 +116,15 @@
       ]
     },
     {
+      "intent": "CivicStructureIntent",
+      "slots": [
+        {
+          "name": "CivicStructureSlot",
+          "type": "AMAZON.CivicStructure"
+        }
+      ]
+    },
+    {
       "intent": "AthleteIntent",
       "slots": [
         {

@@ -34,5 +34,6 @@ AuthorIntent {AuthorSlot} is a writer
 BookIntent my favorite book is {BookSlot}
 BookSeriesIntent {BookSeriesSlot} is also a movie
 BroadcastChannelIntent do you like to listen to {BroadcastChannelSlot} in the morning
+CivicStructureIntent is {CivicStructureSlot} a tourist attraction
 AdministrativeAreaIntent post office in {AdministrativeAreaSlot}
 RoomIntent best room is the {RoomSlot}
