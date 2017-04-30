@@ -138,6 +138,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.CivicStructure slot matches", function() {
+      let result = recognizer.Recognizer.matchText("is museum of fine art a tourist attraction");
+      expect(result).to.eql(
+        {"name": "CivicStructureIntent",
+         "slots": {
+          "CivicStructureSlot": {
+            "name": "CivicStructureSlot",
+            "value": "museum of fine art"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.AdministrativeArea slot matches", function() {
       let result = recognizer.Recognizer.matchText("post office in portsmouth new hampshire");
       expect(result).to.eql(
