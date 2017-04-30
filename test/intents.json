@@ -125,6 +125,15 @@
       ]
     },
     {
+      "intent": "ComicIntent",
+      "slots": [
+        {
+          "name": "ComicSlot",
+          "type": "AMAZON.Comic"
+        }
+      ]
+    },
+    {
       "intent": "AthleteIntent",
       "slots": [
         {

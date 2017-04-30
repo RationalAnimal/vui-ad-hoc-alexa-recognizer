@@ -278,6 +278,10 @@ recognizer.builtInValues.Artist = require("./builtinslottypes/artists.json");
 recognizer.builtInValues.Artist.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Artist.values);
 recognizer.builtInValues.Artist.replacementRegExp = new RegExp(recognizer.builtInValues.Artist.replacementRegExpString, "ig");
 
+recognizer.builtInValues.Comic = require("./builtinslottypes/comics.json");
+recognizer.builtInValues.Comic.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Comic.values);
+recognizer.builtInValues.Comic.replacementRegExp = new RegExp(recognizer.builtInValues.Comic.replacementRegExpString, "ig");
+
 recognizer.builtInValues.CivicStructure = require("./builtinslottypes/civicstructures.json");
 recognizer.builtInValues.CivicStructure.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.CivicStructure.values);
 recognizer.builtInValues.CivicStructure.replacementRegExp = new RegExp(recognizer.builtInValues.CivicStructure.replacementRegExpString, "ig");
@@ -376,6 +380,16 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     }
     else {
       return recognizer.builtInValues.Artist.replacementRegExpString;
+    }
+  }
+  else if(slotType == "AMAZON.Comic"){
+    // Ignore SOUNDEX_MATCH flag for now
+    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+      // number are used in cases of names like John the 1st
+      return "((?:\\w|\\s|[0-9]|\-)+)";
+    }
+    else {
+      return recognizer.builtInValues.Comic.replacementRegExpString;
     }
   }
   else if(slotType == "AMAZON.CivicStructure"){
@@ -1814,6 +1828,17 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
+    else if(slotType == "AMAZON.Comic"){
+      let arrayToSearch = recognizer.builtInValues.Comic.values;
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < arrayToSearch.length; i++){
+        if(scratchValue == arrayToSearch[i].toUpperCase()){
+          returnValue = arrayToSearch[i];
+          break;
+        }
+      }
+    }
+
     else if(slotType == "AMAZON.CivicStructure"){
       let arrayToSearch = recognizer.builtInValues.CivicStructure.values;
       let scratchValue = returnValue.toUpperCase();
@@ -2051,6 +2076,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
       let wildcardRegExp = new RegExp(scratch.wildcardRegExString, "ig");
 //      console.log("_matchText, 4.0.2, wildcardRegExp: ", wildcardRegExp);
       let wildcardMatchResult = wildcardRegExp.test(stringToMatch);
+//      console.log("_matchText, 4.0.2.1, wildcardMatchResult: ", wildcardMatchResult);
       if(wildcardMatchResult){
         // we are good to try the real one.
 //        console.log("_matchText, 4.0.3, potential match, wildcardRegExp: ", wildcardRegExp);
@@ -2151,6 +2177,14 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
   recognizer.builtInValues.Artist.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Artist.values);
   recognizer.builtInValues.Artist.replacementRegExp = new RegExp(recognizer.builtInValues.Artist.replacementRegExpString, "ig");
+
+  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Comic");
+  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+  if(typeof extendedValues != "undefined"){
+    recognizer.builtInValues.Comic.values = recognizer.builtInValues.Comic.values.concat(extendedValues);
+  }
+  recognizer.builtInValues.Comic.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Comic.values);
+  recognizer.builtInValues.Comic.replacementRegExp = new RegExp(recognizer.builtInValues.Comic.replacementRegExpString, "ig");
 
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.CivicStructure");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
@@ -2388,7 +2422,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
 
     // Now add the reg exp with all wildcards
     let wildcardRegExString = currentUtterance;
-    let wildcardReplacementString = "((?:\\w|\\s|[0-9,'])+)";
+    let wildcardReplacementString = "((?:\\w|\\s|[0-9,_']|\-)+)";
     let addWildcardReplacementString = false;
     if(slots.length > 0){
       // Need to create a different regExString that has wildcards instead of slots
