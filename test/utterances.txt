@@ -32,5 +32,6 @@ ArtistIntent {ArtistSlot} was in Jackson five
 AthleteIntent {AthleteSlot} is a swimmer
 AuthorIntent {AuthorSlot} is a writer
 BookIntent my favorite book is {BookSlot}
+BookSeriesIntent {BookSeriesSlot} is also a movie
 AdministrativeAreaIntent post office in {AdministrativeAreaSlot}
 RoomIntent best room is the {RoomSlot}

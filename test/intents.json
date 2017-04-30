@@ -98,6 +98,15 @@
       ]
     },
     {
+      "intent": "BookSeriesIntent",
+      "slots": [
+        {
+          "name": "BookSeriesSlot",
+          "type": "AMAZON.BookSeries"
+        }
+      ]
+    },
+    {
       "intent": "AthleteIntent",
       "slots": [
         {
