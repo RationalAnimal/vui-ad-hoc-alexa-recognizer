@@ -282,6 +282,10 @@ recognizer.builtInValues.Comic = require("./builtinslottypes/comics.json");
 recognizer.builtInValues.Comic.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Comic.values);
 recognizer.builtInValues.Comic.replacementRegExp = new RegExp(recognizer.builtInValues.Comic.replacementRegExpString, "ig");
 
+recognizer.builtInValues.Corporation = require("./builtinslottypes/corporations.json");
+recognizer.builtInValues.Corporation.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Corporation.values);
+recognizer.builtInValues.Corporation.replacementRegExp = new RegExp(recognizer.builtInValues.Corporation.replacementRegExpString, "ig");
+
 recognizer.builtInValues.CivicStructure = require("./builtinslottypes/civicstructures.json");
 recognizer.builtInValues.CivicStructure.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.CivicStructure.values);
 recognizer.builtInValues.CivicStructure.replacementRegExp = new RegExp(recognizer.builtInValues.CivicStructure.replacementRegExpString, "ig");
@@ -390,6 +394,16 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     }
     else {
       return recognizer.builtInValues.Comic.replacementRegExpString;
+    }
+  }
+  else if(slotType == "AMAZON.Corporation"){
+    // Ignore SOUNDEX_MATCH flag for now
+    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+      // number are used in cases of names like John the 1st
+      return "((?:\\w|\\s|[0-9]|\-)+)";
+    }
+    else {
+      return recognizer.builtInValues.Corporation.replacementRegExpString;
     }
   }
   else if(slotType == "AMAZON.CivicStructure"){
@@ -1838,7 +1852,16 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-
+    else if(slotType == "AMAZON.Corporation"){
+      let arrayToSearch = recognizer.builtInValues.Corporation.values;
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < arrayToSearch.length; i++){
+        if(scratchValue == arrayToSearch[i].toUpperCase()){
+          returnValue = arrayToSearch[i];
+          break;
+        }
+      }
+    }
     else if(slotType == "AMAZON.CivicStructure"){
       let arrayToSearch = recognizer.builtInValues.CivicStructure.values;
       let scratchValue = returnValue.toUpperCase();
@@ -2185,6 +2208,14 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
   recognizer.builtInValues.Comic.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Comic.values);
   recognizer.builtInValues.Comic.replacementRegExp = new RegExp(recognizer.builtInValues.Comic.replacementRegExpString, "ig");
+
+  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Corporation");
+  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+  if(typeof extendedValues != "undefined"){
+    recognizer.builtInValues.Corporation.values = recognizer.builtInValues.Corporation.values.concat(extendedValues);
+  }
+  recognizer.builtInValues.Corporation.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Corporation.values);
+  recognizer.builtInValues.Corporation.replacementRegExp = new RegExp(recognizer.builtInValues.Corporation.replacementRegExpString, "ig");
 
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.CivicStructure");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);

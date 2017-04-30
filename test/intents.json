@@ -134,6 +134,15 @@
       ]
     },
     {
+      "intent": "CorporationIntent",
+      "slots": [
+        {
+          "name": "CorporationSlot",
+          "type": "AMAZON.Corporation"
+        }
+      ]
+    },
+    {
       "intent": "AthleteIntent",
       "slots": [
         {

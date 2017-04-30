@@ -150,7 +150,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
-    it("verify simple utterance with an AMAZON.Comicslot matches", function() {
+    it("verify simple utterance with an AMAZON.Comic slot matches", function() {
       let result = recognizer.Recognizer.matchText("have you read x-men");
       expect(result).to.eql(
         {"name": "ComicIntent",
@@ -158,6 +158,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           "ComicSlot": {
             "name": "ComicSlot",
             "value": "x-men"
+          }
+        }});
+    });
+
+    it("verify simple utterance with an AMAZON.Corporation slot matches", function() {
+      let result = recognizer.Recognizer.matchText("apple is a highly valued company");
+      expect(result).to.eql(
+        {"name": "CorporationIntent",
+         "slots": {
+          "CorporationSlot": {
+            "name": "CorporationSlot",
+            "value": "apple"
           }
         }});
     });
