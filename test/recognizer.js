@@ -114,6 +114,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.BookSeries slot matches", function() {
+      let result = recognizer.Recognizer.matchText("silence of the lambs is also a movie");
+      expect(result).to.eql(
+        {"name": "BookSeriesIntent",
+         "slots": {
+          "BookSeriesSlot": {
+            "name": "BookSeriesSlot",
+            "value": "silence of the lambs"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.AdministrativeArea slot matches", function() {
       let result = recognizer.Recognizer.matchText("post office in portsmouth new hampshire");
       expect(result).to.eql(
