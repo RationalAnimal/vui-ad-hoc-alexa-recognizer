@@ -37,5 +37,6 @@ BroadcastChannelIntent do you like to listen to {BroadcastChannelSlot} in the mo
 CivicStructureIntent is {CivicStructureSlot} a tourist attraction
 ComicIntent have you read {ComicSlot}
 CorporationIntent {CorporationSlot} is a highly valued company
+DessertIntent {DessertSlot} is my favorite dessert
 AdministrativeAreaIntent post office in {AdministrativeAreaSlot}
 RoomIntent best room is the {RoomSlot}

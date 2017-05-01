@@ -162,6 +162,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Dessert slot matches", function() {
+      let result = recognizer.Recognizer.matchText("ice cream is my favorite dessert");
+      expect(result).to.eql(
+        {"name": "DessertIntent",
+         "slots": {
+          "DessertSlot": {
+            "name": "DessertSlot",
+            "value": "ice cream"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.Corporation slot matches", function() {
       let result = recognizer.Recognizer.matchText("apple is a highly valued company");
       expect(result).to.eql(

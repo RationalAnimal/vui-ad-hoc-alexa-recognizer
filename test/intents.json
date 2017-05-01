@@ -143,6 +143,15 @@
       ]
     },
     {
+      "intent": "DessertIntent",
+      "slots": [
+        {
+          "name": "DessertSlot",
+          "type": "AMAZON.Dessert"
+        }
+      ]
+    },
+    {
       "intent": "AthleteIntent",
       "slots": [
         {
