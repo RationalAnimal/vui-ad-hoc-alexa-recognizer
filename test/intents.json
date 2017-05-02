@@ -152,6 +152,15 @@
       ]
     },
     {
+      "intent": "DirectorIntent",
+      "slots": [
+        {
+          "name": "DirectorSlot",
+          "type": "AMAZON.Director"
+        }
+      ]
+    },
+    {
       "intent": "AthleteIntent",
       "slots": [
         {

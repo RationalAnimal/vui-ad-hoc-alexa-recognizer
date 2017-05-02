@@ -38,5 +38,6 @@ CivicStructureIntent is {CivicStructureSlot} a tourist attraction
 ComicIntent have you read {ComicSlot}
 CorporationIntent {CorporationSlot} is a highly valued company
 DessertIntent {DessertSlot} is my favorite dessert
+DirectorIntent {DirectorSlot} directed many movies
 AdministrativeAreaIntent post office in {AdministrativeAreaSlot}
 RoomIntent best room is the {RoomSlot}
