@@ -186,6 +186,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.EducationalOrganization slot matches", function() {
+      let result = recognizer.Recognizer.matchText("have you graduated from harvard");
+      expect(result).to.eql(
+        {"name": "EducationalOrganizationIntent",
+         "slots": {
+          "EducationalOrganizationSlot": {
+            "name": "EducationalOrganizationSlot",
+            "value": "harvard"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.Corporation slot matches", function() {
       let result = recognizer.Recognizer.matchText("apple is a highly valued company");
       expect(result).to.eql(
