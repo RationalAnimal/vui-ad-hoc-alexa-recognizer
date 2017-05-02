@@ -174,6 +174,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Director slot matches", function() {
+      let result = recognizer.Recognizer.matchText("martin scorsese directed many movies");
+      expect(result).to.eql(
+        {"name": "DirectorIntent",
+         "slots": {
+          "DirectorSlot": {
+            "name": "DirectorSlot",
+            "value": "martin scorsese"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.Corporation slot matches", function() {
       let result = recognizer.Recognizer.matchText("apple is a highly valued company");
       expect(result).to.eql(
