@@ -152,6 +152,15 @@
       ]
     },
     {
+      "intent": "EducationalOrganizationIntent",
+      "slots": [
+        {
+          "name": "EducationalOrganizationSlot",
+          "type": "AMAZON.EducationalOrganization"
+        }
+      ]
+    },
+    {
       "intent": "DirectorIntent",
       "slots": [
         {
