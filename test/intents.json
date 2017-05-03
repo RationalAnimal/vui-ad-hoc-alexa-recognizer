@@ -152,6 +152,15 @@
       ]
     },
     {
+      "intent": "FictionalCharacterIntent",
+      "slots": [
+        {
+          "name": "FictionalCharacterSlot",
+          "type": "AMAZON.FictionalCharacter"
+        }
+      ]
+    },
+    {
       "intent": "FestivalIntent",
       "slots": [
         {
