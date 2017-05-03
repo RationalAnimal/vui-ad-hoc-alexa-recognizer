@@ -286,6 +286,10 @@ recognizer.builtInValues.Dessert = require("./builtinslottypes/desserts.json");
 recognizer.builtInValues.Dessert.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Dessert.values);
 recognizer.builtInValues.Dessert.replacementRegExp = new RegExp(recognizer.builtInValues.Dessert.replacementRegExpString, "ig");
 
+recognizer.builtInValues.Festival = require("./builtinslottypes/festivals.json");
+recognizer.builtInValues.Festival.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Festival.values);
+recognizer.builtInValues.Festival.replacementRegExp = new RegExp(recognizer.builtInValues.Festival.replacementRegExpString, "ig");
+
 recognizer.builtInValues.EducationalOrganization = require("./builtinslottypes/educationalorganizations.json");
 recognizer.builtInValues.EducationalOrganization.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.EducationalOrganization.values);
 recognizer.builtInValues.EducationalOrganization.replacementRegExp = new RegExp(recognizer.builtInValues.EducationalOrganization.replacementRegExpString, "ig");
@@ -416,6 +420,16 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     }
     else {
       return recognizer.builtInValues.Dessert.replacementRegExpString;
+    }
+  }
+  else if(slotType == "AMAZON.Festival"){
+    // Ignore SOUNDEX_MATCH flag for now
+    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+      // number are used in cases of names like John the 1st
+      return "((?:\\w|\\s|[0-9]|\-)+)";
+    }
+    else {
+      return recognizer.builtInValues.Festival.replacementRegExpString;
     }
   }
   else if(slotType == "AMAZON.EducationalOrganization"){
@@ -1904,6 +1918,16 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
+    else if(slotType == "AMAZON.Festival"){
+      let arrayToSearch = recognizer.builtInValues.Festival.values;
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < arrayToSearch.length; i++){
+        if(scratchValue == arrayToSearch[i].toUpperCase()){
+          returnValue = arrayToSearch[i];
+          break;
+        }
+      }
+    }
     else if(slotType == "AMAZON.EducationalOrganization"){
       let arrayToSearch = recognizer.builtInValues.EducationalOrganization.values;
       let scratchValue = returnValue.toUpperCase();
@@ -2288,6 +2312,14 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
   recognizer.builtInValues.Dessert.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Dessert.values);
   recognizer.builtInValues.Dessert.replacementRegExp = new RegExp(recognizer.builtInValues.Dessert.replacementRegExpString, "ig");
+
+  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Festival");
+  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+  if(typeof extendedValues != "undefined"){
+    recognizer.builtInValues.Festival.values = recognizer.builtInValues.Festival.values.concat(extendedValues);
+  }
+  recognizer.builtInValues.Festival.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Festival.values);
+  recognizer.builtInValues.Festival.replacementRegExp = new RegExp(recognizer.builtInValues.Festival.replacementRegExpString, "ig");
 
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.EducationalOrganization");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
