@@ -186,6 +186,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.FictionalCharacter slot matches", function() {
+      let result = recognizer.Recognizer.matchText("batman is a dark character");
+      expect(result).to.eql(
+        {"name": "FictionalCharacterIntent",
+         "slots": {
+          "FictionalCharacterSlot": {
+            "name": "FictionalCharacterSlot",
+            "value": "batman"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.Director slot matches", function() {
       let result = recognizer.Recognizer.matchText("martin scorsese directed many movies");
       expect(result).to.eql(
