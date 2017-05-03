@@ -174,6 +174,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Festival slot matches", function() {
+      let result = recognizer.Recognizer.matchText("where is south by southwest held");
+      expect(result).to.eql(
+        {"name": "FestivalIntent",
+         "slots": {
+          "FestivalSlot": {
+            "name": "FestivalSlot",
+            "value": "south by southwest"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.Director slot matches", function() {
       let result = recognizer.Recognizer.matchText("martin scorsese directed many movies");
       expect(result).to.eql(

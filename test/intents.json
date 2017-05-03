@@ -152,6 +152,15 @@
       ]
     },
     {
+      "intent": "FestivalIntent",
+      "slots": [
+        {
+          "name": "FestivalSlot",
+          "type": "AMAZON.Festival"
+        }
+      ]
+    },
+    {
       "intent": "EducationalOrganizationIntent",
       "slots": [
         {
