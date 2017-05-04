@@ -286,6 +286,10 @@ recognizer.builtInValues.Dessert = require("./builtinslottypes/desserts.json");
 recognizer.builtInValues.Dessert.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Dessert.values);
 recognizer.builtInValues.Dessert.replacementRegExp = new RegExp(recognizer.builtInValues.Dessert.replacementRegExpString, "ig");
 
+recognizer.builtInValues.FoodEstablishment = require("./builtinslottypes/foodestablishments.json");
+recognizer.builtInValues.FoodEstablishment.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.FoodEstablishment.values);
+recognizer.builtInValues.FoodEstablishment.replacementRegExp = new RegExp(recognizer.builtInValues.FoodEstablishment.replacementRegExpString, "ig");
+
 recognizer.builtInValues.FictionalCharacter = require("./builtinslottypes/fictionalcharacters.json");
 recognizer.builtInValues.FictionalCharacter.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.FictionalCharacter.values);
 recognizer.builtInValues.FictionalCharacter.replacementRegExp = new RegExp(recognizer.builtInValues.FictionalCharacter.replacementRegExpString, "ig");
@@ -424,6 +428,16 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     }
     else {
       return recognizer.builtInValues.Dessert.replacementRegExpString;
+    }
+  }
+  else if(slotType == "AMAZON.FoodEstablishment"){
+    // Ignore SOUNDEX_MATCH flag for now
+    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+      // number are used in cases of names like John the 1st
+      return "((?:\\w|\\s|[0-9]|\-)+)";
+    }
+    else {
+      return recognizer.builtInValues.FoodEstablishment.replacementRegExpString;
     }
   }
   else if(slotType == "AMAZON.FictionalCharacter"){
@@ -1933,6 +1947,16 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
+    else if(slotType == "AMAZON.FoodEstablishment"){
+      let arrayToSearch = recognizer.builtInValues.FoodEstablishment.values;
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < arrayToSearch.length; i++){
+        if(scratchValue == arrayToSearch[i].toUpperCase()){
+          returnValue = arrayToSearch[i];
+          break;
+        }
+      }
+    }
     else if(slotType == "AMAZON.FictionalCharacter"){
       let arrayToSearch = recognizer.builtInValues.FictionalCharacter.values;
       let scratchValue = returnValue.toUpperCase();
@@ -2337,6 +2361,14 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
   recognizer.builtInValues.Dessert.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Dessert.values);
   recognizer.builtInValues.Dessert.replacementRegExp = new RegExp(recognizer.builtInValues.Dessert.replacementRegExpString, "ig");
+
+  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.FoodEstablishment");
+  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+  if(typeof extendedValues != "undefined"){
+    recognizer.builtInValues.FoodEstablishment.values = recognizer.builtInValues.FoodEstablishment.values.concat(extendedValues);
+  }
+  recognizer.builtInValues.FoodEstablishment.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.FoodEstablishment.values);
+  recognizer.builtInValues.FoodEstablishment.replacementRegExp = new RegExp(recognizer.builtInValues.FoodEstablishment.replacementRegExpString, "ig");
 
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.FictionalCharacter");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);

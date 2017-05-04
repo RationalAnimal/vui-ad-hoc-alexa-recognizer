@@ -152,6 +152,15 @@
       ]
     },
     {
+      "intent": "FoodEstablishmentIntent",
+      "slots": [
+        {
+          "name": "FoodEstablishmentSlot",
+          "type": "AMAZON.FoodEstablishment"
+        }
+      ]
+    },
+    {
       "intent": "FictionalCharacterIntent",
       "slots": [
         {

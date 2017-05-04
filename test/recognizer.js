@@ -198,6 +198,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.FoodEstablishment slot matches", function() {
+      let result = recognizer.Recognizer.matchText("do you want to go to burger king");
+      expect(result).to.eql(
+        {"name": "FoodEstablishmentIntent",
+         "slots": {
+          "FoodEstablishmentSlot": {
+            "name": "FoodEstablishmentSlot",
+            "value": "burger king"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.Director slot matches", function() {
       let result = recognizer.Recognizer.matchText("martin scorsese directed many movies");
       expect(result).to.eql(
