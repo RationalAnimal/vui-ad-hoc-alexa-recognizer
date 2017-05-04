@@ -38,6 +38,7 @@ CivicStructureIntent is {CivicStructureSlot} a tourist attraction
 ComicIntent have you read {ComicSlot}
 CorporationIntent {CorporationSlot} is a highly valued company
 DessertIntent {DessertSlot} is my favorite dessert
+GameIntent {GameSlot} is my favorite game
 FoodEstablishmentIntent do you want to go to {FoodEstablishmentSlot}
 FestivalIntent where is {FestivalSlot} held
 FictionalCharacterIntent {FictionalCharacterSlot} is a dark character

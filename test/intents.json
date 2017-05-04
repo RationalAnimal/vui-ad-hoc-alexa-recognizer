@@ -152,6 +152,15 @@
       ]
     },
     {
+      "intent": "GameIntent",
+      "slots": [
+        {
+          "name": "GameSlot",
+          "type": "AMAZON.Game"
+        }
+      ]
+    },
+    {
       "intent": "FoodEstablishmentIntent",
       "slots": [
         {

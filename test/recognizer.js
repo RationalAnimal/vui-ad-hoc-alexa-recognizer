@@ -174,6 +174,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Game slot matches", function() {
+      let result = recognizer.Recognizer.matchText("halo is my favorite game");
+      expect(result).to.eql(
+        {"name": "GameIntent",
+         "slots": {
+          "GameSlot": {
+            "name": "GameSlot",
+            "value": "halo"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.Festival slot matches", function() {
       let result = recognizer.Recognizer.matchText("where is south by southwest held");
       expect(result).to.eql(
