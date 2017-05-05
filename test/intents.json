@@ -161,6 +161,15 @@
       ]
     },
     {
+      "intent": "LandformIntent",
+      "slots": [
+        {
+          "name": "LandformSlot",
+          "type": "AMAZON.Landform"
+        }
+      ]
+    },
+    {
       "intent": "FoodEstablishmentIntent",
       "slots": [
         {

@@ -186,6 +186,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Game slot matches", function() {
+      let result = recognizer.Recognizer.matchText("mount washington is a popular hicker destination");
+      expect(result).to.eql(
+        {"name": "LandformIntent",
+         "slots": {
+          "LandformSlot": {
+            "name": "LandformSlot",
+            "value": "mount washington"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.Festival slot matches", function() {
       let result = recognizer.Recognizer.matchText("where is south by southwest held");
       expect(result).to.eql(
