@@ -1,0 +1,90 @@
+{
+  "attribution" : "these values were partially taken from https://en.wikipedia.org/wiki/Lists_of_airlines, content was modified to make it suitable in text matching software and some values have been removed and/or renamed",
+  "license": "This file is released under Creative Commons Attribution-ShareAlike license:  http://creativecommons.org/licenses/by-sa/3.0/",
+  "values": [
+    {
+      "name": "Alaska Airlines",
+      "nativeName": "Alaska Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Allegiant Air",
+      "nativeName": "Allegiant Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "American Airlines",
+      "nativeName": "American Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Delta Air Lines",
+      "nativeName": "Delta Air Lines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Frontier Airlines",
+      "nativeName": "Frontier Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Frontier Airlines",
+      "nativeName": "Frontier Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "JetBlue Airways",
+      "nativeName": "JetBlue Airways",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Southwest Airlines",
+      "nativeName": "Southwest Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Spirit Airlines",
+      "nativeName": "Spirit Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Sun Country Airlines",
+      "nativeName": "Sun Country Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "United Airlines",
+      "nativeName": "United Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Virgin America",
+      "nativeName": "Virgin America",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    }
+  ]
+}

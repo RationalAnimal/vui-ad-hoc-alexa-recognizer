@@ -266,6 +266,16 @@ recognizer.builtInValues.US_STATE = require("./builtinslottypes/usstates.json");
   recognizer.builtInValues.US_STATE.replacementRegExp = new RegExp(recognizer.builtInValues.US_STATE.replacementRegExpString, "ig");
 }
 
+recognizer.builtInValues.Airline = require("./builtinslottypes/airlines.json");
+{
+  let allAirlines = [];
+  for(let i = 0; i < recognizer.builtInValues.Airline.values.length; i ++){
+    allAirlines.push(recognizer.builtInValues.Airline.values[i].name);
+  }
+  recognizer.builtInValues.Airline.replacementRegExpString = _makeReplacementRegExpString(allAirlines);
+  recognizer.builtInValues.Airline.replacementRegExp = new RegExp(recognizer.builtInValues.Airline.replacementRegExpString, "ig");
+}
+
 recognizer.builtInValues.US_FIRST_NAME = require("./builtinslottypes/usfirstnames.json");
 recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
 recognizer.builtInValues.US_FIRST_NAME.replacementRegExp = new RegExp(recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString, "ig");
@@ -385,17 +395,26 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
   }
   else if(slotType == "AMAZON.US_STATE"){
     if(slotFlags.indexOf("EXCLUDE_NON_STATES") >= 0){
-      // number are used in cases of names like John the 1st
       return recognizer.builtInValues.US_STATE.replacementStatesOnlyRegExpString;
     }
     else {
       return recognizer.builtInValues.US_STATE.replacementRegExpString;
     }
   }
+  else if(slotType == "AMAZON.Airline"){
+    // Ignore SOUNDEX_MATCH flag for now
+    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+      // numbers are used in cases of some names
+      return "((?:\\w|\\s|[0-9])+)";
+    }
+    else {
+      return recognizer.builtInValues.Airline.replacementRegExpString;
+    }
+  }
   else if(slotType == "AMAZON.US_FIRST_NAME"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
-      // number are used in cases of names like John the 1st
+      // numbers are used in cases of names like John the 1st
       return "((?:\\w|\\s|[0-9])+)";
     }
     else {
@@ -2149,10 +2168,19 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
+    else if(slotType == "AMAZON.Airline"){
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < recognizer.builtInValues.Airline.values.length; i ++){
+        if(recognizer.builtInValues.Airline.values[i].name.toUpperCase() == scratchValue){
+          returnValue = recognizer.builtInValues.Airline.values[i].name;
+          break;
+        }
+      }
+    }
     else if(slotType == "AMAZON.US_STATE"){
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
-        if(recognizer.builtInValues.US_STATE.values[i].name.toUpperCase()){
+        if(recognizer.builtInValues.US_STATE.values[i].name.toUpperCase() == scratchValue){
           returnValue = recognizer.builtInValues.US_STATE.values[i].name;
           break;
         }
@@ -2575,6 +2603,11 @@ var _generateRunTimeJson = function(config, intents, utterances){
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.US_STATE");
   if(typeof slotConfig != "undefined" && slotConfig != null){
     recognizer.builtInValues.US_STATE.transformSrcFilename = slotConfig.transformSrcFilename;
+  }
+
+  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Airline");
+  if(typeof slotConfig != "undefined" && slotConfig != null){
+    recognizer.builtInValues.Airline.transformSrcFilename = slotConfig.transformSrcFilename;
   }
 
   slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Country");
