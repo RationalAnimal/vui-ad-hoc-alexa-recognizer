@@ -174,6 +174,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.LandmarksOrHistoricalBuildings slot matches", function() {
+      let result = recognizer.Recognizer.matchText("i will meet you in madison square");
+      expect(result).to.eql(
+        {"name": "LandmarksOrHistoricalBuildingsIntent",
+         "slots": {
+          "LandmarksOrHistoricalBuildingsSlot": {
+            "name": "LandmarksOrHistoricalBuildingsSlot",
+            "value": "madison square"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.Game slot matches", function() {
       let result = recognizer.Recognizer.matchText("halo is my favorite game");
       expect(result).to.eql(
@@ -186,7 +198,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
-    it("verify simple utterance with an AMAZON.Game slot matches", function() {
+    it("verify simple utterance with an AMAZON.Landform slot matches", function() {
       let result = recognizer.Recognizer.matchText("mount washington is a popular hicker destination");
       expect(result).to.eql(
         {"name": "LandformIntent",

@@ -152,6 +152,15 @@
       ]
     },
     {
+      "intent": "LandmarksOrHistoricalBuildingsIntent",
+      "slots": [
+        {
+          "name": "LandmarksOrHistoricalBuildingsSlot",
+          "type": "AMAZON.LandmarksOrHistoricalBuildings"
+        }
+      ]
+    },
+    {
       "intent": "GameIntent",
       "slots": [
         {
