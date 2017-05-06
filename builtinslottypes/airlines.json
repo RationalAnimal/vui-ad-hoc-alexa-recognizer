@@ -85,6 +85,163 @@
       "country": "united states",
       "continent": "north america",
       "type": "mainline"
+    },
+
+
+    {
+      "name": "Air Wisconsin",
+      "nativeName": "Air Wisconsin",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Cape Air",
+      "nativeName": "Cape Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "CommutAir",
+      "nativeName": "CommutAir",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Compass Airlines",
+      "nativeName": "Compass Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Contour Aviation",
+      "nativeName": "Contour Aviation",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Elite Airways",
+      "nativeName": "Elite Airways",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Endeavor Air",
+      "nativeName": "Endeavor Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Envoy Air",
+      "nativeName": "Envoy Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "ExpressJet",
+      "nativeName": "ExpressJet",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "GoJet Airlines",
+      "nativeName": "GoJet Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Great Lakes Airlines",
+      "nativeName": "Great Lakes Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Horizon Air",
+      "nativeName": "Horizon Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Island Air",
+      "nativeName": "Island Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Mesa Airlines",
+      "nativeName": "Mesa Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "PenAir",
+      "nativeName": "PenAir",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Piedmont Airlines",
+      "nativeName": "Piedmont Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "PSA Airlines",
+      "nativeName": "PSA Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Ravn Alaska",
+      "nativeName": "Ravn Alaska",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Republic Airlines",
+      "nativeName": "Republic Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Silver Airways",
+      "nativeName": "Silver Airways",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "SkyWest Airlines",
+      "nativeName": "SkyWest Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Trans States Airlines",
+      "nativeName": "Trans States Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
     }
+
   ]
 }
