@@ -314,6 +314,15 @@
       ]
     },
     {
+      "intent": "AirlineIntent",
+      "slots": [
+        {
+          "name": "AirlineSlot",
+          "type": "AMAZON.Airline"
+        }
+      ]
+    },
+    {
       "intent": "DurationIntent",
       "slots": [
         {
