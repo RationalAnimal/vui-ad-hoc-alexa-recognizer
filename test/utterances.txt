@@ -15,6 +15,7 @@ StateIntent {StateSlot} may not be a state
 AirlineIntent is {AirlineSlot} a budget airline
 AirlineIntent {AirlineSlot} is a regional airline
 AirlineIntent {AirlineSlot} is a cargo airline
+AirlineIntent {AirlineSlot} is a canadian airline
 FourDigitIntent here is {FooSlot:INCLUDE_WILDCARD_MATCH} test
 FourDigitIntent {FooSlot}
 BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it
