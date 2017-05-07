@@ -1291,6 +1291,36 @@
       "country":"mexico",
       "continent":"north america",
       "type": "mainline"
+    },
+
+
+    {
+      "name":"Aeromar",
+      "nativeName":"Aeromar",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "regional"
+    },
+    {
+      "name":"Aeromexico Connect",
+      "nativeName":"Aeroméxico Connect",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "regional"
+    },
+    {
+      "name":"MAYAir",
+      "nativeName":"MAYAir",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "regional"
+    },
+    {
+      "name":"TAR Aerolineas",
+      "nativeName":"TAR Aerolineas",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "regional"
     }
 
   ]
