@@ -1255,6 +1255,42 @@
       "nativeName":"Wilderness Air Escapes",
       "country":"canada",
       "continent":"north america"
+    },
+
+    {
+      "name":"Aeromexico",
+      "nativeName":"Aeroméxico",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "mainline"
+    },
+    {
+      "name":"Interjet",
+      "nativeName":"Interjet",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "mainline"
+    },
+    {
+      "name":"Magnicharters",
+      "nativeName":"Magnicharters",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "mainline"
+    },
+    {
+      "name":"VivaAerobus",
+      "nativeName":"VivaAerobús",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "mainline"
+    },
+    {
+      "name":"Volaris",
+      "nativeName":"Volaris",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "mainline"
     }
 
   ]
