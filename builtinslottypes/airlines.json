@@ -241,7 +241,289 @@
       "country": "united states",
       "continent": "north america",
       "type": "regional"
+    },
+
+    {
+      "name": "ABX Air",
+      "nativeName": "ABX Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Air Cargo Carriers",
+      "nativeName": "Air Cargo Carriers",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "AirNet Express",
+      "nativeName": "AirNet Express",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Air Transport International",
+      "nativeName": "Air Transport International",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Aloha Air Cargo",
+      "nativeName": "Aloha Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Alpine Air Express",
+      "nativeName": "Alpine Air Express",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Ameriflight",
+      "nativeName": "Ameriflight",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Amerijet International",
+      "nativeName": "Amerijet International",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Ameristar Air Cargo",
+      "nativeName": "Ameristar Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Asia Pacific Airlines",
+      "nativeName": "Asia Pacific Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Atlas Air Cargo",
+      "nativeName": "Atlas Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "C and M Airways",
+      "nativeName": "C and M Airways",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Castle Aviation",
+      "nativeName": "Castle Aviation",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Centurion Air Cargo",
+      "nativeName": "Centurion Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Contract Air Cargo",
+      "nativeName": "Contract Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Corporate Air",
+      "nativeName": "Corporate Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "CSA Air",
+      "nativeName": "CSA Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Custom Air Transport",
+      "nativeName": "Custom Air Transport",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Empire Airlines",
+      "nativeName": "Empire Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Everts Air Cargo",
+      "nativeName": "Everts Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "FedEx Express",
+      "nativeName": "FedEx Express",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Florida West International Airways",
+      "nativeName": "Florida West International Airways",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Freight Runners Express",
+      "nativeName": "Freight Runners Express",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Kalitta Air",
+      "nativeName": "Kalitta Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Key Lime Air",
+      "nativeName": "Key Lime Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Logistic Air",
+      "nativeName": "Logistic Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Lynden Air Cargo",
+      "nativeName": "Lynden Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Martinaire",
+      "nativeName": "Martinaire",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Mountain Air Cargo",
+      "nativeName": "Mountain Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "National Airlines",
+      "nativeName": "National Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Northern Air Cargo",
+      "nativeName": "Northern Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Polar Air Cargo",
+      "nativeName": "Polar Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Ryan Air Services",
+      "nativeName": "Ryan Air Services",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Sky Lease Cargo",
+      "nativeName": "Sky Lease Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Skyway Enterprises",
+      "nativeName": "Skyway Enterprises",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Southern Air",
+      "nativeName": "Southern Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Tepper Aviation",
+      "nativeName": "Tepper Aviation",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Transair",
+      "nativeName": "Transair",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "UPS Airlines",
+      "nativeName": "UPS Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "USA Jet Airlines",
+      "nativeName": "USA Jet Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
     }
+
 
   ]
 }
