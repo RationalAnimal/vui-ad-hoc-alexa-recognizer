@@ -469,6 +469,17 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.Airline slot matches", function() {
+      let result = recognizer.Recognizer.matchText("LATAM Cargo Mexico is a mexican airline");
+      expect(result).to.eql(
+        {"name": "AirlineIntent",
+         "slots": {
+          "AirlineSlot": {
+            "name": "AirlineSlot",
+            "value": "LATAM Cargo Mexico"
+          }
+        }});
+    });
     it("verify simple utterance with an AMAZON.US_STATE slot matches", function() {
       let result = recognizer.Recognizer.matchText("Vermont is definitely a state");
       expect(result).to.eql(
