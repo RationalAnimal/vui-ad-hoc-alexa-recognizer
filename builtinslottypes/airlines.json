@@ -1321,6 +1321,28 @@
       "country":"mexico",
       "continent":"north america",
       "type": "regional"
+    },
+
+    {
+      "name":"Aeronaves TSM",
+      "nativeName":"Aeronaves TSM",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "cargo"
+    },
+    {
+      "name":"Estafeta Carga Aerea",
+      "nativeName":"Estafeta Carga Aérea",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "cargo"
+    },
+    {
+      "name":"LATAM Cargo Mexico",
+      "nativeName":"LATAM Cargo México",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "cargo"
     }
 
   ]
