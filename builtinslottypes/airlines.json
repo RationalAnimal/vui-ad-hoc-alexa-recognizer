@@ -1387,6 +1387,28 @@
       "country":"mexico",
       "continent":"north america",
       "type": "charter"
+    },
+
+    {
+      "name":"Aereo Calafia",
+      "nativeName":"Aéreo Calafia",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "taxi"
+    },
+    {
+      "name":"Aereo Servicio Guerrero",
+      "nativeName":"Aéreo Servicio Guerrero",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "taxi"
+    },
+    {
+      "name":"Avioquintana",
+      "nativeName":"Avioquintana",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "taxi"
     }
 
 
