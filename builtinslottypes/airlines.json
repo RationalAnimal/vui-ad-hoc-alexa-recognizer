@@ -1343,7 +1343,52 @@
       "country":"mexico",
       "continent":"north america",
       "type": "cargo"
+    },
+
+
+    {
+      "name":"Aerodan",
+      "nativeName":"Aerodan",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "charter"
+    },
+    {
+      "name":"Aerodavinci",
+      "nativeName":"Aerodavinci",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "charter"
+    },
+    {
+      "name":"Aerolineas Ejecutivas",
+      "nativeName":"Aerolíneas Ejecutivas",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "charter"
+    },
+    {
+      "name":"AeroUnion",
+      "nativeName":"AeroUnion",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "charter"
+    },
+    {
+      "name":"Aviesa",
+      "nativeName":"Aviesa",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "charter"
+    },
+    {
+      "name":"Aerodan",
+      "nativeName":"Aerodan",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "charter"
     }
+
 
   ]
 }
