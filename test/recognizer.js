@@ -436,7 +436,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
-    it("verify simple utterance with an AMAZON.Airline slot matches", function() {
+    it("verify simple utterance with an AMAZON.Airline slot with COUNTRY() flag matches", function() {
       let result = recognizer.Recognizer.matchText("West Wind Aviation is a canadian airline");
       expect(result).to.eql(
         {"name": "AirlineIntent",
@@ -447,6 +447,27 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.Airline slot  with COUNTRY() flag doesn't match with the non-matching country's airline", function() {
+      let result = recognizer.Recognizer.matchText("UPS Airlines is a canadian airline");
+      expect(typeof result).to.equal("undefined");
+    });
+
+    it("verify simple utterance with an AMAZON.Airline slot with CONTINENT() flag matches", function() {
+      let result = recognizer.Recognizer.matchText("West Wind Aviation is a north american airline");
+      expect(result).to.eql(
+        {"name": "AirlineIntent",
+         "slots": {
+          "AirlineSlot": {
+            "name": "AirlineSlot",
+            "value": "West Wind Aviation"
+          }
+        }});
+    });
+    it("verify simple utterance with an AMAZON.Airline slot  with CONTINENT() flag doesn't match with the non-matching country's airline", function() {
+      let result = recognizer.Recognizer.matchText("UPS Airlines is a south american airline");
+      expect(typeof result).to.equal("undefined");
+    });
+
     it("verify simple utterance with an AMAZON.Airline slot matches", function() {
       let result = recognizer.Recognizer.matchText("Volaris is a mexican airline");
       expect(result).to.eql(

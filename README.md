@@ -230,14 +230,24 @@ file to the list of first names recognized by the AMAZON.US_FIRST_NAME slot.
 
 The second step is to use recognizer.json file at run time to parse the user
 text and produce the output json that can be used to set the intent portion of
-the request json.  For an example of how to use it, try:
+the request json.  
+You only need 2 lines of code to be added to your app to use it:
 
-````shell
+```js
+var recognizer = require("vui-ad-hoc-alexa-recognizer");
+var parsedResult = recognizer.Recognizer.matchText("Some text to match to intent");
+```
+
+You can also use it from the command line to test your configuration and to see
+the matches. For an example of how to use it (assuming you cloned the code from
+GitHub and ran "npm test" to have it configured with the test samples), try:
+
+```shell
 node matcher.js "Bob"
-````
+```
 which will produce:
 
-````json
+```json
 {
   "name": "MinionIntent",
   "slots": {
@@ -247,7 +257,7 @@ which will produce:
     }
   }
 }
-````
+```
 or
 
 ````shell
@@ -431,6 +441,9 @@ there are otherwise identical utterances that may match on a number or on a date
 match is allowed then there is no way to differenciate between the two.
 5. "EXCLUDE_NON_STATES" - this flag is only applied to the AMAZON.US_STATE type
 slot and turns off parsing of US territories and D.C.
+6. "COUNTRY", "COUNTINENT" - these are parameterized flags (see below).  currently
+they only apply to the AMAZON.Airline slot type and they restrict the matches to
+the specified countries and continents.
 
 If you don't specify any of these, then
 INCLUDE_VALUES_MATCH and EXCLUDE_WILDCARD_MATCH will be used as the default.  Also,
@@ -474,6 +487,19 @@ particular built in slot types (e.g. I may add a flag to return only the female
 first names from the AMAZON.US_FIRST_NAME type slot or numeric values within
 a certain range from the AMAZON.NUMBER type slot).
 
+### Parameterized flags
+Some flags can take parameters.  For example, "COUNTRY" and "CONTINENT" flags
+are used to specify countries and continents to use in the match.  For example,
+if your utterances file contains these lines:
+
+```shell
+AirlineIntent {AirlineSlot:COUNTRY(["canada"])} is a canadian airline
+AirlineIntent {AirlineSlot:CONTINENT(["north america"])} is a north american airline
+```
+then only Canadian airlines will match the first one, and only north american
+airlines will match the second one.
+
+### Removing flags/cleaning up the utterance file
 There is also a utility available to "clean up" utterance files for use with
 Alexa.  This may be needed if you want to use a single file as your utterances
 file for both Alexa and porting projects.  Since the slot flags don't exist in
