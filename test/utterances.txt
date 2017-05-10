@@ -15,8 +15,10 @@ StateIntent {StateSlot} may not be a state
 AirlineIntent is {AirlineSlot} a budget airline
 AirlineIntent {AirlineSlot} is a regional airline
 AirlineIntent {AirlineSlot} is a cargo airline
-AirlineIntent {AirlineSlot} is a canadian airline
-AirlineIntent {AirlineSlot} is a mexican airline
+AirlineIntent {AirlineSlot:COUNTRY(["canada"])} is a canadian airline
+AirlineIntent {AirlineSlot:COUNTRY ( [ "mexico" ] ) , CONTINENT(["north america"])} is a mexican airline
+AirlineIntent {AirlineSlot:CONTINENT(["north america"])} is a north american airline
+AirlineIntent {AirlineSlot:CONTINENT(["south america"])} is a south american airline
 FourDigitIntent here is {FooSlot:INCLUDE_WILDCARD_MATCH} test
 FourDigitIntent {FooSlot}
 BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it

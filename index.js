@@ -384,6 +384,44 @@ recognizer.builtInValues.Room = require("./builtinslottypes/rooms.json");
 recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Room.values);
 recognizer.builtInValues.Room.replacementRegExp = new RegExp(recognizer.builtInValues.Room.replacementRegExpString, "ig");
 
+var _hasFlag = function(flagArray, flag){
+  if(Array.isArray(flagArray) && typeof flag != "undefined" && flag != null){
+    for(let i = 0; i < flagArray.length; i ++){
+      let currentFlag = flagArray[i];
+      let flagObject = _getFlagParts(currentFlag);
+      if(flagObject.name == flag){
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+/**
+Call to take a flag, possibly parameterized, and return an object containing
+flag name and parameters.
+*/
+var _getFlagParts = function(flag){
+  if(typeof flag != "string"){
+    return;
+  }
+  let regExp = /^\s*([^\(\s]+)/ig;
+  let matchResult = regExp.exec(flag);
+  if(matchResult){
+    let returnValue = {
+      "name":matchResult[1]
+    };
+    let regExpParameters = /\((.*)\)/ig;
+    matchResult = regExpParameters.exec(flag);
+    if(matchResult != null){
+      let paramsWithoutParents = matchResult[1];
+      let scratch = JSON.parse("[" + paramsWithoutParents + "]");
+      returnValue.params = scratch
+    }
+    return returnValue;
+  }
+  return;
+}
 var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlags){
   if(slotType == "AMAZON.NUMBER"){
     // Ignore flags for now
@@ -403,12 +441,50 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
   }
   else if(slotType == "AMAZON.Airline"){
     // Ignore SOUNDEX_MATCH flag for now
-    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+    let hasWildCardMatch = false;
+    let hasCountryFlag = false;
+    let countries = [];
+    let hasContinentFlag = false;
+    let continents = [];
+    let hasTypeFlag = false;
+    let types = [];
+    for(let i = 0; i < slotFlags.length; i++){
+      let flagObject = _getFlagParts(slotFlags[i]);
+      if(flagObject.name == "COUNTRY"){
+        console.log("flagObject: ", JSON.stringify(flagObject));
+        hasCountryFlag = true;
+        countries = flagObject.params[0];
+      }
+      else if(flagObject.name == "CONTINENT"){
+        hasContinentFlag = true;
+        continents = flagObject.params[0];
+      }
+      else if(flagObject.name == "TYPE"){
+        hasTypeFlag = true;
+        types = flagObject.params[0];
+      }
+      else if(flagObject.name == "INCLUDE_WILDCARD_MATCH"){
+        hasWildCardMatch = true;
+      }
+    }
+    if(hasWildCardMatch){
       // numbers are used in cases of some names
       return "((?:\\w|\\s|[0-9])+)";
     }
     else {
-      return recognizer.builtInValues.Airline.replacementRegExpString;
+      let allAirlines = [];
+      for(let i = 0; i < recognizer.builtInValues.Airline.values.length; i ++){
+        if(hasCountryFlag && countries.indexOf(recognizer.builtInValues.Airline.values[i].country) < 0){
+          console.log("skipping airline: " + recognizer.builtInValues.Airline.values[i].name);
+          continue;
+        }
+        if(hasContinentFlag && continents.indexOf(recognizer.builtInValues.Airline.values[i].continent) < 0){
+          continue;
+        }
+        allAirlines.push(recognizer.builtInValues.Airline.values[i].name);
+      }
+      let replacementRegExpString = _makeReplacementRegExpString(allAirlines);
+      return replacementRegExpString;
     }
   }
   else if(slotType == "AMAZON.US_FIRST_NAME"){
@@ -2665,7 +2741,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
     }
   }
   recognizerSet.matchConfig = [];
-  let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES"];
+  let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES", "COUNTRY", "CONTINENT"];
   // First process all the utterances
   for(var i = 0; i < utterances.length; i ++){
     if(utterances[i].trim() == ""){
@@ -2680,7 +2756,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
     var scratchRegExp = new RegExp("^" + currentIntent + "\\s+");
     var currentUtterance = utterances[i].split(scratchRegExp)[1];
     var slots = [];
-    var slotRegExp = /\{(\w+)(?:[:]{1}((?:\s*[A-Z_]\s*,{0,1}\s*)+)+)*\}/ig;
+    let slotRegExp = /\{(\w+)(?:[:]{1}(.*)){0,1}\}/ig;
     let slotMatchExecResult;
     var slotMatches = [];
     var slotFlags = [];
@@ -2695,14 +2771,15 @@ var _generateRunTimeJson = function(config, intents, utterances){
         // parse the flags, create an array, trim it, verify the values, verify
         // the defaults are used if not specified and then push the result onto
         // slotFlags;
-        let scratchFlags = slotFlagsString.split(/\s*,\s*/);
         let cleanedUpFlags = [];
-        for(let j = 0; j < scratchFlags.length; j++){
-          let scratchFlag = scratchFlags[j];
-          if(typeof scratchFlag == "string" && scratchFlag != null){
-            scratchFlag = scratchFlag.replace(/\s*/ig, '');
-            if(allowedSlotFlags.indexOf(scratchFlag) >= 0){
-              cleanedUpFlags.push(scratchFlag);
+        if(slotFlagsString != null){
+          // Here we have at least one flag
+          let flagRegExp = /\s*([A-Z_]+\s*(?:\([^\)]+\)){0,1})\s*/ig;
+          let flagMatchExecResult;
+          while(flagMatchExecResult = flagRegExp.exec(slotFlagsString)){
+            let flagObject = _getFlagParts(flagMatchExecResult[1]);
+            if(allowedSlotFlags.indexOf(flagObject.name) >= 0){
+              cleanedUpFlags.push(flagMatchExecResult[1]);
             }
           }
         }

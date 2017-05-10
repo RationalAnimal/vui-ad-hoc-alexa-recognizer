@@ -55,7 +55,8 @@ var values = utilities.loadStringListFromFile(inputFileName);
 
 
 for(let i = 0; i < values.length; i++){
-	var slotRegExp = /\{(\w+)(?:[:]{1}((?:\s*[A-Z_]\s*,{0,1}\s*)+)+)*\}/ig;
+  let slotRegExp = /\{(\w+)(?:[:]{1}(.*)){0,1}\}/ig;
+
 	let slotMatchExecResult;
 //	console.log("values[i]: " + values[i]);
 	while(slotMatchExecResult = slotRegExp.exec(values[i])){
