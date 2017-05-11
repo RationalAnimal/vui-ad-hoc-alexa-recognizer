@@ -441,7 +441,7 @@ there are otherwise identical utterances that may match on a number or on a date
 match is allowed then there is no way to differenciate between the two.
 5. "EXCLUDE_NON_STATES" - this flag is only applied to the AMAZON.US_STATE type
 slot and turns off parsing of US territories and D.C.
-6. "COUNTRY", "COUNTINENT" - these are parameterized flags (see below).  currently
+6. "COUNTRY", "COUNTINENT", "TYPE" - these are parameterized flags (see below).  currently
 they only apply to the AMAZON.Airline slot type and they restrict the matches to
 the specified countries and continents.
 
@@ -488,8 +488,8 @@ first names from the AMAZON.US_FIRST_NAME type slot or numeric values within
 a certain range from the AMAZON.NUMBER type slot).
 
 ### Parameterized flags
-Some flags can take parameters.  For example, "COUNTRY" and "CONTINENT" flags
-are used to specify countries and continents to use in the match.  For example,
+Some flags can take parameters.  For example, "COUNTRY", "CONTINENT", and "TYPE" flags
+are used to specify countries, continents, and types to use in the match.  For example,
 if your utterances file contains these lines:
 
 ```shell

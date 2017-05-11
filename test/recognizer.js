@@ -467,6 +467,21 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
       let result = recognizer.Recognizer.matchText("UPS Airlines is a south american airline");
       expect(typeof result).to.equal("undefined");
     });
+    it("verify simple utterance with an AMAZON.Airline slot with TYPE() flag matches", function() {
+      let result = recognizer.Recognizer.matchText("UPS Airlines is a cargo airline");
+      expect(result).to.eql(
+        {"name": "AirlineIntent",
+         "slots": {
+          "AirlineSlot": {
+            "name": "AirlineSlot",
+            "value": "UPS Airlines"
+          }
+        }});
+    });
+    it("verify simple utterance with an AMAZON.Airline slot with TYPE() flag doesn't match with the non-matching type's airline", function() {
+      let result = recognizer.Recognizer.matchText("American Airlines is a cargo airline");
+      expect(typeof result).to.equal("undefined");
+    });
 
     it("verify simple utterance with an AMAZON.Airline slot matches", function() {
       let result = recognizer.Recognizer.matchText("Volaris is a mexican airline");
