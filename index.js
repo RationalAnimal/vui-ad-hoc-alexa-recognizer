@@ -451,7 +451,6 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     for(let i = 0; i < slotFlags.length; i++){
       let flagObject = _getFlagParts(slotFlags[i]);
       if(flagObject.name == "COUNTRY"){
-        console.log("flagObject: ", JSON.stringify(flagObject));
         hasCountryFlag = true;
         countries = flagObject.params[0];
       }
@@ -475,10 +474,12 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       let allAirlines = [];
       for(let i = 0; i < recognizer.builtInValues.Airline.values.length; i ++){
         if(hasCountryFlag && countries.indexOf(recognizer.builtInValues.Airline.values[i].country) < 0){
-          console.log("skipping airline: " + recognizer.builtInValues.Airline.values[i].name);
           continue;
         }
         if(hasContinentFlag && continents.indexOf(recognizer.builtInValues.Airline.values[i].continent) < 0){
+          continue;
+        }
+        if(hasTypeFlag && types.indexOf(recognizer.builtInValues.Airline.values[i].type) < 0){
           continue;
         }
         allAirlines.push(recognizer.builtInValues.Airline.values[i].name);
@@ -2741,7 +2742,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
     }
   }
   recognizerSet.matchConfig = [];
-  let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES", "COUNTRY", "CONTINENT"];
+  let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES", "COUNTRY", "CONTINENT", "TYPE"];
   // First process all the utterances
   for(var i = 0; i < utterances.length; i ++){
     if(utterances[i].trim() == ""){
