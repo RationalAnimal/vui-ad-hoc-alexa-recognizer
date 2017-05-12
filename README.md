@@ -238,6 +238,12 @@ var recognizer = require("vui-ad-hoc-alexa-recognizer");
 var parsedResult = recognizer.Recognizer.matchText("Some text to match to intent");
 ```
 
+(If this is not working, check to make sure you have generated your recognizer.json
+first and that it's located in the same directory where your code is.)
+
+Note that there are additional arguments to matchText(). You can specify sorting
+order, excluded intents, and a different recognizer file.
+
 You can also use it from the command line to test your configuration and to see
 the matches. For an example of how to use it (assuming you cloned the code from
 GitHub and ran "npm test" to have it configured with the test samples), try:
@@ -258,7 +264,13 @@ which will produce:
   }
 }
 ```
-or
+or you could specify a particular recognizer file to use, e.g.:
+
+```shell
+node matcher.js "Bob" "./recognizer.json"
+```
+
+or try
 
 ````shell
 node matcher.js "here is four hundred eighty eight million three hundred fifty two thousand five hundred twelve and also six oh three five five five one two one two"
@@ -677,6 +689,30 @@ parsing).
 ````javascript
 var result = _matchText("have you been to France", ["CountryIntent"], ["FirstNameIntent"]);
 ````
+
+### Alternate recognizer files
+
+In addition to the intent parsing order and intent exclusion lists you can pass
+an alternate recognizer file to use in the matching call.
+
+````javascript
+var result = _matchText("have you been to France", ["CountryIntent"], ["FirstNameIntent"], alternativeRecognizer);
+````
+
+This can be used both
+for performance optimization as well as for breaking up large skills/apps into
+smaller chucks, typically by functionality.  Let's say you have a large skill
+that has several logical flows in it.  For example, you can have a travel skill
+that lets you book a hotel and/or a car, check for special events, reserve a
+table at a restaurant, etc.  Each of these may have its own logic - its "flow".
+So, you may define a separate set of intents and utterances and custom slot
+values for each.  Then use a session variable to keep track of the current flow.
+For each flow you can generate its own recognizer file.  Then, at run time, use
+the recognizer for the flow that the user is in.
+This has multiple advantages: performance will increase; the skill/app can be
+developed separately by different teams, each having its own skill/app portion
+that they are working on and they will update only the recognizer for their
+portion.
 
 ## SoundEx support
 
