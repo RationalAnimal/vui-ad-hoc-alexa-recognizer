@@ -28,7 +28,7 @@ var fs = require('fs');
 var recognizer = require('./index.js');
 
 var usage = function(){
-  console.log('Usage: node ' + process.argv[1] + '"string to match"');
+  console.log('Usage: node ' + process.argv[1] + ' "string to match"' + ' <path to a non-standard recognizer>');
 }
 
 // Make sure we got all the arguments on the command line.
@@ -37,7 +37,16 @@ if (process.argv.length < 3) {
   process.exit(1);
 }
 var stringToMatch = process.argv[2];
-
+var recognizerToUse;
+var recognizerToUseFileName = process.argv[3];
+if(typeof recognizerToUseFileName != "undefined" && recognizerToUseFileName != null){
+  try{
+    recognizerToUse = require(recognizerToUseFileName);
+  }
+  catch(e){
+    console.log("failed to load a custom recognizer with this error: ", e);
+  }
+}
 var doTheProcessing = function(){
   return recognizer.Recognizer.matchText(stringToMatch);
 }

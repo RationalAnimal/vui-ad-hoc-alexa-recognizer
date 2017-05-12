@@ -2293,7 +2293,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
   return returnValue;
 }
 
-var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
+var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recognizerToUse){
   // First, correct some of Microsoft's "deviations"
   // look for a $ followed by a number and replace it with the number followed by the word "dollars".
   let regExpString = "(\\$\\s*(?:\\s*";
@@ -2349,13 +2349,18 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents){
 
 //  console.log("_matchText, 1");
   var recognizerSet;
-  if (fs.existsSync("./recognizer.json")) {
-//    console.log("_matchText, 1.1");
-    recognizerSet = require("./recognizer.json");
+  if(typeof recognizerToUse != "undefined" && recognizerToUse != null){
+    recognizerSet = recognizerToUse;
   }
-  else if (fs.existsSync("../../recognizer.json")){
-//    console.log("_matchText, 1.2");
-    recognizerSet = require("../../recognizer.json");
+  else {
+    if (fs.existsSync("./recognizer.json")) {
+  //    console.log("_matchText, 1.1");
+      recognizerSet = require("./recognizer.json");
+    }
+    else if (fs.existsSync("../../recognizer.json")){
+  //    console.log("_matchText, 1.2");
+      recognizerSet = require("../../recognizer.json");
+    }
   }
   if(typeof recognizerSet == "undefined"){
     throw {"error": recognizer.errorCodes.MISSING_RECOGNIZER, "message": "Unable to load recognizer.json"};
