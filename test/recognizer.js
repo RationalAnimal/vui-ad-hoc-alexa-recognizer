@@ -595,12 +595,23 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
 
   });
 
-
-
-
-
-
   describe("AMAZON.NUMBER Matches", function() {
+    it("verify simple utterance with two TRANSCEND.NUMBER slots matches", function() {
+      let result = recognizer.Recognizer.matchText('first number is one hundred thousand and the second number twenty five');
+      expect(result).to.eql(
+        {"name": "TranscendNumberIntent",
+           "slots": {
+            "TranscendNumberOneSlot": {
+              "name": "TranscendNumberOneSlot",
+              "value": "100000"
+            },
+            "TranscendNumberTwoSlot": {
+              "name": "TranscendNumberTwoSlot",
+              "value": "25"
+            }
+          }
+        });
+    });
     it("verify simple utterance with two AMAZON.NUMBER slots matches", function() {
       let result = recognizer.Recognizer.matchText('here is twenty five thousand three hundred twelve and also 6035551212');
       expect(result).to.eql(

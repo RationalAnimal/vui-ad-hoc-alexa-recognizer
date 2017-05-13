@@ -52,6 +52,24 @@
         }
       ]
     },
+
+
+    {
+      "intent": "TranscendNumberIntent",
+      "slots": [
+        {
+          "name": "TranscendNumberOneSlot",
+          "type": "TRANSCEND.NUMBER"
+        },
+        {
+          "name": "TranscendNumberTwoSlot",
+          "type": "TRANSCEND.NUMBER"
+        }
+      ]
+    },
+
+
+
     {
       "intent": "ColorIntent",
       "slots": [

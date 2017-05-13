@@ -68,7 +68,7 @@ recognizer.errorCodes.MISSING_RECOGNIZER = 1001;
 
 // The sections below are for the built in slots support
 recognizer.builtInValues = {};
-// Ommiting AMAZON. prefix
+
 recognizer.builtInValues.NUMBER = require("./builtinslottypes/numbers.json");
 let numbersWithAnd = recognizer.builtInValues.NUMBER.values.slice();
 numbersWithAnd.push("and");
@@ -422,16 +422,63 @@ var _getFlagParts = function(flag){
   }
   return;
 }
+/**
+* Call this to translate the slot from whatever type it was actually reported into
+* a "built in" equivalent
+*/
+var _getTranslatedSlotTypeForInternalLookup = function(slotType){
+  let periodIndex = slotType.indexOf('.');
+  if(periodIndex < 0){
+    return slotType;
+  }
+  let sansPlatform = slotType.substring(periodIndex);
+
+  let scratch = "TRANSCEND" + sansPlatform;
+  return scratch;
+}
+
+var _getTranslatedSlotTypeForOutput = function(slotType, platformConfig){
+  let periodIndex = slotType.indexOf('.');
+  if(periodIndex < 0){
+    return slotType;
+  }
+  let sansPlatform = slotType.substring(periodIndex);
+
+  let scratch = platformConfig.output + sansPlatform;
+  return scratch;
+}
+
+var _getTranslatedIntentForOutput = function(intent, platformConfig){
+  let periodIndex = intent.indexOf('.');
+  if(periodIndex < 0){
+    return intent;
+  }
+  let sansPlatform = intent.substring(periodIndex);
+
+  let scratch = platformConfig.output + sansPlatform;
+  return scratch;
+}
+
+var _getBuiltInNameWithoutPlatform = function(name){
+  let periodIndex = name.indexOf('.');
+  if(periodIndex < 0){
+    return name;
+  }
+  let sansPlatform = name.substring(periodIndex + 1);
+  return sansPlatform;
+}
+
 var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlags){
-  if(slotType == "AMAZON.NUMBER"){
+  slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
+  if(slotType == "TRANSCEND.NUMBER"){
     // Ignore flags for now
     return recognizer.builtInValues.NUMBER.replacementRegExpString;
   }
-  else if(slotType == "AMAZON.FOUR_DIGIT_NUMBER"){
+  else if(slotType == "TRANSCEND.FOUR_DIGIT_NUMBER"){
     // Ignore flags for now
     return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
   }
-  else if(slotType == "AMAZON.US_STATE"){
+  else if(slotType == "TRANSCEND.US_STATE"){
     if(slotFlags.indexOf("EXCLUDE_NON_STATES") >= 0){
       return recognizer.builtInValues.US_STATE.replacementStatesOnlyRegExpString;
     }
@@ -439,7 +486,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.US_STATE.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Airline"){
+  else if(slotType == "TRANSCEND.Airline"){
     // Ignore SOUNDEX_MATCH flag for now
     let hasWildCardMatch = false;
     let hasCountryFlag = false;
@@ -488,7 +535,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.US_FIRST_NAME"){
+  else if(slotType == "TRANSCEND.US_FIRST_NAME"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // numbers are used in cases of names like John the 1st
@@ -498,7 +545,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Actor"){
+  else if(slotType == "TRANSCEND.Actor"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -508,7 +555,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Actor.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Artist"){
+  else if(slotType == "TRANSCEND.Artist"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -518,7 +565,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Artist.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Comic"){
+  else if(slotType == "TRANSCEND.Comic"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -528,7 +575,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Comic.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Dessert"){
+  else if(slotType == "TRANSCEND.Dessert"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -538,7 +585,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Dessert.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.LandmarksOrHistoricalBuildings"){
+  else if(slotType == "TRANSCEND.LandmarksOrHistoricalBuildings"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -548,7 +595,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.LandmarksOrHistoricalBuildings.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Landform"){
+  else if(slotType == "TRANSCEND.Landform"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -558,7 +605,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Landform.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Game"){
+  else if(slotType == "TRANSCEND.Game"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -568,7 +615,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Game.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.FoodEstablishment"){
+  else if(slotType == "TRANSCEND.FoodEstablishment"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -578,7 +625,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.FoodEstablishment.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.FictionalCharacter"){
+  else if(slotType == "TRANSCEND.FictionalCharacter"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -589,7 +636,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     }
   }
 
-  else if(slotType == "AMAZON.Festival"){
+  else if(slotType == "TRANSCEND.Festival"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -599,7 +646,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Festival.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.EducationalOrganization"){
+  else if(slotType == "TRANSCEND.EducationalOrganization"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -609,7 +656,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.EducationalOrganization.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Director"){
+  else if(slotType == "TRANSCEND.Director"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -619,7 +666,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Director.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Corporation"){
+  else if(slotType == "TRANSCEND.Corporation"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -629,7 +676,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Corporation.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.CivicStructure"){
+  else if(slotType == "TRANSCEND.CivicStructure"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -639,7 +686,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.CivicStructure.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.BroadcastChannel"){
+  else if(slotType == "TRANSCEND.BroadcastChannel"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -649,7 +696,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.BroadcastChannel.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.BookSeries"){
+  else if(slotType == "TRANSCEND.BookSeries"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -659,7 +706,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.BookSeries.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Book"){
+  else if(slotType == "TRANSCEND.Book"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -669,7 +716,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Book.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Author"){
+  else if(slotType == "TRANSCEND.Author"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -679,7 +726,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Author.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Athlete"){
+  else if(slotType == "TRANSCEND.Athlete"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like John the 1st
@@ -689,7 +736,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Athlete.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.AdministrativeArea"){
+  else if(slotType == "TRANSCEND.AdministrativeArea"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       // number are used in cases of names like the 1st
@@ -699,27 +746,27 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.AdministrativeArea.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.DATE"){
+  else if(slotType == "TRANSCEND.DATE"){
     // Ignore flags for now
     return recognizer.builtInValues.DATE.replacementRegExpString;
   }
-  else if(slotType == "AMAZON.TIME"){
+  else if(slotType == "TRANSCEND.TIME"){
     // Ignore flags for now
     return recognizer.builtInValues.TIME.replacementRegExpString;
   }
-  else if(slotType == "AMAZON.DURATION"){
+  else if(slotType == "TRANSCEND.DURATION"){
     // Ignore flags for now
     return recognizer.builtInValues.DURATION.replacementRegExpString;
   }
-  else if(slotType == "AMAZON.Month"){
+  else if(slotType == "TRANSCEND.Month"){
     // Ignore flags for now
     return recognizer.builtInValues.Month.replacementRegExpString;
   }
-  else if(slotType == "AMAZON.DayOfWeek"){
+  else if(slotType == "TRANSCEND.DayOfWeek"){
     // Ignore flags for now
     return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
   }
-  else if(slotType == "AMAZON.Country"){
+  else if(slotType == "TRANSCEND.Country"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       return "((?:\\w|\\s|[0-9])+)";
@@ -728,7 +775,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Country.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Color"){
+  else if(slotType == "TRANSCEND.Color"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       return "((?:\\w|\\s|[0-9])+)";
@@ -737,7 +784,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
       return recognizer.builtInValues.Color.replacementRegExpString;
     }
   }
-  else if(slotType == "AMAZON.Room"){
+  else if(slotType == "TRANSCEND.Room"){
     // Ignore SOUNDEX_MATCH flag for now
     if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
       return "((?:\\w|\\s|[0-9]|')+)";
@@ -747,7 +794,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     }
   }
 
-//  else if(slotType.startsWith("AMAZON.")){
+//  else if(slotType.startsWith("TRANSCEND.")){
 //    // TODO add handling of other built in Amazon slot types, for now just return the value
 //    return "((?:\\w|\\s|[0-9])+)";
 //  }
@@ -1998,24 +2045,25 @@ var _getWeekOfYear = function(dateToProcess){
 }
 
 var _processMatchedSlotValueByType = function(value, slotType, flags, slot, intent, recognizerSet){
+  slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
 //  console.log("_processMatchedSlotValueByType, 1, slotType: " + slotType + ", value: " + value);
   let returnValue = value;
-  if(slotType == "AMAZON.NUMBER" || slotType == "AMAZON.FOUR_DIGIT_NUMBER"){
+  if(slotType == "TRANSCEND.NUMBER" || slotType == "TRANSCEND.FOUR_DIGIT_NUMBER"){
     returnValue = _processMatchedNumericSlotValue(value);
   }
-  else if(slotType == "AMAZON.DATE"){
+  else if(slotType == "TRANSCEND.DATE"){
     returnValue =  _processMatchedDateSlotValue(value, flags);
   }
-  else if(slotType == "AMAZON.TIME"){
+  else if(slotType == "TRANSCEND.TIME"){
     returnValue =  _processMatchedTimeSlotValue(value);
   }
-  else if(slotType == "AMAZON.DURATION"){
+  else if(slotType == "TRANSCEND.DURATION"){
     returnValue =  _processMatchedDurationSlotValue(value);
   }
-  else if(slotType.startsWith("AMAZON.")){
+  else if(slotType.startsWith("TRANSCEND.")){
     // already did returnValue = value;
     // Now need to match the capitalization
-    if(slotType == "AMAZON.Color"){
+    if(slotType == "TRANSCEND.Color"){
       let arrayToSearch = recognizer.builtInValues.Color.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2025,7 +2073,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    if(slotType == "AMAZON.Country"){
+    if(slotType == "TRANSCEND.Country"){
       let arrayToSearch = recognizer.builtInValues.Country.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2035,7 +2083,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.US_FIRST_NAME"){
+    else if(slotType == "TRANSCEND.US_FIRST_NAME"){
       let arrayToSearch = recognizer.builtInValues.US_FIRST_NAME.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2045,7 +2093,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Actor"){
+    else if(slotType == "TRANSCEND.Actor"){
       let arrayToSearch = recognizer.builtInValues.Actor.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2055,7 +2103,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Artist"){
+    else if(slotType == "TRANSCEND.Artist"){
       let arrayToSearch = recognizer.builtInValues.Artist.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2065,7 +2113,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Comic"){
+    else if(slotType == "TRANSCEND.Comic"){
       let arrayToSearch = recognizer.builtInValues.Comic.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2075,7 +2123,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Dessert"){
+    else if(slotType == "TRANSCEND.Dessert"){
       let arrayToSearch = recognizer.builtInValues.Dessert.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2085,7 +2133,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.LandmarksOrHistoricalBuildings"){
+    else if(slotType == "TRANSCEND.LandmarksOrHistoricalBuildings"){
       let arrayToSearch = recognizer.builtInValues.LandmarksOrHistoricalBuildings.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2095,7 +2143,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Landform"){
+    else if(slotType == "TRANSCEND.Landform"){
       let arrayToSearch = recognizer.builtInValues.Landform.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2105,7 +2153,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Game"){
+    else if(slotType == "TRANSCEND.Game"){
       let arrayToSearch = recognizer.builtInValues.Game.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2115,7 +2163,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.FoodEstablishment"){
+    else if(slotType == "TRANSCEND.FoodEstablishment"){
       let arrayToSearch = recognizer.builtInValues.FoodEstablishment.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2125,7 +2173,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.FictionalCharacter"){
+    else if(slotType == "TRANSCEND.FictionalCharacter"){
       let arrayToSearch = recognizer.builtInValues.FictionalCharacter.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2135,7 +2183,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Festival"){
+    else if(slotType == "TRANSCEND.Festival"){
       let arrayToSearch = recognizer.builtInValues.Festival.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2145,7 +2193,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.EducationalOrganization"){
+    else if(slotType == "TRANSCEND.EducationalOrganization"){
       let arrayToSearch = recognizer.builtInValues.EducationalOrganization.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2155,7 +2203,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Director"){
+    else if(slotType == "TRANSCEND.Director"){
       let arrayToSearch = recognizer.builtInValues.Director.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2165,7 +2213,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Corporation"){
+    else if(slotType == "TRANSCEND.Corporation"){
       let arrayToSearch = recognizer.builtInValues.Corporation.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2175,7 +2223,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.CivicStructure"){
+    else if(slotType == "TRANSCEND.CivicStructure"){
       let arrayToSearch = recognizer.builtInValues.CivicStructure.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2185,7 +2233,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.BroadcastChannel"){
+    else if(slotType == "TRANSCEND.BroadcastChannel"){
       let arrayToSearch = recognizer.builtInValues.BroadcastChannel.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2195,7 +2243,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.BookSeries"){
+    else if(slotType == "TRANSCEND.BookSeries"){
       let arrayToSearch = recognizer.builtInValues.BookSeries.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2205,7 +2253,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Book"){
+    else if(slotType == "TRANSCEND.Book"){
       let arrayToSearch = recognizer.builtInValues.Book.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2215,7 +2263,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Author"){
+    else if(slotType == "TRANSCEND.Author"){
       let arrayToSearch = recognizer.builtInValues.Author.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2225,7 +2273,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Athlete"){
+    else if(slotType == "TRANSCEND.Athlete"){
       let arrayToSearch = recognizer.builtInValues.Athlete.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2235,7 +2283,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.AdministrativeArea"){
+    else if(slotType == "TRANSCEND.AdministrativeArea"){
       let arrayToSearch = recognizer.builtInValues.AdministrativeArea.values;
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < arrayToSearch.length; i++){
@@ -2245,7 +2293,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.Airline"){
+    else if(slotType == "TRANSCEND.Airline"){
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < recognizer.builtInValues.Airline.values.length; i ++){
         if(recognizer.builtInValues.Airline.values[i].name.toUpperCase() == scratchValue){
@@ -2254,7 +2302,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    else if(slotType == "AMAZON.US_STATE"){
+    else if(slotType == "TRANSCEND.US_STATE"){
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
         if(recognizer.builtInValues.US_STATE.values[i].name.toUpperCase() == scratchValue){
@@ -2488,7 +2536,9 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     if(matchResult = scratch.regExp.exec(stringToMatch)){
 //      console.log("matchResult: " + JSON.stringify(matchResult));
       var returnValue = {};
-      returnValue.name = scratch.name;
+      let outputName = _getTranslatedIntentForOutput(scratch.name, recognizerSet.platform);
+//      returnValue.name = scratch.name;
+      returnValue.name = outputName;
       returnValue.slots = {};
       return returnValue;
     }
@@ -2496,7 +2546,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
 
 };
 
-var allPlatforms = ["AMAZON"];
+var allPlatforms = ["TRANSCEND", "AMAZON"];
 
 var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
   // If the config file specifies the input and output platform type(s) then
@@ -2525,14 +2575,14 @@ var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
     if(Array.isArray(config.platform.input) && config.platform.input.length > 0 && typeof config.platform.output == "string"){
       let scannedInputs = [];
       for(let i = 0; i < config.platform.input.length; i ++){
-        if(acceptedInputPlatforms.indexOf(config.platform.input[i]) > 0){
+        if(acceptedInputPlatforms.indexOf(config.platform.input[i]) >= 0){
           inputsSpecified = true;
           scannedInputs.push(config.platform.input[i]);
         }
       }
       config.platform.input = scannedInputs;
     }
-    if(acceptedOutputPlatforms.indexOf(config.platform.output) > 0){
+    if(acceptedOutputPlatforms.indexOf(config.platform.output) >= 0){
       outputSpecified = true;
     }
     else {
@@ -2546,7 +2596,6 @@ var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
 
   if(inputsSpecified == false){
     // Scan through intents looking for "platform" intents or slot types.
-    // For example, AMAZON.xxx would be an AMAZON platform prefix
     let scannedInputs = [];
 
     if(typeof config.builtInIntents != "undefined" && config.builtInIntents != null){
@@ -2585,7 +2634,6 @@ var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
     }
   }
   // Finally set the output if not already set.
-  // For now, set it to AMAZON if not yet set.
   if(outputSpecified == false){
     config.platform.output = "AMAZON";
   }
@@ -2642,7 +2690,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
 //  console.log("_generateRunTimeJson, intents: ", JSON.stringify(intents));
 //  console.log("_generateRunTimeJson, utterances: ", JSON.stringify(utterances));
   // First, extend the built in slot values with values from config
-  let slotConfig = _getBuiltInSlotConfig(config, "AMAZON.US_FIRST_NAME");
+  let slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.US_FIRST_NAME");
   let extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.US_FIRST_NAME.values = recognizer.builtInValues.US_FIRST_NAME.values.concat(extendedValues);
@@ -2653,7 +2701,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizer.builtInValues.US_FIRST_NAME.transformSrcFilename = slotConfig.transformSrcFilename;
   }
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Actor");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Actor");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Actor.values = recognizer.builtInValues.Actor.values.concat(extendedValues);
@@ -2661,7 +2709,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Actor.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Actor.values);
   recognizer.builtInValues.Actor.replacementRegExp = new RegExp(recognizer.builtInValues.Actor.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Artist");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Artist");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Artist.values = recognizer.builtInValues.Artist.values.concat(extendedValues);
@@ -2669,7 +2717,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Artist.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Artist.values);
   recognizer.builtInValues.Artist.replacementRegExp = new RegExp(recognizer.builtInValues.Artist.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Comic");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Comic");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Comic.values = recognizer.builtInValues.Comic.values.concat(extendedValues);
@@ -2677,7 +2725,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Comic.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Comic.values);
   recognizer.builtInValues.Comic.replacementRegExp = new RegExp(recognizer.builtInValues.Comic.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Dessert");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Dessert");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Dessert.values = recognizer.builtInValues.Dessert.values.concat(extendedValues);
@@ -2685,7 +2733,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Dessert.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Dessert.values);
   recognizer.builtInValues.Dessert.replacementRegExp = new RegExp(recognizer.builtInValues.Dessert.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.LandmarksOrHistoricalBuildings");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.LandmarksOrHistoricalBuildings");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.LandmarksOrHistoricalBuildings.values = recognizer.builtInValues.LandmarksOrHistoricalBuildings.values.concat(extendedValues);
@@ -2693,7 +2741,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.LandmarksOrHistoricalBuildings.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.LandmarksOrHistoricalBuildings.values);
   recognizer.builtInValues.LandmarksOrHistoricalBuildings.replacementRegExp = new RegExp(recognizer.builtInValues.LandmarksOrHistoricalBuildings.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Landform");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Landform");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Landform.values = recognizer.builtInValues.Landform.values.concat(extendedValues);
@@ -2702,7 +2750,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Landform.replacementRegExp = new RegExp(recognizer.builtInValues.Landform.replacementRegExpString, "ig");
 
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Game");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Game");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Game.values = recognizer.builtInValues.Game.values.concat(extendedValues);
@@ -2710,7 +2758,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Game.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Game.values);
   recognizer.builtInValues.Game.replacementRegExp = new RegExp(recognizer.builtInValues.Game.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.FoodEstablishment");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.FoodEstablishment");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.FoodEstablishment.values = recognizer.builtInValues.FoodEstablishment.values.concat(extendedValues);
@@ -2718,7 +2766,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.FoodEstablishment.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.FoodEstablishment.values);
   recognizer.builtInValues.FoodEstablishment.replacementRegExp = new RegExp(recognizer.builtInValues.FoodEstablishment.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.FictionalCharacter");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.FictionalCharacter");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.FictionalCharacter.values = recognizer.builtInValues.FictionalCharacter.values.concat(extendedValues);
@@ -2726,7 +2774,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.FictionalCharacter.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.FictionalCharacter.values);
   recognizer.builtInValues.FictionalCharacter.replacementRegExp = new RegExp(recognizer.builtInValues.FictionalCharacter.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Festival");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Festival");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Festival.values = recognizer.builtInValues.Festival.values.concat(extendedValues);
@@ -2734,7 +2782,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Festival.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Festival.values);
   recognizer.builtInValues.Festival.replacementRegExp = new RegExp(recognizer.builtInValues.Festival.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.EducationalOrganization");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.EducationalOrganization");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.EducationalOrganization.values = recognizer.builtInValues.EducationalOrganization.values.concat(extendedValues);
@@ -2742,7 +2790,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.EducationalOrganization.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.EducationalOrganization.values);
   recognizer.builtInValues.EducationalOrganization.replacementRegExp = new RegExp(recognizer.builtInValues.EducationalOrganization.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Director");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Director");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Director.values = recognizer.builtInValues.Director.values.concat(extendedValues);
@@ -2750,7 +2798,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Director.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Director.values);
   recognizer.builtInValues.Director.replacementRegExp = new RegExp(recognizer.builtInValues.Director.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Corporation");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Corporation");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Corporation.values = recognizer.builtInValues.Corporation.values.concat(extendedValues);
@@ -2758,7 +2806,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Corporation.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Corporation.values);
   recognizer.builtInValues.Corporation.replacementRegExp = new RegExp(recognizer.builtInValues.Corporation.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.CivicStructure");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.CivicStructure");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.CivicStructure.values = recognizer.builtInValues.CivicStructure.values.concat(extendedValues);
@@ -2766,7 +2814,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.CivicStructure.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.CivicStructure.values);
   recognizer.builtInValues.CivicStructure.replacementRegExp = new RegExp(recognizer.builtInValues.CivicStructure.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.BroadcastChannel");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.BroadcastChannel");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.BroadcastChannel.values = recognizer.builtInValues.BroadcastChannel.values.concat(extendedValues);
@@ -2774,7 +2822,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.BroadcastChannel.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.BroadcastChannel.values);
   recognizer.builtInValues.BroadcastChannel.replacementRegExp = new RegExp(recognizer.builtInValues.BroadcastChannel.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.BookSeries");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.BookSeries");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.BookSeries.values = recognizer.builtInValues.BookSeries.values.concat(extendedValues);
@@ -2782,7 +2830,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.BookSeries.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.BookSeries.values);
   recognizer.builtInValues.BookSeries.replacementRegExp = new RegExp(recognizer.builtInValues.BookSeries.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Book");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Book");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Book.values = recognizer.builtInValues.Book.values.concat(extendedValues);
@@ -2790,7 +2838,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Book.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Book.values);
   recognizer.builtInValues.Book.replacementRegExp = new RegExp(recognizer.builtInValues.Book.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Author");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Author");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Author.values = recognizer.builtInValues.Author.values.concat(extendedValues);
@@ -2798,7 +2846,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Author.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Author.values);
   recognizer.builtInValues.Author.replacementRegExp = new RegExp(recognizer.builtInValues.Author.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Athlete");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Athlete");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Athlete.values = recognizer.builtInValues.Athlete.values.concat(extendedValues);
@@ -2806,7 +2854,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Athlete.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Athlete.values);
   recognizer.builtInValues.Athlete.replacementRegExp = new RegExp(recognizer.builtInValues.Athlete.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.AdministrativeArea");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.AdministrativeArea");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.AdministrativeArea.values = recognizer.builtInValues.AdministrativeArea.values.concat(extendedValues);
@@ -2815,7 +2863,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.AdministrativeArea.replacementRegExp = new RegExp(recognizer.builtInValues.AdministrativeArea.replacementRegExpString, "ig");
 
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Room");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Room");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
     recognizer.builtInValues.Room.values = recognizer.builtInValues.Room.values.concat(extendedValues);
@@ -2823,42 +2871,44 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Room.values);
   recognizer.builtInValues.Room.replacementRegExp = new RegExp(recognizer.builtInValues.Room.replacementRegExpString, "ig");
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.US_STATE");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.US_STATE");
   if(typeof slotConfig != "undefined" && slotConfig != null){
     recognizer.builtInValues.US_STATE.transformSrcFilename = slotConfig.transformSrcFilename;
   }
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Airline");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Airline");
   if(typeof slotConfig != "undefined" && slotConfig != null){
     recognizer.builtInValues.Airline.transformSrcFilename = slotConfig.transformSrcFilename;
   }
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Country");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Country");
   if(typeof slotConfig != "undefined" && slotConfig != null){
     recognizer.builtInValues.Country.transformSrcFilename = slotConfig.transformSrcFilename;
   }
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Color");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Color");
   if(typeof slotConfig != "undefined" && slotConfig != null){
     recognizer.builtInValues.Color.transformSrcFilename = slotConfig.transformSrcFilename;
   }
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Room");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Room");
   if(typeof slotConfig != "undefined" && slotConfig != null){
     recognizer.builtInValues.Room.transformSrcFilename = slotConfig.transformSrcFilename;
   }
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.Month");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Month");
   if(typeof slotConfig != "undefined" && slotConfig != null){
     recognizer.builtInValues.Month.transformSrcFilename = slotConfig.transformSrcFilename;
   }
 
-  slotConfig = _getBuiltInSlotConfig(config, "AMAZON.DayOfWeek");
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.DayOfWeek");
   if(typeof slotConfig != "undefined" && slotConfig != null){
     recognizer.builtInValues.DayOfWeek.transformSrcFilename = slotConfig.transformSrcFilename;
   }
 
   var recognizerSet = {};
+  recognizerSet.platform = config.platform;
+
   if(typeof config != "undefined" && typeof config.customSlotTypes != "undefined"){
     recognizerSet.customSlotTypes = config.customSlotTypes;
     // Iterate over all the values and create a corresponding array of match
@@ -2966,7 +3016,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
 
     for(var j = 0; j < slots.length; j ++){
       var slotType = _getSlotType(intents, currentIntent, slots[j]);
-      // TODO add code to exclude EXCLUDE_YEAR_ONLY_DATES if slotType is not AMAZON.DATE
+      // TODO add code to exclude EXCLUDE_YEAR_ONLY_DATES if slotType is not TRANSCEND.DATE
       let slotToPush = {"name": slots[j], "type": slotType, "flags": slotFlags[j]};
       let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, slotType);
       if(typeof slotTypeTransformSrcFilename != "undefined"){
@@ -3037,10 +3087,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizerSet.builtInIntents = [];
   let intentConfig;
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.CancelIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.CancelIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.CancelIntent",
+      "name": "TRANSCEND.CancelIntent",
       "utterances": [
         "cancel", "never mind", "forget it"
       ]
@@ -3053,10 +3103,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.HelpIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.HelpIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.HelpIntent",
+      "name": "TRANSCEND.HelpIntent",
       "utterances": [
         "help", "help me", "can you help me"
       ]
@@ -3069,10 +3119,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.LoopOffIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.LoopOffIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.LoopOffIntent",
+      "name": "TRANSCEND.LoopOffIntent",
       "utterances": [
         "loop off"
       ]
@@ -3085,10 +3135,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.LoopOnIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.LoopOnIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.LoopOnIntent",
+      "name": "TRANSCEND.LoopOnIntent",
       "utterances": [
         "loop", "loop on", "keep repeating this song"
       ]
@@ -3101,10 +3151,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.NextIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.NextIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.NextIntent",
+      "name": "TRANSCEND.NextIntent",
       "utterances": [
         "next", "skip", "skip forward"
       ]
@@ -3117,10 +3167,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.NoIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.NoIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.NoIntent",
+      "name": "TRANSCEND.NoIntent",
       "utterances": [
         "no", "no thanks"
       ]
@@ -3133,10 +3183,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.PauseIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.PauseIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.PauseIntent",
+      "name": "TRANSCEND.PauseIntent",
       "utterances": [
         "pause", "pause that"
       ]
@@ -3149,10 +3199,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.PreviousIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.PreviousIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.PreviousIntent",
+      "name": "TRANSCEND.PreviousIntent",
       "utterances": [
         "go back", "skip back", "back up"
       ]
@@ -3165,10 +3215,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.RepeatIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.RepeatIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.RepeatIntent",
+      "name": "TRANSCEND.RepeatIntent",
       "utterances": [
         "repeat", "say that again", "repeat that"
       ]
@@ -3181,10 +3231,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.ResumeIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.ResumeIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.ResumeIntent",
+      "name": "TRANSCEND.ResumeIntent",
       "utterances": [
         "resume", "continue", "keep going"
       ]
@@ -3197,10 +3247,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.ShuffleOffIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.ShuffleOffIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.ShuffleOffIntent",
+      "name": "TRANSCEND.ShuffleOffIntent",
       "utterances": [
         "stop shuffling", "shuffle off", "turn off shuffle"
       ]
@@ -3213,10 +3263,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.ShuffleOnIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.ShuffleOnIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.ShuffleOnIntent",
+      "name": "TRANSCEND.ShuffleOnIntent",
       "utterances": [
         "shuffle", "shuffle on", "shuffle the music", "shuffle mode"
       ]
@@ -3229,10 +3279,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.StartOverIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.StartOverIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.StartOverIntent",
+      "name": "TRANSCEND.StartOverIntent",
       "utterances": [
         "start over", "restart", "start again"
       ]
@@ -3245,10 +3295,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.StopIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.StopIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.StopIntent",
+      "name": "TRANSCEND.StopIntent",
       "utterances": [
         "stop", "off", "shut up"
       ]
@@ -3261,10 +3311,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  intentConfig = _getBuiltInIntentConfig(config, "AMAZON.YesIntent");
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.YesIntent");
   if(_isBuiltInIntentEnabled(intentConfig)){
     let builtinIntent = {
-      "name": "AMAZON.YesIntent",
+      "name": "TRANSCEND.YesIntent",
       "utterances": [
         "yes", "yes please", "sure"
       ]
@@ -3334,10 +3384,11 @@ var _removeAllInstancesFromArray = function(arrayToRemoveFrom, value){
 }
 
 var _getBuiltInSlotConfig = function(config, slotName){
+  let scratchSlotName = _getBuiltInNameWithoutPlatform(slotName);
   if(typeof config != "undefined" && Array.isArray(config.builtInSlots)){
     for(let i = 0; i < config.builtInSlots.length; i ++){
       let slotConfig = config.builtInSlots[i];
-      if(slotConfig.name == slotName){
+      if(_getBuiltInNameWithoutPlatform(slotConfig.name) == scratchSlotName){
         return slotConfig;
       }
     }
@@ -3387,10 +3438,12 @@ var _getBuiltInSlotExtendedValues = function(slotConfig){
 }
 
 var _getBuiltInIntentConfig = function(config, intentName){
+  let scratchIntentName = _getBuiltInNameWithoutPlatform(intentName);
+
   if(typeof config != "undefined" && Array.isArray(config.builtInIntents)){
     for(let i = 0; i < config.builtInIntents.length; i ++){
       let intentConfig = config.builtInIntents[i];
-      if(intentConfig.name == intentName){
+      if(_getBuiltInNameWithoutPlatform(intentConfig.name) == scratchIntentName){
         return intentConfig;
       }
     }
