@@ -746,6 +746,28 @@ will return
 }
 ```
 
+## Non Alexa support
+
+You don't have to generate just the Alexa intents/slot types.  This module can
+now generate other "platform" intents, though the only one supported at this time
+is "TRANSCEND", which is what the other vui-xxx projects are using as their native
+built in type.
+
+Support for MICROSOFT.xxx and possibly others will be added if/when there is a
+need/demand for it.
+
+In order to specify an "output" type, simply configure it in your config file:
+
+```json
+"platform": {
+  "output": "TRANSCEND"
+}
+```
+
+By default, if you don't specify anything, the output will be "AMAZON" for compatibility
+reasons.
+
+
 ## Examples
 
 Right now I am focusing on implementing new features and fixing bugs rather than
