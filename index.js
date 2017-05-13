@@ -2496,7 +2496,148 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
 
 };
 
+var allPlatforms = ["AMAZON"];
+
+var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
+  // If the config file specifies the input and output platform type(s) then
+  // skip the parsing.
+  let acceptedInputPlatforms = allPlatforms.concat(["ALL"]);
+  let acceptedOutputPlatforms = allPlatforms.concat([]);
+  if(typeof config == "undefined" || config == null){
+    // TODO Add a separate constants file containing all the constants, including
+    // error messages.
+    throw {"error": "MISSING_CONFIG", "message": "Programmer error - no config passed in."};
+  }
+  if(typeof intents == "undefined" || config == null){
+    // TODO Add a separate constants file containing all the constants, including
+    // error messages.
+    throw {"error": "MISSING_INTENTS", "message": "Programmer error - no utterances passed in."};
+  }
+  if(typeof utterances == "undefined" || config == null){
+    // TODO Add a separate constants file containing all the constants, including
+    // error messages.
+    throw {"error": "MISSING_UTTERANCES", "message": "Programmer error - no utterances passed in."};
+  }
+
+  let outputSpecified = false;
+  let inputsSpecified = false;
+  if(typeof config.platform != "undefined" && config.platform != null){
+    if(Array.isArray(config.platform.input) && config.platform.input.length > 0 && typeof config.platform.output == "string"){
+      let scannedInputs = [];
+      for(let i = 0; i < config.platform.input.length; i ++){
+        if(acceptedInputPlatforms.indexOf(config.platform.input[i]) > 0){
+          inputsSpecified = true;
+          scannedInputs.push(config.platform.input[i]);
+        }
+      }
+      config.platform.input = scannedInputs;
+    }
+    if(acceptedOutputPlatforms.indexOf(config.platform.output) > 0){
+      outputSpecified = true;
+    }
+    else {
+      config.platform.output = undefined;
+    }
+    if(inputsSpecified && outputSpecified){
+      // nothing to do - exit
+      return;
+    }
+  }
+
+  if(inputsSpecified == false){
+    // Scan through intents looking for "platform" intents or slot types.
+    // For example, AMAZON.xxx would be an AMAZON platform prefix
+    let scannedInputs = [];
+
+    if(typeof config.builtInIntents != "undefined" && config.builtInIntents != null){
+      for(let i = 0; i < config.builtInIntents.length; i ++){
+        let builtInIntent = config.builtInIntents[i];
+        if(builtInIntent.enabled){
+          let platform = _getBuiltinIntentPlatform(builtInIntent.name, acceptedInputPlatforms);
+          if(typeof platform != "undefined" && platform != null && scannedInputs.indexOf(platform) < 0){
+            scannedInputs.push(platform);
+            inputsSpecified = true;
+          }
+        }
+      }
+    }
+
+    if(typeof config.builtInSlots != "undefined" && config.builtInSlots != null){
+      for(let i = 0; i < config.builtInSlots.length; i ++){
+        let builtInSlot = config.builtInSlots[i];
+        let platform = _getBuiltinSlotPlatform(builtInSlot.name, acceptedInputPlatforms);
+        if(typeof platform != "undefined" && platform != null && scannedInputs.indexOf(platform) < 0){
+          scannedInputs.push(platform);
+          inputsSpecified = true;
+        }
+      }
+    }
+    if(typeof config.platform == "undefined" || config.platform == null){
+      config.platform = {"input": []};
+    }
+    if(typeof config.platform.input == "undefined" || config.platform.input == null || Array.isArray(config.platform.input) ==  false){
+      config.platform.input = [];
+    }
+    for(let i = 0; i < scannedInputs.length; i++){
+      if(config.platform.input.indexOf(scannedInputs[i]) < 0){
+        config.platform.input.push(scannedInputs[i]);
+      }
+    }
+  }
+  // Finally set the output if not already set.
+  // For now, set it to AMAZON if not yet set.
+  if(outputSpecified == false){
+    config.platform.output = "AMAZON";
+  }
+  if(inputsSpecified == false){
+    config.platform.input.push(config.platform.output);
+  }
+}
+
+/**
+Current implementation is indistiguishable from the intent version, so simply call it here.
+*/
+var _getBuiltinSlotPlatform = function(slotName, platforms){
+  return _getBuiltinIntentPlatform(slotName, platforms);
+}
+
+/**
+* Call to determine whether a particular intent is a built in intent of the platform.
+* @param {string} intentName the name of the intent to check
+* @param {string[]} platforms for wich to perform the check
+* @return {string} returns the matching platform, if any, or undefined.  Note that
+* if the platforms parameter includes "ANY" and the intentName is for a platform
+* that is understood by this module, then it will be returned.  Also note that
+* only the platforms currently understood by this module will be returned.
+*/
+var _getBuiltinIntentPlatform = function(intentName, platforms){
+  let periodIndex = intentName.indexOf('.');
+  if(periodIndex < 0){
+    return;
+  }
+  let platformPrefix = intentName.substring(0, periodIndex);
+  if(allPlatforms.indexOf(platformPrefix) < 0){
+    return;
+  }
+  // Here we have an acceptable platform.  Return it if it's in "platforms"
+  // parameter or if platforms parameter contains "ANY"
+  if(platforms.indexOf("ANY") > 0){
+    return platformPrefix;
+  }
+
+  let scratch = platformPrefix + ".";
+  if(intentName.startsWith(scratch)){
+    return platformPrefix;
+  }
+  return;
+}
+
 var _generateRunTimeJson = function(config, intents, utterances){
+  if(typeof config == "undefined" || config == null){
+    config = {};
+  }
+  _scanIntentsAndSlotsForPlatform(config, intents, utterances);
+
 //  console.log("_generateRunTimeJson, config: ", JSON.stringify(config));
 //  console.log("_generateRunTimeJson, intents: ", JSON.stringify(intents));
 //  console.log("_generateRunTimeJson, utterances: ", JSON.stringify(utterances));
