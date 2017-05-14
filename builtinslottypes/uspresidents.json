@@ -1,0 +1,46 @@
+{
+  "values": [
+    {
+      "name": "George Washington",
+      "matchingStrings": ["george washington", "washington"],
+      "ordinalMatchingStrings": ["first president", "1st president"],
+      "presidency": 1
+    },
+    {
+      "name": "John Adams",
+      "matchingStrings": ["john adams"],
+      "ordinalMatchingStrings": ["second president", "2nd president"],
+      "presidency": 2
+    },
+    {
+      "name": "Thomas Jefferson",
+      "matchingStrings": ["thomas jefferson", "jefferson"],
+      "ordinalMatchingStrings": ["third president", "3rd president"],
+      "presidency": 3
+    },
+    {
+      "name": "James Madison",
+      "matchingStrings": ["james madison", "madison"],
+      "ordinalMatchingStrings": ["fourth president", "4th president"],
+      "presidency": 4
+    },
+    {
+      "name": "James Monroe",
+      "matchingStrings": ["james monroe", "monroe"],
+      "ordinalMatchingStrings": ["fifth president", "5th president"],
+      "presidency": 5
+    },
+    {
+      "name": "John Quincy Adams",
+      "matchingStrings": ["john quincy adams"],
+      "ordinalMatchingStrings": ["sixth president", "6th president"],
+      "presidency": 6
+    },
+    {
+      "name": "Andrew Jackson",
+      "matchingStrings": ["andrew jackson", "jackson"],
+      "ordinalMatchingStrings": ["seventh president", "7th president"],
+      "presidency": 7
+    }
+  ]
+}

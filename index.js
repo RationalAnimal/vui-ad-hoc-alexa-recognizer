@@ -266,6 +266,21 @@ recognizer.builtInValues.US_STATE = require("./builtinslottypes/usstates.json");
   recognizer.builtInValues.US_STATE.replacementRegExp = new RegExp(recognizer.builtInValues.US_STATE.replacementRegExpString, "ig");
 }
 
+recognizer.builtInValues.US_PRESIDENT = require("./builtinslottypes/uspresidents.json");
+{
+  let matchingStrings = [];
+  for(let i = 0; i < recognizer.builtInValues.US_PRESIDENT.values.length; i ++){
+    for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings.length; j ++){
+      matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings[j]);
+    }
+    for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings.length; j ++){
+      matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings[j]);
+    }
+  }
+  recognizer.builtInValues.US_PRESIDENT.replacementRegExpString = _makeReplacementRegExpString(matchingStrings);
+  recognizer.builtInValues.US_PRESIDENT.replacementRegExp = new RegExp(recognizer.builtInValues.US_PRESIDENT.replacementRegExpString, "ig");
+}
+
 recognizer.builtInValues.Airline = require("./builtinslottypes/airlines.json");
 {
   let allAirlines = [];
@@ -485,6 +500,9 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     else {
       return recognizer.builtInValues.US_STATE.replacementRegExpString;
     }
+  }
+  else if(slotType == "TRANSCEND.US_PRESIDENT"){
+    return recognizer.builtInValues.US_PRESIDENT.replacementRegExpString;
   }
   else if(slotType == "TRANSCEND.Airline"){
     // Ignore SOUNDEX_MATCH flag for now
@@ -2045,6 +2063,7 @@ var _getWeekOfYear = function(dateToProcess){
 }
 
 var _processMatchedSlotValueByType = function(value, slotType, flags, slot, intent, recognizerSet){
+//  console.log("_processMatchedSlotValueByType, entered");
   slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
 //  console.log("_processMatchedSlotValueByType, 1, slotType: " + slotType + ", value: " + value);
   let returnValue = value;
@@ -2307,6 +2326,18 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
       for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
         if(recognizer.builtInValues.US_STATE.values[i].name.toUpperCase() == scratchValue){
           returnValue = recognizer.builtInValues.US_STATE.values[i].name;
+          break;
+        }
+      }
+    }
+    else if(slotType == "TRANSCEND.US_PRESIDENT"){
+      let scratchValue = returnValue.toLowerCase();
+      for(let i = 0; i < recognizer.builtInValues.US_PRESIDENT.values.length; i ++){
+        if(recognizer.builtInValues.US_PRESIDENT.values[i].name.toLowerCase() == scratchValue ||
+           recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings.indexOf(scratchValue) > 0 ||
+           recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings.indexOf(scratchValue) > 0
+          ){
+          returnValue = recognizer.builtInValues.US_PRESIDENT.values[i].name;
           break;
         }
       }
@@ -2875,7 +2906,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
   if(typeof slotConfig != "undefined" && slotConfig != null){
     recognizer.builtInValues.US_STATE.transformSrcFilename = slotConfig.transformSrcFilename;
   }
-
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.US_PRESIDENT");
+  if(typeof slotConfig != "undefined" && slotConfig != null){
+    recognizer.builtInValues.US_PRESIDENT.transformSrcFilename = slotConfig.transformSrcFilename;
+  }
   slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Airline");
   if(typeof slotConfig != "undefined" && slotConfig != null){
     recognizer.builtInValues.Airline.transformSrcFilename = slotConfig.transformSrcFilename;

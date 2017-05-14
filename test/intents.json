@@ -53,7 +53,6 @@
       ]
     },
 
-
     {
       "intent": "TranscendNumberIntent",
       "slots": [
@@ -67,9 +66,15 @@
         }
       ]
     },
-
-
-
+    {
+      "intent": "TranscendPresidentsIntent",
+      "slots": [
+        {
+          "name": "TranscendPresidentsSlot",
+          "type": "TRANSCEND.US_PRESIDENT"
+        }
+      ]
+    },
     {
       "intent": "ColorIntent",
       "slots": [
