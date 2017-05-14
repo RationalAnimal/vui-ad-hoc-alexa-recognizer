@@ -778,6 +778,10 @@ the npm module you will NOT have it, but you can go to the GitHub repo and
 clone it to get the full distribution.  Then look at the unit tests to see what
 you can parse and what kinds of results you will be getting.
 
+## Trascend features supported
+
+Currently there is one TRANSCEND built in slot type supported: TRANSCEND.US_PRESIDENT
+
 ## Alexa features supported
 
 Currently, you can parse:

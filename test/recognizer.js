@@ -1597,7 +1597,22 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         });
     });
+  });
 
+  describe("TRANSCEND.US_PRESIDENT processing", function() {
+    it("verify TRANSCEND.US_PRESIDENT slot matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("Thomas Jefferson was united states president");
+      expect(result).to.eql(
+        {
+          "name": "TranscendPresidentsIntent",
+          "slots": {
+            "TranscendPresidentsSlot": {
+              "name": "TranscendPresidentsSlot",
+              "value": "Thomas Jefferson"
+            }
+          }
+        });
+    });
 
   });
 
