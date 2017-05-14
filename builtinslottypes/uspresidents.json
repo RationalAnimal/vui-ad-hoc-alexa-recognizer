@@ -41,6 +41,30 @@
       "matchingStrings": ["andrew jackson", "jackson"],
       "ordinalMatchingStrings": ["seventh president", "7th president"],
       "presidency": 7
+    },
+    {
+      "name": "Martin Van Buren",
+      "matchingStrings": ["martin van buren", "van buren"],
+      "ordinalMatchingStrings": ["eighth president", "8th president"],
+      "presidency": 8
+    },
+    {
+      "name": "William Henry Harrison",
+      "matchingStrings": ["william henry harrison", "harrison"],
+      "ordinalMatchingStrings": ["ninth president", "9th president"],
+      "presidency": 9
+    },
+    {
+      "name": "John Tyler",
+      "matchingStrings": ["john tyler", "tyler"],
+      "ordinalMatchingStrings": ["tenth president", "10th president"],
+      "presidency": 10
+    },
+    {
+      "name": "James K. Polk",
+      "matchingStrings": ["james k. polk", "james k polk", "james polk", "polk"],
+      "ordinalMatchingStrings": ["eleventh president", "11th president"],
+      "presidency": 11
     }
   ]
 }
