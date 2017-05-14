@@ -65,6 +65,62 @@
       "matchingStrings": ["james k. polk", "james k polk", "james polk", "polk"],
       "ordinalMatchingStrings": ["eleventh president", "11th president"],
       "presidency": 11
+    },
+    {
+      "name": "Zachary Taylor",
+      "matchingStrings": ["zachary taylor", "taylor"],
+      "ordinalMatchingStrings": ["twelfth president", "12th president"],
+      "presidency": 12
+    },
+    {
+      "name": "Millard Fillmore",
+      "matchingStrings": ["millard fillmore", "fillmore"],
+      "ordinalMatchingStrings": ["thirteenth president", "13th president"],
+      "presidency": 13
+    },
+    {
+      "name": "Franklin Pierce",
+      "matchingStrings": ["franklin pierce", "fillmore"],
+      "ordinalMatchingStrings": ["fourteenth president", "14th president"],
+      "presidency": 14
+    },
+    {
+      "name": "James Buchanan",
+      "matchingStrings": ["james buchanan", "buchanan"],
+      "ordinalMatchingStrings": ["fifteenth president", "15th president"],
+      "presidency": 15
+    },
+    {
+      "name": "Abraham Lincoln",
+      "matchingStrings": ["abraham lincoln", "lincoln"],
+      "ordinalMatchingStrings": ["sixteenth president", "16th president"],
+      "presidency": 16
+    },
+    {
+      "name": "Andrew Johnson",
+      "matchingStrings": ["andrew johnson", "johnson"],
+      "ordinalMatchingStrings": ["seventeenth president", "17th president"],
+      "presidency": 17
+    },
+    {
+      "name": "Ulysses S. Grant",
+      "matchingStrings": ["ulysses s. grant", "ulysses s grant", "ulysses grant", "ulysses", "grant"],
+      "ordinalMatchingStrings": ["eighteenth president", "18th president"],
+      "presidency": 18
+    },
+    {
+      "name": "Rutherford B. Hayes",
+      "matchingStrings": ["rutherford b. hayes", "rutherford b hayes", "rutherford hayes", "rutherford", "hayes"],
+      "ordinalMatchingStrings": ["nineteenth president", "19th president"],
+      "presidency": 19
+    },
+    {
+      "name": "James A. Garfield",
+      "matchingStrings": ["james a. garfield", "james a garfield", "garfield"],
+      "ordinalMatchingStrings": ["twentieth president", "20th president"],
+      "presidency": 20
     }
+
+
   ]
 }
