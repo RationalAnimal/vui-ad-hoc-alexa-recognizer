@@ -197,9 +197,72 @@
       "matchingStrings": ["dwight d. eisenhower", "dwight d eisenhower", "dwight eisenhower", "dwight", "eisenhower"],
       "ordinalMatchingStrings": ["thirty fourth president", "34th president"],
       "presidency": [34]
+    },
+    {
+      "name": "John F. Kennedy",
+      "matchingStrings": ["john f. kennedy", "john f kennedy", "john kennedy", "kennedy", "j.f.k.", "jfk", "j. f. k.", "j f k"],
+      "ordinalMatchingStrings": ["thirty fifth president", "35th president"],
+      "presidency": [35]
+    },
+    {
+      "name": "Lyndon B. Johnson",
+      "matchingStrings": ["lyndon b. johnson", "lyndon b johnson", "lyndon johnson", "lyndon", "johnson"],
+      "ordinalMatchingStrings": ["thirty sixth president", "36th president"],
+      "presidency": [36]
+    },
+    {
+      "name": "Richard Nixon",
+      "matchingStrings": ["richard nixon", "richard", "nixon"],
+      "ordinalMatchingStrings": ["thirty seventh president", "37th president"],
+      "presidency": [37]
+    },
+    {
+      "name": "Gerald Ford",
+      "matchingStrings": ["gerald ford", "gerald", "ford"],
+      "ordinalMatchingStrings": ["thirty eighth president", "38th president"],
+      "presidency": [38]
+    },
+    {
+      "name": "Jimmy Carter",
+      "matchingStrings": ["jimmy carter", "carter"],
+      "ordinalMatchingStrings": ["thirty ninth president", "39th president"],
+      "presidency": [39]
+    },
+    {
+      "name": "Ronald Reagan",
+      "matchingStrings": ["ronald reagan", "ronald", "reagan", "ronaldus maximus"],
+      "ordinalMatchingStrings": ["fortieth president", "40th president"],
+      "presidency": [40]
+    },
+    {
+      "name": "George H. W. Bush",
+      "matchingStrings": ["george herbert walker bush", "george h. w. bush", "george h w bush", "george h. bush", "george h bush", "george bush senior", "bush senior"],
+      "ordinalMatchingStrings": ["forty first president", "41st president"],
+      "presidency": [41]
+    },
+    {
+      "name": "Bill Clinton",
+      "matchingStrings": ["bill clinton", "clinton"],
+      "ordinalMatchingStrings": ["forty second president", "42nd president"],
+      "presidency": [42]
+    },
+    {
+      "name": "George W. Bush",
+      "matchingStrings": ["george walker bush", "george w. bush", "george w bush", "george bush junior", "bush junior"],
+      "ordinalMatchingStrings": ["forty third president", "43rd president"],
+      "presidency": [43]
+    },
+    {
+      "name": "Barack Hussein Obama",
+      "matchingStrings": ["barack hussein obama", "barack obama", "barack", "obama"],
+      "ordinalMatchingStrings": ["forty fourth president", "44th president"],
+      "presidency": [44]
+    },
+    {
+      "name": "Donald Trump",
+      "matchingStrings": ["donald trump", "donald", "trump"],
+      "ordinalMatchingStrings": ["forty fifth president", "45th president"],
+      "presidency": [45]
     }
-
-
-
   ]
 }
