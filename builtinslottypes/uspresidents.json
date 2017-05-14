@@ -4,121 +4,151 @@
       "name": "George Washington",
       "matchingStrings": ["george washington", "washington"],
       "ordinalMatchingStrings": ["first president", "1st president"],
-      "presidency": 1
+      "presidency": [1]
     },
     {
       "name": "John Adams",
       "matchingStrings": ["john adams"],
       "ordinalMatchingStrings": ["second president", "2nd president"],
-      "presidency": 2
+      "presidency": [2]
     },
     {
       "name": "Thomas Jefferson",
       "matchingStrings": ["thomas jefferson", "jefferson"],
       "ordinalMatchingStrings": ["third president", "3rd president"],
-      "presidency": 3
+      "presidency": [3]
     },
     {
       "name": "James Madison",
       "matchingStrings": ["james madison", "madison"],
       "ordinalMatchingStrings": ["fourth president", "4th president"],
-      "presidency": 4
+      "presidency": [4]
     },
     {
       "name": "James Monroe",
       "matchingStrings": ["james monroe", "monroe"],
       "ordinalMatchingStrings": ["fifth president", "5th president"],
-      "presidency": 5
+      "presidency": [5]
     },
     {
       "name": "John Quincy Adams",
       "matchingStrings": ["john quincy adams"],
       "ordinalMatchingStrings": ["sixth president", "6th president"],
-      "presidency": 6
+      "presidency": [6]
     },
     {
       "name": "Andrew Jackson",
       "matchingStrings": ["andrew jackson", "jackson"],
       "ordinalMatchingStrings": ["seventh president", "7th president"],
-      "presidency": 7
+      "presidency": [7]
     },
     {
       "name": "Martin Van Buren",
       "matchingStrings": ["martin van buren", "van buren"],
       "ordinalMatchingStrings": ["eighth president", "8th president"],
-      "presidency": 8
+      "presidency": [8]
     },
     {
       "name": "William Henry Harrison",
       "matchingStrings": ["william henry harrison", "harrison"],
       "ordinalMatchingStrings": ["ninth president", "9th president"],
-      "presidency": 9
+      "presidency": [9]
     },
     {
       "name": "John Tyler",
       "matchingStrings": ["john tyler", "tyler"],
       "ordinalMatchingStrings": ["tenth president", "10th president"],
-      "presidency": 10
+      "presidency": [10]
     },
     {
       "name": "James K. Polk",
       "matchingStrings": ["james k. polk", "james k polk", "james polk", "polk"],
       "ordinalMatchingStrings": ["eleventh president", "11th president"],
-      "presidency": 11
+      "presidency": [11]
     },
     {
       "name": "Zachary Taylor",
       "matchingStrings": ["zachary taylor", "taylor"],
       "ordinalMatchingStrings": ["twelfth president", "12th president"],
-      "presidency": 12
+      "presidency": [12]
     },
     {
       "name": "Millard Fillmore",
       "matchingStrings": ["millard fillmore", "fillmore"],
       "ordinalMatchingStrings": ["thirteenth president", "13th president"],
-      "presidency": 13
+      "presidency": [13]
     },
     {
       "name": "Franklin Pierce",
       "matchingStrings": ["franklin pierce", "fillmore"],
       "ordinalMatchingStrings": ["fourteenth president", "14th president"],
-      "presidency": 14
+      "presidency": [14]
     },
     {
       "name": "James Buchanan",
       "matchingStrings": ["james buchanan", "buchanan"],
       "ordinalMatchingStrings": ["fifteenth president", "15th president"],
-      "presidency": 15
+      "presidency": [15]
     },
     {
       "name": "Abraham Lincoln",
       "matchingStrings": ["abraham lincoln", "lincoln"],
       "ordinalMatchingStrings": ["sixteenth president", "16th president"],
-      "presidency": 16
+      "presidency": [16]
     },
     {
       "name": "Andrew Johnson",
       "matchingStrings": ["andrew johnson", "johnson"],
       "ordinalMatchingStrings": ["seventeenth president", "17th president"],
-      "presidency": 17
+      "presidency": [17]
     },
     {
       "name": "Ulysses S. Grant",
       "matchingStrings": ["ulysses s. grant", "ulysses s grant", "ulysses grant", "ulysses", "grant"],
       "ordinalMatchingStrings": ["eighteenth president", "18th president"],
-      "presidency": 18
+      "presidency": [18]
     },
     {
       "name": "Rutherford B. Hayes",
       "matchingStrings": ["rutherford b. hayes", "rutherford b hayes", "rutherford hayes", "rutherford", "hayes"],
       "ordinalMatchingStrings": ["nineteenth president", "19th president"],
-      "presidency": 19
+      "presidency": [19]
     },
     {
       "name": "James A. Garfield",
-      "matchingStrings": ["james a. garfield", "james a garfield", "garfield"],
+      "matchingStrings": ["james a. garfield", "james a garfield", "james garfield", "garfield"],
       "ordinalMatchingStrings": ["twentieth president", "20th president"],
-      "presidency": 20
+      "presidency": [20]
+    },
+    {
+      "name": "Chester A. Arthur",
+      "matchingStrings": ["chester a. arthur", "chester a arthur", "chester arthur", "chester", "arthur"],
+      "ordinalMatchingStrings": ["twenty first president", "21st president"],
+      "presidency": [21]
+    },
+    {
+      "name": "Grover Cleveland",
+      "matchingStrings": ["grover cleveland", "cleveland", "grover"],
+      "ordinalMatchingStrings": ["twenty second president", "22nd president", "twenty fourth president", "24th president"],
+      "presidency": [22,24]
+    },
+    {
+      "name": "Benjamin Harrison",
+      "matchingStrings": ["benjamin harrison", "benjamin", "harrison"],
+      "ordinalMatchingStrings": ["twenty third president", "23rd president"],
+      "presidency": [23]
+    },
+    {
+      "name": "William McKinley",
+      "matchingStrings": ["william mckinley", "mckinley"],
+      "ordinalMatchingStrings": ["twenty fifth president", "25th president"],
+      "presidency": [25]
+    },
+    {
+      "name": "Theodore Roosevelt",
+      "matchingStrings": ["theodore roosevelt"],
+      "ordinalMatchingStrings": ["twenty sixth president", "26th president"],
+      "presidency": [26]
     }
 
 
