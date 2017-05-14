@@ -149,7 +149,56 @@
       "matchingStrings": ["theodore roosevelt"],
       "ordinalMatchingStrings": ["twenty sixth president", "26th president"],
       "presidency": [26]
+    },
+    {
+      "name": "William Howard Taft",
+      "matchingStrings": ["william howard taft", "taft"],
+      "ordinalMatchingStrings": ["twenty seventh president", "27th president"],
+      "presidency": [27]
+    },
+    {
+      "name": "Woodrow Wilson",
+      "matchingStrings": ["woodrow wilson", "woodrow", "wilson"],
+      "ordinalMatchingStrings": ["twenty eighth president", "28th president"],
+      "presidency": [28]
+    },
+    {
+      "name": "Warren G. Harding",
+      "matchingStrings": ["warren g. harding", "warren g harding", "warren harding", "warren", "harding"],
+      "ordinalMatchingStrings": ["twenty ninth president", "29th president"],
+      "presidency": [29]
+    },
+    {
+      "name": "Calvin Coolidge",
+      "matchingStrings": ["calvin coolidge", "calvin", "coolidge"],
+      "ordinalMatchingStrings": ["thirtieth president", "30th president"],
+      "presidency": [30]
+    },
+    {
+      "name": "Herbert Hoover",
+      "matchingStrings": ["herbert hoover", "herbert", "hoover"],
+      "ordinalMatchingStrings": ["thirty first president", "31st president"],
+      "presidency": [31]
+    },
+    {
+      "name": "Franklin D. Roosevelt",
+      "matchingStrings": ["franklin d. roosevelt", "franklin roosevelt", "f.d.r.", "fdr", "f. d. r.", "f d r"],
+      "ordinalMatchingStrings": ["thirty second president", "32nd president"],
+      "presidency": [32]
+    },
+    {
+      "name": "Harry S. Truman",
+      "matchingStrings": ["harry s. truman", "harry s truman", "harry truman", "harry", "truman"],
+      "ordinalMatchingStrings": ["thirty third president", "33rd president"],
+      "presidency": [33]
+    },
+    {
+      "name": "Dwight D. Eisenhower",
+      "matchingStrings": ["dwight d. eisenhower", "dwight d eisenhower", "dwight eisenhower", "dwight", "eisenhower"],
+      "ordinalMatchingStrings": ["thirty fourth president", "34th president"],
+      "presidency": [34]
     }
+
 
 
   ]
