@@ -209,6 +209,17 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.LocalBusiness slot matches", function() {
+      let result = recognizer.Recognizer.matchText("is there a walmart nearby");
+      expect(result).to.eql(
+        {"name": "LocalBusinessIntent",
+         "slots": {
+          "LocalBusinessSlot": {
+            "name": "LocalBusinessSlot",
+            "value": "walmart"
+          }
+        }});
+    });
 
     it("verify simple utterance with an AMAZON.Festival slot matches", function() {
       let result = recognizer.Recognizer.matchText("where is south by southwest held");
