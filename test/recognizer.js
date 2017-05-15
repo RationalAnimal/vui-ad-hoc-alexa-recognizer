@@ -209,6 +209,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+
+    it("verify simple utterance with an AMAZON.LocalBusinessType slot matches", function() {
+      let result = recognizer.Recognizer.matchText("are you going to the pharmacy");
+      expect(result).to.eql(
+        {"name": "LocalBusinessTypeIntent",
+         "slots": {
+          "LocalBusinessTypeSlot": {
+            "name": "LocalBusinessTypeSlot",
+            "value": "pharmacy"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.LocalBusiness slot matches", function() {
       let result = recognizer.Recognizer.matchText("is there a walmart nearby");
       expect(result).to.eql(
