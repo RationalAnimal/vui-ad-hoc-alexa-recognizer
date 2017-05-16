@@ -202,6 +202,15 @@
       ]
     },
     {
+      "intent": "MedicalOrganizationIntent",
+      "slots": [
+        {
+          "name": "MedicalOrganizationSlot",
+          "type": "AMAZON.MedicalOrganization"
+        }
+      ]
+    },
+    {
       "intent": "LocalBusinessTypeIntent",
       "slots": [
         {

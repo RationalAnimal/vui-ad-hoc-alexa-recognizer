@@ -3,6 +3,7 @@
 .travis.yml
 test/
 test
+crap.json
 recognizer.json
 recognizer.js
 staticfilerecognizer.js

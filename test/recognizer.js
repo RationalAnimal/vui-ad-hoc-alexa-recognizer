@@ -199,7 +199,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
 
     it("verify simple utterance with an AMAZON.Landform slot matches", function() {
-      let result = recognizer.Recognizer.matchText("mount washington is a popular hicker destination");
+      let result = recognizer.Recognizer.matchText("mount washington is a popular hiker destination");
       expect(result).to.eql(
         {"name": "LandformIntent",
          "slots": {
@@ -218,6 +218,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           "LocalBusinessTypeSlot": {
             "name": "LocalBusinessTypeSlot",
             "value": "pharmacy"
+          }
+        }});
+    });
+
+    it("verify simple utterance with an AMAZON.MedicalOrganization slot matches", function() {
+      let result = recognizer.Recognizer.matchText("how far is massachusetts general hospital");
+      expect(result).to.eql(
+        {"name": "MedicalOrganizationIntent",
+         "slots": {
+          "MedicalOrganizationSlot": {
+            "name": "MedicalOrganizationSlot",
+            "value": "massachusetts general hospital"
           }
         }});
     });
