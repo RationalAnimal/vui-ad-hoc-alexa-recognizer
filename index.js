@@ -319,6 +319,10 @@ recognizer.builtInValues.Landform = require("./builtinslottypes/landforms.json")
 recognizer.builtInValues.Landform.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Landform.values);
 recognizer.builtInValues.Landform.replacementRegExp = new RegExp(recognizer.builtInValues.Landform.replacementRegExpString, "ig");
 
+recognizer.builtInValues.Movie = require("./builtinslottypes/movies.json");
+recognizer.builtInValues.Movie.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Movie.values);
+recognizer.builtInValues.Movie.replacementRegExp = new RegExp(recognizer.builtInValues.Movie.replacementRegExpString, "ig");
+
 recognizer.builtInValues.MedicalOrganization = require("./builtinslottypes/medicalorganizations.json");
 recognizer.builtInValues.MedicalOrganization.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MedicalOrganization.values);
 recognizer.builtInValues.MedicalOrganization.replacementRegExp = new RegExp(recognizer.builtInValues.MedicalOrganization.replacementRegExpString, "ig");
@@ -633,6 +637,16 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
     }
     else {
       return recognizer.builtInValues.Landform.replacementRegExpString;
+    }
+  }
+  else if(slotType == "TRANSCEND.Movie"){
+    // Ignore SOUNDEX_MATCH flag for now
+    if(slotFlags.indexOf("INCLUDE_WILDCARD_MATCH") >= 0){
+      // number are used in cases of names like John the 1st
+      return "((?:\\w|\\s|[0-9]|\-)+)";
+    }
+    else {
+      return recognizer.builtInValues.Movie.replacementRegExpString;
     }
   }
   else if(slotType == "TRANSCEND.MedicalOrganization"){
@@ -2214,6 +2228,16 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
+    else if(slotType == "TRANSCEND.Movie"){
+      let arrayToSearch = recognizer.builtInValues.Movie.values;
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < arrayToSearch.length; i++){
+        if(scratchValue == arrayToSearch[i].toUpperCase()){
+          returnValue = arrayToSearch[i];
+          break;
+        }
+      }
+    }
     else if(slotType == "TRANSCEND.MedicalOrganization"){
       let arrayToSearch = recognizer.builtInValues.MedicalOrganization.values;
       let scratchValue = returnValue.toUpperCase();
@@ -2851,6 +2875,15 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
   recognizer.builtInValues.Landform.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Landform.values);
   recognizer.builtInValues.Landform.replacementRegExp = new RegExp(recognizer.builtInValues.Landform.replacementRegExpString, "ig");
+
+  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Movie");
+  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+  if(typeof extendedValues != "undefined"){
+    recognizer.builtInValues.Movie.values = recognizer.builtInValues.Movie.values.concat(extendedValues);
+  }
+  recognizer.builtInValues.Movie.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Movie.values);
+  recognizer.builtInValues.Movie.replacementRegExp = new RegExp(recognizer.builtInValues.Movie.replacementRegExpString, "ig");
+
 
   slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.MedicalOrganization");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
