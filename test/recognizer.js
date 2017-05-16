@@ -210,6 +210,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Movie slot matches", function() {
+      let result = recognizer.Recognizer.matchText("have you seen gone with the wind yet");
+      expect(result).to.eql(
+        {"name": "MovieIntent",
+         "slots": {
+          "MovieSlot": {
+            "name": "MovieSlot",
+            "value": "gone with the wind"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.LocalBusinessType slot matches", function() {
       let result = recognizer.Recognizer.matchText("are you going to the pharmacy");
       expect(result).to.eql(
