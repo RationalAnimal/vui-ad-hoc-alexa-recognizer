@@ -23,6 +23,7 @@ SOFTWARE.
 */
 var expect = require("chai").expect;
 var recognizer = require("../index.js");
+var parser = require("../parseutterance.js");
 
 describe("vui-ad-hoc-alexa-recognizer", function() {
   describe("Simple Matches", function() {
@@ -1689,4 +1690,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
 
   });
 
+});
+
+
+describe("utterance parser", function() {
+  describe("Simple JSON Parsing", function() {
+    it("verify simple utterance without slots and just one word parses into json", function() {
+      let result = parser.parseUtteranceIntoJson("test me");
+      expect(result).to.eql({"intentName": "test", "parsedUtterance": ["me"]});
+    });
+    it("verify simple utterance without slots and multiple words parses into json", function() {
+      let result = parser.parseUtteranceIntoJson("test me now and again");
+      expect(result).to.eql({"intentName": "test", "parsedUtterance": ["me now and again"]});
+    });
+  });
 });
