@@ -48,6 +48,7 @@ DessertIntent {DessertSlot} is my favorite dessert
 LandmarksOrHistoricalBuildingsIntent I will meet you in {LandmarksOrHistoricalBuildingsSlot}
 LandformIntent {LandformSlot} is a popular hiker destination
 MovieIntent have you seen {MovieSlot} yet
+MovieSeriesIntent {MovieSeriesSlot} is very popular
 MedicalOrganizationIntent how far is {MedicalOrganizationSlot}
 LocalBusinessIntent is there a {LocalBusinessSlot} nearby
 LocalBusinessTypeIntent are you going to the {LocalBusinessTypeSlot}
