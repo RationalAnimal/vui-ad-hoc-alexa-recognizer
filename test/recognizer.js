@@ -222,6 +222,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.MovieSeries slot matches", function() {
+      let result = recognizer.Recognizer.matchText("star wars is very popular");
+      expect(result).to.eql(
+        {"name": "MovieSeriesIntent",
+         "slots": {
+          "MovieSeriesSlot": {
+            "name": "MovieSeriesSlot",
+            "value": "star wars"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.LocalBusinessType slot matches", function() {
       let result = recognizer.Recognizer.matchText("are you going to the pharmacy");
       expect(result).to.eql(
