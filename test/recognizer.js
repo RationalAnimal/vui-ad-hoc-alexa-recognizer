@@ -1703,5 +1703,9 @@ describe("utterance parser", function() {
       let result = parser.parseUtteranceIntoJson("test me now and again");
       expect(result).to.eql({"intentName": "test", "parsedUtterance": ["me now and again"]});
     });
+    it("verify simple utterance without slots and just one slot parses into json", function() {
+      let result = parser.parseUtteranceIntoJson("test me {TestSlot} too");
+      expect(result).to.eql({"intentName": "test", "parsedUtterance": ["me ", {"type": "slot", "name": "TestSlot"}, " too"]});
+    });
   });
 });

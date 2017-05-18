@@ -46,14 +46,84 @@ var _parseUtteranceIntoJson = function(utterance){
 		return returnValue;
 	}
 
-  returnValue.parsedUtterance = _parseUtteranceString(utteranceString);
+	let utteranceArray = utteranceString.split('');
+	let parsingRange = {"start": 0, "end": -1};
+  returnValue.parsedUtterance = _parseUtteranceString(utteranceArray, parsingRange);
   return returnValue;
 }
 
-var _parseUtteranceString = function(utteranceString){
-	return [utteranceString];
+/**
+* Call to parse a portion of utteranceArray specified by parsingRange
+start and end, inclusively of both.
+*/
+var _parseUtteranceString = function(utteranceArray, parsingRange){
+	let scratch = '';
+	let returnValue = [];
+	for(let i = parsingRange.start; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i++){
+		let currentLetter = utteranceArray[i];
+		switch(currentLetter){
+			case '{':
+				if(scratch.length > 0){
+					returnValue.push(scratch);
+				}
+				scratch = '';
+				// Handle anything that starts with a curly bracket - slot, options list, etc
+				let curlyRange = {"start": i, "end": -1}
+				let curlyResult = _parseCurlyBrackets(utteranceArray, curlyRange);
+				returnValue.push(curlyResult);
+				i = curlyRange.end;
+				break;
+			default:
+				scratch += currentLetter;
+				break;
+		}
+	}
+	if(scratch.length > 0){
+		returnValue.push(scratch);
+	}
+	return returnValue;
 }
 
+/**
+* Call to parse a portion of utteranceArray specified by parsingRange
+start and end, inclusively of both that starts with a curly bracket.  Stop
+when the closing bracket is found, returned parsed value(s) and update parsingRange
+so that the calling function knows where to resume.
+This will parse and return either a slot with or without flags or an option list.
+The decision is made on whether : or | is encountered first. If neither is
+encountered before } and there is only one word then it's a slot without flags.
+Else it's an option list with just one option.
+*/
+var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentSchema){
+	let error = {"error": "", "position": -1};
+	if(utteranceArray[parsingRange.start] != '{'){
+		error.error = "parsing curly brackets doesn't start with {";
+		error.position = parsingRange.start;
+	}
+	let accummulatedValue = '';
+	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+		switch(utteranceArray[i]){
+			case "}":
+				// found the end, this is either a slot without flags or an options list with just one option
+				// for now assume it's a slot name TODO fix this assumption
+				parsingRange.end = i;
+				return {"type": "slot", "name": accummulatedValue};
+				break;
+			case "|":
+			  // this is an options list
+				break;
+			case ":":
+				// this is a slot with options
+				break;
+			default:
+				// simply accummulate the characters
+				accummulatedValue += utteranceArray[i];
+		}
+	}
+	// This is an error
+	// TODO handle the error
+
+}
 var _splitIntentName = function(utterance){
 	let returnValue = {};
 	let intentRegExp = /^\s*((?:\w|[-])+)\s*(.+)\s*/ig;
