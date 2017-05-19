@@ -1703,9 +1703,21 @@ describe("utterance parser", function() {
       let result = parser.parseUtteranceIntoJson("test me now and again");
       expect(result).to.eql({"intentName": "test", "parsedUtterance": ["me now and again"]});
     });
-    it("verify simple utterance without slots and just one slot parses into json", function() {
+    it("verify simple utterance just one slot parses into json", function() {
       let result = parser.parseUtteranceIntoJson("test me {TestSlot} too");
       expect(result).to.eql({"intentName": "test", "parsedUtterance": ["me ", {"type": "slot", "name": "TestSlot"}, " too"]});
+    });
+    it("verify simple utterance just one slot with one flag parses into json", function() {
+      let result = parser.parseUtteranceIntoJson("test me {TestSlot:INCLUDE_VALUES_MATCH} too");
+      expect(result).to.eql({"intentName": "test", "parsedUtterance": ["me ", {"type": "slot", "name": "TestSlot", "flags": ["INCLUDE_VALUES_MATCH"]}, " too"]});
+    });
+    it("verify simple utterance just one slot with two flags parses into json", function() {
+      let result = parser.parseUtteranceIntoJson("test me {TestSlot:INCLUDE_VALUES_MATCH, EXCLUDE_WILDCARD_MATCH} too");
+      expect(result).to.eql({"intentName": "test", "parsedUtterance": ["me ", {"type": "slot", "name": "TestSlot", "flags": ["INCLUDE_VALUES_MATCH", "EXCLUDE_WILDCARD_MATCH"]}, " too"]});
+    });
+    it("verify simple utterance two slots with two flags parses into json", function() {
+      let result = parser.parseUtteranceIntoJson("test me {TestSlot:INCLUDE_VALUES_MATCH, EXCLUDE_WILDCARD_MATCH} too {TestingSlot: EXCLUDE_VALUES_MATCH, INCLUDE_WILDCARD_MATCH}");
+      expect(result).to.eql({"intentName": "test", "parsedUtterance": ["me ", {"type": "slot", "name": "TestSlot", "flags": ["INCLUDE_VALUES_MATCH", "EXCLUDE_WILDCARD_MATCH"]}, " too ", {"type": "slot", "name": "TestingSlot", "flags": ["EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH"]}]});
     });
   });
 });
