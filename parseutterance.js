@@ -84,6 +84,53 @@ var _parseUtteranceString = function(utteranceArray, parsingRange){
 	return returnValue;
 }
 
+var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentSchema){
+	let error = {"error": "", "position": -1};
+	if(utteranceArray[parsingRange.start] != '{'){
+		error.error = "parsing slot doesn't start with {";
+		error.position = parsingRange.start;
+	}
+	let accummulatedValue = '';
+	let returnValue = {"type": "slot"};
+	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+		switch(utteranceArray[i]){
+			case "}":
+				parsingRange.end = i;
+				if(typeof returnValue.flags == "undefined"){
+					returnValue.flags = [];
+				}
+				returnValue.flags.push(accummulatedValue);
+				return returnValue;
+			case ":":
+				returnValue.name = accummulatedValue;
+				accummulatedValue = '';
+				break;
+			case ",":
+				if(typeof returnValue.flags == "undefined"){
+					returnValue.flags = [];
+				}
+				returnValue.flags.push(accummulatedValue);
+				accummulatedValue = '';
+				break;
+			case " ":
+			case "\t":
+				if(accummulatedValue.length == 0){
+					// Do nothing
+				}
+				if(accummulatedValue.length > 0){
+					// TODO revisit based on what we are parsing
+					accummulatedValue += utteranceArray[i];
+				}
+				break;
+			default:
+				// simply accummulate the characters
+				accummulatedValue += utteranceArray[i];
+		}
+	}
+	// This is an error
+	// TODO handle the error
+}
+
 /**
 * Call to parse a portion of utteranceArray specified by parsingRange
 start and end, inclusively of both that starts with a curly bracket.  Stop
@@ -101,19 +148,23 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentSchema){
 		error.position = parsingRange.start;
 	}
 	let accummulatedValue = '';
+	let returnValue = {};
 	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
 		switch(utteranceArray[i]){
 			case "}":
-				// found the end, this is either a slot without flags or an options list with just one option
-				// for now assume it's a slot name TODO fix this assumption
+				// TODO fix slot assumption
 				parsingRange.end = i;
 				return {"type": "slot", "name": accummulatedValue};
-				break;
 			case "|":
 			  // this is an options list
+				returnValue.type = "options";
+				if(typeof returnValue.options == "undefined"){
+					returnValue.options = [];
+				}
 				break;
 			case ":":
 				// this is a slot with options
+				return _parseSlotWithFlags(utteranceArray, parsingRange, intentSchema);
 				break;
 			default:
 				// simply accummulate the characters
