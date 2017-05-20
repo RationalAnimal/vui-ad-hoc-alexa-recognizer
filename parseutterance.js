@@ -26,7 +26,7 @@ SOFTWARE.
 'use strict'
 var parser = {};
 
-var _parseUtteranceIntoJson = function(utterance){
+var _parseUtteranceIntoJson = function(utterance, intentSchema){
 	let returnValue = {};
 	// First get the intent name
 	let parsedIntent = _splitIntentName(utterance);
@@ -48,7 +48,7 @@ var _parseUtteranceIntoJson = function(utterance){
 
 	let utteranceArray = utteranceString.split('');
 	let parsingRange = {"start": 0, "end": -1};
-  returnValue.parsedUtterance = _parseUtteranceString(utteranceArray, parsingRange);
+  returnValue.parsedUtterance = _parseUtteranceString(utteranceArray, parsingRange, intentSchema);
   return returnValue;
 }
 
@@ -56,7 +56,7 @@ var _parseUtteranceIntoJson = function(utterance){
 * Call to parse a portion of utteranceArray specified by parsingRange
 start and end, inclusively of both.
 */
-var _parseUtteranceString = function(utteranceArray, parsingRange){
+var _parseUtteranceString = function(utteranceArray, parsingRange, intentSchema){
 	let scratch = '';
 	let returnValue = [];
 	for(let i = parsingRange.start; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i++){
@@ -70,7 +70,7 @@ var _parseUtteranceString = function(utteranceArray, parsingRange){
 				scratch = '';
 				// Handle anything that starts with a curly bracket - slot, options list, etc
 				let curlyRange = {"start": i, "end": -1}
-				let curlyResult = _parseCurlyBrackets(utteranceArray, curlyRange);
+				let curlyResult = _parseCurlyBrackets(utteranceArray, curlyRange, intentSchema);
 //				console.log("curlyResult: ", curlyResult);
 				returnValue.push(curlyResult);
 				i = curlyRange.end;
@@ -230,8 +230,9 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentSchema){
 				accummulatedValue += utteranceArray[i];
 		}
 	}
-	// This is an error
-	// TODO handle the error
+	error.error = "parsing slot ran out of characters to parse before completing slot parsing";
+	error.position = -1;
+	throw error;
 }
 
 /**
@@ -257,7 +258,12 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentSchema){
 			case "}":
 				// TODO fix slot assumption
 				parsingRange.end = i;
-				return {"type": "slot", "name": accummulatedValue};
+				if(_isSlotName(accummulatedValue, intentSchema)){
+					return {"type": "slot", "name": accummulatedValue};
+				}
+				else {
+					return {"type": "optionsList", "options": [accummulatedValue]};
+				}
 			case "|":
 			  // this is an options list
 				returnValue.type = "options";
@@ -274,9 +280,8 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentSchema){
 				accummulatedValue += utteranceArray[i];
 		}
 	}
-	// This is an error
-	// TODO handle the error
-
+	error.error = "parsing curly brackets ran out of characters before encountering }";
+	error.position = -1;;
 }
 var _splitIntentName = function(utterance){
 	let returnValue = {};
@@ -293,6 +298,28 @@ var _splitIntentName = function(utterance){
 		return returnValue;
   }
 	return;
+}
+
+var _isSlotName = function(slotName, intentSchema){
+//	console.log("_isSlotName, slotName: ", slotName);
+	let trimmedName = slotName.replace(/^\s*/,'').replace(/\s*$/,'');
+//	console.log("_isSlotName, trimmedName: <" + trimmedName + '>');
+//	console.log("_isSlotName, intentSchema: ", JSON.stringify(intentSchema, null, 2));
+	for(let i = 0; i < intentSchema.intents.length; i++){
+		let intentSlots = intentSchema.intents[i].slots;
+//		console.log("_isSlotName, intentSlots: " + JSON.stringify(intentSlots, null, 2));
+
+		for(let j = 0; j < intentSlots.length; j++){
+//			console.log("_isSlotName, intentSlots[j].name: " + intentSlots[j].name);
+
+			if(intentSlots[j].name == trimmedName){
+//				console.log("_isSlotName returning true");
+				return true;
+			}
+		}
+	}
+//	console.log("_isSlotName returning false");
+	return false;
 }
 
 parser.parseUtteranceIntoJson = _parseUtteranceIntoJson;
