@@ -214,6 +214,11 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentSchema){
 				returnValue.flags.push(accummulatedValue);
 				return returnValue;
 			case ":":
+				if(_isSlotName(accummulatedValue, intentSchema) == false){
+					error.error = "slot name " + accummulatedValue + " does not exist within intent schema";
+					error.position = i;
+					throw error;
+				}
 				returnValue.name = accummulatedValue;
 				accummulatedValue = '';
 				let flagsRange = {"start": i, "end": -1};
@@ -256,7 +261,6 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentSchema){
 	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
 		switch(utteranceArray[i]){
 			case "}":
-				// TODO fix slot assumption
 				parsingRange.end = i;
 				if(_isSlotName(accummulatedValue, intentSchema)){
 					return {"type": "slot", "name": accummulatedValue};

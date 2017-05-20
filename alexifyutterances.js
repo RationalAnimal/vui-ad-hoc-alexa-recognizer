@@ -26,14 +26,16 @@ SOFTWARE.
 'use strict'
 var fs = require('fs');
 var utilities = require('./utilities.js')
+var parser = require('./parseutterance.js');
 
 var usage = function(){
   console.log('Usage: node ' + process.argv[1] + ' <sampleutterance.txt>');
   console.log('  -i --input UtterancesFileName specify input utterances file name.');
+  console.log('  --intents IntentsSchemaFileName specify intent schema file name used for slot name validation.');
 	console.log('  -o --output OutputFileName specify output utterances file name.');
 }
 // Make sure we got all the arguments on the command line.
-if (process.argv.length < 6) {
+if (process.argv.length < 8) {
   usage();
   process.exit(1);
 }
@@ -45,6 +47,13 @@ for(let i = 2; i < process.argv.length - 1; i += 2){
   else if(process.argv[i] == "-o" || process.argv[i] == "--output"){
     var outputFileName = process.argv[j];
   }
+  else if(process.argv[i] == "--intents"){
+    var intentsFileName = process.argv[j];
+  }
+}
+if(typeof inputFileName == "undefined" || typeof outputFileName == "undefined" || typeof intentsFileName == "undefined"){
+  usage();
+  process.exit(1);
 }
 
 var _done = function(){
@@ -52,21 +61,38 @@ var _done = function(){
 }
 
 var values = utilities.loadStringListFromFile(inputFileName);
+var parsedUtterances = [];
 
+try{
+  var intentSchema = require(intentsFileName);
+}
+catch(e){
+  try{
+    var intentSchema = require("./" + intentsFileName);
+  }
+  catch(e2){
+    usage();
+    process.exit(1);
+  }
+}
 
-for(let i = 0; i < values.length; i++){
-  let slotRegExp = /\{(\w+)(?:[:]{1}(.*)){0,1}\}/ig;
-
-	let slotMatchExecResult;
-//	console.log("values[i]: " + values[i]);
-	while(slotMatchExecResult = slotRegExp.exec(values[i])){
-//		console.log("slotMatchExecResult " + JSON.stringify(slotMatchExecResult));
-		values[i] = values[i].replace(slotMatchExecResult[0], "{" + slotMatchExecResult[1] + "}");
-	}
-//	console.log("values[i]: " + values[i]);
+for(let i = 0; i < values.length; i ++){
+  let result = parser.parseUtteranceIntoJson(values[i], intentSchema);
+  parsedUtterances.push(result);
 }
 
 var file = fs.createWriteStream(outputFileName);
 file.on('error', function(error) { /* add error handling here */ });
-values.forEach(function(value) { file.write(value + '\n'); });
+for(let i = 0; i < parsedUtterances.length; i++){
+  let alexified = '';
+  for(let j = 0; j < parsedUtterances[i].parsedUtterance.length; j++){
+    if(typeof parsedUtterances[i].parsedUtterance[j] == "string"){
+      alexified += parsedUtterances[i].parsedUtterance[j];
+    }
+    else if(parsedUtterances[i].parsedUtterance[j].type == "slot"){
+      alexified += ("{" + parsedUtterances[i].parsedUtterance[j].name + "}");
+    }
+  }
+  file.write(alexified + '\n');
+}
 file.end(function(){console.log("Result was saved to " + outputFileName);});
