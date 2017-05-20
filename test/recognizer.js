@@ -1705,9 +1705,9 @@ describe("utterance parser", function() {
     });
     it("verify simple utterance with just one slot parses into json", function() {
       let intentSchema = require("./intents.json");
-      let result = parser.parseUtteranceIntoJson("test me {SomeSlot} too", intentSchema);
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me {SomeSlot} too", intentSchema);
       expect(result).to.eql(
-        {"intentName": "test",
+        {"intentName": "AnotherIntent",
          "parsedUtterance": [
            "me ",
            {
@@ -1719,10 +1719,10 @@ describe("utterance parser", function() {
     });
     it("verify simple utterance just one slot with one flag parses into json", function() {
       let intentSchema = require("./intents.json");
-      let result = parser.parseUtteranceIntoJson("test me {SomeSlot:INCLUDE_VALUES_MATCH} too", intentSchema);
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me {SomeSlot:INCLUDE_VALUES_MATCH} too", intentSchema);
       expect(result).to.eql(
         {
-          "intentName": "test",
+          "intentName": "AnotherIntent",
           "parsedUtterance": [
             "me ",
             {
@@ -1740,10 +1740,10 @@ describe("utterance parser", function() {
     });
     it("verify simple utterance with just one slot with two flags parses into json", function() {
       let intentSchema = require("./intents.json");
-      let result = parser.parseUtteranceIntoJson("test me {SomeSlot:INCLUDE_VALUES_MATCH, EXCLUDE_WILDCARD_MATCH} too", intentSchema);
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me {SomeSlot:INCLUDE_VALUES_MATCH, EXCLUDE_WILDCARD_MATCH} too", intentSchema);
       expect(result).to.eql(
         {
-          "intentName": "test",
+          "intentName": "AnotherIntent",
           "parsedUtterance": [
             "me ",
             {
@@ -1765,10 +1765,10 @@ describe("utterance parser", function() {
     });
     it("verify simple utterance two slots with two flags parses into json", function() {
       let intentSchema = require("./intents.json");
-      let result = parser.parseUtteranceIntoJson("test me { SomeSlot : INCLUDE_VALUES_MATCH , EXCLUDE_WILDCARD_MATCH} too {SomeOtherSlot: EXCLUDE_VALUES_MATCH, INCLUDE_WILDCARD_MATCH}", intentSchema);
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me { SomeSlot : INCLUDE_VALUES_MATCH , EXCLUDE_WILDCARD_MATCH} too {SomeOtherSlot: EXCLUDE_VALUES_MATCH, INCLUDE_WILDCARD_MATCH}", intentSchema);
       expect(result).to.eql(
         {
-          "intentName": "test",
+          "intentName": "AnotherIntent",
           "parsedUtterance": [
             "me ",
             {
@@ -1804,10 +1804,10 @@ describe("utterance parser", function() {
     });
     it("verify simple utterance just one slot with one parameterized flag parses into json", function() {
       let intentSchema = require("./intents.json");
-      let result = parser.parseUtteranceIntoJson("test me {SomeSlot:COUNTRY([\"united states\"])} too", intentSchema);
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me {SomeSlot:COUNTRY([\"united states\"])} too", intentSchema);
       expect(result).to.eql(
         {
-          "intentName": "test",
+          "intentName": "AnotherIntent",
           "parsedUtterance": [
             "me ",
             {
@@ -1828,10 +1828,10 @@ describe("utterance parser", function() {
     });
     it("verify simple utterance just one slot with two parameterized flags parses into json", function() {
       let intentSchema = require("./intents.json");
-      let result = parser.parseUtteranceIntoJson("test me {SomeSlot: COUNTRY([ \"united states\" ]) , CONTINENT([\"north america\"])} too", intentSchema);
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me {SomeSlot: COUNTRY([ \"united states\" ]) , CONTINENT([\"north america\"])} too", intentSchema);
       expect(result).to.eql(
         {
-          "intentName": "test",
+          "intentName": "AnotherIntent",
           "parsedUtterance": [
             "me ",
             {
@@ -1859,10 +1859,10 @@ describe("utterance parser", function() {
     });
     it("verify simple utterance just one slot with two parameterized flags and one of them having multiple parameters parses into json", function() {
       let intentSchema = require("./intents.json");
-      let result = parser.parseUtteranceIntoJson("test me {SomeSlot: COUNTRY([ \"united states\" , \"canada\" , \"mexico\" ]) , CONTINENT([\"north america\"])} too", intentSchema);
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me {SomeSlot: COUNTRY([ \"united states\" , \"canada\" , \"mexico\" ]) , CONTINENT([\"north america\"])} too", intentSchema);
       expect(result).to.eql(
         {
-          "intentName": "test",
+          "intentName": "AnotherIntent",
           "parsedUtterance": [
             "me ",
             {
