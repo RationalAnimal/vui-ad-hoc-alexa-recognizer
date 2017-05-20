@@ -88,10 +88,74 @@ var _parseUtteranceString = function(utteranceArray, parsingRange){
 	return returnValue;
 }
 
+var _parseJsonArray = function(utteranceArray, parsingRange, intentSchema){
+	// Really brute force method - user JSON.parse and attempt at each ]
+	let error = {"error": "", "position": -1};
+	if(utteranceArray[parsingRange.start] != '['){
+		error.error = "parsing JSON array doesn't start with [", utteranceArray.slice(parsingRange.start).join("");
+		error.position = parsingRange.start;
+		throw error;
+	}
+	let accummulatedValue = '';
+	let returnValue = [];
+	for(let i = parsingRange.start; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+		accummulatedValue += utteranceArray[i];
+		switch(utteranceArray[i]){
+			case "]":
+				try {
+					let returnValue = JSON.parse(accummulatedValue);
+					parsingRange.end = i;
+//					console.log("parsing JSON array returnving value: ", returnValue)
+					return returnValue;
+				}
+				catch(e){
+					// Ignore all errors - we are simply trying blindly so errors don't mean anything
+//					console.log("parsing JSON array: caught error parsing JSON array: ", JSON.stringify(e, null, 2))
+				}
+				break;
+			default:
+//				console.log("parsing JSON array: some character: " + utteranceArray[i]);
+				break;
+		}
+	}
+//	console.log("parsing JSON array: at end without returnving value")
+}
+
+var _parseFlagParameters = function(utteranceArray, parsingRange, intentSchema){
+	let error = {"error": "", "position": -1};
+	if(utteranceArray[parsingRange.start] != '('){
+		error.error = "parsing slot doesn't start with (";
+		error.position = parsingRange.start;
+		throw error;
+	}
+	let returnValue = [];
+	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+		switch(utteranceArray[i]){
+			case "[":
+				let jsonArrayRange = {"start": i, "end": -1};
+				let jsonArrayResult = _parseJsonArray(utteranceArray, jsonArrayRange, intentSchema);
+//				console.log("jsonArrayResult: " + JSON.stringify(jsonArrayResult, null, 2));
+				returnValue = jsonArrayResult;
+				i = jsonArrayRange.end;
+				break;
+			case ")":
+				parsingRange.end = i;
+				return returnValue;
+			case " ":
+			case "\t":
+					break;
+			default:
+				error.position = i;
+				error.error = "unexpected character while parsing flag parameters at position: " + error.position + ": " + utteranceArray[i];
+				throw error;
+		}
+	}
+}
+
 var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
 	let error = {"error": "", "position": -1};
 	if(utteranceArray[parsingRange.start] != ':'){
-		error.error = "parsing slot doesn't start with {";
+		error.error = "parsing slot doesn't start with :";
 		error.position = parsingRange.start;
 	}
 	let accummulatedValue = '';
@@ -101,19 +165,24 @@ var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
 		switch(utteranceArray[i]){
 			case "}":
 				parsingRange.end = i;
-				returnValue.push({"type": "flag", "name": accummulatedValue});
+				if(accummulatedValue.length > 0){
+//					console.log("_parseFlags, pushing after } flag with name: " + accummulatedValue );
+					returnValue.push({"type": "flag", "name": accummulatedValue});
+				}
 				return returnValue;
 			case ",":
 				if(accummulatedValue.length > 0){
+//					console.log("_parseFlags, pushing after , flag with name: " + accummulatedValue );
 					returnValue.push({"type": "flag", "name": accummulatedValue});
 					accummulatedValue = '';
 				}
 				break;
 			case "(":
+//				console.log("_parseFlags, pushing after ( flag with name: " + accummulatedValue );
 				returnValue.push({"type": "flag", "name": accummulatedValue});
 				accummulatedValue = '';
 				let flagsRange = {"start": i, "end": -1};
-				let flagsResult = _parseFlagParameters(utteranceArray, flagsRange);
+				let flagsResult = _parseFlagParameters(utteranceArray, flagsRange, intentSchema);
 				returnValue[returnValue.length - 1].parameters = flagsResult;
 				i = flagsRange.end;
 				break;
