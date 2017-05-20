@@ -64,12 +64,14 @@ var _parseUtteranceString = function(utteranceArray, parsingRange){
 		switch(currentLetter){
 			case '{':
 				if(scratch.length > 0){
+//					console.log("_parseUtteranceString pushing: ", scratch);
 					returnValue.push(scratch);
 				}
 				scratch = '';
 				// Handle anything that starts with a curly bracket - slot, options list, etc
 				let curlyRange = {"start": i, "end": -1}
 				let curlyResult = _parseCurlyBrackets(utteranceArray, curlyRange);
+//				console.log("curlyResult: ", curlyResult);
 				returnValue.push(curlyResult);
 				i = curlyRange.end;
 				break;
@@ -79,11 +81,52 @@ var _parseUtteranceString = function(utteranceArray, parsingRange){
 		}
 	}
 	if(scratch.length > 0){
+//		console.log("_parseUtteranceString pushing at the end: ", scratch);
 		returnValue.push(scratch);
 	}
+//	console.log("_parseUtteranceString returning: ", JSON.stringify(returnValue, null, 2));
 	return returnValue;
 }
 
+var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
+	let error = {"error": "", "position": -1};
+	if(utteranceArray[parsingRange.start] != ':'){
+		error.error = "parsing slot doesn't start with {";
+		error.position = parsingRange.start;
+	}
+	let accummulatedValue = '';
+	let returnValue = [];
+	// {"type": "flag", "name": accummulatedValue, "parameters": []};
+	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+		switch(utteranceArray[i]){
+			case "}":
+				parsingRange.end = i;
+				returnValue.push({"type": "flag", "name": accummulatedValue});
+				return returnValue;
+			case ",":
+				if(accummulatedValue.length > 0){
+					returnValue.push({"type": "flag", "name": accummulatedValue});
+					accummulatedValue = '';
+				}
+				break;
+			case "(":
+				returnValue.push({"type": "flag", "name": accummulatedValue});
+				accummulatedValue = '';
+				let flagsRange = {"start": i, "end": -1};
+				let flagsResult = _parseFlagParameters(utteranceArray, flagsRange);
+				returnValue[returnValue.length - 1].parameters = flagsResult;
+				i = flagsRange.end;
+				break;
+			case " ":
+			case "\t":
+				break;
+			default:
+				// simply accummulate the characters
+				accummulatedValue += utteranceArray[i];
+		}
+	}
+
+}
 var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentSchema){
 	let error = {"error": "", "position": -1};
 	if(utteranceArray[parsingRange.start] != '{'){
@@ -104,23 +147,14 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentSchema){
 			case ":":
 				returnValue.name = accummulatedValue;
 				accummulatedValue = '';
-				break;
-			case ",":
-				if(typeof returnValue.flags == "undefined"){
-					returnValue.flags = [];
-				}
-				returnValue.flags.push(accummulatedValue);
-				accummulatedValue = '';
-				break;
+				let flagsRange = {"start": i, "end": -1};
+				let flagsResult = _parseFlags(utteranceArray, flagsRange);
+				parsingRange.end = flagsRange.end;
+				returnValue.flags = flagsResult;
+//				console.log("returning from _parseSlotWithFlags: ", JSON.stringify(returnValue, null, 2));
+				return returnValue;
 			case " ":
 			case "\t":
-				if(accummulatedValue.length == 0){
-					// Do nothing
-				}
-				if(accummulatedValue.length > 0){
-					// TODO revisit based on what we are parsing
-					accummulatedValue += utteranceArray[i];
-				}
 				break;
 			default:
 				// simply accummulate the characters
