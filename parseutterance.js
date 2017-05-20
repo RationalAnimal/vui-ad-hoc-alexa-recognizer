@@ -48,7 +48,7 @@ var _parseUtteranceIntoJson = function(utterance, intentSchema){
 
 	let utteranceArray = utteranceString.split('');
 	let parsingRange = {"start": 0, "end": -1};
-  returnValue.parsedUtterance = _parseUtteranceString(utteranceArray, parsingRange, intentSchema);
+  returnValue.parsedUtterance = _parseUtteranceString(utteranceArray, parsingRange, returnValue.intentName, intentSchema);
   return returnValue;
 }
 
@@ -56,7 +56,7 @@ var _parseUtteranceIntoJson = function(utterance, intentSchema){
 * Call to parse a portion of utteranceArray specified by parsingRange
 start and end, inclusively of both.
 */
-var _parseUtteranceString = function(utteranceArray, parsingRange, intentSchema){
+var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, intentSchema){
 	let scratch = '';
 	let returnValue = [];
 	for(let i = parsingRange.start; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i++){
@@ -70,7 +70,7 @@ var _parseUtteranceString = function(utteranceArray, parsingRange, intentSchema)
 				scratch = '';
 				// Handle anything that starts with a curly bracket - slot, options list, etc
 				let curlyRange = {"start": i, "end": -1}
-				let curlyResult = _parseCurlyBrackets(utteranceArray, curlyRange, intentSchema);
+				let curlyResult = _parseCurlyBrackets(utteranceArray, curlyRange, intentName, intentSchema);
 //				console.log("curlyResult: ", curlyResult);
 				returnValue.push(curlyResult);
 				i = curlyRange.end;
@@ -196,7 +196,7 @@ var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
 	}
 
 }
-var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentSchema){
+var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, intentSchema){
 	let error = {"error": "", "position": -1};
 	if(utteranceArray[parsingRange.start] != '{'){
 		error.error = "parsing slot doesn't start with {";
@@ -214,7 +214,7 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentSchema){
 				returnValue.flags.push(accummulatedValue);
 				return returnValue;
 			case ":":
-				if(_isSlotName(accummulatedValue, intentSchema) == false){
+				if(_isSlotName(accummulatedValue, intentName, intentSchema) == false){
 					error.error = "slot name " + accummulatedValue + " does not exist within intent schema";
 					error.position = i;
 					throw error;
@@ -250,7 +250,7 @@ The decision is made on whether : or | is encountered first. If neither is
 encountered before } and there is only one word then it's a slot without flags.
 Else it's an option list with just one option.
 */
-var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentSchema){
+var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentName, intentSchema){
 	let error = {"error": "", "position": -1};
 	if(utteranceArray[parsingRange.start] != '{'){
 		error.error = "parsing curly brackets doesn't start with {";
@@ -262,7 +262,7 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentSchema){
 		switch(utteranceArray[i]){
 			case "}":
 				parsingRange.end = i;
-				if(_isSlotName(accummulatedValue, intentSchema)){
+				if(_isSlotName(accummulatedValue, intentName, intentSchema)){
 					return {"type": "slot", "name": accummulatedValue};
 				}
 				else {
@@ -277,7 +277,7 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentSchema){
 				break;
 			case ":":
 				// this is a slot with options
-				return _parseSlotWithFlags(utteranceArray, parsingRange, intentSchema);
+				return _parseSlotWithFlags(utteranceArray, parsingRange, intentName, intentSchema);
 				break;
 			default:
 				// simply accummulate the characters
@@ -304,12 +304,15 @@ var _splitIntentName = function(utterance){
 	return;
 }
 
-var _isSlotName = function(slotName, intentSchema){
-//	console.log("_isSlotName, slotName: ", slotName);
+var _isSlotName = function(slotName, intentName, intentSchema){
+//	console.log("_isSlotName, slotName: " + slotName + ", intentName: " + intentName);
 	let trimmedName = slotName.replace(/^\s*/,'').replace(/\s*$/,'');
 //	console.log("_isSlotName, trimmedName: <" + trimmedName + '>');
 //	console.log("_isSlotName, intentSchema: ", JSON.stringify(intentSchema, null, 2));
 	for(let i = 0; i < intentSchema.intents.length; i++){
+		if(intentSchema.intents[i].intent != intentName){
+			continue;
+		}
 		let intentSlots = intentSchema.intents[i].slots;
 //		console.log("_isSlotName, intentSlots: " + JSON.stringify(intentSlots, null, 2));
 
