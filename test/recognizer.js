@@ -1703,21 +1703,23 @@ describe("utterance parser", function() {
       let result = parser.parseUtteranceIntoJson("test me now and again");
       expect(result).to.eql({"intentName": "test", "parsedUtterance": ["me now and again"]});
     });
-    it("verify simple utterance just one slot parses into json", function() {
-      let result = parser.parseUtteranceIntoJson("test me {TestSlot} too");
+    it("verify simple utterance with just one slot parses into json", function() {
+      let intentSchema = require("./intents.json");
+      let result = parser.parseUtteranceIntoJson("test me {SomeSlot} too", intentSchema);
       expect(result).to.eql(
         {"intentName": "test",
          "parsedUtterance": [
            "me ",
            {
              "type": "slot",
-             "name": "TestSlot"
+             "name": "SomeSlot"
            },
            " too"
          ]});
     });
     it("verify simple utterance just one slot with one flag parses into json", function() {
-      let result = parser.parseUtteranceIntoJson("test me {TestSlot:INCLUDE_VALUES_MATCH} too");
+      let intentSchema = require("./intents.json");
+      let result = parser.parseUtteranceIntoJson("test me {SomeSlot:INCLUDE_VALUES_MATCH} too", intentSchema);
       expect(result).to.eql(
         {
           "intentName": "test",
@@ -1725,7 +1727,7 @@ describe("utterance parser", function() {
             "me ",
             {
               "type": "slot",
-              "name": "TestSlot",
+              "name": "SomeSlot",
               "flags": [
                 {
                   "type": "flag",
@@ -1736,7 +1738,7 @@ describe("utterance parser", function() {
             " too"
           ]});
     });
-    it("verify simple utterance just one slot with two flags parses into json", function() {
+    it("verify simple utterance with just one slot with two flags parses into json", function() {
       let result = parser.parseUtteranceIntoJson("test me {TestSlot:INCLUDE_VALUES_MATCH, EXCLUDE_WILDCARD_MATCH} too");
       expect(result).to.eql(
         {
