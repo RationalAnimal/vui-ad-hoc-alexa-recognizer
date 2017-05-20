@@ -1798,5 +1798,91 @@ describe("utterance parser", function() {
             }
           ]});
     });
+    it("verify simple utterance just one slot with one parameterized flag parses into json", function() {
+      let result = parser.parseUtteranceIntoJson("test me {TestSlot:COUNTRY([\"united states\"])} too");
+      expect(result).to.eql(
+        {
+          "intentName": "test",
+          "parsedUtterance": [
+            "me ",
+            {
+              "type": "slot",
+              "name": "TestSlot",
+              "flags": [
+                {
+                  "type": "flag",
+                  "name": "COUNTRY",
+                  "parameters": [
+                    "united states"
+                  ]
+                }
+              ]
+            },
+            " too"
+          ]});
+    });
+    it("verify simple utterance just one slot with two parameterized flags parses into json", function() {
+      let result = parser.parseUtteranceIntoJson("test me {TestSlot: COUNTRY([ \"united states\" ]) , CONTINENT([\"north america\"])} too");
+      expect(result).to.eql(
+        {
+          "intentName": "test",
+          "parsedUtterance": [
+            "me ",
+            {
+              "type": "slot",
+              "name": "TestSlot",
+              "flags": [
+                {
+                  "type": "flag",
+                  "name": "COUNTRY",
+                  "parameters": [
+                    "united states"
+                  ]
+                },
+                {
+                  "type": "flag",
+                  "name": "CONTINENT",
+                  "parameters": [
+                    "north america"
+                  ]
+                }
+              ]
+            },
+            " too"
+          ]});
+    });
+    it("verify simple utterance just one slot with two parameterized flags and one of them having multiple parameters parses into json", function() {
+      let result = parser.parseUtteranceIntoJson("test me {TestSlot: COUNTRY([ \"united states\" , \"canada\" , \"mexico\" ]) , CONTINENT([\"north america\"])} too");
+      expect(result).to.eql(
+        {
+          "intentName": "test",
+          "parsedUtterance": [
+            "me ",
+            {
+              "type": "slot",
+              "name": "TestSlot",
+              "flags": [
+                {
+                  "type": "flag",
+                  "name": "COUNTRY",
+                  "parameters": [
+                    "united states",
+                    "canada",
+                    "mexico"
+                  ]
+                },
+                {
+                  "type": "flag",
+                  "name": "CONTINENT",
+                  "parameters": [
+                    "north america"
+                  ]
+                }
+              ]
+            },
+            " too"
+          ]});
+    });
+
   });
 });
