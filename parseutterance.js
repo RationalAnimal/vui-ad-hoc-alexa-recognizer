@@ -55,21 +55,29 @@ var _parseUtteranceIntoJson = function(utterance, intentSchema){
 let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES", "COUNTRY", "CONTINENT", "TYPE"];
 var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 //	console.log("_cleanupParsedUtteranceJson, entered, parsedJson.parsedUtterance: " + JSON.stringify(parsedJson.parsedUtterance, null, 2));
+  // First get rid of invalid flags.
 	for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
 		if(parsedJson.parsedUtterance[i].type == "slot"){
-//			console.log("_cleanupParsedUtteranceJson, found slot");
-			for(let j = parsedJson.parsedUtterance[i].flags.length - 1; j >= 0; j --){
-//				console.log("_cleanupParsedUtteranceJson, looking at flags");
-				if(allowedSlotFlags.indexOf(parsedJson.parsedUtterance[i].flags[j].name) < 0){
-//					console.log("_cleanupParsedUtteranceJson, removing " + parsedJson.parsedUtterance[i].flags[j].name);
-					parsedJson.parsedUtterance[i].flags.splice(j, 1);
-				}
-				else {
-//					console.log("_cleanupParsedUtteranceJson, NOT removing " + parsedJson.parsedUtterance[i].flags[j].name);
+			if(typeof parsedJson.parsedUtterance[i].flags != "undefined"){
+				for(let j = parsedJson.parsedUtterance[i].flags.length - 1; j >= 0; j --){
+					if(allowedSlotFlags.indexOf(parsedJson.parsedUtterance[i].flags[j].name) < 0){
+						parsedJson.parsedUtterance[i].flags.splice(j, 1);
+					}
 				}
 			}
 		}
 	}
+	// Now, add default flags to any slot that doesn't have any at all.
+	for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
+		if(parsedJson.parsedUtterance[i].type == "slot"){
+			if(typeof parsedJson.parsedUtterance[i].flags == "undefined" || parsedJson.parsedUtterance[i].flags.length == 0){
+				parsedJson.parsedUtterance[i].flags = [];
+				parsedJson.parsedUtterance[i].flags.push({"name":"INCLUDE_VALUES_MATCH"});
+				parsedJson.parsedUtterance[i].flags.push({"name":"EXCLUDE_WILDCARD_MATCH"});
+			}
+		}
+	}
+
 
 }
 
