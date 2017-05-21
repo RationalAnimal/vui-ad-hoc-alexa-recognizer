@@ -88,6 +88,16 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 					_removeFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)
 				}
 			}
+			// Remove EXCLUDE_NON_STATES if this is NOT a built in US_STATE type.
+			if(_hasFlag("EXCLUDE_NON_STATES", parsedJson.parsedUtterance[i].name, parsedJson)){
+				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) == "US_STATE" ){
+					// We are all set, this is allowed
+				}
+				else {
+					// Remove it
+					_removeFlag("EXCLUDE_NON_STATES", parsedJson.parsedUtterance[i].name, parsedJson)
+				}
+			}
 
 		}
 	}
