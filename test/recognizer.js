@@ -1730,7 +1730,6 @@ describe("utterance parser", function() {
               "name": "SomeSlot",
               "flags": [
                 {
-                  "type": "flag",
                   "name": "INCLUDE_VALUES_MATCH"
                 }
               ]
@@ -1751,11 +1750,9 @@ describe("utterance parser", function() {
               "name": "SomeSlot",
               "flags": [
                 {
-                  "type": "flag",
                   "name": "INCLUDE_VALUES_MATCH"
                 },
                 {
-                  "type": "flag",
                   "name": "EXCLUDE_WILDCARD_MATCH"
                 }
               ]
@@ -1776,11 +1773,9 @@ describe("utterance parser", function() {
               "name": "SomeSlot",
               "flags": [
                 {
-                  "type": "flag",
                   "name": "INCLUDE_VALUES_MATCH"
                 },
                 {
-                  "type": "flag",
                   "name": "EXCLUDE_WILDCARD_MATCH"
                 }
               ]
@@ -1791,11 +1786,9 @@ describe("utterance parser", function() {
               "name": "SomeOtherSlot",
               "flags": [
                 {
-                  "type": "flag",
                   "name": "EXCLUDE_VALUES_MATCH"
                 },
                 {
-                  "type": "flag",
                   "name": "INCLUDE_WILDCARD_MATCH"
                 }
               ]
@@ -1815,7 +1808,6 @@ describe("utterance parser", function() {
               "name": "SomeSlot",
               "flags": [
                 {
-                  "type": "flag",
                   "name": "COUNTRY",
                   "parameters": [
                     "united states"
@@ -1839,14 +1831,12 @@ describe("utterance parser", function() {
               "name": "SomeSlot",
               "flags": [
                 {
-                  "type": "flag",
                   "name": "COUNTRY",
                   "parameters": [
                     "united states"
                   ]
                 },
                 {
-                  "type": "flag",
                   "name": "CONTINENT",
                   "parameters": [
                     "north america"
@@ -1870,7 +1860,6 @@ describe("utterance parser", function() {
               "name": "SomeSlot",
               "flags": [
                 {
-                  "type": "flag",
                   "name": "COUNTRY",
                   "parameters": [
                     "united states",
@@ -1879,7 +1868,30 @@ describe("utterance parser", function() {
                   ]
                 },
                 {
-                  "type": "flag",
+                  "name": "CONTINENT",
+                  "parameters": [
+                    "north america"
+                  ]
+                }
+              ]
+            },
+            " too"
+          ]});
+    });
+    it("verify simple utterance just one slot with two parameterized flags and one of them being ficticious cleanup correctly", function() {
+      let intentSchema = require("./intents.json");
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me {SomeSlot: FICTICIOUS([ \"united states\" , \"canada\" , \"mexico\" ]) , CONTINENT([\"north america\"])} too", intentSchema);
+      parser.cleanupParsedUtteranceJson(result, intentSchema);
+      expect(result).to.eql(
+        {
+          "intentName": "AnotherIntent",
+          "parsedUtterance": [
+            "me ",
+            {
+              "type": "slot",
+              "name": "SomeSlot",
+              "flags": [
+                {
                   "name": "CONTINENT",
                   "parameters": [
                     "north america"
