@@ -1878,7 +1878,32 @@ describe("utterance parser", function() {
             " too"
           ]});
     });
-    it("verify simple utterance just one slot with two parameterized flags and one of them being ficticious cleanup correctly", function() {
+    it("verify simple utterance just one slot with no flags cleanups correctly", function() {
+      let intentSchema = require("./intents.json");
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me {SomeSlot} too", intentSchema);
+      parser.cleanupParsedUtteranceJson(result, intentSchema);
+      expect(result).to.eql(
+        {
+          "intentName": "AnotherIntent",
+          "parsedUtterance": [
+            "me ",
+            {
+              "type": "slot",
+              "name": "SomeSlot",
+              "flags": [
+                {
+                  "name": "INCLUDE_VALUES_MATCH"
+                },
+                {
+                  "name": "EXCLUDE_WILDCARD_MATCH"
+                }
+              ]
+            },
+            " too"
+          ]});
+    });
+
+    it("verify simple utterance just one slot with two parameterized flags and one of them being ficticious cleanups correctly", function() {
       let intentSchema = require("./intents.json");
       let result = parser.parseUtteranceIntoJson("AnotherIntent me {SomeSlot: FICTICIOUS([ \"united states\" , \"canada\" , \"mexico\" ]) , CONTINENT([\"north america\"])} too", intentSchema);
       parser.cleanupParsedUtteranceJson(result, intentSchema);
