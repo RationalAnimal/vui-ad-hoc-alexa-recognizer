@@ -98,6 +98,16 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 					_removeFlag("EXCLUDE_NON_STATES", parsedJson.parsedUtterance[i].name, parsedJson)
 				}
 			}
+			// Remove COUNTRY if this is NOT a built in US_STATE type.
+			if(_hasFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)){
+				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) == "Airline" ){
+					// We are all set, this is allowed
+				}
+				else {
+					// Remove it
+					_removeFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)
+				}
+			}
 
 		}
 	}
@@ -272,7 +282,7 @@ var _parseFlagParameters = function(utteranceArray, parsingRange, intentSchema){
 					break;
 			default:
 				error.position = i;
-				error.error = "unexpected character while parsing flag parameters at position: " + error.position + ": " + utteranceArray[i];
+				error.error = "unexpected character while parsing flag parameters at position: " + error.position + ": " + utteranceArray[i] + ", in the utterance: " + utteranceArray.join("");
 				throw error;
 		}
 	}
