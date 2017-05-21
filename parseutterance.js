@@ -52,6 +52,27 @@ var _parseUtteranceIntoJson = function(utterance, intentSchema){
   return returnValue;
 }
 
+let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES", "COUNTRY", "CONTINENT", "TYPE"];
+var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
+//	console.log("_cleanupParsedUtteranceJson, entered, parsedJson.parsedUtterance: " + JSON.stringify(parsedJson.parsedUtterance, null, 2));
+	for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
+		if(parsedJson.parsedUtterance[i].type == "slot"){
+//			console.log("_cleanupParsedUtteranceJson, found slot");
+			for(let j = parsedJson.parsedUtterance[i].flags.length - 1; j >= 0; j --){
+//				console.log("_cleanupParsedUtteranceJson, looking at flags");
+				if(allowedSlotFlags.indexOf(parsedJson.parsedUtterance[i].flags[j].name) < 0){
+//					console.log("_cleanupParsedUtteranceJson, removing " + parsedJson.parsedUtterance[i].flags[j].name);
+					parsedJson.parsedUtterance[i].flags.splice(j, 1);
+				}
+				else {
+//					console.log("_cleanupParsedUtteranceJson, NOT removing " + parsedJson.parsedUtterance[i].flags[j].name);
+				}
+			}
+		}
+	}
+
+}
+
 /**
 * Call to parse a portion of utteranceArray specified by parsingRange
 start and end, inclusively of both.
@@ -167,19 +188,19 @@ var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
 				parsingRange.end = i;
 				if(accummulatedValue.length > 0){
 //					console.log("_parseFlags, pushing after } flag with name: " + accummulatedValue );
-					returnValue.push({"type": "flag", "name": accummulatedValue});
+					returnValue.push({"name": accummulatedValue});
 				}
 				return returnValue;
 			case ",":
 				if(accummulatedValue.length > 0){
 //					console.log("_parseFlags, pushing after , flag with name: " + accummulatedValue );
-					returnValue.push({"type": "flag", "name": accummulatedValue});
+					returnValue.push({"name": accummulatedValue});
 					accummulatedValue = '';
 				}
 				break;
 			case "(":
 //				console.log("_parseFlags, pushing after ( flag with name: " + accummulatedValue );
-				returnValue.push({"type": "flag", "name": accummulatedValue});
+				returnValue.push({"name": accummulatedValue});
 				accummulatedValue = '';
 				let flagsRange = {"start": i, "end": -1};
 				let flagsResult = _parseFlagParameters(utteranceArray, flagsRange, intentSchema);
@@ -330,4 +351,5 @@ var _isSlotName = function(slotName, intentName, intentSchema){
 }
 
 parser.parseUtteranceIntoJson = _parseUtteranceIntoJson;
+parser.cleanupParsedUtteranceJson = _cleanupParsedUtteranceJson;
 module.exports = parser;
