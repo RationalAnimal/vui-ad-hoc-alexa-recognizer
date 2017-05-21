@@ -67,13 +67,35 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 			}
 		}
 	}
-	// Now, add default flags to any slot that doesn't have any at all.
+
+	// Now remove flags that are inappropriate for slot types
+	for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
+		if(parsedJson.parsedUtterance[i].type == "slot"){
+			// Remove EXCLUDE_YEAR_ONLY_DATES if this is NOT a built in date type.
+			if(_hasFlag("EXCLUDE_YEAR_ONLY_DATES", parsedJson.parsedUtterance[i].name, parsedJson)){
+				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) == "DATE" ){
+					// We are all set, this is allowed
+				}
+				else {
+					// Remove it
+					_removeFlag("EXCLUDE_YEAR_ONLY_DATES", parsedJson.parsedUtterance[i].name, parsedJson)
+				}
+			}
+		}
+	}
+
+
 	for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
 		if(parsedJson.parsedUtterance[i].type == "slot"){
 			if(typeof parsedJson.parsedUtterance[i].flags == "undefined" || parsedJson.parsedUtterance[i].flags.length == 0){
+				// Now, add default flags to any slot that doesn't have any at all.
 				parsedJson.parsedUtterance[i].flags = [];
 				parsedJson.parsedUtterance[i].flags.push({"name":"INCLUDE_VALUES_MATCH"});
 				parsedJson.parsedUtterance[i].flags.push({"name":"EXCLUDE_WILDCARD_MATCH"});
+			}
+			else {
+				// Here we DO have some flags.  All the fictitious ones have already been removed.
+				// But we may still have either invalid combinations
 			}
 		}
 	}
@@ -81,6 +103,63 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 
 }
 
+var _getBuiltInSlotTypeSuffix = function(slotType){
+	return slotType.replace(/^AMAZON\./, '').replace(/^TRANSCEND\./, '');
+}
+
+var _isBuiltInSlot = function(slotName, intentName, intentSchema){
+	var slotType = _getSlotType(slotName, intentName, intentSchema);
+	if(slotType.startsWith("AMAZON.") || slotType.startsWith("TRANSCEND.")){
+		return true;
+	}
+	return false;
+}
+
+var _getSlotType = function(slotName, intentName, intentSchema){
+  for(var i = 0; i < intentSchema.intents.length; i++){
+    if(intentSchema.intents[i].intent == intentName){
+      for(var j = 0; j < intentSchema.intents[i].slots.length; j ++){
+        if(intentSchema.intents[i].slots[j].name == slotName){
+          return intentSchema.intents[i].slots[j].type;
+        }
+      }
+      return;
+    }
+  }
+}
+
+var _removeFlag = function(flagName, slotName, parsedJson){
+	if(typeof parsedJson != "undefined" && typeof parsedJson.parsedUtterance != "undefined" && Array.isArray(parsedJson.parsedUtterance)){
+		for (let i = 0; i < parsedJson.parsedUtterance.length; i++){
+			if(parsedJson.parsedUtterance[i].type == "slot" && parsedJson.parsedUtterance[i].name == slotName){
+				if(typeof parsedJson.parsedUtterance[i].flags != "undefined"){
+					for(let j = parsedJson.parsedUtterance[i].flags.length - 1; j >= 0; j --){
+						if(parsedJson.parsedUtterance[i].flags[j].name = flagName){
+							parsedJson.parsedUtterance[i].flags.splice(j, 1);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+var _hasFlag = function(flagName, slotName, parsedJson){
+	if(typeof parsedJson != "undefined" && typeof parsedJson.parsedUtterance != "undefined" && Array.isArray(parsedJson.parsedUtterance)){
+		for (let i = 0; i < parsedJson.parsedUtterance.length; i++){
+			if(parsedJson.parsedUtterance[i].type == "slot" && parsedJson.parsedUtterance[i].name == slotName){
+				if(typeof parsedJson.parsedUtterance[i].flags != "undefined"){
+					for(let j = parsedJson.parsedUtterance[i].flags.length - 1; j >= 0; j --){
+						if(parsedJson.parsedUtterance[i].flags[j].name == flagName){
+							return true;
+						}
+					}
+				}
+			}
+		}
+	}
+	return false;
+}
 /**
 * Call to parse a portion of utteranceArray specified by parsingRange
 start and end, inclusively of both.
