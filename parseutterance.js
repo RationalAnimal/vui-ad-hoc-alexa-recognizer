@@ -81,6 +81,14 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 					_removeFlag("EXCLUDE_YEAR_ONLY_DATES", parsedJson.parsedUtterance[i].name, parsedJson)
 				}
 			}
+			// Remove SOUNDEX_MATCH flag is this is a built in slot
+			if(_hasFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)){
+				if(_isBuiltInSlot(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema) == true){
+					// Remove it
+					_removeFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)
+				}
+			}
+
 		}
 	}
 
