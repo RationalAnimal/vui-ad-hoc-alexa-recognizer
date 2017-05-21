@@ -108,6 +108,16 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 					_removeFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)
 				}
 			}
+			// Remove COUNTINENT if this is NOT a built in US_STATE type.
+			if(_hasFlag("COUNTINENT", parsedJson.parsedUtterance[i].name, parsedJson)){
+				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) == "Airline" ){
+					// We are all set, this is allowed
+				}
+				else {
+					// Remove it
+					_removeFlag("COUNTINENT", parsedJson.parsedUtterance[i].name, parsedJson)
+				}
+			}
 
 		}
 	}
