@@ -143,7 +143,15 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 			}
 			else {
 				// Here we DO have some flags.  All the fictitious ones have already been removed.
-				// But we may still have either invalid combinations
+				// But we may still have either invalid combinations or missing flags
+				if(_hasFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) == true){
+					_removeFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)
+					_removeFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)
+					_removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)
+					_removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)
+					_addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+					_addFlag({"name": "EXCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+				}
 			}
 		}
 	}
@@ -174,6 +182,19 @@ var _getSlotType = function(slotName, intentName, intentSchema){
       return;
     }
   }
+}
+
+var _addFlag = function(flagObject, slotName, parsedJson){
+	if(typeof parsedJson != "undefined" && typeof parsedJson.parsedUtterance != "undefined" && Array.isArray(parsedJson.parsedUtterance)){
+		for (let i = 0; i < parsedJson.parsedUtterance.length; i++){
+			if(parsedJson.parsedUtterance[i].type == "slot" && parsedJson.parsedUtterance[i].name == slotName){
+				if(typeof parsedJson.parsedUtterance[i].flags == "undefined"){
+					parsedJson.parsedUtterance[i].flags = [];
+				}
+				parsedJson.parsedUtterance[i].flags.push(flagObject);
+			}
+		}
+	}
 }
 
 var _removeFlag = function(flagName, slotName, parsedJson){
