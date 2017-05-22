@@ -145,12 +145,22 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 				// Here we DO have some flags.  All the fictitious ones have already been removed.
 				// But we may still have either invalid combinations or missing flags
 				if(_hasFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) == true){
-					_removeFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)
-					_removeFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)
-					_removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)
-					_removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)
+					_removeFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+					_removeFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+					_removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+					_removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
 					_addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
 					_addFlag({"name": "EXCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+				}
+				else {
+					// We are not doing SOUNDEX_MATCH here
+					if(_hasFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) == true){
+						_removeFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+						_removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+						_removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+						_addFlag({"name": "EXCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+          }
+
 				}
 			}
 		}
@@ -203,7 +213,7 @@ var _removeFlag = function(flagName, slotName, parsedJson){
 			if(parsedJson.parsedUtterance[i].type == "slot" && parsedJson.parsedUtterance[i].name == slotName){
 				if(typeof parsedJson.parsedUtterance[i].flags != "undefined"){
 					for(let j = parsedJson.parsedUtterance[i].flags.length - 1; j >= 0; j --){
-						if(parsedJson.parsedUtterance[i].flags[j].name = flagName){
+						if(parsedJson.parsedUtterance[i].flags[j].name == flagName){
 							parsedJson.parsedUtterance[i].flags.splice(j, 1);
 						}
 					}
