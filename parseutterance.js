@@ -98,7 +98,7 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 					_removeFlag("EXCLUDE_NON_STATES", parsedJson.parsedUtterance[i].name, parsedJson)
 				}
 			}
-			// Remove COUNTRY if this is NOT a built in US_STATE type.
+			// Remove COUNTRY if this is NOT a built in Airline type.
 			if(_hasFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)){
 				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) == "Airline" ){
 					// We are all set, this is allowed
@@ -108,7 +108,7 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 					_removeFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)
 				}
 			}
-			// Remove COUNTINENT if this is NOT a built in US_STATE type.
+			// Remove COUNTINENT if this is NOT a built in Airline type.
 			if(_hasFlag("COUNTINENT", parsedJson.parsedUtterance[i].name, parsedJson)){
 				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) == "Airline" ){
 					// We are all set, this is allowed
@@ -116,6 +116,16 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 				else {
 					// Remove it
 					_removeFlag("COUNTINENT", parsedJson.parsedUtterance[i].name, parsedJson)
+				}
+			}
+			// Remove TYPE if this is NOT a built in Airline type.
+			if(_hasFlag("TYPE", parsedJson.parsedUtterance[i].name, parsedJson)){
+				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) == "Airline" ){
+					// We are all set, this is allowed
+				}
+				else {
+					// Remove it
+					_removeFlag("TYPE", parsedJson.parsedUtterance[i].name, parsedJson)
 				}
 			}
 
