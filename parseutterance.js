@@ -418,6 +418,9 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
 					error.position = i;
 					throw error;
 				}
+				// TODO add slot type
+				returnValue.slotType = _getSlotType(accummulatedValue, intentName, intentSchema);
+
 				returnValue.name = accummulatedValue;
 				accummulatedValue = '';
 				let flagsRange = {"start": i, "end": -1};
@@ -462,7 +465,10 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentName, int
 			case "}":
 				parsingRange.end = i;
 				if(_isSlotName(accummulatedValue, intentName, intentSchema)){
-					return {"type": "slot", "name": accummulatedValue};
+					// TODO add slot type
+					let slotType = _getSlotType(accummulatedValue, intentName, intentSchema);
+
+					return {"type": "slot", "name": accummulatedValue, "slotType": slotType};
 				}
 				else {
 					return {"type": "optionsList", "options": [accummulatedValue]};

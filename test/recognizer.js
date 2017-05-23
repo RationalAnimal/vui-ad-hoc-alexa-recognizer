@@ -1712,6 +1712,7 @@ describe("utterance parser", function() {
            "me ",
            {
              "type": "slot",
+             "slotType": "SOME",
              "name": "SomeSlot"
            },
            " too"
@@ -1727,6 +1728,7 @@ describe("utterance parser", function() {
             "me ",
             {
               "type": "slot",
+              "slotType": "SOME",
               "name": "SomeSlot",
               "flags": [
                 {
@@ -1747,6 +1749,7 @@ describe("utterance parser", function() {
             "me ",
             {
               "type": "slot",
+              "slotType": "SOME",
               "name": "SomeSlot",
               "flags": [
                 {
@@ -1770,6 +1773,7 @@ describe("utterance parser", function() {
             "me ",
             {
               "type": "slot",
+              "slotType": "SOME",
               "name": "SomeSlot",
               "flags": [
                 {
@@ -1783,6 +1787,7 @@ describe("utterance parser", function() {
             " too ",
             {
               "type": "slot",
+              "slotType": "SOMEOTHER",
               "name": "SomeOtherSlot",
               "flags": [
                 {
@@ -1805,6 +1810,7 @@ describe("utterance parser", function() {
             "me ",
             {
               "type": "slot",
+              "slotType": "SOME",
               "name": "SomeSlot",
               "flags": [
                 {
@@ -1828,6 +1834,7 @@ describe("utterance parser", function() {
             "me ",
             {
               "type": "slot",
+              "slotType": "SOME",
               "name": "SomeSlot",
               "flags": [
                 {
@@ -1857,6 +1864,7 @@ describe("utterance parser", function() {
             "me ",
             {
               "type": "slot",
+              "slotType": "SOME",
               "name": "SomeSlot",
               "flags": [
                 {
@@ -1889,6 +1897,7 @@ describe("utterance parser", function() {
             "me ",
             {
               "type": "slot",
+              "slotType": "SOME",
               "name": "SomeSlot",
               "flags": [
                 {
@@ -1913,6 +1922,7 @@ describe("utterance parser", function() {
             "me ",
             {
               "type": "slot",
+              "slotType": "SOME",
               "name": "SomeSlot",
               "flags": [
                 {
@@ -1938,6 +1948,7 @@ describe("utterance parser", function() {
             "My first name is ",
             {
               "type": "slot",
+              "slotType": "AMAZON.US_FIRST_NAME",
               "name": "FirstNameSlot",
               "flags": [
                 {
@@ -1963,6 +1974,7 @@ describe("utterance parser", function() {
             "My first name is ",
             {
               "type": "slot",
+              "slotType": "AMAZON.US_FIRST_NAME",
               "name": "FirstNameSlot",
               "flags": [
                 {
@@ -1988,6 +2000,7 @@ describe("utterance parser", function() {
             "My first name is ",
             {
               "type": "slot",
+              "slotType": "AMAZON.US_FIRST_NAME",
               "name": "FirstNameSlot",
               "flags": [
                 {
@@ -2013,6 +2026,7 @@ describe("utterance parser", function() {
             "My first name is ",
             {
               "type": "slot",
+              "slotType": "AMAZON.US_FIRST_NAME",
               "name": "FirstNameSlot",
               "flags": [
                 {
@@ -2038,6 +2052,7 @@ describe("utterance parser", function() {
             "My first name is ",
             {
               "type": "slot",
+              "slotType": "AMAZON.US_FIRST_NAME",
               "name": "FirstNameSlot",
               "flags": [
                 {
@@ -2063,6 +2078,7 @@ describe("utterance parser", function() {
             {
               "type": "slot",
               "name": "SomeSlot",
+              "slotType": "SOME",
               "flags": [
                 {
                   "name": "CONTINENT",
@@ -2092,6 +2108,7 @@ describe("utterance parser", function() {
             "me ",
             {
               "type": "slot",
+              "slotType": "SOMEOTHER",
               "name": "SomeOtherSlot",
               "flags": [
                 {
@@ -2119,6 +2136,7 @@ describe("utterance parser", function() {
             "me ",
             {
               "type": "slot",
+              "slotType": "SOMEOTHER",
               "name": "SomeOtherSlot",
               "flags": [
                 {
@@ -2143,6 +2161,7 @@ describe("utterance parser", function() {
             "me ",
             {
               "type": "slot",
+              "slotType": "SOMEOTHER",
               "name": "SomeOtherSlot",
               "flags": [
                 {
