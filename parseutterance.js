@@ -160,6 +160,12 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 						_removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
 						_addFlag({"name": "EXCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
           }
+					else if(_hasFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) == true){
+						_removeFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+						_removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+						_removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+						_addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+          }
 
 				}
 			}

@@ -2126,6 +2126,30 @@ describe("utterance parser", function() {
             " too"
           ]});
     });
+    it("verify simple utterance just one slot with one INCLUDE_WILDCARD_MATCH flag cleans up correctly", function() {
+      let intentSchema = require("./intents.json");
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me {SomeOtherSlot:INCLUDE_VALUES_MATCH} too", intentSchema);
+      parser.cleanupParsedUtteranceJson(result, intentSchema);
+      expect(result).to.eql(
+        {
+          "intentName": "AnotherIntent",
+          "parsedUtterance": [
+            "me ",
+            {
+              "type": "slot",
+              "name": "SomeOtherSlot",
+              "flags": [
+                {
+                  "name": "INCLUDE_VALUES_MATCH"
+                },
+                {
+                  "name": "EXCLUDE_WILDCARD_MATCH"
+                }
+              ]
+            },
+            " too"
+          ]});
+    });
 
   });
 });
