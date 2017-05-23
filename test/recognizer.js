@@ -2069,6 +2069,12 @@ describe("utterance parser", function() {
                   "parameters": [
                     "north america"
                   ]
+                },
+                {
+                  "name": "INCLUDE_VALUES_MATCH"
+                },
+                {
+                  "name": "EXCLUDE_WILDCARD_MATCH"
                 }
               ]
             },

@@ -166,6 +166,12 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 						_removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
 						_addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
           }
+					else {
+						_removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+						_removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+						_addFlag({"name": "INCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+						_addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+					}
 
 				}
 			}
