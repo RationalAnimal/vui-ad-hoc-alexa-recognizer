@@ -78,21 +78,17 @@ catch(e){
 
 for(let i = 0; i < values.length; i ++){
   let result = parser.parseUtteranceIntoJson(values[i], intentSchema);
-  parsedUtterances.push(result);
+  parser.cleanupParsedUtteranceJson(result, intentSchema);
+  let unfoldedResultArray = parser.unfoldParsedJson(result);
+
+  for(let j = 0; j < unfoldedResultArray.length; j++){
+    parsedUtterances.push(unfoldedResultArray[j]);
+  }
 }
 
 var file = fs.createWriteStream(outputFileName);
 file.on('error', function(error) { /* add error handling here */ });
 for(let i = 0; i < parsedUtterances.length; i++){
-  let alexified = '';
-  for(let j = 0; j < parsedUtterances[i].parsedUtterance.length; j++){
-    if(typeof parsedUtterances[i].parsedUtterance[j] == "string"){
-      alexified += parsedUtterances[i].parsedUtterance[j];
-    }
-    else if(parsedUtterances[i].parsedUtterance[j].type == "slot"){
-      alexified += ("{" + parsedUtterances[i].parsedUtterance[j].name + "}");
-    }
-  }
-  file.write(alexified + '\n');
+  file.write(parsedUtterances[i] + '\n');
 }
 file.end(function(){console.log("Result was saved to " + outputFileName);});

@@ -177,8 +177,6 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 			}
 		}
 	}
-
-
 }
 
 var _unfoldParsedJson = function(parsedJson){
@@ -191,8 +189,8 @@ var _unfoldParsedJson = function(parsedJson){
 			resultArray.push("{" + parsedJson.parsedUtterance[0].name + "}");
 		}
 		else if(parsedJson.parsedUtterance[0].type == "optionsList"){
-			for(let i = 0; i < parsedJson.parsedUtterance[0].optionsList.length; i++){
-				resultArray.push(parsedJson.parsedUtterance[0].optionsList[i]);
+			for(let i = 0; i < parsedJson.parsedUtterance[0].options.length; i++){
+				resultArray.push(parsedJson.parsedUtterance[0].options[i]);
 			}
 		}
 	}
