@@ -395,6 +395,36 @@ var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
 	}
 
 }
+
+var _parseOptionsList = function(utteranceArray, parsingRange, intentName, intentSchema){
+	let error = {"error": "", "position": -1};
+	if(utteranceArray[parsingRange.start] != '{'){
+		error.error = "parsing options list doesn't start with {";
+		error.position = parsingRange.start;
+	}
+	let accummulatedValue = '';
+	let returnValue = {"type": "optionsList", "options": []};
+
+	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+		switch(utteranceArray[i]){
+			case "}":
+				parsingRange.end = i;
+				returnValue.options.push(accummulatedValue);
+				return returnValue;
+			case "|":
+				returnValue.options.push(accummulatedValue);
+				accummulatedValue = '';
+				break;
+			default:
+				// simply accummulate the characters
+				accummulatedValue += utteranceArray[i];
+		}
+	}
+	error.error = "parsing options list ran out of characters to parse before completing slot parsing";
+	error.position = -1;
+	throw error;
+}
+
 var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, intentSchema){
 	let error = {"error": "", "position": -1};
 	if(utteranceArray[parsingRange.start] != '{'){
@@ -418,9 +448,7 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
 					error.position = i;
 					throw error;
 				}
-				// TODO add slot type
 				returnValue.slotType = _getSlotType(accummulatedValue, intentName, intentSchema);
-
 				returnValue.name = accummulatedValue;
 				accummulatedValue = '';
 				let flagsRange = {"start": i, "end": -1};
@@ -465,9 +493,7 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentName, int
 			case "}":
 				parsingRange.end = i;
 				if(_isSlotName(accummulatedValue, intentName, intentSchema)){
-					// TODO add slot type
 					let slotType = _getSlotType(accummulatedValue, intentName, intentSchema);
-
 					return {"type": "slot", "name": accummulatedValue, "slotType": slotType};
 				}
 				else {
@@ -475,15 +501,10 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentName, int
 				}
 			case "|":
 			  // this is an options list
-				returnValue.type = "options";
-				if(typeof returnValue.options == "undefined"){
-					returnValue.options = [];
-				}
-				break;
+				return _parseOptionsList(utteranceArray, parsingRange, intentName, intentSchema);
 			case ":":
 				// this is a slot with options
 				return _parseSlotWithFlags(utteranceArray, parsingRange, intentName, intentSchema);
-				break;
 			default:
 				// simply accummulate the characters
 				accummulatedValue += utteranceArray[i];
