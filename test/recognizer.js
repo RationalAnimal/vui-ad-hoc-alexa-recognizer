@@ -2210,5 +2210,71 @@ describe("utterance parser", function() {
           ]});
     });
 
+
+    it("verify simple utterance two options lists and a slot parses and cleans up correctly", function() {
+      let intentSchema = require("./intents.json");
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me {blah|bleh|bleu} {SomeOtherSlot:INCLUDE_VALUES_MATCH} too { this | that | the other }", intentSchema);
+      parser.cleanupParsedUtteranceJson(result, intentSchema);
+      expect(result).to.eql(
+        {
+          "intentName": "AnotherIntent",
+          "parsedUtterance": [
+            "me ",
+            {
+              "type": "optionsList",
+              "options": [
+                "blah",
+                "bleh",
+                "bleu"
+              ]
+            },
+            " ",
+            {
+              "type": "slot",
+              "slotType": "SOMEOTHER",
+              "name": "SomeOtherSlot",
+              "flags": [
+                {
+                  "name": "INCLUDE_VALUES_MATCH"
+                },
+                {
+                  "name": "EXCLUDE_WILDCARD_MATCH"
+                }
+              ]
+            },
+            " too ",
+            {
+              "type": "optionsList",
+              "options": [
+                " this ",
+                " that ",
+                " the other "
+              ]
+            }
+          ]});
+    });
+
+    it("verify simple utterance two options lists and a slot parses and cleans up correctly and then unfolds correctly", function() {
+      let intentSchema = require("./intents.json");
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me {|blah|bleh|bleu} {SomeOtherSlot:INCLUDE_VALUES_MATCH} too { this | that | the other }", intentSchema);
+      parser.cleanupParsedUtteranceJson(result, intentSchema);
+      expect(parser.unfoldParsedJson(result)).to.eql(
+        [
+          "me  {SomeOtherSlot} too  this ",
+          "me  {SomeOtherSlot} too  that ",
+          "me  {SomeOtherSlot} too  the other ",
+          "me blah {SomeOtherSlot} too  this ",
+          "me blah {SomeOtherSlot} too  that ",
+          "me blah {SomeOtherSlot} too  the other ",
+          "me bleh {SomeOtherSlot} too  this ",
+          "me bleh {SomeOtherSlot} too  that ",
+          "me bleh {SomeOtherSlot} too  the other ",
+          "me bleu {SomeOtherSlot} too  this ",
+          "me bleu {SomeOtherSlot} too  that ",
+          "me bleu {SomeOtherSlot} too  the other "
+        ]);
+    });
+
+
   });
 });

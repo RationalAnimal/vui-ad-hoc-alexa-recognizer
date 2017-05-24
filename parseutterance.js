@@ -181,6 +181,49 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 
 }
 
+var _unfoldParsedJson = function(parsedJson){
+	let resultArray = [];
+	if(parsedJson.parsedUtterance.length >= 1){
+		if(typeof parsedJson.parsedUtterance[0] == "string"){
+			resultArray.push(parsedJson.parsedUtterance[0]);
+		}
+		else if(parsedJson.parsedUtterance[0].type == "slot"){
+			resultArray.push("{" + parsedJson.parsedUtterance[0].name + "}");
+		}
+		else if(parsedJson.parsedUtterance[0].type == "optionsList"){
+			for(let i = 0; i < parsedJson.parsedUtterance[0].optionsList.length; i++){
+				resultArray.push(parsedJson.parsedUtterance[0].optionsList[i]);
+			}
+		}
+	}
+	for(let i = 1; i < parsedJson.parsedUtterance.length; i ++){
+		if(parsedJson.parsedUtterance.length >= 1){
+			if(typeof parsedJson.parsedUtterance[i] == "string"){
+				for(let j = 0; j < resultArray.length; j++){
+					resultArray[j] += parsedJson.parsedUtterance[i];
+				}
+			}
+			else if(parsedJson.parsedUtterance[i].type == "slot"){
+				for(let j = 0; j < resultArray.length; j++){
+					resultArray[j] += ("{" + parsedJson.parsedUtterance[i].name + "}");
+				}
+			}
+			else if(parsedJson.parsedUtterance[i].type == "optionsList"){
+				let currentArraySize = resultArray.length;
+				let optionsListSize = parsedJson.parsedUtterance[i].options.length;
+				let newResultArray = [];
+				for(let j = 0; j < currentArraySize; j++){
+					for(let k = 0; k < optionsListSize; k++){
+						newResultArray.push(resultArray[j] + parsedJson.parsedUtterance[i].options[k]);
+					}
+				}
+				resultArray = newResultArray;
+			}
+		}
+	}
+	return resultArray;
+}
+
 var _getBuiltInSlotTypeSuffix = function(slotType){
 	return slotType.replace(/^AMAZON\./, '').replace(/^TRANSCEND\./, '');
 }
@@ -557,4 +600,5 @@ var _isSlotName = function(slotName, intentName, intentSchema){
 
 parser.parseUtteranceIntoJson = _parseUtteranceIntoJson;
 parser.cleanupParsedUtteranceJson = _cleanupParsedUtteranceJson;
+parser.unfoldParsedJson = _unfoldParsedJson;
 module.exports = parser;
