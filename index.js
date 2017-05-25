@@ -883,7 +883,7 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
   }
 
 //  else if(slotType.startsWith("TRANSCEND.")){
-//    // TODO add handling of other built in Amazon slot types, for now just return the value
+//    // TODO add handling of other built in TRANSCEND/Amazon slot types, for now just return the value
 //    return "((?:\\w|\\s|[0-9])+)";
 //  }
   // Here we are dealing with custom slots.

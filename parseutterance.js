@@ -192,9 +192,12 @@ var _addRegExps = function(parsedJson, intentSchema){
 		}
 		else if(parsedJson.parsedUtterance[i].type == "slot"){
 			regExpString += (wildcardReplacementString);
-			shouldAdd = true;
+			if(_hasFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) == false){
+				shouldAdd = true;
+			}
 		}
 		else if(parsedJson.parsedUtterance[i].type == "optionsList"){
+			// TODO add only if the number of options exceeds a threshold
 			regExpString += (wildcardReplacementString);
 			shouldAdd = true;
 		}
@@ -204,6 +207,7 @@ var _addRegExps = function(parsedJson, intentSchema){
 	}
 	regExpString = '';
 	shouldAdd = false;
+	// Now add wildcard matching for slots only
 }
 
 var _unfoldParsedJson = function(parsedJson){
