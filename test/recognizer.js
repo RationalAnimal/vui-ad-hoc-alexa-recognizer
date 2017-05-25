@@ -2283,7 +2283,7 @@ describe("utterance parser", function() {
       let intentSchema = require("./intents.json");
       let result = parser.parseUtteranceIntoJson("AnotherIntent me {blah|bleh|bleu} {SomeOtherSlot:INCLUDE_VALUES_MATCH} too { this | that | the other }", intentSchema);
       parser.cleanupParsedUtteranceJson(result, intentSchema);
-      parser.addWildcardRegExps(result, intentSchema);
+      parser.addRegExps(result, intentSchema);
       expect(result).to.eql(
         {
           "intentName": "AnotherIntent",
@@ -2321,7 +2321,9 @@ describe("utterance parser", function() {
               ]
             }
           ],
-          "allWildcardRegExpString": "me ((?:\\w|\\s|[0-9,_']|-)+) ((?:\\w|\\s|[0-9,_']|-)+) too ((?:\\w|\\s|[0-9,_']|-)+)"
+          "regExpStrings": [
+            "me ((?:\\w|\\s|[0-9,_']|-)+) ((?:\\w|\\s|[0-9,_']|-)+) too ((?:\\w|\\s|[0-9,_']|-)+)"
+          ]
         });
     });
 

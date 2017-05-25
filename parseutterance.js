@@ -179,23 +179,31 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 	}
 }
 
-var _addWildcardRegExps = function(parsedJson, intentSchema){
+var _addRegExps = function(parsedJson, intentSchema){
 	let wildcardReplacementString = "((?:\\w|\\s|[0-9,_']|\-)+)";
+	parsedJson.regExpStrings = [];
 
 	// First add "complete" wildcard regexp - one that replaces slots and options lists with wildcards
-	let allWildcardRegExpString = '';
+	let regExpString = '';
+	let shouldAdd = false;
 	for(let i = 0; i < parsedJson.parsedUtterance.length; i++){
 		if(typeof parsedJson.parsedUtterance[i] == "string"){
-			allWildcardRegExpString += (parsedJson.parsedUtterance[i]);
+			regExpString += (parsedJson.parsedUtterance[i]);
 		}
 		else if(parsedJson.parsedUtterance[i].type == "slot"){
-			allWildcardRegExpString += (wildcardReplacementString);
+			regExpString += (wildcardReplacementString);
+			shouldAdd = true;
 		}
 		else if(parsedJson.parsedUtterance[i].type == "optionsList"){
-			allWildcardRegExpString += (wildcardReplacementString);
+			regExpString += (wildcardReplacementString);
+			shouldAdd = true;
 		}
 	}
-	parsedJson.allWildcardRegExpString = allWildcardRegExpString;
+	if(shouldAdd){
+		parsedJson.regExpStrings.push(regExpString);
+	}
+	regExpString = '';
+	shouldAdd = false;
 }
 
 var _unfoldParsedJson = function(parsedJson){
@@ -618,5 +626,5 @@ var _isSlotName = function(slotName, intentName, intentSchema){
 parser.parseUtteranceIntoJson = _parseUtteranceIntoJson;
 parser.cleanupParsedUtteranceJson = _cleanupParsedUtteranceJson;
 parser.unfoldParsedJson = _unfoldParsedJson;
-parser.addWildcardRegExps = _addWildcardRegExps;
+parser.addRegExps = _addRegExps;
 module.exports = parser;
