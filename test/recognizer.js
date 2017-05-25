@@ -2322,7 +2322,8 @@ describe("utterance parser", function() {
             }
           ],
           "regExpStrings": [
-            "me ((?:\\w|\\s|[0-9,_']|-)+) ((?:\\w|\\s|[0-9,_']|-)+) too ((?:\\w|\\s|[0-9,_']|-)+)"
+            "me ((?:\\w|\\s|[0-9,_']|-)+) ((?:\\w|\\s|[0-9,_']|-)+) too ((?:\\w|\\s|[0-9,_']|-)+)",
+            "me (?:blah|bleh|bleu) ((?:\\w|\\s|[0-9,_']|-)+) too (?: this | that | the other )"
           ]
         });
     });
