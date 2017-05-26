@@ -27,6 +27,7 @@ SOFTWARE.
 var fs = require('fs');
 var soundex = require('./soundex.js');
 var utilities = require('./utilities.js');
+var parser = require('./parseutterance.js');
 var recognizer = {};
 
 var _makeReplacementRegExpString = function(arrayToConvert){
@@ -979,7 +980,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         hasTypeFlag = true;
         types = slotFlags[i].parameters;
       }
-      else if(flagObject.name == "INCLUDE_WILDCARD_MATCH"){
+      else if(slotFlags[i].name == "INCLUDE_WILDCARD_MATCH"){
         hasWildCardMatch = true;
       }
     }
@@ -3764,6 +3765,375 @@ var _generateRunTimeJson = function(config, intents, utterances){
 
   return recognizerSet;
 };
+
+
+
+
+
+
+var _NEWgenerateRunTimeJson = function(config, intents, utterances){
+  if(typeof config == "undefined" || config == null){
+    config = {};
+  }
+  _scanIntentsAndSlotsForPlatform(config, intents, utterances);
+
+//  console.log("_generateRunTimeJson, config: ", JSON.stringify(config));
+//  console.log("_generateRunTimeJson, intents: ", JSON.stringify(intents));
+//  console.log("_generateRunTimeJson, utterances: ", JSON.stringify(utterances));
+  // First, extend the built in slot values with values from config
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_FIRST_NAME", "US_FIRST_NAME", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Actor", "Actor", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Comic", "Comic", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Dessert", "Dessert", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LandmarksOrHistoricalBuildings", "LandmarksOrHistoricalBuildings", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Landform", "Landform", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MovieSeries", "MovieSeries", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Movie", "Movie", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MedicalOrganization", "MedicalOrganization", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LocalBusinessType", "LocalBusinessType", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LocalBusiness", "LocalBusiness", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Game", "Game", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.FoodEstablishment", "FoodEstablishment", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.FictionalCharacter", "FictionalCharacter", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Festival", "Festival", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.EducationalOrganization", "EducationalOrganization", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Director", "Director", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Corporation", "Corporation", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.CivicStructure", "CivicStructure", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.BroadcastChannel", "BroadcastChannel", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.BookSeries", "BookSeries", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Book", "Book", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Author", "Author", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Athlete", "Athlete", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.AdministrativeArea", "AdministrativeArea", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Room", "Room", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Color", "Color", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Country", "Country", config);
+  // Don't update the values from the config files for these slot types and don't regenerate the regexp
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_PRESIDENT", "US_PRESIDENT", config, true, true);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_STATE", "US_STATE", config, true, true);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Airline", "Airline", config, true, true);
+  // Don't update the values from the config files for these slot types
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Month", "Month", config, true);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.DayOfWeek", "DayOfWeek", config, true);
+
+  var recognizerSet = {};
+  recognizerSet.platform = config.platform;
+
+  if(typeof config != "undefined" && typeof config.customSlotTypes != "undefined"){
+    recognizerSet.customSlotTypes = config.customSlotTypes;
+    // Iterate over all the values and create a corresponding array of match
+    // regular expressions so that the exact value is returned rather than what
+    // was passed in, say from Cortana.  This is needed because Alexa respects
+    // capitalization, etc, while Cortana gratuitously capitalizes first letters
+    // and adds periods and other punctuations at the end.
+    for(var i = 0; i < recognizerSet.customSlotTypes.length; i++){
+      let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
+      scratchCustomSlotType.regExpStrings = [];
+      for(var j = 0; j < scratchCustomSlotType.values.length; j++){
+        scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j] + ")\\s*$){1}");
+      }
+    }
+    // Now generate soundex equivalents so that we can match on soundex if the
+    // regular match fails
+    for(var i = 0; i < recognizerSet.customSlotTypes.length; i++){
+      let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
+      scratchCustomSlotType.soundExValues = [];
+      scratchCustomSlotType.soundExRegExpStrings = [];
+      for(var j = 0; j < scratchCustomSlotType.values.length; j++){
+        let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j], " ");
+        scratchCustomSlotType.soundExValues.push(soundexValue);
+        let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j], "\\s+");
+        scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
+      }
+    }
+  }
+  recognizerSet.matchConfig = [];
+  
+  let passThrougFunc = function(slotType, flags){
+    return _getReplacementRegExpStringGivenSlotType(slotType, config, flags);
+  }
+
+  // First process all the utterances
+  for(var i = 0; i < utterances.length; i ++){
+    if(utterances[i].trim() == ""){
+      continue;
+    }
+    let result = parser.parseUtteranceIntoJson(utterances[i], intents);
+    parser.cleanupParsedUtteranceJson(result, intents);
+
+    parser.addRegExps(result, intents, passThrougFunc);
+    
+    var currentValue = {};
+    currentValue.slots = [];
+
+    for(let j = 0; j < result.parsedUtterance.length; j ++){
+      if(result.parsedUtterance[j].type != "slot"){
+        continue;
+      }
+      let parsedSlot = result.parsedUtterance[j];
+      let slotToPush = {"name": parsedSlot.name, "type": parsedSlot.slotType, "flags": parsedSlot.flags};
+      let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, parsedSlot.slotType);
+      if(typeof slotTypeTransformSrcFilename != "undefined"){
+        slotToPush.transformSrcFilename = slotTypeTransformSrcFilename;
+      }
+      currentValue.slots.push(slotToPush);
+    }
+
+    currentValue.intent = result.intentName;
+    currentValue.regExpStrings = result.regExpStrings;
+    recognizerSet.matchConfig.push(currentValue);
+  }
+  // Now process all the built in intents.  Note that their triggering
+  // utterances will NOT be part of "utterances" arg, but instead will be in config.
+  recognizerSet.builtInIntents = [];
+  let intentConfig;
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.CancelIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.CancelIntent",
+      "utterances": [
+        "cancel", "never mind", "forget it"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.HelpIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.HelpIntent",
+      "utterances": [
+        "help", "help me", "can you help me"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.LoopOffIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.LoopOffIntent",
+      "utterances": [
+        "loop off"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.LoopOnIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.LoopOnIntent",
+      "utterances": [
+        "loop", "loop on", "keep repeating this song"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.NextIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.NextIntent",
+      "utterances": [
+        "next", "skip", "skip forward"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.NoIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.NoIntent",
+      "utterances": [
+        "no", "no thanks"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.PauseIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.PauseIntent",
+      "utterances": [
+        "pause", "pause that"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.PreviousIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.PreviousIntent",
+      "utterances": [
+        "go back", "skip back", "back up"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.RepeatIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.RepeatIntent",
+      "utterances": [
+        "repeat", "say that again", "repeat that"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.ResumeIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.ResumeIntent",
+      "utterances": [
+        "resume", "continue", "keep going"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.ShuffleOffIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.ShuffleOffIntent",
+      "utterances": [
+        "stop shuffling", "shuffle off", "turn off shuffle"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.ShuffleOnIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.ShuffleOnIntent",
+      "utterances": [
+        "shuffle", "shuffle on", "shuffle the music", "shuffle mode"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.StartOverIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.StartOverIntent",
+      "utterances": [
+        "start over", "restart", "start again"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.StopIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.StopIntent",
+      "utterances": [
+        "stop", "off", "shut up"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.YesIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.YesIntent",
+      "utterances": [
+        "yes", "yes please", "sure"
+      ]
+    }
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+    if(typeof extendedUtterances != "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  return recognizerSet;
+};
+
+
+
 
 recognizer.Recognizer.generateRunTimeJson = _generateRunTimeJson;
 recognizer.Recognizer.prototype.generateRunTimeJson = _generateRunTimeJson;
