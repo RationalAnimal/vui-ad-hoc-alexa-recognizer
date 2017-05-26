@@ -2334,6 +2334,7 @@ describe("utterance parser", function() {
         });
     });
 
+
     it("verify simple utterance two options lists and a built in slot parses and cleans up correctly and adds reg exp strings correctly", function() {
       let intentSchema = require("./intents.json");
       let result = parser.parseUtteranceIntoJson("DateIntent {today is|current date is} {DateSlot} isn't it", intentSchema);

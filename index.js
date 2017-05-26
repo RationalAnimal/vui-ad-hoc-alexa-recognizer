@@ -3268,6 +3268,15 @@ var _getBuiltinIntentPlatform = function(intentName, platforms){
   }
   return;
 }
+var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, config){
+  let slotConfig = _getBuiltInSlotConfig(config, slotType);
+  let extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+  if(typeof extendedValues != "undefined"){
+    recognizer.builtInValues[slotTypeVar].values = recognizer.builtInValues[slotTypeVar].values.concat(extendedValues);
+  }
+  recognizer.builtInValues[slotTypeVar].replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues[slotTypeVar].values);
+  recognizer.builtInValues[slotTypeVar].replacementRegExp = new RegExp(recognizer.builtInValues[slotTypeVar].replacementRegExpString, "ig");
+}
 
 var _generateRunTimeJson = function(config, intents, utterances){
   if(typeof config == "undefined" || config == null){
@@ -3290,6 +3299,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
     recognizer.builtInValues.US_FIRST_NAME.transformSrcFilename = slotConfig.transformSrcFilename;
   }
 
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Actor", "Actor", config);
+//  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Artist", "Artist", config);
+/*
   slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Actor");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
@@ -3305,6 +3317,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
   recognizer.builtInValues.Artist.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Artist.values);
   recognizer.builtInValues.Artist.replacementRegExp = new RegExp(recognizer.builtInValues.Artist.replacementRegExpString, "ig");
+  */
 
   slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Comic");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
@@ -3491,7 +3504,8 @@ var _generateRunTimeJson = function(config, intents, utterances){
   recognizer.builtInValues.AdministrativeArea.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.AdministrativeArea.values);
   recognizer.builtInValues.AdministrativeArea.replacementRegExp = new RegExp(recognizer.builtInValues.AdministrativeArea.replacementRegExpString, "ig");
 
-
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Room", "Room", config);
+/*
   slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Room");
   extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
   if(typeof extendedValues != "undefined"){
@@ -3499,7 +3513,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
   recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Room.values);
   recognizer.builtInValues.Room.replacementRegExp = new RegExp(recognizer.builtInValues.Room.replacementRegExpString, "ig");
-
+*/
   slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.US_STATE");
   if(typeof slotConfig != "undefined" && slotConfig != null){
     recognizer.builtInValues.US_STATE.transformSrcFilename = slotConfig.transformSrcFilename;
