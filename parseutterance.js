@@ -25,6 +25,7 @@ SOFTWARE.
 */
 'use strict'
 var parser = {};
+var regexputilities = require("./regexputils.js");
 
 var _parseUtteranceIntoJson = function(utterance, intentSchema){
 	let returnValue = {};
@@ -203,6 +204,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc){
 		}
 	}
 	if(shouldAdd){
+		regExpString = regexputilities.reconstructRegExpWithWhiteSpaces(regExpString, true);
 		parsedJson.regExpStrings.push(regExpString);
 	}
 	regExpString = '';
@@ -230,6 +232,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc){
 		}
 	}
 	if(shouldAdd){
+		regExpString = regexputilities.reconstructRegExpWithWhiteSpaces(regExpString, true);
 		parsedJson.regExpStrings.push(regExpString);
 	}
 	regExpString = '';
@@ -253,6 +256,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc){
 			regExpString += ")";
 		}
 	}
+	regExpString = regexputilities.reconstructRegExpWithWhiteSpaces(regExpString, true);
 	parsedJson.regExpStrings.push(regExpString);
 }
 
