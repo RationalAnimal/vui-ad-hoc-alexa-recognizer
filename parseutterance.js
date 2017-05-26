@@ -203,6 +203,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc){
 			shouldAdd = true;
 		}
 	}
+
 	if(shouldAdd){
 		regExpString = regexputilities.reconstructRegExpWithWhiteSpaces(regExpString, true);
 		parsedJson.regExpStrings.push(regExpString);
@@ -233,7 +234,12 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc){
 	}
 	if(shouldAdd){
 		regExpString = regexputilities.reconstructRegExpWithWhiteSpaces(regExpString, true);
-		parsedJson.regExpStrings.push(regExpString);
+		if(parsedJson.regExpStrings.length > 0 && regExpString == parsedJson.regExpStrings[parsedJson.regExpStrings.length - 1]){
+			// String is already in there
+		}
+		else {
+			parsedJson.regExpStrings.push(regExpString);
+		}
 	}
 	regExpString = '';
 	shouldAdd = false;
@@ -508,7 +514,11 @@ var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
 				i = flagsRange.end;
 				break;
 			case " ":
+			case "\f":
+			case "\n":
+			case "\r":
 			case "\t":
+			case "\v":
 				break;
 			default:
 				// simply accummulate the characters
