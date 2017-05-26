@@ -252,44 +252,10 @@ recognizer.builtInValues.DURATION.replacementRegExpString = _makeReplacementRegE
 recognizer.builtInValues.DURATION.replacementRegExp = new RegExp(recognizer.builtInValues.DURATION.replacementRegExpString, "ig");
 
 recognizer.builtInValues.US_STATE = require("./builtinslottypes/usstates.json");
-{
-  let statesAndTerritories = [];
-  let states = [];
-  for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
-    statesAndTerritories.push(recognizer.builtInValues.US_STATE.values[i].name);
-    if(recognizer.builtInValues.US_STATE.values[i].isState){
-      states.push(recognizer.builtInValues.US_STATE.values[i].name);
-    }
-  }
-  recognizer.builtInValues.US_STATE.replacementRegExpString = _makeReplacementRegExpString(statesAndTerritories);
-  recognizer.builtInValues.US_STATE.replacementStatesOnlyRegExpString = _makeReplacementRegExpString(states);
-  recognizer.builtInValues.US_STATE.replacementRegExp = new RegExp(recognizer.builtInValues.US_STATE.replacementRegExpString, "ig");
-}
 
 recognizer.builtInValues.US_PRESIDENT = require("./builtinslottypes/uspresidents.json");
-{
-  let matchingStrings = [];
-  for(let i = 0; i < recognizer.builtInValues.US_PRESIDENT.values.length; i ++){
-    for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings.length; j ++){
-      matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings[j]);
-    }
-    for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings.length; j ++){
-      matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings[j]);
-    }
-  }
-  recognizer.builtInValues.US_PRESIDENT.replacementRegExpString = _makeReplacementRegExpString(matchingStrings);
-  recognizer.builtInValues.US_PRESIDENT.replacementRegExp = new RegExp(recognizer.builtInValues.US_PRESIDENT.replacementRegExpString, "ig");
-}
 
 recognizer.builtInValues.Airline = require("./builtinslottypes/airlines.json");
-{
-  let allAirlines = [];
-  for(let i = 0; i < recognizer.builtInValues.Airline.values.length; i ++){
-    allAirlines.push(recognizer.builtInValues.Airline.values[i].name);
-  }
-  recognizer.builtInValues.Airline.replacementRegExpString = _makeReplacementRegExpString(allAirlines);
-  recognizer.builtInValues.Airline.replacementRegExp = new RegExp(recognizer.builtInValues.Airline.replacementRegExpString, "ig");
-}
 
 recognizer.builtInValues.US_FIRST_NAME = require("./builtinslottypes/usfirstnames.json");
 recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
@@ -502,14 +468,35 @@ var _getReplacementRegExpStringForSlotType = function(slotType, config, slotFlag
   }
   else if(slotType == "TRANSCEND.US_STATE"){
     if(slotFlags.indexOf("EXCLUDE_NON_STATES") >= 0){
-      return recognizer.builtInValues.US_STATE.replacementStatesOnlyRegExpString;
+      let states = [];
+      for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
+        if(recognizer.builtInValues.US_STATE.values[i].isState){
+          states.push(recognizer.builtInValues.US_STATE.values[i].name);
+        }
+      }
+      let statesOnlyRegExpString = _makeReplacementRegExpString(states);
+      return statesOnlyRegExpString;
     }
     else {
-      return recognizer.builtInValues.US_STATE.replacementRegExpString;
+      let statesAndTerritories = [];
+      for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
+        statesAndTerritories.push(recognizer.builtInValues.US_STATE.values[i].name);
+      }
+      let statesAndTerritoriesRegExpString = _makeReplacementRegExpString(statesAndTerritories);
+      return statesAndTerritoriesRegExpString;
     }
   }
   else if(slotType == "TRANSCEND.US_PRESIDENT"){
-    return recognizer.builtInValues.US_PRESIDENT.replacementRegExpString;
+    let matchingStrings = [];
+    for(let i = 0; i < recognizer.builtInValues.US_PRESIDENT.values.length; i ++){
+      for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings.length; j ++){
+        matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings[j]);
+      }
+      for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings.length; j ++){
+        matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings[j]);
+      }
+    }
+    return _makeReplacementRegExpString(matchingStrings);
   }
   else if(slotType == "TRANSCEND.Airline"){
     // Ignore SOUNDEX_MATCH flag for now
@@ -939,15 +926,36 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
   }
   else if(slotType == "TRANSCEND.US_STATE"){
-    if(_hasFlag("EXCLUDE_NON_STATES", slotFlags)){
-      return recognizer.builtInValues.US_STATE.replacementStatesOnlyRegExpString;
+    if(slotFlags.indexOf("EXCLUDE_NON_STATES") >= 0){
+      let states = [];
+      for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
+        if(recognizer.builtInValues.US_STATE.values[i].isState){
+          states.push(recognizer.builtInValues.US_STATE.values[i].name);
+        }
+      }
+      let statesOnlyRegExpString = _makeReplacementRegExpString(states);
+      return statesOnlyRegExpString;
     }
     else {
-      return recognizer.builtInValues.US_STATE.replacementRegExpString;
+      let statesAndTerritories = [];
+      for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
+        statesAndTerritories.push(recognizer.builtInValues.US_STATE.values[i].name);
+      }
+      let statesAndTerritoriesRegExpString = _makeReplacementRegExpString(statesAndTerritories);
+      return statesAndTerritoriesRegExpString;
     }
   }
   else if(slotType == "TRANSCEND.US_PRESIDENT"){
-    return recognizer.builtInValues.US_PRESIDENT.replacementRegExpString;
+    let matchingStrings = [];
+    for(let i = 0; i < recognizer.builtInValues.US_PRESIDENT.values.length; i ++){
+      for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings.length; j ++){
+        matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings[j]);
+      }
+      for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings.length; j ++){
+        matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings[j]);
+      }
+    }
+    return _makeReplacementRegExpString(matchingStrings);
   }
   else if(slotType == "TRANSCEND.Airline"){
     // Ignore SOUNDEX_MATCH flag for now
@@ -3268,14 +3276,23 @@ var _getBuiltinIntentPlatform = function(intentName, platforms){
   }
   return;
 }
-var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, config){
+var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, config, skipExtendedValues, skipRegeneratingRegExp, skipTransformFunctions){
   let slotConfig = _getBuiltInSlotConfig(config, slotType);
-  let extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues[slotTypeVar].values = recognizer.builtInValues[slotTypeVar].values.concat(extendedValues);
+  if(typeof skipExtendedValues == "undefined" || skipExtendedValues != true){
+    let extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+    if(typeof extendedValues != "undefined"){
+      recognizer.builtInValues[slotTypeVar].values = recognizer.builtInValues[slotTypeVar].values.concat(extendedValues);
+    }
   }
-  recognizer.builtInValues[slotTypeVar].replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues[slotTypeVar].values);
-  recognizer.builtInValues[slotTypeVar].replacementRegExp = new RegExp(recognizer.builtInValues[slotTypeVar].replacementRegExpString, "ig");
+  if(typeof skipRegeneratingRegExp == "undefined" || skipRegeneratingRegExp != true){
+    recognizer.builtInValues[slotTypeVar].replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues[slotTypeVar].values);
+    recognizer.builtInValues[slotTypeVar].replacementRegExp = new RegExp(recognizer.builtInValues[slotTypeVar].replacementRegExpString, "ig");
+  }
+  if(typeof skipTransformFunctions == "undefined" || skipTransformFunctions != true){
+    if(typeof slotConfig != "undefined" && slotConfig != null){
+      recognizer.builtInValues.US_FIRST_NAME.transformSrcFilename = slotConfig.transformSrcFilename;
+    }
+  }
 }
 
 var _generateRunTimeJson = function(config, intents, utterances){
@@ -3288,269 +3305,41 @@ var _generateRunTimeJson = function(config, intents, utterances){
 //  console.log("_generateRunTimeJson, intents: ", JSON.stringify(intents));
 //  console.log("_generateRunTimeJson, utterances: ", JSON.stringify(utterances));
   // First, extend the built in slot values with values from config
-  let slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.US_FIRST_NAME");
-  let extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.US_FIRST_NAME.values = recognizer.builtInValues.US_FIRST_NAME.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
-  recognizer.builtInValues.US_FIRST_NAME.replacementRegExp = new RegExp(recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString, "ig");
-  if(typeof slotConfig != "undefined" && slotConfig != null){
-    recognizer.builtInValues.US_FIRST_NAME.transformSrcFilename = slotConfig.transformSrcFilename;
-  }
-
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_FIRST_NAME", "US_FIRST_NAME", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Actor", "Actor", config);
-//  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Artist", "Artist", config);
-/*
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Actor");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Actor.values = recognizer.builtInValues.Actor.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Actor.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Actor.values);
-  recognizer.builtInValues.Actor.replacementRegExp = new RegExp(recognizer.builtInValues.Actor.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Artist");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Artist.values = recognizer.builtInValues.Artist.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Artist.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Artist.values);
-  recognizer.builtInValues.Artist.replacementRegExp = new RegExp(recognizer.builtInValues.Artist.replacementRegExpString, "ig");
-  */
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Comic");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Comic.values = recognizer.builtInValues.Comic.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Comic.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Comic.values);
-  recognizer.builtInValues.Comic.replacementRegExp = new RegExp(recognizer.builtInValues.Comic.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Dessert");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Dessert.values = recognizer.builtInValues.Dessert.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Dessert.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Dessert.values);
-  recognizer.builtInValues.Dessert.replacementRegExp = new RegExp(recognizer.builtInValues.Dessert.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.LandmarksOrHistoricalBuildings");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.LandmarksOrHistoricalBuildings.values = recognizer.builtInValues.LandmarksOrHistoricalBuildings.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.LandmarksOrHistoricalBuildings.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.LandmarksOrHistoricalBuildings.values);
-  recognizer.builtInValues.LandmarksOrHistoricalBuildings.replacementRegExp = new RegExp(recognizer.builtInValues.LandmarksOrHistoricalBuildings.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Landform");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Landform.values = recognizer.builtInValues.Landform.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Landform.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Landform.values);
-  recognizer.builtInValues.Landform.replacementRegExp = new RegExp(recognizer.builtInValues.Landform.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.MovieSeries");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.MovieSeries.values = recognizer.builtInValues.MovieSeries.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.MovieSeries.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MovieSeries.values);
-  recognizer.builtInValues.MovieSeries.replacementRegExp = new RegExp(recognizer.builtInValues.MovieSeries.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Movie");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Movie.values = recognizer.builtInValues.Movie.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Movie.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Movie.values);
-  recognizer.builtInValues.Movie.replacementRegExp = new RegExp(recognizer.builtInValues.Movie.replacementRegExpString, "ig");
-
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.MedicalOrganization");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.MedicalOrganization.values = recognizer.builtInValues.MedicalOrganization.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.MedicalOrganization.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MedicalOrganization.values);
-  recognizer.builtInValues.MedicalOrganization.replacementRegExp = new RegExp(recognizer.builtInValues.MedicalOrganization.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.LocalBusinessType");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.LocalBusinessType.values = recognizer.builtInValues.LocalBusinessType.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.LocalBusinessType.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.LocalBusinessType.values);
-  recognizer.builtInValues.LocalBusinessType.replacementRegExp = new RegExp(recognizer.builtInValues.LocalBusinessType.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.LocalBusiness");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.LocalBusiness.values = recognizer.builtInValues.LocalBusiness.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.LocalBusiness.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.LocalBusiness.values);
-  recognizer.builtInValues.LocalBusiness.replacementRegExp = new RegExp(recognizer.builtInValues.LocalBusiness.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Game");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Game.values = recognizer.builtInValues.Game.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Game.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Game.values);
-  recognizer.builtInValues.Game.replacementRegExp = new RegExp(recognizer.builtInValues.Game.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.FoodEstablishment");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.FoodEstablishment.values = recognizer.builtInValues.FoodEstablishment.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.FoodEstablishment.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.FoodEstablishment.values);
-  recognizer.builtInValues.FoodEstablishment.replacementRegExp = new RegExp(recognizer.builtInValues.FoodEstablishment.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.FictionalCharacter");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.FictionalCharacter.values = recognizer.builtInValues.FictionalCharacter.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.FictionalCharacter.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.FictionalCharacter.values);
-  recognizer.builtInValues.FictionalCharacter.replacementRegExp = new RegExp(recognizer.builtInValues.FictionalCharacter.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Festival");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Festival.values = recognizer.builtInValues.Festival.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Festival.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Festival.values);
-  recognizer.builtInValues.Festival.replacementRegExp = new RegExp(recognizer.builtInValues.Festival.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.EducationalOrganization");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.EducationalOrganization.values = recognizer.builtInValues.EducationalOrganization.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.EducationalOrganization.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.EducationalOrganization.values);
-  recognizer.builtInValues.EducationalOrganization.replacementRegExp = new RegExp(recognizer.builtInValues.EducationalOrganization.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Director");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Director.values = recognizer.builtInValues.Director.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Director.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Director.values);
-  recognizer.builtInValues.Director.replacementRegExp = new RegExp(recognizer.builtInValues.Director.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Corporation");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Corporation.values = recognizer.builtInValues.Corporation.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Corporation.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Corporation.values);
-  recognizer.builtInValues.Corporation.replacementRegExp = new RegExp(recognizer.builtInValues.Corporation.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.CivicStructure");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.CivicStructure.values = recognizer.builtInValues.CivicStructure.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.CivicStructure.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.CivicStructure.values);
-  recognizer.builtInValues.CivicStructure.replacementRegExp = new RegExp(recognizer.builtInValues.CivicStructure.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.BroadcastChannel");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.BroadcastChannel.values = recognizer.builtInValues.BroadcastChannel.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.BroadcastChannel.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.BroadcastChannel.values);
-  recognizer.builtInValues.BroadcastChannel.replacementRegExp = new RegExp(recognizer.builtInValues.BroadcastChannel.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.BookSeries");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.BookSeries.values = recognizer.builtInValues.BookSeries.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.BookSeries.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.BookSeries.values);
-  recognizer.builtInValues.BookSeries.replacementRegExp = new RegExp(recognizer.builtInValues.BookSeries.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Book");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Book.values = recognizer.builtInValues.Book.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Book.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Book.values);
-  recognizer.builtInValues.Book.replacementRegExp = new RegExp(recognizer.builtInValues.Book.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Author");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Author.values = recognizer.builtInValues.Author.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Author.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Author.values);
-  recognizer.builtInValues.Author.replacementRegExp = new RegExp(recognizer.builtInValues.Author.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Athlete");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Athlete.values = recognizer.builtInValues.Athlete.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Athlete.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Athlete.values);
-  recognizer.builtInValues.Athlete.replacementRegExp = new RegExp(recognizer.builtInValues.Athlete.replacementRegExpString, "ig");
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.AdministrativeArea");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.AdministrativeArea.values = recognizer.builtInValues.AdministrativeArea.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.AdministrativeArea.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.AdministrativeArea.values);
-  recognizer.builtInValues.AdministrativeArea.replacementRegExp = new RegExp(recognizer.builtInValues.AdministrativeArea.replacementRegExpString, "ig");
-
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Comic", "Comic", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Dessert", "Dessert", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LandmarksOrHistoricalBuildings", "LandmarksOrHistoricalBuildings", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Landform", "Landform", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MovieSeries", "MovieSeries", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Movie", "Movie", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MedicalOrganization", "MedicalOrganization", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LocalBusinessType", "LocalBusinessType", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LocalBusiness", "LocalBusiness", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Game", "Game", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.FoodEstablishment", "FoodEstablishment", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.FictionalCharacter", "FictionalCharacter", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Festival", "Festival", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.EducationalOrganization", "EducationalOrganization", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Director", "Director", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Corporation", "Corporation", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.CivicStructure", "CivicStructure", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.BroadcastChannel", "BroadcastChannel", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.BookSeries", "BookSeries", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Book", "Book", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Author", "Author", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Athlete", "Athlete", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.AdministrativeArea", "AdministrativeArea", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Room", "Room", config);
-/*
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Room");
-  extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-  if(typeof extendedValues != "undefined"){
-    recognizer.builtInValues.Room.values = recognizer.builtInValues.Room.values.concat(extendedValues);
-  }
-  recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Room.values);
-  recognizer.builtInValues.Room.replacementRegExp = new RegExp(recognizer.builtInValues.Room.replacementRegExpString, "ig");
-*/
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.US_STATE");
-  if(typeof slotConfig != "undefined" && slotConfig != null){
-    recognizer.builtInValues.US_STATE.transformSrcFilename = slotConfig.transformSrcFilename;
-  }
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.US_PRESIDENT");
-  if(typeof slotConfig != "undefined" && slotConfig != null){
-    recognizer.builtInValues.US_PRESIDENT.transformSrcFilename = slotConfig.transformSrcFilename;
-  }
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Airline");
-  if(typeof slotConfig != "undefined" && slotConfig != null){
-    recognizer.builtInValues.Airline.transformSrcFilename = slotConfig.transformSrcFilename;
-  }
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Country");
-  if(typeof slotConfig != "undefined" && slotConfig != null){
-    recognizer.builtInValues.Country.transformSrcFilename = slotConfig.transformSrcFilename;
-  }
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Color");
-  if(typeof slotConfig != "undefined" && slotConfig != null){
-    recognizer.builtInValues.Color.transformSrcFilename = slotConfig.transformSrcFilename;
-  }
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Room");
-  if(typeof slotConfig != "undefined" && slotConfig != null){
-    recognizer.builtInValues.Room.transformSrcFilename = slotConfig.transformSrcFilename;
-  }
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.Month");
-  if(typeof slotConfig != "undefined" && slotConfig != null){
-    recognizer.builtInValues.Month.transformSrcFilename = slotConfig.transformSrcFilename;
-  }
-
-  slotConfig = _getBuiltInSlotConfig(config, "TRANSCEND.DayOfWeek");
-  if(typeof slotConfig != "undefined" && slotConfig != null){
-    recognizer.builtInValues.DayOfWeek.transformSrcFilename = slotConfig.transformSrcFilename;
-  }
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Color", "Color", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Country", "Country", config);
+  // Don't update the values from the config files for these slot types and don't regenerate the regexp
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_PRESIDENT", "US_PRESIDENT", config, true, true);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_STATE", "US_STATE", config, true, true);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Airline", "Airline", config, true, true);
+  // Don't update the values from the config files for these slot types
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Month", "Month", config, true);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.DayOfWeek", "DayOfWeek", config, true);
 
   var recognizerSet = {};
   recognizerSet.platform = config.platform;
