@@ -179,7 +179,7 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 	}
 }
 
-var _addRegExps = function(parsedJson, intentSchema){
+var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc){
 	let wildcardReplacementString = "((?:\\w|\\s|[0-9,_']|\-)+)";
 	parsedJson.regExpStrings = [];
 
@@ -234,6 +234,26 @@ var _addRegExps = function(parsedJson, intentSchema){
 	}
 	regExpString = '';
 	shouldAdd = false;
+	// Finally add the full match
+	for(let i = 0; i < parsedJson.parsedUtterance.length; i++){
+		if(typeof parsedJson.parsedUtterance[i] == "string"){
+			regExpString += (parsedJson.parsedUtterance[i]);
+		}
+		else if(parsedJson.parsedUtterance[i].type == "slot"){
+			regExpString += getReplacementFunc(parsedJson.parsedUtterance[i].slotType, parsedJson.parsedUtterance[i].flags);
+		}
+		else if(parsedJson.parsedUtterance[i].type == "optionsList"){
+			regExpString += "(?:";
+			for(let j = 0; j < parsedJson.parsedUtterance[i].options.length; j ++){
+				if(j > 0){
+					regExpString +="|";
+				}
+				regExpString += parsedJson.parsedUtterance[i].options[j];
+			}
+			regExpString += ")";
+		}
+	}
+	parsedJson.regExpStrings.push(regExpString);
 }
 
 var _unfoldParsedJson = function(parsedJson){

@@ -2279,11 +2279,16 @@ describe("utterance parser", function() {
         ]);
     });
 
-    it("verify simple utterance two options lists and a slot parses and cleans up correctly and adds reg exp strings correctly", function() {
+    it("verify simple utterance two options lists and a custom slot parses and cleans up correctly and adds reg exp strings correctly", function() {
       let intentSchema = require("./intents.json");
       let result = parser.parseUtteranceIntoJson("AnotherIntent me {blah|bleh|bleu} {SomeOtherSlot:INCLUDE_VALUES_MATCH} too { this | that | the other }", intentSchema);
       parser.cleanupParsedUtteranceJson(result, intentSchema);
-      parser.addRegExps(result, intentSchema);
+      let config = require("./config.json");
+
+      let passThrougFunc = function(slotType, flags){
+        return recognizer.Recognizer.getReplacementRegExpStringGivenSlotType(slotType, config, flags);
+      }
+      parser.addRegExps(result, intentSchema, passThrougFunc);
       expect(result).to.eql(
         {
           "intentName": "AnotherIntent",
@@ -2323,10 +2328,58 @@ describe("utterance parser", function() {
           ],
           "regExpStrings": [
             "me ((?:\\w|\\s|[0-9,_']|-)+) ((?:\\w|\\s|[0-9,_']|-)+) too ((?:\\w|\\s|[0-9,_']|-)+)",
-            "me (?:blah|bleh|bleu) ((?:\\w|\\s|[0-9,_']|-)+) too (?: this | that | the other )"
+            "me (?:blah|bleh|bleu) ((?:\\w|\\s|[0-9,_']|-)+) too (?: this | that | the other )",
+            "me (?:blah|bleh|bleu) ((?:rose\\s*|petunia\\s*|dandelion\\s*)+) too (?: this | that | the other )"
           ]
         });
     });
+
+    it("verify simple utterance two options lists and a built in slot parses and cleans up correctly and adds reg exp strings correctly", function() {
+      let intentSchema = require("./intents.json");
+      let result = parser.parseUtteranceIntoJson("DateIntent {today is|current date is} {DateSlot} isn't it?", intentSchema);
+      parser.cleanupParsedUtteranceJson(result, intentSchema);
+      let config = require("./config.json");
+
+      let passThrougFunc = function(slotType, flags){
+        return recognizer.Recognizer.getReplacementRegExpStringGivenSlotType(slotType, config, flags);
+      }
+      parser.addRegExps(result, intentSchema, passThrougFunc);
+      expect(result).to.eql(
+        {
+          "intentName": "DateIntent",
+          "parsedUtterance": [
+            {
+              "type": "optionsList",
+              "options": [
+                "today is",
+                "current date is"
+              ]
+            },
+            " ",
+            {
+              "type": "slot",
+              "slotType": "AMAZON.DATE",
+              "name": "DateSlot",
+              "flags": [
+                {
+                  "name": "INCLUDE_VALUES_MATCH"
+                },
+                {
+                  "name": "EXCLUDE_WILDCARD_MATCH"
+                }
+              ]
+            },
+            " isn't it?"
+          ],
+          "regExpStrings": [
+            "((?:\\w|\\s|[0-9,_']|-)+) ((?:\\w|\\s|[0-9,_']|-)+) isn't it?",
+            "(?:today is|current date is) ((?:\\w|\\s|[0-9,_']|-)+) isn't it?",
+            "(?:today is|current date is) ((?:right now\\s*|today\\s*|yesterday\\s*|tomorrow\\s*|this week\\s*|last week\\s*|next week\\s*|this weekend\\s*|last weekend\\s*|next weekend\\s*|this month\\s*|last month\\s*|next month\\s*|this year\\s*|last year\\s*|next year\\s*|this decade\\s*|last decade\\s*|next decade\\s*|january\\s*|february\\s*|march\\s*|april\\s*|may\\s*|june\\s*|july\\s*|august\\s*|september\\s*|october\\s*|november\\s*|december\\s*|last january\\s*|last february\\s*|last march\\s*|last april\\s*|last may\\s*|last june\\s*|last july\\s*|last august\\s*|last september\\s*|last october\\s*|last november\\s*|last december\\s*|next january\\s*|next february\\s*|next march\\s*|next april\\s*|next may\\s*|next june\\s*|next july\\s*|next august\\s*|next september\\s*|next october\\s*|next november\\s*|next december\\s*|(?:January|February|March|April|May|June|July|August|September|October|November|December){0,1}\\s*(?:first|1st|second|2nd|third|3rd|fourth|4th|fifth|5th|sixth|6th|seventh|7th|eighth|8th|nineth|9th|tenth|10th|eleventh|11th|twelfth|12th|thirteenth|13th|fourteenth|14th|fifteenth|15th|sixteenth|16th|seventeenth|17th|eighteenth|18th|nineteenth|19th|twentieth|20th|twenty first|21st|twenty second|22nd|thwenty third|23rd|twenty fourth|24th|twenty fifth|25th|twenty sixth|26th|twenty seventh|27th|twenty eighth|28th|twenty ninth|29th|thirtieth|30th|thirty first|31st){0,1}\\s*(?:(?:(?:one thousand|two thousand){0,1}\\s*(?:(?:one|two|three|four|five|six|seven|eight|nine)\\s*hundred){0,1}\\s*(?:and\\s*){0,1}(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,1}\\s*)|(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,2}\\s*|(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){4})\\s*)+) isn't it?"
+          ]
+        });
+    });
+
+
 
   });
 });
