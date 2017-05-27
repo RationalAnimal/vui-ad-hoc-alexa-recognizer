@@ -927,7 +927,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
   }
   else if(slotType == "TRANSCEND.US_STATE"){
-    if(slotFlags.indexOf("EXCLUDE_NON_STATES") >= 0){
+    if(_hasFlag("EXCLUDE_NON_STATES", slotFlags)){
       let states = [];
       for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
         if(recognizer.builtInValues.US_STATE.values[i].isState){
@@ -1268,7 +1268,6 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     }
   }
   else if(slotType == "TRANSCEND.DATE"){
-    // Ignore flags for now
     return recognizer.builtInValues.DATE.replacementRegExpString;
   }
   else if(slotType == "TRANSCEND.TIME"){
