@@ -2527,7 +2527,7 @@ var _processMatchedDateSlotValue = function(value, flags){
     if(monthNotSpecified == true && dayOfMonthNotSpecified == true && yearNotSpecified == false){
       // Return just a year
       // Test for EXCLUDE_YEAR_ONLY_DATES flag - if there, return undefined;
-      if(flags.indexOf("EXCLUDE_YEAR_ONLY_DATES") >= 0){
+      if(flags.indexOf("EXCLUDE_YEAR_ONLY_DATES") >= 0 || _hasFlag("EXCLUDE_YEAR_ONLY_DATES", flags)){
         return;
       }
       return "" + _fourDigitFormatter(year);
@@ -3279,20 +3279,22 @@ var _NEWmatchText = function(stringToMatch, intentsSequence, excludeIntents, rec
           let matchResult;
           let slotValues = [];
           while(matchResult = scratchRegExp.exec(stringToMatch)){
-            if(matchResult != null){
-              var returnValue = {};
-              returnValue.name = scratch.intent;
-              returnValue.slots = {};
-              for(var j = 1; j < matchResult.length; j++){
-                var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type, scratch.slots[j - 1].flags, scratch.slots[j - 1].name, scratch.intent, recognizerSet);
-                if(typeof processedMatchResult == "undefined"){
-                  // This means a multi-stage match, such as SOUNDEX_MATCH, has failed to match on a follow up stage.
-                  // Treat it as a no match
-                  break;
+            multistage: {
+              if(matchResult != null){
+                var returnValue = {};
+                returnValue.name = scratch.intent;
+                returnValue.slots = {};
+                for(var j = 1; j < matchResult.length; j++){
+                  var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type, scratch.slots[j - 1].flags, scratch.slots[j - 1].name, scratch.intent, recognizerSet);
+                  if(typeof processedMatchResult == "undefined"){
+                    // This means a multi-stage match, such as SOUNDEX_MATCH, has failed to match on a follow up stage.
+                    // Treat it as a no match
+                    break multistage;
+                  }
+                  returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
                 }
-                returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
+                return returnValue;
               }
-              return returnValue;
             }
           }
 
