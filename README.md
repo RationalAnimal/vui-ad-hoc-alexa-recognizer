@@ -453,7 +453,7 @@ there are otherwise identical utterances that may match on a number or on a date
 match is allowed then there is no way to differenciate between the two.
 5. "EXCLUDE_NON_STATES" - this flag is only applied to the AMAZON.US_STATE type
 slot and turns off parsing of US territories and D.C.
-6. "COUNTRY", "COUNTINENT", "TYPE" - these are parameterized flags (see below).  currently
+6. "COUNTRY", "CONTINENT", "TYPE" - these are parameterized flags (see below).  currently
 they only apply to the AMAZON.Airline slot type and they restrict the matches to
 the specified countries and continents.
 

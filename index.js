@@ -1598,6 +1598,7 @@ var _fourDigitFormatter = function(number){
 var _formatDate = function(date){
   return "" + date.getFullYear() + "-" + _twoDigitFormatter(date.getMonth() + 1) + "-" + _twoDigitFormatter(date.getDate());
 }
+
 var _processMatchedCustomSlotValueByType = function(value, slotType, flags, recognizerSet){
 //  console.log("_processMatchedCustomSlotValueByType, 1, value: " + value + ", slotType: " + slotType);
   for(var i = 0; i < recognizerSet.customSlotTypes.length; i++){
@@ -3274,7 +3275,7 @@ var _NEWmatchText = function(stringToMatch, intentsSequence, excludeIntents, rec
       for(let k = 0; k < scratch.regExpStrings.length; k ++){
         let scratchRegExpString = scratch.regExpStrings[k];
         let scratchRegExp = new RegExp(scratchRegExpString, "ig");
-        if(j == scratch.regExpStrings.length - 1){
+        if(k == (scratch.regExpStrings.length - 1)){
           // This is the final reg exp
           let matchResult;
           let slotValues = [];
