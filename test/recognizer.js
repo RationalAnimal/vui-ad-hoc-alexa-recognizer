@@ -724,6 +724,51 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
   });
 
+  describe("Options List Matches", function() {
+    it("verify AMAZON.DATE slot with two option lists and today matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('I can meet with you today');
+      let today = new Date();
+      let todayString = "" + today.getFullYear() + "-" + ("0" + (today.getMonth() + 1)).slice(-2) + "-" +  ("0" + today.getDate()).slice(-2)  ;
+      expect(result).to.eql(
+        {"name": "DateIntent",
+           "slots": {
+             "DateSlot": {
+               "name": "DateSlot",
+               "value": todayString
+            }
+          }
+        });
+    });
+    it("verify AMAZON.DATE slot with two option lists and today matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('I would like to meet with you today');
+      let today = new Date();
+      let todayString = "" + today.getFullYear() + "-" + ("0" + (today.getMonth() + 1)).slice(-2) + "-" +  ("0" + today.getDate()).slice(-2)  ;
+      expect(result).to.eql(
+        {"name": "DateIntent",
+           "slots": {
+             "DateSlot": {
+               "name": "DateSlot",
+               "value": todayString
+            }
+          }
+        });
+    });
+    it("verify AMAZON.DATE slot with two option lists and today matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText('I want to meet you today');
+      let today = new Date();
+      let todayString = "" + today.getFullYear() + "-" + ("0" + (today.getMonth() + 1)).slice(-2) + "-" +  ("0" + today.getDate()).slice(-2)  ;
+      expect(result).to.eql(
+        {"name": "DateIntent",
+           "slots": {
+             "DateSlot": {
+               "name": "DateSlot",
+               "value": todayString
+            }
+          }
+        });
+    });
+  });
+
   describe("AMAZON.DATE Matches", function() {
     it("verify AMAZON.DATE slot and today matches and returns the correct value", function() {
       let result = recognizer.Recognizer.matchText('date is today');
@@ -2260,22 +2305,22 @@ describe("utterance parser", function() {
       parser.cleanupParsedUtteranceJson(result, intentSchema);
       expect(parser.unfoldParsedJson(result)).to.eql(
         [
-          "me  {SomeOtherSlot} too  this ",
-          "me  {SomeOtherSlot} too  that ",
-          "me  {SomeOtherSlot} too  the other ",
-          "me  {SomeOtherSlot} too ",
-          "me blah {SomeOtherSlot} too  this ",
-          "me blah {SomeOtherSlot} too  that ",
-          "me blah {SomeOtherSlot} too  the other ",
-          "me blah {SomeOtherSlot} too ",
-          "me bleh {SomeOtherSlot} too  this ",
-          "me bleh {SomeOtherSlot} too  that ",
-          "me bleh {SomeOtherSlot} too  the other ",
-          "me bleh {SomeOtherSlot} too ",
-          "me bleu {SomeOtherSlot} too  this ",
-          "me bleu {SomeOtherSlot} too  that ",
-          "me bleu {SomeOtherSlot} too  the other ",
-          "me bleu {SomeOtherSlot} too "
+          "AnotherIntent me  {SomeOtherSlot} too  this ",
+          "AnotherIntent me  {SomeOtherSlot} too  that ",
+          "AnotherIntent me  {SomeOtherSlot} too  the other ",
+          "AnotherIntent me  {SomeOtherSlot} too ",
+          "AnotherIntent me blah {SomeOtherSlot} too  this ",
+          "AnotherIntent me blah {SomeOtherSlot} too  that ",
+          "AnotherIntent me blah {SomeOtherSlot} too  the other ",
+          "AnotherIntent me blah {SomeOtherSlot} too ",
+          "AnotherIntent me bleh {SomeOtherSlot} too  this ",
+          "AnotherIntent me bleh {SomeOtherSlot} too  that ",
+          "AnotherIntent me bleh {SomeOtherSlot} too  the other ",
+          "AnotherIntent me bleh {SomeOtherSlot} too ",
+          "AnotherIntent me bleu {SomeOtherSlot} too  this ",
+          "AnotherIntent me bleu {SomeOtherSlot} too  that ",
+          "AnotherIntent me bleu {SomeOtherSlot} too  the other ",
+          "AnotherIntent me bleu {SomeOtherSlot} too "
         ]);
     });
 
@@ -2335,7 +2380,7 @@ describe("utterance parser", function() {
     });
 
 
-    it("verify simple utterance two options lists and a built in slot parses and cleans up correctly and adds reg exp strings correctly", function() {
+    it("verify simple utterance one options lists and a built in slot parses and cleans up correctly and adds reg exp strings correctly", function() {
       let intentSchema = require("./intents.json");
       let result = parser.parseUtteranceIntoJson("DateIntent {today is|current date is} {DateSlot} isn't it", intentSchema);
       parser.cleanupParsedUtteranceJson(result, intentSchema);
