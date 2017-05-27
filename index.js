@@ -4337,11 +4337,11 @@ var _NEWgenerateRunTimeJson = function(config, intents, utterances){
 
 
 
-recognizer.Recognizer.generateRunTimeJson = _generateRunTimeJson;
-recognizer.Recognizer.prototype.generateRunTimeJson = _generateRunTimeJson;
+recognizer.Recognizer.generateRunTimeJson = _NEWgenerateRunTimeJson;
+recognizer.Recognizer.prototype.generateRunTimeJson = _NEWgenerateRunTimeJson;
 
-recognizer.Recognizer.matchText = _matchText;
-recognizer.Recognizer.prototype.matchText = _matchText;
+recognizer.Recognizer.matchText = _NEWmatchText;
+recognizer.Recognizer.prototype.matchText = _NEWmatchText;
 
 recognizer.Recognizer.getReplacementRegExpStringGivenSlotType = _getReplacementRegExpStringGivenSlotType;
 recognizer.Recognizer.prototype.getReplacementRegExpStringGivenSlotType = _getReplacementRegExpStringGivenSlotType;

@@ -8,22 +8,30 @@
 # vui-ad-hoc-alexa-recognizer
 
 npm module that provides VUI (voice user interface) special ad-hoc recognizer
-designed to parse raw text from the user and map it to the Alexa intents.  If
+designed to parse raw text from the user and map it to the Alexa intents.
+This could be useful in many cases.  If
 you already have an Alexa skill and would like to convert it to Cortana or to
-Google assistant, this module makes it really easy. Many skills can be converted
-in less than an hour.  If you don't already have an Alexa skill - don't worry,
-you can still easily use this module, you will simply need to create the
-required intents, utterances, and custom slot value files (equivalent of which
+Google assistant, or some other service, this module makes it really easy. Many skills can be converted
+in less than an hour.
+Also you can use this to quickly create a skill or an app even if you don't already have an Alexa skill.
+You will simply need to create the
+required intents, utterances, and (optionally) custom slot value files (equivalent of which
 you'd have to do anyway).
-It uses the two files (intents and utterances) that are used to configure Alexa skills.
+It uses the same two files (intents and utterances) that are used to configure Alexa skills.
 This allows easy "middleware" implementation that can be placed between a Cortana
 or Google assistant skill and the Alexa backend.  If you have custom slots and
 you want to use exact or SoundEx matches on those slots, then you would also need
 file(s) listing these values.
-Supports many Alexa features - built in intents, major built in slot types -
-as well as "extra" features, such as the ability to match any value or SoundEx
-compatible value. Additional configuration can be added through config file.
+Supports almost all Alexa features - built in intents, all major built in slot types,
+most minor ones, 
+as well as "extra" features, such as the ability to do wildcard or SoundEx
+matches, transforming the values before sending them to be processed, etc.
+Additional configuration can be added through config file.
 This can be used either by itself or as part of other vui-xxx projects.
+You can also use it without any backend service whatsoever - simply use it with your javascript
+code same way you would use any other npm module.  It will provide complete
+utterance parsing and slot values mapping.  Simply use simple branching
+code (e.g. switch statement) using the intent to complete processing.
 
 # Repository
 This module as well as related vui modules can be found here:
@@ -50,20 +58,28 @@ npm install vui-ad-hoc-alexa-recognizer --save
 
 npm module that provides VUI (voice user interface) special ad-hoc recognizer
 designed to parse raw text from the user and map it to the Alexa intents.  It
-uses the two files (intents and utterances) that are used to configure Alexa skills.
+uses the same two files (intents and utterances) that are used to configure Alexa skills,
+but with additional features. Once parsed, the request can be sent to any
+code you want to handle the intents.
 This allows easy "middleware" implementation that can be placed between a Cortana
-or Google assistant skill and the Alexa backend.
-Additional configuration can be added through config file.
-This can be used either by itself or as part of other vui-xxx projects.
+or Google assistant skill and the Alexa backend as well as your own "chatbot"
+that doesn't require anybody else services and doesn't even require a backend.
 It has two pieces of functionality: first, run it offline to generate a json file
 that will be used in matching/parsing the text; second it will match the raw
 text at run time using the generated json file.
 
 # Usage
 
+It has two pieces of functionality: first, run it offline to generate a recognizer.json file
+that will be used in matching/parsing the text; second add two lines of
+code to your app/skill to use it to match the raw
+text at run time using the generated recognizer.json file.
+
 Imagine you already have an Alexa skill and you would like to port it to Cortana
-or Google Assistant.  Here are examples of files that you will have for your
-Alexa skill (these are NOT complete files, you can find the complete sample
+or Google Assistant (or even if you don't but want to create a chat bot/service from scratch).
+Here are examples of files that you will have for your
+Alexa skill or will need to create if you don't have any yet
+(these are NOT complete files, you can find the complete sample
 files in the test directory):
 
 ````shell
@@ -511,6 +527,29 @@ AirlineIntent {AirlineSlot:CONTINENT(["north america"])} is a north american air
 then only Canadian airlines will match the first one, and only north american
 airlines will match the second one.
 
+### Options list
+Instead of creating multiple similar utterance lines like you would do with Alexa
+utterances, you can specify variations with options lists:
+
+```text
+DateIntent I {want to|wish to|like to|would like to|can} meet {you|with you} {DateSlot}
+```
+
+is equivalent to these:
+
+```text
+DateIntent I want to meet you {DateSlot}
+DateIntent I want to meet with you {DateSlot}
+DateIntent I wish to meet you {DateSlot}
+DateIntent I wish to meet with you {DateSlot}
+DateIntent I like to meet you {DateSlot}
+DateIntent I like to meet with you {DateSlot}
+DateIntent I would like to meet you {DateSlot}
+DateIntent I would like to meet with you {DateSlot}
+DateIntent I can meet you {DateSlot}
+DateIntent I can meet with you {DateSlot}
+```
+
 ### Removing flags/cleaning up the utterance file
 There is also a utility available to "clean up" utterance files for use with
 Alexa.  This may be needed if you want to use a single file as your utterances
@@ -524,6 +563,12 @@ Result was saved to testutterances.txt
 ```
 
 You can now import testutterances.txt into the Alexa developer console.
+
+Note that not only will alexify.js remove flags, it will also "unfold"
+options lists into multiple utterances so that you can use them with Alexa.
+This feature would be usefull even if you only want to use this module to
+reduce the tedium of entering multiple lines into Alexa and don't even
+intent to create your own chat bot or convert your Alexa skill.
 
 ### Nominal support for some built in list slots
 

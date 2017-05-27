@@ -26,6 +26,7 @@ BlahIntent here is {BlahSlot} and also {BlehSlot}
 DateIntent date is {DateSlot}
 DateIntent date that does not accept year only is {DateSlot:EXCLUDE_YEAR_ONLY_DATES}
 DateIntent {DateSlot}
+DateIntent I {want to|wish to|like to|would like to|can} meet {you|with you} {DateSlot}
 DurationIntent Event duration is {DurationSlot}
 TimeIntent does {TimeSlot} work for you
 AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}

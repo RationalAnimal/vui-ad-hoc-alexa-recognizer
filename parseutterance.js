@@ -306,6 +306,10 @@ var _unfoldParsedJson = function(parsedJson){
 			}
 		}
 	}
+	for(let i = 0; i < resultArray.length; i++){
+		resultArray[i] = parsedJson.intentName + " " + resultArray[i];
+
+	}
 	return resultArray;
 }
 
