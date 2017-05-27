@@ -1607,7 +1607,7 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
       continue;
     }
 //    console.log("_processMatchedCustomSlotValueByType, 3");
-    if(flags.indexOf("SOUNDEX_MATCH") >= 0){
+    if(flags.indexOf("SOUNDEX_MATCH") >= 0 || _hasFlag("SOUNDEX_MATCH", flags)){
       // do regular expression matching
       if(typeof scratchCustomSlotType.soundExRegExps == "undefined"){
         scratchCustomSlotType.soundExRegExps = [];
