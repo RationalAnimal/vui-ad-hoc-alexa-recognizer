@@ -3144,6 +3144,206 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
 
 };
 
+
+
+
+
+
+
+
+var _NEWmatchText = function(stringToMatch, intentsSequence, excludeIntents, recognizerToUse){
+  // First, correct some of Microsoft's "deviations"
+  // look for a $ followed by a number and replace it with the number followed by the word "dollars".
+  let regExpString = "(\\$\\s*(?:\\s*";
+  for(let i = 0; i < recognizer.builtInValues.NUMBER.values.length; i++){
+    regExpString += "|" + recognizer.builtInValues.NUMBER.values[i];
+  }
+  regExpString += "|,"
+
+  regExpString +=    ")+)"
+  let regExp = new RegExp(regExpString, "ig");
+  let regExpNonGlobal = new RegExp(regExpString, "i");
+  let dollarMatchResult;
+  while(dollarMatchResult = regExp.exec(stringToMatch)){
+//    console.log("dollarMatchResult: " + JSON.stringify(dollarMatchResult));
+    if(dollarMatchResult == null){
+      continue;
+    }
+    let dollarlessMatch = dollarMatchResult[0].substring(1);
+//    console.log("dollarlessMatch: " + JSON.stringify(dollarlessMatch));
+    regExpNonGlobal.lastIndex = 0;
+    stringToMatch = stringToMatch.replace(regExpNonGlobal, dollarlessMatch + " dollars ");
+//    console.log("stringToMatch: " + JSON.stringify(stringToMatch));
+    regExp.lastIndex = 0;
+  }
+  // Now separate all leading zeros so that they don't get lost later in the parsing.
+  regExp = /(^0[0-9])/;
+  let leadingZeroMatchResult;
+  if(leadingZeroMatchResult = regExp.exec(stringToMatch)){
+    if(leadingZeroMatchResult != null){
+      let replacementString = "0 " + leadingZeroMatchResult[0].substring(1);
+      stringToMatch = stringToMatch.replace(/(^0[0-9])/, replacementString);
+      regExp.lastIndex = 0;
+    }
+  }
+
+  regExp = /([^0-9]0[0-9])/ig;
+  while(leadingZeroMatchResult = regExp.exec(stringToMatch)){
+    if(leadingZeroMatchResult == null){
+      continue;
+    }
+    let replacementString = leadingZeroMatchResult[0].substring(0, 1) + "0 " + leadingZeroMatchResult[0].substring(2);
+    stringToMatch = stringToMatch.replace(/([^0-9]0[0-9])/, replacementString);
+    regExp.lastIndex = 0;
+  }
+
+//  console.log("_matchText, 1");
+  var recognizerSet;
+  if(typeof recognizerToUse != "undefined" && recognizerToUse != null){
+    recognizerSet = recognizerToUse;
+  }
+  else {
+    if (fs.existsSync("./recognizer.json")) {
+  //    console.log("_matchText, 1.1");
+      recognizerSet = require("./recognizer.json");
+    }
+    else if (fs.existsSync("../../recognizer.json")){
+  //    console.log("_matchText, 1.2");
+      recognizerSet = require("../../recognizer.json");
+    }
+  }
+  if(typeof recognizerSet == "undefined"){
+    throw {"error": recognizer.errorCodes.MISSING_RECOGNIZER, "message": "Unable to load recognizer.json"};
+  }
+//  console.log("_matchText, 2, recognizerSet: " + JSON.stringify(recognizerSet));
+  let originalMatchConfig = [].concat(recognizerSet.matchConfig);
+
+  if(typeof intentsSequence != "undefined" && intentsSequence != null){
+    if(Array.isArray(intentsSequence) == false){
+      intentsSequence = ["" + intentsSequence];
+    }
+  }
+  else {
+    intentsSequence = [];
+  }
+  if(typeof excludeIntents != "undefined" && excludeIntents != null){
+    if(Array.isArray(excludeIntents) == false){
+      excludeIntents = ["" + excludeIntents];
+    }
+  }
+  else {
+    excludeIntents = [];
+  }
+  var sortedMatchConfig = [];
+  // Now create the list to be used for matching
+  // First, add all the intents that were part of the intentsSequence, in that
+  // order, but exclude any that are also in the excludeIntents.
+  for(let currentIntentIndex = 0; currentIntentIndex < intentsSequence.length; currentIntentIndex++){
+    let currentIntent = intentsSequence[currentIntentIndex];
+    for(let currentUtteranceIndex = 0; currentUtteranceIndex < originalMatchConfig.length; currentUtteranceIndex++){
+      let currentMatchConfig = originalMatchConfig[currentUtteranceIndex];
+      if(currentMatchConfig.intent == currentIntent){
+        // Remove this from the recognizerSet, push it onto sortedMatchConfig
+        // (if not being excluded), decrement counter to stay on the same index
+        // since we just removed one item.
+        originalMatchConfig.splice(currentUtteranceIndex, 1);
+        if(excludeIntents.indexOf(currentIntent) < 0){
+          sortedMatchConfig.push(currentMatchConfig);
+        }
+        currentUtteranceIndex--;
+      }
+    }
+  }
+  // Now move the remaining match configs to the sorted array but only if they
+  // are not part of the excluded intents.
+  for(let currentUtteranceIndex = 0; currentUtteranceIndex < originalMatchConfig.length; currentUtteranceIndex++){
+    let currentMatchConfig = originalMatchConfig[currentUtteranceIndex];
+    originalMatchConfig.splice(currentUtteranceIndex, 1);
+    if(excludeIntents.indexOf(currentMatchConfig.intent) < 0){
+      sortedMatchConfig.push(currentMatchConfig);
+    }
+    currentUtteranceIndex--;
+  }
+
+  for(var i = 0; i < sortedMatchConfig.length; i++){
+//    console.log("_matchText, 3, i: " + i);
+    var scratch = sortedMatchConfig[i];
+//    console.log("_matchText, 4, scratch: " + JSON.stringify(scratch, null, 2));
+//    console.log("_matchText, 4.1, scratch.regExString: " + JSON.stringify(scratch.regExString));
+    if(typeof scratch.regExpStrings != "undefined" && Array.isArray(scratch.regExpStrings)){
+      for(let k = 0; k < scratch.regExpStrings.length; k ++){
+        let scratchRegExpString = scratch.regExpStrings[k];
+        let scratchRegExp = new RegExp(scratchRegExpString, "ig");
+        if(j == scratch.regExpStrings.length - 1){
+          // This is the final reg exp
+          let matchResult;
+          let slotValues = [];
+          while(matchResult = scratchRegExp.exec(stringToMatch)){
+            if(matchResult != null){
+              var returnValue = {};
+              returnValue.name = scratch.intent;
+              returnValue.slots = {};
+              for(var j = 1; j < matchResult.length; j++){
+                var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type, scratch.slots[j - 1].flags, scratch.slots[j - 1].name, scratch.intent, recognizerSet);
+                if(typeof processedMatchResult == "undefined"){
+                  // This means a multi-stage match, such as SOUNDEX_MATCH, has failed to match on a follow up stage.
+                  // Treat it as a no match
+                  break;
+                }
+                returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
+              }
+              return returnValue;
+            }
+          }
+
+        }
+        else {
+          // This is a preliminary reg exp
+          let scratchMatchResult = scratchRegExp.test(stringToMatch);
+          if(scratchMatchResult){
+            // we are good to try the real one.
+          }
+          else {
+            // This is definitely not a match - continue
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  // Now try the built in intents
+  for(var i = 0; i < recognizerSet.builtInIntents.length; i ++){
+    let scratch = recognizerSet.builtInIntents[i];
+    if(typeof scratch.regExp == "undefined"){
+      scratch.regExp = new RegExp(scratch.regExpString, "ig");
+//      console.log("scratch.regExp: " + scratch.regExp);
+//      scratch.regExp = new RegExp("^\\s*((?:help\\s*|help\\s+me\\s*|can\\s+you\\s+help\\s+me\\s*)+)\\s*[.]?\\s*$", "ig");
+    }
+    let matchResult;
+    scratch.regExp.lastIndex = 0;
+    if(matchResult = scratch.regExp.exec(stringToMatch)){
+//      console.log("matchResult: " + JSON.stringify(matchResult));
+      var returnValue = {};
+      let outputName = _getTranslatedIntentForOutput(scratch.name, recognizerSet.platform);
+//      returnValue.name = scratch.name;
+      returnValue.name = outputName;
+      returnValue.slots = {};
+      return returnValue;
+    }
+  }
+
+};
+
+
+
+
+
+
+
+
+
 var allPlatforms = ["TRANSCEND", "AMAZON"];
 
 var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
