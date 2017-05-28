@@ -264,153 +264,96 @@ recognizer.builtInValues.US_FIRST_NAME.replacementRegExp = new RegExp(recognizer
 
 recognizer.builtInValues.Actor = require("./builtinslottypes/actors.json");
 recognizer.builtInValues.Actor.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Actor.values);
-recognizer.builtInValues.Actor.replacementRegExp = new RegExp(recognizer.builtInValues.Actor.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Artist = require("./builtinslottypes/artists.json");
 recognizer.builtInValues.Artist.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Artist.values);
-recognizer.builtInValues.Artist.replacementRegExp = new RegExp(recognizer.builtInValues.Artist.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Comic = require("./builtinslottypes/comics.json");
 recognizer.builtInValues.Comic.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Comic.values);
-recognizer.builtInValues.Comic.replacementRegExp = new RegExp(recognizer.builtInValues.Comic.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Dessert = require("./builtinslottypes/desserts.json");
 recognizer.builtInValues.Dessert.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Dessert.values);
-recognizer.builtInValues.Dessert.replacementRegExp = new RegExp(recognizer.builtInValues.Dessert.replacementRegExpString, "ig");
 
 recognizer.builtInValues.LandmarksOrHistoricalBuildings = require("./builtinslottypes/landmarksorhistoricalbuildings.json");
 recognizer.builtInValues.LandmarksOrHistoricalBuildings.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.LandmarksOrHistoricalBuildings.values);
-recognizer.builtInValues.LandmarksOrHistoricalBuildings.replacementRegExp = new RegExp(recognizer.builtInValues.LandmarksOrHistoricalBuildings.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Landform = require("./builtinslottypes/landforms.json");
 recognizer.builtInValues.Landform.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Landform.values);
-recognizer.builtInValues.Landform.replacementRegExp = new RegExp(recognizer.builtInValues.Landform.replacementRegExpString, "ig");
 
 recognizer.builtInValues.MovieSeries = require("./builtinslottypes/movieseries.json");
 recognizer.builtInValues.MovieSeries.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MovieSeries.values);
-recognizer.builtInValues.MovieSeries.replacementRegExp = new RegExp(recognizer.builtInValues.MovieSeries.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Movie = require("./builtinslottypes/movies.json");
 recognizer.builtInValues.Movie.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Movie.values);
-recognizer.builtInValues.Movie.replacementRegExp = new RegExp(recognizer.builtInValues.Movie.replacementRegExpString, "ig");
 
 recognizer.builtInValues.MedicalOrganization = require("./builtinslottypes/medicalorganizations.json");
 recognizer.builtInValues.MedicalOrganization.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MedicalOrganization.values);
-recognizer.builtInValues.MedicalOrganization.replacementRegExp = new RegExp(recognizer.builtInValues.MedicalOrganization.replacementRegExpString, "ig");
 
 recognizer.builtInValues.LocalBusinessType = require("./builtinslottypes/localbusinesstypes.json");
 recognizer.builtInValues.LocalBusinessType.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.LocalBusinessType.values);
-recognizer.builtInValues.LocalBusinessType.replacementRegExp = new RegExp(recognizer.builtInValues.LocalBusinessType.replacementRegExpString, "ig");
 
 recognizer.builtInValues.LocalBusiness = require("./builtinslottypes/localbusinesses.json");
 recognizer.builtInValues.LocalBusiness.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.LocalBusiness.values);
-recognizer.builtInValues.LocalBusiness.replacementRegExp = new RegExp(recognizer.builtInValues.LocalBusiness.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Game = require("./builtinslottypes/games.json");
 recognizer.builtInValues.Game.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Game.values);
-recognizer.builtInValues.Game.replacementRegExp = new RegExp(recognizer.builtInValues.Game.replacementRegExpString, "ig");
 
 recognizer.builtInValues.FoodEstablishment = require("./builtinslottypes/foodestablishments.json");
 recognizer.builtInValues.FoodEstablishment.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.FoodEstablishment.values);
-recognizer.builtInValues.FoodEstablishment.replacementRegExp = new RegExp(recognizer.builtInValues.FoodEstablishment.replacementRegExpString, "ig");
 
 recognizer.builtInValues.FictionalCharacter = require("./builtinslottypes/fictionalcharacters.json");
 recognizer.builtInValues.FictionalCharacter.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.FictionalCharacter.values);
-recognizer.builtInValues.FictionalCharacter.replacementRegExp = new RegExp(recognizer.builtInValues.FictionalCharacter.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Festival = require("./builtinslottypes/festivals.json");
 recognizer.builtInValues.Festival.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Festival.values);
-recognizer.builtInValues.Festival.replacementRegExp = new RegExp(recognizer.builtInValues.Festival.replacementRegExpString, "ig");
 
 recognizer.builtInValues.EducationalOrganization = require("./builtinslottypes/educationalorganizations.json");
 recognizer.builtInValues.EducationalOrganization.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.EducationalOrganization.values);
-recognizer.builtInValues.EducationalOrganization.replacementRegExp = new RegExp(recognizer.builtInValues.EducationalOrganization.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Director = require("./builtinslottypes/directors.json");
 recognizer.builtInValues.Director.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Director.values);
-recognizer.builtInValues.Director.replacementRegExp = new RegExp(recognizer.builtInValues.Director.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Corporation = require("./builtinslottypes/corporations.json");
 recognizer.builtInValues.Corporation.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Corporation.values);
-recognizer.builtInValues.Corporation.replacementRegExp = new RegExp(recognizer.builtInValues.Corporation.replacementRegExpString, "ig");
 
 recognizer.builtInValues.CivicStructure = require("./builtinslottypes/civicstructures.json");
 recognizer.builtInValues.CivicStructure.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.CivicStructure.values);
-recognizer.builtInValues.CivicStructure.replacementRegExp = new RegExp(recognizer.builtInValues.CivicStructure.replacementRegExpString, "ig");
-
 
 recognizer.builtInValues.BroadcastChannel = require("./builtinslottypes/broadcastchannels.json");
 recognizer.builtInValues.BroadcastChannel.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.BroadcastChannel.values);
-recognizer.builtInValues.BroadcastChannel.replacementRegExp = new RegExp(recognizer.builtInValues.BroadcastChannel.replacementRegExpString, "ig");
 
 recognizer.builtInValues.BookSeries = require("./builtinslottypes/bookseries.json");
 recognizer.builtInValues.BookSeries.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.BookSeries.values);
-recognizer.builtInValues.BookSeries.replacementRegExp = new RegExp(recognizer.builtInValues.BookSeries.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Book = require("./builtinslottypes/books.json");
 recognizer.builtInValues.Book.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Book.values);
-recognizer.builtInValues.Book.replacementRegExp = new RegExp(recognizer.builtInValues.Book.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Author = require("./builtinslottypes/authors.json");
 recognizer.builtInValues.Author.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Author.values);
-recognizer.builtInValues.Author.replacementRegExp = new RegExp(recognizer.builtInValues.Author.replacementRegExpString, "ig");
-
 
 recognizer.builtInValues.Athlete = require("./builtinslottypes/athletes.json");
 recognizer.builtInValues.Athlete.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Athlete.values);
-recognizer.builtInValues.Athlete.replacementRegExp = new RegExp(recognizer.builtInValues.Athlete.replacementRegExpString, "ig");
 
 recognizer.builtInValues.AdministrativeArea = require("./builtinslottypes/administrativeareas.json");
 recognizer.builtInValues.AdministrativeArea.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.AdministrativeArea.values);
-recognizer.builtInValues.AdministrativeArea.replacementRegExp = new RegExp(recognizer.builtInValues.AdministrativeArea.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Month = {};
 recognizer.builtInValues.Month.values = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
 recognizer.builtInValues.Month.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Month.values);
-recognizer.builtInValues.Month.replacementRegExp = new RegExp(recognizer.builtInValues.Month.replacementRegExpString, "ig");
 
 recognizer.builtInValues.DayOfWeek = {};
 recognizer.builtInValues.DayOfWeek.values = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 recognizer.builtInValues.DayOfWeek.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.DayOfWeek.values);
-recognizer.builtInValues.DayOfWeek.replacementRegExp = new RegExp(recognizer.builtInValues.DayOfWeek.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Country = require("./builtinslottypes/countries.json");
 recognizer.builtInValues.Country.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Country.values);
-recognizer.builtInValues.Country.replacementRegExp = new RegExp(recognizer.builtInValues.Country.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Color = require("./builtinslottypes/colors.json");
 recognizer.builtInValues.Color.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Color.values);
-recognizer.builtInValues.Color.replacementRegExp = new RegExp(recognizer.builtInValues.Color.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Room = require("./builtinslottypes/rooms.json");
 recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Room.values);
-recognizer.builtInValues.Room.replacementRegExp = new RegExp(recognizer.builtInValues.Room.replacementRegExpString, "ig");
 
-/**
-Call to take a flag, possibly parameterized, and return an object containing
-flag name and parameters.
-*/
-var _getFlagParts = function(flag){
-  if(typeof flag != "string"){
-    return;
-  }
-  let regExp = /^\s*([^\(\s]+)/ig;
-  let matchResult = regExp.exec(flag);
-  if(matchResult){
-    let returnValue = {
-      "name":matchResult[1]
-    };
-    let regExpParameters = /\((.*)\)/ig;
-    matchResult = regExpParameters.exec(flag);
-    if(matchResult != null){
-      let paramsWithoutParents = matchResult[1];
-      let scratch = JSON.parse("[" + paramsWithoutParents + "]");
-      returnValue.params = scratch
-    }
-    return returnValue;
-  }
-  return;
-}
 /**
 * Call this to translate the slot from whatever type it was actually reported into
 * a "built in" equivalent
@@ -2451,15 +2394,6 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
-    /*
-    for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
-      statesAndTerritories.push(recognizer.builtInValues.US_STATE.values[i].name);
-      if(recognizer.builtInValues.US_STATE.values[i].isState){
-        states.push(recognizer.builtInValues.US_STATE.values[i].name);
-      }
-    }
-
-    */
     else {
       // All other built in list values use lower case only
       returnValue = returnValue.toLowerCase();
