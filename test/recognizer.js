@@ -58,7 +58,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
     it("verify simple utterance with an AMAZON.Actor slot matches", function() {
-      let result = recognizer.Recognizer.matchText("another actor who played bond is sean connery");
+      let result = recognizer.Recognizer.matchText("another actor who played bond is Sean Connery");
       expect(result).to.eql(
         {"name": "ActorIntent",
          "slots": {

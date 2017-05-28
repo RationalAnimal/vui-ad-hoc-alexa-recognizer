@@ -2064,6 +2064,20 @@ var _getWeekOfYear = function(dateToProcess){
 
 }
 
+var _findExactCaseBuiltInValue = function(value, slotType, builtInValueType){
+  let arrayToSearch = recognizer.builtInValues[builtInValueType].values;
+  let scratchValue = value.toUpperCase();
+  for(let i = 0; i < arrayToSearch.length; i++){
+    if(scratchValue == arrayToSearch[i].toUpperCase()){
+      return arrayToSearch[i];
+    }
+  }
+  return value;
+}
+
+var matchingSlotTypeArray = ["TRANSCEND.Color", "TRANSCEND.Actor", "TRANSCEND.Country", "TRANSCEND.US_FIRST_NAME", "TRANSCEND.Artist"];
+var matchingValueTypeArray = ["Color", "Actor", "Country", "US_FIRST_NAME", "Artist"];
+
 var _processMatchedSlotValueByType = function(value, slotType, flags, slot, intent, recognizerSet){
 //  console.log("_processMatchedSlotValueByType, entered");
   slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
@@ -2084,55 +2098,10 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
   else if(slotType.startsWith("TRANSCEND.")){
     // already did returnValue = value;
     // Now need to match the capitalization
-    if(slotType == "TRANSCEND.Color"){
-      let arrayToSearch = recognizer.builtInValues.Color.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    if(slotType == "TRANSCEND.Country"){
-      let arrayToSearch = recognizer.builtInValues.Country.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.US_FIRST_NAME"){
-      let arrayToSearch = recognizer.builtInValues.US_FIRST_NAME.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.Actor"){
-      let arrayToSearch = recognizer.builtInValues.Actor.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.Artist"){
-      let arrayToSearch = recognizer.builtInValues.Artist.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
+    let scratchIndex;
+    if((scratchIndex = matchingSlotTypeArray.indexOf(slotType)) >= 0 ){
+//      console.log("matched matchingSlotTypeArray");
+      returnValue = _findExactCaseBuiltInValue(value, slotType, matchingValueTypeArray[scratchIndex]);
     }
     else if(slotType == "TRANSCEND.Comic"){
       let arrayToSearch = recognizer.builtInValues.Comic.values;
@@ -2396,6 +2365,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
     }
     else {
       // All other built in list values use lower case only
+//      console.log("falling through to the default case");
       returnValue = returnValue.toLowerCase();
     }
   }
