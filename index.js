@@ -2079,12 +2079,16 @@ var matchingSlotTypeArray =
 ["TRANSCEND.Color", "TRANSCEND.Actor", "TRANSCEND.Country", "TRANSCEND.US_FIRST_NAME", "TRANSCEND.Artist",
  "TRANSCEND.Comic", "TRANSCEND.Dessert", "TRANSCEND.LandmarksOrHistoricalBuildings", "TRANSCEND.Month", "TRANSCEND.Room",
  "TRANSCEND.DayOfWeek", "TRANSCEND.LandmarksOrHistoricalBuildings", "TRANSCEND.Landform", "TRANSCEND.MovieSeries",
- "TRANSCEND.Movie", "TRANSCEND.MedicalOrganization"];
+ "TRANSCEND.Movie", "TRANSCEND.MedicalOrganization", "TRANSCEND.MedicalOrganization", "TRANSCEND.LocalBusinessType", "TRANSCEND.LocalBusiness",
+ "TRANSCEND.Game", "TRANSCEND.FoodEstablishment", "TRANSCEND.FictionalCharacter", "TRANSCEND.Festival", "TRANSCEND.EducationalOrganization",
+ "TRANSCEND.Director", "TRANSCEND.Corporation"];
 var matchingValueTypeArray =
 ["Color", "Actor", "Country", "US_FIRST_NAME", "Artist",
  "Comic", "Dessert", "LandmarksOrHistoricalBuildings", "Month", "Room",
  "DayOfWeek", "LandmarksOrHistoricalBuildings", "Landform", "MovieSeries",
- "Movie", "MedicalOrganization"];
+ "Movie", "MedicalOrganization", "MedicalOrganization", "LocalBusinessType", "LocalBusiness",
+ "Game", "FoodEstablishment", "FictionalCharacter", "Festival", "EducationalOrganization",
+ "Director", "Corporation"];
 
 var _processMatchedSlotValueByType = function(value, slotType, flags, slot, intent, recognizerSet){
 //  console.log("_processMatchedSlotValueByType, entered");
@@ -2110,106 +2114,6 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
     if((scratchIndex = matchingSlotTypeArray.indexOf(slotType)) >= 0 ){
 //      console.log("DRY matched matchingSlotTypeArray");
       returnValue = _findExactCaseBuiltInValue(value, slotType, matchingValueTypeArray[scratchIndex]);
-    }
-    else if(slotType == "TRANSCEND.MedicalOrganization"){
-      let arrayToSearch = recognizer.builtInValues.MedicalOrganization.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.LocalBusinessType"){
-      let arrayToSearch = recognizer.builtInValues.LocalBusinessType.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.LocalBusiness"){
-      let arrayToSearch = recognizer.builtInValues.LocalBusiness.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.Game"){
-      let arrayToSearch = recognizer.builtInValues.Game.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.FoodEstablishment"){
-      let arrayToSearch = recognizer.builtInValues.FoodEstablishment.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.FictionalCharacter"){
-      let arrayToSearch = recognizer.builtInValues.FictionalCharacter.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.Festival"){
-      let arrayToSearch = recognizer.builtInValues.Festival.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.EducationalOrganization"){
-      let arrayToSearch = recognizer.builtInValues.EducationalOrganization.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.Director"){
-      let arrayToSearch = recognizer.builtInValues.Director.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.Corporation"){
-      let arrayToSearch = recognizer.builtInValues.Corporation.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
     }
     else if(slotType == "TRANSCEND.CivicStructure"){
       let arrayToSearch = recognizer.builtInValues.CivicStructure.values;
