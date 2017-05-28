@@ -2075,8 +2075,16 @@ var _findExactCaseBuiltInValue = function(value, slotType, builtInValueType){
   return value;
 }
 
-var matchingSlotTypeArray = ["TRANSCEND.Color", "TRANSCEND.Actor", "TRANSCEND.Country", "TRANSCEND.US_FIRST_NAME", "TRANSCEND.Artist"];
-var matchingValueTypeArray = ["Color", "Actor", "Country", "US_FIRST_NAME", "Artist"];
+var matchingSlotTypeArray = 
+["TRANSCEND.Color", "TRANSCEND.Actor", "TRANSCEND.Country", "TRANSCEND.US_FIRST_NAME", "TRANSCEND.Artist",
+ "TRANSCEND.Comic", "TRANSCEND.Dessert", "TRANSCEND.LandmarksOrHistoricalBuildings", "TRANSCEND.Month", "TRANSCEND.Room",
+ "TRANSCEND.DayOfWeek", "TRANSCEND.LandmarksOrHistoricalBuildings", "TRANSCEND.Landform", "TRANSCEND.MovieSeries",
+ "TRANSCEND.Movie", "TRANSCEND.MedicalOrganization"];
+var matchingValueTypeArray =
+["Color", "Actor", "Country", "US_FIRST_NAME", "Artist",
+ "Comic", "Dessert", "LandmarksOrHistoricalBuildings", "Month", "Room",
+ "DayOfWeek", "LandmarksOrHistoricalBuildings", "Landform", "MovieSeries",
+ "Movie", "MedicalOrganization"];
 
 var _processMatchedSlotValueByType = function(value, slotType, flags, slot, intent, recognizerSet){
 //  console.log("_processMatchedSlotValueByType, entered");
@@ -2100,68 +2108,8 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
     // Now need to match the capitalization
     let scratchIndex;
     if((scratchIndex = matchingSlotTypeArray.indexOf(slotType)) >= 0 ){
-//      console.log("matched matchingSlotTypeArray");
+//      console.log("DRY matched matchingSlotTypeArray");
       returnValue = _findExactCaseBuiltInValue(value, slotType, matchingValueTypeArray[scratchIndex]);
-    }
-    else if(slotType == "TRANSCEND.Comic"){
-      let arrayToSearch = recognizer.builtInValues.Comic.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.Dessert"){
-      let arrayToSearch = recognizer.builtInValues.Dessert.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.LandmarksOrHistoricalBuildings"){
-      let arrayToSearch = recognizer.builtInValues.LandmarksOrHistoricalBuildings.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.Landform"){
-      let arrayToSearch = recognizer.builtInValues.Landform.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.MovieSeries"){
-      let arrayToSearch = recognizer.builtInValues.MovieSeries.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
-    }
-    else if(slotType == "TRANSCEND.Movie"){
-      let arrayToSearch = recognizer.builtInValues.Movie.values;
-      let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < arrayToSearch.length; i++){
-        if(scratchValue == arrayToSearch[i].toUpperCase()){
-          returnValue = arrayToSearch[i];
-          break;
-        }
-      }
     }
     else if(slotType == "TRANSCEND.MedicalOrganization"){
       let arrayToSearch = recognizer.builtInValues.MedicalOrganization.values;
@@ -2365,7 +2313,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
     }
     else {
       // All other built in list values use lower case only
-//      console.log("falling through to the default case");
+//      console.log("DRY falling through to the default case, returnValue: " + returnValue + ", slotType: " + slotType);
       returnValue = returnValue.toLowerCase();
     }
   }
