@@ -759,6 +759,15 @@ developed separately by different teams, each having its own skill/app portion
 that they are working on and they will update only the recognizer for their
 portion.
 
+### Options list
+
+Using options lists instead of multiple similar utterances may
+improve performance. Testing with a simple one slot date example and an utterance
+that unfolds to about 3800 utterances reduces the time from 330 ms to 74 ms on
+a desktop computer.  Considering that if you run it on AWS Lambda (which is MUCH slower
+than a typical higher end desktop computer) you may be shaving off seconds off of
+your time, which for voice interactions is quite important.
+
 ## SoundEx support
 
 SoundEx support has been added at the utterance level for custom slot types.
