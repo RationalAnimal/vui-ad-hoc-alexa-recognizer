@@ -187,6 +187,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc){
 	// First add "complete" wildcard regexp - one that replaces slots and options lists with wildcards
 	let regExpString = '';
 	let shouldAdd = false;
+	let addZeroOccurrence = false;
 	for(let i = 0; i < parsedJson.parsedUtterance.length; i++){
 		if(typeof parsedJson.parsedUtterance[i] == "string"){
 			regExpString += (parsedJson.parsedUtterance[i]);
@@ -200,6 +201,11 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc){
 		else if(parsedJson.parsedUtterance[i].type == "optionsList"){
 			// TODO add only if the number of options exceeds a threshold
 			regExpString += (wildcardReplacementString);
+			for(let l = 0; l < parsedJson.parsedUtterance[i].options.length; l++){
+				if(parsedJson.parsedUtterance[i].options[l] == ''){
+					regExpString += "{0,1}";
+				}
+			}
 			shouldAdd = true;
 		}
 	}
@@ -227,9 +233,18 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc){
 				if(j > 0){
 					regExpString +="|";
 				}
-				regExpString += parsedJson.parsedUtterance[i].options[j];
+				if(parsedJson.parsedUtterance[i].options[j].length > 0){
+					regExpString += parsedJson.parsedUtterance[i].options[j];
+				}
+				else {
+					regExpString += "\\s??"
+					addZeroOccurrence = true;
+				}
 			}
 			regExpString += ")";
+			if(addZeroOccurrence){
+				regExpString += "{0,1}";
+			}
 		}
 	}
 	if(shouldAdd){
@@ -257,9 +272,18 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc){
 				if(j > 0){
 					regExpString +="|";
 				}
-				regExpString += parsedJson.parsedUtterance[i].options[j];
+				if(parsedJson.parsedUtterance[i].options[j].length > 0){
+					regExpString += parsedJson.parsedUtterance[i].options[j];
+				}
+				else {
+					regExpString += "\\s??"
+					addZeroOccurrence = true;
+				}
 			}
 			regExpString += ")";
+			if(addZeroOccurrence){
+				regExpString += "{0,1}";
+			}
 		}
 	}
 	regExpString = regexputilities.reconstructRegExpWithWhiteSpaces(regExpString, true);
