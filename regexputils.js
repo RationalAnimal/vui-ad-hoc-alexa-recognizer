@@ -27,14 +27,26 @@ SOFTWARE.
 var regexputilities = {};
 
 regexputilities.reconstructRegExpWithWhiteSpaces = function(regExpString, includeOptionalPunctuationAtEnd){
+//	console.log("regExpString: ", regExpString);
 	// Now split regExString into non-white space parts and reconstruct the
 	// whole thing with any sequence of white spaces replaced with a white space
 	// reg exp.
 	let splitRegExp = regExpString.split(/\s+/);
 	let reconstructedRegExp = "^\\s*";
+	let allowZeroWhitespaces = false;
 	for(let j = 0; j < splitRegExp.length; j++){
 		if(splitRegExp[j].length > 0){
-			if(j > 0){
+			if(j > 0 && splitRegExp[j].endsWith("{0,1}")){
+//				console.log("do allow zero whitespace for " + splitRegExp[j]);
+				reconstructedRegExp += "\\s*";
+				allowZeroWhitespaces = true;
+			}
+			else if (allowZeroWhitespaces){
+				allowZeroWhitespaces = false;
+				reconstructedRegExp += "\\s*";
+			}
+			else if(j > 0){
+//				console.log("don't allow zero whitespace for " + splitRegExp[j]);
 				reconstructedRegExp += "\\s+";
 			}
 			reconstructedRegExp += splitRegExp[j];
@@ -46,6 +58,7 @@ regexputilities.reconstructRegExpWithWhiteSpaces = function(regExpString, includ
 	else {
 		reconstructedRegExp += "\\s*$";
 	}
+//	console.log("reconstructedRegExp: ", reconstructedRegExp);
 
   return reconstructedRegExp;
 }

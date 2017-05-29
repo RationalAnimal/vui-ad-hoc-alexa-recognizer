@@ -62,4 +62,4 @@ EducationalOrganizationIntent have you graduated from {EducationalOrganizationSl
 AdministrativeAreaIntent post office in {AdministrativeAreaSlot}
 TranscendNumberIntent first number is {TranscendNumberOneSlot} and the second number {TranscendNumberTwoSlot}
 TranscendPresidentsIntent {TranscendPresidentsSlot} was united states president
-RoomIntent best room is the {RoomSlot}
+RoomIntent best room is {|the|a} {RoomSlot}
