@@ -2120,10 +2120,11 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
       returnValue = _findExactCaseBuiltInValue(value, slotType, matchingValueTypeArray[scratchIndex]);
     }
     else if(slotType == "TRANSCEND.Airline"){
+      let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.Airline");
       let scratchValue = returnValue.toUpperCase();
-      for(let i = 0; i < recognizer.builtInValues.Airline.values.length; i ++){
-        if(recognizer.builtInValues.Airline.values[i].name.toUpperCase() == scratchValue){
-          returnValue = recognizer.builtInValues.Airline.values[i].name;
+      for(let i = 0; i < builtInSlotValues.length; i ++){
+        if(builtInSlotValues[i].name.toUpperCase() == scratchValue){
+          returnValue = builtInSlotValues[i].name;
           break;
         }
       }
