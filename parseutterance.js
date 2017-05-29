@@ -337,6 +337,7 @@ var _unfoldParsedJson = function(parsedJson){
 	return resultArray;
 }
 
+//TODO remove duplicate copies of this and move them to a commont js file later
 var _getBuiltInSlotTypeSuffix = function(slotType){
 	return slotType.replace(/^AMAZON\./, '').replace(/^TRANSCEND\./, '');
 }

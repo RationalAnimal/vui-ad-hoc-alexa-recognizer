@@ -2171,69 +2171,74 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
 }
 
 var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recognizerToUse){
-  // First, correct some of Microsoft's "deviations"
-  // look for a $ followed by a number and replace it with the number followed by the word "dollars".
-  let regExpString = "(\\$\\s*(?:\\s*";
-  for(let i = 0; i < recognizer.builtInValues.NUMBER.values.length; i++){
-    regExpString += "|" + recognizer.builtInValues.NUMBER.values[i];
-  }
-  regExpString += "|,"
-
-  regExpString +=    ")+)"
-  let regExp = new RegExp(regExpString, "ig");
-  let regExpNonGlobal = new RegExp(regExpString, "i");
-  let dollarMatchResult;
-  while(dollarMatchResult = regExp.exec(stringToMatch)){
-//    console.log("dollarMatchResult: " + JSON.stringify(dollarMatchResult));
-    if(dollarMatchResult == null){
-      continue;
+  //  console.log("_matchText, 1");
+    var recognizerSet;
+    if(typeof recognizerToUse != "undefined" && recognizerToUse != null){
+      recognizerSet = recognizerToUse;
     }
-    let dollarlessMatch = dollarMatchResult[0].substring(1);
-//    console.log("dollarlessMatch: " + JSON.stringify(dollarlessMatch));
-    regExpNonGlobal.lastIndex = 0;
-    stringToMatch = stringToMatch.replace(regExpNonGlobal, dollarlessMatch + " dollars ");
-//    console.log("stringToMatch: " + JSON.stringify(stringToMatch));
-    regExp.lastIndex = 0;
-  }
-  // Now separate all leading zeros so that they don't get lost later in the parsing.
-  regExp = /(^0[0-9])/;
-  let leadingZeroMatchResult;
-  if(leadingZeroMatchResult = regExp.exec(stringToMatch)){
-    if(leadingZeroMatchResult != null){
-      let replacementString = "0 " + leadingZeroMatchResult[0].substring(1);
-      stringToMatch = stringToMatch.replace(/(^0[0-9])/, replacementString);
+    else {
+      if (fs.existsSync("./recognizer.json")) {
+    //    console.log("_matchText, 1.1");
+        recognizerSet = require("./recognizer.json");
+      }
+      else if (fs.existsSync("../../recognizer.json")){
+    //    console.log("_matchText, 1.2");
+        recognizerSet = require("../../recognizer.json");
+      }
+    }
+    if(typeof recognizerSet == "undefined"){
+      throw {"error": recognizer.errorCodes.MISSING_RECOGNIZER, "message": "Unable to load recognizer.json"};
+    }
+
+  // First, correct some of Microsoft's "deviations"
+  // Do this only if the number slot type is used
+  let numberValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.NUMBER");
+  if(typeof numberValues != "undefined" && Array.isArray(numberValues)){
+    // look for a $ followed by a number and replace it with the number followed by the word "dollars".
+    let regExpString = "(\\$\\s*(?:\\s*";
+    for(let i = 0; i < numberValues.length; i++){
+      regExpString += "|" + numberValues[i];
+    }
+    regExpString += "|,"
+
+    regExpString +=    ")+)"
+    let regExp = new RegExp(regExpString, "ig");
+    let regExpNonGlobal = new RegExp(regExpString, "i");
+    let dollarMatchResult;
+    while(dollarMatchResult = regExp.exec(stringToMatch)){
+  //    console.log("dollarMatchResult: " + JSON.stringify(dollarMatchResult));
+      if(dollarMatchResult == null){
+        continue;
+      }
+      let dollarlessMatch = dollarMatchResult[0].substring(1);
+  //    console.log("dollarlessMatch: " + JSON.stringify(dollarlessMatch));
+      regExpNonGlobal.lastIndex = 0;
+      stringToMatch = stringToMatch.replace(regExpNonGlobal, dollarlessMatch + " dollars ");
+  //    console.log("stringToMatch: " + JSON.stringify(stringToMatch));
+      regExp.lastIndex = 0;
+    }
+    // Now separate all leading zeros so that they don't get lost later in the parsing.
+    regExp = /(^0[0-9])/;
+    let leadingZeroMatchResult;
+    if(leadingZeroMatchResult = regExp.exec(stringToMatch)){
+      if(leadingZeroMatchResult != null){
+        let replacementString = "0 " + leadingZeroMatchResult[0].substring(1);
+        stringToMatch = stringToMatch.replace(/(^0[0-9])/, replacementString);
+        regExp.lastIndex = 0;
+      }
+    }
+
+    regExp = /([^0-9]0[0-9])/ig;
+    while(leadingZeroMatchResult = regExp.exec(stringToMatch)){
+      if(leadingZeroMatchResult == null){
+        continue;
+      }
+      let replacementString = leadingZeroMatchResult[0].substring(0, 1) + "0 " + leadingZeroMatchResult[0].substring(2);
+      stringToMatch = stringToMatch.replace(/([^0-9]0[0-9])/, replacementString);
       regExp.lastIndex = 0;
     }
   }
 
-  regExp = /([^0-9]0[0-9])/ig;
-  while(leadingZeroMatchResult = regExp.exec(stringToMatch)){
-    if(leadingZeroMatchResult == null){
-      continue;
-    }
-    let replacementString = leadingZeroMatchResult[0].substring(0, 1) + "0 " + leadingZeroMatchResult[0].substring(2);
-    stringToMatch = stringToMatch.replace(/([^0-9]0[0-9])/, replacementString);
-    regExp.lastIndex = 0;
-  }
-
-//  console.log("_matchText, 1");
-  var recognizerSet;
-  if(typeof recognizerToUse != "undefined" && recognizerToUse != null){
-    recognizerSet = recognizerToUse;
-  }
-  else {
-    if (fs.existsSync("./recognizer.json")) {
-  //    console.log("_matchText, 1.1");
-      recognizerSet = require("./recognizer.json");
-    }
-    else if (fs.existsSync("../../recognizer.json")){
-  //    console.log("_matchText, 1.2");
-      recognizerSet = require("../../recognizer.json");
-    }
-  }
-  if(typeof recognizerSet == "undefined"){
-    throw {"error": recognizer.errorCodes.MISSING_RECOGNIZER, "message": "Unable to load recognizer.json"};
-  }
 //  console.log("_matchText, 2, recognizerSet: " + JSON.stringify(recognizerSet));
   let originalMatchConfig = [].concat(recognizerSet.matchConfig);
 
@@ -2509,6 +2514,20 @@ var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, con
   }
 }
 
+//TODO remove duplicate copies of this and move them to a commont js file later
+var _getBuiltInSlotTypeSuffix = function(slotType){
+	return slotType.replace(/^AMAZON\./, '').replace(/^TRANSCEND\./, '');
+}
+
+//TODO remove duplicate copies of this and move them to a commont js file later
+var _isBuiltInSlotType = function(slotType){
+	if(slotType.startsWith("AMAZON.") || slotType.startsWith("TRANSCEND.")){
+		return true;
+	}
+	return false;
+}
+
+
 var _generateRunTimeJson = function(config, intents, utterances){
   if(typeof config == "undefined" || config == null){
     config = {};
@@ -2593,6 +2612,8 @@ var _generateRunTimeJson = function(config, intents, utterances){
   }
 
   // First process all the utterances
+  // keep track of all the built in slot types used by utterances so that they can be added to the recognizerSet
+  let builtInSlotTypesUsedByUtterances = [];
   for(var i = 0; i < utterances.length; i ++){
     if(utterances[i].trim() == ""){
       continue;
@@ -2610,6 +2631,10 @@ var _generateRunTimeJson = function(config, intents, utterances){
         continue;
       }
       let parsedSlot = result.parsedUtterance[j];
+      let translatedSlotType = _getTranslatedSlotTypeForInternalLookup(parsedSlot.slotType);
+      if(_isBuiltInSlotType(translatedSlotType) && builtInSlotTypesUsedByUtterances.indexOf(translatedSlotType) < 0){
+        builtInSlotTypesUsedByUtterances.push(translatedSlotType);
+      }
       let slotToPush = {"name": parsedSlot.name, "type": parsedSlot.slotType, "flags": parsedSlot.flags};
       let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, parsedSlot.slotType);
       if(typeof slotTypeTransformSrcFilename != "undefined"){
@@ -2621,6 +2646,21 @@ var _generateRunTimeJson = function(config, intents, utterances){
     currentValue.intent = result.intentName;
     currentValue.regExpStrings = result.regExpStrings;
     recognizerSet.matchConfig.push(currentValue);
+  }
+  // Now add builtin slot type info to the recognizerSet
+  // Add number slot because it's needed even if it's not used directly
+  if(builtInSlotTypesUsedByUtterances.indexOf("TRANSCEND.NUMBER") < 0){
+    builtInSlotTypesUsedByUtterances.push("TRANSCEND.NUMBER");
+  }
+  recognizerSet.builtInSlotTypes = [];
+  for(let i = 0; i < builtInSlotTypesUsedByUtterances.length; i++){
+    let builtInSlotTypeSuffix = _getBuiltInSlotTypeSuffix(builtInSlotTypesUsedByUtterances[i]);
+    let builtInSlotTypeValues = recognizer.builtInValues[builtInSlotTypeSuffix].values;
+    let builtInSlotType = {
+      "name": builtInSlotTypesUsedByUtterances[i],
+      "values": builtInSlotTypeValues
+    };
+    recognizerSet.builtInSlotTypes.push(builtInSlotType);
   }
   // Now process all the built in intents.  Note that their triggering
   // utterances will NOT be part of "utterances" arg, but instead will be in config.
@@ -2905,6 +2945,14 @@ var _getSlotTypeFromRecognizer = function(recognizer, intent, slot){
   }
 }
 
+var _getBuiltInSlotValuesFromRecognizer = function(recognizer, builtInSlotType){
+  for(let i = 0; i < recognizer.builtInSlotTypes.length; i ++){
+    if(recognizer.builtInSlotTypes[i].name == builtInSlotType){
+      return recognizer.builtInSlotTypes[i].values;
+    }
+  }
+  return;
+}
 var _getSlotTransformSrcFilenameFromRecognizer = function(recognizer, intent, slot){
   for(var i = 0; i < recognizer.matchConfig.length; i++){
     if(recognizer.matchConfig[i].intent == intent){
