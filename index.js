@@ -2064,36 +2064,16 @@ var _getWeekOfYear = function(dateToProcess){
 
 }
 
-var _findExactCaseBuiltInValue = function(value, slotType, builtInValueType){
-  let arrayToSearch = recognizer.builtInValues[builtInValueType].values;
+var _findExactCaseBuiltInValue = function(value, slotType, recognizerSet){
+  let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, slotType);
   let scratchValue = value.toUpperCase();
-  for(let i = 0; i < arrayToSearch.length; i++){
-    if(scratchValue == arrayToSearch[i].toUpperCase()){
-      return arrayToSearch[i];
+  for(let i = 0; i < builtInSlotValues.length; i ++){
+    if(builtInSlotValues[i].toUpperCase() == scratchValue){
+      return builtInSlotValues[i];
     }
   }
   return value;
 }
-
-var matchingSlotTypeArray = 
-["TRANSCEND.Color", "TRANSCEND.Actor", "TRANSCEND.Country", "TRANSCEND.US_FIRST_NAME", "TRANSCEND.Artist",
- "TRANSCEND.Comic", "TRANSCEND.Dessert", "TRANSCEND.LandmarksOrHistoricalBuildings", "TRANSCEND.Month", "TRANSCEND.Room",
- "TRANSCEND.DayOfWeek", "TRANSCEND.LandmarksOrHistoricalBuildings", "TRANSCEND.Landform", "TRANSCEND.MovieSeries",
- "TRANSCEND.Movie", "TRANSCEND.MedicalOrganization", "TRANSCEND.MedicalOrganization", "TRANSCEND.LocalBusinessType", "TRANSCEND.LocalBusiness",
- "TRANSCEND.Game", "TRANSCEND.FoodEstablishment", "TRANSCEND.FictionalCharacter", "TRANSCEND.Festival", "TRANSCEND.EducationalOrganization",
- "TRANSCEND.Director", "TRANSCEND.Corporation", "TRANSCEND.CivicStructure", "TRANSCEND.BroadcastChannel", "TRANSCEND.BookSeries",
- "TRANSCEND.Book", "TRANSCEND.Author", "TRANSCEND.Athlete", "TRANSCEND.AdministrativeArea"
-];
-
-var matchingValueTypeArray =
-["Color", "Actor", "Country", "US_FIRST_NAME", "Artist",
- "Comic", "Dessert", "LandmarksOrHistoricalBuildings", "Month", "Room",
- "DayOfWeek", "LandmarksOrHistoricalBuildings", "Landform", "MovieSeries",
- "Movie", "MedicalOrganization", "MedicalOrganization", "LocalBusinessType", "LocalBusiness",
- "Game", "FoodEstablishment", "FictionalCharacter", "Festival", "EducationalOrganization",
- "Director", "Corporation", "CivicStructure", "BroadcastChannel", "BookSeries",
- "Book", "Author", "Athlete", "AdministrativeArea"
-];
 
 var _processMatchedSlotValueByType = function(value, slotType, flags, slot, intent, recognizerSet){
 //  console.log("_processMatchedSlotValueByType, entered");
@@ -2115,11 +2095,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
   else if(slotType.startsWith("TRANSCEND.")){
     // already did returnValue = value;
     // Now need to match the capitalization
-    let scratchIndex;
-    if((scratchIndex = matchingSlotTypeArray.indexOf(slotType)) >= 0 ){
-      returnValue = _findExactCaseBuiltInValue(value, slotType, matchingValueTypeArray[scratchIndex]);
-    }
-    else if(slotType == "TRANSCEND.Airline"){
+    if(slotType == "TRANSCEND.Airline"){
       let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.Airline");
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < builtInSlotValues.length; i ++){
@@ -2153,8 +2129,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
       }
     }
     else {
-      // All other built in list values use lower case only
-      returnValue = returnValue.toLowerCase();
+      returnValue = _findExactCaseBuiltInValue(value, slotType, recognizerSet);
     }
   }
   else {

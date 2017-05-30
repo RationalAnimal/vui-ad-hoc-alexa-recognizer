@@ -549,6 +549,17 @@ DateIntent I would like to meet with you {DateSlot}
 DateIntent I can meet you {DateSlot}
 DateIntent I can meet with you {DateSlot}
 ```
+Note that you can specify an options list that's optional by omitting one value:
+
+```text
+DateIntent I {want to|wish to|like to|would like to|can} meet {|you|with you} {DateSlot}
+```
+
+will match on (for instance):
+
+```text
+I want to meet tomorrow
+```
 
 ### Removing flags/cleaning up the utterance file
 There is also a utility available to "clean up" utterance files for use with
