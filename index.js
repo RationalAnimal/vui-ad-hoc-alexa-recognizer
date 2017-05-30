@@ -2140,13 +2140,14 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
       }
     }
     else if(slotType == "TRANSCEND.US_PRESIDENT"){
+      let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.US_PRESIDENT");
       let scratchValue = returnValue.toLowerCase();
-      for(let i = 0; i < recognizer.builtInValues.US_PRESIDENT.values.length; i ++){
-        if(recognizer.builtInValues.US_PRESIDENT.values[i].name.toLowerCase() == scratchValue ||
-           recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings.indexOf(scratchValue) > 0 ||
-           recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings.indexOf(scratchValue) > 0
+      for(let i = 0; i < builtInSlotValues.length; i ++){
+        if(builtInSlotValues[i].name.toLowerCase() == scratchValue ||
+           builtInSlotValues[i].matchingStrings.indexOf(scratchValue) > 0 ||
+           builtInSlotValues[i].ordinalMatchingStrings.indexOf(scratchValue) > 0
           ){
-          returnValue = recognizer.builtInValues.US_PRESIDENT.values[i].name;
+          returnValue = builtInSlotValues[i].name;
           break;
         }
       }
