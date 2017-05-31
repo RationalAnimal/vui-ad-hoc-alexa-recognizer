@@ -29,6 +29,7 @@ var soundex = require('./soundex.js');
 var utilities = require('./utilities.js');
 var parser = require('./parseutterance.js');
 var recognizer = {};
+var constants = require('./constants.js');
 
 var _makeReplacementRegExpString = function(arrayToConvert){
   var returnValue = "((?:";
@@ -63,9 +64,6 @@ var _makeFullRegExpString = function(arrayToConvert){
 
 recognizer.Recognizer = class {
 };
-
-recognizer.errorCodes = {};
-recognizer.errorCodes.MISSING_RECOGNIZER = 1001;
 
 // The sections below are for the built in slots support
 recognizer.builtInValues = {};
@@ -2165,7 +2163,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
       }
     }
     if(typeof recognizerSet == "undefined"){
-      throw {"error": recognizer.errorCodes.MISSING_RECOGNIZER, "message": "Unable to load recognizer.json"};
+      throw {"error": constants.errorCodes.MISSING_RECOGNIZER, "message": "Unable to load recognizer.json"};
     }
 
   // First, correct some of Microsoft's "deviations"
