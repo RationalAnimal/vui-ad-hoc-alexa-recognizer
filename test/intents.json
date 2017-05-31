@@ -211,6 +211,15 @@
       ]
     },
     {
+      "intent": "MovieTheaterIntent",
+      "slots": [
+        {
+          "name": "MovieTheaterSlot",
+          "type": "AMAZON.MovieTheater"
+        }
+      ]
+    },
+    {
       "intent": "MovieIntent",
       "slots": [
         {
