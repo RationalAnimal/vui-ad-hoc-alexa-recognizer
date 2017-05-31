@@ -235,6 +235,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.MovieTheater slot matches", function() {
+      let result = recognizer.Recognizer.matchText("let's go to the coolidge corner theater");
+      expect(result).to.eql(
+        {"name": "MovieTheaterIntent",
+         "slots": {
+          "MovieTheaterSlot": {
+            "name": "MovieTheaterSlot",
+            "value": "coolidge corner theater"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.LocalBusinessType slot matches", function() {
       let result = recognizer.Recognizer.matchText("are you going to the pharmacy");
       expect(result).to.eql(

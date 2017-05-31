@@ -63,3 +63,4 @@ AdministrativeAreaIntent post office in {AdministrativeAreaSlot}
 TranscendNumberIntent first number is {TranscendNumberOneSlot} and the second number {TranscendNumberTwoSlot}
 TranscendPresidentsIntent {TranscendPresidentsSlot} was united states president
 RoomIntent best room is {|the|a} {RoomSlot}
+MovieTheaterIntent let's go to the {MovieTheaterSlot}
