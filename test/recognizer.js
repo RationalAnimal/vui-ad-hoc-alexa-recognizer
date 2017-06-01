@@ -247,6 +247,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.MusicAlbum slot matches", function() {
+      let result = recognizer.Recognizer.matchText("thriller is one of the most popular albums of all time");
+      expect(result).to.eql(
+        {"name": "MusicAlbumIntent",
+         "slots": {
+          "MusicAlbumSlot": {
+            "name": "MusicAlbumSlot",
+            "value": "thriller"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.LocalBusinessType slot matches", function() {
       let result = recognizer.Recognizer.matchText("are you going to the pharmacy");
       expect(result).to.eql(

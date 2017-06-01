@@ -220,6 +220,15 @@
       ]
     },
     {
+      "intent": "MusicAlbumIntent",
+      "slots": [
+        {
+          "name": "MusicAlbumSlot",
+          "type": "AMAZON.MusicAlbum"
+        }
+      ]
+    },
+    {
       "intent": "MovieIntent",
       "slots": [
         {

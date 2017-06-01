@@ -64,3 +64,4 @@ TranscendNumberIntent first number is {TranscendNumberOneSlot} and the second nu
 TranscendPresidentsIntent {TranscendPresidentsSlot} was united states president
 RoomIntent best room is {|the|a} {RoomSlot}
 MovieTheaterIntent let's go to the {MovieTheaterSlot}
+MusicAlbumIntent {MusicAlbumSlot} is one of the most popular albums of all time
