@@ -259,6 +259,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.MusicEvent slot matches", function() {
+      let result = recognizer.Recognizer.matchText("will you go to the cmt music awards");
+      expect(result).to.eql(
+        {"name": "MusicEventIntent",
+         "slots": {
+          "MusicEventSlot": {
+            "name": "MusicEventSlot",
+            "value": "cmt music awards"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.LocalBusinessType slot matches", function() {
       let result = recognizer.Recognizer.matchText("are you going to the pharmacy");
       expect(result).to.eql(

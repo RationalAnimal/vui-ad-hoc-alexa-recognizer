@@ -229,6 +229,15 @@
       ]
     },
     {
+      "intent": "MusicEventIntent",
+      "slots": [
+        {
+          "name": "MusicEventSlot",
+          "type": "AMAZON.MusicEvent"
+        }
+      ]
+    },
+    {
       "intent": "MovieIntent",
       "slots": [
         {
