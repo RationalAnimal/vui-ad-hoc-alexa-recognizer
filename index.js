@@ -287,6 +287,9 @@ recognizer.builtInValues.MovieTheater.replacementRegExpString = _makeReplacement
 recognizer.builtInValues.MusicAlbum = require("./builtinslottypes/musicalbums.json");
 recognizer.builtInValues.MusicAlbum.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MusicAlbum.values);
 
+recognizer.builtInValues.MusicEvent = require("./builtinslottypes/musicevents.json");
+recognizer.builtInValues.MusicEvent.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MusicEvent.values);
+
 recognizer.builtInValues.Movie = require("./builtinslottypes/movies.json");
 recognizer.builtInValues.Movie.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Movie.values);
 
@@ -609,6 +612,17 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       return recognizer.builtInValues.MusicAlbum.replacementRegExpString;
     }
   }
+  else if(slotType == "TRANSCEND.MusicEvent"){
+    // Ignore SOUNDEX_MATCH flag for now
+    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
+      // number are used in cases of names like John the 1st
+      return "((?:\\w|\\s|[0-9]|\-)+)";
+    }
+    else {
+      return recognizer.builtInValues.MusicEvent.replacementRegExpString;
+    }
+  }
+
   else if(slotType == "TRANSCEND.Movie"){
     // Ignore SOUNDEX_MATCH flag for now
     if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
@@ -2549,6 +2563,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MovieSeries", "MovieSeries", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MovieTheater", "MovieTheater", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicAlbum", "MusicAlbum", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicEvent", "MusicEvent", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Movie", "Movie", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MedicalOrganization", "MedicalOrganization", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LocalBusinessType", "LocalBusinessType", config);
