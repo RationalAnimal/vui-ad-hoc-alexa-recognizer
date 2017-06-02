@@ -430,6 +430,16 @@ var _hasFlag = function(flagName, flags){
 */
 var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFlags){
   slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
+  let simpleSlots = [
+    "TRANSCEND.US_FIRST_NAME", "TRANSCEND.Actor", "TRANSCEND.Artist", "TRANSCEND.Comic", "TRANSCEND.Dessert",
+    "TRANSCEND.LandmarksOrHistoricalBuildings", "TRANSCEND.Landform", "TRANSCEND.MovieSeries", "TRANSCEND.MovieTheater",
+    "TRANSCEND.MusicAlbum", "TRANSCEND.Musician", "TRANSCEND.MusicGroup", "TRANSCEND.MusicEvent", "TRANSCEND.Movie",
+    "TRANSCEND.MedicalOrganization", "TRANSCEND.LocalBusinessType", "TRANSCEND.LocalBusiness", "TRANSCEND.Game",
+    "TRANSCEND.FoodEstablishment", "TRANSCEND.FictionalCharacter", "TRANSCEND.Festival", "TRANSCEND.EducationalOrganization",
+    "TRANSCEND.Director", "TRANSCEND.Corporation", "TRANSCEND.CivicStructure", "TRANSCEND.BroadcastChannel",
+    "TRANSCEND.BookSeries", "TRANSCEND.Book", "TRANSCEND.Author", "TRANSCEND.Athlete",
+    "TRANSCEND.AdministrativeArea", "TRANSCEND.Country", "TRANSCEND.Color", "TRANSCEND.Room"
+  ];
   if(slotType == "TRANSCEND.NUMBER"){
     // Ignore flags for now
     return recognizer.builtInValues.NUMBER.replacementRegExpString;
@@ -498,7 +508,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     }
     if(hasWildCardMatch){
       // numbers are used in cases of some names
-      return "((?:\\w|\\s|[0-9])+)";
+      return "((?:\\w|\\s|[0-9]|\-)+)";
     }
     else {
       let allAirlines = [];
@@ -518,317 +528,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       return replacementRegExpString;
     }
   }
-  else if(slotType == "TRANSCEND.US_FIRST_NAME"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // numbers are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9])+)";
-    }
-    else {
-      return recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Actor"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9])+)";
-    }
-    else {
-      return recognizer.builtInValues.Actor.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Artist"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9])+)";
-    }
-    else {
-      return recognizer.builtInValues.Artist.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Comic"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.Comic.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Dessert"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.Dessert.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.LandmarksOrHistoricalBuildings"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.LandmarksOrHistoricalBuildings.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Landform"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.Landform.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.MovieSeries"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.MovieSeries.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.MovieTheater"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.MovieTheater.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.MusicAlbum"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.MusicAlbum.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Musician"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.Musician.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.MusicGroup"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.MusicGroup.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.MusicEvent"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.MusicEvent.replacementRegExpString;
-    }
-  }
-
-  else if(slotType == "TRANSCEND.Movie"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.Movie.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.MedicalOrganization"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.MedicalOrganization.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.LocalBusinessType"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.LocalBusinessType.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.LocalBusiness"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.LocalBusiness.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Game"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.Game.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.FoodEstablishment"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.FoodEstablishment.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.FictionalCharacter"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.FictionalCharacter.replacementRegExpString;
-    }
-  }
-
-  else if(slotType == "TRANSCEND.Festival"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.Festival.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.EducationalOrganization"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.EducationalOrganization.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Director"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.Director.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Corporation"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    else {
-      return recognizer.builtInValues.Corporation.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.CivicStructure"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9])+)";
-    }
-    else {
-      return recognizer.builtInValues.CivicStructure.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.BroadcastChannel"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9])+)";
-    }
-    else {
-      return recognizer.builtInValues.BroadcastChannel.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.BookSeries"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9])+)";
-    }
-    else {
-      return recognizer.builtInValues.BookSeries.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Book"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9])+)";
-    }
-    else {
-      return recognizer.builtInValues.Book.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Author"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9])+)";
-    }
-    else {
-      return recognizer.builtInValues.Author.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Athlete"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like John the 1st
-      return "((?:\\w|\\s|[0-9])+)";
-    }
-    else {
-      return recognizer.builtInValues.Athlete.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.AdministrativeArea"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      // number are used in cases of names like the 1st
-      return "((?:\\w|\\s|[0-9])+)";
-    }
-    else {
-      return recognizer.builtInValues.AdministrativeArea.replacementRegExpString;
-    }
+  else if(simpleSlots.indexOf(slotType) >= 0){
+    return getSimpleRegExpForBuiltInSlotType(slotType, slotFlags);
   }
   else if(slotType == "TRANSCEND.DATE"){
     return recognizer.builtInValues.DATE.replacementRegExpString;
@@ -849,37 +550,10 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     // Ignore flags for now
     return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
   }
-  else if(slotType == "TRANSCEND.Country"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      return "((?:\\w|\\s|[0-9])+)";
-    }
-    else {
-      return recognizer.builtInValues.Country.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Color"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      return "((?:\\w|\\s|[0-9])+)";
-    }
-    else {
-      return recognizer.builtInValues.Color.replacementRegExpString;
-    }
-  }
-  else if(slotType == "TRANSCEND.Room"){
-    // Ignore SOUNDEX_MATCH flag for now
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-      return "((?:\\w|\\s|[0-9]|')+)";
-    }
-    else {
-      return recognizer.builtInValues.Room.replacementRegExpString;
-    }
-  }
 
 //  else if(slotType.startsWith("TRANSCEND.")){
 //    // TODO add handling of other built in TRANSCEND/Amazon slot types, for now just return the value
-//    return "((?:\\w|\\s|[0-9])+)";
+//    return "((?:\\w|\\s|[0-9]|\-)+)";
 //  }
   // Here we are dealing with custom slots.
   if(typeof config != "undefined" && Array.isArray(config.customSlotTypes)){
@@ -891,11 +565,11 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
             customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
           }
           // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
-          return "((?:\\w|\\s|[0-9])+)";
+          return "((?:\\w|\\s|[0-9]|\-)+)";
         }
         else if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
           // numbers are used in cases of names like John the 1st
-          return "((?:\\w|\\s|[0-9])+)";
+          return "((?:\\w|\\s|[0-9]|\-)+)";
         }
         else {
           if(typeof customSlotType.replacementRegExp == "undefined"){
@@ -907,7 +581,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     }
   }
   // Default fallback
-  return "((?:\\w|\\s|[0-9])+)";
+  return "((?:\\w|\\s|[0-9]|\-)+)";
 }
 
 var _getOrderOfMagnitude = function(number){
@@ -2569,6 +2243,19 @@ var _isBuiltInSlotType = function(slotType){
 	return false;
 }
 
+var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
+  if(_isBuiltInSlotType(slotType) == false){
+    return;
+  }
+  if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
+    // number are used in cases of names like John the 1st
+    return "((?:\\w|\\s|[0-9]|\-)+)";
+  }
+  let suffix = _getBuiltInSlotTypeSuffix(slotType);
+  console.log("getSimpleRegExpForBuiltInSlotType, suffix: <" + suffix + ">");
+  console.log("getSimpleRegExpForBuiltInSlotType, returning: " + recognizer.builtInValues[suffix].replacementRegExpString);
+  return recognizer.builtInValues[suffix].replacementRegExpString;
+}
 
 var _generateRunTimeJson = function(config, intents, utterances){
   if(typeof config == "undefined" || config == null){
