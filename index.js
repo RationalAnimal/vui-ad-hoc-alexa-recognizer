@@ -287,6 +287,9 @@ recognizer.builtInValues.MovieTheater.replacementRegExpString = _makeReplacement
 recognizer.builtInValues.MusicAlbum = require("./builtinslottypes/musicalbums.json");
 recognizer.builtInValues.MusicAlbum.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MusicAlbum.values);
 
+recognizer.builtInValues.Musician = require("./builtinslottypes/musicians.json");
+recognizer.builtInValues.Musician.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Musician.values);
+
 recognizer.builtInValues.MusicGroup = require("./builtinslottypes/musicgroups.json");
 recognizer.builtInValues.MusicGroup.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MusicGroup.values);
 
@@ -613,6 +616,16 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     }
     else {
       return recognizer.builtInValues.MusicAlbum.replacementRegExpString;
+    }
+  }
+  else if(slotType == "TRANSCEND.Musician"){
+    // Ignore SOUNDEX_MATCH flag for now
+    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
+      // number are used in cases of names like John the 1st
+      return "((?:\\w|\\s|[0-9]|\-)+)";
+    }
+    else {
+      return recognizer.builtInValues.Musician.replacementRegExpString;
     }
   }
   else if(slotType == "TRANSCEND.MusicGroup"){
@@ -2576,6 +2589,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MovieSeries", "MovieSeries", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MovieTheater", "MovieTheater", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicAlbum", "MusicAlbum", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Musician", "Musician", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicGroup", "MusicGroup", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicEvent", "MusicEvent", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Movie", "Movie", config);
