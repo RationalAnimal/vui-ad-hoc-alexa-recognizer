@@ -220,6 +220,15 @@
       ]
     },
     {
+      "intent": "MusicianIntent",
+      "slots": [
+        {
+          "name": "MusicianSlot",
+          "type": "AMAZON.Musician"
+        }
+      ]
+    },
+    {
       "intent": "MusicAlbumIntent",
       "slots": [
         {

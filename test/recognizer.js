@@ -259,6 +259,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Musician slot matches", function() {
+      let result = recognizer.Recognizer.matchText("sting used to be part of a group");
+      expect(result).to.eql(
+        {"name": "MusicianIntent",
+         "slots": {
+          "MusicianSlot": {
+            "name": "MusicianSlot",
+            "value": "sting"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.MusicGroup slot matches", function() {
       let result = recognizer.Recognizer.matchText("i like coldplay");
       expect(result).to.eql(
