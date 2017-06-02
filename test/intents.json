@@ -229,6 +229,15 @@
       ]
     },
     {
+      "intent": "MusicGroupIntent",
+      "slots": [
+        {
+          "name": "MusicGroupSlot",
+          "type": "AMAZON.MusicGroup"
+        }
+      ]
+    },
+    {
       "intent": "MusicEventIntent",
       "slots": [
         {

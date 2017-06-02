@@ -259,6 +259,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.MusicGroup slot matches", function() {
+      let result = recognizer.Recognizer.matchText("i like coldplay");
+      expect(result).to.eql(
+        {"name": "MusicGroupIntent",
+         "slots": {
+          "MusicGroupSlot": {
+            "name": "MusicGroupSlot",
+            "value": "coldplay"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.MusicEvent slot matches", function() {
       let result = recognizer.Recognizer.matchText("will you go to the cmt music awards");
       expect(result).to.eql(
