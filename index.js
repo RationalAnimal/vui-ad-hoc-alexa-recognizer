@@ -374,6 +374,8 @@ recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpSt
 * Call this to translate the slot from whatever type it was actually reported into
 * a "built in" equivalent
 */
+// USED IN MATCH
+// USED IN GENERATE
 var _getTranslatedSlotTypeForInternalLookup = function(slotType){
   let periodIndex = slotType.indexOf('.');
   if(periodIndex < 0){
@@ -396,6 +398,8 @@ var _getTranslatedSlotTypeForOutput = function(slotType, platformConfig){
   return scratch;
 };
 
+// USED IN MATCH
+// NOT IN GENERATE
 var _getTranslatedIntentForOutput = function(intent, platformConfig){
   let periodIndex = intent.indexOf('.');
   if(periodIndex < 0){
@@ -431,6 +435,9 @@ var _hasFlag = function(flagName, flags){
 /**
 * This is the new version meant to be used with the parseutterance.js
 */
+// NOT IN MATCH
+// USED IN GENERATE
+// EXPORTED
 var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFlags){
   slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
   let simpleSlots = [
@@ -587,12 +594,14 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
   return "((?:\\w|\\s|[0-9]|\-)+)";
 };
 
+// USED IN MATCH
 var _getOrderOfMagnitude = function(number){
   let oom = Math.floor(Math.log10(number));
 //  console.log("_getOrderOfMagnitude, number: " + number + ", oom: " + oom);
   return oom;
 };
 
+// USED IN MATCH
 var _processMatchedNumericSlotValue = function(value){
 //  console.log("_processMatchedNumericSlotValue, 1, value: " + JSON.stringify(value));
   // Here we may have a mixture of words, numbers, and white spaces.
@@ -796,16 +805,12 @@ var _processMatchedNumericSlotValue = function(value){
     }
     scratchValues.push(accummulatedStack[0]);
   }
-  haveAccumulatedValue = false;
-  accummulatedStack = [];
-  lastOrderOfMagnitude = 0;
-  lastValue = 0;
 
   value = "";
   for(let i = 0; i < scratchValues.length; i++){
     value += ("" + scratchValues[i]);
   }
-//  value = parseInt(value);
+
   return value;
 };
 
@@ -824,6 +829,8 @@ var _formatDate = function(date){
   return "" + date.getFullYear() + "-" + _twoDigitFormatter(date.getMonth() + 1) + "-" + _twoDigitFormatter(date.getDate());
 };
 
+// USED IN MATCH
+// NOT IN GENERATE
 var _processMatchedCustomSlotValueByType = function(value, slotType, flags, recognizerSet){
 //  console.log("_processMatchedCustomSlotValueByType, 1, value: " + value + ", slotType: " + slotType);
   for(let i = 0; i < recognizerSet.customSlotTypes.length; i++){
@@ -877,6 +884,8 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
   return value;
 };
 
+// USED IN MATCH
+// NOT IN GENERATE
 var _processMatchedTimeSlotValue = function(value){
 //  console.log("_processMatchedTimeSlotValue, 1");
   let matchResult;
@@ -1292,6 +1301,8 @@ var _processMatchedTimeSlotValue = function(value){
   }
 };
 
+// USED IN MATCH
+// NOT IN GENERATE
 var _processMatchedDurationSlotValue = function(value){
   let matchResult;
   let generalDurationString =
@@ -1444,6 +1455,8 @@ var _processMatchedDurationSlotValue = function(value){
   }
 };
 
+// USED IN MATCH
+// NOT IN GENERATE
 var _processMatchedDateSlotValue = function(value, flags){
   let matchResult;
   let regExp = /(right now)/ig;
@@ -1801,6 +1814,8 @@ var _getWeekOfYear = function(dateToProcess){
 
 };
 
+// USED IN MATCH
+// NOT IN GENERATE
 var _findExactCaseBuiltInValue = function(value, slotType, recognizerSet){
   let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, slotType);
   let scratchValue = value.toUpperCase();
@@ -1812,6 +1827,8 @@ var _findExactCaseBuiltInValue = function(value, slotType, recognizerSet){
   return value;
 };
 
+// USED IN MATCH
+// NOT IN GENERATE
 var _processMatchedSlotValueByType = function(value, slotType, flags, slot, intent, recognizerSet){
 //  console.log("_processMatchedSlotValueByType, entered");
   slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
@@ -1885,6 +1902,8 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
   return returnValue;
 };
 
+// USED IN MATCH
+// NOT IN GENERATE
 var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recognizerToUse){
   //  console.log("_matchText, 1");
     let recognizerSet;
@@ -2076,6 +2095,8 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
 
 var allPlatforms = ["TRANSCEND", "AMAZON"];
 
+// NOT IN MATCH
+// USED IN GENERATE
 var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
   // If the config file specifies the input and output platform type(s) then
   // skip the parsing.
@@ -2202,9 +2223,10 @@ var _getBuiltinIntentPlatform = function(intentName, platforms){
   if(intentName.startsWith(scratch)){
     return platformPrefix;
   }
-  return;
 };
 
+// NOT IN MATCH
+// USED IN GENERATE
 var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, config, skipExtendedValues, skipRegeneratingRegExp, skipTransformFunctions){
   let slotConfig = _getBuiltInSlotConfig(config, slotType);
   if(typeof skipExtendedValues === "undefined" || skipExtendedValues !== true){
@@ -2224,12 +2246,14 @@ var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, con
   }
 };
 
-//TODO remove duplicate copies of this and move them to a commont js file later
+//TODO remove duplicate copies of this and move them to a common js file later
+// USED IN GENERATE
 var _getBuiltInSlotTypeSuffix = function(slotType){
 	return slotType.replace(/^AMAZON\./, '').replace(/^TRANSCEND\./, '');
 };
 
-//TODO remove duplicate copies of this and move them to a commont js file later
+//TODO remove duplicate copies of this and move them to a common js file later
+// USED IN GENERATE
 var _isBuiltInSlotType = function(slotType){
 	if(slotType.startsWith("AMAZON.") || slotType.startsWith("TRANSCEND.")){
 		return true;
@@ -2303,7 +2327,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Month", "Month", config, true);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.DayOfWeek", "DayOfWeek", config, true);
 
-  var recognizerSet = {};
+  let recognizerSet = {};
   recognizerSet.platform = config.platform;
 
   if(typeof config !== "undefined" && typeof config.customSlotTypes !== "undefined"){
@@ -2313,20 +2337,20 @@ var _generateRunTimeJson = function(config, intents, utterances){
     // was passed in, say from Cortana.  This is needed because Alexa respects
     // capitalization, etc, while Cortana gratuitously capitalizes first letters
     // and adds periods and other punctuations at the end.
-    for(var i = 0; i < recognizerSet.customSlotTypes.length; i++){
+    for(let i = 0; i < recognizerSet.customSlotTypes.length; i++){
       let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
       scratchCustomSlotType.regExpStrings = [];
-      for(var j = 0; j < scratchCustomSlotType.values.length; j++){
+      for(let j = 0; j < scratchCustomSlotType.values.length; j++){
         scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j] + ")\\s*$){1}");
       }
     }
     // Now generate soundex equivalents so that we can match on soundex if the
     // regular match fails
-    for(var i = 0; i < recognizerSet.customSlotTypes.length; i++){
+    for(let i = 0; i < recognizerSet.customSlotTypes.length; i++){
       let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
       scratchCustomSlotType.soundExValues = [];
       scratchCustomSlotType.soundExRegExpStrings = [];
-      for(var j = 0; j < scratchCustomSlotType.values.length; j++){
+      for(let j = 0; j < scratchCustomSlotType.values.length; j++){
         let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j], " ");
         scratchCustomSlotType.soundExValues.push(soundexValue);
         let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j], "\\s+");
@@ -2648,40 +2672,18 @@ recognizer.Recognizer.prototype.matchText = _matchText;
 recognizer.Recognizer.getReplacementRegExpStringGivenSlotType = _getReplacementRegExpStringGivenSlotType;
 recognizer.Recognizer.prototype.getReplacementRegExpStringGivenSlotType = _getReplacementRegExpStringGivenSlotType;
 
-var _getSlotType = function(intents, intent, slot){
-  for(let i = 0; i < intents.intents.length; i++){
-    if(intents.intents[i].intent === intent){
-      for(let j = 0; j < intents.intents[i].slots.length; j ++){
-        if(intents.intents[i].slots[j].name === slot){
-          return intents.intents[i].slots[j].type;
-        }
-      }
-      return;
+// USED IN MATCH
+// NOT IN GENERATE
+var _getBuiltInSlotValuesFromRecognizer = function(recognizerSet, builtInSlotType){
+  for(let i = 0; i < recognizerSet.builtInSlotTypes.length; i ++){
+    if(recognizerSet.builtInSlotTypes[i].name === builtInSlotType){
+      return recognizerSet.builtInSlotTypes[i].values;
     }
   }
 };
 
-var _getSlotTypeFromRecognizer = function(recognizer, intent, slot){
-  for(let i = 0; i < recognizer.matchConfig.length; i++){
-    if(recognizer.matchConfig[i].intent === intent){
-      for(let j = 0; j < recognizer.matchConfig[i].slots.length; j ++){
-        if(recognizer.matchConfig[i].slots[j].name === slot){
-          return recognizer.matchConfig[i].slots[j].type;
-        }
-      }
-      return;
-    }
-  }
-};
-
-var _getBuiltInSlotValuesFromRecognizer = function(recognizer, builtInSlotType){
-  for(let i = 0; i < recognizer.builtInSlotTypes.length; i ++){
-    if(recognizer.builtInSlotTypes[i].name === builtInSlotType){
-      return recognizer.builtInSlotTypes[i].values;
-    }
-  }
-};
-
+// USED IN MATCH
+// NOT IN GENERATE
 var _getSlotTransformSrcFilenameFromRecognizer = function(recognizer, intent, slot){
   for(let i = 0; i < recognizer.matchConfig.length; i++){
     if(recognizer.matchConfig[i].intent === intent){
@@ -2708,6 +2710,8 @@ var _getBuiltInSlotConfig = function(config, slotName){
   // Nothing found - return undefined
 };
 
+// NOT IN MATCH
+// USED IN GENERATE
 var _getSlotTypeTransformSrcFilename = function(config, slotType){
   if(typeof config.builtInSlots !== "undefined" && Array.isArray(config.builtInSlots)){
     for(let i = 0; i < config.builtInSlots.length; i++){
@@ -2747,6 +2751,7 @@ var _getBuiltInSlotExtendedValues = function(slotConfig){
   return returnValue;
 };
 
+// USED IN GENERATE
 var _getBuiltInIntentConfig = function(config, intentName){
   let scratchIntentName = _getBuiltInNameWithoutPlatform(intentName);
 
@@ -2761,6 +2766,8 @@ var _getBuiltInIntentConfig = function(config, intentName){
   // Nothing found - return undefined
 };
 
+// NOT IN MATCH
+// USED IN GENERATE
 var _getBuiltInIntentExtendedUtterances = function(intentConfig){
   let returnValue;
   if(typeof intentConfig !== "undefined" && intentConfig !== null){
@@ -2780,6 +2787,8 @@ var _getBuiltInIntentExtendedUtterances = function(intentConfig){
   return returnValue;
 };
 
+// NOT IN MATCH
+// USED IN GENERATE
 var _isBuiltInIntentEnabled = function(intentConfig){
   if(typeof intentConfig !== "undefined" && (typeof intentConfig.enabled !== "undefined" && intentConfig.enabled === false)){
     return false;
