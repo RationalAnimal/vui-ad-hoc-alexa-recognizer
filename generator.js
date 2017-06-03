@@ -26,7 +26,7 @@ SOFTWARE.
 'use strict'
 var fs = require('fs');
 var readline = require('readline');
-var recognizer = require('./index.js');
+var recognizer = require('./generatorsupport.js');
 var utilities = require('./utilities.js')
 
 var defaultCortanaConfig = {
