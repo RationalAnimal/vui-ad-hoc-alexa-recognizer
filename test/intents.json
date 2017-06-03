@@ -229,6 +229,15 @@
       ]
     },
     {
+      "intent": "MusicRecordingIntent",
+      "slots": [
+        {
+          "name": "MusicRecordingSlot",
+          "type": "AMAZON.MusicRecording"
+        }
+      ]
+    },
+    {
       "intent": "MusicAlbumIntent",
       "slots": [
         {

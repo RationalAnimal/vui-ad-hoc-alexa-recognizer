@@ -290,6 +290,9 @@ recognizer.builtInValues.MusicAlbum.replacementRegExpString = _makeReplacementRe
 recognizer.builtInValues.Musician = require("./builtinslottypes/musicians.json");
 recognizer.builtInValues.Musician.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Musician.values);
 
+recognizer.builtInValues.MusicRecording = require("./builtinslottypes/musicrecordings.json");
+recognizer.builtInValues.MusicRecording.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MusicRecording.values);
+
 recognizer.builtInValues.MusicGroup = require("./builtinslottypes/musicgroups.json");
 recognizer.builtInValues.MusicGroup.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MusicGroup.values);
 
@@ -438,7 +441,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     "TRANSCEND.FoodEstablishment", "TRANSCEND.FictionalCharacter", "TRANSCEND.Festival", "TRANSCEND.EducationalOrganization",
     "TRANSCEND.Director", "TRANSCEND.Corporation", "TRANSCEND.CivicStructure", "TRANSCEND.BroadcastChannel",
     "TRANSCEND.BookSeries", "TRANSCEND.Book", "TRANSCEND.Author", "TRANSCEND.Athlete",
-    "TRANSCEND.AdministrativeArea", "TRANSCEND.Country", "TRANSCEND.Color", "TRANSCEND.Room"
+    "TRANSCEND.AdministrativeArea", "TRANSCEND.Country", "TRANSCEND.Color", "TRANSCEND.Room", "TRANSCEND.MusicRecording"
   ];
   if(slotType == "TRANSCEND.NUMBER"){
     // Ignore flags for now
@@ -2277,6 +2280,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MovieTheater", "MovieTheater", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicAlbum", "MusicAlbum", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Musician", "Musician", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicRecording", "MusicRecording", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicGroup", "MusicGroup", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicEvent", "MusicEvent", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Movie", "Movie", config);

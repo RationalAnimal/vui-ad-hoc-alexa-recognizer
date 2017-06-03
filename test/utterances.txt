@@ -68,3 +68,4 @@ MusicAlbumIntent {MusicAlbumSlot} is one of the most popular albums of all time
 MusicEventIntent will you go to the {MusicEventSlot}
 MusicGroupIntent i like {MusicGroupSlot}
 MusicianIntent {MusicianSlot} used to be part of a group
+MusicRecordingIntent {MusicRecordingSlot} is the best track on that album
