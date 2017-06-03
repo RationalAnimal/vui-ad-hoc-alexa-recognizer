@@ -174,6 +174,17 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.MusicVenue slot matches", function() {
+      let result = recognizer.Recognizer.matchText("let's see it at strawberry park");
+      expect(result).to.eql(
+        {"name": "MusicVenueIntent",
+         "slots": {
+           "MusicVenueSlot": {
+             "name": "MusicVenueSlot",
+             "value": "strawberry park"
+           }
+        }});
+    });
 
     it("verify simple utterance with an AMAZON.Dessert slot matches", function() {
       let result = recognizer.Recognizer.matchText("ice cream is my favorite dessert");

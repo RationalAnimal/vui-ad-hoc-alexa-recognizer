@@ -238,6 +238,15 @@
       ]
     },
     {
+      "intent": "MusicVenueIntent",
+      "slots": [
+        {
+          "name": "MusicVenueSlot",
+          "type": "AMAZON.MusicVenue"
+        }
+      ]
+    },
+    {
       "intent": "MusicAlbumIntent",
       "slots": [
         {
