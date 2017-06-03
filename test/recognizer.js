@@ -163,6 +163,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.MusicRecording slot matches", function() {
+      let result = recognizer.Recognizer.matchText("dust in the wind is the best track on that album");
+      expect(result).to.eql(
+        {"name": "MusicRecordingIntent",
+         "slots": {
+          "MusicRecordingSlot": {
+            "name": "MusicRecordingSlot",
+            "value": "dust in the wind"
+          }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.Dessert slot matches", function() {
       let result = recognizer.Recognizer.matchText("ice cream is my favorite dessert");
       expect(result).to.eql(
