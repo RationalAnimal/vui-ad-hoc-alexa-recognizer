@@ -31,6 +31,9 @@ var parser = require('./parseutterance.js');
 var recognizer = {};
 var constants = require('./constants.js');
 
+// NOT IN MATCH
+// USED IN GENERATE
+// USED IN EXPORTED
 var _makeReplacementRegExpString = function(arrayToConvert){
   let returnValue = "((?:";
   for(let i = 0; i < arrayToConvert.length; i++){
@@ -43,6 +46,8 @@ var _makeReplacementRegExpString = function(arrayToConvert){
   return returnValue;
 };
 
+// NOT IN MATCH
+// USED IN GENERATE
 var _makeFullRegExpString = function(arrayToConvert){
   let regExString = _makeReplacementRegExpString(arrayToConvert);
   // Now split regExString into non-white space parts and reconstruct the
@@ -293,6 +298,9 @@ recognizer.builtInValues.Musician.replacementRegExpString = _makeReplacementRegE
 recognizer.builtInValues.MusicRecording = require("./builtinslottypes/musicrecordings.json");
 recognizer.builtInValues.MusicRecording.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MusicRecording.values);
 
+recognizer.builtInValues.MusicVenue = require("./builtinslottypes/musicvenues.json");
+recognizer.builtInValues.MusicVenue.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MusicVenue.values);
+
 recognizer.builtInValues.MusicGroup = require("./builtinslottypes/musicgroups.json");
 recognizer.builtInValues.MusicGroup.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MusicGroup.values);
 
@@ -448,7 +456,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     "TRANSCEND.FoodEstablishment", "TRANSCEND.FictionalCharacter", "TRANSCEND.Festival", "TRANSCEND.EducationalOrganization",
     "TRANSCEND.Director", "TRANSCEND.Corporation", "TRANSCEND.CivicStructure", "TRANSCEND.BroadcastChannel",
     "TRANSCEND.BookSeries", "TRANSCEND.Book", "TRANSCEND.Author", "TRANSCEND.Athlete",
-    "TRANSCEND.AdministrativeArea", "TRANSCEND.Country", "TRANSCEND.Color", "TRANSCEND.Room", "TRANSCEND.MusicRecording"
+    "TRANSCEND.AdministrativeArea", "TRANSCEND.Country", "TRANSCEND.Color", "TRANSCEND.Room", "TRANSCEND.MusicRecording",
+    "TRANSCEND.MusicVenue"
   ];
   if(slotType === "TRANSCEND.NUMBER"){
     // Ignore flags for now
@@ -2247,13 +2256,17 @@ var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, con
 };
 
 //TODO remove duplicate copies of this and move them to a common js file later
+// NOT IN MATCH
 // USED IN GENERATE
+// USED IN EXPORTED
 var _getBuiltInSlotTypeSuffix = function(slotType){
 	return slotType.replace(/^AMAZON\./, '').replace(/^TRANSCEND\./, '');
 };
 
 //TODO remove duplicate copies of this and move them to a common js file later
+// NOT IN MATCH
 // USED IN GENERATE
+// USED IN EXPORTED
 var _isBuiltInSlotType = function(slotType){
 	if(slotType.startsWith("AMAZON.") || slotType.startsWith("TRANSCEND.")){
 		return true;
@@ -2261,6 +2274,9 @@ var _isBuiltInSlotType = function(slotType){
 	return false;
 };
 
+// NOT IN MATCH
+// USED IN GENERATE
+// USED IN EXPORTED
 var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
   if(_isBuiltInSlotType(slotType) === false){
     return;
@@ -2275,6 +2291,8 @@ var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
   return recognizer.builtInValues[suffix].replacementRegExpString;
 };
 
+// NOT IN MATCH
+// USED IN GENERATE
 var _generateRunTimeJson = function(config, intents, utterances){
   if(typeof config === "undefined" || config === null){
     config = {};
@@ -2296,6 +2314,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicAlbum", "MusicAlbum", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Musician", "Musician", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicRecording", "MusicRecording", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicVenue", "MusicVenue", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicGroup", "MusicGroup", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicEvent", "MusicEvent", config);
   _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Movie", "Movie", config);
@@ -2697,6 +2716,8 @@ var _getSlotTransformSrcFilenameFromRecognizer = function(recognizer, intent, sl
   }
 };
 
+// NOT IN MATCH
+// USED IN GENERATE
 var _getBuiltInSlotConfig = function(config, slotName){
   let scratchSlotName = _getBuiltInNameWithoutPlatform(slotName);
   if(typeof config !== "undefined" && Array.isArray(config.builtInSlots)){
@@ -2731,7 +2752,8 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType){
   }
 };
 
-
+// NOT IN MATCH
+// USED IN GENERATE
 var _getBuiltInSlotExtendedValues = function(slotConfig){
   let returnValue;
   if(typeof slotConfig !== "undefined" && slotConfig !== null){
@@ -2751,6 +2773,7 @@ var _getBuiltInSlotExtendedValues = function(slotConfig){
   return returnValue;
 };
 
+// NOT IN MATCH
 // USED IN GENERATE
 var _getBuiltInIntentConfig = function(config, intentName){
   let scratchIntentName = _getBuiltInNameWithoutPlatform(intentName);
