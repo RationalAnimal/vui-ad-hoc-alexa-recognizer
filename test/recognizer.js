@@ -23,6 +23,7 @@ SOFTWARE.
 */
 var expect = require("chai").expect;
 var recognizer = require("../index.js");
+var generatorsupport = require("../generatorsupport.js");
 var parser = require("../parseutterance.js");
 
 describe("vui-ad-hoc-alexa-recognizer", function() {
@@ -2426,7 +2427,7 @@ describe("utterance parser", function() {
       let config = require("./config.json");
 
       let passThrougFunc = function(slotType, flags){
-        return recognizer.Recognizer.getReplacementRegExpStringGivenSlotType(slotType, config, flags);
+        return generatorsupport.Recognizer.getReplacementRegExpStringGivenSlotType(slotType, config, flags);
       }
       parser.addRegExps(result, intentSchema, passThrougFunc);
       expect(result).to.eql(
@@ -2482,7 +2483,7 @@ describe("utterance parser", function() {
       let config = require("./config.json");
 
       let passThrougFunc = function(slotType, flags){
-        return recognizer.Recognizer.getReplacementRegExpStringGivenSlotType(slotType, config, flags);
+        return generatorsupport.Recognizer.getReplacementRegExpStringGivenSlotType(slotType, config, flags);
       }
       parser.addRegExps(result, intentSchema, passThrougFunc);
       expect(result).to.eql(
