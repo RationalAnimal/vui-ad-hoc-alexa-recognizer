@@ -32,8 +32,8 @@ var recognizer = {};
 var constants = require('./constants.js');
 
 var _makeReplacementRegExpString = function(arrayToConvert){
-  var returnValue = "((?:";
-  for(var i = 0; i < arrayToConvert.length; i++){
+  let returnValue = "((?:";
+  for(let i = 0; i < arrayToConvert.length; i++){
     if(i > 0){
       returnValue += "|";
     }
@@ -41,16 +41,16 @@ var _makeReplacementRegExpString = function(arrayToConvert){
   }
   returnValue += ")+)";
   return returnValue;
-}
+};
 
 var _makeFullRegExpString = function(arrayToConvert){
   let regExString = _makeReplacementRegExpString(arrayToConvert);
   // Now split regExString into non-white space parts and reconstruct the
   // whole thing with any sequence of white spaces replaced with a white space
   // reg exp.
-  var splitRegEx = regExString.split(/\s+/);
-  var reconstructedRegEx = "^\\s*";
-  for(var j = 0; j < splitRegEx.length; j++){
+  let splitRegEx = regExString.split(/\s+/);
+  let reconstructedRegEx = "^\\s*";
+  for(let j = 0; j < splitRegEx.length; j++){
     if(splitRegEx[j].length > 0){
       if(j > 0){
         reconstructedRegEx += "\\s+";
@@ -60,7 +60,7 @@ var _makeFullRegExpString = function(arrayToConvert){
   }
   reconstructedRegEx += "\\s*[.?!]?\\s*$";
   return reconstructedRegEx;
-}
+};
 
 recognizer.Recognizer = class {
 };
@@ -383,7 +383,7 @@ var _getTranslatedSlotTypeForInternalLookup = function(slotType){
 
   let scratch = "TRANSCEND" + sansPlatform;
   return scratch;
-}
+};
 
 var _getTranslatedSlotTypeForOutput = function(slotType, platformConfig){
   let periodIndex = slotType.indexOf('.');
@@ -394,7 +394,7 @@ var _getTranslatedSlotTypeForOutput = function(slotType, platformConfig){
 
   let scratch = platformConfig.output + sansPlatform;
   return scratch;
-}
+};
 
 var _getTranslatedIntentForOutput = function(intent, platformConfig){
   let periodIndex = intent.indexOf('.');
@@ -405,7 +405,7 @@ var _getTranslatedIntentForOutput = function(intent, platformConfig){
 
   let scratch = platformConfig.output + sansPlatform;
   return scratch;
-}
+};
 
 var _getBuiltInNameWithoutPlatform = function(name){
   let periodIndex = name.indexOf('.');
@@ -414,19 +414,19 @@ var _getBuiltInNameWithoutPlatform = function(name){
   }
   let sansPlatform = name.substring(periodIndex + 1);
   return sansPlatform;
-}
+};
 
 var _hasFlag = function(flagName, flags){
-  if(typeof flagName == "undefined" || typeof flags == "undefined" || Array.isArray(flags) == false){
+  if(typeof flagName === "undefined" || typeof flags === "undefined" || Array.isArray(flags) === false){
     return false;
   }
   for(let i = 0; i < flags.length; i++){
-    if(flags[i].name == flagName){
+    if(flags[i].name === flagName){
       return true;
     }
   }
   return false;
-}
+};
 
 /**
 * This is the new version meant to be used with the parseutterance.js
@@ -443,15 +443,15 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     "TRANSCEND.BookSeries", "TRANSCEND.Book", "TRANSCEND.Author", "TRANSCEND.Athlete",
     "TRANSCEND.AdministrativeArea", "TRANSCEND.Country", "TRANSCEND.Color", "TRANSCEND.Room", "TRANSCEND.MusicRecording"
   ];
-  if(slotType == "TRANSCEND.NUMBER"){
+  if(slotType === "TRANSCEND.NUMBER"){
     // Ignore flags for now
     return recognizer.builtInValues.NUMBER.replacementRegExpString;
   }
-  else if(slotType == "TRANSCEND.FOUR_DIGIT_NUMBER"){
+  else if(slotType === "TRANSCEND.FOUR_DIGIT_NUMBER"){
     // Ignore flags for now
     return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
   }
-  else if(slotType == "TRANSCEND.US_STATE"){
+  else if(slotType === "TRANSCEND.US_STATE"){
     if(_hasFlag("EXCLUDE_NON_STATES", slotFlags)){
       let states = [];
       for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
@@ -471,7 +471,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       return statesAndTerritoriesRegExpString;
     }
   }
-  else if(slotType == "TRANSCEND.US_PRESIDENT"){
+  else if(slotType === "TRANSCEND.US_PRESIDENT"){
     let matchingStrings = [];
     for(let i = 0; i < recognizer.builtInValues.US_PRESIDENT.values.length; i ++){
       for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings.length; j ++){
@@ -483,7 +483,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     }
     return _makeReplacementRegExpString(matchingStrings);
   }
-  else if(slotType == "TRANSCEND.Airline"){
+  else if(slotType === "TRANSCEND.Airline"){
     // Ignore SOUNDEX_MATCH flag for now
     let hasWildCardMatch = false;
     let hasCountryFlag = false;
@@ -493,19 +493,19 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     let hasTypeFlag = false;
     let types = [];
     for(let i = 0; i < slotFlags.length; i++){
-      if(slotFlags[i].name == "COUNTRY"){
+      if(slotFlags[i].name === "COUNTRY"){
         hasCountryFlag = true;
         countries = slotFlags[i].parameters;
       }
-      else if(slotFlags[i].name == "CONTINENT"){
+      else if(slotFlags[i].name === "CONTINENT"){
         hasContinentFlag = true;
         continents = slotFlags[i].parameters;
       }
-      else if(slotFlags[i].name == "TYPE"){
+      else if(slotFlags[i].name === "TYPE"){
         hasTypeFlag = true;
         types = slotFlags[i].parameters;
       }
-      else if(slotFlags[i].name == "INCLUDE_WILDCARD_MATCH"){
+      else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
         hasWildCardMatch = true;
       }
     }
@@ -534,22 +534,22 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
   else if(simpleSlots.indexOf(slotType) >= 0){
     return getSimpleRegExpForBuiltInSlotType(slotType, slotFlags);
   }
-  else if(slotType == "TRANSCEND.DATE"){
+  else if(slotType === "TRANSCEND.DATE"){
     return recognizer.builtInValues.DATE.replacementRegExpString;
   }
-  else if(slotType == "TRANSCEND.TIME"){
+  else if(slotType === "TRANSCEND.TIME"){
     // Ignore flags for now
     return recognizer.builtInValues.TIME.replacementRegExpString;
   }
-  else if(slotType == "TRANSCEND.DURATION"){
+  else if(slotType === "TRANSCEND.DURATION"){
     // Ignore flags for now
     return recognizer.builtInValues.DURATION.replacementRegExpString;
   }
-  else if(slotType == "TRANSCEND.Month"){
+  else if(slotType === "TRANSCEND.Month"){
     // Ignore flags for now
     return recognizer.builtInValues.Month.replacementRegExpString;
   }
-  else if(slotType == "TRANSCEND.DayOfWeek"){
+  else if(slotType === "TRANSCEND.DayOfWeek"){
     // Ignore flags for now
     return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
   }
@@ -559,12 +559,12 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
 //    return "((?:\\w|\\s|[0-9]|\-)+)";
 //  }
   // Here we are dealing with custom slots.
-  if(typeof config != "undefined" && Array.isArray(config.customSlotTypes)){
-    for(var i = 0; i < config.customSlotTypes.length; i++){
-      var customSlotType = config.customSlotTypes[i];
-      if(customSlotType.name == slotType){
+  if(typeof config !== "undefined" && Array.isArray(config.customSlotTypes)){
+    for(let i = 0; i < config.customSlotTypes.length; i++){
+      let customSlotType = config.customSlotTypes[i];
+      if(customSlotType.name === slotType){
         if(_hasFlag("SOUNDEX_MATCH", slotFlags)){
-          if(typeof customSlotType.replacementSoundExpRegExp == "undefined"){
+          if(typeof customSlotType.replacementSoundExpRegExp === "undefined"){
             customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
           }
           // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
@@ -575,7 +575,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
           return "((?:\\w|\\s|[0-9]|\-)+)";
         }
         else {
-          if(typeof customSlotType.replacementRegExp == "undefined"){
+          if(typeof customSlotType.replacementRegExp === "undefined"){
             customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values);
           }
           return customSlotType.replacementRegExp;
@@ -585,13 +585,13 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
   }
   // Default fallback
   return "((?:\\w|\\s|[0-9]|\-)+)";
-}
+};
 
 var _getOrderOfMagnitude = function(number){
-  var oom = Math.floor(Math.log10(number));
+  let oom = Math.floor(Math.log10(number));
 //  console.log("_getOrderOfMagnitude, number: " + number + ", oom: " + oom);
   return oom;
-}
+};
 
 var _processMatchedNumericSlotValue = function(value){
 //  console.log("_processMatchedNumericSlotValue, 1, value: " + JSON.stringify(value));
@@ -608,97 +608,97 @@ var _processMatchedNumericSlotValue = function(value){
   // Then convert the result to an integer and return.
   value = value.replace(/,0/ig, " 0");
   value = value.replace(/,/ig, "");
-  value = value.replace(/zero/ig, 0);
-  value = value.replace(/oh/ig, 0);
+  value = value.replace(/zero/ig, "0");
+  value = value.replace(/oh/ig, "0");
 
-  value = value.replace(/tenth/ig, 10);
-  value = value.replace(/eleventh/ig, 11);
-  value = value.replace(/twelfth/ig, 12);
-  value = value.replace(/thirteenth/ig, 13);
-  value = value.replace(/fourteenth/ig, 14);
-  value = value.replace(/fifteenth/ig, 15);
-  value = value.replace(/sixteenth/ig, 16);
-  value = value.replace(/seventeenth/ig, 17);
-  value = value.replace(/eighteenth/ig, 18);
-  value = value.replace(/nineteenth/ig, 19);
-  value = value.replace(/twentieth/ig, 20);
-  value = value.replace(/thirtieth/ig, 30);
-  value = value.replace(/fortieth/ig, 40);
-  value = value.replace(/fiftieth/ig, 50);
-  value = value.replace(/sixtieth/ig, 60);
-  value = value.replace(/seventieth/ig, 70);
-  value = value.replace(/eightieth/ig, 80);
-  value = value.replace(/ninetieth/ig, 90);
-  value = value.replace(/first/ig, 1);
-  value = value.replace(/second/ig, 2);
-  value = value.replace(/third/ig, 3);
-  value = value.replace(/fourth/ig, 4);
-  value = value.replace(/fifth/ig, 5);
-  value = value.replace(/sixth/ig, 6);
-  value = value.replace(/seventh/ig, 7);
-  value = value.replace(/eighth/ig, 8);
-  value = value.replace(/ninth/ig, 9);
-  value = value.replace(/hundredth/ig, 100);
-  value = value.replace(/thousandth/ig, 1000);
-  value = value.replace(/millionth/ig, 1000000);
-  value = value.replace(/billionth/ig, 1000000000);
-  value = value.replace(/trillionth/ig, 1000000000000);
+  value = value.replace(/tenth/ig, "10");
+  value = value.replace(/eleventh/ig, "11");
+  value = value.replace(/twelfth/ig, "12");
+  value = value.replace(/thirteenth/ig, "13");
+  value = value.replace(/fourteenth/ig, "14");
+  value = value.replace(/fifteenth/ig, "15");
+  value = value.replace(/sixteenth/ig, "16");
+  value = value.replace(/seventeenth/ig, "17");
+  value = value.replace(/eighteenth/ig, "18");
+  value = value.replace(/nineteenth/ig, "19");
+  value = value.replace(/twentieth/ig, "20");
+  value = value.replace(/thirtieth/ig, "30");
+  value = value.replace(/fortieth/ig, "40");
+  value = value.replace(/fiftieth/ig, "50");
+  value = value.replace(/sixtieth/ig, "60");
+  value = value.replace(/seventieth/ig, "70");
+  value = value.replace(/eightieth/ig, "80");
+  value = value.replace(/ninetieth/ig, "90");
+  value = value.replace(/first/ig, "1");
+  value = value.replace(/second/ig, "2");
+  value = value.replace(/third/ig, "3");
+  value = value.replace(/fourth/ig, "4");
+  value = value.replace(/fifth/ig, "5");
+  value = value.replace(/sixth/ig, "6");
+  value = value.replace(/seventh/ig, "7");
+  value = value.replace(/eighth/ig, "8");
+  value = value.replace(/ninth/ig, "9");
+  value = value.replace(/hundredth/ig, "100");
+  value = value.replace(/thousandth/ig, "1000");
+  value = value.replace(/millionth/ig, "1000000");
+  value = value.replace(/billionth/ig, "1000000000");
+  value = value.replace(/trillionth/ig, "1000000000000");
 
 
-  value = value.replace(/ten/ig, 10);
-  value = value.replace(/eleven/ig, 11);
-  value = value.replace(/twelve/ig, 12);
-  value = value.replace(/thirteen/ig, 13);
-  value = value.replace(/fourteen/ig, 14);
-  value = value.replace(/fifteen/ig, 15);
-  value = value.replace(/sixteen/ig, 16);
-  value = value.replace(/seventeen/ig, 17);
-  value = value.replace(/eighteen/ig, 18);
-  value = value.replace(/nineteen/ig, 19);
-  value = value.replace(/twenty/ig, 20);
-  value = value.replace(/thirty/ig, 30);
-  value = value.replace(/forty/ig, 40);
-  value = value.replace(/fifty/ig, 50);
-  value = value.replace(/sixty/ig, 60);
-  value = value.replace(/seventy/ig, 70);
-  value = value.replace(/eighty/ig, 80);
-  value = value.replace(/ninety/ig, 90);
-  value = value.replace(/one/ig, 1);
-  value = value.replace(/two/ig, 2);
-  value = value.replace(/three/ig, 3);
-  value = value.replace(/four/ig, 4);
-  value = value.replace(/five/ig, 5);
-  value = value.replace(/six/ig, 6);
-  value = value.replace(/seven/ig, 7);
-  value = value.replace(/eight/ig, 8);
-  value = value.replace(/nine/ig, 9);
-  value = value.replace(/hundred/ig, 100);
-  value = value.replace(/thousand/ig, 1000);
-  value = value.replace(/million/ig, 1000000);
-  value = value.replace(/billion/ig, 1000000000);
-  value = value.replace(/trillion/ig, 1000000000000);
+  value = value.replace(/ten/ig, "10");
+  value = value.replace(/eleven/ig, "11");
+  value = value.replace(/twelve/ig, "12");
+  value = value.replace(/thirteen/ig, "13");
+  value = value.replace(/fourteen/ig, "14");
+  value = value.replace(/fifteen/ig, "15");
+  value = value.replace(/sixteen/ig, "16");
+  value = value.replace(/seventeen/ig, "17");
+  value = value.replace(/eighteen/ig, "18");
+  value = value.replace(/nineteen/ig, "19");
+  value = value.replace(/twenty/ig, "20");
+  value = value.replace(/thirty/ig, "30");
+  value = value.replace(/forty/ig, "40");
+  value = value.replace(/fifty/ig, "50");
+  value = value.replace(/sixty/ig, "60");
+  value = value.replace(/seventy/ig, "70");
+  value = value.replace(/eighty/ig, "80");
+  value = value.replace(/ninety/ig, "90");
+  value = value.replace(/one/ig, "1");
+  value = value.replace(/two/ig, "2");
+  value = value.replace(/three/ig, "3");
+  value = value.replace(/four/ig, "4");
+  value = value.replace(/five/ig, "5");
+  value = value.replace(/six/ig, "6");
+  value = value.replace(/seven/ig, "7");
+  value = value.replace(/eight/ig, "8");
+  value = value.replace(/nine/ig, "9");
+  value = value.replace(/hundred/ig, "100");
+  value = value.replace(/thousand/ig, "1000");
+  value = value.replace(/million/ig, "1000000");
+  value = value.replace(/billion/ig, "1000000000");
+  value = value.replace(/trillion/ig, "1000000000000");
 
   value = value.replace(/and/ig, " ");
 //  console.log("_processMatchedNumericSlotValue, 1.1, value: " + JSON.stringify(value));
 
   value = value.split(/\s+/);
-  var convertedValues = [];
-  for(var i = 0; i < value.length; i ++){
-    if(isNaN(value[i]) || typeof value[i] ==  "undefined" || value[i] == null || value[i].trim().length == 0){
+  let convertedValues = [];
+  for(let i = 0; i < value.length; i ++){
+    if(isNaN(value[i]) || typeof value[i] ===  "undefined" || value[i] === null || value[i].trim().length === 0){
       continue;
     }
     convertedValues.push(parseInt(value[i]));
   }
 
   value = convertedValues;
-  var scratchValues = [];
-  var haveAccumulatedValue = false;
-  var accummulatedStack = [];
-  var lastValue = 0;
-  var lastOrderOfMagnitude = 0;
-  for(var i = 0; i < value.length; i ++){
-    if(haveAccumulatedValue == false){
-      if(value[i] == 0){
+  let scratchValues = [];
+  let haveAccumulatedValue = false;
+  let accummulatedStack = [];
+  let lastValue = 0;
+  let lastOrderOfMagnitude = 0;
+  for(let i = 0; i < value.length; i ++){
+    if(haveAccumulatedValue === false){
+      if(value[i] === 0){
         scratchValues.push(value[i]);
         continue;
       }
@@ -709,8 +709,8 @@ var _processMatchedNumericSlotValue = function(value){
     }
     else {
       // We have a currently accumulating value.
-      if(value[i] == 0){
-        if(accummulatedStack.length == 2){
+      if(value[i] === 0){
+        if(accummulatedStack.length === 2){
           scratchValues.push(accummulatedStack[0] + accummulatedStack[1]);
         }
         else {
@@ -726,23 +726,23 @@ var _processMatchedNumericSlotValue = function(value){
       let currentOrderOfMagnitude = _getOrderOfMagnitude(value[i]);
       let accummulatedOrderOfMagnitude = _getOrderOfMagnitude(accummulatedStack[accummulatedStack.length - 1]);
       if(
-          ((accummulatedOrderOfMagnitude < currentOrderOfMagnitude) && value[i] == 100) ||
+          ((accummulatedOrderOfMagnitude < currentOrderOfMagnitude) && value[i] === 100) ||
           ((accummulatedOrderOfMagnitude < currentOrderOfMagnitude) && currentOrderOfMagnitude > 2)
         ){
-        // The new value's order of magnitune is larger than the entire accummulated
+        // The new value's order of magnitude is larger than the entire accumulated
         // value and new value's order of magnitude is at least 2.  This means
         // we multiply them.
         accummulatedStack[accummulatedStack.length - 1] *= value[i];
         lastOrderOfMagnitude = currentOrderOfMagnitude;
         lastValue = value[i];
         // Need to verify that multiplying does not trigger writing earlier value out.
-        if(accummulatedStack.length == 2 &&
+        if(accummulatedStack.length === 2 &&
            (Math.floor(_getOrderOfMagnitude(accummulatedStack[0])/3) < Math.floor(_getOrderOfMagnitude(accummulatedStack[1])/3))){
-          scratchValues.push(accummulatedStack[0])
+          scratchValues.push(accummulatedStack[0]);
           accummulatedStack.splice(0, 1);
         }
         // Now, if the current value, value[i] is >= 1000 then we also need to collapse the stack by adding its values
-        if(accummulatedStack.length == 2 && currentOrderOfMagnitude >= 3){
+        if(accummulatedStack.length === 2 && currentOrderOfMagnitude >= 3){
           accummulatedStack[0] += accummulatedStack[1];
           accummulatedStack.splice(1, 1);
         }
@@ -756,7 +756,7 @@ var _processMatchedNumericSlotValue = function(value){
         // output of the prior values and starts a new stack.
         // Other than that, if the last OOM was >= 300 - push it, else add it.
         if(lastValue >= 10 && lastValue <= 19){
-          if(accummulatedStack.length == 2){
+          if(accummulatedStack.length === 2){
             accummulatedStack[0] += accummulatedStack[1];
             accummulatedStack.splice(1, 1);
           }
@@ -775,9 +775,9 @@ var _processMatchedNumericSlotValue = function(value){
         continue;
       }
       // If we are here that means we are not combining the accumulated value and
-      // the current value. Write out the last value and set the accummulated
+      // the current value. Write out the last value and set the accumulated
       // value to the current one.
-      if(accummulatedStack.length == 2){
+      if(accummulatedStack.length === 2){
         accummulatedStack[0] += accummulatedStack[1];
         accummulatedStack.splice(1, 1);
       }
@@ -790,7 +790,7 @@ var _processMatchedNumericSlotValue = function(value){
   }
   // May need to write out last value
   if(haveAccumulatedValue){
-    if(accummulatedStack.length == 2){
+    if(accummulatedStack.length === 2){
       accummulatedStack[0] += accummulatedStack[1];
       accummulatedStack.splice(1, 1);
     }
@@ -802,40 +802,40 @@ var _processMatchedNumericSlotValue = function(value){
   lastValue = 0;
 
   value = "";
-  for(var i = 0; i < scratchValues.length; i++){
+  for(let i = 0; i < scratchValues.length; i++){
     value += ("" + scratchValues[i]);
   }
 //  value = parseInt(value);
   return value;
-}
+};
 
 var _twoDigitFormatter = function(number){
   let returnValue = "0" + number;
   returnValue = returnValue.slice(-2);
   return returnValue;
-}
+};
 var _fourDigitFormatter = function(number){
   let returnValue = "0000" + number;
   returnValue = returnValue.slice(-4);
   return returnValue;
-}
+};
 
 var _formatDate = function(date){
   return "" + date.getFullYear() + "-" + _twoDigitFormatter(date.getMonth() + 1) + "-" + _twoDigitFormatter(date.getDate());
-}
+};
 
 var _processMatchedCustomSlotValueByType = function(value, slotType, flags, recognizerSet){
 //  console.log("_processMatchedCustomSlotValueByType, 1, value: " + value + ", slotType: " + slotType);
-  for(var i = 0; i < recognizerSet.customSlotTypes.length; i++){
+  for(let i = 0; i < recognizerSet.customSlotTypes.length; i++){
     let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
-    if(scratchCustomSlotType.name != slotType){
+    if(scratchCustomSlotType.name !== slotType){
 //      console.log("_processMatchedCustomSlotValueByType, 2");
       continue;
     }
 //    console.log("_processMatchedCustomSlotValueByType, 3");
     if(_hasFlag("SOUNDEX_MATCH", flags)){
       // do regular expression matching
-      if(typeof scratchCustomSlotType.soundExRegExps == "undefined"){
+      if(typeof scratchCustomSlotType.soundExRegExps === "undefined"){
         scratchCustomSlotType.soundExRegExps = [];
         for(let j = 0; j < scratchCustomSlotType.soundExRegExpStrings.length; j++){
           scratchCustomSlotType.soundExRegExps.push(new RegExp(scratchCustomSlotType.soundExRegExpStrings[j], "ig"));
@@ -856,7 +856,7 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
       return;
     }
     else {
-      if(typeof scratchCustomSlotType.regExps == "undefined"){
+      if(typeof scratchCustomSlotType.regExps === "undefined"){
         scratchCustomSlotType.regExps = [];
         for(let j = 0; j < scratchCustomSlotType.regExpStrings.length; j++){
           scratchCustomSlotType.regExps.push(new RegExp(scratchCustomSlotType.regExpStrings[j], "ig"));
@@ -875,33 +875,33 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
 
   // If there is no match, then return the original value
   return value;
-}
+};
 
 var _processMatchedTimeSlotValue = function(value){
 //  console.log("_processMatchedTimeSlotValue, 1");
-  var matchResult;
-  var regExp = /(^\s*noon\s*$)/ig
-  if(matchResult = regExp.exec(value)){
+  let matchResult;
+  let regExp = /(^\s*noon\s*$)/ig;
+  if(regExp.exec(value)){
     return "12:00";
   }
-  regExp = /(^\s*midnight\s*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*midnight\s*$)/ig;
+  if(regExp.exec(value)){
     return "00:00";
   }
-  regExp = /(^\s*(?:this\s*){0,1}morning\s*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*(?:this\s*)?morning\s*$)/ig;
+  if(regExp.exec(value)){
     return "MO";
   }
-  regExp = /(^\s*(?:this\s*){0,1}night\s*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*(?:this\s*)?night\s*$)/ig;
+  if(regExp.exec(value)){
     return "NI";
   }
-  regExp = /(^\s*(?:this\s*){0,1}after\s*noon\s*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*(?:this\s*)?after\s*noon\s*$)/ig;
+  if(regExp.exec(value)){
     return "AF";
   }
-  regExp = /(^\s*(?:this\s*){0,1}evening\s*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*(?:this\s*)?evening\s*$)/ig;
+  if(regExp.exec(value)){
     return "EV";
   }
 
@@ -912,7 +912,7 @@ var _processMatchedTimeSlotValue = function(value){
   if(matchResult = regExp.exec(value)){
 //    console.log("matching time, just the hour, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
-    if(typeof hour == "undefined" || hour == null || hour.length == 0){
+    if(typeof hour === "undefined" || hour === null || hour.length === 0){
       // Didn't actually match a real value.
     }
     else {
@@ -955,36 +955,36 @@ var _processMatchedTimeSlotValue = function(value){
     let hour = matchResult[1];
     let minutes = matchResult[2];
     let specifier = matchResult[3];
-    if(typeof hour == "undefined" || hour == null || hour.length == 0 || typeof minutes == "undefined" || minutes == null || minutes.length == 0 ){
+    if(typeof hour === "undefined" || hour === null || hour.length === 0 || typeof minutes === "undefined" || minutes === null || minutes.length === 0 ){
       // Didn't actually match a real value.
     }
     else {
       hour = _processMatchedNumericSlotValue(hour);
       minutes = _processMatchedNumericSlotValue(minutes);
       let numericHour = parseInt(hour);
-      if(specifier == "am" || specifier == "a.m."){
+      if(specifier === "am" || specifier === "a.m."){
         // Nothing to do really.  Either we have an hour that's < 12 or the use misspoke but we can't correct it.
       }
-      else if(specifier == "pm" || specifier == "p.m."){
+      else if(specifier === "pm" || specifier === "p.m."){
         if(numericHour < 12){
           numericHour += 12;
         }
       }
-      else if(specifier == "in the afternoon"){
+      else if(specifier === "in the afternoon"){
         if(numericHour >= 1 && numericHour <= 6){
           numericHour += 12;
         }
       }
-      else if(specifier == "in the evening"){
+      else if(specifier === "in the evening"){
         if(numericHour >= 5 && numericHour <= 9){
           numericHour += 12;
         }
       }
-      else if(specifier == "at night"){
+      else if(specifier === "at night"){
         if(numericHour >= 6 && numericHour <= 11){
           numericHour += 12;
         }
-        else if(numericHour == 12){
+        else if(numericHour === 12){
           numericHour = 0;
         }
       }
@@ -992,31 +992,31 @@ var _processMatchedTimeSlotValue = function(value){
     }
   }
 
-  regExp = /(^\s*quarter (?:past|after) midnight\s*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*quarter (?:past|after) midnight\s*$)/ig;
+  if(regExp.exec(value)){
     return "00:15";
   }
-  regExp = /(^\s*half (?:past|after) midnight\s*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*half (?:past|after) midnight\s*$)/ig;
+  if(regExp.exec(value)){
     return "00:30";
   }
-  regExp = /(^\s*quarter (?:to|before) midnight\s*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*quarter (?:to|before) midnight\s*$)/ig;
+  if(regExp.exec(value)){
     return "23:45";
   }
 
 
 
-  regExp = /(^\s*quarter (?:past|after) noon\s*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*quarter (?:past|after) noon\s*$)/ig;
+  if(regExp.exec(value)){
     return "12:15";
   }
-  regExp = /(^\s*half (?:past|after) noon\s*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*half (?:past|after) noon\s*$)/ig;
+  if(regExp.exec(value)){
     return "12:30";
   }
-  regExp = /(^\s*quarter (?:to|before) noon\s*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*quarter (?:to|before) noon\s*$)/ig;
+  if(regExp.exec(value)){
     return "11:45";
   }
 
@@ -1029,33 +1029,33 @@ var _processMatchedTimeSlotValue = function(value){
     let specifier = matchResult[2];
     hour = _processMatchedNumericSlotValue(hour);
     let numericHour = parseInt(hour);
-    if(typeof hour == "undefined" || hour == null || hour.length == 0){
+    if(typeof hour === "undefined" || hour === null || hour.length === 0){
       // Didn't actually match a real value.
     }
     else {
-      if(specifier == "am" || specifier == "a.m."){
+      if(specifier === "am" || specifier === "a.m."){
         // Nothing to do really.  Either we have an hour that's < 12 or the use misspoke but we can't correct it.
       }
-      else if(specifier == "pm" || specifier == "p.m."){
+      else if(specifier === "pm" || specifier === "p.m."){
         if(numericHour < 12){
           numericHour += 12;
         }
       }
-      else if(specifier == "in the afternoon"){
+      else if(specifier === "in the afternoon"){
         if(numericHour >= 1 && numericHour <= 6){
           numericHour += 12;
         }
       }
-      else if(specifier == "in the evening"){
+      else if(specifier === "in the evening"){
         if(numericHour >= 5 && numericHour <= 9){
           numericHour += 12;
         }
       }
-      else if(specifier == "at night"){
+      else if(specifier === "at night"){
         if(numericHour >= 6 && numericHour <= 11){
           numericHour += 12;
         }
-        else if(numericHour == 12){
+        else if(numericHour === 12){
           numericHour = 0;
         }
       }
@@ -1073,33 +1073,33 @@ var _processMatchedTimeSlotValue = function(value){
     let specifier = matchResult[2];
     hour = _processMatchedNumericSlotValue(hour);
     let numericHour = parseInt(hour);
-    if(typeof hour == "undefined" || hour == null || hour.length == 0){
+    if(typeof hour === "undefined" || hour === null || hour.length === 0){
       // Didn't actually match a real value.
     }
     else {
-      if(specifier == "am" || specifier == "a.m."){
+      if(specifier === "am" || specifier === "a.m."){
         // Nothing to do really.  Either we have an hour that's < 12 or the use misspoke but we can't correct it.
       }
-      else if(specifier == "pm" || specifier == "p.m."){
+      else if(specifier === "pm" || specifier === "p.m."){
         if(numericHour < 12){
           numericHour += 12;
         }
       }
-      else if(specifier == "in the afternoon"){
+      else if(specifier === "in the afternoon"){
         if(numericHour >= 1 && numericHour <= 6){
           numericHour += 12;
         }
       }
-      else if(specifier == "in the evening"){
+      else if(specifier === "in the evening"){
         if(numericHour >= 5 && numericHour <= 9){
           numericHour += 12;
         }
       }
-      else if(specifier == "at night"){
+      else if(specifier === "at night"){
         if(numericHour >= 6 && numericHour <= 11){
           numericHour += 12;
         }
-        else if(numericHour == 12){
+        else if(numericHour === 12){
           numericHour = 0;
         }
       }
@@ -1117,35 +1117,35 @@ var _processMatchedTimeSlotValue = function(value){
     hour = _processMatchedNumericSlotValue(hour);
 
     let specifier = matchResult[2];
-    if(typeof hour == "undefined" || hour == null || hour.length == 0){
+    if(typeof hour === "undefined" || hour === null || hour.length === 0){
       // Didn't actually match a real value.
     }
     else {
       hour = _processMatchedNumericSlotValue(hour);
       let numericHour = parseInt(hour);
-      if(specifier == "am" || specifier == "a.m."){
+      if(specifier === "am" || specifier === "a.m."){
         // Nothing to do really.  Either we have an hour that's < 12 or the use misspoke but we can't correct it.
       }
-      else if(specifier == "pm" || specifier == "p.m."){
+      else if(specifier === "pm" || specifier === "p.m."){
         if(numericHour < 12){
           numericHour += 12;
         }
       }
-      else if(specifier == "in the afternoon"){
+      else if(specifier === "in the afternoon"){
         if(numericHour >= 1 && numericHour <= 6){
           numericHour += 12;
         }
       }
-      else if(specifier == "in the evening"){
+      else if(specifier === "in the evening"){
         if(numericHour >= 5 && numericHour <= 9){
           numericHour += 12;
         }
       }
-      else if(specifier == "at night"){
+      else if(specifier === "at night"){
         if(numericHour >= 6 && numericHour <= 11){
           numericHour += 12;
         }
-        else if(numericHour == 12){
+        else if(numericHour === 12){
           numericHour = 0;
         }
       }
@@ -1182,19 +1182,19 @@ var _processMatchedTimeSlotValue = function(value){
     minutes = _processMatchedNumericSlotValue(minutes);
 //      console.log("matching time, hour and minutes, specifier: " + specifier);
     let numericHour = parseInt(hour);
-    if(specifier == "am" || specifier == "a.m."){
+    if(specifier === "am" || specifier === "a.m."){
       // Nothing to do really.  Either we have an hour that's < 12 or the use misspoke but we can't correct it.
     }
-    else if(specifier == "pm" || specifier == "p.m."){
+    else if(specifier === "pm" || specifier === "p.m."){
       if(numericHour < 12){
         numericHour += 12;
         hour = "" + numericHour;
       }
     }
-    else if(specifier == "in the morning"){
+    else if(specifier === "in the morning"){
       // Nothing to do really.  Either we have an hour that's < 12 or the user misspoke but we can't correct it.
     }
-    else if(specifier == "in the afternoon"){
+    else if(specifier === "in the afternoon"){
       if(numericHour >= 1 && numericHour <= 6){
         numericHour += 12;
         hour = "" + numericHour;
@@ -1203,7 +1203,7 @@ var _processMatchedTimeSlotValue = function(value){
         // Nothing to do really.  The user misspoke but we can't correct it.
       }
     }
-    else if(specifier == "in the evening"){
+    else if(specifier === "in the evening"){
       if(numericHour >= 5 && numericHour <= 9){
         numericHour += 12;
         hour = "" + numericHour;
@@ -1212,12 +1212,12 @@ var _processMatchedTimeSlotValue = function(value){
         // Nothing to do really.  The user misspoke but we can't correct it.
       }
     }
-    else if(specifier == "at night"){
+    else if(specifier === "at night"){
       if(numericHour >= 6 && numericHour <= 11){
         numericHour += 12;
         hour = "" + numericHour;
       }
-      else if(numericHour == 12){
+      else if(numericHour === 12){
         numericHour = 0;
         hour = "" + numericHour;
       }
@@ -1226,9 +1226,9 @@ var _processMatchedTimeSlotValue = function(value){
       }
     }
 
-    if(beforeAfter == "after" || beforeAfter == "past"){
+    if(beforeAfter === "after" || beforeAfter === "past"){
       // Add minutes to hours.
-      if(numericHour == 24){
+      if(numericHour === 24){
         numericHour = 0;
         hour = "0";
       }
@@ -1236,7 +1236,7 @@ var _processMatchedTimeSlotValue = function(value){
     }
     else {
       // Subtract minutes from hour, a.k.a. add minutes + 30 to the previous hour
-      if(numericHour == 0){
+      if(numericHour === 0){
         numericHour = 23;
         hour = "23";
       }
@@ -1290,12 +1290,10 @@ var _processMatchedTimeSlotValue = function(value){
     let numericTime = parseInt(time);
     return _twoDigitFormatter(numericTime/100) + ":00";
   }
-
-  return;
-}
+};
 
 var _processMatchedDurationSlotValue = function(value){
-  var matchResult;
+  let matchResult;
   let generalDurationString =
   "^\\s*" +
     "(" +
@@ -1305,7 +1303,7 @@ var _processMatchedDurationSlotValue = function(value){
   "\\s*$";
 
 
-  var regExp = new RegExp(generalDurationString, "ig");
+  let regExp = new RegExp(generalDurationString, "ig");
   let remainingValue = value;
   matchResult = regExp.exec(remainingValue);
   let years;
@@ -1320,11 +1318,11 @@ var _processMatchedDurationSlotValue = function(value){
   while(matchResult){
     remainingValue = remainingValue.replace(matchResult[1], "");
     if(/year/ig.exec(matchResult[1])){
-      let scratchSubValue = matchResult[1].replace(/years{0,1}/, "");
+      let scratchSubValue = matchResult[1].replace(/years?/, "");
       years = _processMatchedNumericSlotValue(scratchSubValue);
       years = parseInt(years);
-      if(years == 0){
-        years == undefined;
+      if(years === 0){
+        years = undefined;
       }
       else {
         years = "" + years;
@@ -1333,11 +1331,11 @@ var _processMatchedDurationSlotValue = function(value){
 //      console.log("years: " + years);
     }
     else if(/month/ig.exec(matchResult[1])){
-      let scratchSubValue = matchResult[1].replace(/months{0,1}/, "");
+      let scratchSubValue = matchResult[1].replace(/months?/, "");
       months = _processMatchedNumericSlotValue(scratchSubValue);
       months = parseInt(months);
-      if(months == 0){
-        months == undefined;
+      if(months === 0){
+        months = undefined;
       }
       else {
         months = "" + months;
@@ -1346,11 +1344,11 @@ var _processMatchedDurationSlotValue = function(value){
 //      console.log("months: " + months);
     }
     else if(/week/ig.exec(matchResult[1])){
-      let scratchSubValue = matchResult[1].replace(/weeks{0,1}/, "");
+      let scratchSubValue = matchResult[1].replace(/weeks?/, "");
       weeks = _processMatchedNumericSlotValue(scratchSubValue);
       weeks = parseInt(weeks);
-      if(weeks == 0){
-        weeks == undefined;
+      if(weeks === 0){
+        weeks = undefined;
       }
       else {
         weeks = "" + weeks;
@@ -1359,11 +1357,11 @@ var _processMatchedDurationSlotValue = function(value){
 //      console.log("weeks: " + weeks);
     }
     else if(/day/ig.exec(matchResult[1])){
-      let scratchSubValue = matchResult[1].replace(/days{0,1}/, "");
+      let scratchSubValue = matchResult[1].replace(/days?/, "");
       days = _processMatchedNumericSlotValue(scratchSubValue);
       days = parseInt(days);
-      if(days == 0){
-        days == undefined;
+      if(days === 0){
+        days = undefined;
       }
       else {
         days = "" + days;
@@ -1372,11 +1370,11 @@ var _processMatchedDurationSlotValue = function(value){
 //      console.log("days: " + days);
     }
     else if(/hour/ig.exec(matchResult[1])){
-      let scratchSubValue = matchResult[1].replace(/hours{0,1}/, "");
+      let scratchSubValue = matchResult[1].replace(/hours?/, "");
       hours = _processMatchedNumericSlotValue(scratchSubValue);
       hours = parseInt(hours);
-      if(hours == 0){
-        hours == undefined;
+      if(hours === 0){
+        hours = undefined;
       }
       else {
         hours = "" + hours;
@@ -1386,11 +1384,11 @@ var _processMatchedDurationSlotValue = function(value){
 //      console.log("hours: " + hours);
     }
     else if(/minute/ig.exec(matchResult[1])){
-      let scratchSubValue = matchResult[1].replace(/minutes{0,1}/, "");
+      let scratchSubValue = matchResult[1].replace(/minutes?/, "");
       minutes = _processMatchedNumericSlotValue(scratchSubValue);
       minutes = parseInt(minutes);
-      if(minutes == 0){
-        minutes == undefined;
+      if(minutes === 0){
+        minutes = undefined;
       }
       else {
         minutes = "" + minutes;
@@ -1400,11 +1398,11 @@ var _processMatchedDurationSlotValue = function(value){
 //      console.log("minutes: " + minutes);
     }
     else if(/second/ig.exec(matchResult[1])){
-      let scratchSubValue = matchResult[1].replace(/seconds{0,1}/, "");
+      let scratchSubValue = matchResult[1].replace(/seconds?/, "");
       seconds = _processMatchedNumericSlotValue(scratchSubValue);
       seconds = parseInt(seconds);
-      if(seconds == 0){
-        seconds == undefined;
+      if(seconds === 0){
+        seconds = undefined;
       }
       else {
         seconds = "" + seconds;
@@ -1418,107 +1416,105 @@ var _processMatchedDurationSlotValue = function(value){
   }
   if(gotDuration){
     let returnValue = "P";
-    if(typeof years != "undefined"){
+    if(typeof years !== "undefined"){
       returnValue += (years + "Y");
     }
-    if(typeof months != "undefined"){
+    if(typeof months !== "undefined"){
       returnValue += (months + "M");
     }
-    if(typeof weeks != "undefined"){
+    if(typeof weeks !== "undefined"){
       returnValue += (weeks + "W");
     }
-    if(typeof days != "undefined"){
+    if(typeof days !== "undefined"){
       returnValue += (days + "D");
     }
     if(gotTimePortion){
       returnValue += "T";
-      if(typeof hours != "undefined"){
+      if(typeof hours !== "undefined"){
         returnValue += (hours + "H");
       }
-      if(typeof minutes != "undefined"){
+      if(typeof minutes !== "undefined"){
         returnValue += (minutes + "M");
       }
-      if(typeof seconds != "undefined"){
+      if(typeof seconds !== "undefined"){
         returnValue += (seconds + "S");
       }
     }
     return returnValue;
   }
-
-  return;
-}
+};
 
 var _processMatchedDateSlotValue = function(value, flags){
-  var matchResult;
-  var regExp = /(right now)/ig
-  if(matchResult = regExp.exec(value)){
+  let matchResult;
+  let regExp = /(right now)/ig;
+  if(regExp.exec(value)){
     return "PRESENT_REF";
   }
-  regExp = /(today)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(today)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     return _formatDate(today);
   }
-  regExp = /(yesterday)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(yesterday)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     today.setDate(today.getDate() - 1);
     return _formatDate(today);
   }
-  regExp = /(tomorrow)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(tomorrow)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     today.setDate(today.getDate() + 1);
     return _formatDate(today);
   }
 
-  regExp = /(^\s*this week\s*\.*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*this week\s*\.*$)/ig;
+  if(regExp.exec(value)){
     return _getWeekOfYear(new Date());
   }
 
-  regExp = /(^\s*last week\s*\.*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*last week\s*\.*$)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     today.setDate(today.getDate() - 7);
     return _getWeekOfYear(today);
   }
 
-  regExp = /(^\s*next week\s*\.*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*next week\s*\.*$)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     today.setDate(today.getDate() + 7);
     return _getWeekOfYear(today);
   }
 
-  regExp = /(^\s*this weekend\s*\.*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*this weekend\s*\.*$)/ig;
+  if(regExp.exec(value)){
     return (_getWeekOfYear(new Date()) + "-WE");
   }
 
-  regExp = /(^\s*last weekend\s*\.*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*last weekend\s*\.*$)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     today.setDate(today.getDate() - 7);
     return (_getWeekOfYear(today) + "-WE");
   }
 
-  regExp = /(^\s*next weekend\s*\.*$)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(^\s*next weekend\s*\.*$)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     today.setDate(today.getDate() + 7);
     return (_getWeekOfYear(today) + "-WE");
   }
 
-  regExp = /(this month)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(this month)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     let year = today.getFullYear();
     let month = today.getMonth();
     return "" + year + "-" + _twoDigitFormatter(month + 1);
   }
-  regExp = /(last month)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(last month)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     let year = today.getFullYear();
     let month = today.getMonth();
@@ -1530,8 +1526,8 @@ var _processMatchedDateSlotValue = function(value, flags){
       return "" + year + "-" + _twoDigitFormatter(month + 1);
     }
   }
-  regExp = /(next month)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(next month)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     let year = today.getFullYear();
     let month = today.getMonth();
@@ -1625,42 +1621,42 @@ var _processMatchedDateSlotValue = function(value, flags){
     return "" + year + "-" + _twoDigitFormatter(month);
   }
 
-  regExp = /(this year)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(this year)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     let year = today.getFullYear();
     return "" + year;
   }
-  regExp = /(last year)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(last year)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     let year = today.getFullYear();
     year--;
     return "" + year;
   }
-  regExp = /(next year)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(next year)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     let year = today.getFullYear();
     year++;
     return "" + year;
   }
-  regExp = /(this decade)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(this decade)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     let year = today.getFullYear();
     let decade = Math.floor(year / 10);
     return "" + decade + "X";
   }
-  regExp = /(last decade)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(last decade)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     let year = today.getFullYear();
     let decade = Math.floor(year / 10) - 1;
     return "" + decade + "X";
   }
-  regExp = /(next decade)/ig
-  if(matchResult = regExp.exec(value)){
+  regExp = /(next decade)/ig;
+  if(regExp.exec(value)){
     let today = new Date();
     let year = today.getFullYear();
     let decade = Math.floor(year / 10) + 1;
@@ -1699,7 +1695,7 @@ var _processMatchedDateSlotValue = function(value, flags){
     let year = matchResult[3];
     let monthNotSpecified = false;
 
-    if(typeof month == "undefined" || month == null || month.trim().length == 0){
+    if(typeof month === "undefined" || month === null || month.trim().length === 0){
       monthNotSpecified = true;
     }
     else {
@@ -1717,7 +1713,7 @@ var _processMatchedDateSlotValue = function(value, flags){
       month = month.replace(/December/ig, 12);
     }
     let dayOfMonthNotSpecified = false;
-    if(typeof dayOfMonth == "undefined" || dayOfMonth == null || dayOfMonth.trim().length == 0){
+    if(typeof dayOfMonth === "undefined" || dayOfMonth === null || dayOfMonth.trim().length === 0){
       dayOfMonthNotSpecified = true;
     }
     else {
@@ -1737,20 +1733,20 @@ var _processMatchedDateSlotValue = function(value, flags){
       dayOfMonth = _processMatchedNumericSlotValue(dayOfMonth);
     }
     let yearNotSpecified = false;
-    if(typeof year == "undefined" || year == null || year.length == 0){
+    if(typeof year === "undefined" || year === null || year.length === 0){
       yearNotSpecified = true;
     }
     else {
       year = _processMatchedNumericSlotValue(year);
     }
-    if(monthNotSpecified == false && dayOfMonthNotSpecified == false && yearNotSpecified == false){
+    if(monthNotSpecified === false && dayOfMonthNotSpecified === false && yearNotSpecified === false){
       return "" + _fourDigitFormatter(year) + "-" + _twoDigitFormatter(month) + "-" + _twoDigitFormatter(dayOfMonth);
     }
-    if(monthNotSpecified == false && dayOfMonthNotSpecified == true && yearNotSpecified == false){
+    if(monthNotSpecified === false && dayOfMonthNotSpecified === true && yearNotSpecified === false){
       // Return just a year and month
       return "" + _fourDigitFormatter(year) + "-" + _twoDigitFormatter(month);
     }
-    if(monthNotSpecified == true && dayOfMonthNotSpecified == true && yearNotSpecified == false){
+    if(monthNotSpecified === true && dayOfMonthNotSpecified === true && yearNotSpecified === false){
       // Return just a year
       // Test for EXCLUDE_YEAR_ONLY_DATES flag - if there, return undefined;
       if(_hasFlag("EXCLUDE_YEAR_ONLY_DATES", flags)){
@@ -1758,18 +1754,18 @@ var _processMatchedDateSlotValue = function(value, flags){
       }
       return "" + _fourDigitFormatter(year);
     }
-    if(monthNotSpecified == false && dayOfMonthNotSpecified == false && yearNotSpecified == true){
+    if(monthNotSpecified === false && dayOfMonthNotSpecified === false && yearNotSpecified === true){
       // Get the closest in the future year and return the full date
       let today = new Date();
       year = today.getFullYear();
-      if(today.getMonth() + 1 > month || (today.getMonth() + 1 == month && (today.getDate() > dayOfMonth))){
+      if(today.getMonth() + 1 > month || (today.getMonth() + 1 === month && (today.getDate() > dayOfMonth))){
         year++;
       }
       return "" + _fourDigitFormatter(year) + "-" + _twoDigitFormatter(month) + "-" + _twoDigitFormatter(dayOfMonth);
     }
   }
   return value;
-}
+};
 
 var _getWeekOfYear = function(dateToProcess){
   let year = dateToProcess.getFullYear();
@@ -1788,7 +1784,7 @@ var _getWeekOfYear = function(dateToProcess){
   }
   // Compute Monday of the week that contains January 1st.  Remember that for
   // these purposes the week starts on Monday.
-  if(firstOfYearDay == 0){
+  if(firstOfYearDay === 0){
     // If Sunday then change to 7.
     firstOfYearDay = 7;
   }
@@ -1797,70 +1793,70 @@ var _getWeekOfYear = function(dateToProcess){
   // Now compute the number of weeks from that Monday to now.
   let weeksDiff = Math.floor((dateToProcess - monday)/(7 * 24 * 60 * 60 * 1000));
   let weekNumber = weeksDiff + weekStartingValue;
-  if(weekNumber == 0){
+  if(weekNumber === 0){
     // This means it's the last week of previous year.
     return (_getWeekOfYear(new Date("" + year + "/12/31")))
   }
   return "" + year + "-W" + _twoDigitFormatter(weekNumber);
 
-}
+};
 
 var _findExactCaseBuiltInValue = function(value, slotType, recognizerSet){
   let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, slotType);
   let scratchValue = value.toUpperCase();
   for(let i = 0; i < builtInSlotValues.length; i ++){
-    if(builtInSlotValues[i].toUpperCase() == scratchValue){
+    if(builtInSlotValues[i].toUpperCase() === scratchValue){
       return builtInSlotValues[i];
     }
   }
   return value;
-}
+};
 
 var _processMatchedSlotValueByType = function(value, slotType, flags, slot, intent, recognizerSet){
 //  console.log("_processMatchedSlotValueByType, entered");
   slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
 //  console.log("_processMatchedSlotValueByType, 1, slotType: " + slotType + ", value: " + value);
   let returnValue = value;
-  if(slotType == "TRANSCEND.NUMBER" || slotType == "TRANSCEND.FOUR_DIGIT_NUMBER"){
+  if(slotType === "TRANSCEND.NUMBER" || slotType === "TRANSCEND.FOUR_DIGIT_NUMBER"){
     returnValue = _processMatchedNumericSlotValue(value);
   }
-  else if(slotType == "TRANSCEND.DATE"){
+  else if(slotType === "TRANSCEND.DATE"){
     returnValue =  _processMatchedDateSlotValue(value, flags);
   }
-  else if(slotType == "TRANSCEND.TIME"){
+  else if(slotType === "TRANSCEND.TIME"){
     returnValue =  _processMatchedTimeSlotValue(value);
   }
-  else if(slotType == "TRANSCEND.DURATION"){
+  else if(slotType === "TRANSCEND.DURATION"){
     returnValue =  _processMatchedDurationSlotValue(value);
   }
   else if(slotType.startsWith("TRANSCEND.")){
     // already did returnValue = value;
     // Now need to match the capitalization
-    if(slotType == "TRANSCEND.Airline"){
+    if(slotType === "TRANSCEND.Airline"){
       let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.Airline");
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < builtInSlotValues.length; i ++){
-        if(builtInSlotValues[i].name.toUpperCase() == scratchValue){
+        if(builtInSlotValues[i].name.toUpperCase() === scratchValue){
           returnValue = builtInSlotValues[i].name;
           break;
         }
       }
     }
-    else if(slotType == "TRANSCEND.US_STATE"){
+    else if(slotType === "TRANSCEND.US_STATE"){
       let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.US_STATE");
       let scratchValue = returnValue.toUpperCase();
       for(let i = 0; i < builtInSlotValues.length; i ++){
-        if(builtInSlotValues[i].name.toUpperCase() == scratchValue){
+        if(builtInSlotValues[i].name.toUpperCase() === scratchValue){
           returnValue = builtInSlotValues[i].name;
           break;
         }
       }
     }
-    else if(slotType == "TRANSCEND.US_PRESIDENT"){
+    else if(slotType === "TRANSCEND.US_PRESIDENT"){
       let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.US_PRESIDENT");
       let scratchValue = returnValue.toLowerCase();
       for(let i = 0; i < builtInSlotValues.length; i ++){
-        if(builtInSlotValues[i].name.toLowerCase() == scratchValue ||
+        if(builtInSlotValues[i].name.toLowerCase() === scratchValue ||
            builtInSlotValues[i].matchingStrings.indexOf(scratchValue) > 0 ||
            builtInSlotValues[i].ordinalMatchingStrings.indexOf(scratchValue) > 0
           ){
@@ -1878,7 +1874,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
     returnValue =  _processMatchedCustomSlotValueByType(value, slotType, flags, recognizerSet);
   }
   let transformFilename = _getSlotTransformSrcFilenameFromRecognizer(recognizerSet, intent, slot);
-  if(typeof transformFilename != "undefined"){
+  if(typeof transformFilename !== "undefined"){
     try {
       let transform = require(transformFilename);
       returnValue = transform(value, intent, slot);
@@ -1887,12 +1883,12 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
     }
   }
   return returnValue;
-}
+};
 
 var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recognizerToUse){
   //  console.log("_matchText, 1");
-    var recognizerSet;
-    if(typeof recognizerToUse != "undefined" && recognizerToUse != null){
+    let recognizerSet;
+    if(typeof recognizerToUse !== "undefined" && recognizerToUse !== null){
       recognizerSet = recognizerToUse;
     }
     else {
@@ -1905,28 +1901,28 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
         recognizerSet = require("../../recognizer.json");
       }
     }
-    if(typeof recognizerSet == "undefined"){
+    if(typeof recognizerSet === "undefined"){
       throw {"error": constants.errorCodes.MISSING_RECOGNIZER, "message": "Unable to load recognizer.json"};
     }
 
   // First, correct some of Microsoft's "deviations"
   // Do this only if the number slot type is used
   let numberValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.NUMBER");
-  if(typeof numberValues != "undefined" && Array.isArray(numberValues)){
+  if(typeof numberValues !== "undefined" && Array.isArray(numberValues)){
     // look for a $ followed by a number and replace it with the number followed by the word "dollars".
     let regExpString = "(\\$\\s*(?:\\s*";
     for(let i = 0; i < numberValues.length; i++){
       regExpString += "|" + numberValues[i];
     }
-    regExpString += "|,"
+    regExpString += "|,";
 
-    regExpString +=    ")+)"
+    regExpString +=    ")+)";
     let regExp = new RegExp(regExpString, "ig");
     let regExpNonGlobal = new RegExp(regExpString, "i");
     let dollarMatchResult;
     while(dollarMatchResult = regExp.exec(stringToMatch)){
   //    console.log("dollarMatchResult: " + JSON.stringify(dollarMatchResult));
-      if(dollarMatchResult == null){
+      if(dollarMatchResult === null){
         continue;
       }
       let dollarlessMatch = dollarMatchResult[0].substring(1);
@@ -1940,7 +1936,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     regExp = /(^0[0-9])/;
     let leadingZeroMatchResult;
     if(leadingZeroMatchResult = regExp.exec(stringToMatch)){
-      if(leadingZeroMatchResult != null){
+      if(leadingZeroMatchResult !== null){
         let replacementString = "0 " + leadingZeroMatchResult[0].substring(1);
         stringToMatch = stringToMatch.replace(/(^0[0-9])/, replacementString);
         regExp.lastIndex = 0;
@@ -1949,7 +1945,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
 
     regExp = /([^0-9]0[0-9])/ig;
     while(leadingZeroMatchResult = regExp.exec(stringToMatch)){
-      if(leadingZeroMatchResult == null){
+      if(leadingZeroMatchResult === null){
         continue;
       }
       let replacementString = leadingZeroMatchResult[0].substring(0, 1) + "0 " + leadingZeroMatchResult[0].substring(2);
@@ -1961,23 +1957,23 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
 //  console.log("_matchText, 2, recognizerSet: " + JSON.stringify(recognizerSet));
   let originalMatchConfig = [].concat(recognizerSet.matchConfig);
 
-  if(typeof intentsSequence != "undefined" && intentsSequence != null){
-    if(Array.isArray(intentsSequence) == false){
+  if(typeof intentsSequence !== "undefined" && intentsSequence !== null){
+    if(Array.isArray(intentsSequence) === false){
       intentsSequence = ["" + intentsSequence];
     }
   }
   else {
     intentsSequence = [];
   }
-  if(typeof excludeIntents != "undefined" && excludeIntents != null){
-    if(Array.isArray(excludeIntents) == false){
+  if(typeof excludeIntents !== "undefined" && excludeIntents !== null){
+    if(Array.isArray(excludeIntents) === false){
       excludeIntents = ["" + excludeIntents];
     }
   }
   else {
     excludeIntents = [];
   }
-  var sortedMatchConfig = [];
+  let sortedMatchConfig = [];
   // Now create the list to be used for matching
   // First, add all the intents that were part of the intentsSequence, in that
   // order, but exclude any that are also in the excludeIntents.
@@ -1985,7 +1981,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     let currentIntent = intentsSequence[currentIntentIndex];
     for(let currentUtteranceIndex = 0; currentUtteranceIndex < originalMatchConfig.length; currentUtteranceIndex++){
       let currentMatchConfig = originalMatchConfig[currentUtteranceIndex];
-      if(currentMatchConfig.intent == currentIntent){
+      if(currentMatchConfig.intent === currentIntent){
         // Remove this from the recognizerSet, push it onto sortedMatchConfig
         // (if not being excluded), decrement counter to stay on the same index
         // since we just removed one item.
@@ -2008,28 +2004,27 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     currentUtteranceIndex--;
   }
 
-  for(var i = 0; i < sortedMatchConfig.length; i++){
+  for(let i = 0; i < sortedMatchConfig.length; i++){
 //    console.log("_matchText, 3, i: " + i);
-    var scratch = sortedMatchConfig[i];
+    let scratch = sortedMatchConfig[i];
 //    console.log("_matchText, 4, scratch: " + JSON.stringify(scratch, null, 2));
 //    console.log("_matchText, 4.1, scratch.regExString: " + JSON.stringify(scratch.regExString));
-    if(typeof scratch.regExpStrings != "undefined" && Array.isArray(scratch.regExpStrings)){
+    if(typeof scratch.regExpStrings !== "undefined" && Array.isArray(scratch.regExpStrings)){
       for(let k = 0; k < scratch.regExpStrings.length; k ++){
         let scratchRegExpString = scratch.regExpStrings[k];
         let scratchRegExp = new RegExp(scratchRegExpString, "ig");
-        if(k == (scratch.regExpStrings.length - 1)){
+        if(k === (scratch.regExpStrings.length - 1)){
           // This is the final reg exp
           let matchResult;
-          let slotValues = [];
           while(matchResult = scratchRegExp.exec(stringToMatch)){
             multistage: {
-              if(matchResult != null){
-                var returnValue = {};
+              if(matchResult !== null){
+                let returnValue = {};
                 returnValue.name = scratch.intent;
                 returnValue.slots = {};
-                for(var j = 1; j < matchResult.length; j++){
-                  var processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type, scratch.slots[j - 1].flags, scratch.slots[j - 1].name, scratch.intent, recognizerSet);
-                  if(typeof processedMatchResult == "undefined"){
+                for(let j = 1; j < matchResult.length; j++){
+                  let processedMatchResult = _processMatchedSlotValueByType(matchResult[j], scratch.slots[j - 1].type, scratch.slots[j - 1].flags, scratch.slots[j - 1].name, scratch.intent, recognizerSet);
+                  if(typeof processedMatchResult === "undefined"){
                     // This means a multi-stage match, such as SOUNDEX_MATCH, has failed to match on a follow up stage.
                     // Treat it as a no match
                     break multistage;
@@ -2059,9 +2054,9 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
   }
 
   // Now try the built in intents
-  for(var i = 0; i < recognizerSet.builtInIntents.length; i ++){
+  for(let i = 0; i < recognizerSet.builtInIntents.length; i ++){
     let scratch = recognizerSet.builtInIntents[i];
-    if(typeof scratch.regExp == "undefined"){
+    if(typeof scratch.regExp === "undefined"){
       scratch.regExp = new RegExp(scratch.regExpString, "ig");
 //      console.log("scratch.regExp: " + scratch.regExp);
 //      scratch.regExp = new RegExp("^\\s*((?:help\\s*|help\\s+me\\s*|can\\s+you\\s+help\\s+me\\s*)+)\\s*[.]?\\s*$", "ig");
@@ -2070,10 +2065,8 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     scratch.regExp.lastIndex = 0;
     if(matchResult = scratch.regExp.exec(stringToMatch)){
 //      console.log("matchResult: " + JSON.stringify(matchResult));
-      var returnValue = {};
-      let outputName = _getTranslatedIntentForOutput(scratch.name, recognizerSet.platform);
-//      returnValue.name = scratch.name;
-      returnValue.name = outputName;
+      let returnValue = {};
+      returnValue.name = _getTranslatedIntentForOutput(scratch.name, recognizerSet.platform);
       returnValue.slots = {};
       return returnValue;
     }
@@ -2088,26 +2081,23 @@ var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
   // skip the parsing.
   let acceptedInputPlatforms = allPlatforms.concat(["ALL"]);
   let acceptedOutputPlatforms = allPlatforms.concat([]);
-  if(typeof config == "undefined" || config == null){
-    // TODO Add a separate constants file containing all the constants, including
-    // error messages.
+  if(typeof config === "undefined" || config === null){
+    // TODO Add a separate constants file containing all the constants, including error messages.
     throw {"error": "MISSING_CONFIG", "message": "Programmer error - no config passed in."};
   }
-  if(typeof intents == "undefined" || config == null){
-    // TODO Add a separate constants file containing all the constants, including
-    // error messages.
+  if(typeof intents === "undefined" || config === null){
+      // TODO Add a separate constants file containing all the constants, including error messages.
     throw {"error": "MISSING_INTENTS", "message": "Programmer error - no utterances passed in."};
   }
-  if(typeof utterances == "undefined" || config == null){
-    // TODO Add a separate constants file containing all the constants, including
-    // error messages.
+  if(typeof utterances === "undefined" || config === null){
+      // TODO Add a separate constants file containing all the constants, including error messages.
     throw {"error": "MISSING_UTTERANCES", "message": "Programmer error - no utterances passed in."};
   }
 
   let outputSpecified = false;
   let inputsSpecified = false;
-  if(typeof config.platform != "undefined" && config.platform != null){
-    if(Array.isArray(config.platform.input) && config.platform.input.length > 0 && typeof config.platform.output == "string"){
+  if(typeof config.platform !== "undefined" && config.platform !== null){
+    if(Array.isArray(config.platform.input) && config.platform.input.length > 0 && typeof config.platform.output === "string"){
       let scannedInputs = [];
       for(let i = 0; i < config.platform.input.length; i ++){
         if(acceptedInputPlatforms.indexOf(config.platform.input[i]) >= 0){
@@ -2129,16 +2119,16 @@ var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
     }
   }
 
-  if(inputsSpecified == false){
+  if(inputsSpecified === false){
     // Scan through intents looking for "platform" intents or slot types.
     let scannedInputs = [];
 
-    if(typeof config.builtInIntents != "undefined" && config.builtInIntents != null){
+    if(typeof config.builtInIntents !== "undefined" && config.builtInIntents !== null){
       for(let i = 0; i < config.builtInIntents.length; i ++){
         let builtInIntent = config.builtInIntents[i];
         if(builtInIntent.enabled){
           let platform = _getBuiltinIntentPlatform(builtInIntent.name, acceptedInputPlatforms);
-          if(typeof platform != "undefined" && platform != null && scannedInputs.indexOf(platform) < 0){
+          if(typeof platform !== "undefined" && platform !== null && scannedInputs.indexOf(platform) < 0){
             scannedInputs.push(platform);
             inputsSpecified = true;
           }
@@ -2146,20 +2136,20 @@ var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
       }
     }
 
-    if(typeof config.builtInSlots != "undefined" && config.builtInSlots != null){
+    if(typeof config.builtInSlots !== "undefined" && config.builtInSlots !== null){
       for(let i = 0; i < config.builtInSlots.length; i ++){
         let builtInSlot = config.builtInSlots[i];
         let platform = _getBuiltinSlotPlatform(builtInSlot.name, acceptedInputPlatforms);
-        if(typeof platform != "undefined" && platform != null && scannedInputs.indexOf(platform) < 0){
+        if(typeof platform !== "undefined" && platform !== null && scannedInputs.indexOf(platform) < 0){
           scannedInputs.push(platform);
           inputsSpecified = true;
         }
       }
     }
-    if(typeof config.platform == "undefined" || config.platform == null){
+    if(typeof config.platform === "undefined" || config.platform === null){
       config.platform = {"input": []};
     }
-    if(typeof config.platform.input == "undefined" || config.platform.input == null || Array.isArray(config.platform.input) ==  false){
+    if(typeof config.platform.input === "undefined" || config.platform.input === null || Array.isArray(config.platform.input) ===  false){
       config.platform.input = [];
     }
     for(let i = 0; i < scannedInputs.length; i++){
@@ -2169,20 +2159,20 @@ var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
     }
   }
   // Finally set the output if not already set.
-  if(outputSpecified == false){
+  if(outputSpecified === false){
     config.platform.output = "AMAZON";
   }
-  if(inputsSpecified == false){
+  if(inputsSpecified === false){
     config.platform.input.push(config.platform.output);
   }
-}
+};
 
 /**
 Current implementation is indistiguishable from the intent version, so simply call it here.
 */
 var _getBuiltinSlotPlatform = function(slotName, platforms){
   return _getBuiltinIntentPlatform(slotName, platforms);
-}
+};
 
 /**
 * Call to determine whether a particular intent is a built in intent of the platform.
@@ -2213,30 +2203,31 @@ var _getBuiltinIntentPlatform = function(intentName, platforms){
     return platformPrefix;
   }
   return;
-}
+};
+
 var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, config, skipExtendedValues, skipRegeneratingRegExp, skipTransformFunctions){
   let slotConfig = _getBuiltInSlotConfig(config, slotType);
-  if(typeof skipExtendedValues == "undefined" || skipExtendedValues != true){
+  if(typeof skipExtendedValues === "undefined" || skipExtendedValues !== true){
     let extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-    if(typeof extendedValues != "undefined"){
+    if(typeof extendedValues !== "undefined"){
       recognizer.builtInValues[slotTypeVar].values = recognizer.builtInValues[slotTypeVar].values.concat(extendedValues);
     }
   }
-  if(typeof skipRegeneratingRegExp == "undefined" || skipRegeneratingRegExp != true){
+  if(typeof skipRegeneratingRegExp === "undefined" || skipRegeneratingRegExp !== true){
     recognizer.builtInValues[slotTypeVar].replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues[slotTypeVar].values);
     recognizer.builtInValues[slotTypeVar].replacementRegExp = new RegExp(recognizer.builtInValues[slotTypeVar].replacementRegExpString, "ig");
   }
-  if(typeof skipTransformFunctions == "undefined" || skipTransformFunctions != true){
-    if(typeof slotConfig != "undefined" && slotConfig != null){
+  if(typeof skipTransformFunctions === "undefined" || skipTransformFunctions !== true){
+    if(typeof slotConfig !== "undefined" && slotConfig !== null){
       recognizer.builtInValues.US_FIRST_NAME.transformSrcFilename = slotConfig.transformSrcFilename;
     }
   }
-}
+};
 
 //TODO remove duplicate copies of this and move them to a commont js file later
 var _getBuiltInSlotTypeSuffix = function(slotType){
 	return slotType.replace(/^AMAZON\./, '').replace(/^TRANSCEND\./, '');
-}
+};
 
 //TODO remove duplicate copies of this and move them to a commont js file later
 var _isBuiltInSlotType = function(slotType){
@@ -2244,10 +2235,10 @@ var _isBuiltInSlotType = function(slotType){
 		return true;
 	}
 	return false;
-}
+};
 
 var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
-  if(_isBuiltInSlotType(slotType) == false){
+  if(_isBuiltInSlotType(slotType) === false){
     return;
   }
   if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
@@ -2258,10 +2249,10 @@ var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
   console.log("getSimpleRegExpForBuiltInSlotType, suffix: <" + suffix + ">");
   console.log("getSimpleRegExpForBuiltInSlotType, returning: " + recognizer.builtInValues[suffix].replacementRegExpString);
   return recognizer.builtInValues[suffix].replacementRegExpString;
-}
+};
 
 var _generateRunTimeJson = function(config, intents, utterances){
-  if(typeof config == "undefined" || config == null){
+  if(typeof config === "undefined" || config === null){
     config = {};
   }
   _scanIntentsAndSlotsForPlatform(config, intents, utterances);
@@ -2315,7 +2306,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
   var recognizerSet = {};
   recognizerSet.platform = config.platform;
 
-  if(typeof config != "undefined" && typeof config.customSlotTypes != "undefined"){
+  if(typeof config !== "undefined" && typeof config.customSlotTypes !== "undefined"){
     recognizerSet.customSlotTypes = config.customSlotTypes;
     // Iterate over all the values and create a corresponding array of match
     // regular expressions so that the exact value is returned rather than what
@@ -2347,13 +2338,13 @@ var _generateRunTimeJson = function(config, intents, utterances){
   
   let passThrougFunc = function(slotType, flags){
     return _getReplacementRegExpStringGivenSlotType(slotType, config, flags);
-  }
+  };
 
   // First process all the utterances
   // keep track of all the built in slot types used by utterances so that they can be added to the recognizerSet
   let builtInSlotTypesUsedByUtterances = [];
-  for(var i = 0; i < utterances.length; i ++){
-    if(utterances[i].trim() == ""){
+  for(let i = 0; i < utterances.length; i ++){
+    if(utterances[i].trim() === ""){
       continue;
     }
     let result = parser.parseUtteranceIntoJson(utterances[i], intents);
@@ -2361,11 +2352,11 @@ var _generateRunTimeJson = function(config, intents, utterances){
 
     parser.addRegExps(result, intents, passThrougFunc);
     
-    var currentValue = {};
+    let currentValue = {};
     currentValue.slots = [];
 
     for(let j = 0; j < result.parsedUtterance.length; j ++){
-      if(result.parsedUtterance[j].type != "slot"){
+      if(result.parsedUtterance[j].type !== "slot"){
         continue;
       }
       let parsedSlot = result.parsedUtterance[j];
@@ -2375,7 +2366,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
       }
       let slotToPush = {"name": parsedSlot.name, "type": parsedSlot.slotType, "flags": parsedSlot.flags};
       let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, parsedSlot.slotType);
-      if(typeof slotTypeTransformSrcFilename != "undefined"){
+      if(typeof slotTypeTransformSrcFilename !== "undefined"){
         slotToPush.transformSrcFilename = slotTypeTransformSrcFilename;
       }
       currentValue.slots.push(slotToPush);
@@ -2412,9 +2403,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "cancel", "never mind", "forget it"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2428,9 +2419,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "help", "help me", "can you help me"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2444,9 +2435,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "loop off"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2460,9 +2451,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "loop", "loop on", "keep repeating this song"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2476,9 +2467,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "next", "skip", "skip forward"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2492,9 +2483,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "no", "no thanks"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2508,9 +2499,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "pause", "pause that"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2524,9 +2515,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "go back", "skip back", "back up"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2540,9 +2531,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "repeat", "say that again", "repeat that"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2556,9 +2547,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "resume", "continue", "keep going"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2572,9 +2563,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "stop shuffling", "shuffle off", "turn off shuffle"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2588,9 +2579,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "shuffle", "shuffle on", "shuffle the music", "shuffle mode"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2604,9 +2595,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "start over", "restart", "start again"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2620,9 +2611,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "stop", "off", "shut up"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2636,9 +2627,9 @@ var _generateRunTimeJson = function(config, intents, utterances){
       "utterances": [
         "yes", "yes please", "sure"
       ]
-    }
+    };
     let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
-    if(typeof extendedUtterances != "undefined"){
+    if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
     builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
@@ -2658,97 +2649,95 @@ recognizer.Recognizer.getReplacementRegExpStringGivenSlotType = _getReplacementR
 recognizer.Recognizer.prototype.getReplacementRegExpStringGivenSlotType = _getReplacementRegExpStringGivenSlotType;
 
 var _getSlotType = function(intents, intent, slot){
-  for(var i = 0; i < intents.intents.length; i++){
-    if(intents.intents[i].intent == intent){
-      for(var j = 0; j < intents.intents[i].slots.length; j ++){
-        if(intents.intents[i].slots[j].name == slot){
+  for(let i = 0; i < intents.intents.length; i++){
+    if(intents.intents[i].intent === intent){
+      for(let j = 0; j < intents.intents[i].slots.length; j ++){
+        if(intents.intents[i].slots[j].name === slot){
           return intents.intents[i].slots[j].type;
         }
       }
       return;
     }
   }
-}
+};
 
 var _getSlotTypeFromRecognizer = function(recognizer, intent, slot){
-  for(var i = 0; i < recognizer.matchConfig.length; i++){
-    if(recognizer.matchConfig[i].intent == intent){
-      for(var j = 0; j < recognizer.matchConfig[i].slots.length; j ++){
-        if(recognizer.matchConfig[i].slots[j].name == slot){
+  for(let i = 0; i < recognizer.matchConfig.length; i++){
+    if(recognizer.matchConfig[i].intent === intent){
+      for(let j = 0; j < recognizer.matchConfig[i].slots.length; j ++){
+        if(recognizer.matchConfig[i].slots[j].name === slot){
           return recognizer.matchConfig[i].slots[j].type;
         }
       }
       return;
     }
   }
-}
+};
 
 var _getBuiltInSlotValuesFromRecognizer = function(recognizer, builtInSlotType){
   for(let i = 0; i < recognizer.builtInSlotTypes.length; i ++){
-    if(recognizer.builtInSlotTypes[i].name == builtInSlotType){
+    if(recognizer.builtInSlotTypes[i].name === builtInSlotType){
       return recognizer.builtInSlotTypes[i].values;
     }
   }
-  return;
-}
+};
+
 var _getSlotTransformSrcFilenameFromRecognizer = function(recognizer, intent, slot){
-  for(var i = 0; i < recognizer.matchConfig.length; i++){
-    if(recognizer.matchConfig[i].intent == intent){
-      for(var j = 0; j < recognizer.matchConfig[i].slots.length; j ++){
-        if(recognizer.matchConfig[i].slots[j].name == slot){
+  for(let i = 0; i < recognizer.matchConfig.length; i++){
+    if(recognizer.matchConfig[i].intent === intent){
+      for(let j = 0; j < recognizer.matchConfig[i].slots.length; j ++){
+        if(recognizer.matchConfig[i].slots[j].name === slot){
           return recognizer.matchConfig[i].slots[j].transformSrcFilename;
         }
       }
       return;
     }
   }
-}
+};
 
 var _getBuiltInSlotConfig = function(config, slotName){
   let scratchSlotName = _getBuiltInNameWithoutPlatform(slotName);
-  if(typeof config != "undefined" && Array.isArray(config.builtInSlots)){
+  if(typeof config !== "undefined" && Array.isArray(config.builtInSlots)){
     for(let i = 0; i < config.builtInSlots.length; i ++){
       let slotConfig = config.builtInSlots[i];
-      if(_getBuiltInNameWithoutPlatform(slotConfig.name) == scratchSlotName){
+      if(_getBuiltInNameWithoutPlatform(slotConfig.name) === scratchSlotName){
         return slotConfig;
       }
     }
   }
   // Nothing found - return undefined
-  return;
-}
+};
 
 var _getSlotTypeTransformSrcFilename = function(config, slotType){
-  if(typeof config.builtInSlots != "undefined" && Array.isArray(config.builtInSlots)){
+  if(typeof config.builtInSlots !== "undefined" && Array.isArray(config.builtInSlots)){
     for(let i = 0; i < config.builtInSlots.length; i++){
       let currentSlot = config.builtInSlots[i];
-      if(currentSlot.name == slotType){
+      if(currentSlot.name === slotType){
         return currentSlot.transformSrcFilename;
       }
     }
   }
-  if(typeof config.customSlotTypes != "undefined" && Array.isArray(config.customSlotTypes)){
+  if(typeof config.customSlotTypes !== "undefined" && Array.isArray(config.customSlotTypes)){
     for(let i = 0; i < config.customSlotTypes.length; i++){
       let currentSlot = config.customSlotTypes[i];
-      if(currentSlot.name == slotType){
+      if(currentSlot.name === slotType){
         return currentSlot.transformSrcFilename;
       }
     }
   }
-  return;
 };
 
 
 var _getBuiltInSlotExtendedValues = function(slotConfig){
   let returnValue;
-  if(typeof slotConfig != "undefined" && slotConfig != null){
-    if(typeof slotConfig.extendedValues != "undefined"){
+  if(typeof slotConfig !== "undefined" && slotConfig !== null){
+    if(typeof slotConfig.extendedValues !== "undefined"){
       returnValue = [].concat(slotConfig.extendedValues);
     }
-    if(typeof slotConfig.extendedValuesFilename != "undefined"){
+    if(typeof slotConfig.extendedValuesFilename !== "undefined"){
       let loadedFromFile = utilities.loadStringListFromFile(slotConfig.extendedValuesFilename);
-      if(typeof loadedFromFile != "undefined" && Array.isArray(loadedFromFile)){
-        if(typeof returnValue == "undefined"){
+      if(typeof loadedFromFile !== "undefined" && Array.isArray(loadedFromFile)){
+        if(typeof returnValue === "undefined"){
           returnValue = [];
         }
         returnValue = returnValue.concat(loadedFromFile);
@@ -2756,33 +2745,32 @@ var _getBuiltInSlotExtendedValues = function(slotConfig){
     }
   }
   return returnValue;
-}
+};
 
 var _getBuiltInIntentConfig = function(config, intentName){
   let scratchIntentName = _getBuiltInNameWithoutPlatform(intentName);
 
-  if(typeof config != "undefined" && Array.isArray(config.builtInIntents)){
+  if(typeof config !== "undefined" && Array.isArray(config.builtInIntents)){
     for(let i = 0; i < config.builtInIntents.length; i ++){
       let intentConfig = config.builtInIntents[i];
-      if(_getBuiltInNameWithoutPlatform(intentConfig.name) == scratchIntentName){
+      if(_getBuiltInNameWithoutPlatform(intentConfig.name) === scratchIntentName){
         return intentConfig;
       }
     }
   }
   // Nothing found - return undefined
-  return;
-}
+};
 
 var _getBuiltInIntentExtendedUtterances = function(intentConfig){
   let returnValue;
-  if(typeof intentConfig != "undefined" && intentConfig != null){
-    if(typeof intentConfig.extendedUtterances != "undefined"){
+  if(typeof intentConfig !== "undefined" && intentConfig !== null){
+    if(typeof intentConfig.extendedUtterances !== "undefined"){
       returnValue = [].concat(intentConfig.extendedUtterances);
     }
-    if(typeof intentConfig.extendedUtterancesFilename != "undefined"){
+    if(typeof intentConfig.extendedUtterancesFilename !== "undefined"){
       let loadedFromFile = utilities.loadStringListFromFile(intentConfig.extendedUtterancesFilename);
-      if(typeof loadedFromFile != "undefined" && Array.isArray(loadedFromFile)){
-        if(typeof returnValue == "undefined"){
+      if(typeof loadedFromFile !== "undefined" && Array.isArray(loadedFromFile)){
+        if(typeof returnValue === "undefined"){
           returnValue = [];
         }
         returnValue = returnValue.concat(loadedFromFile);
@@ -2790,12 +2778,13 @@ var _getBuiltInIntentExtendedUtterances = function(intentConfig){
     }
   }
   return returnValue;
-}
+};
+
 var _isBuiltInIntentEnabled = function(intentConfig){
-  if(typeof intentConfig != "undefined" && (typeof intentConfig.enabled != "undefined" && intentConfig.enabled == false)){
+  if(typeof intentConfig !== "undefined" && (typeof intentConfig.enabled !== "undefined" && intentConfig.enabled === false)){
     return false;
   }
   return true;
-}
+};
 
 module.exports = recognizer;
