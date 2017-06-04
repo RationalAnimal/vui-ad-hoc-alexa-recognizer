@@ -299,7 +299,10 @@ recognizer.builtInValues.MusicVenue.replacementRegExpString = _makeReplacementRe
 recognizer.builtInValues.MusicVideo = require("./builtinslottypes/musicvideos.json");
 recognizer.builtInValues.MusicVideo.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MusicVideo.values);
 
+// Make a concatenated list of all the other organizations and add those to the separate "person" list
 recognizer.builtInValues.Person = require("./builtinslottypes/persons.json");
+let scratchPerson = require("./builtinslottypes/actors.json");
+recognizer.builtInValues.Person.values = recognizer.builtInValues.Person.values.concat(scratchPerson.values);
 recognizer.builtInValues.Person.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Person.values);
 
 recognizer.builtInValues.MusicGroup = require("./builtinslottypes/musicgroups.json");

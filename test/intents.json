@@ -287,6 +287,15 @@
       ]
     },
     {
+      "intent": "WellKnownPersonIntent",
+      "slots": [
+        {
+          "name": "PersonSlot",
+          "type": "AMAZON.Person"
+        }
+      ]
+    },
+    {
       "intent": "MusicEventIntent",
       "slots": [
         {
