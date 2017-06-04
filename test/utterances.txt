@@ -72,3 +72,4 @@ MusicRecordingIntent {MusicRecordingSlot} is the best track on that album
 MusicVenueIntent let's see it at {MusicVenueSlot}
 MusicVideoIntent {MusicVideoSlot} was controversial when it came out
 OrganizationIntent {OrganizationSlot} is just around the corner
+PersonIntent {PersonOneSlot} and {PersonTwoSlot} are among the richest people in the world

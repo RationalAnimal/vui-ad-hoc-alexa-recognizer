@@ -274,6 +274,19 @@
       ]
     },
     {
+      "intent": "PersonIntent",
+      "slots": [
+        {
+          "name": "PersonOneSlot",
+          "type": "AMAZON.Person"
+        },
+        {
+          "name": "PersonTwoSlot",
+          "type": "AMAZON.Person"
+        }
+      ]
+    },
+    {
       "intent": "MusicEventIntent",
       "slots": [
         {
