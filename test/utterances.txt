@@ -71,3 +71,4 @@ MusicianIntent {MusicianSlot} used to be part of a group
 MusicRecordingIntent {MusicRecordingSlot} is the best track on that album
 MusicVenueIntent let's see it at {MusicVenueSlot}
 MusicVideoIntent {MusicVideoSlot} was controversial when it came out
+OrganizationIntent {OrganizationSlot} is just around the corner

@@ -301,6 +301,15 @@
       ]
     },
     {
+      "intent": "OrganizationIntent",
+      "slots": [
+        {
+          "name": "OrganizationSlot",
+          "type": "AMAZON.Organization"
+        }
+      ]
+    },
+    {
       "intent": "LocalBusinessTypeIntent",
       "slots": [
         {
