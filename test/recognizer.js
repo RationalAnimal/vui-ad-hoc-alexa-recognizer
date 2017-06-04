@@ -427,6 +427,22 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Person slot matches", function() {
+      let result = recognizer.Recognizer.matchText("bill gates and jeff bezos are among the richest people in the world");
+      expect(result).to.eql(
+        {"name": "PersonIntent",
+         "slots": {
+           "PersonOneSlot": {
+             "name": "PersonOneSlot",
+             "value": "bill gates"
+           },
+           "PersonTwoSlot": {
+             "name": "PersonTwoSlot",
+             "value": "jeff bezos"
+           }
+        }});
+    });
+
     it("verify simple utterance with an AMAZON.EducationalOrganization slot matches", function() {
       let result = recognizer.Recognizer.matchText("have you graduated from harvard");
       expect(result).to.eql(
