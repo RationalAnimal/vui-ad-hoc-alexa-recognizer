@@ -187,6 +187,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.MusicVideo slot matches", function() {
+      let result = recognizer.Recognizer.matchText("like a virgin was controversial when it came out");
+      expect(result).to.eql(
+        {"name": "MusicVideoIntent",
+         "slots": {
+           "MusicVideoSlot": {
+             "name": "MusicVideoSlot",
+             "value": "like a virgin"
+           }
+         }});
+    });
+
     it("verify simple utterance with an AMAZON.Dessert slot matches", function() {
       let result = recognizer.Recognizer.matchText("ice cream is my favorite dessert");
       expect(result).to.eql(

@@ -49,8 +49,6 @@ var _getTranslatedSlotTypeForInternalLookup = function(slotType){
   return scratch;
 };
 
-// USED IN MATCH
-// NOT IN GENERATE
 var _getTranslatedIntentForOutput = function(intent, platformConfig){
   let periodIndex = intent.indexOf('.');
   if(periodIndex < 0){
@@ -76,15 +74,12 @@ var _hasFlag = function(flagName, flags){
   return false;
 };
 
-
-// USED IN MATCH
 var _getOrderOfMagnitude = function(number){
   let oom = Math.floor(Math.log10(number));
 //  console.log("_getOrderOfMagnitude, number: " + number + ", oom: " + oom);
   return oom;
 };
 
-// USED IN MATCH
 var _processMatchedNumericSlotValue = function(value){
 //  console.log("_processMatchedNumericSlotValue, 1, value: " + JSON.stringify(value));
   // Here we may have a mixture of words, numbers, and white spaces.
@@ -312,8 +307,6 @@ var _formatDate = function(date){
   return "" + date.getFullYear() + "-" + _twoDigitFormatter(date.getMonth() + 1) + "-" + _twoDigitFormatter(date.getDate());
 };
 
-// USED IN MATCH
-// NOT IN GENERATE
 var _processMatchedCustomSlotValueByType = function(value, slotType, flags, recognizerSet){
 //  console.log("_processMatchedCustomSlotValueByType, 1, value: " + value + ", slotType: " + slotType);
   for(let i = 0; i < recognizerSet.customSlotTypes.length; i++){
@@ -367,8 +360,6 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
   return value;
 };
 
-// USED IN MATCH
-// NOT IN GENERATE
 var _processMatchedTimeSlotValue = function(value){
 //  console.log("_processMatchedTimeSlotValue, 1");
   let matchResult;
@@ -784,8 +775,6 @@ var _processMatchedTimeSlotValue = function(value){
   }
 };
 
-// USED IN MATCH
-// NOT IN GENERATE
 var _processMatchedDurationSlotValue = function(value){
   let matchResult;
   let generalDurationString =
@@ -795,7 +784,6 @@ var _processMatchedDurationSlotValue = function(value){
        "\\s*(?:years{0,1}|months{0,1}|weeks{0,1}|days{0,1}|hours{0,1}|minutes{0,1}|seconds{0,1})" +
     ")+\\s*" +
   "\\s*$";
-
 
   let regExp = new RegExp(generalDurationString, "ig");
   let remainingValue = value;
