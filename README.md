@@ -250,8 +250,8 @@ the request json.
 You only need 2 lines of code to be added to your app to use it:
 
 ```js
-var recognizer = require("vui-ad-hoc-alexa-recognizer");
-var parsedResult = recognizer.Recognizer.matchText("Some text to match to intent");
+let recognizer = require("vui-ad-hoc-alexa-recognizer");
+let parsedResult = recognizer.Recognizer.matchText("Some text to match to intent");
 ```
 
 (If this is not working, check to make sure you have generated your recognizer.json
@@ -729,9 +729,9 @@ will likely execute much faster.  Since most of the time you know what the next
 likely answers (i.e. utterances) are going to be, you can provide them to the
 matching call.
 
-````javascript
-var result = _matchText("have you been to France", ["CountryIntent"]);
-````
+```javascript
+let result = recognizer.Recognizer.matchText("have you been to France", ["CountryIntent"]);
+```
 
 ### Intent exclusion
 
@@ -742,18 +742,18 @@ parse then in a particular place in your skill (i.e. if you are in a flow that
 does not include some intents then you should be able to exclude them from
 parsing).
 
-````javascript
-var result = _matchText("have you been to France", ["CountryIntent"], ["FirstNameIntent"]);
-````
+```javascript
+let result = recognizer.Recognizer.matchText("have you been to France", ["CountryIntent"], ["FirstNameIntent"]);
+```
 
 ### Alternate recognizer files
 
 In addition to the intent parsing order and intent exclusion lists you can pass
 an alternate recognizer file to use in the matching call.
 
-````javascript
-var result = _matchText("have you been to France", ["CountryIntent"], ["FirstNameIntent"], alternativeRecognizer);
-````
+```javascript
+let result = recognizer.Recognizer.matchText("have you been to France", ["CountryIntent"], ["FirstNameIntent"], alternativeRecognizer);
+```
 
 This can be used both
 for performance optimization as well as for breaking up large skills/apps into
@@ -824,8 +824,10 @@ need/demand for it.
 In order to specify an "output" type, simply configure it in your config file:
 
 ```json
-"platform": {
-  "output": "TRANSCEND"
+{
+  "platform": {
+    "output": "TRANSCEND"
+  }
 }
 ```
 
@@ -855,6 +857,6 @@ Currently, you can parse:
 3. Utterances with custom slots
 4. Utterances with all the numbers/date/time/duration built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.DURATION
 5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.Room, AMAZON.Month, AMAZON.DayOfWeek, AMAZON.Color, AMAZON.Airline (initial implementation - all US, Canadian, and Mexican airlines only)
-6. Utterances with these list built in slot types with nominal support (see Nominal Support section): AMAZON.Actor, AMAZON.AdministrativeArea, AMAZON.Artist, AMAZON.Athlete, AMAZON.Author, AMAZON.Book, AMAZON.BookSeries, AMAZON.BroadcastChannel, AMAZON.CivicStructure, AMAZON.Comic, AMAZON.Corporation, AMAZON.Dessert, AMAZON.Director, AMAZON.EducationalOrganization, AMAZON.Festival, AMAZON.FictionalCharacter, AMAZON.FoodEstablishment, AMAZON.Game, AMAZON.Landform, AMAZON.LandmarksOrHistoricalBuildings, AMAZON.LocalBusiness, AMAZON.LocalBusinessType, AMAZON.MedicalOrganization, AMAZON.Movie, AMAZON.MovieSeries, AMAZON.MovieTheater, AMAZON.MusicAlbum, AMAZON.MusicGroup, AMAZON.Musician, AMAZON.MusicRecording
+6. Utterances with these list built in slot types with nominal support (see Nominal Support section): AMAZON.Actor, AMAZON.AdministrativeArea, AMAZON.Artist, AMAZON.Athlete, AMAZON.Author, AMAZON.Book, AMAZON.BookSeries, AMAZON.BroadcastChannel, AMAZON.CivicStructure, AMAZON.Comic, AMAZON.Corporation, AMAZON.Dessert, AMAZON.Director, AMAZON.EducationalOrganization, AMAZON.Festival, AMAZON.FictionalCharacter, AMAZON.FoodEstablishment, AMAZON.Game, AMAZON.Landform, AMAZON.LandmarksOrHistoricalBuildings, AMAZON.LocalBusiness, AMAZON.LocalBusinessType, AMAZON.MedicalOrganization, AMAZON.Movie, AMAZON.MovieSeries, AMAZON.MovieTheater, AMAZON.MusicAlbum, AMAZON.MusicGroup, AMAZON.Musician, AMAZON.MusicRecording, AMAZON.MusicVenue, AMAZON.MusicVideo, AMAZON.Organization
 
 More Amazon built in slot types are coming shortly

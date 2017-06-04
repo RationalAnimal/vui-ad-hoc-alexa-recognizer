@@ -31,9 +31,6 @@ var parser = require('./parseutterance.js');
 var recognizer = {};
 var constants = require('./constants.js');
 
-// NOT IN MATCH
-// USED IN GENERATE
-// USED IN EXPORTED
 var _makeReplacementRegExpString = function(arrayToConvert){
     let returnValue = "((?:";
     for(let i = 0; i < arrayToConvert.length; i++){
@@ -46,8 +43,6 @@ var _makeReplacementRegExpString = function(arrayToConvert){
     return returnValue;
 };
 
-// NOT IN MATCH
-// USED IN GENERATE
 var _makeFullRegExpString = function(arrayToConvert){
     let regExString = _makeReplacementRegExpString(arrayToConvert);
     // Now split regExString into non-white space parts and reconstruct the
@@ -316,6 +311,12 @@ recognizer.builtInValues.Movie.replacementRegExpString = _makeReplacementRegExpS
 recognizer.builtInValues.MedicalOrganization = require("./builtinslottypes/medicalorganizations.json");
 recognizer.builtInValues.MedicalOrganization.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MedicalOrganization.values);
 
+// Make a concatenated list of all the other organizations
+recognizer.builtInValues.Organization = require("./builtinslottypes/medicalorganizations.json");
+let scratchOrganization = require("./builtinslottypes/educationalorganizations.json");
+recognizer.builtInValues.Organization.values = recognizer.builtInValues.Organization.values.concat(scratchOrganization.values);
+recognizer.builtInValues.Organization.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Organization.values);
+
 recognizer.builtInValues.LocalBusinessType = require("./builtinslottypes/localbusinesstypes.json");
 recognizer.builtInValues.LocalBusinessType.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.LocalBusinessType.values);
 
@@ -384,9 +385,6 @@ recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpSt
 /**
  * This is the new version meant to be used with the parseutterance.js
  */
-// NOT IN MATCH
-// USED IN GENERATE
-// EXPORTED
 var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFlags){
     slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
     let simpleSlots = [
@@ -398,7 +396,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         "TRANSCEND.Director", "TRANSCEND.Corporation", "TRANSCEND.CivicStructure", "TRANSCEND.BroadcastChannel",
         "TRANSCEND.BookSeries", "TRANSCEND.Book", "TRANSCEND.Author", "TRANSCEND.Athlete",
         "TRANSCEND.AdministrativeArea", "TRANSCEND.Country", "TRANSCEND.Color", "TRANSCEND.Room", "TRANSCEND.MusicRecording",
-        "TRANSCEND.MusicVenue", "TRANSCEND.MusicVideo"
+        "TRANSCEND.MusicVenue", "TRANSCEND.MusicVideo", "TRANSCEND.Organization"
     ];
     if(slotType === "TRANSCEND.NUMBER"){
         // Ignore flags for now
@@ -546,8 +544,6 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
 
 var allPlatforms = ["TRANSCEND", "AMAZON"];
 
-// NOT IN MATCH
-// USED IN GENERATE
 var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
     // If the config file specifies the input and output platform type(s) then
     // skip the parsing.
@@ -646,8 +642,6 @@ var _getBuiltinSlotPlatform = function(slotName, platforms){
     return _getBuiltinIntentPlatform(slotName, platforms);
 };
 
-// NOT IN MATCH
-// USED IN GENERATE
 var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, config, skipExtendedValues, skipRegeneratingRegExp, skipTransformFunctions){
     let slotConfig = _getBuiltInSlotConfig(config, slotType);
     if(typeof skipExtendedValues === "undefined" || skipExtendedValues !== true){
@@ -686,9 +680,6 @@ var _isBuiltInSlotType = function(slotType){
     return false;
 };
 
-// NOT IN MATCH
-// USED IN GENERATE
-// USED IN EXPORTED
 var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
     if(_isBuiltInSlotType(slotType) === false){
         return;
@@ -698,13 +689,11 @@ var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
         return "((?:\\w|\\s|[0-9]|\-)+)";
     }
     let suffix = _getBuiltInSlotTypeSuffix(slotType);
-    console.log("getSimpleRegExpForBuiltInSlotType, suffix: <" + suffix + ">");
-    console.log("getSimpleRegExpForBuiltInSlotType, returning: " + recognizer.builtInValues[suffix].replacementRegExpString);
+//    console.log("getSimpleRegExpForBuiltInSlotType, suffix: <" + suffix + ">");
+//    console.log("getSimpleRegExpForBuiltInSlotType, returning: " + recognizer.builtInValues[suffix].replacementRegExpString);
     return recognizer.builtInValues[suffix].replacementRegExpString;
 };
 
-// NOT IN MATCH
-// USED IN GENERATE
 var _generateRunTimeJson = function(config, intents, utterances){
     if(typeof config === "undefined" || config === null){
         config = {};
@@ -732,6 +721,7 @@ var _generateRunTimeJson = function(config, intents, utterances){
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicEvent", "MusicEvent", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Movie", "Movie", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MedicalOrganization", "MedicalOrganization", config);
+    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Organization", "Organization", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LocalBusinessType", "LocalBusinessType", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LocalBusiness", "LocalBusiness", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Game", "Game", config);
@@ -1101,8 +1091,6 @@ recognizer.Recognizer.prototype.generateRunTimeJson = _generateRunTimeJson;
 recognizer.Recognizer.getReplacementRegExpStringGivenSlotType = _getReplacementRegExpStringGivenSlotType;
 recognizer.Recognizer.prototype.getReplacementRegExpStringGivenSlotType = _getReplacementRegExpStringGivenSlotType;
 
-// NOT IN MATCH
-// USED IN GENERATE
 var _getBuiltInSlotConfig = function(config, slotName){
     let scratchSlotName = _getBuiltInNameWithoutPlatform(slotName);
     if(typeof config !== "undefined" && Array.isArray(config.builtInSlots)){
@@ -1116,8 +1104,6 @@ var _getBuiltInSlotConfig = function(config, slotName){
     // Nothing found - return undefined
 };
 
-// NOT IN MATCH
-// USED IN GENERATE
 var _getSlotTypeTransformSrcFilename = function(config, slotType){
     if(typeof config.builtInSlots !== "undefined" && Array.isArray(config.builtInSlots)){
         for(let i = 0; i < config.builtInSlots.length; i++){
@@ -1137,8 +1123,6 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType){
     }
 };
 
-// NOT IN MATCH
-// USED IN GENERATE
 var _getBuiltInSlotExtendedValues = function(slotConfig){
     let returnValue;
     if(typeof slotConfig !== "undefined" && slotConfig !== null){
@@ -1158,8 +1142,6 @@ var _getBuiltInSlotExtendedValues = function(slotConfig){
     return returnValue;
 };
 
-// NOT IN MATCH
-// USED IN GENERATE
 var _getBuiltInIntentConfig = function(config, intentName){
     let scratchIntentName = _getBuiltInNameWithoutPlatform(intentName);
 
@@ -1174,8 +1156,6 @@ var _getBuiltInIntentConfig = function(config, intentName){
     // Nothing found - return undefined
 };
 
-// NOT IN MATCH
-// USED IN GENERATE
 var _getBuiltInIntentExtendedUtterances = function(intentConfig){
     let returnValue;
     if(typeof intentConfig !== "undefined" && intentConfig !== null){
@@ -1195,8 +1175,6 @@ var _getBuiltInIntentExtendedUtterances = function(intentConfig){
     return returnValue;
 };
 
-// NOT IN MATCH
-// USED IN GENERATE
 var _isBuiltInIntentEnabled = function(intentConfig){
     if(typeof intentConfig !== "undefined" && (typeof intentConfig.enabled !== "undefined" && intentConfig.enabled === false)){
         return false;

@@ -355,6 +355,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Organization slot matches", function() {
+      let result = recognizer.Recognizer.matchText("massachusetts general hospital is just around the corner");
+      expect(result).to.eql(
+          {"name": "OrganizationIntent",
+            "slots": {
+              "OrganizationSlot": {
+                "name": "OrganizationSlot",
+                "value": "massachusetts general hospital"
+              }
+            }});
+    });
+
     it("verify simple utterance with an AMAZON.LocalBusiness slot matches", function() {
       let result = recognizer.Recognizer.matchText("is there a walmart nearby");
       expect(result).to.eql(
@@ -425,6 +437,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
             "value": "harvard"
           }
         }});
+    });
+
+    it("verify simple utterance with an AMAZON.Organization slot matches", function() {
+      let result = recognizer.Recognizer.matchText("harvard is just around the corner");
+      expect(result).to.eql(
+          {"name": "OrganizationIntent",
+            "slots": {
+              "OrganizationSlot": {
+                "name": "OrganizationSlot",
+                "value": "harvard"
+              }
+            }});
     });
 
     it("verify simple utterance with an AMAZON.Corporation slot matches", function() {
