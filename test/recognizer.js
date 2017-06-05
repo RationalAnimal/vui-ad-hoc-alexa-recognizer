@@ -491,6 +491,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.Person slot matches", function() {
+      let result = recognizer.Recognizer.matchText("alfred hitchcock is a well known person");
+      expect(result).to.eql(
+        {"name": "WellKnownPersonIntent",
+          "slots": {
+            "PersonSlot": {
+              "name": "PersonSlot",
+              "value": "alfred hitchcock"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.EducationalOrganization slot matches", function() {
       let result = recognizer.Recognizer.matchText("have you graduated from harvard");
       expect(result).to.eql(
@@ -1930,7 +1942,26 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
 
   });
+/*
+  describe("TRANSCEND.US_LAST_NAME processing", function() {
+    it("get timing of loading entire last name json", function() {
+      let entireLastNameList = require("../builtinslottypes/uslastnames.json");
+      let soundexCompute = require("../soundex.js");
+      let foundZulu = false;
+      for(let i = 0; i < entireLastNameList.values.length; i++){
+        let soundex = soundexCompute.simple.soundEx(entireLastNameList.values[i].name);
+        entireLastNameList.values[i].soundex = soundex;
+        if(entireLastNameList.values[i].name == "ZULU"){
+          foundZulu = true;
+          console.log("ZULU at index: " + i) + ", ZULU soundex: " + soundex;
+        }
+      }
+//      console.log(JSON.stringify(entireLastNameList, null, 2));
+      expect(foundZulu).to.equal(true);
+    });
 
+  });
+*/
 });
 
 
