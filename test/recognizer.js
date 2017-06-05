@@ -468,6 +468,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
 
     it("verify simple utterance with an AMAZON.Person slot matches", function() {
+      let result = recognizer.Recognizer.matchText("michael johnson is a well known person");
+      expect(result).to.eql(
+        {"name": "WellKnownPersonIntent",
+          "slots": {
+            "PersonSlot": {
+              "name": "PersonSlot",
+              "value": "michael johnson"
+            }
+          }});
+    });
+
+    it("verify simple utterance with an AMAZON.Person slot matches", function() {
       let result = recognizer.Recognizer.matchText("mark twain is a well known person");
       expect(result).to.eql(
         {"name": "WellKnownPersonIntent",
