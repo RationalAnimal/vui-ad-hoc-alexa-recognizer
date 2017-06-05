@@ -94,6 +94,15 @@
       ]
     },
     {
+      "intent": "ProfessionalIntent",
+      "slots": [
+        {
+          "name": "ProfessionalSlot",
+          "type": "AMAZON.Professional"
+        }
+      ]
+    },
+    {
       "intent": "ArtistIntent",
       "slots": [
         {
