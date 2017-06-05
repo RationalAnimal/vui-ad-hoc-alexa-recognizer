@@ -313,6 +313,8 @@ scratchPerson = require("./builtinslottypes/directors.json");
 recognizer.builtInValues.Person.values = recognizer.builtInValues.Person.values.concat(scratchPerson.values);
 scratchPerson = require("./builtinslottypes/musicians.json");
 recognizer.builtInValues.Person.values = recognizer.builtInValues.Person.values.concat(scratchPerson.values);
+scratchPerson = require("./builtinslottypes/professionals.json");
+recognizer.builtInValues.Person.values = recognizer.builtInValues.Person.values.concat(scratchPerson.values);
 recognizer.builtInValues.Person.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Person.values);
 
 recognizer.builtInValues.MusicGroup = require("./builtinslottypes/musicgroups.json");
