@@ -80,6 +80,17 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.Professional slot matches", function() {
+      let result = recognizer.Recognizer.matchText("ben carson is well known in his industry");
+      expect(result).to.eql(
+        {"name": "ProfessionalIntent",
+          "slots": {
+            "ProfessionalSlot": {
+              "name": "ProfessionalSlot",
+              "value": "ben carson"
+            }
+          }});
+    });
     it("verify simple utterance with an AMAZON.Athlete slot matches", function() {
       let result = recognizer.Recognizer.matchText("michael phelps is a swimmer");
       expect(result).to.eql(
@@ -1960,14 +1971,17 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
       let entireLastNameList = require("../builtinslottypes/uslastnames.json");
       let soundexCompute = require("../soundex.js");
       let foundZulu = false;
+      let totalCount = 0;
       for(let i = 0; i < entireLastNameList.values.length; i++){
-        let soundex = soundexCompute.simple.soundEx(entireLastNameList.values[i].name);
-        entireLastNameList.values[i].soundex = soundex;
+        totalCount += entireLastNameList.values[i].count;
+//        let soundex = soundexCompute.simple.soundEx(entireLastNameList.values[i].name);
+//        entireLastNameList.values[i].soundex = soundex;
         if(entireLastNameList.values[i].name == "ZULU"){
           foundZulu = true;
-          console.log("ZULU at index: " + i) + ", ZULU soundex: " + soundex;
+          console.log("ZULU at index: " + i);
         }
       }
+      console.log("total count: " + totalCount);
 //      console.log(JSON.stringify(entireLastNameList, null, 2));
       expect(foundZulu).to.equal(true);
     });
