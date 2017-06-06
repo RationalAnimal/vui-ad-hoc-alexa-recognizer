@@ -117,6 +117,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.Service slot matches", function() {
+      let result = recognizer.Recognizer.matchText("anna's taqueria is the best local business");
+      expect(result).to.eql(
+        {"name": "ServiceIntent",
+          "slots": {
+            "ServiceSlot": {
+              "name": "ServiceSlot",
+              "value": "anna's taqueria"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.Athlete slot matches", function() {
       let result = recognizer.Recognizer.matchText("michael phelps is a swimmer");
       expect(result).to.eql(

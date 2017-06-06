@@ -121,6 +121,15 @@
       ]
     },
     {
+      "intent": "ServiceIntent",
+      "slots": [
+        {
+          "name": "ServiceSlot",
+          "type": "AMAZON.Service"
+        }
+      ]
+    },
+    {
       "intent": "ArtistIntent",
       "slots": [
         {
