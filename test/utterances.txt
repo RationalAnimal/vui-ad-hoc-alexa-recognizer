@@ -75,3 +75,4 @@ OrganizationIntent {OrganizationSlot} is just around the corner
 PersonIntent {PersonOneSlot} and {PersonTwoSlot} are among the richest people in the world
 WellKnownPersonIntent {PersonSlot} is a well known person
 ProfessionalIntent {ProfessionalSlot} is well known in his industry
+ResidenceIntent {ResidenceSlot} is a nice place to visit
