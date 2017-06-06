@@ -76,3 +76,4 @@ PersonIntent {PersonOneSlot} and {PersonTwoSlot} are among the richest people in
 WellKnownPersonIntent {PersonSlot} is a well known person
 ProfessionalIntent {ProfessionalSlot} is well known in his industry
 ResidenceIntent {ResidenceSlot} is a nice place to visit
+ScreeningEventIntent i saw it at {ScreeningEventSlot}

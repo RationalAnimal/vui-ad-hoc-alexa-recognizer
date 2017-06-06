@@ -112,6 +112,15 @@
       ]
     },
     {
+      "intent": "ScreeningEventIntent",
+      "slots": [
+        {
+          "name": "ScreeningEventSlot",
+          "type": "AMAZON.ScreeningEvent"
+        }
+      ]
+    },
+    {
       "intent": "ArtistIntent",
       "slots": [
         {
