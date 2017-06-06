@@ -103,6 +103,15 @@
       ]
     },
     {
+      "intent": "ResidenceIntent",
+      "slots": [
+        {
+          "name": "ResidenceSlot",
+          "type": "AMAZON.Residence"
+        }
+      ]
+    },
+    {
       "intent": "ArtistIntent",
       "slots": [
         {
