@@ -78,3 +78,4 @@ ProfessionalIntent {ProfessionalSlot} is well known in his industry
 ResidenceIntent {ResidenceSlot} is a nice place to visit
 ScreeningEventIntent i saw it at {ScreeningEventSlot}
 ServiceIntent {ServiceSlot} is the best local business
+SoftwareApplicationIntent do you use {SoftwareApplicationSlot}
