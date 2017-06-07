@@ -130,6 +130,15 @@
       ]
     },
     {
+      "intent": "SoftwareApplicationIntent",
+      "slots": [
+        {
+          "name": "SoftwareApplicationSlot",
+          "type": "AMAZON.SoftwareApplication"
+        }
+      ]
+    },
+    {
       "intent": "ArtistIntent",
       "slots": [
         {
