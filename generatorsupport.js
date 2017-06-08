@@ -731,7 +731,7 @@ var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
     return recognizer.builtInValues[suffix].replacementRegExpString;
 };
 
-var _generateRunTimeJson = function(config, intents, utterances){
+var _generateRunTimeJson = function(config, interactionModel, intents, utterances){
     if(typeof config === "undefined" || config === null){
         config = {};
     }

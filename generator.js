@@ -110,7 +110,7 @@ catch(e){
 }
 var utterances = [];
 var doTheProcessing = function(){
-  return recognizer.Recognizer.generateRunTimeJson(config, intents, utterances);
+  return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances);
 }
 var resultJson;
 if(typeof utterancesFileName != "undefined"){
