@@ -141,6 +141,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.SoftwareGame slot matches", function() {
+      let result = recognizer.Recognizer.matchText("a lot of people play angry birds");
+      expect(result).to.eql(
+        {"name": "SoftwareGameIntent",
+          "slots": {
+            "SoftwareGameSlot": {
+              "name": "SoftwareGameSlot",
+              "value": "angry birds"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.Athlete slot matches", function() {
       let result = recognizer.Recognizer.matchText("michael phelps is a swimmer");
       expect(result).to.eql(

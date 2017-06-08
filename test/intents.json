@@ -139,6 +139,15 @@
       ]
     },
     {
+      "intent": "SoftwareGameIntent",
+      "slots": [
+        {
+          "name": "SoftwareGameSlot",
+          "type": "AMAZON.SoftwareGame"
+        }
+      ]
+    },
+    {
       "intent": "ArtistIntent",
       "slots": [
         {
