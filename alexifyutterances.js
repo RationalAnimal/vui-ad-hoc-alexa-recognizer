@@ -50,7 +50,21 @@ for(let i = 2; i < process.argv.length - 1; i += 2){
   else if(process.argv[i] == "--intents"){
     var intentsFileName = process.argv[j];
   }
+  else if(process.argv[i] == "--interactionmodel"){
+    var interactionModelFileName = process.argv[i];
+  }
 }
+var interactionModel;
+if(typeof interactionModelFileName != "undefined"){
+  try {
+    interactionModel = require(interactionModelFileName);
+  }
+  catch(e){
+    interactionModel = require("./" + interactionModelFileName);
+  }
+
+}
+
 if(typeof inputFileName == "undefined" || typeof outputFileName == "undefined" || typeof intentsFileName == "undefined"){
   usage();
   process.exit(1);

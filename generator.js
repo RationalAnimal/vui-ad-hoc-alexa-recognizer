@@ -63,12 +63,12 @@ for(var i = 2; i < process.argv.length - 1; i += 2){
   }
 }
 var interactionModel;
-if(typeof interactionModel != "undefined"){
+if(typeof interactionModelFileName != "undefined"){
   try {
-    interactionModel = require(interactionModel);
+    interactionModel = require(interactionModelFileName);
   }
   catch(e){
-    interactionModel = require("./" + interactionModel);
+    interactionModel = require("./" + interactionModelFileName);
   }
 
 }
