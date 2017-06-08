@@ -58,7 +58,21 @@ for(var i = 2; i < process.argv.length - 1; i += 2){
   else if(process.argv[i] == "-u" || process.argv[i] == "--utterances"){
     var utterancesFileName = process.argv[j];
   }
+  else if(process.argv[i] == "--interactionmodel"){
+    var interactionModelFileName = process.argv[i];
+  }
 }
+var interactionModel;
+if(typeof interactionModel != "undefined"){
+  try {
+    interactionModel = require(interactionModel);
+  }
+  catch(e){
+    interactionModel = require("./" + interactionModel);
+  }
+
+}
+
 var config;
 if(typeof configFileName == "undefined"){
   config = defaultCortanaConfig;
