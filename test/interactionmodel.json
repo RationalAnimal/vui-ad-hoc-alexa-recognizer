@@ -831,6 +831,19 @@
       ]
     },
     {
+      "name": "TranscendPresidentIntent",
+      "samples": [
+        "{TranscendPresidentSlot} is one of the presidents"
+      ],
+      "slots": [
+        {
+          "name": "TranscendPresidentSlot",
+          "type": "TRANSCEND.US_PRESIDENT",
+          "samples": []
+        }
+      ]
+    },
+    {
       "name": "WellKnownPersonIntent",
       "samples": [
         "{PersonSlot} is a well known person"
