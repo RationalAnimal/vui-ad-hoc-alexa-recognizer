@@ -134,10 +134,22 @@ var cleanupInteractionModel = function(interactionModel){
   }
   // Copy the rest of the custom types from the input to output.
   let inputTypes = interactionModel.types;
-  for(let i = 0; i < inputTypes.length; i ++){
-    let scratchType = JSON.parse(JSON.stringify(inputTypes[i]));
-    returnValue.types.push(scratchType);
+  if(typeof inputTypes != "undefined" && Array.isArray(inputTypes)){
+    for(let i = 0; i < inputTypes.length; i ++){
+      let scratchType = JSON.parse(JSON.stringify(inputTypes[i]));
+      returnValue.types.push(scratchType);
+    }
   }
+  let prompts = interactionModel.prompts;
+  if(typeof prompts != "undefined" && Array.isArray(prompts)){
+    returnValue.prompts = JSON.parse(JSON.stringify(prompts));
+  }
+  let dialog = interactionModel.dialog;
+  if(typeof dialog != "undefined"){
+    returnValue.dialog = JSON.parse(JSON.stringify(dialog));
+  }
+  // Copy prompts from the input to output
+
 
   console.log("returnValue: ", JSON.stringify(returnValue, null, 2));
 };
