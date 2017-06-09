@@ -168,6 +168,14 @@ Steve
 Stewart
 ````
 
+### BETA InteractionModel.js file support
+
+Currently, Amazon is beta testing a new GUI tools for editing skills' interaction models.  This produces a single json
+file that includes ALL the information for the skill - intents, utterances, custom slot types, and some "new" bits:
+prompts/dialogs/confirmations.  The support for this is being added to various parts of vui-ad-hoc-alexa-recognizer
+(including the generator and alexifyer).  However, until Amazon finishes the beta testing, this will not be finalized and
+may change. 
+
 ## Generate recognizer.json file
 
 The first step is to generate a run time file - recognizer.json.  This file has

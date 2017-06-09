@@ -60,13 +60,15 @@
     {
       "name": "AnotherIntent",
       "samples": [
-        "First is {SomeSlot} and then there is {SomeOtherSlot}"
+        "First is {SomeSlot} and {then|also} there is {SomeOtherSlot}"
       ],
       "slots": [
         {
           "name": "SomeSlot",
           "type": "SOME",
-          "samples": []
+          "samples": [
+            "{Here is |}{SomeSlot}"
+          ]
         },
         {
           "name": "SomeOtherSlot",

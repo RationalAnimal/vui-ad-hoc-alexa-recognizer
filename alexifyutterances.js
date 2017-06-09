@@ -117,6 +117,18 @@ var cleanupInteractionModel = function(interactionModel){
         let scratchSlotType = inputIntent.slots[j].type.replace(/^TRANSCEND./, "AMAZON.");
         outputIntent.slots.push({"name": inputIntent.slots[j].name, "type": scratchSlotType, "samples": []});
       }
+      // Now process all slot specific "samples"
+      if(typeof inputIntent.slots[j].samples != "undefined"){
+        for(let k = 0; k < inputIntent.slots[j].samples.length; k ++){
+          let result = parser.parseUtteranceIntoJson(inputIntent.name + " " + inputIntent.slots[j].samples[k], oldStyleIntentSchema);
+          parser.cleanupParsedUtteranceJson(result, oldStyleIntentSchema);
+          let unfoldedResultArray = parser.unfoldParsedJson(result, false);
+
+          for(let l = 0; l < unfoldedResultArray.length; l++){
+            outputIntent.slots[outputIntent.slots.length - 1].samples.push(unfoldedResultArray[l]);
+          }
+        }
+      }
     }
     returnValue.intents.push(outputIntent);
     // TODO finish this.
@@ -140,15 +152,16 @@ var cleanupInteractionModel = function(interactionModel){
       returnValue.types.push(scratchType);
     }
   }
+  // Copy prompts from input to output without processing
   let prompts = interactionModel.prompts;
   if(typeof prompts != "undefined" && Array.isArray(prompts)){
     returnValue.prompts = JSON.parse(JSON.stringify(prompts));
   }
+  // Copy dialog from input to output without processing
   let dialog = interactionModel.dialog;
   if(typeof dialog != "undefined"){
     returnValue.dialog = JSON.parse(JSON.stringify(dialog));
   }
-  // Copy prompts from the input to output
 
 
   console.log("returnValue: ", JSON.stringify(returnValue, null, 2));
