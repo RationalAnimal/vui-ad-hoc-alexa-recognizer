@@ -77,6 +77,7 @@ var cleanupInteractionModel = function(interactionModel){
   let returnValue = {};
   returnValue.intents = [];
   let intents = interactionModel.intents;
+  let transcendSlotTypesToAdd = [];
   for(let i = 0; i < intents.length; i ++){
     let inputIntent = intents[i];
     let outputIntent = {"name":inputIntent.name, "samples":[], "slots":[]};
@@ -101,12 +102,23 @@ var cleanupInteractionModel = function(interactionModel){
     }
     // Scan all slot types and see if there are any TRANSCEND native types (e.g. President).  If so,
     // add them as "custom" types to the end.
-    // Scan all slot types and see if any AMAZON... native types are listed as equivalent TRANSCEND... types.  If
-    // so, replace each one with AMAZON...
-    console.log("outputIntent: ", JSON.stringify(outputIntent, null, 2));
+    for(let j = 0; typeof inputIntent.slots != "undefined" && j < inputIntent.slots.length; j ++){
+      if(inputIntent.slots[j].type === "TRANSCEND.US_PRESIDENT"){
+        if(transcendSlotTypesToAdd.indexOf(inputIntent.slots[j].type) < 0) {
+          transcendSlotTypesToAdd.push(inputIntent.slots[j].type);
+        }
+        outputIntent.slots.push({"name": inputIntent.slots[j].name, "type": inputIntent.slots[j].type, "samples": []});
+      }
+      else {
+        let scratchSlotType = inputIntent.slots[j].type.replace(/^TRANSCEND./, "AMAZON.");
+        outputIntent.slots.push({"name": inputIntent.slots[j].name, "type": scratchSlotType, "samples": []});
+      }
+    }
+    returnValue.intents.push(outputIntent);
     // TODO finish this.
 
   }
+  console.log("returnValue: ", JSON.stringify(returnValue, null, 2));
 };
 
 if(typeof interactionModel != "undefined"){
