@@ -820,12 +820,12 @@
       "slots": [
         {
           "name": "TranscendNumberOneSlot",
-          "type": "AMAZON.NUMBER",
+          "type": "TRANSCEND.NUMBER",
           "samples": []
         },
         {
           "name": "TranscendNumberTwoSlot",
-          "type": "AMAZON.NUMBER",
+          "type": "TRANSCEND.NUMBER",
           "samples": []
         }
       ]
