@@ -72,6 +72,10 @@ if(typeof interactionModelFileName != "undefined" && (typeof inputFileName != "u
   process.exit(1);
 }
 
+var transformTranscendNativeType = function(nativeType){
+  return nativeType.replace(/^TRANSCEND./, "TRANSCEND__");
+}
+
 var cleanupInteractionModel = function(interactionModel){
   // TODO finish this.
   let returnValue = {};
@@ -101,13 +105,13 @@ var cleanupInteractionModel = function(interactionModel){
       }
     }
     // Scan all slot types and see if there are any TRANSCEND native types (e.g. President).  If so,
-    // add them as "custom" types to the end.
+    // add them as "custom" types to the end.  Else if there are TRANSCEND equivalents to AMAZON change them to AMAZON.
     for(let j = 0; typeof inputIntent.slots != "undefined" && j < inputIntent.slots.length; j ++){
       if(inputIntent.slots[j].type === "TRANSCEND.US_PRESIDENT"){
         if(transcendSlotTypesToAdd.indexOf(inputIntent.slots[j].type) < 0) {
           transcendSlotTypesToAdd.push(inputIntent.slots[j].type);
         }
-        outputIntent.slots.push({"name": inputIntent.slots[j].name, "type": inputIntent.slots[j].type, "samples": []});
+        outputIntent.slots.push({"name": inputIntent.slots[j].name, "type": transformTranscendNativeType(inputIntent.slots[j].type), "samples": []});
       }
       else {
         let scratchSlotType = inputIntent.slots[j].type.replace(/^TRANSCEND./, "AMAZON.");
@@ -118,6 +122,17 @@ var cleanupInteractionModel = function(interactionModel){
     // TODO finish this.
 
   }
+  // Now add any custom types
+  returnValue.types = [];
+  if(transcendSlotTypesToAdd.indexOf("TRANSCEND.US_PRESIDENT") >= 0){
+    let scratchType = {"name":transformTranscendNativeType("TRANSCEND.US_PRESIDENT"), "values":[]}
+    let presidents = require('./builtinslottypes/uspresidents.json');
+    for(let i = 0; i < presidents.values.length; i ++){
+      scratchType.values.push({"name": {"value": presidents.values[i].name}});
+    }
+    returnValue.types.push(scratchType);
+  }
+
   console.log("returnValue: ", JSON.stringify(returnValue, null, 2));
 };
 
