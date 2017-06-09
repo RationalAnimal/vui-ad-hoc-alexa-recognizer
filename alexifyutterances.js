@@ -30,14 +30,14 @@ var parser = require('./parseutterance.js');
 
 var usage = function(){
   console.log('Usage: node ' + process.argv[1] + ' <sampleutterance.txt>');
-  console.log('  -i --input UtterancesFileName specify input utterances file name.');
+  console.log('  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.');
+  console.log('  --utterances UtterancesFileName specify input utterances file name.');
   console.log('  --intents IntentsSchemaFileName specify intent schema file name used for slot name validation.');
 	console.log('  -o --output OutputFileName specify output utterances or interaction model file name.');
-//  console.log('  --interactionmodel combined json file that has intents, utterances, and custom slot values all in one.');
 }
 for(let i = 2; i < process.argv.length - 1; i += 2){
   let j = i + 1;
-  if(process.argv[i] == "-i" || process.argv[i] == "--input"){
+  if(process.argv[i] == "-i" || process.argv[i] == "--input" || process.argv[i] == "--utterances"){
     var inputFileName = process.argv[j];
   }
   else if(process.argv[i] == "-o" || process.argv[i] == "--output"){
@@ -56,9 +56,15 @@ if(typeof interactionModelFileName != "undefined"){
     interactionModel = require(interactionModelFileName);
   }
   catch(e){
-    interactionModel = require("./" + interactionModelFileName);
+    try{
+      interactionModel = require("./" + interactionModelFileName);
+    }
+    catch(e2){
+      console.log("Unable to load InteractionModel file.");
+      usage();
+      process.exit(1);
+    }
   }
-
 }
 
 if((typeof interactionModelFileName == "undefined" && (typeof inputFileName == "undefined" || typeof intentsFileName == "undefined")) || typeof outputFileName == "undefined"){
@@ -77,7 +83,6 @@ var transformTranscendNativeType = function(nativeType){
 }
 
 var cleanupInteractionModel = function(interactionModel){
-  // TODO finish this.
   let returnValue = {};
   returnValue.intents = [];
   let intents = interactionModel.intents;
@@ -86,18 +91,14 @@ var cleanupInteractionModel = function(interactionModel){
     let inputIntent = intents[i];
     let outputIntent = {"name":inputIntent.name, "samples":[], "slots":[]};
     let oldStyleIntent = {"intent":inputIntent.name, "slots":[]};
-//    console.log("inputIntent: ", JSON.stringify(inputIntent, null, 2));
     for(let j = 0; typeof inputIntent.slots != "undefined" && j < inputIntent.slots.length; j ++){
       oldStyleIntent.slots.push({"name":inputIntent.slots[j].name, "type":inputIntent.slots[j].type});
     }
     let oldStyleIntentSchema = {"intents":[oldStyleIntent]};
     // Now that we've constructed the old style schema for use in the parser functions, unfold all the samples (i.e. utterances)
     for(let j = 0; j < inputIntent.samples.length; j ++){
-//      console.log("before parseUtteranceIntoJson, inputIntent.samples[j]: " + inputIntent.samples[j]);
       let result = parser.parseUtteranceIntoJson(inputIntent.name + " " + inputIntent.samples[j], oldStyleIntentSchema);
-//      console.log("before cleanupParsedUtteranceJson, inputIntent.samples[j]: " + inputIntent.samples[j]);
       parser.cleanupParsedUtteranceJson(result, oldStyleIntentSchema);
-//      console.log("before unfoldParsedJson, inputIntent.samples[j]: " + inputIntent.samples[j] + ", result: ", JSON.stringify(result, null, 2));
       let unfoldedResultArray = parser.unfoldParsedJson(result, false);
 
       for(let k = 0; k < unfoldedResultArray.length; k++){
@@ -131,8 +132,6 @@ var cleanupInteractionModel = function(interactionModel){
       }
     }
     returnValue.intents.push(outputIntent);
-    // TODO finish this.
-
   }
   // Now add any custom types
   returnValue.types = [];
@@ -162,19 +161,17 @@ var cleanupInteractionModel = function(interactionModel){
   if(typeof dialog != "undefined"){
     returnValue.dialog = JSON.parse(JSON.stringify(dialog));
   }
-
-
-  console.log("returnValue: ", JSON.stringify(returnValue, null, 2));
+//  console.log("returnValue: ", JSON.stringify(returnValue, null, 2));
+  return returnValue;
 };
 
 if(typeof interactionModel != "undefined"){
-  cleanupInteractionModel(interactionModel);
-  // TODO for now just exit, but remove this when done
+  let cleanedUpModel = cleanupInteractionModel(interactionModel);
+  let file = fs.createWriteStream(outputFileName);
+  file.on('error', function(error) { /* add error handling here */ });
+  file.write(JSON.stringify(cleanedUpModel, null, 2));
+  file.end(function(){console.log("Result was saved to " + outputFileName);});
   return;
-}
-
-var _done = function(){
-  console.log("Was saved to " + outputFileName);
 }
 
 var values = utilities.loadStringListFromFile(inputFileName);
@@ -188,6 +185,7 @@ catch(e){
     var intentSchema = require("./" + intentsFileName);
   }
   catch(e2){
+    console.log("Unable to load IntentsSchema file.");
     usage();
     process.exit(1);
   }
