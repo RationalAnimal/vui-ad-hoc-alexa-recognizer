@@ -132,6 +132,12 @@ var cleanupInteractionModel = function(interactionModel){
     }
     returnValue.types.push(scratchType);
   }
+  // Copy the rest of the custom types from the input to output.
+  let inputTypes = interactionModel.types;
+  for(let i = 0; i < inputTypes.length; i ++){
+    let scratchType = JSON.parse(JSON.stringify(inputTypes[i]));
+    returnValue.types.push(scratchType);
+  }
 
   console.log("returnValue: ", JSON.stringify(returnValue, null, 2));
 };
