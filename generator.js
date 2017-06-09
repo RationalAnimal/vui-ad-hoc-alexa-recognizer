@@ -38,9 +38,10 @@ var defaultCortanaConfig = {
 
 var usage = function(){
   console.log('Usage: node ' + process.argv[1] + ':');
-  console.log('  -c --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.');
-  console.log('  -i --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.');
-  console.log('  -u --utterances UtterancesFileName specify utterances file name, optional.  This is "optional" only in the sense that it CAN be omitted, but in practice it is required.  There only time you would invoke this function without an utterance file argument is if your skill generates only build in intents, which would make it rather useless.');
+  console.log('  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.');
+  console.log('  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.');
+  console.log('  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.');
+  console.log('  --utterances UtterancesFileName specify utterances file name, optional.  This is "optional" only in the sense that it CAN be omitted, but in practice it is required.  There only time you would invoke this function without an utterance file argument is if your skill generates only build in intents, which would make it rather useless.');
 }
 // Make sure we got all the arguments on the command line.
 if (process.argv.length < 4) {
@@ -59,9 +60,16 @@ for(var i = 2; i < process.argv.length - 1; i += 2){
     var utterancesFileName = process.argv[j];
   }
   else if(process.argv[i] == "--interactionmodel"){
-    var interactionModelFileName = process.argv[i];
+    var interactionModelFileName = process.argv[j];
   }
 }
+
+if(typeof interactionModelFileName != "undefined" && (typeof utterancesFileName != "undefined" || typeof intentsFileName != "undefined")){
+  console.log("Must use either --interactionmodel argument OR the pair of --intents and --utterances, but NOT both.");
+  usage();
+  process.exit(1);
+}
+
 var interactionModel;
 if(typeof interactionModelFileName != "undefined"){
   try {
