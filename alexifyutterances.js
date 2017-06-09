@@ -32,12 +32,8 @@ var usage = function(){
   console.log('Usage: node ' + process.argv[1] + ' <sampleutterance.txt>');
   console.log('  -i --input UtterancesFileName specify input utterances file name.');
   console.log('  --intents IntentsSchemaFileName specify intent schema file name used for slot name validation.');
-	console.log('  -o --output OutputFileName specify output utterances file name.');
-}
-// Make sure we got all the arguments on the command line.
-if (process.argv.length < 8) {
-  usage();
-  process.exit(1);
+	console.log('  -o --output OutputFileName specify output utterances or interaction model file name.');
+//  console.log('  --interactionmodel combined json file that has intents, utterances, and custom slot values all in one.');
 }
 for(let i = 2; i < process.argv.length - 1; i += 2){
   let j = i + 1;
@@ -65,7 +61,13 @@ if(typeof interactionModelFileName != "undefined"){
 
 }
 
-if(typeof inputFileName == "undefined" || typeof outputFileName == "undefined" || typeof intentsFileName == "undefined"){
+if((typeof interactionModelFileName == "undefined" && (typeof inputFileName == "undefined" || typeof intentsFileName == "undefined")) || typeof outputFileName == "undefined"){
+  usage();
+  process.exit(1);
+}
+
+if(typeof interactionModelFileName != "undefined" && (typeof inputFileName != "undefined" || typeof intentsFileName != "undefined")){
+  console.log("Must use either --interactionmodel argument OR the pair of --intents and --input, but NOT both.");
   usage();
   process.exit(1);
 }
@@ -106,3 +108,20 @@ for(let i = 0; i < parsedUtterances.length; i++){
   file.write(parsedUtterances[i] + '\n');
 }
 file.end(function(){console.log("Result was saved to " + outputFileName);});
+
+var cleanupInteractionModel = function(interactionModel){
+  // TODO finish this.
+  let returnValue = {};
+  returnValue.intents = [];
+  let intents = interactionModel.intents;
+  for(let i = 0; i < intents.length; i ++){
+    let inputIntent = intents[i];
+    let outputIntent = {"name":inputIntent.name, "samples":[], "slots":[]};
+  }
+  // First, scan the interaction model and unfold all "samples" (i.e. utterances)
+  // Then, scan all slot types and see if there are any TRANSCEND native types (e.g. President).  If so,
+  // add them as "custom" types to the end.
+  // Then, scann all slot types and see if any AMAZON... native types are listed as equivalent TRANSCEND... types.  If
+  // so, replace each one with AMAZON...
+
+}
