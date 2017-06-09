@@ -2630,7 +2630,7 @@ describe("utterance parser", function() {
       let intentSchema = require("./intents.json");
       let result = parser.parseUtteranceIntoJson("AnotherIntent me {|blah|bleh|bleu} {SomeOtherSlot:INCLUDE_VALUES_MATCH} too { this | that | the other |}", intentSchema);
       parser.cleanupParsedUtteranceJson(result, intentSchema);
-      expect(parser.unfoldParsedJson(result)).to.eql(
+      expect(parser.unfoldParsedJson(result, true)).to.eql(
         [
           "AnotherIntent me  {SomeOtherSlot} too  this ",
           "AnotherIntent me  {SomeOtherSlot} too  that ",

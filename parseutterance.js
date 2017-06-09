@@ -290,7 +290,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc){
 	parsedJson.regExpStrings.push(regExpString);
 }
 
-var _unfoldParsedJson = function(parsedJson){
+var _unfoldParsedJson = function(parsedJson, prependIntentNameOnOutput){
 	let resultArray = [];
 	if(parsedJson.parsedUtterance.length >= 1){
 		if(typeof parsedJson.parsedUtterance[0] == "string"){
@@ -330,9 +330,11 @@ var _unfoldParsedJson = function(parsedJson){
 			}
 		}
 	}
-	for(let i = 0; i < resultArray.length; i++){
-		resultArray[i] = parsedJson.intentName + " " + resultArray[i];
+	if(prependIntentNameOnOutput === true){
+    for(let i = 0; i < resultArray.length; i++){
+      resultArray[i] = parsedJson.intentName + " " + resultArray[i];
 
+    }
 	}
 	return resultArray;
 }

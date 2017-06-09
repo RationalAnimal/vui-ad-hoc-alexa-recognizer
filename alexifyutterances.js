@@ -47,7 +47,7 @@ for(let i = 2; i < process.argv.length - 1; i += 2){
     var intentsFileName = process.argv[j];
   }
   else if(process.argv[i] == "--interactionmodel"){
-    var interactionModelFileName = process.argv[i];
+    var interactionModelFileName = process.argv[j];
   }
 }
 var interactionModel;
@@ -70,6 +70,49 @@ if(typeof interactionModelFileName != "undefined" && (typeof inputFileName != "u
   console.log("Must use either --interactionmodel argument OR the pair of --intents and --input, but NOT both.");
   usage();
   process.exit(1);
+}
+
+var cleanupInteractionModel = function(interactionModel){
+  // TODO finish this.
+  let returnValue = {};
+  returnValue.intents = [];
+  let intents = interactionModel.intents;
+  for(let i = 0; i < intents.length; i ++){
+    let inputIntent = intents[i];
+    let outputIntent = {"name":inputIntent.name, "samples":[], "slots":[]};
+    let oldStyleIntent = {"intent":inputIntent.name, "slots":[]};
+//    console.log("inputIntent: ", JSON.stringify(inputIntent, null, 2));
+    for(let j = 0; typeof inputIntent.slots != "undefined" && j < inputIntent.slots.length; j ++){
+      oldStyleIntent.slots.push({"name":inputIntent.slots[j].name, "type":inputIntent.slots[j].type});
+    }
+    let oldStyleIntentSchema = {"intents":[oldStyleIntent]};
+    // Now that we've constructed the old style schema for use in the parser functions, unfold all the samples (i.e. utterances)
+    for(let j = 0; j < inputIntent.samples.length; j ++){
+//      console.log("before parseUtteranceIntoJson, inputIntent.samples[j]: " + inputIntent.samples[j]);
+      let result = parser.parseUtteranceIntoJson(inputIntent.name + " " + inputIntent.samples[j], oldStyleIntentSchema);
+//      console.log("before cleanupParsedUtteranceJson, inputIntent.samples[j]: " + inputIntent.samples[j]);
+      parser.cleanupParsedUtteranceJson(result, oldStyleIntentSchema);
+//      console.log("before unfoldParsedJson, inputIntent.samples[j]: " + inputIntent.samples[j] + ", result: ", JSON.stringify(result, null, 2));
+      let unfoldedResultArray = parser.unfoldParsedJson(result, false);
+
+      for(let k = 0; k < unfoldedResultArray.length; k++){
+        outputIntent.samples.push(unfoldedResultArray[k]);
+      }
+    }
+    // Scan all slot types and see if there are any TRANSCEND native types (e.g. President).  If so,
+    // add them as "custom" types to the end.
+    // Scan all slot types and see if any AMAZON... native types are listed as equivalent TRANSCEND... types.  If
+    // so, replace each one with AMAZON...
+    console.log("outputIntent: ", JSON.stringify(outputIntent, null, 2));
+    // TODO finish this.
+
+  }
+};
+
+if(typeof interactionModel != "undefined"){
+  cleanupInteractionModel(interactionModel);
+  // TODO for now just exit, but remove this when done
+  return;
 }
 
 var _done = function(){
@@ -95,7 +138,7 @@ catch(e){
 for(let i = 0; i < values.length; i ++){
   let result = parser.parseUtteranceIntoJson(values[i], intentSchema);
   parser.cleanupParsedUtteranceJson(result, intentSchema);
-  let unfoldedResultArray = parser.unfoldParsedJson(result);
+  let unfoldedResultArray = parser.unfoldParsedJson(result, true);
 
   for(let j = 0; j < unfoldedResultArray.length; j++){
     parsedUtterances.push(unfoldedResultArray[j]);
@@ -109,19 +152,3 @@ for(let i = 0; i < parsedUtterances.length; i++){
 }
 file.end(function(){console.log("Result was saved to " + outputFileName);});
 
-var cleanupInteractionModel = function(interactionModel){
-  // TODO finish this.
-  let returnValue = {};
-  returnValue.intents = [];
-  let intents = interactionModel.intents;
-  for(let i = 0; i < intents.length; i ++){
-    let inputIntent = intents[i];
-    let outputIntent = {"name":inputIntent.name, "samples":[], "slots":[]};
-  }
-  // First, scan the interaction model and unfold all "samples" (i.e. utterances)
-  // Then, scan all slot types and see if there are any TRANSCEND native types (e.g. President).  If so,
-  // add them as "custom" types to the end.
-  // Then, scann all slot types and see if any AMAZON... native types are listed as equivalent TRANSCEND... types.  If
-  // so, replace each one with AMAZON...
-
-}
