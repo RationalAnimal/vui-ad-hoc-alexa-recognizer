@@ -43,11 +43,7 @@ var usage = function(){
   console.log('  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.');
   console.log('  --utterances UtterancesFileName specify utterances file name, optional.  This is "optional" only in the sense that it CAN be omitted, but in practice it is required.  There only time you would invoke this function without an utterance file argument is if your skill generates only build in intents, which would make it rather useless.');
 }
-// Make sure we got all the arguments on the command line.
-if (process.argv.length < 4) {
-  usage();
-  process.exit(1);
-}
+
 for(var i = 2; i < process.argv.length - 1; i += 2){
   var j = i + 1;
   if(process.argv[i] == "-c" || process.argv[i] == "--config"){
@@ -70,13 +66,26 @@ if(typeof interactionModelFileName != "undefined" && (typeof utterancesFileName 
   process.exit(1);
 }
 
+if(typeof interactionModelFileName == "undefined" && typeof intentsFileName == "undefined"){
+  console.log("Must use either --interactionmodel argument or --intents argument.");
+  usage();
+  process.exit(1);
+}
+
 var interactionModel;
 if(typeof interactionModelFileName != "undefined"){
   try {
     interactionModel = require(interactionModelFileName);
   }
   catch(e){
-    interactionModel = require("./" + interactionModelFileName);
+    try {
+      interactionModel = require("./" + interactionModelFileName);
+    }
+    catch(e2){
+      console.log("Unable to load InteractionModel file.");
+      usage();
+      process.exit(1);
+    }
   }
 
 }
@@ -90,7 +99,14 @@ else {
     config = require(configFileName);
   }
   catch(e){
-    config = require("./" + configFileName);
+    try{
+      config = require("./" + configFileName);
+    }
+    catch(e2){
+      console.log("Unable to load Configuration file.");
+      usage();
+      process.exit(1);
+    }
   }
 }
 // Now crawl over the config and load any custom slot values where they have
@@ -106,15 +122,20 @@ if(Array.isArray(config.customSlotTypes)){
     }
   }
 }
-if(typeof intentsFileName == "undefined"){
-  usage();
-  process.exit(1);
-}
-try {
-  var intents = require(intentsFileName);
-}
-catch(e){
-  var intents = require("./" + intentsFileName);
+if(typeof intentsFileName != "undefined"){
+  try {
+    var intents = require(intentsFileName);
+  }
+  catch(e){
+    try{
+      var intents = require("./" + intentsFileName);
+    }
+    catch(e2){
+      console.log("Unable to load Intents file.");
+      usage();
+      process.exit(1);
+    }
+  }
 }
 var utterances = [];
 var doTheProcessing = function(){

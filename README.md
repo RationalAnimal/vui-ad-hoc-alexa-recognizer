@@ -83,7 +83,7 @@ Alexa skill or will need to create if you don't have any yet
 files in the test directory):
 
 ````shell
-> cat test/utterances.txt
+cat test/utterances.txt
 ````
 ````
 TestIntent test
@@ -100,7 +100,7 @@ BlahIntent here is {BlahSlot} and {BlehSlot}
 AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
 ````
 ````shell
-> cat test/intents.json
+cat test/intents.json
 ````
 ````json
 {
@@ -160,7 +160,7 @@ AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
 and also here is an example of a custom slot type file:
 
 ````shell
-> cat test/minions.txt
+cat test/minions.txt
 ````
 ````
 Bob
@@ -183,7 +183,7 @@ all the information that is needed to parse user text later.  To create it, run
 the generator, e.g.:
 
 ````shell
-node generator.js -i test/intents.json -u test/utterances.txt -c test/config.json
+node generator.js --intents test/intents.json --utterances test/utterances.txt --config test/config.json
 ````
  (the example intents.json, utterances.txt, and config.json files are included in the test directory)
 This will produce a recognizer.json in the current directory.
@@ -348,7 +348,7 @@ which will produce:
 ````
 
 ````shell
-> node matcher.js "New England includes New Hampshire as one of its states"
+node matcher.js "New England includes New Hampshire as one of its states"
 ````
 which will produce:
 
@@ -365,7 +365,7 @@ which will produce:
 ````
 
 ````shell
-> node matcher.js "My first name is Jim"
+node matcher.js "My first name is Jim"
 ````
 which will produce:
 
@@ -383,7 +383,7 @@ which will produce:
 ````
 
 ````shell
-> node matcher.js "December thirty first nineteen ninety nine"
+node matcher.js "December thirty first nineteen ninety nine"
 ````
 which will produce:
 
@@ -400,7 +400,7 @@ which will produce:
 ````
 
 ````shell
-> node matcher.js "lets do it on tuesday"
+node matcher.js "lets do it on tuesday"
 ````
 which will produce:
 
@@ -577,17 +577,26 @@ Alexa, they need to be stripped from the utterance file.  For that use
 alexifyutterances.js utility:
 
 ```shell
-> node alexifyutterances.js -i test/utterances.txt -o testutterances.txt
+node alexifyutterances.js --utterances test/utterances.txt --intents test/intents.json --output testutterances.txt
 Result was saved to testutterances.txt
 ```
 
 You can now import testutterances.txt into the Alexa developer console.
 
-Note that not only will alexify.js remove flags, it will also "unfold"
+Note that not only will alexifyutterances.js remove flags, it will also "unfold"
 options lists into multiple utterances so that you can use them with Alexa.
-This feature would be usefull even if you only want to use this module to
+This feature would be useful even if you only want to use this module to
 reduce the tedium of entering multiple lines into Alexa and don't even
 intent to create your own chat bot or convert your Alexa skill.
+
+There is also support for the BETA Amazon interaction model editor.  You can edit the files it generates to add
+features supported by this module.  E.g. you can options lists or slot flags or even TRANSCEND native slot types.
+Then run it through the alexifyutterances.js and the result will be importable back into Alexa console:
+
+```shell
+node alexifyutterances.js --interactionmodel test/interactionmodel.json --output alexifiedmodel.json
+Result was saved to alexifiedmodel.json
+```
 
 ### Nominal support for some built in list slots
 
@@ -671,7 +680,7 @@ enclose the whole string in '' rather than "" to avoid command line handling
 of $)
 
 ````shell
-> node matcher.js 'the first price is $1000 and the second price is $525000'
+node matcher.js 'the first price is $1000 and the second price is $525000'
 ````
 which will produce:
 
@@ -693,7 +702,7 @@ which will produce:
 Note that this is identical to:
 
 ````shell
-> node matcher.js 'the first price is 1000 dollars and the second price is 525000 dollars'
+node matcher.js 'the first price is 1000 dollars and the second price is 525000 dollars'
 ````
 which will produce:
 
@@ -795,7 +804,7 @@ will be used.  This allows matching of expressions that are not exact matches, b
 approximate matches.
 
 ```shell
-> cat utterances.txt
+cat utterances.txt
 ```
 where utterances.txt includes this line:
 
@@ -804,7 +813,7 @@ MinionIntent Another minion is {MinionSlot:SOUNDEX_MATCH}
 ```
 then
 ```shell
-> node matcher.js "another minion is steward"
+node matcher.js "another minion is steward"
 ```
 will return
 ```json
