@@ -188,6 +188,17 @@ node generator.js --intents test/intents.json --utterances test/utterances.txt -
  (the example intents.json, utterances.txt, and config.json files are included in the test directory)
 This will produce a recognizer.json in the current directory.
 
+Additionally, there is beta support for the beta interaction model builder by Amazon.  To use it specify --interactionmodel
+parameter instead of --intents and --utterances:
+
+```shell
+node generator.js --interactionmodel test/interactionmodel.json --config test/config.json
+```
+
+Note that you can use the extra features in the interactionmodel.json file just as you could with intents.json and
+utterances.txt (e.g. options lists, slot flags, TRANSCEND specific slot types).  Simply use alexifyutterances.js (see later) to prepare interactionmodel.json for import into Alexa
+developer console.
+
 For usage, simply run the generator without any arguments:
 
 ````shell

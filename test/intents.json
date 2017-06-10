@@ -148,6 +148,15 @@
       ]
     },
     {
+      "intent": "SportsEventIntent",
+      "slots": [
+        {
+          "name": "SportsEventSlot",
+          "type": "AMAZON.SportsEvent"
+        }
+      ]
+    },
+    {
       "intent": "ArtistIntent",
       "slots": [
         {

@@ -395,6 +395,9 @@ recognizer.builtInValues.SoftwareApplication.replacementRegExpString = _makeRepl
 recognizer.builtInValues.SoftwareGame = require("./builtinslottypes/softwaregames.json");
 recognizer.builtInValues.SoftwareGame.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.SoftwareGame.values);
 
+recognizer.builtInValues.SportsEvent = require("./builtinslottypes/sportsevents.json");
+recognizer.builtInValues.SportsEvent.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.SportsEvent.values);
+
 recognizer.builtInValues.Athlete = require("./builtinslottypes/athletes.json");
 recognizer.builtInValues.Athlete.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Athlete.values);
 
@@ -433,7 +436,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         "TRANSCEND.BookSeries", "TRANSCEND.Book", "TRANSCEND.Author", "TRANSCEND.Athlete",
         "TRANSCEND.AdministrativeArea", "TRANSCEND.Country", "TRANSCEND.Color", "TRANSCEND.Room", "TRANSCEND.MusicRecording",
         "TRANSCEND.MusicVenue", "TRANSCEND.MusicVideo", "TRANSCEND.Organization", "TRANSCEND.Person", "TRANSCEND.Professional",
-        "TRANSCEND.Residence", "TRANSCEND.ScreeningEvent", "TRANSCEND.Service", "TRANSCEND.SoftwareApplication", "TRANSCEND.SoftwareGame"
+        "TRANSCEND.Residence", "TRANSCEND.ScreeningEvent", "TRANSCEND.Service", "TRANSCEND.SoftwareApplication", "TRANSCEND.SoftwareGame",
+        "TRANSCEND.SportsEvent"
     ];
     if(slotType === "TRANSCEND.NUMBER"){
         // Ignore flags for now
@@ -780,6 +784,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Service", "Service", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SoftwareApplication", "SoftwareApplication", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SoftwareGame", "SoftwareGame", config);
+    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SportsEvent", "SportsEvent", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Athlete", "Athlete", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.AdministrativeArea", "AdministrativeArea", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Room", "Room", config);

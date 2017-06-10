@@ -153,6 +153,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.SportsEvent slot matches", function() {
+      let result = recognizer.Recognizer.matchText("a lot of people watch superbowl");
+      expect(result).to.eql(
+        {"name": "SportsEventIntent",
+          "slots": {
+            "SportsEventSlot": {
+              "name": "SportsEventSlot",
+              "value": "superbowl"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.Athlete slot matches", function() {
       let result = recognizer.Recognizer.matchText("michael phelps is a swimmer");
       expect(result).to.eql(

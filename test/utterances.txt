@@ -80,3 +80,5 @@ ScreeningEventIntent i saw it at {ScreeningEventSlot}
 ServiceIntent {ServiceSlot} is the best local business
 SoftwareApplicationIntent do you use {SoftwareApplicationSlot}
 SoftwareGameIntent a lot of people play {SoftwareGameSlot}
+SportsEventIntent a lot of people watch {SportsEventSlot}
+
