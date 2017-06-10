@@ -109,19 +109,6 @@ else {
     }
   }
 }
-// Now crawl over the config and load any custom slot values where they have
-// been specified via file name rather than directly.
-if(Array.isArray(config.customSlotTypes)){
-  for(var i = 0; i < config.customSlotTypes.length; i++){
-    var customSlotType = config.customSlotTypes[i];
-    if(typeof customSlotType.filename != "undefined"){
-      var values = utilities.loadStringListFromFile(customSlotType.filename);
-      if(typeof values != "undefined"){
-        customSlotType.values = values;
-      }
-    }
-  }
-}
 if(typeof intentsFileName != "undefined"){
   try {
     var intents = require(intentsFileName);
@@ -137,45 +124,39 @@ if(typeof intentsFileName != "undefined"){
     }
   }
 }
+
 var utterances = [];
 var doTheProcessing = function(){
   return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances);
-}
-var resultJson;
-if(typeof utterancesFileName != "undefined"){
-  var utterancesExist = false;
-  if (fs.existsSync(utterancesFileName)) {
-    // The file name exists and is complete
-    utterancesExist = true;
-  }
-  else if(fs.existsSync("./" + utterancesFileName)){
-    // Need to prepend "./"
-    utterancesFileName = "./" + utterancesFileName;
-    utterancesExist = true;
-  }
-  if(utterancesExist == true){
-    var rd = readline.createInterface({
-        input: fs.createReadStream(utterancesFileName),
-//        output: process.stdout,
-        console: false
-    });
-
-    rd.on('line', function(line) {
-      utterances.push(line);
-    });
-    rd.on('close', function(line) {
-      resultJson = doTheProcessing();
-      fs.writeFile('recognizer.json', JSON.stringify(resultJson), 'utf8', _done(resultJson));
-//      fs.writeFile('recognizer.json', JSON.stringify(resultJson, null, 2), 'utf8', _done(resultJson));
-    });
-  }
-}
-else {
-  resultJson = doTheProcessing();
-  fs.writeFile('recognizer.json', JSON.stringify(resultJson), 'utf8', _done(resultJson));
-//  fs.writeFile('recognizer.json', JSON.stringify(resultJson, null, 2), 'utf8', _done(resultJson));
 }
 var _done = function(json){
   console.log(JSON.stringify(resultJson, null, 2));
   console.log("Was saved to recognizer.json");
 }
+
+var resultJson;
+if(typeof utterancesFileName != "undefined"){
+  utterances = utilities.loadStringListFromFile(utterancesFileName);
+}
+if(typeof interactionModel != "undefined"){
+  // Get the info from interactionModel
+  // TODO finish this
+}
+else {
+  // Get the remaining info from config
+  // Now crawl over the config and load any custom slot values where they have
+  // been specified via file name rather than directly.
+  if(Array.isArray(config.customSlotTypes)){
+    for(let i = 0; i < config.customSlotTypes.length; i++){
+      let customSlotType = config.customSlotTypes[i];
+      if(typeof customSlotType.filename != "undefined"){
+        var values = utilities.loadStringListFromFile(customSlotType.filename);
+        if(typeof values != "undefined"){
+          customSlotType.values = values;
+        }
+      }
+    }
+  }
+}
+resultJson = doTheProcessing();
+fs.writeFile('recognizer.json', JSON.stringify(resultJson), 'utf8', _done(resultJson));
