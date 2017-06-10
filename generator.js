@@ -109,6 +109,7 @@ else {
     }
   }
 }
+var intents = [];
 if(typeof intentsFileName != "undefined"){
   try {
     var intents = require(intentsFileName);
@@ -134,29 +135,86 @@ var _done = function(json){
   console.log("Was saved to recognizer.json");
 }
 
-var resultJson;
-if(typeof utterancesFileName != "undefined"){
-  utterances = utilities.loadStringListFromFile(utterancesFileName);
-}
-if(typeof interactionModel != "undefined"){
-  // Get the info from interactionModel
-  // TODO finish this
-}
-else {
-  // Get the remaining info from config
-  // Now crawl over the config and load any custom slot values where they have
-  // been specified via file name rather than directly.
-  if(Array.isArray(config.customSlotTypes)){
-    for(let i = 0; i < config.customSlotTypes.length; i++){
-      let customSlotType = config.customSlotTypes[i];
-      if(typeof customSlotType.filename != "undefined"){
-        var values = utilities.loadStringListFromFile(customSlotType.filename);
-        if(typeof values != "undefined"){
+// Now crawl over the config and load any custom slot values where they have
+// been specified via file name rather than directly.
+if(Array.isArray(config.customSlotTypes)){
+  for(let i = 0; i < config.customSlotTypes.length; i++){
+    let customSlotType = config.customSlotTypes[i];
+    if(typeof customSlotType.filename != "undefined"){
+      let values = utilities.loadStringListFromFile(customSlotType.filename);
+      if(typeof values != "undefined"){
+        if(typeof customSlotType.values != "undefined"){
+          for(let j = 0; j < values.length; j++){
+            if(customSlotType.values.indexOf(values[j]) < 0){
+              customSlotType.values.push(values[j]);
+            }
+          }
+        }
+        else {
           customSlotType.values = values;
         }
       }
     }
   }
 }
+
+var resultJson;
+if(typeof utterancesFileName != "undefined"){
+  utterances = utilities.loadStringListFromFile(utterancesFileName);
+}
+if(typeof interactionModel != "undefined"){
+  // Get the info from interactionModel
+  if(typeof interactionModel.intents != "undefined"){
+    for(let i = 0; i < interactionModel.intents.length; i ++){
+      let intent = interactionModel.intents[i];
+      let currentUtterances = [];
+      // Add all the intent level utterances
+      for(let j = 0; j < intent.samples.length; j ++){
+        currentUtterances.push(intent.name + " " + intent.samples[j]);
+      }
+      let oldStyleIntent = {"intent":intent.name, "slots":[]};
+      if(typeof intent.slots != "undefined"){
+        for(let j = 0; j < intent.slots.length; j ++){
+          // Add intent slot level utterance
+          for(let k = 0; k < intent.slots[j].samples.length; k++){
+            currentUtterances.push(intent.name + " " + intent.slots[j].samples[k]);
+          }
+          oldStyleIntent.slots.push({"name":intent.slots[j].name,"type":intent.slots[j].type});
+        }
+      }
+      intents.push(oldStyleIntent);
+    }
+  }
+  if(typeof interactionModel.types != "undefined"){
+    for(let i = 0; i < interactionModel.types.length; i++){
+      let currentSlotType = interactionModel.types[i];
+      if(typeof config.customSlotTypes == "undefined"){
+        config.customSlotTypes = [];
+      }
+      let customSlotType = undefined;
+      // Find the custom slot type within the config
+      for(let j = 0; j < config.customSlotTypes.length; j ++){
+        if(config.customSlotTypes[j].name == currentSlotType.name){
+          customSlotType = config.customSlotTypes[i];
+          break;
+        }
+      }
+      if(typeof customSlotType == "undefined"){
+        customSlotType = {"name":currentSlotType.name, "values":[]};
+        config.customSlotTypes.push(customSlotType);
+      }
+      if(typeof customSlotType.values == "undefined"){
+        customSlotType.values = [];
+      }
+      // Now add all the missing values from the interactionModel's custom type to config's custom types
+      for(let j = 0; j < currentSlotType.values.length; j ++){
+        if(customSlotType.values.indexOf(currentSlotType.values[j] < 0)){
+          customSlotType.values.push(currentSlotType.values[j].name.value);
+        }
+      }
+    }
+  }
+}
+
 resultJson = doTheProcessing();
 fs.writeFile('recognizer.json', JSON.stringify(resultJson), 'utf8', _done(resultJson));
