@@ -339,7 +339,7 @@ var _unfoldParsedJson = function(parsedJson, prependIntentNameOnOutput){
 	return resultArray;
 }
 
-//TODO remove duplicate copies of this and move them to a commont js file later
+//TODO remove duplicate copies of this and move them to a common js file later
 var _getBuiltInSlotTypeSuffix = function(slotType){
 	return slotType.replace(/^AMAZON\./, '').replace(/^TRANSCEND\./, '');
 }
@@ -499,8 +499,12 @@ var _parseFlagParameters = function(utteranceArray, parsingRange, intentSchema){
 			case ")":
 				parsingRange.end = i;
 				return returnValue;
-			case " ":
-			case "\t":
+      case " ":
+      case "\f":
+      case "\n":
+      case "\r":
+      case "\t":
+      case "\v":
 					break;
 			default:
 				error.position = i;
@@ -593,6 +597,7 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
 	if(utteranceArray[parsingRange.start] != '{'){
 		error.error = "parsing slot doesn't start with {";
 		error.position = parsingRange.start;
+    throw error;
 	}
 	let accummulatedValue = '';
 	let returnValue = {"type": "slot"};
@@ -620,8 +625,12 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
 				returnValue.flags = flagsResult;
 //				console.log("returning from _parseSlotWithFlags: ", JSON.stringify(returnValue, null, 2));
 				return returnValue;
-			case " ":
-			case "\t":
+      case " ":
+      case "\f":
+      case "\n":
+      case "\r":
+      case "\t":
+      case "\v":
 				break;
 			default:
 				// simply accummulate the characters
@@ -633,6 +642,70 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
 	throw error;
 }
 
+/**
+ * Call to parse portions of the utterance/sample that is enclosed in {} and starts with ~, e.g. {~hello}.  This will
+ * look up any common words, expressions, etc and try to replace them with synonymous text.
+ * @param utteranceArray
+ * @param parsingRange
+ * @param intentName
+ * @param intentSchema
+ * @private
+ */
+var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, intentSchema){
+  let error = {"error": "", "position": -1};
+  if(utteranceArray[parsingRange.start] != '{' || utteranceArray[parsingRange.start + 1] != '~'){
+    error.error = "parsing equivalent text doesn't start with {~";
+    error.position = parsingRange.start;
+    throw error;
+  }
+  let accummulatedValue = '';
+  let words = [];
+  let continueLooping = true;
+  for(let i = parsingRange.start + 2; continueLooping && i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+    switch(utteranceArray[i]){
+      case "}":
+        parsingRange.end = i;
+        words.push(accummulatedValue);
+        accummulatedValue = '';
+        continueLooping = false;
+        break;
+			case ",":
+      case ".":
+      case "!":
+      case "?":
+        if(accummulatedValue.length > 0){
+          words.push(accummulatedValue);
+          accummulatedValue = '';
+        }
+        words.push(utteranceArray[i]);
+				break;
+      case " ":
+      case "\f":
+      case "\n":
+      case "\r":
+      case "\t":
+      case "\v":
+      	if(accummulatedValue.length > 0){
+          words.push(accummulatedValue);
+          accummulatedValue = '';
+				}
+        break;
+      default:
+        // simply accumulate the characters
+        accummulatedValue += utteranceArray[i];
+    }
+    // If we are here, we may need to add accummulatedValue.
+    if(accummulatedValue.length > 0){
+      words.push(accummulatedValue);
+      accummulatedValue = '';
+    }
+
+	}
+  error.error = "parsing equivalent text ran out of characters to parse before completing parsing";
+  error.position = -1;
+  throw error;
+
+}
 /**
 * Call to parse a portion of utteranceArray specified by parsingRange
 start and end, inclusively of both that starts with a curly bracket.  Stop
