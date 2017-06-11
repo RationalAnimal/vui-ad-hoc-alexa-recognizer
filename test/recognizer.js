@@ -165,6 +165,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.TVEpisode slot matches", function() {
+      let result = recognizer.Recognizer.matchText("a lot of people watched jaynestown");
+      expect(result).to.eql(
+        {"name": "TVEpisodeIntent",
+          "slots": {
+            "TVEpisodeSlot": {
+              "name": "TVEpisodeSlot",
+              "value": "jaynestown"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.Athlete slot matches", function() {
       let result = recognizer.Recognizer.matchText("michael phelps is a swimmer");
       expect(result).to.eql(

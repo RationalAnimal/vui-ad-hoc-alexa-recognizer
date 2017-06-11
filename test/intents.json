@@ -157,6 +157,15 @@
       ]
     },
     {
+      "intent": "TVEpisodeIntent",
+      "slots": [
+        {
+          "name": "TVEpisodeSlot",
+          "type": "AMAZON.TVEpisode"
+        }
+      ]
+    },
+    {
       "intent": "ArtistIntent",
       "slots": [
         {
