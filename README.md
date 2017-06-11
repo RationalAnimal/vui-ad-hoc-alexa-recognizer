@@ -4,6 +4,7 @@
 [![Release](https://img.shields.io/github/release/RationalAnimal/vui-ad-hoc-alexa-recognizer.svg?label=Last%20release&a)](https://www.npmjs.com/package/vui-ad-hoc-alexa-recognizer)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/RationalAnimal/vui-ad-hoc-alexa-recognizer.svg)](http://isitmaintained.com/project/RationalAnimal/vui-ad-hoc-alexa-recognizer "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/RationalAnimal/vui-ad-hoc-alexa-recognizer.svg)](http://isitmaintained.com/project/RationalAnimal/vui-ad-hoc-alexa-recognizer "Percentage of issues still open")
+[![Patreon](https://img.shields.io/badge/back_on-patreon-red.svg)](https://www.patreon.com/RationalAnimal)
 
 # vui-ad-hoc-alexa-recognizer
 
@@ -39,7 +40,7 @@ https://github.com/RationalAnimal
 
 # Note on licenses
 The code in this project is distributed under the MIT license.  Some data files
-found in the builtinslottypes (e.g. colors.json) use values taken from Wikipedia
+found in the builtinslottypes directory (e.g. colors.json) use values taken from Wikipedia
 and thus they are licensed under Creative Commons Attribution-ShareAlike license.
 Such files have appropriate attribution and license information within them.
 If you don't wish to deal with these licenses, simply delete such file(s) from
@@ -173,7 +174,7 @@ Stewart
 Currently, Amazon is beta testing a new GUI tools for editing skills' interaction models.  This produces a single json
 file that includes ALL the information for the skill - intents, utterances, custom slot types, and some "new" bits:
 prompts/dialogs/confirmations.  The support for this is being added to various parts of vui-ad-hoc-alexa-recognizer
-(including the generator and alexifyer).  However, until Amazon finishes the beta testing, this will not be finalized and
+(including the generator and alexifyer) and is functional.  However, until Amazon finishes the beta testing, this will not be finalized and
 may change. 
 
 ## Generate recognizer.json file

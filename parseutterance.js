@@ -27,6 +27,7 @@ SOFTWARE.
 
 var parser = {};
 var regexputilities = require("./regexputils.js");
+var defaultEquivalents = require("./equivalents/default.json");
 
 var _parseUtteranceIntoJson = function(utterance, intentSchema){
 	let returnValue = {};
