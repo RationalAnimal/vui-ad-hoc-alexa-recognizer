@@ -175,7 +175,9 @@ Currently, Amazon is beta testing a new GUI tools for editing skills' interactio
 file that includes ALL the information for the skill - intents, utterances, custom slot types, and some "new" bits:
 prompts/dialogs/confirmations.  The support for this is being added to various parts of vui-ad-hoc-alexa-recognizer
 (including the generator and alexifyer) and is functional.  However, until Amazon finishes the beta testing, this will not be finalized and
-may change. 
+may change.
+
+* NOTE: AT THIS TIME I DO NOT RECOMMEND USING INTERACTION MODEL FILES - TOO MANY ISSUES ON THE AMAZON SIDE.
 
 ## Generate recognizer.json file
 
@@ -195,6 +197,8 @@ parameter instead of --intents and --utterances:
 ```shell
 node generator.js --interactionmodel test/interactionmodel.json --config test/config.json
 ```
+
+* NOTE: AT THIS TIME I DO NOT RECOMMEND USING INTERACTION MODEL FILES - TOO MANY ISSUES ON THE AMAZON SIDE.
 
 Note that you can use the extra features in the interactionmodel.json file just as you could with intents.json and
 utterances.txt (e.g. options lists, slot flags, TRANSCEND specific slot types).  Simply use alexifyutterances.js (see later) to prepare interactionmodel.json for import into Alexa

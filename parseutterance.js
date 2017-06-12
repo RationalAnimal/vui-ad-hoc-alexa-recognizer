@@ -414,6 +414,32 @@ var _hasFlag = function(flagName, slotName, parsedJson) {
 };
 
 /**
+ * Call to "multiply" two string arrays (matrix cartesian product) where the arrays contain strings and the strings should be concatenated
+ * @param {string[]} sourceTarget - both the first array and the "target" array (contains the result)
+ * @param {string[]} additional -
+ * @returns {*}
+ * @private
+ */
+
+var _multiplyArrays = function(sourceTarget, additional){
+  let originalSourceLength = sourceTarget.length;
+  // Create additional rows that will later be updated so that the total number of rows = length1 * length2
+  for(let i = 1; i < additional.length; i++){
+    for(let j = 0; j < originalSourceLength; j++){
+      sourceTarget.push(sourceTarget(j));
+    }
+  }
+  // Now we have the right number of rows in the sourceTarget array.  We need to loop over all the entries concatenating
+  // them with additional array elements
+  for(let i = 0; i < originalSourceLength; i++){
+    for(let j = 0; j < additional.length; j++){
+      sourceTarget[j * originalSourceLength + i] = sourceTarget[j * originalSourceLength + i].concat(additional[j]);
+    }
+  }
+  return sourceTarget;
+};
+
+/**
 * Call to parse a portion of utteranceArray specified by parsingRange
 start and end, inclusively of both.
 */
@@ -649,16 +675,47 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, in
     throw error;
   }
   let accummulatedValue = '';
+  let returnValue = {"type": "equivalents", "equivalents": []};
+//  defaultEquivalents
+
   let words = [];
-  let continueLooping = true;
-  for(let i = parsingRange.start + 2; continueLooping && i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+  for(let i = parsingRange.start + 2; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
     switch(utteranceArray[i]){
       case "}":
         parsingRange.end = i;
         words.push(accummulatedValue);
         accummulatedValue = '';
-        continueLooping = false;
-        break;
+        // Now actually create the return value and return it
+        let returnValue = {"type": "equivalents", "equivalents": []};
+        let arrayOfArrays = [];
+        // for now simply do a one word substitution using defaultEquivalents
+        // build an array of arrays and do a cartesian product
+        for(let j = 0; j < words.length; j ++){
+          let currentArray = [words[j]];
+          for(let k = 0; k < defaultEquivalents.singleWordSynonyms.length; k++){
+            if(defaultEquivalents.singleWordSynonyms[k].words.indexOf(words[j]) >= 0){
+              for(l = 0; l < defaultEquivalents.singleWordSynonyms[k].synonyms.length; l++){
+                currentArray = currentArray.concat(defaultEquivalents.singleWordSynonyms[k].synonyms[l].values);
+              }
+            }
+          }
+          // Here we have the full currentArray - simply push it
+          arrayOfArrays.push(currentArray);
+        }
+        // Here we have a completed array of array, create a product and have a single array, then set "equivalents" to it
+        // and return.
+        let unfoldedArray = [];
+        if(arrayOfArrays.length == 0){
+          return returnValue;
+        }
+        // add all elements of the first array, then loop creating a product of what's already there and the next array.
+        for(let j = 0; j < arrayOfArrays[0].length; j++){
+          returnValue.equivalents.push(arrayOfArrays[0][j]);
+        }
+        for(let j = 1; j < arrayOfArrays.length; j ++){
+          _multiplyArrays(returnValue.equivalents, arrayOfArrays[j]);
+        }
+        return returnValue;
 			case ",":
       case ".":
       case "!":
@@ -684,17 +741,10 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, in
         // simply accumulate the characters
         accummulatedValue += utteranceArray[i];
     }
-    // If we are here, we may need to add accummulatedValue.
-    if(accummulatedValue.length > 0){
-      words.push(accummulatedValue);
-      accummulatedValue = '';
-    }
-
 	}
   error.error = "parsing equivalent text ran out of characters to parse before completing parsing";
   error.position = -1;
   throw error;
-
 };
 
 /**
