@@ -521,7 +521,14 @@ var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, i
 				let curlyRange = {"start": i, "end": -1}
 				let curlyResult = _parseCurlyBrackets(utteranceArray, curlyRange, intentName, intentSchema);
 //				console.log("curlyResult: ", curlyResult);
-				returnValue.push(curlyResult);
+        if(typeof curlyResult !== "undefined" && Array.isArray(curlyResult)){
+          for(let j = 0; j < curlyResult.length; j++){
+            returnValue.push(curlyResult[j]);
+          }
+        }
+        else {
+          returnValue.push(curlyResult);
+        }
 				i = curlyRange.end;
 				break;
 			default:
@@ -748,12 +755,13 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, in
         words.push(accummulatedValue);
         accummulatedValue = '';
         // Now actually create the return value and return it
-        let returnValue = {"type": "equivalents", "equivalents": []};
+//        let returnValue = {"type": "equivalents", "equivalents": []};
+        let returnValue = [];
         let arrayOfArrays = [];
         // for now simply do a one word substitution using defaultEquivalents
-        // build an array of arrays and do a cartesian product
+        // build an array of arrays
         for(let j = 0; j < words.length; j ++){
-          let currentArray = [words[j]];
+          let currentArray = [words[j].toLowerCase()];
           for(let k = 0; k < defaultEquivalents.singleWordSynonyms.length; k++){
             if(defaultEquivalents.singleWordSynonyms[k].words.indexOf(words[j].toLowerCase()) >= 0){
               for(let l = 0; l < defaultEquivalents.singleWordSynonyms[k].synonyms.length; l++){
@@ -764,19 +772,54 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, in
           // Here we have the full currentArray - simply push it
           arrayOfArrays.push(currentArray);
         }
-        // Here we have a completed array of array, create a product and have a single array, then set "equivalents" to it
-        // and return.
-        let unfoldedArray = [];
+        // TODO strip duplicates from each sub array
         if(arrayOfArrays.length == 0){
           return returnValue;
         }
-        // add all elements of the first array, then loop creating a product of what's already there and the next array.
-        for(let j = 0; j < arrayOfArrays[0].length; j++){
-          returnValue.equivalents.push(arrayOfArrays[0][j]);
+        for(let j = 0; j < arrayOfArrays.length; j ++){
+          if(arrayOfArrays[j].length == 1){
+            if(j > 0){
+              if(typeof returnValue[returnValue.length - 1] == "string") {
+                // concatenate strings rather than pushing the string
+                returnValue[returnValue.length - 1] = returnValue[returnValue.length - 1] + " " + arrayOfArrays[j][0];
+              }
+              else {
+                // push the string with a space prepended.
+                returnValue.push(" " + arrayOfArrays[j][0]);
+              }
+            }
+            else {
+              // Push the string itself
+              returnValue.push(arrayOfArrays[j][0]);
+            }
+          }
+          else {
+            // Push the text equivalents object, appending or inserting a space if needed.
+            if(j > 0){
+              if(typeof returnValue[returnValue.length - 1] == "string") {
+                // concatenate an extra space to the end
+                returnValue[returnValue.length - 1] = returnValue[returnValue.length - 1] + " ";
+              }
+              else {
+                // push the empty string.
+                returnValue.push(" ");
+              }
+            }
+            let scratch = {"type": "equivalents", "equivalents": []};
+            for(let k = 0; k < arrayOfArrays[j].length; k++){
+              scratch.equivalents.push(arrayOfArrays[j][k]);
+            }
+            returnValue.push(scratch);
+          }
         }
+        /*
         for(let j = 1; j < arrayOfArrays.length; j ++){
+          // Multiply only when both the two are arrays of more than 1 elements, else append
+          if()
           _multiplyArrays(returnValue.equivalents, arrayOfArrays[j]);
         }
+        */
+//        console.log("equivalent: " + JSON.stringify(returnValue, null, 2));
         return returnValue;
 			case ",":
       case ".":

@@ -3,14 +3,14 @@
     {
       "words":["want","wish", "like", "would like", "need"],
       "synonyms":[
-        {"fitRating":1, "values":["wish", "like", "would like", "need"]},
+        {"fitRating":1, "values":["want", "wish", "like", "would like", "need"]},
         {"fitRating":0.9, "values":["prefer"]}
       ]
     },
     {
       "words":["hi", "hello", "hey"],
       "synonyms":[
-        {"fitRating":1, "values":["hello", "how are you", "good morning", "good day", "good evening", "good night", "whats up", "hey"]},
+        {"fitRating":1, "values":["hi", "hello", "how are you", "good morning", "good day", "good evening", "good night", "whats up", "hey"]},
         {"fitRating":0.99, "values":["nice to meet you", "excuse me", "pardon me"]},
         {"fitRating":0.9, "values": ["you there", "are you there", "anybody there", "can you help me", "need some help"]}
       ]
@@ -18,7 +18,7 @@
     {
       "words":["please"],
       "synonyms":[
-        {"fitRating":0.99, "values":[""]}
+        {"fitRating":0.99, "values":["please",""]}
       ]
     }
 
