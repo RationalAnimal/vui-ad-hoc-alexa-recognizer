@@ -807,7 +807,9 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, in
             }
             let scratch = {"type": "equivalents", "equivalents": []};
             for(let k = 0; k < arrayOfArrays[j].length; k++){
-              scratch.equivalents.push(arrayOfArrays[j][k]);
+              if(scratch.equivalents.indexOf(arrayOfArrays[j][k]) < 0){
+                scratch.equivalents.push(arrayOfArrays[j][k]);
+              }
             }
             returnValue.push(scratch);
           }

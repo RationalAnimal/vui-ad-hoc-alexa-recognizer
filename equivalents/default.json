@@ -21,6 +21,13 @@
         {"fitRating":0.99, "values":["please",""]}
       ]
     }
-
+  ],
+  "equivalentPhrases":[
+    {
+      "phrases":["how are you", "how are you doing"],
+      "equivalents":[
+        {"fitRating":1, "values":["how are you", "how are you doing"]}
+      ]
+    }
   ]
 }
