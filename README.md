@@ -607,7 +607,8 @@ HiIntent Hi there what time is it
 ...etc..
 ```
 
-At this time a very simple implementation is in place.  It uses a very small default data set.  This will soon be expanded to include
+At this time a very simple implementation is in place.  It uses a very small default data set and only single word
+substitutions (no phrase substitutions yet).  This will soon be expanded to include phrase substitutions and
 an independent npm module containing additional values (so that they can be updated independently of this module) as well
 as the ability to add your own modules to support special "domain" equivalents.
 

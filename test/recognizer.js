@@ -2065,15 +2065,15 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
   });
 
   describe("Text equivalent processing", function() {
-    it("verify an utterance containing one text equivalent matches on the original and returns the correct value", function() {
-      let result = recognizer.Recognizer.matchText("Hi what is the time");
+    it("verify an utterance containing two text equivalents matches on the original and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("Hi what is the time please");
       expect(result).to.eql(
         {
           "name": "HiIntent",
           "slots": {}
         });
     });
-    it("verify an utterance containing one text equivalent matches on the equivalent and returns the correct value", function() {
+    it("verify an utterance containing two text equivalents with one missing matches and returns the correct value", function() {
       let result = recognizer.Recognizer.matchText("Hello what is the time");
       expect(result).to.eql(
         {
