@@ -2063,29 +2063,49 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
 
   });
-/*
-  describe("TRANSCEND.US_LAST_NAME processing", function() {
-    it("get timing of loading entire last name json", function() {
-      let entireLastNameList = require("../builtinslottypes/uslastnames.json");
-      let soundexCompute = require("../soundex.js");
-      let foundZulu = false;
-      let totalCount = 0;
-      for(let i = 0; i < entireLastNameList.values.length; i++){
-        totalCount += entireLastNameList.values[i].count;
-//        let soundex = soundexCompute.simple.soundEx(entireLastNameList.values[i].name);
-//        entireLastNameList.values[i].soundex = soundex;
-        if(entireLastNameList.values[i].name == "ZULU"){
-          foundZulu = true;
-          console.log("ZULU at index: " + i);
-        }
-      }
-      console.log("total count: " + totalCount);
-//      console.log(JSON.stringify(entireLastNameList, null, 2));
-      expect(foundZulu).to.equal(true);
-    });
 
+  describe("Text equivalent processing", function() {
+    it("verify an utterance containing one text equivalent matches on the original and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("Hi what is the time");
+      expect(result).to.eql(
+        {
+          "name": "HiIntent",
+          "slots": {}
+        });
+    });
+    it("verify an utterance containing one text equivalent matches on the equivalent and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("Hello what is the time");
+      expect(result).to.eql(
+        {
+          "name": "HiIntent",
+          "slots": {}
+        });
+    });
   });
-*/
+
+  /*
+    describe("TRANSCEND.US_LAST_NAME processing", function() {
+      it("get timing of loading entire last name json", function() {
+        let entireLastNameList = require("../builtinslottypes/uslastnames.json");
+        let soundexCompute = require("../soundex.js");
+        let foundZulu = false;
+        let totalCount = 0;
+        for(let i = 0; i < entireLastNameList.values.length; i++){
+          totalCount += entireLastNameList.values[i].count;
+  //        let soundex = soundexCompute.simple.soundEx(entireLastNameList.values[i].name);
+  //        entireLastNameList.values[i].soundex = soundex;
+          if(entireLastNameList.values[i].name == "ZULU"){
+            foundZulu = true;
+            console.log("ZULU at index: " + i);
+          }
+        }
+        console.log("total count: " + totalCount);
+  //      console.log(JSON.stringify(entireLastNameList, null, 2));
+        expect(foundZulu).to.equal(true);
+      });
+
+    });
+  */
 });
 
 

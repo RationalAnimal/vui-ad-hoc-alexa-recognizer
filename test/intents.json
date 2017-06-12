@@ -582,6 +582,11 @@
           "type": "AMAZON.TIME"
         }
       ]
+    },
+    {
+      "intent": "HiIntent",
+      "slots": []
     }
+
   ]
 }

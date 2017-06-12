@@ -210,6 +210,15 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
       }
       shouldAdd = true;
     }
+    else if (parsedJson.parsedUtterance[i].type === "equivalents") {
+      regExpString += (wildcardReplacementString);
+      for (let l = 0; l < parsedJson.parsedUtterance[i].equivalents.length; l++) {
+        if (parsedJson.parsedUtterance[i].equivalents[l] === '') {
+          regExpString += "{0,1}";
+        }
+      }
+      shouldAdd = true;
+    }
   }
 
   if (shouldAdd) {
@@ -237,6 +246,25 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
         }
         if (parsedJson.parsedUtterance[i].options[j].length > 0) {
           regExpString += parsedJson.parsedUtterance[i].options[j];
+        }
+        else {
+          regExpString += "\\s??";
+          addZeroOccurrence = true;
+        }
+      }
+      regExpString += ")";
+      if (addZeroOccurrence) {
+        regExpString += "{0,1}";
+      }
+    }
+    else if (parsedJson.parsedUtterance[i].type === "equivalents") {
+      regExpString += "(?:";
+      for (let j = 0; j < parsedJson.parsedUtterance[i].equivalents.length; j++) {
+        if (j > 0) {
+          regExpString += "|";
+        }
+        if (parsedJson.parsedUtterance[i].equivalents[j].length > 0) {
+          regExpString += parsedJson.parsedUtterance[i].equivalents[j];
         }
         else {
           regExpString += "\\s??";
@@ -287,6 +315,25 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
         regExpString += "{0,1}";
       }
     }
+    else if (parsedJson.parsedUtterance[i].type === "equivalents") {
+      regExpString += "(?:";
+      for (let j = 0; j < parsedJson.parsedUtterance[i].equivalents.length; j++) {
+        if (j > 0) {
+          regExpString += "|";
+        }
+        if (parsedJson.parsedUtterance[i].equivalents[j].length > 0) {
+          regExpString += parsedJson.parsedUtterance[i].equivalents[j];
+        }
+        else {
+          regExpString += "\\s??"
+          addZeroOccurrence = true;
+        }
+      }
+      regExpString += ")";
+      if (addZeroOccurrence) {
+        regExpString += "{0,1}";
+      }
+    }
   }
   regExpString = regexputilities.reconstructRegExpWithWhiteSpaces(regExpString, true);
   parsedJson.regExpStrings.push(regExpString);
@@ -306,6 +353,11 @@ var _unfoldParsedJson = function(parsedJson, prependIntentNameOnOutput){
 				resultArray.push(parsedJson.parsedUtterance[0].options[i]);
 			}
 		}
+    else if(parsedJson.parsedUtterance[0].type === "equivalents"){
+      for(let i = 0; i < parsedJson.parsedUtterance[0].equivalents.length; i++){
+        resultArray.push(parsedJson.parsedUtterance[0].equivalents[i]);
+      }
+    }
 	}
 	for(let i = 1; i < parsedJson.parsedUtterance.length; i ++){
 		if(parsedJson.parsedUtterance.length >= 1){
@@ -330,7 +382,18 @@ var _unfoldParsedJson = function(parsedJson, prependIntentNameOnOutput){
 				}
 				resultArray = newResultArray;
 			}
-		}
+      else if(parsedJson.parsedUtterance[i].type === "equivalents"){
+        let currentArraySize = resultArray.length;
+        let equivalentsSize = parsedJson.parsedUtterance[i].equivalents.length;
+        let newResultArray = [];
+        for(let j = 0; j < currentArraySize; j++){
+          for(let k = 0; k < equivalentsSize; k++){
+            newResultArray.push(resultArray[j] + parsedJson.parsedUtterance[i].equivalents[k]);
+          }
+        }
+        resultArray = newResultArray;
+      }
+    }
 	}
 	if(prependIntentNameOnOutput === true){
     for(let i = 0; i < resultArray.length; i++){
@@ -433,7 +496,7 @@ var _multiplyArrays = function(sourceTarget, additional){
   // them with additional array elements
   for(let i = 0; i < originalSourceLength; i++){
     for(let j = 0; j < additional.length; j++){
-      sourceTarget[j * originalSourceLength + i] = sourceTarget[j * originalSourceLength + i].concat(additional[j]);
+      sourceTarget[j * originalSourceLength + i] = sourceTarget[j * originalSourceLength + i] + " " + additional[j];
     }
   }
   return sourceTarget;
@@ -675,7 +738,6 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, in
     throw error;
   }
   let accummulatedValue = '';
-  let returnValue = {"type": "equivalents", "equivalents": []};
 //  defaultEquivalents
 
   let words = [];
@@ -693,8 +755,8 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, in
         for(let j = 0; j < words.length; j ++){
           let currentArray = [words[j]];
           for(let k = 0; k < defaultEquivalents.singleWordSynonyms.length; k++){
-            if(defaultEquivalents.singleWordSynonyms[k].words.indexOf(words[j]) >= 0){
-              for(l = 0; l < defaultEquivalents.singleWordSynonyms[k].synonyms.length; l++){
+            if(defaultEquivalents.singleWordSynonyms[k].words.indexOf(words[j].toLowerCase()) >= 0){
+              for(let l = 0; l < defaultEquivalents.singleWordSynonyms[k].synonyms.length; l++){
                 currentArray = currentArray.concat(defaultEquivalents.singleWordSynonyms[k].synonyms[l].values);
               }
             }
@@ -764,6 +826,10 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentName, int
 		error.position = parsingRange.start;
     throw error;
 	}
+	if(utteranceArray[parsingRange.start + 1] === "~"){
+	  // this is a text equivalent
+    return _parseEquivalentText(utteranceArray, parsingRange, intentName, intentSchema);
+  }
 	let accummulatedValue = '';
 	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
 		switch(utteranceArray[i]){

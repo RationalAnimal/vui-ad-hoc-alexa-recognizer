@@ -584,6 +584,32 @@ will match on (for instance):
 ```text
 I want to meet tomorrow
 ```
+### Text equivalents
+Similarly to the options list, text equivalents allow variations in the text to be matched.  Unlike the options list
+you don't have to manually add all of the possibilities.  Instead, simply enclose the text that should match using
+equivalents and this module will do it for you, e.g.:
+
+```text
+HiIntent {~Hi what time is it}
+```
+
+is equivalent to these:
+
+```text
+HiIntent Hi what time is it
+HiIntent Hello what time is it
+HiIntent Hey what time is it
+HiIntent How are you what time is it
+HiIntent Good morning what time is it
+HiIntent Good day what time is it
+HiIntent Good night what time is it
+HiIntent Hi there what time is it
+...etc..
+```
+
+At this time a very simple implementation is in place.  It uses a very small default data set.  This will soon be expanded to include
+an independent npm module containing additional values (so that they can be updated independently of this module) as well
+as the ability to add your own modules to support special "domain" equivalents.
 
 ### Removing flags/cleaning up the utterance file
 There is also a utility available to "clean up" utterance files for use with
