@@ -728,12 +728,44 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
 };
 
 /**
+ * Call to find all the multi word equivalents found in the words array and adds them to previousMatches (if passed in),
+ * otherwise to the brand new return object.
+ * @param words
+ * @param previousMatches
+ * @param dataSet
+ * @returns {{matches: Array}}
+ * @private
+ */
+var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
+  let returnValue = (typeof previousMatches != "undefined" && typeof previousMatches.matches != undefined && Array.isArray(previousMatches) ? previousMatches : {"matches":[]});
+  let dataSetPhrases = dataSet.equivalentPhrases;
+  if(typeof dataSetPhrases == "undefined" || Array.isArray(dataSetPhrases) == false){
+    return returnValue;
+  }
+  for(let i = 0; i < words.length; i ++){
+    for(let j = i; j < words.length; j++){
+      let currentPhrase = '';
+      for (let k = i; k <=j; k++){
+        if(k !== i){
+          currentPhrase += " ";
+        }
+        currentPhrase += words[k];
+      }
+      // Now we have a phrase - find it in the dataSet
+      // TODO continue
+    }
+  }
+  return returnValue;
+};
+
+/**
  * Call to parse portions of the utterance/sample that is enclosed in {} and starts with ~, e.g. {~hello}.  This will
  * look up any common words, expressions, etc and try to replace them with synonymous text.
  * @param utteranceArray
  * @param parsingRange
  * @param intentName
  * @param intentSchema
+ * returns {}
  * @private
  */
 var _parseEquivalentText = function(utteranceArray, parsingRange){

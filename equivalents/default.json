@@ -26,7 +26,8 @@
     {
       "phrases":["how are you", "how are you doing"],
       "equivalents":[
-        {"fitRating":1, "values":["how are you", "how are you doing"]}
+        {"fitRating":1, "values":["how are you", "how are you doing"]},
+        {"fitRating":0.99, "values":["hi", "hello", "how are you", "good morning", "good day", "good evening", "good night", "whats up", "hey"]}
       ]
     }
   ]
