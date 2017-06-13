@@ -727,6 +727,24 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
 	throw error;
 };
 
+var _getPhraseEquivalent = function(phrase, dataSet){
+  if(typeof phrase != 'string' || typeof dataSet == "undefined" || typeof dataSet.equivalentPhrases == "undefined"){
+    return undefined;
+  }
+  let equivalentPhrases = dataSet.equivalentPhrases;
+  let returnValues = [];
+  for(let i = 0; i < equivalentPhrases.length; i++){
+    let scratch = equivalentPhrases[i];
+    if(typeof scratch.phrases != "undefined" && Array.isArray(scratch.phrases) && scratch.phrases.indexOf(phrase) >= 0){
+      for(let j = 0; j < scratch.equivalents.length; j++){
+        returnValues.push(scratch.equivalents[j]);
+      }
+    }
+  }
+  return returnValues;
+};
+
+
 /**
  * Call to find all the multi word equivalents found in the words array and adds them to previousMatches (if passed in),
  * otherwise to the brand new return object.
@@ -752,7 +770,9 @@ var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
         currentPhrase += words[k];
       }
       // Now we have a phrase - find it in the dataSet
-      // TODO continue
+      let found = _getPhraseEquivalent(currentPhrase, dataSet);
+      let match = {"phrase": currentPhrase, "startWordIndex": i, "endWordIndex":j, "equivalents": found};
+      returnValue.matches.push(match);
     }
   }
   return returnValue;
