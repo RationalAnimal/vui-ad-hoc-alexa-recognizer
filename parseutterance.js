@@ -57,7 +57,6 @@ var _parseUtteranceIntoJson = function(utterance, intentSchema){
 
 let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES", "COUNTRY", "CONTINENT", "TYPE"];
 var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
-//	console.log("_cleanupParsedUtteranceJson, entered, parsedJson.parsedUtterance: " + JSON.stringify(parsedJson.parsedUtterance, null, 2));
   // First get rid of invalid flags.
 	for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
 		if(parsedJson.parsedUtterance[i].type === "slot"){
@@ -550,14 +549,14 @@ var _parseJsonArray = function(utteranceArray, parsingRange, intentSchema){
 		error.position = parsingRange.start;
 		throw error;
 	}
-	let accummulatedValue = '';
+	let accumulatedValue = '';
 	let returnValue = [];
 	for(let i = parsingRange.start; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
-		accummulatedValue += utteranceArray[i];
+		accumulatedValue += utteranceArray[i];
 		switch(utteranceArray[i]){
 			case "]":
 				try {
-					returnValue = JSON.parse(accummulatedValue);
+					returnValue = JSON.parse(accumulatedValue);
 					parsingRange.end = i;
 					return returnValue;
 				}
@@ -612,25 +611,25 @@ var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
 		error.position = parsingRange.start;
     throw error;
 	}
-	let accummulatedValue = '';
+	let accumulatedValue = '';
 	let returnValue = [];
 	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
 		switch(utteranceArray[i]){
 			case "}":
 				parsingRange.end = i;
-				if(accummulatedValue.length > 0){
-					returnValue.push({"name": accummulatedValue});
+				if(accumulatedValue.length > 0){
+					returnValue.push({"name": accumulatedValue});
 				}
 				return returnValue;
 			case ",":
-				if(accummulatedValue.length > 0){
-					returnValue.push({"name": accummulatedValue});
-					accummulatedValue = '';
+				if(accumulatedValue.length > 0){
+					returnValue.push({"name": accumulatedValue});
+					accumulatedValue = '';
 				}
 				break;
 			case "(":
-				returnValue.push({"name": accummulatedValue});
-				accummulatedValue = '';
+				returnValue.push({"name": accumulatedValue});
+				accumulatedValue = '';
 				let flagsRange = {"start": i, "end": -1};
 				let flagsResult = _parseFlagParameters(utteranceArray, flagsRange, intentSchema);
 				returnValue[returnValue.length - 1].parameters = flagsResult;
@@ -644,8 +643,8 @@ var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
 			case "\v":
 				break;
 			default:
-				// simply accummulate the characters
-				accummulatedValue += utteranceArray[i];
+				// simply accumulate the characters
+				accumulatedValue += utteranceArray[i];
 		}
 	}
 };
@@ -656,22 +655,22 @@ var _parseOptionsList = function(utteranceArray, parsingRange, intentName, inten
     error.error = "parsing options list doesn't start with {";
     error.position = parsingRange.start;
   }
-  let accummulatedValue = '';
+  let accumulatedValue = '';
   let returnValue = {"type": "optionsList", "options": []};
 
   for (let i = parsingRange.start + 1; i < (parsingRange.end < 0 ? utteranceArray.length : parsingRange.end + 1); i++) {
     switch (utteranceArray[i]) {
       case "}":
         parsingRange.end = i;
-        returnValue.options.push(accummulatedValue);
+        returnValue.options.push(accumulatedValue);
         return returnValue;
       case "|":
-        returnValue.options.push(accummulatedValue);
-        accummulatedValue = '';
+        returnValue.options.push(accumulatedValue);
+        accumulatedValue = '';
         break;
       default:
-        // simply accummulate the characters
-        accummulatedValue += utteranceArray[i];
+        // simply accumulate the characters
+        accumulatedValue += utteranceArray[i];
     }
   }
   error.error = "parsing options list ran out of characters to parse before completing slot parsing";
@@ -686,7 +685,7 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
 		error.position = parsingRange.start;
     throw error;
 	}
-	let accummulatedValue = '';
+	let accumulatedValue = '';
 	let returnValue = {"type": "slot"};
 	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
 		switch(utteranceArray[i]){
@@ -695,17 +694,17 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
 				if(typeof returnValue.flags === "undefined"){
 					returnValue.flags = [];
 				}
-				returnValue.flags.push(accummulatedValue);
+				returnValue.flags.push(accumulatedValue);
 				return returnValue;
 			case ":":
-				if(_isSlotName(accummulatedValue, intentName, intentSchema) === false){
-					error.error = "slot name " + accummulatedValue + " does not exist within intent schema";
+				if(_isSlotName(accumulatedValue, intentName, intentSchema) === false){
+					error.error = "slot name " + accumulatedValue + " does not exist within intent schema";
 					error.position = i;
 					throw error;
 				}
-				returnValue.slotType = _getSlotType(accummulatedValue, intentName, intentSchema);
-				returnValue.name = accummulatedValue;
-				accummulatedValue = '';
+				returnValue.slotType = _getSlotType(accumulatedValue, intentName, intentSchema);
+				returnValue.name = accumulatedValue;
+				accumulatedValue = '';
 				let flagsRange = {"start": i, "end": -1};
 				let flagsResult = _parseFlags(utteranceArray, flagsRange);
 				parsingRange.end = flagsRange.end;
@@ -719,13 +718,44 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
       case "\v":
 				break;
 			default:
-				// simply accummulate the characters
-				accummulatedValue += utteranceArray[i];
+				// simply accumulate the characters
+				accumulatedValue += utteranceArray[i];
 		}
 	}
 	error.error = "parsing slot ran out of characters to parse before completing slot parsing";
 	error.position = -1;
 	throw error;
+};
+
+/**
+ * Call to find all the multi word equivalents found in the words array and adds them to previousMatches (if passed in),
+ * otherwise to the brand new return object.
+ * @param words
+ * @param previousMatches
+ * @param dataSet
+ * @returns {{matches: Array}}
+ * @private
+ */
+var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
+  let returnValue = (typeof previousMatches != "undefined" && typeof previousMatches.matches != undefined && Array.isArray(previousMatches) ? previousMatches : {"matches":[]});
+  let dataSetPhrases = dataSet.equivalentPhrases;
+  if(typeof dataSetPhrases == "undefined" || Array.isArray(dataSetPhrases) == false){
+    return returnValue;
+  }
+  for(let i = 0; i < words.length; i ++){
+    for(let j = i; j < words.length; j++){
+      let currentPhrase = '';
+      for (let k = i; k <=j; k++){
+        if(k !== i){
+          currentPhrase += " ";
+        }
+        currentPhrase += words[k];
+      }
+      // Now we have a phrase - find it in the dataSet
+      // TODO continue
+    }
+  }
+  return returnValue;
 };
 
 /**
@@ -735,16 +765,17 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
  * @param parsingRange
  * @param intentName
  * @param intentSchema
+ * returns {}
  * @private
  */
-var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, intentSchema){
+var _parseEquivalentText = function(utteranceArray, parsingRange){
   let error = {"error": "", "position": -1};
   if(utteranceArray[parsingRange.start] !== '{' || utteranceArray[parsingRange.start + 1] !== '~'){
     error.error = "parsing equivalent text doesn't start with {~";
     error.position = parsingRange.start;
     throw error;
   }
-  let accummulatedValue = '';
+  let accumulatedValue = '';
 //  defaultEquivalents
 
   let words = [];
@@ -752,8 +783,8 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, in
     switch(utteranceArray[i]){
       case "}":
         parsingRange.end = i;
-        words.push(accummulatedValue);
-        accummulatedValue = '';
+        words.push(accumulatedValue);
+        accumulatedValue = '';
         // Now actually create the return value and return it
 //        let returnValue = {"type": "equivalents", "equivalents": []};
         let returnValue = [];
@@ -772,7 +803,6 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, in
           // Here we have the full currentArray - simply push it
           arrayOfArrays.push(currentArray);
         }
-        // TODO strip duplicates from each sub array
         if(arrayOfArrays.length == 0){
           return returnValue;
         }
@@ -827,9 +857,9 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, in
       case ".":
       case "!":
       case "?":
-        if(accummulatedValue.length > 0){
-          words.push(accummulatedValue);
-          accummulatedValue = '';
+        if(accumulatedValue.length > 0){
+          words.push(accumulatedValue);
+          accumulatedValue = '';
         }
         words.push(utteranceArray[i]);
 				break;
@@ -839,14 +869,14 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, intentName, in
       case "\r":
       case "\t":
       case "\v":
-      	if(accummulatedValue.length > 0){
-          words.push(accummulatedValue);
-          accummulatedValue = '';
+      	if(accumulatedValue.length > 0){
+          words.push(accumulatedValue);
+          accumulatedValue = '';
 				}
         break;
       default:
         // simply accumulate the characters
-        accummulatedValue += utteranceArray[i];
+        accumulatedValue += utteranceArray[i];
     }
 	}
   error.error = "parsing equivalent text ran out of characters to parse before completing parsing";
@@ -873,19 +903,19 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentName, int
 	}
 	if(utteranceArray[parsingRange.start + 1] === "~"){
 	  // this is a text equivalent
-    return _parseEquivalentText(utteranceArray, parsingRange, intentName, intentSchema);
+    return _parseEquivalentText(utteranceArray, parsingRange);
   }
-	let accummulatedValue = '';
+	let accumulatedValue = '';
 	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
 		switch(utteranceArray[i]){
 			case "}":
 				parsingRange.end = i;
-				if(_isSlotName(accummulatedValue, intentName, intentSchema)){
-					let slotType = _getSlotType(accummulatedValue, intentName, intentSchema);
-					return {"type": "slot", "name": accummulatedValue, "slotType": slotType};
+				if(_isSlotName(accumulatedValue, intentName, intentSchema)){
+					let slotType = _getSlotType(accumulatedValue, intentName, intentSchema);
+					return {"type": "slot", "name": accumulatedValue, "slotType": slotType};
 				}
 				else {
-					return {"type": "optionsList", "options": [accummulatedValue]};
+					return {"type": "optionsList", "options": [accumulatedValue]};
 				}
 			case "|":
 			  // this is an options list
@@ -894,8 +924,8 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentName, int
 				// this is a slot with options
 				return _parseSlotWithFlags(utteranceArray, parsingRange, intentName, intentSchema);
 			default:
-				// simply accummulate the characters
-				accummulatedValue += utteranceArray[i];
+				// simply accumulate the characters
+				accumulatedValue += utteranceArray[i];
 		}
 	}
 	error.error = "parsing curly brackets ran out of characters before encountering }";

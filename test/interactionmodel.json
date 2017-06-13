@@ -343,6 +343,13 @@
       ]
     },
     {
+      "name": "HiIntent",
+      "samples": [
+        "{~Hi what is the time please}"
+      ],
+      "slots": []
+    },
+    {
       "name": "FictionalCharacterIntent",
       "samples": [
         "{FictionalCharacterSlot} is a dark character"
