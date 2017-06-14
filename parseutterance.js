@@ -774,7 +774,15 @@ var _compactMultiWordEquivalents = function(matches){
     return 0;
   };
   matches.sort(sortingFunction);
-  // TODO now need to condense entries that may have been added by searching repeatedly using multiple data sets
+  for(let i = matches.length - 1; i >= 0; i--){
+    if(i > 0){
+      if(sortingFunction(matches[i], matches[i-1]) == 0){
+        // get all the values from the second one and add them to the first one, then delete the second one
+        matches[i - 1].equivalents.values = matches[i - 1].equivalents.values.concat(matches[i].equivalents.values);
+        matches.splice(i, 1);
+      }
+    }
+  }
 
 };
 
