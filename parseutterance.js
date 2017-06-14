@@ -746,7 +746,35 @@ var _getPhraseEquivalent = function(phrase, dataSet){
 
 var _compactMultiWordEquivalents = function(matches){
   // First, sort by phrase
-  matches.sort(function(a,b) {return (a.phrase > b.phrase) ? 1 : ((b.phrase > a.phrase) ? -1 : 0);} );
+  let sortingFunction = function(a, b){
+    if(a.phrase > b.phrase){
+      return 1;
+    }
+    if(a.phrase < b.phrase){
+      return -1;
+    }
+    if(a.startWordIndex > b.startWordIndex){
+      return 1;
+    }
+    if(a.startWordIndex < b.startWordIndex){
+      return -1;
+    }
+    if(a.endWordIndex > b.endWordIndex){
+      return 1;
+    }
+    if(a.endWordIndex < b.endWordIndex){
+      return -1;
+    }
+    if(a.equivalents.fitRating > b.equivalents.fitRating){
+      return 1;
+    }
+    if(a.equivalents.fitRating < b.equivalents.fitRating){
+      return -1;
+    }
+    return 0;
+  };
+  matches.sort(sortingFunction);
+  // TODO now need to condense entries that may have been added by searching repeatedly using multiple data sets
 
 };
 
@@ -776,8 +804,11 @@ var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
       }
       // Now we have a phrase - find it in the dataSet
       let found = _getPhraseEquivalent(currentPhrase, dataSet);
-      let match = {"phrase": currentPhrase, "startWordIndex": i, "endWordIndex":j, "equivalents": found};
-      returnValue.matches.push(match);
+      // "unfold" the found values
+      for(let l = 0; l < found.length; l ++){
+        let match = {"phrase": currentPhrase, "startWordIndex": i, "endWordIndex":j, "equivalents": found[l]};
+        returnValue.matches.push(match);
+      }
     }
   }
   return returnValue;
