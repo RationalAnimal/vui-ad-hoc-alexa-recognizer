@@ -727,7 +727,14 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
 	throw error;
 };
 
-var _getPhraseEquivalent = function(phrase, dataSet){
+/**
+ * Call to get from the data set the portion relevant to the specified phrase
+ * @param phrase {string} - phrase to get equivalents for
+ * @param dataSet {{singleWordSynonyms:[], equivalentPhrases:[]}} - object containing various word and phrase equivalents
+ * @returns {object []} - array of equivalents
+ * @private
+ */
+var _getPhraseEquivalents = function(phrase, dataSet){
   if(typeof phrase != 'string' || typeof dataSet == "undefined" || typeof dataSet.equivalentPhrases == "undefined"){
     return undefined;
   }
@@ -783,16 +790,60 @@ var _compactMultiWordEquivalents = function(matches){
       }
     }
   }
+};
 
+/**
+ * Call this function to generate an array of permutations of utterances with multi word phrases replaced by option
+ * lists.  This function will call itself recursively, creating a cartesian product of sub-results
+ * @param words {string[]} - the phrase broken up into a string array.
+ * @param matches - typically the return value of the call to _compactMultiWordEquivalents function.
+ * @param startingWord {number} - the index of the word to start with.  This is needed because this function will call
+ * itself recursively.
+ * @returns {string []} - exhaustive list of utterances with all the possible permutations of replaceable phrases
+ * replaces by options lists of their equivalents.
+ * @private
+ */
+
+var _generatePossibleMultiWordUtterances = function(words, matches, startingWord){
+  let returnValue = [];
+  for(let i = startingWord; i < words.length; i ++){
+    for(let k = 0; k < matches.length; k ++){
+      if(matches[k].startWordIndex == i){
+        // Found a match, get the replacement values, convert to an options list, call this function on the remainder
+        // of the words, combine the two, add the result to returnValue.
+        let replacementOptionsList = "{";
+        for(let j = 0; j < matches[k].equivalents.values.length; j++){
+          if(j !== 0){
+            replacementOptionsList +="|";
+          }
+          replacementOptionsList += matches[k].equivalents.values[j];
+        }
+        replacementOptionsList += "}";
+        if(matches[k].endWordIndex < words.length - 1){
+          // There are more words after this match, call this function again, combine with replacementOptionsList
+          // and add to returnValue
+          let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, matches[k].endWordIndex + 1);
+          for(let j = 0; j < remainingUtterances.length; j++){
+            returnValue.push(replacementOptionsList + remainingUtterances[j]);
+          }
+        }
+        else {
+          returnValue.push(replacementOptionsList);
+        }
+      }
+    }
+  }
+  return returnValue;
 };
 
 /**
  * Call to find all the multi word equivalents found in the words array and adds them to previousMatches (if passed in),
  * otherwise to the brand new return object.
- * @param words
- * @param previousMatches
- * @param dataSet
- * @returns {{matches: Array}}
+ * @param words {string []} - the array of words, in order, that make up the phrase
+ * @param previousMatches {{matches: Array}} - matches returned from previous call(s) to this function.  If provided, the
+ * return of the call will be simply added to it.
+ * @param dataSet {{singleWordSynonyms:[], equivalentPhrases:[]}} - object containing various word and phrase equivalents
+ * @returns {{matches: Array}} - previousMatches (if passed in) or a new object with all the newly found matches added
  * @private
  */
 var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
@@ -811,7 +862,7 @@ var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
         currentPhrase += words[k];
       }
       // Now we have a phrase - find it in the dataSet
-      let found = _getPhraseEquivalent(currentPhrase, dataSet);
+      let found = _getPhraseEquivalents(currentPhrase, dataSet);
       // "unfold" the found values
       for(let l = 0; l < found.length; l ++){
         let match = {"phrase": currentPhrase, "startWordIndex": i, "endWordIndex":j, "equivalents": found[l]};
