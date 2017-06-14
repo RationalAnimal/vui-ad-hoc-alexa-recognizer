@@ -744,6 +744,11 @@ var _getPhraseEquivalent = function(phrase, dataSet){
   return returnValues;
 };
 
+var _compactMultiWordEquivalents = function(matches){
+  // First, sort by phrase
+  matches.sort(function(a,b) {return (a.phrase > b.phrase) ? 1 : ((b.phrase > a.phrase) ? -1 : 0);} );
+
+};
 
 /**
  * Call to find all the multi word equivalents found in the words array and adds them to previousMatches (if passed in),
