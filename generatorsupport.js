@@ -404,6 +404,10 @@ recognizer.builtInValues.TVEpisode.replacementRegExpString = _makeReplacementReg
 recognizer.builtInValues.TVSeason = require("./builtinslottypes/tvseasons.json");
 recognizer.builtInValues.TVSeason.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.TVSeason.values);
 
+recognizer.builtInValues.TVSeries = require("./builtinslottypes/tvseries.json");
+recognizer.builtInValues.TVSeries.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.TVSeries.values);
+
+
 recognizer.builtInValues.Athlete = require("./builtinslottypes/athletes.json");
 recognizer.builtInValues.Athlete.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Athlete.values);
 
@@ -443,7 +447,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         "TRANSCEND.AdministrativeArea", "TRANSCEND.Country", "TRANSCEND.Color", "TRANSCEND.Room", "TRANSCEND.MusicRecording",
         "TRANSCEND.MusicVenue", "TRANSCEND.MusicVideo", "TRANSCEND.Organization", "TRANSCEND.Person", "TRANSCEND.Professional",
         "TRANSCEND.Residence", "TRANSCEND.ScreeningEvent", "TRANSCEND.Service", "TRANSCEND.SoftwareApplication", "TRANSCEND.SoftwareGame",
-        "TRANSCEND.SportsEvent", "TRANSCEND.TVEpisode", "TRANSCEND.TVSeason"
+        "TRANSCEND.SportsEvent", "TRANSCEND.TVEpisode", "TRANSCEND.TVSeason", "TRANSCEND.TVSeries"
     ];
     if(slotType === "TRANSCEND.NUMBER"){
         // Ignore flags for now
@@ -793,6 +797,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SportsEvent", "SportsEvent", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.TVEpisode", "TVEpisode", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.TVSeason", "TVSeason", config);
+    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.TVSeries", "TVSeries", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Athlete", "Athlete", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.AdministrativeArea", "AdministrativeArea", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Room", "Room", config);
