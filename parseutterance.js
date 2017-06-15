@@ -729,6 +729,30 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
 
 /**
  * Call to get from the data set the portion relevant to the specified phrase
+ * @param word {string} - word for which to get equivalents
+ * @param dataSet {{singleWordSynonyms:[], equivalentPhrases:[]}} - object containing various word and phrase equivalents
+ * @returns {string[]} - array of equivalents for the given word
+ * @private
+ */
+var _getWordEquivalents = function(word, dataSet){
+  if(typeof word != 'string' || typeof dataSet == "undefined" || typeof dataSet.singleWordSynonyms == "undefined"){
+    return undefined;
+  }
+  let wordEquivalents = dataSet.singleWordSynonyms;
+  let returnValues = [];
+  for(let i = 0; i < wordEquivalents.length; i++){
+    let scratch = wordEquivalents[i];
+    if(typeof scratch.synonyms != "undefined" && Array.isArray(scratch.synonyms) && scratch.words.indexOf(word) >= 0){
+      for(let j = 0; j < scratch.synonyms.length; j++){
+        returnValues = returnValues.concat(scratch.synonyms[j].values);
+      }
+    }
+  }
+  return returnValues;
+};
+
+/**
+ * Call to get from the data set the portion relevant to the specified phrase
  * @param phrase {string} - phrase to get equivalents for
  * @param dataSet {{singleWordSynonyms:[], equivalentPhrases:[]}} - object containing various word and phrase equivalents
  * @returns {object []} - array of equivalents
