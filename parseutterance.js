@@ -804,7 +804,7 @@ var _compactMultiWordEquivalents = function(matches){
  * @private
  */
 
-var _generatePossibleMultiWordUtterances = function(words, matches, startingWord){
+var _generatePossibleMultiWordUtterances = function(words, matches, singleWordReplacements, startingWord){
   let returnValue = [];
   for(let i = startingWord; i < words.length; i ++){
     for(let k = 0; k < matches.length; k ++){
@@ -831,6 +831,11 @@ var _generatePossibleMultiWordUtterances = function(words, matches, startingWord
           returnValue.push(replacementOptionsList);
         }
       }
+    }
+    // Now ALSO add the single word replacement to the list
+    let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, i + 1);
+    for(let j = 0; j < remainingUtterances.length; j++){
+      returnValue.push(singleWordReplacements[i] + remainingUtterances[j]);
     }
   }
   return returnValue;
@@ -872,6 +877,7 @@ var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
   }
   return returnValue;
 };
+
 
 /**
  * Call to parse portions of the utterance/sample that is enclosed in {} and starts with ~, e.g. {~hello}.  This will
