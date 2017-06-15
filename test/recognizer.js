@@ -189,6 +189,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.TVSeries slot matches", function() {
+      let result = recognizer.Recognizer.matchText("dancing with the stars is very popular");
+      expect(result).to.eql(
+        {"name": "TVSeriesIntent",
+          "slots": {
+            "TVSeriesSlot": {
+              "name": "TVSeriesSlot",
+              "value": "dancing with the stars"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.Athlete slot matches", function() {
       let result = recognizer.Recognizer.matchText("michael phelps is a swimmer");
       expect(result).to.eql(

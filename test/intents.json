@@ -175,6 +175,15 @@
       ]
     },
     {
+      "intent": "TVSeriesIntent",
+      "slots": [
+        {
+          "name": "TVSeriesSlot",
+          "type": "AMAZON.TVSeries"
+        }
+      ]
+    },
+    {
       "intent": "ArtistIntent",
       "slots": [
         {
