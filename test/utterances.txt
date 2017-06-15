@@ -82,4 +82,5 @@ SoftwareApplicationIntent do you use {SoftwareApplicationSlot}
 SoftwareGameIntent a lot of people play {SoftwareGameSlot}
 SportsEventIntent a lot of people watch {SportsEventSlot}
 TVEpisodeIntent a lot of people watched {TVEpisodeSlot}
+TVSeasonIntent {TVSeasonSlot} is the best season of the series
 HiIntent {~Hi what is the time please}
