@@ -863,19 +863,19 @@ var _compactMultiWordEquivalentsByFitRating = function(matchesObject){
 var _generatePossibleMultiWordUtterances = function(words, matches, singleWordReplacements, startingWord){
   let returnValue = [];
   for(let i = startingWord; i < words.length; i ++){
-    for(let k = 0; k < matches.length; k ++){
-      if(matches[k].startWordIndex == i){
+    for(let k = 0; k < matches.matches.length; k ++){
+      if(matches.matches[k].startWordIndex == i){
         // Found a match, get the replacement values, convert to an options list, call this function on the remainder
         // of the words, combine the two, add the result to returnValue.
         let replacementOptionsList = "{";
-        for(let j = 0; j < matches[k].equivalents.values.length; j++){
+        for(let j = 0; j < matches.matches[k].equivalents.values.length; j++){
           if(j !== 0){
             replacementOptionsList +="|";
           }
-          replacementOptionsList += matches[k].equivalents.values[j];
+          replacementOptionsList += matches.matches[k].equivalents.values[j];
         }
         replacementOptionsList += "}";
-        if(matches[k].endWordIndex < words.length - 1){
+        if(matches.matches[k].endWordIndex < words.length - 1){
           // There are more words after this match, call this function again, combine with replacementOptionsList
           // and add to returnValue
           let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, matches[k].endWordIndex + 1);
@@ -1151,8 +1151,11 @@ parser.unfoldParsedJson = _unfoldParsedJson;
 parser.addRegExps = _addRegExps;
 
 parser.forTesting = {};
+parser.forTesting.getWordEquivalents = _getWordEquivalents;
+parser.forTesting.getWordsEquivalentsForDataSets = _getWordsEquivalentsForDataSets;
 parser.forTesting.getPhraseEquivalents = _getPhraseEquivalents;
 parser.forTesting.findMultiWordEquivalents = _findMultiWordEquivalents;
 parser.forTesting.compactMultiWordEquivalentsByFitRating = _compactMultiWordEquivalentsByFitRating;
+parser.forTesting.generatePossibleMultiWordUtterances = _generatePossibleMultiWordUtterances;
 
 module.exports = parser;

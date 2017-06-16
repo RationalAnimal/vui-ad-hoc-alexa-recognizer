@@ -3009,5 +3009,20 @@ describe("utterance parser", function() {
         });
     });
 
+
+    it("verify that we are compacting multi-word equivalents correctly by fit rating when using same dataset", function() {
+      let defaultDataSet = require("../equivalents/default.json");
+      let result = parser.forTesting.findMultiWordEquivalents(["how", "are",  "you"], undefined, defaultDataSet);
+      result = parser.forTesting.findMultiWordEquivalents(["how", "are",  "you"], result, defaultDataSet);
+      parser.forTesting.compactMultiWordEquivalentsByFitRating(result);
+      let wordEquivalents = parser.forTesting.getWordsEquivalentsForDataSets(["how", "are",  "you"], [defaultDataSet]);
+      let multiWordResult = parser.forTesting.generatePossibleMultiWordUtterances(["how", "are",  "you"], result, wordEquivalents, 0);
+      expect(multiWordResult).to.eql([
+        "{how are you|how are you doing}",
+        "{hi|hello|good morning|good day|good evening|good night|whats up|hey}"
+      ]);
+    });
+
+
   });
 });
