@@ -800,6 +800,20 @@ var _getPhraseEquivalents = function(phrase, dataSet){
   return returnValues;
 };
 
+var _getPhraseEquivalentsForDataSets = function(phrase, dataSets){
+  if(typeof phrase === "undefined" || typeof dataSets === "undefined" || Array.isArray(dataSets) === false){
+    return;
+  }
+  let returnValue = [];
+  for(let j = 0; j < dataSets.length; j ++){
+    let additions = _getPhraseEquivalents(phrase, dataSets[j]);
+    if(typeof additions !== "undefined" && Array.isArray(additions)){
+      returnValue = returnValue.concat(additions);
+    }
+  }
+  return returnValue;
+};
+
 var _compactMultiWordEquivalents = function(matches){
   // First, sort by phrase
   let sortingFunction = function(a, b){
