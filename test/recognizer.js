@@ -2783,7 +2783,7 @@ describe("utterance parser", function() {
 
       let passThrougFunc = function(slotType, flags){
         return generatorsupport.Recognizer.getReplacementRegExpStringGivenSlotType(slotType, config, flags);
-      }
+      };
       parser.addRegExps(result, intentSchema, passThrougFunc);
       expect(result).to.eql(
         {
@@ -2820,6 +2820,32 @@ describe("utterance parser", function() {
         });
     });
 
+    it("verify that we are getting phrase equivalents correctly from a single dataset", function() {
+      let defaultDataSet = require("../equivalents/default.json");
+      let result = parser.forTesting.getPhraseEquivalents("how are you", defaultDataSet);
+      expect(result).to.eql([
+        {
+          "fitRating": 1,
+          "values": [
+            "how are you",
+            "how are you doing"
+          ]
+        },
+        {
+          "fitRating": 0.99,
+          "values": [
+            "hi",
+            "hello",
+            "good morning",
+            "good day",
+            "good evening",
+            "good night",
+            "whats up",
+            "hey",
+          ]
+        }
+      ]);
+    });
 
 
   });
