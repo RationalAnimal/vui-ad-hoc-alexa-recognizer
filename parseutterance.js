@@ -728,7 +728,7 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
 };
 
 /**
- * Call to get from the data set the portion relevant to the specified phrase
+ * Call to get from the data set the portion relevant to the specified word
  * @param word {string} - word for which to get equivalents
  * @param dataSet {{singleWordSynonyms:[], equivalentPhrases:[]}} - object containing various word and phrase equivalents
  * @returns {string[]} - array of equivalents for the given word
@@ -749,6 +749,31 @@ var _getWordEquivalents = function(word, dataSet){
     }
   }
   return returnValues;
+};
+
+/**
+ * Call to get word equivalents for an array of words and dataSets at once.
+ * @param words {string[]} - words for which to get equivalents
+ * @param dataSet {{singleWordSynonyms:[], equivalentPhrases:[]}[]} - array of objects containing various word and phrase equivalents
+ * @returns {Array []} - array of word equivalents arrays
+ * @private
+ */
+var _getWordsEquivalentsForDataSets = function(words, dataSets){
+  if(typeof words === "undefined" || Array.isArray(words) === false || typeof dataSets === "undefined" || Array.isArray(dataSets) === false){
+    return;
+  }
+  let returnValue = [];
+  for(let i = 0; i < words.length; i++){
+    let currentWordEquivalents = [];
+    for(let j = 0; j < dataSets.length; j ++){
+      let additions = _getWordEquivalents(words[i], dataSets[j]);
+      if(typeof additions !== "undefined" && Array.isArray(additions)){
+        currentWordEquivalents = currentWordEquivalents.concat(additions);
+      }
+    }
+    returnValue.push(currentWordEquivalents);
+  }
+  return returnValue;
 };
 
 /**
