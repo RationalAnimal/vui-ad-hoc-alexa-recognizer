@@ -941,7 +941,6 @@ var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
   return returnValue;
 };
 
-
 /**
  * Call to parse portions of the utterance/sample that is enclosed in {} and starts with ~, e.g. {~hello}.  This will
  * look up any common words, expressions, etc and try to replace them with synonymous text.
@@ -1153,4 +1152,10 @@ parser.parseUtteranceIntoJson = _parseUtteranceIntoJson;
 parser.cleanupParsedUtteranceJson = _cleanupParsedUtteranceJson;
 parser.unfoldParsedJson = _unfoldParsedJson;
 parser.addRegExps = _addRegExps;
+
+parser.forTesting = {};
+parser.forTesting.getPhraseEquivalents = _getPhraseEquivalents;
+parser.forTesting.findMultiWordEquivalents = _findMultiWordEquivalents;
+parser.forTesting.compactMultiWordEquivalents = _compactMultiWordEquivalents;
+
 module.exports = parser;
