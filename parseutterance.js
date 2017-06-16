@@ -915,7 +915,9 @@ var _generatePossibleMultiWordUtterances = function(words, matches, singleWordRe
  * @private
  */
 var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
-  let returnValue = (typeof previousMatches != "undefined" && typeof previousMatches.matches != undefined && Array.isArray(previousMatches) ? previousMatches : {"matches":[]});
+//  console.log("_findMultiWordEquivalents, 1, previousMatches: " + JSON.stringify(previousMatches));
+  let returnValue = (typeof previousMatches != "undefined" && typeof previousMatches.matches !== "undefined" && Array.isArray(previousMatches.matches) ? previousMatches : {"matches":[]});
+//  console.log("_findMultiWordEquivalents, 2, returnValue: " + JSON.stringify(returnValue));
   let dataSetPhrases = dataSet.equivalentPhrases;
   if(typeof dataSetPhrases == "undefined" || Array.isArray(dataSetPhrases) == false){
     return returnValue;
@@ -938,6 +940,8 @@ var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
       }
     }
   }
+//  console.log("_findMultiWordEquivalents, exiting, returnValue: " + JSON.stringify(returnValue));
+
   return returnValue;
 };
 
