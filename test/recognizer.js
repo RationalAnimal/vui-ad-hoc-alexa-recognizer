@@ -2965,6 +2965,49 @@ describe("utterance parser", function() {
         });
     });
 
+    it("verify that we are compacting multi-word equivalents correctly by fit rating when using same dataset", function() {
+      let defaultDataSet = require("../equivalents/default.json");
+      let result = parser.forTesting.findMultiWordEquivalents(["how", "are",  "you"], undefined, defaultDataSet);
+      result = parser.forTesting.findMultiWordEquivalents(["how", "are",  "you"], result, defaultDataSet);
+      parser.forTesting.compactMultiWordEquivalentsByFitRating(result);
+      expect(result).to.eql(
+        {"matches":
+          [
+            {
+              "phrase":"how are you",
+              "startWordIndex":0,
+              "endWordIndex":2,
+              "equivalents":
+                {
+                  "fitRating":1,
+                  "values":[
+                    "how are you",
+                    "how are you doing"
+                  ]
+                }
+            },
+            {
+              "phrase":"how are you",
+              "startWordIndex":0,
+              "endWordIndex":2,
+              "equivalents":
+                {
+                  "fitRating":0.99,
+                  "values":[
+                    "hi",
+                    "hello",
+                    "good morning",
+                    "good day",
+                    "good evening",
+                    "good night",
+                    "whats up",
+                    "hey"
+                  ]
+                }
+            }
+          ]
+        });
+    });
 
   });
 });
