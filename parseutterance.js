@@ -800,21 +800,7 @@ var _getPhraseEquivalents = function(phrase, dataSet){
   return returnValues;
 };
 
-var _getPhraseEquivalentsForDataSets = function(phrase, dataSets){
-  if(typeof phrase === "undefined" || typeof dataSets === "undefined" || Array.isArray(dataSets) === false){
-    return;
-  }
-  let returnValue = [];
-  for(let j = 0; j < dataSets.length; j ++){
-    let additions = _getPhraseEquivalents(phrase, dataSets[j]);
-    if(typeof additions !== "undefined" && Array.isArray(additions)){
-      returnValue = returnValue.concat(additions);
-    }
-  }
-  return returnValue;
-};
-
-var _compactMultiWordEquivalents = function(matches){
+var _compactMultiWordEquivalentsByFitRating = function(matchesObject){
   // First, sort by phrase
   let sortingFunction = function(a, b){
     if(a.phrase > b.phrase){
@@ -843,13 +829,20 @@ var _compactMultiWordEquivalents = function(matches){
     }
     return 0;
   };
-  matches.sort(sortingFunction);
-  for(let i = matches.length - 1; i >= 0; i--){
+  let descendingSortingFunction = function(a, b){
+    return sortingFunction(b, a);
+  };
+  matchesObject.matches.sort(descendingSortingFunction);
+  for(let i = matchesObject.matches.length - 1; i >= 0; i--){
     if(i > 0){
-      if(sortingFunction(matches[i], matches[i-1]) == 0){
-        // get all the values from the second one and add them to the first one, then delete the second one
-        matches[i - 1].equivalents.values = matches[i - 1].equivalents.values.concat(matches[i].equivalents.values);
-        matches.splice(i, 1);
+      if(sortingFunction(matchesObject.matches[i], matchesObject.matches[i-1]) === 0){
+        // get all the values from the second one and add those that aren't already there to the first one, then delete the second one
+        for(let j = 0; j < matchesObject.matches[i].equivalents.values.length; j++){
+          if(matchesObject.matches[i - 1].equivalents.values.indexOf(matchesObject.matches[i].equivalents.values[j]) < 0){
+            matchesObject.matches[i - 1].equivalents.values.push(matchesObject.matches[i].equivalents.values[j]);
+          }
+        }
+        matchesObject.matches.splice(i, 1);
       }
     }
   }
@@ -1160,6 +1153,6 @@ parser.addRegExps = _addRegExps;
 parser.forTesting = {};
 parser.forTesting.getPhraseEquivalents = _getPhraseEquivalents;
 parser.forTesting.findMultiWordEquivalents = _findMultiWordEquivalents;
-parser.forTesting.compactMultiWordEquivalents = _compactMultiWordEquivalents;
+parser.forTesting.compactMultiWordEquivalentsByFitRating = _compactMultiWordEquivalentsByFitRating;
 
 module.exports = parser;
