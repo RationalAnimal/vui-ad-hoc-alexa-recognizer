@@ -897,7 +897,6 @@ var _generatePossibleMultiWordUtterances = function(words, matches, singleWordRe
           // There are more words after this match, call this function again, combine with replacementOptionsList
           // and add to returnValue
           let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, singleWordReplacements, matches.matches[k].endWordIndex + 1);
-          console.log("!!!!! i: " + i + " remainingUtterances: ", JSON.stringify(remainingUtterances, null, 2));
           for(let j = 0; j < remainingUtterances.length; j++){
             returnValue.push(replacementOptionsList + " " + remainingUtterances[j]);
           }
@@ -907,23 +906,20 @@ var _generatePossibleMultiWordUtterances = function(words, matches, singleWordRe
         }
       }
     }
-    // Now ALSO add the single word replacement to the list
-    /*
-    if(i === words.length - 1){
-      let replacementOptionsList = _convertArrayToOptionsListOrString(singleWordReplacements[i]);
-      console.log("#####, i: " + i + " appending: " + replacementOptionsList);
-      returnValue.push(replacementOptionsList);
-    }
-    else {
-      let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, singleWordReplacements, i + 1);
-      console.log("@@@@@, i: " + i + " remainingUtterances: ", JSON.stringify(remainingUtterances, null, 2));
-      let replacementOptionsList = _convertArrayToOptionsListOrString(singleWordReplacements[i]);
-      for(let j = 0; j < remainingUtterances.length; j++){
-        returnValue.push(replacementOptionsList + " " + remainingUtterances[j]);
-      }
-    }
-    */
   }
+  // Now ALSO add the single word replacement to the list
+  if(startingWord === words.length - 1){
+    let replacementOptionsList = _convertArrayToOptionsListOrString(singleWordReplacements[startingWord]);
+    returnValue.push(replacementOptionsList);
+  }
+  else {
+    let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, singleWordReplacements, startingWord + 1);
+    let replacementOptionsList = _convertArrayToOptionsListOrString(singleWordReplacements[startingWord]);
+    for(let j = 0; j < remainingUtterances.length; j++){
+      returnValue.push(replacementOptionsList + " " + remainingUtterances[j]);
+    }
+  }
+
   return returnValue;
 };
 
