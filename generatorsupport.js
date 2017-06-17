@@ -299,7 +299,7 @@ recognizer.builtInValues.MusicVenue.replacementRegExpString = _makeReplacementRe
 recognizer.builtInValues.MusicVideo = require("./builtinslottypes/musicvideos.json");
 recognizer.builtInValues.MusicVideo.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.MusicVideo.values);
 
-// Make a concatenated list of all the other organizations and add those to the separate "person" list
+// Make a concatenated list of all the other person types and add those to the separate "person" list
 recognizer.builtInValues.Person = require("./builtinslottypes/persons.json");
 let scratchPerson = require("./builtinslottypes/actors.json");
 recognizer.builtInValues.Person.values = recognizer.builtInValues.Person.values.concat(scratchPerson.values);
@@ -341,11 +341,21 @@ recognizer.builtInValues.LocalBusinessType.replacementRegExpString = _makeReplac
 recognizer.builtInValues.LocalBusiness = require("./builtinslottypes/localbusinesses.json");
 recognizer.builtInValues.LocalBusiness.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.LocalBusiness.values);
 
-recognizer.builtInValues.Game = require("./builtinslottypes/games.json");
-recognizer.builtInValues.Game.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Game.values);
+let scratchGame = require("./builtinslottypes/videogames.json");
+// Add video games to software games, but without adding duplicates
+recognizer.builtInValues.SoftwareGame = require("./builtinslottypes/softwaregames.json");
+for(let i = 0; i < scratchGame.length; i ++){
+  if(recognizer.builtInValues.SoftwareGame.indexOf(scratchGame) < 0){
+    recognizer.builtInValues.SoftwareGame.push(scratchGame[i]);
+  }
+}
+recognizer.builtInValues.SoftwareGame.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.SoftwareGame.values);
 
 recognizer.builtInValues.VideoGame = require("./builtinslottypes/videogames.json");
 recognizer.builtInValues.VideoGame.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.VideoGame.values);
+
+recognizer.builtInValues.Game = require("./builtinslottypes/games.json");
+recognizer.builtInValues.Game.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Game.values);
 
 recognizer.builtInValues.FoodEstablishment = require("./builtinslottypes/foodestablishments.json");
 recognizer.builtInValues.FoodEstablishment.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.FoodEstablishment.values);
@@ -394,9 +404,6 @@ recognizer.builtInValues.Service.replacementRegExpString = _makeReplacementRegEx
 
 recognizer.builtInValues.SoftwareApplication = require("./builtinslottypes/softwareapplications.json");
 recognizer.builtInValues.SoftwareApplication.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.SoftwareApplication.values);
-
-recognizer.builtInValues.SoftwareGame = require("./builtinslottypes/softwaregames.json");
-recognizer.builtInValues.SoftwareGame.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.SoftwareGame.values);
 
 recognizer.builtInValues.SportsEvent = require("./builtinslottypes/sportsevents.json");
 recognizer.builtInValues.SportsEvent.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.SportsEvent.values);
@@ -801,7 +808,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.TVEpisode", "TVEpisode", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.TVSeason", "TVSeason", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.TVSeries", "TVSeries", config);
-  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.VideoGame", "VideoGame", config);
+    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.VideoGame", "VideoGame", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Athlete", "Athlete", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.AdministrativeArea", "AdministrativeArea", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Room", "Room", config);
