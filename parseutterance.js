@@ -735,14 +735,15 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
  * @private
  */
 var _getWordEquivalents = function(word, dataSet){
-  if(typeof word != 'string' || typeof dataSet == "undefined" || typeof dataSet.singleWordSynonyms == "undefined"){
+  if(typeof word !== 'string' || typeof dataSet === "undefined" || typeof dataSet.singleWordSynonyms === "undefined"){
     return undefined;
   }
   let wordEquivalents = dataSet.singleWordSynonyms;
   let returnValues = [];
+  returnValues.push(word);
   for(let i = 0; i < wordEquivalents.length; i++){
     let scratch = wordEquivalents[i];
-    if(typeof scratch.synonyms != "undefined" && Array.isArray(scratch.synonyms) && scratch.words.indexOf(word) >= 0){
+    if(typeof scratch.synonyms !== "undefined" && Array.isArray(scratch.synonyms) && scratch.words.indexOf(word) >= 0){
       for(let j = 0; j < scratch.synonyms.length; j++){
         returnValues = returnValues.concat(scratch.synonyms[j].values);
       }
@@ -848,6 +849,30 @@ var _compactMultiWordEquivalentsByFitRating = function(matchesObject){
   }
 };
 
+var _convertArrayToOptionsListOrString = function(arg){
+  if(typeof arg === "undefined"  || arg === null){
+    return "";
+  }
+  if(Array.isArray(arg)){
+    if(arg.length === 0){
+      return "";
+    }
+    if(arg.length === 1){
+      return arg[0];
+    }
+    let returnValue = "{";
+    for(let i = 0; i < arg.length; i++){
+      if(i > 0){
+        returnValue += "|";
+      }
+      returnValue += arg[i];
+    }
+    returnValue += "}";
+    return returnValue;
+  }
+  return "";
+};
+
 /**
  * Call this function to generate an array of permutations of utterances with multi word phrases replaced by option
  * lists.  This function will call itself recursively, creating a cartesian product of sub-results
@@ -867,20 +892,14 @@ var _generatePossibleMultiWordUtterances = function(words, matches, singleWordRe
       if(matches.matches[k].startWordIndex == i){
         // Found a match, get the replacement values, convert to an options list, call this function on the remainder
         // of the words, combine the two, add the result to returnValue.
-        let replacementOptionsList = "{";
-        for(let j = 0; j < matches.matches[k].equivalents.values.length; j++){
-          if(j !== 0){
-            replacementOptionsList +="|";
-          }
-          replacementOptionsList += matches.matches[k].equivalents.values[j];
-        }
-        replacementOptionsList += "}";
+        let replacementOptionsList = _convertArrayToOptionsListOrString(matches.matches[k].equivalents.values);
         if(matches.matches[k].endWordIndex < words.length - 1){
           // There are more words after this match, call this function again, combine with replacementOptionsList
           // and add to returnValue
-          let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, matches[k].endWordIndex + 1);
+          let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, singleWordReplacements, matches.matches[k].endWordIndex + 1);
+          console.log("!!!!! i: " + i + " remainingUtterances: ", JSON.stringify(remainingUtterances, null, 2));
           for(let j = 0; j < remainingUtterances.length; j++){
-            returnValue.push(replacementOptionsList + remainingUtterances[j]);
+            returnValue.push(replacementOptionsList + " " + remainingUtterances[j]);
           }
         }
         else {
@@ -889,10 +908,21 @@ var _generatePossibleMultiWordUtterances = function(words, matches, singleWordRe
       }
     }
     // Now ALSO add the single word replacement to the list
-    let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, i + 1);
-    for(let j = 0; j < remainingUtterances.length; j++){
-      returnValue.push(singleWordReplacements[i] + remainingUtterances[j]);
+    /*
+    if(i === words.length - 1){
+      let replacementOptionsList = _convertArrayToOptionsListOrString(singleWordReplacements[i]);
+      console.log("#####, i: " + i + " appending: " + replacementOptionsList);
+      returnValue.push(replacementOptionsList);
     }
+    else {
+      let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, singleWordReplacements, i + 1);
+      console.log("@@@@@, i: " + i + " remainingUtterances: ", JSON.stringify(remainingUtterances, null, 2));
+      let replacementOptionsList = _convertArrayToOptionsListOrString(singleWordReplacements[i]);
+      for(let j = 0; j < remainingUtterances.length; j++){
+        returnValue.push(replacementOptionsList + " " + remainingUtterances[j]);
+      }
+    }
+    */
   }
   return returnValue;
 };
