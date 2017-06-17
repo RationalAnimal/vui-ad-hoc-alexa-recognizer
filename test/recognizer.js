@@ -3015,7 +3015,9 @@ describe("utterance parser", function() {
       let result = parser.forTesting.findMultiWordEquivalents(["how", "are",  "you"], undefined, defaultDataSet);
       result = parser.forTesting.findMultiWordEquivalents(["how", "are",  "you"], result, defaultDataSet);
       parser.forTesting.compactMultiWordEquivalentsByFitRating(result);
+//      console.log("compacted result: ", JSON.stringify(result, null, 2));
       let wordEquivalents = parser.forTesting.getWordsEquivalentsForDataSets(["how", "are",  "you"], [defaultDataSet]);
+//      console.log("word equivalents: ", JSON.stringify(wordEquivalents));
       let multiWordResult = parser.forTesting.generatePossibleMultiWordUtterances(["how", "are",  "you"], result, wordEquivalents, 0);
       expect(multiWordResult).to.eql([
         "{how are you|how are you doing}",
