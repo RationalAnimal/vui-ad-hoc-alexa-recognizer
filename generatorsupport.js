@@ -345,13 +345,20 @@ let scratchGame = require("./builtinslottypes/videogames.json");
 // Add video games to software games, but without adding duplicates
 recognizer.builtInValues.SoftwareGame = require("./builtinslottypes/softwaregames.json");
 for(let i = 0; i < scratchGame.length; i ++){
-  if(recognizer.builtInValues.SoftwareGame.indexOf(scratchGame) < 0){
+  if(recognizer.builtInValues.SoftwareGame.indexOf(scratchGame[i]) < 0){
     recognizer.builtInValues.SoftwareGame.push(scratchGame[i]);
   }
 }
 recognizer.builtInValues.SoftwareGame.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.SoftwareGame.values);
 
+scratchGame = require("./builtinslottypes/softwaregames.json");
+// Add software games to video games, but without adding duplicates
 recognizer.builtInValues.VideoGame = require("./builtinslottypes/videogames.json");
+for(let i = 0; i < scratchGame.length; i ++){
+  if(recognizer.builtInValues.VideoGame.indexOf(scratchGame[i]) < 0){
+    recognizer.builtInValues.VideoGame.push(scratchGame[i]);
+  }
+}
 recognizer.builtInValues.VideoGame.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.VideoGame.values);
 
 recognizer.builtInValues.Game = require("./builtinslottypes/games.json");
