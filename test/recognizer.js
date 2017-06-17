@@ -153,6 +153,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.VideoGame slot matches", function() {
+      let result = recognizer.Recognizer.matchText("tetris was an early favorite");
+      expect(result).to.eql(
+        {"name": "VideoGameIntent",
+          "slots": {
+            "VideoGameSlot": {
+              "name": "VideoGameSlot",
+              "value": "tetris"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.SportsEvent slot matches", function() {
       let result = recognizer.Recognizer.matchText("a lot of people watch superbowl");
       expect(result).to.eql(

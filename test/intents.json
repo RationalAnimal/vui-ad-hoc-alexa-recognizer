@@ -148,6 +148,15 @@
       ]
     },
     {
+      "intent": "VideoGameIntent",
+      "slots": [
+        {
+          "name": "VideoGameSlot",
+          "type": "AMAZON.VideoGame"
+        }
+      ]
+    },
+    {
       "intent": "SportsEventIntent",
       "slots": [
         {

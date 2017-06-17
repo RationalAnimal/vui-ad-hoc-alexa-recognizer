@@ -286,7 +286,6 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
     }
   }
   regExpString = '';
-  shouldAdd = false;
   // Finally add the full match
   for (let i = 0; i < parsedJson.parsedUtterance.length; i++) {
     if (typeof parsedJson.parsedUtterance[i] === "string") {
@@ -1009,13 +1008,13 @@ var _parseEquivalentText = function(utteranceArray, parsingRange){
           // Here we have the full currentArray - simply push it
           arrayOfArrays.push(currentArray);
         }
-        if(arrayOfArrays.length == 0){
+        if(arrayOfArrays.length === 0){
           return returnValue;
         }
         for(let j = 0; j < arrayOfArrays.length; j ++){
-          if(arrayOfArrays[j].length == 1){
+          if(arrayOfArrays[j].length === 1){
             if(j > 0){
-              if(typeof returnValue[returnValue.length - 1] == "string") {
+              if(typeof returnValue[returnValue.length - 1] === "string") {
                 // concatenate strings rather than pushing the string
                 returnValue[returnValue.length - 1] = returnValue[returnValue.length - 1] + " " + arrayOfArrays[j][0];
               }
@@ -1032,7 +1031,7 @@ var _parseEquivalentText = function(utteranceArray, parsingRange){
           else {
             // Push the text equivalents object, appending or inserting a space if needed.
             if(j > 0){
-              if(typeof returnValue[returnValue.length - 1] == "string") {
+              if(typeof returnValue[returnValue.length - 1] === "string") {
                 // concatenate an extra space to the end
                 returnValue[returnValue.length - 1] = returnValue[returnValue.length - 1] + " ";
               }
