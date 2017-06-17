@@ -362,6 +362,13 @@ for(let i = 0; i < scratchGame.length; i ++){
 recognizer.builtInValues.VideoGame.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.VideoGame.values);
 
 recognizer.builtInValues.Game = require("./builtinslottypes/games.json");
+// Add software games to games, but without adding duplicates
+scratchGame = require("./builtinslottypes/softwaregames.json");
+for(let i = 0; i < scratchGame.length; i ++){
+  if(recognizer.builtInValues.Game.indexOf(scratchGame[i]) < 0){
+    recognizer.builtInValues.Game.push(scratchGame[i]);
+  }
+}
 recognizer.builtInValues.Game.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Game.values);
 
 recognizer.builtInValues.FoodEstablishment = require("./builtinslottypes/foodestablishments.json");
