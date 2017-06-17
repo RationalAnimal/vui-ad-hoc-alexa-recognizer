@@ -848,28 +848,13 @@ var _compactMultiWordEquivalentsByFitRating = function(matchesObject){
   }
 };
 
-var _convertArrayToOptionsListOrString = function(arg){
-  if(typeof arg === "undefined"  || arg === null){
-    return "";
-  }
-  if(Array.isArray(arg)){
-    if(arg.length === 0){
-      return "";
-    }
-    if(arg.length === 1){
-      return arg[0];
-    }
-    let returnValue = "{";
-    for(let i = 0; i < arg.length; i++){
-      if(i > 0){
-        returnValue += "|";
-      }
-      returnValue += arg[i];
-    }
-    returnValue += "}";
+var _convertArrayToEquivalentsObject = function(arg){
+  if(typeof arg !== "undefined" && arg !== null && Array.isArray(arg)){
+    let returnValue = {"type":"equivalents", "equivalents": [].concat(arg)};
+//    console.log("converting array to eq. object: ", JSON.stringify(returnValue, null, 2));
     return returnValue;
   }
-  return "";
+  return [];
 };
 
 /**
@@ -879,46 +864,55 @@ var _convertArrayToOptionsListOrString = function(arg){
  * @param matches - typically the return value of the call to _compactMultiWordEquivalents function.
  * @param startingWord {number} - the index of the word to start with.  This is needed because this function will call
  * itself recursively.
- * @returns {string []} - exhaustive list of utterances with all the possible permutations of replaceable phrases
- * replaces by options lists of their equivalents.
+ * @returns { {"type": "equivalentsSet", "equivalentsSet": []}} - where each entry in the equivalentsSet array is an object
+ * like this: {"equivalents": []}, where "equivalents" array consists of either strings or {"type":"equivalents", "equivalents":string[]}
  * @private
  */
 
 var _generatePossibleMultiWordUtterances = function(words, matches, singleWordReplacements, startingWord){
-  let returnValue = [];
+  let returnValue = {"type": "equivalentsSet", "equivalentsSet": []};
   for(let i = startingWord; i < words.length; i ++){
     for(let k = 0; k < matches.matches.length; k ++){
       if(matches.matches[k].startWordIndex == i){
         // Found a match, get the replacement values, convert to an options list, call this function on the remainder
-        // of the words, combine the two, add the result to returnValue.
-        let replacementOptionsList = _convertArrayToOptionsListOrString(matches.matches[k].equivalents.values);
+        // of the words, combine the two, add the result to returnValue.equivalentsSet.
+        let replacementOptionsList = _convertArrayToEquivalentsObject(matches.matches[k].equivalents.values);
         if(matches.matches[k].endWordIndex < words.length - 1){
           // There are more words after this match, call this function again, combine with replacementOptionsList
-          // and add to returnValue
+          // and add to returnValue.equivalentsSet
           let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, singleWordReplacements, matches.matches[k].endWordIndex + 1);
-          for(let j = 0; j < remainingUtterances.length; j++){
-            returnValue.push(replacementOptionsList + " " + remainingUtterances[j]);
+          for(let j = 0; j < remainingUtterances.equivalentsSet.length; j++){
+            let scratch = {"equivalents":[].concat(replacementOptionsList)};
+            for(let l = 0; l < remainingUtterances.equivalentsSet[j].length; l++){
+              scratch.equivalents = scratch.equivalents.concat(remainingUtterances.equivalentsSet[j]);
+            }
+            returnValue.equivalentsSet.push(scratch);
           }
         }
         else {
-          returnValue.push(replacementOptionsList);
+          returnValue.equivalentsSet.push(replacementOptionsList);
         }
       }
     }
   }
   // Now ALSO add the single word replacement to the list
   if(startingWord === words.length - 1){
-    let replacementOptionsList = _convertArrayToOptionsListOrString(singleWordReplacements[startingWord]);
-    returnValue.push(replacementOptionsList);
+    let replacementOptionsList = _convertArrayToEquivalentsObject(singleWordReplacements[startingWord]);
+    returnValue.equivalentsSet.push({"equivalents": [].concat(replacementOptionsList)});
   }
   else {
     let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, singleWordReplacements, startingWord + 1);
-    let replacementOptionsList = _convertArrayToOptionsListOrString(singleWordReplacements[startingWord]);
-    for(let j = 0; j < remainingUtterances.length; j++){
-      returnValue.push(replacementOptionsList + " " + remainingUtterances[j]);
+    let replacementOptionsList = _convertArrayToEquivalentsObject(singleWordReplacements[startingWord]);
+    for(let j = 0; j < remainingUtterances.equivalentsSet.length; j++){
+      let scratch = {"equivalents":[].concat(replacementOptionsList)};
+      for(let l = 0; l < remainingUtterances.equivalentsSet[j].length; l++){
+        scratch.equivalents = scratch.equivalents.concat(remainingUtterances.equivalentsSet[j]);
+      }
+      returnValue.equivalentsSet.push(scratch);
     }
   }
 
+  console.log("!!!generate: ", JSON.stringify(returnValue, null, 2));
   return returnValue;
 };
 
