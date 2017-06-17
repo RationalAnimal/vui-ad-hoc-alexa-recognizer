@@ -3021,7 +3021,7 @@ describe("utterance parser", function() {
         });
     });
 
-
+/*
     it("verify that we are compacting multi-word equivalents correctly by fit rating when using same dataset", function() {
       let defaultDataSet = require("../equivalents/default.json");
       let result = parser.forTesting.findMultiWordEquivalents(["how", "are",  "you", "today"], undefined, defaultDataSet);
@@ -3035,7 +3035,7 @@ describe("utterance parser", function() {
         "how are you today"
       ]);
     });
-
+*/
 
   });
 });
