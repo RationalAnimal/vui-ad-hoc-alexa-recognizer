@@ -337,6 +337,42 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
   parsedJson.regExpStrings.push(regExpString);
 };
 
+var _makeRegExpForEquivalentsSet = function(equivalentsSet){
+  if(typeof equivalentsSet === "undefined" || equivalentsSet === null || equivalentsSet.type !== "equivalentsSet" || typeof equivalentsSet.equivalentsSet === "undefined" || Array.isArray(equivalentsSet.equivalentsSet) === false){
+    return;
+  }
+  let regExpString = "(?:";
+  for(let i = 0; i < equivalentsSet.equivalentsSet.length; i ++){
+    if(i > 0){
+      regExpString += "|";
+    }
+    regExpString += "(?:";
+    let currentEquivalents = equivalentsSet.equivalentsSet[i];
+    for(let j = 0; j < currentEquivalents.length; j ++){
+      if(j > 0){
+        regExpString += "\\s?";
+      }
+      if(typeof currentEquivalents[j] === "string"){
+        regExpString += currentEquivalents[j];
+      }
+      else if(currentEquivalents[j].type === "equivalents"){
+        let options = currentEquivalents[j].equivalents;
+        regExpString += "(?:";
+        for(let k = 0; k < options.length; k++){
+          if(k > 0){
+            regExpString += "|";
+          }
+          regExpString += options[k];
+        }
+        regExpString += ")";
+      }
+    }
+    regExpString += ")";
+  }
+  regExpString += ")";
+  return regExpString;
+};
+
 var _unfoldParsedJson = function(parsedJson, prependIntentNameOnOutput){
 	let resultArray = [];
 	if(parsedJson.parsedUtterance.length >= 1){
@@ -1211,5 +1247,6 @@ parser.forTesting.getPhraseEquivalents = _getPhraseEquivalents;
 parser.forTesting.findMultiWordEquivalents = _findMultiWordEquivalents;
 parser.forTesting.compactMultiWordEquivalentsByFitRating = _compactMultiWordEquivalentsByFitRating;
 parser.forTesting.generatePossibleMultiWordUtterances = _generatePossibleMultiWordUtterances;
+parser.forTesting.makeRegExpForEquivalentsSet = _makeRegExpForEquivalentsSet;
 
 module.exports = parser;
