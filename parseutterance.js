@@ -438,6 +438,24 @@ var _unfoldParsedJson = function(parsedJson, prependIntentNameOnOutput){
 	return resultArray;
 };
 
+var _unfoldEquivalentsSet = function(parsedEquivalentsSetJson) {
+  let equivalentsSet = parsedEquivalentsSetJson.equivalentsSet;
+  let returnValue = [];
+  for(let i = 0; i < equivalentsSet.length; i++){
+    let currentEquivalents = [""];
+    for(let j = 0; j < equivalentsSet[i].length; j ++){
+      if(typeof equivalentsSet[i][j] === "string"){
+        _multiplyArrays(currentEquivalents, [equivalentsSet[i][j]]);
+      }
+      else if(equivalentsSet[i][j].type === "equivalents") {
+        _multiplyArrays(currentEquivalents, equivalentsSet[i][j].equivalents);
+      }
+    }
+    returnValue = returnValue.concat(currentEquivalents);
+  }
+  return returnValue;
+};
+
 //TODO remove duplicate copies of this and move them to a common js file later
 var _getBuiltInSlotTypeSuffix = function(slotType){
 	return slotType.replace(/^AMAZON\./, '').replace(/^TRANSCEND\./, '');
@@ -523,7 +541,7 @@ var _multiplyArrays = function(sourceTarget, additional){
   // Create additional rows that will later be updated so that the total number of rows = length1 * length2
   for(let i = 1; i < additional.length; i++){
     for(let j = 0; j < originalSourceLength; j++){
-      sourceTarget.push(sourceTarget(j));
+      sourceTarget.push(sourceTarget[j]);
     }
   }
   // Now we have the right number of rows in the sourceTarget array.  We need to loop over all the entries concatenating
@@ -1248,5 +1266,6 @@ parser.forTesting.findMultiWordEquivalents = _findMultiWordEquivalents;
 parser.forTesting.compactMultiWordEquivalentsByFitRating = _compactMultiWordEquivalentsByFitRating;
 parser.forTesting.generatePossibleMultiWordUtterances = _generatePossibleMultiWordUtterances;
 parser.forTesting.makeRegExpForEquivalentsSet = _makeRegExpForEquivalentsSet;
+parser.forTesting.unfoldEquivalentsSet = _unfoldEquivalentsSet;
 
 module.exports = parser;

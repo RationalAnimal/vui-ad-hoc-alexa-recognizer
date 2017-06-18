@@ -3158,6 +3158,7 @@ describe("utterance parser", function() {
       let wordEquivalents = parser.forTesting.getWordsEquivalentsForDataSets(["how", "are", "you", "today"], [defaultDataSet]);
       let multiWordResult = parser.forTesting.generatePossibleMultiWordUtterances(["how", "are", "you", "today"], result, wordEquivalents, 0);
       let regExpString = parser.forTesting.makeRegExpForEquivalentsSet(multiWordResult);
+//      console.log("unfolded: ", JSON.stringify(parser.forTesting.unfoldEquivalentsSet(multiWordResult)));
       expect(regExpString).to.eql("(?:(?:(?:how are you|how are you doing)\\s?today)|(?:(?:hi|hello|good morning|good day|good evening|good night|whats up|hey)\\s?today)|(?:how are you today))");
     });
 
