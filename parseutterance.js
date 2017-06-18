@@ -1005,6 +1005,24 @@ var _generatePossibleMultiWordUtterances = function(words, matches, singleWordRe
   return returnValue;
 };
 
+var _stripRedundantTextEquivalents = function(parsedEquivalentsSetJson){
+  // First see if there is any duplication at all.
+  let unfolded = _unfoldEquivalentsSet(parsedEquivalentsSetJson);
+  unfolded.sort();
+  let duplicateCount = 0;
+  for(let i = 0; i < unfolded.length - 1; i ++){
+    if(unfolded[i] === unfolded[i + 1]){
+      duplicateCount ++;
+    }
+  }
+  if(duplicateCount === 0){
+    return parsedEquivalentsSetJson;
+  }
+  // Here we need to look at removing duplicates.  Note that this may not be possible or even desirable in all cases.
+  console.log("duplicate count: " + duplicateCount);
+  return parsedEquivalentsSetJson;
+};
+
 /**
  * Call to find all the multi word equivalents found in the words array and adds them to previousMatches (if passed in),
  * otherwise to the brand new return object.
