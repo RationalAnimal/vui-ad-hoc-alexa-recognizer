@@ -369,6 +369,13 @@ for(let i = 0; i < scratchGame.length; i ++){
     recognizer.builtInValues.Game.push(scratchGame[i]);
   }
 }
+// Add video games to games, but without adding duplicates
+scratchGame = require("./builtinslottypes/videogames.json");
+for(let i = 0; i < scratchGame.length; i ++){
+  if(recognizer.builtInValues.Game.indexOf(scratchGame[i]) < 0){
+    recognizer.builtInValues.Game.push(scratchGame[i]);
+  }
+}
 recognizer.builtInValues.Game.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Game.values);
 
 recognizer.builtInValues.FoodEstablishment = require("./builtinslottypes/foodestablishments.json");
