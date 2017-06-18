@@ -2943,6 +2943,50 @@ describe("utterance parser", function() {
         });
     });
 
+    it("verify that we are compacting multi-word equivalents correctly using word array that is larger than the matched phrase from a single dataset", function() {
+      let defaultDataSet = require("../equivalents/default.json");
+      let result = parser.forTesting.findMultiWordEquivalents(["how", "are",  "you", "today"], [], defaultDataSet);
+      parser.forTesting.compactMultiWordEquivalentsByFitRating(result);
+
+      expect(result).to.eql(
+        {"matches":
+          [
+            {
+              "phrase":"how are you",
+              "startWordIndex":0,
+              "endWordIndex":2,
+              "equivalents":
+                {
+                  "fitRating":1,
+                  "values":[
+                    "how are you",
+                    "how are you doing"
+                  ]
+                }
+            },
+            {
+              "phrase":"how are you",
+              "startWordIndex":0,
+              "endWordIndex":2,
+              "equivalents":
+                {
+                  "fitRating":0.99,
+                  "values":[
+                    "hi",
+                    "hello",
+                    "good morning",
+                    "good day",
+                    "good evening",
+                    "good night",
+                    "whats up",
+                    "hey"
+                  ]
+                }
+            }
+          ]
+        });
+    });
+
     it("verify that we are finding multi-word equivalents correctly repeated calls using same dataset", function() {
       let defaultDataSet = require("../equivalents/default.json");
       let result = parser.forTesting.findMultiWordEquivalents(["how", "are",  "you"], undefined, defaultDataSet);
@@ -3062,14 +3106,13 @@ describe("utterance parser", function() {
           ]
         });
     });
-/*
+
     it("verify that we are compacting multi-word equivalents correctly by fit rating when using same dataset", function() {
       let defaultDataSet = require("../equivalents/default.json");
-      let result = parser.forTesting.findMultiWordEquivalents(["how are you"], undefined, defaultDataSet);
+      let result = parser.forTesting.findMultiWordEquivalents(["how", "are", "you", "today"], undefined, defaultDataSet);
       parser.forTesting.compactMultiWordEquivalentsByFitRating(result);
-      console.log("@@@ matches, aka result: ", JSON.stringify(result, null, 2));
-      let wordEquivalents = parser.forTesting.getWordsEquivalentsForDataSets(["how are you"], [defaultDataSet]);
-      let multiWordResult = parser.forTesting.generatePossibleMultiWordUtterances(["how are you"], result, wordEquivalents, 0);
+      let wordEquivalents = parser.forTesting.getWordsEquivalentsForDataSets(["how", "are", "you", "today"], [defaultDataSet]);
+      let multiWordResult = parser.forTesting.generatePossibleMultiWordUtterances(["how", "are", "you", "today"], result, wordEquivalents, 0);
       console.log("multiWordResult: ", JSON.stringify(multiWordResult, null, 2));
       expect(multiWordResult).to.eql(
         {
@@ -3082,7 +3125,8 @@ describe("utterance parser", function() {
                   "how are you",
                   "how are you doing"
                 ]
-              }
+              },
+              "today"
             ],
             [
               {
@@ -3097,7 +3141,8 @@ describe("utterance parser", function() {
                   "whats up",
                   "hey"
                 ]
-              }
+              },
+              "today"
             ],
             [
               "how are you today"
@@ -3107,6 +3152,6 @@ describe("utterance parser", function() {
       );
     });
 
-*/
+
   });
 });

@@ -887,7 +887,6 @@ var _generatePossibleMultiWordUtterances = function(words, matches, singleWordRe
           // There are more words after this match, call this function again, combine with replacementOptionsList
           // and add to returnValue.equivalentsSet
           let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, singleWordReplacements, matches.matches[k].endWordIndex + 1);
-          console.log("### remainingUtterances: ", JSON.stringify(remainingUtterances, null, 2));
           for(let j = 0; j < remainingUtterances.equivalentsSet.length; j++){
             let scratch;
             if(typeof replacementOptionsList === "string"){
@@ -924,7 +923,6 @@ var _generatePossibleMultiWordUtterances = function(words, matches, singleWordRe
     let remainingUtterances = _generatePossibleMultiWordUtterances(words, matches, singleWordReplacements, startingWord + 1);
     let replacementOptionsList = _convertArrayToEquivalentsObjectOrString(singleWordReplacements[startingWord]);
     for(let j = 0; j < remainingUtterances.equivalentsSet.length; j++){
-      console.log(">>>j: " + j);
       let scratch = "";
       if(typeof replacementOptionsList === "string"){
         scratch = replacementOptionsList;
@@ -933,7 +931,6 @@ var _generatePossibleMultiWordUtterances = function(words, matches, singleWordRe
         scratch = [].concat(replacementOptionsList);
       }
       for(let l = 0; l < remainingUtterances.equivalentsSet[j].length; l++){
-        console.log(">>>l: " + l);
         if(typeof remainingUtterances.equivalentsSet[j][l] === "string"){
           if(typeof scratch[scratch.length - 1] === "string"){
             scratch[scratch.length - 1] = scratch[scratch.length - 1] + " " + remainingUtterances.equivalentsSet[j][l];
