@@ -3113,7 +3113,6 @@ describe("utterance parser", function() {
       parser.forTesting.compactMultiWordEquivalentsByFitRating(result);
       let wordEquivalents = parser.forTesting.getWordsEquivalentsForDataSets(["how", "are", "you", "today"], [defaultDataSet]);
       let multiWordResult = parser.forTesting.generatePossibleMultiWordUtterances(["how", "are", "you", "today"], result, wordEquivalents, 0);
-      console.log("multiWordResult: ", JSON.stringify(multiWordResult, null, 2));
       expect(multiWordResult).to.eql(
         {
           "type": "equivalentsSet",
@@ -3150,6 +3149,16 @@ describe("utterance parser", function() {
           ]
         }
       );
+    });
+
+    it("verify that we are generating reg exp strings correctly for multi-word equivalents", function() {
+      let defaultDataSet = require("../equivalents/default.json");
+      let result = parser.forTesting.findMultiWordEquivalents(["how", "are", "you", "today"], undefined, defaultDataSet);
+      parser.forTesting.compactMultiWordEquivalentsByFitRating(result);
+      let wordEquivalents = parser.forTesting.getWordsEquivalentsForDataSets(["how", "are", "you", "today"], [defaultDataSet]);
+      let multiWordResult = parser.forTesting.generatePossibleMultiWordUtterances(["how", "are", "you", "today"], result, wordEquivalents, 0);
+      let regExpString = parser.forTesting.makeRegExpForEquivalentsSet(multiWordResult);
+      expect(regExpString).to.eql("(?:(?:(?:how are you|how are you doing)\\s?today)|(?:(?:hi|hello|good morning|good day|good evening|good night|whats up|hey)\\s?today)|(?:how are you today))");
     });
 
 
