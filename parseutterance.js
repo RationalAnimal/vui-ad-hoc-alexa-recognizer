@@ -1020,7 +1020,32 @@ var _stripRedundantTextEquivalents = function(parsedEquivalentsSetJson){
   }
   // Here we need to look at removing duplicates.  Note that this may not be possible or even desirable in all cases.
   console.log("duplicate count: " + duplicateCount);
-  return parsedEquivalentsSetJson;
+  let argCopy = JSON.parse(JSON.stringify(parsedEquivalentsSetJson));
+  let excluded = [];
+  for(let i = 0; i < argCopy.equivalentsSet.length; i++){
+    let partialSet = {"type":"equivalentsSet", "equivalentsSet":[]}
+    for(let j = 0; j < argCopy.equivalentsSet.length; i++){
+      if(j !== i && excluded.indexOf(j) < 0){
+        partialSet.equivalentsSet.push(argCopy.equivalentsSet[j]);
+      }
+    }
+    // Here we have a partial set
+    let unfoldedPartial = _unfoldEquivalentsSet(partialSet);
+    let currentOnly = {"type":"equivalentsSet", "equivalentsSet":[argCopy.equivalentsSet[i]]};
+    let unfoldedCurrent = _unfoldEquivalentsSet(currentOnly);
+    let allDuplicates = true;
+    for(let j = 0; j < unfoldedCurrent.length; j ++){
+      if(unfoldedPartial.indexOf(unfoldedCurrent[j]) < 0){
+        allDuplicates = false;
+      }
+    }
+    if(allDuplicates){
+      // remove the current row from the set
+      argCopy.equivalentsSet.splice(i, 1);
+      i --; // need to decrement so that we can process the "next" item which now becomes the current one.
+    }
+  }
+  return argCopy;
 };
 
 /**
