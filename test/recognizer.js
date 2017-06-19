@@ -3151,6 +3151,48 @@ describe("utterance parser", function() {
       );
     });
 
+    it("verify that we are stripping out duplicates correctly for multi-word equivalents when using same dataset", function() {
+      let defaultDataSet = require("../equivalents/default.json");
+      let result = parser.forTesting.findMultiWordEquivalents(["how", "are", "you", "today"], undefined, defaultDataSet);
+      parser.forTesting.compactMultiWordEquivalentsByFitRating(result);
+      let wordEquivalents = parser.forTesting.getWordsEquivalentsForDataSets(["how", "are", "you", "today"], [defaultDataSet]);
+      let multiWordResult = parser.forTesting.generatePossibleMultiWordUtterances(["how", "are", "you", "today"], result, wordEquivalents, 0);
+      let removedDuplicates = parser.forTesting.stripRedundantTextEquivalents(multiWordResult);
+      expect(removedDuplicates).to.eql(
+        {
+          "type": "equivalentsSet",
+          "equivalentsSet": [
+            [
+              {
+                "type": "equivalents",
+                "equivalents": [
+                  "how are you",
+                  "how are you doing"
+                ]
+              },
+              "today"
+            ],
+            [
+              {
+                "type": "equivalents",
+                "equivalents": [
+                  "hi",
+                  "hello",
+                  "good morning",
+                  "good day",
+                  "good evening",
+                  "good night",
+                  "whats up",
+                  "hey"
+                ]
+              },
+              "today"
+            ]
+          ]
+        }
+      );
+    });
+
     it("verify that we are generating reg exp strings correctly for multi-word equivalents", function() {
       let defaultDataSet = require("../equivalents/default.json");
       let result = parser.forTesting.findMultiWordEquivalents(["how", "are", "you", "today"], undefined, defaultDataSet);

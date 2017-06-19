@@ -1019,12 +1019,12 @@ var _stripRedundantTextEquivalents = function(parsedEquivalentsSetJson){
     return parsedEquivalentsSetJson;
   }
   // Here we need to look at removing duplicates.  Note that this may not be possible or even desirable in all cases.
-  console.log("duplicate count: " + duplicateCount);
+//  console.log("duplicate count: " + duplicateCount);
   let argCopy = JSON.parse(JSON.stringify(parsedEquivalentsSetJson));
   let excluded = [];
   for(let i = 0; i < argCopy.equivalentsSet.length; i++){
-    let partialSet = {"type":"equivalentsSet", "equivalentsSet":[]}
-    for(let j = 0; j < argCopy.equivalentsSet.length; i++){
+    let partialSet = {"type":"equivalentsSet", "equivalentsSet":[]};
+    for(let j = 0; j < argCopy.equivalentsSet.length; j++){
       if(j !== i && excluded.indexOf(j) < 0){
         partialSet.equivalentsSet.push(argCopy.equivalentsSet[j]);
       }
@@ -1041,10 +1041,13 @@ var _stripRedundantTextEquivalents = function(parsedEquivalentsSetJson){
     }
     if(allDuplicates){
       // remove the current row from the set
-      argCopy.equivalentsSet.splice(i, 1);
-      i --; // need to decrement so that we can process the "next" item which now becomes the current one.
+      excluded.push(i);
     }
   }
+  for(let i = excluded.length - 1; i >= 0; i--){
+    argCopy.equivalentsSet.splice(excluded[i], 1);
+  }
+
   return argCopy;
 };
 
@@ -1310,5 +1313,6 @@ parser.forTesting.compactMultiWordEquivalentsByFitRating = _compactMultiWordEqui
 parser.forTesting.generatePossibleMultiWordUtterances = _generatePossibleMultiWordUtterances;
 parser.forTesting.makeRegExpForEquivalentsSet = _makeRegExpForEquivalentsSet;
 parser.forTesting.unfoldEquivalentsSet = _unfoldEquivalentsSet;
+parser.forTesting.stripRedundantTextEquivalents = _stripRedundantTextEquivalents;
 
 module.exports = parser;
