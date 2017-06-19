@@ -1005,6 +1005,25 @@ var _generatePossibleMultiWordUtterances = function(words, matches, singleWordRe
   return returnValue;
 };
 
+/**
+ * Call to get back parsed JSON of the text equivalents, given the string (broken up into words) and an array of
+ * data sets to use for matching.
+ * @param words
+ * @param dataSets
+ * @private
+ */
+var _processParsedEquivalentsWords = function(words, dataSets){
+  let result;
+  for(let i = 0; i < dataSets.length; i ++){
+    result = _findMultiWordEquivalents(words, result, dataSets[i]);
+  }
+  _compactMultiWordEquivalentsByFitRating(result);
+  let wordEquivalents = _getWordsEquivalentsForDataSets(words, dataSets);
+  let multiWordResult = _generatePossibleMultiWordUtterances(words, result, wordEquivalents, 0);
+  let removedDuplicates = _stripRedundantTextEquivalents(multiWordResult);
+  return removedDuplicates;
+};
+
 var _stripRedundantTextEquivalents = function(parsedEquivalentsSetJson){
   // First see if there is any duplication at all.
   let unfolded = _unfoldEquivalentsSet(parsedEquivalentsSetJson);
@@ -1314,5 +1333,6 @@ parser.forTesting.generatePossibleMultiWordUtterances = _generatePossibleMultiWo
 parser.forTesting.makeRegExpForEquivalentsSet = _makeRegExpForEquivalentsSet;
 parser.forTesting.unfoldEquivalentsSet = _unfoldEquivalentsSet;
 parser.forTesting.stripRedundantTextEquivalents = _stripRedundantTextEquivalents;
+parser.forTesting.processParsedEquivalentsWords = _processParsedEquivalentsWords;
 
 module.exports = parser;
