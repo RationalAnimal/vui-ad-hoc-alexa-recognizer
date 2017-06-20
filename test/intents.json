@@ -157,6 +157,15 @@
       ]
     },
     {
+      "intent": "SocialMediaPlatformIntent",
+      "slots": [
+        {
+          "name": "SocialMediaPlatformSlot",
+          "type": "AMAZON.SocialMediaPlatform"
+        }
+      ]
+    },
+    {
       "intent": "SportsEventIntent",
       "slots": [
         {
