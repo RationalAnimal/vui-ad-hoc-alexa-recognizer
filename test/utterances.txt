@@ -80,6 +80,7 @@ ScreeningEventIntent i saw it at {ScreeningEventSlot}
 ServiceIntent {ServiceSlot} is the best local business
 SoftwareApplicationIntent do you use {SoftwareApplicationSlot}
 SoftwareGameIntent a lot of people play {SoftwareGameSlot}
+SocialMediaPlatformIntent a lot of people use {SocialMediaPlatformSlot}
 SportsEventIntent a lot of people watch {SportsEventSlot}
 TVEpisodeIntent a lot of people watched {TVEpisodeSlot}
 TVSeasonIntent {TVSeasonSlot} is the best season of the series

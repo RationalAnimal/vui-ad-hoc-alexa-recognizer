@@ -165,6 +165,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.SocialMediaPlatform slot matches", function() {
+      let result = recognizer.Recognizer.matchText("a lot of people use twitter");
+      expect(result).to.eql(
+        {"name": "SocialMediaPlatformIntent",
+          "slots": {
+            "SocialMediaPlatformSlot": {
+              "name": "SocialMediaPlatformSlot",
+              "value": "twitter"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.SportsEvent slot matches", function() {
       let result = recognizer.Recognizer.matchText("a lot of people watch superbowl");
       expect(result).to.eql(
