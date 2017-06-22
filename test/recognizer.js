@@ -172,7 +172,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           "slots": {
             "SocialMediaPlatformSlot": {
               "name": "SocialMediaPlatformSlot",
-              "value": "twitter"
+              "value": "Twitter"
             }
           }});
     });
