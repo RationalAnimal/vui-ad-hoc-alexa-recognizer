@@ -229,6 +229,11 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
       }
       shouldAdd = true;
     }
+    else if (parsedJson.parsedUtterance[i].type === "equivalentsSet") {
+      regExpString += (wildcardReplacementString);
+      // TODO add the code to add {0,1} to the reg exp if needed
+      shouldAdd = true;
+    }
     else if (parsedJson.parsedUtterance[i].type === "equivalents") {
       regExpString += (wildcardReplacementString);
       for (let l = 0; l < parsedJson.parsedUtterance[i].equivalents.length; l++) {
@@ -1158,6 +1163,10 @@ var _parseEquivalentText = function(utteranceArray, parsingRange){
         parsingRange.end = i;
         words.push(accumulatedValue);
         accumulatedValue = '';
+//        let equivalentsReturnValue = _processParsedEquivalentsWords(words, [defaultEquivalents]);
+//        console.log("returnValue: ", JSON.stringify(equivalentsReturnValue, null, 2));
+//        return equivalentsReturnValue;
+//        /*
         // Now actually create the return value and return it
 //        let returnValue = {"type": "equivalents", "equivalents": []};
         let returnValue = [];
@@ -1217,15 +1226,9 @@ var _parseEquivalentText = function(utteranceArray, parsingRange){
             returnValue.push(scratch);
           }
         }
-        /*
-        for(let j = 1; j < arrayOfArrays.length; j ++){
-          // Multiply only when both the two are arrays of more than 1 elements, else append
-          if()
-          _multiplyArrays(returnValue.equivalents, arrayOfArrays[j]);
-        }
-        */
 //        console.log("equivalent: " + JSON.stringify(returnValue, null, 2));
         return returnValue;
+//        */
 			case ",":
       case ".":
       case "!":

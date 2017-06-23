@@ -2034,9 +2034,9 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
     it("verify that repeated matches work", function() {
-      let result = recognizer.Recognizer.matchText("test me");
-      result = recognizer.Recognizer.matchText("Help");
-      result = recognizer.Recognizer.matchText("One of the minions is stewart");
+      let result1 = recognizer.Recognizer.matchText("test me");
+      result1 = recognizer.Recognizer.matchText("Help");
+      let result = recognizer.Recognizer.matchText("One of the minions is stewart");
       expect(result).to.eql(
         {"name": "MinionIntent",
          "slots": {
@@ -2798,6 +2798,21 @@ describe("utterance parser", function() {
           "AnotherIntent me bleu {SomeOtherSlot} too  that ",
           "AnotherIntent me bleu {SomeOtherSlot} too  the other ",
           "AnotherIntent me bleu {SomeOtherSlot} too "
+        ]);
+    });
+
+    it("verify simple utterance with text equivalents parses and cleans up correctly and then unfolds correctly", function() {
+      let intentSchema = require("./intents.json");
+      let result = parser.parseUtteranceIntoJson("AnotherIntent me {SomeOtherSlot:INCLUDE_VALUES_MATCH} too {~I want}", intentSchema);
+      parser.cleanupParsedUtteranceJson(result, intentSchema);
+      expect(parser.unfoldParsedJson(result, true)).to.eql(
+        [
+          "AnotherIntent me {SomeOtherSlot} too i want",
+          "AnotherIntent me {SomeOtherSlot} too i wish",
+          "AnotherIntent me {SomeOtherSlot} too i like",
+          "AnotherIntent me {SomeOtherSlot} too i would like",
+          "AnotherIntent me {SomeOtherSlot} too i need",
+          "AnotherIntent me {SomeOtherSlot} too i prefer"
         ]);
     });
 
