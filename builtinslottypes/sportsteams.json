@@ -55,6 +55,12 @@
       "priorNames": [],
       "sport": "football",
       "league": "cfl"
+    },
+    {
+      "name": "Arizona Cardinals",
+      "priorNames": ["Chicago Cardinals", "St Louis Cardinals", "St. Louis Cardinals", "Saint Louis Cardinal"],
+      "sport": "football",
+      "league": "nfl"
     }
 
   ]
