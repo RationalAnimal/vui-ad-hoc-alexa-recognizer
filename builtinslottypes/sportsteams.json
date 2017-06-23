@@ -6,55 +6,55 @@
       "name": "BC Lions",
       "priorNames": [],
       "sport": "football",
-      "league": "CFL"
+      "league": "cfl"
     },
     {
       "name": "Calgary Stampeders",
       "priorNames": [],
       "sport": "football",
-      "league": "CFL"
+      "league": "cfl"
     },
     {
       "name": "Edmonton Eskimos",
       "priorNames": [],
       "sport": "football",
-      "league": "CFL"
+      "league": "cfl"
     },
     {
       "name": "Hamilton Tiger-Cats",
       "priorNames": ["Hamilton Tigers", "Hamilton Wildcats"],
       "sport": "football",
-      "league": "CFL"
+      "league": "cfl"
     },
     {
       "name": "Montreal Alouettes",
       "priorNames": ["Baltimore Stallions"],
       "sport": "football",
-      "league": "CFL"
+      "league": "cfl"
     },
     {
       "name": "Ottawa Redblacks",
       "priorNames": [],
       "sport": "football",
-      "league": "CFL"
+      "league": "cfl"
     },
     {
       "name": "Saskatchewan Roughriders",
       "priorNames": [],
       "sport": "football",
-      "league": "CFL"
+      "league": "cfl"
     },
     {
       "name": "Toronto Argonauts",
       "priorNames": [],
       "sport": "football",
-      "league": "CFL"
+      "league": "cfl"
     },
     {
       "name": "Winnipeg Blue Bombers",
       "priorNames": [],
       "sport": "football",
-      "league": "CFL"
+      "league": "cfl"
     }
 
   ]
