@@ -247,7 +247,20 @@
       "priorNames": ["boston redskins"],
       "sport": "football",
       "league": "nfl"
+    },
+    {
+      "name": "Arizona Diamondbacks",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Atlanta Braves",
+      "priorNames": ["boston braves", "milwaukee braves"],
+      "sport": "baseball",
+      "league": "mlb"
     }
+
 
 
   ]
