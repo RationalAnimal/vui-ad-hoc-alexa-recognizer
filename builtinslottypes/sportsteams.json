@@ -259,6 +259,174 @@
       "priorNames": ["boston braves", "milwaukee braves"],
       "sport": "baseball",
       "league": "mlb"
+    },
+    {
+      "name": "Baltimore Orioles",
+      "priorNames": ["milwaukee brewers", "st. louis browns", "st louis browns", "saint louis browns"],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Boston Red Sox",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Chicago Cubs",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Chicago White Sox",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Cincinnati Reds",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Cleveland Indians",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Colorado Rockies",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Detroit Tigers",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Houston Astros",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Kansas City Royals",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Los Angeles Angels",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Los Angeles Dodgers",
+      "priorNames": ["brooklyn dodgers"],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Miami Marlins",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Milwaukee Brewers",
+      "priorNames": ["seattle pilots"],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Minnesota Twins",
+      "priorNames": ["washington senators"],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "New York Mets",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "New York Yankees",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Oakland Athletics",
+      "priorNames": ["philadelphia athletics", "kansas city athletics"],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Philadelphia Phillies",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Pittsburgh Pirates",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "San Diego Padres",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "San Francisco Giants",
+      "priorNames": ["new york giants"],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "St. Louis Cardinals",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Seattle Mariners",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Tampa Bay Rays",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Texas Rangers",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Toronto Blue Jays",
+      "priorNames": [],
+      "sport": "baseball",
+      "league": "mlb"
+    },
+    {
+      "name": "Washington Nationals",
+      "priorNames": ["montreal expos"],
+      "sport": "baseball",
+      "league": "mlb"
     }
 
 
