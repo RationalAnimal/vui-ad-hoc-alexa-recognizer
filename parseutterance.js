@@ -843,6 +843,7 @@ var _getWordEquivalents = function(word, dataSet){
   if(typeof word !== 'string' || typeof dataSet === "undefined" || typeof dataSet.singleWordSynonyms === "undefined"){
     return undefined;
   }
+  word = word.toLowerCase();
   let wordEquivalents = dataSet.singleWordSynonyms;
   let returnValues = [];
   returnValues.push(word);
@@ -1065,14 +1066,20 @@ var _generatePossibleMultiWordUtterances = function(words, matches, singleWordRe
  * @private
  */
 var _processParsedEquivalentsWords = function(words, dataSets){
+//  console.log("_processParsedEquivalentsWords, words: ", JSON.stringify(words, null, 2) );
   let result;
   for(let i = 0; i < dataSets.length; i ++){
     result = _findMultiWordEquivalents(words, result, dataSets[i]);
   }
+//  console.log("_processParsedEquivalentsWords, 1, result: ", JSON.stringify(result, null, 2) );
   _compactMultiWordEquivalentsByFitRating(result);
+//  console.log("_processParsedEquivalentsWords, 2, result: ", JSON.stringify(result, null, 2) );
   let wordEquivalents = _getWordsEquivalentsForDataSets(words, dataSets);
+//  console.log("_processParsedEquivalentsWords, 3, wordEquivalents: ", JSON.stringify(wordEquivalents, null, 2) );
   let multiWordResult = _generatePossibleMultiWordUtterances(words, result, wordEquivalents, 0);
+//  console.log("_processParsedEquivalentsWords, 4, multiWordResult: ", JSON.stringify(multiWordResult, null, 2) );
   let removedDuplicates = _stripRedundantTextEquivalents(multiWordResult);
+//  console.log("_processParsedEquivalentsWords, 5, removedDuplicates: ", JSON.stringify(removedDuplicates, null, 2) );
   return removedDuplicates;
 };
 
