@@ -22,13 +22,13 @@
     },
     {
       "name": "Hamilton Tiger-Cats",
-      "priorNames": ["Hamilton Tigers", "Hamilton Wildcats"],
+      "priorNames": ["hamilton tigers", "hamilton wildcats"],
       "sport": "football",
       "league": "cfl"
     },
     {
       "name": "Montreal Alouettes",
-      "priorNames": ["Baltimore Stallions"],
+      "priorNames": ["baltimore stallions"],
       "sport": "football",
       "league": "cfl"
     },
@@ -58,7 +58,7 @@
     },
     {
       "name": "Arizona Cardinals",
-      "priorNames": ["Chicago Cardinals", "St Louis Cardinals", "St. Louis Cardinals", "Saint Louis Cardinal"],
+      "priorNames": ["chicago cardinals", "st louis cardinals", "st. louis cardinals", "saint louis cardinal"],
       "sport": "football",
       "league": "nfl"
     },
@@ -88,7 +88,7 @@
     },
     {
       "name": "Chicago Bears",
-      "priorNames": ["Decatur Staleys"],
+      "priorNames": ["decatur staleys"],
       "sport": "football",
       "league": "nfl"
     },
@@ -107,6 +107,144 @@
     {
       "name": "Dallas Cowboys",
       "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Denver Broncos",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Detroit Lions",
+      "priorNames": ["portsmouth spartans"],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Green Bay Packers",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Houston Texans",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Indianapolis Colts",
+      "priorNames": ["baltimore colts"],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Jacksonville Jaguars",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Kansas City Chiefs",
+      "priorNames": ["dallas texans"],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Los Angeles Chargers",
+      "priorNames": ["san diego chargers"],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Los Angeles Rams",
+      "priorNames": ["cleveland rams", "st. louis rams", "st louis rams", "saint louis rams"],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Miami Dolphins",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Minnesota Vikings",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "New England Patriots",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "New Orleans Saints",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "New York Giants",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "New York Jets",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Oakland Raiders",
+      "priorNames": ["los angeles raiders"],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Philadelphia Eagles",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Pittsburgh Steelers",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "San Francisco 49ers",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Seattle Seahawks",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Tampa Bay Buccaneers",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Tennessee Titans",
+      "priorNames": ["houston oilers"],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Washington Redskins",
+      "priorNames": ["boston redskins"],
       "sport": "football",
       "league": "nfl"
     }
