@@ -1,0 +1,61 @@
+{
+  "attribution" : "these values were partially taken from https://en.wikipedia.org/wiki/Major_professional_sports_teams_of_the_United_States_and_Canada, content was modified to make it suitable in text matching software and some values have been removed and/or renamed",
+  "license": "This file is released under Creative Commons Attribution-ShareAlike license:  http://creativecommons.org/licenses/by-sa/3.0/",
+  "values": [
+    {
+      "name": "BC Lions",
+      "priorNames": [],
+      "sport": "football",
+      "league": "CFL"
+    },
+    {
+      "name": "Calgary Stampeders",
+      "priorNames": [],
+      "sport": "football",
+      "league": "CFL"
+    },
+    {
+      "name": "Edmonton Eskimos",
+      "priorNames": [],
+      "sport": "football",
+      "league": "CFL"
+    },
+    {
+      "name": "Hamilton Tiger-Cats",
+      "priorNames": ["Hamilton Tigers", "Hamilton Wildcats"],
+      "sport": "football",
+      "league": "CFL"
+    },
+    {
+      "name": "Montreal Alouettes",
+      "priorNames": ["Baltimore Stallions"],
+      "sport": "football",
+      "league": "CFL"
+    },
+    {
+      "name": "Ottawa Redblacks",
+      "priorNames": [],
+      "sport": "football",
+      "league": "CFL"
+    },
+    {
+      "name": "Saskatchewan Roughriders",
+      "priorNames": [],
+      "sport": "football",
+      "league": "CFL"
+    },
+    {
+      "name": "Toronto Argonauts",
+      "priorNames": [],
+      "sport": "football",
+      "league": "CFL"
+    },
+    {
+      "name": "Winnipeg Blue Bombers",
+      "priorNames": [],
+      "sport": "football",
+      "league": "CFL"
+    }
+
+  ]
+}

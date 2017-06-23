@@ -1330,6 +1330,16 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
+    else if(slotType === "TRANSCEND.SportsTeam"){
+      let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.SportsTeam");
+      let scratchValue = returnValue.toUpperCase();
+      for(let i = 0; i < builtInSlotValues.length; i ++){
+        if(builtInSlotValues[i].name.toUpperCase() === scratchValue){
+          returnValue = builtInSlotValues[i].name;
+          break;
+        }
+      }
+    }
     else if(slotType === "TRANSCEND.US_STATE"){
       let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.US_STATE");
       let scratchValue = returnValue.toUpperCase();

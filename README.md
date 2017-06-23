@@ -490,12 +490,15 @@ a wildcard in the matching pattern.
 4. "EXCLUDE_YEAR_ONLY_DATES" - this flag is only applied to the AMAZON.DATE type
 slot and turns off parsing of a single number as a year.  This is useful when
 there are otherwise identical utterances that may match on a number or on a date.  If the year only
-match is allowed then there is no way to differenciate between the two.
+match is allowed then there is no way to differentiate between the two.
 5. "EXCLUDE_NON_STATES" - this flag is only applied to the AMAZON.US_STATE type
 slot and turns off parsing of US territories and D.C.
-6. "COUNTRY", "CONTINENT", "TYPE" - these are parameterized flags (see below).  currently
+6. "COUNTRY", "CONTINENT", "TYPE" - these are parametrized flags (see below).  currently
 they only apply to the AMAZON.Airline slot type and they restrict the matches to
 the specified countries and continents.
+7. "SPORT", "LEAGUE" - these are parametrized flags (see below).  currently
+they only apply to the AMAZON.SportsTeam slot type and they restrict the matches to
+the specified sports and leagues.
 
 If you don't specify any of these, then
 INCLUDE_VALUES_MATCH and EXCLUDE_WILDCARD_MATCH will be used as the default.  Also,
@@ -531,7 +534,7 @@ than intent level.
 Also, you should probably NOT specify wildcard matches on slots of many of the
 built in intents, such as date or number - this will likely not end well and
 it doesn't make sense. For this reason, parsing ignores these flags at this
-time on these slot types.  Parsing will also ignore SOUNDEX_MATCH on non-custom
+time on most of these slot types.  Parsing will also ignore SOUNDEX_MATCH on non-custom
 slot types (though this may be added in the future for some built in types).
 
 In the future there will be other flags added, possibly specific to
@@ -916,7 +919,7 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with all the numbers/date/time/duration built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.DURATION
-5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Country, AMAZON.Room, AMAZON.Month, AMAZON.DayOfWeek, AMAZON.Color, AMAZON.Airline (initial implementation - all US, Canadian, and Mexican airlines only), AMAZON.SocialMediaPlatform
+5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Airline (all US, Canadian, and Mexican airlines only), AMAZON.Color, AMAZON.Country, AMAZON.DayOfWeek, AMAZON.Month, AMAZON.Room, AMAZON.SocialMediaPlatform, AMAZON.SportsTeam (initial implementation - CFL teams only)
 6. Utterances with these list built in slot types with nominal support (see Nominal Support section): AMAZON.Actor, AMAZON.AdministrativeArea, AMAZON.Artist, AMAZON.Athlete, AMAZON.Author, AMAZON.Book, AMAZON.BookSeries, AMAZON.BroadcastChannel, AMAZON.CivicStructure, AMAZON.Comic, AMAZON.Corporation, AMAZON.Dessert, AMAZON.Director, AMAZON.EducationalOrganization, AMAZON.Festival, AMAZON.FictionalCharacter, AMAZON.FoodEstablishment, AMAZON.Game, AMAZON.Landform, AMAZON.LandmarksOrHistoricalBuildings, AMAZON.LocalBusiness, AMAZON.LocalBusinessType, AMAZON.MedicalOrganization, AMAZON.Movie, AMAZON.MovieSeries, AMAZON.MovieTheater, AMAZON.MusicAlbum, AMAZON.MusicGroup, AMAZON.Musician, AMAZON.MusicRecording, AMAZON.MusicVenue, AMAZON.MusicVideo, AMAZON.Organization, AMAZON.Person, AMAZON.Professional, AMAZON.Residence, AMAZON.ScreeningEvent, AMAZON.Service, AMAZON.SoftwareApplication, AMAZON.SoftwareGame, AMAZON.SportsEvent, AMAZON.TVEpisode, AMAZON.TVSeason, AMAZON.TVSeries, AMAZON.VideoGame
 
 More Amazon built in slot types are coming shortly
