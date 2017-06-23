@@ -61,7 +61,56 @@
       "priorNames": ["Chicago Cardinals", "St Louis Cardinals", "St. Louis Cardinals", "Saint Louis Cardinal"],
       "sport": "football",
       "league": "nfl"
+    },
+    {
+      "name": "Atlanta Falcons",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Baltimore Ravens",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Buffalo Bills",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Carolina Panthers",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Chicago Bears",
+      "priorNames": ["Decatur Staleys"],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Cincinnati Bengals",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Cleveland Browns",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
+    },
+    {
+      "name": "Dallas Cowboys",
+      "priorNames": [],
+      "sport": "football",
+      "league": "nfl"
     }
+
 
   ]
 }

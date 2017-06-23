@@ -1,6 +1,6 @@
 {
   "name": "vui-ad-hoc-alexa-recognizer",
-  "version": "0.7.170",
+  "version": "0.7.171",
   "description": "npm module that provides 'recognizer' functionality for parsing user spoken text and maps it to Alexa intents. Useful for converting/porting Alexa skills to Cortana or Google assistant/home. Can be used by itself or included into other vui-xxx projects.",
   "main": "index.js",
   "scripts": {
