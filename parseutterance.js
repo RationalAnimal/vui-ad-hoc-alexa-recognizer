@@ -234,6 +234,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
       // TODO add the code to add {0,1} to the reg exp if needed
       shouldAdd = true;
     }
+    // TODO once equivalentsSet is working, remove equivalents
     else if (parsedJson.parsedUtterance[i].type === "equivalents") {
       regExpString += (wildcardReplacementString);
       for (let l = 0; l < parsedJson.parsedUtterance[i].equivalents.length; l++) {
@@ -281,6 +282,10 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
         regExpString += "{0,1}";
       }
     }
+    else if (parsedJson.parsedUtterance[i].type === "equivalentsSet") {
+      regExpString += _makeRegExpForEquivalentsSet(parsedJson.parsedUtterance[i]);
+    }
+    // TODO once equivalentsSet is working, remove equivalents
     else if (parsedJson.parsedUtterance[i].type === "equivalents") {
       regExpString += "(?:";
       for (let j = 0; j < parsedJson.parsedUtterance[i].equivalents.length; j++) {
@@ -329,7 +334,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
           regExpString += parsedJson.parsedUtterance[i].options[j];
         }
         else {
-          regExpString += "\\s??"
+          regExpString += "\\s??";
           addZeroOccurrence = true;
         }
       }
@@ -338,6 +343,10 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
         regExpString += "{0,1}";
       }
     }
+    else if (parsedJson.parsedUtterance[i].type === "equivalentsSet") {
+      regExpString += _makeRegExpForEquivalentsSet(parsedJson.parsedUtterance[i]);
+    }
+    // TODO once equivalentsSet is working, remove equivalents
     else if (parsedJson.parsedUtterance[i].type === "equivalents") {
       regExpString += "(?:";
       for (let j = 0; j < parsedJson.parsedUtterance[i].equivalents.length; j++) {
@@ -348,7 +357,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
           regExpString += parsedJson.parsedUtterance[i].equivalents[j];
         }
         else {
-          regExpString += "\\s??"
+          regExpString += "\\s??";
           addZeroOccurrence = true;
         }
       }
