@@ -231,7 +231,23 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
     }
     else if (parsedJson.parsedUtterance[i].type === "equivalentsSet") {
       regExpString += (wildcardReplacementString);
-      // TODO add the code to add {0,1} to the reg exp if needed
+      // Logic - go through all the individual entries in the set,
+      // for each, check if it's a string then it's an empty string (or all spaces) and if it's
+      // an equivalents object, then it has an empty string among its equivalents.
+      let scratch = true;
+      for(let l = 0; l < parsedJson.parsedUtterance[i].equivalentsSet.length; l ++){
+        if(typeof parsedJson.parsedUtterance[i].equivalentsSet[l] === "string" && parsedJson.parsedUtterance[i].equivalentsSet[l].trim() !== ""){
+          scratch = false;
+          break;
+        }
+        else if(parsedJson.parsedUtterance[i].equivalentsSet[l].type === "equivalents" && parsedJson.parsedUtterance[i].equivalentsSet[l].equivalents.indexOf("") < 0){
+          scratch = false;
+          break;
+        }
+      }
+      if(scratch){
+        regExpString += "{0,1}";
+      }
       shouldAdd = true;
     }
     // TODO once equivalentsSet is working, remove equivalents
