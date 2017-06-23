@@ -23,7 +23,7 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-'use strict'
+'use strict';
 var fs = require('fs');
 var soundex = require('./soundex.js');
 var utilities = require('./utilities.js');
@@ -255,6 +255,8 @@ recognizer.builtInValues.US_STATE = require("./builtinslottypes/usstates.json");
 recognizer.builtInValues.US_PRESIDENT = require("./builtinslottypes/uspresidents.json");
 
 recognizer.builtInValues.Airline = require("./builtinslottypes/airlines.json");
+
+recognizer.builtInValues.SportsTeam = require("./builtinslottypes/sportsteams.json");
 
 recognizer.builtInValues.US_FIRST_NAME = require("./builtinslottypes/usfirstnames.json");
 recognizer.builtInValues.US_FIRST_NAME.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.US_FIRST_NAME.values);
@@ -571,6 +573,45 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
             return replacementRegExpString;
         }
     }
+    else if(slotType === "TRANSCEND.SportsTeam"){
+      // Ignore SOUNDEX_MATCH flag for now
+      let hasWildCardMatch = false;
+      let hasSportFlag = false;
+      let sports = [];
+      let hasLeagueFlag = false;
+      let leagues = [];
+      for(let i = 0; i < slotFlags.length; i++){
+        if(slotFlags[i].name === "SPORT"){
+          hasSportFlag = true;
+          sports = slotFlags[i].parameters;
+        }
+        else if(slotFlags[i].name === "LEAGUE"){
+          hasLeagueFlag = true;
+          leagues = slotFlags[i].parameters;
+        }
+        else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+          hasWildCardMatch = true;
+        }
+      }
+      if(hasWildCardMatch){
+        // numbers are used in cases of some names
+        return "((?:\\w|\\s|[0-9]|\-)+)";
+      }
+      else {
+        let allSportsTeams = [];
+        for(let i = 0; i < recognizer.builtInValues.SportsTeam.values.length; i ++){
+          if(hasSportFlag && sports.indexOf(recognizer.builtInValues.SportsTeam.values[i].sport) < 0){
+            continue;
+          }
+          if(hasLeagueFlag && leagues.indexOf(recognizer.builtInValues.SportsTeam.values[i].league) < 0){
+            continue;
+          }
+          allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].name);
+        }
+        let replacementRegExpString = _makeReplacementRegExpString(allSportsTeams);
+        return replacementRegExpString;
+      }
+    }
     else if(simpleSlots.indexOf(slotType) >= 0){
         return getSimpleRegExpForBuiltInSlotType(slotType, slotFlags);
     }
@@ -843,6 +884,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_PRESIDENT", "US_PRESIDENT", config, true, true);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_STATE", "US_STATE", config, true, true);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Airline", "Airline", config, true, true);
+    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SportsTeam", "SportsTeam", config, true, true);
     // Don't update the values from the config files for these slot types
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Month", "Month", config, true);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.DayOfWeek", "DayOfWeek", config, true);

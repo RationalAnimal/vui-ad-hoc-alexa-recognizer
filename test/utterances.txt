@@ -19,6 +19,7 @@ AirlineIntent {AirlineSlot:COUNTRY ( [ "mexico" ] ) , CONTINENT(["north america"
 AirlineIntent {AirlineSlot:CONTINENT(["north america"])} is a north american airline
 AirlineIntent {AirlineSlot:CONTINENT(["south america"])} is a south american airline
 AirlineIntent {AirlineSlot:TYPE(["cargo"])} is a cargo airline
+SportsTeamIntent {SportsTeamSlot} is a sports team
 FourDigitIntent here is {FooSlot:INCLUDE_WILDCARD_MATCH} test
 FourDigitIntent {FooSlot}
 BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it

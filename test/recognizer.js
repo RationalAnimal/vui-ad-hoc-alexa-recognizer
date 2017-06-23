@@ -841,6 +841,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         }});
     });
+    it("verify simple utterance with an AMAZON.SportsTeam slot matches", function() {
+      let result = recognizer.Recognizer.matchText("Toronto Argonauts is a sports team");
+      expect(result).to.eql(
+        {"name": "SportsTeamIntent",
+          "slots": {
+            "SportsTeamSlot": {
+              "name": "SportsTeamSlot",
+              "value": "Toronto Argonauts"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.Airline slot matches", function() {
       let result = recognizer.Recognizer.matchText("is JetBlue Airways a budget airline");
       expect(result).to.eql(

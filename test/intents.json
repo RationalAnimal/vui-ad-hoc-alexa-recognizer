@@ -602,6 +602,15 @@
       ]
     },
     {
+      "intent": "SportsTeamIntent",
+      "slots": [
+        {
+          "name": "SportsTeamSlot",
+          "type": "AMAZON.SportsTeam"
+        }
+      ]
+    },
+    {
       "intent": "DurationIntent",
       "slots": [
         {

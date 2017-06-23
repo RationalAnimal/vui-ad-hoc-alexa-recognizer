@@ -100,7 +100,27 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 					_removeFlag("EXCLUDE_NON_STATES", parsedJson.parsedUtterance[i].name, parsedJson)
 				}
 			}
-			// Remove COUNTRY if this is NOT a built in Airline type.
+      // Remove SPORT if this is NOT a built in SportsTeam type.
+      if(_hasFlag("SPORT", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "SportsTeam" ){
+          // We are all set, this is allowed
+        }
+        else {
+          // Remove it
+          _removeFlag("SPORT", parsedJson.parsedUtterance[i].name, parsedJson)
+        }
+      }
+      // Remove LEAGUE if this is NOT a built in SportsTeam type.
+      if(_hasFlag("LEAGUE", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "SportsTeam" ){
+          // We are all set, this is allowed
+        }
+        else {
+          // Remove it
+          _removeFlag("LEAGUE", parsedJson.parsedUtterance[i].name, parsedJson)
+        }
+      }
+      // Remove COUNTRY if this is NOT a built in Airline type.
 			if(_hasFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)){
 				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airline" ){
 					// We are all set, this is allowed
