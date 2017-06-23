@@ -388,6 +388,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
 };
 
 var _makeRegExpForEquivalentsSet = function(equivalentsSet){
+//  console.log("makeRegExpForEquivalentsSet: ", JSON.stringify(equivalentsSet, null, 2));
   if(typeof equivalentsSet === "undefined" || equivalentsSet === null || equivalentsSet.type !== "equivalentsSet" || typeof equivalentsSet.equivalentsSet === "undefined" || Array.isArray(equivalentsSet.equivalentsSet) === false){
     return;
   }
@@ -420,6 +421,7 @@ var _makeRegExpForEquivalentsSet = function(equivalentsSet){
     regExpString += ")";
   }
   regExpString += ")";
+//  console.log("makeRegExpForEquivalentsSet: " + regExpString);
   return regExpString;
 };
 
