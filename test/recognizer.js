@@ -911,6 +911,31 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.SportsTeam slot with a sport parameter matches", function() {
+      let result = recognizer.Recognizer.matchText("Boston Celtics is a basketball sports team");
+      expect(result).to.eql(
+        {"name": "SportsTeamIntent",
+          "slots": {
+            "SportsTeamSlot": {
+              "name": "SportsTeamSlot",
+              "value": "Boston Celtics"
+            }
+          }});
+    });
+
+    it("verify simple utterance with an AMAZON.SportsTeam slot with a sport parameter matches", function() {
+      let result = recognizer.Recognizer.matchText("Boston Bruins is a hockey sports team");
+      expect(result).to.eql(
+        {"name": "SportsTeamIntent",
+          "slots": {
+            "SportsTeamSlot": {
+              "name": "SportsTeamSlot",
+              "value": "Boston Bruins"
+            }
+          }});
+    });
+
+
     it("verify simple utterance with an AMAZON.Airline slot matches", function() {
       let result = recognizer.Recognizer.matchText("is JetBlue Airways a budget airline");
       expect(result).to.eql(

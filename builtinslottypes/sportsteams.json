@@ -637,7 +637,44 @@
       "priorNames": ["atlanta flames"],
       "sport": "hockey",
       "league": "nhl"
+    },
+    {
+      "name": "Carolina Hurricanes",
+      "priorNames": ["hartford whalers"],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Chicago Blackhawks",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Colorado Avalanche",
+      "priorNames": ["quebec nordiques"],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Columbus Blue Jackets",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Dallas Stars",
+      "priorNames": ["minnesota north stars"],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Detroit Red Wings",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
     }
+
 
 
 
