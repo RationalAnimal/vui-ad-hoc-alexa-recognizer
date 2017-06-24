@@ -909,14 +909,15 @@ var _getWordsEquivalentsForDataSets = function(words, dataSets){
  * @private
  */
 var _getPhraseEquivalents = function(phrase, dataSet){
-  if(typeof phrase != 'string' || typeof dataSet == "undefined" || typeof dataSet.equivalentPhrases == "undefined"){
+  phrase = phrase.toLowerCase();
+  if(typeof phrase !== 'string' || typeof dataSet === "undefined" || typeof dataSet.equivalentPhrases === "undefined"){
     return undefined;
   }
   let equivalentPhrases = dataSet.equivalentPhrases;
   let returnValues = [];
   for(let i = 0; i < equivalentPhrases.length; i++){
     let scratch = equivalentPhrases[i];
-    if(typeof scratch.phrases != "undefined" && Array.isArray(scratch.phrases) && scratch.phrases.indexOf(phrase) >= 0){
+    if(typeof scratch.phrases !== "undefined" && Array.isArray(scratch.phrases) && scratch.phrases.indexOf(phrase) >= 0){
       for(let j = 0; j < scratch.equivalents.length; j++){
         returnValues.push(scratch.equivalents[j]);
       }
@@ -1159,10 +1160,11 @@ var _stripRedundantTextEquivalents = function(parsedEquivalentsSetJson){
  */
 var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
 //  console.log("_findMultiWordEquivalents, 1, previousMatches: " + JSON.stringify(previousMatches));
-  let returnValue = (typeof previousMatches != "undefined" && typeof previousMatches.matches !== "undefined" && Array.isArray(previousMatches.matches) ? previousMatches : {"matches":[]});
+  let returnValue = (typeof previousMatches !== "undefined" && typeof previousMatches.matches !== "undefined" && Array.isArray(previousMatches.matches) ? previousMatches : {"matches":[]});
 //  console.log("_findMultiWordEquivalents, 2, returnValue: " + JSON.stringify(returnValue));
   let dataSetPhrases = dataSet.equivalentPhrases;
-  if(typeof dataSetPhrases == "undefined" || Array.isArray(dataSetPhrases) == false){
+  if(typeof dataSetPhrases === "undefined" || Array.isArray(dataSetPhrases) === false){
+//    console.log("exiting _findMultiWordEquivalents, 1, dataSet: ", JSON.stringify(dataSet, null, 2));
     return returnValue;
   }
   for(let i = 0; i < words.length; i ++){
@@ -1176,6 +1178,7 @@ var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
       }
       // Now we have a phrase - find it in the dataSet
       let found = _getPhraseEquivalents(currentPhrase, dataSet);
+//      console.log("_findMultiWordEquivalents, found: ", JSON.stringify(found, null, 2));
       // "unfold" the found values
       for(let l = 0; l < found.length; l ++){
         let match = {"phrase": currentPhrase, "startWordIndex": i, "endWordIndex":j, "equivalents": found[l]};
