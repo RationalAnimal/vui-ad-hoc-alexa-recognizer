@@ -631,7 +631,7 @@ Result was saved to testutterances.txt
 You can now import testutterances.txt into the Alexa developer console.
 
 Note that not only will alexifyutterances.js remove flags, it will also "unfold"
-options lists into multiple utterances so that you can use them with Alexa.
+options lists into multiple utterances as well as "unfold" any text equivalents so that you can use them with Alexa.
 This feature would be useful even if you only want to use this module to
 reduce the tedium of entering multiple lines into Alexa and don't even
 intent to create your own chat bot or convert your Alexa skill.
