@@ -92,3 +92,4 @@ TVSeasonIntent {TVSeasonSlot} is the best season of the series
 TVSeriesIntent {TVSeriesSlot} is very popular
 VideoGameIntent {VideoGameSlot} was an early favorite
 HiIntent {~Hi what is the time please}
+EquivalentsIntent {~How are you today my friend can you please tell me what I want today}

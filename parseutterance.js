@@ -1218,10 +1218,10 @@ var _parseEquivalentText = function(utteranceArray, parsingRange){
         parsingRange.end = i;
         words.push(accumulatedValue);
         accumulatedValue = '';
-//        let equivalentsReturnValue = _processParsedEquivalentsWords(words, [defaultEquivalents]);
+        let equivalentsReturnValue = _processParsedEquivalentsWords(words, [defaultEquivalents]);
 //        console.log("returnValue: ", JSON.stringify(equivalentsReturnValue, null, 2));
-//        return equivalentsReturnValue;
-//        /*
+        return equivalentsReturnValue;
+        /* TODO REMOVE THIS OLDER CODE THAT WORKS FOR SINGLE WORD EQUIVALENTS ONLY
         // Now actually create the return value and return it
 //        let returnValue = {"type": "equivalents", "equivalents": []};
         let returnValue = [];
@@ -1283,7 +1283,7 @@ var _parseEquivalentText = function(utteranceArray, parsingRange){
         }
 //        console.log("equivalent: " + JSON.stringify(returnValue, null, 2));
         return returnValue;
-//        */
+        */
 			case ",":
       case ".":
       case "!":

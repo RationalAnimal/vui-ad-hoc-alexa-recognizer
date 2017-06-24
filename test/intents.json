@@ -631,6 +631,10 @@
     {
       "intent": "HiIntent",
       "slots": []
+    },
+    {
+      "intent": "EquivalentsIntent",
+      "slots": []
     }
 
   ]

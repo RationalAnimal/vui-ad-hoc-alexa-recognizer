@@ -2813,6 +2813,15 @@ describe("utterance parser", function() {
         ]);
     });
 
+    it("verify that an intent with various text equivalents will parse correctly", function() {
+      let result = recognizer.Recognizer.matchText("Hi today my friend can you please tell me what I would like today");
+      expect(result).to.eql(
+        {
+          "name": "EquivalentsIntent",
+          "slots": {}
+        });
+    });
+/*
     it("verify simple utterance with text equivalents parses and cleans up correctly and then unfolds correctly", function() {
       let intentSchema = require("./intents.json");
       let result = parser.parseUtteranceIntoJson("AnotherIntent {~How are you} today {SomeOtherSlot:INCLUDE_VALUES_MATCH} too {~I want}", intentSchema);
@@ -2830,7 +2839,7 @@ describe("utterance parser", function() {
           "AnotherIntent how are you today {SomeOtherSlot} too i prefer"
         ]);
     });
-
+*/
     it("verify simple utterance two options lists and a custom slot parses and cleans up correctly and adds reg exp strings correctly", function() {
       let intentSchema = require("./intents.json");
       let result = parser.parseUtteranceIntoJson("AnotherIntent me {blah|bleh|bleu} {SomeOtherSlot:INCLUDE_VALUES_MATCH} too { this | that | the other }", intentSchema);
