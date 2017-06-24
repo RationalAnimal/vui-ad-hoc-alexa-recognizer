@@ -607,6 +607,36 @@
       "priorNames": ["chicago packers/zephyrs", "chicago packers", "chicago zephyrs", "chicago packers zephyrs", "baltimore bullets", "capital bullets", "washington bullets"],
       "sport": "basketball",
       "league": "nba"
+    },
+    {
+      "name": "Anaheim Ducks",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Arizona Coyotes",
+      "priorNames": ["winnipeg jets"],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Boston Bruins",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Buffalo Sabres",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Calgary Flames",
+      "priorNames": ["atlanta flames"],
+      "sport": "hockey",
+      "league": "nhl"
     }
 
 
