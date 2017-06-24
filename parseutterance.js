@@ -439,6 +439,12 @@ var _unfoldParsedJson = function(parsedJson, prependIntentNameOnOutput){
 				resultArray.push(parsedJson.parsedUtterance[0].options[i]);
 			}
 		}
+    else if(parsedJson.parsedUtterance[0].type === "equivalentsSet"){
+      let scratchUnfolded = _unfoldEquivalentsSet(parsedJson.parsedUtterance[0]);
+      for(let i = 0; i < scratchUnfolded.length; i++){
+        resultArray.push(scratchUnfolded[i]);
+      }
+    }
     else if(parsedJson.parsedUtterance[0].type === "equivalents"){
       for(let i = 0; i < parsedJson.parsedUtterance[0].equivalents.length; i++){
         resultArray.push(parsedJson.parsedUtterance[0].equivalents[i]);
@@ -468,6 +474,18 @@ var _unfoldParsedJson = function(parsedJson, prependIntentNameOnOutput){
 				}
 				resultArray = newResultArray;
 			}
+			else if(parsedJson.parsedUtterance[i].type === "equivalentsSet"){
+			  let scratchUnfolded = _unfoldEquivalentsSet(parsedJson.parsedUtterance[i]);
+        let currentArraySize = resultArray.length;
+        let equivalentsSize = scratchUnfolded.length;
+        let newResultArray = [];
+        for(let j = 0; j < currentArraySize; j++){
+          for(let k = 0; k < equivalentsSize; k++){
+            newResultArray.push(resultArray[j] + scratchUnfolded[k]);
+          }
+        }
+        resultArray = newResultArray;
+      }
       else if(parsedJson.parsedUtterance[i].type === "equivalents"){
         let currentArraySize = resultArray.length;
         let equivalentsSize = parsedJson.parsedUtterance[i].equivalents.length;
