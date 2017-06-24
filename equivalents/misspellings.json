@@ -1,0 +1,13 @@
+{
+  "attribution" : "these values were partially taken from https://en.wikipedia.org/wiki/Commonly_misspelled_English_words, content was modified to make it suitable in text matching software and some values have been removed and/or renamed",
+  "license": "This file is released under Creative Commons Attribution-ShareAlike license:  http://creativecommons.org/licenses/by-sa/3.0/",
+  "singleWordSynonyms":[
+    {
+      "words":["absence"],
+      "synonyms":[
+        {"fitRating":1, "values":["absence", "absense"]},
+        {"fitRating":0.95, "values":["absance"]}
+      ]
+    }
+  ]
+}
