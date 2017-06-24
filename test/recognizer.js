@@ -2815,16 +2815,19 @@ describe("utterance parser", function() {
 
     it("verify simple utterance with text equivalents parses and cleans up correctly and then unfolds correctly", function() {
       let intentSchema = require("./intents.json");
-      let result = parser.parseUtteranceIntoJson("AnotherIntent me {SomeOtherSlot:INCLUDE_VALUES_MATCH} too {~I want}", intentSchema);
+      let result = parser.parseUtteranceIntoJson("AnotherIntent {~How are you} today {SomeOtherSlot:INCLUDE_VALUES_MATCH} too {~I want}", intentSchema);
+//      console.log("result: ", JSON.stringify(result, null, 2));
+//      let unfolded = parser.forTesting.unfoldEquivalentsSet(result.parsedUtterance[4]);
+//      console.log("unfolded: ", JSON.stringify(unfolded, null, 2));
       parser.cleanupParsedUtteranceJson(result, intentSchema);
       expect(parser.unfoldParsedJson(result, true)).to.eql(
         [
-          "AnotherIntent me {SomeOtherSlot} too i want",
-          "AnotherIntent me {SomeOtherSlot} too i wish",
-          "AnotherIntent me {SomeOtherSlot} too i like",
-          "AnotherIntent me {SomeOtherSlot} too i would like",
-          "AnotherIntent me {SomeOtherSlot} too i need",
-          "AnotherIntent me {SomeOtherSlot} too i prefer"
+          "AnotherIntent how are you today {SomeOtherSlot} too i want",
+          "AnotherIntent how are you today {SomeOtherSlot} too i wish",
+          "AnotherIntent how are you today {SomeOtherSlot} too i like",
+          "AnotherIntent how are you today {SomeOtherSlot} too i would like",
+          "AnotherIntent how are you today {SomeOtherSlot} too i need",
+          "AnotherIntent how are you today {SomeOtherSlot} too i prefer"
         ]);
     });
 
