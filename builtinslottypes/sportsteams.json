@@ -429,7 +429,37 @@
       "league": "mlb"
     },
     {
+      "name": "Atlanta Hawks",
+      "priorNames": ["tri-cities blackhawks", "milwaukee hawks", "st. louis hawks", "st louis hawks", "saint louis hawks"],
+      "sport": "basketball",
+      "league": "nba"
+    },
+    {
       "name": "Boston Celtics",
+      "priorNames": [],
+      "sport": "basketball",
+      "league": "nba"
+    },
+    {
+      "name": "Brooklyn Netss",
+      "priorNames": ["new jersey americans", "new york nets", "new jersey nets"],
+      "sport": "basketball",
+      "league": "nba"
+    },
+    {
+      "name": "Charlotte Hornets",
+      "priorNames": [],
+      "sport": "basketball",
+      "league": "nba"
+    },
+    {
+      "name": "Chicago Bulls",
+      "priorNames": [],
+      "sport": "basketball",
+      "league": "nba"
+    },
+    {
+      "name": "Cleveland Cavaliers",
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
