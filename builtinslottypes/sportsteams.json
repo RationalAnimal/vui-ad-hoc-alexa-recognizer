@@ -427,6 +427,12 @@
       "priorNames": ["montreal expos"],
       "sport": "baseball",
       "league": "mlb"
+    },
+    {
+      "name": "Boston Celtics",
+      "priorNames": [],
+      "sport": "basketball",
+      "league": "nba"
     }
 
 
