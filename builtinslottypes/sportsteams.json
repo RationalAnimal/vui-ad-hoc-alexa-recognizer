@@ -673,6 +673,128 @@
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
+    },
+
+
+    {
+      "name": "Edmonton Oilers",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Florida Panthers",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Los Angeles Kings",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Minnesota Wild",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Montreal Canadiens",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Nashville Predators",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "New Jersey Devils",
+      "priorNames": ["kansas city scouts", "colorado rockies"],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "New York Islanders",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "New York Rangers",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Ottawa Senators",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Philadelphia Flyers",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Pittsburgh Penguins",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "San Jose Sharks",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "St. Louis Blues",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Tampa Bay Lightning",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Toronto Maple Leafs",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Vancouver Canucks",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Vegas Golden Knights",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Washington Capitals",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "nhl"
+    },
+    {
+      "name": "Winnipeg Jets",
+      "priorNames": ["atlanta thrashers"],
+      "sport": "hockey",
+      "league": "nhl"
     }
 
 
