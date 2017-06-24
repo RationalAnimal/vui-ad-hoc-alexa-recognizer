@@ -8,6 +8,39 @@
         {"fitRating":1, "values":["absence", "absense"]},
         {"fitRating":0.95, "values":["absance"]}
       ]
+    },
+    {
+      "words":["acceptable"],
+      "synonyms":[
+        {"fitRating":1, "values":["acceptable", "acceptible"]}
+      ]
+    },
+    {
+      "words":["accidentally", "accidently"],
+      "synonyms":[
+        {"fitRating":1, "values":["accidentally", "accidently", "accidentaly"]}
+      ]
+    },
+    {
+      "words":["accommodate"],
+      "synonyms":[
+        {"fitRating":1, "values":["accommodate", "accomodate", "acommodate", "acomodate"]}
+      ]
+    },
+    {
+      "words":["achieve"],
+      "synonyms":[
+        {"fitRating":1, "values":["achieve"]},
+        {"fitRating":0.95, "values":["acheive"]}
+      ]
+    },
+    {
+      "words":["acknowledge"],
+      "synonyms":[
+        {"fitRating":1, "values":["acknowledge", "acknowlege", "aknowledge"]}
+      ]
     }
+
+
   ]
 }
