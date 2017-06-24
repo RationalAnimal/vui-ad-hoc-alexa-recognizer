@@ -2846,6 +2846,16 @@ describe("utterance parser", function() {
           "slots": {}
         });
     });
+
+    it("verify that an intent with misspelled text equivalents will parse correctly", function() {
+      let result = recognizer.Recognizer.matchText("Absense makes the heart grow stronger");
+      expect(result).to.eql(
+        {
+          "name": "MisspelledIntent",
+          "slots": {}
+        });
+    });
+
 /*
     it("verify simple utterance with text equivalents parses and cleans up correctly and then unfolds correctly", function() {
       let intentSchema = require("./intents.json");

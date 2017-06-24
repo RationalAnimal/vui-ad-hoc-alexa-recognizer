@@ -635,7 +635,12 @@
     {
       "intent": "EquivalentsIntent",
       "slots": []
+    },
+    {
+      "intent": "MisspelledIntent",
+      "slots": []
     }
+
 
   ]
 }

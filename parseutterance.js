@@ -28,6 +28,7 @@ SOFTWARE.
 var parser = {};
 var regexputilities = require("./regexputils.js");
 var defaultEquivalents = require("./equivalents/default.json");
+var misspellingEquivalents = require("./equivalents/misspellings.json");
 
 var _parseUtteranceIntoJson = function(utterance, intentSchema){
 	let returnValue = {};
@@ -893,7 +894,11 @@ var _getWordsEquivalentsForDataSets = function(words, dataSets){
     for(let j = 0; j < dataSets.length; j ++){
       let additions = _getWordEquivalents(words[i], dataSets[j]);
       if(typeof additions !== "undefined" && Array.isArray(additions)){
-        currentWordEquivalents = currentWordEquivalents.concat(additions);
+        for(let k = 0; k < additions.length; k++){
+          if(currentWordEquivalents.indexOf(additions[k]) < 0){
+            currentWordEquivalents.push(additions[k]);
+          }
+        }
       }
     }
     returnValue.push(currentWordEquivalents);
@@ -1218,7 +1223,7 @@ var _parseEquivalentText = function(utteranceArray, parsingRange){
         parsingRange.end = i;
         words.push(accumulatedValue);
         accumulatedValue = '';
-        let equivalentsReturnValue = _processParsedEquivalentsWords(words, [defaultEquivalents]);
+        let equivalentsReturnValue = _processParsedEquivalentsWords(words, [defaultEquivalents, misspellingEquivalents]);
 //        console.log("returnValue: ", JSON.stringify(equivalentsReturnValue, null, 2));
         return equivalentsReturnValue;
         /* TODO REMOVE THIS OLDER CODE THAT WORKS FOR SINGLE WORD EQUIVALENTS ONLY
