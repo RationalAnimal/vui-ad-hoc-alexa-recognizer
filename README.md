@@ -616,6 +616,60 @@ word substitutions AND phrase substitutions.  This will soon be expanded to incl
 an independent npm module containing additional values (so that they can be updated independently of this module) as well
 as the ability to add your own modules to support special "domain" equivalents.  For example, you can add "slang" data
 set or "medical jargon" data set.
+So, an example similar to the above that substitutes both the phrases and the individual words and uses multiple data
+sets (e.g. correcting for typos, skipping optional words like please, etc) could be:
+
+```text
+HiTimeIntent {~How are you can you tell me please what is the acceptable time to come to work}
+```
+
+is equivalent to these:
+
+```text
+HiTimeIntent  how are you can you tell me please what is the acceptable time to come to work
+HiTimeIntent  how are you doing can you tell me please what is the acceptable time to come to work
+HiTimeIntent  how are you can you tell me what is the acceptable time to come to work
+HiTimeIntent  how are you doing can you tell me what is the acceptable time to come to work
+HiTimeIntent  how are you can you tell me please what is the acceptible time to come to work
+HiTimeIntent  how are you doing can you tell me please what is the acceptible time to come to work
+HiTimeIntent  how are you can you tell me what is the acceptible time to come to work
+HiTimeIntent  how are you doing can you tell me what is the acceptible time to come to work
+HiTimeIntent  hi can you tell me please what is the acceptable time to come to work
+HiTimeIntent  hello can you tell me please what is the acceptable time to come to work
+HiTimeIntent  good morning can you tell me please what is the acceptable time to come to work
+HiTimeIntent  good day can you tell me please what is the acceptable time to come to work
+HiTimeIntent  good evening can you tell me please what is the acceptable time to come to work
+HiTimeIntent  good night can you tell me please what is the acceptable time to come to work
+HiTimeIntent  whats up can you tell me please what is the acceptable time to come to work
+HiTimeIntent  hey can you tell me please what is the acceptable time to come to work
+HiTimeIntent  hi can you tell me what is the acceptable time to come to work
+HiTimeIntent  hello can you tell me what is the acceptable time to come to work
+HiTimeIntent  good morning can you tell me what is the acceptable time to come to work
+HiTimeIntent  good day can you tell me what is the acceptable time to come to work
+HiTimeIntent  good evening can you tell me what is the acceptable time to come to work
+HiTimeIntent  good night can you tell me what is the acceptable time to come to work
+HiTimeIntent  whats up can you tell me what is the acceptable time to come to work
+HiTimeIntent  hey can you tell me what is the acceptable time to come to work
+HiTimeIntent  hi can you tell me please what is the acceptible time to come to work
+HiTimeIntent  hello can you tell me please what is the acceptible time to come to work
+HiTimeIntent  good morning can you tell me please what is the acceptible time to come to work
+HiTimeIntent  good day can you tell me please what is the acceptible time to come to work
+HiTimeIntent  good evening can you tell me please what is the acceptible time to come to work
+HiTimeIntent  good night can you tell me please what is the acceptible time to come to work
+HiTimeIntent  whats up can you tell me please what is the acceptible time to come to work
+HiTimeIntent  hey can you tell me please what is the acceptible time to come to work
+HiTimeIntent  hi can you tell me what is the acceptible time to come to work
+HiTimeIntent  hello can you tell me what is the acceptible time to come to work
+HiTimeIntent  good morning can you tell me what is the acceptible time to come to work
+HiTimeIntent  good day can you tell me what is the acceptible time to come to work
+HiTimeIntent  good evening can you tell me what is the acceptible time to come to work
+HiTimeIntent  good night can you tell me what is the acceptible time to come to work
+HiTimeIntent  whats up can you tell me what is the acceptible time to come to work
+HiTimeIntent  hey can you tell me what is the acceptible time to come to work
+```
+
+Note that the matching algorithm is pretty efficient and does NOT actually try to match on these utterances, but instead
+uses a single regular expression.
 
 ### Removing flags/cleaning up the utterance file
 There is also a utility available to "clean up" utterance files for use with
