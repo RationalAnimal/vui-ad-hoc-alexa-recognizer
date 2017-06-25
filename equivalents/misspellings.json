@@ -39,6 +39,42 @@
       "synonyms":[
         {"fitRating":1, "values":["acknowledge", "acknowlege", "aknowledge"]}
       ]
+    },
+    {
+      "words":["acquaintance"],
+      "synonyms":[
+        {"fitRating":1, "values":["acquaintance", "acquaintence", "aquaintance"]}
+      ]
+    },
+    {
+      "words":["acquire"],
+      "synonyms":[
+        {"fitRating":1, "values":["acquire", "aquire", "adquire"]}
+      ]
+    },
+    {
+      "words":["acquit"],
+      "synonyms":[
+        {"fitRating":1, "values":["acquit", "aquit"]}
+      ]
+    },
+    {
+      "words":["acreage"],
+      "synonyms":[
+        {"fitRating":1, "values":["acreage", "acrage", "acerage"]}
+      ]
+    },
+    {
+      "words":["address"],
+      "synonyms":[
+        {"fitRating":1, "values":["address", "adress"]}
+      ]
+    },
+    {
+      "words":["adultery"],
+      "synonyms":[
+        {"fitRating":1, "values":["adultery", "adultary"]}
+      ]
     }
 
 
