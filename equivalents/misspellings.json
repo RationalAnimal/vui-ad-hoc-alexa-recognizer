@@ -75,6 +75,37 @@
       "synonyms":[
         {"fitRating":1, "values":["adultery", "adultary"]}
       ]
+    },
+    {
+      "words":["advisable"],
+      "synonyms":[
+        {"fitRating":1, "values":["advisable", "adviseable","advizable"]}
+      ]
+    },
+    {
+      "words":["affect"],
+      "synonyms":[
+        {"fitRating":1, "values":["affect"]},
+        {"fitRating":0.9, "values":["effect"]}
+      ]
+    },
+    {
+      "words":["aggression"],
+      "synonyms":[
+        {"fitRating":1, "values":["aggression","agression"]}
+      ]
+    },
+    {
+      "words":["aggressive"],
+      "synonyms":[
+        {"fitRating":1, "values":["aggressive","agressive"]}
+      ]
+    },
+    {
+      "words":["allegiance"],
+      "synonyms":[
+        {"fitRating":1, "values":["allegiance","allegaince", "allegience", "alegiance"]}
+      ]
     }
 
 
