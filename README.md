@@ -610,7 +610,8 @@ HiIntent Hi there what time is it
 ...etc..
 ```
 
-At this time the following implementation is in place:  it uses a very small default data set. It will match both single
+At this time the following implementation is in place:  it uses two data sets - a very small default data set and a
+common misspellings data set. It will match both single
 word substitutions AND phrase substitutions.  This will soon be expanded to include
 an independent npm module containing additional values (so that they can be updated independently of this module) as well
 as the ability to add your own modules to support special "domain" equivalents.  For example, you can add "slang" data

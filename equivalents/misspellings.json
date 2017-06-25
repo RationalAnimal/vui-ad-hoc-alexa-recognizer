@@ -39,6 +39,73 @@
       "synonyms":[
         {"fitRating":1, "values":["acknowledge", "acknowlege", "aknowledge"]}
       ]
+    },
+    {
+      "words":["acquaintance"],
+      "synonyms":[
+        {"fitRating":1, "values":["acquaintance", "acquaintence", "aquaintance"]}
+      ]
+    },
+    {
+      "words":["acquire"],
+      "synonyms":[
+        {"fitRating":1, "values":["acquire", "aquire", "adquire"]}
+      ]
+    },
+    {
+      "words":["acquit"],
+      "synonyms":[
+        {"fitRating":1, "values":["acquit", "aquit"]}
+      ]
+    },
+    {
+      "words":["acreage"],
+      "synonyms":[
+        {"fitRating":1, "values":["acreage", "acrage", "acerage"]}
+      ]
+    },
+    {
+      "words":["address"],
+      "synonyms":[
+        {"fitRating":1, "values":["address", "adress"]}
+      ]
+    },
+    {
+      "words":["adultery"],
+      "synonyms":[
+        {"fitRating":1, "values":["adultery", "adultary"]}
+      ]
+    },
+    {
+      "words":["advisable"],
+      "synonyms":[
+        {"fitRating":1, "values":["advisable", "adviseable","advizable"]}
+      ]
+    },
+    {
+      "words":["affect"],
+      "synonyms":[
+        {"fitRating":1, "values":["affect"]},
+        {"fitRating":0.9, "values":["effect"]}
+      ]
+    },
+    {
+      "words":["aggression"],
+      "synonyms":[
+        {"fitRating":1, "values":["aggression","agression"]}
+      ]
+    },
+    {
+      "words":["aggressive"],
+      "synonyms":[
+        {"fitRating":1, "values":["aggressive","agressive"]}
+      ]
+    },
+    {
+      "words":["allegiance"],
+      "synonyms":[
+        {"fitRating":1, "values":["allegiance","allegaince", "allegience", "alegiance"]}
+      ]
     }
 
 

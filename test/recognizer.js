@@ -2856,25 +2856,34 @@ describe("utterance parser", function() {
         });
     });
 
-/*
-    it("verify simple utterance with text equivalents parses and cleans up correctly and then unfolds correctly", function() {
-      let intentSchema = require("./intents.json");
-      let result = parser.parseUtteranceIntoJson("AnotherIntent {~How are you} today {SomeOtherSlot:INCLUDE_VALUES_MATCH} too {~I want}", intentSchema);
-//      console.log("result: ", JSON.stringify(result, null, 2));
-//      let unfolded = parser.forTesting.unfoldEquivalentsSet(result.parsedUtterance[4]);
-//      console.log("unfolded: ", JSON.stringify(unfolded, null, 2));
-      parser.cleanupParsedUtteranceJson(result, intentSchema);
-      expect(parser.unfoldParsedJson(result, true)).to.eql(
-        [
-          "AnotherIntent how are you today {SomeOtherSlot} too i want",
-          "AnotherIntent how are you today {SomeOtherSlot} too i wish",
-          "AnotherIntent how are you today {SomeOtherSlot} too i like",
-          "AnotherIntent how are you today {SomeOtherSlot} too i would like",
-          "AnotherIntent how are you today {SomeOtherSlot} too i need",
-          "AnotherIntent how are you today {SomeOtherSlot} too i prefer"
-        ]);
+    it("verify that an intent with many misspelled text equivalents will parse correctly", function() {
+      let result = recognizer.Recognizer.matchText("absense acceptible accidentaly accomodate acheive acknowlege acquaintence allegaince");
+      expect(result).to.eql(
+        {
+          "name": "MisspelledIntent",
+          "slots": {}
+        });
     });
-*/
+
+    /*
+        it("verify simple utterance with text equivalents parses and cleans up correctly and then unfolds correctly", function() {
+          let intentSchema = require("./intents.json");
+          let result = parser.parseUtteranceIntoJson("AnotherIntent {~How are you} today {SomeOtherSlot:INCLUDE_VALUES_MATCH} too {~I want}", intentSchema);
+    //      console.log("result: ", JSON.stringify(result, null, 2));
+    //      let unfolded = parser.forTesting.unfoldEquivalentsSet(result.parsedUtterance[4]);
+    //      console.log("unfolded: ", JSON.stringify(unfolded, null, 2));
+          parser.cleanupParsedUtteranceJson(result, intentSchema);
+          expect(parser.unfoldParsedJson(result, true)).to.eql(
+            [
+              "AnotherIntent how are you today {SomeOtherSlot} too i want",
+              "AnotherIntent how are you today {SomeOtherSlot} too i wish",
+              "AnotherIntent how are you today {SomeOtherSlot} too i like",
+              "AnotherIntent how are you today {SomeOtherSlot} too i would like",
+              "AnotherIntent how are you today {SomeOtherSlot} too i need",
+              "AnotherIntent how are you today {SomeOtherSlot} too i prefer"
+            ]);
+        });
+    */
     it("verify simple utterance two options lists and a custom slot parses and cleans up correctly and adds reg exp strings correctly", function() {
       let intentSchema = require("./intents.json");
       let result = parser.parseUtteranceIntoJson("AnotherIntent me {blah|bleh|bleu} {SomeOtherSlot:INCLUDE_VALUES_MATCH} too { this | that | the other }", intentSchema);
