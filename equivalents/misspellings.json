@@ -106,6 +106,60 @@
       "synonyms":[
         {"fitRating":1, "values":["allegiance","allegaince", "allegience", "alegiance"]}
       ]
+    },
+    {
+      "words":["almost"],
+      "synonyms":[
+        {"fitRating":1, "values":["almost","allmost"]}
+      ]
+    },
+    {
+      "words":["a lot"],
+      "synonyms":[
+        {"fitRating":1, "values":["a lot","alot"]}
+      ]
+    },
+    {
+      "words":["amateur"],
+      "synonyms":[
+        {"fitRating":1, "values":["amateur","amatuer", "amature"]}
+      ]
+    },
+    {
+      "words":["annually"],
+      "synonyms":[
+        {"fitRating":1, "values":["annually","anually", "annualy"]}
+      ]
+    },
+    {
+      "words":["apparent"],
+      "synonyms":[
+        {"fitRating":1, "values":["apparent","apparant", "aparent"]}
+      ]
+    },
+    {
+      "words":["arctic"],
+      "synonyms":[
+        {"fitRating":1, "values":["arctic","artic"]}
+      ]
+    },
+    {
+      "words":["argument"],
+      "synonyms":[
+        {"fitRating":1, "values":["argument","arguement"]}
+      ]
+    },
+    {
+      "words":["atheist"],
+      "synonyms":[
+        {"fitRating":1, "values":["atheist","athiest"]}
+      ]
+    },
+    {
+      "words":["awful"],
+      "synonyms":[
+        {"fitRating":1, "values":["awful","awfull", "aweful"]}
+      ]
     }
 
 
