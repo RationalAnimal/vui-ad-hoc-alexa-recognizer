@@ -160,6 +160,54 @@
       "synonyms":[
         {"fitRating":1, "values":["awful","awfull", "aweful"]}
       ]
+    },
+    {
+      "words":["because"],
+      "synonyms":[
+        {"fitRating":1, "values":["because","becuase"]}
+      ]
+    },
+    {
+      "words":["becoming"],
+      "synonyms":[
+        {"fitRating":1, "values":["becoming","becomeing"]}
+      ]
+    },
+    {
+      "words":["beginning"],
+      "synonyms":[
+        {"fitRating":1, "values":["beginning","begining"]}
+      ]
+    },
+    {
+      "words":["believe"],
+      "synonyms":[
+        {"fitRating":1, "values":["believe","beleive"]}
+      ]
+    },
+    {
+      "words":["bellwether"],
+      "synonyms":[
+        {"fitRating":1, "values":["bellwether","bellweather"]}
+      ]
+    },
+    {
+      "words":["buoy"],
+      "synonyms":[
+        {"fitRating":1, "values":["buoy","bouy"]}
+      ]
+    },
+    {
+      "words":["buoyant"],
+      "synonyms":[
+        {"fitRating":1, "values":["buoyant","bouyant"]}
+      ]
+    },
+    {
+      "words":["business"],
+      "synonyms":[
+        {"fitRating":1, "values":["business","buisness"]}
+      ]
     }
 
 
