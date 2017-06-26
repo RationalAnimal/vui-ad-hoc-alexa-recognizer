@@ -208,6 +208,111 @@
       "synonyms":[
         {"fitRating":1, "values":["business","buisness"]}
       ]
+    },
+    {
+      "words":["calendar"],
+      "synonyms":[
+        {"fitRating":1, "values":["calendar","calender"]}
+      ]
+    },
+    {
+      "words":["camouflage"],
+      "synonyms":[
+        {"fitRating":1, "values":["camouflage","camoflage", "camoflague"]}
+      ]
+    },
+    {
+      "words":["capitol"],
+      "synonyms":[
+        {"fitRating":1, "values":["capitol"]},
+        {"fitRating":0.8, "values":["capital"]}
+      ]
+    },
+    {
+      "words":["capital"],
+      "synonyms":[
+        {"fitRating":1, "values":["capital"]},
+        {"fitRating":0.8, "values":["capitol"]}
+      ]
+    },
+    {
+      "words":["Caribbean"],
+      "synonyms":[
+        {"fitRating":1, "values":["Caribbean","Carribean"]}
+      ]
+    },
+    {
+      "words":["category"],
+      "synonyms":[
+        {"fitRating":1, "values":["category","catagory"]}
+      ]
+    },
+    {
+      "words":["caught"],
+      "synonyms":[
+        {"fitRating":1, "values":["caught","cauhgt", "caugt"]}
+      ]
+    },
+    {
+      "words":["cemetery"],
+      "synonyms":[
+        {"fitRating":1, "values":["cemetery","cemetary", "cematery"]}
+      ]
+    },
+    {
+      "words":["changeable"],
+      "synonyms":[
+        {"fitRating":1, "values":["changeable","changable"]}
+      ]
+    },
+    {
+      "words":["chief"],
+      "synonyms":[
+        {"fitRating":1, "values":["chief","cheif"]}
+      ]
+    },
+    {
+      "words":["colleague"],
+      "synonyms":[
+        {"fitRating":1, "values":["colleague","collaegue"]},
+        {"fitRating":0.9, "values":["collegue"]}
+      ]
+    },
+    {
+      "words":["collectible"],
+      "synonyms":[
+        {"fitRating":1, "values":["collectible","collectable"]}
+      ]
+    },
+    {
+      "words":["column"],
+      "synonyms":[
+        {"fitRating":1, "values":["column","colum"]}
+      ]
+    },
+    {
+      "words":["coming"],
+      "synonyms":[
+        {"fitRating":1, "values":["coming","comming"]}
+      ]
+    },
+    {
+      "words":["committed"],
+      "synonyms":[
+        {"fitRating":1, "values":["committed","commited", "comitted"]}
+      ]
+    },
+    {
+      "words":["concede"],
+      "synonyms":[
+        {"fitRating":1, "values":["concede","conceed"]}
+      ]
+    },
+    {
+      "words":["congratulate"],
+      "synonyms":[
+        {"fitRating":1, "values":["congratulate","congradulate"]}
+      ]
     }
 
 
