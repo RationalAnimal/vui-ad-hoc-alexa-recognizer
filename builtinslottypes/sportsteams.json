@@ -795,6 +795,72 @@
       "priorNames": ["atlanta thrashers"],
       "sport": "hockey",
       "league": "nhl"
+    },
+    {
+      "name": "Atlanta United FCs",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "mls"
+    },
+    {
+      "name": "Chicago Fire",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "mls"
+    },
+    {
+      "name": "Colorado Rapids",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "mls"
+    },
+    {
+      "name": "Columbus Crew SC",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "mls"
+    },
+    {
+      "name": "FC Dallas",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "mls"
+    },
+    {
+      "name": "D.C. United",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "mls"
+    },
+    {
+      "name": "Houston Dynamo",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "mls"
+    },
+    {
+      "name": "Sporting Kansas City",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "mls"
+    },
+    {
+      "name": "LA Galaxy",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "mls"
+    },
+    {
+      "name": "Los Angeles FC",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "mls"
+    },
+    {
+      "name": "Minnesota United FC",
+      "priorNames": [],
+      "sport": "hockey",
+      "league": "mls"
     }
 
 
