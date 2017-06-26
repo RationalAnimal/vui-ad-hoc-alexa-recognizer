@@ -313,6 +313,36 @@
       "synonyms":[
         {"fitRating":1, "values":["congratulate","congradulate"]}
       ]
+    },
+    {
+      "words":["conscientious"],
+      "synonyms":[
+        {"fitRating":1, "values":["conscientious","consciencious"]}
+      ]
+    },
+    {
+      "words":["conscious"],
+      "synonyms":[
+        {"fitRating":1, "values":["conscious","concious", "consious"]}
+      ]
+    },
+    {
+      "words":["consensus"],
+      "synonyms":[
+        {"fitRating":1, "values":["consensus","concensus"]}
+      ]
+    },
+    {
+      "words":["controversy"],
+      "synonyms":[
+        {"fitRating":1, "values":["controversy","contraversy"]}
+      ]
+    },
+    {
+      "words":["coolly"],
+      "synonyms":[
+        {"fitRating":1, "values":["coolly","cooly"]}
+      ]
     }
 
 
