@@ -452,7 +452,44 @@
       "synonyms":[
         {"fitRating":1, "values":["extreme","extreem"]}
       ]
+    },
+    {
+      "words":["fascinating"],
+      "synonyms":[
+        {"fitRating":1, "values":["fascinating","facinating"]}
+      ]
+    },
+    {
+      "words":["fiery"],
+      "synonyms":[
+        {"fitRating":1, "values":["fiery","firey"]}
+      ]
+    },
+    {
+      "words":["fluorescent"],
+      "synonyms":[
+        {"fitRating":1, "values":["fluorescent","flourescent"]}
+      ]
+    },
+    {
+      "words":["foreign"],
+      "synonyms":[
+        {"fitRating":1, "values":["foreign","foriegn"]}
+      ]
+    },
+    {
+      "words":["friend"],
+      "synonyms":[
+        {"fitRating":1, "values":["friend","freind"]}
+      ]
+    },
+    {
+      "words":["fulfil"],
+      "synonyms":[
+        {"fitRating":1, "values":["fulfil","fullfil", "fulfill"]}
+      ]
     }
+
 
 
   ]
