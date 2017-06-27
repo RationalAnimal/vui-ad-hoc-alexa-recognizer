@@ -410,6 +410,48 @@
       "synonyms":[
         {"fitRating":1, "values":["dumbbell","dumbell"]}
       ]
+    },
+    {
+      "words":["embarrass"],
+      "synonyms":[
+        {"fitRating":1, "values":["embarrass","embarass"]}
+      ]
+    },
+    {
+      "words":["equipment"],
+      "synonyms":[
+        {"fitRating":1, "values":["equipment","equiptment"]}
+      ]
+    },
+    {
+      "words":["exceed"],
+      "synonyms":[
+        {"fitRating":1, "values":["exceed","excede"]}
+      ]
+    },
+    {
+      "words":["exhilarate"],
+      "synonyms":[
+        {"fitRating":1, "values":["exhilarate","exilerate"]}
+      ]
+    },
+    {
+      "words":["existence"],
+      "synonyms":[
+        {"fitRating":1, "values":["existence","existance"]}
+      ]
+    },
+    {
+      "words":["experience"],
+      "synonyms":[
+        {"fitRating":1, "values":["experience","experiance"]}
+      ]
+    },
+    {
+      "words":["extreme"],
+      "synonyms":[
+        {"fitRating":1, "values":["extreme","extreem"]}
+      ]
     }
 
 
