@@ -343,6 +343,43 @@
       "synonyms":[
         {"fitRating":1, "values":["coolly","cooly"]}
       ]
+    },
+    {
+      "words":["daiquiri"],
+      "synonyms":[
+        {"fitRating":1, "values":["daiquiri","dacquiri", "daquiri"]}
+      ]
+    },
+    {
+      "words":["deceive"],
+      "synonyms":[
+        {"fitRating":1, "values":["deceive","decieve"]}
+      ]
+    },
+    {
+      "words":["definite"],
+      "synonyms":[
+        {"fitRating":1, "values":["definite","definate", "definit"]}
+      ]
+    },
+    {
+      "words":["definitely"],
+      "synonyms":[
+        {"fitRating":1, "values":["definitely","definitly", "definately"]},
+        {"fitRating":0.7, "values":["defiantly"]}
+      ]
+    },
+    {
+      "words":["desperate"],
+      "synonyms":[
+        {"fitRating":1, "values":["desperate","desparate"]}
+      ]
+    },
+    {
+      "words":["difference"],
+      "synonyms":[
+        {"fitRating":1, "values":["difference","diffrence"]}
+      ]
     }
 
 
