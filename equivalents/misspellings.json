@@ -380,6 +380,36 @@
       "synonyms":[
         {"fitRating":1, "values":["difference","diffrence"]}
       ]
+    },
+    {
+      "words":["dilemma"],
+      "synonyms":[
+        {"fitRating":1, "values":["dilemma","dilema"]}
+      ]
+    },
+    {
+      "words":["disappoint"],
+      "synonyms":[
+        {"fitRating":1, "values":["disappoint","disapoint"]}
+      ]
+    },
+    {
+      "words":["disastrous"],
+      "synonyms":[
+        {"fitRating":1, "values":["disastrous","disasterous"]}
+      ]
+    },
+    {
+      "words":["drunkenness"],
+      "synonyms":[
+        {"fitRating":1, "values":["drunkenness","drunkeness"]}
+      ]
+    },
+    {
+      "words":["dumbbell"],
+      "synonyms":[
+        {"fitRating":1, "values":["dumbbell","dumbell"]}
+      ]
     }
 
 
