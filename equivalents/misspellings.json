@@ -512,6 +512,48 @@
       "synonyms":[
         {"fitRating":1, "values":["guidance","guidence"]}
       ]
+    },
+    {
+      "words":["harass"],
+      "synonyms":[
+        {"fitRating":1, "values":["harass","harrass"]}
+      ]
+    },
+    {
+      "words":["height"],
+      "synonyms":[
+        {"fitRating":1, "values":["height","heighth", "heigth"]}
+      ]
+    },
+    {
+      "words":["hierarchy"],
+      "synonyms":[
+        {"fitRating":1, "values":["hierarchy","heirarchy"]}
+      ]
+    },
+    {
+      "words":["hors d'oeuvres"],
+      "synonyms":[
+        {"fitRating":1, "values":["hors d'oeuvres","hors derves", "ordeurves"]}
+      ]
+    },
+    {
+      "words":["humorous"],
+      "synonyms":[
+        {"fitRating":1, "values":["humorous","humerous"]}
+      ]
+    },
+    {
+      "words":["hygiene"],
+      "synonyms":[
+        {"fitRating":1, "values":["hygiene","hygene", "hygine", "hiygeine", "higeine", "hygeine"]}
+      ]
+    },
+    {
+      "words":["hypocrite"],
+      "synonyms":[
+        {"fitRating":1, "values":["hypocrite","hipocrit"]}
+      ]
     }
 
 
