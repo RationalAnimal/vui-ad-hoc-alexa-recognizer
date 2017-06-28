@@ -488,6 +488,30 @@
       "synonyms":[
         {"fitRating":1, "values":["fulfil","fullfil", "fulfill"]}
       ]
+    },
+    {
+      "words":["gauge"],
+      "synonyms":[
+        {"fitRating":1, "values":["gauge","guage"]}
+      ]
+    },
+    {
+      "words":["grateful"],
+      "synonyms":[
+        {"fitRating":1, "values":["grateful","gratefull", "greatful"]}
+      ]
+    },
+    {
+      "words":["guarantee"],
+      "synonyms":[
+        {"fitRating":1, "values":["guarantee","garantee", "garentee", "garanty"]}
+      ]
+    },
+    {
+      "words":["guidance"],
+      "synonyms":[
+        {"fitRating":1, "values":["guidance","guidence"]}
+      ]
     }
 
 
