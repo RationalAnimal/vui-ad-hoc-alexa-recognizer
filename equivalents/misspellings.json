@@ -596,6 +596,24 @@
       "synonyms":[
         {"fitRating":1, "values":["intelligence","inteligence", "intelligance"]}
       ]
+    },
+    {
+      "words":["jewelry", "jewellery"],
+      "synonyms":[
+        {"fitRating":1, "values":["jewelry","jewellery", "jewelery"]}
+      ]
+    },
+    {
+      "words":["judgment"],
+      "synonyms":[
+        {"fitRating":1, "values":["judgment","judgement"]}
+      ]
+    },
+    {
+      "words":["kernel"],
+      "synonyms":[
+        {"fitRating":1, "values":["kernel","kernal"]}
+      ]
     }
 
 
