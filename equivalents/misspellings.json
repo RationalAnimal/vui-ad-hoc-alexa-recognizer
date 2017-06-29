@@ -698,7 +698,26 @@
       "synonyms":[
         {"fitRating":1, "values":["misspell","mispell", "misspel"]}
       ]
+    },
+    {
+      "words":["necessary"],
+      "synonyms":[
+        {"fitRating":1, "values":["necessary","neccessary", "necessery"]}
+      ]
+    },
+    {
+      "words":["niece"],
+      "synonyms":[
+        {"fitRating":1, "values":["niece","niece"]}
+      ]
+    },
+    {
+      "words":["neighbor"],
+      "synonyms":[
+        {"fitRating":1, "values":["neighbor","nieghbor"]}
+      ]
     }
+
 
 
 
