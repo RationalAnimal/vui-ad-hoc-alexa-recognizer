@@ -614,6 +614,42 @@
       "synonyms":[
         {"fitRating":1, "values":["kernel","kernal"]}
       ]
+    },
+    {
+      "words":["leisure"],
+      "synonyms":[
+        {"fitRating":1, "values":["leisure","liesure"]}
+      ]
+    },
+    {
+      "words":["liaison"],
+      "synonyms":[
+        {"fitRating":1, "values":["liaison","liason"]}
+      ]
+    },
+    {
+      "words":["library"],
+      "synonyms":[
+        {"fitRating":1, "values":["library","libary", "liberry"]}
+      ]
+    },
+    {
+      "words":["license"],
+      "synonyms":[
+        {"fitRating":1, "values":["license","lisence"]}
+      ]
+    },
+    {
+      "words":["lightning"],
+      "synonyms":[
+        {"fitRating":1, "values":["lightning","lightening"]}
+      ]
+    },
+    {
+      "words":["lose"],
+      "synonyms":[
+        {"fitRating":1, "values":["lose","loose"]}
+      ]
     }
 
 
