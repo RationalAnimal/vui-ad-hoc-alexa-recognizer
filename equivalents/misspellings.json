@@ -650,6 +650,54 @@
       "synonyms":[
         {"fitRating":1, "values":["lose","loose"]}
       ]
+    },
+    {
+      "words":["maintenance"],
+      "synonyms":[
+        {"fitRating":1, "values":["maintenance","maintainance", "maintnance"]}
+      ]
+    },
+    {
+      "words":["medieval"],
+      "synonyms":[
+        {"fitRating":1, "values":["medieval","medeval", "medevil", "mideval"]}
+      ]
+    },
+    {
+      "words":["memento"],
+      "synonyms":[
+        {"fitRating":1, "values":["memento","momento"]}
+      ]
+    },
+    {
+      "words":["millennium"],
+      "synonyms":[
+        {"fitRating":1, "values":["millennium","millenium", "milennium"]}
+      ]
+    },
+    {
+      "words":["miniature"],
+      "synonyms":[
+        {"fitRating":1, "values":["miniature","miniture"]}
+      ]
+    },
+    {
+      "words":["minuscule"],
+      "synonyms":[
+        {"fitRating":1, "values":["minuscule","miniscule"]}
+      ]
+    },
+    {
+      "words":["mischievous"],
+      "synonyms":[
+        {"fitRating":1, "values":["mischievous","mischievious", "mischevous", "mischevious"]}
+      ]
+    },
+    {
+      "words":["misspell"],
+      "synonyms":[
+        {"fitRating":1, "values":["misspell","mispell", "misspel"]}
+      ]
     }
 
 
