@@ -716,9 +716,55 @@
       "synonyms":[
         {"fitRating":1, "values":["neighbor","nieghbor"]}
       ]
+    },
+    {
+      "words":["noticeable"],
+      "synonyms":[
+        {"fitRating":1, "values":["noticeable","noticable"]}
+      ]
+    },
+    {
+      "words":["occasion"],
+      "synonyms":[
+        {"fitRating":1, "values":["occasion","occassion"]}
+      ]
+    },
+    {
+      "words":["occasionally"],
+      "synonyms":[
+        {"fitRating":1, "values":["occasionally","occasionaly", "occassionally"]}
+      ]
+    },
+    {
+      "words":["occurrence"],
+      "synonyms":[
+        {"fitRating":1, "values":["occurrence","occurrance", "occurence"]}
+      ]
+    },
+    {
+      "words":["occurred"],
+      "synonyms":[
+        {"fitRating":1, "values":["occurred","occured"]}
+      ]
+    },
+    {
+      "words":["omission"],
+      "synonyms":[
+        {"fitRating":1, "values":["omission","ommision", "omision"]}
+      ]
+    },
+    {
+      "words":["original"],
+      "synonyms":[
+        {"fitRating":1, "values":["original","orignal"]}
+      ]
+    },
+    {
+      "words":["outrageous"],
+      "synonyms":[
+        {"fitRating":1, "values":["outrageous","outragous"]}
+      ]
     }
-
-
 
 
   ]
