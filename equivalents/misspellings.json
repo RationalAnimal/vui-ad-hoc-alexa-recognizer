@@ -554,6 +554,48 @@
       "synonyms":[
         {"fitRating":1, "values":["hypocrite","hipocrit"]}
       ]
+    },
+    {
+      "words":["ignorance"],
+      "synonyms":[
+        {"fitRating":1, "values":["ignorance","ignorence"]}
+      ]
+    },
+    {
+      "words":["imitate"],
+      "synonyms":[
+        {"fitRating":1, "values":["imitate","immitate"]}
+      ]
+    },
+    {
+      "words":["immediately"],
+      "synonyms":[
+        {"fitRating":1, "values":["immediately","imediately"]}
+      ]
+    },
+    {
+      "words":["independent"],
+      "synonyms":[
+        {"fitRating":1, "values":["independent","independant"]}
+      ]
+    },
+    {
+      "words":["indispensable"],
+      "synonyms":[
+        {"fitRating":1, "values":["indispensable","indispensible"]}
+      ]
+    },
+    {
+      "words":["inoculate"],
+      "synonyms":[
+        {"fitRating":1, "values":["inoculate","innoculate"]}
+      ]
+    },
+    {
+      "words":["intelligence"],
+      "synonyms":[
+        {"fitRating":1, "values":["intelligence","inteligence", "intelligance"]}
+      ]
     }
 
 
