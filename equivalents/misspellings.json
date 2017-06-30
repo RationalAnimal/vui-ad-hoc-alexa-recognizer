@@ -1088,7 +1088,26 @@
       "synonyms":[
         {"fitRating":1, "values":["usable", "useable", "usible"]}
       ]
+    },
+    {
+      "words":["vacuum"],
+      "synonyms":[
+        {"fitRating":1, "values":["vacuum", "vaccuum", "vaccum", "vacume"]}
+      ]
+    },
+    {
+      "words":["vehicle"],
+      "synonyms":[
+        {"fitRating":1, "values":["vehicle", "vehical"]}
+      ]
+    },
+    {
+      "words":["vicious"],
+      "synonyms":[
+        {"fitRating":1, "values":["vicious", "visious"]}
+      ]
     }
+
 
 
 
