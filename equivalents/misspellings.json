@@ -1064,7 +1064,32 @@
       "synonyms":[
         {"fitRating":1, "values":["tyranny", "tyrany"]}
       ]
+    },
+    {
+      "words":["underrate"],
+      "synonyms":[
+        {"fitRating":1, "values":["underrate", "underate"]}
+      ]
+    },
+    {
+      "words":["until"],
+      "synonyms":[
+        {"fitRating":1, "values":["until", "untill"]}
+      ]
+    },
+    {
+      "words":["upholstery"],
+      "synonyms":[
+        {"fitRating":1, "values":["upholstery", "upholstry"]}
+      ]
+    },
+    {
+      "words":["usable"],
+      "synonyms":[
+        {"fitRating":1, "values":["usable", "useable", "usible"]}
+      ]
     }
+
 
 
 
