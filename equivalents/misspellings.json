@@ -896,7 +896,86 @@
       "synonyms":[
         {"fitRating":1, "values":["questionnaire","questionaire", "questionnair"]}
       ]
+    },
+    {
+      "words":["readable"],
+      "synonyms":[
+        {"fitRating":1, "values":["readable","readible"]}
+      ]
+    },
+    {
+      "words":["really"],
+      "synonyms":[
+        {"fitRating":1, "values":["really","realy"]}
+      ]
+    },
+    {
+      "words":["receive"],
+      "synonyms":[
+        {"fitRating":1, "values":["receive","recieve"]}
+      ]
+    },
+    {
+      "words":["receipt"],
+      "synonyms":[
+        {"fitRating":1, "values":["receipt","reciept"]}
+      ]
+    },
+    {
+      "words":["recommend"],
+      "synonyms":[
+        {"fitRating":1, "values":["recommend","recomend", "reccommend"]}
+      ]
+    },
+    {
+      "words":["referred"],
+      "synonyms":[
+        {"fitRating":1, "values":["referred","refered"]}
+      ]
+    },
+    {
+      "words":["reference"],
+      "synonyms":[
+        {"fitRating":1, "values":["reference","referance", "refrence"]}
+      ]
+    },
+    {
+      "words":["relevant"],
+      "synonyms":[
+        {"fitRating":1, "values":["relevant","relevent", "revelant"]}
+      ]
+    },
+    {
+      "words":["religious"],
+      "synonyms":[
+        {"fitRating":1, "values":["religious","religous", "religius"]}
+      ]
+    },
+    {
+      "words":["repetition"],
+      "synonyms":[
+        {"fitRating":1, "values":["repetition","repitition"]}
+      ]
+    },
+    {
+      "words":["restaurant"],
+      "synonyms":[
+        {"fitRating":1, "values":["restaurant","restarant", "restaraunt"]}
+      ]
+    },
+    {
+      "words":["rhyme"],
+      "synonyms":[
+        {"fitRating":1, "values":["rhyme","rime"]}
+      ]
+    },
+    {
+      "words":["rhythm"],
+      "synonyms":[
+        {"fitRating":1, "values":["rhythm","rythm", "rythem"]}
+      ]
     }
+
 
 
 
