@@ -878,7 +878,26 @@
       "synonyms":[
         {"fitRating":1, "values":["publicly","publically"]}
       ]
+    },
+    {
+      "words":["quarantine"],
+      "synonyms":[
+        {"fitRating":1, "values":["quarantine","quarentine"]}
+      ]
+    },
+    {
+      "words":["queue"],
+      "synonyms":[
+        {"fitRating":1, "values":["queue","que"]}
+      ]
+    },
+    {
+      "words":["questionnaire"],
+      "synonyms":[
+        {"fitRating":1, "values":["questionnaire","questionaire", "questionnair"]}
+      ]
     }
+
 
 
   ]
