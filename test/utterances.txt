@@ -97,4 +97,4 @@ HiIntent {~How are you what is the time please}
 HiTimeIntent {~How are you can you tell me please what is the acceptable time to come to work}
 EquivalentsIntent {~How are you today my friend can you please tell me what I want today}
 MisspelledIntent {~Absence makes the heart grow stronger}
-MisspelledIntent {~absence acceptable accidentally accommodate achieve acknowledge acquaintance allegiance}
+MisspelledIntent {~absence acceptable accidentally accommodate achieve acknowledge acquaintance allegiance their}
