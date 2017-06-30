@@ -812,7 +812,92 @@
       "synonyms":[
         {"fitRating":1, "values":["possession","posession", "possesion"]}
       ]
+    },
+    {
+      "words":["potatoes"],
+      "synonyms":[
+        {"fitRating":1, "values":["potatoes","potatos"]}
+      ]
+    },
+    {
+      "words":["precede"],
+      "synonyms":[
+        {"fitRating":1, "values":["precede","preceed"]}
+      ]
+    },
+    {
+      "words":["presence"],
+      "synonyms":[
+        {"fitRating":1, "values":["presence","presance"]}
+      ]
+    },
+    {
+      "words":["principle"],
+      "synonyms":[
+        {"fitRating":1, "values":["principle","principal"]}
+      ]
+    },
+    {
+      "words":["privilege"],
+      "synonyms":[
+        {"fitRating":1, "values":["privilege","privelege", "priviledge"]}
+      ]
+    },
+    {
+      "words":["professor"],
+      "synonyms":[
+        {"fitRating":1, "values":["professor","professer"]}
+      ]
+    },
+    {
+      "words":["promise"],
+      "synonyms":[
+        {"fitRating":1, "values":["promise","promiss"]}
+      ]
+    },
+    {
+      "words":["pronunciation"],
+      "synonyms":[
+        {"fitRating":1, "values":["pronunciation","pronounciation"]}
+      ]
+    },
+    {
+      "words":["proof"],
+      "synonyms":[
+        {"fitRating":1, "values":["proof","prufe"]}
+      ]
+    },
+    {
+      "words":["prophecy"],
+      "synonyms":[
+        {"fitRating":1, "values":["prophecy","prophesy"]}
+      ]
+    },
+    {
+      "words":["publicly"],
+      "synonyms":[
+        {"fitRating":1, "values":["publicly","publically"]}
+      ]
+    },
+    {
+      "words":["quarantine"],
+      "synonyms":[
+        {"fitRating":1, "values":["quarantine","quarentine"]}
+      ]
+    },
+    {
+      "words":["queue"],
+      "synonyms":[
+        {"fitRating":1, "values":["queue","que"]}
+      ]
+    },
+    {
+      "words":["questionnaire"],
+      "synonyms":[
+        {"fitRating":1, "values":["questionnaire","questionaire", "questionnair"]}
+      ]
     }
+
 
 
   ]
