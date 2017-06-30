@@ -2857,7 +2857,7 @@ describe("utterance parser", function() {
     });
 
     it("verify that an intent with many misspelled text equivalents will parse correctly", function() {
-      let result = recognizer.Recognizer.matchText("absense acceptible accidentaly accomodate acheive acknowlege acquaintence allegaince");
+      let result = recognizer.Recognizer.matchText("absense acceptible accidentaly accomodate acheive acknowlege acquaintence allegaince they're");
       expect(result).to.eql(
         {
           "name": "MisspelledIntent",

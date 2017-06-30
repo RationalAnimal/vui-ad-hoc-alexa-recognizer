@@ -1034,7 +1034,38 @@
       "synonyms":[
         {"fitRating":1, "values":["surprise", "suprise", "surprize"]}
       ]
+    },
+    {
+      "words":["their"],
+      "synonyms":[
+        {"fitRating":1, "values":["their", "there", "they're"]}
+      ]
+    },
+    {
+      "words":["tomatoes"],
+      "synonyms":[
+        {"fitRating":1, "values":["tomatoes", "tomatos"]}
+      ]
+    },
+    {
+      "words":["tomorrow"],
+      "synonyms":[
+        {"fitRating":1, "values":["tomorrow", "tommorow", "tommorrow"]}
+      ]
+    },
+    {
+      "words":["twelfth"],
+      "synonyms":[
+        {"fitRating":1, "values":["twelfth", "twelth"]}
+      ]
+    },
+    {
+      "words":["tyranny"],
+      "synonyms":[
+        {"fitRating":1, "values":["tyranny", "tyrany"]}
+      ]
     }
+
 
 
 
