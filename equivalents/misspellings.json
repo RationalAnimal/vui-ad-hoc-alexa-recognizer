@@ -1106,6 +1106,48 @@
       "synonyms":[
         {"fitRating":1, "values":["vicious", "visious"]}
       ]
+    },
+    {
+      "words":["weather"],
+      "synonyms":[
+        {"fitRating":1, "values":["weather", "wether"]}
+      ]
+    },
+    {
+      "words":["weird"],
+      "synonyms":[
+        {"fitRating":1, "values":["weird", "wierd"]}
+      ]
+    },
+    {
+      "words":["welfare"],
+      "synonyms":[
+        {"fitRating":1, "values":["welfare", "wellfare", "welfair"]}
+      ]
+    },
+    {
+      "words":["whether"],
+      "synonyms":[
+        {"fitRating":1, "values":["whether", "wether"]}
+      ]
+    },
+    {
+      "words":["wilful", "willful"],
+      "synonyms":[
+        {"fitRating":1, "values":["wilful", "wilfull", "willful"]}
+      ]
+    },
+    {
+      "words":["withhold"],
+      "synonyms":[
+        {"fitRating":1, "values":["withhold", "withold"]}
+      ]
+    },
+    {
+      "words":["writing"],
+      "synonyms":[
+        {"fitRating":1, "values":["writing", "writting", "writeing"]}
+      ]
     }
 
 
