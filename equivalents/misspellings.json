@@ -974,7 +974,68 @@
       "synonyms":[
         {"fitRating":1, "values":["rhythm","rythm", "rythem"]}
       ]
+    },
+    {
+      "words":["secretary"],
+      "synonyms":[
+        {"fitRating":1, "values":["secretary","secratary", "secretery"]}
+      ]
+    },
+    {
+      "words":["seize"],
+      "synonyms":[
+        {"fitRating":1, "values":["seize","sieze"]}
+      ]
+    },
+    {
+      "words":["separate"],
+      "synonyms":[
+        {"fitRating":1, "values":["separate","seperate"]}
+      ]
+    },
+    {
+      "words":["sergeant"],
+      "synonyms":[
+        {"fitRating":1, "values":["sergeant","sargent"]}
+      ]
+    },
+    {
+      "words":["similar"],
+      "synonyms":[
+        {"fitRating":1, "values":["similar","similer"]}
+      ]
+    },
+    {
+      "words":["skillful"],
+      "synonyms":[
+        {"fitRating":1, "values":["skillful","skilful", "skilfull"]}
+      ]
+    },
+    {
+      "words":["speech"],
+      "synonyms":[
+        {"fitRating":1, "values":["speech", "speach", "speeche"]}
+      ]
+    },
+    {
+      "words":["successful"],
+      "synonyms":[
+        {"fitRating":1, "values":["successful", "succesful", "successfull", "sucessful"]}
+      ]
+    },
+    {
+      "words":["supersede"],
+      "synonyms":[
+        {"fitRating":1, "values":["supersede", "supercede"]}
+      ]
+    },
+    {
+      "words":["surprise"],
+      "synonyms":[
+        {"fitRating":1, "values":["surprise", "suprise", "surprize"]}
+      ]
     }
+
 
 
 
