@@ -764,6 +764,54 @@
       "synonyms":[
         {"fitRating":1, "values":["outrageous","outragous"]}
       ]
+    },
+    {
+      "words":["parliament"],
+      "synonyms":[
+        {"fitRating":1, "values":["parliament","parliment"]}
+      ]
+    },
+    {
+      "words":["pastime"],
+      "synonyms":[
+        {"fitRating":1, "values":["pastime","passtime", "pasttime"]}
+      ]
+    },
+    {
+      "words":["perceive"],
+      "synonyms":[
+        {"fitRating":1, "values":["perceive","percieve"]}
+      ]
+    },
+    {
+      "words":["perseverance"],
+      "synonyms":[
+        {"fitRating":1, "values":["perseverance","perseverence"]}
+      ]
+    },
+    {
+      "words":["personnel"],
+      "synonyms":[
+        {"fitRating":1, "values":["personnel","personell", "personel"]}
+      ]
+    },
+    {
+      "words":["plagiarize"],
+      "synonyms":[
+        {"fitRating":1, "values":["plagiarize","plagerize"]}
+      ]
+    },
+    {
+      "words":["playwright"],
+      "synonyms":[
+        {"fitRating":1, "values":["playwright","playright", "playwrite"]}
+      ]
+    },
+    {
+      "words":["possession"],
+      "synonyms":[
+        {"fitRating":1, "values":["possession","posession", "possesion"]}
+      ]
     }
 
 
