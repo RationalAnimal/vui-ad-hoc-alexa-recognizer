@@ -8,31 +8,23 @@
 
 # vui-ad-hoc-alexa-recognizer
 
-npm module that provides VUI (voice user interface) special ad-hoc recognizer
-designed to parse raw text from the user and map it to the Alexa intents.
-This could be useful in many cases.  If
-you already have an Alexa skill and would like to convert it to Cortana or to
-Google assistant, or some other service, this module makes it really easy. Many skills can be converted
-in less than an hour.
-Also you can use this to quickly create a skill or an app even if you don't already have an Alexa skill.
-You will simply need to create the
-required intents, utterances, and (optionally) custom slot value files (equivalent of which
-you'd have to do anyway).
-It uses the same two files (intents and utterances) that are used to configure Alexa skills.
-This allows easy "middleware" implementation that can be placed between a Cortana
-or Google assistant skill and the Alexa backend.  If you have custom slots and
-you want to use exact or SoundEx matches on those slots, then you would also need
-file(s) listing these values.
-Supports almost all Alexa features - built in intents, all major built in slot types,
-most minor ones, 
-as well as "extra" features, such as the ability to do wildcard or SoundEx
-matches, transforming the values before sending them to be processed, etc.
-Additional configuration can be added through config file.
-This can be used either by itself or as part of other vui-xxx projects.
-You can also use it without any backend service whatsoever - simply use it with your javascript
-code same way you would use any other npm module.  It will provide complete
-utterance parsing and slot values mapping.  Simply use simple branching
-code (e.g. switch statement) using the intent to complete processing.
+npm module that provides natural language understanding/processing to enable easy implementation of chat bots and voice
+services. These can run anywhere Node.js is running - backend, browser, mobile apps, etc. High performance run time
+only requires two lines of code for integration - "require" to include it, and the actual call to analyze the text.
+Build-time is highly
+configurable and has many features - a rich set of built in intents and slots (roughly equivalent to Alexa's) with the
+ability to expand them, custom slots, slot flags, parametrized flags, transformation functions, SoundEx matching, wild
+card matching, option lists, text equivalents, unlimited sets of recognizers to build large segmented apps.
+
+# What's in the name
+You may be wondering why such an odd name.  Glad you asked, here is the explanation:
+1. vui - stands for "voice user interface" - because this module allows building skills/apps that have voice user interface
+2. ad-hoc - because this module creates a pre-configured run time for specific set(s) intents
+3. alexa - because this module can use Alexa skill configuration files.  So, if you already have an Alexa skill, using
+this module should be very easy and fast (and even if you don't it's still easy and fast, just a little longer to configure).
+Also, you can use this module simply to ease your Alexa coding - you can configure everything using vui-ad-hoc-alexa-recognizer,
+saving yourself time and effort by not having to manually enter all the variations, then use the included alexify utility to output alexa compatible files
+4. recognizer - because that's what it does - "recognizes" utterances and extracts slot values.
 
 # Repository
 This module as well as related vui modules can be found here:
@@ -58,16 +50,31 @@ npm install vui-ad-hoc-alexa-recognizer --save
 # Summary
 
 npm module that provides VUI (voice user interface) special ad-hoc recognizer
-designed to parse raw text from the user and map it to the Alexa intents.  It
-uses the same two files (intents and utterances) that are used to configure Alexa skills,
-but with additional features. Once parsed, the request can be sent to any
-code you want to handle the intents.
+designed to parse raw text from the user and map it to the Alexa intents.
+This could be useful in many cases.  If
+you already have an Alexa skill and would like to convert it to Cortana or to
+Google assistant, or some other service, this module makes it really easy. Many skills can be converted
+in less than an hour.
+Also you can use this to quickly create a skill or an app even if you don't already have an Alexa skill.
+You will simply need to create the
+required intents, utterances, and (optionally) custom slot value files (equivalent of which
+you'd have to do anyway).
+It uses the same two files (intents and utterances) that are used to configure Alexa skills.
 This allows easy "middleware" implementation that can be placed between a Cortana
-or Google assistant skill and the Alexa backend as well as your own "chatbot"
-that doesn't require anybody else services and doesn't even require a backend.
-It has two pieces of functionality: first, run it offline to generate a json file
-that will be used in matching/parsing the text; second it will match the raw
-text at run time using the generated json file.
+or Google assistant skill and the Alexa backend.  If you have custom slots and
+you want to use exact or SoundEx matches on those slots, then you would also need
+file(s) listing these values.
+Supports almost all Alexa features - built in intents, all major built in slot types,
+most minor ones, 
+as well as "extra" features, such as the ability to do wildcard or SoundEx
+matches, transforming the values before sending them to be processed, text equivalents matching (such as misspellings,
+equivalent words or phrases, homophones and more) etc.
+Additional configuration can be added through config file.
+This can be used either by itself or as part of other vui-xxx projects.
+You can also use it without any backend service whatsoever - simply use it with your javascript
+code same way you would use any other npm module.  It will provide complete
+utterance parsing and slot values mapping.  Simply use simple branching
+code (e.g. switch statement) using the intent to complete processing.
 
 # Usage
 
