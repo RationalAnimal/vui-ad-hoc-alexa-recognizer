@@ -580,6 +580,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       let sports = [];
       let hasLeagueFlag = false;
       let leagues = [];
+      let hasIncludePriorNamesFlag = false;
       for(let i = 0; i < slotFlags.length; i++){
         if(slotFlags[i].name === "SPORT"){
           hasSportFlag = true;
@@ -590,6 +591,9 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
           leagues = slotFlags[i].parameters;
         }
         else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+          hasWildCardMatch = true;
+        }
+        else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
           hasWildCardMatch = true;
         }
       }
@@ -607,6 +611,11 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
             continue;
           }
           allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].name);
+          if(hasIncludePriorNamesFlag){
+            for(let j = 0; j < recognizer.builtInValues.SportsTeam.priorNames.length; j++){
+              allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].priorNames[j]);
+            }
+          }
         }
         let replacementRegExpString = _makeReplacementRegExpString(allSportsTeams);
         return replacementRegExpString;

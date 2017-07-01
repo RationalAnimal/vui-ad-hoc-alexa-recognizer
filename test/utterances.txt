@@ -26,6 +26,8 @@ SportsTeamIntent {SportsTeamSlot:SPORT(["football"])} is a football sports team
 SportsTeamIntent {SportsTeamSlot:SPORT(["baseball"])} is a baseball sports team
 SportsTeamIntent {SportsTeamSlot:SPORT(["hockey"])} is a hockey sports team
 SportsTeamIntent {SportsTeamSlot:SPORT(["basketball"])} is a basketball sports team
+SportsTeamIntent {SportsTeamSlot} used to be known as {SportsTeamTwoSlot:INCLUDE_PRIOR_NAMES}
+SportsTeamIntent {SportsTeamSlot} is now known as {SportsTeamTwoSlot}
 FourDigitIntent here is {FooSlot:INCLUDE_WILDCARD_MATCH} test
 FourDigitIntent {FooSlot}
 BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it

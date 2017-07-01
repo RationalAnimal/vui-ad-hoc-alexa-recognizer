@@ -935,6 +935,27 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.SportsTeam slot with an INCLUDE_PRIOR_NAMES parameter matches", function() {
+      let result = recognizer.Recognizer.matchText("Atlanta Hawks used to be known as milwaukee hawks");
+      expect(result).to.eql(
+        {"name": "SportsTeamIntent",
+          "slots": {
+            "SportsTeamSlot": {
+              "name": "SportsTeamSlot",
+              "value": "Atlanta Hawks"
+            },
+            "SportsTeamTwoSlot": {
+              "name": "SportsTeamTwoSlot",
+              "value": "milwaukee hawks"
+            }
+          }
+        });
+    });
+
+    it("verify simple utterance with an AMAZON.SportsTeam slot without an INCLUDE_PRIOR_NAMES parameter does not match on prior name", function() {
+      let result = recognizer.Recognizer.matchText("Milwaukee Hawks is now known as Atlanta Hawks");
+      expect(typeof result).to.equal("undefined");
+    });
 
     it("verify simple utterance with an AMAZON.Airline slot matches", function() {
       let result = recognizer.Recognizer.matchText("is JetBlue Airways a budget airline");
