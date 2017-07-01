@@ -19,7 +19,7 @@ card matching, option lists, text equivalents, unlimited sets of recognizers to 
 # What's in the name
 You may be wondering why such an odd name.  Glad you asked, here is the explanation:
 1. vui - stands for "voice user interface" - because this module allows building skills/apps that have voice user interface
-2. ad-hoc - because this module creates a pre-configured run time for specific set(s) intents
+2. ad-hoc - because this module creates a pre-configured run time for specific set(s) of intents
 3. alexa - because this module can use Alexa skill configuration files.  So, if you already have an Alexa skill, using
 this module should be very easy and fast (and even if you don't it's still easy and fast, just a little longer to configure).
 Also, you can use this module simply to ease your Alexa coding - you can configure everything using vui-ad-hoc-alexa-recognizer,
