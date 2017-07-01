@@ -897,10 +897,42 @@
       "priorNames": [],
       "sport": "soccer",
       "league": "mls"
+    },
+    {
+      "name": "Portland Timbers",
+      "priorNames": [],
+      "sport": "soccer",
+      "league": "mls"
+    },
+    {
+      "name": "Real Salt Lake",
+      "priorNames": [],
+      "sport": "soccer",
+      "league": "mls"
+    },
+    {
+      "name": "San Jose Earthquakes",
+      "priorNames": [],
+      "sport": "soccer",
+      "league": "mls"
+    },
+    {
+      "name": "Seattle Sounders FC",
+      "priorNames": [],
+      "sport": "soccer",
+      "league": "mls"
+    },
+    {
+      "name": "Toronto FC",
+      "priorNames": [],
+      "sport": "soccer",
+      "league": "mls"
+    },
+    {
+      "name": "Vancouver Whitecaps FC",
+      "priorNames": [],
+      "sport": "soccer",
+      "league": "mls"
     }
-
-
-
-
   ]
 }
