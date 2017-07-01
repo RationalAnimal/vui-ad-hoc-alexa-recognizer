@@ -616,7 +616,7 @@
     },
     {
       "name": "Arizona Coyotes",
-      "priorNames": ["winnipeg jets"],
+      "priorNames": ["Winnipeg Jets"],
       "sport": "hockey",
       "league": "nhl"
     },
@@ -634,13 +634,13 @@
     },
     {
       "name": "Calgary Flames",
-      "priorNames": ["atlanta flames"],
+      "priorNames": ["Atlanta Flames"],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Carolina Hurricanes",
-      "priorNames": ["hartford whalers"],
+      "priorNames": ["Hartford Whalers"],
       "sport": "hockey",
       "league": "nhl"
     },
@@ -652,7 +652,7 @@
     },
     {
       "name": "Colorado Avalanche",
-      "priorNames": ["quebec nordiques"],
+      "priorNames": ["Quebec Nordiques"],
       "sport": "hockey",
       "league": "nhl"
     },
@@ -664,7 +664,7 @@
     },
     {
       "name": "Dallas Stars",
-      "priorNames": ["minnesota north stars"],
+      "priorNames": ["Minnesota North Stars"],
       "sport": "hockey",
       "league": "nhl"
     },
@@ -714,7 +714,7 @@
     },
     {
       "name": "New Jersey Devils",
-      "priorNames": ["kansas city scouts", "colorado rockies"],
+      "priorNames": ["Kansas City Scouts", "Colorado Rockies"],
       "sport": "hockey",
       "league": "nhl"
     },
@@ -792,7 +792,7 @@
     },
     {
       "name": "Winnipeg Jets",
-      "priorNames": ["atlanta thrashers"],
+      "priorNames": ["Atlanta Thrashers"],
       "sport": "hockey",
       "league": "nhl"
     },
