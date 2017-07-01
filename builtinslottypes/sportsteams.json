@@ -442,7 +442,7 @@
     },
     {
       "name": "Brooklyn Nets",
-      "priorNames": ["new jersey americans", "new york nets", "new jersey nets"],
+      "priorNames": ["New Jersey Americans", "New York Nets", "New Jersey Nets"],
       "sport": "basketball",
       "league": "nba"
     },
@@ -478,19 +478,19 @@
     },
     {
       "name": "Detroit Pistons",
-      "priorNames": ["fort wayne pistons"],
+      "priorNames": ["Fort Wayne Pistons"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Golden State Warriors",
-      "priorNames": ["philadelphia warriors"],
+      "priorNames": ["Philadelphia Warriors"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Houston Rockets",
-      "priorNames": ["san diego rockets"],
+      "priorNames": ["San Diego Rockets"],
       "sport": "basketball",
       "league": "nba"
     },
@@ -502,19 +502,19 @@
     },
     {
       "name": "Los Angeles Clippers",
-      "priorNames": ["buffalo braves", "san diego clippers"],
+      "priorNames": ["Buffalo Braves", "San Diego Clippers"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Los Angeles Lakers",
-      "priorNames": ["minneapolis lakers"],
+      "priorNames": ["Minneapolis Lakers"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Memphis Grizzlies",
-      "priorNames": ["vancouver grizzlies"],
+      "priorNames": ["Vancouver Grizzlies"],
       "sport": "basketball",
       "league": "nba"
     },
@@ -550,7 +550,7 @@
     },
     {
       "name": "Oklahoma City Thunder",
-      "priorNames": ["seattle supersonics"],
+      "priorNames": ["Seattle Supersonics"],
       "sport": "basketball",
       "league": "nba"
     },
@@ -562,7 +562,7 @@
     },
     {
       "name": "Philadelphia 76ers",
-      "priorNames": ["syracuse nationals"],
+      "priorNames": ["Syracuse Nationals"],
       "sport": "basketball",
       "league": "nba"
     },
@@ -580,13 +580,13 @@
     },
     {
       "name": "Sacramento Kings",
-      "priorNames": ["rochester royals", "cincinnati royals", "kansas city kings"],
+      "priorNames": ["Rochester Royals", "Cincinnati Royals", "Kansas City Kings"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "San Antonio Spurs",
-      "priorNames": ["dallas chaparrals"],
+      "priorNames": ["Dallas Chaparrals"],
       "sport": "basketball",
       "league": "nba"
     },
@@ -598,13 +598,13 @@
     },
     {
       "name": "Utah Jazz",
-      "priorNames": ["new orleans jazz"],
+      "priorNames": ["New Orleans Jazz"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Washington Wizards",
-      "priorNames": ["chicago packers/zephyrs", "chicago packers", "chicago zephyrs", "chicago packers zephyrs", "baltimore bullets", "capital bullets", "washington bullets"],
+      "priorNames": ["Chicago Packers/Zephyrs", "Chicago Packers", "Chicago Zephyrs", "Chicago Packers Zephyrs", "Baltimore Bullets", "Capital Bullets", "Washington Bullets"],
       "sport": "basketball",
       "league": "nba"
     },
