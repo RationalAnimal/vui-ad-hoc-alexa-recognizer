@@ -607,6 +607,10 @@
         {
           "name": "SportsTeamSlot",
           "type": "AMAZON.SportsTeam"
+        },
+        {
+          "name": "SportsTeamTwoSlot",
+          "type": "AMAZON.SportsTeam"
         }
       ]
     },

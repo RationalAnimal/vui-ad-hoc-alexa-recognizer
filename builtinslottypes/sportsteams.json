@@ -430,7 +430,7 @@
     },
     {
       "name": "Atlanta Hawks",
-      "priorNames": ["tri-cities blackhawks", "milwaukee hawks", "st. louis hawks", "st louis hawks", "saint louis hawks"],
+      "priorNames": ["tri-cities blackhawks", "Milwaukee Hawks", "St. Louis Hawks", "St Louis Hawks", "Saint Louis Hawks"],
       "sport": "basketball",
       "league": "nba"
     },
@@ -441,7 +441,7 @@
       "league": "nba"
     },
     {
-      "name": "Brooklyn Netss",
+      "name": "Brooklyn Nets",
       "priorNames": ["new jersey americans", "new york nets", "new jersey nets"],
       "sport": "basketball",
       "league": "nba"
