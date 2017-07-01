@@ -22,13 +22,13 @@
     },
     {
       "name": "Hamilton Tiger-Cats",
-      "priorNames": ["hamilton tigers", "hamilton wildcats"],
+      "priorNames": ["Hamilton Tigers", "Hamilton Wildcats"],
       "sport": "football",
       "league": "cfl"
     },
     {
       "name": "Montreal Alouettes",
-      "priorNames": ["baltimore stallions"],
+      "priorNames": ["Baltimore Stallions"],
       "sport": "football",
       "league": "cfl"
     },
@@ -58,7 +58,7 @@
     },
     {
       "name": "Arizona Cardinals",
-      "priorNames": ["chicago cardinals", "st louis cardinals", "st. louis cardinals", "saint louis cardinal"],
+      "priorNames": ["Chicago Cardinals", "St Louis Cardinals", "St. Louis Cardinals", "Saint Louis Cardinal"],
       "sport": "football",
       "league": "nfl"
     },
@@ -88,7 +88,7 @@
     },
     {
       "name": "Chicago Bears",
-      "priorNames": ["decatur staleys"],
+      "priorNames": ["Decatur Staleys"],
       "sport": "football",
       "league": "nfl"
     },
@@ -118,7 +118,7 @@
     },
     {
       "name": "Detroit Lions",
-      "priorNames": ["portsmouth spartans"],
+      "priorNames": ["Portsmouth Spartans"],
       "sport": "football",
       "league": "nfl"
     },
@@ -136,7 +136,7 @@
     },
     {
       "name": "Indianapolis Colts",
-      "priorNames": ["baltimore colts"],
+      "priorNames": ["Baltimore Colts"],
       "sport": "football",
       "league": "nfl"
     },
@@ -148,19 +148,19 @@
     },
     {
       "name": "Kansas City Chiefs",
-      "priorNames": ["dallas texans"],
+      "priorNames": ["Dallas Texans"],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Los Angeles Chargers",
-      "priorNames": ["san diego chargers"],
+      "priorNames": ["San Diego Chargers"],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Los Angeles Rams",
-      "priorNames": ["cleveland rams", "st. louis rams", "st louis rams", "saint louis rams"],
+      "priorNames": ["Cleveland Rams", "St. Louis rams", "St Louis Rams", "Saint Louis Rams"],
       "sport": "football",
       "league": "nfl"
     },
@@ -202,7 +202,7 @@
     },
     {
       "name": "Oakland Raiders",
-      "priorNames": ["los angeles raiders"],
+      "priorNames": ["Los Angeles Raiders"],
       "sport": "football",
       "league": "nfl"
     },
@@ -238,13 +238,13 @@
     },
     {
       "name": "Tennessee Titans",
-      "priorNames": ["houston oilers"],
+      "priorNames": ["Houston Oilers"],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Washington Redskins",
-      "priorNames": ["boston redskins"],
+      "priorNames": ["Boston Redskins"],
       "sport": "football",
       "league": "nfl"
     },
@@ -256,13 +256,13 @@
     },
     {
       "name": "Atlanta Braves",
-      "priorNames": ["boston braves", "milwaukee braves"],
+      "priorNames": ["Boston Braves", "Milwaukee Braves"],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Baltimore Orioles",
-      "priorNames": ["milwaukee brewers", "st. louis browns", "st louis browns", "saint louis browns"],
+      "priorNames": ["Milwaukee Brewers", "St. Louis Browns", "St Louis Browns", "Saint Louis Browns"],
       "sport": "baseball",
       "league": "mlb"
     },
@@ -328,7 +328,7 @@
     },
     {
       "name": "Los Angeles Dodgers",
-      "priorNames": ["brooklyn dodgers"],
+      "priorNames": ["Brooklyn Dodgers"],
       "sport": "baseball",
       "league": "mlb"
     },
@@ -340,13 +340,13 @@
     },
     {
       "name": "Milwaukee Brewers",
-      "priorNames": ["seattle pilots"],
+      "priorNames": ["Seattle Pilots"],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Minnesota Twins",
-      "priorNames": ["washington senators"],
+      "priorNames": ["Washington Senators"],
       "sport": "baseball",
       "league": "mlb"
     },
@@ -364,7 +364,7 @@
     },
     {
       "name": "Oakland Athletics",
-      "priorNames": ["philadelphia athletics", "kansas city athletics"],
+      "priorNames": ["Philadelphia Athletics", "Kansas City Athletics"],
       "sport": "baseball",
       "league": "mlb"
     },
@@ -388,7 +388,7 @@
     },
     {
       "name": "San Francisco Giants",
-      "priorNames": ["new york giants"],
+      "priorNames": ["New York Giants"],
       "sport": "baseball",
       "league": "mlb"
     },
@@ -424,13 +424,13 @@
     },
     {
       "name": "Washington Nationals",
-      "priorNames": ["montreal expos"],
+      "priorNames": ["Montreal Expos"],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Atlanta Hawks",
-      "priorNames": ["tri-cities blackhawks", "Milwaukee Hawks", "St. Louis Hawks", "St Louis Hawks", "Saint Louis Hawks"],
+      "priorNames": ["Tri-Cities Blackhawks", "Milwaukee Hawks", "St. Louis Hawks", "St Louis Hawks", "Saint Louis Hawks"],
       "sport": "basketball",
       "league": "nba"
     },
