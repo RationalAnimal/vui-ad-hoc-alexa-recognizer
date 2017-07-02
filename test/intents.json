@@ -5,6 +5,15 @@
       "slots": []
     },
     {
+      "intent": "NumberIntent",
+      "slots": [
+        {
+          "name": "NumberSlot",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
       "intent": "BlahIntent",
       "slots": [
         {
