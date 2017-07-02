@@ -66,6 +66,7 @@
     },
     {
       "name": "Arizona Cardinals",
+      "alternativeNames": ["Cardinals"],
       "priorNames": ["Chicago Cardinals", "St Louis Cardinals", "St. Louis Cardinals", "Saint Louis Cardinal"],
       "sport": "football",
       "league": "nfl"
@@ -217,6 +218,7 @@
     },
     {
       "name": "New York Giants",
+      "alternativeNames": ["Giants"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
@@ -382,96 +384,112 @@
     },
     {
       "name": "Miami Marlins",
+      "alternativeNames": ["Marlins"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Milwaukee Brewers",
+      "alternativeNames": ["Brewers"],
       "priorNames": ["Seattle Pilots"],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Minnesota Twins",
+      "alternativeNames": ["Twins"],
       "priorNames": ["Washington Senators"],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "New York Mets",
+      "alternativeNames": ["Mets"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "New York Yankees",
+      "alternativeNames": ["Yankees"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Oakland Athletics",
+      "alternativeNames": ["Athletics"],
       "priorNames": ["Philadelphia Athletics", "Kansas City Athletics"],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Philadelphia Phillies",
+      "alternativeNames": ["Phillies"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Pittsburgh Pirates",
+      "alternativeNames": ["Pirates"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "San Diego Padres",
+      "alternativeNames": ["Padres"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "San Francisco Giants",
+      "alternativeNames": ["Giants"],
       "priorNames": ["New York Giants"],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "St. Louis Cardinals",
+      "alternativeNames": ["Cardinals"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Seattle Mariners",
+      "alternativeNames": ["Mariners"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Tampa Bay Rays",
+      "alternativeNames": ["Rays"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Texas Rangers",
+      "alternativeNames": ["Rangers"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Toronto Blue Jays",
+      "alternativeNames": ["Jays"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Washington Nationals",
+      "alternativeNames": ["Nationals"],
       "priorNames": ["Montreal Expos"],
       "sport": "baseball",
       "league": "mlb"
