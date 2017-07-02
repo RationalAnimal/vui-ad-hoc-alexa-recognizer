@@ -110,7 +110,9 @@ Now, you can call the match() function, pass it any combination of spelled out a
 a match on NumberIntent with the value of the NumberSlot being set to the parsed number:
 
 ```shell
-> node matcher.js "51 thousand 2 hundred sixty 3"
+node matcher.js "51 thousand 2 hundred sixty 3"
+```
+```json
 {
   "name": "NumberIntent",
   "slots": {
