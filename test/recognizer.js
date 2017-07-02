@@ -894,7 +894,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
-    it("verify simple utterance with an AMAZON.SportsTeam slot with a league parameter matches", function() {
+    it("verify simple utterance with an AMAZON.SportsTeam slot with a league parameter and alternative name matches", function() {
+      let result = recognizer.Recognizer.matchText("Red Sox is a baseball sports team");
+      expect(result).to.eql(
+        {"name": "SportsTeamIntent",
+          "slots": {
+            "SportsTeamSlot": {
+              "name": "SportsTeamSlot",
+              "value": "Boston Red Sox"
+            }
+          }});
+    });
+
+    it("verify simple utterance with an AMAZON.SportsTeam slot with a wrong league parameter does not matche", function() {
       let result = recognizer.Recognizer.matchText("Toronto Argonauts is a baseball sports team");
       expect(typeof result).to.equal("undefined");
     });
