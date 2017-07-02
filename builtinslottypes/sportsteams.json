@@ -72,18 +72,21 @@
     },
     {
       "name": "Atlanta Falcons",
+      "alternativeNames": ["Falcons"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Baltimore Ravens",
+      "alternativeNames": ["Ravens"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Buffalo Bills",
+      "alternativeNames": ["Bills"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
@@ -96,30 +99,35 @@
     },
     {
       "name": "Chicago Bears",
+      "alternativeNames": ["Bears"],
       "priorNames": ["Decatur Staleys"],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Cincinnati Bengals",
+      "alternativeNames": ["Bengals"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Cleveland Browns",
+      "alternativeNames": ["Browns"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Dallas Cowboys",
+      "alternativeNames": ["Cowboys"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Denver Broncos",
+      "alternativeNames": ["Broncos"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
@@ -132,66 +140,77 @@
     },
     {
       "name": "Green Bay Packers",
+      "alternativeNames": ["Packers"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Houston Texans",
+      "alternativeNames": ["Texans"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Indianapolis Colts",
+      "alternativeNames": ["Colts"],
       "priorNames": ["Baltimore Colts"],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Jacksonville Jaguars",
+      "alternativeNames": ["Jaguars"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Kansas City Chiefs",
+      "alternativeNames": ["Chiefs"],
       "priorNames": ["Dallas Texans"],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Los Angeles Chargers",
+      "alternativeNames": ["Chargers"],
       "priorNames": ["San Diego Chargers"],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Los Angeles Rams",
+      "alternativeNames": ["Rams"],
       "priorNames": ["Cleveland Rams", "St. Louis rams", "St Louis Rams", "Saint Louis Rams"],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Miami Dolphins",
+      "alternativeNames": ["Dolphins"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Minnesota Vikings",
+      "alternativeNames": ["Vikings"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "New England Patriots",
+      "alternativeNames": ["Patriots"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "New Orleans Saints",
+      "alternativeNames": ["Saints"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
