@@ -496,6 +496,7 @@
     },
     {
       "name": "Atlanta Hawks",
+      "alternativeNames": ["Hawks"],
       "priorNames": ["Tri-Cities Blackhawks", "Milwaukee Hawks", "St. Louis Hawks", "St Louis Hawks", "Saint Louis Hawks"],
       "sport": "basketball",
       "league": "nba"

@@ -60,6 +60,8 @@ You will simply need to create the
 required intents, utterances, and (optionally) custom slot value files (equivalent of which
 you'd have to do anyway).
 It uses the same two files (intents and utterances) that are used to configure Alexa skills.
+(It also supports the "beta" Alexa configuration, but I don't recommend using it yet as Amazon hasn't worked out all
+the kinks yet).
 This allows easy "middleware" implementation that can be placed between a Cortana
 or Google assistant skill and the Alexa backend.  If you have custom slots and
 you want to use exact or SoundEx matches on those slots, then you would also need
@@ -75,6 +77,55 @@ You can also use it without any backend service whatsoever - simply use it with 
 code same way you would use any other npm module.  It will provide complete
 utterance parsing and slot values mapping.  Simply use simple branching
 code (e.g. switch statement) using the intent to complete processing.
+
+Keep in mind that many text parsing tasks can be trivially configured as intents/utterances even if you have no intentions
+of building a chat bot or a voice service.  For example, if you wanted
+to parse spelled out numbers, or even combinations of spelled out and numerals, you can easily setup to do it like this:
+
+utterances:
+
+```text
+NumberIntent {NumberSlot}
+```
+
+intents:
+
+```json
+{
+  "intents": [
+    {
+      "intent": "NumberIntent",
+      "slots": [
+        {
+          "name": "NumberSlot",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    }
+  ]
+}
+```
+
+Now, you can call the match() function, pass it any combination of spelled out and numerals, and it will return
+a match on NumberIntent with the value of the NumberSlot being set to the parsed number:
+
+```shell
+node matcher.js "51 thousand 2 hundred sixty 3"
+```
+```json
+{
+  "name": "NumberIntent",
+  "slots": {
+    "NumberSlot": {
+      "name": "NumberSlot",
+      "value": "51263"
+    }
+  }
+}
+```
+
+Similarly, you can parse dates, etc. even if that's the only thing you want to do (e.g. you have an app where the user
+can type in a date - simply use vui-ad-hoc-alexa-recognizer to parse it and return a date).
 
 # Usage
 
