@@ -1333,10 +1333,19 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
     else if(slotType === "TRANSCEND.SportsTeam"){
       let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.SportsTeam");
       let scratchValue = returnValue.toUpperCase();
+      outsideloop:
       for(let i = 0; i < builtInSlotValues.length; i ++){
         if(builtInSlotValues[i].name.toUpperCase() === scratchValue){
           returnValue = builtInSlotValues[i].name;
-          break;
+          break outsideloop;
+        }
+        else {
+          for(let j = 0; j < builtInSlotValues[i].priorNames.length; j++){
+            if(builtInSlotValues[i].priorNames[j].toUpperCase() === scratchValue){
+              returnValue = builtInSlotValues[i].priorNames[j];
+              break outsideloop;
+            }
+          }
         }
       }
     }

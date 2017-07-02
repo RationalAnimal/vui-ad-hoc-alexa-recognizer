@@ -946,7 +946,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
             },
             "SportsTeamTwoSlot": {
               "name": "SportsTeamTwoSlot",
-              "value": "milwaukee hawks"
+              "value": "Milwaukee Hawks"
             }
           }
         });
