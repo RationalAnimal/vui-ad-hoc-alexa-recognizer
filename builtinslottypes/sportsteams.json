@@ -587,102 +587,119 @@
     },
     {
       "name": "Los Angeles Lakers",
+      "alternativeNames": ["Lakers"],
       "priorNames": ["Minneapolis Lakers"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Memphis Grizzlies",
+      "alternativeNames": ["Grizzlies"],
       "priorNames": ["Vancouver Grizzlies"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Miami Heat",
+      "alternativeNames": ["Heat"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Milwaukee Bucks",
+      "alternativeNames": ["Bucks"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Minnesota Timberwolves",
+      "alternativeNames": ["Timberwolves"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "New Orleans Pelicans",
+      "alternativeNames": ["Pelicans"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "New York Knicks",
+      "alternativeNames": ["Knicks"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Oklahoma City Thunder",
+      "alternativeNames": ["Thunder"],
       "priorNames": ["Seattle Supersonics"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Orlando Magic",
+      "alternativeNames": ["Magic"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Philadelphia 76ers",
+      "alternativeNames": ["Philadelphia 76ers", "Philadelphia seventy sixers"],
       "priorNames": ["Syracuse Nationals"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Phoenix Suns",
+      "alternativeNames": ["Suns"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Portland Trail Blazers",
+      "alternativeNames": ["Blazers"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Sacramento Kings",
+      "alternativeNames": ["Kings"],
       "priorNames": ["Rochester Royals", "Cincinnati Royals", "Kansas City Kings"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "San Antonio Spurs",
+      "alternativeNames": ["Spurs"],
       "priorNames": ["Dallas Chaparrals"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Toronto Raptors",
+      "alternativeNames": ["Raptors"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Utah Jazz",
+      "alternativeNames": ["Jazz"],
       "priorNames": ["New Orleans Jazz"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Washington Wizards",
+      "alternativeNames": ["Wizards"],
       "priorNames": ["Chicago Packers/Zephyrs", "Chicago Packers", "Chicago Zephyrs", "Chicago Packers Zephyrs", "Baltimore Bullets", "Capital Bullets", "Washington Bullets"],
       "sport": "basketball",
       "league": "nba"
