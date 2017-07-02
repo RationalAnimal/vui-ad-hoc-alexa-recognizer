@@ -503,72 +503,84 @@
     },
     {
       "name": "Boston Celtics",
+      "alternativeNames": ["Celtics"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Brooklyn Nets",
+      "alternativeNames": ["Nets"],
       "priorNames": ["New Jersey Americans", "New York Nets", "New Jersey Nets"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Charlotte Hornets",
+      "alternativeNames": ["Hornets"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Chicago Bulls",
+      "alternativeNames": ["Bulls"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Cleveland Cavaliers",
+      "alternativeNames": ["Cavaliers"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Dallas Mavericks",
+      "alternativeNames": ["Mavericks"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Denver Nuggets",
+      "alternativeNames": ["Nuggets"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Detroit Pistons",
+      "alternativeNames": ["Pistons"],
       "priorNames": ["Fort Wayne Pistons"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Golden State Warriors",
+      "alternativeNames": ["Warriors"],
       "priorNames": ["Philadelphia Warriors"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Houston Rockets",
+      "alternativeNames": ["Rockets"],
       "priorNames": ["San Diego Rockets"],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Indiana Pacers",
+      "alternativeNames": ["Pacers"],
       "priorNames": [],
       "sport": "basketball",
       "league": "nba"
     },
     {
       "name": "Los Angeles Clippers",
+      "alternativeNames": ["Clippers"],
       "priorNames": ["Buffalo Braves", "San Diego Clippers"],
       "sport": "basketball",
       "league": "nba"
