@@ -10,48 +10,56 @@
     },
     {
       "name": "Calgary Stampeders",
+      "alternativeNames": ["Stampeders"],
       "priorNames": [],
       "sport": "football",
       "league": "cfl"
     },
     {
       "name": "Edmonton Eskimos",
+      "alternativeNames": ["Eskimos"],
       "priorNames": [],
       "sport": "football",
       "league": "cfl"
     },
     {
       "name": "Hamilton Tiger-Cats",
+      "alternativeNames": ["Hamilton Tiger Cats", "Tiger Cats"],
       "priorNames": ["Hamilton Tigers", "Hamilton Wildcats"],
       "sport": "football",
       "league": "cfl"
     },
     {
       "name": "Montreal Alouettes",
+      "alternativeNames": ["Alouettes"],
       "priorNames": ["Baltimore Stallions"],
       "sport": "football",
       "league": "cfl"
     },
     {
       "name": "Ottawa Redblacks",
+      "alternativeNames": ["Redblacks", "Ottawa Red blacks", "Red blacks"],
       "priorNames": [],
       "sport": "football",
       "league": "cfl"
     },
     {
       "name": "Saskatchewan Roughriders",
+      "alternativeNames": ["Saskatchewan Rough riders", "Roughriders", "Rough riders"],
       "priorNames": [],
       "sport": "football",
       "league": "cfl"
     },
     {
       "name": "Toronto Argonauts",
+      "alternativeNames": ["Argonauts"],
       "priorNames": [],
       "sport": "football",
       "league": "cfl"
     },
     {
       "name": "Winnipeg Blue Bombers",
+      "alternativeNames": ["Blue Bombers"],
       "priorNames": [],
       "sport": "football",
       "league": "cfl"
