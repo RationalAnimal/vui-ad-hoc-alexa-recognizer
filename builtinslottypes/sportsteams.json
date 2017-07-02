@@ -229,60 +229,70 @@
     },
     {
       "name": "Oakland Raiders",
+      "alternativeNames": ["Raiders"],
       "priorNames": ["Los Angeles Raiders"],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Philadelphia Eagles",
+      "alternativeNames": ["Eagles"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Pittsburgh Steelers",
+      "alternativeNames": ["Steelers"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "San Francisco 49ers",
+      "alternativeNames": ["San Francisco forty niners", "San Francisco 49", "San Francisco forty nine"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Seattle Seahawks",
+      "alternativeNames": ["Seahawks", "Sea hawks"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Tampa Bay Buccaneers",
+      "alternativeNames": ["Buccaneers"],
       "priorNames": [],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Tennessee Titans",
+      "alternativeNames": ["Titans"],
       "priorNames": ["Houston Oilers"],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Washington Redskins",
+      "alternativeNames": ["Redskins", "Red skins"],
       "priorNames": ["Boston Redskins"],
       "sport": "football",
       "league": "nfl"
     },
     {
       "name": "Arizona Diamondbacks",
+      "alternativeNames": ["Diamondbacks", "Diamond backs"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Atlanta Braves",
+      "alternativeNames": ["Braves"],
       "priorNames": ["Boston Braves", "Milwaukee Braves"],
       "sport": "baseball",
       "league": "mlb"
@@ -295,18 +305,21 @@
     },
     {
       "name": "Boston Red Sox",
+      "alternativeNames": ["Red Sox"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Chicago Cubs",
+      "alternativeNames": ["Cubs"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Chicago White Sox",
+      "alternativeNames": ["White Sox"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
