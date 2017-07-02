@@ -326,48 +326,56 @@
     },
     {
       "name": "Cincinnati Reds",
+      "alternativeNames": ["Reds"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Cleveland Indians",
+      "alternativeNames": ["Indians"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Colorado Rockies",
+      "alternativeNames": ["Rockies"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Detroit Tigers",
+      "alternativeNames": ["Tigers"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Houston Astros",
+      "alternativeNames": ["Astros"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Kansas City Royals",
+      "alternativeNames": ["Royals"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Los Angeles Angels",
+      "alternativeNames": ["Angels"],
       "priorNames": [],
       "sport": "baseball",
       "league": "mlb"
     },
     {
       "name": "Los Angeles Dodgers",
+      "alternativeNames": ["Dodgers"],
       "priorNames": ["Brooklyn Dodgers"],
       "sport": "baseball",
       "league": "mlb"
