@@ -611,6 +611,11 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
             continue;
           }
           allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].name);
+          if(typeof recognizer.builtInValues.SportsTeam.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.SportsTeam.values[i].alternativeNames)){
+              for(let j = 0; j < recognizer.builtInValues.SportsTeam.values[i].alternativeNames.length; j++){
+                allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].alternativeNames[j]);
+              }
+          }
           if(hasIncludePriorNamesFlag){
             for(let j = 0; j < recognizer.builtInValues.SportsTeam.priorNames.length; j++){
               allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].priorNames[j]);

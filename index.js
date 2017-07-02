@@ -1339,12 +1339,18 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
           returnValue = builtInSlotValues[i].name;
           break outsideloop;
         }
-        else {
-          for(let j = 0; j < builtInSlotValues[i].priorNames.length; j++){
-            if(builtInSlotValues[i].priorNames[j].toUpperCase() === scratchValue){
-              returnValue = builtInSlotValues[i].priorNames[j];
+        if(typeof builtInSlotValues[i].alternativeNames !== "undefined" && Array.isArray(builtInSlotValues[i].alternativeNames)){
+          for(let j = 0; j < builtInSlotValues[i].alternativeNames.length; j++){
+            if(builtInSlotValues[i].alternativeNames[j].toUpperCase() === scratchValue){
+              returnValue = builtInSlotValues[i].name;
               break outsideloop;
             }
+          }
+        }
+        for(let j = 0; j < builtInSlotValues[i].priorNames.length; j++){
+          if(builtInSlotValues[i].priorNames[j].toUpperCase() === scratchValue){
+            returnValue = builtInSlotValues[i].priorNames[j];
+            break outsideloop;
           }
         }
       }

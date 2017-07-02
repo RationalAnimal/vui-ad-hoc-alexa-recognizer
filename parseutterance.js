@@ -121,6 +121,26 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
           _removeFlag("LEAGUE", parsedJson.parsedUtterance[i].name, parsedJson)
         }
       }
+      // Remove INCLUDE_PRIOR_NAMES if this is NOT a built in SportsTeam type.
+      if(_hasFlag("INCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "SportsTeam" ){
+          // We are all set, this is allowed
+        }
+        else {
+          // Remove it
+          _removeFlag("INCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)
+        }
+      }
+      // Remove EXCLUDE_PRIOR_NAMES if this is NOT a built in SportsTeam type.
+      if(_hasFlag("EXCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "SportsTeam" ){
+          // We are all set, this is allowed
+        }
+        else {
+          // Remove it
+          _removeFlag("EXCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)
+        }
+      }
       // Remove COUNTRY if this is NOT a built in Airline type.
 			if(_hasFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)){
 				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airline" ){
