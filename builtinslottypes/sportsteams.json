@@ -1019,6 +1019,7 @@
     },
     {
       "name": "New York Red Bulls",
+      "alternativeNames": ["Red Bulls"],
       "priorNames": [],
       "sport": "soccer",
       "league": "mls"
@@ -1031,12 +1032,14 @@
     },
     {
       "name": "Philadelphia Union",
+      "alternativeNames": ["Union"],
       "priorNames": [],
       "sport": "soccer",
       "league": "mls"
     },
     {
       "name": "Portland Timbers",
+      "alternativeNames": ["Timbers"],
       "priorNames": [],
       "sport": "soccer",
       "league": "mls"
@@ -1049,12 +1052,14 @@
     },
     {
       "name": "San Jose Earthquakes",
+      "alternativeNames": ["Earthquakes"],
       "priorNames": [],
       "sport": "soccer",
       "league": "mls"
     },
     {
       "name": "Seattle Sounders FC",
+      "alternativeNames": ["Sounders"],
       "priorNames": [],
       "sport": "soccer",
       "league": "mls"
@@ -1067,6 +1072,7 @@
     },
     {
       "name": "Vancouver Whitecaps FC",
+      "alternativeNames": ["Whitecaps"],
       "priorNames": [],
       "sport": "soccer",
       "league": "mls"
