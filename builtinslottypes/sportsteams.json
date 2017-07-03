@@ -769,12 +769,14 @@
     },
     {
       "name": "Dallas Stars",
+      "alternativeNames": ["Stars"],
       "priorNames": ["Minnesota North Stars"],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Detroit Red Wings",
+      "alternativeNames": ["Red Wings"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
@@ -783,120 +785,140 @@
 
     {
       "name": "Edmonton Oilers",
+      "alternativeNames": ["Oilers"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Florida Panthers",
+      "alternativeNames": ["Panthers"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Los Angeles Kings",
+      "alternativeNames": ["Kings"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Minnesota Wild",
+      "alternativeNames": ["Wild"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Montreal Canadiens",
+      "alternativeNames": ["Canadiens"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Nashville Predators",
+      "alternativeNames": ["Predators"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "New Jersey Devils",
+      "alternativeNames": ["Devils"],
       "priorNames": ["Kansas City Scouts", "Colorado Rockies"],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "New York Islanders",
+      "alternativeNames": ["Islanders"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "New York Rangers",
+      "alternativeNames": ["Rangers"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Ottawa Senators",
+      "alternativeNames": ["Senators"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Philadelphia Flyers",
+      "alternativeNames": ["Flyers"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Pittsburgh Penguins",
+      "alternativeNames": ["Penguins"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "San Jose Sharks",
+      "alternativeNames": ["Sharks"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "St. Louis Blues",
+      "alternativeNames": ["Saint Louis Blues", "St Louis Blues", "Blues"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Tampa Bay Lightning",
+      "alternativeNames": ["Lightning"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Toronto Maple Leafs",
+      "alternativeNames": ["Maple Leafs", "Maple Leaves"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Vancouver Canucks",
+      "alternativeNames": ["Canucks"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Vegas Golden Knights",
+      "alternativeNames": ["Golden Knights"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Washington Capitals",
+      "alternativeNames": ["Capitals"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Winnipeg Jets",
+      "alternativeNames": ["Jets"],
       "priorNames": ["Atlanta Thrashers"],
       "sport": "hockey",
       "league": "nhl"
