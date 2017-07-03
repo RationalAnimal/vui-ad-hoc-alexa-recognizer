@@ -330,7 +330,27 @@
     {"name":"Calpine","alternativeNames": [],"priorNames": []},
     {"name":"CamelBak Products","alternativeNames": [],"priorNames": []},
     {"name":"Cameron International","alternativeNames": [],"priorNames": []},
-    {"name":"Campbell Soup Company","alternativeNames": [],"priorNames": []}
+    {"name":"Campbell Soup Company","alternativeNames": [],"priorNames": []},
+
+    {"name":"Cantor Fitzgerald","alternativeNames": [],"priorNames": []},
+    {"name":"Canvas","alternativeNames": [],"priorNames": []},
+    {"name":"Cape Air","alternativeNames": [],"priorNames": []},
+    {"name":"Capital Group Companies","alternativeNames": [],"priorNames": []},
+    {"name":"Capital One","alternativeNames": [],"priorNames": []},
+    {"name":"Cardinal Health","alternativeNames": [],"priorNames": []},
+    {"name":"CareFusion","alternativeNames": ["Care Fusion"],"priorNames": []},
+    {"name":"Cargill","alternativeNames": [],"priorNames": []},
+    {"name":"Carlisle Companies","alternativeNames": [],"priorNames": []},
+    {"name":"Carlson Companies","alternativeNames": [],"priorNames": []},
+    {"name":"Carlyle Group","alternativeNames": [],"priorNames": []},
+    {"name":"CarMax","alternativeNames": ["CarMax"],"priorNames": []},
+    {"name":"Carnival Corporation & plc","alternativeNames": ["Carnival Corporation and plc"],"priorNames": []},
+    {"name":"Carnival Cruise Lines","alternativeNames": [],"priorNames": []},
+    {"name":"Carpenter Technology Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Carroll Shelby International","alternativeNames": ["Carpenter Technology"],"priorNames": []},
+    {"name":"Carter's, Inc.","alternativeNames": ["Carter's, Inc.", "Carter's"],"priorNames": []},
+    {"name":"Cartoon Network Studios","alternativeNames": [],"priorNames": []}
+
 
 
 
