@@ -78,9 +78,9 @@ code same way you would use any other npm module.  It will provide complete
 utterance parsing and slot values mapping.  Simply use simple branching
 code (e.g. switch statement) using the intent to complete processing.
 
-Keep in mind that many text parsing tasks can be trivially configured as intents/utterances even if you have no intentions
+Keep in mind that many text parsing tasks can be trivially configured as intents/utterances even if you have no intention
 of building a chat bot or a voice service.  For example, if you wanted
-to parse spelled out numbers, or even combinations of spelled out and numerals, you can easily setup to do it like this:
+to parse spelled out numbers, or even combinations of spelled out numbers and numerals, you can easily setup to do it like this:
 
 utterances:
 
