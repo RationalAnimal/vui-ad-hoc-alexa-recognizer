@@ -396,7 +396,6 @@ recognizer.builtInValues.Director = require("./builtinslottypes/directors.json")
 recognizer.builtInValues.Director.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Director.values);
 
 recognizer.builtInValues.Corporation = require("./builtinslottypes/corporations.json");
-recognizer.builtInValues.Corporation.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Corporation.values);
 
 recognizer.builtInValues.CivicStructure = require("./builtinslottypes/civicstructures.json");
 recognizer.builtInValues.CivicStructure.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.CivicStructure.values);
@@ -623,6 +622,41 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
           }
         }
         let replacementRegExpString = _makeReplacementRegExpString(allSportsTeams);
+        return replacementRegExpString;
+      }
+    }
+    else if(slotType === "TRANSCEND.Corporation"){
+      // Ignore SOUNDEX_MATCH flag for now
+      let hasWildCardMatch = false;
+      let hasIncludePriorNamesFlag = false;
+      for(let i = 0; i < slotFlags.length; i++){
+        if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+          hasWildCardMatch = true;
+        }
+        else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
+          hasWildCardMatch = true;
+        }
+      }
+      if(hasWildCardMatch){
+        // numbers are used in cases of some names
+        return "((?:\\w|\\s|[0-9]|\-)+)";
+      }
+      else {
+        let allCorporations = [];
+        for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i ++){
+          allCorporations.push(recognizer.builtInValues.Corporation.values[i].name);
+          if(typeof recognizer.builtInValues.Corporation.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.Corporation.values[i].alternativeNames)){
+            for(let j = 0; j < recognizer.builtInValues.Corporation.values[i].alternativeNames.length; j++){
+              allCorporations.push(recognizer.builtInValues.Corporation.values[i].alternativeNames[j]);
+            }
+          }
+          if(hasIncludePriorNamesFlag){
+            for(let j = 0; j < recognizer.builtInValues.Corporation.priorNames.length; j++){
+              allCorporations.push(recognizer.builtInValues.Corporation.values[i].priorNames[j]);
+            }
+          }
+        }
+        let replacementRegExpString = _makeReplacementRegExpString(allCorporations);
         return replacementRegExpString;
       }
     }
@@ -871,7 +905,6 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Festival", "Festival", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.EducationalOrganization", "EducationalOrganization", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Director", "Director", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Corporation", "Corporation", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.CivicStructure", "CivicStructure", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.BroadcastChannel", "BroadcastChannel", config);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.BookSeries", "BookSeries", config);
@@ -899,6 +932,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_STATE", "US_STATE", config, true, true);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Airline", "Airline", config, true, true);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SportsTeam", "SportsTeam", config, true, true);
+    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Corporation", "Corporation", config, true, true);
     // Don't update the values from the config files for these slot types
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Month", "Month", config, true);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.DayOfWeek", "DayOfWeek", config, true);
