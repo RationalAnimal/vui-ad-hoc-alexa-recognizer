@@ -706,54 +706,63 @@
     },
     {
       "name": "Anaheim Ducks",
+      "alternativeNames": ["Ducks"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Arizona Coyotes",
+      "alternativeNames": ["Coyotes"],
       "priorNames": ["Winnipeg Jets"],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Boston Bruins",
+      "alternativeNames": ["Bruins"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Buffalo Sabres",
+      "alternativeNames": ["Sabres"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Calgary Flames",
+      "alternativeNames": ["Flames"],
       "priorNames": ["Atlanta Flames"],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Carolina Hurricanes",
+      "alternativeNames": ["Hurricanes"],
       "priorNames": ["Hartford Whalers"],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Chicago Blackhawks",
+      "alternativeNames": ["Blackhawks"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Colorado Avalanche",
+      "alternativeNames": ["Avalanche"],
       "priorNames": ["Quebec Nordiques"],
       "sport": "hockey",
       "league": "nhl"
     },
     {
       "name": "Columbus Blue Jackets",
+      "alternativeNames": ["Jackets"],
       "priorNames": [],
       "sport": "hockey",
       "league": "nhl"
