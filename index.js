@@ -1355,6 +1355,31 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         }
       }
     }
+    else if(slotType === "TRANSCEND.Corporation"){
+      let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.Corporation");
+      let scratchValue = returnValue.toUpperCase();
+      outsideloop:
+        for(let i = 0; i < builtInSlotValues.length; i ++){
+          if(builtInSlotValues[i].name.toUpperCase() === scratchValue){
+            returnValue = builtInSlotValues[i].name;
+            break outsideloop;
+          }
+          if(typeof builtInSlotValues[i].alternativeNames !== "undefined" && Array.isArray(builtInSlotValues[i].alternativeNames)){
+            for(let j = 0; j < builtInSlotValues[i].alternativeNames.length; j++){
+              if(builtInSlotValues[i].alternativeNames[j].toUpperCase() === scratchValue){
+                returnValue = builtInSlotValues[i].name;
+                break outsideloop;
+              }
+            }
+          }
+          for(let j = 0; j < builtInSlotValues[i].priorNames.length; j++){
+            if(builtInSlotValues[i].priorNames[j].toUpperCase() === scratchValue){
+              returnValue = builtInSlotValues[i].priorNames[j];
+              break outsideloop;
+            }
+          }
+        }
+    }
     else if(slotType === "TRANSCEND.US_STATE"){
       let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.US_STATE");
       let scratchValue = returnValue.toUpperCase();
@@ -1523,7 +1548,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
 //    console.log("_matchText, 3, i: " + i);
     let scratch = sortedMatchConfig[i];
 //    console.log("_matchText, 4, scratch: " + JSON.stringify(scratch, null, 2));
-//    console.log("_matchText, 4.1, scratch.regExString: " + JSON.stringify(scratch.regExString));
+//    console.log("_matchText, 4.1, scratch.regExpStrings: " + JSON.stringify(scratch.regExpStrings));
     if(typeof scratch.regExpStrings !== "undefined" && Array.isArray(scratch.regExpStrings)){
       for(let k = 0; k < scratch.regExpStrings.length; k ++){
         let scratchRegExpString = scratch.regExpStrings[k];
@@ -1532,6 +1557,15 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
           // This is the final reg exp
           let matchResult;
           while(matchResult = scratchRegExp.exec(stringToMatch)){
+//            console.log("_matchText, 4.1.1, matchResult: ", JSON.stringify(matchResult, null, 2));
+//            for(let j = matchResult.length - 1; j >= 0; j--){
+//              console.log("_matchText, 4.1.1.1, matchResult[" + j + "]: ", matchResult[j]);
+//              if(matchResult[j] === null || typeof matchResult[j] == "undefined"){
+//                console.log("_matchText, 4.1.1.2, matchResult[" + j + "]: ", matchResult[j]);
+//                matchResult.splice(j, 1);
+//              }
+//            }
+//            console.log("_matchText, 4.1.2, matchResult: ", JSON.stringify(matchResult, null, 2));
             multistage: {
               if(matchResult !== null){
                 let returnValue = {};

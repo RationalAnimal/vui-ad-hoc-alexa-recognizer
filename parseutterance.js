@@ -121,9 +121,10 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
           _removeFlag("LEAGUE", parsedJson.parsedUtterance[i].name, parsedJson)
         }
       }
-      // Remove INCLUDE_PRIOR_NAMES if this is NOT a built in SportsTeam type.
+      // Remove INCLUDE_PRIOR_NAMES if this is NOT a built in SportsTeam or Corporation type.
       if(_hasFlag("INCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)){
-        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "SportsTeam" ){
+        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "SportsTeam" ||
+          _getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Corporation"){
           // We are all set, this is allowed
         }
         else {
@@ -131,9 +132,10 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
           _removeFlag("INCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)
         }
       }
-      // Remove EXCLUDE_PRIOR_NAMES if this is NOT a built in SportsTeam type.
+      // Remove EXCLUDE_PRIOR_NAMES if this is NOT a built in SportsTeam or Corporation type.
       if(_hasFlag("EXCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)){
-        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "SportsTeam" ){
+        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "SportsTeam" ||
+          _getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Corporation"){
           // We are all set, this is allowed
         }
         else {

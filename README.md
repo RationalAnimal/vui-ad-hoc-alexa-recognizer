@@ -557,8 +557,8 @@ the specified countries and continents.
 7. "SPORT", "LEAGUE" - these are parametrized flags (see below).  currently
 they only apply to the AMAZON.SportsTeam slot type and they restrict the matches to
 the specified sports and leagues.
-8. "INCLUDE_PRIOR_NAMES", "EXCLUDE_PRIOR_NAMES" - Currently these only apply to the AMAZON.SportsTeam slot type and
-they include/exclude the prior team names in the search. Default is EXCLUDE_PRIOR_NAMES.
+8. "INCLUDE_PRIOR_NAMES", "EXCLUDE_PRIOR_NAMES" - Currently these only apply to the AMAZON.SportsTeam and AMAZON.Corporation
+slot type and they include/exclude the prior team names in the search. Default is EXCLUDE_PRIOR_NAMES.
 
 If you don't specify any of these, then
 INCLUDE_VALUES_MATCH and EXCLUDE_WILDCARD_MATCH will be used as the default.  Also,
@@ -1035,7 +1035,7 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with all the numbers/date/time/duration built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.DURATION
-5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Airline (all US, Canadian, and Mexican airlines only), AMAZON.Color, AMAZON.Country, AMAZON.DayOfWeek, AMAZON.Month, AMAZON.Room, AMAZON.SocialMediaPlatform, AMAZON.SportsTeam (includes NFL, CFL, NBA, MLB, NHL, and MLS teams)
-6. Utterances with these list built in slot types with nominal support (see Nominal Support section): AMAZON.Actor, AMAZON.AdministrativeArea, AMAZON.Artist, AMAZON.Athlete, AMAZON.Author, AMAZON.Book, AMAZON.BookSeries, AMAZON.BroadcastChannel, AMAZON.CivicStructure, AMAZON.Comic, AMAZON.Corporation, AMAZON.Dessert, AMAZON.Director, AMAZON.EducationalOrganization, AMAZON.Festival, AMAZON.FictionalCharacter, AMAZON.FoodEstablishment, AMAZON.Game, AMAZON.Landform, AMAZON.LandmarksOrHistoricalBuildings, AMAZON.LocalBusiness, AMAZON.LocalBusinessType, AMAZON.MedicalOrganization, AMAZON.Movie, AMAZON.MovieSeries, AMAZON.MovieTheater, AMAZON.MusicAlbum, AMAZON.MusicGroup, AMAZON.Musician, AMAZON.MusicRecording, AMAZON.MusicVenue, AMAZON.MusicVideo, AMAZON.Organization, AMAZON.Person, AMAZON.Professional, AMAZON.Residence, AMAZON.ScreeningEvent, AMAZON.Service, AMAZON.SoftwareApplication, AMAZON.SoftwareGame, AMAZON.SportsEvent, AMAZON.TVEpisode, AMAZON.TVSeason, AMAZON.TVSeries, AMAZON.VideoGame
+5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Airline (all US, Canadian, and Mexican airlines), AMAZON.Color, AMAZON.Corporation (initial implementation - up to corporations with names starting with A), AMAZON.Country, AMAZON.DayOfWeek, AMAZON.Month, AMAZON.Room, AMAZON.SocialMediaPlatform, AMAZON.SportsTeam (includes NFL, CFL, NBA, MLB, NHL, and MLS teams)
+6. Utterances with these list built in slot types with nominal support (see Nominal Support section): AMAZON.Actor, AMAZON.AdministrativeArea, AMAZON.Artist, AMAZON.Athlete, AMAZON.Author, AMAZON.Book, AMAZON.BookSeries, AMAZON.BroadcastChannel, AMAZON.CivicStructure, AMAZON.Comic, AMAZON.Dessert, AMAZON.Director, AMAZON.EducationalOrganization, AMAZON.Festival, AMAZON.FictionalCharacter, AMAZON.FoodEstablishment, AMAZON.Game, AMAZON.Landform, AMAZON.LandmarksOrHistoricalBuildings, AMAZON.LocalBusiness, AMAZON.LocalBusinessType, AMAZON.MedicalOrganization, AMAZON.Movie, AMAZON.MovieSeries, AMAZON.MovieTheater, AMAZON.MusicAlbum, AMAZON.MusicGroup, AMAZON.Musician, AMAZON.MusicRecording, AMAZON.MusicVenue, AMAZON.MusicVideo, AMAZON.Organization, AMAZON.Person, AMAZON.Professional, AMAZON.Residence, AMAZON.ScreeningEvent, AMAZON.Service, AMAZON.SoftwareApplication, AMAZON.SoftwareGame, AMAZON.SportsEvent, AMAZON.TVEpisode, AMAZON.TVSeason, AMAZON.TVSeries, AMAZON.VideoGame
 
 More Amazon built in slot types are coming shortly

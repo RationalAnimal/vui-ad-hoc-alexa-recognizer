@@ -697,13 +697,13 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
 
     it("verify simple utterance with an AMAZON.Corporation slot matches", function() {
-      let result = recognizer.Recognizer.matchText("apple is a highly valued company");
+      let result = recognizer.Recognizer.matchText("akamai is a highly valued company");
       expect(result).to.eql(
         {"name": "CorporationIntent",
          "slots": {
           "CorporationSlot": {
             "name": "CorporationSlot",
-            "value": "apple"
+            "value": "Akamai Technologies"
           }
         }});
     });
