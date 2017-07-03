@@ -311,7 +311,27 @@
     {"name":"Burpee Seeds","alternativeNames": [],"priorNames": []},
     {"name":"Burton Snowboards","alternativeNames": [],"priorNames": []},
     {"name":"Bushmaster Firearms International","alternativeNames": ["Bushmaster Firearms", "Bushmaster"],"priorNames": []},
-    {"name":"BuzzFeed","alternativeNames": ["Buzz Feed"],"priorNames": []}
+    {"name":"BuzzFeed","alternativeNames": ["Buzz Feed"],"priorNames": []},
+
+    {"name":"C. H. Robinson Worldwide","alternativeNames": ["C H Robinson Worldwide"],"priorNames": []},
+    {"name":"C. R. Bard, Inc.","alternativeNames": ["C R Bard, Inc.", "C. R. Bard", "C R Bard"],"priorNames": []},
+    {"name":"C&S Wholesale Grocers","alternativeNames": ["C and S Wholesale Grocers"],"priorNames": []},
+    {"name":"CA Technologies","alternativeNames": [],"priorNames": []},
+    {"name":"Cabela's","alternativeNames": [],"priorNames": []},
+    {"name":"Cablevision Systems","alternativeNames": [],"priorNames": []},
+    {"name":"Cabot Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Cabot Oil & Gas","alternativeNames": ["Cabot Oil and Gas"],"priorNames": []},
+    {"name":"CACI","alternativeNames": [],"priorNames": []},
+    {"name":"Cadence Design Systems","alternativeNames": [],"priorNames": []},
+    {"name":"Cal-Maine","alternativeNames": ["Cal Maine"],"priorNames": []},
+    {"name":"California Pizza Kitchen","alternativeNames": [],"priorNames": []},
+    {"name":"Calista Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Callaway Golf Company","alternativeNames": [],"priorNames": []},
+    {"name":"Calpine","alternativeNames": [],"priorNames": []},
+    {"name":"CamelBak Products","alternativeNames": [],"priorNames": []},
+    {"name":"Cameron International","alternativeNames": [],"priorNames": []},
+    {"name":"Campbell Soup Company","alternativeNames": [],"priorNames": []}
+
 
 
   ]
