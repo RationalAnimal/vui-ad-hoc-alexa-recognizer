@@ -365,7 +365,23 @@
     {"name":"Cerberus Capital Management","alternativeNames": ["Cerberus Capital"],"priorNames": []},
     {"name":"Ceridian","alternativeNames": [],"priorNames": []},
     {"name":"Cerner","alternativeNames": [],"priorNames": []},
-    {"name":"CF Industries","alternativeNames": ["C. F. Industries"],"priorNames": []}
+    {"name":"CF Industries","alternativeNames": ["C. F. Industries"],"priorNames": []},
+
+    {"name":"CH2M Hill Companies","alternativeNames": ["C. H. 2 M. Hill Companies"],"priorNames": []},
+    {"name":"Charles Schwab Corporation","alternativeNames": ["Charles Schwab"],"priorNames": []},
+    {"name":"Charter Arms","alternativeNames": [],"priorNames": []},
+    {"name":"The Cheesecake Factory","alternativeNames": ["Cheesecake Factory"],"priorNames": []},
+    {"name":"Chem-Dry","alternativeNames": ["Chem Dry"],"priorNames": []},
+    {"name":"Chesapeake Energy","alternativeNames": [],"priorNames": []},
+    {"name":"Chevron Corporation","alternativeNames": ["Chevron"],"priorNames": []},
+    {"name":"ChexSystems","alternativeNames": ["Checks Systems"],"priorNames": []},
+    {"name":"Chicago Bridge & Iron Company","alternativeNames": ["Chicago Bridge and Iron Company", "Chicago Bridge and Iron"],"priorNames": []},
+    {"name":"Chick-fil-A","alternativeNames": ["Chick filet"],"priorNames": []},
+    {"name":"Chipotle Mexican Grill","alternativeNames": ["Chipotle"],"priorNames": []},
+    {"name":"Chiquita Brands International","alternativeNames": ["Chiquita"],"priorNames": []},
+    {"name":"Choice Hotels International","alternativeNames": ["Choice Hotels"],"priorNames": []},
+    {"name":"Christian Moerlein Brewing Company","alternativeNames": [],"priorNames": []}
+
 
 
 
