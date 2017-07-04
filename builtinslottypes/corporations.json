@@ -595,7 +595,29 @@
     {"name":"Expeditors International","alternativeNames": [],"priorNames": []},
     {"name":"Express Scripts","alternativeNames": [],"priorNames": []},
     {"name":"Extron","alternativeNames": [],"priorNames": []},
-    {"name":"ExxonMobil","alternativeNames": ["Exxon Mobil", "Ekson Mobile"],"priorNames": []}
+    {"name":"ExxonMobil","alternativeNames": ["Exxon Mobil", "Ekson Mobile"],"priorNames": []},
+
+    {"name":"F5 Networks","alternativeNames": ["F Five Networks", "F. 5 Networks", "F. Five Networks"],"priorNames": []},
+    {"name":"Fabletics","alternativeNames": [],"priorNames": []},
+    {"name":"Fabrik Inc.","alternativeNames": ["Fabrik Inc", "Fabrik", "Fabric Inc.", "Fabric Inc", "Fabric"],"priorNames": []},
+    {"name":"Facebook","alternativeNames": [],"priorNames": []},
+    {"name":"Fairchild Semiconductor","alternativeNames": [],"priorNames": []},
+    {"name":"Family Dollar Stores","alternativeNames": [],"priorNames": []},
+    {"name":"Fannie Mae","alternativeNames": ["Federal National Mortgage Association"],"priorNames": []},
+    {"name":"Far West Capital","alternativeNames": [],"priorNames": []},
+    {"name":"Farmers Insurance Group","alternativeNames": ["Farmers Insurance"],"priorNames": []},
+    {"name":"Faultless Starch/Bon Ami Company","alternativeNames": ["Faultless Starch", "Bon Ami Company"],"priorNames": []},
+    {"name":"Federal-Mogul Corporation","alternativeNames": ["Federal Mogul Corporation", "Federal-Mogul", "Federal Mogul"],"priorNames": []},
+    {"name":"Federal Signal Corporation","alternativeNames": ["Federal Signal"],"priorNames": []},
+    {"name":"FedEx","alternativeNames": [],"priorNames": []},
+    {"name":"Fender Musical Instruments Corporation","alternativeNames": ["Fender Musical Instruments"],"priorNames": []},
+    {"name":"Fenway Partners","alternativeNames": [],"priorNames": []},
+    {"name":"FICO","alternativeNames": ["F. I. C. O."],"priorNames": []},
+    {"name":"Fidelity Investments","alternativeNames": ["Fidelity"],"priorNames": []},
+    {"name":"Fidelity National Information Services","alternativeNames": [],"priorNames": []},
+    {"name":"FileMaker Inc.","alternativeNames": ["FileMaker Inc", "File Maker Inc.", "File Maker Inc", "File Maker"],"priorNames": ["Claris Corp.", "Claris Corporation", "Claris Corp"]},
+    {"name":"Filter Forge","alternativeNames": [],"priorNames": []}
+
 
 
   ]
