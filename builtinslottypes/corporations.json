@@ -673,7 +673,28 @@
     {"name":"Genentech","alternativeNames": [],"priorNames": []},
     {"name":"Generac Power Systems","alternativeNames": [],"priorNames": []},
     {"name":"General Atomics","alternativeNames": [],"priorNames": []},
-    {"name":"General Cable","alternativeNames": [],"priorNames": []}
+    {"name":"General Cable","alternativeNames": [],"priorNames": []},
+
+    {"name":"General Dynamics","alternativeNames": [],"priorNames": []},
+    {"name":"Bath Iron Works","alternativeNames": [],"priorNames": []},
+    {"name":"General Dynamics Electric Boat","alternativeNames": [],"priorNames": []},
+    {"name":"Gulfstream Aerospace","alternativeNames": [],"priorNames": []},
+    {"name":"General Electric","alternativeNames": [],"priorNames": []},
+    {"name":"GE Consumer & Industrial","alternativeNames": ["GE Consumer and Industrial", "G. E. Consumer and Industrial", "G. E. Consumer & Industrial"],"priorNames": []},
+    {"name":"General Fibre Company","alternativeNames": [],"priorNames": []},
+    {"name":"General Mills","alternativeNames": [],"priorNames": []},
+    {"name":"General Motors","alternativeNames": [],"priorNames": []},
+    {"name":"Genesco Inc.","alternativeNames": ["Genesco Inc", "Genesco"],"priorNames": []},
+    {"name":"Gentiva Health Services","alternativeNames": [],"priorNames": []},
+    {"name":"Genuine Parts Company","alternativeNames": [],"priorNames": []},
+    {"name":"Genworth Financial","alternativeNames": [],"priorNames": []},
+    {"name":"Georgia-Pacific","alternativeNames": ["Georgia Pacific"],"priorNames": []},
+    {"name":"Gerber Scientific","alternativeNames": [],"priorNames": []},
+    {"name":"GHD Group","alternativeNames": ["G. H. D. Group"],"priorNames": []},
+    {"name":"Giant Food","alternativeNames": [],"priorNames": []},
+    {"name":"Gibson Guitar Corporation","alternativeNames": ["Gibson Guitar"],"priorNames": []},
+    {"name":"Gilead Sciences","alternativeNames": [],"priorNames": []}
+
 
 
 
