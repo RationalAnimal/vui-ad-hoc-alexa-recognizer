@@ -761,7 +761,30 @@
     {"name":"Hollister Clothing","alternativeNames": [],"priorNames": []},
     {"name":"Hologic, Inc.","alternativeNames": ["Hologic, Inc", "Hologic"],"priorNames": []},
     {"name":"The Home Depot","alternativeNames": ["Home Depot"],"priorNames": []},
-    {"name":"Home Shopping Network","alternativeNames": [],"priorNames": []}
+    {"name":"Home Shopping Network","alternativeNames": [],"priorNames": []},
+
+    {"name":"Honeywell","alternativeNames": ["Honey Well"],"priorNames": []},
+    {"name":"Hormel Foods Corporation","alternativeNames": ["Hormel Foods", "Hormel"],"priorNames": []},
+    {"name":"Hornbeck Offshore Services","alternativeNames": [],"priorNames": []},
+    {"name":"Horton Holding","alternativeNames": [],"priorNames": []},
+    {"name":"Hospital Corporation of America","alternativeNames": [],"priorNames": []},
+    {"name":"Host Hotels & Resorts, Inc.","alternativeNames": ["Host Hotels & Resorts, Inc", "Host Hotels & Resorts", "Host Hotels and Resorts, Inc.", "Host Hotels and Resorts, Inc", "Host Hotels and Resorts"],"priorNames": []},
+    {"name":"Hostess Brands","alternativeNames": [],"priorNames": []},
+    {"name":"Hot Topic","alternativeNames": [],"priorNames": []},
+    {"name":"Houchens Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Houghton Mifflin Harcourt Learning Technology","alternativeNames": [],"priorNames": []},
+    {"name":"Houlihan's","alternativeNames": [],"priorNames": []},
+    {"name":"House of Deréon","alternativeNames": ["House of Deréon", "House of Dereon"],"priorNames": []},
+    {"name":"HP Inc.","alternativeNames": ["HP Inc.", "HP Inc", "HP"],"priorNames": []},
+    {"name":"Hughes Communications","alternativeNames": [],"priorNames": []},
+    {"name":"Humana","alternativeNames": [],"priorNames": []},
+    {"name":"Hunt Petroleum","alternativeNames": [],"priorNames": []},
+    {"name":"Huntington Ingalls Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Huntsman Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Hush Puppies","alternativeNames": [],"priorNames": []},
+    {"name":"Hy-Vee","alternativeNames": ["Hy Vee"],"priorNames": []},
+    {"name":"Hyland Software","alternativeNames": [],"priorNames": []}
+
 
 
 
