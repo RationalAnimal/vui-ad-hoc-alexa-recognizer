@@ -559,8 +559,25 @@
     {"name":"Egglands Best","alternativeNames": ["Egg Lands Best"],"priorNames": []},
     {"name":"El Paso Corp.","alternativeNames": ["El Paso Corporation"],"priorNames": []},
     {"name":"El Pollo Loco","alternativeNames": [],"priorNames": []},
-    {"name":"Electronic Arts","alternativeNames": [],"priorNames": []}
+    {"name":"Electronic Arts","alternativeNames": [],"priorNames": []},
 
+    {"name":"Electronic Data Systems","alternativeNames": [],"priorNames": []},
+    {"name":"Electronics for Imaging, Inc.","alternativeNames": ["Electronics for Imaging, Inc", "Electronics for Imaging"],"priorNames": []},
+    {"name":"Eli Lilly and Company","alternativeNames": ["Eli Lilly"],"priorNames": []},
+    {"name":"Elizabeth Arden","alternativeNames": [],"priorNames": []},
+    {"name":"EMC Corporation","alternativeNames": ["E. M. C. Corporation", "E. M. C.", "EMC"],"priorNames": []},
+    {"name":"Emcor","alternativeNames": [],"priorNames": []},
+    {"name":"Emerson Electric Company","alternativeNames": ["Emerson Electric"],"priorNames": []},
+    {"name":"Emerson Radio","alternativeNames": [],"priorNames": []},
+    {"name":"Energizer Holdings","alternativeNames": [],"priorNames": []},
+    {"name":"Enterasys Networks","alternativeNames": [],"priorNames": []},
+    {"name":"Entergy","alternativeNames": [],"priorNames": []},
+    {"name":"Enterprise Holdings","alternativeNames": [],"priorNames": []},
+    {"name":"Enterprise Products","alternativeNames": [],"priorNames": []},
+    {"name":"EOG Resources","alternativeNames": ["E. O. G. Resources"],"priorNames": []},
+    {"name":"Equifax","alternativeNames": ["Equi Fax"],"priorNames": []},
+    {"name":"Equinix","alternativeNames": [],"priorNames": []},
+    {"name":"Erickson Air-Crane","alternativeNames": ["Erickson Air Crane"],"priorNames": []}
 
   ]
 }
