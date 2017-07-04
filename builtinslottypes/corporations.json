@@ -541,7 +541,26 @@
     {"name":"Dura Automotive Systems","alternativeNames": [],"priorNames": []},
     {"name":"DXC Technology","alternativeNames": ["D. X. C. Technology"],"priorNames": []},
     {"name":"DynCorp","alternativeNames": [],"priorNames": []},
-    {"name":"Dynegy","alternativeNames": [],"priorNames": []}
+    {"name":"Dynegy","alternativeNames": [],"priorNames": []},
+
+    {"name":"E & J Gallo Winery","alternativeNames": ["E and J Gallo Winery", "E. and J. Gallo Winery"],"priorNames": []},
+    {"name":"E*Trade Financial Corporation","alternativeNames": ["E Trade Financial Corporation", "E. Trade Financial Corporation", "E*Trade", "E Trade", "E. Trade"],"priorNames": []},
+    {"name":"Eastman Chemical Company","alternativeNames": [],"priorNames": []},
+    {"name":"Eastman Kodak","alternativeNames": [],"priorNames": []},
+    {"name":"Eaton Corporation","alternativeNames": ["Eaton"],"priorNames": []},
+    {"name":"eBay","alternativeNames": [],"priorNames": []},
+    {"name":"Ebonite International","alternativeNames": [],"priorNames": []},
+    {"name":"EBSCO Industries","alternativeNames": [],"priorNames": []},
+    {"name":"EchoStar","alternativeNames": ["Echo Star"],"priorNames": []},
+    {"name":"Ecolab","alternativeNames": ["Eco Lab"],"priorNames": []},
+    {"name":"Eddie Bauer","alternativeNames": [],"priorNames": []},
+    {"name":"Edward Jones","alternativeNames": [],"priorNames": []},
+    {"name":"Edwards Lifesciences","alternativeNames": ["Edwards Life Sciences"],"priorNames": []},
+    {"name":"Egglands Best","alternativeNames": ["Egg Lands Best"],"priorNames": []},
+    {"name":"El Paso Corp.","alternativeNames": ["El Paso Corporation"],"priorNames": []},
+    {"name":"El Pollo Loco","alternativeNames": [],"priorNames": []},
+    {"name":"Electronic Arts","alternativeNames": [],"priorNames": []}
+
 
   ]
 }
