@@ -518,8 +518,30 @@
     {"name":"Dish Network","alternativeNames": [],"priorNames": []},
     {"name":"DivX, Inc.","alternativeNames": ["DivX, Inc", "DivX"],"priorNames": []},
     {"name":"Djarum","alternativeNames": [],"priorNames": []},
-    {"name":"Dogfish Head Brewery","alternativeNames": [],"priorNames": []}
+    {"name":"Dogfish Head Brewery","alternativeNames": [],"priorNames": []},
 
+    {"name":"Dole Food Company","alternativeNames": ["Dole Food"],"priorNames": []},
+    {"name":"Dollar General","alternativeNames": [],"priorNames": []},
+    {"name":"Dollar Tree","alternativeNames": [],"priorNames": []},
+    {"name":"Dominion Resources","alternativeNames": [],"priorNames": []},
+    {"name":"Domino's Pizza","alternativeNames": [],"priorNames": []},
+    {"name":"Domtar","alternativeNames": [],"priorNames": []},
+    {"name":"Dorm Company Corporation","alternativeNames": ["Dorm Company", "Dorm"],"priorNames": []},
+    {"name":"Dover Corporation","alternativeNames": ["Dover"],"priorNames": []},
+    {"name":"Dow Chemical Company","alternativeNames": ["Dow Chemical"],"priorNames": []},
+    {"name":"Dow Jones & Company","alternativeNames": ["Dow Jones and Company", "Dow Jones"],"priorNames": []},
+    {"name":"Dr Pepper Snapple Group","alternativeNames": ["Dr. Pepper Snapple Group", "Doctor Pepper Snapple Group"],"priorNames": []},
+    {"name":"Dresser Industries","alternativeNames": ["Dresser"],"priorNames": []},
+    {"name":"DRS Technologies","alternativeNames": ["D. R. S. Technologies"],"priorNames": []},
+    {"name":"DTE Energy","alternativeNames": ["D. T. E. Energy"],"priorNames": []},
+    {"name":"Duke Energy","alternativeNames": [],"priorNames": []},
+    {"name":"Dun & Bradstreet","alternativeNames": ["Dun and Bradstreet"],"priorNames": []},
+    {"name":"Dunkin' Donuts","alternativeNames": [],"priorNames": []},
+    {"name":"DuPont","alternativeNames": ["du Pont de Nemours"],"priorNames": []},
+    {"name":"Dura Automotive Systems","alternativeNames": [],"priorNames": []},
+    {"name":"DXC Technology","alternativeNames": ["D. X. C. Technology"],"priorNames": []},
+    {"name":"DynCorp","alternativeNames": [],"priorNames": []},
+    {"name":"Dynegy","alternativeNames": [],"priorNames": []}
 
   ]
 }
