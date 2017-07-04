@@ -397,7 +397,30 @@
     {"name":"CIT Group","alternativeNames": [],"priorNames": []},
     {"name":"Citigroup","alternativeNames": [],"priorNames": []},
     {"name":"Citrin Cooperman","alternativeNames": [],"priorNames": []},
-    {"name":"Citrix Systems","alternativeNames": [],"priorNames": []}
+    {"name":"Citrix Systems","alternativeNames": [],"priorNames": []},
+
+    {"name":"CKE Restaurants","alternativeNames": ["C. K. E. Restaurants"],"priorNames": []},
+    {"name":"Carl's Jr.","alternativeNames": ["Carl's Jr.", "Carl's Junior"],"priorNames": []},
+    {"name":"Hardee's","alternativeNames": [],"priorNames": []},
+    {"name":"Clayton, Dubilier & Rice","alternativeNames": ["Clayton, Dubilier and Rice"],"priorNames": []},
+    {"name":"Clear Channel Communications","alternativeNames": ["Clear Channel"],"priorNames": []},
+    {"name":"Clearwater Paper","alternativeNames": [],"priorNames": []},
+    {"name":"Cliffs Natural Resources","alternativeNames": [],"priorNames": []},
+    {"name":"The Clorox Company","alternativeNames": ["Clorox"],"priorNames": []},
+    {"name":"CME Group","alternativeNames": ["C. M. E. Group"],"priorNames": []},
+    {"name":"CNA Financial","alternativeNames": ["C. N. A.  Financial"],"priorNames": []},
+    {"name":"CNET","alternativeNames": ["C. N. E. T."],"priorNames": []},
+    {"name":"CNO Financial Group","alternativeNames": ["C. N. O. Financial Group"],"priorNames": []},
+    {"name":"Coach","alternativeNames": [],"priorNames": []},
+    {"name":"The Coca-Cola Company","alternativeNames": ["Coca-Cola", "Coca cola"],"priorNames": []},
+    {"name":"Cogent Communications","alternativeNames": [],"priorNames": []},
+    {"name":"Cognizant Technology Solutions","alternativeNames": [],"priorNames": []},
+    {"name":"Cole Haan","alternativeNames": [],"priorNames": []},
+    {"name":"Coleman Company","alternativeNames": [],"priorNames": []},
+    {"name":"Colgate-Palmolive","alternativeNames": ["Colgate Palmolive"],"priorNames": []},
+    {"name":"Colt Defense","alternativeNames": [],"priorNames": []},
+    {"name":"Colt's Manufacturing Company","alternativeNames": [],"priorNames": []}
+
 
 
 
