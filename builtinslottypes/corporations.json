@@ -737,7 +737,32 @@
     {"name":"Hastings Entertainment","alternativeNames": [],"priorNames": []},
     {"name":"Hawaiian Airlines","alternativeNames": [],"priorNames": []},
     {"name":"Hawley Products Company","alternativeNames": ["Hawley Products"],"priorNames": []},
-    {"name":"Haworth Inc.","alternativeNames": ["Haworth Inc", "Haworth"],"priorNames": []}
+    {"name":"Haworth Inc.","alternativeNames": ["Haworth Inc", "Haworth"],"priorNames": []},
+
+    {"name":"HC2 Holdings","alternativeNames": ["H. C. 2 Holdings", "H. C. Two Holdings"],"priorNames": []},
+    {"name":"Hearst Corporation","alternativeNames": ["Hearst"],"priorNames": []},
+    {"name":"Heaven Hill Distilleries, Inc.","alternativeNames": ["Heaven Hill Distilleries, Inc.", "Heaven Hill Distilleries, Inc", "Heaven Hill Distilleries"],"priorNames": []},
+    {"name":"Henry Repeating Arms","alternativeNames": [],"priorNames": []},
+    {"name":"Henry Schein, Inc.","alternativeNames": ["Henry Schein, Inc", "Henry Schein"],"priorNames": []},
+    {"name":"Herbalife","alternativeNames": ["Herbal Life"],"priorNames": []},
+    {"name":"Herman Miller, Inc.","alternativeNames": ["Herman Miller, Inc", "Herman Miller"],"priorNames": []},
+    {"name":"The Hershey Company","alternativeNames": ["Hershey"],"priorNames": []},
+    {"name":"The Hertz Corporation","alternativeNames": ["Hertz"],"priorNames": []},
+    {"name":"Hess Corporation","alternativeNames": ["Hess"],"priorNames": []},
+    {"name":"Hewlett Packard Enterprise","alternativeNames": ["Hewlett Packard"],"priorNames": []},
+    {"name":"Hexcel Corporation","alternativeNames": ["Hexcel"],"priorNames": []},
+    {"name":"Hi-Point Firearms","alternativeNames": ["Hi Point Firearms", "High Point Firearms"],"priorNames": []},
+    {"name":"Hillerich & Bradsby Company","alternativeNames": ["Hillerich and Bradsby Company", "Hillerich & Bradsby", "Hillerich and Bradsby"],"priorNames": []},
+    {"name":"Hilton Worldwide","alternativeNames": ["Hilton"],"priorNames": []},
+    {"name":"HNI Corporation","alternativeNames": ["H. N. I. Corporation", "HNI", "H. N. I."],"priorNames": []},
+    {"name":"Hobbico, Inc.","alternativeNames": ["Hobbico, Inc", "Hobbico"],"priorNames": []},
+    {"name":"Hobby Lobby","alternativeNames": [],"priorNames": []},
+    {"name":"Holley Performance Products","alternativeNames": [],"priorNames": []},
+    {"name":"Hollister Clothing","alternativeNames": [],"priorNames": []},
+    {"name":"Hologic, Inc.","alternativeNames": ["Hologic, Inc", "Hologic"],"priorNames": []},
+    {"name":"The Home Depot","alternativeNames": ["Home Depot"],"priorNames": []},
+    {"name":"Home Shopping Network","alternativeNames": [],"priorNames": []}
+
 
 
   ]
