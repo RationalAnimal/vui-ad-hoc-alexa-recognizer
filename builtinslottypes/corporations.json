@@ -380,7 +380,25 @@
     {"name":"Chipotle Mexican Grill","alternativeNames": ["Chipotle"],"priorNames": []},
     {"name":"Chiquita Brands International","alternativeNames": ["Chiquita"],"priorNames": []},
     {"name":"Choice Hotels International","alternativeNames": ["Choice Hotels"],"priorNames": []},
-    {"name":"Christian Moerlein Brewing Company","alternativeNames": [],"priorNames": []}
+    {"name":"Christian Moerlein Brewing Company","alternativeNames": [],"priorNames": []},
+
+    {"name":"CHS Inc.","alternativeNames": ["CHS", "C. H. S."],"priorNames": []},
+    {"name":"Chubb Corporation","alternativeNames": ["Chubb"],"priorNames": []},
+    {"name":"Chuck E. Cheese's","alternativeNames": ["Chugach Alaska"],"priorNames": []},
+    {"name":"Chugach Alaska Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Church & Dwight","alternativeNames": ["Church and Dwight"],"priorNames": []},
+    {"name":"Chrysler","alternativeNames": [],"priorNames": []},
+    {"name":"CiCi's Pizza","alternativeNames": [],"priorNames": []},
+    {"name":"CIGNA","alternativeNames": [],"priorNames": []},
+    {"name":"Cinemark Theatres","alternativeNames": [],"priorNames": []},
+    {"name":"Cintas Corporation","alternativeNames": ["Cintas"],"priorNames": []},
+    {"name":"Cirrus Aircraft Corporation","alternativeNames": ["Cirrus Aircraft"],"priorNames": []},
+    {"name":"Cisco Systems","alternativeNames": [],"priorNames": []},
+    {"name":"CIT Group","alternativeNames": [],"priorNames": []},
+    {"name":"Citigroup","alternativeNames": [],"priorNames": []},
+    {"name":"Citrin Cooperman","alternativeNames": [],"priorNames": []},
+    {"name":"Citrix Systems","alternativeNames": [],"priorNames": []}
+
 
 
 
