@@ -577,7 +577,26 @@
     {"name":"EOG Resources","alternativeNames": ["E. O. G. Resources"],"priorNames": []},
     {"name":"Equifax","alternativeNames": ["Equi Fax"],"priorNames": []},
     {"name":"Equinix","alternativeNames": [],"priorNames": []},
-    {"name":"Erickson Air-Crane","alternativeNames": ["Erickson Air Crane"],"priorNames": []}
+    {"name":"Erickson Air-Crane","alternativeNames": ["Erickson Air Crane"],"priorNames": []},
+
+    {"name":"Erie Insurance Group","alternativeNames": [],"priorNames": []},
+    {"name":"Esselte","alternativeNames": [],"priorNames": []},
+    {"name":"Estée Lauder Companies","alternativeNames": ["Estée Lauder", "Estee Lauder Companies", "Estee Lauder"],"priorNames": []},
+    {"name":"Esterline","alternativeNames": [],"priorNames": []},
+    {"name":"Estes Industries","alternativeNames": ["Estes"],"priorNames": []},
+    {"name":"Estwing Manufacturing Company","alternativeNames": ["Estwing Manufacturing"],"priorNames": []},
+    {"name":"Ethan Allen","alternativeNames": [],"priorNames": []},
+    {"name":"Eureka","alternativeNames": [],"priorNames": []},
+    {"name":"Evergreen International Airlines","alternativeNames": [],"priorNames": []},
+    {"name":"Exelis","alternativeNames": [],"priorNames": []},
+    {"name":"Exelon","alternativeNames": [],"priorNames": []},
+    {"name":"Exide Technologies","alternativeNames": [],"priorNames": []},
+    {"name":"Expedia","alternativeNames": [],"priorNames": []},
+    {"name":"Expeditors International","alternativeNames": [],"priorNames": []},
+    {"name":"Express Scripts","alternativeNames": [],"priorNames": []},
+    {"name":"Extron","alternativeNames": [],"priorNames": []},
+    {"name":"ExxonMobil","alternativeNames": ["Exxon Mobil", "Ekson Mobile"],"priorNames": []}
+
 
   ]
 }
