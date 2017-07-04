@@ -419,7 +419,24 @@
     {"name":"Coleman Company","alternativeNames": [],"priorNames": []},
     {"name":"Colgate-Palmolive","alternativeNames": ["Colgate Palmolive"],"priorNames": []},
     {"name":"Colt Defense","alternativeNames": [],"priorNames": []},
-    {"name":"Colt's Manufacturing Company","alternativeNames": [],"priorNames": []}
+    {"name":"Colt's Manufacturing Company","alternativeNames": [],"priorNames": []},
+
+    {"name":"Columbia Pictures","alternativeNames": [],"priorNames": []},
+    {"name":"Columbia Sportswear","alternativeNames": [],"priorNames": []},
+    {"name":"Columbia Sussex","alternativeNames": [],"priorNames": []},
+    {"name":"Comcast","alternativeNames": [],"priorNames": []},
+    {"name":"Comerica","alternativeNames": [],"priorNames": []},
+    {"name":"Commercial Metals Company","alternativeNames": ["Commercial Metals"],"priorNames": []},
+    {"name":"Comodo","alternativeNames": [],"priorNames": []},
+    {"name":"The Compleat Sculptor, Inc.","alternativeNames": ["The Compleat Sculptor, Inc", "The Compleat Sculptor", "The Complete Sculptor, Inc.", "The Complete Sculptor"],"priorNames": []},
+    {"name":"Compuware","alternativeNames": [],"priorNames": []},
+    {"name":"ConAgra Foods","alternativeNames": [],"priorNames": []},
+    {"name":"Conair Corporation","alternativeNames": ["Conair"],"priorNames": []},
+    {"name":"Concur Technologies","alternativeNames": [],"priorNames": []},
+    {"name":"ConocoPhillips","alternativeNames": ["Conoco Phillips"],"priorNames": []},
+    {"name":"Consol Energy","alternativeNames": [],"priorNames": []},
+    {"name":"Constellation Brands","alternativeNames": [],"priorNames": []}
+
 
 
 
