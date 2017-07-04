@@ -656,7 +656,25 @@
     {"name":"Frontier Airlines","alternativeNames": [],"priorNames": []},
     {"name":"Frontier Communications","alternativeNames": [],"priorNames": []},
     {"name":"Fruit of the Loom","alternativeNames": [],"priorNames": []},
-    {"name":"Fry's Electronics","alternativeNames": [],"priorNames": []}
+    {"name":"Fry's Electronics","alternativeNames": [],"priorNames": []},
+
+    {"name":"GameStop","alternativeNames": ["Game Stop"],"priorNames": []},
+    {"name":"Gannett Company","alternativeNames": ["Gannett"],"priorNames": []},
+    {"name":"Gap","alternativeNames": [],"priorNames": []},
+    {"name":"Gardner Denver","alternativeNames": [],"priorNames": []},
+    {"name":"Garmin","alternativeNames": [],"priorNames": []},
+    {"name":"Gartner","alternativeNames": [],"priorNames": []},
+    {"name":"Gateway, Inc.","alternativeNames": ["Gateway, Inc", "Gateway"],"priorNames": []},
+    {"name":"Gatorade","alternativeNames": [],"priorNames": []},
+    {"name":"GCI","alternativeNames": ["G. C. I."],"priorNames": []},
+    {"name":"GEICO","alternativeNames": [],"priorNames": []},
+    {"name":"Gemini Sound Products","alternativeNames": [],"priorNames": []},
+    {"name":"GenCorp","alternativeNames": [],"priorNames": []},
+    {"name":"Genentech","alternativeNames": [],"priorNames": []},
+    {"name":"Generac Power Systems","alternativeNames": [],"priorNames": []},
+    {"name":"General Atomics","alternativeNames": [],"priorNames": []},
+    {"name":"General Cable","alternativeNames": [],"priorNames": []}
+
 
 
 
