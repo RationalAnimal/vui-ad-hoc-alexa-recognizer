@@ -495,9 +495,30 @@
     {"name":"Delta Air Lines","alternativeNames": ["Delta Airlines"],"priorNames": []},
     {"name":"Deluxe Corporation","alternativeNames": ["Deluxe"],"priorNames": []},
     {"name":"Demaco","alternativeNames": [],"priorNames": []},
-    {"name":"Denbury Resources","alternativeNames": [],"priorNames": []}
+    {"name":"Denbury Resources","alternativeNames": [],"priorNames": []},
 
-
+    {"name":"Denny's","alternativeNames": [],"priorNames": []},
+    {"name":"Dentsply","alternativeNames": [],"priorNames": []},
+    {"name":"Devon Energy","alternativeNames": [],"priorNames": []},
+    {"name":"DeVry, Inc.","alternativeNames": ["DeVry, Inc", "DeVry"],"priorNames": []},
+    {"name":"DEX One","alternativeNames": [],"priorNames": []},
+    {"name":"Diamond Foods","alternativeNames": [],"priorNames": []},
+    {"name":"Diamond Offshore Drilling","alternativeNames": [],"priorNames": []},
+    {"name":"DiC Entertainment","alternativeNames": [],"priorNames": []},
+    {"name":"Dick's Sporting Goods","alternativeNames": [],"priorNames": []},
+    {"name":"Diebold","alternativeNames": [],"priorNames": []},
+    {"name":"Digi-Key","alternativeNames": ["DigiKey", "Digi Key"],"priorNames": []},
+    {"name":"Dillard's","alternativeNames": [],"priorNames": []},
+    {"name":"DineEquity","alternativeNames": [],"priorNames": []},
+    {"name":"Dippin' Dots","alternativeNames": [],"priorNames": []},
+    {"name":"DirecTV","alternativeNames": ["Direct TV"],"priorNames": []},
+    {"name":"Discover Financial","alternativeNames": [],"priorNames": []},
+    {"name":"Disney","alternativeNames": [],"priorNames": []},
+    {"name":"Discovery Communications","alternativeNames": [],"priorNames": []},
+    {"name":"Dish Network","alternativeNames": [],"priorNames": []},
+    {"name":"DivX, Inc.","alternativeNames": ["DivX, Inc", "DivX"],"priorNames": []},
+    {"name":"Djarum","alternativeNames": [],"priorNames": []},
+    {"name":"Dogfish Head Brewery","alternativeNames": [],"priorNames": []}
 
 
   ]
