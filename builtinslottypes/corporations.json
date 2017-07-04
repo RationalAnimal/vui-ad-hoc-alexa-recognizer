@@ -616,7 +616,29 @@
     {"name":"Fidelity Investments","alternativeNames": ["Fidelity"],"priorNames": []},
     {"name":"Fidelity National Information Services","alternativeNames": [],"priorNames": []},
     {"name":"FileMaker Inc.","alternativeNames": ["FileMaker Inc", "File Maker Inc.", "File Maker Inc", "File Maker"],"priorNames": ["Claris Corp.", "Claris Corporation", "Claris Corp"]},
-    {"name":"Filter Forge","alternativeNames": [],"priorNames": []}
+    {"name":"Filter Forge","alternativeNames": [],"priorNames": []},
+
+    {"name":"Firestone Tire and Rubber Company","alternativeNames": [],"priorNames": []},
+    {"name":"First Hawaiian Bank","alternativeNames": [],"priorNames": []},
+    {"name":"Firstsource","alternativeNames": ["First Source"],"priorNames": []},
+    {"name":"Fiserv","alternativeNames": [],"priorNames": []},
+    {"name":"Fisher Electronics","alternativeNames": [],"priorNames": []},
+    {"name":"Fisker Automotive","alternativeNames": [],"priorNames": []},
+    {"name":"Fisker Inc.","alternativeNames": ["Fisker Inc"],"priorNames": []},
+    {"name":"Five Guys Enterprises","alternativeNames": ["Five Guys"],"priorNames": []},
+    {"name":"FLIR Systems","alternativeNames": ["F. L. I. R.  Systems"],"priorNames": []},
+    {"name":"Flowers Foods","alternativeNames": [],"priorNames": []},
+    {"name":"Flowserve","alternativeNames": [],"priorNames": []},
+    {"name":"Fluor Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"FMC Technologies","alternativeNames": ["F. M. C. Technologies"],"priorNames": []},
+    {"name":"Focus Brands","alternativeNames": [],"priorNames": []},
+    {"name":"Foot Locker","alternativeNames": [],"priorNames": []},
+    {"name":"Ford Motor Company","alternativeNames": ["Ford"],"priorNames": []},
+    {"name":"Forest Laboratories","alternativeNames": [],"priorNames": []},
+    {"name":"Forrester Research","alternativeNames": [],"priorNames": []},
+    {"name":"Fortune Brands Home & Security, Inc.","alternativeNames": ["Fortune Brands Home and Security, Inc.", "Fortune Brands Home & Security, Inc", "Fortune Brands Home and Security, Inc", "Fortune Brands Home & Security", "Fortune Brands Home and Security"],"priorNames": []},
+    {"name":"Forum Communications","alternativeNames": [],"priorNames": []}
+
 
 
 
