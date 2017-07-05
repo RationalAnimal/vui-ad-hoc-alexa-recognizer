@@ -834,7 +834,18 @@
     {"name":"Jabil Circuit","alternativeNames": [],"priorNames": []},
     {"name":"Jack in the Box","alternativeNames": [],"priorNames": []},
     {"name":"Jacobs Engineering Group","alternativeNames": [],"priorNames": []},
-    {"name":"Jamba Juice","alternativeNames": [],"priorNames": []}
+    {"name":"Jamba Juice","alternativeNames": [],"priorNames": []},
+
+    {"name":"Janus Capital Group","alternativeNames": [],"priorNames": []},
+    {"name":"Jarden","alternativeNames": [],"priorNames": []},
+    {"name":"JDS Uniphase","alternativeNames": ["J. D. S. Uniphase", "J D S Uniphase"],"priorNames": []},
+    {"name":"The Jelly Belly Candy Company","alternativeNames": ["The Jelly Belly Candy", "Jelly Belly Candy", "Jelly Belly Candy Company"],"priorNames": []},
+    {"name":"JetBlue Airways","alternativeNames": ["Jet Blue Airways"],"priorNames": []},
+    {"name":"Jimmy John's","alternativeNames": [],"priorNames": []},
+    {"name":"JL Audio","alternativeNames": ["J L Audio", "J. L. Audio"],"priorNames": []},
+    {"name":"JN-International Medical Corporation","alternativeNames": ["J.N. International Medical Corporation", "JN International Medical Corporation", "JN International Medical", "J. N. International Medical"],"priorNames": []},
+    {"name":"Jockey International, Inc.","alternativeNames": ["Jockey International, Inc", "Jockey International", "Jockey"],"priorNames": []}
+
 
 
 
