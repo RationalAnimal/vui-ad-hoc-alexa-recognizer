@@ -811,7 +811,21 @@
     {"name":"Interplay Entertainment","alternativeNames": [],"priorNames": []},
     {"name":"Interpublic Group","alternativeNames": [],"priorNames": []},
     {"name":"Intersil Corporation","alternativeNames": [],"priorNames": []},
-    {"name":"Interstate Batteries","alternativeNames": [],"priorNames": []}
+    {"name":"Interstate Batteries","alternativeNames": [],"priorNames": []},
+
+    {"name":"Interstate Van Lines","alternativeNames": [],"priorNames": []},
+    {"name":"Intuit","alternativeNames": [],"priorNames": []},
+    {"name":"Intuitive Surgical","alternativeNames": [],"priorNames": []},
+    {"name":"Invacare Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Invesco","alternativeNames": [],"priorNames": []},
+    {"name":"Ion Media Networks","alternativeNames": [],"priorNames": []},
+    {"name":"iRobot","alternativeNames": ["I Robot"],"priorNames": []},
+    {"name":"Iron City Brewing Company","alternativeNames": [],"priorNames": []},
+    {"name":"Iron Mountain Incorporated","alternativeNames": ["Iron Mountain"],"priorNames": []},
+    {"name":"ITT Corporation","alternativeNames": ["ITT", "I. T. T."],"priorNames": []},
+    {"name":"ITT Technical Institute","alternativeNames": [],"priorNames": []},
+    {"name":"IXYS Corporation","alternativeNames": ["IXYS", "I. X. Y. S."],"priorNames": []}
+
 
 
   ]
