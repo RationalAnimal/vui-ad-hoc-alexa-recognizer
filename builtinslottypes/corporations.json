@@ -824,7 +824,18 @@
     {"name":"Iron Mountain Incorporated","alternativeNames": ["Iron Mountain"],"priorNames": []},
     {"name":"ITT Corporation","alternativeNames": ["ITT", "I. T. T."],"priorNames": []},
     {"name":"ITT Technical Institute","alternativeNames": [],"priorNames": []},
-    {"name":"IXYS Corporation","alternativeNames": ["IXYS", "I. X. Y. S."],"priorNames": []}
+    {"name":"IXYS Corporation","alternativeNames": ["IXYS", "I. X. Y. S."],"priorNames": []},
+
+    {"name":"J. B. Hunt Transport Services","alternativeNames": ["J B Hunt Transport Services"],"priorNames": []},
+    {"name":"J. C. Penney","alternativeNames": ["J C Penney"],"priorNames": []},
+    {"name":"J. Crew Group","alternativeNames": ["J Crew Group"],"priorNames": []},
+    {"name":"The J.M. Smucker Company","alternativeNames": ["The J. M. Smucker Company", "The J M  Smucker Company"],"priorNames": []},
+    {"name":"J. R. Simplot Company","alternativeNames": ["J R Simplot Company", "J. R. Simplot", "J R Simplot"],"priorNames": []},
+    {"name":"Jabil Circuit","alternativeNames": [],"priorNames": []},
+    {"name":"Jack in the Box","alternativeNames": [],"priorNames": []},
+    {"name":"Jacobs Engineering Group","alternativeNames": [],"priorNames": []},
+    {"name":"Jamba Juice","alternativeNames": [],"priorNames": []}
+
 
 
 
