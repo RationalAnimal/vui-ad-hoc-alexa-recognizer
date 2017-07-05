@@ -783,7 +783,22 @@
     {"name":"Huntsman Corporation","alternativeNames": [],"priorNames": []},
     {"name":"Hush Puppies","alternativeNames": [],"priorNames": []},
     {"name":"Hy-Vee","alternativeNames": ["Hy Vee"],"priorNames": []},
-    {"name":"Hyland Software","alternativeNames": [],"priorNames": []}
+    {"name":"Hyland Software","alternativeNames": [],"priorNames": []},
+
+    {"name":"IBM","alternativeNames": ["International Business Machines"],"priorNames": []},
+    {"name":"Iconix Brand Group","alternativeNames": [],"priorNames": []},
+    {"name":"Ideal Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Ilitch Holdings","alternativeNames": [],"priorNames": []},
+    {"name":"Illinois Tool Works","alternativeNames": [],"priorNames": []},
+    {"name":"Illumina","alternativeNames": [],"priorNames": []},
+    {"name":"In-N-Out Burger","alternativeNames": ["In N Out Burger", "In and Out Burger"],"priorNames": []},
+    {"name":"Infinity Ward","alternativeNames": [],"priorNames": []},
+    {"name":"Infor Global Solutions","alternativeNames": [],"priorNames": []},
+    {"name":"Ingram Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Ingram Micro","alternativeNames": [],"priorNames": []},
+    {"name":"Ingredion Incorporated","alternativeNames": ["Ingredion"],"priorNames": []},
+    {"name":"Intel","alternativeNames": [],"priorNames": []}
+
 
 
 
