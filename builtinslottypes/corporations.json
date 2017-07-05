@@ -844,7 +844,18 @@
     {"name":"Jimmy John's","alternativeNames": [],"priorNames": []},
     {"name":"JL Audio","alternativeNames": ["J L Audio", "J. L. Audio"],"priorNames": []},
     {"name":"JN-International Medical Corporation","alternativeNames": ["J.N. International Medical Corporation", "JN International Medical Corporation", "JN International Medical", "J. N. International Medical"],"priorNames": []},
-    {"name":"Jockey International, Inc.","alternativeNames": ["Jockey International, Inc", "Jockey International", "Jockey"],"priorNames": []}
+    {"name":"Jockey International, Inc.","alternativeNames": ["Jockey International, Inc", "Jockey International", "Jockey"],"priorNames": []},
+
+    {"name":"Johnson & Johnson","alternativeNames": ["Johnson and Johnson"],"priorNames": []},
+    {"name":"Johnson Controls","alternativeNames": [],"priorNames": []},
+    {"name":"Johnsonville Foods","alternativeNames": [],"priorNames": []},
+    {"name":"John Wiley & Sons","alternativeNames": ["John Wiley and Sons"],"priorNames": []},
+    {"name":"Jones Soda","alternativeNames": [],"priorNames": []},
+    {"name":"Joseph A. Bank Clothiers","alternativeNames": ["Joseph A Bank Clothiers", "Joseph A. Bank", "Joseph A Bank"],"priorNames": []},
+    {"name":"Journal Communications","alternativeNames": [],"priorNames": []},
+    {"name":"JPMorgan Chase","alternativeNames": ["J P Morgan Chase", "J. P. Morgan Chase", "JPMorgan", "J P Morgan", "J. P. Morgan"],"priorNames": []},
+    {"name":"Juniper Networks","alternativeNames": [],"priorNames": []}
+
 
 
 
