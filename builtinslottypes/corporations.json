@@ -797,10 +797,21 @@
     {"name":"Ingram Industries","alternativeNames": [],"priorNames": []},
     {"name":"Ingram Micro","alternativeNames": [],"priorNames": []},
     {"name":"Ingredion Incorporated","alternativeNames": ["Ingredion"],"priorNames": []},
-    {"name":"Intel","alternativeNames": [],"priorNames": []}
+    {"name":"Intel","alternativeNames": [],"priorNames": []},
 
-
-
+    {"name":"Intellectual Ventures","alternativeNames": [],"priorNames": []},
+    {"name":"Interactive Brokers","alternativeNames": [],"priorNames": []},
+    {"name":"Intercontinental Exchange","alternativeNames": ["ICE", "I. C. E."],"priorNames": []},
+    {"name":"Intercontinental Manufacturing Company","alternativeNames": [],"priorNames": []},
+    {"name":"International Dairy Queen","alternativeNames": ["Dairy Queen"],"priorNames": []},
+    {"name":"International Flavors & Fragrances","alternativeNames": ["International Flavors and Fragrances"],"priorNames": []},
+    {"name":"International Hat Company","alternativeNames": [],"priorNames": []},
+    {"name":"International Lease Finance Corporation","alternativeNames": ["ILFC", "I. L. F. C."],"priorNames": []},
+    {"name":"International Paper","alternativeNames": [],"priorNames": []},
+    {"name":"Interplay Entertainment","alternativeNames": [],"priorNames": []},
+    {"name":"Interpublic Group","alternativeNames": [],"priorNames": []},
+    {"name":"Intersil Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Interstate Batteries","alternativeNames": [],"priorNames": []}
 
 
   ]
