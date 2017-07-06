@@ -898,9 +898,27 @@
     {"name":"Kraft Foods","alternativeNames": [],"priorNames": []},
     {"name":"Krispy Kreme","alternativeNames": [],"priorNames": []},
     {"name":"Kroger","alternativeNames": [],"priorNames": []},
-    {"name":"Kurzweil Educational Systems","alternativeNames": [],"priorNames": []}
+    {"name":"Kurzweil Educational Systems","alternativeNames": [],"priorNames": []},
 
-
+    {"name":"L-3 Communications","alternativeNames": ["L 3 Communications", "L. 3 Communications"],"priorNames": []},
+    {"name":"L&L Hawaiian Barbecue","alternativeNames": ["L and L Hawaiian Barbecue", "L. & L. Hawaiian Barbecue", "L. and L. Hawaiian Barbecue"],"priorNames": []},
+    {"name":"L Brands","alternativeNames": ["L. Brands"],"priorNames": []},
+    {"name":"L.L.Bean","alternativeNames": ["LL Bean", "L. L. Bean"],"priorNames": []},
+    {"name":"L.S. Starrett Company","alternativeNames": ["L. S. Starrett Company", "L S  Starrett Company", "LS Starrett Company"],"priorNames": []},
+    {"name":"L. W. Seecamp Company","alternativeNames": ["L W Seecamp Company", "L. W. See Camp Company", "L W Seecamp Company"],"priorNames": []},
+    {"name":"La-Z-Boy","alternativeNames": ["La Z Boy", "Lazy Boy"],"priorNames": []},
+    {"name":"LabCorp","alternativeNames": [],"priorNames": []},
+    {"name":"Lam Research","alternativeNames": [],"priorNames": []},
+    {"name":"Land O' Lakes","alternativeNames": ["Land O Lakes", "Land Of Lakes"],"priorNames": []},
+    {"name":"Las Vegas Sands Corp.","alternativeNames": ["Las Vegas Sands Corp", "Las Vegas Sands"],"priorNames": []},
+    {"name":"Laserfiche","alternativeNames": ["Laser fiche"],"priorNames": []},
+    {"name":"LeapFrog Enterprises","alternativeNames": ["Leap Frog Enterprises", "LeapFrog", "Leap Frog"],"priorNames": []},
+    {"name":"Lear Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Lee Enterprises","alternativeNames": [],"priorNames": []},
+    {"name":"Legg Mason","alternativeNames": [],"priorNames": []},
+    {"name":"Leggett & Platt","alternativeNames": ["Leggett and Platt"],"priorNames": []},
+    {"name":"Leidos","alternativeNames": [],"priorNames": []},
+    {"name":"Lennar Corporation","alternativeNames": [],"priorNames": []}
 
 
   ]
