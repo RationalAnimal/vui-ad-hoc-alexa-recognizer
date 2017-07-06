@@ -854,11 +854,22 @@
     {"name":"Joseph A. Bank Clothiers","alternativeNames": ["Joseph A Bank Clothiers", "Joseph A. Bank", "Joseph A Bank"],"priorNames": []},
     {"name":"Journal Communications","alternativeNames": [],"priorNames": []},
     {"name":"JPMorgan Chase","alternativeNames": ["J P Morgan Chase", "J. P. Morgan Chase", "JPMorgan", "J P Morgan", "J. P. Morgan"],"priorNames": []},
-    {"name":"Juniper Networks","alternativeNames": [],"priorNames": []}
+    {"name":"Juniper Networks","alternativeNames": [],"priorNames": []},
 
-
-
-
+    {"name":"K-Swiss","alternativeNames": ["K Swiss", "K. Swiss"],"priorNames": []},
+    {"name":"Kahala Corporation","alternativeNames": ["Kahala"],"priorNames": []},
+    {"name":"Kahr Arms","alternativeNames": [],"priorNames": []},
+    {"name":"Kaiser Aluminum","alternativeNames": [],"priorNames": []},
+    {"name":"Kaiser Permanente","alternativeNames": [],"priorNames": []},
+    {"name":"Kalitta Air","alternativeNames": [],"priorNames": []},
+    {"name":"Kaman Aerospace","alternativeNames": [],"priorNames": []},
+    {"name":"Kampgrounds of America","alternativeNames": ["KOA", "K. O. A", "K O A"],"priorNames": []},
+    {"name":"Kansas City Southern Railway","alternativeNames": [],"priorNames": []},
+    {"name":"Karma Automotive","alternativeNames": [],"priorNames": []},
+    {"name":"KB Home","alternativeNames": [],"priorNames": []},
+    {"name":"KBR","alternativeNames": [],"priorNames": []},
+    {"name":"Kel-Tec CNC Industries","alternativeNames": ["Kel Tec CNC Industries"],"priorNames": []},
+    {"name":"Kellogg Company","alternativeNames": [],"priorNames": []}
 
 
   ]
