@@ -869,7 +869,38 @@
     {"name":"KB Home","alternativeNames": [],"priorNames": []},
     {"name":"KBR","alternativeNames": [],"priorNames": []},
     {"name":"Kel-Tec CNC Industries","alternativeNames": ["Kel Tec CNC Industries"],"priorNames": []},
-    {"name":"Kellogg Company","alternativeNames": [],"priorNames": []}
+    {"name":"Kellogg Company","alternativeNames": [],"priorNames": []},
+
+    {"name":"Kelly Services","alternativeNames": [],"priorNames": []},
+    {"name":"Kendall-Jackson","alternativeNames": ["Kendall Jackson"],"priorNames": []},
+    {"name":"Kenexa","alternativeNames": [],"priorNames": []},
+    {"name":"Kennametal","alternativeNames": [],"priorNames": []},
+    {"name":"Kenworth","alternativeNames": [],"priorNames": []},
+    {"name":"Kerr-McGee","alternativeNames": ["Kerr McGee"],"priorNames": []},
+    {"name":"KeyBank","alternativeNames": ["Key Bank"],"priorNames": []},
+    {"name":"KFC","alternativeNames": ["K F C", "K. F. C."],"priorNames": []},
+    {"name":"Kiewit Corporation","alternativeNames": ["Kiewit"],"priorNames": []},
+    {"name":"Kimball International","alternativeNames": [],"priorNames": []},
+    {"name":"Kimber Manufacturing","alternativeNames": [],"priorNames": []},
+    {"name":"Kimberly-Clark","alternativeNames": ["Kimberly Clark"],"priorNames": []},
+    {"name":"Kinder Morgan","alternativeNames": [],"priorNames": []},
+    {"name":"King Kullen Grocery Company","alternativeNames": ["King Kullen Grocery", "King Kullen"],"priorNames": []},
+
+    {"name":"Kingston Technology","alternativeNames": [],"priorNames": []},
+    {"name":"KKR","alternativeNames": ["ohlberg Kravis Roberts", "K K R", "K. K. R."],"priorNames": []},
+    {"name":"KLA Tencor","alternativeNames": [],"priorNames": []},
+    {"name":"Klipsch Audio Technologies","alternativeNames": [],"priorNames": []},
+    {"name":"Kmart","alternativeNames": [],"priorNames": []},
+    {"name":"Knight's Armament Company","alternativeNames": [],"priorNames": []},
+    {"name":"Koch Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Kohler Company","alternativeNames": ["Kohler"],"priorNames": []},
+    {"name":"Kohl's","alternativeNames": [],"priorNames": []},
+    {"name":"Kraft Foods","alternativeNames": [],"priorNames": []},
+    {"name":"Krispy Kreme","alternativeNames": [],"priorNames": []},
+    {"name":"Kroger","alternativeNames": [],"priorNames": []},
+    {"name":"Kurzweil Educational Systems","alternativeNames": [],"priorNames": []}
+
+
 
 
   ]
