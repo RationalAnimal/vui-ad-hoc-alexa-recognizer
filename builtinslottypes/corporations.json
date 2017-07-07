@@ -1042,7 +1042,23 @@
     {"name":"Monsanto","alternativeNames": [],"priorNames": []},
     {"name":"Monster Beverage Corporation","alternativeNames": ["Monster Beverage", "Monster"],"priorNames": []},
     {"name":"Montana Resources","alternativeNames": [],"priorNames": []},
-    {"name":"Moody's","alternativeNames": ["Moodys"],"priorNames": []}
+    {"name":"Moody's","alternativeNames": ["Moodys"],"priorNames": []},
+
+    {"name":"Moog Incorporated","alternativeNames": [],"priorNames": []},
+    {"name":"Monro Muffler Brake, Inc.","alternativeNames": ["Monro Muffler Brake, Inc", "Monro Muffler Brake"],"priorNames": []},
+    {"name":"Morgan Stanley","alternativeNames": [],"priorNames": []},
+    {"name":"Morningstar","alternativeNames": [],"priorNames": []},
+    {"name":"The Mosaic Company","alternativeNames": [],"priorNames": []},
+    {"name":"Motorola","alternativeNames": [],"priorNames": []},
+    {"name":"Movado","alternativeNames": [],"priorNames": []},
+    {"name":"Mozilla Foundation","alternativeNames": [],"priorNames": []},
+    {"name":"MTX Audio","alternativeNames": [],"priorNames": []},
+    {"name":"Murphy Oil Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Musco Lighting","alternativeNames": [],"priorNames": []},
+    {"name":"Mutual of Omaha","alternativeNames": [],"priorNames": []},
+    {"name":"Mylan Inc.","alternativeNames": ["Mylan Inc", "Mylan"],"priorNames": []},
+    {"name":"Myspace","alternativeNames": [],"priorNames": []}
+
 
 
 
