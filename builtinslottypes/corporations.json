@@ -1109,7 +1109,23 @@
     {"name":"Numark Industries","alternativeNames": [],"priorNames": []},
     {"name":"Nvidia","alternativeNames": [],"priorNames": []},
     {"name":"NYDJ","alternativeNames": ["NYDJ", "N. Y. D. J.", "N Y D J"],"priorNames": []},
-    {"name":"NYSE Euronext","alternativeNames": ["NYSE", "N Y S E", "N. Y. S. E.", "New York Stock Exchange"],"priorNames": []}
+    {"name":"NYSE Euronext","alternativeNames": ["NYSE", "N Y S E", "N. Y. S. E.", "New York Stock Exchange"],"priorNames": []},
+
+    {"name":"O.F. Mossberg & Sons","alternativeNames": ["O. F. Mossberg & Sons", "O F Mossberg & Sons", "O.F. Mossberg and Sons", "O. F. Mossberg and Sons", "O F Mossberg and Sons"],"priorNames": []},
+    {"name":"Oak Hill Capital Partners","alternativeNames": [],"priorNames": []},
+    {"name":"Oaktree Capital Management","alternativeNames": [],"priorNames": []},
+    {"name":"Oberto Sausage Company","alternativeNames": [],"priorNames": []},
+    {"name":"Oberweis Dairy","alternativeNames": [],"priorNames": []},
+    {"name":"Occidental Petroleum","alternativeNames": [],"priorNames": []},
+    {"name":"Ocean Spray","alternativeNames": [],"priorNames": []},
+    {"name":"Oceaneering International","alternativeNames": [],"priorNames": []},
+    {"name":"OCZ Technology","alternativeNames": [],"priorNames": []},
+    {"name":"Odwalla Inc.","alternativeNames": ["Odwalla Inc", "Odwalla"],"priorNames": []},
+    {"name":"Office Depot","alternativeNames": [],"priorNames": []},
+    {"name":"OfficeMax","alternativeNames": ["Office Max"],"priorNames": []},
+    {"name":"Olan Mills","alternativeNames": [],"priorNames": []},
+    {"name":"Old Dominion Freight Line","alternativeNames": [],"priorNames": []}
+
 
 
 
