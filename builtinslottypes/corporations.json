@@ -1093,7 +1093,24 @@
     {"name":"Nielsen","alternativeNames": [],"priorNames": []},
     {"name":"Nike, Inc.","alternativeNames": ["Nike, Inc", "Nike"],"priorNames": []},
     {"name":"NL Industries","alternativeNames": [],"priorNames": []},
-    {"name":"Noble Energy","alternativeNames": [],"priorNames": []}
+    {"name":"Noble Energy","alternativeNames": [],"priorNames": []},
+
+    {"name":"Nordstrom","alternativeNames": [],"priorNames": []},
+    {"name":"Norfolk Southern Railway","alternativeNames": [],"priorNames": []},
+    {"name":"North Sails","alternativeNames": [],"priorNames": []},
+    {"name":"Northrop Grumman","alternativeNames": [],"priorNames": []},
+    {"name":"Northwest Airlines","alternativeNames": [],"priorNames": []},
+    {"name":"Norwegian Cruise Line","alternativeNames": [],"priorNames": []},
+    {"name":"Novell","alternativeNames": [],"priorNames": []},
+    {"name":"Novellus Systems","alternativeNames": [],"priorNames": []},
+    {"name":"NRG Energy","alternativeNames": ["N R G Energy", "N. R. G. Energy"],"priorNames": []},
+    {"name":"Nuance Communications","alternativeNames": [],"priorNames": []},
+    {"name":"Nucor","alternativeNames": [],"priorNames": []},
+    {"name":"Numark Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Nvidia","alternativeNames": [],"priorNames": []},
+    {"name":"NYDJ","alternativeNames": ["NYDJ", "N. Y. D. J.", "N Y D J"],"priorNames": []},
+    {"name":"NYSE Euronext","alternativeNames": ["NYSE", "N Y S E", "N. Y. S. E.", "New York Stock Exchange"],"priorNames": []}
+
 
 
 
