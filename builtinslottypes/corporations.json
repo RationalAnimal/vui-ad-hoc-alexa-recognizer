@@ -1057,7 +1057,26 @@
     {"name":"Musco Lighting","alternativeNames": [],"priorNames": []},
     {"name":"Mutual of Omaha","alternativeNames": [],"priorNames": []},
     {"name":"Mylan Inc.","alternativeNames": ["Mylan Inc", "Mylan"],"priorNames": []},
-    {"name":"Myspace","alternativeNames": [],"priorNames": []}
+    {"name":"Myspace","alternativeNames": [],"priorNames": []},
+
+    {"name":"Nabisco","alternativeNames": [],"priorNames": []},
+    {"name":"NACCO Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Nalge Nunc International","alternativeNames": [],"priorNames": []},
+    {"name":"NASDAQ OMX Group","alternativeNames": ["NASDAQ"],"priorNames": []},
+    {"name":"Nathan's Famous, Inc.","alternativeNames": ["Nathan's Famous, Inc", "Nathan's Famous"],"priorNames": []},
+    {"name":"National Airlines","alternativeNames": [],"priorNames": []},
+    {"name":"National Beverage","alternativeNames": [],"priorNames": []},
+    {"name":"National Oilwell Varco","alternativeNames": [],"priorNames": []},
+    {"name":"National Presto Industries","alternativeNames": [],"priorNames": []},
+    {"name":"National Railway Equipment Company","alternativeNames": [],"priorNames": []},
+    {"name":"Nationwide Mutual Insurance Company","alternativeNames": [],"priorNames": []},
+    {"name":"Nautilus, Inc.","alternativeNames": ["Nautilus, Inc", "Nautilus"],"priorNames": []},
+    {"name":"NBCUniversal","alternativeNames": ["NBC Universal", "N B C Universal", "N. B. C. Universal"],"priorNames": []},
+    {"name":"NCR Corporation","alternativeNames": ["NCR", "N. C. R.", "N C R"],"priorNames": []},
+    {"name":"Necco","alternativeNames": [],"priorNames": []},
+    {"name":"Neiman Marcus Group","alternativeNames": ["Neiman Marcus"],"priorNames": []},
+    {"name":"NetApp","alternativeNames": ["Net App"],"priorNames": []}
+
 
 
 
