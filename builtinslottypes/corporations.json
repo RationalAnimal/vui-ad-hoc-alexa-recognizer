@@ -1075,7 +1075,26 @@
     {"name":"NCR Corporation","alternativeNames": ["NCR", "N. C. R.", "N C R"],"priorNames": []},
     {"name":"Necco","alternativeNames": [],"priorNames": []},
     {"name":"Neiman Marcus Group","alternativeNames": ["Neiman Marcus"],"priorNames": []},
-    {"name":"NetApp","alternativeNames": ["Net App"],"priorNames": []}
+    {"name":"NetApp","alternativeNames": ["Net App"],"priorNames": []},
+
+    {"name":"Netcordia","alternativeNames": [],"priorNames": []},
+    {"name":"Netflix","alternativeNames": [],"priorNames": []},
+    {"name":"Netgear","alternativeNames": [],"priorNames": []},
+    {"name":"NetZero","alternativeNames": [],"priorNames": []},
+    {"name":"New Balance","alternativeNames": [],"priorNames": []},
+    {"name":"New Era Tickets","alternativeNames": [],"priorNames": []},
+    {"name":"New York Life Insurance Company","alternativeNames": ["New York Life Insurance"],"priorNames": []},
+    {"name":"Newegg.com, Inc.","alternativeNames": ["Newegg.com, Inc", "Newegg.com", "Newegg dot com Inc.", "Newegg dot com Inc", "Newegg.com", "Newegg dot com"],"priorNames": []},
+    {"name":"Newell Rubbermaid","alternativeNames": [],"priorNames": []},
+    {"name":"Newfield Exploration","alternativeNames": [],"priorNames": []},
+    {"name":"Newmont Mining Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"NewPage Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"News Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Nielsen","alternativeNames": [],"priorNames": []},
+    {"name":"Nike, Inc.","alternativeNames": ["Nike, Inc", "Nike"],"priorNames": []},
+    {"name":"NL Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Noble Energy","alternativeNames": [],"priorNames": []}
+
 
 
 
