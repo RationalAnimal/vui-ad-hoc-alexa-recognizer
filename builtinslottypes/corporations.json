@@ -991,7 +991,25 @@
     {"name":"Maxim Integrated","alternativeNames": [],"priorNames": []},
     {"name":"Maxtor","alternativeNames": [],"priorNames": []},
     {"name":"McAfee","alternativeNames": [],"priorNames": []},
-    {"name":"The McClatchy Company","alternativeNames": [],"priorNames": []}
+    {"name":"The McClatchy Company","alternativeNames": [],"priorNames": []},
+
+    {"name":"McCormick & Company","alternativeNames": ["McCormick and Company"],"priorNames": []},
+    {"name":"McDonald's","alternativeNames": [],"priorNames": []},
+    {"name":"McGraw-Hill","alternativeNames": ["McGraw Hill"],"priorNames": []},
+    {"name":"MCI Inc.","alternativeNames": ["MCI Inc", "MCI", "M. C. I. Inc.", "M. C. I. Inc", "M. C. I."],"priorNames": []},
+    {"name":"McIlhenny Company","alternativeNames": [],"priorNames": []},
+    {"name":"McIntosh Laboratory","alternativeNames": [],"priorNames": []},
+    {"name":"McKee Foods Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"McKesson Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"McKinsey & Company","alternativeNames": ["McKinsey and Company"],"priorNames": []},
+    {"name":"MD Helicopters","alternativeNames": ["M. D. Helicopters"],"priorNames": []},
+    {"name":"Mead Johnson","alternativeNames": [],"priorNames": []},
+    {"name":"MeadWestvaco","alternativeNames": [],"priorNames": []},
+    {"name":"Medimix International","alternativeNames": [],"priorNames": []},
+    {"name":"Medtronic","alternativeNames": [],"priorNames": []},
+    {"name":"Meijer","alternativeNames": [],"priorNames": []},
+    {"name":"Meineke Car Care Centers","alternativeNames": [],"priorNames": []}
+
 
 
 
