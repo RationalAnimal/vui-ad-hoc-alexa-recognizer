@@ -1124,7 +1124,23 @@
     {"name":"Office Depot","alternativeNames": [],"priorNames": []},
     {"name":"OfficeMax","alternativeNames": ["Office Max"],"priorNames": []},
     {"name":"Olan Mills","alternativeNames": [],"priorNames": []},
-    {"name":"Old Dominion Freight Line","alternativeNames": [],"priorNames": []}
+    {"name":"Old Dominion Freight Line","alternativeNames": [],"priorNames": []},
+
+    {"name":"Olin Corporation","alternativeNames": ["Olin"],"priorNames": []},
+    {"name":"Olympic Steel","alternativeNames": [],"priorNames": []},
+    {"name":"Omaha Steaks","alternativeNames": [],"priorNames": []},
+    {"name":"Omni Air International","alternativeNames": ["Omni Air"],"priorNames": []},
+    {"name":"The Omni Group","alternativeNames": ["Omni Group"],"priorNames": []},
+    {"name":"Omnicare","alternativeNames": ["Omni Care"],"priorNames": []},
+    {"name":"Omnicom Group","alternativeNames": ["Omnicom"],"priorNames": []},
+    {"name":"ON Semiconductor","alternativeNames": [],"priorNames": []},
+    {"name":"Onanon","alternativeNames": [],"priorNames": []},
+    {"name":"ONEOK","alternativeNames": ["one ok", "1 ok"],"priorNames": []},
+    {"name":"Onvia","alternativeNames": ["on via"],"priorNames": []},
+    {"name":"Open Interface North America","alternativeNames": [],"priorNames": []},
+    {"name":"OpenTable","alternativeNames": ["open table"],"priorNames": []},
+    {"name":"Opower","alternativeNames": ["oh power", "o. power"],"priorNames": []}
+
 
 
 
