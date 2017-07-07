@@ -1008,7 +1008,43 @@
     {"name":"Medimix International","alternativeNames": [],"priorNames": []},
     {"name":"Medtronic","alternativeNames": [],"priorNames": []},
     {"name":"Meijer","alternativeNames": [],"priorNames": []},
-    {"name":"Meineke Car Care Centers","alternativeNames": [],"priorNames": []}
+    {"name":"Meineke Car Care Centers","alternativeNames": [],"priorNames": []},
+
+    {"name":"Menards","alternativeNames": [],"priorNames": []},
+    {"name":"Men's Wearhouse","alternativeNames": ["Mens Wearhouse"],"priorNames": []},
+    {"name":"Mentor Graphics","alternativeNames": [],"priorNames": []},
+    {"name":"Merck & Co.","alternativeNames": ["Merck & Co", "Merck", "Merck and Co.", "Merck and Co", "Merck & Company", "Merck and Company"],"priorNames": []},
+    {"name":"Mercury Insurance Group","alternativeNames": [],"priorNames": []},
+    {"name":"Mercury Marine","alternativeNames": [],"priorNames": []},
+    {"name":"Meredith Corporation","alternativeNames": ["Meredith"],"priorNames": []},
+    {"name":"Meritor","alternativeNames": [],"priorNames": []},
+    {"name":"Mesa Airlines","alternativeNames": [],"priorNames": []},
+    {"name":"Metapress","alternativeNames": [],"priorNames": []},
+    {"name":"MetLife","alternativeNames": [],"priorNames": []},
+    {"name":"Metro-Goldwyn-Mayer","alternativeNames": ["MGM", "M G M", "M. G. M.", "MetroGoldwynMayer", "Metro Goldwyn Mayer"],"priorNames": []},
+    {"name":"Mettler-Toledo","alternativeNames": ["Mettler Toledo"],"priorNames": []},
+    {"name":"Michaels Stores, Inc.","alternativeNames": ["Michaels Stores, Inc", "Michaels Stores", "Michaels"],"priorNames": []},
+    {"name":"Microchip Technology","alternativeNames": [],"priorNames": []},
+    {"name":"Micron Technology","alternativeNames": ["Micron"],"priorNames": []},
+
+    {"name":"Microsoft","alternativeNames": [],"priorNames": []},
+    {"name":"MicroStrategy","alternativeNames": ["Micro Strategy"],"priorNames": []},
+    {"name":"Midway Games","alternativeNames": [],"priorNames": []},
+    {"name":"Midwest Communications","alternativeNames": [],"priorNames": []},
+    {"name":"MIG, Inc.","alternativeNames": ["MIG, Inc", "MIG", "M. I. G., Inc.", "M. I. G., Inc", "M. I. G.", "M I G, Inc.", "M I G, Inc", "M I G"],"priorNames": []},
+    {"name":"Miller Brewing Company","alternativeNames": ["Miller"],"priorNames": []},
+    {"name":"Miro Technologies","alternativeNames": [],"priorNames": []},
+    {"name":"Mohawk Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Molex, Inc.","alternativeNames": ["Molex"],"priorNames": []},
+    {"name":"Molycorp","alternativeNames": [],"priorNames": []},
+    {"name":"Mondelēz International","alternativeNames": ["Mondelez International"],"priorNames": []},
+    {"name":"Monotype Imaging Holdings","alternativeNames": [],"priorNames": []},
+    {"name":"Monsanto","alternativeNames": [],"priorNames": []},
+    {"name":"Monster Beverage Corporation","alternativeNames": ["Monster Beverage", "Monster"],"priorNames": []},
+    {"name":"Montana Resources","alternativeNames": [],"priorNames": []},
+    {"name":"Moody's","alternativeNames": ["Moodys"],"priorNames": []}
+
+
 
 
 
