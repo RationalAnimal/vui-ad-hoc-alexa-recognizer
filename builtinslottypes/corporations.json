@@ -1008,7 +1008,25 @@
     {"name":"Medimix International","alternativeNames": [],"priorNames": []},
     {"name":"Medtronic","alternativeNames": [],"priorNames": []},
     {"name":"Meijer","alternativeNames": [],"priorNames": []},
-    {"name":"Meineke Car Care Centers","alternativeNames": [],"priorNames": []}
+    {"name":"Meineke Car Care Centers","alternativeNames": [],"priorNames": []},
+
+    {"name":"Menards","alternativeNames": [],"priorNames": []},
+    {"name":"Men's Wearhouse","alternativeNames": ["Mens Wearhouse"],"priorNames": []},
+    {"name":"Mentor Graphics","alternativeNames": [],"priorNames": []},
+    {"name":"Merck & Co.","alternativeNames": ["Merck & Co", "Merck", "Merck and Co.", "Merck and Co", "Merck & Company", "Merck and Company"],"priorNames": []},
+    {"name":"Mercury Insurance Group","alternativeNames": [],"priorNames": []},
+    {"name":"Mercury Marine","alternativeNames": [],"priorNames": []},
+    {"name":"Meredith Corporation","alternativeNames": ["Meredith"],"priorNames": []},
+    {"name":"Meritor","alternativeNames": [],"priorNames": []},
+    {"name":"Mesa Airlines","alternativeNames": [],"priorNames": []},
+    {"name":"Metapress","alternativeNames": [],"priorNames": []},
+    {"name":"MetLife","alternativeNames": [],"priorNames": []},
+    {"name":"Metro-Goldwyn-Mayer","alternativeNames": ["MGM", "M G M", "M. G. M.", "MetroGoldwynMayer", "Metro Goldwyn Mayer"],"priorNames": []},
+    {"name":"Mettler-Toledo","alternativeNames": ["Mettler Toledo"],"priorNames": []},
+    {"name":"Michaels Stores, Inc.","alternativeNames": ["Michaels Stores, Inc", "Michaels Stores", "Michaels"],"priorNames": []},
+    {"name":"Microchip Technology","alternativeNames": [],"priorNames": []},
+    {"name":"Micron Technology","alternativeNames": ["Micron"],"priorNames": []}
+
 
 
 
