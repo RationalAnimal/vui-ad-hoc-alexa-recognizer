@@ -1168,23 +1168,22 @@
     {"name":"Panera Bread","alternativeNames": [],"priorNames": []},
     {"name":"Papa John's Pizza","alternativeNames": [],"priorNames": []},
     {"name":"Papa Murphy's","alternativeNames": [],"priorNames": []},
-    {"name":"Paramount Pictures","alternativeNames": [],"priorNames": []}
+    {"name":"Paramount Pictures","alternativeNames": [],"priorNames": []},
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    {"name":"Park Seed Company","alternativeNames": [],"priorNames": []},
+    {"name":"Parker Hannifin Corporation","alternativeNames": ["Parker Hannifin"],"priorNames": []},
+    {"name":"Patagonia","alternativeNames": [],"priorNames": []},
+    {"name":"Patterson Companies","alternativeNames": [],"priorNames": []},
+    {"name":"Paxton Media Group","alternativeNames": [],"priorNames": []},
+    {"name":"Paychex Inc.","alternativeNames": ["Paychex"],"priorNames": []},
+    {"name":"Payless ShoeSource","alternativeNames": ["Payless"],"priorNames": []},
+    {"name":"PC Power and Cooling","alternativeNames": ["P. C. Power and Cooling", "P C Power and Cooling"],"priorNames": []},
+    {"name":"Peabody Energy","alternativeNames": [],"priorNames": []},
+    {"name":"Pearson's Candy Company","alternativeNames": ["Pearson's Candy"],"priorNames": []},
+    {"name":"Peavey Electronics Corporation","alternativeNames": ["Peavey Electronics"],"priorNames": []},
+    {"name":"Peet's Coffee","alternativeNames": ["Peets Coffee", "Pet's Coffee"],"priorNames": []},
+    {"name":"Pelican Products","alternativeNames": [],"priorNames": []},
+    {"name":"Penn National Insurance","alternativeNames": [],"priorNames": []}
 
   ]
 }
