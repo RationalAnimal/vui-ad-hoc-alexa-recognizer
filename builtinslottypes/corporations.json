@@ -1212,8 +1212,21 @@
     {"name":"Piper Jaffray","alternativeNames": [],"priorNames": []},
     {"name":"Pitney Bowes","alternativeNames": [],"priorNames": []},
     {"name":"Pizza Hut","alternativeNames": [],"priorNames": []},
-    {"name":"Plains All American Pipeline","alternativeNames": [],"priorNames": []}
+    {"name":"Plains All American Pipeline","alternativeNames": [],"priorNames": []},
 
+    {"name":"Planet Hollywood","alternativeNames": [],"priorNames": []},
+    {"name":"Plantronics","alternativeNames": [],"priorNames": []},
+    {"name":"Plochman's","alternativeNames": [],"priorNames": []},
+    {"name":"PMC-Sierra","alternativeNames": ["PMC Sierra", "P. M. C. Sierra", "P M C Sierra"],"priorNames": []},
+    {"name":"PNY Technologies","alternativeNames": ["P. N. Y. Technologies", "P N Y Technologies"],"priorNames": []},
+    {"name":"Polaroid Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Polaris Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Popeyes Louisiana Kitchen","alternativeNames": [],"priorNames": []},
+    {"name":"PPG Industries","alternativeNames": ["P P G Industries", "P. P. G. Industries"],"priorNames": []},
+    {"name":"Praxair","alternativeNames": ["Prax air"],"priorNames": []},
+    {"name":"Precision Castparts Corp.","alternativeNames": ["Precision Cast parts"],"priorNames": []},
+    {"name":"Prestige Brands","alternativeNames": [],"priorNames": []},
+    {"name":"Priceline.com","alternativeNames": ["Price line dot com"],"priorNames": []}
 
   ]
 }
