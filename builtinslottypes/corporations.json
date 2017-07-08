@@ -1226,7 +1226,33 @@
     {"name":"Praxair","alternativeNames": ["Prax air"],"priorNames": []},
     {"name":"Precision Castparts Corp.","alternativeNames": ["Precision Cast parts"],"priorNames": []},
     {"name":"Prestige Brands","alternativeNames": [],"priorNames": []},
-    {"name":"Priceline.com","alternativeNames": ["Price line dot com"],"priorNames": []}
+    {"name":"Priceline.com","alternativeNames": ["Price line dot com"],"priorNames": []},
+
+    {"name":"PricewaterhouseCoopers","alternativeNames": ["Price water house Coopers", "Price waterhouse Coopers"],"priorNames": []},
+    {"name":"Primerica","alternativeNames": [],"priorNames": []},
+    {"name":"Principal Financial Group","alternativeNames": [],"priorNames": []},
+    {"name":"Procter & Gamble","alternativeNames": ["Procter and Gamble"],"priorNames": []},
+    {"name":"Progressive Corporation","alternativeNames": ["Progressive"],"priorNames": []},
+    {"name":"Protective Life Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Prudential Financial","alternativeNames": [],"priorNames": []},
+    {"name":"PSSC Labs","alternativeNames": ["P S S C Labs", "P. S. S. C. Labs"],"priorNames": []},
+    {"name":"Public Storage","alternativeNames": [],"priorNames": []},
+    {"name":"Publishers Clearing House","alternativeNames": [],"priorNames": []},
+    {"name":"Publix","alternativeNames": ["Public"],"priorNames": []},
+    {"name":"Pulte Homes","alternativeNames": [],"priorNames": []},
+
+    {"name":"QCR Holdings","alternativeNames": ["Q C R Holdings", "Q. C. R. Holdings"],"priorNames": []},
+    {"name":"Qualcomm","alternativeNames": [],"priorNames": []},
+    {"name":"Quanta Services","alternativeNames": [],"priorNames": []},
+    {"name":"Quantum Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Quest Diagnostics","alternativeNames": [],"priorNames": []},
+    {"name":"Quest Software","alternativeNames": [],"priorNames": []},
+    {"name":"QuikTrip Corporation","alternativeNames": ["Quick Trip Corporation", "QuikTrip", "Quick Trip"],"priorNames": []},
+    {"name":"Quincy Newspapers","alternativeNames": [],"priorNames": []},
+    {"name":"Quiznos","alternativeNames": [],"priorNames": []},
+    {"name":"QVC","alternativeNames": ["Q. V. C.", "Q V C"],"priorNames": []},
+    {"name":"Qwest","alternativeNames": ["Q west", "Q. west"],"priorNames": []}
+
 
   ]
 }
