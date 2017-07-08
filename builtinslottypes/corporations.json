@@ -1198,7 +1198,22 @@
     {"name":"PetSmart","alternativeNames": ["Pet Smart"],"priorNames": []},
     {"name":"Pfizer","alternativeNames": ["Pfizer", "fizer", "phizer"],"priorNames": []},
     {"name":"Philip Morris","alternativeNames": [],"priorNames": []},
-    {"name":"Phillips 66","alternativeNames": ["Phillips sixty six"],"priorNames": []}
+    {"name":"Phillips 66","alternativeNames": ["Phillips sixty six"],"priorNames": []},
+
+    {"name":"Phillips-Van Heusen","alternativeNames": ["PVH", "P V H", "P. V. H.", "Phillips Van Heusen"],"priorNames": []},
+    {"name":"Pier 1 Imports","alternativeNames": ["Pier one Imports", "Pier 1", "Pier one"],"priorNames": []},
+    {"name":"Piggybackr","alternativeNames": [],"priorNames": []},
+    {"name":"Pilgrim's Pride","alternativeNames": [],"priorNames": []},
+    {"name":"Pilot Travel Centers","alternativeNames": [],"priorNames": []},
+    {"name":"Pinnacle Foods Group","alternativeNames": ["Pinnacle Foods"],"priorNames": []},
+    {"name":"Pinnacle Systems","alternativeNames": [],"priorNames": []},
+    {"name":"Pioneer Natural Resources","alternativeNames": [],"priorNames": []},
+    {"name":"Pioneer Railcorp","alternativeNames": [],"priorNames": []},
+    {"name":"Piper Jaffray","alternativeNames": [],"priorNames": []},
+    {"name":"Pitney Bowes","alternativeNames": [],"priorNames": []},
+    {"name":"Pizza Hut","alternativeNames": [],"priorNames": []},
+    {"name":"Plains All American Pipeline","alternativeNames": [],"priorNames": []}
+
 
   ]
 }
