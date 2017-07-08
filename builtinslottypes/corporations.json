@@ -1183,7 +1183,22 @@
     {"name":"Peavey Electronics Corporation","alternativeNames": ["Peavey Electronics"],"priorNames": []},
     {"name":"Peet's Coffee","alternativeNames": ["Peets Coffee", "Pet's Coffee"],"priorNames": []},
     {"name":"Pelican Products","alternativeNames": [],"priorNames": []},
-    {"name":"Penn National Insurance","alternativeNames": [],"priorNames": []}
+    {"name":"Penn National Insurance","alternativeNames": [],"priorNames": []},
+
+    {"name":"Penske Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Pep Boys","alternativeNames": [],"priorNames": []},
+    {"name":"PepsiCo","alternativeNames": ["Pepsi"],"priorNames": []},
+    {"name":"Perdue Farms","alternativeNames": [],"priorNames": []},
+    {"name":"PerkinElmer","alternativeNames": ["Perkin Elmer"],"priorNames": []},
+    {"name":"Perrigo","alternativeNames": [],"priorNames": []},
+    {"name":"Perry Ellis International","alternativeNames": ["Perry Ellis"],"priorNames": []},
+    {"name":"Petco Animal Supplies","alternativeNames": ["Petco"],"priorNames": []},
+    {"name":"Peterbilt","alternativeNames": ["Peter Bilt"],"priorNames": []},
+    {"name":"PetMeds","alternativeNames": ["Pet Meds"],"priorNames": []},
+    {"name":"PetSmart","alternativeNames": ["Pet Smart"],"priorNames": []},
+    {"name":"Pfizer","alternativeNames": ["Pfizer", "fizer", "phizer"],"priorNames": []},
+    {"name":"Philip Morris","alternativeNames": [],"priorNames": []},
+    {"name":"Phillips 66","alternativeNames": ["Phillips sixty six"],"priorNames": []}
 
   ]
 }
