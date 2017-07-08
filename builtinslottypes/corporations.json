@@ -1251,7 +1251,41 @@
     {"name":"Quincy Newspapers","alternativeNames": [],"priorNames": []},
     {"name":"Quiznos","alternativeNames": [],"priorNames": []},
     {"name":"QVC","alternativeNames": ["Q. V. C.", "Q V C"],"priorNames": []},
-    {"name":"Qwest","alternativeNames": ["Q west", "Q. west"],"priorNames": []}
+    {"name":"Qwest","alternativeNames": ["Q west", "Q. west"],"priorNames": []},
+
+    {"name":"R.J. Corman Railroad Group","alternativeNames": [],"priorNames": []},
+    {"name":"RaceTrac Petroleum","alternativeNames": [],"priorNames": []},
+    {"name":"RadioShack","alternativeNames": [],"priorNames": []},
+    {"name":"Ralcorp","alternativeNames": [],"priorNames": []},
+    {"name":"Raley's Supermarkets","alternativeNames": [],"priorNames": []},
+    {"name":"Ralph Lauren","alternativeNames": [],"priorNames": []},
+    {"name":"Rambus","alternativeNames": [],"priorNames": []},
+    {"name":"Rand McNally","alternativeNames": [],"priorNames": []},
+    {"name":"Ranger Boats","alternativeNames": [],"priorNames": []},
+
+    {"name":"R.J. Corman Railroad Group","alternativeNames": ["R J Corman Railroad Group", "RJ Corman Railroad Group"],"priorNames": []},
+    {"name":"RaceTrac Petroleum","alternativeNames": ["Race Track Petroleum"],"priorNames": []},
+    {"name":"RadioShack","alternativeNames": ["Radio Shack"],"priorNames": []},
+    {"name":"Ralcorp","alternativeNames": [],"priorNames": []},
+    {"name":"Raley's Supermarkets","alternativeNames": [],"priorNames": []},
+    {"name":"Ralph Lauren","alternativeNames": [],"priorNames": []},
+    {"name":"Rambus","alternativeNames": [],"priorNames": []},
+    {"name":"Rand McNally","alternativeNames": [],"priorNames": []},
+    {"name":"Ranger Boats","alternativeNames": [],"priorNames": []},
+
+    {"name":"Raybestos","alternativeNames": [],"priorNames": []},
+    {"name":"Raycom Media","alternativeNames": [],"priorNames": []},
+    {"name":"Raymond James Financial","alternativeNames": [],"priorNames": []},
+    {"name":"Raytheon","alternativeNames": [],"priorNames": []},
+    {"name":"RCA","alternativeNames": ["R. C. A.", "R C A"],"priorNames": []},
+    {"name":"RE/MAX International","alternativeNames": ["RE MAX", "RE-MAX", "R. E. MAX"],"priorNames": []},
+    {"name":"Realogy","alternativeNames": [],"priorNames": []},
+    {"name":"Recreational Equipment Inc.","alternativeNames": ["Recreational Equipment Inc", "Recreational Equipment", "R. E. I.", "R E I"],"priorNames": []},
+    {"name":"Red Hat","alternativeNames": [],"priorNames": []},
+    {"name":"Red River Broadcasting","alternativeNames": [],"priorNames": []},
+    {"name":"Red Robin Gourmet Burgers","alternativeNames": [],"priorNames": []},
+    {"name":"Regal-Beloit","alternativeNames": ["Regal Beloit"],"priorNames": []}
+
 
 
   ]
