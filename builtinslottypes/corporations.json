@@ -1139,7 +1139,38 @@
     {"name":"Onvia","alternativeNames": ["on via"],"priorNames": []},
     {"name":"Open Interface North America","alternativeNames": [],"priorNames": []},
     {"name":"OpenTable","alternativeNames": ["open table"],"priorNames": []},
-    {"name":"Opower","alternativeNames": ["oh power", "o. power"],"priorNames": []}
+    {"name":"Opower","alternativeNames": ["oh power", "o. power"],"priorNames": []},
+
+    {"name":"OptiRTC","alternativeNames": [],"priorNames": []},
+    {"name":"Oracle Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Oracle Financial Services Software","alternativeNames": [],"priorNames": []},
+    {"name":"Orbital Sciences Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Oreck Corporation","alternativeNames": ["Oreck"],"priorNames": []},
+    {"name":"O'Reilly Auto Parts","alternativeNames": [],"priorNames": []},
+    {"name":"O'Reilly Media","alternativeNames": [],"priorNames": []},
+    {"name":"Oshkosh Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"OSI Restaurant Partners","alternativeNames": [],"priorNames": []},
+    {"name":"Outerwall","alternativeNames": [],"priorNames": []},
+    {"name":"Overcast Media","alternativeNames": [],"priorNames": []},
+    {"name":"Overstock.com, Inc.","alternativeNames": ["Overstock.com, Inc", "Overstock.com"],"priorNames": []},
+    {"name":"Owens Corning","alternativeNames": [],"priorNames": []},
+    {"name":"Owens-Illinois","alternativeNames": ["Owens Illinois"],"priorNames": []},
+
+    {"name":"Pabst Brewing Company","alternativeNames": [],"priorNames": []},
+    {"name":"PACCAR","alternativeNames": [],"priorNames": []},
+    {"name":"Pacer International","alternativeNames": [],"priorNames": []},
+    {"name":"Pacific Gas and Electric Company","alternativeNames": ["PG&E", "P G and E", "P. G. and E."],"priorNames": []},
+    {"name":"Pacific Life Insurance Company","alternativeNames": [],"priorNames": []},
+    {"name":"Packaging Corporation of America","alternativeNames": [],"priorNames": []},
+    {"name":"Pall Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Panda Energy International","alternativeNames": [],"priorNames": []},
+    {"name":"Panda Express","alternativeNames": [],"priorNames": []},
+    {"name":"Panera Bread","alternativeNames": [],"priorNames": []},
+    {"name":"Papa John's Pizza","alternativeNames": [],"priorNames": []},
+    {"name":"Papa Murphy's","alternativeNames": [],"priorNames": []},
+    {"name":"Paramount Pictures","alternativeNames": [],"priorNames": []}
+
+
 
 
 
