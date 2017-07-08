@@ -1226,7 +1226,20 @@
     {"name":"Praxair","alternativeNames": ["Prax air"],"priorNames": []},
     {"name":"Precision Castparts Corp.","alternativeNames": ["Precision Cast parts"],"priorNames": []},
     {"name":"Prestige Brands","alternativeNames": [],"priorNames": []},
-    {"name":"Priceline.com","alternativeNames": ["Price line dot com"],"priorNames": []}
+    {"name":"Priceline.com","alternativeNames": ["Price line dot com"],"priorNames": []},
+
+    {"name":"PricewaterhouseCoopers","alternativeNames": ["Price water house Coopers", "Price waterhouse Coopers"],"priorNames": []},
+    {"name":"Primerica","alternativeNames": [],"priorNames": []},
+    {"name":"Principal Financial Group","alternativeNames": [],"priorNames": []},
+    {"name":"Procter & Gamble","alternativeNames": ["Procter and Gamble"],"priorNames": []},
+    {"name":"Progressive Corporation","alternativeNames": ["Progressive"],"priorNames": []},
+    {"name":"Protective Life Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Prudential Financial","alternativeNames": [],"priorNames": []},
+    {"name":"PSSC Labs","alternativeNames": ["P S S C Labs", "P. S. S. C. Labs"],"priorNames": []},
+    {"name":"Public Storage","alternativeNames": [],"priorNames": []},
+    {"name":"Publishers Clearing House","alternativeNames": [],"priorNames": []},
+    {"name":"Publix","alternativeNames": ["Public"],"priorNames": []},
+    {"name":"Pulte Homes","alternativeNames": [],"priorNames": []}
 
   ]
 }
