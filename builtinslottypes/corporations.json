@@ -1319,7 +1319,18 @@
     {"name":"Rosetta Stone Inc.","alternativeNames": ["Rosetta Stone Inc", "Rosetta Stone"],"priorNames": []},
     {"name":"Ross Stores","alternativeNames": [],"priorNames": []},
     {"name":"Round Table Pizza","alternativeNames": [],"priorNames": []},
-    {"name":"Roush Performance","alternativeNames": [],"priorNames": []}
+    {"name":"Roush Performance","alternativeNames": [],"priorNames": []},
+
+    {"name":"Rovi Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Rowan Companies","alternativeNames": [],"priorNames": []},
+    {"name":"Royal Caribbean International","alternativeNames": [],"priorNames": []},
+    {"name":"RPM International","alternativeNames": ["R P M International", "R. P. M. International"],"priorNames": []},
+    {"name":"RR Donnelley","alternativeNames": ["R R Donnelley", "R. R. Donnelley"],"priorNames": []},
+    {"name":"Ruby Tuesday","alternativeNames": [],"priorNames": []},
+    {"name":"Russell Investments","alternativeNames": [],"priorNames": []},
+    {"name":"Russell Stover Candies","alternativeNames": [],"priorNames": []},
+    {"name":"Ryder","alternativeNames": [],"priorNames": []},
+    {"name":"Ryland Homes","alternativeNames": [],"priorNames": []}
 
   ]
 }
