@@ -1284,7 +1284,20 @@
     {"name":"Red Hat","alternativeNames": [],"priorNames": []},
     {"name":"Red River Broadcasting","alternativeNames": [],"priorNames": []},
     {"name":"Red Robin Gourmet Burgers","alternativeNames": [],"priorNames": []},
-    {"name":"Regal-Beloit","alternativeNames": ["Regal Beloit"],"priorNames": []}
+    {"name":"Regal-Beloit","alternativeNames": ["Regal Beloit"],"priorNames": []},
+
+    {"name":"Regal Entertainment Group","alternativeNames": [],"priorNames": []},
+    {"name":"Regeneron Pharmaceuticals","alternativeNames": [],"priorNames": []},
+    {"name":"Regions Financial Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Regis Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Reliance Steel & Aluminum Co.","alternativeNames": ["Reliance Steel and Aluminum Co.", "Reliance Steel & Aluminum Co", "Reliance Steel and Aluminum Co.", "Reliance Steel & Aluminum", "Reliance Steel and Aluminum"],"priorNames": []},
+    {"name":"Renco Group","alternativeNames": [],"priorNames": []},
+    {"name":"Rent-A-Center","alternativeNames": ["Rent A Center"],"priorNames": []},
+    {"name":"Rent-A-Wreck","alternativeNames": ["Rent A Wreck"],"priorNames": []},
+    {"name":"Renys","alternativeNames": [],"priorNames": []},
+    {"name":"Republic Services, Inc.","alternativeNames": ["Republic Services, Inc", "Republic Services"],"priorNames": []},
+    {"name":"Respironics","alternativeNames": [],"priorNames": []}
+
 
 
 
