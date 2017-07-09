@@ -1345,7 +1345,23 @@
     {"name":"Sauer-Danfoss","alternativeNames": ["Sauer Danfoss"],"priorNames": []},
     {"name":"Savage Arms Company","alternativeNames": [],"priorNames": []},
     {"name":"Save Mart Supermarkets","alternativeNames": [],"priorNames": []},
-    {"name":"Savers","alternativeNames": [],"priorNames": []}
+    {"name":"Savers","alternativeNames": [],"priorNames": []},
 
+    {"name":"Sbarro","alternativeNames": [],"priorNames": []},
+    {"name":"SCANA Corporation","alternativeNames": ["S C A N A Corporation", "S. C. A. N. A. Corporation", "SCANA", "S C A N A", "S. C. A. N. A."],"priorNames": []},
+    {"name":"Schlumberger","alternativeNames": [],"priorNames": []},
+    {"name":"Schneider National, Inc.","alternativeNames": ["Schneider National, Inc", "Schneider National"],"priorNames": []},
+    {"name":"Schnitzer Steel Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Schnucks","alternativeNames": [],"priorNames": []},
+    {"name":"Schoep's Ice Cream","alternativeNames": [],"priorNames": []},
+    {"name":"Scholastic Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Schwan Food Company","alternativeNames": [],"priorNames": []},
+    {"name":"Scottrade","alternativeNames": [],"priorNames": []},
+    {"name":"The Scotts Miracle-Gro Company","alternativeNames": [],"priorNames": []},
+    {"name":"Scripps Networks Interactive","alternativeNames": [],"priorNames": []},
+    {"name":"Seaboard Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Seagate Technology","alternativeNames": [],"priorNames": []},
+    {"name":"Sealed Air Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Sears","alternativeNames": [],"priorNames": []}
   ]
 }
