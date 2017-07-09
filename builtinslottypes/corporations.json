@@ -1307,11 +1307,19 @@
     {"name":"Robinson Helicopter Company","alternativeNames": [],"priorNames": []},
     {"name":"ROBLOX","alternativeNames": [],"priorNames": []},
     {"name":"Rock-Tenn Company","alternativeNames": ["Rock Tenn Company"],"priorNames": []},
-    {"name":"Rockport Company","alternativeNames": ["Rock port Company", "Rockport", "Rock port"],"priorNames": []}
+    {"name":"Rockport Company","alternativeNames": ["Rock port Company", "Rockport", "Rock port"],"priorNames": []},
 
-
-
-
+    {"name":"Rockstar Games","alternativeNames": [],"priorNames": []},
+    {"name":"Rockstar, Inc.","alternativeNames": ["Rockstar, Inc", "Rockstar"],"priorNames": []},
+    {"name":"Rockwell Automation","alternativeNames": [],"priorNames": []},
+    {"name":"Rockwell Collins","alternativeNames": [],"priorNames": []},
+    {"name":"Rodale, Inc.","alternativeNames": ["Rodale, Inc", "Rodale"],"priorNames": []},
+    {"name":"Rollins Inc.","alternativeNames": ["Rollins Inc", "Rollins"],"priorNames": []},
+    {"name":"Roper Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Rosetta Stone Inc.","alternativeNames": ["Rosetta Stone Inc", "Rosetta Stone"],"priorNames": []},
+    {"name":"Ross Stores","alternativeNames": [],"priorNames": []},
+    {"name":"Round Table Pizza","alternativeNames": [],"priorNames": []},
+    {"name":"Roush Performance","alternativeNames": [],"priorNames": []}
 
   ]
 }
