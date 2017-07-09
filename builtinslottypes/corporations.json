@@ -1319,7 +1319,33 @@
     {"name":"Rosetta Stone Inc.","alternativeNames": ["Rosetta Stone Inc", "Rosetta Stone"],"priorNames": []},
     {"name":"Ross Stores","alternativeNames": [],"priorNames": []},
     {"name":"Round Table Pizza","alternativeNames": [],"priorNames": []},
-    {"name":"Roush Performance","alternativeNames": [],"priorNames": []}
+    {"name":"Roush Performance","alternativeNames": [],"priorNames": []},
+
+    {"name":"Rovi Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Rowan Companies","alternativeNames": [],"priorNames": []},
+    {"name":"Royal Caribbean International","alternativeNames": [],"priorNames": []},
+    {"name":"RPM International","alternativeNames": ["R P M International", "R. P. M. International"],"priorNames": []},
+    {"name":"RR Donnelley","alternativeNames": ["R R Donnelley", "R. R. Donnelley"],"priorNames": []},
+    {"name":"Ruby Tuesday","alternativeNames": [],"priorNames": []},
+    {"name":"Russell Investments","alternativeNames": [],"priorNames": []},
+    {"name":"Russell Stover Candies","alternativeNames": [],"priorNames": []},
+    {"name":"Ryder","alternativeNames": [],"priorNames": []},
+    {"name":"Ryland Homes","alternativeNames": [],"priorNames": []},
+
+    {"name":"S.C. Johnson & Son","alternativeNames": ["SC Johnson & Son", "S C Johnson & Son", "S.C. Johnson and Son", "SC Johnson and Son", "S C Johnson and Son", "S.C. Johnson", "SC Johnson", "S C Johnson"],"priorNames": []},
+    {"name":"S3 Graphics","alternativeNames": ["S three Graphics"],"priorNames": []},
+    {"name":"Sabre Holdings","alternativeNames": [],"priorNames": []},
+    {"name":"Safeco","alternativeNames": ["Safeco Insurance"],"priorNames": []},
+    {"name":"Safeway Inc.","alternativeNames": ["Safeway Inc", "Safeway"],"priorNames": []},
+    {"name":"SAIC","alternativeNames": ["S. A. I. C.", "S A I C"],"priorNames": []},
+    {"name":"Saleen Automotive","alternativeNames": [],"priorNames": []},
+    {"name":"Salem Communications","alternativeNames": [],"priorNames": []},
+    {"name":"Salesforce.com, Inc.","alternativeNames": ["Salesforce.com, Inc", "Salesforce.com", "Salesforce dot com Inc.", "Salesforce dot com Inc", "Salesforce dot com"],"priorNames": []},
+    {"name":"SanDisk","alternativeNames": [],"priorNames": []},
+    {"name":"Sauer-Danfoss","alternativeNames": ["Sauer Danfoss"],"priorNames": []},
+    {"name":"Savage Arms Company","alternativeNames": [],"priorNames": []},
+    {"name":"Save Mart Supermarkets","alternativeNames": [],"priorNames": []},
+    {"name":"Savers","alternativeNames": [],"priorNames": []}
 
   ]
 }
