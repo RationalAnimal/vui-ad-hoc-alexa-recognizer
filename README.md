@@ -564,7 +564,7 @@ the specified countries and continents.
 they only apply to the AMAZON.SportsTeam slot type and they restrict the matches to
 the specified sports and leagues.
 8. "INCLUDE_PRIOR_NAMES", "EXCLUDE_PRIOR_NAMES" - Currently these only apply to the AMAZON.SportsTeam and AMAZON.Corporation
-slot type and they include/exclude the prior team names in the search. Default is EXCLUDE_PRIOR_NAMES.
+slot type and they include/exclude the prior team (or corporation) names in the search. Default is EXCLUDE_PRIOR_NAMES.
 
 If you don't specify any of these, then
 INCLUDE_VALUES_MATCH and EXCLUDE_WILDCARD_MATCH will be used as the default.  Also,
