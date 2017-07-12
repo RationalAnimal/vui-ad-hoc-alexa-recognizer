@@ -1527,6 +1527,32 @@
     {"name":"Towers Perrin","alternativeNames": [],"priorNames": []},
     {"name":"Toys R Us","alternativeNames": ["Toys are Us"],"priorNames": []},
     {"name":"TPG Capital","alternativeNames": ["T P G Capital", "T. P. G. Capital"],"priorNames": []},
-    {"name":"Trader Joe's","alternativeNames": [],"priorNames": []}
+    {"name":"Trader Joe's","alternativeNames": [],"priorNames": []},
+
+    {"name":"Trader Vic's","alternativeNames": [],"priorNames": []},
+    {"name":"Transamerica Corporation","alternativeNames": ["Transamerica", "Trans america"],"priorNames": []},
+    {"name":"Transammonia, Inc.","alternativeNames": ["Transammonia, Inc", "Transammonia", "Trans ammonia"],"priorNames": []},
+    {"name":"TransDigm Group","alternativeNames": ["TransDigm", "Trans Digm"],"priorNames": []},
+    {"name":"The Travelers Companies","alternativeNames": ["The Travelers"],"priorNames": []},
+    {"name":"Traxxas","alternativeNames": [],"priorNames": []},
+    {"name":"TreeRing","alternativeNames": ["Tree Ring"],"priorNames": []},
+    {"name":"Trek Bicycle Corporation","alternativeNames": ["Trek Bicycle", "Trek"],"priorNames": []},
+    {"name":"Trianz","alternativeNames": [],"priorNames": []},
+    {"name":"Trijicon","alternativeNames": [],"priorNames": []},
+    {"name":"Trimble Navigation","alternativeNames": [],"priorNames": []},
+    {"name":"Trinity Industries","alternativeNames": [],"priorNames": []},
+    {"name":"Triumph Group","alternativeNames": ["Triumph"],"priorNames": []},
+
+    {"name":"Tropicana Products","alternativeNames": ["Tropicana"],"priorNames": []},
+    {"name":"TRT Holdings","alternativeNames": ["T R T Holdings", "T. R. T. Holdings"],"priorNames": []},
+    {"name":"The Trump Organization","alternativeNames": [],"priorNames": []},
+    {"name":"TRW Automotive","alternativeNames": ["T R W Automotive", "T. R. W. Automotive"],"priorNames": []},
+    {"name":"Tuff Shed","alternativeNames": ["Tough Shed"],"priorNames": []},
+    {"name":"Tully's Coffee","alternativeNames": [],"priorNames": []},
+    {"name":"Tupperware Brands","alternativeNames": ["Tupperware"],"priorNames": []},
+    {"name":"Turtle Wax","alternativeNames": [],"priorNames": []},
+    {"name":"Twitter","alternativeNames": [],"priorNames": []},
+    {"name":"Tyr Sport, Inc.","alternativeNames": ["Tyr Sport, Inc", "Tyr Sport"],"priorNames": []},
+    {"name":"Tyson Foods","alternativeNames": [],"priorNames": []}
   ]
 }
