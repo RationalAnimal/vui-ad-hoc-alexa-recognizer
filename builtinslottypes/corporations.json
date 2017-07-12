@@ -1553,6 +1553,39 @@
     {"name":"Turtle Wax","alternativeNames": [],"priorNames": []},
     {"name":"Twitter","alternativeNames": [],"priorNames": []},
     {"name":"Tyr Sport, Inc.","alternativeNames": ["Tyr Sport, Inc", "Tyr Sport"],"priorNames": []},
-    {"name":"Tyson Foods","alternativeNames": [],"priorNames": []}
+    {"name":"Tyson Foods","alternativeNames": [],"priorNames": []},
+
+    {"name":"U-Haul","alternativeNames": ["U Haul", "You Haul"],"priorNames": []},
+    {"name":"UberOffices","alternativeNames": ["Uber Offices"],"priorNames": []},
+    {"name":"Ubu Productions","alternativeNames": [],"priorNames": []},
+    {"name":"ULTA Beauty","alternativeNames": [],"priorNames": []},
+    {"name":"Ultimate Software","alternativeNames": [],"priorNames": []},
+    {"name":"Under Armour","alternativeNames": [],"priorNames": []},
+    {"name":"Underwriters Laboratories","alternativeNames": ["Under writers Laboratories", "UL", "U. L.", "U.L."],"priorNames": []},
+    {"name":"Unified Grocers","alternativeNames": [],"priorNames": []},
+    {"name":"Unify Square","alternativeNames": [],"priorNames": []},
+    {"name":"Union Bank","alternativeNames": [],"priorNames": []},
+    {"name":"Union Pacific Railroad","alternativeNames": [],"priorNames": []},
+    {"name":"Unisys","alternativeNames": [],"priorNames": []},
+    {"name":"United Airlines","alternativeNames": [],"priorNames": []},
+    {"name":"United Country Real Estate","alternativeNames": [],"priorNames": []},
+    {"name":"United Parcel Service","alternativeNames": ["UPS", "U. P. S.", "U P S"],"priorNames": []},
+
+    {"name":"United Rentals","alternativeNames": [],"priorNames": []},
+    {"name":"United States Enrichment Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"United Technologies Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Carrier Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Otis Elevator Company","alternativeNames": [],"priorNames": []},
+    {"name":"Pratt & Whitney","alternativeNames": ["Pratt and Whitney"],"priorNames": []},
+    {"name":"Sikorsky Aircraft","alternativeNames": [],"priorNames": []},
+    {"name":"UnitedHealth Group","alternativeNames": [],"priorNames": []},
+    {"name":"Universal Forest Products","alternativeNames": [],"priorNames": []},
+    {"name":"Universal Studios","alternativeNames": [],"priorNames": []},
+    {"name":"Uno Chicago Grill","alternativeNames": [],"priorNames": []},
+    {"name":"Unum Group","alternativeNames": [],"priorNames": []},
+    {"name":"Upland Brewing Company","alternativeNames": [],"priorNames": []},
+    {"name":"Upper Deck Company","alternativeNames": [],"priorNames": []},
+    {"name":"Urban Outfitters","alternativeNames": [],"priorNames": []}
+
   ]
 }
