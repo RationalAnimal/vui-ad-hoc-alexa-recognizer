@@ -1615,6 +1615,22 @@
     {"name":"Vectren","alternativeNames": [],"priorNames": []},
     {"name":"Venrock","alternativeNames": [],"priorNames": []},
     {"name":"Venus Swimwear","alternativeNames": [],"priorNames": []},
-    {"name":"Verbatim Corporation","alternativeNames": ["Verbatim"],"priorNames": []}
+    {"name":"Verbatim Corporation","alternativeNames": ["Verbatim"],"priorNames": []},
+
+    {"name":"Verifone Systems, Inc.","alternativeNames": ["Verifone Systems, Inc", "Verifone Systems"],"priorNames": []},
+    {"name":"Verisign","alternativeNames": [],"priorNames": []},
+    {"name":"Verisk Analytics","alternativeNames": [],"priorNames": []},
+    {"name":"Verizon Communications","alternativeNames": [],"priorNames": []},
+    {"name":"Verizon Wireless","alternativeNames": ["Verizon"],"priorNames": []},
+    {"name":"Vertex Pharmaceuticals","alternativeNames": [],"priorNames": []},
+    {"name":"VF Corporation","alternativeNames": ["V F Corporation", "V.F. Corporation", "V.F. Corporation"],"priorNames": []},
+    {"name":"Lee","alternativeNames": [],"priorNames": []},
+    {"name":"The North Face","alternativeNames": [],"priorNames": []},
+    {"name":"Wrangler","alternativeNames": [],"priorNames": []},
+    {"name":"Viacom","alternativeNames": [],"priorNames": []},
+    {"name":"ViaSat","alternativeNames": [],"priorNames": []},
+    {"name":"Victoria's Secret","alternativeNames": [],"priorNames": []},
+    {"name":"Victorious 22","alternativeNames": ["Victorious twenty two"],"priorNames": []},
+    {"name":"ViewSonic","alternativeNames": [],"priorNames": []}
   ]
 }
