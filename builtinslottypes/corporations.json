@@ -1585,7 +1585,36 @@
     {"name":"Unum Group","alternativeNames": [],"priorNames": []},
     {"name":"Upland Brewing Company","alternativeNames": [],"priorNames": []},
     {"name":"Upper Deck Company","alternativeNames": [],"priorNames": []},
-    {"name":"Urban Outfitters","alternativeNames": [],"priorNames": []}
+    {"name":"Urban Outfitters","alternativeNames": [],"priorNames": []},
 
+    {"name":"US Airways","alternativeNames": ["U.S. Airways", "U S Airways", "U. S. Airways"],"priorNames": []},
+    {"name":"U.S. Bancorp","alternativeNames": ["U. S. Bancorp", "US Bancorp", "U S Bancorp"],"priorNames": []},
+    {"name":"U.S. Cellular","alternativeNames": ["U. S. Cellular", "US Cellular", "U S Cellular"],"priorNames": []},
+    {"name":"US Foods","alternativeNames": ["U.S. Foods", "U S Foods", "U. S. Foods"],"priorNames": []},
+    {"name":"US Highland","alternativeNames": ["U.S. Highland", "U S Highland", "US Highland"],"priorNames": []},
+    {"name":"U.S. Ordnance, Inc.","alternativeNames": ["U. S. Ordnance, Inc.", "US Ordnance, Inc.", "U S Ordnance, Inc.", "U. S. Ordnance, Inc", "US Ordnance, Inc", "U S Ordnance, Inc", "U. S. Ordnance", "US Ordnance", "U S Ordnance", "U.S. Ordnance, Inc", "U.S. Ordnance"],"priorNames": []},
+    {"name":"U.S. Steel","alternativeNames": ["U. S. Steel", "US Steel", "U S Steel"],"priorNames": []},
+    {"name":"U.S. Venture Partners","alternativeNames": ["U. S. Venture Partners", "US Venture Partners", "U S Venture Partners"],"priorNames": []},
+    {"name":"USAA","alternativeNames": ["U.S.A.A.", "U S A A", "U. S. A. A.", "United Services Automobile Association"],"priorNames": []},
+    {"name":"USG Corporation","alternativeNames": ["USG", "U.S.G.", "U S G", "U. S. G.", "U.S.G. Corporation", "U. S. G. Corporation", "U S G Corporation"],"priorNames": []},
+    {"name":"USIS","alternativeNames": ["U.S.I.S.", "U S I S", "U. S. I. S."],"priorNames": []},
+    {"name":"USRobotics","alternativeNames": ["US Robotics", "U.S. Robotics", "U S Robotics", "U. S. Robotics"],"priorNames": []},
+    {"name":"UTStarcom","alternativeNames": [],"priorNames": []},
+    {"name":"Uwajimaya","alternativeNames": [],"priorNames": []},
+
+    {"name":"Vail Resorts, Inc.","alternativeNames": ["Vail Resorts, Inc", "Vail Resorts"],"priorNames": []},
+    {"name":"Valero Energy Corporation","alternativeNames": ["Valero Energy"],"priorNames": []},
+    {"name":"The Valspar Corporation","alternativeNames": ["Valspar"],"priorNames": []},
+    {"name":"Valve Corporation","alternativeNames": ["Valve"],"priorNames": []},
+    {"name":"The Vanguard Group","alternativeNames": ["The Vanguard", "Vanguard"],"priorNames": []},
+    {"name":"Vans","alternativeNames": [],"priorNames": []},
+    {"name":"VantagePoint Capital Partners","alternativeNames": [],"priorNames": []},
+    {"name":"Varian Medical Systems","alternativeNames": [],"priorNames": []},
+    {"name":"Vaughan & Bushnell Manufacturing","alternativeNames": ["Vaughan and Bushnell Manufacturing", "Vaughan & Bushnell", "Vaughan and Bushnell"],"priorNames": []},
+    {"name":"VECO Corporation","alternativeNames": ["VECO", "V E C O", "V.E.C.O.", "V. E. C. O.", "V E C O Corporation", "V.E.C.O. Corporation", "V. E. C. O. Corporation"],"priorNames": []},
+    {"name":"Vectren","alternativeNames": [],"priorNames": []},
+    {"name":"Venrock","alternativeNames": [],"priorNames": []},
+    {"name":"Venus Swimwear","alternativeNames": [],"priorNames": []},
+    {"name":"Verbatim Corporation","alternativeNames": ["Verbatim"],"priorNames": []}
   ]
 }
