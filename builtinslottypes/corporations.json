@@ -1631,6 +1631,21 @@
     {"name":"ViaSat","alternativeNames": [],"priorNames": []},
     {"name":"Victoria's Secret","alternativeNames": [],"priorNames": []},
     {"name":"Victorious 22","alternativeNames": ["Victorious twenty two"],"priorNames": []},
-    {"name":"ViewSonic","alternativeNames": [],"priorNames": []}
+    {"name":"ViewSonic","alternativeNames": [],"priorNames": []},
+
+    {"name":"Visa Inc.","alternativeNames": ["Visa Inc", "Visa"],"priorNames": []},
+    {"name":"Vishay Intertechnology","alternativeNames": [],"priorNames": []},
+    {"name":"Visteon Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Vivitar","alternativeNames": [],"priorNames": []},
+    {"name":"VIZ Media","alternativeNames": [],"priorNames": []},
+    {"name":"Vizio","alternativeNames": [],"priorNames": []},
+    {"name":"VMware","alternativeNames": [],"priorNames": []},
+    {"name":"Vonage","alternativeNames": [],"priorNames": []},
+    {"name":"Vornado Realty Trust","alternativeNames": [],"priorNames": []},
+    {"name":"Voxx International","alternativeNames": [],"priorNames": []},
+    {"name":"Voya Financial","alternativeNames": [],"priorNames": []},
+    {"name":"Vulcan Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Vulcan Materials Company","alternativeNames": [],"priorNames": []},
+    {"name":"VWR International","alternativeNames": ["V W R International", "V.W.R. International", "V. W. R. International", "VWR", "V.W.R.", "V. W. R."],"priorNames": []}
   ]
 }
