@@ -1658,7 +1658,21 @@
     {"name":"Wabtec Corporation","alternativeNames": [],"priorNames": []},
     {"name":"Waffle House","alternativeNames": [],"priorNames": []},
     {"name":"Wahl Clipper","alternativeNames": [],"priorNames": []},
-    {"name":"Wakefern Food Corporation","alternativeNames": [],"priorNames": []}
+    {"name":"Wakefern Food Corporation","alternativeNames": [],"priorNames": []},
+
+    {"name":"Walgreens","alternativeNames": [],"priorNames": []},
+    {"name":"Walmart","alternativeNames": [],"priorNames": []},
+    {"name":"The Walt Disney Company","alternativeNames": ["Walt Disney", "Disney"],"priorNames": []},
+    {"name":"Warburg Pincus","alternativeNames": [],"priorNames": []},
+    {"name":"Warner Bros.","alternativeNames": ["Warner Brothers"],"priorNames": []},
+    {"name":"Washburn Guitars","alternativeNames": [],"priorNames": []},
+    {"name":"Waste Management","alternativeNames": [],"priorNames": []},
+    {"name":"Watco Companies","alternativeNames": [],"priorNames": []},
+    {"name":"Waters Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Watkins Incorporated","alternativeNames": [],"priorNames": []},
+    {"name":"Watkins-Johnson Company","alternativeNames": ["Watkins Johnson Company", "Watkins-Johnson", "Watkins Johnson"],"priorNames": []},
+    {"name":"Watsco, Inc.","alternativeNames": [],"priorNames": []}
+
 
   ]
 }
