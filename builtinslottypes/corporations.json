@@ -1646,6 +1646,19 @@
     {"name":"Voya Financial","alternativeNames": [],"priorNames": []},
     {"name":"Vulcan Corporation","alternativeNames": [],"priorNames": []},
     {"name":"Vulcan Materials Company","alternativeNames": [],"priorNames": []},
-    {"name":"VWR International","alternativeNames": ["V W R International", "V.W.R. International", "V. W. R. International", "VWR", "V.W.R.", "V. W. R."],"priorNames": []}
+    {"name":"VWR International","alternativeNames": ["V W R International", "V.W.R. International", "V. W. R. International", "VWR", "V.W.R.", "V. W. R."],"priorNames": []},
+
+    {"name":"W. C. Bradley Co.","alternativeNames": ["W.C. Bradley Co.", "WC Bradley Co.", "W C Bradley Co.", "W.C. Bradley Co", "W. C. Bradley Co", "WC Bradley Co", "W C Bradley Co", "W.C. Bradley", "W. C. Bradley", "WC Bradley", "W C Bradley"],"priorNames": []},
+    {"name":"W. L. Gore and Associates","alternativeNames": ["W.L. Gore and Associates", "WL Gore and Associates", "W L Gore and Associates"],"priorNames": []},
+    {"name":"Gore-Tex","alternativeNames": [],"priorNames": []},
+    {"name":"W. R. Berkley","alternativeNames": ["W.R. Berkley", "W R Berkley", "WR Berkley"],"priorNames": []},
+    {"name":"W. R. Grace and Company","alternativeNames": ["W.R. Grace and Company", "W R Grace and Company", "WR Grace and Company"],"priorNames": []},
+    {"name":"W. W. Grainger","alternativeNames": ["W.W. Grainger", "W W Grainger", "WW Grainger"],"priorNames": []},
+    {"name":"Wabash National","alternativeNames": [],"priorNames": []},
+    {"name":"Wabtec Corporation","alternativeNames": [],"priorNames": []},
+    {"name":"Waffle House","alternativeNames": [],"priorNames": []},
+    {"name":"Wahl Clipper","alternativeNames": [],"priorNames": []},
+    {"name":"Wakefern Food Corporation","alternativeNames": [],"priorNames": []}
+
   ]
 }
