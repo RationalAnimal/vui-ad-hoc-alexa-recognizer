@@ -1696,8 +1696,17 @@
     {"name":"Whataburger","alternativeNames": [],"priorNames": []},
     {"name":"Whirlpool Corporation","alternativeNames": ["Whirlpool"],"priorNames": []},
     {"name":"White Castle","alternativeNames": [],"priorNames": []},
-    {"name":"Whole Foods Market","alternativeNames": ["Whole Foods"],"priorNames": []}
+    {"name":"Whole Foods Market","alternativeNames": ["Whole Foods"],"priorNames": []},
 
-
+    {"name":"Wienerschnitzel","alternativeNames": [],"priorNames": []},
+    {"name":"Willett Distilling Company","alternativeNames": [],"priorNames": []},
+    {"name":"William Blair & Company","alternativeNames": ["William Blair and Company"],"priorNames": []},
+    {"name":"Williams Companies","alternativeNames": [],"priorNames": []},
+    {"name":"Williams-Sonoma","alternativeNames": ["Williams Sonoma"],"priorNames": []},
+    {"name":"Williamson-Dickie Manufacturing Company","alternativeNames": ["Williamson Dickie"],"priorNames": []},
+    {"name":"WinCo Foods, Inc.","alternativeNames": ["WinCo Foods, Inc", "WinCo Foods"],"priorNames": []},
+    {"name":"Windstream Communications","alternativeNames": [],"priorNames": []},
+    {"name":"The Wine Group","alternativeNames": [],"priorNames": []},
+    {"name":"Winn-Dixie","alternativeNames": ["Winn Dixie"],"priorNames": []}
   ]
 }
