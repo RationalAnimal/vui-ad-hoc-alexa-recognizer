@@ -1683,7 +1683,21 @@
     {"name":"WellPoint","alternativeNames": [],"priorNames": []},
     {"name":"Wells Fargo","alternativeNames": [],"priorNames": []},
     {"name":"Wendy's Company","alternativeNames": [],"priorNames": []},
-    {"name":"Werner Enterprises","alternativeNames": [],"priorNames": []}
+    {"name":"Werner Enterprises","alternativeNames": [],"priorNames": []},
+
+    {"name":"West Liberty Foods","alternativeNames": [],"priorNames": []},
+    {"name":"Westat","alternativeNames": [],"priorNames": []},
+    {"name":"Western Digital","alternativeNames": [],"priorNames": []},
+    {"name":"Western Refining","alternativeNames": [],"priorNames": []},
+    {"name":"Western Sugar Cooperative","alternativeNames": [],"priorNames": []},
+    {"name":"Western Union","alternativeNames": [],"priorNames": []},
+    {"name":"Westinghouse Digital LLC","alternativeNames": ["Westinghouse Digital"],"priorNames": []},
+    {"name":"Weyerhaeuser","alternativeNames": [],"priorNames": []},
+    {"name":"Whataburger","alternativeNames": [],"priorNames": []},
+    {"name":"Whirlpool Corporation","alternativeNames": ["Whirlpool"],"priorNames": []},
+    {"name":"White Castle","alternativeNames": [],"priorNames": []},
+    {"name":"Whole Foods Market","alternativeNames": ["Whole Foods"],"priorNames": []}
+
 
   ]
 }
