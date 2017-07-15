@@ -1671,7 +1671,32 @@
     {"name":"Waters Corporation","alternativeNames": [],"priorNames": []},
     {"name":"Watkins Incorporated","alternativeNames": [],"priorNames": []},
     {"name":"Watkins-Johnson Company","alternativeNames": ["Watkins Johnson Company", "Watkins-Johnson", "Watkins Johnson"],"priorNames": []},
-    {"name":"Watsco, Inc.","alternativeNames": [],"priorNames": []}
+    {"name":"Watsco, Inc.","alternativeNames": [],"priorNames": []},
+
+    {"name":"Wausau Paper","alternativeNames": [],"priorNames": []},
+    {"name":"Wawa Inc.","alternativeNames": ["Wawa Inc", "Wawa"],"priorNames": []},
+    {"name":"WD-40 Company","alternativeNames": ["WD-40", "WD 40 Company", "WD 40", "WD forty Company", "WD forty", "W.D. 40 Company", "W.D. 40", "W. D. 40 Company", "W. D. 40", "W. D. forty Company", "W. D. forty"],"priorNames": []},
+    {"name":"Wegmans Food Markets","alternativeNames": [],"priorNames": []},
+    {"name":"The Weinstein Company","alternativeNames": [],"priorNames": []},
+    {"name":"Weis Markets","alternativeNames": [],"priorNames": []},
+    {"name":"Welch's","alternativeNames": [],"priorNames": []},
+    {"name":"WellPoint","alternativeNames": [],"priorNames": []},
+    {"name":"Wells Fargo","alternativeNames": [],"priorNames": []},
+    {"name":"Wendy's Company","alternativeNames": [],"priorNames": []},
+    {"name":"Werner Enterprises","alternativeNames": [],"priorNames": []},
+
+    {"name":"West Liberty Foods","alternativeNames": [],"priorNames": []},
+    {"name":"Westat","alternativeNames": [],"priorNames": []},
+    {"name":"Western Digital","alternativeNames": [],"priorNames": []},
+    {"name":"Western Refining","alternativeNames": [],"priorNames": []},
+    {"name":"Western Sugar Cooperative","alternativeNames": [],"priorNames": []},
+    {"name":"Western Union","alternativeNames": [],"priorNames": []},
+    {"name":"Westinghouse Digital LLC","alternativeNames": ["Westinghouse Digital"],"priorNames": []},
+    {"name":"Weyerhaeuser","alternativeNames": [],"priorNames": []},
+    {"name":"Whataburger","alternativeNames": [],"priorNames": []},
+    {"name":"Whirlpool Corporation","alternativeNames": ["Whirlpool"],"priorNames": []},
+    {"name":"White Castle","alternativeNames": [],"priorNames": []},
+    {"name":"Whole Foods Market","alternativeNames": ["Whole Foods"],"priorNames": []}
 
 
   ]
