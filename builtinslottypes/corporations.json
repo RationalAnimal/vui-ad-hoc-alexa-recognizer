@@ -1749,7 +1749,12 @@
     {"name":"Zions Bancorp","alternativeNames": [],"priorNames": []},
     {"name":"Zippo Manufacturing Company","alternativeNames": ["Zippo"],"priorNames": []},
     {"name":"Zoetis, Inc.","alternativeNames": ["Zoetis, Inc", "Zoetis"],"priorNames": []},
-    {"name":"Zoo York","alternativeNames": [],"priorNames": []}
+    {"name":"Zoo York","alternativeNames": [],"priorNames": []},
+
+    {"name":"Zoom Telephonics","alternativeNames": [],"priorNames": []},
+    {"name":"Zumiez","alternativeNames": [],"priorNames": []},
+    {"name":"Zune","alternativeNames": [],"priorNames": []},
+    {"name":"Zynga","alternativeNames": [],"priorNames": []}
 
   ]
 }
