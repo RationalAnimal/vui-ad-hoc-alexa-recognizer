@@ -6,9 +6,30 @@
       "name": "Birmingham–Shuttlesworth International Airport",
       "alternativeNames": ["Birmingham Shuttlesworth International Airport", "Birmingham–Shuttlesworth Airport", "Birmingham Shuttlesworth Airport", "Birmingham–Shuttlesworth", "Birmingham Shuttlesworth", "Birmingham Airport"],
       "priorNames": [],
-      "nativeName": "Alaska Airlines",
+      "nativeName": "Birmingham–Shuttlesworth International Airport",
       "country": "united states",
       "state": "Alabama"
-    }
+    },
+    {"name":"Dothan Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Huntsville International Airport","alternativeNames": ["arl T. Jones Field"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Mobile Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Montgomery Regional Airport","alternativeNames": ["Dannelly Field"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Bessemer Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"St. Clair County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Abbeville Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Shelby County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Albertville Regional Airport","alternativeNames": ["Thomas J. Brumlik Field"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Thomas C. Russell Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"George Downer Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"South Alabama Regional Airport","alternativeNames": ["Bill Benton Field"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Anniston Regional Airport","alternativeNames": [],"priorNames": ["Anniston Metropolitan Airport"],"country":"united states", "state":"Alabama"},
+    {"name":"Ashland/Lineville Airport","alternativeNames": ["Ashland Lineville Airport", "Ashland-Lineville Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Atmore Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Auburn University Regional Airport","alternativeNames": [],"priorNames": ["Auburn-Opelika Robert G. Pitts Airport"],"country":"united states", "state":"Alabama"},
+    {"name":"Bay Minette Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Brewton Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Butler-Choctaw County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Camden Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"}
+
   ]
 }
