@@ -1735,9 +1735,13 @@
     {"name":"Yelp, Inc.","alternativeNames": ["Yelp, Inc", "Yelp"],"priorNames": []},
     {"name":"YRC Worldwide","alternativeNames": [],"priorNames": []},
     {"name":"Yum! Brands","alternativeNames": ["Yum!", "Yum Brands", "Yum"],"priorNames": []},
-    {"name":"Yum-Yum Donuts","alternativeNames": ["Yum Yum Donuts"],"priorNames": []}
+    {"name":"Yum-Yum Donuts","alternativeNames": ["Yum Yum Donuts"],"priorNames": []},
 
-
-
+    {"name":"Zale Corporation","alternativeNames": ["Zale"],"priorNames": []},
+    {"name":"Zapata Corporation","alternativeNames": ["Zapata"],"priorNames": []},
+    {"name":"Zappos.com","alternativeNames": [],"priorNames": []},
+    {"name":"Zaxby's","alternativeNames": [],"priorNames": []},
+    {"name":"Zenith Electronics","alternativeNames": [],"priorNames": []},
+    {"name":"Zildjian","alternativeNames": [],"priorNames": []}
   ]
 }
