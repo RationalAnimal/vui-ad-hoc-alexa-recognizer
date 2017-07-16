@@ -29,7 +29,17 @@
     {"name":"Bay Minette Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Brewton Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Butler-Choctaw County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
-    {"name":"Camden Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"}
+    {"name":"Camden Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
 
+    {"name":"Centre-Piedmont-Cherokee County Regional Airport","alternativeNames": ["Centre Piedmont Cherokee County Regional Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Bibb County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Chilton County Airport","alternativeNames": [],"priorNames": ["Gragg-Wade Field", "Gragg Wade Field"],"country":"united states", "state":"Alabama"},
+    {"name":"Clayton Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Courtland Airport","alternativeNames": [],"priorNames": ["Lawrence County Airport"],"country":"united states", "state":"Alabama"},
+    {"name":"Cullman Regional Airport","alternativeNames": [],"priorNames": ["Folsom Field"],"country":"united states", "state":"Alabama"},
+    {"name":"Jeremiah Denton Airport","alternativeNames": [],"priorNames": ["Dauphin Island Airport"],"country":"united states", "state":"Alabama"},
+    {"name":"Pryor Field Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Demopolis Regional Airport","alternativeNames": [],"priorNames": ["Demopolis Municipal Airport"],"country":"united states", "state":"Alabama"},
+    {"name":"Carl Folsom Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"}
   ]
 }
