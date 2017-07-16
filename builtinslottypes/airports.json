@@ -1,0 +1,14 @@
+{
+  "attribution": "these values were partially taken from https://en.wikipedia.org/wiki/List_of_airports, content was modified to make it suitable in text matching software and some values have been removed and/or renamed",
+  "license": "This file is released under Creative Commons Attribution-ShareAlike license:  http://creativecommons.org/licenses/by-sa/3.0/",
+  "values": [
+    {
+      "name": "Birmingham–Shuttlesworth International Airport",
+      "alternativeNames": ["Birmingham Shuttlesworth International Airport", "Birmingham–Shuttlesworth Airport", "Birmingham Shuttlesworth Airport", "Birmingham–Shuttlesworth", "Birmingham Shuttlesworth", "Birmingham Airport"],
+      "priorNames": [],
+      "nativeName": "Alaska Airlines",
+      "country": "united states",
+      "state": "Alabama"
+    }
+  ]
+}

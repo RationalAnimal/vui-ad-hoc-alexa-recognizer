@@ -121,10 +121,12 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
           _removeFlag("LEAGUE", parsedJson.parsedUtterance[i].name, parsedJson)
         }
       }
-      // Remove INCLUDE_PRIOR_NAMES if this is NOT a built in SportsTeam or Corporation type.
+      // Remove INCLUDE_PRIOR_NAMES if this is NOT a built in SportsTeam or Corporation or Airport type.
       if(_hasFlag("INCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)){
         if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "SportsTeam" ||
-          _getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Corporation"){
+          _getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Corporation" ||
+          _getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airport"
+        ){
           // We are all set, this is allowed
         }
         else {
@@ -132,10 +134,12 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
           _removeFlag("INCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)
         }
       }
-      // Remove EXCLUDE_PRIOR_NAMES if this is NOT a built in SportsTeam or Corporation type.
+      // Remove EXCLUDE_PRIOR_NAMES if this is NOT a built in SportsTeam or Corporation or Airport type.
       if(_hasFlag("EXCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)){
         if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "SportsTeam" ||
-          _getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Corporation"){
+          _getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Corporation" ||
+          _getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airport")
+        {
           // We are all set, this is allowed
         }
         else {
@@ -143,9 +147,11 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
           _removeFlag("EXCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)
         }
       }
-      // Remove COUNTRY if this is NOT a built in Airline type.
+      // Remove COUNTRY if this is NOT a built in Airline or Airport type.
 			if(_hasFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)){
-				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airline" ){
+				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airline" ||
+          _getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airport"
+        ){
 					// We are all set, this is allowed
 				}
 				else {
@@ -153,14 +159,14 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 					_removeFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)
 				}
 			}
-			// Remove COUNTINENT if this is NOT a built in Airline type.
-			if(_hasFlag("COUNTINENT", parsedJson.parsedUtterance[i].name, parsedJson)){
+			// Remove CONTINENT if this is NOT a built in Airline type.
+			if(_hasFlag("CONTINENT", parsedJson.parsedUtterance[i].name, parsedJson)){
 				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airline" ){
 					// We are all set, this is allowed
 				}
 				else {
 					// Remove it
-					_removeFlag("COUNTINENT", parsedJson.parsedUtterance[i].name, parsedJson)
+					_removeFlag("CONTINENT", parsedJson.parsedUtterance[i].name, parsedJson)
 				}
 			}
 			// Remove TYPE if this is NOT a built in Airline type.

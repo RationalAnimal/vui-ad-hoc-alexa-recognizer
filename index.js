@@ -1380,6 +1380,31 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
           }
         }
     }
+    else if(slotType === "TRANSCEND.Airport"){
+      let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.Airport");
+      let scratchValue = returnValue.toUpperCase();
+      outsideloop:
+        for(let i = 0; i < builtInSlotValues.length; i ++){
+          if(builtInSlotValues[i].name.toUpperCase() === scratchValue){
+            returnValue = builtInSlotValues[i].name;
+            break outsideloop;
+          }
+          if(typeof builtInSlotValues[i].alternativeNames !== "undefined" && Array.isArray(builtInSlotValues[i].alternativeNames)){
+            for(let j = 0; j < builtInSlotValues[i].alternativeNames.length; j++){
+              if(builtInSlotValues[i].alternativeNames[j].toUpperCase() === scratchValue){
+                returnValue = builtInSlotValues[i].name;
+                break outsideloop;
+              }
+            }
+          }
+          for(let j = 0; j < builtInSlotValues[i].priorNames.length; j++){
+            if(builtInSlotValues[i].priorNames[j].toUpperCase() === scratchValue){
+              returnValue = builtInSlotValues[i].priorNames[j];
+              break outsideloop;
+            }
+          }
+        }
+    }
     else if(slotType === "TRANSCEND.US_STATE"){
       let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.US_STATE");
       let scratchValue = returnValue.toUpperCase();
