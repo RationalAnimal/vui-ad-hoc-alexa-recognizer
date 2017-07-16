@@ -1707,6 +1707,37 @@
     {"name":"WinCo Foods, Inc.","alternativeNames": ["WinCo Foods, Inc", "WinCo Foods"],"priorNames": []},
     {"name":"Windstream Communications","alternativeNames": [],"priorNames": []},
     {"name":"The Wine Group","alternativeNames": [],"priorNames": []},
-    {"name":"Winn-Dixie","alternativeNames": ["Winn Dixie"],"priorNames": []}
+    {"name":"Winn-Dixie","alternativeNames": ["Winn Dixie"],"priorNames": []},
+
+    {"name":"Winnebago Industries","alternativeNames": ["Winnebago"],"priorNames": []},
+    {"name":"Wizards of the Coast","alternativeNames": [],"priorNames": []},
+    {"name":"Wolverine Worldwide","alternativeNames": [],"priorNames": []},
+    {"name":"Woodward, Inc.","alternativeNames": ["Woodward, Inc", "Woodward"],"priorNames": []},
+    {"name":"Woolrich, Inc.","alternativeNames": ["Woolrich, Inc", "Woolrich"],"priorNames": []},
+    {"name":"World Airways","alternativeNames": [],"priorNames": []},
+    {"name":"World Financial Group","alternativeNames": [],"priorNames": []},
+    {"name":"World Fuel Services","alternativeNames": [],"priorNames": []},
+    {"name":"Worthington Industries","alternativeNames": ["Worthington"],"priorNames": []},
+    {"name":"WWE","alternativeNames": ["World Wrestling Entertainment", "W.W.E.", "W. W. E.", "W W E"],"priorNames": []},
+    {"name":"Wyndham Worldwide","alternativeNames": [],"priorNames": []},
+    {"name":"Wynn Resorts","alternativeNames": [],"priorNames": []},
+
+    {"name":"X-Rite","alternativeNames": ["X Rite", "X. Rite"],"priorNames": []},
+    {"name":"Xcel Energy","alternativeNames": [],"priorNames": []},
+    {"name":"Xenco Medical","alternativeNames": [],"priorNames": []},
+    {"name":"Xerox","alternativeNames": [],"priorNames": []},
+    {"name":"Xilinx","alternativeNames": [],"priorNames": []},
+    {"name":"XIM, Inc.","alternativeNames": ["XIM, Inc", "XIM"],"priorNames": []},
+    {"name":"Xylem Inc.","alternativeNames": ["Xylem Inc", "Xylem"],"priorNames": []},
+    {"name":"Xbox","alternativeNames": [],"priorNames": []},
+
+    {"name":"Yahoo!","alternativeNames": ["Yahoo"],"priorNames": []},
+    {"name":"Yelp, Inc.","alternativeNames": ["Yelp, Inc", "Yelp"],"priorNames": []},
+    {"name":"YRC Worldwide","alternativeNames": [],"priorNames": []},
+    {"name":"Yum! Brands","alternativeNames": ["Yum!", "Yum Brands", "Yum"],"priorNames": []},
+    {"name":"Yum-Yum Donuts","alternativeNames": ["Yum Yum Donuts"],"priorNames": []}
+
+
+
   ]
 }
