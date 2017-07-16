@@ -969,6 +969,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
       expect(typeof result).to.equal("undefined");
     });
 
+    it("verify simple utterance with an AMAZON.Airport slot matches", function() {
+      let result = recognizer.Recognizer.matchText("Birmingham Shuttlesworth is an airport");
+      expect(result).to.eql(
+        {"name": "AirportIntent",
+          "slots": {
+            "AirportSlot": {
+              "name": "AirportSlot",
+              "value": "Birmingham–Shuttlesworth International Airport"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.Airline slot matches", function() {
       let result = recognizer.Recognizer.matchText("is JetBlue Airways a budget airline");
       expect(result).to.eql(
@@ -2672,12 +2684,6 @@ describe("utterance parser", function() {
               "name": "SomeSlot",
               "slotType": "SOME",
               "flags": [
-                {
-                  "name": "CONTINENT",
-                  "parameters": [
-                    "north america"
-                  ]
-                },
                 {
                   "name": "INCLUDE_VALUES_MATCH"
                 },

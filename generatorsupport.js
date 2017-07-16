@@ -397,6 +397,8 @@ recognizer.builtInValues.Director.replacementRegExpString = _makeReplacementRegE
 
 recognizer.builtInValues.Corporation = require("./builtinslottypes/corporations.json");
 
+recognizer.builtInValues.Airport = require("./builtinslottypes/airports.json");
+
 recognizer.builtInValues.CivicStructure = require("./builtinslottypes/civicstructures.json");
 recognizer.builtInValues.CivicStructure.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.CivicStructure.values);
 
@@ -477,7 +479,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         "TRANSCEND.MusicAlbum", "TRANSCEND.Musician", "TRANSCEND.MusicGroup", "TRANSCEND.MusicEvent", "TRANSCEND.Movie",
         "TRANSCEND.MedicalOrganization", "TRANSCEND.LocalBusinessType", "TRANSCEND.LocalBusiness", "TRANSCEND.Game",
         "TRANSCEND.FoodEstablishment", "TRANSCEND.FictionalCharacter", "TRANSCEND.Festival", "TRANSCEND.EducationalOrganization",
-        "TRANSCEND.Director", "TRANSCEND.Corporation", "TRANSCEND.CivicStructure", "TRANSCEND.BroadcastChannel",
+        "TRANSCEND.Director", "TRANSCEND.CivicStructure", "TRANSCEND.BroadcastChannel",
         "TRANSCEND.BookSeries", "TRANSCEND.Book", "TRANSCEND.Author", "TRANSCEND.Athlete",
         "TRANSCEND.AdministrativeArea", "TRANSCEND.Country", "TRANSCEND.Color", "TRANSCEND.Room", "TRANSCEND.MusicRecording",
         "TRANSCEND.MusicVenue", "TRANSCEND.MusicVideo", "TRANSCEND.Organization", "TRANSCEND.Person", "TRANSCEND.Professional",
@@ -657,6 +659,41 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
           }
         }
         let replacementRegExpString = _makeReplacementRegExpString(allCorporations);
+        return replacementRegExpString;
+      }
+    }
+    else if(slotType === "TRANSCEND.Airport"){
+      // Ignore SOUNDEX_MATCH flag for now
+      let hasWildCardMatch = false;
+      let hasIncludePriorNamesFlag = false;
+      for(let i = 0; i < slotFlags.length; i++){
+        if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+          hasWildCardMatch = true;
+        }
+        else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
+          hasWildCardMatch = true;
+        }
+      }
+      if(hasWildCardMatch){
+        // numbers are used in cases of some names
+        return "((?:\\w|\\s|[0-9]|\-)+)";
+      }
+      else {
+        let allAirports = [];
+        for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i ++){
+          allAirports.push(recognizer.builtInValues.Airport.values[i].name);
+          if(typeof recognizer.builtInValues.Airport.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.Airport.values[i].alternativeNames)){
+            for(let j = 0; j < recognizer.builtInValues.Airport.values[i].alternativeNames.length; j++){
+              allAirports.push(recognizer.builtInValues.Airport.values[i].alternativeNames[j]);
+            }
+          }
+          if(hasIncludePriorNamesFlag && typeof recognizer.builtInValues.Airport.priorNames !== "undefined" && Array.isArray(recognizer.builtInValues.Airport.priorNames)){
+            for(let j = 0; j < recognizer.builtInValues.Airport.priorNames.length; j++){
+              allAirports.push(recognizer.builtInValues.Airport.values[i].priorNames[j]);
+            }
+          }
+        }
+        let replacementRegExpString = _makeReplacementRegExpString(allAirports);
         return replacementRegExpString;
       }
     }
@@ -933,6 +970,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Airline", "Airline", config, true, true);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SportsTeam", "SportsTeam", config, true, true);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Corporation", "Corporation", config, true, true);
+    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Airport", "Airport", config, true, true);
     // Don't update the values from the config files for these slot types
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Month", "Month", config, true);
     _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.DayOfWeek", "DayOfWeek", config, true);
