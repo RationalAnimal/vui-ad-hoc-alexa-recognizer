@@ -40,6 +40,15 @@
     {"name":"Jeremiah Denton Airport","alternativeNames": [],"priorNames": ["Dauphin Island Airport"],"country":"united states", "state":"Alabama"},
     {"name":"Pryor Field Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Demopolis Regional Airport","alternativeNames": [],"priorNames": ["Demopolis Municipal Airport"],"country":"united states", "state":"Alabama"},
-    {"name":"Carl Folsom Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"}
+    {"name":"Carl Folsom Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+
+    {"name":"Enterprise Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Weedon Field","alternativeNames": ["Weedon Field Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Middleton Field","alternativeNames": ["Middleton Field Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"H. L. Sonny Callahan Airport","alternativeNames": ["H L Sonny Callahan Airport", "HL Sonny Callahan Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Richard Arthur Field","alternativeNames": ["Richard Arthur Field Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Florala Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Foley Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"}
+
   ]
 }
