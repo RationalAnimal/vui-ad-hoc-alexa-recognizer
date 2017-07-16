@@ -1742,6 +1742,14 @@
     {"name":"Zappos.com","alternativeNames": [],"priorNames": []},
     {"name":"Zaxby's","alternativeNames": [],"priorNames": []},
     {"name":"Zenith Electronics","alternativeNames": [],"priorNames": []},
-    {"name":"Zildjian","alternativeNames": [],"priorNames": []}
+    {"name":"Zildjian","alternativeNames": [],"priorNames": []},
+
+    {"name":"Zilog","alternativeNames": [],"priorNames": []},
+    {"name":"Zimmer Holdings","alternativeNames": [],"priorNames": []},
+    {"name":"Zions Bancorp","alternativeNames": [],"priorNames": []},
+    {"name":"Zippo Manufacturing Company","alternativeNames": ["Zippo"],"priorNames": []},
+    {"name":"Zoetis, Inc.","alternativeNames": ["Zoetis, Inc", "Zoetis"],"priorNames": []},
+    {"name":"Zoo York","alternativeNames": [],"priorNames": []}
+
   ]
 }
