@@ -48,7 +48,29 @@
     {"name":"H. L. Sonny Callahan Airport","alternativeNames": ["H L Sonny Callahan Airport", "HL Sonny Callahan Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Richard Arthur Field","alternativeNames": ["Richard Arthur Field Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Florala Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
-    {"name":"Foley Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"}
+    {"name":"Foley Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+
+    {"name":"Isbell Field","alternativeNames": ["Isbell Field Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Northeast Alabama Regional Airport","alternativeNames": [],"priorNames": ["Gadsden Municipal Airport"],"country":"united states", "state":"Alabama"},
+    {"name":"Geneva Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Greensboro Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Mac Crenshaw Memorial Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Grove Hill Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Jack Edwards Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Guntersville Municipal Airport","alternativeNames": ["Joe Starnes Field Airport", "Joe Starnes Field"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Posey Field","alternativeNames": ["Posey Field Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+
+    {"name":"Marion County – Rankin Fite Airport","alternativeNames": ["Marion County Rankin Fite Airport", "Rankin Fite Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Hartselle–Morgan County Regional Airport","alternativeNames": ["Hartselle Morgan County Regional Airport"],"priorNames": ["Rountree Field", "Rountree Field Airport"],"country":"united states", "state":"Alabama"},
+    {"name":"Headland Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Madison County Executive Airport","alternativeNames": ["Tom Sharp Jr. Field", "Tom Sharp Jr. Field Airport", "Tom Sharp Junior Field", "Tom Sharp Junior Field Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Jackson Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Walker County Airport","alternativeNames": ["Bevill Field", "Bevill Field Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Lanett Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Vaiden Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Mobile Downtown Airport","alternativeNames": [],"priorNames": ["Brookley Aeroplex"],"country":"united states", "state":"Alabama"}
+
+
 
   ]
 }
