@@ -1657,6 +1657,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         });
     });
+    it("verify AMAZON.TIME slot and 11 oh five pm matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("does 11 pm work for you");
+      expect(result).to.eql(
+        {"name": "TimeIntent",
+          "slots": {
+            "TimeSlot": {
+              "name": "TimeSlot",
+              "value": "23:00"
+            }
+          }
+        });
+    });
     it("verify AMAZON.TIME slot and 5 oh three at night matches and returns the correct value", function() {
       let result = recognizer.Recognizer.matchText("does 5 oh three at night work for you");
       expect(result).to.eql(
