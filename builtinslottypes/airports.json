@@ -87,7 +87,14 @@
     {"name":"Troy Municipal Airport","alternativeNames": ["N. Kenneth Campbell Field", "N. Kenneth Campbell Field Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Tuscaloosa Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Moton Field Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
-    {"name":"Franklin Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"}
+    {"name":"Franklin Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
 
+    {"name":"Wetumpka Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Addison Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Ardmore Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Roy E. Ray Airport","alternativeNames": ["Roy E Ray Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Roy Wilcox Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Mark Reynolds/North Mobile County Airport","alternativeNames": ["Mark Reynolds Airport", "Mark Reynolds North Mobile County Airport", "North Mobile County Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Double Springs–Winston County Airport","alternativeNames": ["Double Springs Airport", "Double Springs Winston County Airport"],"priorNames": [],"country":"united states", "state":"Alabama"}
   ]
 }
