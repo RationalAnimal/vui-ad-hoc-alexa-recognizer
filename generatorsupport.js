@@ -146,7 +146,7 @@ recognizer.builtInValues.DATE.replacementRegExp = new RegExp(recognizer.builtInV
 recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
 {
     let hourOnlyString =
-        "\\s*(?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}(?:\\s*o'clock){0,1}\\s*";
+        "\\s*(?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}\\s*(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*";
 
     recognizer.builtInValues.TIME.values.push(hourOnlyString);
     let hourAndMinutesString1 =

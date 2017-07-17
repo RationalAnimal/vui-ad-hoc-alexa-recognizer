@@ -389,21 +389,62 @@ var _processMatchedTimeSlotValue = function(value){
   }
 
   let hourOnlyString =
-  "^\\s*(zero|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}(?:\\s*o'clock){0,1}\\s*$";
+  "^\\s*(zero|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}\\s*(o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*$";
 
   regExp = new RegExp(hourOnlyString, "ig");
   if(matchResult = regExp.exec(value)){
-//    console.log("matching time, just the hour, matchResult: " + JSON.stringify(matchResult));
+    console.log("matching time, hour only, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
-    if(typeof hour === "undefined" || hour === null || hour.length === 0){
+    let specifier = matchResult[2];
+    if(typeof hour === "undefined" || hour === null || hour.length === 0 ){
       // Didn't actually match a real value.
     }
     else {
       hour = _processMatchedNumericSlotValue(hour);
-      return "" + _twoDigitFormatter(hour) + ":00";
+      let numericHour = parseInt(hour);
+      if(specifier === "am" || specifier === "a.m."){
+        // Nothing to do really.  Either we have an hour that's < 12 or the use misspoke but we can't correct it.
+      }
+      else if(specifier === "pm" || specifier === "p.m."){
+        if(numericHour < 12){
+          numericHour += 12;
+        }
+      }
+      else if(specifier === "in the afternoon"){
+        if(numericHour >= 1 && numericHour <= 6){
+          numericHour += 12;
+        }
+      }
+      else if(specifier === "in the evening"){
+        if(numericHour >= 5 && numericHour <= 9){
+          numericHour += 12;
+        }
+      }
+      else if(specifier === "at night"){
+        if(numericHour >= 6 && numericHour <= 11){
+          numericHour += 12;
+        }
+        else if(numericHour === 12){
+          numericHour = 0;
+        }
+      }
+      return "" + _twoDigitFormatter(numericHour) + ":00";
     }
   }
 
+  /*
+    if(matchResult = regExp.exec(value)){
+  //    console.log("matching time, just the hour, matchResult: " + JSON.stringify(matchResult));
+      let hour = matchResult[1];
+      if(typeof hour === "undefined" || hour === null || hour.length === 0){
+        // Didn't actually match a real value.
+      }
+      else {
+        hour = _processMatchedNumericSlotValue(hour);
+        return "" + _twoDigitFormatter(hour) + ":00";
+      }
+    }
+  */
   /*
   * This string is meant to match on an informal hour and minute, e.g. five twenty five.
   * It is assumed that if the person means to say hour and single digit then it will be preceeded by a leading zero, e.g. five oh five or five zero five
@@ -1577,6 +1618,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     if(typeof scratch.regExpStrings !== "undefined" && Array.isArray(scratch.regExpStrings)){
       for(let k = 0; k < scratch.regExpStrings.length; k ++){
         let scratchRegExpString = scratch.regExpStrings[k];
+//        console.log("_matchText, 4.1.0, scratch.regExpString: " + scratchRegExpString);
         let scratchRegExp = new RegExp(scratchRegExpString, "ig");
         if(k === (scratch.regExpStrings.length - 1)){
           // This is the final reg exp
@@ -1616,9 +1658,11 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
           let scratchMatchResult = scratchRegExp.test(stringToMatch);
           if(scratchMatchResult){
             // we are good to try the real one.
+//            console.log("_matchText, 4.2, scratchMatchResult: ", JSON.stringify(scratchMatchResult, null, 2));
           }
           else {
             // This is definitely not a match - continue
+//            console.log("_matchText, 4.2.1");
             break;
           }
         }
