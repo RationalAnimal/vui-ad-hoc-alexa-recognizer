@@ -68,9 +68,15 @@
     {"name":"Walker County Airport","alternativeNames": ["Bevill Field", "Bevill Field Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Lanett Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Vaiden Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
-    {"name":"Mobile Downtown Airport","alternativeNames": [],"priorNames": ["Brookley Aeroplex"],"country":"united states", "state":"Alabama"}
+    {"name":"Mobile Downtown Airport","alternativeNames": [],"priorNames": ["Brookley Aeroplex"],"country":"united states", "state":"Alabama"},
 
-
-
+    {"name":"Monroe County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Northwest Alabama Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Robbins Field","alternativeNames": ["Robbins Field Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Blackwell Field","alternativeNames": ["Blackwell Field Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Prattville-Grouby Field","alternativeNames": ["Prattville Grouby Field", "Prattville-Grouby Field Airport", "Prattville Grouby Field Airport", "Prattville Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"North Pickens Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Roanoke Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Bill Pugh Field","alternativeNames": [],"priorNames": ["Russellville Municipal Airport"],"country":"united states", "state":"Alabama"}
   ]
 }
