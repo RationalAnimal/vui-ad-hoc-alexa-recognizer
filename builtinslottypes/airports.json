@@ -104,7 +104,16 @@
     {"name":"Moontown Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Frank Sikes Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Pine Hill Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
-    {"name":"Logan Field","alternativeNames": ["Logan Field Airport", "Samson Municipal Airport"],"priorNames": [],"country":"united states", "state":"Alabama"}
+    {"name":"Logan Field","alternativeNames": ["Logan Field Airport", "Samson Municipal Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+
+    {"name":"Stevenson Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Hubbard Landing Seaplane Base","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Reeves Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Lamar County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"McMinn Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"NOLF Barin","alternativeNames": ["Naval Outlying Field Barin"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"NOLF Wolf","alternativeNames": ["Naval Outlying Field Wolf"],"priorNames": [],"country":"united states", "state":"Alabama"}
+
 
   ]
 }
