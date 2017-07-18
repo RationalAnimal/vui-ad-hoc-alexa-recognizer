@@ -95,6 +95,16 @@
     {"name":"Roy E. Ray Airport","alternativeNames": ["Roy E Ray Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Roy Wilcox Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"Mark Reynolds/North Mobile County Airport","alternativeNames": ["Mark Reynolds Airport", "Mark Reynolds North Mobile County Airport", "North Mobile County Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
-    {"name":"Double Springs–Winston County Airport","alternativeNames": ["Double Springs Airport", "Double Springs Winston County Airport"],"priorNames": [],"country":"united states", "state":"Alabama"}
+    {"name":"Double Springs–Winston County Airport","alternativeNames": ["Double Springs Airport", "Double Springs Winston County Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+
+    {"name":"Eutaw Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Fish River Seaplane Base","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Fort Deposit–Lowndes County Airport","alternativeNames": ["Fort Deposit Lowndes County Airport", "Fort Deposit Lowndes Airport"],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Hazel Green Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Moontown Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Frank Sikes Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Pine Hill Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Logan Field","alternativeNames": ["Logan Field Airport", "Samson Municipal Airport"],"priorNames": [],"country":"united states", "state":"Alabama"}
+
   ]
 }
