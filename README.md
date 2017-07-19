@@ -557,13 +557,16 @@ there are otherwise identical utterances that may match on a number or on a date
 match is allowed then there is no way to differentiate between the two.
 5. "EXCLUDE_NON_STATES" - this flag is only applied to the AMAZON.US_STATE type
 slot and turns off parsing of US territories and D.C.
-6. "COUNTRY", "CONTINENT", "TYPE" - these are parametrized flags (see below).  currently
+6. "COUNTRY" - this is a parametrized flag (see below).  currently
+it only applies to the AMAZON.Airline and AMAZON.Airport slot types and it restricts the matches to
+the specified countries.
+7. "CONTINENT", "TYPE" - these are parametrized flags (see below).  currently
 they only apply to the AMAZON.Airline slot type and they restrict the matches to
 the specified countries and continents.
-7. "SPORT", "LEAGUE" - these are parametrized flags (see below).  currently
+8. "SPORT", "LEAGUE" - these are parametrized flags (see below).  currently
 they only apply to the AMAZON.SportsTeam slot type and they restrict the matches to
 the specified sports and leagues.
-8. "INCLUDE_PRIOR_NAMES", "EXCLUDE_PRIOR_NAMES" - Currently these only apply to the AMAZON.SportsTeam and AMAZON.Corporation
+9. "INCLUDE_PRIOR_NAMES", "EXCLUDE_PRIOR_NAMES" - Currently these only apply to the AMAZON.SportsTeam and AMAZON.Corporation
 slot type and they include/exclude the prior team (or corporation) names in the search. Default is EXCLUDE_PRIOR_NAMES.
 
 If you don't specify any of these, then

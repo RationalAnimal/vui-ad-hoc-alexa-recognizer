@@ -666,8 +666,14 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       // Ignore SOUNDEX_MATCH flag for now
       let hasWildCardMatch = false;
       let hasIncludePriorNamesFlag = false;
+      let hasCountryFlag = false;
+      let countries = [];
       for(let i = 0; i < slotFlags.length; i++){
-        if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+        if(slotFlags[i].name === "COUNTRY"){
+          hasCountryFlag = true;
+          countries = slotFlags[i].parameters;
+        }
+        else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
           hasWildCardMatch = true;
         }
         else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
@@ -681,6 +687,9 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       else {
         let allAirports = [];
         for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i ++){
+          if(hasCountryFlag && countries.indexOf(recognizer.builtInValues.Airport.values[i].country) < 0){
+            continue;
+          }
           allAirports.push(recognizer.builtInValues.Airport.values[i].name);
           if(typeof recognizer.builtInValues.Airport.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.Airport.values[i].alternativeNames)){
             for(let j = 0; j < recognizer.builtInValues.Airport.values[i].alternativeNames.length; j++){
