@@ -112,7 +112,21 @@
     {"name":"Lamar County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"McMinn Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
     {"name":"NOLF Barin","alternativeNames": ["Naval Outlying Field Barin"],"priorNames": [],"country":"united states", "state":"Alabama"},
-    {"name":"NOLF Wolf","alternativeNames": ["Naval Outlying Field Wolf"],"priorNames": [],"country":"united states", "state":"Alabama"}
+    {"name":"NOLF Wolf","alternativeNames": ["Naval Outlying Field Wolf"],"priorNames": [],"country":"united states", "state":"Alabama"},
+
+    {"name":"Parker Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Sehoy Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Little Texas Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Tuskegee Army Airfield","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Brundidge Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Centre Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Coosa County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Freddie Jones Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Skywest Airpark","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Moundville Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Skyharbor Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"},
+    {"name":"Mallard Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"Alabama"}
+
 
 
   ]
