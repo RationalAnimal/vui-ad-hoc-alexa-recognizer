@@ -981,6 +981,35 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.Airport slot and COUNTRY flag matches matches", function() {
+      let result = recognizer.Recognizer.matchText("Birmingham Shuttlesworth is a united states airport");
+      expect(result).to.eql(
+        {"name": "AirportIntent",
+          "slots": {
+            "AirportSlot": {
+              "name": "AirportSlot",
+              "value": "Birmingham–Shuttlesworth International Airport"
+            }
+          }});
+    });
+
+    it("verify simple utterance with an AMAZON.Airport slot and a non-matching COUNTRY flag matches doesn't match", function() {
+      let result = recognizer.Recognizer.matchText("Birmingham Shuttlesworth is a canadian airport");
+      expect(typeof result).to.equal("undefined");
+    });
+
+    it("verify simple utterance with an AMAZON.Airport slot and COUNTRY flag matches matches", function() {
+      let result = recognizer.Recognizer.matchText("Birmingham Shuttlesworth is a united states airport");
+      expect(result).to.eql(
+        {"name": "AirportIntent",
+          "slots": {
+            "AirportSlot": {
+              "name": "AirportSlot",
+              "value": "Birmingham–Shuttlesworth International Airport"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.Airline slot matches", function() {
       let result = recognizer.Recognizer.matchText("is JetBlue Airways a budget airline");
       expect(result).to.eql(
