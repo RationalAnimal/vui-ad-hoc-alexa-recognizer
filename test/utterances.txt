@@ -13,6 +13,7 @@ StateIntent New England includes {StateSlot: INCLUDE_VALUES_MATCH, EXCLUDE_VALUE
 StateIntent {StateSlot:EXCLUDE_NON_STATES} is definitely a state
 StateIntent {StateSlot} may not be a state
 AirportIntent {AirportSlot} is an airport
+AirportIntent {AirportSlot:INCLUDE_WILDCARD_MATCH} is an unknown airport
 AirportIntent {AirportSlot:COUNTRY(["united states"])} is a united states airport
 AirportIntent {AirportSlot:COUNTRY(["canada"])} is a canadian airport
 AirlineIntent is {AirlineSlot} a budget airline
