@@ -625,7 +625,35 @@
     {"name":"Tahneta Pass Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"alaska"},
     {"name":"Tok Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"alaska"},
     {"name":"Fort Glenn Army Airfield","alternativeNames": [],"priorNames": [],"country":"united states", "state":"alaska"},
-    {"name":"Dangerous River Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"alaska"}
+    {"name":"Dangerous River Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"alaska"},
+
+    {"name":"Laughlin-Bullhead International Airport","alternativeNames": ["Laughlin Bullhead International Airport"],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Flagstaff Pulliam Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Grand Canyon National Park Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"PhoenixâMesa Gateway Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Page Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Grand Canyon West Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Phoenix Sky Harbor International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Tucson International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Yuma International Airport MCAS Yuma","alternativeNames": ["Yuma International Airport", "MCAS Yuma"],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Prescott Municipal Airport","alternativeNames": ["Ernest A. Love Field"],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Show Low Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Chandler Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Glendale Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Phoenix Goodyear Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Marana Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Falcon Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Phoenix Deer Valley Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Scottsdale Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Ryan Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Eric Marcus Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Bagdad Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Benson Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Bisbee Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Buckeye Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Casa Grande Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Chinle Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"}
+
 
 
 
