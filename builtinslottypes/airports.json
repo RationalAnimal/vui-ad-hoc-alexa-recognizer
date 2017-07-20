@@ -721,6 +721,23 @@
     {"name":"Three Point Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
     {"name":"Ganado Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
     {"name":"Tuweep Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
-    {"name":"Forepaugh Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"}
+    {"name":"Forepaugh Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+
+    {"name":"Northwest Arkansas Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Fort Smith Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Bill and Hillary Clinton National Airport","alternativeNames": ["Adams Field"],"priorNames": ["Little Rock National"],"country":"united states", "state":"arkansas"},
+    {"name":"Texarkana Regional Airport","alternativeNames": ["Webb Field"],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"South Arkansas Regional Airport","alternativeNames": ["Goodwin Field"],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Boone County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Memorial Field Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Jonesboro Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"North Little Rock Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"West Memphis Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Almyra Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Dexter B. Florence Memorial Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Sharp County Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Woodruff County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Batesville Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Saline County Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"}
   ]
 }
