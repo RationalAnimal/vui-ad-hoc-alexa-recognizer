@@ -668,10 +668,16 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       let hasIncludePriorNamesFlag = false;
       let hasCountryFlag = false;
       let countries = [];
+      let hasStateFlag = false;
+      let states = [];
       for(let i = 0; i < slotFlags.length; i++){
         if(slotFlags[i].name === "COUNTRY"){
           hasCountryFlag = true;
           countries = slotFlags[i].parameters;
+        }
+        else if(slotFlags[i].name === "STATE"){
+          hasStateFlag = true;
+          states = slotFlags[i].parameters;
         }
         else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
           hasWildCardMatch = true;
@@ -688,6 +694,9 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         let allAirports = [];
         for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i ++){
           if(hasCountryFlag && countries.indexOf(recognizer.builtInValues.Airport.values[i].country) < 0){
+            continue;
+          }
+          if(hasStateFlag && states.indexOf(recognizer.builtInValues.Airport.values[i].state) < 0){
             continue;
           }
           allAirports.push(recognizer.builtInValues.Airport.values[i].name);

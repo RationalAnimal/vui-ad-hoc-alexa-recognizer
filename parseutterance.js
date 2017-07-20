@@ -56,7 +56,7 @@ var _parseUtteranceIntoJson = function(utterance, intentSchema){
   return returnValue;
 };
 
-let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES", "COUNTRY", "CONTINENT", "TYPE", "LEAGUE", "SPORT", "INCLUDE_PRIOR_NAMES", "EXCLUDE_PRIOR_NAMES"];
+let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES", "STATE", "COUNTRY", "CONTINENT", "TYPE", "LEAGUE", "SPORT", "INCLUDE_PRIOR_NAMES", "EXCLUDE_PRIOR_NAMES"];
 var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
   // First get rid of invalid flags.
 	for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
@@ -159,7 +159,17 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 					_removeFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)
 				}
 			}
-			// Remove CONTINENT if this is NOT a built in Airline type.
+      // Remove STATE if this is NOT a built in Airport type.
+      if(_hasFlag("STATE", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airport") {
+          // We are all set, this is allowed
+        }
+        else {
+          // Remove it
+          _removeFlag("STATE", parsedJson.parsedUtterance[i].name, parsedJson)
+        }
+      }
+      // Remove CONTINENT if this is NOT a built in Airline type.
 			if(_hasFlag("CONTINENT", parsedJson.parsedUtterance[i].name, parsedJson)){
 				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airline" ){
 					// We are all set, this is allowed

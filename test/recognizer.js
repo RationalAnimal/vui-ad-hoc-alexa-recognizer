@@ -981,7 +981,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
-    it("verify simple utterance with an AMAZON.Airport slot and COUNTRY flag matches matches", function() {
+    it("verify simple utterance with an AMAZON.Airport slot and INCLUDE_WILDCARD_MATCH flag matches", function() {
+      let result = recognizer.Recognizer.matchText("Blah Blah Airport is an unknown airport");
+      expect(result).to.eql(
+        {"name": "AirportIntent",
+          "slots": {
+            "AirportSlot": {
+              "name": "AirportSlot",
+              "value": "Blah Blah Airport"
+            }
+          }});
+    });
+
+    it("verify simple utterance with an AMAZON.Airport slot and COUNTRY flag matches", function() {
       let result = recognizer.Recognizer.matchText("Birmingham Shuttlesworth is a united states airport");
       expect(result).to.eql(
         {"name": "AirportIntent",
@@ -998,8 +1010,8 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
       expect(typeof result).to.equal("undefined");
     });
 
-    it("verify simple utterance with an AMAZON.Airport slot and COUNTRY flag matches matches", function() {
-      let result = recognizer.Recognizer.matchText("Birmingham Shuttlesworth is a united states airport");
+    it("verify simple utterance with an AMAZON.Airport slot and STATE flag matches", function() {
+      let result = recognizer.Recognizer.matchText("Birmingham Shuttlesworth is an airport in alabama");
       expect(result).to.eql(
         {"name": "AirportIntent",
           "slots": {
@@ -1008,6 +1020,11 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
               "value": "Birmingham–Shuttlesworth International Airport"
             }
           }});
+    });
+
+    it("verify simple utterance with an AMAZON.Airport slot and STATE flag matches", function() {
+      let result = recognizer.Recognizer.matchText("Birmingham Shuttlesworth is an airport in alaska");
+      expect(typeof result).to.equal("undefined");
     });
 
     it("verify simple utterance with an AMAZON.Airline slot matches", function() {
