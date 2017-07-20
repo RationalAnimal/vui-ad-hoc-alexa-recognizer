@@ -738,6 +738,26 @@
     {"name":"Sharp County Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
     {"name":"Woodruff County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
     {"name":"Batesville Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
-    {"name":"Saline County Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"}
+    {"name":"Saline County Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+
+    {"name":"Bentonville Municipal Airport","alternativeNames": ["Louise M. Thaden Field"],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Carroll County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Arkansas International Airport","alternativeNames": [],"priorNames": ["Blytheville AFB"],"country":"united states", "state":"arkansas"},
+    {"name":"Blytheville Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Frank Federer Memorial Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Calico Rock - Izard County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Harrell Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Carlisle Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Clarendon Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Clarksville Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Clinton Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Dennis F. Cantrell Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Conway Airport at Cantrell Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Corning Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Z. M. Jack Stell Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Danville Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"J. Lynn Helms Sevier County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"De Witt Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+    {"name":"Billy Free Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"}
   ]
 }
