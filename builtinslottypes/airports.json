@@ -694,12 +694,33 @@
     {"name":"Estrella Sailport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
     {"name":"Pearce Ferry Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
     {"name":"Eagle Airpark","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
-    {"name":"Marble Canyon Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"}
+    {"name":"Marble Canyon Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
 
-
-
-
-
-
+    {"name":"Grand Canyon Caverns Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Pleasant Valley Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Phoenix Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Flying J Ranch Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Seligman Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Sells Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Rolle Field","alternativeNames": ["Rolle Airfield"],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Superior Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Temple Bar Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Tombstone Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Valle Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Grand Canyon Bar 10 Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Gila Bend Air Force Auxiliary Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Luke Air Force Base","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Davis Monthan Air Force Base","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Laguna Army Airfield","alternativeNames": ["Yuma Proving Ground"],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Gila River Memorial Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Cliff Dwellers Lodge Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Hualapai Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Pegasus Airpark","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"La Cholla Airpark","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Bowie Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Three Point Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Ganado Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Tuweep Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"},
+    {"name":"Forepaugh Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arizona"}
   ]
 }
