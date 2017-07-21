@@ -832,7 +832,13 @@
     {"name":"Delta Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
     {"name":"Saline County Airport","alternativeNames": ["Watts Field"],"priorNames": [],"country":"united states", "state":"arkansas"},
     {"name":"Silver Wings Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
-    {"name":"Lost Bridge Village Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"}
+    {"name":"Lost Bridge Village Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"arkansas"},
+
+    {"name":"Arcata Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Meadows Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Bob Hope Airport","alternativeNames": ["Hollywood Burbank Airport"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"McClellanâPalomar Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Chico Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
 
   ]
 }
