@@ -838,7 +838,21 @@
     {"name":"Meadows Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Bob Hope Airport","alternativeNames": ["Hollywood Burbank Airport"],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"McClellanâPalomar Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
-    {"name":"Chico Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+    {"name":"Chico Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+
+    {"name":"Del Norte County Airport","alternativeNames": ["Jack McNamara Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Fresno Yosemite International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Long Beach Airport","alternativeNames": ["Daugherty Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Los Angeles International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Mammoth Yosemite Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Modesto CityâCounty Airport","alternativeNames": ["Harry Sham Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Monterey Regional Airport","alternativeNames": [],"priorNames": ["Monterey Peninsula Airport"],"country":"united states", "state":"california"},
+    {"name":"Oakland International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Ontario International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Palm Springs International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Redding Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Sacramento International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+
 
   ]
 }
