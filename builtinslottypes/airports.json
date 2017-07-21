@@ -851,7 +851,34 @@
     {"name":"Ontario International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Palm Springs International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Redding Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
-    {"name":"Sacramento International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+    {"name":"Sacramento International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+
+    {"name":"San Diego International Airport","alternativeNames": ["Lindbergh Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"San Francisco International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Norman Y. Mineta San JosÃ© International Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"San Luis Obispo County Regional Airport","alternativeNames": ["McChesney Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"John Wayne Airport","alternativeNames": [],"priorNames": ["Orange County Airport"],"country":"united states", "state":"california"},
+    {"name":"Santa Barbara Municipal Airport","alternativeNames": ["Santa Barbara Airport"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Santa Maria Public Airport","alternativeNames": ["Capt G. Allan Hancock Field", "Captain G Allan Hancock Field", "Captain G. Allan Hancock Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Charles M. Schulz Sonoma County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Stockton Metropolitan Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Inyokern Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Imperial County Airport","alternativeNames": ["Boley Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Merced Regional Airport","alternativeNames": ["MacReady Field"],"priorNames": ["Merced Municipal"],"country":"united states", "state":"california"},
+    {"name":"Visalia Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Byron Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Camarillo Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Chino Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Compton/Woodley Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Buchanan Field Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"El Monte Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Fresno Chandler Executive Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Fullerton Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Half Moon Bay Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Hawthorne Municipal Airport","alternativeNames": ["Jack Northrop Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Hayward Executive Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Brackett Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+
 
 
   ]
