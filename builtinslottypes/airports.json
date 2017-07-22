@@ -948,7 +948,32 @@
     {"name":"Rohnerville Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Franklin Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Garberville Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
-    {"name":"Georgetown Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+    {"name":"Georgetown Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+
+    {"name":"Nevada County Air Park","alternativeNames": ["Nevada County Airport"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Pine Mountain Lake Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Gustine Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Hanford Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Happy Camp Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Hayfork Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Healdsburg Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Hemet-Ryan Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Hollister Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Hoopa Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Independence Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Amador County Airport","alternativeNames": ["Westover Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Kern Valley Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Mesa Del Rey Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Lampson Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"General William J. Fox Airfield","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Lee Vining Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Little River Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Lompoc Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Lone Pine Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Los Banos Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Lost Hills Airport","alternativeNames": ["Lost Hills-Kern County Airport", "Kern County Airport", "Lost Hills Kern County Airport"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Madera Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+
 
 
 
