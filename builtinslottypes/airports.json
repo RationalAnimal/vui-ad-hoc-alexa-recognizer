@@ -972,7 +972,31 @@
     {"name":"Lone Pine Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Los Banos Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Lost Hills Airport","alternativeNames": ["Lost Hills-Kern County Airport", "Kern County Airport", "Lost Hills Kern County Airport"],"priorNames": [],"country":"united states", "state":"california"},
-    {"name":"Madera Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+    {"name":"Madera Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+
+    {"name":"Marina Municipal Airport","alternativeNames": [],"priorNames": ["Fritzche AAF"],"country":"united states", "state":"california"},
+    {"name":"Mariposa-Yosemite Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Yuba County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"William Robert Johnston Municipal Airport","alternativeNames": [],"priorNames": ["Mendota Airport"],"country":"united states", "state":"california"},
+    {"name":"Mojave Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Siskiyou County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"French Valley Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Needles Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Oakdale Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Oceano County Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Oceanside Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Oroville Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Haigh Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Oxnard Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Jacqueline Cochran Regional Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Palmdale Regional Airport / USAF Plant 42","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Paso Robles Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Placerville Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Porterville Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Gansner Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Rancho Murieta Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Red Bluff Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+
 
 
 
