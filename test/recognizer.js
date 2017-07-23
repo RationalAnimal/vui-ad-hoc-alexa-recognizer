@@ -2354,6 +2354,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
   */
 });
 
+describe("domain parsing", function() {
+  describe("Simple Domain Parsing", function () {
+    it("verify simplest domain parses", function () {
+      let result = recognizer.Recognizer.matchDomain("Hi what is the time please", "./test/testDomainSimplest.json");
+      expect(result).to.eql(
+        {
+          "name": "HiIntent",
+          "slots": {}
+        });
+    });
+  });
+});
 
 describe("utterance parser", function() {
   describe("Simple JSON Parsing", function() {

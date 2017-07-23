@@ -1489,6 +1489,86 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
   return returnValue;
 };
 
+/**
+ * EXPERIMENTAL - USE AT YOUR OWN RISK, API MAY CHANGE!!!
+ * Call this function to use an AppModule/Domain json to match text
+ * @param {string} stringToMatch - the text to match to intent or result.
+ * @param {string|object} domain
+ * @param {function} stateAccessor - optional, needed only if state is specified in the domain. Call this function to
+ *   get the current state info. API is simple: getState("someKey") will return the corresponding value.
+ * @returns {object}
+ * @private
+ */
+var _matchTextDomain = function(stringToMatch, domain, stateAccessor){
+//  console.log("_matchTextDomain, 1");
+  let domainToUse;
+  if(typeof domain === "string"){
+//    console.log("_matchTextDomain, 2");
+    // We need to load the domain
+    domainToUse = require(domain);
+  }
+  else if(typeof domain === "object" && domain != null){
+//    console.log("_matchTextDomain, 3");
+    domainToUse = domain;
+  }
+  else {
+//    console.log("_matchTextDomain, 4");
+    return undefined;
+  }
+  if(typeof domainToUse.recognizers === "undefined" || Array.isArray(domainToUse.recognizers) === false){
+//    console.log("_matchTextDomain, 5");
+    return undefined;
+  }
+  // Now populate all the recognizers.
+  let recognizers = {};
+//  console.log("_matchTextDomain, 6");
+  for(let i = 0; i < domainToUse.recognizers.length; i ++){
+//    console.log("_matchTextDomain, 7, i: " + i);
+    let currentRecognizer = domainToUse.recognizers[i];
+    if(typeof currentRecognizer.path === "string" && typeof currentRecognizer.key !== "undefined"){
+//      console.log("_matchTextDomain, 8");
+      try{
+//        console.log("_matchTextDomain, 9");
+        recognizers[currentRecognizer.key] = require(currentRecognizer.path);
+//        console.log("_matchTextDomain, 10");
+      }
+      catch(e){
+//        console.log("_matchTextDomain, 11, e: " + e);
+        // TODO handle failure to load recognizer
+      }
+    }
+  }
+//  console.log("_matchTextDomain, 12");
+
+  // Now actually try to get the match
+  for(let i = 0; i < domainToUse.states.length; i++){
+//    console.log("_matchTextDomain, 13, i: " + i);
+    let state = domainToUse.states[i];
+//    console.log("_matchTextDomain, 14");
+    if(state.matchCriteria === "default"){
+//      console.log("_matchTextDomain, 15");
+      for(let j = 0; j < state.matchSpecs.length; j ++){
+//        console.log("_matchTextDomain, 16, j: " + j);
+        let scratchRecognizer = recognizers[state.matchSpecs[j]];
+//        console.log("_matchTextDomain, 17");
+        let result = _matchText(stringToMatch, undefined, undefined, scratchRecognizer);
+//        console.log("_matchTextDomain, 18");
+        if(typeof result !== "undefined" && result !== null){
+//          console.log("_matchTextDomain, 19");
+          return result;
+        }
+      }
+
+    }
+    else {
+//      console.log("_matchTextDomain, 20");
+      // TODO continue from here.
+    }
+  }
+//  console.log("_matchTextDomain, 21");
+  return undefined;
+};
+
 // USED IN MATCH
 // NOT IN GENERATE
 var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recognizerToUse){
@@ -1724,6 +1804,7 @@ recognizer.Recognizer = class {
 recognizer.Recognizer.matchText = _matchText;
 recognizer.Recognizer.prototype.matchText = _matchText;
 
-
+recognizer.Recognizer.matchDomain = _matchTextDomain;
+recognizer.Recognizer.prototype.matchDomain = _matchTextDomain;
 
 module.exports = recognizer;
