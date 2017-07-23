@@ -995,7 +995,36 @@
     {"name":"Porterville Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Gansner Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Rancho Murieta Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
-    {"name":"Red Bluff Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+    {"name":"Red Bluff Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+
+    {"name":"Benton Field","alternativeNames": ["Benton Airpark"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Redlands Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Reedley Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Rio Vista Municipal Airport","alternativeNames": ["Baumann Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Ruth Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"McClellan Airfield","alternativeNames": [],"priorNames": ["McClellan Air Force Base"],"country":"united states", "state":"california"},
+    {"name":"Salinas Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Calaveras County Airport","alternativeNames": ["Maury Rasmussen Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Santa Ynez Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Shafter Airport","alternativeNames": ["Minter Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Shelter Cove Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Lake Tahoe Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Susanville Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Taft Airport","alternativeNames": ["Taft-Kern County Airport", "Taft Kern County Airport"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Tehachapi Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Tracy Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Trinity Center Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Trona Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Truckee-Tahoe Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Mefford Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Tulelake Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Turlock Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Twentynine Palms Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Ukiah Municipal Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Nut Tree Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Sequoia Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Chemehuevi Valley Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+
 
 
 
