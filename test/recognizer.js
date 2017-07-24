@@ -2368,8 +2368,10 @@ describe("domain parsing", function() {
         );
     });
     it("verify simplest domain parses", function () {
-      let recognizerObject = require("../test/testDomainSimplest2.json");
-      let result = recognizer.Recognizer.matchDomain("Hi what is the time please", recognizerObject);
+      let domain = require("../test/testDomainSimplest2.json");
+      let loadedRecognizer = require("../recognizer.json");
+      domain.recognizers[0].recognizer = loadedRecognizer;
+      let result = recognizer.Recognizer.matchDomain("Hi what is the time please", domain);
       expect(result).to.eql(
         {"match":
           {
@@ -2379,6 +2381,19 @@ describe("domain parsing", function() {
         }
       );
     });
+    it("verify multi recognizer domain parses", function () {
+      let domain = require("../test/blahblahdomain/blahblahdomain.json");
+      let result = recognizer.Recognizer.matchDomain("nice day isn't it", domain);
+      expect(result).to.eql(
+        {"match":
+          {
+            "name": "NiceDayIntent",
+            "slots": {}
+          }
+        }
+      );
+    });
+
   });
 });
 

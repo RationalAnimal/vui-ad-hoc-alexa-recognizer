@@ -1,0 +1,26 @@
+{
+  "description": "Simple domain",
+  "recognizers": [
+    {
+      "key": "blah",
+      "path": "./test/blahblahdomain/blahblahrecognizer.json"
+    },
+    {
+      "key": "theUsual",
+      "path": "./recognizer.json"
+    }
+  ],
+  "states": [
+    {
+      "matchCriteria": "default",
+      "matchSpecs": [
+        {
+          "recognizer": "blah"
+        },
+        {
+          "recognizer": "theUsual"
+        }
+      ]
+    }
+  ]
+}
