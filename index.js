@@ -1537,7 +1537,11 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor){
       recognizers[currentRecognizer.key] = currentRecognizer.recognizer;
     }
   }
-//  console.log("_matchTextDomain, 12");
+  for (let key in recognizers) {
+    if (recognizers.hasOwnProperty(key)) {
+//      console.log("_matchTextDomain, 12, key: " + key);
+    }
+  }
 
   // Now actually try to get the match
   for(let i = 0; i < domainToUse.states.length; i++){
@@ -1548,8 +1552,8 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor){
 //      console.log("_matchTextDomain, 15");
       for(let j = 0; j < state.matchSpecs.length; j ++){
 //        console.log("_matchTextDomain, 16, j: " + j);
-        let scratchRecognizer = recognizers[state.matchSpecs[j]];
-//        console.log("_matchTextDomain, 17");
+        let scratchRecognizer = recognizers[state.matchSpecs[j].recognizer];
+//        console.log("_matchTextDomain, 17, scratchRecognizer: " + scratchRecognizer);
         let result = _matchText(stringToMatch, undefined, undefined, scratchRecognizer);
 //        console.log("_matchTextDomain, 18");
         if(typeof result !== "undefined" && result !== null){
