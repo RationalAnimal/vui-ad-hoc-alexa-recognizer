@@ -1555,7 +1555,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor){
 //        console.log("_matchTextDomain, 18");
         if(typeof result !== "undefined" && result !== null){
 //          console.log("_matchTextDomain, 19");
-          return result;
+          return {"match": result};
         }
       }
 

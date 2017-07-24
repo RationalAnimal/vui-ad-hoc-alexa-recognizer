@@ -2359,10 +2359,13 @@ describe("domain parsing", function() {
     it("verify simplest domain parses", function () {
       let result = recognizer.Recognizer.matchDomain("Hi what is the time please", "./test/testDomainSimplest.json");
       expect(result).to.eql(
-        {
-          "name": "HiIntent",
-          "slots": {}
-        });
+        {"match":
+          {
+            "name": "HiIntent",
+            "slots": {}
+          }
+        }
+        );
     });
   });
 });

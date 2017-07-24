@@ -18,7 +18,7 @@ card matching, option lists, text equivalents, unlimited sets of recognizers to 
 
 # Request for Features for Domains/App Modules
 
-**I beginning to add EXPERIMENTAL (API WILL CHANGE!!!) DOMAINS/APP MODULES functionality as part of the vui-ad-hoc-alexa-recognizer.**
+**I am beginning to add EXPERIMENTAL (API WILL CHANGE!!!) Domains/App Modules functionality as part of the vui-ad-hoc-alexa-recognizer.**
 **It will allow moving a lot of code out of your project and into simple configuration.**
 **For instance, rather than keeping track of your state and creating branching logic to switch on portions of the state, you'll be able to define recognizers to use and in which order for a given state.**
 **You'll also be able to define return values right within an app module so that you will not have to re-implement that every time you use it.**
