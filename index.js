@@ -1526,16 +1526,15 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor){
 //    console.log("_matchTextDomain, 7, i: " + i);
     let currentRecognizer = domainToUse.recognizers[i];
     if(typeof currentRecognizer.path === "string" && typeof currentRecognizer.key !== "undefined"){
-//      console.log("_matchTextDomain, 8");
       try{
-//        console.log("_matchTextDomain, 9");
         recognizers[currentRecognizer.key] = require(currentRecognizer.path);
-//        console.log("_matchTextDomain, 10");
       }
       catch(e){
-//        console.log("_matchTextDomain, 11, e: " + e);
         // TODO handle failure to load recognizer
       }
+    }
+    else if(typeof currentRecognizer.recognizer === "object" && typeof currentRecognizer.key !== "undefined"){
+      recognizers[currentRecognizer.key] = currentRecognizer.recognizer;
     }
   }
 //  console.log("_matchTextDomain, 12");

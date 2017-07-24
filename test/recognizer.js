@@ -2357,7 +2357,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
 describe("domain parsing", function() {
   describe("Simple Domain Parsing", function () {
     it("verify simplest domain parses", function () {
-      let result = recognizer.Recognizer.matchDomain("Hi what is the time please", "./test/testDomainSimplest.json");
+      let result = recognizer.Recognizer.matchDomain("Hi what is the time please", "./test/testDomainSimplest1.json");
       expect(result).to.eql(
         {"match":
           {
@@ -2366,6 +2366,18 @@ describe("domain parsing", function() {
           }
         }
         );
+    });
+    it("verify simplest domain parses", function () {
+      let recognizerObject = require("../test/testDomainSimplest2.json");
+      let result = recognizer.Recognizer.matchDomain("Hi what is the time please", recognizerObject);
+      expect(result).to.eql(
+        {"match":
+          {
+            "name": "HiIntent",
+            "slots": {}
+          }
+        }
+      );
     });
   });
 });
