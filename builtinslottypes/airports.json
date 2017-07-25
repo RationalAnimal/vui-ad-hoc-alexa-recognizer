@@ -1105,6 +1105,27 @@
     {"name":"NAF El Centro","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Travis Air Force Base","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Tusi Army Heliport","alternativeNames": ["Hunter Liggett"],"priorNames": [],"country":"united states", "state":"california"},
-    {"name":"KBYS","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+    {"name":"KBYS","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+
+    {"name":"Amedee Army Airfield","alternativeNames": ["Sierra Army Depot"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"NOLF Imperial Beach","alternativeNames": ["Ream Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"NAS Lemoore","alternativeNames": ["Reeves Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Vandenberg Air Force Base","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Los Alamitos Army Airfield","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Beale Air Force Base","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Moffett Federal Airfield","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"MCAS Camp Pendleton","alternativeNames": ["Munn Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Camp Parks Heliport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"NAS Point Mugu","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"NALF San Clemente Island","alternativeNames": ["Frederick Sherman Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"MCAS Miramar","alternativeNames": ["Mitscher Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"NAS North Island","alternativeNames": ["Halsey Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"NOLF San Nicolas Island","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Twentynine Palms SELF","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"W. R. Byron Airport","alternativeNames": ["Gary Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Borges Clarksburg Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Ranchaero Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Desert Center Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Douthitt Strip","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
   ]
 }
