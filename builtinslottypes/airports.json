@@ -1094,14 +1094,17 @@
     {"name":"MCMWTC Heliport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"McMillan Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Roberts AHP","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
-    {"name":"O'Sullivan AHP","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+    {"name":"O'Sullivan AHP","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
 
-
-
-
-
-
-
-
+    {"name":"NAWS China Lake","alternativeNames": ["Armitage Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Q Area Heliport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Turner Field / Amphibious Base Heliport","alternativeNames": ["Amphibious Base Heliport", "Turner Field", "Turner Field Amphibious Base Heliport"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"NASA Crows Landing Airport","alternativeNames": [],"priorNames": ["NALF Crows Landing", "N.A.L.F. Crows Landing", "N A L F Crows Landing", "N. A. L. F. Crows Landing"],"country":"united states", "state":"california"},
+    {"name":"Edwards AFB","alternativeNames": ["Edwards A F B", "Edwards A.F.B.", "Edwards A. F. B."],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Edwards AFB Aux. North Base","alternativeNames": ["Edwards AFB Auxiliary North Base", "Edwards A.F.B. Auxiliary North Base", "Edwards A. F. B. Auxiliary North Base"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"NAF El Centro","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Travis Air Force Base","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Tusi Army Heliport","alternativeNames": ["Hunter Liggett"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"KBYS","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
   ]
 }
