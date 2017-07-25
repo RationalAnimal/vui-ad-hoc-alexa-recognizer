@@ -1126,6 +1126,26 @@
     {"name":"Borges Clarksburg Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Ranchaero Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Desert Center Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
-    {"name":"Douthitt Strip","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+    {"name":"Douthitt Strip","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+
+    {"name":"LAPD Hooper Heliport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Gray Butte Field","alternativeNames": ["General Atomics Aeronautical Systems"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Paradise Skypark","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Torrey Pines Gliderport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Catalina Air-Sea Terminal Heliport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Monterey Bay Academy Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"NAS Alameda","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Alum Rock Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Disneyland Heliport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Elk Grove Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Grand Central Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Meadowlark Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Hamilton Air Force Base","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Pixley Airport","alternativeNames": ["Harmon Field"],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Crissy Field","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"MCAS El Toro","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Santa Cruz Sky Park","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Shingletown Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+    {"name":"Gardner Army Airfield","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
   ]
 }
