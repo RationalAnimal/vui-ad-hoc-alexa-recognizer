@@ -1146,6 +1146,14 @@
     {"name":"MCAS El Toro","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Santa Cruz Sky Park","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
     {"name":"Shingletown Airport","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
-    {"name":"Gardner Army Airfield","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"}
+    {"name":"Gardner Army Airfield","alternativeNames": [],"priorNames": [],"country":"united states", "state":"california"},
+
+    {"name":"Aspen-Pitkin County Airport","alternativeNames":["Aspen Pitkin County Airport", "Sardy Field"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"City of Colorado Springs Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Denver International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Durango-La Plata County Airport","alternativeNames":["Durango La Plata County Airport"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Eagle County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Grand Junction Regional Airport","alternativeNames":["Walker Field"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Gunnison-Crested Butte Regional Airport","alternativeNames":["Gunnison Crested Butte Regional Airport"],"priorNames":[],"country":"united states","state":"colorado"}
   ]
 }
