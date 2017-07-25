@@ -1154,6 +1154,18 @@
     {"name":"Durango-La Plata County Airport","alternativeNames":["Durango La Plata County Airport"],"priorNames":[],"country":"united states","state":"colorado"},
     {"name":"Eagle County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
     {"name":"Grand Junction Regional Airport","alternativeNames":["Walker Field"],"priorNames":[],"country":"united states","state":"colorado"},
-    {"name":"Gunnison-Crested Butte Regional Airport","alternativeNames":["Gunnison Crested Butte Regional Airport"],"priorNames":[],"country":"united states","state":"colorado"}
+    {"name":"Gunnison-Crested Butte Regional Airport","alternativeNames":["Gunnison Crested Butte Regional Airport"],"priorNames":[],"country":"united states","state":"colorado"},
+
+    {"name":"Yampa Valley Airport","alternativeNames":["Yampa Valley Regional"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Montrose Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"San Luis Valley Regional Airport","alternativeNames":["Bergman Field"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Cortez Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Northern Colorado Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Pueblo Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Telluride Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Front Range Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Rocky Mountain Metropolitan Airport","alternativeNames":["Jefferson Co.", "Jefferson Co"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Centennial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"}
+
   ]
 }
