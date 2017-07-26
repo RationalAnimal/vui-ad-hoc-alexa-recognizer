@@ -1222,9 +1222,19 @@
     {"name":"Julesburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
     {"name":"Cuchara Valley Airport at La Veta","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
     {"name":"City of Las Animas - Bent County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
-    {"name":"Mack Mesa Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"}
+    {"name":"Mack Mesa Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
 
-
-
+    {"name":"North Fork Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Saguache Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Springfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Walden-Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Silver West Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Buckley Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"United States Air Force Academy","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Butts Army Airfield","alternativeNames":["Fort Carson"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Buckhorn Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Avon STOLPort","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Stapleton International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Fort Collins Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"}
   ]
 }
