@@ -1192,7 +1192,23 @@
     {"name":"Stevens Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
     {"name":"Rangely Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
     {"name":"Garfield County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
-    {"name":"Harriet Alexander Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"}
+    {"name":"Harriet Alexander Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+
+    {"name":"Steamboat Springs Airport","alternativeNames":["Bob Adams Field"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Sterling Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Perry Stokes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Spanish Peaks Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Wray Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Yuma Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Gebauer Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Blanca Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Brush Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Calhan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Leach Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Crawford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Mineral County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Astronaut Kent Rominger Airport","alternativeNames":["Del Norte Muni. & Co.", "Del Norte Muni. and Co.", "Del Norte Muni & Co", "Del Norte Muni and Co", "Del Norte Muni & Company", "Del Norte Muni and Company"],"priorNames":[],"country":"united states","state":"colorado"}
+
 
 
   ]
