@@ -1235,6 +1235,24 @@
     {"name":"Buckhorn Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
     {"name":"Avon STOLPort","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
     {"name":"Stapleton International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
-    {"name":"Fort Collins Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"}
+    {"name":"Fort Collins Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+
+    {"name":"Bradley International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Tweed New Haven Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Danbury Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Hartford Brainard Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Robertson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Igor I. Sikorsky Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Chester Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Danielson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Groton New London Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Meriden Markham Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Waterbury Oxford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Simsbury Airport","alternativeNames":["Simsbury Tri-Town Airport", "Simsbury Tri Town Airport"],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Windham Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Goodspeed Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Ellington Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Salmon River Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"}
+
   ]
 }
