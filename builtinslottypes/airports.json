@@ -1165,7 +1165,35 @@
     {"name":"Telluride Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
     {"name":"Front Range Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
     {"name":"Rocky Mountain Metropolitan Airport","alternativeNames":["Jefferson Co.", "Jefferson Co"],"priorNames":[],"country":"united states","state":"colorado"},
-    {"name":"Centennial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"}
+    {"name":"Centennial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+
+    {"name":"Meadow Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Colorado Plains Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Boulder Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Central Colorado Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Kit Carson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Fremont County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Craig-Moffat Airport","alternativeNames":["Craig-Moffat County Airport", "Craig Moffat County Airport", "Craig Moffat Airport"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Blake Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Erie Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Fort Morgan Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Granby-Grand County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Greeley-Weld County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Holyoke Airport","alternativeNames":["Holyoke Municipal Airport"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"McElroy Airfield","alternativeNames":["McElroy Field"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"La Junta Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Lamar Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Lake County Airport","alternativeNames":["Leadville Airport"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Limon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Vance Brand Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Meeker Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Monte Vista Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Hopkins Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Stevens Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Rangely Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Garfield County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Harriet Alexander Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"}
+
 
   ]
 }
