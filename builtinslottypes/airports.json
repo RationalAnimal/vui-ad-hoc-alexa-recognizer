@@ -1207,7 +1207,22 @@
     {"name":"Leach Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
     {"name":"Crawford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
     {"name":"Mineral County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
-    {"name":"Astronaut Kent Rominger Airport","alternativeNames":["Del Norte Muni. & Co.", "Del Norte Muni. and Co.", "Del Norte Muni & Co", "Del Norte Muni and Co", "Del Norte Muni & Company", "Del Norte Muni and Company"],"priorNames":[],"country":"united states","state":"colorado"}
+    {"name":"Astronaut Kent Rominger Airport","alternativeNames":["Del Norte Muni. & Co.", "Del Norte Muni. and Co.", "Del Norte Muni & Co", "Del Norte Muni and Co", "Del Norte Muni & Company", "Del Norte Muni and Company"],"priorNames":[],"country":"united states","state":"colorado"},
+
+    {"name":"Westwinds Airport","alternativeNames":["Hawkins Field"],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Dove Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Animas Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Eads Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Colorado Springs East Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Glenwood Springs Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Easton/Valley View Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Haxtun Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Holly Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Platte Valley Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Julesburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Cuchara Valley Airport at La Veta","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"City of Las Animas - Bent County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"},
+    {"name":"Mack Mesa Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"colorado"}
 
 
 
