@@ -16,21 +16,6 @@ configurable and has many features - a rich set of built in intents and slots (r
 ability to expand them, custom slots, slot flags, parametrized flags, transformation functions, SoundEx matching, wild
 card matching, option lists, text equivalents, unlimited sets of recognizers to build large segmented apps.
 
-# Request for Features for Domains/App Modules
-
-**I am beginning to add EXPERIMENTAL (API WILL CHANGE!!!) Domains/App Modules functionality as part of the vui-ad-hoc-alexa-recognizer.**
-**It will allow moving a lot of code out of your project and into simple configuration.**
-**For instance, rather than keeping track of your state and creating branching logic to switch on portions of the state, you'll be able to define recognizers to use and in which order for a given state.**
-**You'll also be able to define return values right within an app module so that you will not have to re-implement that every time you use it.**
-**You will also be able to define parts of your app as an app module and then reuse it later, by being included into bigger app modules.**
-**This kind of functionality is often referred to as domains in other speech/voice/chat bot services.**
-**For example, you'll be able to define a "chit chat" domain/app module that will recognize typical small talk and have canned responses.**
-**Then, you'll be able to include it in your app to be able to handle idle conversations with the user.**
-**Similarly, you can define a "Gather Personal Information" app module that will know how to collect and keep track of the first/middle/last names, phone numbers, addresses, emails, etc. and reuse it any place you need it.**
-
-**So, while I have a list of features planned for this and that currently are in the process of being implemented, if you have specific needs or ideas, please file an enhancement issue on GitHub so I can include that in the upcoming releases.**
-**Please include requests/suggestions for BOTH the code features as well as common app modules that you would like to see.**
-
 # What's in the name
 You may be wondering why such an odd name.  Glad you asked, here is the explanation:
 1. vui - stands for "voice user interface" - because this module allows building skills/apps that have voice user interface

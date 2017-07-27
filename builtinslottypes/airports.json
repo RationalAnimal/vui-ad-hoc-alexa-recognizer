@@ -1294,7 +1294,23 @@
     {"name":"Miami International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"Orlando International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"Orlando Sanford International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
-    {"name":"Northwest Florida Beaches International Airport [nb 1]","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"}
+    {"name":"Northwest Florida Beaches International Airport [nb 1]","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+
+    {"name":"Pensacola International Airport","alternativeNames":["Pensacola Gulf Coast Regional Airport"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Punta Gorda Airport","alternativeNames":[],"priorNames":["Charlotte County Airport"],"country":"united states","state":"florida"},
+    {"name":"Sarasota Bradenton International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Northeast Florida Regional Airport","alternativeNames":[],"priorNames":["St. Augustine Airport", "Saint Augustine Airport"],"country":"united states","state":"florida"},
+    {"name":"St. Pete Clearwater International Airport","alternativeNames":["Saint Pete Clearwater International Airport"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Tallahassee International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Tampa International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Destin Fort Walton Beach Airport / Eglin Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Palm Beach International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Boca Raton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Clearwater Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"DeLand Municipal Airport","alternativeNames":["Sidney H. Taylor Field", "Sidney H Taylor Field", "Sidney Taylor Field"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Fort Lauderdale Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Page Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"North Perry Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"}
 
   ]
 }
