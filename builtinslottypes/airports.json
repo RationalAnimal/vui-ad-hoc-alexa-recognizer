@@ -1282,9 +1282,19 @@
     {"name":"Smyrna Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
     {"name":"Jenkins Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
     {"name":"Dover Air Force Base / Civil Air Terminal at Dover AFB","alternativeNames":["Dover Air Force Base", "Civil Air Terminal at Dover AFB"],"priorNames":[],"country":"united states","state":"delaware"},
-    {"name":"Rehoboth Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"}
+    {"name":"Rehoboth Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
 
-
+    {"name":"Daytona Beach International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Fort Lauderdale Hollywood International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Southwest Florida International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Gainesville Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Jacksonville International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Key West International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Melbourne International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Miami International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Orlando International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Orlando Sanford International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Northwest Florida Beaches International Airport [nb 1]","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"}
 
   ]
 }
