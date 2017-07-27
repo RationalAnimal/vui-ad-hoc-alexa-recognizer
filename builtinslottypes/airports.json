@@ -1269,7 +1269,21 @@
     {"name":"Mountain Meadow Airstrip","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
     {"name":"Lakeside Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
     {"name":"Griswold Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
-    {"name":"New London Waterford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"}
+    {"name":"New London Waterford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+
+    {"name":"Wilmington Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
+    {"name":"Summit Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
+    {"name":"Delaware Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
+    {"name":"Delaware Coastal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
+    {"name":"Chandelle Estates Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
+    {"name":"Chorman Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
+    {"name":"Henderson Aviation Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
+    {"name":"Laurel Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
+    {"name":"Smyrna Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
+    {"name":"Jenkins Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"},
+    {"name":"Dover Air Force Base / Civil Air Terminal at Dover AFB","alternativeNames":["Dover Air Force Base", "Civil Air Terminal at Dover AFB"],"priorNames":[],"country":"united states","state":"delaware"},
+    {"name":"Rehoboth Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"delaware"}
+
 
 
   ]
