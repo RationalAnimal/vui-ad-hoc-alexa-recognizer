@@ -1252,7 +1252,25 @@
     {"name":"Windham Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
     {"name":"Goodspeed Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
     {"name":"Ellington Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
-    {"name":"Salmon River Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"}
+    {"name":"Salmon River Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+
+    {"name":"Candlelight Farms Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Toutant Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Skylark Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Waterbury Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Gardner Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"North Canaan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Gallup Farm Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Ski's Landing Area Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Spruce Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Stonington Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Westford Airstrip","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Ansonia Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Mountain Meadow Airstrip","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Lakeside Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"Griswold Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"},
+    {"name":"New London Waterford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"connecticut"}
+
 
   ]
 }
