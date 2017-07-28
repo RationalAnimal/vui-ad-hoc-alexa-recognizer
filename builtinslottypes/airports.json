@@ -1376,6 +1376,33 @@
     {"name":"Plant City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"Pompano Beach Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"Quincy Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
-    {"name":"Sebastian Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"}
+    {"name":"Sebastian Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+
+    {"name":"Sebring Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Witham Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Arthur Dunn Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Space Coast Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Umatilla Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Vero Beach Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Wauchula Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Williston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Winter Haven's Gilbert Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Zephyrhills Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"St. George Island Airport","alternativeNames":["Saint George Island Airport"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Orlando Apopka Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Flying Ten Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Pilot Country Airport","alternativeNames":["Pilot Country Estates"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Carrabelle-Thompson Airport","alternativeNames":["Carrabelle Thompson Airport"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Bob Lee Flight Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Buchan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Mid Florida Air Service Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Downtown Fort Lauderdale Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Oak Tree Landing Airport","alternativeNames":[],"priorNames":["Rudy's Airport"],"country":"united states","state":"florida"},
+    {"name":"Indiantown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Chalet Suzanne Air Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"South Lakeland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Fort Walton Beach Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Massey Ranch Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"}
+
   ]
 }
