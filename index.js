@@ -1561,6 +1561,8 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor){
           return {"match": result};
         }
       }
+    }
+    else if(typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "function"){
 
     }
     else {
