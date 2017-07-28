@@ -1489,6 +1489,34 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
   return returnValue;
 };
 
+let _isSubObject = function(subObject, withinObject){
+  if(subObject === withinObject){
+    return true;
+  }
+  if(typeof subObject === "undefined"){
+    return false;
+  }
+  if(typeof withinObject === "undefined"){
+    return false;
+  }
+  if(subObject === null && withinObject === null){
+    return true;
+  }
+  if(subObject === null || withinObject === null){
+    return false;
+  }
+  if(typeof subObject !== "object" || typeof withinObject !== "object"){
+    return subObject === withinObject;
+  }
+  for(let key in subObject) {
+    if(subObject.hasOwnProperty(key)){
+      if(subObject[key] !== withinObject[key]){
+        return false;
+      }
+    }
+  }
+  return true;
+};
 /**
  * EXPERIMENTAL - USE AT YOUR OWN RISK, API MAY CHANGE!!!
  * Call this function to use an AppModule/Domain json to match text
@@ -1499,7 +1527,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
  * @returns {object}
  * @private
  */
-var _matchTextDomain = function(stringToMatch, domain, stateAccessor){
+var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicationState){
 //  console.log("_matchTextDomain, 1");
   let domainToUse;
   if(typeof domain === "string"){
@@ -1563,6 +1591,19 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor){
       }
     }
     else if(typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "function"){
+      if(_isSubObject(stateAccessor(applicationState, state.matchCriteria.selector), state.matchCriteria.match)){
+        for(let j = 0; j < state.matchSpecs.length; j ++){
+//        console.log("_matchTextDomain, 19.1, j: " + j);
+          let scratchRecognizer = recognizers[state.matchSpecs[j].recognizer];
+//        console.log("_matchTextDomain, 19.2, scratchRecognizer: " + scratchRecognizer);
+          let result = _matchText(stringToMatch, undefined, undefined, scratchRecognizer);
+//        console.log("_matchTextDomain, 19.3");
+          if(typeof result !== "undefined" && result !== null){
+//          console.log("_matchTextDomain, 19.4");
+            return {"match": result};
+          }
+        }
+      }
 
     }
     else {
