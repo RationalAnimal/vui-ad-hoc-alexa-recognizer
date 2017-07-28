@@ -1451,7 +1451,23 @@
     {"name":"Kathrinstadt Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"Ocean Reef Club Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"Hidden Lake Airport","alternativeNames":["Hidden Lake Estates"],"priorNames":[],"country":"united states","state":"florida"},
-    {"name":"Greystone Airport","alternativeNames":["Jumbolair Aviation Estates"],"priorNames":[],"country":"united states","state":"florida"}
+    {"name":"Greystone Airport","alternativeNames":["Jumbolair Aviation Estates"],"priorNames":[],"country":"united states","state":"florida"},
+
+    {"name":"Sandy Creek Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Spruce Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Ames Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Bushnell Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"DeLand Naval Air Station","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Imeson Field","alternativeNames":["Jacksonville International Airport"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Epcot Center Ultralight Flightpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Walt Disney World Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"All-American Airport","alternativeNames":["Masters Field", "All American Airport"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Miami Municipal Airport","alternativeNames":["Miami Municipal Field", "Amelia Earhart Field"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Opa-locka West Airport","alternativeNames":["Opa locka West Airport"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Richmond Naval Air Station","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Tampa Bay Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Northwest Florida Beaches International Airport","alternativeNames":[],"priorNames":["Panama City Bay County International Airport"],"country":"united states","state":"florida"},
+    {"name":"Tampa International Airport","alternativeNames":[],"priorNames":["Drew Field Municipal Airport"],"country":"united states","state":"florida"}
 
 
 
