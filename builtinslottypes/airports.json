@@ -1435,7 +1435,23 @@
     {"name":"NOLF Choctaw","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"NOLF Santa Rosa","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"NOLF Spencer","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
-    {"name":"Tyndall Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"}
+    {"name":"Tyndall Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+
+    {"name":"NAS Pensacola","alternativeNames":["Forrest Sherman Field"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NOLF Saufley Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NOLF Site 8","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Camp Blanding AAF/National Guard Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"MacDill Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NASA Shuttle Landing Facility","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NOLF Pace","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Buckingham Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Ridge Landing Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Gardner Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Osborn Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Kathrinstadt Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Ocean Reef Club Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Hidden Lake Airport","alternativeNames":["Hidden Lake Estates"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Greystone Airport","alternativeNames":["Jumbolair Aviation Estates"],"priorNames":[],"country":"united states","state":"florida"}
 
 
 
