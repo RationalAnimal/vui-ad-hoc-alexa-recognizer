@@ -12,6 +12,20 @@
   ],
   "states": [
     {
+      "matchCriteria": {
+        "selector": {"field1": "flow"},
+        "match": {"flow": "TEST_FLOW"}
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "blah"
+        },
+        {
+          "recognizer": "theUsual"
+        }
+      ]
+    },
+    {
       "matchCriteria": "default",
       "matchSpecs": [
         {
