@@ -1402,7 +1402,29 @@
     {"name":"Chalet Suzanne Air Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"South Lakeland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"Fort Walton Beach Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
-    {"name":"Massey Ranch Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"}
+    {"name":"Massey Ranch Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+
+    {"name":"Airport Manatee","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Wakulla County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Coastal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Ferguson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Pierson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Costin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Shell Creek Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"River Ranch Resort Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Tallahassee Commercial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Tavares Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"New Hibiscus Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Tampa North Aero Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Jack Browns Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Bob White Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"MacDill AFB Auxiliary Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Cape Canaveral Air Force Station Skid Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Patrick Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Duke Field","alternativeNames":["Eglin AFB Auxiliary Field 3", "Eglin A.F.B. Auxiliary Field 3", "Eglin Air Force Base Auxiliary Field 3"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NOLF Holley","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Homestead Joint Air Reserve Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"}
+
 
   ]
 }
