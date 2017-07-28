@@ -2393,6 +2393,43 @@ describe("domain parsing", function() {
         }
       );
     });
+    it("verify multi recognizer domain with non default match criteria and a hardcoded accessor parses", function () {
+      let domain = require("../test/blahblahdomain/blahblahdomain.json");
+      let stateAccessor = function(selector){
+        return {"flow": "TEST_FLOW"};
+      };
+      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor);
+      expect(result).to.eql(
+        {"match":
+          {
+            "name": "ComplimentIntent",
+            "slots": {}
+          }
+        }
+      );
+    });
+
+    it("verify multi recognizer domain with non default match criteria and a state sub select accessor parses", function () {
+      let domain = require("../test/blahblahdomain/blahblahdomain.json");
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+      let stateAccessor = function(state, selector){
+        return state[selector];
+      };
+      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
+      expect(result).to.eql(
+        {"match":
+          {
+            "name": "ComplimentIntent",
+            "slots": {}
+          }
+        }
+      );
+    });
 
   });
 });

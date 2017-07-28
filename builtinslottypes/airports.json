@@ -1423,7 +1423,20 @@
     {"name":"Patrick Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"Duke Field","alternativeNames":["Eglin AFB Auxiliary Field 3", "Eglin A.F.B. Auxiliary Field 3", "Eglin Air Force Base Auxiliary Field 3"],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"NOLF Holley","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
-    {"name":"Homestead Joint Air Reserve Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"}
+    {"name":"Homestead Joint Air Reserve Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+
+    {"name":"NAS Jacksonville","alternativeNames":["Towers Field"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NOLF Whitehouse","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NAS Key West","alternativeNames":["Boca Chica Field"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Hurlburt Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NS Mayport","alternativeNames":["Admiral David L. McDonald Field", "Admiral David L McDonald Field", "Admiral David McDonald Field"],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NAS Whiting Field   North","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NAS Whiting Field   South","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NOLF Choctaw","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NOLF Santa Rosa","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"NOLF Spencer","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
+    {"name":"Tyndall Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"}
+
 
 
   ]

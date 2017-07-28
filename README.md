@@ -49,6 +49,8 @@ npm install vui-ad-hoc-alexa-recognizer --save
 
 # Summary
 
+**Note: new "domain" functionality is in the process of being added.  It's built on top of what's described below.**
+
 npm module that provides VUI (voice user interface) special ad-hoc recognizer
 designed to parse raw text from the user and map it to the Alexa intents.
 This could be useful in many cases.  If
