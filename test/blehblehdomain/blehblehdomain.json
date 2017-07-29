@@ -1,0 +1,19 @@
+{
+  "description": "Simple domain",
+  "recognizers": [
+    {
+      "key": "bleh",
+      "path": "./test/blehblehdomain/blehblehrecognizer.json"
+    }
+  ],
+  "states": [
+    {
+      "matchCriteria": "default",
+      "matchSpecs": [
+        {
+          "recognizer": "bleh"
+        }
+      ]
+    }
+  ]
+}

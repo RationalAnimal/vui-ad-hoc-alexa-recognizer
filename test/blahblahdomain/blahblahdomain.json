@@ -14,6 +14,13 @@
       "path": "./recognizer.json"
     }
   ],
+  "domains": [
+    {
+      "key": "bleh",
+      "path": "./test/blehblehdomain/blehblehdomain.json",
+      "domain": {}
+    }
+  ],
   "states": [
     {
       "matchCriteria": {
@@ -23,6 +30,9 @@
       "matchSpecs": [
         {
           "recognizer": "blah2"
+        },
+        {
+          "domain": "bleh"
         }
       ]
     },
