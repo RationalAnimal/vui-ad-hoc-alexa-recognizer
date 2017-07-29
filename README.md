@@ -10,10 +10,10 @@
 
 npm module that provides NLP/NLU for easy implementation of chat bots and voice apps.
 These can run anywhere Node.js is running - backend, browser, mobile apps, etc. High performance run time
-only requires 2 lines of code to use - "require" to include it, and the actual call to analyze the text.
-Has many features - a rich set of built in intents and slots (roughly equivalent to Alexa's) with the
-ability to expand them, custom slots, slot flags, parametrized flags, transformation functions, SoundEx matching, wild
-card matching, option lists, text equivalents, unlimited sets of recognizers to build large segmented apps, performance
+only requires 2 lines of code to use it.
+Has a rich set of built in intents and extesivble slots (equivalent to Alexa's),
+custom slots, slot flags, parametrized flags, transformation functions, SoundEx matching, wild
+card matching, option lists, text equivalents set, unlimited sets of recognizers to build large segmented apps, performance
 optimization, large app modularization, etc.
 
 # What's in the name

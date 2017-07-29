@@ -1519,6 +1519,24 @@
     {"name":"W. H. 'Bud' Barron Airport","alternativeNames":["W. H. Bud Barron Airport", "W H 'Bud' Barron Airport", "W H Bud Barron Airport", "W. H. Barron Airport", "W H Barron Airport"],"priorNames":[],"country":"united states","state":"georgia"},
     {"name":"Heart of Georgia Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
     {"name":"Elbert County Airport","alternativeNames":["Patz Field"],"priorNames":[],"country":"united states","state":"georgia"},
-    {"name":"Gilmer County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"}
+    {"name":"Gilmer County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+
+    {"name":"Fitzgerald Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"MidCoast Regional Airport at Wright Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Lee Gilmer Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Greene County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Griffin-Spalding County Airport","alternativeNames":["Griffin Spalding County Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Atlanta South Regional Airport","alternativeNames":[],"priorNames":["Clayton County Airport"],"country":"united states","state":"georgia"},
+    {"name":"Hazlehurst Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Homerville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Pickens County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Jekyll Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Jesup-Wayne County Airport","alternativeNames":["Jesup Wayne County Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Barwick-LaFayette Airport","alternativeNames":["Barwick LaFayette Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"LaGrange-Callaway Airport","alternativeNames":["LaGrange-Callaway Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Louisville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Macon Downtown Airport","alternativeNames":[],"priorNames":["Herbert Smart Airport"],"country":"united states","state":"georgia"}
+
   ]
 }
