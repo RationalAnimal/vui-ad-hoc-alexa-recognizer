@@ -1555,7 +1555,22 @@
     {"name":"Richard B. Russell Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
     {"name":"Kaolin Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
     {"name":"St. Marys Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
-    {"name":"Statesboro-Bulloch County Airport","alternativeNames":["Statesboro Bulloch County Airport", "Bulloch County Airport", "Statesboro Airport"],"priorNames":[],"country":"united states","state":"georgia"}
+    {"name":"Statesboro-Bulloch County Airport","alternativeNames":["Statesboro Bulloch County Airport", "Bulloch County Airport", "Statesboro Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+
+    {"name":"East Georgia Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Plantation Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Sylvester Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Thomaston-Upson County Airport","alternativeNames":["Thomaston Upson County Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Thomasville Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Thomson-McDuffie County Airport","alternativeNames":["Thomson McDuffie County Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Henry Tift Myers Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Toccoa Airport","alternativeNames":["R.G. LeTourneau Field", "R. G. LeTourneau Field", "RG LeTourneau Field", "R G LeTourneau Field"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Vidalia Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Roosevelt Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Washington-Wilkes County Airport","alternativeNames":["Washington Wilkes County Airport", "Wilkes County Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Waycross-Ware County Airport","alternativeNames":["Waycross Ware County Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Burke County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"}
+
 
 
   ]

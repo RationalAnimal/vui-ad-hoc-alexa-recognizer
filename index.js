@@ -1543,33 +1543,55 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
 //    console.log("_matchTextDomain, 4");
     return undefined;
   }
-  if(typeof domainToUse.recognizers === "undefined" || Array.isArray(domainToUse.recognizers) === false){
+  if((typeof domainToUse.recognizers === "undefined" || Array.isArray(domainToUse.recognizers) === false) &&
+     (typeof domainToUse.domains     === "undefined" || Array.isArray(domainToUse.domains)     === false)){
 //    console.log("_matchTextDomain, 5");
     return undefined;
   }
   // Now populate all the recognizers.
   let recognizers = {};
 //  console.log("_matchTextDomain, 6");
-  for(let i = 0; i < domainToUse.recognizers.length; i ++){
+  if(typeof domainToUse.recognizers !== "undefined" && Array.isArray(domainToUse.recognizers)){
+    for(let i = 0; i < domainToUse.recognizers.length; i ++){
 //    console.log("_matchTextDomain, 7, i: " + i);
-    let currentRecognizer = domainToUse.recognizers[i];
-    if(typeof currentRecognizer.path === "string" && typeof currentRecognizer.key !== "undefined"){
-      try{
-        recognizers[currentRecognizer.key] = require(currentRecognizer.path);
+      let currentRecognizer = domainToUse.recognizers[i];
+      if(typeof currentRecognizer.path === "string" && typeof currentRecognizer.key !== "undefined"){
+        try{
+          recognizers[currentRecognizer.key] = require(currentRecognizer.path);
+        }
+        catch(e){
+          // TODO handle failure to load recognizer
+        }
       }
-      catch(e){
-        // TODO handle failure to load recognizer
+      else if(typeof currentRecognizer.recognizer === "object" && typeof currentRecognizer.key !== "undefined"){
+        recognizers[currentRecognizer.key] = currentRecognizer.recognizer;
       }
-    }
-    else if(typeof currentRecognizer.recognizer === "object" && typeof currentRecognizer.key !== "undefined"){
-      recognizers[currentRecognizer.key] = currentRecognizer.recognizer;
     }
   }
-  for (let key in recognizers) {
-    if (recognizers.hasOwnProperty(key)) {
+  // Now populate all the domains.
+  let domains = {};
+  if(typeof domainToUse.domains !== "undefined" && Array.isArray(domainToUse.domains)){
+    for(let i = 0; i < domainToUse.domains.length; i ++){
+      let currentDomain = domainToUse.domains[i];
+      if(typeof currentDomain.path === "string" && typeof currentDomain.key !== "undefined"){
+        try{
+          domains[currentDomain.key] = require(currentDomain.path);
+        }
+        catch(e){
+          // TODO handle failure to load recognizer
+        }
+      }
+      else if(typeof currentDomain.domain === "object" && typeof currentDomain.key !== "undefined"){
+        domains[currentDomain.key] = currentDomain.domain;
+      }
+    }
+  }
+
+//  for (let key in recognizers) {
+//    if (recognizers.hasOwnProperty(key)) {
 //      console.log("_matchTextDomain, 12, key: " + key);
-    }
-  }
+//    }
+//  }
 
   // Now actually try to get the match
   for(let i = 0; i < domainToUse.states.length; i++){
