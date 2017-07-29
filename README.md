@@ -49,8 +49,13 @@ npm install vui-ad-hoc-alexa-recognizer --save
 
 # Summary
 
-**Note: new "domain" functionality is in the process of being added.  It's built on top of what's described below.**
+This module provides the ability to match user's text input (possibly from speech to text source) to an intent with
+slot values as well as the ability to configure return values and state updates right within it.
+There are two levels of functionality - a lower level allowing a match of a string against a single recognizer, returning
+an intent match with parsed out slot values and a higher level "domain" functionality that allows configuring an
+entire app, returning not just a match but results and even updating the state.
 
+## Lower level functionality
 npm module that provides VUI (voice user interface) special ad-hoc recognizer
 designed to parse raw text from the user and map it to the Alexa intents.
 This could be useful in many cases.  If
@@ -134,6 +139,17 @@ is made to make the most likely match.
 Similarly, you can parse dates, etc. even if that's the only thing you want to do (e.g. you have an app where the user
 can type in a date - simply use vui-ad-hoc-alexa-recognizer to parse it and return a date).  Dates will match not only the
 exact date specification, but strings such as "today", etc.
+
+## Domain level functionality
+**Note: new "domain" functionality is in the process of being added, APIs will likely change somewhat.**
+
+Domains are a higher level of parsing than recognizers.  Domains do use "recognizer" parsing, but add the follow abilities:
+* define a list of recognizers to be used
+* define application state based conditions for using a particular match (e.g. only test against a particular recognizer if you are in a specific state)
+* allow returning of results in addition to simply matching on an intent (e.g. if the user says "How are you doing?", not only will it match on a greeting intent, but also will return "Good, and you?")
+* allow updating of the application state right within the matching code rather than having to write the extra code to do it (e.g. if the user says "My name is Bob" then some portion of the state will be set to "Bob" by the domain handling code)
+* allow nesting of the domains. This is particularly useful as whole types of interactions can be encapsulated as domains and then reused.  It also allows breaking large apps into smaller chunks, i.e. domains.
+
 
 # Usage
 
