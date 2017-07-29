@@ -1467,7 +1467,40 @@
     {"name":"Richmond Naval Air Station","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"Tampa Bay Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"florida"},
     {"name":"Northwest Florida Beaches International Airport","alternativeNames":[],"priorNames":["Panama City Bay County International Airport"],"country":"united states","state":"florida"},
-    {"name":"Tampa International Airport","alternativeNames":[],"priorNames":["Drew Field Municipal Airport"],"country":"united states","state":"florida"}
+    {"name":"Tampa International Airport","alternativeNames":[],"priorNames":["Drew Field Municipal Airport"],"country":"united states","state":"florida"},
+
+    {"name":"Southwest Georgia Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Hartsfield-Jackson Atlanta International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Augusta Regional Airport","alternativeNames":["Bush Field"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Brunswick Golden Isles Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Columbus Metropolitan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Savannah/Hilton Head International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Valdosta Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Athens-Ben Epps Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Middle Georgia Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"DeKalb-Peachtree Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Fulton County Airport","alternativeNames":["Charlie Brown Field"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Cobb County Airport","alternativeNames":["McCollum Field", "MacCollum Field"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Gwinnett County Airport","alternativeNames":["Briscoe Field"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Cook County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Bacon County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+
+    {"name":"Jimmy Carter Regional Airport","alternativeNames":["Souther Field"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Turner County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Paulding Northwest Atlanta Airport","alternativeNames":[],"priorNames":["Paulding County Regional"],"country":"united states","state":"georgia"},
+    {"name":"Newnan-Coweta County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Atlanta Regional Airport","alternativeNames":["Falcon Field"],"priorNames":["Peachtree City Airport"],"country":"united states","state":"georgia"},
+    {"name":"Daniel Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Decatur County Industrial Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Baxley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Blairsville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Early County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Malcolm McKinnon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Butler Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Cairo-Grady County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Tom B. David Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Camilla-Mitchell County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Franklin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"}
 
 
 
