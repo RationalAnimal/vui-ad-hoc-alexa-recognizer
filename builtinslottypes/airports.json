@@ -1500,9 +1500,25 @@
     {"name":"Cairo-Grady County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
     {"name":"Tom B. David Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
     {"name":"Camilla-Mitchell County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
-    {"name":"Franklin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"}
+    {"name":"Franklin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
 
-
-
+    {"name":"Cherokee County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"West Georgia Regional Airport","alternativeNames":["O.V. Gray Field", "OV Gray Field", "O. V. Gray Field", "O V Gray Field"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Cartersville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Polk County Airport","alternativeNames":["Cornelius Moore Field"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Claxton-Evans County Airport","alternativeNames":["Claxton Evans County Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Cochran Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Crisp County-Cordele Airport","alternativeNames":["Crisp County Cordele Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Habersham County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Covington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Lower Chattahoochee Regional Airport","alternativeNames":[],"priorNames":["Cuthbert-Randolph Airport", "Cuthbert Randolph Airport"],"country":"united states","state":"georgia"},
+    {"name":"Dalton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Dawson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Donalsonville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Douglas Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"W. H. 'Bud' Barron Airport","alternativeNames":["W. H. Bud Barron Airport", "W H 'Bud' Barron Airport", "W H Bud Barron Airport", "W. H. Barron Airport", "W H Barron Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Heart of Georgia Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Elbert County Airport","alternativeNames":["Patz Field"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Gilmer County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"}
   ]
 }
