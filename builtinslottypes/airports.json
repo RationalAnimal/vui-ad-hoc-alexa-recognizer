@@ -1569,7 +1569,37 @@
     {"name":"Roosevelt Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
     {"name":"Washington-Wilkes County Airport","alternativeNames":["Washington Wilkes County Airport", "Wilkes County Airport"],"priorNames":[],"country":"united states","state":"georgia"},
     {"name":"Waycross-Ware County Airport","alternativeNames":["Waycross Ware County Airport"],"priorNames":[],"country":"united states","state":"georgia"},
-    {"name":"Burke County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"}
+    {"name":"Burke County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+
+    {"name":"Marion County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Lumpkin County-Wimpys Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Davis Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Warner Robins Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Peach State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Rust Airstrip","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Lawson Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+
+    {"name":"Barrow County Airport","alternativeNames":[],"priorNames":["Winder-Barrow", "Winder Barrow"],"country":"united states","state":"georgia"},
+    {"name":"Wrens Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Hawkinsville-Pulaski County Airport","alternativeNames":["Hawkinsville Pulaski County Airport", "Pulaski County Airport"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Spence Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Peterson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Treutlen County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Berry Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Dobbins Air Reserve Base","alternativeNames":["NAS Atlanta"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Hunter Army Airfield","alternativeNames":["Fort Stewart"],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Moody Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Robins Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"South Fulton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Turner Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Naval Air Station Glynco","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Naval Air Station Atlanta","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"McKenna Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Morris Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+    {"name":"Liberty County Airpor","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"}
+
+
+
 
 
 
