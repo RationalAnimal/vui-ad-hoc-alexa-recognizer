@@ -1596,7 +1596,20 @@
     {"name":"Naval Air Station Atlanta","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
     {"name":"McKenna Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
     {"name":"Morris Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
-    {"name":"Liberty County Airpor","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"}
+    {"name":"Liberty County Airpor","alternativeNames":[],"priorNames":[],"country":"united states","state":"georgia"},
+
+    {"name":"Hilo International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Daniel K. Inouye International Airport","alternativeNames":["Daniel K Inouye International Airport", "Daniel Inouye International Airport"],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Kahului Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Kona International Airport at Keahole","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Molokai Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Lanai Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Lihue Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Hana Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Kalaupapa Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Waimea-Kohala Airport","alternativeNames":["Waimea Kohala Airport"],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Kapalua Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"}
+
 
 
 
