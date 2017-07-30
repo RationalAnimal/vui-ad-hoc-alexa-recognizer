@@ -1608,7 +1608,26 @@
     {"name":"Hana Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
     {"name":"Kalaupapa Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
     {"name":"Waimea-Kohala Airport","alternativeNames":["Waimea Kohala Airport"],"priorNames":[],"country":"united states","state":"hawaii"},
-    {"name":"Kapalua Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"}
+    {"name":"Kapalua Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+
+    {"name":"Kalaeloa Airport","alternativeNames":["John Rodgers Field"],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Port Allen Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Upolu Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Dillingham Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Hickam Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"NALF Ford Island","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"MCAF Kaneohe Bay","alternativeNames":["Marine Corps Base Hawaii"],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Pacific Missile Range Facility at Barking Sands","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Bradshaw Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"French Frigate Shoals Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Wheeler Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Princeville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"MCAS Ewa","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Morse Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Old Kona Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Kaanapali Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+    {"name":"Stanley Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"}
+
 
 
 
