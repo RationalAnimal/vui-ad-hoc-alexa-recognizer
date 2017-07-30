@@ -1626,7 +1626,16 @@
     {"name":"Morse Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
     {"name":"Old Kona Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
     {"name":"Kaanapali Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
-    {"name":"Stanley Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"}
+    {"name":"Stanley Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"hawaii"},
+
+    {"name":"Boise Airport","alternativeNames":["Boise Air Terminal","Gowen Field"],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Friedman Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Idaho Falls Regional Airport","alternativeNames":["Fanning Field"],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Lewiston-Nez Perce County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Pocatello Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Magic Valley Regional Airport","alternativeNames":["Joslin Field"],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Caldwell Industrial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Aberdeen Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"}
 
 
 
