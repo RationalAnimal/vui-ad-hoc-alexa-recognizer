@@ -1660,7 +1660,28 @@
     {"name":"Orofino Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
     {"name":"Bear Lake County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
     {"name":"Preston Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
-    {"name":"Priest River Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"}
+    {"name":"Priest River Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+
+    {"name":"Rexburg-Madison County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Lemhi County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Sandpoint Airport","alternativeNames":["Dave Wall Field"],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"St. Maries Municipal Airport","alternativeNames":["Saint Maries Municipal Airport"],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Weiser Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"American Falls Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Atlanta Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Midway Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Big Southern Butte Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Coxs Well Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Bancroft Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Big Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Carey Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Tanglefoot Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Lower Loon Creek Airport","alternativeNames":[],"priorNames":["Lower Loon Creek USFS Airport", "Lower Loon Creek Airport"],"country":"united states","state":"idaho"},
+    {"name":"Magee Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Brooks Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Cavanaugh Bay Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Cottonwood Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Donald D. Coski Memorial Airport","alternativeNames":["Donald D Coski Memorial Airport", "Donald Coski Memorial Airport"],"priorNames":[],"country":"united states","state":"idaho"}
 
 
 
