@@ -1635,7 +1635,32 @@
     {"name":"Pocatello Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
     {"name":"Magic Valley Regional Airport","alternativeNames":["Joslin Field"],"priorNames":[],"country":"united states","state":"idaho"},
     {"name":"Caldwell Industrial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
-    {"name":"Aberdeen Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"}
+    {"name":"Aberdeen Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+
+    {"name":"Arco-Butte County Airport","alternativeNames":["Pope Field"],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"McCarley Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Boundary County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Buhl Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Burley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Cascade Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Challis Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Coeur d'Alene Airport","alternativeNames":["Pappy Boyington Field"],"priorNames":["Coeur d'Alene Air Terminal"],"country":"united states","state":"idaho"},
+    {"name":"Council Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Craigmont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Driggs-Reed Memorial Airport","alternativeNames":["Driggs Reed Memorial Airport"],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Gooding Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Idaho County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Homedale Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Jerome County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Kamiah Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Shoshone County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"McCall Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Mountain Home Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Nampa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Orofino Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Bear Lake County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Preston Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Priest River Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"}
 
 
 
