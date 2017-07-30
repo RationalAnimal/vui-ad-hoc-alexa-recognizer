@@ -1681,7 +1681,37 @@
     {"name":"Brooks Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
     {"name":"Cavanaugh Bay Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
     {"name":"Cottonwood Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
-    {"name":"Donald D. Coski Memorial Airport","alternativeNames":["Donald D Coski Memorial Airport", "Donald Coski Memorial Airport"],"priorNames":[],"country":"united states","state":"idaho"}
+    {"name":"Donald D. Coski Memorial Airport","alternativeNames":["Donald D Coski Memorial Airport", "Donald Coski Memorial Airport"],"priorNames":[],"country":"united states","state":"idaho"},
+
+    {"name":"Downey / Hyde Memorial Airport","alternativeNames":["Downey Hyde Memorial Airport"],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Dubois Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Elk City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Emmett Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Camas County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Garden Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Lake Pend Oreille Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Glenns Ferry Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Grasmere Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Antelope Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Magic Reservoir Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Hazelton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Howe Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Golden Age Mine Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Twin Bridges Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Laidlaw Corrals Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Kooskia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Henry's Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Leadore Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Snake River Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Warm Springs Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Mackay Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Copper Basin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Malad City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Hollow Top Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"May Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Lee Williams Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Bear Trap Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"}
+
 
 
 
