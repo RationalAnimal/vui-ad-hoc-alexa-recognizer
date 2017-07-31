@@ -1626,7 +1626,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
             let scratchDomain = domains[state.matchSpecs[j].domain];
             let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, applicationState);
             if(typeof result !== "undefined" && result !== null){
-              return {"match": result};
+              return result;
             }
           }
         }

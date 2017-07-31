@@ -2431,6 +2431,28 @@ describe("domain parsing", function() {
       );
     });
 
+    it("verify domain with subdomain parses", function () {
+      let domain = require("../test/blahblahdomain/blahblahdomain.json");
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+      let stateAccessor = function(state, selector){
+        return state[selector];
+      };
+      let result = recognizer.Recognizer.matchDomain("good morning to you", domain, stateAccessor, applicationState);
+      expect(result).to.eql(
+        {"match":
+          {
+            "name": "GrumbleIntent",
+            "slots": {}
+          }
+        }
+      );
+    });
+
   });
 });
 
