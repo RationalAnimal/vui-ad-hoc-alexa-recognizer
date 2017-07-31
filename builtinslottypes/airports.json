@@ -1793,7 +1793,29 @@
     {"name":"Ingersoll Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Southern Illinois Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Carmi Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
-    {"name":"Casey Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"}
+    {"name":"Casey Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+
+    {"name":"Centralia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Vermilion Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"DeKalb Taylor Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Dixon Municipal Airport","alternativeNames":["Charles R Walgreen Field", "Charles Walgreen Field", "Charles R. Walgreen Field"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Effingham County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Fairfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Flora Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Albertus Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Galesburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Campbell Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Greenville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Galt Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Harrisburg-Raleigh Airport","alternativeNames":["Harrisburg Raleigh Airport"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Dacy Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Havana Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Jacksonville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Joliet Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Greater Kankakee Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Kewanee Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Marshall County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"}
+
 
 
 
