@@ -1729,7 +1729,25 @@
     {"name":"Allen H. Tigert Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
     {"name":"Stanford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
     {"name":"Smiley Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
-    {"name":"Bruce Meadows Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"}
+    {"name":"Bruce Meadows Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+
+    {"name":"Stanley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Thomas Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Murphy Hot Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Johnson Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Reed Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Graham USFS Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Weatherby USFS Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Bernard USFS Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Cabin Creek USFS Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Cayuse Creek USFS Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Upper Loon Creek USFS Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Chamberlain USFS Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Cold Meadows USFS Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Dixie USFS Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Wilson Bar USFS Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Fish Lake USFS Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Idaho City USFS Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"}
 
 
 
