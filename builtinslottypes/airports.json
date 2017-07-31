@@ -1761,7 +1761,21 @@
     {"name":"Mountain Home Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
     {"name":"Pisch's Place Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
     {"name":"Lava Hot Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
-    {"name":"Strawberry Glenn Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"}
+    {"name":"Strawberry Glenn Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+
+    {"name":"MidAmerica St. Louis Airport / Scott Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Central Illinois Regional Airport at Bloomington-Normal","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"University of Illinois - Willard Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Chicago O'Hare International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Chicago Midway International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Williamson County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Quad City International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"General Wayne A. Downing Peoria International Airport","alternativeNames":["General Wayne A Downing Peoria International Airport", "General Wayne Downing Peoria International Airport"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Quincy Regional Airport","alternativeNames":["Baldwin Field"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Chicago Rockford International Airport","alternativeNames":[],"priorNames":["Northwest Chicagoland Regional Airport at Rockford"],"country":"united states","state":"illinois"},
+    {"name":"Abraham Lincoln Capital Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Decatur Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"}
+
 
 
 
