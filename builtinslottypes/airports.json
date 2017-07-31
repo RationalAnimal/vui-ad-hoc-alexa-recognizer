@@ -1814,7 +1814,21 @@
     {"name":"Joliet Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Greater Kankakee Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Kewanee Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
-    {"name":"Marshall County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"}
+    {"name":"Marshall County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+
+    {"name":"Lawrenceville-Vincennes International Airport","alternativeNames":["Lawrenceville Vincennes International Airport"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Logan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Litchfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Macomb Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Coles County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Metropolis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Bult Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Monmouth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Piatt County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Morris Municipal Airport","alternativeNames":["James R. Washburn Field", "James R Washburn Field", "James Washburn Field"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Mount Carmel Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Mount Sterling Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"}
+
 
 
 
