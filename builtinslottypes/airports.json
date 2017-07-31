@@ -1710,7 +1710,26 @@
     {"name":"Hollow Top Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
     {"name":"May Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
     {"name":"Lee Williams Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
-    {"name":"Bear Trap Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"}
+    {"name":"Bear Trap Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+
+    {"name":"Mud Lake Airport","alternativeNames":["West Jefferson County Airport"],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Murphy Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"New Meadows Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Nez Perce Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Oakley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Orogrande Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Parma Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Payette Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Pine Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Eckhart International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Smith Prairie Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Rigby Airport","alternativeNames":["Rigby Jefferson County Airport", "Rigby-Jefferson County Airport"],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Rockford Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Slate Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Allen H. Tigert Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Stanford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Smiley Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"},
+    {"name":"Bruce Meadows Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"idaho"}
 
 
 
