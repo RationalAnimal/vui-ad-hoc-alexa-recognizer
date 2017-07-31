@@ -1774,7 +1774,26 @@
     {"name":"Quincy Regional Airport","alternativeNames":["Baldwin Field"],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Chicago Rockford International Airport","alternativeNames":[],"priorNames":["Northwest Chicagoland Regional Airport at Rockford"],"country":"united states","state":"illinois"},
     {"name":"Abraham Lincoln Capital Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
-    {"name":"Decatur Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"}
+    {"name":"Decatur Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+
+    {"name":"St. Louis Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Aurora Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"St. Louis Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Lake in the Hills Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Lansing Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Chicago Executive Airport","alternativeNames":[],"priorNames":["Palwaukee Municipal Airport"],"country":"united states","state":"illinois"},
+    {"name":"Lewis University Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Waukegan Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"DuPage Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Mercer County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Greater Beardstown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Benton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Bolingbrook's Clow International Airport","alternativeNames":["Bolingbrooks Clow International Airport"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Cairo Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Ingersoll Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Southern Illinois Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Carmi Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Casey Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"}
 
 
 
