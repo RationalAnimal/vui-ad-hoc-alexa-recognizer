@@ -1906,6 +1906,27 @@
     {"name":"South Bend International Airport","alternativeNames":[],"priorNames":["South Bend Regional"],"country":"united states","state":"indiana"},
     {"name":"Gary/Chicago International Airport","alternativeNames":["Gary Chicago International Airport"],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Griffith-Merrillville Airport","alternativeNames":["Griffith Merrillville Airport"],"priorNames":[],"country":"united states","state":"indiana"},
-    {"name":"Eagle Creek Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
+    {"name":"Eagle Creek Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+
+    {"name":"Hendricks County Airport","alternativeNames":["Gordon Graham Field"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Indianapolis Metropolitan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Indianapolis Regional Airport","alternativeNames":[],"priorNames":["Mount Comfort Airport"],"country":"united states","state":"indiana"},
+    {"name":"Indianapolis Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Clark Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Anderson Municipal Airport","alternativeNames":["Darlington Field"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Tri-State Steuben County Airport","alternativeNames":["Tri State Steuben County Airport"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"DeKalb County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Virgil I. Grissom Municipal Airport","alternativeNames":["Virgil I Grissom Municipal Airport", "Virgil Grissom Municipal Airport"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Monroe County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Columbus Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Mettel Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Crawfordsville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Delphi Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Elkhart Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Smith Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Frankfort Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"French Lick Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Goshen Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Putnam County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
   ]
 }
