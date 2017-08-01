@@ -1854,7 +1854,24 @@
     {"name":"Crawford County Airport","alternativeNames":[],"priorNames":["Robinson Municipal"],"country":"united states","state":"illinois"},
     {"name":"Rochelle Municipal Airport","alternativeNames":["Koritz Field"],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Salem-Leckrone Airport","alternativeNames":["Salem Leckrone Airport"],"priorNames":[],"country":"united states","state":"illinois"},
-    {"name":"Tri-Township Airport","alternativeNames":["Tri Township Airport"],"priorNames":[],"country":"united states","state":"illinois"}
+    {"name":"Tri-Township Airport","alternativeNames":["Tri Township Airport"],"priorNames":[],"country":"united states","state":"illinois"},
+
+    {"name":"Schaumburg Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Schaumburg Municipal Helistop","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Shelby County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Sparta Community Airport","alternativeNames":["Hunter Field"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"St. Louis Metro-East Airport","alternativeNames":["Shafer Field", "St Louis Metro-East Airport", "Saint Louis Metro-East Airport", "St. Louis Metro East Airport", "St Louis Metro East Airport", "Saint Louis Metro East Airport"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Whiteside County Airport","alternativeNames":["Joseph H Bittorf Field"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Taylorville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Tuscola Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Vandalia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Foster Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Sackman Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Bresson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Dwight Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Erie Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Freeport/Dornink Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Gen-Airpark","alternativeNames":["Gen Airpark"],"priorNames":[],"country":"united states","state":"illinois"}
 
 
 
