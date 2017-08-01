@@ -1884,6 +1884,20 @@
     {"name":"Zelmer Memorial Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Paxton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Cottonwood Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
-    {"name":"Schuy-Rush Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"}
+    {"name":"Schuy-Rush Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+
+    {"name":"Frasca Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Percival Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Tri-County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Rinkenberger RLA Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Palmer Flying Service Airport","alternativeNames":["Manito Mitchell Airport"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Carthage Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Meigs Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Crestwood/Howell Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Earlville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Hillsboro Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Howell-New Lenox Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Springfield Commercial Southwest Municipal Airport","alternativeNames":["Springfield Southwest Municipal Airport"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Bosa Field/Lindbergh Field","alternativeNames":["Bosa Field Lindbergh Field", "Bosa Field", "Lindbergh Field"],"priorNames":[],"country":"united states","state":"illinois"}
   ]
 }
