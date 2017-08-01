@@ -1827,7 +1827,35 @@
     {"name":"Piatt County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Morris Municipal Airport","alternativeNames":["James R. Washburn Field", "James R Washburn Field", "James Washburn Field"],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Mount Carmel Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
-    {"name":"Mount Sterling Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"}
+    {"name":"Mount Sterling Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+
+    {"name":"Mount Vernon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Olney-Noble Airport","alternativeNames":["Olney Noble Airport"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Edgar County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Pekin Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Mount Hawley Auxiliary Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Illinois Valley Regional Airport","alternativeNames":["Walter A. Duncan Field", "Walter A Duncan Field", "Walter Duncan Field"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Pinckneyville-DuQuoin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Pittsfield Penstone Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Pontiac Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Poplar Grove Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+
+    {"name":"Mount Vernon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Olney-Noble Airport","alternativeNames":["Olney Noble Airport"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Edgar County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Pekin Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Mount Hawley Auxiliary Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Illinois Valley Regional Airport","alternativeNames":["Walter A. Duncan Field", "Walter A Duncan Field", "Walter Duncan Field"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Pinckneyville-DuQuoin Airport","alternativeNames":["Pinckneyville-DuQuoin Airport"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Pittsfield Penstone Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Pontiac Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Poplar Grove Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Rantoul National Aviation Center","alternativeNames":[],"priorNames":["Frank Elliott Field"],"country":"united states","state":"illinois"},
+    {"name":"Crawford County Airport","alternativeNames":[],"priorNames":["Robinson Municipal"],"country":"united states","state":"illinois"},
+    {"name":"Rochelle Municipal Airport","alternativeNames":["Koritz Field"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Salem-Leckrone Airport","alternativeNames":["Salem Leckrone Airport"],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Tri-Township Airport","alternativeNames":["Tri Township Airport"],"priorNames":[],"country":"united states","state":"illinois"}
+
 
 
 
