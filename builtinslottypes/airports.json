@@ -1898,6 +1898,21 @@
     {"name":"Hillsboro Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Howell-New Lenox Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Springfield Commercial Southwest Municipal Airport","alternativeNames":["Springfield Southwest Municipal Airport"],"priorNames":[],"country":"united states","state":"illinois"},
-    {"name":"Bosa Field/Lindbergh Field","alternativeNames":["Bosa Field Lindbergh Field", "Bosa Field", "Lindbergh Field"],"priorNames":[],"country":"united states","state":"illinois"}
+    {"name":"Bosa Field/Lindbergh Field","alternativeNames":["Bosa Field Lindbergh Field", "Bosa Field", "Lindbergh Field"],"priorNames":[],"country":"united states","state":"illinois"},
+
+    {"name":"MidAmerica St. Louis Airport / Scott Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Central Illinois Regional Airport at Bloomington-Normal","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"University of Illinois - Willard Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Chicago O'Hare International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Chicago Midway International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Williamson County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Quad City International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"General Wayne A. Downing Peoria International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Quincy Regional Airport","alternativeNames":["Baldwin Field"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Chicago Rockford International Airport","alternativeNames":[],"priorNames":["Northwest Chicagoland Regional Airport at Rockford", "Northwest Chicagoland Regional Airport"],"country":"united states","state":"indiana"},
+    {"name":"Abraham Lincoln Capital Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Decatur Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"St. Louis Regional Airport","alternativeNames":["St Louis Regional Airport", "Saint Louis Regional Airport"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Aurora Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
   ]
 }
