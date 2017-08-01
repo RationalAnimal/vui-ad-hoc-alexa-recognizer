@@ -1871,20 +1871,19 @@
     {"name":"Dwight Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Erie Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
     {"name":"Freeport/Dornink Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
-    {"name":"Gen-Airpark","alternativeNames":["Gen Airpark"],"priorNames":[],"country":"united states","state":"illinois"}
+    {"name":"Gen-Airpark","alternativeNames":["Gen Airpark"],"priorNames":[],"country":"united states","state":"illinois"},
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    {"name":"Highland-Winet Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Hinckley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Kankakee Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Hartenbower Hectares Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Grandpa's Farm Mendota Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Ogle County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Cushing Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Skydive Chicago Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Zelmer Memorial Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Paxton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Cottonwood Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"},
+    {"name":"Schuy-Rush Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"illinois"}
   ]
 }
