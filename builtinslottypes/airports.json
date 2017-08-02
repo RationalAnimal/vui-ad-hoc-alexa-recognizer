@@ -2076,7 +2076,20 @@
     {"name":"Fairfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Forest City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Fort Madison Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
-    {"name":"Greenfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
+    {"name":"Greenfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
 
+    {"name":"Grinnell Regional Airport","alternativeNames":[],"priorNames":["Grinnell Municipal"],"country":"united states","state":"iowa"},
+    {"name":"Guthrie County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Hampton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Harlan Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Humboldt Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Independence Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Iowa City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Iowa Falls Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Jefferson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Keokuk Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Knoxville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Lamoni Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Le Mars Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
   ]
 }
