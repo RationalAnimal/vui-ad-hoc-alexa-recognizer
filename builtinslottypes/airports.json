@@ -2020,6 +2020,23 @@
     {"name":"Walker/Rowe Waterloo Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Westfield Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Bass Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
-    {"name":"Winona Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
+    {"name":"Winona Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+
+    {"name":"Grissom Joint Air Reserve Base / Grissom Aeroplex","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Hillenbrand Industries Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Gardner Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Boyer Flight Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Wheeler Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Lou Abbett Farms Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Morrison Flight Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Ed-Air Airport","alternativeNames":["Ed Air Airport"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Ralph E. Koch Airport","alternativeNames":["Ralph E Koch Airport", "Ralph Koch Airport"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Harrold Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Decatur Hi-Way Airport","alternativeNames":["Decatur Hi Way Airport", "Decatur HiWay Airport", "Decatur High Way Airport"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Elwood Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Action Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Aretz Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Speedway Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"O'Neal Airport","alternativeNames":["ONeal Airport"],"priorNames":[],"country":"united states","state":"indiana"}
   ]
 }
