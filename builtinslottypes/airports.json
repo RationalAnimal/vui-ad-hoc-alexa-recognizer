@@ -1990,7 +1990,23 @@
     {"name":"Pam's Place Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Skylane Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Flora Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
-    {"name":"Franklin Flying Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
+    {"name":"Franklin Flying Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+
+    {"name":"Patoka Reservoir Landing Area","alternativeNames":["Patoka Reservoir Seaplane Base"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Galveston Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Pope Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Hagerstown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Hamilton Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Lee Bottom Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Hobart Sky Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Post-Air Airport","alternativeNames":["Post Air Airport"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Glenndale Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Lake Village Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Boone County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Lowell Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Mentone Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Reese Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
+
 
 
   ]
