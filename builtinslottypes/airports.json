@@ -2037,6 +2037,21 @@
     {"name":"Action Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Aretz Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Speedway Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
-    {"name":"O'Neal Airport","alternativeNames":["ONeal Airport"],"priorNames":[],"country":"united states","state":"indiana"}
+    {"name":"O'Neal Airport","alternativeNames":["ONeal Airport"],"priorNames":[],"country":"united states","state":"indiana"},
+
+    {"name":"The Eastern Iowa Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Des Moines International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Dubuque Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Sioux Gateway Airport","alternativeNames":["Col. Bud Day Field", "Colonel Bud Day Field", "Col Bud Day Field", "Bud Day Field"],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Waterloo Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Southeast Iowa Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Fort Dodge Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Mason City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Ankeny Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Albia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Algona Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Ames Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Atlantic Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
+
   ]
 }
