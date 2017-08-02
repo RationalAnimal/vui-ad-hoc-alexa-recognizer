@@ -1960,6 +1960,25 @@
     {"name":"Freeman Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Shelbyville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Sheridan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
-    {"name":"Sullivan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
+    {"name":"Sullivan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+
+    {"name":"Perry County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Terre Haute International Airport","alternativeNames":["Hulman Field"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Porter County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Wabash Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Warsaw Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Daviess County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Arens Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Randolph County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Alexandria Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Crooked Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Lake James Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Lake Pleasant Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Shawnee Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Lake Monroe Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Miller Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Boonville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Brazil Clay County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
+
   ]
 }
