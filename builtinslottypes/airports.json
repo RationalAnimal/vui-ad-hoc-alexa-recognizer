@@ -1942,7 +1942,24 @@
     {"name":"Purdue University Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Logansport/Cass County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Madison Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
-    {"name":"Marion Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
+    {"name":"Marion Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
 
+    {"name":"Michigan City Municipal Airport","alternativeNames":["Phillips Field"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"White County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Delaware County Regional Airport","alternativeNames":[],"priorNames":["Delaware County Airport"],"country":"united states","state":"indiana"},
+    {"name":"New Castle-Henry County Municipal Airport","alternativeNames":["New Castle Henry County Municipal Airport"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"North Vernon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Paoli Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Peru Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Plymouth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Portland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Jasper County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Richmond Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Fulton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Salem Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Freeman Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Shelbyville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Sheridan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Sullivan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
   ]
 }
