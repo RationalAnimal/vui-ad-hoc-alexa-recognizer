@@ -2051,7 +2051,16 @@
     {"name":"Albia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Algona Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Ames Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
-    {"name":"Atlantic Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
+    {"name":"Atlantic Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+
+    {"name":"Audubon County Airport","alternativeNames":[],"priorNames":["Audubon Municipal"],"country":"united states","state":"iowa"},
+    {"name":"Belle Plaine Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Bloomfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Boone Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Arthur N. Neu Airport","alternativeNames":["Arthur N Neu Airport", "Arthur Neu Airport"],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Centerville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Chariton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
+
 
   ]
 }
