@@ -2059,8 +2059,24 @@
     {"name":"Boone Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Arthur N. Neu Airport","alternativeNames":["Arthur N Neu Airport", "Arthur Neu Airport"],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Centerville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
-    {"name":"Chariton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
+    {"name":"Chariton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
 
+    {"name":"Northeast Iowa Regional Airport","alternativeNames":[],"priorNames":["Charles City Municipal"],"country":"united states","state":"iowa"},
+    {"name":"Cherokee County Regional Airport","alternativeNames":[],"priorNames":["Cherokee Municipal"],"country":"united states","state":"iowa"},
+    {"name":"Schenck Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Clarion Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Clinton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Council Bluffs Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Creston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Davenport Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Decorah Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Denison Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Emmetsburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Estherville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Fairfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Forest City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Fort Madison Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Greenfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
 
   ]
 }
