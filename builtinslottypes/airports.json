@@ -1978,7 +1978,20 @@
     {"name":"Lake Monroe Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Miller Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Boonville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
-    {"name":"Brazil Clay County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
+    {"name":"Brazil Clay County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+
+    {"name":"Brookville Reservoir Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Holiday Inn Lakeview Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Clear Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Clinton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Converse Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Lake Maxinkuckee Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Mishawaka Pilots Club Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Pam's Place Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Skylane Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Flora Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Franklin Flying Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
+
 
   ]
 }
