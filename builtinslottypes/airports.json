@@ -1927,6 +1927,22 @@
     {"name":"Frankfort Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"French Lick Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Goshen Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
-    {"name":"Putnam County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
+    {"name":"Putnam County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+
+    {"name":"Greensburg Municipal Airport","alternativeNames":[],"priorNames":["Greensburg-Decatur County", "Greensburg Decatur County"],"country":"united states","state":"indiana"},
+    {"name":"Huntingburg Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Huntington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Indianapolis Downtown Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Greenwood Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Kendallville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Kentland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Starke County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Kokomo Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"La Porte Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Purdue University Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Logansport/Cass County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Madison Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Marion Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
+
   ]
 }
