@@ -2005,9 +2005,21 @@
     {"name":"Boone County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Lowell Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
     {"name":"Mentone Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
-    {"name":"Reese Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
+    {"name":"Reese Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
 
-
-
+    {"name":"Nappanee Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Noblesville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Orleans Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Mississinewa Reservoir Landing Area","alternativeNames":["Mississinewa Reservoir Seaplane Base"],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Scottsburg Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Lake Wawasee Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Sky King Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Flying U Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Robinson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Tippecanoe Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Walker/Rowe Waterloo Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Westfield Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Bass Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"},
+    {"name":"Winona Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"indiana"}
   ]
 }
