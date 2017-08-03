@@ -2136,7 +2136,24 @@
     {"name":"Dyersville Area Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Eagle Grove Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Eldora Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
-    {"name":"Elkader Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
+    {"name":"Elkader Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+
+    {"name":"Grundy Center Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Hawarden Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Ida Grove Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Keosauqua Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Lake Mills Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Zangger Vintage Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Manchester Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Marion Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Fuller Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Monona Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Sig Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Mount Ayr Municipal Airport","alternativeNames":["Judge Lewis Field"],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"New Hampton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Northwood Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Onawa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Osage Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
 
 
   ]

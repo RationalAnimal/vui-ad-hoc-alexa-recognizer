@@ -11,7 +11,7 @@
 npm module that provides NLP/NLU for easy implementation of chat bots and voice apps.
 These can run anywhere Node.js is running - backend, browser, mobile apps, etc. High performance run time
 only requires 2 lines of code to use it.
-Has a rich set of built in intents and extesivble slots (equivalent to Alexa's),
+Has a rich set of built in intents and extensible slots (equivalent to Alexa's),
 custom slots, slot flags, parametrized flags, transformation functions, SoundEx matching, wild
 card matching, option lists, text equivalents set, unlimited sets of recognizers to build large segmented apps, performance
 optimization, large app modularization, etc.
@@ -36,7 +36,7 @@ found in the builtinslottypes directory (e.g. colors.json) use values taken from
 and thus they are licensed under Creative Commons Attribution-ShareAlike license.
 Such files have appropriate attribution and license information within them.
 If you don't wish to deal with these licenses, simply delete such file(s) from
-the builtinslottype directory.  You will need to provide your own versions of
+the builtinslottypes directory.  You will need to provide your own versions of
 these files.  Note that only some of those files have a
 different license - you DON'T need to delete the entire directory to remove them.
 Simply search in builtinslottypes directory for "license" and/or "attribution"
@@ -169,10 +169,10 @@ Alexa skill or will need to create if you don't have any yet
 (these are NOT complete files, you can find the complete sample
 files in the test directory):
 
-````shell
+```shell
 cat test/utterances.txt
-````
-````
+```
+```
 TestIntent test
 TestIntent test me
 TestIntent test please
@@ -185,11 +185,11 @@ StateIntent New England includes {StateSlot} as one of its states
 BlahIntent here is my number {BlahSlot}, use it wisely. And here is another one {BlehSlot}, don't squander it
 BlahIntent here is {BlahSlot} and {BlehSlot}
 AnotherIntent First is {SomeSlot} and then there is {SomeOtherSlot}
-````
-````shell
+```
+```shell
 cat test/intents.json
-````
-````json
+```
+```json
 {
   "intents": [
     {
@@ -242,18 +242,17 @@ cat test/intents.json
     }
   ]
 }
-
-````
+```
 and also here is an example of a custom slot type file:
 
-````shell
+```shell
 cat test/minions.txt
-````
-````
+```
+```
 Bob
 Steve
 Stewart
-````
+```
 
 ### BETA InteractionModel.js file support
 
@@ -271,9 +270,9 @@ The first step is to generate a run time file - recognizer.json.  This file has
 all the information that is needed to parse user text later.  To create it, run
 the generator, e.g.:
 
-````shell
+```shell
 node generator.js --intents test/intents.json --utterances test/utterances.txt --config test/config.json
-````
+```
  (the example intents.json, utterances.txt, and config.json files are included in the test directory)
 This will produce a recognizer.json in the current directory.
 
@@ -292,9 +291,9 @@ developer console.
 
 For usage, simply run the generator without any arguments:
 
-````shell
+```shell
 node generator.js
-````
+```
 
 Note here that you should already have the intents.json and utterances.txt files
 as these files are used to configure the Alexa skill.  config.json is optional,
@@ -349,6 +348,7 @@ Similarly you can affect built in slot types using config:
   ]
 }
 ```
+
 This will add "Prince Abubu" and whatever names are found in test/usFirstNameExtendedValues.txt
 file to the list of first names recognized by the AMAZON.US_FIRST_NAME slot.
 
@@ -398,12 +398,13 @@ node matcher.js "Bob" "./recognizer.json"
 
 or try
 
-````shell
+```shell
 node matcher.js "here is four hundred eighty eight million three hundred fifty two thousand five hundred twelve and also six oh three five five five one two one two"
-````
+```
+
 which will produce:
 
-````json
+```json
 {
   "name": "BlahIntent",
   "slots": {
@@ -417,15 +418,16 @@ which will produce:
     }
   }
 }
-````
+```
 
 
-````shell
+```shell
 node matcher.js "thirty five fifty one"
-````
+```
+
 which will produce:
 
-````json
+```json
 {
   "name": "FourDigitIntent",
   "slots": {
@@ -435,26 +437,27 @@ which will produce:
     }
   }
 }
-````
+```
 
-````shell
+```shell
 node matcher.js "sure"
-````
+```
+
 which will produce:
 
-````json
+```json
 {
   "name": "AMAZON.YesIntent",
   "slots": {}
 }
-````
+```
 
-````shell
+```shell
 node matcher.js "New England includes New Hampshire as one of its states"
-````
+```
 which will produce:
 
-````json
+```json
 {
   "name": "StateIntent",
   "slots": {
@@ -464,14 +467,15 @@ which will produce:
     }
   }
 }
-````
+```
 
-````shell
+```shell
 node matcher.js "My first name is Jim"
-````
+```
+
 which will produce:
 
-````json
+```json
 {
   "name": "FirstNameIntent",
   "slots": {
@@ -482,14 +486,15 @@ which will produce:
   }
 }
 
-````
+```
 
-````shell
+```shell
 node matcher.js "December thirty first nineteen ninety nine"
-````
+```
+
 which will produce:
 
-````json
+```json
 {
   "name": "DateIntent",
   "slots": {
@@ -499,14 +504,15 @@ which will produce:
     }
   }
 }
-````
+```
 
-````shell
+```shell
 node matcher.js "lets do it on tuesday"
-````
+```
+
 which will produce:
 
-````json
+```json
 {
   "name": "DayOfWeekIntent",
   "slots": {
@@ -516,8 +522,7 @@ which will produce:
     }
   }
 }
-````
-
+```
 
 Please note that matcher.js is just a convenience and also serves as an example.
 You will NOT be using it at run time (most likely, though some might find the use
@@ -526,10 +531,10 @@ for it).
 You will probably deploy your code (that uses the parser) to some middleware
 layer, like this:
 
-````
+```
 Alexa  -------------->    Alexa   <-- middleware <---- Cortana
 Skill  <-------------- AWS Lambda --> AWS Lambda ---->  Skill
-````
+```
 
 Where in the middleware AWS Lambda (exposed via API Gateway) you will be able to
 see the raw user text from Cortana (passed as the "message" field in the request),
@@ -561,9 +566,9 @@ standard algorithm.  For example, if you are trying to get the user's first name
 you may way to match on ANYTHING the user says so that unusual names are matched.
 In this case you can modify your utterances file to include special flags, e.g.:
 
-````
+```
 FirstNameIntent My first name is {FirstNameSlot: INCLUDE_WILDCARD_MATCH, EXCLUDE_VALUES_MATCH }
-````
+```
 
 These flags will be used in parsing. Here are the different currently available
 flags:
@@ -616,9 +621,9 @@ EXCLUDE_WILDCARD_MATCH is used.
 Also note that you have to be very careful when using wildcards.  For example,
 imagine this utterance instead of the above example:
 
-````
+```
 FirstNameIntent {FirstNameSlot:INCLUDE_WILDCARD_MATCH,EXCLUDE_VALUES_MATCH}
-````
+```
 
 This will match on ANYTHING the user says.  So, DON'T use wildcards in "naked"
 utterances (ones that use nothing but slots) unless you are absolutely SURE that
@@ -875,12 +880,12 @@ want to test it with matcher.js you have to either escape the $ character or
 enclose the whole string in '' rather than "" to avoid command line handling
 of $)
 
-````shell
+```shell
 node matcher.js 'the first price is $1000 and the second price is $525000'
-````
+```
 which will produce:
 
-````json
+```json
 {
   "name": "PriceIntent",
   "slots": {
@@ -894,15 +899,15 @@ which will produce:
     }
   }
 }
-````
+```
 Note that this is identical to:
 
-````shell
+```shell
 node matcher.js 'the first price is 1000 dollars and the second price is 525000 dollars'
-````
+```
 which will produce:
 
-````json
+```json
 {
   "name": "PriceIntent",
   "slots": {
@@ -916,7 +921,7 @@ which will produce:
     }
   }
 }
-````
+```
 
 ### Trailing punctuation
 
