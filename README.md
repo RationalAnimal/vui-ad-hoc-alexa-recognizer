@@ -140,7 +140,7 @@ Similarly, you can parse dates, etc. even if that's the only thing you want to d
 can type in a date - simply use vui-ad-hoc-alexa-recognizer to parse it and return a date).  Dates will match not only the
 exact date specification, but strings such as "today", etc.
 
-## Domain level functionality
+## "Domain" (higher level) functionality
 
 **Note: new "domain" functionality is in the process of being added, APIs will likely change somewhat.**
 
@@ -152,6 +152,7 @@ Domains are a higher level of parsing than recognizers.  Domains do use "recogni
 * allow updating of the application state right within the matching code rather than having to write the extra code to do it (e.g. if the user says "My name is Bob" then some portion of the state will be set to "Bob" by the domain handling code)
 * allow nesting of the domains. This is particularly useful as whole types of interactions can be encapsulated as domains and then reused.  It also allows breaking large apps into smaller chunks, i.e. domains.
 
+**Currently this "domain" functionality is implemented: basic domain functionality, basic state dependent matching, basic sub-domain inclusion**
 
 # Usage
 
