@@ -2118,7 +2118,26 @@
     {"name":"Mathews Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Vinton Veterans Memorial Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Washington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
-    {"name":"Waverly Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
+    {"name":"Waverly Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+
+    {"name":"Webster City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"George L. Scott Municipal Airport","alternativeNames":["George L Scott Municipal Airport", "George Scott Municipal Airport"],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Winterset Municipal Airport","alternativeNames":[],"priorNames":["Winterset-Madison County"],"country":"united states","state":"iowa"},
+    {"name":"Ackley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Allison Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Amana Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Anita Municipal Airport","alternativeNames":["Kevin Burke Memorial Field", "Kevin Burke Field"],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Bedford Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Belmond Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Corning Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Corydon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Ellen Church Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Morningstar Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Dyersville Area Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Eagle Grove Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Eldora Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Elkader Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
+
 
   ]
 }
