@@ -2102,7 +2102,23 @@
     {"name":"Oelwein Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Orange City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Osceola Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
-    {"name":"Oskaloosa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
+    {"name":"Oskaloosa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+
+    {"name":"Ottumwa Regional Airport","alternativeNames":[],"priorNames":["Ottumwa Industrial Airport"],"country":"united states","state":"iowa"},
+    {"name":"Pella Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Perry Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Pocahontas Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Red Oak Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Rockwell City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Sac City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Sheldon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Shenandoah Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Spencer Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Storm Lake Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Mathews Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Vinton Veterans Memorial Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Washington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+    {"name":"Waverly Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
 
   ]
 }
