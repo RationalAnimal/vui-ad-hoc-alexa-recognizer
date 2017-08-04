@@ -2177,9 +2177,20 @@
     {"name":"Manhattan Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Wichita Dwight D. Eisenhower National Airport","alternativeNames":["Wichita Dwight D Eisenhower National Airport", "Wichita Dwight Eisenhower National Airport"],"priorNames":["Wichita Mid Continent Airport"],"country":"united states","state":"kansas"},
     {"name":"Dodge City Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
-    {"name":"Hays Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+    {"name":"Hays Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
 
-
+    {"name":"Liberal Mid-America Regional Airport","alternativeNames":["Liberal Mid America Regional Airport"],"priorNames":["Liberal Municipal Airport"],"country":"united states","state":"kansas"},
+    {"name":"Salina Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Newton City/County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Johnson County Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"New Century AirCenter","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Colonel James Jabara Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Abilene Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Anthony Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Amelia Earhart Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"AtwoodâRawlins County CityâCounty Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Augusta Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Belleville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
 
   ]
 }
