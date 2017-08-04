@@ -2171,7 +2171,14 @@
     {"name":"GAA Private Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"Lambert Fechter Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
     {"name":"NOLF Linby","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
-    {"name":"Wall Lake Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"}
+    {"name":"Wall Lake Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"iowa"},
+
+    {"name":"Garden City Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Manhattan Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Wichita Dwight D. Eisenhower National Airport","alternativeNames":["Wichita Dwight D Eisenhower National Airport", "Wichita Dwight Eisenhower National Airport"],"priorNames":["Wichita Mid Continent Airport"],"country":"united states","state":"kansas"},
+    {"name":"Dodge City Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Hays Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+
 
 
   ]
