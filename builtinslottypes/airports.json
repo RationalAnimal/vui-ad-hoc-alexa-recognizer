@@ -2232,7 +2232,24 @@
     {"name":"Ness City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Norton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Oakley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
-    {"name":"Oberlin Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+    {"name":"Oberlin Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+
+    {"name":"Osage City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Oswego Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Ottawa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Miami County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Tri-City Airport","alternativeNames":["Tri City Airport"],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Phillipsburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Atkinson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Pratt Regional Airport","alternativeNames":[],"priorNames":["Pratt Industrial Airport"],"country":"united states","state":"kansas"},
+    {"name":"Russell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Sabetha Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Satanta Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Scott City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Smith Center Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Cheyenne County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Rooks County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+
 
 
   ]
