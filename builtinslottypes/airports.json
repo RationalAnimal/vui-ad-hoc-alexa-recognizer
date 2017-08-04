@@ -2190,7 +2190,26 @@
     {"name":"Amelia Earhart Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"AtwoodâRawlins County CityâCounty Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Augusta Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
-    {"name":"Belleville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+    {"name":"Belleville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+
+    {"name":"Moritz Memorial Airport","alternativeNames":["Beloit Memorial Airport"],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Coffey County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Chanute Martin Johnson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Cimarron Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Clay Center Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Coffeyville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Colby Municipal Airport","alternativeNames":["Shalz Field"],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Blosser Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Captain Jack Thomas/El Dorado Airport","alternativeNames":["Captain Jack Thomas Airport", "El Dorado Airport", "Jack Thomas Airport"],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"ElkhartâMorton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Ellsworth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Emporia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Eureka Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Fort Scott Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Gardner Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Garnett Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Great Bend Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+
 
   ]
 }
