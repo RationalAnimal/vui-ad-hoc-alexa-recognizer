@@ -2248,7 +2248,26 @@
     {"name":"Scott City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Smith Center Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Cheyenne County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
-    {"name":"Rooks County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+    {"name":"Rooks County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+
+    {"name":"SyracuseHamilton County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Philip Billard Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Topeka Regional Airport","alternativeNames":[],"priorNames":["Forbes Field Airport"],"country":"united states","state":"kansas"},
+    {"name":"Tribune Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Ulysses Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Trego WaKeeney Airport","alternativeNames":["Trego County WaKeeney Airport", "Trego County/WaKeeney Airport"],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Wellington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Strother Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Wilcox Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Argonia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Harold Krier Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Vinland Valley Aerodrome","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Beaumont Hotel Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Lloyd Stearman Field","alternativeNames":["Benton Airpark"],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Bressler Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Bucklin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Caldwell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Comanche County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
 
 
 
