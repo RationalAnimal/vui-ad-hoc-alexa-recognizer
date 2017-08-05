@@ -2286,7 +2286,30 @@
     {"name":"Jetmore Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Kinsley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Rush County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
-    {"name":"Lincoln Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+    {"name":"Lincoln Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+
+    {"name":"Lucas Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Pomona Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Mankato Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Marion Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Minneapolis City/County Airport","alternativeNames":["Minneapolis City County Airport"],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Elk County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Montezuma Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Moundridge Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Neodesha Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Norwich Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Cedar Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+
+    {"name":"Charles E. Grutzmacher Municipal Airport","alternativeNames":["Charles E Grutzmacher Municipal Airport", "Charles Grutzmacher Municipal Airport"],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Osborne Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Oxford Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Gilmore Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Van Pak Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Sedan City Airport","alternativeNames":["Sedan Municipal Airport"],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Seneca Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Stafford Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Hillside Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+
 
 
 
