@@ -2344,11 +2344,21 @@
     {"name":"Lake Barkley State Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
     {"name":"Taylor County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
     {"name":"Cynthiana-Harrison County Airport","alternativeNames":["Cynthiana Harrison County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
-    {"name":"Stuart Powell Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"}
+    {"name":"Stuart Powell Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
 
-
-
-
+    {"name":"Elizabethtown Regional Airport","alternativeNames":["Addington Field"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Rough River State Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Gene Snyder Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Fleming-Mason Airport","alternativeNames":["Fleming Mason Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Capital City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Fulton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Georgetown-Scott County Airport","alternativeNames":["Marshall Field", "Georgetown Scott County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Kentucky Dam State Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Glasgow Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Muhlenberg County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Breckinridge County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Tucker-Guthrie Memorial Airport","alternativeNames":["Tucker Guthrie Memorial Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Ohio County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"}
 
   ]
 }
