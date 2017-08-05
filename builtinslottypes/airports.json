@@ -2330,7 +2330,21 @@
     {"name":"Plainville Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Stockton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Maize Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
-    {"name":"Riverside Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+    {"name":"Riverside Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+
+    {"name":"Cincinnati/Northern Kentucky International Airport","alternativeNames":["Cincinnati Northern Kentucky International Airport", "Northern Kentucky International Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Blue Grass Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Louisville International Airport","alternativeNames":["Standiford Field"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Owensboro-Daviess County Regional Airport","alternativeNames":["Owensboro Daviess County Regional Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Barkley Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Bowman Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Ashland Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Samuels Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Bowling Green-Warren County Regional Airport","alternativeNames":["Bowling Green Warren County Regional Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Lake Barkley State Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Taylor County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Cynthiana-Harrison County Airport","alternativeNames":["Cynthiana Harrison County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Stuart Powell Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"}
 
 
 
