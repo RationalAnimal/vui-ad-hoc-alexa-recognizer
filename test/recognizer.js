@@ -2435,7 +2435,7 @@ describe("domain parsing", function() {
       );
     });
 
-    it("verify multi recognizer domain with non default match criteria returning a single string result and a state sub select accessor parses", function () {
+    it("verify multi recognizer domain with non default match criteria returning a single result and a state sub select accessor parses", function () {
       let domain = require("../test/blahblahdomain/blahblahdomain.json");
       let applicationState = {
         "something": "this is not relevant",
@@ -2457,6 +2457,32 @@ describe("domain parsing", function() {
           "result": "Thank you"
         }
       );
+    });
+
+    it("verify multi recognizer domain with non default match criteria returning a random value from result array and a state sub select accessor parses", function () {
+      let domain = require("../test/blahblahdomain/blahblahdomain.json");
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW_3"
+        }
+      };
+      let allowableValues = [
+        "Thanks a bunch",
+        "Danke",
+        "I agree"
+      ];
+      let stateAccessor = function(state, selector){
+        return state[selector];
+      };
+      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
+      expect(result.match).to.eql(
+        {
+          "name": "ComplimentIntent",
+          "slots": {}
+        }
+      );
+      expect(allowableValues.indexOf(result.result) >= 0).to.equal(true);
     });
 
     it("verify domain with subdomain parses", function () {

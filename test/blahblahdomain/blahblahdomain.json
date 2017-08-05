@@ -39,6 +39,27 @@
     {
       "matchCriteria": {
         "selector": "selectthis",
+        "match": {"flow": "TEST_FLOW_3"}
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "blah2",
+          "responder": {
+            "directValues": {
+              "pickMethod": "random",
+              "values": [
+                "Thanks a bunch",
+                "Danke",
+                "I agree"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "selectthis",
         "match": {"flow": "TEST_FLOW"}
       },
       "matchSpecs": [

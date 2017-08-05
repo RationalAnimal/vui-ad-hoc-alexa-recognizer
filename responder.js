@@ -39,6 +39,15 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
   else if(typeof responderSpec.directValue !== "undefined"){
     return responderSpec.directValue;
   }
+  else if(typeof responderSpec.directValues !== "undefined"){
+    let directValues = responderSpec.directValues;
+    if(directValues.pickMethod === "random"){
+      if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values)){
+        let randomIndex = Math.floor(Math.random() * directValues.values.length);
+        return directValues.values[randomIndex];
+      }
+    }
+  }
 
 };
 
