@@ -2358,7 +2358,18 @@
     {"name":"Muhlenberg County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
     {"name":"Breckinridge County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
     {"name":"Tucker-Guthrie Memorial Airport","alternativeNames":["Tucker Guthrie Memorial Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
-    {"name":"Ohio County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"}
+    {"name":"Ohio County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+
+    {"name":"Wendell H. Ford Airport","alternativeNames":["Wendell H Ford Airport", "Wendell Ford Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Henderson City-County Airport","alternativeNames":["Henderson CitycCounty Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Hopkinsville-Christian County Airport","alternativeNames":["Hopkinsville Christian County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Julian Carroll Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Russell County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Grayson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Hancock County Airport","alternativeNames":["Ron Lewis Field"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"London-Corbin Airport","alternativeNames":["Magee Field", "London Corbin Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Madisonville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"}
+
 
   ]
 }
