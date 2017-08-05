@@ -36,6 +36,9 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
     let result = scratchFunc(matchedIntent, stateAccessor, applicationState);
     return result;
   }
+  else if(typeof responderSpec.directValue !== "undefined"){
+    return responderSpec.directValue;
+  }
 
 };
 
