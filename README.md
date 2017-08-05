@@ -160,6 +160,7 @@ Domains are a higher level of parsing than recognizers.  Domains do use "recogni
 * **response generation:** 
     * **direct value**
     * **random direct value from an array**
+    * **random direct value from an array without repeating**
     * **using dynamic JavaScript function body source**
 
 # Usage
