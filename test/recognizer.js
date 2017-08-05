@@ -2485,6 +2485,38 @@ describe("domain parsing", function() {
       expect(allowableValues.indexOf(result.result) >= 0).to.equal(true);
     });
 
+    it("verify multi recognizer domain with non default match criteria returning a random value from result array and a state sub select accessor parses", function () {
+      let domain = require("../test/blahblahdomain/blahblahdomain.json");
+      let usedValues = [
+        "Thanks a bunch",
+        "Danke",
+      ];
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW_4"
+        },
+        "squirrelledAwayAlreadyUsed" : usedValues
+      };
+      let allowableValues = [
+        "Thanks a bunch",
+        "Danke",
+        "I agree"
+      ];
+      let stateAccessor = function(state, selector){
+        return state[selector];
+      };
+      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
+      expect(result.match).to.eql(
+        {
+          "name": "ComplimentIntent",
+          "slots": {}
+        }
+      );
+      expect(allowableValues.indexOf(result.result) >= 0).to.equal(true);
+      expect(usedValues.indexOf(result.result) < 0).to.equal(true);
+    });
+
     it("verify domain with subdomain parses", function () {
       let domain = require("../test/blahblahdomain/blahblahdomain.json");
       let applicationState = {

@@ -47,6 +47,24 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
         return directValues.values[randomIndex];
       }
     }
+    else if(directValues.pickMethod === "randomDoNotRepeat"){
+      if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values) &&
+         typeof directValues.repeatSelector !== "undefined" && directValues.repeatSelector !== null){
+        let usedValues = stateAccessor(applicationState, directValues.repeatSelector);
+        console.log("usedValues: ", JSON.stringify(usedValues));
+        let unusedValues = [];
+        for(let i = 0; i < directValues.values.length; i++){
+          if(usedValues.indexOf(directValues.values[i]) < 0){
+            console.log("adding to unusedValues: ", JSON.stringify(directValues.values[i]));
+
+            unusedValues.push(directValues.values[i]);
+          }
+        }
+        console.log("unusedValues: ", JSON.stringify(unusedValues));
+        let randomIndex = Math.floor(Math.random() * unusedValues.length);
+        return unusedValues[randomIndex];
+      }
+    }
   }
 
 };
