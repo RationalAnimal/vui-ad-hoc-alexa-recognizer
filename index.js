@@ -27,9 +27,10 @@ SOFTWARE.
 var fs = require('fs');
 var soundex = require('./soundex.js');
 var utilities = require('./utilities.js');
-var parser = require('./parseutterance.js');
+//var parser = require('./parseutterance.js');
 var recognizer = {};
 var constants = require('./constants.js');
+let responder = require('./responder.js');
 
 /**
 * Call this to translate the slot from whatever type it was actually reported into
@@ -1617,9 +1618,14 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
         for(let j = 0; j < state.matchSpecs.length; j ++){
           if(typeof state.matchSpecs[j].recognizer !== "undefined"){
             let scratchRecognizer = recognizers[state.matchSpecs[j].recognizer];
-            let result = _matchText(stringToMatch, undefined, undefined, scratchRecognizer);
-            if(typeof result !== "undefined" && result !== null){
-              return {"match": result};
+            let match = _matchText(stringToMatch, undefined, undefined, scratchRecognizer);
+            if(typeof match !== "undefined" && match !== null){
+              let returnObject = {"match": match};
+              if(typeof state.matchSpecs[j].responder !== "undefined"){
+                // TODO add code to get the intent name regardless of platform
+                returnObject.result = responder.produceResult(match.name, stateAccessor, applicationState, state.matchSpecs[j].responder);
+              }
+              return returnObject;
             }
           }
           else if(typeof state.matchSpecs[j].domain !== "undefined"){

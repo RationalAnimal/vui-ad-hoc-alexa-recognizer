@@ -2400,11 +2400,13 @@ describe("domain parsing", function() {
       };
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor);
       expect(result).to.eql(
-        {"match":
+        {
+          "match":
           {
             "name": "ComplimentIntent",
             "slots": {}
-          }
+          },
+          "result": "Thanks"
         }
       );
     });
@@ -2422,11 +2424,13 @@ describe("domain parsing", function() {
       };
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
       expect(result).to.eql(
-        {"match":
+        {
+          "match":
           {
             "name": "ComplimentIntent",
             "slots": {}
-          }
+          },
+          "result": "Thanks"
         }
       );
     });
