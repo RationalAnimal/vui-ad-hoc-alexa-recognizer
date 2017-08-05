@@ -27,7 +27,15 @@ SOFTWARE.
 
 let responder = {};
 
-let _produceResult = function(matchedIntent, stateAccessor, applicationState){
+let _produceResult = function(matchedIntent, stateAccessor, applicationState, responderSpec){
+  if(typeof responderSpec === "undefined" || responderSpec === null){
+    return;
+  }
+  if(typeof responderSpec.functionSource === "string"){
+    let scratchFunc = new Function('scratchFunc', responderSpec.functionSource);
+    let result = scratchFunc(matchedIntent, stateAccessor, applicationState);
+    return result;
+  }
 
 };
 

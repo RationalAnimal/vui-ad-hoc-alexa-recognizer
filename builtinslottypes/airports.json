@@ -2308,7 +2308,29 @@
     {"name":"Sedan City Airport","alternativeNames":["Sedan Municipal Airport"],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Seneca Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Stafford Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
-    {"name":"Hillside Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+    {"name":"Hillside Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+
+    {"name":"Sublette Municipal Airport","alternativeNames":[],"priorNames":["Sublette Flying Club Airport"],"country":"united states","state":"kansas"},
+    {"name":"Wamego Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Washington County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Beech Factory Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Cessna Aircraft Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Westport Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Westport Auxiliary Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Yates Center Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Sherman Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Marshall Army Airfield","alternativeNames":["Fort Riley"],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"McConnell Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Daniel's Landing Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"St. Mary's Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Hamilton Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Wilroads Gardens Airport","alternativeNames":["Wilroads Garden Airport"],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Paul Windle Municipal Airport","alternativeNames":["Wendle Municipal Airport"],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Fairfax Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Plainville Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Stockton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Maize Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Riverside Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
 
 
 

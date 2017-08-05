@@ -29,7 +29,10 @@
       },
       "matchSpecs": [
         {
-          "recognizer": "blah2"
+          "recognizer": "blah2",
+          "responder": {
+            "functionSource": "return \"Thanks\";"
+          }
         },
         {
           "domain": "bleh"
