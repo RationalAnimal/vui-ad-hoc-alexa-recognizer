@@ -152,7 +152,14 @@ Domains are a higher level of parsing than recognizers.  Domains do use "recogni
 * allow updating of the application state right within the matching code rather than having to write the extra code to do it (e.g. if the user says "My name is Bob" then some portion of the state will be set to "Bob" by the domain handling code)
 * allow nesting of the domains. This is particularly useful as whole types of interactions can be encapsulated as domains and then reused.  It also allows breaking large apps into smaller chunks, i.e. domains.
 
-**Currently this "domain" functionality is implemented: basic domain functionality, basic state dependent matching, basic sub-domain inclusion, response generation via dynamic JavaScript function body source**
+**Currently these "domain" bits of functionality are implemented (but not yet documented):** 
+
+* **basic domain functionality** 
+* **basic state dependent matching** 
+* **basic sub-domain inclusion (i.e. nested domains)** 
+* **response generation:** 
+    * **direct value**
+    * **using dynamic JavaScript function body source**
 
 # Usage
 

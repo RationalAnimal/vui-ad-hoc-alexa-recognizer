@@ -25,6 +25,20 @@
     {
       "matchCriteria": {
         "selector": "selectthis",
+        "match": {"flow": "TEST_FLOW_2"}
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "blah2",
+          "responder": {
+            "directValue": "Thank you"
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "selectthis",
         "match": {"flow": "TEST_FLOW"}
       },
       "matchSpecs": [
