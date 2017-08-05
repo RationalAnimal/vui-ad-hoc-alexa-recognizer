@@ -2267,7 +2267,27 @@
     {"name":"Bressler Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Bucklin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
     {"name":"Caldwell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
-    {"name":"Comanche County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+    {"name":"Comanche County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+
+    {"name":"Cottonwood Falls Airport","alternativeNames":[],"priorNames":["Chase County Airport"],"country":"united states","state":"kansas"},
+    {"name":"Council Grove Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Cook Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Dighton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Patty Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Ellinwood Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Fowler Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Fredonia Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Harper Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Hiawatha Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Alfred Schroeder Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Horton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"HoxieSheridan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Ingalls Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Jetmore Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Kinsley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Rush County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"},
+    {"name":"Lincoln Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kansas"}
+
 
 
 
