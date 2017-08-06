@@ -2407,7 +2407,22 @@
     {"name":"Morehead-Rowan County Airport","alternativeNames":["Morehead-Rowan County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
     {"name":"Breckenridge Army Airfield / Morganfield Airport","alternativeNames":["Breckenridge Army Airfield Morganfield Airport", "Breckenridge Army Airfield", "Morganfield Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
     {"name":"Olive Hill Airport","alternativeNames":["Sellers' Field", "Sellers Field", "Seller's Field"],"priorNames":[],"country":"united states","state":"kentucky"},
-    {"name":"Whitesburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"}
+    {"name":"Whitesburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+
+    {"name":"Alexandria International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Baton Rouge Metropolitan Airport","alternativeNames":["Ryan Field"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Lafayette Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Lake Charles Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Monroe Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Louis Armstrong New Orleans International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Shreveport Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Lakefront Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Shreveport Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Slidell Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Abbeville Chris Crusta Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Esler Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Morehouse Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"George R. Carr Memorial Air Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"}
 
 
 
