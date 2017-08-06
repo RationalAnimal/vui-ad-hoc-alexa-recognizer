@@ -2387,7 +2387,28 @@
     {"name":"Lake Cumberland Regional Airport","alternativeNames":[],"priorNames":["Somerset-Pulaski County Airport", "Somerset Pulaski County Airport"],"country":"united states","state":"kentucky"},
     {"name":"Lebanon-Springfield Airport","alternativeNames":["Lebanon Springfield Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
     {"name":"Stanton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
-    {"name":"Sturgis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"}
+    {"name":"Sturgis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+
+    {"name":"Tompkinsville-Monroe County Airport","alternativeNames":["Tompkinsville Monroe County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"West Liberty Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Williamsburg-Whitley County Airport","alternativeNames":["Williamsburg Whitley County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Columbia-Adair County Airport","alternativeNames":["Columbia Adair County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Tradewater Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Liberty-Casey County Airport","alternativeNames":["Liberty Casey County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Providence-Webster County Airport","alternativeNames":["Providence Webster County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Godman Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Campbell Army Airfield","alternativeNames":["Fort Campbell"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Blue Grass Station Army Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"West Kentucky Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Paintsville-Prestonsburg Combs Field","alternativeNames":["Paintsville Prestonsburg Combs Field"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Dale Hollow Regional Airport","alternativeNames":["Petro Field"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Hardin County Airport","alternativeNames":["Ben Floyd Field"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Standard Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Morehead-Rowan County Airport","alternativeNames":["Morehead-Rowan County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Breckenridge Army Airfield / Morganfield Airport","alternativeNames":["Breckenridge Army Airfield Morganfield Airport", "Breckenridge Army Airfield", "Morganfield Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Olive Hill Airport","alternativeNames":["Sellers' Field", "Sellers Field", "Seller's Field"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Whitesburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"}
+
 
 
 
