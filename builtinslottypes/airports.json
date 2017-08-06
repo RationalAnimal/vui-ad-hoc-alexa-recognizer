@@ -2451,7 +2451,21 @@
     {"name":"Natchitoches Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"Acadiana Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"New Orleans Downtown Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
-    {"name":"False River Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"}
+    {"name":"False River Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+
+    {"name":"Kelly-Dumas Airport","alternativeNames":["Kelly Dumas Airport"],"priorNames":["Kelly Airport"],"country":"united states","state":"louisiana"},
+    {"name":"Allen Parish Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"St. Landry Parish Airport","alternativeNames":["Ahart Field", "St Landry Parish Airport", "Saint Landry Parish Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Harry P. Williams Memorial Airport","alternativeNames":["Harry P Williams Memorial Airport", "Harry Williams Memorial Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"John H. Hooks Jr. Memorial Airport","alternativeNames":["John H Hooks Jr. Memorial Airport", "John Hooks Jr. Memorial Airport", "John H Hooks Jr Memorial Airport", "John H. Hooks Junior Memorial Airport", "John H Hooks Junior Memorial Airport", "John Hooks Junior Memorial Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"St. John the Baptist Parish Airport","alternativeNames":["St John the Baptist Parish Airport", "Saint John the Baptist Parish Airport", "John the Baptist Parish Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Ruston Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Springhill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Southland Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"KTVR","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Thibodaux Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Concordia Parish Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Vivian Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"}
 
 
 
