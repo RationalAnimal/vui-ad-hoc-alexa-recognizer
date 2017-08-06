@@ -2376,7 +2376,19 @@
     {"name":"Wayne County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
     {"name":"Morehead-Rowan County Clyde A. Thomas Regional Airport","alternativeNames":["Morehead Rowan County Clyde A Thomas Regional Airport", "Morehead Rowan County Clyde Thomas Regional Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
     {"name":"Mount Sterling-Montgomery County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
-    {"name":"Murray-Calloway County Airport","alternativeNames":["Kyle-Oakley Field", "Kyle Oakley Field", "Murray Calloway County Airport"],"priorNames":[],"country":"united states","state":"kentucky"}
+    {"name":"Murray-Calloway County Airport","alternativeNames":["Kyle-Oakley Field", "Kyle Oakley Field", "Murray Calloway County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+
+    {"name":"Pike County Airport","alternativeNames":["Hatcher Field"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"McCreary County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Big Sandy Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Princeton-Caldwell County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Central Kentucky Regional Airport","alternativeNames":[],"priorNames":["Madison Airport"],"country":"united states","state":"kentucky"},
+    {"name":"Russellville-Logan County Airport","alternativeNames":["Russellville Logan County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Lake Cumberland Regional Airport","alternativeNames":[],"priorNames":["Somerset-Pulaski County Airport", "Somerset Pulaski County Airport"],"country":"united states","state":"kentucky"},
+    {"name":"Lebanon-Springfield Airport","alternativeNames":["Lebanon Springfield Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Stanton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Sturgis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"}
+
 
 
 
