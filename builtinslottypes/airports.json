@@ -2465,7 +2465,21 @@
     {"name":"KTVR","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"Thibodaux Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"Concordia Parish Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
-    {"name":"Vivian Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"}
+    {"name":"Vivian Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+
+    {"name":"David G. Joyce Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Winnsboro Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Arcadia-Bienville Parish Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Kibs Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Bunkie Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Caldwell Parrish Airport","alternativeNames":[],"priorNames":["Columbia Airport"],"country":"united states","state":"louisiana"},
+    {"name":"Delhi Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Franklinton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Grand Isle Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Le Maire Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Bluebird Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Olla Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Pineville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"}
 
 
 
