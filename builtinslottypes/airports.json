@@ -2438,7 +2438,20 @@
     {"name":"Houma-Terrebonne Airport","alternativeNames":["Houma Terrebonne Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"Jena Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"Jennings Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
-    {"name":"Jonesboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"}
+    {"name":"Jonesboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+
+    {"name":"Jonesville Airport","alternativeNames":["Jonesville Municipal Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Chennault International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Byerley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Leesville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"C.E. 'Rusty' Williams Airport","alternativeNames":["De Soto Parish Airport", "CE 'Rusty' Williams Airport", "C. E. 'Rusty' Williams Airport", "C E 'Rusty' Williams Airport", "C.E. Rusty Williams Airport", "C. E. Rusty Williams Airport", "CE Rusty Williams Airport", "C E Rusty Williams Airport", "Rusty Williams Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Hart Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Marksville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Minden Airport","alternativeNames":[],"priorNames":["Minden-Webster Airport", "Minden Webster Airport"],"country":"united states","state":"louisiana"},
+    {"name":"Natchitoches Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Acadiana Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"New Orleans Downtown Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"False River Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"}
 
 
 
