@@ -2479,12 +2479,20 @@
     {"name":"Le Maire Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"Bluebird Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"Olla Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
-    {"name":"Pineville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"}
+    {"name":"Pineville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
 
-
-
-
-
+    {"name":"Pollock Municipal Airport","alternativeNames":["Pollock Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Tensas Parish Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Scott Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Welsh Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Woodworth Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Barksdale Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Polk Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"NAS JRB New Orleans","alternativeNames":["Alvin Callender Field"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"St. Charles Airport","alternativeNames":["St Charles Airport", "Saint Charles Airport", "Ama Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Southern Seaplane Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Bordelon Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Kifer Airport","alternativeNames":[],"priorNames":["Newellton Airport"],"country":"united states","state":"louisiana"}
 
   ]
 }
