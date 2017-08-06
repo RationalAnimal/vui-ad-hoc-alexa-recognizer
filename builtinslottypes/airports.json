@@ -2368,7 +2368,16 @@
     {"name":"Grayson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
     {"name":"Hancock County Airport","alternativeNames":["Ron Lewis Field"],"priorNames":[],"country":"united states","state":"kentucky"},
     {"name":"London-Corbin Airport","alternativeNames":["Magee Field", "London Corbin Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
-    {"name":"Madisonville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"}
+    {"name":"Madisonville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+
+    {"name":"Marion-Crittenden County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Mayfield Graves County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Middlesboro-Bell County Airport","alternativeNames":["Middlesboro Bell County Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Wayne County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Morehead-Rowan County Clyde A. Thomas Regional Airport","alternativeNames":["Morehead Rowan County Clyde A Thomas Regional Airport", "Morehead Rowan County Clyde Thomas Regional Airport"],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Mount Sterling-Montgomery County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"kentucky"},
+    {"name":"Murray-Calloway County Airport","alternativeNames":["Kyle-Oakley Field", "Kyle Oakley Field", "Murray Calloway County Airport"],"priorNames":[],"country":"united states","state":"kentucky"}
+
 
 
   ]
