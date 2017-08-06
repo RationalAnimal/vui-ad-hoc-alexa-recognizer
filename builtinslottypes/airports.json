@@ -2492,7 +2492,17 @@
     {"name":"St. Charles Airport","alternativeNames":["St Charles Airport", "Saint Charles Airport", "Ama Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"Southern Seaplane Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"Bordelon Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
-    {"name":"Kifer Airport","alternativeNames":[],"priorNames":["Newellton Airport"],"country":"united states","state":"louisiana"}
+    {"name":"Kifer Airport","alternativeNames":[],"priorNames":["Newellton Airport"],"country":"united states","state":"louisiana"},
+
+    {"name":"Thackers Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Lyon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Colfax Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Haynesville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Charlie Hammonds Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"East Lake Charles Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Ruston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"}
+
 
   ]
 }
