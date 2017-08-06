@@ -2422,7 +2422,24 @@
     {"name":"Abbeville Chris Crusta Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"Esler Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"Morehouse Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
-    {"name":"George R. Carr Memorial Air Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"}
+    {"name":"George R. Carr Memorial Air Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+
+    {"name":"The Red River Airport","alternativeNames":["Red River Parish Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"St. Tammany Regional Airport","alternativeNames":["St Tammany Regional Airport", "Saint Tammany Regional Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Le Gros Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"DeQuincy Industrial Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Beauregard Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Eunice Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Union Parish Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"South Lafourche Leonard Miller Jr. Airport","alternativeNames":["South Lafourche Leonard Miller Jr Airport", "South Lafourche Leonard Miller Junior Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Louisiana Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Hammond Northshore Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Homer Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Houma-Terrebonne Airport","alternativeNames":["Houma Terrebonne Airport"],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Jena Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Jennings Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+    {"name":"Jonesboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"}
+
 
 
 
