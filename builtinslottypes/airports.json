@@ -2639,11 +2639,22 @@
     {"name":"New Bedford Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
     {"name":"Beverly Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
     {"name":"Lawrence Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
-    {"name":"Norwood Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"}
+    {"name":"Norwood Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
 
-
-
-
+    {"name":"Hanscom Field / Hanscom Air Force Base","alternativeNames":["Hanscom Field", "Hanscom Air Force Base"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Chatham Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Fitchburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Gardner Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Walter J. Koladza Airport","alternativeNames":["Walter J Koladza Airport", "Walter Koladza Airport", "Great Barrington Airport"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Mansfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Marshfield Municipal Airport","alternativeNames":["George Harlow Field"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Turners Falls Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Harriman-and-West Airport","alternativeNames":["Harriman and West Airport"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Northampton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Orange Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Pittsfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Plymouth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Southbridge Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"}
 
   ]
 }
