@@ -2628,7 +2628,18 @@
     {"name":"Andrews Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
     {"name":"NAS Patuxent River","alternativeNames":["Trapnell Field"],"priorNames":[],"country":"united states","state":"maryland"},
     {"name":"NOLF Webster","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
-    {"name":"Baltimore Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"}
+    {"name":"Baltimore Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+
+    {"name":"Gen. Edward Lawrence Logan International Airport","alternativeNames":["Gen Edward Lawrence Logan International Airport", "General Edward Lawrence Logan International Airport", "Edward Lawrence Logan International Airport", "Logan International Airport", "Logan Airport", "Logan"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Barnstable Municipal Airport","alternativeNames":["Boardman/Polando Field", "Boardman Polando Field", "Boardman Field", "Polando Field"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Nantucket Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Provincetown Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Martha's Vineyard Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Worcester Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"New Bedford Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Beverly Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Lawrence Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Norwood Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"}
 
 
 
