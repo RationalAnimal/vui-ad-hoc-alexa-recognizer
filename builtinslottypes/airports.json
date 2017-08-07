@@ -2612,7 +2612,23 @@
     {"name":"Hoby Wolf Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
     {"name":"Claremont Airport","alternativeNames":["Cecil County Airport"],"priorNames":[],"country":"united states","state":"maryland"},
     {"name":"Fallston Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
-    {"name":"Potomac Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"}
+    {"name":"Potomac Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+
+    {"name":"Havre de Grace Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Suburban Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Davis Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Massey Aerodrome","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Freeway Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Ridgely Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Bennett Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Kentmorr Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Clearview Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Phillips Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Weide Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Andrews Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"NAS Patuxent River","alternativeNames":["Trapnell Field"],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"NOLF Webster","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Baltimore Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"}
 
 
 
