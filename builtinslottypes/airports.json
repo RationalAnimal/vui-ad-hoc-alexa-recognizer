@@ -2741,7 +2741,18 @@
     {"name":"St. Clair County International Airport","alternativeNames":["St Clair County International Airport", "Saint Clair County International Airport"],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Romeo State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Oakland/Troy Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Lenawee County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Lenawee County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Padgham Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Gratiot Community Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Ann Arbor Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Atlanta Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Huron County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"W. K. Kellogg Airport","alternativeNames":["W. K. Kellogg Regional", "W. K. Kellogg Regional Airport", "W.K. Kellogg Regional", "W.K. Kellogg Regional Airport", "W K Kellogg Regional", "W K Kellogg Regional Airport", "Kellogg Regional", "Kellogg Regional Airport" ],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"James Clements Municipal Airport and SPB","alternativeNames":["James Clements Municipal Airport and SPB"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Beaver Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Antrim County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Southwest Michigan Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
 
 
 
