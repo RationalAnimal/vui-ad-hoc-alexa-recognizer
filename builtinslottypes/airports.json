@@ -2728,7 +2728,20 @@
     {"name":"MBS International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Chippewa County International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Cherry Capital Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Charlevoix Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Charlevoix Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Gogebic-Iron County Airport","alternativeNames":["Gogebic Iron County Airport", "Gogebic Airport", "Iron County Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Oakland County International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Manistee County-Blacker Airport","alternativeNames":["Manistee County-Blacker Airport", "Manistee County Airport", "Blacker Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Grosse Ile Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Willow Run Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Livingston County Spencer J. Hardy Airport","alternativeNames":["Livingston County Spencer J Hardy Airport", "Livingston County Spencer Hardy Airport", "Livingston County Airport", "Spencer J. Hardy Airport", "Spencer J Hardy Airport", "Spencer Hardy Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Oakland Southwest Airport","alternativeNames":["Oakland/Southwest Airport", "Oakland Southwest Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Canton-Plymouth-Mettetal Airport","alternativeNames":["Canton-Plymouth Mettetal Airport", "Canton Plymouth Mettetal Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"St. Clair County International Airport","alternativeNames":["St Clair County International Airport", "Saint Clair County International Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Romeo State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Oakland/Troy Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Lenawee County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
 
 
 
