@@ -2654,7 +2654,28 @@
     {"name":"Orange Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
     {"name":"Pittsfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
     {"name":"Plymouth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
-    {"name":"Southbridge Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"}
+    {"name":"Southbridge Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+
+    {"name":"Westover Metropolitan Airport / Westover Air Reserve Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Minute Man Air Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Taunton Municipal Airport","alternativeNames":["King Field"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Barnes Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Tanner-Hiller Airport","alternativeNames":["Tanner Hiller Airport"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Myricks Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Katama Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Falmouth Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Monponsett Pond Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Cranland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Hopedale Industrial Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Marlboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Cape Cod Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Merrimack Valley Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Plum Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Spencer Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Sterling Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Otis Air National Guard Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Lake Gardner Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Snow Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"}
 
   ]
 }
