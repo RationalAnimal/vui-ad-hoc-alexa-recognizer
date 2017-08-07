@@ -2501,7 +2501,36 @@
     {"name":"Haynesville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"Charlie Hammonds Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
     {"name":"East Lake Charles Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
-    {"name":"Ruston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"}
+    {"name":"Ruston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"louisiana"},
+
+    {"name":"Bangor International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Portland International Jetport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Northern Maine Regional Airport at Presque Isle","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Knox County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Augusta State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Hancock County-Bar Harbor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Auburn/Lewiston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+
+    {"name":"Sanford Seacoast Regional Airport","alternativeNames":[],"priorNames":["Sanford Regional"],"country":"united states","state":"main"},
+    {"name":"Belfast Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Bethel Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Biddeford Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Brunswick Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Caribou Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Sugarloaf Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Dexter Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Charles A. Chase Jr. Memorial Field","alternativeNames":["Charles A Chase Jr Memorial Field", "Charles A Chase Junior Memorial Field", "Charles Chase Junior Memorial Field"],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Eastport Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Northern Aroostook Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Eastern Slopes Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Greenville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Houlton International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Islesboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Newton Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Lincoln Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Machias Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"},
+    {"name":"Millinocket Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"main"}
+
 
 
   ]
