@@ -2692,7 +2692,26 @@
     {"name":"Clark Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
     {"name":"Robbins Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
     {"name":"Coast Guard Aviation Station Ten Pound Island","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
-    {"name":"Grafton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"}
+    {"name":"Grafton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+
+    {"name":"Hatfield-Pilgrim Airport","alternativeNames":["Hatfield Pilgrim Airport", "Pilgrim Airport", "Hatfield Airport"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Haverhill Dutton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Haverhill Riverside Airport and Seaplane Base","alternativeNames":["Haverhill Riverside Airport", "Haverhill Riverside Seaplane Base"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Pine Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Leicester Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Lowell Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"No Man's Land Navy Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Henan-Menon Memorial Airport","alternativeNames":["Henan Menon Memorial Airport"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"North Middleboro Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"NAS Squantum","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Revere Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"CGAS Salem","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Saugus Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Naval Air Station South Weymouth","alternativeNames":["Shea Field"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Springfield Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Tew-Mac Airport","alternativeNames":["Tew Mac Airport"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Westboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"}
+
 
   ]
 }
