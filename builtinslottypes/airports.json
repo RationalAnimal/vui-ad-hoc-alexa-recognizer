@@ -2582,7 +2582,21 @@
     {"name":"Ring Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
     {"name":"Loring International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
     {"name":"St. Croix Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
-    {"name":"NAS Brunswick","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"}
+    {"name":"NAS Brunswick","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+
+    {"name":"Baltimore/Washington International Thurgood Marshall Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Salisbury-Ocean City Wicomico Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Hagerstown Regional Airport","alternativeNames":["Richard A. Henson Field", "Richard A Henson Field", "Richard Henson Field"],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Martin State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Frederick Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Montgomery County Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Maryland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Tipton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Carroll County Regional Airport","alternativeNames":["Jack B. Poage Field", "Jack B Poage Field", "Jack Poage Field"],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Cambridge-Dorchester Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"College Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Crisfield Municipal Airport","alternativeNames":["Crisfield-Somerset Airport", "Crisfield Somerset Airport"],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Greater Cumberland Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"}
 
 
 
