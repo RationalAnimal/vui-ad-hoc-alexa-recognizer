@@ -2710,7 +2710,26 @@
     {"name":"Naval Air Station South Weymouth","alternativeNames":["Shea Field"],"priorNames":[],"country":"united states","state":"massachusetts"},
     {"name":"Springfield Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
     {"name":"Tew-Mac Airport","alternativeNames":["Tew Mac Airport"],"priorNames":[],"country":"united states","state":"massachusetts"},
-    {"name":"Westboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"}
+    {"name":"Westboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+
+    {"name":"Alpena County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Welke Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Detroit Metropolitan Wayne County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Delta County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Bishop International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Gerald R. Ford International Airport","alternativeNames":["Gerald R Ford International Airport", "Gerald Ford International Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Houghton County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Ford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Kalamazoo/Battle Creek International Airport","alternativeNames":["Kalamazoo International Airport", "Battle Creek International Airport", "Kalamazoo Battle Creek International Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Capital Region International Airport","alternativeNames":[],"priorNames":["Lansing Capital City"],"country":"united states","state":"michigan"},
+    {"name":"Sawyer International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Muskegon County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Pellston Regional Airport of Emmet County","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"MBS International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Chippewa County International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Cherry Capital Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Charlevoix Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+
 
 
   ]
