@@ -2596,7 +2596,24 @@
     {"name":"Cambridge-Dorchester Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
     {"name":"College Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
     {"name":"Crisfield Municipal Airport","alternativeNames":["Crisfield-Somerset Airport", "Crisfield Somerset Airport"],"priorNames":[],"country":"united states","state":"maryland"},
-    {"name":"Greater Cumberland Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"}
+    {"name":"Greater Cumberland Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+
+    {"name":"Easton Airport","alternativeNames":["Newnam Field"],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"St. Mary's County Regional Airport","alternativeNames":["St Mary's County Regional Airport", "Saint Mary's County Regional Airport"],"priorNames":["Capt. Walter F. Duke Regional", "Captain Walter F. Duke Regional", "Captain Walter F Duke Regional", "Captain Walter Duke Regional", "Walter Duke Regional"],"country":"united states","state":"maryland"},
+    {"name":"Garrett County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Ocean City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Bay Bridge Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Lee Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Essex Skypark","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Pier 7 Heliport","alternativeNames":["Pier seven Heliport"],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Harford County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Washington Executive Airport","alternativeNames":["Hyde Field"],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Mexico Farms Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Hoby Wolf Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Claremont Airport","alternativeNames":["Cecil County Airport"],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Fallston Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Potomac Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"}
+
 
 
 
