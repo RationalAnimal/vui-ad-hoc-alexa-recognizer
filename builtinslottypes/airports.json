@@ -2561,7 +2561,42 @@
     {"name":"Limington-Harmon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
     {"name":"Bowman Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
     {"name":"Lubec Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
-    {"name":"Gillespie Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"}
+    {"name":"Gillespie Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+
+    {"name":"Millinocket Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Seven G's Seaplane Base","alternativeNames":["Seven Gs Seaplane Base"],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Brandy Pond Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Long Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Buckhorn Camps Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Shin Pond Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Portage Lake Municipal Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Northern Maine Regional Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Rangeley Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Greaton Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Long Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Banks Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Twitchell Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Van Buren Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Wales Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Libby Camps Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Ring Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Loring International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"St. Croix Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"NAS Brunswick","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+
+    {"name":"Baltimore/Washington International Thurgood Marshall Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Salisbury-Ocean City Wicomico Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Hagerstown Regional Airport","alternativeNames":["Richard A. Henson Field", "Richard A Henson Field", "Richard Henson Field"],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Martin State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Frederick Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Montgomery County Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Maryland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Tipton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Carroll County Regional Airport","alternativeNames":["Jack B. Poage Field", "Jack B Poage Field", "Jack Poage Field"],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Cambridge-Dorchester Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"College Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Crisfield Municipal Airport","alternativeNames":["Crisfield-Somerset Airport", "Crisfield Somerset Airport"],"priorNames":[],"country":"united states","state":"maryland"},
+    {"name":"Greater Cumberland Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maryland"}
 
 
 
