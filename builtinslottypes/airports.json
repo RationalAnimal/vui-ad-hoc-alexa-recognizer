@@ -2675,7 +2675,24 @@
     {"name":"Sterling Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
     {"name":"Otis Air National Guard Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
     {"name":"Lake Gardner Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
-    {"name":"Snow Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"}
+    {"name":"Snow Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+
+    {"name":"Metropolitan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Ware Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Acushnet Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Bowles Agawam Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Moore Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Bolton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Braintree Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Brockton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Boston Metropolitan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Chatham Naval Air Station","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"No Man's Land Navy Airfield","alternativeNames":["No Mans Land Navy Airfield"],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Fall River Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Clark Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Robbins Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Coast Guard Aviation Station Ten Pound Island","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"},
+    {"name":"Grafton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"massachusetts"}
 
   ]
 }
