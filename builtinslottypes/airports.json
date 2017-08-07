@@ -2561,7 +2561,28 @@
     {"name":"Limington-Harmon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
     {"name":"Bowman Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
     {"name":"Lubec Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
-    {"name":"Gillespie Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"}
+    {"name":"Gillespie Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+
+    {"name":"Millinocket Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Seven G's Seaplane Base","alternativeNames":["Seven Gs Seaplane Base"],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Brandy Pond Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Long Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Buckhorn Camps Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Shin Pond Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Portage Lake Municipal Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Northern Maine Regional Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Rangeley Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Greaton Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Long Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Banks Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Twitchell Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Van Buren Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Wales Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Libby Camps Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Ring Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"Loring International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"St. Croix Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"},
+    {"name":"NAS Brunswick","alternativeNames":[],"priorNames":[],"country":"united states","state":"maine"}
 
 
 
