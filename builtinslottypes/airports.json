@@ -2781,7 +2781,22 @@
     {"name":"Hillsdale Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"West Michigan Regional Airport","alternativeNames":[],"priorNames":["Tulip City Airport"],"country":"united states","state":"michigan"},
     {"name":"Roscommon County - Blodgett Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Ionia County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Ionia County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Jackson County Airport","alternativeNames":["Reynolds Field"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Lakeview Airport","alternativeNames":["Griffith Field"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Toledo Suburban Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Dupont-Lapeer Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Mason County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Mackinac Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Schoolcraft County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Marlette Airport","alternativeNames":["Marlette Township Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Brooks Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Mason Jewett Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Menominee-Marinette Twin County Airport","alternativeNames":["Menominee Marinette Twin County Airport", "Marinette Twin County Airport", "Menominee Twin County Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Jack Barstow Airport","alternativeNames":["Jack Barstow Municipal Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Oscoda County Dennis Kauffman Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+
 
 
 
