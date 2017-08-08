@@ -2752,7 +2752,23 @@
     {"name":"James Clements Municipal Airport and SPB","alternativeNames":["James Clements Municipal Airport and SPB"],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Beaver Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Antrim County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Southwest Michigan Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Southwest Michigan Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Roben-Hood Airport","alternativeNames":["Roben Hood Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Bois Blanc Island Airport","alternativeNames":["Bois Blanc Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Wexford County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Tuscola Area Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Fitch H. Beach Airport","alternativeNames":["Fitch H Beach Airport", "Fitch Beach Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Cheboygan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Clare Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Branch County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Coleman A. Young Municipal Airport","alternativeNames":["Coleman A Young Municipal Airport", "Coleman Young Municipal Airport", "Detroit City Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Dowagiac Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Drummond Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Evart Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Frankfort Dow Memorial Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Fremont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+
 
 
 
