@@ -2804,7 +2804,19 @@
     {"name":"Ontonagon County Airport","alternativeNames":["Schuster Field"],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Oscoda-Wurtsmith Airport","alternativeNames":["Oscoda Wurtsmith Airport", "Wurtsmith Airport", "Oscoda Airport"],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Owosso Community Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Presque Isle County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Presque Isle County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Saginaw County H.W. Browne Airport","alternativeNames":["Saginaw County H. W. Browne Airport", "Saginaw County H W Browne Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Sandusky City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"South Haven Area Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Paul C. Miller - Sparta Airport","alternativeNames":["Paul C. Miller Airport", "Paul C Miller Airport", "Paul Miller Airport", "Sparta Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Mackinac County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Kirsch Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Three Rivers Municipal Dr. Haines Airport","alternativeNames":["Three Rivers Municipal Airport", "Three Rivers Municipal Dr Haines Airport", "Three Rivers Municipal Doctor Haines Airport", "Dr. Haines Airport", "Dr Haines Airport", "Doctor Haines Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"West Branch Community Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"White Cloud Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Silver City Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Avoca Airport","alternativeNames":[],"priorNames":["Rasor Airport"],"country":"united states","state":"michigan"}
 
 
 
