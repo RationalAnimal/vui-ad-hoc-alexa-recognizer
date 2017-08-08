@@ -2843,7 +2843,18 @@
     {"name":"Athelone Williams Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Indian Creek Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Cackleberry Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"East Jordan City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"East Jordan City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Iosco County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Torchport Airport","alternativeNames":["Torchport Airpark"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Skyway Estates Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Hamp Airport","alternativeNames":["Hamp Skyport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Sharpe's Strip","alternativeNames":["Sharpes Strip"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Empire Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Dalton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Maple Grove Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"William Tiny Zehnder Field","alternativeNames":["William Zehnder Field"],"priorNames":[],"country":"united states","state":"michigan"}
+
 
 
   ]
