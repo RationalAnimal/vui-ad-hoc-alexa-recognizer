@@ -2816,13 +2816,19 @@
     {"name":"West Branch Community Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"White Cloud Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Silver City Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Avoca Airport","alternativeNames":[],"priorNames":["Rasor Airport"],"country":"united states","state":"michigan"}
+    {"name":"Avoca Airport","alternativeNames":[],"priorNames":["Rasor Airport"],"country":"united states","state":"michigan"},
 
-
-
-
-
-
+    {"name":"Engler Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Baldwin Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Shady Lawn Field","alternativeNames":["Shady Lawn Farms Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Baraga Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"University Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Belleville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Andrews University Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Betz Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Boyne City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Boyne Mountain Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Brighton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
 
   ]
 }
