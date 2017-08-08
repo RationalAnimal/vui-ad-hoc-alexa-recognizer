@@ -2795,7 +2795,17 @@
     {"name":"Mason Jewett Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Menominee-Marinette Twin County Airport","alternativeNames":["Menominee Marinette Twin County Airport", "Marinette Twin County Airport", "Menominee Twin County Airport"],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Jack Barstow Airport","alternativeNames":["Jack Barstow Municipal Airport"],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Oscoda County Dennis Kauffman Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Oscoda County Dennis Kauffman Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Custer Airport","alternativeNames":["Monroe Custer Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Mount Pleasant Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Luce County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Jerry Tyler Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Ontonagon County Airport","alternativeNames":["Schuster Field"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Oscoda-Wurtsmith Airport","alternativeNames":["Oscoda Wurtsmith Airport", "Wurtsmith Airport", "Oscoda Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Owosso Community Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Presque Isle County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+
 
 
 
