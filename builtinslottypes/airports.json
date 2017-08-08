@@ -2767,7 +2767,22 @@
     {"name":"Drummond Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Evart Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Frankfort Dow Memorial Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Fremont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Fremont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Gaylord Regional Airport","alternativeNames":["Otsego County Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Gladwin Zettel Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Grand Haven Memorial Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Abrams Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Grayling Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Greenville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Harbor Springs Airport","alternativeNames":["Harbor Springs Municipal", "Harbor Springs Municipal Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Oceana County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Hastings Airport","alternativeNames":[],"priorNames":["Hastings City Barry County Airport", "Barry County Airport", "Hastings City Airport"],"country":"united states","state":"michigan"},
+    {"name":"Hillsdale Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"West Michigan Regional Airport","alternativeNames":[],"priorNames":["Tulip City Airport"],"country":"united states","state":"michigan"},
+    {"name":"Roscommon County - Blodgett Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Ionia County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+
 
 
 
