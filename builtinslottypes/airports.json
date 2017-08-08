@@ -2828,7 +2828,23 @@
     {"name":"Betz Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Boyne City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Boyne Mountain Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Brighton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Brighton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Shamrock Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Buzzwick Airport","alternativeNames":["Buzz Wick Airport"],"priorNames":["Wickenheiser Airport"],"country":"united states","state":"michigan"},
+    {"name":"Wend Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Hoffman's Black Mountain Aerodrome","alternativeNames":["Hoffmans Black Mountain Aerodrome"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Howard Nixon Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Honey Acres Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Cagney Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Millstream Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Arnold Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Iron County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Athelone Williams Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Indian Creek Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Cackleberry Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"East Jordan City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+
 
   ]
 }
