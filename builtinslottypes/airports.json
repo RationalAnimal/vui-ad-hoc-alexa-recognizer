@@ -2728,7 +2728,47 @@
     {"name":"MBS International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Chippewa County International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Cherry Capital Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Charlevoix Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Charlevoix Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Gogebic-Iron County Airport","alternativeNames":["Gogebic Iron County Airport", "Gogebic Airport", "Iron County Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Oakland County International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Manistee County-Blacker Airport","alternativeNames":["Manistee County-Blacker Airport", "Manistee County Airport", "Blacker Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Grosse Ile Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Willow Run Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Livingston County Spencer J. Hardy Airport","alternativeNames":["Livingston County Spencer J Hardy Airport", "Livingston County Spencer Hardy Airport", "Livingston County Airport", "Spencer J. Hardy Airport", "Spencer J Hardy Airport", "Spencer Hardy Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Oakland Southwest Airport","alternativeNames":["Oakland/Southwest Airport", "Oakland Southwest Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Canton-Plymouth-Mettetal Airport","alternativeNames":["Canton-Plymouth Mettetal Airport", "Canton Plymouth Mettetal Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"St. Clair County International Airport","alternativeNames":["St Clair County International Airport", "Saint Clair County International Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Romeo State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Oakland/Troy Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Lenawee County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Padgham Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Gratiot Community Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Ann Arbor Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Atlanta Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Huron County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"W. K. Kellogg Airport","alternativeNames":["W. K. Kellogg Regional", "W. K. Kellogg Regional Airport", "W.K. Kellogg Regional", "W.K. Kellogg Regional Airport", "W K Kellogg Regional", "W K Kellogg Regional Airport", "Kellogg Regional", "Kellogg Regional Airport" ],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"James Clements Municipal Airport and SPB","alternativeNames":["James Clements Municipal Airport and SPB"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Beaver Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Antrim County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Southwest Michigan Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Roben-Hood Airport","alternativeNames":["Roben Hood Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Bois Blanc Island Airport","alternativeNames":["Bois Blanc Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Wexford County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Tuscola Area Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Fitch H. Beach Airport","alternativeNames":["Fitch H Beach Airport", "Fitch Beach Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Cheboygan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Clare Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Branch County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Coleman A. Young Municipal Airport","alternativeNames":["Coleman A Young Municipal Airport", "Coleman Young Municipal Airport", "Detroit City Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Dowagiac Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Drummond Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Evart Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Frankfort Dow Memorial Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Fremont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+
 
 
 
