@@ -2990,7 +2990,22 @@
     {"name":"St. Cloud Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Anoka County-Blaine Airport","alternativeNames":["Janes Field", "Anoka County Blaine Airport", "Anoka County Airport", "Blaine Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Crystal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
-    {"name":"Flying Cloud Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"}
+    {"name":"Flying Cloud Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+
+    {"name":"Airlake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"South St. Paul Municipal Airport","alternativeNames":["South St Paul Municipal Airport", "South Saint Paul Municipal Airport", "Richard E. Fleming Field", "Richard E Fleming Field", "Richard Fleming Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"St. Paul Downtown Airport","alternativeNames":["St Paul Downtown Airport", "Saint Paul Downtown Airport", "Holman Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Lake Elmo Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Aitkin Municipal Airport","alternativeNames":["Steve Kurtz Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Albert Lea Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Alexandria Municipal Airport","alternativeNames":["Chandler Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Austin Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Baudette International Airport & Seaplane Base","alternativeNames":["Baudette International Airport and Seaplane Base"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Benson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Blue Earth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Buffalo Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Houston County Airport","alternativeNames":["Caledonia-Houston County Airport", "Caledonia Houston County Airport", "Caledonia Airport", "Houston County Airport"],"priorNames":[],"country":"united states","state":"minnesota"}
+
 
   ]
 }
