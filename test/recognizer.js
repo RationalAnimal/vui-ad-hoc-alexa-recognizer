@@ -2464,7 +2464,7 @@ describe("domain parsing", function() {
               "name": "ComplimentIntent",
               "slots": {}
             },
-          "result": "Thank you"
+          "result": {"text": "Thank you"}
         }
       );
     });
@@ -2478,9 +2478,9 @@ describe("domain parsing", function() {
         }
       };
       let allowableValues = [
-        "Thanks a bunch",
-        "Danke",
-        "I agree"
+        {"text": "Thanks a bunch"},
+        {"text": "Danke"},
+        {"text": "I agree"}
       ];
       let stateAccessor = {
         "getState": function(state, selector){
@@ -2488,20 +2488,29 @@ describe("domain parsing", function() {
         }
       };
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
+      console.log("result: ", result);
       expect(result.match).to.eql(
         {
           "name": "ComplimentIntent",
           "slots": {}
         }
       );
-      expect(allowableValues.indexOf(result.result) >= 0).to.equal(true);
+      let isAllowable = false;
+      for(let i = 0; i < allowableValues.length; i++){
+        console.log("JSON.stringify(result.result): " + JSON.stringify(result.result) + ", JSON.stringify(allowableValues[i]): " + JSON.stringify(allowableValues[i]));
+        if(JSON.stringify(result.result) === JSON.stringify(allowableValues[i])){
+          isAllowable = true;
+          break;
+        }
+      }
+      expect(isAllowable).to.equal(true);
     });
 
     it("verify multi recognizer domain with non default match criteria returning a random value from result array and a state sub select accessor parses", function () {
       let domain = require("../test/blahblahdomain/blahblahdomain.json");
       let usedValues = [
-        "Thanks a bunch",
-        "Danke",
+        {"text": "Thanks a bunch"},
+        {"text": "Danke"}
       ];
       let applicationState = {
         "something": "this is not relevant",
@@ -2511,9 +2520,9 @@ describe("domain parsing", function() {
         "squirrelledAwayAlreadyUsed" : usedValues
       };
       let allowableValues = [
-        "Thanks a bunch",
-        "Danke",
-        "I agree"
+        {"text": "Thanks a bunch"},
+        {"text": "Danke"},
+        {"text": "I agree"}
       ];
       let stateAccessor = {
         "getState": function(state, selector){
@@ -2527,8 +2536,25 @@ describe("domain parsing", function() {
           "slots": {}
         }
       );
-      expect(allowableValues.indexOf(result.result) >= 0).to.equal(true);
-      expect(usedValues.indexOf(result.result) < 0).to.equal(true);
+      let isAllowable = false;
+      for(let i = 0; i < allowableValues.length; i++){
+//        console.log("JSON.stringify(result.result): " + JSON.stringify(result.result) + ", JSON.stringify(allowableValues[i]): " + JSON.stringify(allowableValues[i]));
+        if(JSON.stringify(result.result) === JSON.stringify(allowableValues[i])){
+          isAllowable = true;
+          break;
+        }
+      }
+      expect(isAllowable).to.equal(true);
+
+      let isUsed = false;
+      for(let i = 0; i < usedValues.length; i++){
+//        console.log("JSON.stringify(result.result): " + JSON.stringify(result.result) + ", JSON.stringify(usedValues[i]): " + JSON.stringify(usedValues[i]));
+        if(JSON.stringify(result.result) === JSON.stringify(usedValues[i])){
+          isUsed = true;
+          break;
+        }
+      }
+      expect(isUsed).to.equal(false);
     });
 
     it("verify domain with subdomain parses", function () {

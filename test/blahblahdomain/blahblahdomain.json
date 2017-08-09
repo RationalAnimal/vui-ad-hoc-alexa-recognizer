@@ -31,7 +31,7 @@
         {
           "recognizer": "blah2",
           "responder": {
-            "directValue": "Thank you"
+            "directValue": {"text": "Thank you"}
           }
         }
       ]
@@ -48,9 +48,9 @@
             "directValues": {
               "pickMethod": "random",
               "values": [
-                "Thanks a bunch",
-                "Danke",
-                "I agree"
+                {"text": "Thanks a bunch"},
+                {"text": "Danke"},
+                {"text": "I agree"}
               ]
             }
           }
@@ -70,9 +70,9 @@
               "pickMethod": "randomDoNotRepeat",
               "repeatSelector": "squirrelledAwayAlreadyUsed",
               "values": [
-                "Thanks a bunch",
-                "Danke",
-                "I agree"
+                {"text": "Thanks a bunch"},
+                {"text": "Danke"},
+                {"text": "I agree"}
               ]
             }
           }
