@@ -3004,8 +3004,22 @@
     {"name":"Benson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Blue Earth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Buffalo Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
-    {"name":"Houston County Airport","alternativeNames":["Caledonia-Houston County Airport", "Caledonia Houston County Airport", "Caledonia Airport", "Houston County Airport"],"priorNames":[],"country":"united states","state":"minnesota"}
+    {"name":"Houston County Airport","alternativeNames":["Caledonia-Houston County Airport", "Caledonia Houston County Airport", "Caledonia Airport", "Houston County Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
 
+    {"name":"Cambridge Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Canby Municipal Airport","alternativeNames":["Myers Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Cloquet/Carlton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Cook Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Crookston Municipal Airport","alternativeNames":["Kirkwood Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Detroit Lakes Airport","alternativeNames":["Wething Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Dodge Center Airport","alternativeNames":["Dodge Center Municipal Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Sky Harbor Airport & Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Elbow Lake Municipal-Pride of the Prairie Airport","alternativeNames":["Elbow Lake Municipal Pride of the Prairie Airport", "Elbow Lake Municipal Airport", "Pride of the Prairie Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Ely Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Eveleth-Virginia Municipal Airport","alternativeNames":["Eveleth Virginia Municipal Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Fairmont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Faribault Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Fergus Falls Municipal Airport","alternativeNames":["Einar Mickelson Field"],"priorNames":[],"country":"united states","state":"minnesota"}
 
   ]
 }
