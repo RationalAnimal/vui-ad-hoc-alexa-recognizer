@@ -50,7 +50,7 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
     else if(directValues.pickMethod === "randomDoNotRepeat"){
       if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values) &&
          typeof directValues.repeatSelector !== "undefined" && directValues.repeatSelector !== null){
-        let usedValues = stateAccessor(applicationState, directValues.repeatSelector);
+        let usedValues = stateAccessor.getState(applicationState, directValues.repeatSelector);
         console.log("usedValues: ", JSON.stringify(usedValues));
         let unusedValues = [];
         for(let i = 0; i < directValues.values.length; i++){

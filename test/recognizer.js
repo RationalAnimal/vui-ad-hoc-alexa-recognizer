@@ -2395,8 +2395,10 @@ describe("domain parsing", function() {
     });
     it("verify multi recognizer domain with non default match criteria and a hardcoded accessor parses", function () {
       let domain = require("../test/blahblahdomain/blahblahdomain.json");
-      let stateAccessor = function(selector){
-        return {"flow": "TEST_FLOW"};
+      let stateAccessor = {
+        "getState": function(selector){
+          return {"flow": "TEST_FLOW"};
+        }
       };
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor);
       expect(result).to.eql(
@@ -2419,8 +2421,10 @@ describe("domain parsing", function() {
           "flow": "TEST_FLOW"
         }
       };
-      let stateAccessor = function(state, selector){
-        return state[selector];
+      let stateAccessor = {
+        "getState": function(state, selector){
+          return state[selector];
+        }
       };
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
       expect(result).to.eql(
@@ -2443,8 +2447,10 @@ describe("domain parsing", function() {
           "flow": "TEST_FLOW_2"
         }
       };
-      let stateAccessor = function(state, selector){
-        return state[selector];
+      let stateAccessor = {
+        "getState": function(state, selector){
+          return state[selector];
+        }
       };
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
       expect(result).to.eql(
@@ -2472,8 +2478,10 @@ describe("domain parsing", function() {
         "Danke",
         "I agree"
       ];
-      let stateAccessor = function(state, selector){
-        return state[selector];
+      let stateAccessor = {
+        "getState": function(state, selector){
+          return state[selector];
+        }
       };
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
       expect(result.match).to.eql(
@@ -2503,8 +2511,10 @@ describe("domain parsing", function() {
         "Danke",
         "I agree"
       ];
-      let stateAccessor = function(state, selector){
-        return state[selector];
+      let stateAccessor = {
+        "getState": function(state, selector){
+          return state[selector];
+        }
       };
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
       expect(result.match).to.eql(
@@ -2525,8 +2535,10 @@ describe("domain parsing", function() {
           "flow": "TEST_FLOW"
         }
       };
-      let stateAccessor = function(state, selector){
-        return state[selector];
+      let stateAccessor = {
+        "getState": function(state, selector){
+          return state[selector];
+        }
       };
       let result = recognizer.Recognizer.matchDomain("good morning to you", domain, stateAccessor, applicationState);
       expect(result).to.eql(
