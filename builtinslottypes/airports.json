@@ -2930,14 +2930,18 @@
     {"name":"St. Helen Airport","alternativeNames":["St Helen Airport", "Saint Helen Airport"],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Archer Memorial Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Glowacki Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Schiffer Acres Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Schiffer Acres Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
 
-
-
-
-
-
-
-
+    {"name":"Tripp Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Cain Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Hiram Cure Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Merillat Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Meyers-Diver's Airport","alternativeNames":["Diver's Airport", "Al Meyers Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Thompsonville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Pbeaaye Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Sugar Loaf Resort Airport","alternativeNames":["Wallace G. Fryer Airfield", "Wallace G Fryer Airfield", "Wallace Fryer Airfield"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Lake Ann Airway Estates Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Watervliet Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Calkins Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
   ]
 }
