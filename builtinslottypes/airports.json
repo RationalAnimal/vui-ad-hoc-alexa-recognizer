@@ -3019,7 +3019,21 @@
     {"name":"Eveleth-Virginia Municipal Airport","alternativeNames":["Eveleth Virginia Municipal Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Fairmont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Faribault Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
-    {"name":"Fergus Falls Municipal Airport","alternativeNames":["Einar Mickelson Field"],"priorNames":[],"country":"united states","state":"minnesota"}
+    {"name":"Fergus Falls Municipal Airport","alternativeNames":["Einar Mickelson Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+
+    {"name":"Fosston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Glencoe Municipal Airport","alternativeNames":["Vernon Perschau Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Glenwood Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Grand Marais/Cook County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Grand Rapids/Itasca County Airport","alternativeNames":["Grand Rapids Itasca County Airport", "Itasca County Airport", "Grand Rapids Airport", "Gordon Newstrom Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Hallock Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Hawley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Hector Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Hutchinson Municipal Airport","alternativeNames":["Butler Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Jackson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Le Sueur Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Litchfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"}
+
 
   ]
 }
