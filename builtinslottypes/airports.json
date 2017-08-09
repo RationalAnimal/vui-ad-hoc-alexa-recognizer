@@ -2853,7 +2853,24 @@
     {"name":"Empire Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Dalton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Maple Grove Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"William Tiny Zehnder Field","alternativeNames":["William Zehnder Field"],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"William Tiny Zehnder Field","alternativeNames":["William Zehnder Field"],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Flying-A-Ranch Airport","alternativeNames":["Flying A Ranch Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Lakes of the North Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Duford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Sugar Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Grand Marais Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Grant Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Richmond Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Field of Dreams Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Bunch's Half Acre Airport","alternativeNames":["Bunches Half Acre Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Clare County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Harrisville Airport","alternativeNames":["Harrisville City Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Harsens Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Albert J. Lindberg Airport","alternativeNames":["Albert J Lindberg Airport", "Albert Lindberg Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Hillman Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Park Township Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+
 
 
 
