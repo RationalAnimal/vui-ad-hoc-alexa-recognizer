@@ -51,7 +51,7 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
       if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values) &&
          typeof directValues.repeatSelector !== "undefined" && directValues.repeatSelector !== null){
         let usedValues = stateAccessor.getState(applicationState, directValues.repeatSelector);
-        console.log("usedValues: ", JSON.stringify(usedValues));
+//        console.log("usedValues: ", JSON.stringify(usedValues));
         let unusedValues = [];
         let stringifiedUsedValues = [];
         for(let i = 0; i < usedValues.length; i ++){
@@ -59,11 +59,11 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
         }
         for(let i = 0; i < directValues.values.length; i++){
           if(stringifiedUsedValues.indexOf(JSON.stringify(directValues.values[i])) < 0){
-            console.log("adding to unusedValues: ", JSON.stringify(directValues.values[i]));
+//            console.log("adding to unusedValues: ", JSON.stringify(directValues.values[i]));
             unusedValues.push(directValues.values[i]);
           }
         }
-        console.log("unusedValues: ", JSON.stringify(unusedValues));
+//        console.log("unusedValues: ", JSON.stringify(unusedValues));
         let randomIndex = Math.floor(Math.random() * unusedValues.length);
         return unusedValues[randomIndex];
       }
