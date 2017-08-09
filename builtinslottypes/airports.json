@@ -2942,6 +2942,16 @@
     {"name":"Sugar Loaf Resort Airport","alternativeNames":["Wallace G. Fryer Airfield", "Wallace G Fryer Airfield", "Wallace Fryer Airfield"],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Lake Ann Airway Estates Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Watervliet Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Calkins Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Calkins Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Ojibwa Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Forest Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Maidens Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Woodruff Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Gavagan Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Para Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Yale Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Ottawa Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Selfridge ANGB","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
   ]
 }
