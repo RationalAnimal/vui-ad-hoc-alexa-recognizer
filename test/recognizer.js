@@ -2488,7 +2488,7 @@ describe("domain parsing", function() {
         }
       };
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
-      console.log("result: ", result);
+//      console.log("result: ", result);
       expect(result.match).to.eql(
         {
           "name": "ComplimentIntent",
@@ -2497,7 +2497,7 @@ describe("domain parsing", function() {
       );
       let isAllowable = false;
       for(let i = 0; i < allowableValues.length; i++){
-        console.log("JSON.stringify(result.result): " + JSON.stringify(result.result) + ", JSON.stringify(allowableValues[i]): " + JSON.stringify(allowableValues[i]));
+//        console.log("JSON.stringify(result.result): " + JSON.stringify(result.result) + ", JSON.stringify(allowableValues[i]): " + JSON.stringify(allowableValues[i]));
         if(JSON.stringify(result.result) === JSON.stringify(allowableValues[i])){
           isAllowable = true;
           break;
