@@ -1523,8 +1523,12 @@ let _isSubObject = function(subObject, withinObject){
  * Call this function to use an AppModule/Domain json to match text
  * @param {string} stringToMatch - the text to match to intent or result.
  * @param {string|object} domain
- * @param {function} stateAccessor - optional, needed only if state is specified in the domain. Call this function to
- *   get the current state info. API is simple: getState("someKey") will return the corresponding value.
+ * @param {object} stateAccessor - optional, needed only if state is specified in the domain or if responder is
+ *   specified. Call this function to get or set the current state info.
+ *   API is simple:
+ *     getState(state, someKey) will return the corresponding value
+ *     getStateChain(state, [keys]) will return the corresponding value given the chain of keys (use with subdomains)
+ *     setState(state, someKey, newValue) will set the corresponding value
  * @returns {object}
  * @private
  */
@@ -1613,8 +1617,8 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
         }
       }
     }
-    else if(typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "function"){
-      if(_isSubObject(stateAccessor(applicationState, state.matchCriteria.selector), state.matchCriteria.match)){
+    else if(typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object"){
+      if(_isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.match)){
         for(let j = 0; j < state.matchSpecs.length; j ++){
           if(typeof state.matchSpecs[j].recognizer !== "undefined"){
             let scratchRecognizer = recognizers[state.matchSpecs[j].recognizer];
