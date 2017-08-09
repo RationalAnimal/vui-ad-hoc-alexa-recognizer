@@ -2978,7 +2978,19 @@
     {"name":"Loar's Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Bonnie Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Double JJ Resort Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Standish Industrial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Standish Industrial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Bemidji Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Brainerd Lakes Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Duluth International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Range Regional Airport","alternativeNames":["Chisholm-Hibbing Airport", "Chisholm Hibbing Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Falls International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Minneapolis St. Paul International Airport","alternativeNames":["Minneapolis St Paul International Airport", "Minneapolis Saint Paul International Airport", "Wold-Chamberlain Field", "Wold Chamberlain Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Rochester International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"St. Cloud Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Anoka County-Blaine Airport","alternativeNames":["Janes Field", "Anoka County Blaine Airport", "Anoka County Airport", "Blaine Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Crystal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Flying Cloud Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"}
 
   ]
 }
