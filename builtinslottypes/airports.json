@@ -2918,7 +2918,20 @@
     {"name":"Ray Community Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Nartron Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Wells Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Roscommon Conservation Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Roscommon Conservation Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Cowley Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Sault Ste. Marie Municipal Airport","alternativeNames":["Sault Marie Municipal Airport", "Sanderson Field"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Prairie Ronde Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Sebewaing Airport","alternativeNames":["Sebewaing Township Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Prickett-Grooms Field","alternativeNames":["Prickett Grooms Field"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Johnson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"David's Landing","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"St. Helen Airport","alternativeNames":["St Helen Airport", "Saint Helen Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Archer Memorial Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Glowacki Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Schiffer Acres Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+
 
 
 
