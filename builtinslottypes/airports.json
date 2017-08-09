@@ -2869,7 +2869,20 @@
     {"name":"Harsens Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Albert J. Lindberg Airport","alternativeNames":["Albert J Lindberg Airport", "Albert Lindberg Airport"],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Hillman Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Park Township Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Park Township Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Houghton Lake State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Raether Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Aeronut Park Balloonport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Calvin Campbell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Green Lake Airport","alternativeNames":["Green Lake Township Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Stambaugh Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Edward F Johnson Airport","alternativeNames":["Edward Johnson Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Riverview Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Newman's Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Kalkaska City Airport","alternativeNames":["Kalkaska Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Wilderness Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Dennis Farms Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
 
 
 
