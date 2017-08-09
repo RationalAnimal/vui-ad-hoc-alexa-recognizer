@@ -2408,7 +2408,9 @@ describe("domain parsing", function() {
             "name": "ComplimentIntent",
             "slots": {}
           },
-          "result": "Thanks"
+          "result": {
+            "text": "Thanks"
+          }
         }
       );
     });
@@ -2434,7 +2436,9 @@ describe("domain parsing", function() {
             "name": "ComplimentIntent",
             "slots": {}
           },
-          "result": "Thanks"
+          "result": {
+            "text": "Thanks"
+          }
         }
       );
     });
