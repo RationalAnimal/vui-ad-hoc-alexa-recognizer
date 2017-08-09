@@ -3070,7 +3070,18 @@
     {"name":"St. James Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Staples Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Thief River Falls Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
-    {"name":"Tower Municipal Airport & Seaplane Base","alternativeNames":["Tower Municipal Airport and Seaplane Base", "Tower Municipal Airport", "Tower Municipal Seaplane Base", "Tower Seaplane Base"],"priorNames":[],"country":"united states","state":"minnesota"}
+    {"name":"Tower Municipal Airport & Seaplane Base","alternativeNames":["Tower Municipal Airport and Seaplane Base", "Tower Municipal Airport", "Tower Municipal Seaplane Base", "Tower Seaplane Base"],"priorNames":[],"country":"united states","state":"minnesota"},
+
+    {"name":"Tracy Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Richard B. Helgeson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Wadena Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Walker Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Warroad International Memorial Airport","alternativeNames":["Swede Carlson Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Waseca Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Wheaton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Willmar Municipal Airport","alternativeNames":["John L. Rice Field", "John L Rice Field", "John Rice Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Windom Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Winona Municipal Airport","alternativeNames":["Max Conrad Field"],"priorNames":[],"country":"united states","state":"minnesota"}
 
 
 
