@@ -2952,6 +2952,18 @@
     {"name":"Para Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Yale Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Ottawa Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Selfridge ANGB","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Selfridge ANGB","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"CGAS Traverse City","alternativeNames":["Cherry Capital Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Somerville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Midway Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"David's Airport","alternativeNames":["David's Field"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Hoerner's Corners Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"West Gladstone Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Randolph's Landing Area","alternativeNames":["Randolph's Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Saline Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Vassar Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Tackaberry Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+
   ]
 }
