@@ -3056,7 +3056,22 @@
     {"name":"Paynesville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Pine River Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Pipestone Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
-    {"name":"Fillmore County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"}
+    {"name":"Fillmore County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+
+    {"name":"Princeton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Red Wing Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Redwood Falls Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Roseau Municipal Airport","alternativeNames":["Rudy Billberg Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Rush City Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Rushford Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Sauk Centre Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Silver Bay Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Springfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"St. James Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Staples Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Thief River Falls Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Tower Municipal Airport & Seaplane Base","alternativeNames":["Tower Municipal Airport and Seaplane Base", "Tower Municipal Airport", "Tower Municipal Seaplane Base", "Tower Seaplane Base"],"priorNames":[],"country":"united states","state":"minnesota"}
+
 
 
 
