@@ -2895,7 +2895,22 @@
     {"name":"Mancelona Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Rossettie Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Marine City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Canadian Lakes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Canadian Lakes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Mecosta Morton Airport","alternativeNames":["Mecosta-Morton Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Moorestown Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Hanley Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Napoleon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Van Wagnen Airport","alternativeNames":[],"priorNames":["Day Field"],"country":"united states","state":"michigan"},
+    {"name":"Wolf Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Woolsey Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Jablonski Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Hat Field","alternativeNames":["Hatfield Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Leo E. Goetz County Airport","alternativeNames":["Leo E Goetz County Airport", "Leo Goetz County Airport", "Goetz County Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Triple H Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Almena Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Gradolph Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+
 
 
 
