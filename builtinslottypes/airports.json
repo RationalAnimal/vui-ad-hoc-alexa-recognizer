@@ -2882,7 +2882,21 @@
     {"name":"Newman's Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Kalkaska City Airport","alternativeNames":["Kalkaska Airport"],"priorNames":[],"country":"united states","state":"michigan"},
     {"name":"Wilderness Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
-    {"name":"Dennis Farms Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+    {"name":"Dennis Farms Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+
+    {"name":"Home Acres Sky Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Lake Isabella - Cal Brewer Memorial Airport","alternativeNames":["Lake Isabella Cal Brewer Memorial Airport", "Lake Isabella Airport", "Cal Brewer Memorial Airport"],"priorNames":["Lake Isabella Airpark"],"country":"united states","state":"michigan"},
+    {"name":"Garland Airport","alternativeNames":["Eagle 2 Airport", "Eagle II Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Flugplatz Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Milwrick Flying M Airport","alternativeNames":[],"priorNames":["Flying M Ranch Airport"],"country":"united states","state":"michigan"},
+    {"name":"Price's Airport","alternativeNames":["Prices Airport"],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Lowell City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Lost Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Mancelona Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Rossettie Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Marine City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"},
+    {"name":"Canadian Lakes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"michigan"}
+
 
 
 
