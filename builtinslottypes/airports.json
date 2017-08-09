@@ -3032,7 +3032,21 @@
     {"name":"Hutchinson Municipal Airport","alternativeNames":["Butler Field"],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Jackson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Le Sueur Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
-    {"name":"Litchfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"}
+    {"name":"Litchfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+
+    {"name":"Little Falls/Morrison County Airport","alternativeNames":["Little Falls Morrison County Airport", "Morrison County Airport","Little Falls Airport", "Lindbergh Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Long Prairie Municipal Airport","alternativeNames":["Todd Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Longville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Luverne Municipal Airport","alternativeNames":["Quentin Aanenson Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Lac qui Parle County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Mahnomen County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Mankato Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Southwest Minnesota Regional Airport","alternativeNames":["Marshall/Ryan Field", "Marshall Ryan Field", "Ryan Field", "Marshall Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Montevideo-Chippewa County Airport","alternativeNames":["Montevideo Chippewa County Airport", "Chippewa County Airport", "Montevideo Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Moorhead Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Moose Lake Carlton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Mora Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"}
+
 
 
   ]
