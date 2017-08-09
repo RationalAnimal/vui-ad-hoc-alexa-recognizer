@@ -3045,7 +3045,18 @@
     {"name":"Montevideo-Chippewa County Airport","alternativeNames":["Montevideo Chippewa County Airport", "Chippewa County Airport", "Montevideo Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Moorhead Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Moose Lake Carlton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
-    {"name":"Mora Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"}
+    {"name":"Mora Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+
+    {"name":"Morris Municipal Airport","alternativeNames":["Charlie Schmidt Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"New Ulm Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Orr Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Ortonville Municipal Airport","alternativeNames":["Martinson Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Owatonna Degner Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Park Rapids Municipal Airport","alternativeNames":["Konshok Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Paynesville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Pine River Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Pipestone Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Fillmore County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"}
 
 
 
