@@ -3141,7 +3141,23 @@
     {"name":"Starbuck Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Stephen Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Tyler Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
-    {"name":"Warren Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"}
+    {"name":"Warren Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+
+    {"name":"Waskish Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Jolly Fisherman Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Wells Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Ray S. Miller Army Airfield","alternativeNames":["Ray S Miller Army Airfield", "Ray Miller Army Airfield"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Northwest Angle Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Marty's Tranquility Base","alternativeNames":["Marty's Tranquility Seaplane Base"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Devil's Track Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"New York Mills Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Pine City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Old Willmar Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+
+    {"name":"Golden Triangle Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Gulfport-Biloxi International Airport","alternativeNames":["Gulfport International Airport", "Biloxi International Airport", "Gulfport Biloxi International Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Hattiesburg-Laurel Regional Airport","alternativeNames":["Hattiesburg Laurel Regional Airport", "Laurel Regional Airport", "Hattiesburg Regional Airport"],"priorNames":[],"country":"united states","state":"mississippi"}
+
 
 
 
