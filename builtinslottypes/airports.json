@@ -3109,7 +3109,17 @@
     {"name":"Forest Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Grand Marais/Cook County Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Granite Falls Municipal Airport","alternativeNames":["Lenzen-Roe Memorial Field", "Lenzen Roe Memorial Field"],"priorNames":[],"country":"united states","state":"minnesota"},
-    {"name":"Grygla Municipal Airport","alternativeNames":["Mel Wilkens Field"],"priorNames":[],"country":"united states","state":"minnesota"}
+    {"name":"Grygla Municipal Airport","alternativeNames":["Mel Wilkens Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+
+    {"name":"Henning Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Herman Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Hill City-Quadna Mountain Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Field of Dreams Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"International Falls Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Wipline Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Karlstad Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Surfside Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Littlefork Municipal/Hanover Airport","alternativeNames":["Hanover Airport", "Littlefork Municipal Airport"],"priorNames":[],"country":"united states","state":"minnesota"}
 
 
 
