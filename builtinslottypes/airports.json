@@ -3119,7 +3119,19 @@
     {"name":"Wipline Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Karlstad Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Surfside Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
-    {"name":"Littlefork Municipal/Hanover Airport","alternativeNames":["Hanover Airport", "Littlefork Municipal Airport"],"priorNames":[],"country":"united states","state":"minnesota"}
+    {"name":"Littlefork Municipal/Hanover Airport","alternativeNames":["Hanover Airport", "Littlefork Municipal Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
+
+    {"name":"Maple Lake Municipal Airport & Seaplane Base","alternativeNames":["Maple Lake Municipal Airport and Seaplane Base", "Maple Lake Municipal Airport", "Maple Lake Seaplane Base"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Isedor Iverson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Milaca Municipal Airport","alternativeNames":["Milaca Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Morey's Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Murdock Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Nary National Airport","alternativeNames":["Shefland Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Northome Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Olivia Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Pelican Rapids Municipal Airport","alternativeNames":["Lyon's Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Perham Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"}
+
 
 
 
