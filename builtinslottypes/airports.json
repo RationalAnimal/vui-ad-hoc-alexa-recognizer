@@ -3093,7 +3093,24 @@
     {"name":"Moberg Air Base","alternativeNames":["Moberg Air and Seaplane Base", "Moberg Seaplane Base"],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Big Falls Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
     {"name":"Bigfork Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
-    {"name":"Bowstring Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"}
+    {"name":"Bowstring Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+
+    {"name":"Brooten Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Flying A Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Clarissa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Leaders/Clear Lake Airport","alternativeNames":["Leaders Clear Lake Airport", "Leaders Airport", "Clear Lake Airport"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Scotts Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Birch Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Mal's Serpent Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"North Country Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"East Gull Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Sky Harbor Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Fertile Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Forest Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Grand Marais/Cook County Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Granite Falls Municipal Airport","alternativeNames":["Lenzen-Roe Memorial Field", "Lenzen Roe Memorial Field"],"priorNames":[],"country":"united states","state":"minnesota"},
+    {"name":"Grygla Municipal Airport","alternativeNames":["Mel Wilkens Field"],"priorNames":[],"country":"united states","state":"minnesota"}
+
 
 
 
