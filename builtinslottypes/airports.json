@@ -3156,7 +3156,21 @@
 
     {"name":"Golden Triangle Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"Gulfport-Biloxi International Airport","alternativeNames":["Gulfport International Airport", "Biloxi International Airport", "Gulfport Biloxi International Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
-    {"name":"Hattiesburg-Laurel Regional Airport","alternativeNames":["Hattiesburg Laurel Regional Airport", "Laurel Regional Airport", "Hattiesburg Regional Airport"],"priorNames":[],"country":"united states","state":"mississippi"}
+    {"name":"Hattiesburg-Laurel Regional Airport","alternativeNames":["Hattiesburg Laurel Regional Airport", "Laurel Regional Airport", "Hattiesburg Regional Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+
+    {"name":"Jackson-Evers International Airport","alternativeNames":["Jackson Evers International Airport", "Jackson International Airport", "Evers International Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Mid Delta Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Meridian Regional Airport","alternativeNames":["Key Field"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Tupelo Regional Airport","alternativeNames":["C.D. Lemons Field", "C. D. Lemons Field", "CD Lemons Field", "C D Lemons Field"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Olive Branch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Monroe County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Ackerman Choctaw County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Panola County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Thigpen Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Stennis International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Tishomingo County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Belzoni Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"}
+
 
 
 
