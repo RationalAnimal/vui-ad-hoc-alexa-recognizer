@@ -3207,6 +3207,20 @@
     {"name":"McComb-Pike County Airport","alternativeNames":["McComb Pike County Airport", "McComb Airport", "Pike County Airport", "John E. Lewis Field", "John E Lewis Field", "John Lewis Field"],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"Natchez-Adams County Airport","alternativeNames":["Natchez Adams County Airport", "Natchez Airport", "Adams County Airport", "Hardy Anders Field"],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"New Albany-Union County Airport","alternativeNames":["New Albany Union County Airport", "New Albany Airport", "Union County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
-    {"name":"James H. Easom Field","alternativeNames":["James H Easom Field", "James Easom Field"],"priorNames":[],"country":"united states","state":"mississippi"}
+    {"name":"James H. Easom Field","alternativeNames":["James H Easom Field", "James Easom Field"],"priorNames":[],"country":"united states","state":"mississippi"},
+
+    {"name":"Okolona Municipal Airport","alternativeNames":["Richard M. Stovall Field", "Richard M Stovall Field", "Richard Stovall Field"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"University-Oxford Airport","alternativeNames":["University Oxford Airport", "University  Airport", "Oxford Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Trent Lott International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Philadelphia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Picayune Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Calhoun County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Pontotoc County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Poplarville-Pearl River County Airport","alternativeNames":["Poplarville Pearl River County Airport", "Poplarville Airport", "Pearl River County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Prentiss-Jefferson Davis County Airport","alternativeNames":["Prentiss Jefferson Davis County Airport", "Jefferson Davis County Airport", "Prentiss Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Clarke County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"John Bell Williams Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Richton-Perry County Airport","alternativeNames":["Richton Perry County Airport", "Richton Airport", "Perry County Airport"],"priorNames":[],"country":"united states","state":"mississippi"}
+
   ]
 }
