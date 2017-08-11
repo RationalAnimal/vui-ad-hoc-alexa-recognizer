@@ -86,13 +86,18 @@ let _setState = function(state, key, newValue){
         return;
       }
     }
-    result[keyArray[keyArray.length - 1]] = newValue;
+    if(typeof newValue === "undefined" || newValue === null){
+      delete result[keyArray[keyArray.length - 1]];
+    }
+    else {
+      result[keyArray[keyArray.length - 1]] = newValue;
+    }
     console.log("updated state: " + JSON.stringify(state));
     return;
   }
 };
 
-let _setStateChain = function(state, someKeyArray, newValue){
+let _setStateChain = function(state, keyArray, newValue){
   // NOOP
 }
 

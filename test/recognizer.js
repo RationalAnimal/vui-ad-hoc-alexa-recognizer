@@ -2682,7 +2682,7 @@ describe("domain parsing", function() {
       expect(result).to.eql({"flow": "TEST_FLOW"});
     });
 
-    it("verify built in simple read-only state accessor's setState function does nothing", function () {
+    it("verify built in simple state accessor's setState function works", function () {
       let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let applicationState = {
         "something": "this is not relevant",
@@ -2699,6 +2699,34 @@ describe("domain parsing", function() {
       });
     });
 
+
+    it("verify built in simple state accessor's setState function works when the new value is undefined", function () {
+      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+      simpleAccessor.setState(applicationState, "selectthis");
+      expect(applicationState).to.eql({
+        "something": "this is not relevant"
+      });
+    });
+
+    it("verify built in simple state accessor's setState function works when the new value is null", function () {
+      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+      simpleAccessor.setState(applicationState, "selectthis", null);
+      expect(applicationState).to.eql({
+        "something": "this is not relevant"
+      });
+    });
 
   });
 });
