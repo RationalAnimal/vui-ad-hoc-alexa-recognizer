@@ -2581,6 +2581,44 @@ describe("domain parsing", function() {
       );
     });
 
+    it("verify built in simple state accessor's getState function works", function () {
+      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+      let result = simpleAccessor.getState(applicationState, "selectthis");
+      expect(result).to.eql({"flow": "TEST_FLOW"});
+    });
+
+    it("verify built in simple state accessor's getStateChain function works with a single element", function () {
+      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+      let result = simpleAccessor.getStateChain(applicationState, ["selectthis"]);
+      expect(result).to.eql({"flow": "TEST_FLOW"});
+    });
+
+    it("verify built in simple state accessor's getStateChain function works with multiple elements", function () {
+      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
+      let applicationState = {
+        "something": "this is not relevant",
+        "somethingelse": {
+          "selectthis": {
+            "flow": "TEST_FLOW"
+          }
+        }
+      };
+      let result = simpleAccessor.getStateChain(applicationState, ["somethingelse", "selectthis"]);
+      expect(result).to.eql({"flow": "TEST_FLOW"});
+    });
+
   });
 });
 
