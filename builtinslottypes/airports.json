@@ -3181,15 +3181,19 @@
     {"name":"Columbus-Lowndes County Airport","alternativeNames":["Columbus Lowndes County Airport", "Columbus Airport", "Lowndes County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"Roscoe Turner Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"Crosby Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
-    {"name":"Copiah County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"}
+    {"name":"Copiah County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
 
-
-
-
-
-
-
-
-
+    {"name":"Ruleville-Drew Airport","alternativeNames":["Ruleville Drew Airport", "Drew Airport", "Ruleville Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Eupora Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"G. V. Montgomery Airport","alternativeNames":["G.V. Montgomery Airport", "G V Montgomery Airport", "GV Montgomery Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Greenwood-Leflore Airport","alternativeNames":["Greenwood Leflore Airport", "Greenwood Airport", "Leflore Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Grenada Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Hattiesburg Bobby L. Chain Municipal Airport","alternativeNames":["Hattiesburg Bobby L Chain Municipal Airport", "Hattiesburg Bobby Chain Municipal Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Hollandale Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Holly Springs-Marshall County Airport","alternativeNames":["Holly Springs Marshall County Airport", "Holly Springs Airport", "Marshall County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Houston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Indianola Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Iuka Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Hawkins Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"}
   ]
 }
