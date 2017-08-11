@@ -3194,6 +3194,19 @@
     {"name":"Houston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"Indianola Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"Iuka Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
-    {"name":"Hawkins Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"}
+    {"name":"Hawkins Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+
+    {"name":"Kosciusko-Attala County Airport","alternativeNames":["Kosciusko Attala County Airport", "Kosciusko Airport", "Attala County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Hesler-Noble Field","alternativeNames":["Hesler Noble Field", "Hesler Field", "Noble Field"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"C. A. Moore Airport","alternativeNames":["C A Moore Airport", "C.A. Moore Airport", "CA Moore Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Louisville Winston County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"I. H. Bass Jr. Memorial Airport","alternativeNames":["I H Bass Jr Memorial Airport", "I H Bass Junior Memorial Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Macon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Bruce Campbell Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Magee Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"McComb-Pike County Airport","alternativeNames":["McComb Pike County Airport", "McComb Airport", "Pike County Airport", "John E. Lewis Field", "John E Lewis Field", "John Lewis Field"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Natchez-Adams County Airport","alternativeNames":["Natchez Adams County Airport", "Natchez Airport", "Adams County Airport", "Hardy Anders Field"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"New Albany-Union County Airport","alternativeNames":["New Albany Union County Airport", "New Albany Airport", "Union County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"James H. Easom Field","alternativeNames":["James H Easom Field", "James Easom Field"],"priorNames":[],"country":"united states","state":"mississippi"}
   ]
 }
