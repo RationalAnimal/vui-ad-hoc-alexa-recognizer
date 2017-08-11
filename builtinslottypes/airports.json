@@ -3220,7 +3220,17 @@
     {"name":"Prentiss-Jefferson Davis County Airport","alternativeNames":["Prentiss Jefferson Davis County Airport", "Jefferson Davis County Airport", "Prentiss Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"Clarke County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"John Bell Williams Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
-    {"name":"Richton-Perry County Airport","alternativeNames":["Richton Perry County Airport", "Richton Airport", "Perry County Airport"],"priorNames":[],"country":"united states","state":"mississippi"}
+    {"name":"Richton-Perry County Airport","alternativeNames":["Richton Perry County Airport", "Richton Airport", "Perry County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
 
+    {"name":"Ripley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"George M. Bryan Airport","alternativeNames":["George M Bryan Airport", "George Bryan Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Tunica Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Paul Pittman Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Vicksburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Water Valley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Waynesboro Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"McCharen Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Dean Griffin Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Winona-Montgomery County Airport","alternativeNames":["Winona Montgomery County Airport", "Winona Airport", "Montgomery County Airport"],"priorNames":[],"country":"united states","state":"mississippi"}
   ]
 }
