@@ -3169,7 +3169,20 @@
     {"name":"Thigpen Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"Stennis International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"Tishomingo County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
-    {"name":"Belzoni Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"}
+    {"name":"Belzoni Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+
+    {"name":"Booneville/Baldwyn Airport","alternativeNames":["Booneville Baldwyn Airport", "Baldwyn Airport", "Booneville Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Brookhaven-Lincoln County Airport","alternativeNames":["Brookhaven Lincoln County Airport", "Lincoln County Airport", "Brookhaven County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Carthage-Leake County Airport","alternativeNames":["Carthage Leake County Airport", "Carthage Airport", "Leake County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Charleston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Fletcher Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Cleveland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Columbia-Marion County Airport","alternativeNames":["Columbia Marion County Airport", "Columbia Airport", "Marion County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Columbus-Lowndes County Airport","alternativeNames":["Columbus Lowndes County Airport", "Columbus Airport", "Lowndes County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Roscoe Turner Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Crosby Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Copiah County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"}
+
 
 
 
