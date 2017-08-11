@@ -3231,6 +3231,27 @@
     {"name":"Waynesboro Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"McCharen Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"Dean Griffin Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
-    {"name":"Winona-Montgomery County Airport","alternativeNames":["Winona Montgomery County Airport", "Winona Airport", "Montgomery County Airport"],"priorNames":[],"country":"united states","state":"mississippi"}
+    {"name":"Winona-Montgomery County Airport","alternativeNames":["Winona Montgomery County Airport", "Winona Airport", "Montgomery County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+
+    {"name":"Yazoo County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Diamondhead Airport","alternativeNames":["Diamond head Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Hernando Village Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Selfs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Ocean Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Oktibbeha Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Tunica Airport","alternativeNames":["Ralph M. Sharpe Airport", "Ralph M Sharpe Airport", "Ralph Sharpe Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Keesler Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Hagler AAF","alternativeNames":["Camp Shelby"],"priorNames":[],"country":"united states","state":"mississippi"},
+
+    {"name":"Columbus Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"NAS Meridian","alternativeNames":["McCain Field"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"NOLF Joe Williams","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Columbus AFB Auxiliary Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Flowood Industrial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Oreck Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Nick's Flying Service Inc. Airport","alternativeNames":["Nick's Flying Service Inc Airport", "Nick's Flying Service Airport", "Nick's Flying Service Incorporated Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Rollang Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Fulton-Itawamba County Airport","alternativeNames":["Fulton Itawamba County Airport", "Fulton Airport", "Itawamba County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
+    {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"}
   ]
 }
