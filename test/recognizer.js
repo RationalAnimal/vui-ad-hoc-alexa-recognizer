@@ -2699,7 +2699,6 @@ describe("domain parsing", function() {
       });
     });
 
-
     it("verify built in simple state accessor's setState function works when the new value is undefined", function () {
       let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let applicationState = {
@@ -2725,6 +2724,27 @@ describe("domain parsing", function() {
       simpleAccessor.setState(applicationState, "selectthis", null);
       expect(applicationState).to.eql({
         "something": "this is not relevant"
+      });
+    });
+
+    it("verify built in simple state accessor's setStateChain function works", function () {
+      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
+      let applicationState = {
+        "something": "this is not relevant",
+        "somethingelse": {
+          "selectthis": {
+            "flow": "TEST_FLOW"
+          }
+        }
+      };
+      simpleAccessor.setStateChain(applicationState, ["somethingelse", "selectthis"], {"flow": "NEW_FLOW"});
+      expect(applicationState).to.eql({
+        "something": "this is not relevant",
+        "somethingelse": {
+          "selectthis": {
+            "flow": "NEW_FLOW"
+          }
+        }
       });
     });
 

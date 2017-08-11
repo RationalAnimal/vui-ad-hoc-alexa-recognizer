@@ -26,12 +26,6 @@
 'use strict'
 
 let accessor = {};
-/*
-*     getState(state, someKey) will return the corresponding value
-*     getStateChain(state, [keys]) will return the corresponding value given the chain of keys (use with subdomains)
-*     setState(state, someKey, newValue) will set the corresponding value
-*/
-
 
 let _getState = function(state, key){
   if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
@@ -53,6 +47,26 @@ let _getState = function(state, key){
   }
 };
 
+let _getStateRaw = function(state, key){
+  if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
+    return;
+  }
+  let keyArray = [];
+  if(typeof key === "string"){
+    keyArray = key.split(".");
+  }
+  if(keyArray.length > 0){
+    let result = state;
+    for(let i = 0; i < keyArray.length; i++){
+      result = result[keyArray[i]];
+      if(typeof result === "undefined" || result === null){
+        return;
+      }
+    }
+    return result;
+  }
+};
+
 let _getStateChain = function(state, keyArray){
   if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
     return;
@@ -70,7 +84,6 @@ let _getStateChain = function(state, keyArray){
 };
 
 let _setState = function(state, key, newValue){
-  console.log("original state: " + JSON.stringify(state));
   if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
     return;
   }
@@ -92,14 +105,25 @@ let _setState = function(state, key, newValue){
     else {
       result[keyArray[keyArray.length - 1]] = newValue;
     }
-    console.log("updated state: " + JSON.stringify(state));
     return;
   }
 };
 
 let _setStateChain = function(state, keyArray, newValue){
-  // NOOP
-}
+  if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
+    return;
+  }
+  if(keyArray.length > 0){
+    let result = state;
+    for(let i = 0; i < keyArray.length - 1; i++){
+      result = _getStateRaw(result, keyArray[i]);
+      if(typeof result === "undefined" || result === null){
+        return;
+      }
+    }
+    _setState(result, keyArray[keyArray.length - 1], newValue);
+  }
+};
 
 accessor.getState = _getState;
 accessor.getStateChain = _getStateChain;
