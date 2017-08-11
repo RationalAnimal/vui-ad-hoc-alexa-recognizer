@@ -69,15 +69,18 @@ let _getStateChain = function(state, keyArray){
   }
 };
 
-let _setState(state, someKey, newValue){
+let _setState = function(state, someKey, newValue){
   // NOOP
 }
 
-let _setStateChain(state, someKeyArray, newValue){
+let _setStateChain = function(state, someKeyArray, newValue){
   // NOOP
 }
 
 accessor.getState = _getState;
 accessor.getStateChain = _getStateChain;
+accessor.setState = _setState;
+accessor.setStateChain = _setStateChain;
+
 
 module.exports = accessor;
