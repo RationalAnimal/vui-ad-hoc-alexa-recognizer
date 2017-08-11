@@ -69,9 +69,28 @@ let _getStateChain = function(state, keyArray){
   }
 };
 
-let _setState = function(state, someKey, newValue){
-  // NOOP
-}
+let _setState = function(state, key, newValue){
+  console.log("original state: " + JSON.stringify(state));
+  if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
+    return;
+  }
+  let keyArray = [];
+  if(typeof key === "string"){
+    keyArray = key.split(".");
+  }
+  if(keyArray.length > 0){
+    let result = state;
+    for(let i = 0; i < keyArray.length - 1; i++){
+      result = result[keyArray[i]];
+      if(typeof result === "undefined" || result === null){
+        return;
+      }
+    }
+    result[keyArray[keyArray.length - 1]] = newValue;
+    console.log("updated state: " + JSON.stringify(state));
+    return;
+  }
+};
 
 let _setStateChain = function(state, someKeyArray, newValue){
   // NOOP
