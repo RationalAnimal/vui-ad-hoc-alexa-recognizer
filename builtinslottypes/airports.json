@@ -3418,7 +3418,19 @@
     {"name":"Glacier Park International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
     {"name":"Missoula International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
     {"name":"Sidney-Richland Municipal Airport","alternativeNames":["Sidney Richland Municipal Airport", "Sidney Municipal Airport", "Richland Municipal Airport"],"priorNames":[],"country":"united states","state":"montana"},
-    {"name":"Yellowstone Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"}
+    {"name":"Yellowstone Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+
+    {"name":"L. M. Clayton Airport","alternativeNames":["L M Clayton Airport", "L.M. Clayton Airport", "LM Clayton Airport"],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Glasgow International Airport","alternativeNames":["Wokal Field"],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Dawson Community Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Havre City-County Airport","alternativeNames":["Havre City County Airport"],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Bowman Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Baker Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Big Sandy Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Big Timber Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Broadus Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Liberty County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"}
+
 
 
 
