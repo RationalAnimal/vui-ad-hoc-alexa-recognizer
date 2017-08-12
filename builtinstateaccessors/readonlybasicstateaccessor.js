@@ -26,12 +26,6 @@
 'use strict'
 
 let accessor = {};
-/*
-*     getState(state, someKey) will return the corresponding value
-*     getStateChain(state, [keys]) will return the corresponding value given the chain of keys (use with subdomains)
-*     setState(state, someKey, newValue) will set the corresponding value
-*/
-
 
 let _getState = function(state, key){
   if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
@@ -71,11 +65,11 @@ let _getStateChain = function(state, keyArray){
 
 let _setState = function(state, someKey, newValue){
   // NOOP
-}
+};
 
 let _setStateChain = function(state, someKeyArray, newValue){
   // NOOP
-}
+};
 
 accessor.getState = _getState;
 accessor.getStateChain = _getStateChain;

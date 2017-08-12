@@ -92,7 +92,6 @@ let _setState = function(state, key, newValue){
     else {
       result[keyArray[keyArray.length - 1]] = newValue;
     }
-    return;
   }
 };
 

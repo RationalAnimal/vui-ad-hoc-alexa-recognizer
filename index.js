@@ -1529,6 +1529,7 @@ let _isSubObject = function(subObject, withinObject){
  *     getState(state, someKey) will return the corresponding value
  *     getStateChain(state, [keys]) will return the corresponding value given the chain of keys (use with subdomains)
  *     setState(state, someKey, newValue) will set the corresponding value
+ *     setStateChain(state, [key], newValue) will set the corresponding value given the chain of keys (use with subdomains)
  * @returns {object}
  * @private
  */
