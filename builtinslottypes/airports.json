@@ -3278,6 +3278,21 @@
     {"name":"Cabool Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Camdenton Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Cameron Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
-    {"name":"Caruthersville Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+    {"name":"Caruthersville Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+
+    {"name":"Cassville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Chillicothe Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Clinton Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Cuba Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Dexter Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Eldon Model Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Farmington Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"A. Paul Vance Fredericktown Regional Airport","alternativeNames":["A Paul Vance Fredericktown Regional Airport", "Paul Vance Fredericktown Regional Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Elton Hensley Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Hannibal Regional Airport","alternativeNames":[],"priorNames":["Hannibal Municipal Airport"],"country":"united states","state":"missouri"},
+    {"name":"Lawrence Smith Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Higginsville Industrial Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Houston Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+
   ]
 }
