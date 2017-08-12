@@ -3319,7 +3319,20 @@
     {"name":"Grand Glaize-Osage Beach Airport","alternativeNames":["Grand Glaize Osage Beach Airport", "Osage Beach Airport", "Grand Glaize Airport"],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Perryville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Piedmont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
-    {"name":"Poplar Bluff Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+    {"name":"Poplar Bluff Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+
+    {"name":"Rolla National Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Salem Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Sedalia Regional Airport","alternativeNames":["Sedalia Memorial Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Sikeston Memorial Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"St. Clair Regional Airport","alternativeNames":["St Clair Regional Airport", "Saint Clair Regional Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Rosecrans Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Sullivan Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Gould Peterson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Trenton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Skyhaven Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Warsaw Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+
 
 
 
