@@ -3380,7 +3380,18 @@
     {"name":"Shelby County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Slater Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
-    {"name":"Flying Bar H Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+    {"name":"Flying Bar H Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+
+    {"name":"Steele Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Stockton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Stockton Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Thayer Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Unionville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Bollinger-Crass Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Roy Otten Memorial Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Harry S. Truman Dam & Reservoir Seaplane Base","alternativeNames":["Harry S Truman Dam & Reservoir Seaplane Base", "Harry Truman Dam & Reservoir Seaplane Base", "Harry S. Truman Dam and Reservoir Seaplane Base", "Harry S Truman Dam and Reservoir Seaplane Base", "Harry Truman Dam and Reservoir Seaplane Base"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Willow Springs Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+
 
 
   ]
