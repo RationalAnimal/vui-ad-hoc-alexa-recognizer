@@ -3252,6 +3252,20 @@
     {"name":"Nick's Flying Service Inc. Airport","alternativeNames":["Nick's Flying Service Inc Airport", "Nick's Flying Service Airport", "Nick's Flying Service Incorporated Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"Rollang Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
     {"name":"Fulton-Itawamba County Airport","alternativeNames":["Fulton Itawamba County Airport", "Fulton Airport", "Itawamba County Airport"],"priorNames":[],"country":"united states","state":"mississippi"},
-    {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"}
+    {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"mississippi"},
+
+    {"name":"Columbia Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Joplin Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Kansas City International Airport","alternativeNames":[],"priorNames":["Mid-Contintent International Airport", "Mid Contintent International Airport"],"country":"united states","state":"missouri"},
+    {"name":"Springfield-Branson National Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"St. Louis Lambert International Airport","alternativeNames":["St Louis Lambert International Airport", "Saint Louis Lambert International Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Branson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Cape Girardeau Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Waynesville-St. Robert Regional Airport","alternativeNames":["Forney Field", "Waynesville St. Robert Regional Airport", "Waynesville-St Robert Regional Airport", "Waynesville St Robert Regional Airport", "Waynesville-Staint Robert Regional Airport", "Waynesville Saint Robert Regional Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Kirksville Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Charles B. Wheeler Downtown Airport","alternativeNames":["Kansas City Downtown Airport", "Charles B Wheeler Downtown Airport", "Charles Wheeler Downtown Airport", "Wheeler Downtown Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Lee's Summit Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"St. Charles County Smartt Airport","alternativeNames":["Smartt Field", "Smart Field", "Smartt Airport", "Smart Airport", "St Charles County Smartt Airport", "Saint Charles County Smartt Airport", "Saint Charles County Smart Airport"],"priorNames":[],"country":"united states","state":"missouri"}
+
   ]
 }
