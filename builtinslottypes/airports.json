@@ -3265,7 +3265,19 @@
     {"name":"Kirksville Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Charles B. Wheeler Downtown Airport","alternativeNames":["Kansas City Downtown Airport", "Charles B Wheeler Downtown Airport", "Charles Wheeler Downtown Airport", "Wheeler Downtown Airport"],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Lee's Summit Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
-    {"name":"St. Charles County Smartt Airport","alternativeNames":["Smartt Field", "Smart Field", "Smartt Airport", "Smart Airport", "St Charles County Smartt Airport", "Saint Charles County Smartt Airport", "Saint Charles County Smart Airport"],"priorNames":[],"country":"united states","state":"missouri"}
+    {"name":"St. Charles County Smartt Airport","alternativeNames":["Smartt Field", "Smart Field", "Smartt Airport", "Smart Airport", "St Charles County Smartt Airport", "Saint Charles County Smartt Airport", "Saint Charles County Smart Airport"],"priorNames":[],"country":"united states","state":"missouri"},
 
+    {"name":"Creve Coeur Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Spirit of St. Louis Airport","alternativeNames":["Spirit of St Louis Airport", "Spirit of Saint Louis Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Jerry Sumners Sr. Aurora Municipal Airport","alternativeNames":["Jerry Sumners Sr Aurora Municipal Airport", "Jerry Sumners Senior Aurora Municipal Airport", "Jerry Sumners Aurora Municipal Airport", "Jerry Sumners Municipal Airport", "Aurora Municipal Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Bolivar Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Jesse Viertel Memorial Airport","alternativeNames":["Jesse P. Viertel Airport", "Jesse P Viertel Airport", "Jesse Viertel Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Bowling Green Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"North Central Missouri Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Butler Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Cabool Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Camdenton Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Cameron Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Caruthersville Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
   ]
 }
