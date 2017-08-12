@@ -3357,6 +3357,31 @@
     {"name":"East Kansas City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Mid Continent Airport","alternativeNames":["Mid-Continent Airport"],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Hermann Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
-    {"name":"Hornersville Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+    {"name":"Hornersville Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+
+    {"name":"Kahoka Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Lexington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Roosterville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Lincoln Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Mansfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Twin City Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Rankin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Monroe City Regional Airport","alternativeNames":["Capt. Ben Smith Airfield", "Capt Ben Smith Airfield", "Captain Ben Smith Airfield", "Ben Smith Airfield"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Greensfield Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Mount Vernon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+
+    {"name":"Tan-Tar-A Resort Seaplane Base","alternativeNames":["Tan Tar A Resort Seaplane Base"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Osceola Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Plattsburg Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Washington County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Richland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Rolla Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Owen Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Shelby County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Slater Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Flying Bar H Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+
+
   ]
 }
