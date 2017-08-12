@@ -3380,7 +3380,38 @@
     {"name":"Shelby County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Slater Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
-    {"name":"Flying Bar H Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+    {"name":"Flying Bar H Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+
+    {"name":"Steele Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Stockton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Stockton Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Thayer Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Unionville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Bollinger-Crass Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Roy Otten Memorial Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Harry S. Truman Dam & Reservoir Seaplane Base","alternativeNames":["Harry S Truman Dam & Reservoir Seaplane Base", "Harry Truman Dam & Reservoir Seaplane Base", "Harry S. Truman Dam and Reservoir Seaplane Base", "Harry S Truman Dam and Reservoir Seaplane Base", "Harry Truman Dam and Reservoir Seaplane Base"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Willow Springs Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+
+    {"name":"Whiteman Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Harbour Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Wehrman Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Gardner Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Bonne Terre Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Myers Park Memorial Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Columbia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"E.W. Cotton Woods Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+
+    {"name":"Richards-Gebaur Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Independence Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Lake Winnebago Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Air Park South","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Princeton-Kauffman Memorial Airport","alternativeNames":["Princeton Kauffman Memorial Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"St. Charles Airport","alternativeNames":["St Charles Airport", "Saint Charles Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Arrowhead Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Weiss Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+
+
+
 
 
   ]
