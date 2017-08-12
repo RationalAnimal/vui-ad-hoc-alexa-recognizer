@@ -65,7 +65,10 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
         }
 //        console.log("unusedValues: ", JSON.stringify(unusedValues));
         let randomIndex = Math.floor(Math.random() * unusedValues.length);
-        return unusedValues[randomIndex];
+        let returnValue = unusedValues[randomIndex];
+        usedValues.push(returnValue);
+        stateAccessor.setState(applicationState, directValues.repeatSelector, usedValues);
+        return returnValue;
       }
     }
   }

@@ -2508,6 +2508,10 @@ describe("domain parsing", function() {
 
     it("verify multi recognizer domain with non default match criteria returning a random value from result array and a state sub select accessor parses", function () {
       let domain = require("../test/blahblahdomain/blahblahdomain.json");
+      let originalUsedValues = [
+        {"text": "Thanks a bunch"},
+        {"text": "Danke"}
+      ];
       let usedValues = [
         {"text": "Thanks a bunch"},
         {"text": "Danke"}
@@ -2527,8 +2531,59 @@ describe("domain parsing", function() {
       let stateAccessor = {
         "getState": function(state, selector){
           return state[selector];
+        },
+        "setState": function(state, selector, newValue){
+          state[selector] = newValue;
         }
       };
+      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
+      expect(result.match).to.eql(
+        {
+          "name": "ComplimentIntent",
+          "slots": {}
+        }
+      );
+      let isAllowable = false;
+      for(let i = 0; i < allowableValues.length; i++){
+//        console.log("JSON.stringify(result.result): " + JSON.stringify(result.result) + ", JSON.stringify(allowableValues[i]): " + JSON.stringify(allowableValues[i]));
+        if(JSON.stringify(result.result) === JSON.stringify(allowableValues[i])){
+          isAllowable = true;
+          break;
+        }
+      }
+      expect(isAllowable).to.equal(true);
+
+      let isUsed = false;
+      for(let i = 0; i < originalUsedValues.length; i++){
+//        console.log("JSON.stringify(result.result): " + JSON.stringify(result.result) + ", JSON.stringify(usedValues[i]): " + JSON.stringify(usedValues[i]));
+        if(JSON.stringify(result.result) === JSON.stringify(originalUsedValues[i])){
+          isUsed = true;
+          break;
+        }
+      }
+      expect(isUsed).to.equal(false);
+    });
+
+    it("verify multi recognizer domain with non default match criteria returning a random value from result array and a state sub select accessor using built in basicstateaccessor parses", function () {
+      let domain = require("../test/blahblahdomain/blahblahdomain.json");
+      let usedValues = [
+        {"text": "Thanks a bunch"},
+        {"text": "Danke"}
+      ];
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW_4"
+        },
+        "squirrelledAwayAlreadyUsed" : usedValues
+      };
+      let allowableValues = [
+        {"text": "Thanks a bunch"},
+        {"text": "Danke"},
+        {"text": "I agree"}
+      ];
+      let stateAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
+
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
       expect(result.match).to.eql(
         {
@@ -2636,11 +2691,22 @@ describe("domain parsing", function() {
       });
     });
 
-
-
-
-
-
+    it("verify built in simple read-only state accessor's setStateChain function does nothing", function () {
+      let simpleAccessor = require("../builtinstateaccessors/readonlybasicstateaccessor.js");
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+      simpleAccessor.setStateChain(applicationState, ["selectthis"], {"flow": "NEW_FLOW"});
+      expect(applicationState).to.eql({
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      });
+    });
 
 
 
