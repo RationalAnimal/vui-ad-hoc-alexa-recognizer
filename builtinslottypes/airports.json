@@ -3408,7 +3408,18 @@
     {"name":"Princeton-Kauffman Memorial Airport","alternativeNames":["Princeton Kauffman Memorial Airport"],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"St. Charles Airport","alternativeNames":["St Charles Airport", "Saint Charles Airport"],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Arrowhead Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
-    {"name":"Weiss Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+    {"name":"Weiss Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+
+    {"name":"Billings Logan International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Bozeman Yellowstone International Airport","alternativeNames":[],"priorNames":["Gallatin Field Airport"],"country":"united states","state":"montana"},
+    {"name":"Bert Mooney Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Great Falls International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Helena Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Glacier Park International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Missoula International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Sidney-Richland Municipal Airport","alternativeNames":["Sidney Richland Municipal Airport", "Sidney Municipal Airport", "Richland Municipal Airport"],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Yellowstone Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"}
+
 
 
 
