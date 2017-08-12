@@ -3331,7 +3331,21 @@
     {"name":"Gould Peterson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Trenton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Skyhaven Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
-    {"name":"Warsaw Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+    {"name":"Warsaw Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+
+    {"name":"Washington Regional Airport","alternativeNames":[],"priorNames":["Washington Memorial Airport"],"country":"united states","state":"missouri"},
+    {"name":"West Plains Regional Airport","alternativeNames":[],"priorNames":["West Plains Municipal Airport"],"country":"united states","state":"missouri"},
+    {"name":"Albany Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Ava Bill Martin Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Harry S. Truman Regional Airport","alternativeNames":["Harry S Truman Regional Airport", "Harry Truman Regional Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Bethany Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Bismarck Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"M. Graham Clark Downtown Airport","alternativeNames":["M Graham Clark Downtown Airport", "Graham Clark Downtown Airport"],"priorNames":["Taney County Airport"],"country":"united states","state":"missouri"},
+    {"name":"Branson West Municipal Airport","alternativeNames":["Emerson Field"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Buffalo Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Campbell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Carrollton Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+
 
 
 
