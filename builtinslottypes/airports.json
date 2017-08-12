@@ -3305,7 +3305,22 @@
     {"name":"Marshall Memorial Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Northwest Missouri Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Memphis Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
-    {"name":"Mexico Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+    {"name":"Mexico Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+
+    {"name":"Omar N. Bradley Airport","alternativeNames":["Omar N Bradley Airport", "Omar Bradley Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Monett Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Lewis County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Midwest National Air Center","alternativeNames":[],"priorNames":["Clay County Regional Airport"],"country":"united states","state":"missouri"},
+    {"name":"Mountain Grove Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Mountain View Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Neosho Hugh Robinson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Nevada Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Grand Glaize-Osage Beach Airport","alternativeNames":["Grand Glaize Osage Beach Airport", "Osage Beach Airport", "Grand Glaize Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Perryville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Piedmont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Poplar Bluff Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+
 
 
   ]
