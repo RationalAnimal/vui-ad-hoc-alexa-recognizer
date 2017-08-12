@@ -3292,7 +3292,21 @@
     {"name":"Hannibal Regional Airport","alternativeNames":[],"priorNames":["Hannibal Municipal Airport"],"country":"united states","state":"missouri"},
     {"name":"Lawrence Smith Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Higginsville Industrial Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
-    {"name":"Houston Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+    {"name":"Houston Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+
+    {"name":"Jefferson City Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Lee C. Fine Memorial Airport","alternativeNames":["Lee C Fine Memorial Airport", "Lee Fine Memorial Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Kennett Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Lamar Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Floyd W. Jones Lebanon Airport","alternativeNames":["Floyd W Jones Lebanon Airport", "Floyd Jones Lebanon Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Linn State Technical College Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Macon-Fower Memorial Airport","alternativeNames":["Macon Fower Memorial Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Malden Regional Airport","alternativeNames":[],"priorNames":["Malden Municipal Airport"],"country":"united states","state":"missouri"},
+    {"name":"Marshall Memorial Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Northwest Missouri Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Memphis Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Mexico Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+
 
   ]
 }
