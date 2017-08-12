@@ -3344,11 +3344,19 @@
     {"name":"Branson West Municipal Airport","alternativeNames":["Emerson Field"],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Buffalo Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
     {"name":"Campbell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
-    {"name":"Carrollton Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
+    {"name":"Carrollton Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
 
-
-
-
-
+    {"name":"Mississippi County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Triple R Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Doniphan Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"El Dorado Springs Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Excelsior Springs Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Festus Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Gainesville Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Gideon Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"East Kansas City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Mid Continent Airport","alternativeNames":["Mid-Continent Airport"],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Hermann Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"},
+    {"name":"Hornersville Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"missouri"}
   ]
 }
