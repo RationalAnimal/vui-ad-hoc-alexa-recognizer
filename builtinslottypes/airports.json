@@ -3519,7 +3519,18 @@
     {"name":"Richey Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
     {"name":"Russian Flat Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
     {"name":"Ryegate Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
-    {"name":"Sand Springs Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"}
+    {"name":"Sand Springs Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+
+    {"name":"Scobey Border Station Airport","alternativeNames":["East Poplar International Airport"],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Seeley Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Lindey's Landing West Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"St. Ignatius Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Sunburst Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Ross International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Tiber Dam Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Canyon Ferry Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Troy Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Whitefish Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"}
 
   ]
 }
