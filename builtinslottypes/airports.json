@@ -3554,7 +3554,19 @@
     {"name":"Glasgow Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
     {"name":"Mountain Lakes Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
     {"name":"Morgan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
-    {"name":"Poplar Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"}
+    {"name":"Poplar Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+
+    {"name":"Central Nebraska Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Lincoln Airport","alternativeNames":[],"priorNames":["Lincoln Municipal Airport"],"country":"united states","state":"nebraska"},
+    {"name":"Eppley Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Kearney Regional Airport","alternativeNames":[],"priorNames":["Kearney Municipal Airport"],"country":"united states","state":"nebraska"},
+    {"name":"North Platte Regional Airport","alternativeNames":["Lee Bird Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Western Nebraska Regional Airport","alternativeNames":["William B. Heilig Field", "William B Heilig Field", "William Heilig Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Alliance Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Chadron Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"McCook Ben Nelson Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Millard Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
+
 
 
   ]
