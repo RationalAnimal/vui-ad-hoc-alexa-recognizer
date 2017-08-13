@@ -3510,7 +3510,16 @@
     {"name":"Fort Belknap Agency Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
     {"name":"Hinsdale Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
     {"name":"Hogeland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
-    {"name":"Hot Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"}
+    {"name":"Hot Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+
+    {"name":"Hysham Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Lavina Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Opheim Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Whetstone International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Richey Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Russian Flat Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Ryegate Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"},
+    {"name":"Sand Springs Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"montana"}
 
   ]
 }
