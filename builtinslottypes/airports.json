@@ -3565,9 +3565,16 @@
     {"name":"Alliance Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"Chadron Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"McCook Ben Nelson Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
-    {"name":"Millard Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
+    {"name":"Millard Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
 
-
-
+    {"name":"Ainsworth Regional Airport","alternativeNames":[],"priorNames":["Ainsworth Municipal"],"country":"united states","state":"nebraska"},
+    {"name":"Albion Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Alma Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Stuart-Atkinson Municipal Airport","alternativeNames":["Stuart Atkinson Municipal Airport"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Farington Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Aurora Municipal Airport","alternativeNames":["Al Potter Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Rock County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Beatrice Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Blair Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
   ]
 }
