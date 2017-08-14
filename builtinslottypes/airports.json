@@ -3657,7 +3657,22 @@
     {"name":"Grundman Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"South Omaha Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"Springview Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
-    {"name":"Wilber Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
+    {"name":"Wilber Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+
+    {"name":"Boulder City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Elko Regional Airport","alternativeNames":["J.C. Harris Field", "J. C. Harris Field", "JC Harris Field", "J C Harris Field"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"McCarran International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Reno/Tahoe International Airport","alternativeNames":["Reno Tahoe International Airport", "Reno International Airport", "Tahoe International Airport"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Ely Airport","alternativeNames":["Yelland Field"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"North Las Vegas Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Carson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Henderson Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Reno/Stead Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Alamo Landing Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Austin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Battle Mountain Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Beatty Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"}
+
 
 
   ]
