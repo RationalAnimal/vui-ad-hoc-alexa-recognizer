@@ -3710,7 +3710,20 @@
     {"name":"Spanish Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
     {"name":"Sky Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
     {"name":"Searchlight Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
-    {"name":"Rosaschi Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"}
+    {"name":"Rosaschi Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+
+    {"name":"NAS Fallon","alternativeNames":["Van Voorhis Field"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Creech Air Force Base","alternativeNames":["Indian Springs AF Aux.", "Indian Springs AF Auxiliary"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Nellis Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Desert Rock Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Pahute Mesa Airstrip","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Yucca Airstrip","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Tonopah Test Range Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Homey Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Ivanpah Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Black Rock City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Calvada Meadows Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Hadley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"}
 
 
 
