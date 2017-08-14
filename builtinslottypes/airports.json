@@ -3754,14 +3754,24 @@
     {"name":"Laconia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
     {"name":"Parlin Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
     {"name":"Plymouth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
-    {"name":"Skyhaven Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"}
+    {"name":"Skyhaven Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
 
-
-
-
-
-
-
+    {"name":"Mount Washington Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Alton Bay Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Newfound Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Gifford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Errol Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Franconia Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Gorham Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Hampton Airfield [1]","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Hawthorne-Feather Airpark","alternativeNames":["Hawthorne Feather Airpark", "Feather Airpark", "Hawthorne Airpark"],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Moultonboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Twin Mountain Airport [2]","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Fisher Scientific Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Speedway Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Brigham Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Mountain View Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"White Mountain Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"}
 
   ]
 }
