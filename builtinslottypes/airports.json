@@ -3575,6 +3575,34 @@
     {"name":"Aurora Municipal Airport","alternativeNames":["Al Potter Field"],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"Rock County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"Beatrice Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
-    {"name":"Blair Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
+    {"name":"Blair Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+
+    {"name":"Broken Bow Municipal Airport","alternativeNames":["Keith Glaze Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Cram Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Cambridge Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Central City Municipal Airport","alternativeNames":["Larry Reineke Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Billy G. Ray Field","alternativeNames":["Billy G Ray Field", "Billy Ray Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Columbus Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Cozad Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Creighton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Crete Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Curtis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"David City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Fairbury Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+
+    {"name":"Fairmont State Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Brenner Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Fremont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Gordon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Grant Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Greeley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Hartington Municipal Airport","alternativeNames":["Bud Becker Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Harvard State Airport","alternativeNames":["Harvard State Airfield"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Hastings Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Hebron Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Brewster Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Grant County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Imperial Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
+
   ]
 }
