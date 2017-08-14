@@ -3615,7 +3615,20 @@
     {"name":"Searle Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"Evelyn Sharp Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"Garden County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
-    {"name":"Pawnee City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
+    {"name":"Pawnee City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+
+    {"name":"Pender Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Plattsmouth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Red Cloud Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Modisett Airport","alternativeNames":["Modisett Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Sargent Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Scribner State Airport","alternativeNames":["Scribner State Airfield"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Seward Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Sidney Municipal Airport","alternativeNames":["Lloyd W. Carr Field", "Lloyd W Carr Field", "Lloyd Carr Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Superior Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Tecumseh Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Tekamah Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
+
 
   ]
 }
