@@ -3671,7 +3671,23 @@
     {"name":"Alamo Landing Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
     {"name":"Austin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
     {"name":"Battle Mountain Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
-    {"name":"Beatty Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"}
+    {"name":"Beatty Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+
+    {"name":"Eureka Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Fallon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Gabbs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Hawthorne Industrial Airport","alternativeNames":["Hawthorne Municipal Airport"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Jackpot Airport","alternativeNames":["Hayden Field"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Jean Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Derby Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Mesquite Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Minden Tahoe Airport","alternativeNames":["Minden-Tahoe Airport", "Tahoe Airport", "Minden Airport"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Overton Municipal Airport","alternativeNames":["Perkins Field"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Owyhee Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Lincoln County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Silver Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Tonopah Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"}
+
 
 
 
