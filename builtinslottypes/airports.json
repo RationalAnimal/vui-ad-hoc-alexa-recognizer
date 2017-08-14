@@ -3723,7 +3723,24 @@
     {"name":"Ivanpah Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
     {"name":"Black Rock City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
     {"name":"Calvada Meadows Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
-    {"name":"Hadley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"}
+    {"name":"Hadley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+
+    {"name":"Delamar Lake Landing Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Jackass Aeropark","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Bonnie Claire Airport","alternativeNames":["Scottys Airport", "Scotty's Airport"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Bonnie Claire Lake Landing Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Boulder City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Buffalo Valley Intermediate Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Caliente Flight Strip","alternativeNames":["Delamar Landing Field"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Goldfield Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Anderson Field","alternativeNames":["Rockwell Field"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Barton Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Sky Corral Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Voc-Tech Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Chicken Ranch Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Hidden Hills Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Pioche Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"}
+
 
 
 
