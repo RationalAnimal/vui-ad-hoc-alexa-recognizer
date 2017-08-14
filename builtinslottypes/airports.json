@@ -3641,7 +3641,24 @@
     {"name":"Genoa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"Quinn Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"Hay Springs Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
-    {"name":"Hooker County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
+    {"name":"Hooker County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+
+    {"name":"North Omaha Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Martin Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"J&J","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Trenton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Flying V Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Offutt Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Browns Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Arthur Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Bruning Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Harrison Skyranch","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"McCook Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Grundman Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"South Omaha Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Springview Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Wilber Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
+
 
   ]
 }
