@@ -3739,7 +3739,23 @@
     {"name":"Voc-Tech Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
     {"name":"Chicken Ranch Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
     {"name":"Hidden Hills Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
-    {"name":"Pioche Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"}
+    {"name":"Pioche Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+
+    {"name":"Lebanon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Manchester Boston Regional Airport","alternativeNames":["Manchester-Boston Regional Airport", "Manchester Regional Airport"],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Portsmouth International Airport at Pease","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Nashua Airport","alternativeNames":["Boire Field"],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Berlin Regional Airport","alternativeNames":[],"priorNames":["Berlin Municipal Airport"],"country":"united states","state":"new hampshire"},
+    {"name":"Claremont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Concord Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Dean Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Jaffrey AirportâSilver Ranch","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"DillantâHopkins Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Laconia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Parlin Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Plymouth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+    {"name":"Skyhaven Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"}
+
 
 
 
