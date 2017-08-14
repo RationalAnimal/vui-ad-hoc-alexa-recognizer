@@ -3702,7 +3702,16 @@
     {"name":"Empire Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
     {"name":"Tiger Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
     {"name":"Lida Junction Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
-    {"name":"Kingston Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"}
+    {"name":"Kingston Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+
+    {"name":"Mina Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Stevens Crosby Airport","alternativeNames":["Stevens-Crosby Airport", "Stevens Airport", "Crosby Airport"],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Echo Bay Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Spanish Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Sky Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Searchlight Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"},
+    {"name":"Rosaschi Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"nevada"}
+
 
 
 
