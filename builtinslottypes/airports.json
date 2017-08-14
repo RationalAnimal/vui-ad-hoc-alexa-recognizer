@@ -3627,8 +3627,21 @@
     {"name":"Sidney Municipal Airport","alternativeNames":["Lloyd W. Carr Field", "Lloyd W Carr Field", "Lloyd Carr Field"],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"Superior Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"Tecumseh Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
-    {"name":"Tekamah Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
+    {"name":"Tekamah Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
 
+    {"name":"Thomas County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Miller Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Wahoo Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Wallace Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Wayne Municipal Airport","alternativeNames":["Stan Morris Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"York Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Harlan County Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Arapahoe Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Bloomfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Genoa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Quinn Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Hay Springs Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Hooker County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
 
   ]
 }
