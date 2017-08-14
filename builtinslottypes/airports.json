@@ -3602,7 +3602,20 @@
     {"name":"Hebron Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"Brewster Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
     {"name":"Grant County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
-    {"name":"Imperial Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
+    {"name":"Imperial Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+
+    {"name":"Kimball Municipal Airport","alternativeNames":["Robert E. Arraj Field", "Robert E Arraj Field", "Robert Arraj Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Jim Kelly Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Loup City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Pioneer Village Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Nebraska City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Antelope County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Norfolk Regional Airport","alternativeNames":["Karl Stefan Memorial Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"The O'Neill Municipal Airport","alternativeNames":["John L. Baker Field", "John L Baker Field", "Baker Field"],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Searle Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Evelyn Sharp Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Garden County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"},
+    {"name":"Pawnee City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"nebraska"}
 
   ]
 }
