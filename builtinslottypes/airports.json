@@ -3858,7 +3858,24 @@
     {"name":"Jicarilla Apache Nation Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
     {"name":"Ohkay Owingeh Airport","alternativeNames":[],"priorNames":["San Juan Pueblo Airport"],"country":"united states","state":"new mexico"},
     {"name":"Fort Sumner Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
-    {"name":"Gallup Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"}
+    {"name":"Gallup Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+
+    {"name":"Glenwood-Catron County Airport","alternativeNames":["Glenwood Catron County Airport", "Catron County Airport", "Glenwood Airport"],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Grants-Milan Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Hatch Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Lea County-Jal Airport","alternativeNames":["Lea County Jal Airport", "Jal Airport"],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Las Cruces International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Las Vegas Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Lordsburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Lea County-Zip Franklin Memorial Airport","alternativeNames":["Lea County Zip Franklin Memorial Airport"],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Magdalena Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Moriarty Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Navajo Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Portales Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Questa Municipal Airport","alternativeNames":["Questa Municipal Nr 2"],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Raton Municipal Airport","alternativeNames":["Crews Field"],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Reserve Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"}
+
 
 
   ]
