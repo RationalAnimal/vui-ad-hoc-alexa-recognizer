@@ -3784,7 +3784,23 @@
     {"name":"Linden Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
     {"name":"Central Jersey Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
     {"name":"South Jersey Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
-    {"name":"Princeton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"}
+    {"name":"Princeton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+
+    {"name":"Solberg-Hunterdon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Trenton-Robbinsville Airport","alternativeNames":["Trenton Robbinsville Airport"],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Somerset Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Sussex Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Hammonton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Lakewood Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Millville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Ocean City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Robert J. Miller Air Park","alternativeNames":["Robert J Miller Air Park", "Robert Miller Air Park"],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Greenwood Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Cape May Airport","alternativeNames":["Cape May County Airport"],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Woodbine Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Aeroflex-Andover Airport","alternativeNames":["Aeroflex-Andover Field", "Aeroflex Andover Field", "Aeroflex Andover Airport"],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Trinca Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"}
+
 
   ]
 }
