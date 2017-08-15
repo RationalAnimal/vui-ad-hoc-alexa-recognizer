@@ -3810,6 +3810,18 @@
     {"name":"Little Ferry Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
     {"name":"Flying W Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
     {"name":"Newton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
-    {"name":"Old Bridge Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"}
+    {"name":"Old Bridge Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+
+    {"name":"Spitfire Aerodrome","alternativeNames":[],"priorNames":["Old Mans Airport"],"country":"united states","state":"new jersey"},
+    {"name":"Alexandria Airport","alternativeNames":["Alexandria Field"],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Sky Manor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Red Lion Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Kroelinger Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Vineland-Downstown Airport","alternativeNames":["Vineland Downstown Airport"],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Eagles Nest Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Southern Cross Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"NAES Lakehurst","alternativeNames":["Maxfield Field"],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"McGuire Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Bradford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"}
   ]
 }
