@@ -3898,7 +3898,19 @@
     {"name":"Whiskey Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
     {"name":"Tatum Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
     {"name":"Holloman Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
-    {"name":"Cannon Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"}
+    {"name":"Cannon Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+
+    {"name":"Stallion Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Condron Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"White Sands Space Harbor","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Columbus Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Industrial Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Spaceport America","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Alamo Navajo Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Oxnard Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Coronado Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"West Mesa Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Eunice Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"}
 
 
 
