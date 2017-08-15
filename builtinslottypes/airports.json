@@ -3832,6 +3832,34 @@
     {"name":"Twin Pine Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
     {"name":"Forrestal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
     {"name":"Rudy's Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
-    {"name":"Piney Hollow Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"}
+    {"name":"Piney Hollow Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+
+    {"name":"Albuquerque International Sunport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Four Corners Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Lea County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Roswell International Air Center","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Santa Fe Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Cavern City Air Terminal","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Clovis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Los Alamos Airport","alternativeNames":["Los Alamos County Airport"],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Grant County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Double Eagle II Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Alamogordo-White Sands Regional Airport","alternativeNames":["Alamogordo White Sands Regional Airport", "White Sands Regional Airport"],"priorNames":[],"country":"united states","state":"new mexico"},
+
+    {"name":"Angel Fire Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Artesia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Aztec Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Alexander Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Carrizozo Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Clayton Municipal Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Conchas Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Crownpoint Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Deming Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Jicarilla Apache Nation Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Ohkay Owingeh Airport","alternativeNames":[],"priorNames":["San Juan Pueblo Airport"],"country":"united states","state":"new mexico"},
+    {"name":"Fort Sumner Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Gallup Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"}
+
+
   ]
 }
