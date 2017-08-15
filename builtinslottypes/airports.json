@@ -3924,7 +3924,25 @@
     {"name":"Niagara Falls International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Plattsburgh International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Greater Rochester International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"Syracuse Hancock International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"Syracuse Hancock International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+
+    {"name":"Watertown International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Westchester County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Republic Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Chautauqua County/Jamestown Airport","alternativeNames":["Chautauqua County Jamestown Airport", "Jamestown Airport", "Chautauqua County Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Massena International Airport","alternativeNames":["Richards Field"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Ogdensburg International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Adirondack Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Akron Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Genesee County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Ledgedale Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Buffalo Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Canandaigua Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Spadaro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Kingston-Ulster Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Buffalo-Lancaster Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Le Roy Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Randall Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
 
 
 
