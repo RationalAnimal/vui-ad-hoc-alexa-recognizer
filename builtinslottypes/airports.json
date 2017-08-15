@@ -3822,6 +3822,16 @@
     {"name":"Southern Cross Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
     {"name":"NAES Lakehurst","alternativeNames":["Maxfield Field"],"priorNames":[],"country":"united states","state":"new jersey"},
     {"name":"McGuire Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
-    {"name":"Bradford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"}
+    {"name":"Bradford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+
+    {"name":"Pemberton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Asbury Park Neptune Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Atlantic City Municipal Airport","alternativeNames":["Bader Field"],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Li Calzi Airport","alternativeNames":["Li Calzi Airpark"],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Marlboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Twin Pine Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Forrestal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Rudy's Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Piney Hollow Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"}
   ]
 }
