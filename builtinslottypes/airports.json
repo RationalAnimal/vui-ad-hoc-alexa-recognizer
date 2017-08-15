@@ -3874,7 +3874,20 @@
     {"name":"Portales Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
     {"name":"Questa Municipal Airport","alternativeNames":["Questa Municipal Nr 2"],"priorNames":[],"country":"united states","state":"new mexico"},
     {"name":"Raton Municipal Airport","alternativeNames":["Crews Field"],"priorNames":[],"country":"united states","state":"new mexico"},
-    {"name":"Reserve Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"}
+    {"name":"Reserve Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+
+    {"name":"Sierra Blanca Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Santa Rosa Route 66 Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Dona Ana County Airport at Santa Teresa","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Shiprock Airstrip","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Socorro Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Springer Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Taos Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Truth or Consequences Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Tucumcari Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Vaughn Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Black Rock Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+    {"name":"Jewett Mesa Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"}
 
 
 
