@@ -3799,8 +3799,17 @@
     {"name":"Cape May Airport","alternativeNames":["Cape May County Airport"],"priorNames":[],"country":"united states","state":"new jersey"},
     {"name":"Woodbine Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
     {"name":"Aeroflex-Andover Airport","alternativeNames":["Aeroflex-Andover Field", "Aeroflex Andover Field", "Aeroflex Andover Airport"],"priorNames":[],"country":"united states","state":"new jersey"},
-    {"name":"Trinca Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"}
+    {"name":"Trinca Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
 
-
+    {"name":"Camden County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Blairstown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Bucks Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Cross Keys Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Hackettstown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Redwing Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Little Ferry Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Flying W Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Newton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Old Bridge Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"}
   ]
 }
