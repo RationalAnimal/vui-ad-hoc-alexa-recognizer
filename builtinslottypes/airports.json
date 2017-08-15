@@ -3771,7 +3771,20 @@
     {"name":"Speedway Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
     {"name":"Brigham Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
     {"name":"Mountain View Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
-    {"name":"White Mountain Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"}
+    {"name":"White Mountain Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new hampshire"},
+
+    {"name":"Atlantic City International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Trenton Mercer Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Newark Liberty International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Morristown Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Teterboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Monmouth Executive Airport","alternativeNames":[],"priorNames":["Allaire Airport"],"country":"united states","state":"new jersey"},
+    {"name":"Essex County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Lincoln Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Linden Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Central Jersey Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"South Jersey Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"},
+    {"name":"Princeton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new jersey"}
 
   ]
 }
