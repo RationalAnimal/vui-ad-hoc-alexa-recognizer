@@ -3910,7 +3910,21 @@
     {"name":"Oxnard Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
     {"name":"Coronado Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
     {"name":"West Mesa Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
-    {"name":"Eunice Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"}
+    {"name":"Eunice Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new mexico"},
+
+    {"name":"Albany International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Greater Binghamton Airport","alternativeNames":["Edwin A. Link Field", "Edwin A Link Field", "Edwin Link Field"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Buffalo Niagara International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Elmira/Corning Regional Airport","alternativeNames":["Elmira-Corning Regional Airport", "Elmira Corning Regional Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Long Island MacArthur Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Ithaca Tompkins Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"John F. Kennedy International Airport","alternativeNames":["J. F. K. International Airport", "J F K International Airport", "J.F.K. International Airport", "JFK International Airport"],"priorNames":["New York International Airport"],"country":"united states","state":"new york"},
+    {"name":"LaGuardia Airport","alternativeNames":["LaGuardia Airport and Marine Air Terminal", "LaGuardia Marine Air Terminal"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Stewart International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Niagara Falls International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Plattsburgh International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Greater Rochester International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Syracuse Hancock International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
 
 
 
