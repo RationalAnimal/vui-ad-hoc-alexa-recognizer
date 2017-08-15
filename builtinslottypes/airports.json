@@ -3959,7 +3959,22 @@
     {"name":"Dansville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Duanesburg Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Chautauqua County/Dunkirk Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"East Hampton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"East Hampton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+
+    {"name":"Joseph Y. Resnick Airport","alternativeNames":["Joseph Y Resnick Airport", "Joseph Resnick Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Tri-Cities Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Elizabeth Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Freehold Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Oswego County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Royalton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Floyd Bennett Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Granville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Hamilton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Hornell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Columbia County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Fulton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Lake Placid Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"North Buffalo Suburban Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
 
 
 
