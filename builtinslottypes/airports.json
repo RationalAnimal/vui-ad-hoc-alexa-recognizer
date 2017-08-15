@@ -3942,7 +3942,24 @@
     {"name":"Kingston-Ulster Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Buffalo-Lancaster Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Le Roy Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"Randall Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"Randall Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+
+    {"name":"Sky Acres Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Montauk Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Schenectady County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Brookhaven Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Syracuse Suburban Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Kobelt Airport","alternativeNames":["Wallkill Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Whitford's Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Williamson-Sodus Airport","alternativeNames":["Williamson Sodus Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Wurtsboro-Sullivan County Airport","alternativeNames":["Wurtsboro Sullivan County Airport", "Sullivan County Airport", "Wurtsboro Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Bayport Aerodrome","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Corning-Painted Post Airport","alternativeNames":["Corning Painted Post Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Cortland County Airport","alternativeNames":["Chase Field"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Dansville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Duanesburg Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Chautauqua County/Dunkirk Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"East Hampton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
 
 
 
