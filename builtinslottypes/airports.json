@@ -3974,10 +3974,21 @@
     {"name":"Columbia County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Fulton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Lake Placid Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"North Buffalo Suburban Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"North Buffalo Suburban Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
 
-
-
+    {"name":"Malone-Dufort Airport","alternativeNames":["Malone Dufort Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Orange County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Sullivan County International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Downtown Manhattan Heliport","alternativeNames":["Wall St. Heliport", "Wall Street Heliport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"East 34th Street Heliport","alternativeNames":["East thirty fourth Street Heliport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"New York Skyports Inc. Seaplane Base","alternativeNames":["New York Skyports Inc Seaplane Base", "New York Skyports Seaplane Base"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"West 30th Street Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Lt. Warren Eaton Airport","alternativeNames":["Chenango County Airport", "Lt Warren Eaton Airport", "Leutenant Warren Eaton Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Cattaraugus County-Olean Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Oneonta Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Penn Yan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Piseco Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
 
   ]
 }
