@@ -4173,9 +4173,24 @@
     {"name":"Shelby-Cleveland County Regional Airport","alternativeNames":["Shelby Cleveland County Regional Airport"],"priorNames":["Shelby Municipal Airport"],"country":"united states","state":"north carolina"},
     {"name":"Siler City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Johnston County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
-    {"name":"Cape Fear Regional Jetport","alternativeNames":["Howie Franklin Field"],"priorNames":["Brunswick County Airport"],"country":"united states","state":"north carolina"}
+    {"name":"Cape Fear Regional Jetport","alternativeNames":["Howie Franklin Field"],"priorNames":["Brunswick County Airport"],"country":"united states","state":"north carolina"},
 
-
+    {"name":"Avery County Airport","alternativeNames":["Morrison Field"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Montgomery County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Statesville Regional Airport","alternativeNames":[],"priorNames":["Statesville Municipal Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Tarboro-Edgecombe Airport","alternativeNames":["Tarboro-Edgecombe County Airport", "Tarboro Edgecombe County Airport", "Tarboro Edgecombe Airport"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Anson County Airport","alternativeNames":["Jeff Cloud Field"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Henderson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Washington Warren Airport","alternativeNames":["Warren Field"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Ashe County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Columbus County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Martin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Smith Reynolds Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Bladenboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Horace Williams Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Wilgrove Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Flanagan Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"}
 
   ]
 }
