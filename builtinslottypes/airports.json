@@ -4055,6 +4055,20 @@
     {"name":"Garnseys Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Sharon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Pratt's Eastern Divide Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"Southampton Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"Southampton Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+
+    {"name":"Spencerport Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Airhaven Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Airtrek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Wheeler-Sack Army Airfield","alternativeNames":["Wheeler Sack Army Airfield"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Maxson Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Calverton Executive Airpark","alternativeNames":[],"priorNames":["Naval Weapons Industrial Reserve Plant"],"country":"united states","state":"new york"},
+    {"name":"Hopewell Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Spring Brook Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Luther Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Potoczak Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Hendricks Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"White Birch Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+
   ]
 }
