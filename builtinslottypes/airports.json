@@ -4158,7 +4158,22 @@
     {"name":"Mount Olive Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Wilkes County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Odell Williamson Municipal Airport","alternativeNames":[],"priorNames":["Ocean Isle Airport"],"country":"united states","state":"north carolina"},
-    {"name":"Ocracoke Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"}
+    {"name":"Ocracoke Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+
+    {"name":"Henderson-Oxford Airport","alternativeNames":["Oxford Henderson Airport"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Moore County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Plymouth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Rockingham County NC Shiloh Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Halifax-Northampton Regional Airport","alternativeNames":["Halifax Northampton Regional Airport"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Richmond County Airport","alternativeNames":[],"priorNames":["Rockingham-Hamlet Airport", "Rockingham Hamlet Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Rocky Mount-Wilson Regional Airport","alternativeNames":["Rocky Mount Wilson Regional Airport"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Person County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Rutherford County Airport","alternativeNames":["Marchman Field"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Rowan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Shelby-Cleveland County Regional Airport","alternativeNames":["Shelby Cleveland County Regional Airport"],"priorNames":["Shelby Municipal Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Siler City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Johnston County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Cape Fear Regional Jetport","alternativeNames":["Howie Franklin Field"],"priorNames":["Brunswick County Airport"],"country":"united states","state":"north carolina"}
 
 
 
