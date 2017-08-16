@@ -4040,7 +4040,21 @@
     {"name":"Long Lake Sagamore Seaplane Base & Marina","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Mattituck Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Dart Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"Burrello-Mechanicville Airport","alternativeNames":["Burrello Mechanicville Airport"],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"Burrello-Mechanicville Airport","alternativeNames":["Burrello Mechanicville Airport"],"priorNames":[],"country":"united states","state":"new york"},
 
+    {"name":"Middlesex Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Owasco Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Evers Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Hollands International Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Giermek Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Ovid Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Sands Point Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Becks Grove Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Round Lake Airport and Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Rouses Point Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Garnseys Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Sharon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Pratt's Eastern Divide Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Southampton Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
   ]
 }
