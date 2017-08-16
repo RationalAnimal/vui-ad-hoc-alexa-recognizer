@@ -3988,7 +3988,20 @@
     {"name":"Oneonta Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Penn Yan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"Piseco Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"Piseco Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+
+    {"name":"Potsdam Municipal Airport","alternativeNames":["Damon Field"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Dutchess County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Sky Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Griffiss International Airport","alternativeNames":[],"priorNames":["Griffiss Air Force Base"],"country":"united states","state":"new york"},
+    {"name":"Saratoga County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Schroon Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Finger Lakes Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Sidney Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Skaneateles Aerodrome","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"South Albany Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Stormville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Ticonderoga Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
 
   ]
 }
