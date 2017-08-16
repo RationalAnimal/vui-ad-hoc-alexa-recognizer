@@ -4108,7 +4108,21 @@
     {"name":"Mohawk Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Hough Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Flowerfield Airfield","alternativeNames":["Gydrodyne Company"],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"Oneida County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"Oneida County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+
+    {"name":"Asheville Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Charlotte/Douglas International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Fayetteville Regional Airport","alternativeNames":["Grannis Field"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Piedmont Triad International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Pitt-Greenville Airport","alternativeNames":["Pitt Greenville Airport"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Albert J. Ellis Airport","alternativeNames":["Albert J Ellis Airport", "Albert Ellis Airport"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Coastal Carolina Regional Airport","alternativeNames":[],"priorNames":["Craven County Regional"],"country":"united states","state":"north carolina"},
+    {"name":"Raleigh-Durham International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Wilmington International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Concord Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Kinston Regional Jetport at Stallings Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Charlotte-Monroe Executive Airport","alternativeNames":[],"priorNames":["Monroe Regional Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Raleigh Executive Jetport at Sanford-Lee County","alternativeNames":["Raleigh Executive Jetport at Sanford Lee County", "Raleigh Executive Jetport"],"priorNames":["Sanford-Lee Co. Regional Airport", "Sanford-Lee Co Regional Airport", "Sanford Lee Co. Regional Airport", "Sanford Lee Co Regional Airport", "Sanford-Lee County Regional Airport", "Sanford Lee County Regional Airport", "Sanford-Lee Regional Airport", "Sanford Lee Regional Airport"],"country":"united states","state":"north carolina"}
 
 
   ]
