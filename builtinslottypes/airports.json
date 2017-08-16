@@ -4132,7 +4132,33 @@
     {"name":"Burlington-Alamance Regional Airport","alternativeNames":["Burlington Alamance Regional Airport"],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Clinton-Sampson County Airport","alternativeNames":["Clinton Sampson County Airport"],"priorNames":["Sampson County Airport"],"country":"united states","state":"north carolina"},
     {"name":"Currituck County Regional Airport","alternativeNames":[],"priorNames":["Currituck County Airport"],"country":"united states","state":"north carolina"},
-    {"name":"Northeastern Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"}
+    {"name":"Northeastern Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+
+    {"name":"Elizabeth City Regional Airport / CGAS Elizabeth City","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Curtis L. Brown Jr. Field","alternativeNames":["Curtis L Brown Jr Field", "Curtis L Brown Junior Field", "Curtis Brown Junior Field"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Elkin Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Hyde County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Harnett Regional Jetport","alternativeNames":[],"priorNames":["Harnett County Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Macon County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Gastonia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Wayne Executive Jetport","alternativeNames":[],"priorNames":["Goldsboro-Wayne Municipal Airport", "Goldsboro Wayne Municipal Airport", "Wayne Municipal Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Billy Mitchell Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Hickory Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Duplin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"First Flight Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+
+    {"name":"Davidson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Lincolnton-Lincoln County Regional Airport","alternativeNames":["Lincolnton Lincoln County Regional Airport"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Triangle North Executive Airport","alternativeNames":[],"priorNames":["Franklin County Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Lumberton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Dare County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Laurinburg-Maxton Airport","alternativeNames":["Laurinburg Maxton Airport"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Foothills Regional Airport","alternativeNames":[],"priorNames":["Morganton-Lenoir Airport", "Morganton Lenoir Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Mount Airy/Surry County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Mount Olive Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Wilkes County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Odell Williamson Municipal Airport","alternativeNames":[],"priorNames":["Ocean Isle Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Ocracoke Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"}
 
 
 
