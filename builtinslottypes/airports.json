@@ -4081,7 +4081,20 @@
     {"name":"Plane Haven Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Michael Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Brindley Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"Coram Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"Coram Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+
+    {"name":"Deer Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Dundee Flying Club Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Kamp Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Rockaway Airport / NOLF Edgemere","alternativeNames":["Rockaway Airport", "NOLF Edgemere"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Flushing Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Roosevelt Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Smithtown Aviation Country Club","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Honeoye Falls Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Holmes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Kirkwood Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Maben Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Monticello Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
 
   ]
 }
