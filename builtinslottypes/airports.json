@@ -4001,7 +4001,20 @@
     {"name":"Skaneateles Aerodrome","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"South Albany Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Stormville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"Ticonderoga Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"Ticonderoga Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
 
+    {"name":"Rensselaer County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Frankfort-Highland Airport","alternativeNames":["Frankfort Highland Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Warwick Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Wellsville Municipal Airport","alternativeNames":["Tarantine Field"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Francis S. Gabreski Airport","alternativeNames":["Francis S Gabreski Airport", "Francis Gabreski Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Pine Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Arcade Tri-County Airport","alternativeNames":["Arcade Tri County Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Argyle Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Clarence Aerodrome","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Chapin Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Camillus Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Airlane Enterprises Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Cooperstown-Westville Airport","alternativeNames":["Cooperstown Westville Airport"],"priorNames":[],"country":"united states","state":"new york"}
   ]
 }
