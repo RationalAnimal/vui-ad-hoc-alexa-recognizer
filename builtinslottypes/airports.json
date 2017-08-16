@@ -4068,7 +4068,20 @@
     {"name":"Luther Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Potoczak Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Hendricks Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"White Birch Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"White Birch Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+
+    {"name":"Grund Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Apex Airport","alternativeNames":[],"priorNames":["Knox Airport"],"country":"united states","state":"new york"},
+    {"name":"Campbell Field","alternativeNames":[],"priorNames":["Randolph Airport"],"country":"united states","state":"new york"},
+    {"name":"Westport Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Angola Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Grumman Bethpage Airport","alternativeNames":["Nassau County Police Heliport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Floyd Bennett Field","alternativeNames":["NYPD Air Operations Heliport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Canastota Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Plane Haven Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Michael Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Brindley Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Coram Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
 
   ]
 }
