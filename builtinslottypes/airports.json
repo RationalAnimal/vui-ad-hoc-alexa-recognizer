@@ -4094,7 +4094,22 @@
     {"name":"Holmes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Kirkwood Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Maben Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"Monticello Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"Monticello Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+
+    {"name":"Miller Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Staten Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Zahn's Airport","alternativeNames":["Zahns Airport", "Zahn Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Farnsworths Air Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Olcott-Newfane Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Peekskill Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Clinton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Griffiss Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Seneca Army Airfield","alternativeNames":["Seneca Army Depot"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Mohawk Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Hough Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Flowerfield Airfield","alternativeNames":["Gydrodyne Company"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Oneida County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+
 
   ]
 }
