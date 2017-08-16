@@ -4028,6 +4028,19 @@
     {"name":"Midlakes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Gowanda Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
     {"name":"Great Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
-    {"name":"Greene Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"}
+    {"name":"Greene Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+
+    {"name":"Greenville-Rainbow Airport","alternativeNames":["Greenville Rainbow Airport"],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Hamburg Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Haverstraw Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Creekside Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Marcy Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Green Acres Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Long Lake Helms Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Long Lake Sagamore Seaplane Base & Marina","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Mattituck Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Dart Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"new york"},
+    {"name":"Burrello-Mechanicville Airport","alternativeNames":["Burrello Mechanicville Airport"],"priorNames":[],"country":"united states","state":"new york"}
+
   ]
 }
