@@ -4122,7 +4122,18 @@
     {"name":"Concord Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Kinston Regional Jetport at Stallings Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Charlotte-Monroe Executive Airport","alternativeNames":[],"priorNames":["Monroe Regional Airport"],"country":"united states","state":"north carolina"},
-    {"name":"Raleigh Executive Jetport at Sanford-Lee County","alternativeNames":["Raleigh Executive Jetport at Sanford Lee County", "Raleigh Executive Jetport"],"priorNames":["Sanford-Lee Co. Regional Airport", "Sanford-Lee Co Regional Airport", "Sanford Lee Co. Regional Airport", "Sanford Lee Co Regional Airport", "Sanford-Lee County Regional Airport", "Sanford Lee County Regional Airport", "Sanford-Lee Regional Airport", "Sanford Lee Regional Airport"],"country":"united states","state":"north carolina"}
+    {"name":"Raleigh Executive Jetport at Sanford-Lee County","alternativeNames":["Raleigh Executive Jetport at Sanford Lee County", "Raleigh Executive Jetport"],"priorNames":["Sanford-Lee Co. Regional Airport", "Sanford-Lee Co Regional Airport", "Sanford Lee Co. Regional Airport", "Sanford Lee Co Regional Airport", "Sanford-Lee County Regional Airport", "Sanford Lee County Regional Airport", "Sanford-Lee Regional Airport", "Sanford Lee Regional Airport"],"country":"united states","state":"north carolina"},
+
+    {"name":"Tri-County Airport","alternativeNames":["Tri County Airport", "TriCounty Airport"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Stanly County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Western Carolina Regional Airport","alternativeNames":[],"priorNames":["Andrews-Murphy Airport", "Andrews Murphy Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Asheboro Regional Airport","alternativeNames":[],"priorNames":["Asheboro Municipal Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Michael J. Smith Field","alternativeNames":["Michael J Smith Field", "Michael Smith Field"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Burlington-Alamance Regional Airport","alternativeNames":["Burlington Alamance Regional Airport"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Clinton-Sampson County Airport","alternativeNames":["Clinton Sampson County Airport"],"priorNames":["Sampson County Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Currituck County Regional Airport","alternativeNames":[],"priorNames":["Currituck County Airport"],"country":"united states","state":"north carolina"},
+    {"name":"Northeastern Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"}
+
 
 
   ]
