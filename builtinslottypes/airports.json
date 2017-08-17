@@ -4318,7 +4318,18 @@
     {"name":"Gackle Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"Grenora Centennial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"Hazelton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
-    {"name":"Weydahl Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
+    {"name":"Weydahl Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+
+    {"name":"Kulm Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Larimore Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Leeds Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Lidgerwood Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Maddock Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Mayville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"McClusky Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"McVille Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Milnor Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Minto Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
 
   ]
 }
