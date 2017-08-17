@@ -4204,7 +4204,22 @@
     {"name":"Swan Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Kecks Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Raleigh East Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
-    {"name":"Causey Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"}
+    {"name":"Causey Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+
+    {"name":"Hinshaw Greenacres Airport","alternativeNames":["Hinshaw Airport"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Laneys Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Shiflet Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Hurdle Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Twin Lakes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Lake Norman Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"DS Butler Farm and Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Pink Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Donald's Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Eagles Nest Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"P K Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Triple W Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Warf Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Taylorsville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"}
 
   ]
 }
