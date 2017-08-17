@@ -4231,7 +4231,21 @@
     {"name":"Mackall Army Airfield at Camp Mackall","alternativeNames":["Mackall Army Airfield", "Camp Mackall Airfield"],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"MCAS Cherry Point","alternativeNames":["Cunningham Field"],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Pope Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
-    {"name":"Simmons Army Airfield","alternativeNames":["Simmons Army Airfield at Fort Bragg"],"priorNames":[],"country":"united states","state":"north carolina"}
+    {"name":"Simmons Army Airfield","alternativeNames":["Simmons Army Airfield at Fort Bragg"],"priorNames":[],"country":"united states","state":"north carolina"},
+
+    {"name":"Seymour Johnson Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"MCOLF Camp Davis","alternativeNames":[],"priorNames":["Camp Davis AAF"],"country":"united states","state":"north carolina"},
+    {"name":"MCAS New River","alternativeNames":["McCutcheon Field"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"MCALF Bogue","alternativeNames":["Bogue Field"],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Elk River Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Transylvania County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Elkins Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Pine Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Bradford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Sugar Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Johnson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Brockenbrough Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Halifax County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"}
 
   ]
 }
