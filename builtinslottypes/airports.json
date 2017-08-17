@@ -4338,7 +4338,17 @@
     {"name":"Trulson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"Richardton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"Garrison Dam Recreational Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
-    {"name":"Rolette Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
+    {"name":"Rolette Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+
+    {"name":"St. Thomas Municipal Airport","alternativeNames":["St Thomas Municipal Airport", "Saint Thomas Municipal Airport"],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Towner Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Turtle Lake Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Westhope Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Wishek Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Grand Forks Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Minot Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Pruetz Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Wimbledon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
 
   ]
 }
