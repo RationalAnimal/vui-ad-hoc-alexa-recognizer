@@ -4295,7 +4295,19 @@
     {"name":"Parshall-Hankins Airport","alternativeNames":["Parshall Hankins Airport"],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"Pembina Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"Rolla Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
-    {"name":"Rugby Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
+    {"name":"Rugby Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+
+    {"name":"Stanley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Tioga Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Barnes County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Harry Stern Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Walhalla Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Washburn Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Watford City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Arthur Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Ashley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Beulah Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Bowbells Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
 
   ]
 }
