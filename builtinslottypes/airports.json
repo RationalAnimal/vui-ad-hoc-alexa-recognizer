@@ -4329,7 +4329,16 @@
     {"name":"McClusky Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"McVille Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"Milnor Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
-    {"name":"Minto Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
+    {"name":"Minto Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+
+    {"name":"Napoleon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Tomlinson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"New Town Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Page Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Trulson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Richardton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Garrison Dam Recreational Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Rolette Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
 
   ]
 }
