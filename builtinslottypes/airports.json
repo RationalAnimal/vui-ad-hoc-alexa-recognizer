@@ -4269,7 +4269,19 @@
     {"name":"Ellendale Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"Standing Rock Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"Garrison Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
-    {"name":"Glen Ullin Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
+    {"name":"Glen Ullin Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+
+    {"name":"Grafton Municipal Airport","alternativeNames":["Hutson Field"],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Gwinner-Roger Melroe Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Harvey Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Mercer County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Hettinger Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Hillsboro Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Jamestown Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Kenmare Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Hamry Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"LaMoure Rott Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Lakota Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
 
 
   ]
