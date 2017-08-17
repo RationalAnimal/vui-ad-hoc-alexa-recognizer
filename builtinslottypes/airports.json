@@ -4373,7 +4373,17 @@
     {"name":"Akron Fulton International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Barber Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Ashland County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Ashtabula County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Ashtabula County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Ohio University Airport","alternativeNames":["Snyder Field"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Barnesville-Bradfield Airport","alternativeNames":["Barnesville Bradfield Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Clermont County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Bellefontaine Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Bluffton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Wood County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Williams County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Port Bucyrus-Crawford County Airport","alternativeNames":["Port Bucyrus Crawford County Airport", "Port Bucyrus Airport", "Crawford County Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Harrison County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
 
   ]
 }
