@@ -4281,8 +4281,21 @@
     {"name":"Kenmare Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"Hamry Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"LaMoure Rott Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
-    {"name":"Lakota Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
+    {"name":"Lakota Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
 
+    {"name":"Robertson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Linton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Lisbon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Mandan Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Mohall Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Mott Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Northwood Municipal Airport","alternativeNames":["Vince Field"],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Oakes Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Park River Airport","alternativeNames":["W.C. Skjerven Field", "W. C. Skjerven Field", "WC Skjerven Field", "W C Skjerven Field", "Skjerven Field"],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Parshall-Hankins Airport","alternativeNames":["Parshall Hankins Airport"],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Pembina Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Rolla Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Rugby Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
 
   ]
 }
