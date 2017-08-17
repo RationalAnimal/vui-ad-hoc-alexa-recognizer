@@ -4383,7 +4383,19 @@
     {"name":"Wood County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Williams County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Port Bucyrus-Crawford County Airport","alternativeNames":["Port Bucyrus Crawford County Airport", "Port Bucyrus Airport", "Crawford County Airport"],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Harrison County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Harrison County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Cambridge Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Carroll County-Tolson Airport","alternativeNames":["Carroll County Tolson Airport", "Carroll County Airport", "Tolson Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Lakefield Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"KHTW","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Ross County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Pickaway County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Richard Downing Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Greene County-Lewis A. Jackson Regional Airport","alternativeNames":["Greene County-Lewis A Jackson Regional Airport", "Greene County-Lewis Jackson Regional Airport", "Greene County Lewis A. Jackson Regional Airport", "Greene County Lewis A Jackson Regional Airport", "Greene County Lewis Jackson Regional Airport", "Greene County Regional Airport", "Lewis A. Jackson Regional Airport", "Lewis A Jackson Regional Airport", "Lewis Jackson Regional Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Defiance Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Delaware Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Columbiana County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
 
   ]
 }
