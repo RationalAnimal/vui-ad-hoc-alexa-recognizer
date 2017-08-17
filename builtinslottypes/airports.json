@@ -4348,7 +4348,20 @@
     {"name":"Grand Forks Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"Minot Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
     {"name":"Pruetz Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
-    {"name":"Wimbledon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
+    {"name":"Wimbledon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+
+    {"name":"Akron-Canton Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Cincinnati Municipal Lunken Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Cleveland-Hopkins International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"John Glenn Columbus International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Rickenbacker International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"James M. Cox Dayton International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Toledo Express Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Youngstown-Warren Regional Airport / Youngstown ARS","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Burke Lakefront Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Erie-Ottawa International Airport","alternativeNames":["Carl R. Keller Field", "Carl R Keller Field", "Carl Keller Field", "Erie Ottawa International Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Cuyahoga County Airport","alternativeNames":["Robert D. Shea Field", "Robert D Shea Field", "Robert Shea Field"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Bolton Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
 
   ]
 }
