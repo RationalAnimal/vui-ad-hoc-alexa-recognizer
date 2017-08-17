@@ -4190,7 +4190,21 @@
     {"name":"Bladenboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Horace Williams Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Wilgrove Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
-    {"name":"Flanagan Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"}
+    {"name":"Flanagan Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+
+    {"name":"Grays Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Air Harbor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Southeast Greensboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Hendersonville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Wilson's Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Holly Ridge/Topsail Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Whitfield Farms Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Goose Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Sky Manor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Swan Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Kecks Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Raleigh East Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+    {"name":"Causey Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"}
 
   ]
 }
