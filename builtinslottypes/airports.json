@@ -4361,7 +4361,19 @@
     {"name":"Burke Lakefront Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Erie-Ottawa International Airport","alternativeNames":["Carl R. Keller Field", "Carl R Keller Field", "Carl Keller Field", "Erie Ottawa International Airport"],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Cuyahoga County Airport","alternativeNames":["Robert D. Shea Field", "Robert D Shea Field", "Robert Shea Field"],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Bolton Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Bolton Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Ohio State University Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Dayton-Wright Brothers Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Butler County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Lorain County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Medina Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Toledo Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Willoughby Lost Nation Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Akron Fulton International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Barber Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Ashland County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Ashtabula County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
 
   ]
 }
