@@ -4245,7 +4245,21 @@
     {"name":"Sugar Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Johnson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
     {"name":"Brockenbrough Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
-    {"name":"Halifax County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"}
+    {"name":"Halifax County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north carolina"},
+
+    {"name":"Bismarck Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Dickinson Theodore Roosevelt Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Hector International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Grand Forks International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Minot International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Sloulin Field International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Devils Lake Regional Airport","alternativeNames":["Knoke Field"],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Beach Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Bottineau Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Bowman Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Cando Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"},
+    {"name":"Carrington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"north dakota"}
+
 
   ]
 }
