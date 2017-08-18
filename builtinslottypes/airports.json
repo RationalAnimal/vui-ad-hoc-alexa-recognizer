@@ -4454,7 +4454,23 @@
     {"name":"Pike County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Alexander Salamon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Clinton Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Monroe County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Monroe County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Wayne County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Zanesville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Ada Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Mayfield Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Miller Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Miller Farm Landing Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Beach City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Bordner Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Brookville Air-Park","alternativeNames":["Brookville Air Park", "Brookville AirPark"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Noble County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Parsons Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Chapman Memorial Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Clarks Dream Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Bandit Field Airdrome","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Columbia Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
 
 
   ]
