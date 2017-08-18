@@ -1,0 +1,33 @@
+{
+	"customSlotTypes":[
+		{
+			"name": "PIZZASIZE",
+			"values": [
+				"biggest",
+				"extra large",
+				"large",
+				"medium",
+				"small",
+				"smallest"
+			]
+		},
+		{
+			"name": "TOPPINGS",
+			"values": [
+				"cheese",
+				"extra cheese",
+				"pepperoni",
+				"onions",
+				"mushrooms",
+				"peppers",
+				"chiles",
+				"ground beef",
+				"bacon"
+			]
+		}
+	],
+	"builtInIntents":[
+	],
+	"builtInSlots": [
+	]
+}

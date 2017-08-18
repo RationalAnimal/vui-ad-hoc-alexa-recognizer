@@ -1,0 +1,37 @@
+{
+  "intents": [
+    {
+      "intent": "OrderPizzaIntent",
+      "slots": [
+        {
+          "name": "Size",
+          "type": "PIZZASIZE"
+        },
+        {
+          "name": "Toppings1",
+          "type": "TOPPINGS"
+        },
+        {
+          "name": "Toppings2",
+          "type": "TOPPINGS"
+        },
+        {
+          "name": "Toppings3",
+          "type": "TOPPINGS"
+        },
+        {
+          "name": "Toppings4",
+          "type": "TOPPINGS"
+        },
+        {
+          "name": "Toppings5",
+          "type": "TOPPINGS"
+        },
+        {
+          "name": "NumberOfPizzas",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    }
+  ]
+}
