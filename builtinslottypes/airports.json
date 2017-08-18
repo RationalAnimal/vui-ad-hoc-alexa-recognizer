@@ -4417,7 +4417,19 @@
     {"name":"Mansfield Lahm Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Marion Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Union County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Vinton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Vinton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Middle Bass Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Geauga County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Middletown Regional Airport","alternativeNames":["Hook Field Airport"],"priorNames":["Hook Field Municipal Airport"],"country":"united states","state":"ohio"},
+    {"name":"Holmes County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Morrow County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Knox County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Henry County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Perry County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Harry Clever Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Newark-Heath Airport","alternativeNames":["Newark Heath Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"North Bass Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
 
 
   ]
