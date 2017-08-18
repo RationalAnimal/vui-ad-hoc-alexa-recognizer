@@ -27,7 +27,7 @@ SOFTWARE.
 var fs = require('fs');
 
 var usage = function(){
-  console.log('Usage: node ' + process.argv[1] + ' --domain <path to a domain> --state <path to state json');
+  console.log('Usage: node ' + process.argv[1] + ' --domain <path to a domain> --state <path to state json> --outputState [true|false]');
   console.log('To exit type "EXIT"');
 };
 
@@ -39,6 +39,7 @@ if (process.argv.length < 5) {
 // Make sure we got all the arguments on the command line.
 let domainPath;
 let statePath;
+let outputState = false;
 
 for(let i = 2; i < process.argv.length; i += 2){
   let argSpecifier = process.argv[i];
@@ -48,6 +49,14 @@ for(let i = 2; i < process.argv.length; i += 2){
       break;
     case "--state":
       statePath = process.argv[i + 1];
+      break;
+    case "--outputState":
+      try{
+        outputState = JSON.parse(process.argv[i + 1]);
+      }
+      catch(e){
+        outputState = false;
+      }
       break;
     default:
       usage();
@@ -120,6 +129,9 @@ let recursiveUserInput = function (){
     console.log('Your text was: "', answer, '"');
     let result = recognizer.Recognizer.matchDomain(answer, domain, stateAccessor, state);
     console.log('Domain response: ', JSON.stringify(result, null, 2));
+    if(outputState === true){
+      console.log('State object: ', JSON.stringify(state, null, 2));
+    }
     recursiveUserInput(); //Calling this function again to ask new question
   });
 };
