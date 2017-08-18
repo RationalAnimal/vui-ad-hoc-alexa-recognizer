@@ -4440,7 +4440,21 @@
     {"name":"Sidney Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Springfield-Beckley Municipal Airport","alternativeNames":["Springfield Beckley Municipal Airport"],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Jefferson County Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Seneca County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Seneca County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Wyandot County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Grimes Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Van Wert County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Darke County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Wadsworth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Auglaize County Neil Armstrong Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Warren Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Fayette County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Fulton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Pike County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Alexander Salamon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Clinton Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Monroe County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
 
 
   ]
