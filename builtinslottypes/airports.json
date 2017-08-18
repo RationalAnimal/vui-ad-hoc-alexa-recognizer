@@ -4429,7 +4429,18 @@
     {"name":"Perry County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Harry Clever Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Newark-Heath Airport","alternativeNames":["Newark Heath Airport"],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"North Bass Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"North Bass Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Norwalk-Huron County Airport","alternativeNames":["Norwalk Huron County Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Putnam County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Miami University Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Greater Portsmouth Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Put-in-Bay Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Portage County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Sidney Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Springfield-Beckley Municipal Airport","alternativeNames":["Springfield Beckley Municipal Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Jefferson County Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Seneca County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
 
 
   ]
