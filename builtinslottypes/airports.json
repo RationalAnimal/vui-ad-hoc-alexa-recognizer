@@ -4507,6 +4507,23 @@
     {"name":"Koons Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Tri-City Airport","alternativeNames":["Tri City Airport"],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Shelby Community Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Alderman Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Alderman Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Grand Lake St. Marys Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Eddie Dew Memorial Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Mad River Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Troy Skypark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Waco Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Weller Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Weltzien Skypark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Ortner Airport","alternativeNames":[],"priorNames":["Wakeman Airport"],"country":"united states","state":"ohio"},
+    {"name":"Red Stewart Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Reader-Botsford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Willard Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Airborne Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Hollister Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Youngstown Elser Metro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Lansdowne Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+
   ]
 }
