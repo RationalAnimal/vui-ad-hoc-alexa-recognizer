@@ -4395,7 +4395,16 @@
     {"name":"Greene County-Lewis A. Jackson Regional Airport","alternativeNames":["Greene County-Lewis A Jackson Regional Airport", "Greene County-Lewis Jackson Regional Airport", "Greene County Lewis A. Jackson Regional Airport", "Greene County Lewis A Jackson Regional Airport", "Greene County Lewis Jackson Regional Airport", "Greene County Regional Airport", "Lewis A. Jackson Regional Airport", "Lewis A Jackson Regional Airport", "Lewis Jackson Regional Airport"],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Defiance Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Delaware Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Columbiana County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Columbiana County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Findlay Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Fostoria Metropolitan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Sandusky County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Galion Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Gallia-Meigs Regional Airport","alternativeNames":["Gallia Meigs Regional Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Brown County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Cincinnati West Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Highland County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
 
   ]
 }
