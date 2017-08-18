@@ -125,24 +125,3 @@ let recursiveUserInput = function (){
 };
 
 recursiveUserInput();
-
-/*
-
-// Make sure we got all the arguments on the command line.
-var stringToMatch = process.argv[2];
-var recognizerToUse;
-var recognizerToUseFileName = process.argv[3];
-if(typeof recognizerToUseFileName != "undefined" && recognizerToUseFileName != null){
-  try{
-    recognizerToUse = require(recognizerToUseFileName);
-  }
-  catch(e){
-    console.log("failed to load a custom recognizer with this error: ", e);
-  }
-}
-var doTheProcessing = function(){
-  return recognizer.Recognizer.matchText(stringToMatch);
-}
-var result = doTheProcessing();
-console.log(JSON.stringify(result, null, 2));
-*/
