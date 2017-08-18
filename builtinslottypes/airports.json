@@ -4484,7 +4484,20 @@
     {"name":"Gates Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Germack Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Weiker Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Far View Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Far View Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Hinde Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Bloom Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Harlan Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Ruhe's Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Mills Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Morgan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Middle Bass-East Point Airport","alternativeNames":["Middle Bass East Point Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Wynkoop Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Elliot's Landing Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Braceville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Concord Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Ohio Dusting Company Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
 
 
   ]
