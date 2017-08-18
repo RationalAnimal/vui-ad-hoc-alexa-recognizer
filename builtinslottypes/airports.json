@@ -4470,7 +4470,21 @@
     {"name":"Chapman Memorial Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Clarks Dream Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Bandit Field Airdrome","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Columbia Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Columbia Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Darby Dan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Columbus Southwest Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Crooksville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Moraine Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Dahio Trotwood Airport","alternativeNames":["Dayton-New Lebanon Airport", "Dayton New Lebanon Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Deshler Municipal Landing Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Elyria Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Priebe Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Fremont Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Gates Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Germack Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Weiker Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Far View Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
 
 
   ]
