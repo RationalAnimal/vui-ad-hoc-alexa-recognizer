@@ -4404,7 +4404,21 @@
     {"name":"Gallia-Meigs Regional Airport","alternativeNames":["Gallia Meigs Regional Airport"],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Brown County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Cincinnati West Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Highland County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Highland County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"James A. Rhodes Airport","alternativeNames":["James A Rhodes Airport", "James Rhodes Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Kelleys Island Land Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Kent State University Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Hardin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Fairfield County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Lebanon-Warren County Airport","alternativeNames":["Lebanon Warren County Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Lima Allen County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Madison County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Mansfield Lahm Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Marion Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Union County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Vinton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+
 
   ]
 }
