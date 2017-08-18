@@ -4497,8 +4497,16 @@
     {"name":"Elliot's Landing Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Braceville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Concord Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Ohio Dusting Company Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Ohio Dusting Company Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
 
-
+    {"name":"Paulding Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Phillipsburg Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Piqua Airport","alternativeNames":["Hartzell Field"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Packer Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Salem Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Koons Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Tri-City Airport","alternativeNames":["Tri City Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Shelby Community Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Alderman Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
   ]
 }
