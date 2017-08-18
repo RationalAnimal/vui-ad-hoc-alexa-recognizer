@@ -277,7 +277,7 @@ may change.
 
 * NOTE: AT THIS TIME I DO NOT RECOMMEND USING INTERACTION MODEL FILES - TOO MANY ISSUES ON THE AMAZON SIDE.
 
-## Generate recognizer.json file
+### Generate recognizer.json file
 
 The first step is to generate a run time file - recognizer.json.  This file has
 all the information that is needed to parse user text later.  To create it, run
@@ -365,7 +365,7 @@ Similarly you can affect built in slot types using config:
 This will add "Prince Abubu" and whatever names are found in test/usFirstNameExtendedValues.txt
 file to the list of first names recognized by the AMAZON.US_FIRST_NAME slot.
 
-## Parse user text
+### Parse user text
 
 The second step is to use recognizer.json file at run time to parse the user
 text and produce the output json that can be used to set the intent portion of
@@ -1010,7 +1010,7 @@ a desktop computer.  Considering that if you run it on AWS Lambda (which is MUCH
 than a typical higher end desktop computer) you may be shaving off seconds off of
 your time, which for voice interactions is quite important.
 
-## SoundEx support
+### SoundEx support
 
 SoundEx support has been added at the utterance level for custom slot types.
 You can now specify a SOUNDEX_MATCH flag for a custom slot type and SoundEx match
@@ -1041,6 +1041,33 @@ will return
   }
 }
 ```
+
+## "Domain" (higher level) functionality
+
+### domainrunner.js
+
+More documentation for domains is coming.  Meanwhile you can test your domain files using domainrunner.js utility.
+To see the usage, simply run it:
+
+```shell
+node domainrunner.js
+```
+
+will return
+
+```text
+Usage: node domainrunner.js --domain <path to a domain> --state <path to state json> --outputState [true|false]
+To exit type "EXIT"
+```
+
+If you specify the path to the domain file and to the state json object, then you will see a prompt once you run it:
+
+```shell
+Please type user text:
+```
+
+If you do, you will see the results being returned.  The domainrunner.js will continue running and accepting user
+input (and possible updating the state object) until you kill the process or type EXIT
 
 ## Non Alexa support
 
