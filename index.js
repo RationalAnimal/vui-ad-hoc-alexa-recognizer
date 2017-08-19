@@ -394,7 +394,7 @@ var _processMatchedTimeSlotValue = function(value){
 
   regExp = new RegExp(hourOnlyString, "ig");
   if(matchResult = regExp.exec(value)){
-    console.log("matching time, hour only, matchResult: " + JSON.stringify(matchResult));
+//    console.log("matching time, hour only, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
     let specifier = matchResult[2];
     if(typeof hour === "undefined" || hour === null || hour.length === 0 ){
