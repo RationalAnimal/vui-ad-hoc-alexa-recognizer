@@ -1608,18 +1608,24 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
 //      console.log("_matchTextDomain, 15");
       for(let j = 0; j < state.matchSpecs.length; j ++){
 //        console.log("_matchTextDomain, 16, j: " + j);
-        let scratchRecognizer = recognizers[state.matchSpecs[j].recognizer];
-//        console.log("_matchTextDomain, 17, scratchRecognizer: " + scratchRecognizer);
-        let match = _matchText(stringToMatch, undefined, undefined, scratchRecognizer);
-//        console.log("_matchTextDomain, 18");
-        if(typeof match !== "undefined" && match !== null){
-//          console.log("_matchTextDomain, 19");
-          let returnObject = {"match": match};
-          if(typeof state.matchSpecs[j].responder !== "undefined"){
-            // TODO add code to get the intent name regardless of platform
-            returnObject.result = responder.produceResult(match.name, stateAccessor, applicationState, state.matchSpecs[j].responder);
+        if(typeof state.matchSpecs[j].recognizer !== "undefined"){
+          let scratchRecognizer = recognizers[state.matchSpecs[j].recognizer];
+          let match = _matchText(stringToMatch, undefined, undefined, scratchRecognizer);
+          if(typeof match !== "undefined" && match !== null){
+            let returnObject = {"match": match};
+            if(typeof state.matchSpecs[j].responder !== "undefined"){
+              // TODO add code to get the intent name regardless of platform
+              returnObject.result = responder.produceResult(match.name, stateAccessor, applicationState, state.matchSpecs[j].responder);
+            }
+            return returnObject;
           }
-          return returnObject;
+        }
+        else if(typeof state.matchSpecs[j].domain !== "undefined"){
+          let scratchDomain = domains[state.matchSpecs[j].domain];
+          let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, applicationState);
+          if(typeof result !== "undefined" && result !== null){
+            return result;
+          }
         }
       }
     }

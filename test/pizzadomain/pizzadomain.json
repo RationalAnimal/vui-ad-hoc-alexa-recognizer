@@ -13,7 +13,15 @@
         {
           "recognizer": "pizza",
           "responder": {
-            "functionSource": "return {\"text\":\"Thanks\"};"
+            "directValues": {
+              "pickMethod": "randomDoNotRepeat",
+              "repeatSelector": "squirrelledAwayAlreadyUsed",
+              "values": [
+                {"text": "Thanks a bunch"},
+                {"text": "Danke"},
+                {"text": "I agree"}
+              ]
+            }
           }
         }
       ]

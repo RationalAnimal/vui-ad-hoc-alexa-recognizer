@@ -42,16 +42,22 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
   else if(typeof responderSpec.directValues !== "undefined"){
     let directValues = responderSpec.directValues;
     if(directValues.pickMethod === "random"){
+      console.log("_produceResult, random");
       if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values)){
         let randomIndex = Math.floor(Math.random() * directValues.values.length);
         return directValues.values[randomIndex];
       }
     }
     else if(directValues.pickMethod === "randomDoNotRepeat"){
+      console.log("_produceResult, randomDoNotRepeat");
       if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values) &&
          typeof directValues.repeatSelector !== "undefined" && directValues.repeatSelector !== null){
         let usedValues = stateAccessor.getState(applicationState, directValues.repeatSelector);
-//        console.log("usedValues: ", JSON.stringify(usedValues));
+        console.log("usedValues: ", JSON.stringify(usedValues));
+        if(typeof usedValues === "undefined" || Array.isArray(usedValues) !== true){
+          usedValues = [];
+          console.log("setting usedValues to empty array: ", JSON.stringify(usedValues));
+        }
         let unusedValues = [];
         let stringifiedUsedValues = [];
         for(let i = 0; i < usedValues.length; i ++){
@@ -66,8 +72,10 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
 //        console.log("unusedValues: ", JSON.stringify(unusedValues));
         let randomIndex = Math.floor(Math.random() * unusedValues.length);
         let returnValue = unusedValues[randomIndex];
-        usedValues.push(returnValue);
-        stateAccessor.setState(applicationState, directValues.repeatSelector, usedValues);
+        if(typeof returnValue !== "undefined" && returnValue !== null){
+          usedValues.push(returnValue);
+          stateAccessor.setState(applicationState, directValues.repeatSelector, usedValues);
+        }
         return returnValue;
       }
     }
