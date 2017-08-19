@@ -162,6 +162,7 @@ Domains are a higher level of parsing than recognizers.  Domains do use "recogni
     * **random direct value from an array**
     * **random direct value from an array without repeating**
     * **using dynamic JavaScript function body source**
+    * **multiple chained responders**
 * **built in accessors:** 
     * **simple read only json based accessor**
     * **simple read/write json based accessor**
