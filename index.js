@@ -1610,11 +1610,16 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
 //        console.log("_matchTextDomain, 16, j: " + j);
         let scratchRecognizer = recognizers[state.matchSpecs[j].recognizer];
 //        console.log("_matchTextDomain, 17, scratchRecognizer: " + scratchRecognizer);
-        let result = _matchText(stringToMatch, undefined, undefined, scratchRecognizer);
+        let match = _matchText(stringToMatch, undefined, undefined, scratchRecognizer);
 //        console.log("_matchTextDomain, 18");
-        if(typeof result !== "undefined" && result !== null){
+        if(typeof match !== "undefined" && match !== null){
 //          console.log("_matchTextDomain, 19");
-          return {"match": result};
+          let returnObject = {"match": match};
+          if(typeof state.matchSpecs[j].responder !== "undefined"){
+            // TODO add code to get the intent name regardless of platform
+            returnObject.result = responder.produceResult(match.name, stateAccessor, applicationState, state.matchSpecs[j].responder);
+          }
+          return returnObject;
         }
       }
     }
