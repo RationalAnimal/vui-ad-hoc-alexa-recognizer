@@ -165,6 +165,7 @@ Domains are a higher level of parsing than recognizers.  Domains do use "recogni
 * **built in accessors:** 
     * **simple read only json based accessor**
     * **simple read/write json based accessor**
+* **domainRunner.js utility for testing domains**
 
 # Usage
 
