@@ -1619,9 +1619,10 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
             }
             else if(typeof state.matchSpecs[j].responders !== "undefined" && Array.isArray(state.matchSpecs[j].responders)){
               // TODO add code to get the intent name regardless of platform
+              returnObject.result = {};
               for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
                 // TODO concatenate results!!!
-                returnObject.result = responder.produceResult(match.name, stateAccessor, applicationState, state.matchSpecs[j].responders[k]);
+                returnObject.result = responder.combineResponses(returnObject.result, responder.produceResult(match.name, stateAccessor, applicationState, state.matchSpecs[j].responders[k]));
               }
             }
             return returnObject;
@@ -1650,9 +1651,10 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
               }
               else if(typeof state.matchSpecs[j].responders !== "undefined" && Array.isArray(state.matchSpecs[j].responders)){
                 // TODO add code to get the intent name regardless of platform
+                returnObject.result = {};
                 for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
                   // TODO concatenate results!!!
-                  returnObject.result = responder.produceResult(match.name, stateAccessor, applicationState, state.matchSpecs[j].responders[k]);
+                  returnObject.result = responder.combineResponses(returnObject.result, responder.produceResult(match.name, stateAccessor, applicationState, state.matchSpecs[j].responders[k]));
                 }
               }
               return returnObject;

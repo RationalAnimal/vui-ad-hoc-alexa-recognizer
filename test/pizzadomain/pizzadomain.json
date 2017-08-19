@@ -14,13 +14,25 @@
           "recognizer": "pizza",
           "responders": [
             {
+              "combineRule": "setTo",
               "directValues": {
                 "pickMethod": "randomDoNotRepeat",
                 "repeatSelector": "squirrelledAwayAlreadyUsed",
                 "values": [
-                  {"text": "Thanks a bunch", "ssml": "<speak>Thanks a bunch</speak>"},
+                  {"text": "Thanks a bunch", "ssml": "<speak>Thanks a bunch</speak>", "video": "http://someurl.com"},
                   {"text": "Danke", "ssml": "<speak>Danke</speak>"},
                   {"text": "I agree", "ssml": "<speak>I agree</speak>"}
+                ]
+              }
+            },
+            {
+              "combineRule": "mergeReplace",
+              "directValues": {
+                "pickMethod": "randomDoNotRepeat",
+                "repeatSelector": "squirrelledAwayAlreadyUsed2",
+                "values": [
+                  {"text": "Second responder thanks you", "ssml": "<speak>Thanks a bunch</speak>"},
+                  {"text": "Second responder thanks you again", "ssml": "<speak>Thanks a bunch with a card</speak>", "card": {"Title": "Card Title"}}
                 ]
               }
             }

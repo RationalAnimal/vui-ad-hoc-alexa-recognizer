@@ -26,7 +26,22 @@ SOFTWARE.
 'use strict'
 
 let responder = {};
-
+/*
+responder.combineRules = [
+  {
+    "name": "setTo",
+    "description": "Use this response as a full response, completely replacing anything that was there or setting it to this new value if there was no prior response"
+  },
+  {
+    "name": "mergeReplace",
+    "description": "Replace the fields in the combined result using the fields from the new one, but leave other values in place"
+  },
+  {
+    "name": "mergeAppend",
+    "description": "Append/combine values where they exist, add where they don't.  Append/combine does NOT change the type to an array if it wasn't already an array. So, strings get appended, numbers get added, arrays get concatenated, some strings (e.g. ssml) may have some processing instead of plain concatenation."
+  }
+];
+*/
 let _produceResult = function(matchedIntent, stateAccessor, applicationState, responderSpec){
   if(typeof responderSpec === "undefined" || responderSpec === null){
     return;
@@ -88,6 +103,33 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
 
 };
 
+let _combineResponses = function(response1, response2){
+  // TODO finish
+  if(typeof response2 === "undefined" || response2 === null){
+    return response2;
+  }
+  let combineRule = response2.combineRule;
+  if(typeof combineRule === "undefined" || combineRule === null){
+    combineRule = "mergeReplace";
+  }
+  switch(combineRule){
+    case "mergeReplace":
+      let returnValue = JSON.parse(JSON.stringify(response1));
+      for (var property in response2) {
+        if (response2.hasOwnProperty(property)) {
+          returnValue[property] = response2[property];
+        }
+      }
+      return returnValue;
+      break;
+    case "setTo":
+    default:
+      return response2;
+      break;
+  }
+};
+
 responder.produceResult = _produceResult;
+responder.combineResponses = _combineResponses;
 
 module.exports = responder;
