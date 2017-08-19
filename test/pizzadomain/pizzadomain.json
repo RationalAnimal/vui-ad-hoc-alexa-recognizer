@@ -1,9 +1,9 @@
 {
-  "description": "Simple domain",
+  "description": "Simple pizza ordering domain",
   "recognizers": [
     {
-      "key": "bleh",
-      "path": "./test/blehblehdomain/blehblehrecognizer.json"
+      "key": "pizza",
+      "path": "./test/pizzadomain/pizzarecognizer.json"
     }
   ],
   "states": [
@@ -11,7 +11,10 @@
       "matchCriteria": "default",
       "matchSpecs": [
         {
-          "recognizer": "bleh"
+          "recognizer": "pizza",
+          "responder": {
+            "functionSource": "return {\"text\":\"Thanks\"};"
+          }
         }
       ]
     }
