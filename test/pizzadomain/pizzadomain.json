@@ -12,17 +12,19 @@
       "matchSpecs": [
         {
           "recognizer": "pizza",
-          "responder": {
-            "directValues": {
-              "pickMethod": "randomDoNotRepeat",
-              "repeatSelector": "squirrelledAwayAlreadyUsed",
-              "values": [
-                {"text": "Thanks a bunch"},
-                {"text": "Danke"},
-                {"text": "I agree"}
-              ]
+          "responders": [
+            {
+              "directValues": {
+                "pickMethod": "randomDoNotRepeat",
+                "repeatSelector": "squirrelledAwayAlreadyUsed",
+                "values": [
+                  {"text": "Thanks a bunch", "ssml": "<speak>Thanks a bunch</speak>"},
+                  {"text": "Danke", "ssml": "<speak>Danke</speak>"},
+                  {"text": "I agree", "ssml": "<speak>I agree</speak>"}
+                ]
+              }
             }
-          }
+          ]
         }
       ]
     }
