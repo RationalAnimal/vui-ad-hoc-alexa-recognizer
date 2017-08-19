@@ -69,6 +69,11 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
             unusedValues.push(directValues.values[i]);
           }
         }
+        if(unusedValues.length === 0){
+          // This means all the values have been used - reset
+          unusedValues = unusedValues.concat(directValues.values);
+          usedValues = [];
+        }
 //        console.log("unusedValues: ", JSON.stringify(unusedValues));
         let randomIndex = Math.floor(Math.random() * unusedValues.length);
         let returnValue = unusedValues[randomIndex];
