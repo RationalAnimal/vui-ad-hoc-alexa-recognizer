@@ -4523,7 +4523,22 @@
     {"name":"Airborne Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Hollister Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Youngstown Elser Metro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Lansdowne Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Lansdowne Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Parr Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Wright-Patterson Air Force Base","alternativeNames":["Wright Patterson Air Force Base"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Bellefontaine Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Martin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Chagrin Falls Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Chardon Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Cincinnati-Blue Ash Airport","alternativeNames":["Cincinnati Blue Ash Airport", "Blue Ash Airport"],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"South Columbus Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Freedom Air Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Champion Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Casement Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Griffing Sandusky Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Strongsville Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+    {"name":"Youngstown Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
 
   ]
 }
