@@ -4631,7 +4631,21 @@
     {"name":"Seminole Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Shawnee Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Skiatook Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
-    {"name":"Stigler Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
+    {"name":"Stigler Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+
+    {"name":"Stillwater Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Stroud Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Sulphur Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Tahlequah Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Talihina Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Thomas Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Tishomingo Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Vinita Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Hefner-Easley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Walters Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Watonga Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Waynoka Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Thomas P. Stafford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
 
   ]
 }
