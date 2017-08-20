@@ -4538,7 +4538,22 @@
     {"name":"Casement Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Griffing Sandusky Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
     {"name":"Strongsville Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
-    {"name":"Youngstown Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"}
+    {"name":"Youngstown Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"ohio"},
+
+    {"name":"Lawton-Fort Sill Regional Airport","alternativeNames":["Lawton Fort Sill Regional Airport", "Fort Sill Regional Airport", "Lawton Regional Airport"],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Will Rogers World Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Tulsa International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"University of Oklahoma Westheimer Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Wiley Post Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Richard Lloyd Jones Jr. Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Ada Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Altus/Quartz Mountain Regional Airport","alternativeNames":["Altus-Quartz Mountain Regional Airport", "Altus Quartz Mountain Regional Airport"],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Alva Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Antlers Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Ardmore Downtown Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Ardmore Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Atoka Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
+
 
   ]
 }
