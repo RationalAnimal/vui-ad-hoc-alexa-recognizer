@@ -1622,7 +1622,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
               returnObject.result = {};
               for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
                 // TODO concatenate results!!!
-                returnObject.result = responder.combineResponses(returnObject.result, responder.produceResult(match.name, stateAccessor, applicationState, state.matchSpecs[j].responders[k]));
+                returnObject.result = responder.combineResponses(returnObject.result, responder.produceResult(match.name, stateAccessor, applicationState, state.matchSpecs[j].responders[k]), state.matchSpecs[j].responders[k].combineRule);
               }
             }
             return returnObject;
@@ -1654,7 +1654,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
                 returnObject.result = {};
                 for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
                   // TODO concatenate results!!!
-                  returnObject.result = responder.combineResponses(returnObject.result, responder.produceResult(match.name, stateAccessor, applicationState, state.matchSpecs[j].responders[k]));
+                  returnObject.result = responder.combineResponses(returnObject.result, responder.produceResult(match.name, stateAccessor, applicationState, state.matchSpecs[j].responders[k]), state.matchSpecs[j].responders[k].combineRule);
                 }
               }
               return returnObject;

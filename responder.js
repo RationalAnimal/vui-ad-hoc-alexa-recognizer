@@ -103,18 +103,22 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
 
 };
 
-let _combineResponses = function(response1, response2){
+let _combineResponses = function(response1, response2, combineRule){
   // TODO finish
+  console.log("_combineResponses, 1, response2: ", JSON.stringify(response2, null, 2));
   if(typeof response2 === "undefined" || response2 === null){
+    console.log("_combineResponses, 2");
     return response2;
   }
-  let combineRule = response2.combineRule;
+  console.log("_combineResponses, 3, combineRule: " + combineRule);
   if(typeof combineRule === "undefined" || combineRule === null){
+    console.log("_combineResponses, 4");
     combineRule = "mergeReplace";
   }
   let returnValue;
   switch(combineRule){
     case "mergeReplace":
+      console.log("_combineResponses, 5");
       returnValue = JSON.parse(JSON.stringify(response1));
       for (var property in response2) {
         if (response2.hasOwnProperty(property)) {
@@ -124,7 +128,9 @@ let _combineResponses = function(response1, response2){
       return returnValue;
       break;
     case "mergeAppend":
+      console.log("_combineResponses, 6");
       returnValue = JSON.parse(JSON.stringify(response1));
+      console.log("_combineResponses, 6.1");
       for (var property in response2) {
         if (response2.hasOwnProperty(property)) {
           let existingValue = response1[property];
@@ -134,14 +140,25 @@ let _combineResponses = function(response1, response2){
           else {
             // TODO Update to take into account the type of property, e.g. add simple text, combine ssml using its
             // TODO syntax, combine video url arrays, etc.
-            returnValue[property] += response2[property];
+            console.log("property is: " + property);
+            if(property === "videos"){
+              console.log("combining videos");
+              // Combine arrays
+              returnValue[property] = existingValue.concat(response2[property]);
+            }
+            else {
+              returnValue[property] += response2[property];
+            }
           }
         }
       }
+      return returnValue;
 
       break;
     case "setTo":
+      console.log("_combineResponses, 7");
     default:
+      console.log("_combineResponses, 8");
       return response2;
       break;
   }
