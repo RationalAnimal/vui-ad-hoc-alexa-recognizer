@@ -4604,6 +4604,20 @@
     {"name":"Lake Texoma State Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Lindsay Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Madill Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
-    {"name":"Scott Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
+    {"name":"Scott Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+
+    {"name":"McAlester Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Medford Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Miami Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Mooreland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Davis Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Christman Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Okemah Flying Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Clarence E. Page Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Okmulgee Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Lake Murray State Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Pauls Valley Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Pawnee Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Perry Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
   ]
 }
