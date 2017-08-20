@@ -4575,7 +4575,23 @@
     {"name":"Cushing Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Halliburton Field","alternativeNames":["Duncan Municipal Airport"],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Eaker Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
-    {"name":"El Reno Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
+    {"name":"El Reno Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+
+    {"name":"Elk City Regional Business Airport","alternativeNames":["Elk City Municipal Airport"],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Enid Woodring Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Eufaula Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Fountainhead Lodge Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Fairview Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Frederick Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Gage Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"David Jay Perry Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Grandfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Grove Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Guthrie-Edmond Regional Airport","alternativeNames":["Guthrie Edmond Regional Airport", "Guthrie Municipal Airport"],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Guymon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Healdton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Henryetta Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Hinton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
 
 
   ]
