@@ -4565,7 +4565,17 @@
     {"name":"Chandler Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Cherokee Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Mignon Laird Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
-    {"name":"Chickasha Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
+    {"name":"Chickasha Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+
+    {"name":"Claremore Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Cleveland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Clinton Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Clinton-Sherman Airport","alternativeNames":["Clinton-Sherman Industrial Airpark", "Clinton Sherman Industrial Airpark", "Clinton Sherman Airport"],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Cordell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Cushing Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Halliburton Field","alternativeNames":["Duncan Municipal Airport"],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Eaker Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"El Reno Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
 
 
   ]
