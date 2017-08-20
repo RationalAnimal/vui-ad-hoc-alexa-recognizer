@@ -134,20 +134,63 @@ let _combineResponses = function(response1, response2, combineRule){
       for (var property in response2) {
         if (response2.hasOwnProperty(property)) {
           let existingValue = response1[property];
+          let newValue = response2[property];
           if(typeof existingValue === "undefined" || existingValue === null){
             returnValue[property] = response2[property];
           }
-          else {
-            // TODO Update to take into account the type of property, e.g. add simple text, combine ssml using its
-            // TODO syntax, combine video url arrays, etc.
-            console.log("property is: " + property);
-            if(property === "videos"){
-              console.log("combining videos");
-              // Combine arrays
-              returnValue[property] = existingValue.concat(response2[property]);
+          else if(typeof newValue === "undefined" || newValue === null){
+            delete returnValue[property];
+          }
+          else if(typeof existingValue === "string"){
+            if(property === "text"){
+              returnValue[property] = existingValue + "  " + response2[property];
+            }
+            else if(property === "ssml"){
+              if(/<\/speak>\s*$/ig.test(existingValue) && /^\s*<speak>/ig.test(newValue.toString())){
+                // Strip "inner" speak tags, and concatenate.
+                try{
+                  returnValue[property] = /(.*)(?:<\/speak>\s*$)/ig.exec(existingValue)[1] + "  " + /(?:^\s*<speak>)(.*)/ig.exec(newValue.toString())[1];
+                }
+                catch(e){
+                  returnValue[property] = existingValue + "  " + newValue.toString();
+                }
+              }
             }
             else {
-              returnValue[property] += response2[property];
+              // Catch all string concatenation
+              returnValue[property] = existingValue + newValue.toString();
+            }
+          }
+          else if(Array.isArray(existingValue)){
+            if(Array.isArray(newValue)){
+              // concatenate arrays
+              returnValue[property] = existingValue.concat(newValue);
+            }
+            else {
+              // add to an array
+              returnValue[property] = existingValue.concat([newValue]);
+            }
+          }
+          else if(typeof existingValue === "object" && typeof newValue === "object"){
+            if(property === "card"){
+              try{
+                delete returnValue["card"];
+              }
+              catch(e){
+                // ignore
+              }
+              returnValue["cards"] = {existingValue, newValue};
+            }
+            else {
+              returnValue[property] = {existingValue, newValue};
+            }
+          }
+          else {
+            try{
+              returnValue[property] = existingValue + newValue;
+            }
+            catch(e){
+              returnValue[property] = existingValue.toString() + newValue.toString();
             }
           }
         }

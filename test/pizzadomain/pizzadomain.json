@@ -21,7 +21,7 @@
                 "values": [
                   {"text": "Thanks a bunch", "ssml": "<speak>Thanks a bunch</speak>", "videos": ["http://someurl.com"]},
                   {"text": "Danke", "ssml": "<speak>Danke</speak>"},
-                  {"text": "I agree", "ssml": "<speak>I agree</speak>"}
+                  {"text": "I agree", "ssml": "<speak>I agree</speak>", "card": {"Title": "First Card Title"}}
                 ]
               }
             },
