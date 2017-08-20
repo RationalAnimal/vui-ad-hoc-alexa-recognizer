@@ -112,15 +112,33 @@ let _combineResponses = function(response1, response2){
   if(typeof combineRule === "undefined" || combineRule === null){
     combineRule = "mergeReplace";
   }
+  let returnValue;
   switch(combineRule){
     case "mergeReplace":
-      let returnValue = JSON.parse(JSON.stringify(response1));
+      returnValue = JSON.parse(JSON.stringify(response1));
       for (var property in response2) {
         if (response2.hasOwnProperty(property)) {
           returnValue[property] = response2[property];
         }
       }
       return returnValue;
+      break;
+    case "mergeAppend":
+      returnValue = JSON.parse(JSON.stringify(response1));
+      for (var property in response2) {
+        if (response2.hasOwnProperty(property)) {
+          let existingValue = response1[property];
+          if(typeof existingValue === "undefined" || existingValue === null){
+            returnValue[property] = response2[property];
+          }
+          else {
+            // TODO Update to take into account the type of property, e.g. add simple text, combine ssml using its
+            // TODO syntax, combine video url arrays, etc.
+            returnValue[property] += response2[property];
+          }
+        }
+      }
+
       break;
     case "setTo":
     default:
