@@ -4645,7 +4645,19 @@
     {"name":"Walters Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Watonga Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Waynoka Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
-    {"name":"Thomas P. Stafford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
+    {"name":"Thomas P. Stafford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+
+    {"name":"Wilburton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"West Woodward Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Grand Lake Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Cherokee Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Anadarko Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Broken Bow Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Falconhead Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Chattanooga Sky Harbor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Sam Riggs Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"City of Coalgate Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Tenkiller Lake Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
 
   ]
 }
