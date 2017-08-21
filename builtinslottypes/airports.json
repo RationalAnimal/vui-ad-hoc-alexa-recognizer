@@ -4809,7 +4809,22 @@
     {"name":"Toledo State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Miller Memorial Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Vernonia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-    {"name":"Wakonda Beach State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
+    {"name":"Wakonda Beach State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+
+    {"name":"CGAS Astoria","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"CGAS North Bend","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"McNary ARNG Field Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Camp Rilea Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"NAS Tongue Point","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Bernard's Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Willamette Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Siltcoos Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Oregon City Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Jantzen Beach Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Swan Island Airport","alternativeNames":["Portland Municipal Airport"],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Springfield Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Sutherlin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Umatilla Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
 
 
 
