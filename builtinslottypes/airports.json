@@ -4824,7 +4824,18 @@
     {"name":"Swan Island Airport","alternativeNames":["Portland Municipal Airport"],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Springfield Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Sutherlin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-    {"name":"Umatilla Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
+    {"name":"Umatilla Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+
+    {"name":"Lehigh Valley International Airport","alternativeNames":[],"priorNames":["Allentown-Bethlehem-Easton International Airport", "Allentown Bethlehem Easton International Airport"],"country":"united states","state":"pennsylvania"},
+    {"name":"Erie International Airport","alternativeNames":["Tom Ridge Field"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Harrisburg International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Arnold Palmer Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Philadelphia International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Pittsburgh International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"University Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Wilkes-Barre/Scranton International Airport","alternativeNames":["Wilkes-Barre Scranton International Airport", "Wilkes Barre Scranton International Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Williamsport Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Altoona-Blair County Airport","alternativeNames":["Altoona Blair County Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"}
 
 
 
