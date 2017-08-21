@@ -4657,7 +4657,21 @@
     {"name":"Chattanooga Sky Harbor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Sam Riggs Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"City of Coalgate Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
-    {"name":"Tenkiller Lake Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
+    {"name":"Tenkiller Lake Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+
+    {"name":"Crazy Horse Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"El Reno Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Haddock Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Freedom Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Haskell Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Buzzards Roost Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Dobie's Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Kingfisher Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Laverne Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"McCaslin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"McGehee Catfish Restaurant Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Decker Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
+
 
   ]
 }
