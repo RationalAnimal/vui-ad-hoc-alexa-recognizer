@@ -4727,7 +4727,21 @@
     {"name":"Burns Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Illinois Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Chiloquin State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-    {"name":"Christmas Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
+    {"name":"Christmas Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+
+    {"name":"Condon State Airport","alternativeNames":["Pauling Field"],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Corvallis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Cottage Grove State Airport","alternativeNames":["Jim Wright Field"],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Hobby Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Florence Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Siletz Bay State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Gold Beach Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Grants Pass Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Hermiston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Ken Jernstedt Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Independence State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Grant County Regional Airport","alternativeNames":["Ogilvie Field"],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Joseph State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
 
 
 
