@@ -4741,7 +4741,22 @@
     {"name":"Ken Jernstedt Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Independence State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Grant County Regional Airport","alternativeNames":["Ogilvie Field"],"priorNames":[],"country":"united states","state":"oregon"},
-    {"name":"Joseph State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
+    {"name":"Joseph State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+
+    {"name":"La Grande/Union County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Lake County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Lebanon State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Lexington Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Madras Municipal Airport","alternativeNames":[],"priorNames":["City-County Airport", "City County Airport"],"country":"united states","state":"oregon"},
+    {"name":"McDermitt State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"McMinnville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Myrtle Creek Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Sportsman Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Newport Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Ontario Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Mulino State Airport","alternativeNames":[],"priorNames":["Portland-Mulino Airport", "Portland Mulino Airport"],"country":"united states","state":"oregon"},
+    {"name":"Portland Downtown Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
+
 
 
 
