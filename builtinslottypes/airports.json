@@ -4755,7 +4755,19 @@
     {"name":"Newport Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Ontario Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Mulino State Airport","alternativeNames":[],"priorNames":["Portland-Mulino Airport", "Portland Mulino Airport"],"country":"united states","state":"oregon"},
-    {"name":"Portland Downtown Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
+    {"name":"Portland Downtown Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+
+    {"name":"Prineville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Roseburg Regional Airport","alternativeNames":["Marion E. Carl Memorial Field", "Marion E Carl Memorial Field", "Marion Carl Memorial Field"],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Salem Municipal Airport","alternativeNames":["McNary Field"],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Scappoose Industrial Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Seaside Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Sunriver Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Columbia Gorge Regional Airport","alternativeNames":["The Dalles Municipal Airport"],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Tillamook Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Wasco State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Alkali Lake State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Arlington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
 
 
 
