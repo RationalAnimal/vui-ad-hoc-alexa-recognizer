@@ -4703,7 +4703,18 @@
     {"name":"Love County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Ashley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Hatbox Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
-    {"name":"Sky Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
+    {"name":"Sky Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+
+    {"name":"Eugene Airport","alternativeNames":["Mahlon Sweet Field"],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Klamath Falls Airport","alternativeNames":["Kingsley Field"],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Rogue Valley International-Medford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Southwest Oregon Regional Airport","alternativeNames":[],"priorNames":["North Bend Municipal Airport"],"country":"united states","state":"oregon"},
+    {"name":"Portland International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Redmond Municipal Airport","alternativeNames":["Roberts Field"],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Eastern Oregon Regional Airport at Pendleton","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"PortlandâHillsboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"PortlandâTroutdale Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Albany Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
 
 
   ]
