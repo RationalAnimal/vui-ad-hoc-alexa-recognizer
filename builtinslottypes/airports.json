@@ -4691,7 +4691,19 @@
     {"name":"Westport Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Altus Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Kegelman Air Force Auxiliary Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
-    {"name":"Vance Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
+    {"name":"Vance Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+
+    {"name":"Henry Post Army Airfield","alternativeNames":["Fort Sill Airport"],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Muldrow Army Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Tinker Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Earl Henry Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Downtown Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Teramiranda Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Idabel Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Love County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Ashley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Hatbox Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Sky Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
 
 
   ]
