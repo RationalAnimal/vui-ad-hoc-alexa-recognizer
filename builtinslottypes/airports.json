@@ -4681,7 +4681,17 @@
     {"name":"Homestead Farms Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Pond Creek Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Seiling Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
-    {"name":"Snyder Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
+    {"name":"Snyder Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+
+    {"name":"Stilwell/Cherokee Nation Airport","alternativeNames":["Stilwell Cherokee Nation Airport"],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Texhoma Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Tipton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Harvey Young Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Vici Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Westport Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Altus Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Kegelman Air Force Auxiliary Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
+    {"name":"Vance Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"}
 
 
   ]
