@@ -4780,7 +4780,22 @@
     {"name":"Valley View Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Lake Woahink Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Davis Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-    {"name":"Stark's Twin Oaks Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
+    {"name":"Stark's Twin Oaks Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+
+
+    {"name":"Lenhardt Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Memaloose Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Lakeside State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Malin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Nehalem Bay State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"McKenzie Bridge State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Monument Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Chehalem Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Oakridge State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Owyhee Reservoir State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Pacific City State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Paisley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Pinehurst State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
 
 
 
