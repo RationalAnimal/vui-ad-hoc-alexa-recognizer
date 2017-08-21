@@ -4767,7 +4767,20 @@
     {"name":"Tillamook Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Wasco State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Alkali Lake State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-    {"name":"Arlington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
+    {"name":"Arlington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+
+    {"name":"Beaver Marsh Airport","alternativeNames":["Beaver Marsh State Airport"],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Cascade Locks State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Toketee State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Skyport Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Crescent Lake State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Lake Billy Chinook Airport","alternativeNames":["Lake Billy Chinook State Airport"],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Cape Blanco State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Enterprise Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Valley View Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Lake Woahink Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Davis Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Stark's Twin Oaks Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"}
 
 
 
