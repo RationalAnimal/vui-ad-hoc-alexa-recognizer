@@ -4896,7 +4896,22 @@
     {"name":"Zelienople Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Butter Valley Golf Port","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Bellefonte Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-    {"name":"Grimes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
+    {"name":"Grimes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+
+    {"name":"Baublitz Commercial Airport","alternativeNames":["Baublitz Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Butler Farm Show Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Flying Dollar Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Carlisle Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Penn's Cave Airport","alternativeNames":["Penns Cave Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Centre Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Perkiomen Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Rocky Hill Ultralight Flightpark","alternativeNames":[],"priorNames":["BBI Ultralight Flightpark"],"country":"united states","state":"pennsylvania"},
+    {"name":"Danville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Lazy B Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Stroudsburg-Pocono Airport","alternativeNames":["Stroudsburg Pocono Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Braden Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Bandel Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
+
 
 
   ]
