@@ -4874,7 +4874,18 @@
     {"name":"William T. Piper Memorial Airport","alternativeNames":["William T Piper Memorial Airport", "William Piper Memorial Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Port Meadville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Pocono Mountains Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-    {"name":"New Castle Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
+    {"name":"New Castle Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+
+    {"name":"Mid-State Airport","alternativeNames":["Mid-State Regional Airport", "Mid State Regional Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Pottstown Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Schuylkill County Airport","alternativeNames":["Joe Zerbey Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Punxsutawney Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Quakertown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Reading Regional Airport","alternativeNames":["Carl A. Spaatz Field", "Carl A Spaatz Field", "Carl Spaatz Field"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Mifflin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Penn Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Northumberland County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Somerset County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
 
   ]
 }
