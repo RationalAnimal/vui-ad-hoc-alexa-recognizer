@@ -8,23 +8,24 @@
 
 # vui-ad-hoc-alexa-recognizer
 
-npm module that provides NLP/NLU for easy implementation of chat bots and voice apps.
-These can run anywhere Node.js is running - backend, browser, mobile apps, etc. High performance run time
-only requires 2 lines of code to use it.
+Provides natural language understanding/processing capability to enable easy implementation of chat bots and voice services.
+High performance run time in only 2 lines of code - 'require' to include it, and the call to process the text.
+These can run anywhere Node.js is running - backend, browser, mobile apps, etc with or without internet connection.
 Has a rich set of built in intents and extensible slots (equivalent to Alexa's),
 custom slots, slot flags, parametrized flags, transformation functions, SoundEx matching, wild
-card matching, option lists, text equivalents set, unlimited sets of recognizers to build large segmented apps, performance
-optimization, large app modularization, etc.
+card matching, option lists, text equivalents sets, unlimited sets of recognizers to build large segmented apps,
+domains with state specific processing, builtin and custom chainable responders, sub-domains, etc.
 
 # What's in the name
 You may be wondering why such an odd name.  Glad you asked, here is the explanation:
 1. vui - stands for "voice user interface" - because this module allows building skills/apps that have voice user interface
-2. ad-hoc - because this module creates a pre-configured run time for specific set(s) of intents
-3. alexa - because this module can use Alexa skill configuration files.  So, if you already have an Alexa skill, using
-this module should be very easy and fast (and even if you don't it's still easy and fast, just a little longer to configure).
+2. ad-hoc - because this module creates a pre-configured run time for specific set(s) of intents (requiring no further configuration at run time)
+3. alexa - because this module started out by using Alexa skill configuration files (it has expanded well beyond that, but can still be used as before).
+So, if you already have an Alexa skill, using this module should be very easy and fast
+(and even if you don't it's still easy and fast, just a little longer to configure).
 Also, you can use this module simply to ease your Alexa coding - you can configure everything using vui-ad-hoc-alexa-recognizer,
 saving yourself time and effort by not having to manually enter all the variations, then use the included alexify utility to output alexa compatible files
-4. recognizer - because that's what it does - "recognizes" utterances and extracts slot values.
+4. recognizer - because that's what it does - "recognizes" and processes utterances to identify intents, extract slot values, and optionally provide responses and update the app state.
 
 # Repository
 This module as well as related vui modules can be found here:
@@ -1116,7 +1117,7 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with all the numbers/date/time/duration built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.DURATION
-5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Airline (all US, Canadian, and Mexican airlines), AMAZON.Airport (Alabama through Pennsylvania airports only), AMAZON.Color, AMAZON.Corporation, AMAZON.Country, AMAZON.DayOfWeek, AMAZON.Month, AMAZON.Room, AMAZON.SocialMediaPlatform, AMAZON.SportsTeam (includes NFL, CFL, NBA, MLB, NHL, and MLS teams)
+5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Airline (all US, Canadian, and Mexican airlines), AMAZON.Airport (Alabama through Rhode Island airports only), AMAZON.Color, AMAZON.Corporation, AMAZON.Country, AMAZON.DayOfWeek, AMAZON.Month, AMAZON.Room, AMAZON.SocialMediaPlatform, AMAZON.SportsTeam (includes NFL, CFL, NBA, MLB, NHL, and MLS teams)
 6. Utterances with these list built in slot types with nominal support (see Nominal Support section): AMAZON.Actor, AMAZON.AdministrativeArea, AMAZON.Artist, AMAZON.Athlete, AMAZON.Author, AMAZON.Book, AMAZON.BookSeries, AMAZON.BroadcastChannel, AMAZON.CivicStructure, AMAZON.Comic, AMAZON.Dessert, AMAZON.Director, AMAZON.EducationalOrganization, AMAZON.Festival, AMAZON.FictionalCharacter, AMAZON.FoodEstablishment, AMAZON.Game, AMAZON.Landform, AMAZON.LandmarksOrHistoricalBuildings, AMAZON.LocalBusiness, AMAZON.LocalBusinessType, AMAZON.MedicalOrganization, AMAZON.Movie, AMAZON.MovieSeries, AMAZON.MovieTheater, AMAZON.MusicAlbum, AMAZON.MusicGroup, AMAZON.Musician, AMAZON.MusicRecording, AMAZON.MusicVenue, AMAZON.MusicVideo, AMAZON.Organization, AMAZON.Person, AMAZON.Professional, AMAZON.Residence, AMAZON.ScreeningEvent, AMAZON.Service, AMAZON.SoftwareApplication, AMAZON.SoftwareGame, AMAZON.SportsEvent, AMAZON.TVEpisode, AMAZON.TVSeason, AMAZON.TVSeries, AMAZON.VideoGame
 
 More Amazon built in slot types are coming shortly

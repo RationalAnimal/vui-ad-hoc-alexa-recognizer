@@ -4979,7 +4979,17 @@
     {"name":"State College Air Depot","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Glade Mill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"NAWC Warminster","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-    {"name":"Erie County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
+    {"name":"Erie County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+
+    {"name":"Block Island State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
+    {"name":"Theodore Francis Green State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
+    {"name":"Westerly State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
+    {"name":"Quonset State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
+    {"name":"North Central State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
+    {"name":"Newport State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
+    {"name":"Richmond Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
+    {"name":"NAAS Charlestown","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
+    {"name":"NAS Quonset Point","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"}
 
 
 
