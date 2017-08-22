@@ -4885,7 +4885,19 @@
     {"name":"Mifflin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Penn Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Northumberland County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-    {"name":"Somerset County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
+    {"name":"Somerset County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+
+    {"name":"St. Marys Municipal Airport","alternativeNames":["St Marys Municipal Airport", "Saint Marys Municipal Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Titusville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Bradford County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Washington County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Wellsboro Johnston Airport","alternativeNames":[],"priorNames":["Grand Canyon Airport"],"country":"united states","state":"pennsylvania"},
+    {"name":"Wilkes-Barre Wyoming Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Zelienople Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Butter Valley Golf Port","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Bellefonte Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Grimes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
+
 
   ]
 }
