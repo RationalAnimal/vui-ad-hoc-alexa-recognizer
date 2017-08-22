@@ -4865,10 +4865,16 @@
     {"name":"Corry-Lawrence Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Ebensburg Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Gettysburg Regional Airport","alternativeNames":[],"priorNames":["Gettysburg Airport and Travel Center"],"country":"united states","state":"pennsylvania"},
-    {"name":"Greenville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
+    {"name":"Greenville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
 
-
-
+    {"name":"Grove City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Hazleton Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Indiana County Airport","alternativeNames":["Jimmy Stewart Field"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Jake Arner Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"William T. Piper Memorial Airport","alternativeNames":["William T Piper Memorial Airport", "William Piper Memorial Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Port Meadville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Pocono Mountains Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"New Castle Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
 
   ]
 }
