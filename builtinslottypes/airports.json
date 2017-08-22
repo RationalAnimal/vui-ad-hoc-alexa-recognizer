@@ -4997,7 +4997,20 @@
     {"name":"Greenville-Spartanburg International Airport","alternativeNames":["Greenville Spartanburg International Airport", "Roger Milliken Field"],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Hilton Head Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Myrtle Beach International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-    {"name":"Jim Hamilton - L.B. Owens Airport","alternativeNames":[],"priorNames":["Jim Hamilton Airport", "L.B. Owens Airport", "L B  Owens Airport", "L. B. Owens Airport", "L B Owens Airport", "Columbia Owens Downtown Airport"],"country":"united states","state":"south carolina"}
+    {"name":"Jim Hamilton - L.B. Owens Airport","alternativeNames":[],"priorNames":["Jim Hamilton Airport", "L.B. Owens Airport", "L B  Owens Airport", "L. B. Owens Airport", "L B Owens Airport", "Columbia Owens Downtown Airport"],"country":"united states","state":"south carolina"},
+
+    {"name":"Rock Hill/York County Airport","alternativeNames":["Bryant Field"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Aiken Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Allendale County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Anderson Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Robert F. Swinnie Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Bamberg County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Barnwell Regional Airport","alternativeNames":["Barnwell County Airport"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Beaufort County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Marlboro County Jetport","alternativeNames":["H.E. Avent Field", "H. E. Avent Field", "HE Avent Field", "H E Avent Field"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Lee County Airport","alternativeNames":["Butters Field"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Woodward Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Charleston Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"}
 
 
 
