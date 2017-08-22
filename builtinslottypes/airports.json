@@ -4910,7 +4910,20 @@
     {"name":"Lazy B Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Stroudsburg-Pocono Airport","alternativeNames":["Stroudsburg Pocono Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Braden Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-    {"name":"Bandel Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
+    {"name":"Bandel Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+
+    {"name":"Van Sant Airport","alternativeNames":["Vansant Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Philadelphia Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Seamans Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Mid Atlantic Soaring Center","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Finleyville Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Farmers Pride Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Flying M Aerodrome","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Hanover Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Cherry Ridge Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Inter County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Greensburg Jeannette Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Jersey Shore Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
 
 
 
