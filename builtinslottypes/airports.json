@@ -4835,7 +4835,22 @@
     {"name":"University Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Wilkes-Barre/Scranton International Airport","alternativeNames":["Wilkes-Barre Scranton International Airport", "Wilkes Barre Scranton International Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Williamsport Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-    {"name":"Altoona-Blair County Airport","alternativeNames":["Altoona Blair County Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"}
+    {"name":"Altoona-Blair County Airport","alternativeNames":["Altoona Blair County Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+
+    {"name":"DuBois Regional Airport","alternativeNames":[],"priorNames":["DuBois-Jefferson County Airport", "DuBois Jefferson County Airport"],"country":"united states","state":"pennsylvania"},
+    {"name":"John Murtha Johnstown-Cambria County Airport","alternativeNames":["John Murtha Johnstown Cambria County Airport", "John Murtha Johnstown Airport", "Cambria County Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Bradford Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Venango Regional Airport","alternativeNames":["Chess Lamberton Field"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Lancaster Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Beaver County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Butler County Airport","alternativeNames":["K.W. Scholter Field", "K. W. Scholter Field", "KW Scholter Field", "K W Scholter Field"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Chester County G. O. Carlson Airport","alternativeNames":["Chester County G O Carlson Airport", "Chester County Carlson Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Doylestown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Capital City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Rostraver Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Northeast Philadelphia Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Wings Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Allegheny County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
 
 
 
