@@ -4989,7 +4989,16 @@
     {"name":"Newport State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
     {"name":"Richmond Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
     {"name":"NAAS Charlestown","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
-    {"name":"NAS Quonset Point","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"}
+    {"name":"NAS Quonset Point","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
+
+    {"name":"Charleston International Airport / Charleston AFB","alternativeNames":["Charleston International Airport", "Charleston AFB"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Columbia Metropolitan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Florence Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Greenville-Spartanburg International Airport","alternativeNames":["Greenville Spartanburg International Airport", "Roger Milliken Field"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Hilton Head Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Myrtle Beach International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Jim Hamilton - L.B. Owens Airport","alternativeNames":[],"priorNames":["Jim Hamilton Airport", "L.B. Owens Airport", "L B  Owens Airport", "L. B. Owens Airport", "L B Owens Airport", "Columbia Owens Downtown Airport"],"country":"united states","state":"south carolina"}
+
 
 
 
