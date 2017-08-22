@@ -4964,7 +4964,22 @@
     {"name":"Gardner Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Miller Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"McGinness Airport","alternativeNames":["McGinness Field"],"priorNames":[],"country":"united states","state":"pennsylvania"},
-    {"name":"Birchwood-Pocono Airport","alternativeNames":["Birchwood Pocono Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"}
+    {"name":"Birchwood-Pocono Airport","alternativeNames":["Birchwood Pocono Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+
+    {"name":"McVille Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Cherry Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Olmsted Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Hershey Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Indian Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Kutztown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Echo Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Huntingdon County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Greater Pittsburgh International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Seven Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"State College Air Depot","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Glade Mill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"NAWC Warminster","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Erie County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
 
 
 
