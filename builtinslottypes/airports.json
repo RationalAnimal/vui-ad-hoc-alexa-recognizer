@@ -4850,7 +4850,22 @@
     {"name":"Rostraver Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Northeast Philadelphia Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Wings Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-    {"name":"Allegheny County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
+    {"name":"Allegheny County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+
+    {"name":"Heritage Field","alternativeNames":[],"priorNames":["Pottstown Limerick Airport"],"country":"united states","state":"pennsylvania"},
+    {"name":"New Garden Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Brandywine Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Allentown Queen City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Bedford County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Bloomsburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Franklin County Regional Airport","alternativeNames":[],"priorNames":["Chambersburg Municipal"],"country":"united states","state":"pennsylvania"},
+    {"name":"Clarion County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Clearfield-Lawrence Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Joseph A. Hardy Connellsville Airport","alternativeNames":["Joseph A. Hardy Connellsville Airport", "Joseph A Hardy Connellsville Airport", "Joseph Hardy Connellsville Airport"],"priorNames":["Connellsville Airport"],"country":"united states","state":"pennsylvania"},
+    {"name":"Corry-Lawrence Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Ebensburg Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Gettysburg Regional Airport","alternativeNames":[],"priorNames":["Gettysburg Airport and Travel Center"],"country":"united states","state":"pennsylvania"},
+    {"name":"Greenville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
 
 
 
