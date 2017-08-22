@@ -4950,7 +4950,22 @@
     {"name":"Spring Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Shoestring Aviation Airfield","alternativeNames":["Shoestring Aviation Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Sunbury Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-    {"name":"Bendigo Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
+    {"name":"Bendigo Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+
+    {"name":"Skyhaven Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Ridge Soaring Gliderport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Greene County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Kampel Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Cove Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"York Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Muir Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"NAS JRB Willow Grove","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Millard Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Gardner Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Miller Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"McGinness Airport","alternativeNames":["McGinness Field"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Birchwood-Pocono Airport","alternativeNames":["Birchwood Pocono Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"}
+
 
 
 
