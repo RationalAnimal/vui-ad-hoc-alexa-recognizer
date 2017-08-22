@@ -4936,7 +4936,21 @@
     {"name":"Mount Pleasant/Scottdale Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Donegal Springs Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Deck Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-    {"name":"Blue Knob Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
+    {"name":"Blue Knob Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+
+    {"name":"Reigle Field","alternativeNames":["Reigle Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Pennridge Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Albert Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Pittsburgh Northeast Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Brokenstraw Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Shippensburg Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Slatington Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Smoketown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Sunbury Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Spring Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Shoestring Aviation Airfield","alternativeNames":["Shoestring Aviation Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Sunbury Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
+    {"name":"Bendigo Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"}
 
 
 
