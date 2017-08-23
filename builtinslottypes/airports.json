@@ -5141,7 +5141,22 @@
     {"name":"Corsica Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Custer State Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Groton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-    {"name":"Herreid Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"}
+    {"name":"Herreid Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+
+    {"name":"Isabel Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Kimball Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Lake Andes Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Lake Preston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Graham Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Rosebud Sioux Tribal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Timber Lake Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"White River Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Ellsworth Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Dupree Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Harrold Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Skie Air Service Landing Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"McIntosh Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Mission Sioux Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"}
 
   ]
 }
