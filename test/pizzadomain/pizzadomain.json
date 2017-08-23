@@ -38,7 +38,7 @@
             },
             {
               "combineRule": "ignore",
-              "result": {}
+              "directValue": {"text": "Ignore this text"}
             }
           ]
         }
