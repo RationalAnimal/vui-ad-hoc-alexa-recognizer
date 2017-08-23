@@ -5156,7 +5156,21 @@
     {"name":"Harrold Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Skie Air Service Landing Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"McIntosh Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-    {"name":"Mission Sioux Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"}
+    {"name":"Mission Sioux Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+
+    {"name":"Tri-Cities Regional Airport","alternativeNames":["Tri-Cities Regional TN/VA", "Tri Cities Regional Airport"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Chattanooga Metropolitan Airport","alternativeNames":["Lovell Field"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"McGhee Tyson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Memphis International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Nashville International Airport","alternativeNames":["Berry Field"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"McKellar-Sipes Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Knoxville Downtown Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"General DeWitt Spain Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Charles W. Baker Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"John C. Tune Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Smyrna Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"McMinn County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"William L. Whitehurst Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
 
   ]
 }
