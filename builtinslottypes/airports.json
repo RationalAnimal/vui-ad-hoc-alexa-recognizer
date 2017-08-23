@@ -5038,12 +5038,18 @@
     {"name":"Pageland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Lexington County Airport at Pelion","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Pickens County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-    {"name":"Ridgeland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"}
+    {"name":"Ridgeland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
 
-
-
-
-
-
+    {"name":"Saluda County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Spartanburg Downtown Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"St. George Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Summerville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Sumter Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Union County Airport","alternativeNames":["Troy Shelton Field"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Lowcountry Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Fairfield County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Hester Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Clio Crop Care Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Branhams Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"}
   ]
 }
