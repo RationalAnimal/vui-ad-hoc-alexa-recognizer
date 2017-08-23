@@ -111,9 +111,33 @@ let _setStateChain = function(state, keyArray, newValue){
   }
 };
 
+let _replaceState = function(state, newState){
+  // First, delete all existing fields
+  let currentProperties = [];
+  for(let key in state) {
+    if (state.hasOwnProperty(key)) {
+      currentProperties.push(key);
+    }
+  }
+  for(let i = 0; i < currentProperties.length; i++){
+    delete state[currentProperties[i]];
+  }
+  let newProperties = [];
+  for(let key in newState){
+    if (newState.hasOwnProperty(key)) {
+      newProperties.push(key);
+    }
+  }
+  for(let i = 0; i < newProperties.length; i++){
+    state[newProperties[i]] = newState[newProperties[i]]
+  }
+};
+
+
 accessor.getState = _getState;
 accessor.getStateChain = _getStateChain;
 accessor.setState = _setState;
 accessor.setStateChain = _setStateChain;
+accessor.replaceState = _replaceState;
 
 module.exports = accessor;
