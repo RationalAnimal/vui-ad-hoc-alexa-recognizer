@@ -46,7 +46,10 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
   if(typeof responderSpec === "undefined" || responderSpec === null){
     return;
   }
-  if(typeof responderSpec.functionSource === "string"){
+  if(typeof responderSpec.result !== "undefined" && responderSpec.result !== null){
+    return responderSpec.result;
+  }
+  else if(typeof responderSpec.functionSource === "string"){
     let scratchFunc = new Function('scratchFunc', responderSpec.functionSource);
     let result = scratchFunc(matchedIntent, stateAccessor, applicationState);
     return result;
@@ -116,10 +119,13 @@ let _combineResponses = function(response1, response2, combineRule){
   }
   let returnValue;
   switch(combineRule){
+    case "ignore":
+      return response1;
+      break;
     case "mergeReplace":
 //      console.log("_combineResponses, 5");
       returnValue = JSON.parse(JSON.stringify(response1));
-      for (var property in response2) {
+      for (let property in response2) {
         if (response2.hasOwnProperty(property)) {
           returnValue[property] = response2[property];
         }

@@ -35,6 +35,10 @@
                   {"text": "Second responder thanks you again", "ssml": "<speak>Thanks a bunch with a card</speak>", "videos": ["http://somethirdurl.com"], "card": {"Title": "Card Title"}}
                 ]
               }
+            },
+            {
+              "combineRule": "ignore",
+              "result": {}
             }
           ]
         }
