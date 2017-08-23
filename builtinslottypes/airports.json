@@ -5185,7 +5185,21 @@
     {"name":"Dickson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Dyersburg Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Elizabethton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-    {"name":"Fayetteville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
+    {"name":"Fayetteville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+
+    {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Sumner County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Greeneville-Greene County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Humboldt Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Carroll County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Campbell County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Jamestown Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Marion County Airport","alternativeNames":["Brown Field"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Lafayette Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Lawrenceburg-Lawrence County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Lebanon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Ellington Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
+
 
 
   ]
