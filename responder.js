@@ -54,7 +54,8 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
         stateAccessor.replaceState(applicationState, responderSpec.updateState.directValue);
         break;
       case "mergeReplace":
-        stateAccessor.setState(applicationState, responderSpec.updateState.updateSelector, responderSpec.updateState.directValue);
+        stateAccessor.mergeReplaceState(applicationState, responderSpec.updateState.directValue, responderSpec.updateState.updateSelector);
+//        stateAccessor.setState(applicationState, responderSpec.updateState.updateSelector, responderSpec.updateState.directValue);
         break;
       default:
         // TODO Do nothing for now, revisit later
