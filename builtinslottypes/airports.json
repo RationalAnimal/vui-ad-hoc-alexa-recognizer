@@ -5010,7 +5010,20 @@
     {"name":"Marlboro County Jetport","alternativeNames":["H.E. Avent Field", "H. E. Avent Field", "HE Avent Field", "H E Avent Field"],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Lee County Airport","alternativeNames":["Butters Field"],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Woodward Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-    {"name":"Charleston Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"}
+    {"name":"Charleston Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+
+    {"name":"Cheraw Municipal Airport","alternativeNames":["Lynch Bellinger Field"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Chester Catawba Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Oconee County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Conway-Horry County Airport","alternativeNames":["Conway Horry County Airport"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Darlington County Jetport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Dillon County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Georgetown County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Greenville Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Donaldson Center Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Greenwood County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Hartsville Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Williamsburg Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"}
 
 
 
