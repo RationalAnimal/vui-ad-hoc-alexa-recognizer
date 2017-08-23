@@ -5071,6 +5071,20 @@
     {"name":"Shaw Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Lane Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"NAS Charleston","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-    {"name":"Page Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"}
+    {"name":"Page Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+
+    {"name":"Aberdeen Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Pierre Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Rapid City Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Sioux Falls Regional Airport","alternativeNames":["Joe Foss Field"],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Watertown Regional Airport","alternativeNames":[],"priorNames":["Watertown Municipal Airport"],"country":"united states","state":"south dakota"},
+    {"name":"Huron Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Belle Fourche Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Bison Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Britton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Brookings Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Harding County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Canton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"}
+
   ]
 }
