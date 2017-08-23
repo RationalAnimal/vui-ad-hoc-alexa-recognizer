@@ -41,7 +41,16 @@
               "directValue": {"text": "Ignore this text"},
               "updateState": {
                 "updateRule": "setTo",
-                "directValue": {}
+                "directValue": {"description": "result of setTo updateRule"}
+              }
+            },
+            {
+              "combineRule": "ignore",
+              "directValue": {"text": "Ignore this text"},
+              "updateState": {
+                "updateRule": "mergeReplace",
+                "updateSelector": "someuselessvalue",
+                "directValue": {"update": "result of replaceMerge updateRule"}
               }
             }
           ]
