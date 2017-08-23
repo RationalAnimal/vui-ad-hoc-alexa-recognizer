@@ -5170,7 +5170,23 @@
     {"name":"John C. Tune Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Smyrna Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"McMinn County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-    {"name":"William L. Whitehurst Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
+    {"name":"William L. Whitehurst Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+
+    {"name":"Benton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Centerville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Clarksville-Montgomery County Regional Airport","alternativeNames":["John F. Outlaw Field", "John F Outlaw Field", "John Outlaw Field", "Clarksville Montgomery County Regional Airport"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Cleveland Regional Jetport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Hassel Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Maury County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Martin Campbell Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Covington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Crossville Memorial Airport","alternativeNames":["Whitson Field"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Mark Anton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Dickson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Dyersburg Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Elizabethton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Fayetteville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
+
 
   ]
 }
