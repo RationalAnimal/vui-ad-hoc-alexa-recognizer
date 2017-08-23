@@ -71,10 +71,14 @@ let _setStateChain = function(state, someKeyArray, newValue){
   // NOOP
 };
 
+let _replaceState = function(state, newState){
+  // NOOP
+};
+
 accessor.getState = _getState;
 accessor.getStateChain = _getStateChain;
 accessor.setState = _setState;
 accessor.setStateChain = _setStateChain;
-
+accessor.replaceState = _replaceState;
 
 module.exports = accessor;
