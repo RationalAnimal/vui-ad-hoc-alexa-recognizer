@@ -38,7 +38,11 @@
             },
             {
               "combineRule": "ignore",
-              "directValue": {"text": "Ignore this text"}
+              "directValue": {"text": "Ignore this text"},
+              "updateState": {
+                "updateRule": "setTo",
+                "directValue": {}
+              }
             }
           ]
         }

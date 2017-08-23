@@ -46,6 +46,18 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
   if(typeof responderSpec === "undefined" || responderSpec === null){
     return;
   }
+  // TODO change the order of state update vs response generation later based on the responderSpec. For now do the state update first
+  if(typeof responderSpec.updateState !== "undefined" && responderSpec.updateState !== null){
+    let updateRule = responderSpec.updateState.updateRule;
+    switch(updateRule){
+      case "setTo":
+        stateAccessor.replaceState(applicationState, responderSpec.updateState.directValue);
+        break;
+      default:
+        // TODO Do nothing for now, revisit later
+        break;
+    }
+  }
   if(typeof responderSpec.functionSource === "string"){
     let scratchFunc = new Function('scratchFunc', responderSpec.functionSource);
     let result = scratchFunc(matchedIntent, stateAccessor, applicationState);
