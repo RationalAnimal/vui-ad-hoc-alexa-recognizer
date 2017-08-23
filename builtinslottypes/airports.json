@@ -5121,7 +5121,15 @@
     {"name":"Platte Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Presho Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Redfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-    {"name":"Sisseton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"}
+    {"name":"Sisseton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+
+    {"name":"Black Hills Airport","alternativeNames":["Clyde Ice Field"],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Springfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Sturgis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Marv Skie-Lincoln County Airport","alternativeNames":["Marv Skie Lincoln County Airport", "Great Planes Airport"],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Harold Davidson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Wagner Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Wall Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"}
 
 
 
