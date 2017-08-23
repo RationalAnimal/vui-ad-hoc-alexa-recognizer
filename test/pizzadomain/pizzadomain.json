@@ -49,7 +49,7 @@
               "directValue": {"text": "Ignore this text"},
               "updateState": {
                 "updateRule": "mergeReplace",
-                "updateSelector": "someuselessvalue",
+                "updateSelector": "someuselessvalue.some.other.useless.value",
                 "directValue": {"update": "result of replaceMerge updateRule"}
               }
             }

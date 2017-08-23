@@ -111,6 +111,61 @@ let _setStateChain = function(state, keyArray, newValue){
   }
 };
 
+let _ensureSubfieldsPresent = function(objectToUpdate, keys){
+  if(typeof objectToUpdate === "undefined" || objectToUpdate === null){
+    return;
+  }
+  if(typeof keys === "undefined" || keys === null){
+    return;
+  }
+  let keyArray = [];
+  if(typeof keys === "string"){
+    keyArray = keys.split(".");
+  }
+  else {
+    keyArray = keys;
+  }
+  if(keyArray.length > 0){
+    // First ensure that we have all the "sub" fields
+    let result = objectToUpdate;
+    for(let i = 0; i < keyArray.length; i++){
+      let scratch = result[keyArray[i]];
+      if(typeof scratch === "undefined" || scratch === null){
+        // We now need to add all the missing fields
+        result[keyArray[i]] = {};
+        result = result[keyArray[i]];
+      }
+      else {
+        result = scratch;
+      }
+    }
+  }
+};
+let _mergeReplaceState = function(state, newValue, key){
+  if(typeof state === "undefined" || state === null){
+    return;
+  }
+  let result;
+  if(typeof key === "undefined" || key === null){
+    // TODO verify that we need this use case
+    // This means we are merging at the top level
+    result = state;
+  }
+  else {
+    let keyArray = [];
+    if(typeof key === "string"){
+      keyArray = key.split(".");
+    }
+    if(keyArray.length > 0){
+      // First ensure that we have all the "sub" fields
+      _ensureSubfieldsPresent(state, keyArray);
+      console.log("_mergeReplaceState, expanded state: ", JSON.stringify(state, null, 2));
+      _setState(state, key, newValue);
+    }
+  }
+};
+
+
 let _replaceState = function(state, newState){
   // First, delete all existing fields
   let currentProperties = [];
@@ -138,6 +193,7 @@ accessor.getState = _getState;
 accessor.getStateChain = _getStateChain;
 accessor.setState = _setState;
 accessor.setStateChain = _setStateChain;
+accessor.mergeReplaceState = _mergeReplaceState;
 accessor.replaceState = _replaceState;
 
 module.exports = accessor;
