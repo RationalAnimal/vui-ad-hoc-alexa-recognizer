@@ -5023,7 +5023,23 @@
     {"name":"Donaldson Center Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Greenwood County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Hartsville Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-    {"name":"Williamsburg Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"}
+    {"name":"Williamsburg Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+
+    {"name":"Lancaster County Airport","alternativeNames":["McWhirter Field"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Laurens County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Twin City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Santee Cooper Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Marion County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Berkeley County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Mount Pleasant Regional Airport","alternativeNames":["Faison Field"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Newberry County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Grand Strand Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Orangeburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Pageland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Lexington County Airport at Pelion","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Pickens County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Ridgeland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"}
+
 
 
 
