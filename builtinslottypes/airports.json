@@ -5129,9 +5129,19 @@
     {"name":"Marv Skie-Lincoln County Airport","alternativeNames":["Marv Skie Lincoln County Airport", "Great Planes Airport"],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Harold Davidson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Wagner Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-    {"name":"Wall Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"}
+    {"name":"Wall Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
 
-
+    {"name":"Sigurd Anderson Airport","alternativeNames":["The Sigurd Anderson Airport"],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Wessington Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Winner Regional Airport","alternativeNames":["Bob Wiley Field"],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Chan Gurney Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Arlington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Bowdle Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Clear Lake Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Corsica Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Custer State Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Groton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Herreid Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"}
 
   ]
 }
