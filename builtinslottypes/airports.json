@@ -5060,6 +5060,17 @@
     {"name":"Lake City Municipal Airport","alternativeNames":["C.J. Evans Field", "C. J. Evans Field", "CJ Evans Field", "C J Evans Field"],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Kirk Air Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Fairview Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-    {"name":"McCormick County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"}
+    {"name":"McCormick County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+
+    {"name":"Dry Swamp Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Huggins Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Edgefield County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"MCAS Beaufort","alternativeNames":["Merritt Field"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"McEntire JNGB","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"North Air Force Auxiliary Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Shaw Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Lane Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"NAS Charleston","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Page Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"}
   ]
 }
