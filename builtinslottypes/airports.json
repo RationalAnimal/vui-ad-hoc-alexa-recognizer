@@ -5050,6 +5050,16 @@
     {"name":"Fairfield County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Hester Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Clio Crop Care Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-    {"name":"Branhams Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"}
+    {"name":"Branhams Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+
+    {"name":"Twin Lakes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Green Sea Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Hampton-Varnville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Hemingway-Stuckey Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Holly Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Lake City Municipal Airport","alternativeNames":["C.J. Evans Field", "C. J. Evans Field", "CJ Evans Field", "C J Evans Field"],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Kirk Air Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"Fairview Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
+    {"name":"McCormick County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"}
   ]
 }
