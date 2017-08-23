@@ -5084,7 +5084,20 @@
     {"name":"Britton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Brookings Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Harding County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-    {"name":"Canton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"}
+    {"name":"Canton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+
+    {"name":"Chamberlain Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Clark County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Custer County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Wilder Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Cheyenne Eagle Butte Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Edgemont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Eureka Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Faith Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Faulkton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Flandreau Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Gettysburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"}
+
 
   ]
 }
