@@ -5096,7 +5096,22 @@
     {"name":"Faith Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Faulkton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Flandreau Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-    {"name":"Gettysburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"}
+    {"name":"Gettysburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+
+    {"name":"Gregory Municipal Airport","alternativeNames":["Flynn Field"],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Highmore Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Hot Springs Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Hoven Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Howard Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Kadoka Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Lemmon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Madison Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Martin Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"McLaughlin Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Milbank Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Miller Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
+    {"name":"Mitchell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"}
+
 
 
   ]
