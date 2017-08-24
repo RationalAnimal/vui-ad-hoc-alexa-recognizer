@@ -5224,7 +5224,16 @@
     {"name":"Smithville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Fayette County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Upper Cumberland Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-    {"name":"Springfield-Robertson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
+    {"name":"Springfield-Robertson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+
+    {"name":"New Tazewell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Gibson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Tullahoma Regional Airport","alternativeNames":["William Northern Field"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Everett-Stewart Regional Airport","alternativeNames":["Everett Stewart Regional Airport"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Humphreys County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Winchester Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Chilhowee Gliderport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Thornton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
 
 
 
