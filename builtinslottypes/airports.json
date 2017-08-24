@@ -5267,7 +5267,22 @@
     {"name":"Dallas Love Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Dallas/Fort Worth International Airport","alternativeNames":["Dallas Fort Worth International Airport", "Dallas-Fort Worth International Airport"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Del Rio International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"El Paso International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"El Paso International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Killeen-Fort Hood Regional Airport","alternativeNames":["Killeen Fort Hood Regional Airport", "Robert Gray Army Airfield"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Valley International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"George Bush Intercontinental Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"William P. Hobby Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Laredo International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"East Texas Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lubbock Preston Smith International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"McAllen-Miller International Airport","alternativeNames":["McAllen Miller International Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Midland International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"San Angelo Regional Airport","alternativeNames":["Mathis Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"San Antonio International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Tyler Pounds Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Waco Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+
 
 
 
