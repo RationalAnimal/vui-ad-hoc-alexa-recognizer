@@ -5233,7 +5233,19 @@
     {"name":"Humphreys County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Winchester Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Chilhowee Gliderport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-    {"name":"Thornton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
+    {"name":"Thornton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+
+    {"name":"Dallas Bay Skypark","alternativeNames":["Dallas Bay Sky Park"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Cleveland Regional Jetport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Collegedale Municipal Airport","alternativeNames":["Linn Field"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Puckett Gliderport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Arnold Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"John A. Baker Field","alternativeNames":["John A Baker Field", "John Baker Field"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Johnson City STOLport","alternativeNames":["Johnson City Airport"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Houston County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Wolf River Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Reelfoot Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
+
 
 
 
