@@ -14,39 +14,47 @@
           "recognizer": "pizza",
           "responders": [
             {
-              "combineRule": "setTo",
-              "directValues": {
-                "pickMethod": "randomDoNotRepeat",
-                "repeatSelector": "squirrelledAwayAlreadyUsed",
-                "values": [
-                  {"text": "Thanks a bunch", "ssml": "<speak>Thanks a bunch</speak>", "videos": ["http://someurl.com"]},
-                  {"text": "Danke", "ssml": "<speak>Danke</speak>"},
-                  {"text": "I agree", "ssml": "<speak>I agree</speak>", "card": {"Title": "First Card Title"}}
-                ]
+              "result": {
+                "combineRule": "setTo",
+                "directValues": {
+                  "pickMethod": "randomDoNotRepeat",
+                  "repeatSelector": "squirrelledAwayAlreadyUsed",
+                  "values": [
+                    {"text": "Thanks a bunch", "ssml": "<speak>Thanks a bunch</speak>", "videos": ["http://someurl.com"]},
+                    {"text": "Danke", "ssml": "<speak>Danke</speak>"},
+                    {"text": "I agree", "ssml": "<speak>I agree</speak>", "card": {"Title": "First Card Title"}}
+                  ]
+                }
               }
             },
             {
-              "combineRule": "mergeAppend",
-              "directValues": {
-                "pickMethod": "randomDoNotRepeat",
-                "repeatSelector": "squirrelledAwayAlreadyUsed2",
-                "values": [
-                  {"text": "Second responder thanks you", "ssml": "<speak>Thanks a bunch</speak>", "videos": ["http://someotherurl.com"]},
-                  {"text": "Second responder thanks you again", "ssml": "<speak>Thanks a bunch with a card</speak>", "videos": ["http://somethirdurl.com"], "card": {"Title": "Card Title"}}
-                ]
+              "result": {
+                "combineRule": "mergeAppend",
+                "directValues": {
+                  "pickMethod": "randomDoNotRepeat",
+                  "repeatSelector": "squirrelledAwayAlreadyUsed2",
+                  "values": [
+                    {"text": "Second responder thanks you", "ssml": "<speak>Thanks a bunch</speak>", "videos": ["http://someotherurl.com"]},
+                    {"text": "Second responder thanks you again", "ssml": "<speak>Thanks a bunch with a card</speak>", "videos": ["http://somethirdurl.com"], "card": {"Title": "Card Title"}}
+                  ]
+                }
               }
             },
             {
-              "combineRule": "ignore",
-              "directValue": {"text": "Ignore this text"},
+              "result": {
+                "combineRule": "ignore",
+                "directValue": {"text": "Ignore this text"}
+              },
               "updateState": {
                 "updateRule": "setTo",
                 "directValue": {"description": "result of setTo updateRule"}
               }
             },
             {
-              "combineRule": "ignore",
-              "directValue": {"text": "Ignore this text"},
+              "result": {
+                "combineRule": "ignore",
+                "directValue": {"text": "Ignore this text"}
+              },
               "updateState": {
                 "updateRule": "mergeReplace",
                 "updateSelector": "someuselessvalue.some.other.useless.value",

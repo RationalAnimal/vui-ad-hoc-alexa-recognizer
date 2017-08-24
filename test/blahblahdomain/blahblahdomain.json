@@ -31,7 +31,9 @@
         {
           "recognizer": "blah2",
           "responder": {
-            "directValue": {"text": "Thank you"}
+            "result": {
+              "directValue": {"text": "Thank you"}
+            }
           }
         }
       ]
@@ -45,13 +47,15 @@
         {
           "recognizer": "blah2",
           "responder": {
-            "directValues": {
-              "pickMethod": "random",
-              "values": [
-                {"text": "Thanks a bunch"},
-                {"text": "Danke"},
-                {"text": "I agree"}
-              ]
+            "result": {
+              "directValues": {
+                "pickMethod": "random",
+                "values": [
+                  {"text": "Thanks a bunch"},
+                  {"text": "Danke"},
+                  {"text": "I agree"}
+                ]
+              }
             }
           }
         }
@@ -66,14 +70,16 @@
         {
           "recognizer": "blah2",
           "responder": {
-            "directValues": {
-              "pickMethod": "randomDoNotRepeat",
-              "repeatSelector": "squirrelledAwayAlreadyUsed",
-              "values": [
-                {"text": "Thanks a bunch"},
-                {"text": "Danke"},
-                {"text": "I agree"}
-              ]
+            "result": {
+              "directValues": {
+                "pickMethod": "randomDoNotRepeat",
+                "repeatSelector": "squirrelledAwayAlreadyUsed",
+                "values": [
+                  {"text": "Thanks a bunch"},
+                  {"text": "Danke"},
+                  {"text": "I agree"}
+                ]
+              }
             }
           }
         }
@@ -88,7 +94,9 @@
         {
           "recognizer": "blah2",
           "responder": {
-            "functionSource": "return {\"text\":\"Thanks\"};"
+            "result": {
+              "functionSource": "return {\"text\":\"Thanks\"};"
+            }
           }
         },
         {
