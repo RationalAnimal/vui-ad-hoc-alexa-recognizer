@@ -5244,7 +5244,18 @@
     {"name":"Johnson City STOLport","alternativeNames":["Johnson City Airport"],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Houston County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Wolf River Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-    {"name":"Reelfoot Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
+    {"name":"Reelfoot Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+
+    {"name":"Sabre Army Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Arnold AFB","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Riley Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Oliver Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Arlington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Putnam County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Franklin Wilkins Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Powell STOLport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Cornelia Fort Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Scott Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
 
 
 
