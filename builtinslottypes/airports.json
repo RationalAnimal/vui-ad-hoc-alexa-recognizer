@@ -5255,7 +5255,19 @@
     {"name":"Franklin Wilkins Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Powell STOLport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Cornelia Fort Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-    {"name":"Scott Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
+    {"name":"Scott Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+
+    {"name":"Abilene Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Rick Husband Amarillo International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Austin-Bergstrom International Airport","alternativeNames":["Austin Bergstrom International Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Jack Brooks Regional Airport","alternativeNames":[],"priorNames":["Southeast Texas Regional Airport"],"country":"united states","state":"texas"},
+    {"name":"Brownsville/South Padre Island International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Easterwood Airport","alternativeNames":["Easterwood Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Corpus Christi International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Dallas Love Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Dallas/Fort Worth International Airport","alternativeNames":["Dallas Fort Worth International Airport", "Dallas-Fort Worth International Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Del Rio International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"El Paso International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
 
