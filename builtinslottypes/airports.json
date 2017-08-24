@@ -5212,7 +5212,19 @@
     {"name":"Scott Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Henry County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Portland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-    {"name":"Abernathy Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
+    {"name":"Abernathy Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+
+    {"name":"Rockwood Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Hawkins County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Savannah-Hardin County Airport","alternativeNames":["Savannah Hardin County Airport"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Robert Sibley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Gatlinburg-Pigeon Forge Airport","alternativeNames":["Gatlinburg Pigeon Forge Airport"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Franklin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Shelbyville Municipal Airport","alternativeNames":["Bomar Field"],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Smithville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Fayette County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Upper Cumberland Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
+    {"name":"Springfield-Robertson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"}
 
 
 
