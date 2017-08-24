@@ -62,57 +62,59 @@ let _produceResult = function(matchedIntent, stateAccessor, applicationState, re
         break;
     }
   }
-  if(typeof responderSpec.functionSource === "string"){
-    let scratchFunc = new Function('scratchFunc', responderSpec.functionSource);
-    let result = scratchFunc(matchedIntent, stateAccessor, applicationState);
-    return result;
-  }
-  else if(typeof responderSpec.directValue !== "undefined"){
-    return responderSpec.directValue;
-  }
-  else if(typeof responderSpec.directValues !== "undefined"){
-    let directValues = responderSpec.directValues;
-    if(directValues.pickMethod === "random"){
-//      console.log("_produceResult, random");
-      if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values)){
-        let randomIndex = Math.floor(Math.random() * directValues.values.length);
-        return directValues.values[randomIndex];
-      }
+  if(typeof responderSpec.result !== "undefined" && responderSpec.result !== null){
+    if(typeof responderSpec.result.functionSource === "string"){
+      let scratchFunc = new Function('scratchFunc', responderSpec.result.functionSource);
+      let result = scratchFunc(matchedIntent, stateAccessor, applicationState);
+      return result;
     }
-    else if(directValues.pickMethod === "randomDoNotRepeat"){
+    else if(typeof responderSpec.result.directValue !== "undefined"){
+      return responderSpec.result.directValue;
+    }
+    else if(typeof responderSpec.result.directValues !== "undefined"){
+      let directValues = responderSpec.result.directValues;
+      if(directValues.pickMethod === "random"){
+//      console.log("_produceResult, random");
+        if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values)){
+          let randomIndex = Math.floor(Math.random() * directValues.values.length);
+          return directValues.values[randomIndex];
+        }
+      }
+      else if(directValues.pickMethod === "randomDoNotRepeat"){
 //      console.log("_produceResult, randomDoNotRepeat");
-      if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values) &&
-         typeof directValues.repeatSelector !== "undefined" && directValues.repeatSelector !== null){
-        let usedValues = stateAccessor.getState(applicationState, directValues.repeatSelector);
+        if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values) &&
+          typeof directValues.repeatSelector !== "undefined" && directValues.repeatSelector !== null){
+          let usedValues = stateAccessor.getState(applicationState, directValues.repeatSelector);
 //        console.log("usedValues: ", JSON.stringify(usedValues));
-        if(typeof usedValues === "undefined" || Array.isArray(usedValues) !== true){
-          usedValues = [];
+          if(typeof usedValues === "undefined" || Array.isArray(usedValues) !== true){
+            usedValues = [];
 //          console.log("setting usedValues to empty array: ", JSON.stringify(usedValues));
-        }
-        let unusedValues = [];
-        let stringifiedUsedValues = [];
-        for(let i = 0; i < usedValues.length; i ++){
-          stringifiedUsedValues.push(JSON.stringify(usedValues[i]));
-        }
-        for(let i = 0; i < directValues.values.length; i++){
-          if(stringifiedUsedValues.indexOf(JSON.stringify(directValues.values[i])) < 0){
-//            console.log("adding to unusedValues: ", JSON.stringify(directValues.values[i]));
-            unusedValues.push(directValues.values[i]);
           }
-        }
-        if(unusedValues.length === 0){
-          // This means all the values have been used - reset
-          unusedValues = unusedValues.concat(directValues.values);
-          usedValues = [];
-        }
+          let unusedValues = [];
+          let stringifiedUsedValues = [];
+          for(let i = 0; i < usedValues.length; i ++){
+            stringifiedUsedValues.push(JSON.stringify(usedValues[i]));
+          }
+          for(let i = 0; i < directValues.values.length; i++){
+            if(stringifiedUsedValues.indexOf(JSON.stringify(directValues.values[i])) < 0){
+//            console.log("adding to unusedValues: ", JSON.stringify(directValues.values[i]));
+              unusedValues.push(directValues.values[i]);
+            }
+          }
+          if(unusedValues.length === 0){
+            // This means all the values have been used - reset
+            unusedValues = unusedValues.concat(directValues.values);
+            usedValues = [];
+          }
 //        console.log("unusedValues: ", JSON.stringify(unusedValues));
-        let randomIndex = Math.floor(Math.random() * unusedValues.length);
-        let returnValue = unusedValues[randomIndex];
-        if(typeof returnValue !== "undefined" && returnValue !== null){
-          usedValues.push(returnValue);
-          stateAccessor.setState(applicationState, directValues.repeatSelector, usedValues);
+          let randomIndex = Math.floor(Math.random() * unusedValues.length);
+          let returnValue = unusedValues[randomIndex];
+          if(typeof returnValue !== "undefined" && returnValue !== null){
+            usedValues.push(returnValue);
+            stateAccessor.setState(applicationState, directValues.repeatSelector, usedValues);
+          }
+          return returnValue;
         }
-        return returnValue;
       }
     }
   }
