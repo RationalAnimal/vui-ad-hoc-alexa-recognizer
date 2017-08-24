@@ -6,6 +6,13 @@
       "path": "./test/pizzadomain/pizzarecognizer.json"
     }
   ],
+  "domains": [
+    {
+      "key": "greeting",
+      "path": "./test/greetingdomain/greetingdomain.json",
+      "domain": {}
+    }
+  ],
   "states": [
     {
       "matchCriteria": "default",
@@ -62,6 +69,9 @@
               }
             }
           ]
+        },
+        {
+          "domain": "greeting"
         }
       ]
     }
