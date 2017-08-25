@@ -5294,7 +5294,21 @@
     {"name":"Fort Worth Meacham International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Fort Worth Spinks Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Scholes International Airport at Galveston","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Georgetown Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Georgetown Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Grand Prairie Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Ellington Airport","alternativeNames":["Ellington Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"West Houston Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Houston Southwest Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lone Star Executive Airport","alternativeNames":[],"priorNames":["Montgomery County Airport"],"country":"united states","state":"texas"},
+    {"name":"Pearland Regional Airport","alternativeNames":[],"priorNames":["Clover Field"],"country":"united states","state":"texas"},
+    {"name":"Sugar Land Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"David Wayne Hooks Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"La Porte Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lancaster Regional Airport","alternativeNames":[],"priorNames":["Lancaster Airport"],"country":"united states","state":"texas"},
+    {"name":"McKinney National Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Mesquite Metro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Stinson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
 
