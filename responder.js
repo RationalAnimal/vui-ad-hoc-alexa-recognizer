@@ -46,6 +46,9 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, appl
   if(typeof responderSpec === "undefined" || responderSpec === null){
     return;
   }
+  if(typeof stateSelectors === "undefined" || stateSelectors === null || Array.isArray(stateSelectors) === false){
+    stateSelectors = [];
+  }
   // TODO change the order of state update vs response generation later based on the responderSpec. For now do the state update first
   if(typeof responderSpec.updateState !== "undefined" && responderSpec.updateState !== null){
     let updateRule = responderSpec.updateState.updateRule;
@@ -84,7 +87,9 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, appl
 //      console.log("_produceResult, randomDoNotRepeat");
         if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values) &&
           typeof directValues.repeatSelector !== "undefined" && directValues.repeatSelector !== null){
-          let usedValues = stateAccessor.getState(applicationState, directValues.repeatSelector);
+          let updatedStateSelectors = [].concat(stateSelectors);
+          updatedStateSelectors.push(directValues.repeatSelector);
+          let usedValues = stateAccessor.getStateChain(applicationState, updatedStateSelectors);
 //        console.log("usedValues: ", JSON.stringify(usedValues));
           if(typeof usedValues === "undefined" || Array.isArray(usedValues) !== true){
             usedValues = [];
@@ -111,7 +116,7 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, appl
           let returnValue = unusedValues[randomIndex];
           if(typeof returnValue !== "undefined" && returnValue !== null){
             usedValues.push(returnValue);
-            stateAccessor.setState(applicationState, directValues.repeatSelector, usedValues);
+            stateAccessor.setStateChain(applicationState, updatedStateSelectors, usedValues);
           }
           return returnValue;
         }
