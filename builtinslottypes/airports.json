@@ -5379,7 +5379,19 @@
     {"name":"Gilmer Municipal Airport","alternativeNames":["Fox Stephens Field"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Gladewater Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Graham Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Granbury Regional Airport","alternativeNames":["Granbury Municipal Airport"],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Granbury Regional Airport","alternativeNames":["Granbury Municipal Airport"],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Majors Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Gruver Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hamilton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Haskell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hearne Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Jim Hogg County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Rusk County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hereford Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hillsboro Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"South Texas Regional Airport at Hondo","alternativeNames":[],"priorNames":["Hondo Municipal Airport"],"country":"united states","state":"texas"},
+    {"name":"Huntsville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
