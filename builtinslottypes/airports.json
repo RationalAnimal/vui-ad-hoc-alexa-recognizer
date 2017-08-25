@@ -5349,7 +5349,22 @@
     {"name":"Coleman Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Comanche County-City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Commerce Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Corsicana Municipal Airport","alternativeNames":["C David Campbell Field", "C. David Campbell Field", "David Campbell Field"],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Corsicana Municipal Airport","alternativeNames":["C David Campbell Field", "C. David Campbell Field", "David Campbell Field"],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Cotulla-La Salle County Airport","alternativeNames":["Cotulla La Salle County Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Houston County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Cuero Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Dalhart Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Dallas CBD Vertiport","alternativeNames":["Dallas CBD Heliport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Decatur Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Devine Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Dimmitt Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Moore County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Eagle Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Maverick County Memorial International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Eastland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"South Texas International Airport at Edinburg","alternativeNames":["South Texas International Airport"],"priorNames":["Edinburg International Airport"],"country":"united states","state":"texas"},
+    {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
   ]
 }
