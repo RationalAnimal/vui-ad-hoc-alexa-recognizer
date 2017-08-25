@@ -5429,7 +5429,21 @@
     {"name":"Mount Pleasant Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Franklin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Muleshoe Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"A.L. Mangham Jr. Regional Airport","alternativeNames":["A. L. Mangham Jr. Regional Airport", "A L Mangham Jr Regional Airport", "Mangham Jr Regional Airport", "Mangham Junior Regional Airport"],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"A.L. Mangham Jr. Regional Airport","alternativeNames":["A. L. Mangham Jr. Regional Airport", "A L Mangham Jr Regional Airport", "Mangham Jr Regional Airport", "Mangham Junior Regional Airport"],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"New Braunfels Regional Airport","alternativeNames":["New Braunfels Municipal Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Odessa-Schlemeyer Field","alternativeNames":["Odessa Schlemeyer Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Olney Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Orange County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Ozona Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Palacios Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Palestine Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Perry Lefors Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Cox Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Pecos Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Perryton Ochiltree County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hale County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Pleasanton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
