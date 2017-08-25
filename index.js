@@ -1533,7 +1533,7 @@ let _isSubObject = function(subObject, withinObject){
  * @returns {object}
  * @private
  */
-var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicationState){
+var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelectors, applicationState){
 //  console.log("_matchTextDomain, 1");
   let domainToUse;
   if(typeof domain === "string"){
@@ -1553,6 +1553,9 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
      (typeof domainToUse.domains     === "undefined" || Array.isArray(domainToUse.domains)     === false)){
 //    console.log("_matchTextDomain, 5");
     return undefined;
+  }
+  if(typeof stateSelectors === "undefined" || stateSelectors === null || Array.isArray(stateSelectors)){
+    stateSelectors = [];
   }
   // Now populate all the recognizers.
   let recognizers = {};
@@ -1630,7 +1633,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
         }
         else if(typeof state.matchSpecs[j].domain !== "undefined"){
           let scratchDomain = domains[state.matchSpecs[j].domain];
-          let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, applicationState);
+          let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, stateSelectors, applicationState);
           if(typeof result !== "undefined" && result !== null){
             return result;
           }
@@ -1662,7 +1665,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, applicatio
           }
           else if(typeof state.matchSpecs[j].domain !== "undefined"){
             let scratchDomain = domains[state.matchSpecs[j].domain];
-            let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, applicationState);
+            let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, stateSelectors, applicationState);
             if(typeof result !== "undefined" && result !== null){
               return result;
             }

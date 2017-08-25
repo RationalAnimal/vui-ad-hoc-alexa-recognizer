@@ -127,7 +127,7 @@ let recursiveUserInput = function (){
       return rl.close();
     }
     console.log('Your text was: "' + answer + '"');
-    let result = recognizer.Recognizer.matchDomain(answer, domain, stateAccessor, state);
+    let result = recognizer.Recognizer.matchDomain(answer, domain, stateAccessor, [], state);
     console.log('Domain response: ', JSON.stringify(result, null, 2));
     if(outputState === true){
       console.log('State object: ', JSON.stringify(state, null, 2));

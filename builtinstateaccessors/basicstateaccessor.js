@@ -34,6 +34,7 @@ let _getState = function(state, key){
   }
 };
 
+// TODO consider whether THIS function should be exported as getState rather than _getState
 let _getStateRaw = function(state, key){
   if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
     return;
