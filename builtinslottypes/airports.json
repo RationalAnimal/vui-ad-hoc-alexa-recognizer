@@ -5418,7 +5418,18 @@
     {"name":"Angelina County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Marfa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Harrison County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Memphis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Memphis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Mexia-Limestone County Airport","alternativeNames":["Mexia Limestone County Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Midland Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Mid-Way Regional Airport","alternativeNames":["Mid Way Regional Airport", "MidWay Regional Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Mineral Wells Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Roy Hurd Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Cochran County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Mount Pleasant Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Franklin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Muleshoe Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"A.L. Mangham Jr. Regional Airport","alternativeNames":["A. L. Mangham Jr. Regional Airport", "A L Mangham Jr Regional Airport", "Mangham Jr Regional Airport", "Mangham Junior Regional Airport"],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
