@@ -5403,7 +5403,22 @@
     {"name":"Skylark Field","alternativeNames":[],"priorNames":["Killeen Municipal Airport"],"country":"united states","state":"texas"},
     {"name":"Kleberg County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Hawthorne Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Fayette Regional Air Center","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Fayette Regional Air Center","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Lago Vista TX - Rusty Allen Airport","alternativeNames":["Lago Vista TX  Rusty Allen Airport", "Lago Vista TX", "Lago Vista Texas", "Rusty Allen Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lakeway TX - Lakeway Airpark","alternativeNames":["Lakeway TX Lakeway Airpark", "Lakeway Airpark", "Lakeway TX", "Lakeway Texas"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lamesa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lampasas Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Levelland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Liberty Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Littlefield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Livingston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Llano Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lockhart Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Angelina County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Marfa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Harrison County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Memphis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
