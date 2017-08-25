@@ -2532,9 +2532,16 @@ describe("domain parsing", function() {
         "getState": function(state, selector){
           return state[selector];
         },
+        "getStateChain": function(state, selectors){
+          return state[selectors[0]];
+        },
         "setState": function(state, selector, newValue){
           state[selector] = newValue;
+        },
+        "setStateChain": function(state, selectors, newValue){
+          state[selectors[0]] = newValue;
         }
+
       };
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, [], applicationState);
       expect(result.match).to.eql(
