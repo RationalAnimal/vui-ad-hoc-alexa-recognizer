@@ -42,7 +42,7 @@ responder.combineRules = [
   }
 ];
 */
-let _produceResult = function(matchedIntent, stateAccessor, applicationState, responderSpec){
+let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, applicationState, responderSpec){
   if(typeof responderSpec === "undefined" || responderSpec === null){
     return;
   }
