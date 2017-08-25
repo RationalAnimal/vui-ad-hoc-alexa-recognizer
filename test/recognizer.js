@@ -2428,7 +2428,7 @@ describe("domain parsing", function() {
           return state[selector];
         }
       };
-      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
+      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, [], applicationState);
       expect(result).to.eql(
         {
           "match":
@@ -2456,7 +2456,7 @@ describe("domain parsing", function() {
           return state[selector];
         }
       };
-      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
+      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, [], applicationState);
       expect(result).to.eql(
         {
           "match":
@@ -2487,7 +2487,7 @@ describe("domain parsing", function() {
           return state[selector];
         }
       };
-      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
+      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, [], applicationState);
 //      console.log("result: ", result);
       expect(result.match).to.eql(
         {
@@ -2536,7 +2536,7 @@ describe("domain parsing", function() {
           state[selector] = newValue;
         }
       };
-      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
+      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, [], applicationState);
       expect(result.match).to.eql(
         {
           "name": "ComplimentIntent",
@@ -2584,7 +2584,7 @@ describe("domain parsing", function() {
       ];
       let stateAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
 
-      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, applicationState);
+      let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, [], applicationState);
       expect(result.match).to.eql(
         {
           "name": "ComplimentIntent",
@@ -2625,7 +2625,7 @@ describe("domain parsing", function() {
           return state[selector];
         }
       };
-      let result = recognizer.Recognizer.matchDomain("good morning to you", domain, stateAccessor, applicationState);
+      let result = recognizer.Recognizer.matchDomain("good morning to you", domain, stateAccessor, [], applicationState);
       expect(result).to.eql(
         {"match":
           {
