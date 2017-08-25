@@ -5391,7 +5391,19 @@
     {"name":"Hereford Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Hillsboro Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"South Texas Regional Airport at Hondo","alternativeNames":[],"priorNames":["Hondo Municipal Airport"],"country":"united states","state":"texas"},
-    {"name":"Huntsville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Huntsville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"McCampbell-Porter Airport","alternativeNames":["McCampbell Porter Airport"],"priorNames":["T. P. McCampbell Airport", "T.P. McCampbell Airport", "T P McCampbell Airport", "TP McCampbell Airport"],"country":"united states","state":"texas"},
+    {"name":"Jacksboro Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Cherokee County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Jasper County Airport","alternativeNames":["Bell Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Kimble County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Karnes County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Kerrville Municipal Airport","alternativeNames":["Louis Schreiner Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Skylark Field","alternativeNames":[],"priorNames":["Killeen Municipal Airport"],"country":"united states","state":"texas"},
+    {"name":"Kleberg County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hawthorne Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Fayette Regional Air Center","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
