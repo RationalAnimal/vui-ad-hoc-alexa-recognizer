@@ -5322,11 +5322,22 @@
     {"name":"Beaumont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Beeville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Big Spring McMahon-Wrinkle Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Jones Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Jones Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
 
-
-
-
+    {"name":"Hutchinson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Bowie Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Curtis Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Stephens County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Brenham Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Bridgeport Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Terry County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Brownwood Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Coulter Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Burnet Municipal Airport","alternativeNames":["Kate Craddock Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Caddo Mills Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Cameron Municipal Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hemphill County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Dimmit County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
   ]
 }
