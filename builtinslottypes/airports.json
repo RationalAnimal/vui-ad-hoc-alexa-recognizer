@@ -5443,7 +5443,20 @@
     {"name":"Pecos Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Perryton Ochiltree County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Hale County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Pleasanton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Pleasanton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Port Isabel-Cameron County Airport","alternativeNames":["Port Isabel Cameron County Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Calhoun County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Post-Garza County Municipal Airport","alternativeNames":["Post Garza County Municipal Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Quanah Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Rooke Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Nueces County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Aransas County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Ralph M. Hall/Rockwall Municipal Airport","alternativeNames":["Ralph M. Hall Rockwall Municipal Airport", "Ralph M Hall Rockwall Municipal Airport", "Ralph Hall Rockwall Municipal Airport", "Rockwall Municipal"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Gaines County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Seymour Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"North Texas Regional Airport","alternativeNames":["Perrin Field"],"priorNames":["Grayson County Airport"],"country":"united states","state":"texas"},
+    {"name":"Slaton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
