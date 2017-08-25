@@ -5308,7 +5308,21 @@
     {"name":"Lancaster Regional Airport","alternativeNames":[],"priorNames":["Lancaster Airport"],"country":"united states","state":"texas"},
     {"name":"McKinney National Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Mesquite Metro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Stinson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Stinson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"San Marcos Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Alice International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Alpine-Casparis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Chambers County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Andrews County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Stonewall County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Athens Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hall-Miller Municipal Airport","alternativeNames":["Hall Miller Municipal Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Bay City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Beaumont Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Beeville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Big Spring McMahon-Wrinkle Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Jones Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
 
