@@ -5281,7 +5281,20 @@
     {"name":"San Angelo Regional Airport","alternativeNames":["Mathis Field"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"San Antonio International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Tyler Pounds Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Waco Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Waco Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Wichita Falls Municipal Airport / Sheppard Air Force Base","alternativeNames":["Wichita Falls Municipal Airport", "Sheppard Air Force Base"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Victoria Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Texas Gulf Coast Regional Airport","alternativeNames":[],"priorNames":["Brazoria County Airport"],"country":"united states","state":"texas"},
+    {"name":"Arlington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Dallas Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Addison Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Denton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Fort Worth Alliance Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Fort Worth Meacham International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Fort Worth Spinks Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Scholes International Airport at Galveston","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Georgetown Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
 
