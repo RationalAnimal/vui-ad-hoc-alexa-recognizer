@@ -5337,7 +5337,19 @@
     {"name":"Caddo Mills Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Cameron Municipal Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Hemphill County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Dimmit County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Dimmit County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Panola County Airport","alternativeNames":["Sharpe Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Castroville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Center Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Clarksville/Red River County Airport","alternativeNames":["Clarksville Red River County Airport", "Clarksville-Red River County Airport", "J.D. Trissell Field", "J. D. Trissell Field", "J D Trissell Field", "JD Trissell Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Cleburne Regional Airport","alternativeNames":[],"priorNames":["Cleburne Municipal Airport"],"country":"united states","state":"texas"},
+    {"name":"Cleveland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Clifton Municipal Airport","alternativeNames":["Isenhower Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Coleman Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Comanche County-City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Commerce Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Corsicana Municipal Airport","alternativeNames":["C David Campbell Field", "C. David Campbell Field", "David Campbell Field"],"priorNames":[],"country":"united states","state":"texas"}
 
   ]
 }
