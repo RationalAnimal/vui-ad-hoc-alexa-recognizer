@@ -5364,7 +5364,23 @@
     {"name":"Maverick County Memorial International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Eastland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"South Texas International Airport at Edinburg","alternativeNames":["South Texas International Airport"],"priorNames":["Edinburg International Airport"],"country":"united states","state":"texas"},
-    {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Ennis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Fabens Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Brooks County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Floydada Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Fort Stockton-Pecos County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Gillespie County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Gainesville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Garland/DFW Heloplex","alternativeNames":["Garland/DFW Heliport", "Garland DFW Heliport", "Garland-DFW Heliport", "Garland DFW Heloplex", "Garland-DFW Heloplex"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Gatesville Municipal Airport","alternativeNames":[],"priorNames":["City County Airport", "City-County Airport"],"country":"united states","state":"texas"},
+    {"name":"Giddings-Lee County Airport","alternativeNames":["Giddings Lee County Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Gilmer Municipal Airport","alternativeNames":["Fox Stephens Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Gladewater Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Graham Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Granbury Regional Airport","alternativeNames":["Granbury Municipal Airport"],"priorNames":[],"country":"united states","state":"texas"}
+
 
   ]
 }
