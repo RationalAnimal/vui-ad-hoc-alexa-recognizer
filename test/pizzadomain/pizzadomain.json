@@ -10,7 +10,7 @@
     {
       "key": "greeting",
       "path": "./test/greetingdomain/greetingdomain.json",
-      "domain": {}
+      "selector": "greeting"
     }
   ],
   "states": [

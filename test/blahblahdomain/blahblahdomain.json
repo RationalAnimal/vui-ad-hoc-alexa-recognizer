@@ -17,8 +17,7 @@
   "domains": [
     {
       "key": "bleh",
-      "path": "./test/blehblehdomain/blehblehdomain.json",
-      "domain": {}
+      "path": "./test/blehblehdomain/blehblehdomain.json"
     }
   ],
   "states": [
