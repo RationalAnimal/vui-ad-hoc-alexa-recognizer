@@ -5456,7 +5456,18 @@
     {"name":"Gaines County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Seymour Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"North Texas Regional Airport","alternativeNames":["Perrin Field"],"priorNames":["Grayson County Airport"],"country":"united states","state":"texas"},
-    {"name":"Slaton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Slaton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Smithville Crawford Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Winston Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Major Samuel B. Cornelius Field","alternativeNames":["Major Samuel B Cornelius Field", "Major Samuel Cornelius Field"],"priorNames":["Spearman Municipal Airport"],"country":"united states","state":"texas"},
+    {"name":"Arledge Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Stephenville Clark Regional Airport","alternativeNames":[],"priorNames":["Clark Field Municipal Airport"],"country":"united states","state":"texas"},
+    {"name":"Sulphur Springs Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Avenger Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Taylor Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Draughon-Miller Central Texas Regional Airport","alternativeNames":["Draughon Miller Central Texas Regional Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Terrell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
