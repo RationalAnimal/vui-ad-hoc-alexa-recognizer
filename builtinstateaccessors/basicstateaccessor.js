@@ -27,6 +27,17 @@
 
 let accessor = {};
 
+let _expandKeyArray = function(keyArray){
+  let expandedKeyArray = [];
+  for(let i = 0; i < keyArray.length; i ++){
+    let splitKeyArray = keyArray[i].split(".");
+    for(let j = 0; j < splitKeyArray.length; j ++){
+      expandedKeyArray.push(splitKeyArray[j]);
+    }
+  }
+  return expandedKeyArray;
+};
+
 let _getState = function(state, key){
   let result = _getStateRaw(state, key);
   if(typeof result !== "undefined" && result !== null){
@@ -96,22 +107,6 @@ let _setState = function(state, key, newValue){
   }
 };
 
-let _setStateChain = function(state, keyArray, newValue){
-  if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
-    return;
-  }
-  if(keyArray.length > 0){
-    let result = state;
-    for(let i = 0; i < keyArray.length - 1; i++){
-      result = _getStateRaw(result, keyArray[i]);
-      if(typeof result === "undefined" || result === null){
-        return;
-      }
-    }
-    _setState(result, keyArray[keyArray.length - 1], newValue);
-  }
-};
-
 let _ensureSubfieldsPresent = function(objectToUpdate, keys){
   if(typeof objectToUpdate === "undefined" || objectToUpdate === null){
     return;
@@ -142,28 +137,62 @@ let _ensureSubfieldsPresent = function(objectToUpdate, keys){
     }
   }
 };
-let _mergeReplaceState = function(state, newValue, key){
+
+let _setStateChain = function(state, keyArray, newValue){
+  if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
+    return;
+  }
+  // TODO DRY the code and use _expandKeyArray elsewhere in this file
+  let expandedKeyArray = _expandKeyArray(keyArray);
+  _ensureSubfieldsPresent(state, expandedKeyArray);
+  if(keyArray.length > 0){
+    let result = state;
+    for(let i = 0; i < keyArray.length - 1; i++){
+      result = _getStateRaw(result, keyArray[i]);
+      if(typeof result === "undefined" || result === null){
+        return;
+      }
+    }
+    _setState(result, keyArray[keyArray.length - 1], newValue);
+  }
+};
+
+let _mergeReplaceState = function(state, newState, keyArray){
+  console.log("_mergeReplaceState, START, state: ", JSON.stringify(state, null, 2));
   if(typeof state === "undefined" || state === null){
     return;
   }
-  let result;
-  if(typeof key === "undefined" || key === null){
-    // TODO verify that we need this use case
-    // This means we are merging at the top level
-    result = state;
+  let objectToUpdate = state;
+  if(typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) === false || keyArray.length === 0){
+    // Nothing to do for now
   }
   else {
-    let keyArray = [];
-    if(typeof key === "string"){
-      keyArray = key.split(".");
+    let expandedKeyArray = [];
+    for(let i = 0; i < keyArray.length; i ++){
+      let splitKeyArray = keyArray[i].split(".");
+      for(let j = 0; j < splitKeyArray.length; j ++){
+        expandedKeyArray.push(splitKeyArray[j]);
+      }
     }
-    if(keyArray.length > 0){
+    if(expandedKeyArray.length > 0){
       // First ensure that we have all the "sub" fields
-      _ensureSubfieldsPresent(state, keyArray);
-      console.log("_mergeReplaceState, expanded state: ", JSON.stringify(state, null, 2));
-      _setState(state, key, newValue);
+      _ensureSubfieldsPresent(state, expandedKeyArray);
     }
   }
+  let newProperties = [];
+  for(let key in newState){
+    if (newState.hasOwnProperty(key)) {
+      newProperties.push(key);
+    }
+  }
+  for(let i = 0; i < newProperties.length; i ++){
+    console.log("_mergeReplaceState, 1, i: " + i + " state: ", JSON.stringify(state, null, 2));
+    let scratchKeyArray = [].concat(keyArray);
+    scratchKeyArray.push(newProperties[i]);
+    _setStateChain(objectToUpdate, scratchKeyArray, newState[newProperties[i]]);
+    console.log("_mergeReplaceState, 2, i: " + i + " state: ", JSON.stringify(state, null, 2));
+  }
+  console.log("_mergeReplaceState, END, state: ", JSON.stringify(state, null, 2));
 };
 
 
@@ -171,18 +200,6 @@ let _replaceState = function(state, newState, keyArray){
   let objectToUpdate = state;
   if(typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) === false){
     // Nothing to do for now
-    /*
-    // First, delete all existing fields
-    let currentProperties = [];
-    for(let key in state) {
-      if (state.hasOwnProperty(key)) {
-        currentProperties.push(key);
-      }
-    }
-    for(let i = 0; i < currentProperties.length; i++){
-      delete state[currentProperties[i]];
-    }
-    */
   }
   else {
     let expandedKeyArray = [];
