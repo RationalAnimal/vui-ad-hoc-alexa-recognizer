@@ -6,4 +6,6 @@ scratch*
 recognizer.js
 staticfilerecognizer.js
 builtinslottypes/uslastnames.json
+mydomain.json
+mystate.json
 .idea
