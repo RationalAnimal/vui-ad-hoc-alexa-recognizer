@@ -5492,7 +5492,21 @@
     {"name":"Buffalo Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Palo Duro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Tradewind Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Bailes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Bailes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Flyin' Tiger Field","alternativeNames":["Flying Tiger Field"],"priorNames":["Flyin Tiger Airport"],"country":"united states","state":"texas"},
+    {"name":"Archer City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Austin Executive Airport","alternativeNames":[],"priorNames":["Bird's Nest Airport"],"country":"united states","state":"texas"},
+    {"name":"Lakeway Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Bruce Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Fehmel Dusting Service Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Baytown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"RWJ Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Ward Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Grawunder Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Reagan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Bishop Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Caldwell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
