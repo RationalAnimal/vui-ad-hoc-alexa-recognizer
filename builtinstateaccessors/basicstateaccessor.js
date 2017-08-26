@@ -167,17 +167,49 @@ let _mergeReplaceState = function(state, newValue, key){
 };
 
 
-let _replaceState = function(state, newState){
-  // First, delete all existing fields
+let _replaceState = function(state, newState, keyArray){
+  let objectToUpdate = state;
+  if(typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) === false){
+    // Nothing to do for now
+    /*
+    // First, delete all existing fields
+    let currentProperties = [];
+    for(let key in state) {
+      if (state.hasOwnProperty(key)) {
+        currentProperties.push(key);
+      }
+    }
+    for(let i = 0; i < currentProperties.length; i++){
+      delete state[currentProperties[i]];
+    }
+    */
+  }
+  else {
+    let expandedKeyArray = [];
+    for(let i = 0; i < keyArray.length; i++){
+      let splitKeyArray = keyArray[i];
+      for(let j = 0; j < splitKeyArray.length; j++){
+        expandedKeyArray.push(splitKeyArray[j]);
+      }
+    }
+    _ensureSubfieldsPresent(state, expandedKeyArray);
+    for(let i = 0; i < expandedKeyArray.length; i++){
+      objectToUpdate = objectToUpdate[expandedKeyArray[i]];
+    }
+    // Here we have objectToUpdate pointing to last
+  }
+
   let currentProperties = [];
-  for(let key in state) {
-    if (state.hasOwnProperty(key)) {
+  for(let key in objectToUpdate) {
+    if (objectToUpdate.hasOwnProperty(key)) {
       currentProperties.push(key);
     }
   }
   for(let i = 0; i < currentProperties.length; i++){
-    delete state[currentProperties[i]];
+    delete objectToUpdate[currentProperties[i]];
   }
+
+
   let newProperties = [];
   for(let key in newState){
     if (newState.hasOwnProperty(key)) {
@@ -185,7 +217,7 @@ let _replaceState = function(state, newState){
     }
   }
   for(let i = 0; i < newProperties.length; i++){
-    state[newProperties[i]] = newState[newProperties[i]]
+    objectToUpdate[newProperties[i]] = newState[newProperties[i]]
   }
 };
 

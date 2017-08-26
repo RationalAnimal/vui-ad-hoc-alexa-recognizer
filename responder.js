@@ -52,9 +52,11 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, appl
   // TODO change the order of state update vs response generation later based on the responderSpec. For now do the state update first
   if(typeof responderSpec.updateState !== "undefined" && responderSpec.updateState !== null){
     let updateRule = responderSpec.updateState.updateRule;
+    let updatedStateSelectors = [].concat(stateSelectors);
+
     switch(updateRule){
       case "setTo":
-        stateAccessor.replaceState(applicationState, responderSpec.updateState.directValue);
+        stateAccessor.replaceState(applicationState, responderSpec.updateState.directValue, updatedStateSelectors);
         break;
       case "mergeReplace":
         stateAccessor.mergeReplaceState(applicationState, responderSpec.updateState.directValue, responderSpec.updateState.updateSelector);
