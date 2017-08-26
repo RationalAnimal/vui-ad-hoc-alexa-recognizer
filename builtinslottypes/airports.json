@@ -5506,7 +5506,18 @@
     {"name":"Grawunder Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Reagan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Bishop Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Caldwell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Caldwell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Canton-Hackney Airport","alternativeNames":["Canton Hackney Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Maples Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Bishop's Landing Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Four Winds Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Childress Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Wildcat Canyon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Gregory Simmons Memorial Airport","alternativeNames":[],"priorNames":["Cisco Municipal Airport"],"country":"united states","state":"texas"},
+    {"name":"Smiley Johnson Municipal Airport","alternativeNames":["Bass Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Sudden Stop Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Colorado City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
