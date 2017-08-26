@@ -1087,7 +1087,7 @@ Then you can define a domain JSON like this:
   "description": "Simplest domain",
   "recognizers": [
     {
-      "key": "mydomain",
+      "key": "mine",
       "path": "./myrecognizer.json"
     }
   ],
@@ -1096,7 +1096,7 @@ Then you can define a domain JSON like this:
       "matchCriteria": "default",
       "matchSpecs": [
         {
-          "recognizer": "greeting"
+          "recognizer": "mine"
         }
       ]
     }
@@ -1131,6 +1131,60 @@ Please type user text:
 ```
 
 This is nice, it works, and it shows how easy it is to set up a domain. Howeveer, there is really nothing new here yet.
+How about specifying actual results?
+We can do it quite easily, by adding just a few more values to the domain file:
+
+```json
+{
+  "description": "Simplest domain",
+  "recognizers": [
+    {
+      "key": "mine",
+      "path": "./myrecognizer.json"
+    }
+  ],
+  "states": [
+    {
+      "matchCriteria": "default",
+      "matchSpecs": [
+        {
+          "recognizer": "mine",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Thank you"}
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+Notice that we've added the "result" field.  This specifies what the returned results will be.  In this case they will
+consist of just one object that has a single field named "text" with the value "Thank you".
+Run the domain runner again and see the results:
+
+```shell
+Please type user text: tomorrow
+Your text was: "tomorrow"
+Domain response:  {
+  "match": {
+    "name": "DateIntent",
+    "slots": {
+      "DateSlot": {
+        "name": "DateSlot",
+        "value": "2017-08-27"
+      }
+    }
+  },
+  "result": {
+    "text": "Thank you"
+  }
+}
+```
+
+You can see that there is now a "result" field in the domain's response that has the value we've specified.
 
 ## Non Alexa support
 
