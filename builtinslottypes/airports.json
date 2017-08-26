@@ -5517,7 +5517,22 @@
     {"name":"Gregory Simmons Memorial Airport","alternativeNames":[],"priorNames":["Cisco Municipal Airport"],"country":"united states","state":"texas"},
     {"name":"Smiley Johnson Municipal Airport","alternativeNames":["Bass Field"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Sudden Stop Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Colorado City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Colorado City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Robert R. Wells Jr. Airport","alternativeNames":["Robert R Wells Jr Airport", "Robert R. Wells Junior Airport", "Robert R Wells Junior Airport", "Robert Wells Jr Airport", "Robert Wells Junior Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Eagles Aerodrome","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Crane County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Crosbyton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Crystal City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Greater Morris County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Air Park-Dallas Airport","alternativeNames":["Air Park Dallas Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Airpark East Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Bishop Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Heritage Creek Airstrip","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lazy G Bar Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Dell City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Denver City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Dilley Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
