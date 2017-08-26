@@ -143,8 +143,6 @@ exact date specification, but strings such as "today", etc.
 
 ## "Domain" (higher level) functionality
 
-**Note: new "domain" functionality is in the process of being added, APIs will likely change somewhat.**
-
 Domains are a higher level of parsing than recognizers.  Domains do use "recognizer" parsing, but add the follow abilities:
 
 * define a list of recognizers to be used
@@ -152,23 +150,6 @@ Domains are a higher level of parsing than recognizers.  Domains do use "recogni
 * allow returning of results in addition to simply matching on an intent (e.g. if the user says "How are you doing?", not only will it match on a greeting intent, but also will return "Good, and you?")
 * allow updating of the application state right within the matching code rather than having to write the extra code to do it (e.g. if the user says "My name is Bob" then some portion of the state will be set to "Bob" by the domain handling code)
 * allow nesting of the domains. This is particularly useful as whole types of interactions can be encapsulated as domains and then reused.  It also allows breaking large apps into smaller chunks, i.e. domains.
-
-**Currently these "domain" bits of functionality are implemented (but not yet documented):** 
-
-* **basic domain functionality** 
-* **basic state dependent matching** 
-* **basic sub-domain inclusion (i.e. nested domains)** 
-* **response generation:** 
-    * **direct value**
-    * **random direct value from an array**
-    * **random direct value from an array without repeating**
-    * **using dynamic JavaScript function body source**
-    * **multiple chained responders (using setTo, mergeAppend, mergeReplace, and ignore combining)**
-    * **simple state updaters (using setTo)**
-* **built in accessors:** 
-    * **simple read only json based accessor**
-    * **simple read/write json based accessor**
-* **domainRunner.js utility for testing domains**
 
 # Usage
 
@@ -1163,6 +1144,7 @@ We can do it quite easily, by adding just a few more values to the domain file:
 
 Notice that we've added the "result" field.  This specifies what the returned results will be.  In this case they will
 consist of just one object that has a single field named "text" with the value "Thank you".
+
 Run the domain runner again and see the results:
 
 ```shell
@@ -1185,6 +1167,66 @@ Domain response:  {
 ```
 
 You can see that there is now a "result" field in the domain's response that has the value we've specified.
+
+If you look closely at the domain file you'll see that we are specifying just one value.  You can specify many values
+with one of them being chosen at random, like this:
+
+```json
+{
+  "description": "Simplest domain",
+  "recognizers": [
+    {
+      "key": "mine",
+      "path": "./myrecognizer.json"
+    }
+  ],
+  "states": [
+    {
+      "matchCriteria": "default",
+      "matchSpecs": [
+        {
+          "recognizer": "mine",
+          "responder": {
+            "result": {
+              "directValues": {
+                "pickMethod": "random",
+                "values": [
+                  {"text": "Thanks a bunch"},
+                  {"text": "Danke"},
+                  {"text": "Thank you"}
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+If you run domain runner again, you will see one of the three messages displaying at random every time you type "tomorrow":
+
+```shell
+Please type user text: tomorrow
+Your text was: "tomorrow"
+Domain response:  {
+  "match": {
+    "name": "DateIntent",
+    "slots": {
+      "DateSlot": {
+        "name": "DateSlot",
+        "value": "2017-08-27"
+      }
+    }
+  },
+  "result": {
+    "text": "Danke"
+  }
+}
+```
+
+This is better, but still very simple.
 
 ## Non Alexa support
 
