@@ -5467,7 +5467,20 @@
     {"name":"Avenger Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Taylor Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Draughon-Miller Central Texas Regional Airport","alternativeNames":["Draughon Miller Central Texas Regional Airport"],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Terrell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Terrell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"City of Tulia/Swisher County Municipal Airport","alternativeNames":["City of Tulia Swisher County Municipal Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Garner Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Culberson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Oldham County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Wilbarger County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"McGregor Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"TSTC Waco Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Marian Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Mid Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Wharton Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Kickapoo Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Winkler County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
