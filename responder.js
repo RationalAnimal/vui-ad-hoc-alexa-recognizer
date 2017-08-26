@@ -69,8 +69,8 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, appl
   }
   if(typeof responderSpec.result !== "undefined" && responderSpec.result !== null){
     if(typeof responderSpec.result.functionSource === "string"){
-      let scratchFunc = new Function('scratchFunc', responderSpec.result.functionSource);
-      let result = scratchFunc(matchedIntent, stateAccessor, applicationState);
+      let scratchFunc = new Function('intent', 'stateAccessor', 'selectorArray', 'state', responderSpec.result.functionSource);
+      let result = scratchFunc(matchedIntent, stateAccessor, stateSelectors, applicationState);
       return result;
     }
     else if(typeof responderSpec.result.directValue !== "undefined"){
