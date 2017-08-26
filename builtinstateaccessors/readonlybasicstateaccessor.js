@@ -75,10 +75,15 @@ let _replaceState = function(state, newState){
   // NOOP
 };
 
+let _mergeReplaceState = function(state, newState, keyArray) {
+  // NOOP
+};
+
 accessor.getState = _getState;
 accessor.getStateChain = _getStateChain;
 accessor.setState = _setState;
 accessor.setStateChain = _setStateChain;
+accessor.mergeReplaceState = _mergeReplaceState;
 accessor.replaceState = _replaceState;
 
 module.exports = accessor;
