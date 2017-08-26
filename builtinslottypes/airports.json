@@ -5480,7 +5480,19 @@
     {"name":"Mid Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Wharton Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Kickapoo Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Winkler County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Winkler County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Chambers County-Winnie Stowell Airport","alternativeNames":["Chambers County-Winnie Stowell Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Winnsboro Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Abernathy Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Old Hoppe Place Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Albany Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Terlingua Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Alvin Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Buffalo Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Palo Duro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Tradewind Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Bailes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
