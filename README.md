@@ -1073,6 +1073,65 @@ Please type user text:
 If you do, you will see the results being returned.  The domainrunner.js will continue running and accepting user
 input (and possible updating the state object) until you kill the process or type EXIT
 
+### Domain configuration
+
+You can create a domain rather easily.  For the simplest setup all you need is an existing recognizer JSON file and you are in business.
+Imagine you already have a recognizer file (lets call it myrecognizer.json) that's located in your current directory.
+You would also need a "state" json file.  For now, you can simply create a file named "mystate.json" in the current
+directory that contains an empty object - {}
+
+Then you can define a domain JSON like this:
+
+```json
+{
+  "description": "Simplest domain",
+  "recognizers": [
+    {
+      "key": "mydomain",
+      "path": "./myrecognizer.json"
+    }
+  ],
+  "states": [
+    {
+      "matchCriteria": "default",
+      "matchSpecs": [
+        {
+          "recognizer": "greeting"
+        }
+      ]
+    }
+  ]
+}
+```
+
+You could now test it with domain runner:
+
+```shell
+node domainrunner.js 
+```
+
+You will see a prompt.  Assuming you have a corresponding DateIntent defined and you type in "tomorrow", you will see
+something like this:
+
+```shell
+Please type user text: tomorrow
+Your text was: "tomorrow"
+Domain response:  {
+  "match": {
+    "name": "DateIntent",
+    "slots": {
+      "DateSlot": {
+        "name": "DateSlot",
+        "value": "2017-08-27"
+      }
+    }
+  }
+}
+Please type user text:
+```
+
+This is nice, it works, and it shows how easy it is to set up a domain. Howeveer, there is really nothing new here yet.
+
 ## Non Alexa support
 
 You don't have to generate just the Alexa intents/slot types.  This module can
