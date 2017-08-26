@@ -1554,7 +1554,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
 //    console.log("_matchTextDomain, 5");
     return undefined;
   }
-  if(typeof stateSelectors === "undefined" || stateSelectors === null || Array.isArray(stateSelectors)){
+  if(typeof stateSelectors === "undefined" || stateSelectors === null || Array.isArray(stateSelectors) === false){
     stateSelectors = [];
   }
   // Now populate all the recognizers.
@@ -1633,7 +1633,18 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
         }
         else if(typeof state.matchSpecs[j].domain !== "undefined"){
           let scratchDomain = domains[state.matchSpecs[j].domain];
-          let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, stateSelectors, applicationState);
+          let updatedSelectors = [].concat(stateSelectors);
+          for(let k = 0; k < domainToUse.domains.length; k++){
+            let scratchDomainInfo = domainToUse.domains[k];
+            if(scratchDomainInfo.key === state.matchSpecs[j].domain){
+              let scratchDomainSelector = scratchDomainInfo.selector;
+              if(typeof scratchDomainSelector !== "undefined" && scratchDomainSelector !== null){
+                updatedSelectors.push(scratchDomainSelector);
+                break;
+              }
+            }
+          }
+          let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, updatedSelectors, applicationState);
           if(typeof result !== "undefined" && result !== null){
             return result;
           }
@@ -1665,7 +1676,18 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
           }
           else if(typeof state.matchSpecs[j].domain !== "undefined"){
             let scratchDomain = domains[state.matchSpecs[j].domain];
-            let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, stateSelectors, applicationState);
+            let updatedSelectors = [].concat(stateSelectors);
+            for(let k = 0; k < domainToUse.domains.length; k++){
+              let scratchDomainInfo = domainToUse.domains[k];
+              if(scratchDomainInfo.key === state.matchSpecs[j].domain){
+                let scratchDomainSelector = scratchDomainInfo.selector;
+                if(typeof scratchDomainSelector !== "undefined" && scratchDomainSelector !== null){
+                  updatedSelectors.push(scratchDomainSelector);
+                  break;
+                }
+              }
+            }
+            let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, updatedSelectors, applicationState);
             if(typeof result !== "undefined" && result !== null){
               return result;
             }
