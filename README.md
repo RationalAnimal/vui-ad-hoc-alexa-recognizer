@@ -1226,7 +1226,47 @@ Domain response:  {
 }
 ```
 
-This is better, but still very simple.
+This is better, but still very simple.  What if you wanted the replied to not repeat (at least until all of them were used up)?
+You can do that too by simply changing the value of the "pickMethod" field from "random" to "randomDoNotRepeat" and adding
+a "repeatSelector" field:
+
+```json
+{
+  "description": "Simplest domain",
+  "recognizers": [
+    {
+      "key": "mine",
+      "path": "./myrecognizer.json"
+    }
+  ],
+  "states": [
+    {
+      "matchCriteria": "default",
+      "matchSpecs": [
+        {
+          "recognizer": "mine",
+          "responder": {
+            "result": {
+              "directValues": {
+                "pickMethod": "randomDoNotRepeat",
+                "repeatSelector": "squirrelledAwayAlreadyUsed",
+                "values": [
+                  {"text": "Thanks a bunch"},
+                  {"text": "Danke"},
+                  {"text": "Thank you"}
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+Now, if you run domain runner again you will see that the values don't repeat (at least until you use up all 3, then the
+cycle starts again).
 
 ## Non Alexa support
 
