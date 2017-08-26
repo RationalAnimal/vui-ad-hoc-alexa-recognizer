@@ -1302,6 +1302,14 @@ Notice that the state object (which was empty to begin with - mystate.json) now 
 It's an array and it contains the values of the outputs that have already been used.  Every time a particular output is
 provided, this field is updated to include it, so it will not be used again until all the values have been used up.
 
+The "squirrelledAwayAlreadyUsed" field name comes from the domain configuration - you can specify anything you want as
+the name. The reason, by the way, for specify the field name is to avoid collisions and overwriting some portions of the
+state that you didn't mean to overwrite.  This way, you can pick a name for the field to keep track of the "used" values.
+
+So now you have seen how simply returning a particular value can update the state.  But that is part of the default built
+in behavior.  You can also directly update the state.
+
+
 ## Non Alexa support
 
 You don't have to generate just the Alexa intents/slot types.  This module can
