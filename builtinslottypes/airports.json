@@ -5572,7 +5572,20 @@
     {"name":"Cypress River Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Manning Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Clark Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Propwash Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Propwash Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Prose Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Sack-O-Grande Acroport","alternativeNames":["Sack O Grande Acroport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Kirbyville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Harrison Field of Knox City","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Joe Vaughn Spraying Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Bird Dog Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lakeview Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Real County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Kittie Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Freedom Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Flying V Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Town & Country Airpark","alternativeNames":["Town and Country Airpark"],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
