@@ -5585,7 +5585,19 @@
     {"name":"Kittie Hill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Freedom Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Flying V Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Town & Country Airpark","alternativeNames":["Town and Country Airpark"],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Town & Country Airpark","alternativeNames":["Town and Country Airpark"],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Carter Memorial Airport","alternativeNames":["The Carter Memorial Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Madisonville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Wolfe Airpark","alternativeNames":["Wolfe Air Park"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Marlin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Mason County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Upton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Aero Country Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"McLean/Gray County Airport","alternativeNames":["McLean Gray County Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Menard County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Miami-Roberts County Airport","alternativeNames":["Miami Roberts County Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Skywest Airport","alternativeNames":["Skywest Airport Inc.", "Skywest Airport Inc", "Skywest Airport Incorporated"],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
