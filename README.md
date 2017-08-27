@@ -1111,6 +1111,8 @@ Domain response:  {
 Please type user text:
 ```
 
+#### Returning hard coded result
+
 This is nice, it works, and it shows how easy it is to set up a domain. Howeveer, there is really nothing new here yet.
 How about specifying actual results?
 We can do it quite easily, by adding just a few more values to the domain file:
@@ -1167,6 +1169,8 @@ Domain response:  {
 ```
 
 You can see that there is now a "result" field in the domain's response that has the value we've specified.
+
+#### Returning one of several hard coded results at random
 
 If you look closely at the domain file you'll see that we are specifying just one value.  You can specify many values
 with one of them being chosen at random, like this:
@@ -1225,6 +1229,8 @@ Domain response:  {
   }
 }
 ```
+
+#### Returning one of several hard coded results at random without repeating
 
 This is better, but still very simple.  What if you wanted the replied to not repeat (at least until all of them were used up)?
 You can do that too by simply changing the value of the "pickMethod" field from "random" to "randomDoNotRepeat" and adding
@@ -1305,6 +1311,113 @@ provided, this field is updated to include it, so it will not be used again unti
 The "squirrelledAwayAlreadyUsed" field name comes from the domain configuration - you can specify anything you want as
 the name. The reason, by the way, for specify the field name is to avoid collisions and overwriting some portions of the
 state that you didn't mean to overwrite.  This way, you can pick a name for the field to keep track of the "used" values.
+
+#### Combining multiple results
+
+You can specify multiple results to be returned.  When you do, you can specify how to combine them.
+To do so, specify "responders" (plural) rather than "responder" field.  For example:
+
+```json
+{
+  "description": "Simplest domain",
+  "recognizers": [
+    {
+      "key": "mine",
+      "path": "./myrecognizer.json"
+    }
+  ],
+  "states": [
+    {
+      "matchCriteria": "default",
+      "matchSpecs": [
+        {
+          "recognizer": "mine",
+          "responders": [
+            {
+              "result": {
+                "combineRule": "setTo",
+                "directValues": {
+                  "pickMethod": "randomDoNotRepeat",
+                  "repeatSelector": "squirrelledAwayAlreadyUsed",
+                  "values": [
+                    {"text": "Thanks a bunch"},
+                    {"text": "Danke"},
+                    {"text": "Thank you"}
+                  ]
+                }
+              }
+            },
+            {
+              "result": {
+                "combineRule": "mergeAppend",
+                "directValues": {
+                  "pickMethod": "randomDoNotRepeat",
+                  "repeatSelector": "squirrelledAwayAlreadyUsed2",
+                  "values": [
+                    {"ssml": "<speak>Thanks a bunch</speak>", "videos": ["http://someotherurl.com"]},
+                    {"ssml": "<speak>Thanks a bunch with a card</speak>", "videos": ["http://somethirdurl.com"], "card": {"Title": "Card Title"}}
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+Here we have two "responders" - the first one is just as before (except that it has a "combineRule" field with "setTo" value 
+- this tells the code to reset the result to the output of this "responder").  The second one has a combine rule set to 
+"mergeAppend".  This will attempt to merge and/or append the second result with the first one:
+
+```shell
+Please type user text: tomorrow
+Your text was: "tomorrow"
+Domain response:  {
+  "match": {
+    "name": "DateIntent",
+    "slots": {
+      "DateSlot": {
+        "name": "DateSlot",
+        "value": "2017-08-27"
+      }
+    }
+  },
+  "result": {
+    "text": "Thanks a bunch",
+    "ssml": "<speak>Thanks a bunch with a card</speak>",
+    "videos": [
+      "http://somethirdurl.com"
+    ],
+    "card": {
+      "Title": "Card Title"
+    }
+  }
+}
+State object:  {
+  "squirrelledAwayAlreadyUsed": [
+    {
+      "text": "Thanks a bunch"
+    }
+  ],
+  "squirrelledAwayAlreadyUsed2": [
+    {
+      "ssml": "<speak>Thanks a bunch with a card</speak>",
+      "videos": [
+        "http://somethirdurl.com"
+      ],
+      "card": {
+        "Title": "Card Title"
+      }
+    }
+  ]
+}
+```
+
+
+#### Setting state object directly
 
 So now you have seen how simply returning a particular value can update the state.  But that is part of the default built
 in behavior.  You can also directly update the state.
