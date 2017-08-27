@@ -27,7 +27,7 @@ SOFTWARE.
 var fs = require('fs');
 
 var usage = function(){
-  console.log('Usage: node ' + process.argv[1] + ' --domain <path to a domain> --state <path to state json> --outputState [true|false]');
+  console.log('Usage: node ' + process.argv[1] + ' --domain <path to a domain> --state <path to state json> --outputState [true|false] --builtinaccessor [basic|readonly]');
   console.log('To exit type "EXIT"');
 };
 
@@ -40,6 +40,8 @@ if (process.argv.length < 5) {
 let domainPath;
 let statePath;
 let outputState = false;
+
+let stateAccessor;
 
 for(let i = 2; i < process.argv.length; i += 2){
   let argSpecifier = process.argv[i];
@@ -56,6 +58,32 @@ for(let i = 2; i < process.argv.length; i += 2){
       }
       catch(e){
         outputState = false;
+      }
+      break;
+    case "--builtinaccessor":
+      switch (process.argv[i + 1]){
+        case "basic":
+          try{
+            stateAccessor = require("./builtinstateaccessors/basicstateaccessor.js");
+          }
+          catch(e){
+            console.log("Unable to load basicstateaccessor.js, error: " + e);
+            usage();
+            process.exit(1);
+          }
+          break;
+        case "readonly":
+          try{
+            stateAccessor = require("./builtinstateaccessors/readonlybasicstateaccessor.js");
+          }
+          catch(e){
+            console.log("Unable to load readonlybasicstateaccessor.js, error: " + e);
+            usage();
+            process.exit(1);
+          }
+          break;
+        default:
+          break;
       }
       break;
     default:
@@ -101,15 +129,15 @@ catch(e){
   }
 }
 
-let stateAccessor;
-
-try{
-  stateAccessor = require("./builtinstateaccessors/basicstateaccessor.js");
-}
-catch(e){
-  console.log("Unable to load basicstateaccessor.js, error: " + e);
-  usage();
-  process.exit(1);
+if(typeof stateAccessor === "undefined" || stateAccessor === null){
+  try{
+    stateAccessor = require("./builtinstateaccessors/basicstateaccessor.js");
+  }
+  catch(e){
+    console.log("Unable to load basicstateaccessor.js, error: " + e);
+    usage();
+    process.exit(1);
+  }
 }
 
 let recognizer = require("./index.js");
