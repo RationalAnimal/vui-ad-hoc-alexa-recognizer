@@ -5597,7 +5597,23 @@
     {"name":"McLean/Gray County Airport","alternativeNames":["McLean Gray County Airport"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Menard County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Miami-Roberts County Airport","alternativeNames":["Miami Roberts County Airport"],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Skywest Airport","alternativeNames":["Skywest Airport Inc.", "Skywest Airport Inc", "Skywest Airport Incorporated"],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Skywest Airport","alternativeNames":["Skywest Airport Inc.", "Skywest Airport Inc", "Skywest Airport Incorporated"],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Mineola Airport","alternativeNames":["Wisener Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Wood County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Tarrant Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Munday Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Navasota Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Newton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Dan E. Richards Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Dallas South Port Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Panhandle-Carson County Airport","alternativeNames":["Panhandle Carson County Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Skyway Manor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"McKinley Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Pineland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Yoakum County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Roma Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Mustang Beach Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
