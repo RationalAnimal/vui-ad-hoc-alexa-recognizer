@@ -1368,11 +1368,11 @@ To do so, specify "responders" (plural) rather than "responder" field.  For exam
 }
 ```
 
-Here we have two "responders" - the first one is just as before (except that it has a "combineRule" field with "setTo" value 
-- this tells the code to reset the result to the output of this "responder").  The second one has a combine rule set to 
+Here we have two "responders" - the first one is just as before (except that it has a "combineRule" field with "setTo" value - 
+this tells the code to reset the result to the output of this "responder").  The second one has a combine rule set to 
 "mergeAppend".  This will attempt to merge and/or append the second result with the first one:
 
-```shell
+```text
 Please type user text: tomorrow
 Your text was: "tomorrow"
 Domain response:  {
@@ -1557,11 +1557,98 @@ For example:
 }
 ```
 
+When this function is created at run time, it will be created with these 4 arguments: 'intent', 'stateAccessor', 'selectorArray', 'state'
+and the corresponding values will be passed in.  If you need to, go ahead and use them in your function body
+
 #### Setting state object directly
 
-So now you have seen how simply returning a particular value can update the state.  But that is part of the default built
-in behavior.  You can also directly update the state.
+So now you have seen how simply returning a particular value can update the state (randomDoNotRepeat pick method).
+But that is part of the default built in behavior.  You can also directly update the state.
+To do that, simply add an "updateState" field to your responder, e.g.:
 
+```json
+{
+  "result": {
+    "combineRule": "ignore",
+    "directValue": {"text": "Ignore this text"}
+  },
+  "updateState": {
+    "updateRule": "mergeReplace",
+    "updateSelector": "someuselessvalue.some.other.useless.value",
+    "directValue": {"update": "result of replaceMerge updateRule"}
+  }
+}
+```
+
+First, notice that in the above example while we do return a "result" field, the "combineRule" is "ignore" so this
+responder will NOT contribute to the returned result.
+
+The "updateState" field contains a couple of fields that should look somewhat familiar now.  "updateRule" is similar to
+the "combineRule" of the result field, but applies to how the state object is to be updated by this responder.  In this
+example we are specifying that the value of "directValue" field is to be merged (replacing existing values where conflicting)
+with the current state object.  You can also use "setTo" here to replace without merging.
+
+But what about the "updateSelector"? Well, here is where you specify which part of the state object is to be updated.
+In this example, if we run domain runner again (with the option to show state), we'll see this:
+
+```text
+...
+State object:  {
+  "squirrelledAwayAlreadyUsed": [
+    {
+      "text": "Thanks a bunch"
+    }
+  ],
+  "squirrelledAwayAlreadyUsed2": [
+    {
+      "text": "second text 2",
+      "ssml": "<speak>Thanks a bunch with a card</speak>",
+      "videos": [
+        "http://somethirdurl.com"
+      ],
+      "card": {
+        "Title": "Card Title"
+      }
+    }
+  ],
+  "someuselessvalue": {
+    "some": {
+      "other": {
+        "useless": {
+          "value": {
+            "update": "result of replaceMerge updateRule"
+          }
+        }
+      }
+    }
+  }
+}
+...
+```
+
+So, the other updates to the state object still take place, and then the direct update of the state object happens right
+where the selector specified it.
+
+Note: currently, only "directValue" field is supported, but other ways (including user custom functions) will be added shortly.
+
+#### Important note on "selectors"
+
+Selectors are used in multiple places in domains.  This is the first use that you've seen, but the concept is the same
+elsewhere.
+
+Also, in this particular example, the selector is used "logically", i.e. the way you'd expect.  That's because behind the
+scenes domainrunner.js is using a built in "accessor" - collection of functions that actually access the state object.
+There are two built in accessors at this time.  The other one is a read only accessor (so if you used that one none of the
+changes to the state object would take place).  More built in accessors will be coming in the future, but you can also
+write your own.  If you do that, you can use the selector in different ways.  For instance, if your state object is saved
+in a nosql database, the selector may be a key that's used to look up portions of the state.  It's up to you how you
+implement it.  This of the state as NOT being manipulated directly, rather manipulated through accessors.  So, you could
+create a React compatible accessor that will treat the state as read only but will issue updates to the state via a separate
+mechanism.  The domain code doesn't care and the accessors are designed to be "plugguble".
+
+#### Built in accessors
+
+...
 
 ## Non Alexa support
 
