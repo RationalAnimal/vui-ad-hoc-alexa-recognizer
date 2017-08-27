@@ -5578,7 +5578,22 @@
     {"name":"Rhome Meadows Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Rio Grande City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Northwest Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Robert Lee Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Robert Lee Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"H. H. Coffield Regional Airport","alternativeNames":["H H Coffield Regional Airport", "Coffield Regional Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Edwards County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Phillips Flying Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lane Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Fisher County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Rives Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Boerne Stage Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Kestrel Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Twin-Oaks Airport","alternativeNames":["Twin Oaks Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"San Geronimo Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Bulverde Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Horizon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"San Augustine County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"San Saba County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
   ]
 }
