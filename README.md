@@ -1354,8 +1354,8 @@ To do so, specify "responders" (plural) rather than "responder" field.  For exam
                   "pickMethod": "randomDoNotRepeat",
                   "repeatSelector": "squirrelledAwayAlreadyUsed2",
                   "values": [
-                    {"ssml": "<speak>Thanks a bunch</speak>", "videos": ["http://someotherurl.com"]},
-                    {"ssml": "<speak>Thanks a bunch with a card</speak>", "videos": ["http://somethirdurl.com"], "card": {"Title": "Card Title"}}
+                    {"text": "second text 1", "ssml": "<speak>Thanks a bunch</speak>", "videos": ["http://someotherurl.com"]},
+                    {"text": "second text 2", "ssml": "<speak>Thanks a bunch with a card</speak>", "videos": ["http://somethirdurl.com"], "card": {"Title": "Card Title"}}
                   ]
                 }
               }
@@ -1386,7 +1386,7 @@ Domain response:  {
     }
   },
   "result": {
-    "text": "Thanks a bunch",
+    "text": "Danke  second text 2",
     "ssml": "<speak>Thanks a bunch with a card</speak>",
     "videos": [
       "http://somethirdurl.com"
@@ -1399,11 +1399,12 @@ Domain response:  {
 State object:  {
   "squirrelledAwayAlreadyUsed": [
     {
-      "text": "Thanks a bunch"
+      "text": "Danke"
     }
   ],
   "squirrelledAwayAlreadyUsed2": [
     {
+      "text": "second text 2",
       "ssml": "<speak>Thanks a bunch with a card</speak>",
       "videos": [
         "http://somethirdurl.com"
@@ -1416,6 +1417,8 @@ State object:  {
 }
 ```
 
+As you can see, not only have the two results been "merged" - different fields from both have been added to the final result.
+But also where there are the same fields present in both they have been "appended" (see the "text" fields).
 
 #### Setting state object directly
 
