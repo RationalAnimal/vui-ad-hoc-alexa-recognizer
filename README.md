@@ -1420,6 +1420,13 @@ State object:  {
 As you can see, not only have the two results been "merged" - different fields from both have been added to the final result.
 But also where there are the same fields present in both they have been "appended" (see the "text" fields).
 
+When combining different outputs, the following happens:
+ * "text" fields are concatenated with a space in between
+ * "ssml" fields' contents are concatenated and surrounded with a single set of <speak> tags (e.g. <speak>one</speak>
+ concatenated with <speak>two</speak> will result in <speak>one two</speak>)
+ * "videos" arrays are combined
+ * separate "card" elements are added to an array
+
 #### Merge and replace results
 
 In addition to merging/appending you can also use "mergeReplace" method of combining.  When you do that, non-conflicting
@@ -1526,6 +1533,29 @@ State object:  {
 ```
 
 Note that the "text" value comes from the second responder only.
+
+#### setTo and ignore combine rules
+
+You've already seen the "setTo" combine rule - it's used in the first responder.  It's designed not to merge two results,
+but rather to set the result to the second one if its combine rule is "setTo".
+
+"ignore" combine rule is the opposite - the result (if any) produced by the responder with this combine rule is ignored
+completely.  This exists to support the responders that are there primarily to update the state rather than produce the
+"output".  Sometimes you may also want to use it to temporarily disable the "output" from a responder without actually
+deleting it.
+
+#### Custom responders
+
+You can create completely custom responders by providing function body source right within the domain file.
+For example:
+
+```json
+{
+  "result": {
+    "functionSource": "return {\"text\":\"Thanks\"};"
+  }
+}
+```
 
 #### Setting state object directly
 
