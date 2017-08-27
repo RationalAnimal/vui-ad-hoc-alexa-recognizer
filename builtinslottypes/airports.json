@@ -5557,7 +5557,22 @@
     {"name":"Rosser Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Groveton-Trinity County Airport","alternativeNames":["Groveton Trinity County Airport"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Hallettsville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Hamlin Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Hamlin Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Higgins-Lipscomb County Airport","alternativeNames":["Higgins Lipscomb County Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Horseshoe Bay Resort Airport","alternativeNames":[],"priorNames":["Horseshoe Bay Airpark"],"country":"united states","state":"texas"},
+    {"name":"Weiser Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Westheimer Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Houston Executive Airport","alternativeNames":[],"priorNames":["Air Rice Airport"],"country":"united states","state":"texas"},
+    {"name":"Dan Jones International Airport","alternativeNames":[],"priorNames":["May Airport"],"country":"united states","state":"texas"},
+    {"name":"Flyin' B Airport","alternativeNames":["Flying B Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Houston Fort Bend Airport","alternativeNames":[],"priorNames":["Happy Landings Airport"],"country":"united states","state":"texas"},
+    {"name":"Iraan Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Kent County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Cypress River Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Manning Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Clark Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Propwash Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
