@@ -1420,6 +1420,113 @@ State object:  {
 As you can see, not only have the two results been "merged" - different fields from both have been added to the final result.
 But also where there are the same fields present in both they have been "appended" (see the "text" fields).
 
+#### Merge and replace results
+
+In addition to merging/appending you can also use "mergeReplace" method of combining.  When you do that, non-conflicting
+fields from the results will be added to the final output.  However, when the fields ARE conflicting (e.g. two "text" fields)
+instead of being appended they will be replaced by the later result.  So, if you were to change the previous domain file
+to this:
+
+```json
+{
+  "description": "Simplest domain",
+  "recognizers": [
+    {
+      "key": "mine",
+      "path": "./myrecognizer.json"
+    }
+  ],
+  "states": [
+    {
+      "matchCriteria": "default",
+      "matchSpecs": [
+        {
+          "recognizer": "mine",
+          "responders": [
+            {
+              "result": {
+                "combineRule": "setTo",
+                "directValues": {
+                  "pickMethod": "randomDoNotRepeat",
+                  "repeatSelector": "squirrelledAwayAlreadyUsed",
+                  "values": [
+                    {"text": "Thanks a bunch"},
+                    {"text": "Danke"},
+                    {"text": "Thank you"}
+                  ]
+                }
+              }
+            },
+            {
+              "result": {
+                "combineRule": "mergeReplace",
+                "directValues": {
+                  "pickMethod": "randomDoNotRepeat",
+                  "repeatSelector": "squirrelledAwayAlreadyUsed2",
+                  "values": [
+                    {"text": "second text 1", "ssml": "<speak>Thanks a bunch</speak>", "videos": ["http://someotherurl.com"]},
+                    {"text": "second text 2", "ssml": "<speak>Thanks a bunch with a card</speak>", "videos": ["http://somethirdurl.com"], "card": {"Title": "Card Title"}}
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+and re-run domain runner, you would get this output:
+
+```text
+Please type user text: tomorrow
+Your text was: "tomorrow"
+Domain response:  {
+  "match": {
+    "name": "DateIntent",
+    "slots": {
+      "DateSlot": {
+        "name": "DateSlot",
+        "value": "2017-08-27"
+      }
+    }
+  },
+  "result": {
+    "text": "second text 2",
+    "ssml": "<speak>Thanks a bunch with a card</speak>",
+    "videos": [
+      "http://somethirdurl.com"
+    ],
+    "card": {
+      "Title": "Card Title"
+    }
+  }
+}
+State object:  {
+  "squirrelledAwayAlreadyUsed": [
+    {
+      "text": "Thank you"
+    }
+  ],
+  "squirrelledAwayAlreadyUsed2": [
+    {
+      "text": "second text 2",
+      "ssml": "<speak>Thanks a bunch with a card</speak>",
+      "videos": [
+        "http://somethirdurl.com"
+      ],
+      "card": {
+        "Title": "Card Title"
+      }
+    }
+  ]
+}
+```
+
+Note that the "text" value comes from the second responder only.
+
 #### Setting state object directly
 
 So now you have seen how simply returning a particular value can update the state.  But that is part of the default built
