@@ -5544,7 +5544,20 @@
     {"name":"Kenneth Copeland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Bourland Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Sycamore Strip Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Aero Estates Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Aero Estates Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+
+    {"name":"Duval-Freer Airport","alternativeNames":["Duval Freer Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Benger Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Covey Trails Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Live Oak County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Goldthwaite Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Roger M. Dreyer Memorial Airport","alternativeNames":["Roger M Dreyer Memorial Airport", "Roger Dreyer Memorial Airport"],"priorNames":["Gonzales Municipal Airport"],"country":"united states","state":"texas"},
+    {"name":"Cedar Mills Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Possum Kingdom Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Rosser Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Groveton-Trinity County Airport","alternativeNames":["Groveton Trinity County Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hallettsville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hamlin Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
 
   ]
