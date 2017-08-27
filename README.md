@@ -1041,7 +1041,7 @@ node domainrunner.js
 will return
 
 ```text
-Usage: node domainrunner.js --domain <path to a domain> --state <path to state json> --outputState [true|false]
+Usage: node domainrunner.js --domain <path to a domain> --state <path to state json> --outputState [true|false]  --builtinaccessor [basic|readonly]
 To exit type "EXIT"
 ```
 
@@ -1644,9 +1644,37 @@ write your own.  If you do that, you can use the selector in different ways.  Fo
 in a nosql database, the selector may be a key that's used to look up portions of the state.  It's up to you how you
 implement it.  This of the state as NOT being manipulated directly, rather manipulated through accessors.  So, you could
 create a React compatible accessor that will treat the state as read only but will issue updates to the state via a separate
-mechanism.  The domain code doesn't care and the accessors are designed to be "plugguble".
+mechanism.  The domain code doesn't care and the accessors are designed to be "pluggable".
 
 #### Built in accessors
+
+There are two built-in accessors: basic and readonly.  They work the same way, but the read only accessor does not update
+the state.
+
+Note that you can also select a different built-in accessor when using domainrunner.js by specifying an extra argument:
+
+```shell
+  --builtinaccessor [basic|readonly]
+```
+
+on the command line.
+
+
+#### Non-default match criteria
+
+So far you've only seen default match criteria, meaning you've only seen a domain using a single recognizer without any
+regard to anything else.  Here is the relevant snippet from the domain file:
+
+```text
+...
+  "states": [
+    {
+      "matchCriteria": "default",
+...
+```
+
+However, you can specify that a particular recognizer should only be used under certain conditions.  For example, if
+the state object contains field "startedEnrollment" and its value is "yes" then use a different recognizer.
 
 ...
 
