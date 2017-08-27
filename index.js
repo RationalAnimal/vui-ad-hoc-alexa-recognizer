@@ -1624,8 +1624,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
               // TODO add code to get the intent name regardless of platform
               returnObject.result = {};
               for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
-                // TODO concatenate results!!!
-                returnObject.result = responder.combineResponses(returnObject.result, responder.produceResult(match.name, stateAccessor, stateSelectors, applicationState, state.matchSpecs[j].responders[k]), state.matchSpecs[j].responders[k].combineRule);
+                returnObject.result = responder.combineResponses(returnObject.result, responder.produceResult(match.name, stateAccessor, stateSelectors, applicationState, state.matchSpecs[j].responders[k]), state.matchSpecs[j].responders[k].result.combineRule);
               }
             }
             return returnObject;
@@ -1667,8 +1666,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
                 // TODO add code to get the intent name regardless of platform
                 returnObject.result = {};
                 for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
-                  // TODO concatenate results!!!
-                  returnObject.result = responder.combineResponses(returnObject.result, responder.produceResult(match.name, stateAccessor, stateSelectors, applicationState, state.matchSpecs[j].responders[k]), state.matchSpecs[j].responders[k].combineRule);
+                  returnObject.result = responder.combineResponses(returnObject.result, responder.produceResult(match.name, stateAccessor, stateSelectors, applicationState, state.matchSpecs[j].responders[k]), state.matchSpecs[j].responders[k].result.combineRule);
                 }
               }
               return returnObject;

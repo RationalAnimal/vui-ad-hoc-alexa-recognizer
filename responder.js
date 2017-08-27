@@ -129,7 +129,9 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, appl
 };
 
 let _combineResponses = function(response1, response2, combineRule){
-//  console.log("_combineResponses, 1, response2: ", JSON.stringify(response2, null, 2));
+//  console.log("_combineResponses, 1.0, response1: ", JSON.stringify(response1, null, 2));
+//  console.log("_combineResponses, 1.1, response2: ", JSON.stringify(response2, null, 2));
+//  console.log("_combineResponses, 1.2, combineRule: ", combineRule);
   if(typeof response2 === "undefined" || response2 === null){
 //    console.log("_combineResponses, 2");
     return response2;
