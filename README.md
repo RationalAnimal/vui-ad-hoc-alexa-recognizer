@@ -1674,7 +1674,76 @@ regard to anything else.  Here is the relevant snippet from the domain file:
 ```
 
 However, you can specify that a particular recognizer should only be used under certain conditions.  For example, if
-the state object contains field "startedEnrollment" and its value is "yes" then use a different recognizer.
+the state object contains field "startedEnrollment" and its value is {"status":"yes"} then use a different recognizer.
+
+If you update your domain file to include that, e.g.:
+```text
+...
+"recognizers": [
+  {
+    "key": "mine",
+    "path": "./myrecognizer.json"
+  },
+  {
+    "key": "greeting",
+    "path": "./test/greetingdomain/greetingrecognizer.json"
+  }
+],
+
+...
+"states": [
+  {
+    "matchCriteria": {
+      "selector": "startedEnrollment",
+      "match": {"status": "yes"}
+    },
+    "matchSpecs": [
+      {
+        "recognizer": "greeting",
+        "responder": {
+          "result": {
+            "directValue": {"text": "Hello to you too"}
+          }
+        }
+      }
+    ]
+  },
+...
+```
+
+and re-run domain runner (without changing the state) you will get:
+
+```text
+Please type user text: hi there
+Your text was: "hi there"
+Domain response:  undefined
+State object:  {}
+```
+
+but if you now edit the state object to include "startedEnrollment": {"status": "yes"} then you'll get:
+
+```text
+Please type user text: hi there
+Your text was: "hi there"
+Domain response:  {
+  "match": {
+    "name": "GreetingIntent",
+    "slots": {}
+  },
+  "result": {
+    "text": "Hello to you too"
+  }
+}
+State object:  {
+  "startedEnrollment": {
+    "status": "yes"
+  }
+}
+```
+
+So this showed how you can specify which recognizer(s) to use based on some criteria.
+
+Note that "default" criteria will always match.
 
 ...
 
