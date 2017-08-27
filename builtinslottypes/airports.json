@@ -5613,8 +5613,19 @@
     {"name":"Pineland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Yoakum County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Roma Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Mustang Beach Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Mustang Beach Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
 
-
+    {"name":"Charles R. Johnson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"North Houston Business Airport","alternativeNames":[],"priorNames":["Williams Airport"],"country":"united states","state":"texas"},
+    {"name":"Hunt Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Presidio Lely International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Taylor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Ranger Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Rankin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Rhome Meadows Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Rio Grande City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Northwest Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Robert Lee Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    
   ]
 }
