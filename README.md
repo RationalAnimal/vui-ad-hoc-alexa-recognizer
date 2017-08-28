@@ -1912,6 +1912,8 @@ State object:  {
 You can include sub-domains within subdomain.  The only restriction is that you can't do circular subdomains - don't
 include B as a side domain of A if A is already a subdomain of B.
 
+#### Trusted sub-domains
+
 
 ...
 
