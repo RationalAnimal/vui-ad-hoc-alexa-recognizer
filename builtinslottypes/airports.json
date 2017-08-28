@@ -5536,7 +5536,19 @@
     {"name":"Alvie Cole Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Stratford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Sunray Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Sunrise Beach Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Sunrise Beach Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"T-Bar Airport","alternativeNames":["T Bar Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Teague Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Throckmorton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Valley Mills Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Wings For Christ International Flight Academy [1]","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Parker County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Horseshoe Bend Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lackey Aviation Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Wheeler Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Flying H Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lake Whitney State Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Wichita Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
   ]
 }
