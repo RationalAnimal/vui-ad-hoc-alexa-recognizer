@@ -1784,6 +1784,26 @@ be done to the <state object>.greeting field as if it's the entire state.  If yo
 that need to know each other's state then the "selector" field would probably either be absent or be the same for these
 modules.  Of course the super domain (the one that's using a subdomain) can alway see the subdomains' portion of the state.
 
+Once you've added the sub-domain to the list of domains you can now use it.  This part is actually simpler than the
+set up for recogizers.  That's because the sub-domain already describes the results and the state update.  Thus, all
+you have to do is specify when to use it.  You simply add it to the list of responders (for the specific match criteria)
+and you are all set:
+
+```text
+...
+"states": [
+  {
+    "matchCriteria": "default",
+    "matchSpecs": [
+      {
+        "domain": "greeting"
+      },
+      {
+        "recognizer": "mine",
+...
+```
+
+
 ...
 
 ## Non Alexa support
@@ -1808,7 +1828,6 @@ In order to specify an "output" type, simply configure it in your config file:
 
 By default, if you don't specify anything, the output will be "AMAZON" for compatibility
 reasons.
-
 
 ## Examples
 
