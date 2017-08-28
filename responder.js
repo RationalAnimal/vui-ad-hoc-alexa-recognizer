@@ -69,9 +69,24 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, appl
   }
   if(typeof responderSpec.result !== "undefined" && responderSpec.result !== null){
     if(typeof responderSpec.result.functionSource === "string"){
-      let scratchFunc = new Function('intent', 'stateAccessor', 'selectorArray', 'state', responderSpec.result.functionSource);
-      let result = scratchFunc(matchedIntent, stateAccessor, stateSelectors, applicationState);
-      return result;
+      try{
+        let scratchFunc = new Function('intent', 'stateAccessor', 'selectorArray', 'state', responderSpec.result.functionSource);
+        let result = scratchFunc(matchedIntent, stateAccessor, stateSelectors, applicationState);
+        return result;
+      }
+      catch(e){
+        return;
+      }
+    }
+    else if(typeof responderSpec.result.functionModule === "string"){
+      try{
+        let scratchFunc = require(responderSpec.result.functionModule);
+        let result = scratchFunc(matchedIntent, stateAccessor, stateSelectors, applicationState);
+        return result;
+      }
+      catch(e){
+        return;
+      }
     }
     else if(typeof responderSpec.result.directValue !== "undefined"){
       return responderSpec.result.directValue;

@@ -16,6 +16,12 @@
             {
               "result": {
                 "combineRule": "setTo",
+                "functionModule": "./test/greetingdomain/customresponderfunction.js"
+              }
+            },
+            {
+              "result": {
+                "combineRule": "mergeAppend",
                 "directValues": {
                   "pickMethod": "randomDoNotRepeat",
                   "repeatSelector": "greetingAlreadyUsed",
