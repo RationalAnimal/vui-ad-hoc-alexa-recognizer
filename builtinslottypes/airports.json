@@ -5526,7 +5526,17 @@
     {"name":"Seagraves Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Huber Airpark","alternativeNames":["Huber Airpark Civic Club LLC", "Huber Airpark Civic Club"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Shamrock Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Sherman Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Sherman Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Alfred C. Bubba Thomas Airport","alternativeNames":["Alfred C Bubba Thomas Airport", "Alfred Bubba Thomas Airport", "Alfred C. Thomas Airport", "Alfred C Thomas Airport", "Alfred Thomas Airport"],"priorNames":["San Patricio County Airport"],"country":"united states","state":"texas"},
+    {"name":"Cain Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Cannon Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Sonora Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Spicewood Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Stanton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Alvie Cole Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Stratford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Sunray Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Sunrise Beach Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
   ]
 }
