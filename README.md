@@ -1745,6 +1745,45 @@ So this showed how you can specify which recognizer(s) to use based on some crit
 
 Note that "default" criteria will always match.
 
+#### Subdomains
+
+If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
+just using recognizers directly.  However, domains can use other domains.  This is particularly powerful because it
+allows one to modularize an application, breaking it up into individual reusable modules.  This reduces complexity,
+allows code reuse, and has other benefits.  Additionally, separate domains can be defined by other people, possibly
+outside your group, your company/organization, etc.
+As long as they are written correctly they can be used by other people/teams.
+
+Using domain withing domain (aka sub-domains) is easy and similar to using recognizers.
+First, you must add the sub-domain to the list of domains:
+
+```text
+{
+  "description": "Simplest domain",
+  "recognizers": [
+    {
+      "key": "mine",
+      "path": "./myrecognizer.json"
+    }
+  ],
+  "domains": [
+    {
+      "key": "greeting",
+      "path": "./test/greetingdomain/greetingdomain.json",
+      "selector": "greeting"
+    }
+  ],
+  "states": [
+...
+```
+Two things to note here.  Just as with including recognizers you must provide a "key" with a value - this is an arbitrary
+value determined by you.  It's needed so that this domain can be referenced elsewhere by this "key".
+Second, there is an option selector field.  Its value, if provided, is used to select a portion of the state object that
+this subdomain will be able to see.  Thus, in this example the "selector" is "greeting".  So any modifications will
+be done to the <state object>.greeting field as if it's the entire state.  If you have closely cooperating modules
+that need to know each other's state then the "selector" field would probably either be absent or be the same for these
+modules.  Of course the super domain (the one that's using a subdomain) can alway see the subdomains' portion of the state.
+
 ...
 
 ## Non Alexa support
