@@ -1560,6 +1560,84 @@ For example:
 When this function is created at run time, it will be created with these 4 arguments: 'intent', 'stateAccessor', 'selectorArray', 'state'
 and the corresponding values will be passed in.  If you need to, go ahead and use them in your function body
 
+#### Custom responders modules
+
+While it's all well and good to add a function body right within the domain json file, it's a little problematic - the
+source code must be escape to be part of the json file.  If you make a mistake in escaping it, the function will not work.
+Additionally, you can't unit test it by itself.
+So, for longer/more complicated functions it's better to put them into a separate module and require the module.  You
+can do that using "functionModule" field:
+
+```json
+{
+  "result": {
+    "combineRule": "setTo",
+    "functionModule": "./test/greetingdomain/customresponderfunction.js"
+  }
+}
+```
+
+Where the contents of "./test/greetingdomain/customresponderfunction.js" are:
+
+```javascript
+'use strict';
+
+let _responderFunction = function( intent, stateAccessor, selectorArray, state){
+  console.log("START of logging from customresponderfunction.js");
+  console.log("intent:", JSON.stringify(intent));
+  console.log("stateAccessor:", JSON.stringify(stateAccessor));
+  console.log("selectorArray:", JSON.stringify(selectorArray));
+  console.log("state:", JSON.stringify(state));
+  console.log("END of logging from customresponderfunction.js");
+  if(intent === "GreetingIntent"){
+    stateAccessor.mergeReplaceState(state, {"customfunctionmodulewasrun": "true"}, selectorArray);
+    return {
+      "text": "Hi from the custom function module"
+    };
+  }
+};
+
+module.exports = _responderFunction;
+```
+
+Now, if you re-run the domain runner, you will get this:
+
+```text
+Please type user text: hi there
+Your text was: "hi there"
+START of logging from customresponderfunction.js
+intent: "GreetingIntent"
+stateAccessor: {}
+selectorArray: ["greetingdomain"]
+state: {}
+END of logging from customresponderfunction.js
+Domain response:  {
+  "match": {
+    "name": "GreetingIntent",
+    "slots": {}
+  },
+  "result": {
+    "text": "Hi from the custom function module  Hello",
+    "ssml": "<speak>Hello</speak>"
+  }
+}
+State object:  {
+  "greetingdomain": {
+    "customfunctionmodulewasrun": "true",
+    "greetingAlreadyUsed": [
+      {
+        "text": "Hello",
+        "ssml": "<speak>Hello</speak>"
+      }
+    ]
+  }
+}
+```
+
+Note that the function correctly ran, the "result" includes the text from it combined with the text from other responders,
+state object was correctly adjusted as well.
+and logging shows that correct argument values were passed in.
+
 #### Setting state object directly
 
 So now you have seen how simply returning a particular value can update the state (randomDoNotRepeat pick method).
@@ -1770,7 +1848,7 @@ First, you must add the sub-domain to the list of domains:
     {
       "key": "greeting",
       "path": "./test/greetingdomain/greetingdomain.json",
-      "selector": "greeting"
+      "selector": "greetingdomain"
     }
   ],
   "states": [
@@ -1779,8 +1857,8 @@ First, you must add the sub-domain to the list of domains:
 Two things to note here.  Just as with including recognizers you must provide a "key" with a value - this is an arbitrary
 value determined by you.  It's needed so that this domain can be referenced elsewhere by this "key".
 Second, there is an option selector field.  Its value, if provided, is used to select a portion of the state object that
-this subdomain will be able to see.  Thus, in this example the "selector" is "greeting".  So any modifications will
-be done to the <state object>.greeting field as if it's the entire state.  If you have closely cooperating modules
+this subdomain will be able to see.  Thus, in this example the "selector" is "greetingdomain".  So any modifications will
+be done to the <state object>.greetingdomain field as if it's the entire state.  If you have closely cooperating modules
 that need to know each other's state then the "selector" field would probably either be absent or be the same for these
 modules.  Of course the super domain (the one that's using a subdomain) can alway see the subdomains' portion of the state.
 
@@ -1802,6 +1880,37 @@ and you are all set:
         "recognizer": "mine",
 ...
 ```
+
+Now whent you re-run the domain runner, you'll get something similar to this (depending on which greeting get randomly
+chosen):
+
+```text
+Please type user text: hi there
+Your text was: "hi there"
+Domain response:  {
+  "match": {
+    "name": "GreetingIntent",
+    "slots": {}
+  },
+  "result": {
+    "text": "Hello",
+    "ssml": "<speak>Hello</speak>"
+  }
+}
+State object:  {
+  "greetingdomain": {
+    "greetingAlreadyUsed": [
+      {
+        "text": "Hello",
+        "ssml": "<speak>Hello</speak>"
+      }
+    ]
+  }
+}
+```
+
+You can include sub-domains within subdomain.  The only restriction is that you can't do circular subdomains - don't
+include B as a side domain of A if A is already a subdomain of B.
 
 
 ...

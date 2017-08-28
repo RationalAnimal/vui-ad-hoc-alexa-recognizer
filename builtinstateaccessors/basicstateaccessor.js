@@ -158,7 +158,7 @@ let _setStateChain = function(state, keyArray, newValue){
 };
 
 let _mergeReplaceState = function(state, newState, keyArray){
-  console.log("_mergeReplaceState, START, state: ", JSON.stringify(state, null, 2));
+//  console.log("_mergeReplaceState, START, state: ", JSON.stringify(state, null, 2));
   if(typeof state === "undefined" || state === null){
     return;
   }
@@ -186,13 +186,13 @@ let _mergeReplaceState = function(state, newState, keyArray){
     }
   }
   for(let i = 0; i < newProperties.length; i ++){
-    console.log("_mergeReplaceState, 1, i: " + i + " state: ", JSON.stringify(state, null, 2));
+//    console.log("_mergeReplaceState, 1, i: " + i + " state: ", JSON.stringify(state, null, 2));
     let scratchKeyArray = [].concat(keyArray);
     scratchKeyArray.push(newProperties[i]);
     _setStateChain(objectToUpdate, scratchKeyArray, newState[newProperties[i]]);
-    console.log("_mergeReplaceState, 2, i: " + i + " state: ", JSON.stringify(state, null, 2));
+//    console.log("_mergeReplaceState, 2, i: " + i + " state: ", JSON.stringify(state, null, 2));
   }
-  console.log("_mergeReplaceState, END, state: ", JSON.stringify(state, null, 2));
+//  console.log("_mergeReplaceState, END, state: ", JSON.stringify(state, null, 2));
 };
 
 
