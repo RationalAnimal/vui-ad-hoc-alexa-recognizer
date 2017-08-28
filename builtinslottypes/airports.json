@@ -5561,7 +5561,19 @@
     {"name":"NOLF Waldron Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Laughlin Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Biggs Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Hood Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Hood Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"NAS JRB Fort Worth","alternativeNames":["Carswell Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"NAS Kingsville","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"NALF Orange Grove","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lackland Air Force Base / Kelly Field Annex","alternativeNames":["Lackland Air Force Base Kelly Field Annex", "Lackland Air Force Base", "Kelly Field Annex"],"priorNames":["Kelly AFB", "Kelly Air Force Base", "Kelly A.F.B.", "Kelly A. F. B."],"country":"united states","state":"texas"},
+    {"name":"Martindale Army Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Randolph AFB Auxiliary Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Laughlin AFB Auxiliary Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Randolph Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Elmdale Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Mikeska Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Tin Top Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Cuddihy Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
   ]
 }
