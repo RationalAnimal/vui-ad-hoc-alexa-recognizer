@@ -5548,7 +5548,20 @@
     {"name":"Wheeler Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Flying H Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Lake Whitney State Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Wichita Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Wichita Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Van Zandt County Regional Airport","alternativeNames":[],"priorNames":["Wills Point Municipal Airport"],"country":"united states","state":"texas"},
+    {"name":"Winters Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Tyler County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Yoakum Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Zapata County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Dyess Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"NOLF Goliad","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"NAS Corpus Christi","alternativeNames":["Truax Field"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"NOLF Cabaniss Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"NOLF Waldron Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Laughlin Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Biggs Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hood Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
   ]
 }
