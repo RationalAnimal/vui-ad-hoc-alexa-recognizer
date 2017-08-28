@@ -4645,7 +4645,6 @@
     {"name":"Altus Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Kegelman Air Force Auxiliary Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Vance Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
-
     {"name":"Henry Post Army Airfield","alternativeNames":["Fort Sill Airport"],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Muldrow Army Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Tinker Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
@@ -4657,7 +4656,6 @@
     {"name":"Ashley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Hatbox Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
     {"name":"Sky Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oklahoma"},
-
     {"name":"Eugene Airport","alternativeNames":["Mahlon Sweet Field"],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Klamath Falls Airport","alternativeNames":["Kingsley Field"],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Rogue Valley International-Medford Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
@@ -4665,10 +4663,9 @@
     {"name":"Portland International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Redmond Municipal Airport","alternativeNames":["Roberts Field"],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Eastern Oregon Regional Airport at Pendleton","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-    {"name":"PortlandâHillsboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-    {"name":"PortlandâTroutdale Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Portland Hillsboro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
+    {"name":"Portland Troutdale Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Albany Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-
     {"name":"Ashland Municipal Airport","alternativeNames":["Sumner Parker Field"],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Astoria Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Aurora State Airport","alternativeNames":[],"priorNames":["Lematta Field"],"country":"united states","state":"oregon"},
@@ -4681,7 +4678,6 @@
     {"name":"Illinois Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Chiloquin State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Christmas Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-
     {"name":"Condon State Airport","alternativeNames":["Pauling Field"],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Corvallis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Cottage Grove State Airport","alternativeNames":["Jim Wright Field"],"priorNames":[],"country":"united states","state":"oregon"},
@@ -4695,7 +4691,6 @@
     {"name":"Independence State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Grant County Regional Airport","alternativeNames":["Ogilvie Field"],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Joseph State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-
     {"name":"La Grande/Union County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Lake County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Lebanon State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
@@ -4709,7 +4704,6 @@
     {"name":"Ontario Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Mulino State Airport","alternativeNames":[],"priorNames":["Portland-Mulino Airport", "Portland Mulino Airport"],"country":"united states","state":"oregon"},
     {"name":"Portland Downtown Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-
     {"name":"Prineville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Roseburg Regional Airport","alternativeNames":["Marion E. Carl Memorial Field", "Marion E Carl Memorial Field", "Marion Carl Memorial Field"],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Salem Municipal Airport","alternativeNames":["McNary Field"],"priorNames":[],"country":"united states","state":"oregon"},
@@ -4721,7 +4715,6 @@
     {"name":"Wasco State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Alkali Lake State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Arlington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-
     {"name":"Beaver Marsh Airport","alternativeNames":["Beaver Marsh State Airport"],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Cascade Locks State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Toketee State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
@@ -4734,8 +4727,6 @@
     {"name":"Lake Woahink Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Davis Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Stark's Twin Oaks Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-
-
     {"name":"Lenhardt Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Memaloose Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Lakeside State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
@@ -4749,7 +4740,6 @@
     {"name":"Pacific City State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Paisley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Pinehurst State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-
     {"name":"Powers Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Prospect State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Rome State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
@@ -4763,7 +4753,6 @@
     {"name":"Miller Memorial Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Vernonia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Wakonda Beach State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-
     {"name":"CGAS Astoria","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"CGAS North Bend","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"McNary ARNG Field Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
@@ -4778,7 +4767,6 @@
     {"name":"Springfield Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Sutherlin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
     {"name":"Umatilla Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"oregon"},
-
     {"name":"Lehigh Valley International Airport","alternativeNames":[],"priorNames":["Allentown-Bethlehem-Easton International Airport", "Allentown Bethlehem Easton International Airport"],"country":"united states","state":"pennsylvania"},
     {"name":"Erie International Airport","alternativeNames":["Tom Ridge Field"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Harrisburg International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
@@ -4789,7 +4777,6 @@
     {"name":"Wilkes-Barre/Scranton International Airport","alternativeNames":["Wilkes-Barre Scranton International Airport", "Wilkes Barre Scranton International Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Williamsport Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Altoona-Blair County Airport","alternativeNames":["Altoona Blair County Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
-
     {"name":"DuBois Regional Airport","alternativeNames":[],"priorNames":["DuBois-Jefferson County Airport", "DuBois Jefferson County Airport"],"country":"united states","state":"pennsylvania"},
     {"name":"John Murtha Johnstown-Cambria County Airport","alternativeNames":["John Murtha Johnstown Cambria County Airport", "John Murtha Johnstown Airport", "Cambria County Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Bradford Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
@@ -4804,7 +4791,6 @@
     {"name":"Northeast Philadelphia Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Wings Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Allegheny County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-
     {"name":"Heritage Field","alternativeNames":[],"priorNames":["Pottstown Limerick Airport"],"country":"united states","state":"pennsylvania"},
     {"name":"New Garden Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Brandywine Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
@@ -4819,7 +4805,6 @@
     {"name":"Ebensburg Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Gettysburg Regional Airport","alternativeNames":[],"priorNames":["Gettysburg Airport and Travel Center"],"country":"united states","state":"pennsylvania"},
     {"name":"Greenville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-
     {"name":"Grove City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Hazleton Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Indiana County Airport","alternativeNames":["Jimmy Stewart Field"],"priorNames":[],"country":"united states","state":"pennsylvania"},
@@ -4828,7 +4813,6 @@
     {"name":"Port Meadville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Pocono Mountains Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"New Castle Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-
     {"name":"Mid-State Airport","alternativeNames":["Mid-State Regional Airport", "Mid State Regional Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Pottstown Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Schuylkill County Airport","alternativeNames":["Joe Zerbey Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
@@ -4839,7 +4823,6 @@
     {"name":"Penn Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Northumberland County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Somerset County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-
     {"name":"St. Marys Municipal Airport","alternativeNames":["St Marys Municipal Airport", "Saint Marys Municipal Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Titusville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Bradford County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
@@ -4850,7 +4833,6 @@
     {"name":"Butter Valley Golf Port","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Bellefonte Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Grimes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-
     {"name":"Baublitz Commercial Airport","alternativeNames":["Baublitz Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Butler Farm Show Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Flying Dollar Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
@@ -4864,7 +4846,6 @@
     {"name":"Stroudsburg-Pocono Airport","alternativeNames":["Stroudsburg Pocono Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Braden Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Bandel Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-
     {"name":"Van Sant Airport","alternativeNames":["Vansant Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Philadelphia Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Seamans Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
@@ -4877,7 +4858,6 @@
     {"name":"Inter County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Greensburg Jeannette Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Jersey Shore Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-
     {"name":"Bermudian Valley Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Keller Brothers Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Beltzville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
@@ -4890,7 +4870,6 @@
     {"name":"Donegal Springs Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Deck Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Blue Knob Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-
     {"name":"Reigle Field","alternativeNames":["Reigle Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Pennridge Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Albert Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
@@ -4904,7 +4883,6 @@
     {"name":"Shoestring Aviation Airfield","alternativeNames":["Shoestring Aviation Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Sunbury Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Bendigo Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-
     {"name":"Skyhaven Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Ridge Soaring Gliderport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Greene County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
@@ -4918,7 +4896,6 @@
     {"name":"Miller Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"McGinness Airport","alternativeNames":["McGinness Field"],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Birchwood-Pocono Airport","alternativeNames":["Birchwood Pocono Airport"],"priorNames":[],"country":"united states","state":"pennsylvania"},
-
     {"name":"McVille Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Cherry Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Olmsted Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
@@ -4933,7 +4910,6 @@
     {"name":"Glade Mill Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"NAWC Warminster","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
     {"name":"Erie County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"pennsylvania"},
-
     {"name":"Block Island State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
     {"name":"Theodore Francis Green State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
     {"name":"Westerly State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
@@ -4943,7 +4919,6 @@
     {"name":"Richmond Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
     {"name":"NAAS Charlestown","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
     {"name":"NAS Quonset Point","alternativeNames":[],"priorNames":[],"country":"united states","state":"rhode island"},
-
     {"name":"Charleston International Airport / Charleston AFB","alternativeNames":["Charleston International Airport", "Charleston AFB"],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Columbia Metropolitan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Florence Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
@@ -4951,7 +4926,6 @@
     {"name":"Hilton Head Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Myrtle Beach International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Jim Hamilton - L.B. Owens Airport","alternativeNames":[],"priorNames":["Jim Hamilton Airport", "L.B. Owens Airport", "L B  Owens Airport", "L. B. Owens Airport", "L B Owens Airport", "Columbia Owens Downtown Airport"],"country":"united states","state":"south carolina"},
-
     {"name":"Rock Hill/York County Airport","alternativeNames":["Bryant Field"],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Aiken Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Allendale County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
@@ -4964,7 +4938,6 @@
     {"name":"Lee County Airport","alternativeNames":["Butters Field"],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Woodward Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Charleston Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-
     {"name":"Cheraw Municipal Airport","alternativeNames":["Lynch Bellinger Field"],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Chester Catawba Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Oconee County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
@@ -4977,7 +4950,6 @@
     {"name":"Greenwood County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Hartsville Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Williamsburg Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-
     {"name":"Lancaster County Airport","alternativeNames":["McWhirter Field"],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Laurens County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Twin City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
@@ -4992,7 +4964,6 @@
     {"name":"Lexington County Airport at Pelion","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Pickens County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Ridgeland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-
     {"name":"Saluda County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Spartanburg Downtown Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"St. George Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
@@ -5004,7 +4975,6 @@
     {"name":"Hester Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Clio Crop Care Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Branhams Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-
     {"name":"Twin Lakes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Green Sea Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Hampton-Varnville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
@@ -5014,7 +4984,6 @@
     {"name":"Kirk Air Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Fairview Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"McCormick County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-
     {"name":"Dry Swamp Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Huggins Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Edgefield County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
@@ -5025,7 +4994,6 @@
     {"name":"Lane Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"NAS Charleston","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
     {"name":"Page Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south carolina"},
-
     {"name":"Aberdeen Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Pierre Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Rapid City Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
@@ -5038,7 +5006,6 @@
     {"name":"Brookings Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Harding County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Canton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-
     {"name":"Chamberlain Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Clark County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Custer County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
@@ -5050,7 +5017,6 @@
     {"name":"Faulkton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Flandreau Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Gettysburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-
     {"name":"Gregory Municipal Airport","alternativeNames":["Flynn Field"],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Highmore Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Hot Springs Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
@@ -5064,7 +5030,6 @@
     {"name":"Milbank Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Miller Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Mitchell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-
     {"name":"Mobridge Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Murdo Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Onida Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
@@ -5075,7 +5040,6 @@
     {"name":"Presho Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Redfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Sisseton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-
     {"name":"Black Hills Airport","alternativeNames":["Clyde Ice Field"],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Springfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Sturgis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
@@ -5083,7 +5047,6 @@
     {"name":"Harold Davidson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Wagner Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Wall Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-
     {"name":"Sigurd Anderson Airport","alternativeNames":["The Sigurd Anderson Airport"],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Wessington Springs Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Winner Regional Airport","alternativeNames":["Bob Wiley Field"],"priorNames":[],"country":"united states","state":"south dakota"},
@@ -5095,7 +5058,6 @@
     {"name":"Custer State Park Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Groton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Herreid Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-
     {"name":"Isabel Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Kimball Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Lake Andes Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
@@ -5110,7 +5072,6 @@
     {"name":"Skie Air Service Landing Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"McIntosh Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
     {"name":"Mission Sioux Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"south dakota"},
-
     {"name":"Tri-Cities Regional Airport","alternativeNames":["Tri-Cities Regional TN/VA", "Tri Cities Regional Airport"],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Chattanooga Metropolitan Airport","alternativeNames":["Lovell Field"],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"McGhee Tyson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
@@ -5124,7 +5085,6 @@
     {"name":"Smyrna Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"McMinn County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"William L. Whitehurst Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-
     {"name":"Benton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Centerville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Clarksville-Montgomery County Regional Airport","alternativeNames":["John F. Outlaw Field", "John F Outlaw Field", "John Outlaw Field", "Clarksville Montgomery County Regional Airport"],"priorNames":[],"country":"united states","state":"tennessee"},
@@ -5139,7 +5099,6 @@
     {"name":"Dyersburg Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Elizabethton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Fayetteville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-
     {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Sumner County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Greeneville-Greene County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
@@ -5152,7 +5111,6 @@
     {"name":"Lawrenceburg-Lawrence County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Lebanon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Ellington Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-
     {"name":"Beech River Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Perry County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Livingston Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
@@ -5166,7 +5124,6 @@
     {"name":"Henry County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Portland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Abernathy Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-
     {"name":"Rockwood Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Hawkins County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Savannah-Hardin County Airport","alternativeNames":["Savannah Hardin County Airport"],"priorNames":[],"country":"united states","state":"tennessee"},
@@ -5178,7 +5135,6 @@
     {"name":"Fayette County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Upper Cumberland Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Springfield-Robertson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-
     {"name":"New Tazewell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Gibson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Tullahoma Regional Airport","alternativeNames":["William Northern Field"],"priorNames":[],"country":"united states","state":"tennessee"},
@@ -5187,7 +5143,6 @@
     {"name":"Winchester Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Chilhowee Gliderport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Thornton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-
     {"name":"Dallas Bay Skypark","alternativeNames":["Dallas Bay Sky Park"],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Cleveland Regional Jetport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Collegedale Municipal Airport","alternativeNames":["Linn Field"],"priorNames":[],"country":"united states","state":"tennessee"},
@@ -5198,7 +5153,6 @@
     {"name":"Houston County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Wolf River Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Reelfoot Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-
     {"name":"Sabre Army Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Arnold AFB","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Riley Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
@@ -5209,7 +5163,6 @@
     {"name":"Powell STOLport","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Cornelia Fort Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
     {"name":"Scott Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"tennessee"},
-
     {"name":"Abilene Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Rick Husband Amarillo International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Austin-Bergstrom International Airport","alternativeNames":["Austin Bergstrom International Airport"],"priorNames":[],"country":"united states","state":"texas"},
@@ -5221,7 +5174,6 @@
     {"name":"Dallas/Fort Worth International Airport","alternativeNames":["Dallas Fort Worth International Airport", "Dallas-Fort Worth International Airport"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Del Rio International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"El Paso International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-
     {"name":"Killeen-Fort Hood Regional Airport","alternativeNames":["Killeen Fort Hood Regional Airport", "Robert Gray Army Airfield"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Valley International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"George Bush Intercontinental Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
@@ -5235,7 +5187,6 @@
     {"name":"San Antonio International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Tyler Pounds Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Waco Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-
     {"name":"Wichita Falls Municipal Airport / Sheppard Air Force Base","alternativeNames":["Wichita Falls Municipal Airport", "Sheppard Air Force Base"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Victoria Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Texas Gulf Coast Regional Airport","alternativeNames":[],"priorNames":["Brazoria County Airport"],"country":"united states","state":"texas"},
@@ -5248,7 +5199,6 @@
     {"name":"Fort Worth Spinks Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Scholes International Airport at Galveston","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Georgetown Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-
     {"name":"Grand Prairie Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Ellington Airport","alternativeNames":["Ellington Field"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"West Houston Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
@@ -5262,7 +5212,6 @@
     {"name":"McKinney National Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Mesquite Metro Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Stinson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-
     {"name":"San Marcos Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Alice International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Alpine-Casparis Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
@@ -5276,7 +5225,6 @@
     {"name":"Beeville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Big Spring McMahon-Wrinkle Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Jones Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-
     {"name":"Hutchinson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Bowie Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Curtis Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
@@ -5291,7 +5239,6 @@
     {"name":"Cameron Municipal Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Hemphill County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Dimmit County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-
     {"name":"Panola County Airport","alternativeNames":["Sharpe Field"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Castroville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Center Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
@@ -5303,7 +5250,6 @@
     {"name":"Comanche County-City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Commerce Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Corsicana Municipal Airport","alternativeNames":["C David Campbell Field", "C. David Campbell Field", "David Campbell Field"],"priorNames":[],"country":"united states","state":"texas"},
-
     {"name":"Cotulla-La Salle County Airport","alternativeNames":["Cotulla La Salle County Airport"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Houston County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Cuero Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
@@ -5572,7 +5518,15 @@
     {"name":"Bulverde Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Horizon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"San Augustine County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"San Saba County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"San Saba County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Flying C Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Ironhead Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lane Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Vultures Row Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Seagraves Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Huber Airpark","alternativeNames":["Huber Airpark Civic Club LLC", "Huber Airpark Civic Club"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Shamrock Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Sherman Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
   ]
 }

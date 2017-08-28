@@ -28,6 +28,8 @@ var parser = require("../parseutterance.js");
 
 describe("vui-ad-hoc-alexa-recognizer", function() {
   describe("Simple Matches", function() {
+    this.timeout(0);
+    this.slow(10000);
     it("verify simple utterance without slots matches", function() {
       let result = recognizer.Recognizer.matchText("test me");
       expect(result).to.eql({"name": "TestIntent", "slots": {}});
