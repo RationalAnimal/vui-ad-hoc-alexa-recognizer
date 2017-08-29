@@ -5635,7 +5635,16 @@
     {"name":"Kanab Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
     {"name":"Wayne Wonderland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
     {"name":"Logan-Cache Airport","alternativeNames":["Logan Cache Airport"],"priorNames":[],"country":"united states","state":"utah"},
-    {"name":"Manila Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"}
+    {"name":"Manila Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Manti-Ephraim Airport","alternativeNames":["Manti Ephraim Airport"],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Milford Municipal Airport","alternativeNames":["Ben and Judy Briscoe Field"],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Monticello Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Nephi Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Panguitch Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Parowan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Carbon County Regional Airport","alternativeNames":["Buck Davis Field"],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Richfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Roosevelt Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"}
 
   ]
 }
