@@ -1511,7 +1511,8 @@ let _isSubObject = function(subObject, withinObject){
   }
   for(let key in subObject) {
     if(subObject.hasOwnProperty(key)){
-      if(subObject[key] !== withinObject[key]){
+//      if(subObject[key] !== withinObject[key] && _isSubObject(subObject[key], withinObject[key]) === false){
+      if(_isSubObject(subObject[key], withinObject[key]) === false){
         return false;
       }
     }
