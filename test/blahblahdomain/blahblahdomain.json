@@ -87,7 +87,7 @@
     {
       "matchCriteria": {
         "selector": "selectthis",
-        "match": {"flow": "TEST_FLOW"}
+        "matches": [{"flow": "SOME_FLOW"}, {"flow": "TEST_FLOW"}]
       },
       "matchSpecs": [
         {

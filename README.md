@@ -1738,7 +1738,7 @@ Note that you can also select a different built-in accessor when using domainrun
 on the command line.
 
 
-#### Non-default match criteria
+#### Non-default single value match criteria
 
 So far you've only seen default match criteria, meaning you've only seen a domain using a single recognizer without any
 regard to anything else.  Here is the relevant snippet from the domain file:
@@ -1822,6 +1822,21 @@ State object:  {
 So this showed how you can specify which recognizer(s) to use based on some criteria.
 
 Note that "default" criteria will always match.
+
+#### Non-default multi-valued match criteria
+
+In addition to the single value match criteria you can also specify an array of matching values.  The only difference is
+that instead of:
+
+```text
+"match": {"status": "yes"}
+```
+
+you would specify something like:
+
+```text
+"matches": [{"status": "yes"}, {"status": "tbd"}]
+```
 
 #### Subdomains
 
