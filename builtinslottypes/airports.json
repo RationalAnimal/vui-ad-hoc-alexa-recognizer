@@ -5573,7 +5573,20 @@
     {"name":"Elmdale Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Mikeska Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Tin Top Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Cuddihy Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Cuddihy Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Foard County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Salaika Aviation Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Ben Bruce Memorial Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"LBJ Ranch Airport","alternativeNames":["L B J Ranch Airport", "L.B.J. Ranch Airport", "L. B. J. Ranch Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Cardiff Brothers Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hoffpauir Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Aransas National Wildlife Refuge Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Gardner Farm Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"New Gulf Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Mesa Vista Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Lowell Smith Jr. Airport","alternativeNames":["Lowell Smith Jr Airport", "Lowell Smith Junior Airport"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"West Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Skydive Houston Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
   ]
 }
