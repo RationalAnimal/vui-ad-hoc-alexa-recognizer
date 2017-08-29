@@ -24,7 +24,8 @@
     {
       "matchCriteria": {
         "selector": "selectthis",
-        "match": {"flow": "TEST_FLOW_2"}
+        "match": true,
+        "value": {"flow": "TEST_FLOW_2"}
       },
       "matchSpecs": [
         {
@@ -40,7 +41,8 @@
     {
       "matchCriteria": {
         "selector": "selectthis",
-        "match": {"flow": "TEST_FLOW_3"}
+        "match": true,
+        "value": {"flow": "TEST_FLOW_3"}
       },
       "matchSpecs": [
         {
@@ -63,7 +65,8 @@
     {
       "matchCriteria": {
         "selector": "selectthis",
-        "match": {"flow": "TEST_FLOW_4"}
+        "match": true,
+        "value": {"flow": "TEST_FLOW_4"}
       },
       "matchSpecs": [
         {
@@ -87,7 +90,8 @@
     {
       "matchCriteria": {
         "selector": "selectthis",
-        "matches": [{"flow": "SOME_FLOW"}, {"flow": "TEST_FLOW"}]
+        "match": true,
+        "values": [{"flow": "SOME_FLOW"}, {"flow": "TEST_FLOW"}]
       },
       "matchSpecs": [
         {
