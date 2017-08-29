@@ -1665,7 +1665,8 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
       }
     }
     else if(typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object"){
-      if(_isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.match)){
+      if(_isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.match) ||
+         _isSubObjectAny(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.matches)){
         for(let j = 0; j < state.matchSpecs.length; j ++){
           if(typeof state.matchSpecs[j].recognizer !== "undefined"){
             let scratchRecognizer = recognizers[state.matchSpecs[j].recognizer];
