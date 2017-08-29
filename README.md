@@ -1773,7 +1773,8 @@ If you update your domain file to include that, e.g.:
   {
     "matchCriteria": {
       "selector": "startedEnrollment",
-      "match": {"status": "yes"}
+      "match": true,
+      "value": {"status": "yes"}
     },
     "matchSpecs": [
       {
@@ -1829,13 +1830,15 @@ In addition to the single value match criteria you can also specify an array of 
 that instead of:
 
 ```text
-"match": {"status": "yes"}
+"match": true,
+"value": {"status": "yes"}
 ```
 
 you would specify something like:
 
 ```text
-"matches": [{"status": "yes"}, {"status": "tbd"}]
+"match": true,
+"values": [{"status": "yes"}, {"status": "tbd"}]
 ```
 
 #### Subdomains
