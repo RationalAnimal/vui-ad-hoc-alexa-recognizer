@@ -2484,11 +2484,7 @@ describe("domain parsing", function() {
         {"text": "Danke"},
         {"text": "I agree"}
       ];
-      let stateAccessor = {
-        "getState": function(state, selector){
-          return state[selector];
-        }
-      };
+      let stateAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, [], applicationState);
 //      console.log("result: ", result);
       expect(result.match).to.eql(

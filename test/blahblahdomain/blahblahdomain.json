@@ -90,7 +90,7 @@
     {
       "matchCriteria": {
         "selector": "selectthis",
-        "match": true,
+        "match": false,
         "values": [{"flow": "SOME_FLOW"}, {"flow": "TEST_FLOW"}]
       },
       "matchSpecs": [
