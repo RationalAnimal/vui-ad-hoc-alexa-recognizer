@@ -5586,7 +5586,20 @@
     {"name":"Mesa Vista Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Lowell Smith Jr. Airport","alternativeNames":["Lowell Smith Jr Airport", "Lowell Smith Junior Airport"],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"West Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Skydive Houston Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Skydive Houston Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Taylor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Kittyhawk Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Cameron Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Robert Mueller Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Goliad County Industrial Airpark","alternativeNames":["NOLF Goliad"],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Webb Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Clear Lake Metro Port","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Hayesport Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"De Leon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Carroll Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Greater Southwest International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Saginaw Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Cluck Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
 
   ]
 }
