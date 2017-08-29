@@ -1519,6 +1519,19 @@ let _isSubObject = function(subObject, withinObject){
   }
   return true;
 };
+
+let _isSubObjectAny = function(subObject, withinArray){
+  if(typeof withinArray === "undefined" || withinArray === null || Array.isArray(withinArray) === false){
+    return false;
+  }
+  for(let i = 0; i < withinArray.length; i++){
+    if(_isSubObject(subObject, withinArray[i])){
+      return true;
+    }
+  }
+  return false;
+};
+
 /**
  * EXPERIMENTAL - USE AT YOUR OWN RISK, API MAY CHANGE!!!
  * Call this function to use an AppModule/Domain json to match text
