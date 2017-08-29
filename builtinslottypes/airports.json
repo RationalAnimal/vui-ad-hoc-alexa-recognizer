@@ -5625,7 +5625,17 @@
     {"name":"Brigham City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
     {"name":"Bryce Canyon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
     {"name":"Delta Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
-    {"name":"Duchesne Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"}
+    {"name":"Duchesne Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Escalante Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Green River Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Cal Black Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Hanksville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Heber City Municipal Airport","alternativeNames":["Russ McDonald Field"],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"General Dick Stout Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Kanab Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Wayne Wonderland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Logan-Cache Airport","alternativeNames":["Logan Cache Airport"],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Manila Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"}
 
   ]
 }
