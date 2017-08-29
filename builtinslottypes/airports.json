@@ -5610,7 +5610,22 @@
     {"name":"Goodfellow Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Glen Beicker Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
     {"name":"Pronger Bros. Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
-    {"name":"Boyd Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"}
+    {"name":"Boyd Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"texas"},
+    {"name":"Provo Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Salt Lake City International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"St. George Regional Airport","alternativeNames":["St George Regional Airport", "Saint George Regional Airport"],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Wendover Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Cedar City Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Canyonlands Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Vernal Regional Airport","alternativeNames":[],"priorNames":["Vernal-Uintah Co. Airport", "Vernal Uintah Co. Airport", "Vernal-Uintah Co Airport", "Vernal Uintah Co Airport","Vernal-Uintah Airport", "Vernal Uintah Airport","Vernal-Uintah Company Airport", "Vernal Uintah Company Airport"],"country":"united states","state":"utah"},
+    {"name":"Ogden-Hinckley Airport","alternativeNames":["Ogden Hinckley Airport"],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"South Valley Regional Airport","alternativeNames":[],"priorNames":["Salt Lake City Municipal Airport"],"country":"united states","state":"utah"},
+    {"name":"Beaver Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Blanding Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Brigham City Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Bryce Canyon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Delta Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Duchesne Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"}
 
   ]
 }
