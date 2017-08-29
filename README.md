@@ -1824,6 +1824,39 @@ So this showed how you can specify which recognizer(s) to use based on some crit
 
 Note that "default" criteria will always match.
 
+##### Non-default single value negative match criteria
+
+You can also set the "match" to false, indicating that this match criteria will succeed if the state does NOT match
+the provided value:
+
+```text
+...
+"states": [
+  {
+    "matchCriteria": {
+      "selector": "startedEnrollment",
+      "match": false,
+      "value": {"status": "yes"}
+    },
+    "matchSpecs": [
+      {
+        "recognizer": "greeting",
+        "responder": {
+          "result": {
+            "directValue": {"text": "Hello to you too"}
+          }
+        }
+      }
+    ]
+  },
+...
+```
+
+This should be used carefully - the non-matching criteria may should be designed to avoid frequent/always matches.
+An example of proper match might be a "global" setting indicating whether the user has completed some step and if not,
+then proceeding down that user interaction path.
+
+
 #### Non-default multi-valued match criteria
 
 In addition to the single value match criteria you can also specify an array of matching values.  The only difference is
@@ -1840,6 +1873,11 @@ you would specify something like:
 "match": true,
 "values": [{"status": "yes"}, {"status": "tbd"}]
 ```
+
+##### Non-default multi-valued negative match criteria
+
+Just as for single values, you can set "match" to be false to indicate that the match will succeed if the state does
+NOT match ANY of the provided values
 
 #### Subdomains
 
