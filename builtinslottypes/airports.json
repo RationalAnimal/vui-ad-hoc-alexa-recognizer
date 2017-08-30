@@ -5739,7 +5739,19 @@
     {"name":"Bridgewater Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"Lake Anna Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"McLaughlin Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
-    {"name":"Chase City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"}
+    {"name":"Chase City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Lake Country Regional Airport","alternativeNames":[],"priorNames":["Marks Municipal Airport"],"country":"united states","state":"virginia"},
+    {"name":"Crewe Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"New London Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Shannon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Gordonsville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Lunenburg County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Lawrenceville-Brunswick Municipal Airport","alternativeNames":["Lawrenceville Brunswick Municipal Airport"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Falwell Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Smith Mountain Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"New Market Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Hummel Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Wakefield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"}
 
   ]
 }
