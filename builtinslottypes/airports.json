@@ -5686,7 +5686,20 @@
     {"name":"Fort Ethan Allen Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
     {"name":"Fair Haven Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
     {"name":"Robin's Nest Airport","alternativeNames":["North Windham Airport"],"priorNames":[],"country":"united states","state":"vermont"},
-    {"name":"Miller Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"}
+    {"name":"Miller Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Charlottesville-Albemarle Airport","alternativeNames":["Charlottesville Albemarle Airport"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Lynchburg Regional Airport","alternativeNames":["Preston Glenn Field"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Newport News/Williamsburg International Airport","alternativeNames":["Patrick Henry Field", "Newport News Williamsburg International Airport", "Williamsburg International Airport", "Newport News Airport"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Norfolk International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Richmond International Airport","alternativeNames":["Byrd Field"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Roanoke Regional Airport","alternativeNames":["Woodrum Field"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Shenandoah Valley Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"KDCA","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"KIAD","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Leesburg Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"KHEF","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Hampton Roads Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Chesterfield County Airport","alternativeNames":["Richmond Executive Airport"],"priorNames":[],"country":"united states","state":"virginia"}
 
   ]
 }
