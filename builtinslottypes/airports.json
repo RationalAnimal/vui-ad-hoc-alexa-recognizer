@@ -5675,7 +5675,18 @@
     {"name":"Middlebury State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
     {"name":"Morrisville-Stowe State Airport","alternativeNames":["Morrisville Stowe State Airport"],"priorNames":[],"country":"united states","state":"vermont"},
     {"name":"Newport State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
-    {"name":"Post Mills Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"}
+    {"name":"Post Mills Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Hartness State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Warren-Sugarbush Airport","alternativeNames":["Warren Sugarbush Airport"],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"John H. Boylan State Airport","alternativeNames":["John H Boylan State Airport", "John Boylan State Airport"],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Shelburne Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Basin Harbor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Deerfield Valley Regional Airport","alternativeNames":[],"priorNames":["Mount Snow"],"country":"united states","state":"vermont"},
+    {"name":"Cub Cove Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Fort Ethan Allen Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Fair Haven Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Robin's Nest Airport","alternativeNames":["North Windham Airport"],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Miller Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"}
 
   ]
 }
