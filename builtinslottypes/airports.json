@@ -5762,7 +5762,17 @@
     {"name":"Felker Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"Langley Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"NS Norfolk","alternativeNames":["Chambers Field"],"priorNames":[],"country":"united states","state":"virginia"},
-    {"name":"NAS Oceana","alternativeNames":["Apollo Soucek Field"],"priorNames":[],"country":"united states","state":"virginia"}
+    {"name":"NAS Oceana","alternativeNames":["Apollo Soucek Field"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"MCAF Quantico","alternativeNames":["Turner Field"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Wallops Flight Facility","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Camp Peary Landing Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Whitman Strip","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Hartwood Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Hoover Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Beacon Field Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Falls Church Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Washington-Virginia Airport","alternativeNames":["Washington Virginia Airport"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Tappahannock Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"}
 
   ]
 }
