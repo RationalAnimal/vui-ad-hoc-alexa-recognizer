@@ -5726,7 +5726,20 @@
     {"name":"Dinwiddie County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"New Kent County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"Tazewell County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
-    {"name":"Hanover County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"}
+    {"name":"Hanover County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"William M. Tuck Airport","alternativeNames":["William M Tuck Airport", "William Tuck Airport"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Mecklenburg-Brunswick Regional Airport","alternativeNames":["Mecklenburg Brunswick Regional Airport"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Suffolk Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Tangier Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Tappahannock-Essex County Airport","alternativeNames":["Tappahannock Essex County Airport"],"priorNames":["Tappahannock Municipal"],"country":"united states","state":"virginia"},
+    {"name":"Middle Peninsula Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Winchester Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Lonesome Pine Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Allen C. Perkinson Airport / Blackstone Army Airfield","alternativeNames":["Allen C. Perkinson Airport", "Allen C Perkinson Airport", "Allen Perkinson Airport", "Blackstone Army Airfield"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Bridgewater Air Park","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Lake Anna Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"McLaughlin Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Chase City Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"}
 
   ]
 }
