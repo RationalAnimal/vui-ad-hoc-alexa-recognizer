@@ -5644,7 +5644,17 @@
     {"name":"Parowan Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
     {"name":"Carbon County Regional Airport","alternativeNames":["Buck Davis Field"],"priorNames":[],"country":"united states","state":"utah"},
     {"name":"Richfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
-    {"name":"Roosevelt Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"}
+    {"name":"Roosevelt Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Spanish Fork-Springville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Tooele Valley Airport","alternativeNames":["Bolinder Field"],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Bluff Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Skypark Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Dutch John Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Fillmore Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Bullfrog Basin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Huntington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Junction Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Morgan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"}
 
   ]
 }
