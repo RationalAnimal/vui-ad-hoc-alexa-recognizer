@@ -5751,7 +5751,18 @@
     {"name":"Smith Mountain Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"New Market Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"Hummel Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
-    {"name":"Wakefield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"}
+    {"name":"Wakefield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Eagle's Nest Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Campbell Field Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Williamsburg-Jamestown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"A.P. Hill Army Airfield","alternativeNames":["A. P. Hill Army Airfield", "AP Hill Army Airfield", "A P Hill Army Airfield"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"NALF Fentress","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"NSWC Dahlgren","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Davison Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Felker Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Langley Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"NS Norfolk","alternativeNames":["Chambers Field"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"NAS Oceana","alternativeNames":["Apollo Soucek Field"],"priorNames":[],"country":"united states","state":"virginia"}
 
   ]
 }
