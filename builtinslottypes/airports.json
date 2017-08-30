@@ -5665,7 +5665,17 @@
     {"name":"Jake Garn Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
     {"name":"St. George Municipal Airport","alternativeNames":["St George Municipal Airport", "Saint George Municipal Airport"],"priorNames":[],"country":"united states","state":"utah"},
     {"name":"Tooele Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
-    {"name":"Tremonton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"}
+    {"name":"Tremonton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Burlington International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Rutland - Southern Vermont Regional Airport","alternativeNames":[],"priorNames":["Rutland State"],"country":"united states","state":"vermont"},
+    {"name":"Edward F. Knapp State Airport","alternativeNames":["Edward F Knapp State Airport", "Edward Knapp State Airport"],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"William H. Morse State Airport","alternativeNames":["William H Morse State Airport", "William Morse State Airport"],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Franklin County State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Caledonia County Airport","alternativeNames":[],"priorNames":["Caledonia County State Airport"],"country":"united states","state":"vermont"},
+    {"name":"Middlebury State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Morrisville-Stowe State Airport","alternativeNames":["Morrisville Stowe State Airport"],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Newport State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"},
+    {"name":"Post Mills Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"vermont"}
 
   ]
 }
