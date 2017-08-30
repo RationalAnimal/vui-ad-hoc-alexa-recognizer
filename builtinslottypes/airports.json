@@ -5713,7 +5713,20 @@
     {"name":"Franklin Municipal-John Beverly Rose Airport","alternativeNames":["Franklin Municipal John Beverly Rose Airport", "Franklin Municipal Airport", "John Beverly Rose Airport"],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"Front Royal-Warren County Airport","alternativeNames":["Front Royal Warren County Airport"],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"Twin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
-    {"name":"Grundy Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"}
+    {"name":"Grundy Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Ingalls Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Lee County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Louisa County Airport","alternativeNames":["Freeman Field"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Luray Caverns Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Mountain Empire Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Blue Ridge Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Accomack County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Chesapeake Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Orange County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Dinwiddie County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"New Kent County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Tazewell County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Hanover County Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"}
 
   ]
 }
