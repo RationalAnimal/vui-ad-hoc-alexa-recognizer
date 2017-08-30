@@ -5654,7 +5654,18 @@
     {"name":"Bullfrog Basin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
     {"name":"Huntington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
     {"name":"Junction Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
-    {"name":"Morgan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"}
+    {"name":"Morgan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Mount Pleasant Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Salina-Gunnison Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Michael Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Hill Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Hite Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Monument Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Thunder Ridge Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Jake Garn Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"St. George Municipal Airport","alternativeNames":["St George Municipal Airport", "Saint George Municipal Airport"],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Tooele Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"},
+    {"name":"Tremonton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"utah"}
 
   ]
 }
