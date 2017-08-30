@@ -936,6 +936,14 @@ Note: now that multi-stage matching has been enabled, the performance should be
 a lot better for many previously slow scenarios.  However, you can still make it
 faster by arranging for the parsing order and excluding some intents from parsing.
 
+In some interesting cases multi-stage matching is actually slower (sometimes by a large factor)
+than single-stage matching.  To accommodate such cases, you can generate recognizer files
+without multi-stage matching.  To do so, simply add --optimizations SINGLE-STAGE to the generator command line:
+
+```shell
+node generator.js --intents test/intents.json --utterances test/utterances.txt --config test/config.json --optimizations SINGLE-STAGE
+```
+
 ### Intent parsing order
 
 You can pass to the matching call the name(s) of the intents that you want to
@@ -973,7 +981,8 @@ let result = recognizer.Recognizer.matchText("have you been to France", ["Countr
 
 This can be used both
 for performance optimization as well as for breaking up large skills/apps into
-smaller chucks, typically by functionality.  Let's say you have a large skill
+smaller chucks, typically by functionality (though now that domain functionality has been added, you should probably
+use domains for modularizing your app unless there is a reason not to).  Let's say you have a large skill
 that has several logical flows in it.  For example, you can have a travel skill
 that lets you book a hotel and/or a car, check for special events, reserve a
 table at a restaurant, etc.  Each of these may have its own logic - its "flow".
