@@ -42,8 +42,10 @@ var usage = function(){
   console.log('  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.');
   console.log('  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.');
   console.log('  --utterances UtterancesFileName specify utterances file name, optional.  This is "optional" only in the sense that it CAN be omitted, but in practice it is required.  There only time you would invoke this function without an utterance file argument is if your skill generates only build in intents, which would make it rather useless.');
-}
+  console.log('  --optimizations [SINGLE-STAGE] optional. SINGLE-STAGE means no pre-matches using wildcards.  Depending on the recognizer, this may be slower or faster');
+};
 
+var optimizations = {"multistage": true};
 for(var i = 2; i < process.argv.length - 1; i += 2){
   var j = i + 1;
   if(process.argv[i] == "-c" || process.argv[i] == "--config"){
@@ -57,6 +59,9 @@ for(var i = 2; i < process.argv.length - 1; i += 2){
   }
   else if(process.argv[i] == "--interactionmodel"){
     var interactionModelFileName = process.argv[j];
+  }
+  else if(process.argv[i] === "--optimizations" && process.argv[j] === 'SINGLE-STAGE'){
+    optimizations.multistage = false;
   }
 }
 
@@ -128,7 +133,7 @@ if(typeof intentsFileName != "undefined"){
 
 var utterances = [];
 var doTheProcessing = function(){
-  return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances);
+  return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances, optimizations);
 }
 var _done = function(json){
   console.log(JSON.stringify(resultJson, null, 2));

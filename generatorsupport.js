@@ -923,7 +923,7 @@ var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
     return recognizer.builtInValues[suffix].replacementRegExpString;
 };
 
-var _generateRunTimeJson = function(config, interactionModel, intents, utterances){
+var _generateRunTimeJson = function(config, interactionModel, intents, utterances, optimizations){
     if(typeof config === "undefined" || config === null){
         config = {};
     }
@@ -1040,7 +1040,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         let result = parser.parseUtteranceIntoJson(utterances[i], intents);
         parser.cleanupParsedUtteranceJson(result, intents);
 
-        parser.addRegExps(result, intents, passThrougFunc);
+        parser.addRegExps(result, intents, passThrougFunc, optimizations);
 
         let currentValue = {};
         currentValue.slots = [];

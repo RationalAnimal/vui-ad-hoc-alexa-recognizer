@@ -240,7 +240,7 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 	}
 };
 
-var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
+var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimizations) {
   let wildcardReplacementString = "((?:\\w|\\s|[0-9,_']|\-)+)";
   parsedJson.regExpStrings = [];
 
@@ -301,6 +301,9 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
     }
   }
 
+  if (typeof optimizations !== "undefined" && optimizations.multistage == false){
+    shouldAdd = false;
+  }
   if (shouldAdd) {
     regExpString = regexputilities.reconstructRegExpWithWhiteSpaces(regExpString, true);
     parsedJson.regExpStrings.push(regExpString);
@@ -360,6 +363,9 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc) {
         regExpString += "{0,1}";
       }
     }
+  }
+  if (typeof optimizations !== "undefined" && optimizations.multistage == false){
+    shouldAdd = false;
   }
   if (shouldAdd) {
     regExpString = regexputilities.reconstructRegExpWithWhiteSpaces(regExpString, true);
