@@ -5699,7 +5699,21 @@
     {"name":"Leesburg Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"KHEF","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"Hampton Roads Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
-    {"name":"Chesterfield County Airport","alternativeNames":["Richmond Executive Airport"],"priorNames":[],"country":"united states","state":"virginia"}
+    {"name":"Chesterfield County Airport","alternativeNames":["Richmond Executive Airport"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Stafford Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Warrenton-Fauquier Airport","alternativeNames":["Warrenton Fauquier Airport"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Virginia Highlands Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Virginia Tech/Montgomery Executive Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Brookneal/Campbell County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Culpeper Regional Airport","alternativeNames":["T.I. Martin Field", "T. I. Martin Field", "TI Martin Field", "T I Martin Field"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Danville Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"New River Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Emporia-Greensville Regional Airport","alternativeNames":["Emporia Greensville Regional Airport"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Farmville Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Franklin Municipal-John Beverly Rose Airport","alternativeNames":["Franklin Municipal John Beverly Rose Airport", "Franklin Municipal Airport", "John Beverly Rose Airport"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Front Royal-Warren County Airport","alternativeNames":["Front Royal Warren County Airport"],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Twin County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Grundy Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"}
 
   ]
 }
