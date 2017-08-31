@@ -1533,17 +1533,32 @@ let _isSubObjectAny = function(subObject, withinArray){
 };
 
 /**
- * EXPERIMENTAL - USE AT YOUR OWN RISK, API MAY CHANGE!!!
+ * Call this function to determine whether state matches or not.
+ * @param state - a single "state" from the domain file's "states" field
+ * @param stateAccessor - the state accessor object to use to access the state
+ * @returns {boolean} - true if state condition matches, false otherwise
+ * @private
+ */
+let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
+  if(typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object"){
+    if(
+      ((state.matchCriteria.match === true) && _isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.value)) ||
+      ((state.matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.value)) === false) ||
+      ((state.matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.values)) ||
+      ((state.matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.values)) === false)
+    ) {
+      return true;
+    }
+  }
+  return false;
+};
+
+/**
  * Call this function to use an AppModule/Domain json to match text
  * @param {string} stringToMatch - the text to match to intent or result.
  * @param {string|object} domain
  * @param {object} stateAccessor - optional, needed only if state is specified in the domain or if responder is
  *   specified. Call this function to get or set the current state info.
- *   API is simple:
- *     getState(state, someKey) will return the corresponding value
- *     getStateChain(state, [keys]) will return the corresponding value given the chain of keys (use with subdomains)
- *     setState(state, someKey, newValue) will set the corresponding value
- *     setStateChain(state, [key], newValue) will set the corresponding value given the chain of keys (use with subdomains)
  * @returns {object}
  * @private
  */
