@@ -5806,7 +5806,19 @@
     {"name":"Deer Park Airport","alternativeNames":[],"priorNames":["Deer Park Municipal Airport"],"country":"united states","state":"washington"},
     {"name":"Grand Coulee Dam Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Bowers Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"Ephrata Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
+    {"name":"Ephrata Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Friday Harbor Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Bowerman Airport","alternativeNames":[],"priorNames":["Bowerman Field"],"country":"united states","state":"washington"},
+    {"name":"Ione Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Southwest Washington Regional Airport","alternativeNames":[],"priorNames":["Kelso-Longview Airport", "Kelso Longview Airport"],"country":"united states","state":"washington"},
+    {"name":"Kenmore Air Harbor","alternativeNames":["Lake Washington Airport"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Whidbey Air Park","alternativeNames":["Whidbey Airpark"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Lopez Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Grant County International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Ocean Shores Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Odessa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Olympia Regional Airport","alternativeNames":["Olympia Airport"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Omak Airport","alternativeNames":[],"priorNames":["Omak Municipal Airport"],"country":"united states","state":"washington"}
 
   ]
 }
