@@ -25,8 +25,6 @@
  */
 'use strict'
 
-let accessor = {};
-
 let _getState = function(state, key){
   if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
     return;
@@ -79,11 +77,29 @@ let _mergeReplaceState = function(state, newState, keyArray) {
   // NOOP
 };
 
+let accessor =  class {
+  constructor(applicationState) {
+    this.applicationState = applicationState;
+  }};
+
 accessor.getState = _getState;
+accessor.prototype.getState = _getState;
+
+
 accessor.getStateChain = _getStateChain;
+accessor.prototype.getStateChain = _getStateChain;
+
+
 accessor.setState = _setState;
+accessor.prototype.setState = _setState;
+
 accessor.setStateChain = _setStateChain;
+accessor.prototype.setStateChain = _setStateChain;
+
 accessor.mergeReplaceState = _mergeReplaceState;
+accessor.prototype.mergeReplaceState = _mergeReplaceState;
+
 accessor.replaceState = _replaceState;
+accessor.prototype.replaceState = _replaceState;
 
 module.exports = accessor;

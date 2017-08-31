@@ -25,8 +25,6 @@
  */
 'use strict'
 
-let accessor = {};
-
 let _expandKeyArray = function(keyArray){
   let expandedKeyArray = [];
   for(let i = 0; i < keyArray.length; i ++){
@@ -238,12 +236,29 @@ let _replaceState = function(state, newState, keyArray){
   }
 };
 
+let accessor =  class {
+  constructor(applicationState) {
+    this.applicationState = applicationState;
+  }};
 
 accessor.getState = _getState;
+accessor.prototype.getState = _getState;
+
+
 accessor.getStateChain = _getStateChain;
+accessor.prototype.getStateChain = _getStateChain;
+
+
 accessor.setState = _setState;
+accessor.prototype.setState = _setState;
+
 accessor.setStateChain = _setStateChain;
+accessor.prototype.setStateChain = _setStateChain;
+
 accessor.mergeReplaceState = _mergeReplaceState;
+accessor.prototype.mergeReplaceState = _mergeReplaceState;
+
 accessor.replaceState = _replaceState;
+accessor.prototype.replaceState = _replaceState;
 
 module.exports = accessor;
