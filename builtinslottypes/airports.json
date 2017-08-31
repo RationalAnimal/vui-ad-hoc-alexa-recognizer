@@ -5772,7 +5772,17 @@
     {"name":"Beacon Field Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"Falls Church Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
     {"name":"Washington-Virginia Airport","alternativeNames":["Washington Virginia Airport"],"priorNames":[],"country":"united states","state":"virginia"},
-    {"name":"Tappahannock Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"}
+    {"name":"Tappahannock Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"virginia"},
+    {"name":"Bellingham International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Friday Harbor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Tri-Cities Airport","alternativeNames":["Tri Cities Airport"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"William R. Fairchild International Airport","alternativeNames":["William R Fairchild International Airport", "William Fairchild International Airport"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Pullman/Moscow Regional Airport","alternativeNames":["Pullman Moscow Regional Airport"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"King County International Airport","alternativeNames":["Boeing Field"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"SeattleâTacoma International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Spokane International Airport","alternativeNames":["Geiger Field"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Walla Walla Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Pangborn Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
 
   ]
 }
