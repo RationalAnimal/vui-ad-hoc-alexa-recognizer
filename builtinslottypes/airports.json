@@ -5818,7 +5818,21 @@
     {"name":"Ocean Shores Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Odessa Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Olympia Regional Airport","alternativeNames":["Olympia Airport"],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"Omak Airport","alternativeNames":[],"priorNames":["Omak Municipal Airport"],"country":"united states","state":"washington"}
+    {"name":"Omak Airport","alternativeNames":[],"priorNames":["Omak Municipal Airport"],"country":"united states","state":"washington"},
+    {"name":"Dorothy Scott Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Othello Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Packwood Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Jefferson County International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Prosser Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Pierce County Airport","alternativeNames":["Thun Field"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Quillayute Airport","alternativeNames":[],"priorNames":["Quillayute State Airport"],"country":"united states","state":"washington"},
+    {"name":"Richland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Pru Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Rosalia Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Sanderson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Sunnyside Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Tacoma Narrows Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"South Lewis County Airport","alternativeNames":["Ed Carlson Memorial Field"],"priorNames":[],"country":"united states","state":"washington"}
 
   ]
 }
