@@ -5795,7 +5795,18 @@
     {"name":"Bremerton National Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Anderson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Skagit Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"Grove Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
+    {"name":"Grove Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Cashmere-Dryden Airport","alternativeNames":["Cashmere Dryden Airport"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Chehalis-Centralia Airport","alternativeNames":["Chehalis Centralia Airport"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Lake Chelan Airport","alternativeNames":[],"priorNames":["Chelan Municipal Airport"],"country":"united states","state":"washington"},
+    {"name":"Cle Elum Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Port of Whitman Business Air Center","alternativeNames":[],"priorNames":["Whitman Co. Memorial Airport", "Whitman Co Memorial Airport", "Whitman Company Memorial Airport", "Whitman Memorial Airport"],"country":"united states","state":"washington"},
+    {"name":"Colville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Davenport Airport","alternativeNames":[],"priorNames":["Davenport Municipal Airport"],"country":"united states","state":"washington"},
+    {"name":"Deer Park Airport","alternativeNames":[],"priorNames":["Deer Park Municipal Airport"],"country":"united states","state":"washington"},
+    {"name":"Grand Coulee Dam Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Bowers Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Ephrata Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
 
   ]
 }
