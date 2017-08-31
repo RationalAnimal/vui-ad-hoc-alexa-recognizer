@@ -1540,15 +1540,19 @@ let _isSubObjectAny = function(subObject, withinArray){
  * @private
  */
 let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
-  if(typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object"){
-    if(
-      ((state.matchCriteria.match === true) && _isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.value)) ||
-      ((state.matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.value)) === false) ||
-      ((state.matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.values)) ||
-      ((state.matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.values)) === false)
-    ) {
+  if(
+      (state.matchCriteria === "default") ||
+      (
+        (typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object") &&
+        (
+          ((state.matchCriteria.match === true) && _isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.value)) ||
+          ((state.matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.value)) === false) ||
+          ((state.matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.values)) ||
+          ((state.matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.values)) === false)
+        )
+      )
+  ) {
       return true;
-    }
   }
   return false;
 };
@@ -1636,10 +1640,8 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
 //    console.log("_matchTextDomain, 13, i: " + i);
     let state = domainToUse.states[i];
 //    console.log("_matchTextDomain, 14");
-    if(state.matchCriteria === "default"){
-//      console.log("_matchTextDomain, 15");
+    if(_checkStateMatchCriteria(state, stateAccessor, applicationState)){
       for(let j = 0; j < state.matchSpecs.length; j ++){
-//        console.log("_matchTextDomain, 16, j: " + j);
         if(typeof state.matchSpecs[j].recognizer !== "undefined"){
           let scratchRecognizer = recognizers[state.matchSpecs[j].recognizer];
           let match = _matchText(stringToMatch, undefined, undefined, scratchRecognizer);
@@ -1678,50 +1680,6 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
           }
         }
       }
-    }
-    else if(typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object"){
-      if(_checkStateMatchCriteria(state, stateAccessor, applicationState)){
-        for(let j = 0; j < state.matchSpecs.length; j ++){
-          if(typeof state.matchSpecs[j].recognizer !== "undefined"){
-            let scratchRecognizer = recognizers[state.matchSpecs[j].recognizer];
-            let match = _matchText(stringToMatch, undefined, undefined, scratchRecognizer);
-            if(typeof match !== "undefined" && match !== null){
-              let returnObject = {"match": match};
-              if(typeof state.matchSpecs[j].responder !== "undefined"){
-                // TODO add code to get the intent name regardless of platform
-                returnObject.result = responder.produceResult(match.name, stateAccessor, stateSelectors, applicationState, state.matchSpecs[j].responder);
-              }
-              else if(typeof state.matchSpecs[j].responders !== "undefined" && Array.isArray(state.matchSpecs[j].responders)){
-                // TODO add code to get the intent name regardless of platform
-                returnObject.result = {};
-                for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
-                  returnObject.result = responder.combineResponses(returnObject.result, responder.produceResult(match.name, stateAccessor, stateSelectors, applicationState, state.matchSpecs[j].responders[k]), state.matchSpecs[j].responders[k].result.combineRule);
-                }
-              }
-              return returnObject;
-            }
-          }
-          else if(typeof state.matchSpecs[j].domain !== "undefined"){
-            let scratchDomain = domains[state.matchSpecs[j].domain];
-            let updatedSelectors = [].concat(stateSelectors);
-            for(let k = 0; k < domainToUse.domains.length; k++){
-              let scratchDomainInfo = domainToUse.domains[k];
-              if(scratchDomainInfo.key === state.matchSpecs[j].domain){
-                let scratchDomainSelector = scratchDomainInfo.selector;
-                if(typeof scratchDomainSelector !== "undefined" && scratchDomainSelector !== null){
-                  updatedSelectors.push(scratchDomainSelector);
-                  break;
-                }
-              }
-            }
-            let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, updatedSelectors, applicationState);
-            if(typeof result !== "undefined" && result !== null){
-              return result;
-            }
-          }
-        }
-      }
-
     }
     else {
 //      console.log("_matchTextDomain, 20");
