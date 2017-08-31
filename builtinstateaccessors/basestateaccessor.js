@@ -26,39 +26,11 @@
 'use strict'
 
 let _getState = function(state, key){
-  if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
-    return;
-  }
-  let keyArray = [];
-  if(typeof key === "string"){
-    keyArray = key.split(".");
-  }
-  if(keyArray.length > 0){
-    let result = state;
-    for(let i = 0; i < keyArray.length; i++){
-      result = result[keyArray[i]];
-      if(typeof result === "undefined" || result === null){
-        return;
-      }
-    }
-    return JSON.parse(JSON.stringify(result));
-  }
+  // NOOP
 };
 
 let _getStateChain = function(state, keyArray){
-  if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
-    return;
-  }
-  if(keyArray.length > 0){
-    let result = state;
-    for(let i = 0; i < keyArray.length; i++){
-      result = _getState(result, keyArray[i]);
-      if(typeof result === "undefined" || result === null){
-        return;
-      }
-    }
-    return JSON.parse(JSON.stringify(result));
-  }
+  // NOOP
 };
 
 let _setState = function(state, someKey, newValue){
