@@ -5782,7 +5782,20 @@
     {"name":"SeattleâTacoma International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Spokane International Airport","alternativeNames":["Geiger Field"],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Walla Walla Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"Pangborn Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
+    {"name":"Pangborn Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Yakima Air Terminal","alternativeNames":["McAllister Field"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Orcas Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Auburn Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Snohomish County Airport","alternativeNames":["Paine Field"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Renton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Harvey Airfield","alternativeNames":["Harvey Field"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Felts Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Anacortes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Arlington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Bremerton National Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Anderson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Skagit Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Grove Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
 
   ]
 }
