@@ -1680,12 +1680,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
       }
     }
     else if(typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object"){
-      if(
-          ((state.matchCriteria.match === true) && _isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.value)) ||
-          ((state.matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.value)) === false) ||
-          ((state.matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.values)) ||
-          ((state.matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.values)) === false)
-        ){
+      if(_checkStateMatchCriteria(state, stateAccessor, applicationState)){
         for(let j = 0; j < state.matchSpecs.length; j ++){
           if(typeof state.matchSpecs[j].recognizer !== "undefined"){
             let scratchRecognizer = recognizers[state.matchSpecs[j].recognizer];
