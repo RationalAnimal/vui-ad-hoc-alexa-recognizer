@@ -5832,7 +5832,23 @@
     {"name":"Sanderson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Sunnyside Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Tacoma Narrows Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"South Lewis County Airport","alternativeNames":["Ed Carlson Memorial Field"],"priorNames":[],"country":"united states","state":"washington"}
+    {"name":"South Lewis County Airport","alternativeNames":["Ed Carlson Memorial Field"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Pearson Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Vashon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Wilbur Airport","alternativeNames":["Wilbur Municipal Airport"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Methow Valley State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Skyline Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Rogersburg Airport","alternativeNames":[],"priorNames":["Rogersburg State Airport"],"country":"united states","state":"washington"},
+    {"name":"Bandera State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Goheen Airport","alternativeNames":[],"priorNames":["Goheen Field"],"country":"united states","state":"washington"},
+    {"name":"Cedars North Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Floathaven Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Sand Canyon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Cross Winds Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"De Vere Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Lower Granite State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Martin Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Camano Island Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
 
   ]
 }
