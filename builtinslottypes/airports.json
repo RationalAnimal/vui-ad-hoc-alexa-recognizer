@@ -5935,7 +5935,17 @@
     {"name":"Bellevue Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Blaine Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Martha Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"Evergreen Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
+    {"name":"Evergreen Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Yeager Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"North Central West Virginia Airport","alternativeNames":[],"priorNames":["Harrison-Marion Regional", "Harrison Marion Regional"],"country":"united states","state":"west virginia"},
+    {"name":"Tri-State Airport","alternativeNames":["Milton J. Ferguson Field", "Milton J Ferguson Field", "Milton Ferguson Field"],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Greenbrier Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Morgantown Municipal Airport","alternativeNames":["Walter L. Bill Hart Field", "Walter L Bill Hart Field", "Walter Bill Hart Field"],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Raleigh County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Mid-Ohio Valley Regional Airport","alternativeNames":["Mid Ohio Valley Regional Airport"],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Eastern WV Regional Airport","alternativeNames":["Eastern West Virginia Regional Airport","Shepherd Field"],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Mercer County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Upshur County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"}
 
   ]
 }
