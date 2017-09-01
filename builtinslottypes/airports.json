@@ -5901,7 +5901,17 @@
     {"name":"Stehekin State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Sky Harbor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"American Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"Willard Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
+    {"name":"Willard Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Tonasket Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Twisp Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Fly For Fun Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Page Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Warden Airport","alternativeNames":["New Warden Airport"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Waterville Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Westport Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Wilson Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Woodland State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"NOLF Coupeville","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
 
   ]
 }
