@@ -5848,7 +5848,20 @@
     {"name":"De Vere Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Lower Granite State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Martin Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"Camano Island Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
+    {"name":"Camano Island Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Mears Field","alternativeNames":[],"priorNames":["Concrete Municipal Airport"],"country":"united states","state":"washington"},
+    {"name":"Copalis State Airport","alternativeNames":[],"priorNames":["Copalis Beach State Airport"],"country":"united states","state":"washington"},
+    {"name":"KDLS","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Darrington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Easton State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Swanson Airport","alternativeNames":[],"priorNames":["Swanson Field"],"country":"united states","state":"washington"},
+    {"name":"Elma Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Forks Airport","alternativeNames":[],"priorNames":["Forks Municipal Airport"],"country":"united states","state":"washington"},
+    {"name":"Goldendale Airport","alternativeNames":[],"priorNames":["Goldendale Municipal Airport"],"country":"united states","state":"washington"},
+    {"name":"Ranger Creek Airport","alternativeNames":[],"priorNames":["Ranger Creek State Airport"],"country":"united states","state":"washington"},
+    {"name":"Port of Ilwaco Airport","alternativeNames":[],"priorNames":["Ilwaco Airport"],"country":"united states","state":"washington"},
+    {"name":"Lower Monumental State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Vista Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
 
   ]
 }
