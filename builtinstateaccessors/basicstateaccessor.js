@@ -236,7 +236,7 @@ let _replaceState = function(state, newState, keyArray){
   }
 };
 
-let accessor =  class BaseStateAccessor {
+let accessor =  class BasicStateAccessor {
   constructor() {
   }
 };
