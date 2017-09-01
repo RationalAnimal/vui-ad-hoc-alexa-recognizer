@@ -2645,6 +2645,20 @@ describe("domain parsing", function() {
 
     it("verify built in simple read-only state accessor's getState function works", function () {
       let simpleAccessor = require("../builtinstateaccessors/readonlybasicstateaccessor.js");
+
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+      let result = simpleAccessor.getState(applicationState, "selectthis");
+      expect(result).to.eql({"flow": "TEST_FLOW"});
+    });
+
+    it("verify built in base object state accessor's getState function works", function () {
+      let simpleAccessor = require("../builtinstateaccessors/baseobjectstateaccessor.js");
+
       let applicationState = {
         "something": "this is not relevant",
         "selectthis": {

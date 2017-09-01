@@ -77,8 +77,10 @@ let _mergeReplaceState = function(state, newState, keyArray) {
   // NOOP
 };
 
-let accessor =  class BaseObjectStateAccessor {
+let BaseStateAccessor = require("./basestateaccessor.js");
+let accessor =  class BaseObjectStateAccessor extends BaseStateAccessor {
   constructor(applicationState) {
+    super();
     this.applicationState = applicationState;
   }};
 
