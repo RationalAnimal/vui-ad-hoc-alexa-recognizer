@@ -25,81 +25,11 @@
  */
 'use strict'
 
-let _getState = function(state, key){
-  if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
-    return;
-  }
-  let keyArray = [];
-  if(typeof key === "string"){
-    keyArray = key.split(".");
-  }
-  if(keyArray.length > 0){
-    let result = state;
-    for(let i = 0; i < keyArray.length; i++){
-      result = result[keyArray[i]];
-      if(typeof result === "undefined" || result === null){
-        return;
-      }
-    }
-    return JSON.parse(JSON.stringify(result));
-  }
-};
-
-let _getStateChain = function(state, keyArray){
-  if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
-    return;
-  }
-  if(keyArray.length > 0){
-    let result = state;
-    for(let i = 0; i < keyArray.length; i++){
-      result = _getState(result, keyArray[i]);
-      if(typeof result === "undefined" || result === null){
-        return;
-      }
-    }
-    return JSON.parse(JSON.stringify(result));
-  }
-};
-
-let _setState = function(state, someKey, newValue){
-  // NOOP
-};
-
-let _setStateChain = function(state, someKeyArray, newValue){
-  // NOOP
-};
-
-let _replaceState = function(state, newState){
-  // NOOP
-};
-
-let _mergeReplaceState = function(state, newState, keyArray) {
-  // NOOP
-};
-
-let accessor =  class {
+let BaseObjectStateAccessor = require("./baseobjectstateaccessor.js");
+let accessor =  class ReadOnlyStateAccessor extends BaseObjectStateAccessor {
   constructor(applicationState) {
-    this.applicationState = applicationState;
-  }};
-
-accessor.getState = _getState;
-accessor.prototype.getState = _getState;
-
-
-accessor.getStateChain = _getStateChain;
-accessor.prototype.getStateChain = _getStateChain;
-
-
-accessor.setState = _setState;
-accessor.prototype.setState = _setState;
-
-accessor.setStateChain = _setStateChain;
-accessor.prototype.setStateChain = _setStateChain;
-
-accessor.mergeReplaceState = _mergeReplaceState;
-accessor.prototype.mergeReplaceState = _mergeReplaceState;
-
-accessor.replaceState = _replaceState;
-accessor.prototype.replaceState = _replaceState;
+    super(applicationState);
+  }
+};
 
 module.exports = accessor;
