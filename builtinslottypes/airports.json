@@ -5874,7 +5874,20 @@
     {"name":"Mead Flying Service Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Sullivan Lake State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Firstair Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"Strom Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
+    {"name":"Strom Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Moses Lake Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"A.J. Eisenberg Airport","alternativeNames":["A. J. Eisenberg Airport", "AJ Eisenberg Airport", "A J Eisenberg Airport", "Eisenberg Airport"],"priorNames":["Wes Lupien Airport"],"country":"united states","state":"washington"},
+    {"name":"Okanogan Legion Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Hoskins Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Point Roberts Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Port of Poulsbo Marina Moorage Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Quincy Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Will Rogers Wiley Post Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Ferry County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Tieton State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Roche Harbor Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"R & K Skyranch Airport","alternativeNames":["R and K Skyranch Airport"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Rosario Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
 
   ]
 }
