@@ -5922,7 +5922,20 @@
     {"name":"Blakely Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Center Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Decatur Shores Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"Fishermans Bay/LPS Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
+    {"name":"Fishermans Bay/LPS Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Wings for Christ Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Roche Harbor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Lake Union Heliport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Diamond Point Airstrip","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Stuart Island Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Trout Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Westsound/WSX Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Western Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"J-Z Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Bellevue Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Blaine Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Martha Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Evergreen Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
 
   ]
 }
