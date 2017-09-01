@@ -236,9 +236,8 @@ let _replaceState = function(state, newState, keyArray){
   }
 };
 
-let accessor =  class {
-  constructor(applicationState) {
-    this.applicationState = applicationState;
+let accessor =  class BaseStateAccessor {
+  constructor() {
   }
 };
 
