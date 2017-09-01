@@ -25,27 +25,27 @@
  */
 'use strict'
 
-let _getState = function(state, key){
+let _getState = function(key){
   // NOOP
 };
 
-let _getStateChain = function(state, keyArray){
+let _getStateChain = function(keyArray){
   // NOOP
 };
 
-let _setState = function(state, someKey, newValue){
+let _setState = function(someKey, newValue){
   // NOOP
 };
 
-let _setStateChain = function(state, someKeyArray, newValue){
+let _setStateChain = function(someKeyArray, newValue){
   // NOOP
 };
 
-let _replaceState = function(state, newState){
+let _replaceState = function(newState){
   // NOOP
 };
 
-let _mergeReplaceState = function(state, newState, keyArray) {
+let _mergeReplaceState = function(newState, keyArray) {
   // NOOP
 };
 

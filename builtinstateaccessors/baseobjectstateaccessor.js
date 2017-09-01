@@ -25,7 +25,8 @@
  */
 'use strict'
 
-let _getState = function(state, key){
+let _getState = function(key){
+  let state = this.applicationState;
   if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
     return;
   }
@@ -45,14 +46,28 @@ let _getState = function(state, key){
   }
 };
 
-let _getStateChain = function(state, keyArray){
+let _getStateChain = function(keyArray){
+  let state = this.applicationState;
   if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
     return;
   }
+  let unfoldedKeys = [];
   if(keyArray.length > 0){
-    let result = state;
     for(let i = 0; i < keyArray.length; i++){
-      result = _getState(result, keyArray[i]);
+      let key = keyArray[i];
+      if(typeof key === "string"){
+        let subKeyArray = key.split(".");
+        unfoldedKeys = unfoldedKeys.concat(subKeyArray);
+      }
+      else {
+        unfoldedKeys.push(key);
+      }
+    }
+  }
+  if(unfoldedKeys.length > 0){
+    let result = state;
+    for(let i = 0; i < unfoldedKeys.length; i++){
+      result = result[unfoldedKeys[i]];
       if(typeof result === "undefined" || result === null){
         return;
       }
@@ -61,19 +76,19 @@ let _getStateChain = function(state, keyArray){
   }
 };
 
-let _setState = function(state, someKey, newValue){
+let _setState = function(someKey, newValue){
   // NOOP
 };
 
-let _setStateChain = function(state, someKeyArray, newValue){
+let _setStateChain = function(someKeyArray, newValue){
   // NOOP
 };
 
-let _replaceState = function(state, newState){
+let _replaceState = function(newState){
   // NOOP
 };
 
-let _mergeReplaceState = function(state, newState, keyArray) {
+let _mergeReplaceState = function(newState, keyArray) {
   // NOOP
 };
 
