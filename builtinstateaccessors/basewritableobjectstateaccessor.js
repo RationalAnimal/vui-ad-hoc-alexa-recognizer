@@ -58,6 +58,26 @@ let _setState = function(key, newValue){
   }
 };
 
+let _getSubStateAccessor = function(key){
+  _ensureSubFieldsPresent(this.applicationState, key);
+
+  let state = this.applicationState;
+  if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
+    return;
+  }
+  let keyArray = [];
+  if(typeof key === "string"){
+    keyArray = key.split(".");
+  }
+  if(keyArray.length > 0){
+    let result = state;
+    for(let i = 0; i < keyArray.length; i++){
+      result = result[keyArray[i]];
+    }
+    return new BaseObjectStateAccessor(result);
+  }
+};
+
 accessor.setState = _setState;
 accessor.prototype.setState = _setState;
 
