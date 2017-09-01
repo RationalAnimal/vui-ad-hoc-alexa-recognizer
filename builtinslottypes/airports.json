@@ -5861,7 +5861,20 @@
     {"name":"Ranger Creek Airport","alternativeNames":[],"priorNames":["Ranger Creek State Airport"],"country":"united states","state":"washington"},
     {"name":"Port of Ilwaco Airport","alternativeNames":[],"priorNames":["Ilwaco Airport"],"country":"united states","state":"washington"},
     {"name":"Lower Monumental State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"Vista Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
+    {"name":"Vista Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Crest Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Avey Field State Airport","alternativeNames":["Avey Field"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Lake Wenatchee State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Lester State Ultralight Flightpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Lind Airport","alternativeNames":[],"priorNames":["Lind Municipal Airport"],"country":"united states","state":"washington"},
+    {"name":"Lynden Airport","alternativeNames":[],"priorNames":["Lynden Municipal Airport"],"country":"united states","state":"washington"},
+    {"name":"Mansfield Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Desert Aire Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Lost River Resort Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Mead Flying Service Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Sullivan Lake State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Firstair Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Strom Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
 
   ]
 }
