@@ -25,6 +25,65 @@
  */
 'use strict'
 
+let BaseStateAccessor = require("./basestateaccessor.js");
+let accessor =  class BaseObjectStateAccessor extends BaseStateAccessor {
+  constructor(applicationState) {
+    super();
+    this.applicationState = applicationState;
+  }
+};
+
+let _ensureSubFieldsPresent = function(objectToUpdate, keys){
+  if(typeof objectToUpdate === "undefined" || objectToUpdate === null){
+    return;
+  }
+  if(typeof keys === "undefined" || keys === null){
+    return;
+  }
+  let keyArray = [];
+  if(typeof keys === "string"){
+    keyArray = keys.split(".");
+  }
+  else {
+    keyArray = keys;
+  }
+  if(keyArray.length > 0){
+    // First ensure that we have all the "sub" fields
+    let result = objectToUpdate;
+    for(let i = 0; i < keyArray.length; i++){
+      let scratch = result[keyArray[i]];
+      if(typeof scratch === "undefined" || scratch === null){
+        // We now need to add all the missing fields
+        result[keyArray[i]] = {};
+        result = result[keyArray[i]];
+      }
+      else {
+        result = scratch;
+      }
+    }
+  }
+};
+
+let _getSubStateAccessor = function(key){
+  _ensureSubFieldsPresent(this.applicationState, key);
+
+  let state = this.applicationState;
+  if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
+    return;
+  }
+  let keyArray = [];
+  if(typeof key === "string"){
+    keyArray = key.split(".");
+  }
+  if(keyArray.length > 0){
+    let result = state;
+    for(let i = 0; i < keyArray.length; i++){
+      result = result[keyArray[i]];
+    }
+    return new BaseObjectStateAccessor(result);
+  }
+};
+
 let _getState = function(key){
   let state = this.applicationState;
   if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
@@ -92,12 +151,6 @@ let _mergeReplaceState = function(newState, keyArray) {
   // NOOP
 };
 
-let BaseStateAccessor = require("./basestateaccessor.js");
-let accessor =  class BaseObjectStateAccessor extends BaseStateAccessor {
-  constructor(applicationState) {
-    super();
-    this.applicationState = applicationState;
-  }};
 
 accessor.getState = _getState;
 accessor.prototype.getState = _getState;
