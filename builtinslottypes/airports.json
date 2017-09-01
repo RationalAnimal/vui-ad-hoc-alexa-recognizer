@@ -5911,7 +5911,18 @@
     {"name":"Westport Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Wilson Creek Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Woodland State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"NOLF Coupeville","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
+    {"name":"NOLF Coupeville","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"NAS Whidbey Island","alternativeNames":["Ault Field"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Coast Guard Air Station Port Angeles","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Fairchild Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"McChord Field","alternativeNames":["Joint Base Lewis-McChord"],"priorNames":["McChord Air Force Base"],"country":"united states","state":"washington"},
+    {"name":"Gray Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Vagabond Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Selah Airstrip","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Blakely Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Center Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Decatur Shores Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Fishermans Bay/LPS Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
 
   ]
 }
