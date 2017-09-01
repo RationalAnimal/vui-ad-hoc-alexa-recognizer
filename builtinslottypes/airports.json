@@ -5887,7 +5887,21 @@
     {"name":"Tieton State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"Roche Harbor Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
     {"name":"R & K Skyranch Airport","alternativeNames":["R and K Skyranch Airport"],"priorNames":[],"country":"united states","state":"washington"},
-    {"name":"Rosario Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
+    {"name":"Rosario Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Kenmore Air Harbor Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Seattle Seaplanes Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Sekiu Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Sequim Valley Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Apex Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Skykomish State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Willapa Harbor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Shady Acres Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Spanaway Airport","alternativeNames":["Spanaway Airpark"],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Little Goose Lock and Dam Airport","alternativeNames":[],"priorNames":["Little Goose State Airport"],"country":"united states","state":"washington"},
+    {"name":"Stehekin State Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Sky Harbor Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"American Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"},
+    {"name":"Willard Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"washington"}
 
   ]
 }
