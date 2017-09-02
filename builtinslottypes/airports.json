@@ -5945,7 +5945,16 @@
     {"name":"Mid-Ohio Valley Regional Airport","alternativeNames":["Mid Ohio Valley Regional Airport"],"priorNames":[],"country":"united states","state":"west virginia"},
     {"name":"Eastern WV Regional Airport","alternativeNames":["Eastern West Virginia Regional Airport","Shepherd Field"],"priorNames":[],"country":"united states","state":"west virginia"},
     {"name":"Mercer County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
-    {"name":"Upshur County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"}
+    {"name":"Upshur County Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Elkins-Randolph County Airport","alternativeNames":["Elkins Randolph County Airport", "Jennings Randolph Field"],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Fairmont Municipal Airport","alternativeNames":["Frankman Field"],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Logan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Marshall County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Grant County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Philippi/Barbour County Regional Airport","alternativeNames":["Philippi Barbour County Regional Airport", "Barbour County Regional Airport"],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Wyoming County Airport","alternativeNames":["Kee Field"],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Mason County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"}
 
   ]
 }
