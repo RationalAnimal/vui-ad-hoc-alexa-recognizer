@@ -5988,7 +5988,19 @@
     {"name":"Central Wisconsin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Rhinelander-Oneida County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Capitol Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
-    {"name":"Kenosha Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
+    {"name":"Kenosha Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Lawrence J. Timmerman Airport","alternativeNames":["Lawrence J Timmerman Airport", "Lawrence Timmerman Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"John H. Batten Airport","alternativeNames":["John H Batten Airport", "John Batten Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Waukesha County Airport","alternativeNames":["Crites Field"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"West Bend Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Amery Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Langlade County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"John F. Kennedy Memorial Airport","alternativeNames":["John F Kennedy Memorial Airport", "J. F. K. Memorial Airport", "J.F.K. Memorial Airport", "J F K Memorial Airport", "JFK Memorial Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Baraboo-Wisconsin Dells Airport","alternativeNames":["Baraboo Wisconsin Dells Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Black River Falls Area Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Boscobel Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Boyceville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Burlington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
 
   ]
 }
