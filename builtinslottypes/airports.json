@@ -6046,7 +6046,18 @@
     {"name":"Portage Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Prairie du Chien Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Sauk-Prairie Airport","alternativeNames":["Sauk Prairie Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
-    {"name":"Reedsburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
+    {"name":"Reedsburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Rice Lake Regional Airport","alternativeNames":["Carl's Field", "Carls Field"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Richland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Shawano Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Sheboygan County Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Shell Lake Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Burnett County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Solon Springs Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Sparta/Fort McCoy Airport","alternativeNames":["Sparta Fort McCoy Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Stevens Point Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Door County Cherryland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Richard I. Bong Airport","alternativeNames":["Richard I Bong Airport", "Richard Bong Airport"],"priorNames":[],"country":"united states","state":"wisconsin"}
 
   ]
 }
