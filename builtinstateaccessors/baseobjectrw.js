@@ -105,9 +105,8 @@ let _setStateChain = function(keyArray, newValue){
   }
 };
 
-let _mergeReplaceState = function(newState, keyArray){
+let _mergeReplaceState = function(keyArray, newState){
   let state = this.applicationState;
-//  console.log("_mergeReplaceState, START, state: ", JSON.stringify(state, null, 2));
   if(typeof state === "undefined" || state === null){
     return;
   }
@@ -135,55 +134,14 @@ let _mergeReplaceState = function(newState, keyArray){
     }
   }
   for(let i = 0; i < newProperties.length; i ++){
-//    console.log("_mergeReplaceState, 1, i: " + i + " state: ", JSON.stringify(state, null, 2));
     let scratchKeyArray = [].concat(keyArray);
     scratchKeyArray.push(newProperties[i]);
-    _setStateChain(objectToUpdate, scratchKeyArray, newState[newProperties[i]]);
+    _setStateChain(scratchKeyArray, newState[newProperties[i]]);
   }
 };
 
-
-let _replaceState = function(newState, keyArray){
-  let state = this.applicationState;
-  let objectToUpdate = state;
-  if(typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) === false){
-    // Nothing to do for now
-  }
-  else {
-    let expandedKeyArray = [];
-    for(let i = 0; i < keyArray.length; i++){
-      let splitKeyArray = keyArray[i];
-      for(let j = 0; j < splitKeyArray.length; j++){
-        expandedKeyArray.push(splitKeyArray[j]);
-      }
-    }
-    _ensureSubfieldsPresent(state, expandedKeyArray);
-    for(let i = 0; i < expandedKeyArray.length; i++){
-      objectToUpdate = objectToUpdate[expandedKeyArray[i]];
-    }
-    // Here we have objectToUpdate pointing to last
-  }
-
-  let currentProperties = [];
-  for(let key in objectToUpdate) {
-    if (objectToUpdate.hasOwnProperty(key)) {
-      currentProperties.push(key);
-    }
-  }
-  for(let i = 0; i < currentProperties.length; i++){
-    delete objectToUpdate[currentProperties[i]];
-  }
-
-
-  let newProperties = [];
-  for(let key in newState){
-    if (newState.hasOwnProperty(key)) {
-      newProperties.push(key);
-    }
-  }
-  for(let i = 0; i < newProperties.length; i++){
-    objectToUpdate[newProperties[i]] = newState[newProperties[i]]
-  }
+let _replaceState = function(keyArray, newState){
+  _setStateChain(keyArray, newState);
 };
 
 let base = require("./baseobject.js");
