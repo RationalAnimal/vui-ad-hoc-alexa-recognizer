@@ -153,14 +153,6 @@ let accessor =  function(applicationState) {
 accessor.prototype = Object.create(base.prototype);
 accessor.prototype.constructor = accessor;
 
-accessor.getState = _getState;
-accessor.prototype.getState = _getState;
-
-
-accessor.getStateChain = _getStateChain;
-accessor.prototype.getStateChain = _getStateChain;
-
-
 accessor.setState = _setState;
 accessor.prototype.setState = _setState;
 
