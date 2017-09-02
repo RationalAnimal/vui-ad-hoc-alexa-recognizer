@@ -5963,7 +5963,14 @@
     {"name":"Potomac Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
     {"name":"Robert Newlon Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
     {"name":"Leon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
-    {"name":"Ona Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"}
+    {"name":"Ona Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Herron Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"P.W. Johnson Memorial Airport","alternativeNames":["P W Johnson Memorial Airport", "PW Johnson Memorial Airport", "P. W. Johnson Memorial Airport"],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Simpson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Richwood Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Wade F. Maley Field","alternativeNames":["Wade F Maley Field", "Wade Maley Field"],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Boggs Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Welch Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"}
 
   ]
 }
