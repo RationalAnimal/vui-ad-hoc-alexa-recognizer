@@ -5970,7 +5970,15 @@
     {"name":"Richwood Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
     {"name":"Wade F. Maley Field","alternativeNames":["Wade F Maley Field", "Wade Maley Field"],"priorNames":[],"country":"united states","state":"west virginia"},
     {"name":"Boggs Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
-    {"name":"Welch Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"}
+    {"name":"Welch Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Greater Cumberland Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Mingo County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Dawson Army Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Glendale Fokker Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Hinton-Alderson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Louis Bennett Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Roy Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Weirton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"}
 
   ]
 }
