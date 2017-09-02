@@ -2784,7 +2784,7 @@ describe("domain parsing", function() {
       let accessor = require("../builtinstateaccessors/basicreadonly.js");
       let accessorInstance = new accessor(applicationState);
 
-      let result = accessorInstance.setState("selectthis", {"flow": "NEW_FLOW"});
+      accessorInstance.setState("selectthis", {"flow": "NEW_FLOW"});
       expect(applicationState).to.eql({
         "something": "this is not relevant",
         "selectthis": {
@@ -2793,6 +2793,26 @@ describe("domain parsing", function() {
       });
     });
 
+    it("verify built in basic read/write state accessor's setState function works", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+      let accessor = require("../builtinstateaccessors/baseobjectrw.js");
+      let accessorInstance = new accessor(applicationState);
+
+      accessorInstance.setState("selectthis", {"flow": "NEW_FLOW"});
+      expect(applicationState).to.eql({
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "NEW_FLOW"
+        }
+      });
+    });
+
+    
     it("verify built in simple state accessor's getState function works", function () {
       let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let applicationState = {
