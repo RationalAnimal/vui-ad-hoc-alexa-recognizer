@@ -5954,7 +5954,16 @@
     {"name":"Philippi/Barbour County Regional Airport","alternativeNames":["Philippi Barbour County Regional Airport", "Barbour County Regional Airport"],"priorNames":[],"country":"united states","state":"west virginia"},
     {"name":"Wyoming County Airport","alternativeNames":["Kee Field"],"priorNames":[],"country":"united states","state":"west virginia"},
     {"name":"Mason County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
-    {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"}
+    {"name":"Jackson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Summersville Airport","alternativeNames":["Gerald L. Rader Field", "Gerald L Rader Field", "Gerald Rader Field"],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Braxton County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Wheeling Ohio County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Appalachian Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Titus Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Potomac Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Robert Newlon Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Leon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Ona Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"}
 
   ]
 }
