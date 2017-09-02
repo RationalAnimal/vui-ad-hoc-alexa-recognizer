@@ -6035,7 +6035,18 @@
     {"name":"Neillsville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"New Holstein Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Mauston-New Lisbon Union Airport","alternativeNames":["Mauston New Lisbon Union Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
-    {"name":"New Richmond Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
+    {"name":"New Richmond Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"J. Douglas Bake Memorial Airport","alternativeNames":["Douglas Bake Memorial Airport", "J Douglas Bake Memorial Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"L.O. Simenstad Municipal Airport","alternativeNames":["L. O. Simenstad Municipal Airport", "L O Simenstad Municipal Airport", "LO Simenstad Municipal Airport", "Simenstad Municipal Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Wittman Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Palmyra Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Park Falls Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Price County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Platteville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Portage Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Prairie du Chien Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Sauk-Prairie Airport","alternativeNames":["Sauk Prairie Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Reedsburg Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
 
   ]
 }
