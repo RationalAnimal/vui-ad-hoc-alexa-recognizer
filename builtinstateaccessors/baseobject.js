@@ -59,9 +59,6 @@ let _getStateChain = function(keyArray){
         let subKeyArray = key.split(".");
         unfoldedKeys = unfoldedKeys.concat(subKeyArray);
       }
-      else {
-        unfoldedKeys.push(key);
-      }
     }
   }
   if(unfoldedKeys.length > 0){
