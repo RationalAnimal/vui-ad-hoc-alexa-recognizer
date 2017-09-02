@@ -25,10 +25,6 @@
  */
 'use strict'
 
-let _getSubStateAccessor = function(key){
-  // NOOP
-};
-
 let _getState = function(key){
   // NOOP
 };
@@ -60,12 +56,8 @@ let accessor =  function(applicationState) {
 accessor.prototype = Object.create(Object);
 accessor.prototype.constructor = accessor;
 
-accessor.getSubStateAccessor = _getSubStateAccessor;
-accessor.prototype.getSubStateAccessor = _getSubStateAccessor;
-
 accessor.getState = _getState;
 accessor.prototype.getState = _getState;
-
 
 accessor.getStateChain = _getStateChain;
 accessor.prototype.getStateChain = _getStateChain;
