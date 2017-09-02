@@ -2746,6 +2746,20 @@ describe("domain parsing", function() {
       expect(typeof result).to.equal("undefined");
     });
 
+    it("verify built in base object state accessor's getState function works", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+      let accessor = require("../builtinstateaccessors/baseobject.js");
+      let accessorInstance = new accessor(applicationState);
+
+      let result = accessorInstance.getState("selectthis");
+      expect(result).to.eql({"flow": "TEST_FLOW"});
+    });
+
 
     it("verify built in simple state accessor's getState function works", function () {
       let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
