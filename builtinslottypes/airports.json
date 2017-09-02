@@ -6025,7 +6025,17 @@
     {"name":"Manitowish Waters Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Manitowoc County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Marshfield Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
-    {"name":"Taylor County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
+    {"name":"Taylor County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Menomonie Municipal Airport","alternativeNames":["Score Field"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Merrill Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Middleton Municipal Airport","alternativeNames":["Morey Field"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Iowa County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Lakeland Airport","alternativeNames":["Noble F. Lee Memorial Field", "Noble F Lee Memorial Field", "Noble Lee Memorial Field"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Monroe Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Neillsville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"New Holstein Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Mauston-New Lisbon Union Airport","alternativeNames":["Mauston New Lisbon Union Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"New Richmond Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
 
   ]
 }
