@@ -2738,6 +2738,13 @@ describe("domain parsing", function() {
       });
     });
 
+    it("verify built in base state accessor's getState function doesn't works", function () {
+      let accessor = require("../builtinstateaccessors/base.js");
+      let accessorInstance = new accessor();
+
+      let result = accessorInstance.getState("selectthis");
+      expect(typeof result).to.equal("undefined");
+    });
 
 
     it("verify built in simple state accessor's getState function works", function () {
