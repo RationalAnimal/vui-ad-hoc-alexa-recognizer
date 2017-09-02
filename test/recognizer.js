@@ -2812,7 +2812,28 @@ describe("domain parsing", function() {
       });
     });
 
-    
+    it("verify built in basic read/write state accessor's setStateChain function works", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "somethingelse": {
+          "selectthis": {
+            "flow": "TEST_FLOW"
+          }
+        }
+      };
+      let accessor = require("../builtinstateaccessors/baseobjectrw.js");
+      let accessorInstance = new accessor(applicationState);
+      accessorInstance.setStateChain(["somethingelse", "selectthis"], {"flow": "NEW_FLOW"});
+      expect(applicationState).to.eql({
+        "something": "this is not relevant",
+        "somethingelse": {
+          "selectthis": {
+            "flow": "NEW_FLOW"
+          }
+        }
+      });
+    });
+
     it("verify built in simple state accessor's getState function works", function () {
       let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let applicationState = {
