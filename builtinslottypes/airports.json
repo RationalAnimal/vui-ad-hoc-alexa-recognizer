@@ -5978,7 +5978,17 @@
     {"name":"Hinton-Alderson Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
     {"name":"Louis Bennett Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
     {"name":"Roy Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
-    {"name":"Weirton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"}
+    {"name":"Weirton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"west virginia"},
+    {"name":"Appleton International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Chippewa Valley Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Green Bay-Austin Straubel International Airport","alternativeNames":["Green Bay Austin Straubel International Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"La Crosse Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Dane County Regional Airport","alternativeNames":["Truax Field"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"General Mitchell International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Central Wisconsin Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Rhinelander-Oneida County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Capitol Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Kenosha Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
 
   ]
 }
