@@ -6211,7 +6211,15 @@
     {"name":"Banff Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Banff Mineral Springs Heliport","alternativeNames":["Banff Mineral Springs Hospital Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Banff Park Compound Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Barrhead Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Barrhead Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Barrhead Healthcare Centre Heliport","alternativeNames":["Barrhead Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Bashaw Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Bassano Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Bassano Heliport","alternativeNames":["Bassano Health Centre Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Bawlf Airport","alternativeNames":["Bawlf Blackwells Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Beaverlodge Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Beaverlodge/Clanachan Aerodrome","alternativeNames":["Beaverlodge Clanachan Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Beiseker Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
