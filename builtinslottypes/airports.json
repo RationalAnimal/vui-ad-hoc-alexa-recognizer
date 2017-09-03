@@ -6133,7 +6133,15 @@
     {"name":"North Big Horn County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
     {"name":"Dixon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
     {"name":"Converse County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
-    {"name":"Dubois Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"}
+    {"name":"Dubois Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Evanston-Uinta County Airport","alternativeNames":["Evanston Uinta County Airport", "Burns Field"],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Fort Bridger Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"South Big Horn County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Hulett Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Kemmerer Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Hunt Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Lusk Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Mondell Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"}
 
   ]
 }
