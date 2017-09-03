@@ -6347,7 +6347,15 @@
     {"name":"Glendon Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Gordon Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Grande Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Grande Cache Community Health Complex Heliport","alternativeNames":["Grande Cache Heliport"],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Grande Cache Community Health Complex Heliport","alternativeNames":["Grande Cache Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Grande Prairie Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Grande Prairie Forestry Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Grande Prairie Queen Elizabeth II Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Grimshaw Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Twin Island Airpark","alternativeNames":["Edmonton Twin Island Airpark"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Hanna Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Hanna Heliport","alternativeNames":["Hanna District Ambulance Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Hardisty Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
