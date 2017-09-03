@@ -6163,7 +6163,11 @@
     {"name":"F. E. Warren Air Force Base","alternativeNames":["F.E. Warren Air Force Base", "F E Warren Air Force Base", "FE Warren Air Force Base", "Warren Air Force Base"],"priorNames":[],"country":"united states","state":"wyoming"},
     {"name":"A-A Ranch Airport","alternativeNames":["A A Ranch Airport", "AA Ranch Airport"],"priorNames":[],"country":"united states","state":"wyoming"},
     {"name":"Wardwell Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
-    {"name":"Douglas Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"}
+    {"name":"Douglas Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Pago Pago International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"american samoa"},
+    {"name":"Fitiuta Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"american samoa"},
+    {"name":"Ofu Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"american samoa"},
+    {"name":"Tau Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"american samoa"}
 
   ]
 }
