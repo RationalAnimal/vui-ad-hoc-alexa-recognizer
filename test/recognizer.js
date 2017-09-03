@@ -2863,6 +2863,90 @@ describe("domain parsing", function() {
       });
     });
 
+    it("verify built in basic read/write state accessor's getState function works", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let accessorInstance = new accessor(applicationState);
+
+      let result = accessorInstance.getState("selectthis");
+      expect(result).to.eql({"flow": "TEST_FLOW"});
+    });
+
+    it("verify built in basic read/write state accessor's setState function works", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let accessorInstance = new accessor(applicationState);
+
+      accessorInstance.setState("selectthis", {"flow": "NEW_FLOW"});
+      expect(applicationState).to.eql({
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "NEW_FLOW"
+        }
+      });
+    });
+
+    it("verify built in basic read/write state accessor's setStateChain function works", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "somethingelse": {
+          "selectthis": {
+            "flow": "TEST_FLOW"
+          }
+        }
+      };
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let accessorInstance = new accessor(applicationState);
+      accessorInstance.setStateChain(["somethingelse", "selectthis"], {"flow": "NEW_FLOW"});
+      expect(applicationState).to.eql({
+        "something": "this is not relevant",
+        "somethingelse": {
+          "selectthis": {
+            "flow": "NEW_FLOW"
+          }
+        }
+      });
+    });
+
+    it("verify built in basic read/write state accessor's mergeReplaceState function works", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "somethingelse": {
+          "keepthis": {
+            "oldstuff": "was here before the call"
+          },
+          "replacethis": {
+            "flow": "TEST_FLOW"
+          }
+
+        }
+      };
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let accessorInstance = new accessor(applicationState);
+      accessorInstance.setStateChain(["somethingelse"], {"replacethis": {"flow": "NEW_FLOW"}, "addthis": {"newstuff": "added by mergeReplaceState call"}});
+      expect(applicationState).to.eql({
+        "something": "this is not relevant",
+        "somethingelse": {
+          "addthis": {
+            "newstuff": "added by mergeReplaceState call"
+          },
+          "replacethis": {
+            "flow": "NEW_FLOW"
+          }
+        }
+      });
+    });
+
     it("verify built in simple state accessor's getState function works", function () {
       let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let applicationState = {
