@@ -6267,7 +6267,15 @@
     {"name":"Carway/Grizzly Creek Ranch Heliport","alternativeNames":["Carway Grizzly Creek Ranch Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Castor Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Castor Heliport","alternativeNames":["Castor Our Lady of the Rosary Hospital Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Cayley/A. J. Flying Ranch Airport","alternativeNames":["Cayley A. J. Flying Ranch Airport", "Cayley/A J Flying Ranch Airport", "Cayley A J Flying Ranch Airport"],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Cayley/A. J. Flying Ranch Airport","alternativeNames":["Cayley A. J. Flying Ranch Airport", "Cayley/A J Flying Ranch Airport", "Cayley A J Flying Ranch Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Cheadle Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Chestermere Airport","alternativeNames":["Chestermere Kirkby Field Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Chipewyan Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Chipman Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Christina Basin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Christina Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Claresholm General Hospital Heliport","alternativeNames":["Claresholm Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Claresholm Industrial Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
