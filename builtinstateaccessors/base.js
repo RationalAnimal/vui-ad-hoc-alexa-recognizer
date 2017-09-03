@@ -41,10 +41,6 @@ let _setStateChain = function(someKeyArray, newValue){
   // NOOP
 };
 
-let _replaceState = function(newState){
-  // NOOP
-};
-
 let _mergeReplaceState = function(newState, keyArray) {
   // NOOP
 };
@@ -71,8 +67,5 @@ accessor.prototype.setStateChain = _setStateChain;
 
 accessor.mergeReplaceState = _mergeReplaceState;
 accessor.prototype.mergeReplaceState = _mergeReplaceState;
-
-accessor.replaceState = _replaceState;
-accessor.prototype.replaceState = _replaceState;
 
 module.exports = accessor;
