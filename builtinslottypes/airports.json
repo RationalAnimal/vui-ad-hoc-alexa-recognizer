@@ -6315,7 +6315,15 @@
     {"name":"Edmonton Royal Alexandra Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Edmonton/Sturgeon Community Hospital","alternativeNames":["Edmonton Sturgeon Community Hospital"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Edmonton/University of Alberta Heliport","alternativeNames":["Edmonton University of Alberta Stollery Children's Hospital Heliport", "Edmonton University of Alberta Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Edra Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Edra Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edson Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Elk Point Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Elk Point Healthcare Centre Heliport","alternativeNames":["Elk Point Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Empress Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Empress/McNeill Spectra Energy Aerodrome","alternativeNames":["Empress McNeill Spectra Energy Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fairview Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fontas Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Foremost Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
