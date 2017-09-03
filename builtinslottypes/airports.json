@@ -6259,7 +6259,15 @@
     {"name":"Camrose Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Camrose Marek Farms Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Camrose St. Mary's Hospital Heliport","alternativeNames":["Camrose St Mary's Hospital Heliport", "Camrose Saint Mary's Hospital Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Canmore Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Canmore Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Canmore Municipal Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Canmore Nakoda Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Cardston Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Carstairs Bishell's Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Carway/Grizzly Creek Ranch Heliport","alternativeNames":["Carway Grizzly Creek Ranch Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Castor Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Castor Heliport","alternativeNames":["Castor Our Lady of the Rosary Hospital Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Cayley/A. J. Flying Ranch Airport","alternativeNames":["Cayley A. J. Flying Ranch Airport", "Cayley/A J Flying Ranch Airport", "Cayley A J Flying Ranch Airport"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
