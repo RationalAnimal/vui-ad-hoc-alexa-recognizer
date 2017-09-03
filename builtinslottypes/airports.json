@@ -6369,7 +6369,15 @@
     {"name":"Hinton/Jasper-Hinton Airport","alternativeNames":["Hinton Jasper-Hinton Airport", "Jasper-Hinton Airport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Indus/Winters Aire Park Airport","alternativeNames":["Indus Winters Aire Park Airport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Innisfail Aerodrome","alternativeNames":["Big Bend Airport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Innisfail Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Innisfail Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Irma Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Janvier Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Jasper Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Jean Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"John D'Or Prairie Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Johnson Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Josephburg Aerodrome","alternativeNames":["Edmonton Josephburg Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Kananaskis Village Helistop Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
