@@ -6291,7 +6291,15 @@
     {"name":"Coutts/Ross International Airport","alternativeNames":["Coutts Ross International Airport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Cowley Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Daysland Health Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"DeBolt Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"DeBolt Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Del Bonita/Whetstone International Airport","alternativeNames":["Del Bonita Whetstone International Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"De Winton Highwood Heliport","alternativeNames":["De Winton Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"De Winton/South Calgary Airport","alternativeNames":["De Winton South Calgary Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Didsbury/Minty Field Aerodrome","alternativeNames":["Didsbury Minty Field Aerodrome", "Minty Field Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Doig Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Donnelly Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Drayton Valley Health Centre Heliport","alternativeNames":["Drayton Valley Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Drayton Valley Industrial Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
