@@ -6323,7 +6323,15 @@
     {"name":"Empress/McNeill Spectra Energy Aerodrome","alternativeNames":["Empress McNeill Spectra Energy Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Fairview Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Fontas Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Foremost Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Foremost Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Forestburg Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort Chipewyan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort MacKay/Albian Aerodrome","alternativeNames":["Fort MacKay Albian Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort MacKay/Firebag Aerodrome","alternativeNames":["Fort MacKay Firebag Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort MacKay/Horizon Airport","alternativeNames":["Fort MacKay Horizon Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort Macleod Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort Macleod Alcock Farm Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort Macleod Hospital Heliport","alternativeNames":["Fort Macleod Heliport"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
