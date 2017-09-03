@@ -6167,7 +6167,11 @@
     {"name":"Pago Pago International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"american samoa"},
     {"name":"Fitiuta Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"american samoa"},
     {"name":"Ofu Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"american samoa"},
-    {"name":"Tau Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"american samoa"}
+    {"name":"Tau Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"american samoa"},
+    {"name":"Antonio B. Won Pat International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"guam"},
+    {"name":"Andersen Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"guam"},
+    {"name":"Orote Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"guam"},
+    {"name":"Northwest Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"guam"}
 
   ]
 }
