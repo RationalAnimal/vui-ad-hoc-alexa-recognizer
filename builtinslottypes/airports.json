@@ -6141,7 +6141,18 @@
     {"name":"Kemmerer Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
     {"name":"Hunt Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
     {"name":"Lusk Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
-    {"name":"Mondell Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"}
+    {"name":"Mondell Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Pine Bluffs Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Ralph Wenz Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Powell Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Rawlins Municipal Airport","alternativeNames":["Harvey Field"],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Shively Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Hot Springs County-Thermopolis Municipal Airport","alternativeNames":["Hot Springs County Thermopolis Municipal Airport", "Thermopolis Municipal Airport"],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Torrington Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Phifer Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Worland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Alpine Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Harford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"}
 
   ]
 }
