@@ -6355,7 +6355,15 @@
     {"name":"Edmonton/Twin Island Airpark","alternativeNames":["Edmonton Twin Island Airpark"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Hanna Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Hanna Heliport","alternativeNames":["Hanna District Ambulance Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Hardisty Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Hardisty Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Hardisty Heliport","alternativeNames":["Hardisty Health Centre Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Hespero Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Hespero Heliport","alternativeNames":["Hespero/Safron Residence Heliport", "Hespero Safron Residence Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"High Level Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"High Level/Footner Lake Water Aerodrome","alternativeNames":["High Level Footner Lake Water Aerodrome", "High Level Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"High Prairie Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"High River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"High River Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
