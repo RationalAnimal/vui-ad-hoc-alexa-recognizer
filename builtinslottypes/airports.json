@@ -6175,7 +6175,12 @@
     {"name":"Johnston Atoll Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minor islands"},
     {"name":"Henderson Field","alternativeNames":["Midway Atoll Field"],"priorNames":[],"country":"united states","state":"minor islands"},
     {"name":"Palmyra Airport","alternativeNames":["Cooper Airport"],"priorNames":[],"country":"united states","state":"minor islands"},
-    {"name":"Wake Island Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"minor islands"}
+    {"name":"Wake Island Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"minor islands"},
+    {"name":"Saipan International Airport","alternativeNames":["Francisco C. Ada Airport", "Francisco C Ada Airport", "Francisco Ada Airport"],"priorNames":[],"country":"united states","state":"northern mariana islands"},
+    {"name":"Rota International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"northern mariana islands"},
+    {"name":"Tinian International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"northern mariana islands"},
+    {"name":"Pagan Airstrip","alternativeNames":[],"priorNames":[],"country":"united states","state":"northern mariana islands"},
+    {"name":"North Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"northern mariana islands"}
 
   ]
 }
