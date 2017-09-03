@@ -6071,7 +6071,19 @@
     {"name":"Boulder Junction Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Brodhead Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Camp Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
-    {"name":"Cassville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
+    {"name":"Cassville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Chetek Municipal-Southworth Airport","alternativeNames":["Chetek Municipal Southworth Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Cornell Municipal Airport","alternativeNames":["Cornell Airpark"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Silver Lake Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Lake Lawn Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Eau Claire Lakes Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Jana Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Elroy Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Cindy Guntly Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Vincent Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Foxair Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Central County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Bayfield County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
 
   ]
 }
