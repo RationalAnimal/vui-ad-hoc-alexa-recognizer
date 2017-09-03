@@ -140,10 +140,6 @@ let _mergeReplaceState = function(keyArray, newState){
   }
 };
 
-let _replaceState = function(keyArray, newState){
-  _setStateChain(keyArray, newState);
-};
-
 let base = require("./baseobject.js");
 let accessor =  function(applicationState) {
   base.call(this, applicationState);
@@ -161,8 +157,5 @@ accessor.prototype.setStateChain = _setStateChain;
 
 accessor.mergeReplaceState = _mergeReplaceState;
 accessor.prototype.mergeReplaceState = _mergeReplaceState;
-
-accessor.replaceState = _replaceState;
-accessor.prototype.replaceState = _replaceState;
 
 module.exports = accessor;
