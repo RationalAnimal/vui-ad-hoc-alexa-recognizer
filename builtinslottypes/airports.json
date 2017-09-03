@@ -6299,7 +6299,15 @@
     {"name":"Doig Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Donnelly Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Drayton Valley Health Centre Heliport","alternativeNames":["Drayton Valley Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Drayton Valley Industrial Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Drayton Valley Industrial Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Drumheller Heliport","alternativeNames":["Drumheller Health Centre Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Drumheller Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Drumheller/Ostergard's Airport","alternativeNames":["Drumheller Ostergard's Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Eaglesham South Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Gartner Airport","alternativeNames":["Edmonton Gartner Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Grey Nuns Community Hospital Heliport","alternativeNames":["Edmonton Grey Nuns Community Hospital Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Kelsonae Heliport","alternativeNames":["Edmonton Kelsonae Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Lechelt Field Aerodrome","alternativeNames":["Edmonton Lechelt Field Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
