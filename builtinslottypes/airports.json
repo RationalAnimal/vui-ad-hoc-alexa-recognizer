@@ -6275,7 +6275,15 @@
     {"name":"Christina Basin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Christina Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Claresholm General Hospital Heliport","alternativeNames":["Claresholm Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Claresholm Industrial Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Claresholm Industrial Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Clearwater River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Cline River Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Coaldale Rednek Air Aerodrome","alternativeNames":["Coaldale Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Cochrane/Arkayla Springs Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"CFB Cold Lake Airport","alternativeNames":["Cold Lake/Group Captain R.W. McNair Airport", "Cold Lake Group Captain R. W. McNair Airport", "Cold LakeGroup Captain R W McNair Airport", "Cold LakeGroup Captain McNair Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Cold Lake Healthcare Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Cold Lake Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Conklin Leismer Airport","alternativeNames":["Conklin Airport"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
