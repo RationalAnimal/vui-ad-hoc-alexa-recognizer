@@ -6243,7 +6243,15 @@
     {"name":"Calgary Aerial Recon Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Calgary Alberta Children's Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Calgary Blue Con Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Calgary Bow Crow Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Calgary Bow Crow Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary City Bow River Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary Eastlake Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary Elephant Enterprises Inc. Heliport","alternativeNames":["Calgary Elephant Enterprises Inc Heliport", "Calgary Elephant Enterprises Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary Foothills Hospital McCaig Tower Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary K. Coffey Residence Heliport","alternativeNames":["Calgary K Coffey Residence Heliport", "Calgary Coffey Residence Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary Peter Lougheed Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary Rockyview Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary South Health Campus Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
