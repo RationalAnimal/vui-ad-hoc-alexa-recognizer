@@ -6083,7 +6083,16 @@
     {"name":"Vincent Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Foxair Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Central County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
-    {"name":"Bayfield County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
+    {"name":"Bayfield County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Franks Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Grand Geneva Resort Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Blackhawk Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Necedah Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Brennand Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Valhalla Airport","alternativeNames":["Valhalla Field"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Sweetwater Bay Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Prentice Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Carter Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
 
   ]
 }
