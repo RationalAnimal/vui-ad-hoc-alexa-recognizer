@@ -6171,7 +6171,11 @@
     {"name":"Antonio B. Won Pat International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"guam"},
     {"name":"Andersen Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"guam"},
     {"name":"Orote Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"guam"},
-    {"name":"Northwest Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"guam"}
+    {"name":"Northwest Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"guam"},
+    {"name":"Johnston Atoll Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"minor islands"},
+    {"name":"Henderson Field","alternativeNames":["Midway Atoll Field"],"priorNames":[],"country":"united states","state":"minor islands"},
+    {"name":"Palmyra Airport","alternativeNames":["Cooper Airport"],"priorNames":[],"country":"united states","state":"minor islands"},
+    {"name":"Wake Island Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"minor islands"}
 
   ]
 }
