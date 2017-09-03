@@ -6227,7 +6227,15 @@
     {"name":"Black Diamond Cu Nim Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Black Diamond Flying R Ranch Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Blackie Wilderman Farm Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Blairmore Crowsnest Pass Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Blairmore Crowsnest Pass Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Blairmore Forestry Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Bonnyville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Bonnyville Health Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Bottrel/Anchor 9 Ranch Aerodrome","alternativeNames":["Bottrel Anchor 9 Ranch Aerodrome", "Bottrel Anchor nine Ranch Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Bow Island Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Boyle Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Boyle Heliport","alternativeNames":["Boyle Healthcare Centre Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Brant Dixon Farm Airport","alternativeNames":["Brant Airport"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
