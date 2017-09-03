@@ -6339,7 +6339,15 @@
     {"name":"Fort McMurray South Liege Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Fort McMurray Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Fort Saskatchewan Heliport","alternativeNames":["Fort Saskatchewan General Hospital Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Fort Vermilion Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Fort Vermilion Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort Vermilion/Country Gardens B&B Heliport","alternativeNames":["Fort Vermilion Country Gardens B&B Heliport", "Fort Vermilion/Country Gardens B n B Heliport", "Fort Vermilion Country Gardens B n B Heliport", "Fort Vermilion/Country Gardens B and B Heliport", "Fort Vermilion Country Gardens B and B Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fox Creek Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fox Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Garden River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Glendon Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Gordon Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Grande Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Grande Cache Community Health Complex Heliport","alternativeNames":["Grande Cache Heliport"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
