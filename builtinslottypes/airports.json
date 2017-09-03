@@ -6203,7 +6203,16 @@
     {"name":"Cyril E. King Airport","alternativeNames":["Cyril E King Airport", "Cyril King Airport"],"priorNames":[],"country":"united states","state":"virgin islands"},
     {"name":"Henry E. Rohlsen Airport","alternativeNames":["Henry E Rohlsen Airport", "Henry Rohlsen Airport"],"priorNames":[],"country":"united states","state":"virgin islands"},
     {"name":"Charlotte Amalie Harbor Seaplane Base","alternativeNames":["Saint Thomas sea plane base"],"priorNames":[],"country":"united states","state":"virgin islands"},
-    {"name":"Christiansted Harbor Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"virgin islands"}
+    {"name":"Christiansted Harbor Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"virgin islands"},
+    {"name":"Airdrie Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Alhambra/Ahlstrom Aerodrome","alternativeNames":["Alhambra Ahlstrom Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Athabasca Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Anzac Long Lake Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Banff Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Banff Mineral Springs Heliport","alternativeNames":["Banff Mineral Springs Hospital Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Banff Park Compound Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Barrhead Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+
 
   ]
 }
