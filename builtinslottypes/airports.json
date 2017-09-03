@@ -6251,7 +6251,15 @@
     {"name":"Calgary K. Coffey Residence Heliport","alternativeNames":["Calgary K Coffey Residence Heliport", "Calgary Coffey Residence Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Calgary Peter Lougheed Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Calgary Rockyview Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Calgary South Health Campus Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Calgary South Health Campus Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary Springbank Airport","alternativeNames":["Springbank Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calling Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton Calmar Aerodrome","alternativeNames":["Edmonton Calmar Maplelane Farm Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calmar Wizard Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Camrose Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Camrose Marek Farms Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Camrose St. Mary's Hospital Heliport","alternativeNames":["Camrose St Mary's Hospital Heliport", "Camrose Saint Mary's Hospital Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Canmore Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
