@@ -6199,7 +6199,11 @@
     {"name":"San Juan Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
     {"name":"Ramey Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
     {"name":"Roosevelt Roads Naval Station","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
-    {"name":"Dorado Airport","alternativeNames":["Dorado Beach Airport"],"priorNames":[],"country":"united states","state":"puerto rico"}
+    {"name":"Dorado Airport","alternativeNames":["Dorado Beach Airport"],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Cyril E. King Airport","alternativeNames":["Cyril E King Airport", "Cyril King Airport"],"priorNames":[],"country":"united states","state":"virgin islands"},
+    {"name":"Henry E. Rohlsen Airport","alternativeNames":["Henry E Rohlsen Airport", "Henry Rohlsen Airport"],"priorNames":[],"country":"united states","state":"virgin islands"},
+    {"name":"Charlotte Amalie Harbor Seaplane Base","alternativeNames":["Saint Thomas sea plane base"],"priorNames":[],"country":"united states","state":"virgin islands"},
+    {"name":"Christiansted Harbor Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"virgin islands"}
 
   ]
 }
