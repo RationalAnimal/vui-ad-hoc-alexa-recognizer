@@ -6057,7 +6057,21 @@
     {"name":"Sparta/Fort McCoy Airport","alternativeNames":["Sparta Fort McCoy Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Stevens Point Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Door County Cherryland Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
-    {"name":"Richard I. Bong Airport","alternativeNames":["Richard I Bong Airport", "Richard Bong Airport"],"priorNames":[],"country":"united states","state":"wisconsin"}
+    {"name":"Richard I. Bong Airport","alternativeNames":["Richard I Bong Airport", "Richard Bong Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Tomahawk Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Viroqua Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Washington Island Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Watertown Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Waupaca Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Wausau Downtown Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Wautoma Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"South Wood County Airport","alternativeNames":["Alexander Field"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Barron Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Beloit Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Boulder Junction Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Brodhead Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Camp Lake Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Cassville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
 
   ]
 }
