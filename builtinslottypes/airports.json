@@ -6125,7 +6125,15 @@
     {"name":"Jackson Hole Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
     {"name":"Riverton Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
     {"name":"Rock Springs-Sweetwater County Airport","alternativeNames":["Rock Springs Sweetwater County Airport"],"priorNames":[],"country":"united states","state":"wyoming"},
-    {"name":"Sheridan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"}
+    {"name":"Sheridan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Laramie Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Afton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Miley Memorial Field","alternativeNames":[],"priorNames":["Big Piney / Marbleton Field", "Big Piney Marbleton Field", "Marbleton Field", "Big Piney Field"],"country":"united states","state":"wyoming"},
+    {"name":"Johnson County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"North Big Horn County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Dixon Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Converse County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Dubois Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"}
 
   ]
 }
