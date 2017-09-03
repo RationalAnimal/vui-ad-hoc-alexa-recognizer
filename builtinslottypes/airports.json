@@ -6283,7 +6283,15 @@
     {"name":"CFB Cold Lake Airport","alternativeNames":["Cold Lake/Group Captain R.W. McNair Airport", "Cold Lake Group Captain R. W. McNair Airport", "Cold LakeGroup Captain R W McNair Airport", "Cold LakeGroup Captain McNair Airport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Cold Lake Healthcare Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Cold Lake Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Conklin Leismer Airport","alternativeNames":["Conklin Airport"],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Conklin Leismer Airport","alternativeNames":["Conklin Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Consort Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Consort Heliport","alternativeNames":["Consort Health Centre Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Coronation Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Coronation Health Centre Heliport","alternativeNames":["Coronation Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Coutts/Ross International Airport","alternativeNames":["Coutts Ross International Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Cowley Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Daysland Health Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"DeBolt Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
