@@ -6180,7 +6180,16 @@
     {"name":"Rota International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"northern mariana islands"},
     {"name":"Tinian International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"northern mariana islands"},
     {"name":"Pagan Airstrip","alternativeNames":[],"priorNames":[],"country":"united states","state":"northern mariana islands"},
-    {"name":"North Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"northern mariana islands"}
+    {"name":"North Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"northern mariana islands"},
+    {"name":"Rafael Hernández International Airport","alternativeNames":["Rafael Hernandez International Airport"],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"José Aponte de la Torre Airport","alternativeNames":["Jose Aponte de la Torre Airport"],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Mercedita International Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Luis Muñoz Marín International Airport","alternativeNames":["Luis Munoz Marin International Airport"],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Fernando Luis Ribas Dominicci Airport","alternativeNames":["Isla Grande Airport"],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Antonio Rivera Rodríguez Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Benjamín Rivera Noriega Airport","alternativeNames":["Benjamin Rivera Noriega Airport"],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Eugenio María de Hostos Airport","alternativeNames":["Eugenio Maria de Hostos Airport"],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Antonio Juarbe Pol Airport","alternativeNames":["Antonio Nery Juarbe Pol Airport"],"priorNames":[],"country":"united states","state":"puerto rico"}
 
   ]
 }
