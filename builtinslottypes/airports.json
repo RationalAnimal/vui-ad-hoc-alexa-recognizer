@@ -6307,7 +6307,15 @@
     {"name":"Edmonton/Gartner Airport","alternativeNames":["Edmonton Gartner Airport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Edmonton/Grey Nuns Community Hospital Heliport","alternativeNames":["Edmonton Grey Nuns Community Hospital Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Edmonton/Kelsonae Heliport","alternativeNames":["Edmonton Kelsonae Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Edmonton/Lechelt Field Aerodrome","alternativeNames":["Edmonton Lechelt Field Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Edmonton/Lechelt Field Aerodrome","alternativeNames":["Edmonton Lechelt Field Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Misericordia Community Hospital Heliport","alternativeNames":["Edmonton Misericordia Community Hospital Heliport", "Edmonton/Misericordia Heliport", "Edmonton Misericordia Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Morinville Currie Field Aerodrome","alternativeNames":["Edmonton Morinville Currie Field Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Morinville Mike's Field Aerodrome","alternativeNames":["Edmonton Morinville Mike's Field Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Namao Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton Royal Alexandra Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Sturgeon Community Hospital","alternativeNames":["Edmonton Sturgeon Community Hospital"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/University of Alberta Heliport","alternativeNames":["Edmonton University of Alberta Stollery Children's Hospital Heliport", "Edmonton University of Alberta Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edra Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
