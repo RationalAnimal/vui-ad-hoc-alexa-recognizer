@@ -6100,7 +6100,15 @@
     {"name":"Nest of Eagles Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Quam's Marina Seaplane Base","alternativeNames":["Quams Marina Seaplane Base"],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Sylvania Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
-    {"name":"Piso Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
+    {"name":"Piso Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Three Lakes Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Bloyer Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Verona Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Big Foot Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Waunakee Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Hahn Sky Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Gutzmer's Twin Oaks Airport","alternativeNames":["Gutzmers Twin Oaks Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Wild Rose Idlewild Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
 
   ]
 }
