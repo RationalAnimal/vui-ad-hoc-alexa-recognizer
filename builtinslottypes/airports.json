@@ -6152,7 +6152,18 @@
     {"name":"Phifer Airfield","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
     {"name":"Worland Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
     {"name":"Alpine Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
-    {"name":"Harford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"}
+    {"name":"Harford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Cokeville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Thomas Memorial Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Greater Green River Intergalactic Spaceport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Camp Guernsey Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Medicine Bow Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Shoshoni Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Upton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"F. E. Warren Air Force Base","alternativeNames":["F.E. Warren Air Force Base", "F E Warren Air Force Base", "FE Warren Air Force Base", "Warren Air Force Base"],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"A-A Ranch Airport","alternativeNames":["A A Ranch Airport", "AA Ranch Airport"],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Wardwell Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Douglas Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"}
 
   ]
 }
