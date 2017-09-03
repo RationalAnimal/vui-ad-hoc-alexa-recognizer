@@ -6092,7 +6092,15 @@
     {"name":"Valhalla Airport","alternativeNames":["Valhalla Field"],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Sweetwater Bay Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Prentice Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
-    {"name":"Carter Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
+    {"name":"Carter Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Gilbert Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Fox River Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Shiocton Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"North Country Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Nest of Eagles Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Quam's Marina Seaplane Base","alternativeNames":["Quams Marina Seaplane Base"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Sylvania Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Piso Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
 
   ]
 }
