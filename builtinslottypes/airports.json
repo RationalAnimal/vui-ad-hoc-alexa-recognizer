@@ -6331,7 +6331,15 @@
     {"name":"Fort MacKay/Horizon Airport","alternativeNames":["Fort MacKay Horizon Airport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Fort Macleod Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Fort Macleod Alcock Farm Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Fort Macleod Hospital Heliport","alternativeNames":["Fort Macleod Heliport"],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Fort Macleod Hospital Heliport","alternativeNames":["Fort Macleod Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort McMurray International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort McMurray Legend Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort McMurray/Mildred Lake Airport","alternativeNames":["Fort McMurray Mildred Lake Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort McMurray North Liege Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort McMurray South Liege Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort McMurray Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort Saskatchewan Heliport","alternativeNames":["Fort Saskatchewan General Hospital Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Fort Vermilion Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
