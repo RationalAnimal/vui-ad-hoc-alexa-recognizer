@@ -6189,7 +6189,21 @@
     {"name":"Antonio Rivera Rodríguez Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
     {"name":"Benjamín Rivera Noriega Airport","alternativeNames":["Benjamin Rivera Noriega Airport"],"priorNames":[],"country":"united states","state":"puerto rico"},
     {"name":"Eugenio María de Hostos Airport","alternativeNames":["Eugenio Maria de Hostos Airport"],"priorNames":[],"country":"united states","state":"puerto rico"},
-    {"name":"Antonio Juarbe Pol Airport","alternativeNames":["Antonio Nery Juarbe Pol Airport"],"priorNames":[],"country":"united states","state":"puerto rico"}
+    {"name":"Antonio Juarbe Pol Airport","alternativeNames":["Antonio Nery Juarbe Pol Airport"],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Diego Jiménez Torres Airportt","alternativeNames":["Diego Jimenez Torres Airportt"],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Humacao Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Patillas Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Boquerón Airport","alternativeNames":["Boqueron Airport"],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Cullingford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Mona Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"San Juan Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Ramey Air Force Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Roosevelt Roads Naval Station","alternativeNames":[],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Dorado Airport","alternativeNames":["Dorado Beach Airport"],"priorNames":[],"country":"united states","state":"puerto rico"},
+    {"name":"Cyril E. King Airport","alternativeNames":["Cyril E King Airport", "Cyril King Airport"],"priorNames":[],"country":"united states","state":"virgin islands"},
+    {"name":"Henry E. Rohlsen Airport","alternativeNames":["Henry E Rohlsen Airport", "Henry Rohlsen Airport"],"priorNames":[],"country":"united states","state":"virgin islands"},
+    {"name":"Charlotte Amalie Harbor Seaplane Base","alternativeNames":["Saint Thomas sea plane base"],"priorNames":[],"country":"united states","state":"virgin islands"},
+    {"name":"Christiansted Harbor Seaplane Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"virgin islands"}
 
   ]
 }
