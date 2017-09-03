@@ -6108,7 +6108,16 @@
     {"name":"Waunakee Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Hahn Sky Ranch Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Gutzmer's Twin Oaks Airport","alternativeNames":["Gutzmers Twin Oaks Airport"],"priorNames":[],"country":"united states","state":"wisconsin"},
-    {"name":"Wild Rose Idlewild Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
+    {"name":"Wild Rose Idlewild Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Westosha Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Three Castles Airpark","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Volk Field Air National Guard Base","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Spiegel Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Pioneer Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Bed-ah-Wick Field","alternativeNames":["Bed ah Wick Field", "Bedawick Field"],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Dillenburg's Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Joshua Sanford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Rice Lake Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
 
   ]
 }
