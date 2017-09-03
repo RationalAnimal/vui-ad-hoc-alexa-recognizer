@@ -6117,7 +6117,15 @@
     {"name":"Bed-ah-Wick Field","alternativeNames":["Bed ah Wick Field", "Bedawick Field"],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Dillenburg's Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
     {"name":"Joshua Sanford Field","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
-    {"name":"Rice Lake Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"}
+    {"name":"Rice Lake Municipal Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wisconsin"},
+    {"name":"Casper/Natrona County International Airport","alternativeNames":["Casper Natrona County International Airport"],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Cheyenne Regional Airport","alternativeNames":["Jerry Olson Field"],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Yellowstone Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Gillette-Campbell County Airport","alternativeNames":["Gillette Campbell County Airport"],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Jackson Hole Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Riverton Regional Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Rock Springs-Sweetwater County Airport","alternativeNames":["Rock Springs Sweetwater County Airport"],"priorNames":[],"country":"united states","state":"wyoming"},
+    {"name":"Sheridan County Airport","alternativeNames":[],"priorNames":[],"country":"united states","state":"wyoming"}
 
   ]
 }
