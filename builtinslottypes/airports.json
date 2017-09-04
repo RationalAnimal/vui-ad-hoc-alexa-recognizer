@@ -6510,7 +6510,15 @@
     {"name":"Wetaskiwin Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Whitecourt Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Wildwood/Loche Mist Farms Aerodrome","alternativeNames":["Wildwood Loche Mist Farms Aerodrome", "Wildwood Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Zama Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Zama Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Abbotsford International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Abbotsford Regional Hospital and Cancer Centre Heliport","alternativeNames":["Abbotsford  Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Abbotsford Sumas Mountain Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Abbotsford Teck Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Alert Bay Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Alert Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Alice Arm/Silver City Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Alliford Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
