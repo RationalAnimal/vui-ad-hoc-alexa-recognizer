@@ -6409,7 +6409,15 @@
     {"name":"Mobil Bistcho Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Muskeg Tower Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Nampa/Hockey Aerodrome","alternativeNames":["Nampa Hockey Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Namur Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Namur Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Nordegg/Ahlstrom Heliport","alternativeNames":["Nordegg Ahlstrom Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary/Christiansen Field Aerodrome","alternativeNames":["Calgary Christiansen Field Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary/Okotoks Air Park","alternativeNames":["Calgary Okotoks Air Park"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary/Okotoks GG Ranch Heliport","alternativeNames":["Calgary Okotoks GG Ranch Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Calgary/Okotoks Rowland Field Aerodrome","alternativeNames":["Calgary/Okotoks Rowland Field", "Calgary Okotoks Rowland Field"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Olds-Didsbury Airport","alternativeNames":["Olds Didsbury Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Olds Hospital Heliport","alternativeNames":["Olds Heliport"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
