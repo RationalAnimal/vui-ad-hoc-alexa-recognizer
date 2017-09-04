@@ -33,6 +33,7 @@ var usage = function(){
 
 if (process.argv.length < 5) {
   usage();
+  console.log("EXITING 1");
   process.exit(1);
 }
 
@@ -41,6 +42,7 @@ let domainPath;
 let statePath;
 let outputState = false;
 
+let accessorSource;
 let stateAccessor;
 
 for(let i = 2; i < process.argv.length; i += 2){
@@ -64,21 +66,23 @@ for(let i = 2; i < process.argv.length; i += 2){
       switch (process.argv[i + 1]){
         case "basic":
           try{
-            stateAccessor = require("./builtinstateaccessors/basicstateaccessor.js");
+            accessorSource = require("./builtinstateaccessors/basic.js");
           }
           catch(e){
-            console.log("Unable to load basicstateaccessor.js, error: " + e);
+            console.log("Unable to load basic.js, error: " + e);
             usage();
+            console.log("EXITING 2");
             process.exit(1);
           }
           break;
         case "readonly":
           try{
-            stateAccessor = require("./builtinstateaccessors/readonlybasicstateaccessor.js");
+            accessorSource = require("./builtinstateaccessors/basicreadonly.js");
           }
           catch(e){
-            console.log("Unable to load readonlybasicstateaccessor.js, error: " + e);
+            console.log("Unable to load basicreadonly.js, error: " + e);
             usage();
+            console.log("EXITING 3");
             process.exit(1);
           }
           break;
@@ -88,12 +92,16 @@ for(let i = 2; i < process.argv.length; i += 2){
       break;
     default:
       usage();
+      console.log("EXITING 4");
+
       process.exit(1);
   }
 }
 
 if(typeof domainPath === "undefined" || typeof statePath === "undefined"){
   usage();
+  console.log("EXITING 5");
+
   process.exit(1);
 }
 
@@ -109,6 +117,8 @@ catch(e){
   catch(e2){
     console.log("Unable to load specified domain, error: " + e);
     usage();
+    console.log("EXITING 6");
+
     process.exit(1);
   }
 }
@@ -125,17 +135,25 @@ catch(e){
   catch(e2){
     console.log("Unable to load specified state, error: " + e);
     usage();
+    console.log("EXITING 7");
+
     process.exit(1);
   }
 }
 
+if(typeof accessorSource !== "undefined" && accessorSource != null){
+  stateAccessor = new accessorSource(state);
+}
 if(typeof stateAccessor === "undefined" || stateAccessor === null){
   try{
-    stateAccessor = require("./builtinstateaccessors/basicstateaccessor.js");
+    accessorSource = require("./builtinstateaccessors/basic.js");
+    stateAccessor = new accessorSource(state);
   }
   catch(e){
-    console.log("Unable to load basicstateaccessor.js, error: " + e);
+    console.log("Unable to load basic.js, error: " + e);
     usage();
+    console.log("EXITING 8");
+
     process.exit(1);
   }
 }

@@ -1591,15 +1591,9 @@ Where the contents of "./test/greetingdomain/customresponderfunction.js" are:
 ```javascript
 'use strict';
 
-let _responderFunction = function( intent, stateAccessor, selectorArray, state){
-  console.log("START of logging from customresponderfunction.js");
-  console.log("intent:", JSON.stringify(intent));
-  console.log("stateAccessor:", JSON.stringify(stateAccessor));
-  console.log("selectorArray:", JSON.stringify(selectorArray));
-  console.log("state:", JSON.stringify(state));
-  console.log("END of logging from customresponderfunction.js");
+let _responderFunction = function(intent, stateAccessor, selectorArray){
   if(intent === "GreetingIntent"){
-    stateAccessor.mergeReplaceState(state, {"customfunctionmodulewasrun": "true"}, selectorArray);
+    stateAccessor.mergeReplaceState(selectorArray, {"customfunctionmodulewasrun": "true"});
     return {
       "text": "Hi from the custom function module"
     };

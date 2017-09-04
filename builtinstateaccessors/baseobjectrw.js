@@ -74,7 +74,12 @@ let _setState = function(key, newValue){
         return;
       }
     }
-    result[keyArray[keyArray.length - 1]] = newValue;
+    if(typeof newValue === "undefined" || newValue === null){
+      delete result[keyArray[keyArray.length - 1]];
+    }
+    else {
+      result[keyArray[keyArray.length - 1]] = newValue;
+    }
   }
 };
 
@@ -93,6 +98,7 @@ let _setStateChain = function(keyArray, newValue){
       }
     }
   }
+
   if(unfoldedKeys.length > 0){
     let result = state;
     for(let i = 0; i < unfoldedKeys.length - 1; i++){
@@ -101,7 +107,12 @@ let _setStateChain = function(keyArray, newValue){
         return;
       }
     }
-    result[keyArray[keyArray.length - 1]] = newValue;
+    if(typeof newValue === "undefined" || newValue === null){
+      delete result[keyArray[keyArray.length - 1]];
+    }
+    else {
+      result[keyArray[keyArray.length - 1]] = newValue;
+    }
   }
 };
 
@@ -110,7 +121,6 @@ let _mergeReplaceState = function(keyArray, newState){
   if(typeof state === "undefined" || state === null){
     return;
   }
-  let objectToUpdate = state;
   if(typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) === false || keyArray.length === 0){
     // Nothing to do for now
   }
@@ -136,7 +146,7 @@ let _mergeReplaceState = function(keyArray, newState){
   for(let i = 0; i < newProperties.length; i ++){
     let scratchKeyArray = [].concat(keyArray);
     scratchKeyArray.push(newProperties[i]);
-    _setStateChain(scratchKeyArray, newState[newProperties[i]]);
+    _setStateChain.call(this, scratchKeyArray, newState[newProperties[i]]);
   }
 };
 
