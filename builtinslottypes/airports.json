@@ -6490,7 +6490,16 @@
     {"name":"Vermilion Health Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Viking Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Viking Health Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Viking South Aerodrome","alternativeNames":["Viking Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Viking South Aerodrome","alternativeNames":["Viking Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Villeneuve Airport","alternativeNames":["Edmonton Villeneuve Airport", "Villeneuve Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Villeneuve Rose Field Aerodrome","alternativeNames":["Edmonton/Villeneuve Aerodrome", "Edmonton Villeneuve Rose Field Aerodrome", "Edmonton Villeneuve Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Vulcan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Vulcan Hospital Heliport","alternativeNames":["Vulcan Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Vulcan/Kirkcaldy Aerodrome","alternativeNames":["Vulcan Kirkcaldy Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Wabasca Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Pelican Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Wainwright Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Wainwright/Camp Wainwright Field Airport","alternativeNames":["Camp Wainwright Field Airport", "Wainwright Field Airport"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
