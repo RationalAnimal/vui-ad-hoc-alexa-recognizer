@@ -6534,7 +6534,15 @@
     {"name":"Blind Channel Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Blue River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Bob Quinn Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Burns Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Burns Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Burns Lake LD Air Water Aerodrome","alternativeNames":["Burns Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Cache Creek Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Campbell River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Campbell River E and B Helicopters Heliport","alternativeNames":["Campbell River E and B Helicopters Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Campbell River Water Aerodrome","alternativeNames":["Campbell River Harbour Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Camp Cordero Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Castlegar Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Castlegar Tarrys Convention Centre Heliport","alternativeNames":["Castlegar Heliport"],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
