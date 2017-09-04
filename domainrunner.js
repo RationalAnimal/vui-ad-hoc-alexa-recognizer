@@ -33,7 +33,6 @@ var usage = function(){
 
 if (process.argv.length < 5) {
   usage();
-  console.log("EXITING 1");
   process.exit(1);
 }
 
@@ -71,7 +70,6 @@ for(let i = 2; i < process.argv.length; i += 2){
           catch(e){
             console.log("Unable to load basic.js, error: " + e);
             usage();
-            console.log("EXITING 2");
             process.exit(1);
           }
           break;
@@ -82,7 +80,6 @@ for(let i = 2; i < process.argv.length; i += 2){
           catch(e){
             console.log("Unable to load basicreadonly.js, error: " + e);
             usage();
-            console.log("EXITING 3");
             process.exit(1);
           }
           break;
@@ -92,16 +89,12 @@ for(let i = 2; i < process.argv.length; i += 2){
       break;
     default:
       usage();
-      console.log("EXITING 4");
-
       process.exit(1);
   }
 }
 
 if(typeof domainPath === "undefined" || typeof statePath === "undefined"){
   usage();
-  console.log("EXITING 5");
-
   process.exit(1);
 }
 
@@ -117,8 +110,6 @@ catch(e){
   catch(e2){
     console.log("Unable to load specified domain, error: " + e);
     usage();
-    console.log("EXITING 6");
-
     process.exit(1);
   }
 }
@@ -135,8 +126,6 @@ catch(e){
   catch(e2){
     console.log("Unable to load specified state, error: " + e);
     usage();
-    console.log("EXITING 7");
-
     process.exit(1);
   }
 }
@@ -152,8 +141,6 @@ if(typeof stateAccessor === "undefined" || stateAccessor === null){
   catch(e){
     console.log("Unable to load basic.js, error: " + e);
     usage();
-    console.log("EXITING 8");
-
     process.exit(1);
   }
 }
