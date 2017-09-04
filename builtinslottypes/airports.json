@@ -6473,7 +6473,15 @@
     {"name":"Swan Hills Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Taber Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Taber Health Centre Heliport","alternativeNames":["Taber Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Teepee Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Teepee Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Three Hills Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Three Hills Hospital Heliport","alternativeNames":["Three Hills Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Tofield Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Tofield Health Centre Heliport","alternativeNames":["Tofield Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Trout Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Two Hills Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Two Hills Health Centre Heliport","alternativeNames":["Two Hills Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Valleyview Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
