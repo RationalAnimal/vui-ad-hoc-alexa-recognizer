@@ -6465,7 +6465,15 @@
     {"name":"Strathmore Appleton Field Aerodrome","alternativeNames":["Strathmore Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Strathmore D. J. Murray Airport","alternativeNames":["Strathmore D.J. Murray Airport", "Strathmore D J Murray Airport", "Strathmore DJ Murray Airport", "Strathmore Murray Airport", "Strathmore Airport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Strathmore Hospital Heliport","alternativeNames":["Strathmore Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Suffield Heliport","alternativeNames":["CFB Suffield"],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Suffield Heliport","alternativeNames":["CFB Suffield"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Red Deer Forestry Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Sundre Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Sundre/Goodwins Farm Airport","alternativeNames":["Sundre Goodwins Farm Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Sundre Hospital and Health Care Centre Heliport","alternativeNames":["Sundre Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Swan Hills Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Taber Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Taber Health Centre Heliport","alternativeNames":["Taber Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Teepee Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
