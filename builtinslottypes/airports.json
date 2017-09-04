@@ -6481,7 +6481,16 @@
     {"name":"Trout Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Two Hills Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Two Hills Health Centre Heliport","alternativeNames":["Two Hills Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Valleyview Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Valleyview Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Valleyview Health Centre Heliport","alternativeNames":["Valleyview Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Vauxhall Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Vegreville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Vegerville St. Joseph's Genereal Hospital Heliport","alternativeNames":["Vegerville St Joseph's Genereal Hospital Heliport", "Vegerville Saint Joseph's Genereal Hospital Heliport", "Vegerville Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Vermilion Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Vermilion Health Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Viking Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Viking Health Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Viking South Aerodrome","alternativeNames":["Viking Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
