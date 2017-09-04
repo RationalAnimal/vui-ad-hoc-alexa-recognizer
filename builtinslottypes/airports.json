@@ -6393,7 +6393,15 @@
     {"name":"Lethbridge Gunnlaugson Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Lethbridge J3 Airfield Aerodrome","alternativeNames":["Lethbridge J3 Airfield", "Lethbridge Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Lethbridge Mercer Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Lethbridge Taylor Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Lethbridge Taylor Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Liege/CNRL Aerodrome","alternativeNames":["Liege CNRL Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Lloydminster Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Loon River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Manning Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Margaret Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Markerville/Safron Farms Aerodrome","alternativeNames":["Markerville Safron Farms Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Mayerthorpe Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Mayerthorpe Healthcare Centre Heliport","alternativeNames":["Mayerthorpe Heliport"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
