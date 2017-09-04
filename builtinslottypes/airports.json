@@ -6401,7 +6401,15 @@
     {"name":"Margaret Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Markerville/Safron Farms Aerodrome","alternativeNames":["Markerville Safron Farms Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Mayerthorpe Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Mayerthorpe Healthcare Centre Heliport","alternativeNames":["Mayerthorpe Heliport"],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Mayerthorpe Healthcare Centre Heliport","alternativeNames":["Mayerthorpe Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Medicine Hat Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Medicine Hat/Schlenker Airport","alternativeNames":["Medicine Hat Schlenker Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Milk River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Millet/Creekview Aerodrome","alternativeNames":["Millet Creekview Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Mobil Bistcho Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Muskeg Tower Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Nampa/Hockey Aerodrome","alternativeNames":["Nampa Hockey Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Namur Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
