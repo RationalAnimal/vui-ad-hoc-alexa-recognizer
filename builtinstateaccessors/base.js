@@ -41,7 +41,7 @@ let _setStateChain = function(someKeyArray, newValue){
   // NOOP
 };
 
-let _mergeReplaceState = function(newState, keyArray) {
+let _mergeReplaceState = function(keyArray, newState) {
   // NOOP
 };
 

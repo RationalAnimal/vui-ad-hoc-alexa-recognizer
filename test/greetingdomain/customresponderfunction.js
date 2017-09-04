@@ -25,15 +25,19 @@ SOFTWARE.
 */
 'use strict';
 
-let _responderFunction = function( intent, stateAccessor, selectorArray, state){
+let _responderFunction = function(intent, stateAccessor, selectorArray){
 //  console.log("START of logging from customresponderfunction.js");
 //  console.log("intent:", JSON.stringify(intent));
 //  console.log("stateAccessor:", JSON.stringify(stateAccessor));
 //  console.log("selectorArray:", JSON.stringify(selectorArray));
-//  console.log("state:", JSON.stringify(state));
 //  console.log("END of logging from customresponderfunction.js");
   if(intent === "GreetingIntent"){
-    stateAccessor.mergeReplaceState(state, {"customfunctionmodulewasrun": "true"}, selectorArray);
+    try{
+      stateAccessor.mergeReplaceState(selectorArray, {"customfunctionmodulewasrun": "true"});
+    }
+    catch(e){
+      console.log("caught e: ", e);
+    }
     return {
       "text": "Hi from the custom function module"
     };

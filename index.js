@@ -1545,10 +1545,10 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
       (
         (typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object") &&
         (
-          ((state.matchCriteria.match === true) && _isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.value)) ||
-          ((state.matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.value)) === false) ||
-          ((state.matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.values)) ||
-          ((state.matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(applicationState, state.matchCriteria.selector), state.matchCriteria.values)) === false)
+          ((state.matchCriteria.match === true) && _isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) ||
+          ((state.matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) === false) ||
+          ((state.matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) ||
+          ((state.matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) === false)
         )
       )
   ) {
@@ -1649,13 +1649,15 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
             let returnObject = {"match": match};
             if(typeof state.matchSpecs[j].responder !== "undefined"){
               // TODO add code to get the intent name regardless of platform
-              returnObject.result = responder.produceResult(match.name, stateAccessor, stateSelectors, applicationState, state.matchSpecs[j].responder);
+              returnObject.result = responder.produceResult(match.name, stateAccessor, stateSelectors, state.matchSpecs[j].responder);
             }
             else if(typeof state.matchSpecs[j].responders !== "undefined" && Array.isArray(state.matchSpecs[j].responders)){
               // TODO add code to get the intent name regardless of platform
               returnObject.result = {};
               for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
-                returnObject.result = responder.combineResponses(returnObject.result, responder.produceResult(match.name, stateAccessor, stateSelectors, applicationState, state.matchSpecs[j].responders[k]), state.matchSpecs[j].responders[k].result.combineRule);
+                let newResult = responder.produceResult(match.name, stateAccessor, stateSelectors, state.matchSpecs[j].responders[k]);
+                console.log("newResult: ", JSON.stringify(newResult, null, 2));
+                returnObject.result = responder.combineResponses(returnObject.result, newResult, state.matchSpecs[j].responders[k].result.combineRule);
               }
             }
             return returnObject;

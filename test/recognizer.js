@@ -2454,8 +2454,8 @@ describe("domain parsing", function() {
         }
       };
       let stateAccessor = {
-        "getState": function(state, selector){
-          return state[selector];
+        "getState": function(selector){
+          return applicationState[selector];
         }
       };
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, [], applicationState);
@@ -2484,7 +2484,7 @@ describe("domain parsing", function() {
         {"text": "Danke"},
         {"text": "I agree"}
       ];
-      let basicStateAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
+      let basicStateAccessor = require("../builtinstateaccessors/basic.js");
       let stateAccessor = new basicStateAccessor(applicationState);
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, [], applicationState);
 //      console.log("result: ", result);
@@ -2528,17 +2528,17 @@ describe("domain parsing", function() {
         {"text": "I agree"}
       ];
       let stateAccessor = {
-        "getState": function(state, selector){
-          return state[selector];
+        "getState": function(selector){
+          return applicationState[selector];
         },
-        "getStateChain": function(state, selectors){
-          return state[selectors[0]];
+        "getStateChain": function(selectors){
+          return applicationState[selectors[0]];
         },
-        "setState": function(state, selector, newValue){
-          state[selector] = newValue;
+        "setState": function(selector, newValue){
+          applicationState[selector] = newValue;
         },
-        "setStateChain": function(state, selectors, newValue){
-          state[selectors[0]] = newValue;
+        "setStateChain": function(selectors, newValue){
+          applicationState[selectors[0]] = newValue;
         }
 
       };
@@ -2570,7 +2570,7 @@ describe("domain parsing", function() {
       expect(isUsed).to.equal(false);
     });
 
-    it("verify multi recognizer domain with non default match criteria returning a random value from result array and a state sub select accessor using built in basicstateaccessor parses", function () {
+    it("verify multi recognizer domain with non default match criteria returning a random value from result array and a state sub select accessor using built in basic state accessor parses", function () {
       let domain = require("../test/blahblahdomain/blahblahdomain.json");
       let usedValues = [
         {"text": "Thanks a bunch"},
@@ -2588,7 +2588,7 @@ describe("domain parsing", function() {
         {"text": "Danke"},
         {"text": "I agree"}
       ];
-      let basicStateAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
+      let basicStateAccessor = require("../builtinstateaccessors/basic.js");
       let stateAccessor = new basicStateAccessor(applicationState);
 
       let result = recognizer.Recognizer.matchDomain("nice suit", domain, stateAccessor, [], applicationState);
@@ -2651,7 +2651,7 @@ describe("domain parsing", function() {
         }
       };
 
-      let readOnlyStateAccessor = require("../builtinstateaccessors/readonlybasicstateaccessor.js");
+      let readOnlyStateAccessor = require("../builtinstateaccessors/basicreadonly.js");
       let simpleAccessor = new readOnlyStateAccessor(applicationState);
 
       let result = simpleAccessor.getState("selectthis");
@@ -2681,7 +2681,7 @@ describe("domain parsing", function() {
           "flow": "TEST_FLOW"
         }
       };
-      let readOnlyStateAccessor = require("../builtinstateaccessors/readonlybasicstateaccessor.js");
+      let readOnlyStateAccessor = require("../builtinstateaccessors/basicreadonly.js");
       let simpleAccessor = new readOnlyStateAccessor(applicationState);
 
       let result = simpleAccessor.getStateChain(["selectthis"]);
@@ -2697,7 +2697,7 @@ describe("domain parsing", function() {
           }
         }
       };
-      let readOnlyStateAccessor = require("../builtinstateaccessors/readonlybasicstateaccessor.js");
+      let readOnlyStateAccessor = require("../builtinstateaccessors/basicreadonly.js");
       let simpleAccessor = new readOnlyStateAccessor(applicationState);
 
       let result = simpleAccessor.getStateChain(["somethingelse", "selectthis"]);
@@ -2705,14 +2705,16 @@ describe("domain parsing", function() {
     });
 
     it("verify built in simple read-only state accessor's setState function does nothing", function () {
-      let simpleAccessor = require("../builtinstateaccessors/readonlybasicstateaccessor.js");
       let applicationState = {
         "something": "this is not relevant",
         "selectthis": {
           "flow": "TEST_FLOW"
         }
       };
-      simpleAccessor.setState(applicationState, "selectthis", {"flow": "NEW_FLOW"});
+      let readOnlyStateAccessor = require("../builtinstateaccessors/basicreadonly.js");
+      let simpleAccessor = new readOnlyStateAccessor(applicationState);
+
+      simpleAccessor.setState("selectthis", {"flow": "NEW_FLOW"});
       expect(applicationState).to.eql({
         "something": "this is not relevant",
         "selectthis": {
@@ -2722,14 +2724,16 @@ describe("domain parsing", function() {
     });
 
     it("verify built in simple read-only state accessor's setStateChain function does nothing", function () {
-      let simpleAccessor = require("../builtinstateaccessors/readonlybasicstateaccessor.js");
       let applicationState = {
         "something": "this is not relevant",
         "selectthis": {
           "flow": "TEST_FLOW"
         }
       };
-      simpleAccessor.setStateChain(applicationState, ["selectthis"], {"flow": "NEW_FLOW"});
+      let readOnlyStateAccessor = require("../builtinstateaccessors/basicreadonly.js");
+      let simpleAccessor = new readOnlyStateAccessor(applicationState);
+
+      simpleAccessor.setStateChain(["selectthis"], {"flow": "NEW_FLOW"});
       expect(applicationState).to.eql({
         "something": "this is not relevant",
         "selectthis": {
@@ -2948,31 +2952,34 @@ describe("domain parsing", function() {
     });
 
     it("verify built in simple state accessor's getState function works", function () {
-      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let applicationState = {
         "something": "this is not relevant",
         "selectthis": {
           "flow": "TEST_FLOW"
         }
       };
-      let result = simpleAccessor.getState(applicationState, "selectthis");
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let accessorInstance = new accessor(applicationState);
+
+      let result = accessorInstance.getState("selectthis");
       expect(result).to.eql({"flow": "TEST_FLOW"});
     });
 
     it("verify built in simple state accessor's getStateChain function works with a single element", function () {
-      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let applicationState = {
         "something": "this is not relevant",
         "selectthis": {
           "flow": "TEST_FLOW"
         }
       };
-      let result = simpleAccessor.getStateChain(applicationState, ["selectthis"]);
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let accessorInstance = new accessor(applicationState);
+
+      let result = accessorInstance.getStateChain(["selectthis"]);
       expect(result).to.eql({"flow": "TEST_FLOW"});
     });
 
     it("verify built in simple state accessor's getStateChain function works with multiple elements", function () {
-      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let applicationState = {
         "something": "this is not relevant",
         "somethingelse": {
@@ -2981,19 +2988,24 @@ describe("domain parsing", function() {
           }
         }
       };
-      let result = simpleAccessor.getStateChain(applicationState, ["somethingelse", "selectthis"]);
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let accessorInstance = new accessor(applicationState);
+
+      let result = accessorInstance.getStateChain(["somethingelse", "selectthis"]);
       expect(result).to.eql({"flow": "TEST_FLOW"});
     });
 
     it("verify built in simple state accessor's setState function works", function () {
-      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let applicationState = {
         "something": "this is not relevant",
         "selectthis": {
           "flow": "TEST_FLOW"
         }
       };
-      simpleAccessor.setState(applicationState, "selectthis", {"flow": "NEW_FLOW"});
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let accessorInstance = new accessor(applicationState);
+
+      accessorInstance.setState("selectthis", {"flow": "NEW_FLOW"});
       expect(applicationState).to.eql({
         "something": "this is not relevant",
         "selectthis": {
@@ -3003,35 +3015,36 @@ describe("domain parsing", function() {
     });
 
     it("verify built in simple state accessor's setState function works when the new value is undefined", function () {
-      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let applicationState = {
         "something": "this is not relevant",
         "selectthis": {
           "flow": "TEST_FLOW"
         }
       };
-      simpleAccessor.setState(applicationState, "selectthis");
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let accessorInstance = new accessor(applicationState);
+      accessorInstance.setState("selectthis");
       expect(applicationState).to.eql({
         "something": "this is not relevant"
       });
     });
 
     it("verify built in simple state accessor's setState function works when the new value is null", function () {
-      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let applicationState = {
         "something": "this is not relevant",
         "selectthis": {
           "flow": "TEST_FLOW"
         }
       };
-      simpleAccessor.setState(applicationState, "selectthis", null);
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let accessorInstance = new accessor(applicationState);
+      accessorInstance.setState("selectthis", null);
       expect(applicationState).to.eql({
         "something": "this is not relevant"
       });
     });
 
     it("verify built in simple state accessor's setStateChain function works", function () {
-      let simpleAccessor = require("../builtinstateaccessors/basicstateaccessor.js");
       let applicationState = {
         "something": "this is not relevant",
         "somethingelse": {
@@ -3040,7 +3053,9 @@ describe("domain parsing", function() {
           }
         }
       };
-      simpleAccessor.setStateChain(applicationState, ["somethingelse", "selectthis"], {"flow": "NEW_FLOW"});
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let accessorInstance = new accessor(applicationState);
+      accessorInstance.setStateChain(["somethingelse", "selectthis"], {"flow": "NEW_FLOW"});
       expect(applicationState).to.eql({
         "something": "this is not relevant",
         "somethingelse": {

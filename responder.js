@@ -42,7 +42,7 @@ responder.combineRules = [
   }
 ];
 */
-let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, applicationState, responderSpec){
+let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, responderSpec){
   if(typeof responderSpec === "undefined" || responderSpec === null){
     return;
   }
@@ -56,11 +56,11 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, appl
 
     switch(updateRule){
       case "setTo":
-        stateAccessor.replaceState(applicationState, responderSpec.updateState.directValue, updatedStateSelectors);
+        stateAccessor.setStateChain(updatedStateSelectors, responderSpec.updateState.directValue);
         break;
       case "mergeReplace":
         updatedStateSelectors.push(responderSpec.updateState.updateSelector);
-        stateAccessor.mergeReplaceState(applicationState, responderSpec.updateState.directValue, updatedStateSelectors);
+        stateAccessor.mergeReplaceState(updatedStateSelectors, responderSpec.updateState.directValue);
         break;
       default:
         // TODO Do nothing for now, revisit later
@@ -71,7 +71,7 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, appl
     if(typeof responderSpec.result.functionSource === "string"){
       try{
         let scratchFunc = new Function('intent', 'stateAccessor', 'selectorArray', 'state', responderSpec.result.functionSource);
-        let result = scratchFunc(matchedIntent, stateAccessor, stateSelectors, applicationState);
+        let result = scratchFunc(matchedIntent, stateAccessor, stateSelectors);
         return result;
       }
       catch(e){
@@ -81,7 +81,7 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, appl
     else if(typeof responderSpec.result.functionModule === "string"){
       try{
         let scratchFunc = require(responderSpec.result.functionModule);
-        let result = scratchFunc(matchedIntent, stateAccessor, stateSelectors, applicationState);
+        let result = scratchFunc(matchedIntent, stateAccessor, stateSelectors);
         return result;
       }
       catch(e){
@@ -104,9 +104,10 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, appl
 //      console.log("_produceResult, randomDoNotRepeat");
         if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values) &&
           typeof directValues.repeatSelector !== "undefined" && directValues.repeatSelector !== null){
+
           let updatedStateSelectors = [].concat(stateSelectors);
           updatedStateSelectors.push(directValues.repeatSelector);
-          let usedValues = stateAccessor.getStateChain(applicationState, updatedStateSelectors);
+          let usedValues = stateAccessor.getStateChain(updatedStateSelectors);
 //        console.log("usedValues: ", JSON.stringify(usedValues));
           if(typeof usedValues === "undefined" || Array.isArray(usedValues) !== true){
             usedValues = [];
@@ -133,7 +134,7 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, appl
           let returnValue = unusedValues[randomIndex];
           if(typeof returnValue !== "undefined" && returnValue !== null){
             usedValues.push(returnValue);
-            stateAccessor.setStateChain(applicationState, updatedStateSelectors, usedValues);
+            stateAccessor.setStateChain(updatedStateSelectors, usedValues);
           }
           return returnValue;
         }
