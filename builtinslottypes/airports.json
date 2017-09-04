@@ -6499,7 +6499,18 @@
     {"name":"Wabasca Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Pelican Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Wainwright Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Wainwright/Camp Wainwright Field Airport","alternativeNames":["Camp Wainwright Field Airport", "Wainwright Field Airport"],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Wainwright/Camp Wainwright Field Airport","alternativeNames":["Camp Wainwright Field Airport", "Wainwright Field Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Wainwright Health Centre Heliport","alternativeNames":["Wainwright Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Wainwright/Wainwright Field 21 Airport","alternativeNames":["Wainwright Field 21 Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Warburg/Zajes Airport","alternativeNames":["Warburg Zajes Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Warner Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Westlock Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Westlock Hnatko Farms Aerodrome","alternativeNames":["Westlock Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Wetaskiwin Hospital and Care Centre Heliport","alternativeNames":["Wetaskiwin  Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Wetaskiwin Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Whitecourt Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Wildwood/Loche Mist Farms Aerodrome","alternativeNames":["Wildwood Loche Mist Farms Aerodrome", "Wildwood Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Zama Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
