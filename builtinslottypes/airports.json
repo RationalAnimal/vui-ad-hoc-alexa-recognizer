@@ -6377,7 +6377,15 @@
     {"name":"John D'Or Prairie Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Johnson Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Edmonton/Josephburg Aerodrome","alternativeNames":["Edmonton Josephburg Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Kananaskis Village Helistop Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Kananaskis Village Helistop Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Killam Health Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Killam-Sedgewick/Flagstaff Regional Airport","alternativeNames":["Killam Sedgewick Flagstaff Regional Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Kirby Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Lac La Biche Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Lacombe Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Lacombe Heliport","alternativeNames":["Lacombe Mustang Helicopters Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"La Crete Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Lamont Health Care Centre Heliport","alternativeNames":["Lamont Heliport"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
