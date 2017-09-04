@@ -6457,7 +6457,15 @@
     {"name":"Edmonton/Cooking Lake Airport","alternativeNames":["Edmonton Cooking Lake Airport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Edmonton/Cooking Lake Water Aerodrome","alternativeNames":["Edmonton Cooking Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Spirit River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Steen River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Steen River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Stettler Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Stettler Health Centre Heliport","alternativeNames":["Stettler Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Stony Plain Lichtner Farms Airport","alternativeNames":["Stony Plain Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Stony Plain Westview Health Centre Heliport","alternativeNames":["Stony Plain Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Strathmore Appleton Field Aerodrome","alternativeNames":["Strathmore Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Strathmore D. J. Murray Airport","alternativeNames":["Strathmore D.J. Murray Airport", "Strathmore D J Murray Airport", "Strathmore DJ Murray Airport", "Strathmore Murray Airport", "Strathmore Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Strathmore Hospital Heliport","alternativeNames":["Strathmore Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Suffield Heliport","alternativeNames":["CFB Suffield"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
