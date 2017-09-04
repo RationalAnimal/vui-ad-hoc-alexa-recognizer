@@ -6385,7 +6385,15 @@
     {"name":"Lacombe Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Lacombe Heliport","alternativeNames":["Lacombe Mustang Helicopters Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"La Crete Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Lamont Health Care Centre Heliport","alternativeNames":["Lamont Heliport"],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Lamont Health Care Centre Heliport","alternativeNames":["Lamont Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Leduc Heliport","alternativeNames":["Edmonton Leduc Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Leslieville Heliport","alternativeNames":["Leslieville W. Pidhirney Residence Heliport", "Leslieville W Pidhirney Residence Heliport", "Leslieville Pidhirney Residence Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Lethbridge Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Lethbridge Chinook Regional Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Lethbridge Gunnlaugson Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Lethbridge J3 Airfield Aerodrome","alternativeNames":["Lethbridge J3 Airfield", "Lethbridge Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Lethbridge Mercer Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Lethbridge Taylor Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
