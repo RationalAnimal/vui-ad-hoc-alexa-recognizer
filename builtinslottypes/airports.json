@@ -6449,7 +6449,15 @@
     {"name":"St. Paul Aerodrome","alternativeNames":["Saint Paul Aerodrome", "St Paul Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"St. Paul Health Care Centre Heliport","alternativeNames":["Saint Paul Health Care Centre Heliport", "St Paul Health Care Centre Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Edmonton/Bailey Heliport","alternativeNames":["Edmonton Bailey Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Edmonton/Eastport Heliport","alternativeNames":["Edmonton Eastport Heliport"],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Edmonton/Eastport Heliport","alternativeNames":["Edmonton Eastport Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Shunda Fire Base Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Slave Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Slave Lake Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Smokey Lake George McDougall Health Centre Heliport","alternativeNames":["Smokey Lake Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Cooking Lake Airport","alternativeNames":["Edmonton Cooking Lake Airport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Edmonton/Cooking Lake Water Aerodrome","alternativeNames":["Edmonton Cooking Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Spirit River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Steen River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
