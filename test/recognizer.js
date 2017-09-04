@@ -2658,22 +2658,6 @@ describe("domain parsing", function() {
       expect(result).to.eql({"flow": "TEST_FLOW"});
     });
 
-    it("verify built in base object state accessor's getState function works", function () {
-      let applicationState = {
-        "something": "this is not relevant",
-        "selectthis": {
-          "flow": "TEST_FLOW"
-        }
-      };
-
-      let baseObjectStateAccessor = require("../builtinstateaccessors/baseobjectstateaccessor.js");
-      let simpleAccessor = new baseObjectStateAccessor(applicationState);
-
-
-      let result = simpleAccessor.getState("selectthis");
-      expect(result).to.eql({"flow": "TEST_FLOW"});
-    });
-
     it("verify built in simple read-only state accessor's getStateChain function works with a single element", function () {
       let applicationState = {
         "something": "this is not relevant",

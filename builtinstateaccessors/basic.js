@@ -25,7 +25,6 @@
  */
 'use strict'
 
-console.log("loading basic.js");
 let base = require("./baseobjectrw.js");
 let accessor =  function(applicationState) {
   base.call(this, applicationState);
