@@ -6417,7 +6417,15 @@
     {"name":"Calgary/Okotoks GG Ranch Heliport","alternativeNames":["Calgary Okotoks GG Ranch Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Calgary/Okotoks Rowland Field Aerodrome","alternativeNames":["Calgary/Okotoks Rowland Field", "Calgary Okotoks Rowland Field"],"priorNames":[],"country":"canada","state":"alberta"},
     {"name":"Olds-Didsbury Airport","alternativeNames":["Olds Didsbury Airport"],"priorNames":[],"country":"canada","state":"alberta"},
-    {"name":"Olds Hospital Heliport","alternativeNames":["Olds Heliport"],"priorNames":[],"country":"canada","state":"alberta"}
+    {"name":"Olds Hospital Heliport","alternativeNames":["Olds Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Olds Netook Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Oyen Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Parkland Airport","alternativeNames":[ "Edmonton/Parkland Aerodrome", "Edmonton Parkland Aerodrome"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Peace River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Pincher Creek Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Pincher Creek Heliport","alternativeNames":["Pincher Creek Hospital Heliport"],"priorNames":[],"country":"canada","state":"alberta"},
+    {"name":"Ponoka Heliport","alternativeNames":[],"priorNames":["Ponoka Hospital and Care Centre Heliport"],"country":"canada","state":"alberta"},
+    {"name":"Ponoka Industrial Airport","alternativeNames":["Labrie Field"],"priorNames":[],"country":"canada","state":"alberta"}
 
 
   ]
