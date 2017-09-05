@@ -6654,7 +6654,15 @@
     {"name":"Muncho Lake/Mile 462 Water Aerodrome","alternativeNames":["Muncho Lake Mile 462 Water Aerodrome", "Muncho Lake Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Nakusp Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Nakusp Arrow Lakes Hospital Heliport","alternativeNames":["Nakusp Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Nanaimo Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Nanaimo Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nanaimo/Gabriola Island Health Clinic Heliport","alternativeNames":["Nanaimo Gabriola Island Health Clinic Heliport", "Nanaimo/Gabriola Island Heliport", "Nanaimo Gabriola Island Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nanaimo Harbour Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nanaimo/Long Lake Water Airport","alternativeNames":["Nanaimo Long Lake Water Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nanaimo Regional Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nanaimo West Coast Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nanaimo Harbour Water Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Naramata Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nelson Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
