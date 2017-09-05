@@ -6558,7 +6558,23 @@
     {"name":"Courtenay Smit Field Airport","alternativeNames":["Courtenay Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Cranbrook/Canadian Rockies International Airport","alternativeNames":["Cranbrook Canadian Rockies International Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Cranbrook East Kootenay Regional Hospital Heliport","alternativeNames":["Cranbrook Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Creston Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Creston Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Dawson Creek Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Dawson Creek Flying L Ranch Airport","alternativeNames":["Dawson Creek Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Dawson Creek Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Dease Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Boundary Bay Airport","alternativeNames":["Vancouver/Boundary Bay Airport", "Vancouver Boundary Bay Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Delta/Delta Heritage Air Park","alternativeNames":["Delta Heritage Air Park", "Delta Air Park"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Douglas Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Duncan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Duncan Cowichan District Hospital Heliport","alternativeNames":["Duncan Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Echo Valley Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Elkin Creek Guest Ranch Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Elko/Lionel P. Demers Memorial Airpark","alternativeNames":["Elko Lionel P. Demers Memorial Airpark", "Elko Lionel P Demers Memorial Airpark", "Elko/Lionel P Demers Memorial Airpark", "Elko/Lionel Demers Memorial Airpark", "Elko Lionel Demers Memorial Airpark"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fairmont Hot Springs Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fernie Elk Valley Hospital Heliport","alternativeNames":["Fernie Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort Grahame Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort Langley Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
