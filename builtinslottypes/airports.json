@@ -6678,7 +6678,15 @@
     {"name":"Ospika Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Pemberton Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Pender Harbour Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Penticton Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Penticton Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Penticton Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Pitt Meadows Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Pitt Meadows Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port Alberni Alberni Valley Regional Airport","alternativeNames":["Alberni Valley Regional Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port Alberni/Sproat Lake Tanker Base Heliport","alternativeNames":["Port Alberni Sproat Lake Tanker Base Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port Alberni/Sproat Lake Water Aerodrome","alternativeNames":["Port Alberni/Sproat Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port Alberni Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port Alberni West Coast General Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
