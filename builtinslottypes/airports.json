@@ -6614,7 +6614,15 @@
     {"name":"Invermere Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Invermere District Hospital Heliport","alternativeNames":["Invermere Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Kamloops Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Kamloops Royal Inland Hospital Heliport","alternativeNames":["Kamloops Heliport"],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Kamloops Royal Inland Hospital Heliport","alternativeNames":["Kamloops Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Kamloops Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Kaslo Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Kelowna International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Kelowna Alpine Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Kelowna Argus Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Kelowna General Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Kelowna Wildcat Helicopters Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Kemano Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
