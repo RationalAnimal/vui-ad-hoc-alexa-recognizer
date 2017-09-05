@@ -24,6 +24,22 @@
  SOFTWARE.
  */
 'use strict'
+let _unfoldKeys = function(keys){
+  if(typeof keys === "undefined" || keys === null){
+    return;
+  }
+  let keyArray = [];
+  if(typeof keys === "string"){
+    keyArray = keys.split(".");
+  }
+  else if(Array.isArray(keys)){
+    for(let i = 0; i < keys.length; i ++){
+      if(typeof keys[i] === "string"){
+        keyArray = keyArray.concat(keys[i].split("."));
+      }
+    }
+  }
+};
 
 let _ensureSubfieldsPresent = function(objectToUpdate, keys){
   if(typeof objectToUpdate === "undefined" || objectToUpdate === null){
