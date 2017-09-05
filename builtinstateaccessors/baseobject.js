@@ -56,16 +56,7 @@ let _getStateChain = function(keyArray){
   if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
     return;
   }
-  let unfoldedKeys = [];
-  if(keyArray.length > 0){
-    for(let i = 0; i < keyArray.length; i++){
-      let key = keyArray[i];
-      if(typeof key === "string"){
-        let subKeyArray = key.split(".");
-        unfoldedKeys = unfoldedKeys.concat(subKeyArray);
-      }
-    }
-  }
+  let unfoldedKeys = accessorUtils.unfoldKeys(keyArray);
   if(unfoldedKeys.length > 0){
     let result = state;
     for(let i = 0; i < unfoldedKeys.length; i++){
