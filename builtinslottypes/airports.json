@@ -6574,7 +6574,15 @@
     {"name":"Fairmont Hot Springs Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Fernie Elk Valley Hospital Heliport","alternativeNames":["Fernie Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Fort Grahame Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Fort Langley Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Fort Langley Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort Langley Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort Nelson Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort Nelson/Gordon Field Airport","alternativeNames":["Fort Nelson Gordon Field Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort Nelson Parker Lake Water Aerodrome","alternativeNames":["Fort Nelson Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort St. James Perison Airport","alternativeNames":["Fort St James Perison Airport", "Fort Saint James Perison Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort St. James Stuart Lake Hospital Heliport","alternativeNames":["Fort St James Stuart Lake Hospital Heliport", "Fort Saint James Stuart Lake Hospital Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort St. James Stuart River Water Aerodrome","alternativeNames":["Fort St James Stuart River Water Aerodrome", "Fort Saint James Stuart River Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort St. John Airport","alternativeNames":["Fort St John Airport", "Fort Saint John Airport", "North Peace Airport"],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
