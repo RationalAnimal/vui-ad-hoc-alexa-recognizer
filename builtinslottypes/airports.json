@@ -6542,7 +6542,15 @@
     {"name":"Campbell River Water Aerodrome","alternativeNames":["Campbell River Harbour Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Camp Cordero Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Castlegar Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Castlegar Tarrys Convention Centre Heliport","alternativeNames":["Castlegar Heliport"],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Castlegar Tarrys Convention Centre Heliport","alternativeNames":["Castlegar Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Chetwynd Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Chilko Lake Tsylos Park Lodge Aerodrome","alternativeNames":["Chilko Lake Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Chilliwack Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Clinton/Bleibler Ranch Aerodrome","alternativeNames":["Clinton Bleibler Ranch Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Coal Harbour Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"CFB Comox","alternativeNames":["Comox Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Comox St. Joseph's Hospital Heliport","alternativeNames":["Comox St Joseph's Hospital Heliport", "Comox Saint Joseph's Hospital Heliport", "Comox Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Comox Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
