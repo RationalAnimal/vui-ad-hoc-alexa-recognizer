@@ -6686,7 +6686,15 @@
     {"name":"Port Alberni/Sproat Lake Tanker Base Heliport","alternativeNames":["Port Alberni Sproat Lake Tanker Base Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Port Alberni/Sproat Lake Water Aerodrome","alternativeNames":["Port Alberni/Sproat Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Port Alberni Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Port Alberni West Coast General Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Port Alberni West Coast General Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port Alice Hospital Heliport","alternativeNames":["Port Alice Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port Hardy Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port Hardy Hospital Heliport","alternativeNames":["Port Hardy Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port Hardy Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port McNeill Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port McNeill Hospital Heliport","alternativeNames":["Port McNeill Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port McNeill Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port Simpson Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
