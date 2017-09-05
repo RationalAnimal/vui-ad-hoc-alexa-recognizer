@@ -6630,7 +6630,15 @@
     {"name":"Langley Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Langley Russell Farm Heliport","alternativeNames":["Langley Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Lasqueti Island/False Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Likely Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Likely Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Lillooet Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Lillooet CC Helicopters Heliport","alternativeNames":["Lillooet Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Little Parker Island Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Long Harbour Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Mabel Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Mackenzie Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Madrona Bay Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Mansons Landing Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
