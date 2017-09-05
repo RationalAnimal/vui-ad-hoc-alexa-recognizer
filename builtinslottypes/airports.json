@@ -6606,7 +6606,15 @@
     {"name":"Gun Lake Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Harrison Hot Springs Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Hartley Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Helmet Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Helmet Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Hope Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Houston Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Hudson's Hope Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Ingenika Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Invermere Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Invermere District Hospital Heliport","alternativeNames":["Invermere Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Kamloops Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Kamloops Royal Inland Hospital Heliport","alternativeNames":["Kamloops Heliport"],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
