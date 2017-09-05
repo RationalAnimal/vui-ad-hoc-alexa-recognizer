@@ -6662,7 +6662,15 @@
     {"name":"Nanaimo West Coast Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Nanaimo Harbour Water Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Naramata Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Nelson Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Nelson Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nelson/Baylock Estate Heliport","alternativeNames":["Nelson Baylock Estate Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nelson High Terrain Helicopters Heliport","alternativeNames":["Nelson Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nelson Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"New Denver Health Centre Heliport","alternativeNames":["New Denver Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vancouver/New Westminster Royal Columbian Hospital Heliport","alternativeNames":["Vancouver New Westminster Royal Columbian Hospital Heliport", "Vancouver/New Westminster Heliport", "Vancouver New Westminster Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nimpo Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Ocean Falls Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Oie Lake/Dougall Campbell Field Aerodrome","alternativeNames":["Oie Lake Dougall Campbell Field Aerodrome", "Oie Lake Dougall Aerodrome", "Oie Lake/Dougall Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
