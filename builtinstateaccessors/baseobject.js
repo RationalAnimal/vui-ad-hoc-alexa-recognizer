@@ -103,7 +103,7 @@ let _createSubAccessor = function createInstance(keyArray){
       }
     }
   }
-  if(this instanceof createInstance || this instanceof accessor || this === accessor){
+  if(this instanceof createInstance || this instanceof BaseObjectAccessor || this === BaseObjectAccessor){
     return new BaseObjectAccessor(result);
   }
   else {
