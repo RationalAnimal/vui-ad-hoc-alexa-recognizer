@@ -6598,7 +6598,15 @@
     {"name":"Golden Golden and District General Hospital Heliport","alternativeNames":["Golden and District General Hospital Heliport", "Golden Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Gold River E and B Helicopters Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Gold River The Ridge Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Gold River Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Gold River Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Grand Forks Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Grand Forks Boundary Hospital Heliport","alternativeNames":["Grand Forks Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Green Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Green Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Gun Lake Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Harrison Hot Springs Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Hartley Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Helmet Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
