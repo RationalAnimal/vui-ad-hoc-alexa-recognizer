@@ -79,7 +79,7 @@ let _getStateChain = function(keyArray){
   }
 };
 
-let _createSubAccessor = function(keyArray){
+let _createSubAccessor = function createInstance(keyArray){
   let state = this.applicationState;
   if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
     return;
@@ -94,37 +94,39 @@ let _createSubAccessor = function(keyArray){
       }
     }
   }
+  let result = state;
   if(unfoldedKeys.length > 0){
-    let result = state;
     for(let i = 0; i < unfoldedKeys.length; i++){
       result = result[unfoldedKeys[i]];
       if(typeof result === "undefined" || result === null){
         return;
       }
     }
-    return new this(result);
+  }
+  if(this instanceof createInstance || this instanceof accessor || this === accessor){
+    return new BaseObjectAccessor(result);
   }
   else {
-    return new this(state);
+    return new this(result);
   }
 };
 
 let base = require("./base.js");
-let accessor =  function(applicationState) {
+let BaseObjectAccessor =  function(applicationState) {
   base.call(this);
   this.applicationState = applicationState;
 };
 
-accessor.prototype = Object.create(base.prototype);
-accessor.prototype.constructor = accessor;
+BaseObjectAccessor.prototype = Object.create(base.prototype);
+BaseObjectAccessor.prototype.constructor = BaseObjectAccessor;
 
-accessor.getState = _getState;
-accessor.prototype.getState = _getState;
+BaseObjectAccessor.getState = _getState;
+BaseObjectAccessor.prototype.getState = _getState;
 
-accessor.getStateChain = _getStateChain;
-accessor.prototype.getStateChain = _getStateChain;
+BaseObjectAccessor.getStateChain = _getStateChain;
+BaseObjectAccessor.prototype.getStateChain = _getStateChain;
 
-accessor.createSubAccessor = _createSubAccessor.bind(accessor);
-accessor.prototype.createSubAccessor = _createSubAccessor.bind(accessor);
+BaseObjectAccessor.createSubAccessor = _createSubAccessor;
+BaseObjectAccessor.prototype.createSubAccessor = _createSubAccessor;
 
-module.exports = accessor;
+module.exports = BaseObjectAccessor;
