@@ -25,6 +25,42 @@
  */
 'use strict'
 
+// TODO various versions of this are present in different places - refactor it.
+let _ensureSubfieldsPresent = function(objectToUpdate, keys){
+  if(typeof objectToUpdate === "undefined" || objectToUpdate === null){
+    return;
+  }
+  if(typeof keys === "undefined" || keys === null){
+    return;
+  }
+  let keyArray = [];
+  if(typeof keys === "string"){
+    keyArray = keys.split(".");
+  }
+  else if(Array.isArray(keys)){
+    for(let i = 0; i < keys.length; i ++){
+      if(typeof keys[i] === "string"){
+        keyArray = keyArray.concat(keys.split("."));
+      }
+    }
+  }
+  if(keyArray.length > 0){
+    // First ensure that we have all the "sub" fields
+    let result = objectToUpdate;
+    for(let i = 0; i < keyArray.length; i++){
+      let scratch = result[keyArray[i]];
+      if(typeof scratch === "undefined" || scratch === null){
+        // We now need to add all the missing fields
+        result[keyArray[i]] = {};
+        result = result[keyArray[i]];
+      }
+      else {
+        result = scratch;
+      }
+    }
+  }
+};
+
 let _getState = function(key){
   let state = this.applicationState;
   if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
@@ -94,6 +130,7 @@ let _createSubAccessor = function createInstance(keyArray){
       }
     }
   }
+  _ensureSubfieldsPresent(state, unfoldedKeys);
   let result = state;
   if(unfoldedKeys.length > 0){
     for(let i = 0; i < unfoldedKeys.length; i++){
