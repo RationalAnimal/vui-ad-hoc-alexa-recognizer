@@ -6582,7 +6582,15 @@
     {"name":"Fort St. James Perison Airport","alternativeNames":["Fort St James Perison Airport", "Fort Saint James Perison Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Fort St. James Stuart Lake Hospital Heliport","alternativeNames":["Fort St James Stuart Lake Hospital Heliport", "Fort Saint James Stuart Lake Hospital Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Fort St. James Stuart River Water Aerodrome","alternativeNames":["Fort St James Stuart River Water Aerodrome", "Fort Saint James Stuart River Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Fort St. John Airport","alternativeNames":["Fort St John Airport", "Fort Saint John Airport", "North Peace Airport"],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Fort St. John Airport","alternativeNames":["Fort St John Airport", "Fort Saint John Airport", "North Peace Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort St. John Charlie Lake Water Aerodrome","alternativeNames":["Fort St John Charlie Lake Water Aerodrome", "Fort Saint John Charlie Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort Ware Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fort Ware Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fraser Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Fraser Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Galore Creek Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Ganges Lady Minto/Gulf Islands Hospital Heliport","alternativeNames":["Ganges Lady Minto Gulf Islands Hospital Heliport", "Ganges Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Ganges Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
