@@ -6550,7 +6550,15 @@
     {"name":"Coal Harbour Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"CFB Comox","alternativeNames":["Comox Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Comox St. Joseph's Hospital Heliport","alternativeNames":["Comox St Joseph's Hospital Heliport", "Comox Saint Joseph's Hospital Heliport", "Comox Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Comox Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Comox Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Cortes Island Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Cortes Island Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Courtenay Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Courtenay Airpark Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Courtenay Smit Field Airport","alternativeNames":["Courtenay Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Cranbrook/Canadian Rockies International Airport","alternativeNames":["Cranbrook Canadian Rockies International Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Cranbrook East Kootenay Regional Hospital Heliport","alternativeNames":["Cranbrook Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Creston Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
