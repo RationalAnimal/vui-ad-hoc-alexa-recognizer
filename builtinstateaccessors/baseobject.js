@@ -79,6 +79,36 @@ let _getStateChain = function(keyArray){
   }
 };
 
+let _createSubAccessor = function(keyArray){
+  let state = this.applicationState;
+  if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
+    return;
+  }
+  let unfoldedKeys = [];
+  if(keyArray.length > 0){
+    for(let i = 0; i < keyArray.length; i++){
+      let key = keyArray[i];
+      if(typeof key === "string"){
+        let subKeyArray = key.split(".");
+        unfoldedKeys = unfoldedKeys.concat(subKeyArray);
+      }
+    }
+  }
+  if(unfoldedKeys.length > 0){
+    let result = state;
+    for(let i = 0; i < unfoldedKeys.length; i++){
+      result = result[unfoldedKeys[i]];
+      if(typeof result === "undefined" || result === null){
+        return;
+      }
+    }
+    return new this(result);
+  }
+  else {
+    return new this(state);
+  }
+};
+
 let base = require("./base.js");
 let accessor =  function(applicationState) {
   base.call(this);
@@ -93,5 +123,8 @@ accessor.prototype.getState = _getState;
 
 accessor.getStateChain = _getStateChain;
 accessor.prototype.getStateChain = _getStateChain;
+
+accessor.createSubAccessor = _createSubAccessor.bind(accessor);
+accessor.prototype.createSubAccessor = _createSubAccessor.bind(accessor);
 
 module.exports = accessor;
