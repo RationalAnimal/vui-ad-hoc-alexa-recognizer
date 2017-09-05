@@ -6590,7 +6590,15 @@
     {"name":"Fraser Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Galore Creek Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Ganges Lady Minto/Gulf Islands Hospital Heliport","alternativeNames":["Ganges Lady Minto Gulf Islands Hospital Heliport", "Ganges Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Ganges Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Ganges Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Gilford Island/Echo Bay Water Aerodrome","alternativeNames":["Gilford Island Echo Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Gilford Island/Health Bay Water Aerodrome","alternativeNames":["Gilford Island Health Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Kincolith Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Golden Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Golden Golden and District General Hospital Heliport","alternativeNames":["Golden and District General Hospital Heliport", "Golden Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Gold River E and B Helicopters Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Gold River The Ridge Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Gold River Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
