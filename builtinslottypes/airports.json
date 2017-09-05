@@ -6670,7 +6670,15 @@
     {"name":"Vancouver/New Westminster Royal Columbian Hospital Heliport","alternativeNames":["Vancouver New Westminster Royal Columbian Hospital Heliport", "Vancouver/New Westminster Heliport", "Vancouver New Westminster Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Nimpo Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Ocean Falls Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Oie Lake/Dougall Campbell Field Aerodrome","alternativeNames":["Oie Lake Dougall Campbell Field Aerodrome", "Oie Lake Dougall Aerodrome", "Oie Lake/Dougall Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Oie Lake/Dougall Campbell Field Aerodrome","alternativeNames":["Oie Lake Dougall Campbell Field Aerodrome", "Oie Lake Dougall Aerodrome", "Oie Lake/Dougall Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Oliver Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"South Cariboo Regional Airport","alternativeNames":["South Cariboo Regional Airport", "108 Mile Ranch Airport", "one hundred eight Mile Ranch Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"100 Mile House Airport","alternativeNames":["one hundred Mile House Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Osoyoos Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Ospika Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Pemberton Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Pender Harbour Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Penticton Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
