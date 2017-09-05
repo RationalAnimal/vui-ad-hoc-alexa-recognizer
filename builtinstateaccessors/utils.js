@@ -39,6 +39,7 @@ let _unfoldKeys = function(keys){
       }
     }
   }
+  return keyArray;
 };
 
 let _ensureSubfieldsPresent = function(objectToUpdate, keys){
@@ -81,5 +82,9 @@ let utils = class {
 
 utils.ensureSubfieldsPresent = _ensureSubfieldsPresent;
 utils.prototype.ensureSubfieldsPresent = _ensureSubfieldsPresent;
+
+utils.unfoldKeys = _unfoldKeys;
+utils.prototype.unfoldKeys = _unfoldKeys;
+
 
 module.exports = utils;
