@@ -6646,7 +6646,15 @@
     {"name":"McBride/Charlie Leake Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Merritt Airport","alternativeNames":["Saunders Field"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Midway Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Minstrel Island Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Minstrel Island Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Moose Lake Lodge Airport","alternativeNames":["Moose Lake Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Moose Lake Lodge Water Aerodrome","alternativeNames":["Moose Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Mount Belcher Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Mule Creek Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Muncho Lake/Mile 462 Water Aerodrome","alternativeNames":["Muncho Lake Mile 462 Water Aerodrome", "Muncho Lake Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nakusp Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nakusp Arrow Lakes Hospital Heliport","alternativeNames":["Nakusp Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nanaimo Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
