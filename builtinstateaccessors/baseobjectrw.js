@@ -25,36 +25,7 @@
  */
 'use strict'
 
-let _ensureSubfieldsPresent = function(objectToUpdate, keys){
-  if(typeof objectToUpdate === "undefined" || objectToUpdate === null){
-    return;
-  }
-  if(typeof keys === "undefined" || keys === null){
-    return;
-  }
-  let keyArray = [];
-  if(typeof keys === "string"){
-    keyArray = keys.split(".");
-  }
-  else {
-    keyArray = keys;
-  }
-  if(keyArray.length > 0){
-    // First ensure that we have all the "sub" fields
-    let result = objectToUpdate;
-    for(let i = 0; i < keyArray.length; i++){
-      let scratch = result[keyArray[i]];
-      if(typeof scratch === "undefined" || scratch === null){
-        // We now need to add all the missing fields
-        result[keyArray[i]] = {};
-        result = result[keyArray[i]];
-      }
-      else {
-        result = scratch;
-      }
-    }
-  }
-};
+let accessorUtils = require("./utils.js")
 
 let _setState = function(key, newValue){
   let state = this.applicationState;
@@ -65,7 +36,7 @@ let _setState = function(key, newValue){
   if(typeof key === "string"){
     keyArray = key.split(".");
   }
-  _ensureSubfieldsPresent(state, keyArray);
+  accessorUtils.ensureSubfieldsPresent(state, keyArray);
   if(keyArray.length > 0){
     let result = state;
     for(let i = 0; i < keyArray.length - 1; i++){
@@ -134,7 +105,7 @@ let _mergeReplaceState = function(keyArray, newState){
     }
     if(expandedKeyArray.length > 0){
       // First ensure that we have all the "sub" fields
-      _ensureSubfieldsPresent(state, expandedKeyArray);
+      accessorUtils.ensureSubfieldsPresent(state, expandedKeyArray);
     }
   }
   let newProperties = [];
