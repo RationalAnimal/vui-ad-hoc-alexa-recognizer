@@ -44,6 +44,9 @@ let _getState = function(key){
     }
     return JSON.parse(JSON.stringify(result));
   }
+  else {
+    return JSON.parse(JSON.stringify(state));
+  }
 };
 
 let _getStateChain = function(keyArray){
@@ -70,6 +73,9 @@ let _getStateChain = function(keyArray){
       }
     }
     return JSON.parse(JSON.stringify(result));
+  }
+  else {
+    return JSON.parse(JSON.stringify(state));
   }
 };
 
