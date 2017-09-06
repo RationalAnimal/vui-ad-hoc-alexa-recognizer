@@ -55,18 +55,12 @@ let _setStateChain = function(keyArray, newValue){
   }
   let unfoldedKeys = accessorUtils.unfoldKeys(keyArray);
   if(unfoldedKeys.length > 0){
-    let result = state;
-    for(let i = 0; i < unfoldedKeys.length - 1; i++){
-      result = result[unfoldedKeys[i]];
-      if(typeof result === "undefined" || result === null){
-        return;
-      }
-    }
+    let result = accessorUtils.getSubObject(state, unfoldedKeys, unfoldedKeys.length - 1);
     if(typeof newValue === "undefined" || newValue === null){
-      delete result[keyArray[keyArray.length - 1]];
+      delete result[unfoldedKeys[unfoldedKeys.length - 1]];
     }
     else {
-      result[keyArray[keyArray.length - 1]] = newValue;
+      result[unfoldedKeys[unfoldedKeys.length - 1]] = newValue;
     }
   }
 };
