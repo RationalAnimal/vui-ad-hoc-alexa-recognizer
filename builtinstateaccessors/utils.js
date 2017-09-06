@@ -43,7 +43,7 @@ let _unfoldKeys = function(keys){
 };
 
 let _getSubObject = function(object, keyArray){
-  if(typeof object === "undefined" || object === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
+  if(typeof object === "undefined" || object === null || typeof keyArray === "undefined" || keyArray === null){
     return;
   }
   let unfoldedKeys = _unfoldKeys(keyArray);

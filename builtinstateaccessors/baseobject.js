@@ -28,26 +28,9 @@
 let accessorUtils = require("./utils.js")
 
 let _getState = function(key){
-  let state = this.applicationState;
-  if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
-    return;
-  }
-  let keyArray = [];
-  if(typeof key === "string"){
-    keyArray = key.split(".");
-  }
-  if(keyArray.length > 0){
-    let result = state;
-    for(let i = 0; i < keyArray.length; i++){
-      result = result[keyArray[i]];
-      if(typeof result === "undefined" || result === null){
-        return;
-      }
-    }
+  let result = accessorUtils.getSubObject(this.applicationState, key);
+  if(typeof result !== "undefined" && result != null){
     return JSON.parse(JSON.stringify(result));
-  }
-  else {
-    return JSON.parse(JSON.stringify(state));
   }
 };
 
@@ -60,12 +43,18 @@ let _getStateChain = function(keyArray){
 
 let _createSubAccessor = function createInstance(keyArray){
   let state = this.applicationState;
-  if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
+  if(typeof state === "undefined" || state === null){
     return;
   }
   let unfoldedKeys = accessorUtils.unfoldKeys(keyArray);
-  accessorUtils.ensureSubfieldsPresent(state, unfoldedKeys);
-  let result = accessorUtils.getSubObject(state, unfoldedKeys);
+  let result;
+  if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null || Array.isArray(unfoldedKeys) !== true){
+    result = state;
+  }
+  else {
+    accessorUtils.ensureSubfieldsPresent(state, unfoldedKeys);
+    result = accessorUtils.getSubObject(state, unfoldedKeys);
+  }
   if(this instanceof createInstance || this instanceof BaseObjectAccessor || this === BaseObjectAccessor){
     return new BaseObjectAccessor(result);
   }
