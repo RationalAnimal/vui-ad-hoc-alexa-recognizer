@@ -32,10 +32,7 @@ let _setState = function(key, newValue){
   if(typeof state === "undefined" || state === null || typeof key === "undefined" || key === null){
     return;
   }
-  let keyArray = [];
-  if(typeof key === "string"){
-    keyArray = key.split(".");
-  }
+  let keyArray = accessorUtils.unfoldKeys(key);
   accessorUtils.ensureSubfieldsPresent(state, keyArray);
   if(keyArray.length > 0){
     let result = state;
