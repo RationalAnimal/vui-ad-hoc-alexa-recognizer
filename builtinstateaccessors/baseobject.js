@@ -52,23 +52,9 @@ let _getState = function(key){
 };
 
 let _getStateChain = function(keyArray){
-  let state = this.applicationState;
-  if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
-    return;
-  }
-  let unfoldedKeys = accessorUtils.unfoldKeys(keyArray);
-  if(unfoldedKeys.length > 0){
-    let result = state;
-    for(let i = 0; i < unfoldedKeys.length; i++){
-      result = result[unfoldedKeys[i]];
-      if(typeof result === "undefined" || result === null){
-        return;
-      }
-    }
+  let result = accessorUtils.getSubObject(this.applicationState, keyArray);
+  if(typeof result !== "undefined" && result != null){
     return JSON.parse(JSON.stringify(result));
-  }
-  else {
-    return JSON.parse(JSON.stringify(state));
   }
 };
 
