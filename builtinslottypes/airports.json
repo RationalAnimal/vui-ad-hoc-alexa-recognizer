@@ -6702,7 +6702,15 @@
     {"name":"Prince George Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Prince Rupert Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Prince Rupert/Digby Island Water Aerodrome","alternativeNames":["Prince Rupert Digby Island Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Prince Rupert Hospital Heliport","alternativeNames":["Prince Rupert Hospital Heliport"],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Prince Rupert Hospital Heliport","alternativeNames":["Prince Rupert Hospital Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Prince Rupert/Seal Cove Coast Guard Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Prince Rupert/Seal Cove Public Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Prince Rupert/Seal Cove Water Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Princeton Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Puntzi Mountain Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Qualicum Beach Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Qualicum Beach Aerosmith Heli Service Heliport","alternativeNames":["Qualicum Beach Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Quamichan Lake Raven Field Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
