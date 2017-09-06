@@ -74,13 +74,7 @@ let _mergeReplaceState = function(keyArray, newState){
     // Nothing to do for now
   }
   else {
-    let expandedKeyArray = [];
-    for(let i = 0; i < keyArray.length; i ++){
-      let splitKeyArray = keyArray[i].split(".");
-      for(let j = 0; j < splitKeyArray.length; j ++){
-        expandedKeyArray.push(splitKeyArray[j]);
-      }
-    }
+    let expandedKeyArray = accessorUtils.unfoldKeys(keyArray);
     if(expandedKeyArray.length > 0){
       // First ensure that we have all the "sub" fields
       accessorUtils.ensureSubfieldsPresent(state, expandedKeyArray);
