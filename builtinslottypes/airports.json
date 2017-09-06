@@ -6726,7 +6726,15 @@
     {"name":"San Juan Point Coast Guard Heliport","alternativeNames":["San Juan Point Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Sechelt Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Sechlt St. Mary's Hospital Heliport","alternativeNames":["Sechlt St Mary's Hospital Heliport", "Sechlt Saint Mary's Hospital Heliport", "Sechlt Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Shawnigan Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Shawnigan Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Bella Bella/Shearwater Water Aerodrome","alternativeNames":["Bella Bella Shearwater Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Shuswap Skwlax Field Aerodrome","alternativeNames":["Shuswap Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Sicamous/Owls Landing Heliport","alternativeNames":["Sicamous Owls Landing Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Smithers Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Smithers Canadian Heliport","alternativeNames":["Smithers Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Smithers/Tyhee Lake Water Aerodrome","alternativeNames":["Smithers Tyhee Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Sonora Resort Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Sparwood/Elk Valley Airport","alternativeNames":["Sparwood Elk Valley Airport"],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
