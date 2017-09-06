@@ -6750,7 +6750,15 @@
     {"name":"Texada/Gillies Bay Airport","alternativeNames":["Texada Gillies Bay Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Tipella Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Toad River/Mile 422 Alaska Highway Airport","alternativeNames":["Toad River Mile 422 Alaska Highway Airport", "Toad River Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Tofino Lifeboat Station Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Tofino Lifeboat Station Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Tofino/Long Beach Airport","alternativeNames":["Tofino Long Beach Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Tofino Harbour Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Trail Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Trail Kootenay Boundary Regional Hospital Heliport","alternativeNames":["Trail Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Tsay Keh Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Tsetzi Lake Pan Phillips Airport","alternativeNames":["Tsetzi Lake Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Tsuniah Lake Lodge Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Tumbler Ridge Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
