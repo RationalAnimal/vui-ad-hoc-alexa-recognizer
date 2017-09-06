@@ -63,26 +63,9 @@ let _createSubAccessor = function createInstance(keyArray){
   if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
     return;
   }
-  let unfoldedKeys = [];
-  if(keyArray.length > 0){
-    for(let i = 0; i < keyArray.length; i++){
-      let key = keyArray[i];
-      if(typeof key === "string"){
-        let subKeyArray = key.split(".");
-        unfoldedKeys = unfoldedKeys.concat(subKeyArray);
-      }
-    }
-  }
-  accessorUtils._ensureSubfieldsPresent(state, unfoldedKeys);
-  let result = state;
-  if(unfoldedKeys.length > 0){
-    for(let i = 0; i < unfoldedKeys.length; i++){
-      result = result[unfoldedKeys[i]];
-      if(typeof result === "undefined" || result === null){
-        return;
-      }
-    }
-  }
+  let unfoldedKeys = accessorUtils.unfoldKeys(keyArray);
+  accessorUtils.ensureSubfieldsPresent(state, unfoldedKeys);
+  let result = accessorUtils.getSubObject(state, unfoldedKeys);
   if(this instanceof createInstance || this instanceof BaseObjectAccessor || this === BaseObjectAccessor){
     return new BaseObjectAccessor(result);
   }
