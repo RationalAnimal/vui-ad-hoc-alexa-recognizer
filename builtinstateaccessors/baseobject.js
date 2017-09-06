@@ -43,12 +43,18 @@ let _getStateChain = function(keyArray){
 
 let _createSubAccessor = function createInstance(keyArray){
   let state = this.applicationState;
-  if(typeof state === "undefined" || state === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
+  if(typeof state === "undefined" || state === null){
     return;
   }
   let unfoldedKeys = accessorUtils.unfoldKeys(keyArray);
-  accessorUtils.ensureSubfieldsPresent(state, unfoldedKeys);
-  let result = accessorUtils.getSubObject(state, unfoldedKeys);
+  let result;
+  if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null || Array.isArray(unfoldedKeys) !== true){
+    result = state;
+  }
+  else {
+    accessorUtils.ensureSubfieldsPresent(state, unfoldedKeys);
+    result = accessorUtils.getSubObject(state, unfoldedKeys);
+  }
   if(this instanceof createInstance || this instanceof BaseObjectAccessor || this === BaseObjectAccessor){
     return new BaseObjectAccessor(result);
   }
