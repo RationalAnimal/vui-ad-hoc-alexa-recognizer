@@ -6718,7 +6718,15 @@
     {"name":"Quesnel Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Radium Hot Springs Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Revelstoke Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Rivers Inlet Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Rivers Inlet Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Ross Creek Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Rykerts Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Salmon Arm Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Sandspit Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"San Juan Point Coast Guard Heliport","alternativeNames":["San Juan Point Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Sechelt Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Sechlt St. Mary's Hospital Heliport","alternativeNames":["Sechlt St Mary's Hospital Heliport", "Sechlt Saint Mary's Hospital Heliport", "Sechlt Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Shawnigan Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
