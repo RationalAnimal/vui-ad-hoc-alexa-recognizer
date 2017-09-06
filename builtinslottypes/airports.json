@@ -6742,7 +6742,15 @@
     {"name":"Stewart Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Sulivan Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Surge Narrows Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Surrey/King George Airpark","alternativeNames":["Surrey King George Airpark"],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Surrey/King George Airpark","alternativeNames":["Surrey King George Airpark"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Tahsis Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Takla Landing Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Telegraph Creek Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Northwest Regional Airport Terrace-Kitimat","alternativeNames":["Northwest Regional Airport Terrace Kitimat", "Terrace Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Texada/Gillies Bay Airport","alternativeNames":["Texada Gillies Bay Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Tipella Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Toad River/Mile 422 Alaska Highway Airport","alternativeNames":["Toad River Mile 422 Alaska Highway Airport", "Toad River Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Tofino Lifeboat Station Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
