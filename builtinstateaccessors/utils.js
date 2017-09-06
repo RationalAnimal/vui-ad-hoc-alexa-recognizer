@@ -42,14 +42,23 @@ let _unfoldKeys = function(keys){
   return keyArray;
 };
 
-let _getSubObject = function(object, keyArray){
+let _getSubObject = function(object, keyArray, depth){
   if(typeof object === "undefined" || object === null || typeof keyArray === "undefined" || keyArray === null){
     return;
   }
   let unfoldedKeys = _unfoldKeys(keyArray);
-  if(unfoldedKeys.length > 0){
+  let limit = unfoldedKeys.length;
+  if(typeof depth === "undefined" || depth === null || Number.isNaN(depth)){
+    // Keep limit to be the length of unfolded array
+  }
+  else {
+    if(depth >= 0 && depth < limit){
+      limit = depth;
+    }
+  }
+  if(limit > 0){
     let result = object;
-    for(let i = 0; i < unfoldedKeys.length; i++){
+    for(let i = 0; i < limit; i++){
       result = result[unfoldedKeys[i]];
       if(typeof result === "undefined" || result === null){
         return;
