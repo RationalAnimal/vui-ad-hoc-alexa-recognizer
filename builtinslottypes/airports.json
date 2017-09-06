@@ -6710,7 +6710,15 @@
     {"name":"Puntzi Mountain Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Qualicum Beach Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Qualicum Beach Aerosmith Heli Service Heliport","alternativeNames":["Qualicum Beach Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Quamichan Lake Raven Field Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Quamichan Lake Raven Field Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Queen Charlotte City Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Nanaimo/Quennell Lake Water Aerodrome","alternativeNames":["Nanaimo Quennell Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Quesnel Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Quesnel G. R. Baker Memorial Hospital Heliport","alternativeNames":["Quesnel G R Baker Memorial Hospital Heliport", "Quesnel G.R. Baker Memorial Hospital Heliport", "Quesnel GR Baker Memorial Hospital Heliport", "Quesnel Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Quesnel Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Radium Hot Springs Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Revelstoke Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Rivers Inlet Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
