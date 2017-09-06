@@ -42,6 +42,24 @@ let _unfoldKeys = function(keys){
   return keyArray;
 };
 
+let _getSubObject = function(object, keyArray){
+  if(typeof object === "undefined" || object === null || typeof keyArray === "undefined" || keyArray === null || Array.isArray(keyArray) !== true){
+    return;
+  }
+  let unfoldedKeys = _unfoldKeys(keyArray);
+  if(unfoldedKeys.length > 0){
+    let result = object;
+    for(let i = 0; i < unfoldedKeys.length; i++){
+      result = result[unfoldedKeys[i]];
+      if(typeof result === "undefined" || result === null){
+        return;
+      }
+    }
+    return result;
+  }
+  return object;
+};
+
 let _ensureSubfieldsPresent = function(objectToUpdate, keys){
   if(typeof objectToUpdate === "undefined" || objectToUpdate === null){
     return;
@@ -85,6 +103,9 @@ utils.prototype.ensureSubfieldsPresent = _ensureSubfieldsPresent;
 
 utils.unfoldKeys = _unfoldKeys;
 utils.prototype.unfoldKeys = _unfoldKeys;
+
+utils.getSubObject = _getSubObject;
+utils.prototype.getSubObject = _getSubObject;
 
 
 module.exports = utils;
