@@ -6758,7 +6758,15 @@
     {"name":"Tsay Keh Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Tsetzi Lake Pan Phillips Airport","alternativeNames":["Tsetzi Lake Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Tsuniah Lake Lodge Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Tumbler Ridge Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Tumbler Ridge Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Ucluelet Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Valemount Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Valemount Yellowhead Helicopters Heliport","alternativeNames":["Valemount Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vancouver International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vancouver International Water Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vancouver Children and Women's Health Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vancouver Coquitlam Fire and Rescue Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vancouver Delta North Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
