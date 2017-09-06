@@ -43,8 +43,11 @@ let _unfoldKeys = function(keys){
 };
 
 let _getSubObject = function(object, keyArray, depth){
-  if(typeof object === "undefined" || object === null || typeof keyArray === "undefined" || keyArray === null){
+  if(typeof object === "undefined" || object === null){
     return;
+  }
+  if(typeof keyArray === "undefined" || keyArray === null){
+    keyArray = [];
   }
   let unfoldedKeys = _unfoldKeys(keyArray);
   let limit = unfoldedKeys.length;
