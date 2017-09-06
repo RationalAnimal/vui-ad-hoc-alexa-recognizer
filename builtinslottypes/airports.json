@@ -6774,7 +6774,16 @@
     {"name":"Vancouver Surrey Memorial Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Vanderhoof Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Vanderhoof District Water Aerodrome","alternativeNames":["Vanderhoof Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Vernon Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Vernon Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vernon/Wildlife Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Victoria General Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Victoria Royal Jubilee Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Victoria Inner Harbour Airport","alternativeNames":["Victoria Harbour Water Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Victoria Harbour Camel Point Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Victoria Harbour Shoal Point Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Victoria International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Victoria Airport Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Bella Bella/Waglisla Water Aerodrome","alternativeNames":["Bella Bella Waglisla Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
