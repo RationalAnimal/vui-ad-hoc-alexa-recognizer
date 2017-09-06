@@ -35,12 +35,11 @@ let _setState = function(key, newValue){
   let keyArray = accessorUtils.unfoldKeys(key);
   accessorUtils.ensureSubfieldsPresent(state, keyArray);
   if(keyArray.length > 0){
-    let result = state;
-    for(let i = 0; i < keyArray.length - 1; i++){
-      result = result[keyArray[i]];
-      if(typeof result === "undefined" || result === null){
-        return;
-      }
+    let shortenedKeyArray = [].concat(keyArray);
+    shortenedKeyArray.splice(shortenedKeyArray.length - 1, 1);
+    let result = accessorUtils.getSubObject(state, shortenedKeyArray);
+    if(typeof result === "undefined" || result === null){
+      return;
     }
     if(typeof newValue === "undefined" || newValue === null){
       delete result[keyArray[keyArray.length - 1]];
