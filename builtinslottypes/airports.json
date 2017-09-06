@@ -6766,7 +6766,15 @@
     {"name":"Vancouver International Water Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Vancouver Children and Women's Health Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Vancouver Coquitlam Fire and Rescue Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Vancouver Delta North Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Vancouver Delta North Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vancouver Delta SEI Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vancouver General Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vancouver Harbour Public Heliport","alternativeNames":["Vancouver Harbour Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vancouver Harbour Water Airport","alternativeNames":["Vancouver Coal Harbour Seaplane Base"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vancouver Surrey Memorial Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vanderhoof Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vanderhoof District Water Aerodrome","alternativeNames":["Vanderhoof Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Vernon Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
