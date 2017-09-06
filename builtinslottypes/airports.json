@@ -6734,7 +6734,15 @@
     {"name":"Smithers Canadian Heliport","alternativeNames":["Smithers Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Smithers/Tyhee Lake Water Aerodrome","alternativeNames":["Smithers Tyhee Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Sonora Resort Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Sparwood/Elk Valley Airport","alternativeNames":["Sparwood Elk Valley Airport"],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Sparwood/Elk Valley Airport","alternativeNames":["Sparwood Elk Valley Airport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Spout Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Springhouse Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Squamish Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Stewart Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Stewart Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Sulivan Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Surge Narrows Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Surrey/King George Airpark","alternativeNames":["Surrey King George Airpark"],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
