@@ -6694,7 +6694,15 @@
     {"name":"Port McNeill Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Port McNeill Hospital Heliport","alternativeNames":["Port McNeill Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Port McNeill Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Port Simpson Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Port Simpson Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Port Washington Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Powell Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Powell River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Powell River Hospital Heliport","alternativeNames":["Powell River Hospital Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Prince George Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Prince Rupert Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Prince Rupert/Digby Island Water Aerodrome","alternativeNames":["Prince Rupert Digby Island Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Prince Rupert Hospital Heliport","alternativeNames":["Prince Rupert Hospital Heliport"],"priorNames":[],"country":"canada","state":"british columbia"}
 
 
   ]
