@@ -6935,7 +6935,16 @@
     {"name":"Charlo Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
     {"name":"Chipman Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
     {"name":"Clearwater Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
-    {"name":"Cormier Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"}
+    {"name":"Cormier Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Doaktown Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Downs Gulch Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Edmundston Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Bristol Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Florenceville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Fredericton International Airport","alternativeNames":["Greater Fredericton International Airport"],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Fredericton RCMP Heliport","alternativeNames":["Fredericton Heliport"],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Scottsfield Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Grand Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"}
 
 
   ]
