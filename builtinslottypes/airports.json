@@ -6809,7 +6809,15 @@
     {"name":"Carman/Friendship Field Airport","alternativeNames":["Carman Friendship Field Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Carman South Airport","alternativeNames":["Carman Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Churchill Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
-    {"name":"Churchill Hudson Bay Helicopters Heliport","alternativeNames":["Churchill Heliport"],"priorNames":[],"country":"canada","state":"manitoba"}
+    {"name":"Churchill Hudson Bay Helicopters Heliport","alternativeNames":["Churchill Heliport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Churchill Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Cross Lake Charlie Sinclair Memorial Airport","alternativeNames":["Cross Lake Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Crystal City-Pilot Mound/Louise Municipal Airport","alternativeNames":["Crystal City Pilot Mound Louise Municipal Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Lt. Col W.G. Billy Barker VC Airport","alternativeNames":["Dauphin Lt. Col W.G. Billy Barker VC Airport", "Dauphin Lt. Col W.G. Barker VC Airport", "Dauphin Lt. Col W. G. Billy Barker VC Airport", "Dauphin Lt Col W G Billy Barker VC Airport", "Dauphin Leutenant Colonel W G Billy Barker VC Airport",      "Lt. Col W.G. Billy Barker VC Airport", "Lt. Col W.G. Barker VC Airport", "Lt. Col W. G. Billy Barker VC Airport", "Lt Col W G Billy Barker VC Airport", "Leutenant Colonel W G Billy Barker VC Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Deloraine Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Easterville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Elk Island Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Erickson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
 
 
   ]
