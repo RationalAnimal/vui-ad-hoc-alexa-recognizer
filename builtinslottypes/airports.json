@@ -6944,7 +6944,16 @@
     {"name":"Fredericton International Airport","alternativeNames":["Greater Fredericton International Airport"],"priorNames":[],"country":"canada","state":"new brunswick"},
     {"name":"Fredericton RCMP Heliport","alternativeNames":["Fredericton Heliport"],"priorNames":[],"country":"canada","state":"new brunswick"},
     {"name":"Scottsfield Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
-    {"name":"Grand Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"}
+    {"name":"Grand Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Grand Manan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Havelock Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Juniper Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Weyman Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Miramichi Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Greater Moncton Roméo LeBlanc International Airport","alternativeNames":["Moncton Roméo LeBlanc International Airport", "Greater Moncton Romeo LeBlanc International Airport", "Moncton Romeo LeBlanc International Airport"],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Moncton/McEwen Aerodrome","alternativeNames":["Moncton McEwen Aerodrome"],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Moncton/Sailsbury Heliport","alternativeNames":["Moncton Sailsbury Heliport"],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Gagetown Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"}
 
 
   ]
