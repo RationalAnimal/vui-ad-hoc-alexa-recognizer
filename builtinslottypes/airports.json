@@ -6905,7 +6905,18 @@
     {"name":"Souris Glenwood Industrial Air Park","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"South Indian Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Starbuck Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
-    {"name":"Steinbach Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
+    {"name":"Steinbach Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Steinbach South Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"St-Pierre-Jolys Aerodrome","alternativeNames":["Carl's Field", "St Pierre Jolys Aerodrome", "Saint Pierre Jolys Aerodrome"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Strathclair Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Swan River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Tadoule Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"The Pas Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"The Pas/Grace Lake Airport","alternativeNames":["The Pas Grace Lake Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"The Pas/Grace Lake Water Aerodrome","alternativeNames":["The Pas Grace Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Thicket Portage Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Thompson Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Thompson Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
 
 
   ]
