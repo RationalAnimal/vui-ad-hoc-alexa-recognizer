@@ -6841,7 +6841,15 @@
     {"name":"Knee Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Knee Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Lac Brochet Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
-    {"name":"Bird River Lac Du Bonnet Airport","alternativeNames":["Bird River Airport"],"priorNames":[],"country":"canada","state":"manitoba"}
+    {"name":"Bird River Lac Du Bonnet Airport","alternativeNames":["Bird River Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Bird River Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Lac du Bonnet Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Lac du Bonnet North Water Aerodrome","alternativeNames":["Lac du Bonnet Water Aerodrome"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Laurie River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Leaf Rapids Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Leaf Rapids Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Little Churchill River/Dunlop's Fly In Lodge Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Little Grand Rapids Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
 
 
   ]
