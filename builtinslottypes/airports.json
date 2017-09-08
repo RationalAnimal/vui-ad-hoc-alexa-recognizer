@@ -6801,7 +6801,15 @@
     {"name":"Flin Flon/Bakers Narrows Water Aerodrome","alternativeNames":["Flin Flon Bakers Narrows Water Aerodrome"],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Beausejour/AV-Ranch Airpark","alternativeNames":["Beausejour AV-Ranch Airpark", "Beausejour/AV Ranch Airpark", "Beausejour AV Ranch Airpark"],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Berens River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
-    {"name":"Big Sand Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
+    {"name":"Big Sand Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Bissett Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Bloodvein River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Brandon Municipal Airport","alternativeNames":["McGill Field"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Brochet Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Carman/Friendship Field Airport","alternativeNames":["Carman Friendship Field Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Carman South Airport","alternativeNames":["Carman Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Churchill Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Churchill Hudson Bay Helicopters Heliport","alternativeNames":["Churchill Heliport"],"priorNames":[],"country":"canada","state":"manitoba"}
 
 
   ]
