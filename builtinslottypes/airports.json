@@ -6849,7 +6849,15 @@
     {"name":"Leaf Rapids Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Leaf Rapids Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Little Churchill River/Dunlop's Fly In Lodge Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
-    {"name":"Little Grand Rapids Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
+    {"name":"Little Grand Rapids Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Lundar Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Winnipeg/Lyncrest Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Lynn Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Lynn Lake Eldon Lake Water Aerodrome","alternativeNames":["Lynn Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Macdonald Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"MacGregor Airfield","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Manitou Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"McCreary Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
 
 
   ]
