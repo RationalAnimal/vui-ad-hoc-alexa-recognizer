@@ -6889,7 +6889,15 @@
     {"name":"Russell Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"St. Andrews Airport","alternativeNames":["Winnipeg/St. Andrews Airport", "Winnipeg St. Andrews Airport", "Winnipeg/St Andrews Airport", "Winnipeg St Andrews Airport", "Winnipeg/Saint Andrews Airport", "Winnipeg Saint Andrews Airport", "St Andrews Airport", "Saint Andrews Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"St. François Xavier Airport","alternativeNames":["St François Xavier Airport", "Saint François Xavier Airport", "St. Francois Xavier Airport", "St Francois Xavier Airport", "Saint Francois Xavier Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
-    {"name":"St. Theresa Point Airport","alternativeNames":["Saint Theresa Point Airport", "St Theresa Point Airport"],"priorNames":[],"country":"canada","state":"manitoba"}
+    {"name":"St. Theresa Point Airport","alternativeNames":["Saint Theresa Point Airport", "St Theresa Point Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Selkirk Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Selkirk Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Shamattawa Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Shilo Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Shilo Flewin Field Heliport","alternativeNames":["Shilo Heliport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Shoal Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Shoal Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Silver Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
 
 
   ]
