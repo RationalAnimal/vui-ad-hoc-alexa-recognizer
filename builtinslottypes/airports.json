@@ -6881,7 +6881,15 @@
     {"name":"Pukatawagan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Red Sucker Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Red Sucker Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
-    {"name":"Riding Mountain Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
+    {"name":"Riding Mountain Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Riverton Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Roblin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Roland Graham Field Airport","alternativeNames":["Roland Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Rosenort Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Russell Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"St. Andrews Airport","alternativeNames":["Winnipeg/St. Andrews Airport", "Winnipeg St. Andrews Airport", "Winnipeg/St Andrews Airport", "Winnipeg St Andrews Airport", "Winnipeg/Saint Andrews Airport", "Winnipeg Saint Andrews Airport", "St Andrews Airport", "Saint Andrews Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"St. François Xavier Airport","alternativeNames":["St François Xavier Airport", "Saint François Xavier Airport", "St. Francois Xavier Airport", "St Francois Xavier Airport", "Saint Francois Xavier Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"St. Theresa Point Airport","alternativeNames":["Saint Theresa Point Airport", "St Theresa Point Airport"],"priorNames":[],"country":"canada","state":"manitoba"}
 
 
   ]
