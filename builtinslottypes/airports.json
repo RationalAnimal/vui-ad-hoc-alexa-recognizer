@@ -6927,7 +6927,15 @@
     {"name":"City of Winnipeg Heliport","alternativeNames":["Winnipeg Heliport"],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Wrong Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"York Landing Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
-    {"name":"Zhoda Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
+    {"name":"Zhoda Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Bathurst Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Boston Brook Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Brockway Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Bouctouche Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Charlo Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Chipman Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Clearwater Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Cormier Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"}
 
 
   ]
