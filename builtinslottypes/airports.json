@@ -6793,7 +6793,15 @@
     {"name":"Williams Lake Frontline Helicopters Heliport","alternativeNames":["Williams Lake Heliport"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Winfield Wood Lake Water Aerodrome","alternativeNames":["Winfield Water Aerodrome"],"priorNames":[],"country":"canada","state":"british columbia"},
     {"name":"Woodcock Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
-    {"name":"Zeballos Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"}
+    {"name":"Zeballos Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"british columbia"},
+    {"name":"Airport name","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Altona Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Arborg Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Ashern Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Flin Flon/Bakers Narrows Water Aerodrome","alternativeNames":["Flin Flon Bakers Narrows Water Aerodrome"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Beausejour/AV-Ranch Airpark","alternativeNames":["Beausejour AV-Ranch Airpark", "Beausejour/AV Ranch Airpark", "Beausejour AV Ranch Airpark"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Berens River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Big Sand Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
 
 
   ]
