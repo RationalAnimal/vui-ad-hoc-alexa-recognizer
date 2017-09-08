@@ -6817,7 +6817,15 @@
     {"name":"Deloraine Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Easterville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Elk Island Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
-    {"name":"Erickson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
+    {"name":"Erickson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Fisher Branch Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Flin Flon Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Flin Flon/Channing Water Aerodrome","alternativeNames":["Flin Flon Channing Water Aerodrome"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Gillam Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Gillam Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Gimli Industrial Park Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Gladstone Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Glenboro Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
 
 
   ]
