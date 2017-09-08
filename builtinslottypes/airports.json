@@ -6916,7 +6916,18 @@
     {"name":"The Pas/Grace Lake Water Aerodrome","alternativeNames":["The Pas Grace Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Thicket Portage Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Thompson Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
-    {"name":"Thompson Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
+    {"name":"Thompson Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Thompson Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Treherne Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Treherne Aerodrome","alternativeNames":["South Norfolk Airpark"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Virden Gabrielle Farm Airport","alternativeNames":["Virden Airport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Virden/R.J. Bob Andrew Field Regional Aerodrome","alternativeNames":["Virden/R.J. Andrew Field Regional Aerodrome", "Virden R.J. Bob Andrew Field Regional Aerodrome", "Virden R.J. Andrew Field Regional Aerodrome", "Virden R. J. Bob Andrew Field Regional Aerodrome", "Virden R J Bob Andrew Field Regional Aerodrome"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Winkler Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Winnipeg James Armstrong Richardson International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"City of Winnipeg Heliport","alternativeNames":["Winnipeg Heliport"],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Wrong Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"York Landing Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Zhoda Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
 
 
   ]
