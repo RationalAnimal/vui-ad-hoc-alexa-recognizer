@@ -6833,7 +6833,15 @@
     {"name":"Gunisao Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Gunisao Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
     {"name":"Homewood Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
-    {"name":"Ilford Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"}
+    {"name":"Ilford Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Island Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Jenpeg Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Kelsey Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Killarney Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Knee Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Knee Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Lac Brochet Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"manitoba"},
+    {"name":"Bird River Lac Du Bonnet Airport","alternativeNames":["Bird River Airport"],"priorNames":[],"country":"canada","state":"manitoba"}
 
 
   ]
