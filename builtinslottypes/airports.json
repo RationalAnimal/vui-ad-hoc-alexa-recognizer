@@ -6944,7 +6944,27 @@
     {"name":"Fredericton International Airport","alternativeNames":["Greater Fredericton International Airport"],"priorNames":[],"country":"canada","state":"new brunswick"},
     {"name":"Fredericton RCMP Heliport","alternativeNames":["Fredericton Heliport"],"priorNames":[],"country":"canada","state":"new brunswick"},
     {"name":"Scottsfield Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
-    {"name":"Grand Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"}
+    {"name":"Grand Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Grand Manan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Havelock Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Juniper Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Weyman Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Miramichi Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Greater Moncton Roméo LeBlanc International Airport","alternativeNames":["Moncton Roméo LeBlanc International Airport", "Greater Moncton Romeo LeBlanc International Airport", "Moncton Romeo LeBlanc International Airport"],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Moncton/McEwen Aerodrome","alternativeNames":["Moncton McEwen Aerodrome"],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Moncton/Sailsbury Heliport","alternativeNames":["Moncton Sailsbury Heliport"],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Gagetown Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Pokemouche Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Saint John Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Saint John Regional Hospital Heliport","alternativeNames":["Saint John Heliport"],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Saint-Léonard Aerodrome","alternativeNames":["Saint Léonard Aerodrome", "Saint-Leonard Aerodrome", "Saint Leonard Aerodrome"],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Saint-Quentin Aerodrome","alternativeNames":["Saint Quentin Aerodrome"],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"St. Stephen Airport","alternativeNames":["Saint Stephen Airport", "St Stephen Airport"],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Sevogle Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Shediac Bridge Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Sussex Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Upper Kent Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Woodstock Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"}
 
 
   ]
