@@ -7008,7 +7008,15 @@
     {"name":"Wabush Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
     {"name":"Wabush Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
     {"name":"Williams Harbour Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
-    {"name":"Winterland Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"}
+    {"name":"Winterland Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Amherst Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Antigonish St. Martha's Regional Hospital Heliport","alternativeNames":["Antigonish St Martha's Regional Hospital Heliport", "Antigonish Saint Martha's Regional Hospital Heliport", "Antigonish Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Arichat St. Anne Ladies Auxiliary Hospital Heliport","alternativeNames":["Arichat Heliport", "Arichat Saint Anne Ladies Auxiliary Hospital Heliport", "Arichat St Anne Ladies Auxiliary Hospital Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Baddeck Guneden Aerodrome","alternativeNames":["Baddeck Aerodrome"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Bridgewater/Dayspring Airpark","alternativeNames":["Bridgewater Dayspring Airpark"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Bridgewater South Shore Regional Hospital Heliport","alternativeNames":["Bridgewater Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Canso Eastern Memorial Hospital Heliport","alternativeNames":["Canso Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Mink Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"}
 
 
   ]
