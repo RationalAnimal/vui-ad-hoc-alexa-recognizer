@@ -94,6 +94,14 @@ let _getSubObject = function(object, keyArray, depth){
   return object;
 };
 
+/**
+ * Call this to ensure that the sub field specified by the keys argument is present
+ * E.g. if given objectToUpdate {"a": {"b": {}} and keys "a.b.c" the objectToUpdate after this call will be:
+ * {"a": {"b": {"c" : {}}}
+ * @param objectToUpdate - this is the object within wich we want to make sure the subfield is present
+ * @param keys - key that specify sub field.  These will first be "unfolded" via unfoldKeys()
+ * @private
+ */
 let _ensureSubfieldsPresent = function(objectToUpdate, keys){
   if(typeof objectToUpdate === "undefined" || objectToUpdate === null){
     return;
