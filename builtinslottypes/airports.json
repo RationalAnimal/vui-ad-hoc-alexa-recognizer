@@ -6996,7 +6996,19 @@
     {"name":"St. Anthony Airport","alternativeNames":["Saint Anthony Airport", "St Anthony Airport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
     {"name":"St. John's International Airport","alternativeNames":["Saint John's International Airport", "St John's International Airport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
     {"name":"St. John's Health Sciences Centre Heliport","alternativeNames":["St John's Health Sciences Centre Heliport", "Saint John's Health Sciences Centre Heliport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
-    {"name":"St. John's Paddys Pond Water Aerodrome","alternativeNames":["St. John's Water Aerodrome", "St John's Paddys Pond Water Aerodrome", "St John's Water Aerodrome", "Saint John's Paddys Pond Water Aerodrome", "Saint John's Water Aerodrome"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"}
+    {"name":"St. John's Paddys Pond Water Aerodrome","alternativeNames":["St. John's Water Aerodrome", "St John's Paddys Pond Water Aerodrome", "St John's Water Aerodrome", "Saint John's Paddys Pond Water Aerodrome", "Saint John's Water Aerodrome"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"St. John's Universal Heliport","alternativeNames":["Saint John's Universal Heliport", "St John's Universal Heliport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"St. Lewis Fox Harbour Airport","alternativeNames":["St. Lewis Airport", "St Lewis Fox Harbour Airport", "St Lewis Airport", "Saint Lewis Fox Harbour Airport", "Saint Lewis Airport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"South Brook Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Springdale Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Springdale/Davis Pond Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Stephenville International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Thorburn Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Voisey's Bay Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Wabush Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Wabush Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Williams Harbour Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Winterland Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"}
 
 
   ]
