@@ -25,13 +25,40 @@
  */
 'use strict'
 
+let accessorUtils = require("./utils.js");
+
+let _createSubAccessor = function createInstance(keyArray){
+  let state = this.applicationState;
+  if(typeof state === "undefined" || state === null){
+    return;
+  }
+  let unfoldedKeys = accessorUtils.unfoldKeys(keyArray);
+  let result;
+  if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null || Array.isArray(unfoldedKeys) !== true){
+    result = state;
+  }
+  else {
+    accessorUtils.ensureSubfieldsPresent(state, unfoldedKeys);
+    result = accessorUtils.getSubObject(state, unfoldedKeys);
+  }
+  if(this instanceof createInstance || this instanceof BasicAccessor || this === BasicAccessor){
+    return new BasicAccessor(result);
+  }
+  else {
+    return new this(result);
+  }
+};
+
 let base = require("./baseobjectrw.js");
-let accessor =  function(applicationState) {
+let BasicAccessor =  function(applicationState) {
   base.call(this, applicationState);
   this.applicationState = applicationState;
 };
 
-accessor.prototype = Object.create(base.prototype);
-accessor.prototype.constructor = accessor;
+BasicAccessor.prototype = Object.create(base.prototype);
+BasicAccessor.prototype.constructor = BasicAccessor;
 
-module.exports = accessor;
+BasicAccessor.createSubAccessor = _createSubAccessor;
+BasicAccessor.prototype.createSubAccessor = _createSubAccessor;
+
+module.exports = BasicAccessor;

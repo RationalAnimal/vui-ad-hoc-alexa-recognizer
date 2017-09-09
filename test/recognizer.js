@@ -3257,6 +3257,21 @@ describe("domain parsing", function() {
       expect(result).to.eql({"flow": "NEW_FLOW"});
     });
 
+    it("verify built in basic read write state accessor's getSubAccessor function generates an instance of basic read write accessor", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let simpleAccessor = new accessor(applicationState);
+
+      let subAccessor = simpleAccessor.createSubAccessor();
+      expect(subAccessor instanceof accessor).to.equal(true);
+    });
+
 
 
 
