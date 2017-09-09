@@ -3050,7 +3050,7 @@ describe("domain parsing", function() {
       });
     });
 
-    it("verify built in base object state accessor's getSubAccessor function works for getting the whole state sub accessor", function () {
+    it("verify built in base object state accessor's getSubAccessor function generates an instance of base object accessor", function () {
       let applicationState = {
         "something": "this is not relevant",
         "selectthis": {
@@ -3062,7 +3062,7 @@ describe("domain parsing", function() {
       let simpleAccessor = new accessor(applicationState);
 
       let subAccessor = simpleAccessor.createSubAccessor();
-      expect(simpleAccessor instanceof accessor).to.equal(true);
+      expect(subAccessor instanceof accessor).to.equal(true);
     });
 
     it("verify built in base object state accessor's getSubAccessor function works for getting the whole state sub accessor", function () {
