@@ -1670,16 +1670,27 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
             let scratchDomainInfo = domainToUse.domains[k];
             if(scratchDomainInfo.key === state.matchSpecs[j].domain){
               let scratchDomainSelector = scratchDomainInfo.selector;
-              if(typeof scratchDomainSelector !== "undefined" && scratchDomainSelector !== null){
+              if(typeof scratchDomainSelector === "string"){
+                // This is a short hand notation for an untrusted domain with a given selector and no specified location for untrusted state store.
+                // use "untrusted" pre-selector
+                updatedSelectors.push("untrusted");
                 updatedSelectors.push(scratchDomainSelector);
-                break;
+                let subAccessor = stateAccessor.createSubAccessor(updatedSelectors);
+                let result = _matchTextDomain(stringToMatch, scratchDomain, subAccessor, [], applicationState);
+                if(typeof result !== "undefined" && result !== null){
+                  return result;
+                }
               }
+//              if(typeof scratchDomainSelector !== "undefined" && scratchDomainSelector !== null){
+//                updatedSelectors.push(scratchDomainSelector);
+//                break;
+//              }
             }
           }
-          let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, updatedSelectors, applicationState);
-          if(typeof result !== "undefined" && result !== null){
-            return result;
-          }
+//          let result = _matchTextDomain(stringToMatch, scratchDomain, stateAccessor, updatedSelectors, applicationState);
+//          if(typeof result !== "undefined" && result !== null){
+//            return result;
+//          }
         }
       }
     }
