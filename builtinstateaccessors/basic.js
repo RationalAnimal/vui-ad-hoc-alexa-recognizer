@@ -27,12 +27,35 @@
 
 let accessorUtils = require("./utils.js");
 
-let _createSubAccessor = function createInstance(keyArray){
+let _createSubAccessor = function createInstance(keyArray, trustSpec){
+  if(typeof trustSpec === "undefined" || trustSpec === null){
+    trustSpec = {"read": true, "write": true};
+  }
   let state = this.applicationState;
   if(typeof state === "undefined" || state === null){
     return;
   }
   let unfoldedKeys = accessorUtils.unfoldKeys(keyArray);
+  // TODO for now only handle the case of either fully trusted or fully untrusted sub domain
+  if(trustSpec.read === true && trustSpec.write === true){
+    if(typeof trustSpec.selector === "undefined" || trustSpec.selector === null){
+      // No need to adjust unfoldedKeys
+    }
+    else if(typeof trustSpec.selector === "string" || Array.isArray(trustSpec.selector)){
+      let unfoldedTrustSelector = accessorUtils.unfoldKeys(trustSpec.selector);
+      if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null || Array.isArray(unfoldedKeys) !== true){
+        unfoldedKeys = unfoldedTrustSelector;
+      }
+      else {
+        unfoldedKeys = unfoldedKeys.concat(unfoldedTrustSelector);
+      }
+    }
+  }
+  else if(trustSpec.read === false && trustSpec.write === false){
+    // Fully untrusted sub accessor
+    // TODO continue from here.
+
+  }
   let result;
   if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null || Array.isArray(unfoldedKeys) !== true){
     result = state;
