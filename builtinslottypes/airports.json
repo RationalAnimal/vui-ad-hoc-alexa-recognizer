@@ -6980,7 +6980,15 @@
     {"name":"Gander International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
     {"name":"Gander James Paton Memorial Regional Health Centre Heliport","alternativeNames":["Gander Heliport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
     {"name":"Grand Falls-Windsor Heliport","alternativeNames":["Grand Falls Windsor Heliport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
-    {"name":"CFB Goose Bay","alternativeNames":["Goose Bay Airport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"}
+    {"name":"CFB Goose Bay","alternativeNames":["Goose Bay Airport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Goose Otter Creek Water Aerodrome","alternativeNames":["Goose Water Aerodrome"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Harbour Grace Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Hopedale Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Makkovik Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Mary's Harbour Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Nain Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Natuashish Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Port au Choix Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"}
 
 
   ]
