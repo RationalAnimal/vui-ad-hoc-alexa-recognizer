@@ -3119,6 +3119,23 @@ describe("domain parsing", function() {
       expect(result).to.eql({"flow": "TEST_FLOW"});
     });
 
+    it("verify built in read only object state accessor's getSubAccessor function generates an instance of read only object accessor", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+
+      let accessor = require("../builtinstateaccessors/basicreadonly.js");
+      let simpleAccessor = new accessor(applicationState);
+
+      let subAccessor = simpleAccessor.createSubAccessor();
+      expect(subAccessor instanceof accessor).to.equal(true);
+    });
+
+
+
   });
 });
 
