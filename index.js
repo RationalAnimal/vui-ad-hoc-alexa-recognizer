@@ -1670,6 +1670,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
             let scratchDomainInfo = domainToUse.domains[k];
             if(scratchDomainInfo.key === state.matchSpecs[j].domain){
               let scratchDomainSelector = scratchDomainInfo.selector;
+              let scratchDomainTrusted =  scratchDomainInfo.trusted;
               if(typeof scratchDomainSelector === "string"){
                 // This is a short hand notation for an untrusted domain with a given selector and no specified location for untrusted state store.
                 // use "untrusted" pre-selector
@@ -1679,6 +1680,21 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
                 let result = _matchTextDomain(stringToMatch, scratchDomain, subAccessor, [], applicationState);
                 if(typeof result !== "undefined" && result !== null){
                   return result;
+                }
+              }
+              else if(typeof scratchDomainTrusted !== "undefined" && scratchDomainTrusted !== null){
+                // If we are here that means we have the domain trust specification
+                if(scratchDomainTrusted.read === true && scratchDomainTrusted.write === true){
+                  // This means the domain is fully trusted.
+                  if(typeof scratchDomainTrusted.selector === "string"){
+                    // Simply create a normal sub accessor with this additional selector.
+                    updatedSelectors.push(scratchDomainSelector);
+                    let subAccessor = stateAccessor.createSubAccessor(updatedSelectors);
+                    let result = _matchTextDomain(stringToMatch, scratchDomain, subAccessor, [], applicationState);
+                    if(typeof result !== "undefined" && result !== null){
+                      return result;
+                    }
+                  }
                 }
               }
 //              if(typeof scratchDomainSelector !== "undefined" && scratchDomainSelector !== null){
