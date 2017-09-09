@@ -6988,7 +6988,15 @@
     {"name":"Mary's Harbour Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
     {"name":"Nain Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
     {"name":"Natuashish Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
-    {"name":"Port au Choix Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"}
+    {"name":"Port au Choix Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Port Hope Simpson Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Postville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Rigolet Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"St. Andrews Codroy Valley Airport","alternativeNames":["St. Andrews Airport", "St Andrews Codroy Valley Airport", "St Andrews Airport", "Saint Andrews Codroy Valley Airport", "Saint Andrews Airport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"St. Anthony Airport","alternativeNames":["Saint Anthony Airport", "St Anthony Airport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"St. John's International Airport","alternativeNames":["Saint John's International Airport", "St John's International Airport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"St. John's Health Sciences Centre Heliport","alternativeNames":["St John's Health Sciences Centre Heliport", "Saint John's Health Sciences Centre Heliport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"St. John's Paddys Pond Water Aerodrome","alternativeNames":["St. John's Water Aerodrome", "St John's Paddys Pond Water Aerodrome", "St John's Water Aerodrome", "Saint John's Paddys Pond Water Aerodrome", "Saint John's Water Aerodrome"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"}
 
 
   ]
