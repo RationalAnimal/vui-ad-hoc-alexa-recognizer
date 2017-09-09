@@ -7016,7 +7016,15 @@
     {"name":"Bridgewater/Dayspring Airpark","alternativeNames":["Bridgewater Dayspring Airpark"],"priorNames":[],"country":"canada","state":"nova scotia"},
     {"name":"Bridgewater South Shore Regional Hospital Heliport","alternativeNames":["Bridgewater Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
     {"name":"Canso Eastern Memorial Hospital Heliport","alternativeNames":["Canso Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
-    {"name":"Mink Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"}
+    {"name":"Mink Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Centredale Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Church Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Debert Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Digby/Annapolis Regional Airport","alternativeNames":["Digby Annapolis Regional Airport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Digby General Hospital Heliport","alternativeNames":["Digby Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"East Gore Eco Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Fall River Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Finlay Air Park","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"}
 
 
   ]
