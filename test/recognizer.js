@@ -3272,6 +3272,27 @@ describe("domain parsing", function() {
       expect(subAccessor instanceof accessor).to.equal(true);
     });
 
+    it("verify built in basic read write state accessor's getSubAccessor function works for getting the whole state sub accessor", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+
+      let accessor = require("../builtinstateaccessors/basic.js");
+      let simpleAccessor = new accessor(applicationState);
+
+      let subAccessor = simpleAccessor.createSubAccessor();
+      let result = subAccessor.getState();
+      expect(result).to.eql({
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      });
+    });
+
 
 
 

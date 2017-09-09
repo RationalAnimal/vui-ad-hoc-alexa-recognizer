@@ -52,6 +52,18 @@ let _unfoldKeys = function(keys){
   return keyArray;
 };
 
+/**
+ * Call to get a "sub object" of the provide object using the keys, optionally up to specified depth (optionally).
+ * E.g. given object {"a" : {"b": {"c" : "Extracted"}}} and keyArray ["a", "b"] or ["a.b"] or "a.b" the return value
+ * will be {"c": "Extracted}
+ * @param object - object from which to extract sub object
+ * @param keyArray - keys to use for selecting sub object.  Keys are first "expanded" via a call to unfoldKeys()
+ * @param depth - optional, allows selection for a shallower depth than specified by keyArray.  For example, if
+ * keyArray is ["a", "b", "c"] and the depth is 2, then this is equivalent to calling this function with the
+ * keyArray of ["a", "b"].
+ * @returns {*} - sub object
+ * @private
+ */
 let _getSubObject = function(object, keyArray, depth){
   if(typeof object === "undefined" || object === null){
     return;
