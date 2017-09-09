@@ -7024,7 +7024,15 @@
     {"name":"Digby General Hospital Heliport","alternativeNames":["Digby Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
     {"name":"East Gore Eco Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
     {"name":"Fall River Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
-    {"name":"Finlay Air Park","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"}
+    {"name":"Finlay Air Park","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Fox Harbour Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"CFB Greenwood","alternativeNames":["Greenwood Airport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Halifax IWK Health Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Halifax QE II Health Sciences Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Halifax South End Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Halifax Stanfield International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Hillaton/Kings Aerodrome","alternativeNames":["Hillaton Kings Aerodrome"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Hoopers Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"}
 
 
   ]
