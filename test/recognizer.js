@@ -3240,6 +3240,24 @@ describe("domain parsing", function() {
       expect(result).to.eql({"flow": "TEST_FLOW"});
     });
 
+    it("verify built in base read write state accessor's getSubAccessor function produces read write accessor", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+
+      let accessor = require("../builtinstateaccessors/baseobjectrw.js");
+      let simpleAccessor = new accessor(applicationState);
+
+      let subAccessor = simpleAccessor.createSubAccessor("selectthis");
+      subAccessor.setState("flow", "NEW_FLOW");
+      let result = subAccessor.getState();
+      expect(result).to.eql({"flow": "NEW_FLOW"});
+    });
+
+
 
 
   });

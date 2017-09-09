@@ -24,6 +24,16 @@
  SOFTWARE.
  */
 'use strict'
+
+/**
+ * Call to take either a string or an array of strings where each such string can contain periods and convert to a
+ * single array of strings, split using periods.
+ * E.g. "one.two.three" is converted to ["one", "two", "three"]
+ * E.g. ["one.two.three", "a.b.c", "blah"] is converted to ["one", "two", "three", "a", "b", "c", "blah"]
+ * @param keys - a single string or an array of strings.
+ * @returns {Array} - array of strings (that don't contain periods)
+ * @private
+ */
 let _unfoldKeys = function(keys){
   if(typeof keys === "undefined" || keys === null){
     return;
