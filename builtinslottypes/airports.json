@@ -6972,7 +6972,15 @@
     {"name":"Cartwright Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
     {"name":"Charlottetown Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
     {"name":"Churchill Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
-    {"name":"Clarenville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"}
+    {"name":"Clarenville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Conne River Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Deer Lake Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Fogo Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Long Pond Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Gander International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Gander James Paton Memorial Regional Health Centre Heliport","alternativeNames":["Gander Heliport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Grand Falls-Windsor Heliport","alternativeNames":["Grand Falls Windsor Heliport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"CFB Goose Bay","alternativeNames":["Goose Bay Airport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"}
 
 
   ]
