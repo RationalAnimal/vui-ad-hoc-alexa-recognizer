@@ -93,22 +93,48 @@ let _mergeReplaceState = function(keyArray, newState){
   }
 };
 
+let _createSubAccessor = function createInstance(keyArray){
+  let state = this.applicationState;
+  if(typeof state === "undefined" || state === null){
+    return;
+  }
+  let unfoldedKeys = accessorUtils.unfoldKeys(keyArray);
+  let result;
+  if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null || Array.isArray(unfoldedKeys) !== true){
+    result = state;
+  }
+  else {
+    accessorUtils.ensureSubfieldsPresent(state, unfoldedKeys);
+    result = accessorUtils.getSubObject(state, unfoldedKeys);
+  }
+  if(this instanceof createInstance || this instanceof BaseObjectReadWriteAccessor || this === BaseObjectReadWriteAccessor){
+    return new BaseObjectReadWriteAccessor(result);
+  }
+  else {
+    return new this(result);
+  }
+};
+
+
 let base = require("./baseobject.js");
-let accessor =  function(applicationState) {
+let BaseObjectReadWriteAccessor =  function(applicationState) {
   base.call(this, applicationState);
   this.applicationState = applicationState;
 };
 
-accessor.prototype = Object.create(base.prototype);
-accessor.prototype.constructor = accessor;
+BaseObjectReadWriteAccessor.prototype = Object.create(base.prototype);
+BaseObjectReadWriteAccessor.prototype.constructor = BaseObjectReadWriteAccessor;
 
-accessor.setState = _setState;
-accessor.prototype.setState = _setState;
+BaseObjectReadWriteAccessor.setState = _setState;
+BaseObjectReadWriteAccessor.prototype.setState = _setState;
 
-accessor.setStateChain = _setStateChain;
-accessor.prototype.setStateChain = _setStateChain;
+BaseObjectReadWriteAccessor.setStateChain = _setStateChain;
+BaseObjectReadWriteAccessor.prototype.setStateChain = _setStateChain;
 
-accessor.mergeReplaceState = _mergeReplaceState;
-accessor.prototype.mergeReplaceState = _mergeReplaceState;
+BaseObjectReadWriteAccessor.mergeReplaceState = _mergeReplaceState;
+BaseObjectReadWriteAccessor.prototype.mergeReplaceState = _mergeReplaceState;
 
-module.exports = accessor;
+BaseObjectReadWriteAccessor.createSubAccessor = _createSubAccessor;
+BaseObjectReadWriteAccessor.prototype.createSubAccessor = _createSubAccessor;
+
+module.exports = BaseObjectReadWriteAccessor;
