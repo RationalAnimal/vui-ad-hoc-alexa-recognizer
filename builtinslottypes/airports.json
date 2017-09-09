@@ -6964,7 +6964,15 @@
     {"name":"Shediac Bridge Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
     {"name":"Sussex Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
     {"name":"Upper Kent Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
-    {"name":"Woodstock Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"}
+    {"name":"Woodstock Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"new brunswick"},
+    {"name":"Bell Island Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Black Tickle Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Exploits Valley Botwood Airport","alternativeNames":["Exploits Valley Airport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Burgeo Calder Health Care Corp Heliport","alternativeNames":["Burgeo Heliport"],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Cartwright Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Charlottetown Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Churchill Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"},
+    {"name":"Clarenville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"newfoundland and labrador"}
 
 
   ]
