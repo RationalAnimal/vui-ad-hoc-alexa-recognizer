@@ -93,19 +93,21 @@ let _mergeReplaceState = function(keyArray, newState){
   }
 };
 
-let _createSubAccessor = function createInstance(keyArray){
+let _createSubAccessor = function createInstance(keyArray, trustSpec){
   let state = this.applicationState;
   if(typeof state === "undefined" || state === null){
     return;
   }
-  let unfoldedKeys = accessorUtils.unfoldKeys(keyArray);
+  let combinedTrustSpec = accessorUtils.mergeKeysAndTrustedSpec(keyArray, trustSpec);
+
+  // TODO for now only handle the case of either fully trusted or fully untrusted sub domain
   let result;
-  if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null || Array.isArray(unfoldedKeys) !== true){
+  if(typeof combinedTrustSpec.selector === "undefined" || combinedTrustSpec.selector === null || Array.isArray(combinedTrustSpec.selector) !== true || combinedTrustSpec.selector.length === 0){
     result = state;
   }
   else {
-    accessorUtils.ensureSubfieldsPresent(state, unfoldedKeys);
-    result = accessorUtils.getSubObject(state, unfoldedKeys);
+    accessorUtils.ensureSubfieldsPresent(state, combinedTrustSpec.selector);
+    result = accessorUtils.getSubObject(state, combinedTrustSpec.selector);
   }
   if(this instanceof createInstance || this instanceof BaseObjectReadWriteAccessor || this === BaseObjectReadWriteAccessor){
     return new BaseObjectReadWriteAccessor(result);

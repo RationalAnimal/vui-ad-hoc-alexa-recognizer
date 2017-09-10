@@ -3279,7 +3279,7 @@ describe("domain parsing", function() {
       expect(subAccessor instanceof accessor).to.equal(true);
     });
 
-    it("verify built in base read write state accessor's getSubAccessor function works for getting the whole state sub accessor", function () {
+    it("verify built in base read write state accessor's getSubAccessor function without trusted domain argument works for getting the whole state sub accessor", function () {
       let applicationState = {
         "something": "this is not relevant",
         "selectthis": {
@@ -3292,6 +3292,29 @@ describe("domain parsing", function() {
 
       let subAccessor = simpleAccessor.createSubAccessor();
       let result = subAccessor.getState();
+      expect(result).to.eql({});
+      expect(applicationState).to.eql({
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        },
+        "untrusted": {}
+      });
+    });
+
+    it("verify built in base read write state accessor's getSubAccessor function with trusted domain argument works for getting the whole state sub accessor", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+
+      let accessor = require("../builtinstateaccessors/baseobjectrw.js");
+      let simpleAccessor = new accessor(applicationState);
+
+      let subAccessor = simpleAccessor.createSubAccessor([], {"read": true, "write": true});
+      let result = subAccessor.getState();
       expect(result).to.eql({
         "something": "this is not relevant",
         "selectthis": {
@@ -3300,7 +3323,7 @@ describe("domain parsing", function() {
       });
     });
 
-    it("verify built in base read write state accessor's getSubAccessor function works for getting partial state sub accessor", function () {
+    it("verify built in base read write state accessor's getSubAccessor function without trusted domain argument works for getting partial state sub accessor", function () {
       let applicationState = {
         "something": "this is not relevant",
         "selectthis": {
@@ -3312,6 +3335,29 @@ describe("domain parsing", function() {
       let simpleAccessor = new accessor(applicationState);
 
       let subAccessor = simpleAccessor.createSubAccessor("selectthis");
+      let result = subAccessor.getState();
+      expect(result).to.eql({});
+      expect(applicationState).to.eql({
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW",
+          "untrusted": {}
+        }
+      });
+    });
+
+    it("verify built in base read write state accessor's getSubAccessor function with trusted domain argument works for getting partial state sub accessor", function () {
+      let applicationState = {
+        "something": "this is not relevant",
+        "selectthis": {
+          "flow": "TEST_FLOW"
+        }
+      };
+
+      let accessor = require("../builtinstateaccessors/baseobjectrw.js");
+      let simpleAccessor = new accessor(applicationState);
+
+      let subAccessor = simpleAccessor.createSubAccessor("selectthis", {"read": true, "write": true});
       let result = subAccessor.getState();
       expect(result).to.eql({"flow": "TEST_FLOW"});
     });
