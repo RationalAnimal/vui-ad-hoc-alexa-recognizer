@@ -7077,7 +7077,15 @@
     {"name":"Fort Liard Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Fort McPherson Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Fort Providence Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
-    {"name":"Fort Reliance Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"}
+    {"name":"Fort Reliance Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Fort Resolution Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Fort Simpson Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Fort Simpson Great Slave No. 1 Heliport","alternativeNames":["Fort Simpson Great Slave Number 1 Heliport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Fort Simpson Great Slave No. 2 Heliport","alternativeNames":["Fort Simpson Great Slave Number 2 Heliport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Fort Simpson Island Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Fort Simpson Island Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Fort Smith Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Fort Smith District Heliport","alternativeNames":["Fort Smith Heliport"],"priorNames":[],"country":"canada","state":"northwest territories"}
 
 
   ]
