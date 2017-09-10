@@ -137,9 +137,19 @@ let _ensureSubfieldsPresent = function(objectToUpdate, keys){
   }
 };
 
+/**
+ * Call this function to merge information in the keys and in the trustSpec as well as fill in any missing pieces
+ * with default information.
+ * @param keys - selector keys (or "pre" keys, typically not present)
+ * @param trustSpec - object that contains trust information about the sub domain.  This is optional and may be missing,
+ * in which case it uses some default values.
+ * @retuns object that is the same in structure as the trustSpec, but has combined information from keys and trustSpec
+ * arguments, filling in/changing where needed based on the values of the arguments.
+ * @private
+ */
 let _mergeKeysAndTrustedSpec = function(keys, trustSpec){
   if(typeof trustSpec === "undefined" || trustSpec === null){
-    trustSpec = {"read": true, "write": true};
+    trustSpec = {"read": true, "write": true, "sandBoxKeys": ["untrusted"]};
   }
   let unfoldedKeys = _unfoldKeys(keyArray);
   if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null){
@@ -175,7 +185,9 @@ let _mergeKeysAndTrustedSpec = function(keys, trustSpec){
       unfoldedKeys = unfoldedKeys.concat(unfoldedTrustSelector);
     }
   }
-  return unfoldedKeys;
+  let returnValue = JSON.parse(JSON.stringify(trustSpec));
+  returnValue.selector = unfoldedKeys;
+  return returnValue;
 };
 
 let utils = class {
