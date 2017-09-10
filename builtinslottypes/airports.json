@@ -7101,8 +7101,14 @@
     {"name":"Jean Marie River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Kasba Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Kasba Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
-    {"name":"Lutselk'e Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"}
-
+    {"name":"Lutselk'e Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Lutselk'e Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Nahanni Butte Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Virginia Falls Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Namushka Lodge Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Norman Wells Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Norman Wells Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Obre Lake/North of Sixty Airport","alternativeNames":["Obre Lake North of Sixty Airport"],"priorNames":[],"country":"canada","state":"northwest territories"}
 
   ]
 }
