@@ -169,6 +169,9 @@ let _mergeKeysAndTrustedSpec = function(keys, trustSpec){
         unfoldedKeys = unfoldedKeys.concat(unfoldedTrustSelector);
       }
     }
+    let returnValue = JSON.parse(JSON.stringify(trustSpec));
+    returnValue.selector = unfoldedKeys;
+    return returnValue;
   }
   else if(trustSpec.read === false && trustSpec.write === false){
     // Fully untrusted sub accessor
@@ -184,10 +187,19 @@ let _mergeKeysAndTrustedSpec = function(keys, trustSpec){
       let unfoldedTrustSelector = _unfoldKeys(trustSpec.selector);
       unfoldedKeys = unfoldedKeys.concat(unfoldedTrustSelector);
     }
+    let returnValue = JSON.parse(JSON.stringify(trustSpec));
+    returnValue.selector = unfoldedKeys;
+    return returnValue;
   }
-  let returnValue = JSON.parse(JSON.stringify(trustSpec));
-  returnValue.selector = unfoldedKeys;
-  return returnValue;
+  else if(trustSpec.write !== true && trustSpec.read === true){
+    // Write restricted - can read the real state, but can't write it. NOT the same as read only. Can actually write,
+    // but until written will read the real value.  After the first write will read the written value.
+    // TODO think this through
+  }
+  else if(trustSpec.write === true && trustSpec.read !== true){
+    // TODO continue from here
+
+  }
 };
 
 let utils = class {
