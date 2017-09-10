@@ -99,7 +99,6 @@ let _createSubAccessor = function createInstance(keyArray, trustSpec){
     return;
   }
   let combinedTrustSpec = accessorUtils.mergeKeysAndTrustedSpec(keyArray, trustSpec);
-
   // TODO for now only handle the case of either fully trusted or fully untrusted sub domain
   let result;
   if(typeof combinedTrustSpec.selector === "undefined" || combinedTrustSpec.selector === null || Array.isArray(combinedTrustSpec.selector) !== true || combinedTrustSpec.selector.length === 0){
