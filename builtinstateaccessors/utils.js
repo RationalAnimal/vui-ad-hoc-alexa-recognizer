@@ -149,7 +149,7 @@ let _ensureSubfieldsPresent = function(objectToUpdate, keys){
  */
 let _mergeKeysAndTrustedSpec = function(keys, trustSpec){
   if(typeof trustSpec === "undefined" || trustSpec === null){
-    trustSpec = {"read": true, "write": true, "sandBoxKeys": ["untrusted"]};
+    trustSpec = {"read": false, "write": false, "sandBoxKeys": ["untrusted"]};
   }
   let unfoldedKeys = _unfoldKeys(keyArray);
   if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null){
