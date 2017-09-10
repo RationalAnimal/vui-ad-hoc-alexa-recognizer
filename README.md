@@ -1907,15 +1907,21 @@ First, you must add the sub-domain to the list of domains:
     {
       "key": "greeting",
       "path": "./test/greetingdomain/greetingdomain.json",
-      "selector": "greetingdomain"
+      "trusted": {
+        "read": true,
+        "write": true,
+        "selector": "greetingdomain"
+      }
     }
   ],
   "states": [
 ...
 ```
-Two things to note here.  Just as with including recognizers you must provide a "key" with a value - this is an arbitrary
+A few things to note here.  Just as with including recognizers you must provide a "key" with a value - this is an arbitrary
 value determined by you.  It's needed so that this domain can be referenced elsewhere by this "key".
-Second, there is an option selector field.  Its value, if provided, is used to select a portion of the state object that
+Second, there is a "trusted" field.  This field specifies whether this subdomain is trusted to read and/or write
+to the parent's (i.e. this domain's) state. In this exmaple we have a fully trusted sub domain.  Such a subdomain has an
+optional selector field.  Its value, if provided, is used to select a portion of the state object that
 this subdomain will be able to see.  Thus, in this example the "selector" is "greetingdomain".  So any modifications will
 be done to the <state object>.greetingdomain field as if it's the entire state.  If you have closely cooperating modules
 that need to know each other's state then the "selector" field would probably either be absent or be the same for these
@@ -1968,13 +1974,182 @@ State object:  {
 }
 ```
 
-You can include sub-domains within subdomain.  The only restriction is that you can't do circular subdomains - don't
+You can include sub-domains within sub-domains.  The only restriction is that you can't do circular subdomains - don't
 include B as a side domain of A if A is already a subdomain of B.
 
-#### Trusted sub-domains
+#### Trusted vs non trusted sub-domains
 
+In the initial example above you've seen a fully trusted domain.  What if you are using a third party domain that you
+aren't sure about?  Furthermore, such a sub-domain may not even need to have access to your state, so why provide it?
+You can simply accommodate this by specifying it as a non trusted sub-domain:
 
+```text
+{
+  "description": "Simplest domain",
+  "recognizers": [
+    {
+      "key": "mine",
+      "path": "./myrecognizer.json"
+    }
+  ],
+  "domains": [
+    {
+      "key": "greeting",
+      "path": "./test/greetingdomain/greetingdomain.json",
+      "trusted": {
+        "read": false,
+        "write": false
+      }
+    }
+  ],
+  "states": [
 ...
+```
+
+Now, even if there is no "selector" field in the "trusted" field, the sub-domain will be separated from the main part of
+the state and even custom responders won't be able to see outside of that sub portion.
+
+If you were to re-run the domain runner, you would get:
+
+```text
+Please type user text: hi there
+Your text was: "hi there"
+newResult:  {
+  "text": "Hi from the custom function module"
+}
+newResult:  {
+  "text": "Nice to meet you",
+  "ssml": "<speak>Nice to meet you</speak>"
+}
+Domain response:  {
+  "match": {
+    "name": "GreetingIntent",
+    "slots": {}
+  },
+  "result": {
+    "text": "Hi from the custom function module  Nice to meet you",
+    "ssml": "<speak>Nice to meet you</speak>"
+  }
+}
+State object:  {
+  "untrusted": {
+    "customfunctionmodulewasrun": "true",
+    "greetingAlreadyUsed": [
+      {
+        "text": "Nice to meet you",
+        "ssml": "<speak>Nice to meet you</speak>"
+      }
+    ]
+  }
+}
+```
+
+Note that the state of the sub-domain is now relegated to the "untrusted" subfield and only the contents of that subfield
+will be visible to anything in that sub-domain.
+
+Sometimes you may want to be able to specify the name of this "sand boxing" field.  You can do it like this:
+
+```text
+...
+{
+  "description": "Simplest domain",
+  "recognizers": [
+    {
+      "key": "mine",
+      "path": "./myrecognizer.json"
+    }
+  ],
+  "domains": [
+    {
+      "key": "greeting",
+      "path": "./test/greetingdomain/greetingdomain.json",
+      "trusted": {
+        "read": false,
+        "write": false,
+        "selector": "greetingdomain",
+        "sandBoxKeys": "separateddomain"
+      }
+    }
+  ],
+  "states": [
+...
+```
+
+Now, if you re-run the domain runner yet again, you will see:
+```text
+Your text was: "hi there"
+newResult:  {
+  "text": "Hi from the custom function module"
+}
+newResult:  {
+  "text": "Hello",
+  "ssml": "<speak>Hello</speak>"
+}
+Domain response:  {
+  "match": {
+    "name": "GreetingIntent",
+    "slots": {}
+  },
+  "result": {
+    "text": "Hi from the custom function module  Hello",
+    "ssml": "<speak>Hello</speak>"
+  }
+}
+State object:  {
+  "separateddomain": {
+    "greetingdomain": {
+      "customfunctionmodulewasrun": "true",
+      "greetingAlreadyUsed": [
+        {
+          "text": "Hello",
+          "ssml": "<speak>Hello</speak>"
+        }
+      ]
+    }
+  }
+}
+```
+
+Note that the entire sub-domain's portion of the state has now been placed into the field specified by the sandBoxKeys
+field and also that the selector field is still used if you specified it.
+
+#### Missing trusted specification
+
+You can also skip specifying trusted information completely.  When you do, it's the same as specifying an untrusted
+domain with the sandBoxKeys being set to "untrusted".  "selector" value will be used, if present.
+For example:
+
+```json
+{
+  "key": "greeting",
+  "path": "./test/greetingdomain/greetingdomain.json",
+  "selector": "greetingdomain"
+}
+```
+
+is equivalent to
+
+```json
+{
+  "key": "greeting",
+  "path": "./test/greetingdomain/greetingdomain.json",
+  "trusted": {
+    "read": false,
+    "write": false,
+    "selector": "greetingdomain",
+    "sandBoxKeys": "untrusted"
+  }
+}
+```
+
+#### Hybrid trusted sub-domains
+
+Currently you can only specify completely trusted (read AND write) or completely untrusted sub-domains.  I am in the
+process of adding partially trusted sub-domains, e.g. can read but not write OR can write but not read the parent domain's
+state.  This will function differently from the "obvious" expectation.  For example, the domain that is trusted to read
+the value will still be able to write to "it", but it won't write to the parent's state, rather to its own portion. And
+vice versa - the domain that is write trusted will be able to write to the parent's state but will be able to read only
+the values it has previously written.
 
 ## Non Alexa support
 
