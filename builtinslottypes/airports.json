@@ -7061,7 +7061,15 @@
     {"name":"Doctor's Lake East Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
     {"name":"Doctor's Lake West Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
     {"name":"Yarmouth Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
-    {"name":"Yarmouth Regional Hospital Heliport","alternativeNames":["Yarmouth Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"}
+    {"name":"Yarmouth Regional Hospital Heliport","alternativeNames":["Yarmouth Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Aklavik/Freddie Carmichael Airport","alternativeNames":["Aklavik Freddie Carmichael Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Aklavik Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Rae/Edzo Airport","alternativeNames":["Rae Edzo Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Colville Lake/Tommy Kochon Aerodrome","alternativeNames":["Colville Lake Tommy Kochon Aerodrome"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Colville Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Déline Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Déline Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Diavik Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"}
 
 
   ]
