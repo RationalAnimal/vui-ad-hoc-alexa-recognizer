@@ -137,6 +137,47 @@ let _ensureSubfieldsPresent = function(objectToUpdate, keys){
   }
 };
 
+let _mergeKeysAndTrustedSpec = function(keys, trustSpec){
+  if(typeof trustSpec === "undefined" || trustSpec === null){
+    trustSpec = {"read": true, "write": true};
+  }
+  let unfoldedKeys = _unfoldKeys(keyArray);
+  if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null){
+    unfoldedKeys = [];
+  }
+  // TODO for now only handle the case of either fully trusted or fully untrusted sub domain
+  if(trustSpec.read === true && trustSpec.write === true){
+    if(typeof trustSpec.selector === "undefined" || trustSpec.selector === null){
+      // No need to adjust unfoldedKeys
+    }
+    else if(typeof trustSpec.selector === "string" || Array.isArray(trustSpec.selector)){
+      let unfoldedTrustSelector = _unfoldKeys(trustSpec.selector);
+      if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null || Array.isArray(unfoldedKeys) !== true){
+        unfoldedKeys = unfoldedTrustSelector;
+      }
+      else {
+        unfoldedKeys = unfoldedKeys.concat(unfoldedTrustSelector);
+      }
+    }
+  }
+  else if(trustSpec.read === false && trustSpec.write === false){
+    // Fully untrusted sub accessor
+    let sandBoxKeys = _unfoldKeys(trustSpec.sandBoxKeys);
+    if(typeof sandBoxKeys === "undefined" || sandBoxKeys === null || (Array.isArray(sandBoxKeys) && sandBoxKeys.length === 0)){
+      sandBoxKeys = ["untrusted"];
+    }
+    unfoldedKeys = unfoldedKeys.concat(sandBoxKeys);
+    if(typeof trustSpec.selector === "undefined" || trustSpec.selector === null){
+      // No need to adjust unfoldedKeys
+    }
+    else if(typeof trustSpec.selector === "string" || Array.isArray(trustSpec.selector)){
+      let unfoldedTrustSelector = _unfoldKeys(trustSpec.selector);
+      unfoldedKeys = unfoldedKeys.concat(unfoldedTrustSelector);
+    }
+  }
+  return unfoldedKeys;
+};
+
 let utils = class {
 };
 
@@ -149,5 +190,7 @@ utils.prototype.unfoldKeys = _unfoldKeys;
 utils.getSubObject = _getSubObject;
 utils.prototype.getSubObject = _getSubObject;
 
+utils.mergeKeysAndTrustedSpec = _mergeKeysAndTrustedSpec;
+utils.prototype.mergeKeysAndTrustedSpec = _mergeKeysAndTrustedSpec;
 
 module.exports = utils;
