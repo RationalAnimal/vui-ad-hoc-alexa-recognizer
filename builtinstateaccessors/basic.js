@@ -36,6 +36,9 @@ let _createSubAccessor = function createInstance(keyArray, trustSpec){
     return;
   }
   let unfoldedKeys = accessorUtils.unfoldKeys(keyArray);
+  if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null){
+    unfoldedKeys = [];
+  }
   // TODO for now only handle the case of either fully trusted or fully untrusted sub domain
   if(trustSpec.read === true && trustSpec.write === true){
     if(typeof trustSpec.selector === "undefined" || trustSpec.selector === null){
@@ -53,8 +56,18 @@ let _createSubAccessor = function createInstance(keyArray, trustSpec){
   }
   else if(trustSpec.read === false && trustSpec.write === false){
     // Fully untrusted sub accessor
-    // TODO continue from here.
-
+    let sandBoxKeys = accessorUtils.unfoldKeys(trustSpec.sandBoxKeys);
+    if(typeof sandBoxKeys === "undefined" || sandBoxKeys === null || (Array.isArray(sandBoxKeys) && sandBoxKeys.length == 0)){
+      sandBoxKeys = ["untrusted"];
+    }
+    unfoldedKeys = unfoldedKeys.concat(sandBoxKeys);
+    if(typeof trustSpec.selector === "undefined" || trustSpec.selector === null){
+      // No need to adjust unfoldedKeys
+    }
+    else if(typeof trustSpec.selector === "string" || Array.isArray(trustSpec.selector)){
+      let unfoldedTrustSelector = accessorUtils.unfoldKeys(trustSpec.selector);
+      unfoldedKeys = unfoldedKeys.concat(unfoldedTrustSelector);
+    }
   }
   let result;
   if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null || Array.isArray(unfoldedKeys) !== true){
