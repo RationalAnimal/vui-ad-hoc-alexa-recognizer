@@ -7048,7 +7048,20 @@
     {"name":"Porters Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
     {"name":"Porters Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
     {"name":"Port Hawkesbury Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
-    {"name":"Sable Island Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"}
+    {"name":"Sable Island Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Sable Island Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"CFB Shearwater Heliport","alternativeNames":["Halifax/Shearwater Heliport", "Halifax Shearwater Heliport", "Shearwater Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Shelburne Roseway Hospital Heliport","alternativeNames":["Shelburne Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Stanley Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Sydney/J.A. Douglas McCurdy Airport","alternativeNames":["Sydney J.A. Douglas McCurdy Airport", "Sydney/J. A. Douglas McCurdy Airport", "Sydney J. A. Douglas McCurdy Airport", "Sydney/JA Douglas McCurdy Airport", "Sydney JA Douglas McCurdy Airport", "Sydney/J A Douglas McCurdy Airport", "Sydney J A Douglas McCurdy Airport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Sydney Cape Breton Regional Hospital Heliport","alternativeNames":["Sydney Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Thorburn Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Trenton Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Truro Colchester Health Centre Heliport","alternativeNames":["Truro Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Doctor's Lake East Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Doctor's Lake West Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Yarmouth Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Yarmouth Regional Hospital Heliport","alternativeNames":["Yarmouth Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"}
 
 
   ]
