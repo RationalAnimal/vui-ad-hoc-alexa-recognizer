@@ -7115,7 +7115,14 @@
     {"name":"Prairie Creek Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Sachs Harbour David Nasogaluak Jr. Saaryuaq Airport","alternativeNames":["Sachs Harbour David Nasogaluak Jr Saaryuaq Airport", "Sachs Harbour David Nasogaluak Junior Saaryuaq Airport", "Sachs Harbour Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Sambaa K'e Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
-    {"name":"Trout Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"}
+    {"name":"Trout Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Snap Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Snare River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Taltson River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Tuktoyaktuk/James Gruben Airport","alternativeNames":["Tuktoyaktuk James Gruben Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Tulita Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Tundra Mine/Salamita Mine Aerodrome","alternativeNames":["Tundra Mine Salamita Mine Aerodrome"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Tungsten Cantung Airport","alternativeNames":["Tungsten Airport"],"priorNames":[],"country":"canada","state":"northwest territories"}
 
   ]
 }
