@@ -7085,7 +7085,15 @@
     {"name":"Fort Simpson Island Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Fort Simpson Island Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Fort Smith Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
-    {"name":"Fort Smith District Heliport","alternativeNames":["Fort Smith Heliport"],"priorNames":[],"country":"canada","state":"northwest territories"}
+    {"name":"Fort Smith District Heliport","alternativeNames":["Fort Smith Heliport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Frank Channel Forestry Heliport","alternativeNames":["Frank Channel Heliport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Gahcho Kue Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Gamètì/Rae Lakes Airport","alternativeNames":["Gamètì Rae Lakes Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Great Bear Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Great Bear Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Taltheilei Narrows Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Taltheilei Narrows Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Hay River/Merlyn Carter Airport","alternativeNames":["Hay River Merlyn Carter Airport"],"priorNames":[],"country":"canada","state":"northwest territories"}
 
 
   ]
