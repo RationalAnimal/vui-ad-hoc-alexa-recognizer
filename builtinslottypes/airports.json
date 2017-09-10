@@ -7108,7 +7108,14 @@
     {"name":"Namushka Lodge Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Norman Wells Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Norman Wells Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
-    {"name":"Obre Lake/North of Sixty Airport","alternativeNames":["Obre Lake North of Sixty Airport"],"priorNames":[],"country":"canada","state":"northwest territories"}
+    {"name":"Obre Lake/North of Sixty Airport","alternativeNames":["Obre Lake North of Sixty Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Obre Lake/North of Sixty Water Aerodrome","alternativeNames":["Obre Lake North of Sixty Water Aerodrome"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Paulatuk Nora Aliqatchialuk Ruben Airport","alternativeNames":["Paulatuk Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Paulatuk Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Prairie Creek Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Sachs Harbour David Nasogaluak Jr. Saaryuaq Airport","alternativeNames":["Sachs Harbour David Nasogaluak Jr Saaryuaq Airport", "Sachs Harbour David Nasogaluak Junior Saaryuaq Airport", "Sachs Harbour Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Sambaa K'e Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Trout Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"}
 
   ]
 }
