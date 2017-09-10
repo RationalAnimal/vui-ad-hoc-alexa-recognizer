@@ -151,7 +151,7 @@ let _mergeKeysAndTrustedSpec = function(keys, trustSpec){
   if(typeof trustSpec === "undefined" || trustSpec === null){
     trustSpec = {"read": false, "write": false, "sandBoxKeys": ["untrusted"]};
   }
-  let unfoldedKeys = _unfoldKeys(keyArray);
+  let unfoldedKeys = _unfoldKeys(keys);
   if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null){
     unfoldedKeys = [];
   }

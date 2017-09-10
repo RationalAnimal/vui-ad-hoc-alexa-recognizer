@@ -28,54 +28,20 @@
 let accessorUtils = require("./utils.js");
 
 let _createSubAccessor = function createInstance(keyArray, trustSpec){
-  if(typeof trustSpec === "undefined" || trustSpec === null){
-    trustSpec = {"read": true, "write": true};
-  }
   let state = this.applicationState;
   if(typeof state === "undefined" || state === null){
     return;
   }
-  let unfoldedKeys = accessorUtils.unfoldKeys(keyArray);
-  if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null){
-    unfoldedKeys = [];
-  }
+  let combinedTrustSpec = accessorUtils.mergeKeysAndTrustedSpec(keyArray, trustSpec);
+
   // TODO for now only handle the case of either fully trusted or fully untrusted sub domain
-  if(trustSpec.read === true && trustSpec.write === true){
-    if(typeof trustSpec.selector === "undefined" || trustSpec.selector === null){
-      // No need to adjust unfoldedKeys
-    }
-    else if(typeof trustSpec.selector === "string" || Array.isArray(trustSpec.selector)){
-      let unfoldedTrustSelector = accessorUtils.unfoldKeys(trustSpec.selector);
-      if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null || Array.isArray(unfoldedKeys) !== true){
-        unfoldedKeys = unfoldedTrustSelector;
-      }
-      else {
-        unfoldedKeys = unfoldedKeys.concat(unfoldedTrustSelector);
-      }
-    }
-  }
-  else if(trustSpec.read === false && trustSpec.write === false){
-    // Fully untrusted sub accessor
-    let sandBoxKeys = accessorUtils.unfoldKeys(trustSpec.sandBoxKeys);
-    if(typeof sandBoxKeys === "undefined" || sandBoxKeys === null || (Array.isArray(sandBoxKeys) && sandBoxKeys.length == 0)){
-      sandBoxKeys = ["untrusted"];
-    }
-    unfoldedKeys = unfoldedKeys.concat(sandBoxKeys);
-    if(typeof trustSpec.selector === "undefined" || trustSpec.selector === null){
-      // No need to adjust unfoldedKeys
-    }
-    else if(typeof trustSpec.selector === "string" || Array.isArray(trustSpec.selector)){
-      let unfoldedTrustSelector = accessorUtils.unfoldKeys(trustSpec.selector);
-      unfoldedKeys = unfoldedKeys.concat(unfoldedTrustSelector);
-    }
-  }
   let result;
-  if(typeof unfoldedKeys === "undefined" || unfoldedKeys === null || Array.isArray(unfoldedKeys) !== true){
+  if(typeof combinedTrustSpec.selector === "undefined" || combinedTrustSpec.selector === null || Array.isArray(combinedTrustSpec.selector) !== true || combinedTrustSpec.selector.length === 0){
     result = state;
   }
   else {
-    accessorUtils.ensureSubfieldsPresent(state, unfoldedKeys);
-    result = accessorUtils.getSubObject(state, unfoldedKeys);
+    accessorUtils.ensureSubfieldsPresent(state, combinedTrustSpec.selector);
+    result = accessorUtils.getSubObject(state, combinedTrustSpec.selector);
   }
   if(this instanceof createInstance || this instanceof BasicAccessor || this === BasicAccessor){
     return new BasicAccessor(result);
