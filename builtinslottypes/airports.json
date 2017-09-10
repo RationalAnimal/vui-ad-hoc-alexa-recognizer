@@ -7040,7 +7040,15 @@
     {"name":"Liverpool Queens General Hospital Heliport","alternativeNames":["Liverpool Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
     {"name":"Liverpool/South Shore Regional Airport","alternativeNames":["Liverpool South Shore Regional Airport"],"priorNames":[],"country":"canada","state":"nova scotia"},
     {"name":"Lower East Pubnico La Field Airport","alternativeNames":["Lower East Pubnico Airport"],"priorNames":[],"country":"canada","state":"nova scotia"},
-    {"name":"Grand Etang Pubnico Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"}
+    {"name":"Grand Etang Pubnico Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Margaree Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Middleton Soldiers Memorial Hospital Heliport","alternativeNames":["Middleton Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"New Germany Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"New Glasgow Aberdeen Hospital Heliport","alternativeNames":["New Glasgow Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Porters Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Porters Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Port Hawkesbury Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Sable Island Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"}
 
 
   ]
