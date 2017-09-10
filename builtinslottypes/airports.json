@@ -7032,7 +7032,15 @@
     {"name":"Halifax South End Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
     {"name":"Halifax Stanfield International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
     {"name":"Hillaton/Kings Aerodrome","alternativeNames":["Hillaton Kings Aerodrome"],"priorNames":[],"country":"canada","state":"nova scotia"},
-    {"name":"Hoopers Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"}
+    {"name":"Hoopers Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Inverness Consolidated Memorial Hospital Heliport","alternativeNames":["Inverness Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Kentville Camp Aldershot Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Kentville Valley Regional Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Langille Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Liverpool Queens General Hospital Heliport","alternativeNames":["Liverpool Heliport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Liverpool/South Shore Regional Airport","alternativeNames":["Liverpool South Shore Regional Airport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Lower East Pubnico La Field Airport","alternativeNames":["Lower East Pubnico Airport"],"priorNames":[],"country":"canada","state":"nova scotia"},
+    {"name":"Grand Etang Pubnico Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nova scotia"}
 
 
   ]
