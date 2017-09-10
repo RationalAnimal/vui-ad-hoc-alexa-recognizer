@@ -7088,12 +7088,20 @@
     {"name":"Fort Smith District Heliport","alternativeNames":["Fort Smith Heliport"],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Frank Channel Forestry Heliport","alternativeNames":["Frank Channel Heliport"],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Gahcho Kue Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
-    {"name":"Gamètì/Rae Lakes Airport","alternativeNames":["Gamètì Rae Lakes Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Gamètì/Rae Lakes Airport","alternativeNames":["Gamètì Rae Lakes Airport", "Gameti Rae Lakes Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Great Bear Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Great Bear Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Taltheilei Narrows Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Taltheilei Narrows Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
-    {"name":"Hay River/Merlyn Carter Airport","alternativeNames":["Hay River Merlyn Carter Airport"],"priorNames":[],"country":"canada","state":"northwest territories"}
+    {"name":"Hay River/Merlyn Carter Airport","alternativeNames":["Hay River Merlyn Carter Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Hay River District Heliport","alternativeNames":["Hay River Heliport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Hay River Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Inuvik Mike Zubko Airport","alternativeNames":["Inuvik Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Inuvik/Shell Lake Water Aerodrome","alternativeNames":["Inuvik Shell Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Jean Marie River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Kasba Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Kasba Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Lutselk'e Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"}
 
 
   ]
