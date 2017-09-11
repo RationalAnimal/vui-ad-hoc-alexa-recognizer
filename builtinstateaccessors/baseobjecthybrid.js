@@ -120,7 +120,6 @@ let _createSubAccessor = function createInstance(keyArray, trustSpec){
 let base = require("./baseobject.js");
 let BaseObjectHybridAccessor =  function(readState) {
   base.call(this, readState);
-  this.applicationState = readState;
 };
 
 BaseObjectHybridAccessor.prototype = Object.create(base.prototype);
