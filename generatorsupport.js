@@ -747,22 +747,29 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         for(let i = 0; i < config.customSlotTypes.length; i++){
             let customSlotType = config.customSlotTypes[i];
             if(customSlotType.name === slotType){
-                if(_hasFlag("SOUNDEX_MATCH", slotFlags)){
+                if(typeof customSlotType.customRegExpString === "string" && customSlotType.customRegExpString.length > 0){
+                  // TODO add customRegExp handling
+                  customSlotType.replacementRegExp = customSlotType.customRegExpString;
+                  return customSlotType.replacementRegExp;
+                }
+                else {
+                  if(_hasFlag("SOUNDEX_MATCH", slotFlags)){
                     if(typeof customSlotType.replacementSoundExpRegExp === "undefined"){
-                        customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
+                      customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
                     }
                     // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
                     return "((?:\\w|\\s|[0-9]|\-)+)";
-                }
-                else if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
+                  }
+                  else if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
                     // numbers are used in cases of names like John the 1st
                     return "((?:\\w|\\s|[0-9]|\-)+)";
-                }
-                else {
+                  }
+                  else {
                     if(typeof customSlotType.replacementRegExp === "undefined"){
-                        customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values);
+                      customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values);
                     }
                     return customSlotType.replacementRegExp;
+                  }
                 }
             }
         }
