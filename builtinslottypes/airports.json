@@ -7143,7 +7143,14 @@
     {"name":"Clyde River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
     {"name":"Coral Harbour Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
     {"name":"Doris Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
-    {"name":"Eureka Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"}
+    {"name":"Eureka Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"George Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Gjoa Haven Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Goose Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Grise Fiord Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Hall Beach Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Hope Bay Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Igloolik Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"}
 
   ]
 }
