@@ -7183,7 +7183,23 @@
     {"name":"Arnprior/South Renfrew Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Arnprior Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Arthur Arthur South Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Arthur Metz Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Arthur Metz Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Arthur Peskett Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Arthur Walter's Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Atikokan General Hospital Heliport","alternativeNames":["Atikokan Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Atikokan Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Atikokan Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Attawapiskat Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Atwood/Coghlin Airport","alternativeNames":["Atwood Coghlin Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ayr/Sargeant Private Airfield","alternativeNames":["Ayr Sargeant Private Airfield"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bala Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bala Gibson Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bala Muskoka Float Flying Club Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lake Muskoka/Dudley Bay Water Aerodrome","alternativeNames":["Lake Muskoka Dudley Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Baldwin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Baldwin West Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bancroft Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bancroft North Hastings District Hospital Heliport","alternativeNames":["Bancroft Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
