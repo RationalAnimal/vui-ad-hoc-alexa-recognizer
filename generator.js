@@ -148,7 +148,7 @@ if(Array.isArray(config.customSlotTypes)){
     if(typeof customSlotType.filename != "undefined"){
       let values = utilities.loadStringListFromFile(customSlotType.filename);
       if(typeof values != "undefined"){
-        if(typeof customSlotType.values != "undefined"){
+        if(typeof customSlotType.values !== "undefined"){
           for(let j = 0; j < values.length; j++){
             if(customSlotType.values.indexOf(values[j]) < 0){
               customSlotType.values.push(values[j]);
@@ -160,6 +160,9 @@ if(Array.isArray(config.customSlotTypes)){
         }
       }
     }
+    else if(typeof customSlotType.customRegExpString !== "undefined"){
+      // Add the code to parse the customRegExpString and add it to the customSlotType
+    }
   }
 }
 
@@ -167,7 +170,7 @@ var resultJson;
 if(typeof utterancesFileName != "undefined"){
   utterances = utilities.loadStringListFromFile(utterancesFileName);
 }
-if(typeof interactionModel != "undefined"){
+if(typeof interactionModel !== "undefined"){
   // Get the info from interactionModel
   if(typeof interactionModel.intents != "undefined"){
     for(let i = 0; i < interactionModel.intents.length; i ++){
