@@ -7150,7 +7150,15 @@
     {"name":"Grise Fiord Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
     {"name":"Hall Beach Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
     {"name":"Hope Bay Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
-    {"name":"Igloolik Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"}
+    {"name":"Igloolik Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Iqaluit Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Kimmirut Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Kugaaruk Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Kugluktuk Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Mary River Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Meadowbank Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Naujaat Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Pangnirtung Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"}
 
   ]
 }
