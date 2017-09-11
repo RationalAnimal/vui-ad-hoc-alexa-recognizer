@@ -7136,7 +7136,14 @@
     {"name":"Arviat Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
     {"name":"Baker Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
     {"name":"Baker Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
-    {"name":"Cambridge Bay Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"}
+    {"name":"Cambridge Bay Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Cambridge Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Cape Dorset Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Chesterfield Inlet Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Clyde River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Coral Harbour Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Doris Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Eureka Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"}
 
   ]
 }
