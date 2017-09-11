@@ -7175,7 +7175,15 @@
     {"name":"Allan Park Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Alliston Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Alliston Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Alliston Stevenson Memorial Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Alliston Stevenson Memorial Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Almonte General Hospital Heliport","alternativeNames":["Almonte Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Armstrong Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Armstrong Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Armstrong Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Arnprior/South Renfrew Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Arnprior Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Arthur Arthur South Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Arthur Metz Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
