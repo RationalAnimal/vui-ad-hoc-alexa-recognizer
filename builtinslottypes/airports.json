@@ -7129,7 +7129,14 @@
     {"name":"Whatì Water Aerodrome","alternativeNames":["Whati Water Aerodrome"],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Wrigley Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Yellowknife Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
-    {"name":"Yellowknife Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"}
+    {"name":"Yellowknife Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Alert Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Arctic Bay Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Arviat Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Arviat Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Baker Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Baker Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Cambridge Bay Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"}
 
   ]
 }
