@@ -7199,7 +7199,15 @@
     {"name":"Baldwin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Baldwin West Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Bancroft Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Bancroft North Hastings District Hospital Heliport","alternativeNames":["Bancroft Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Bancroft North Hastings District Hospital Heliport","alternativeNames":["Bancroft Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Barrie Royal Victoria Hospital Heliport","alternativeNames":["Barrie Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lake Simcoe Regional Airport","alternativeNames":["Barrie-Orillia Lake Simcoe Regional Airport", "Barrie-Orillia Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bar River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bar River Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Barry's Bay St. Francis Memorial Hospital Heliport","alternativeNames":["Barry's Bay St Francis Memorial Hospital Heliport", "Barry's Bay Saint Francis Memorial Hospital Heliport", "Barry's Bay Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Madawaska Valley Airpark","alternativeNames":["Barry's Bay/Madawaska Valley Airpark", "Barry's Bay Madawaska Valley Airpark"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Beamsville/Panterra Heliport","alternativeNames":["Beamsville Panterra Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Beardmore Health Centre Heliport","alternativeNames":["Beardmore Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
