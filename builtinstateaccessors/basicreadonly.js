@@ -54,7 +54,6 @@ let _createSubAccessor = function createInstance(keyArray, trustSpec){
 let base = require("./baseobject.js");
 let BasicReadOnlyAccessor =  function(applicationState) {
   base.call(this, applicationState);
-  this.applicationState = applicationState;
 };
 
 BasicReadOnlyAccessor.prototype = Object.create(base.prototype);

@@ -54,7 +54,6 @@ let _createSubAccessor = function createInstance(keyArray, trustSpec){
 let base = require("./baseobjectrw.js");
 let BasicAccessor =  function(applicationState) {
   base.call(this, applicationState);
-  this.applicationState = applicationState;
 };
 
 BasicAccessor.prototype = Object.create(base.prototype);
