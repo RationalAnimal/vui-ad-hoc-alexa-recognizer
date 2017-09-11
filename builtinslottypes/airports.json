@@ -7158,7 +7158,16 @@
     {"name":"Mary River Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
     {"name":"Meadowbank Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
     {"name":"Naujaat Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
-    {"name":"Pangnirtung Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"}
+    {"name":"Pangnirtung Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Pond Inlet Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Qikiqtarjuaq Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Rankin Inlet Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Resolute Bay Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Hayes Camp Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Sanikiluaq Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Taloyoak Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Tanquary Fiord Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Whale Cove Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"}
 
   ]
 }
