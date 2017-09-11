@@ -162,6 +162,7 @@ if(Array.isArray(config.customSlotTypes)){
     }
     else if(typeof customSlotType.customRegExpString !== "undefined"){
       // Add the code to parse the customRegExpString and add it to the customSlotType
+      // TODO add customRegExp handling
     }
   }
 }
