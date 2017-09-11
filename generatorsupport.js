@@ -1013,8 +1013,13 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         for(let i = 0; i < recognizerSet.customSlotTypes.length; i++){
             let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
             scratchCustomSlotType.regExpStrings = [];
-            for(let j = 0; j < scratchCustomSlotType.values.length; j++){
+            if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
+              // TODO add customRegExp handling
+            }
+            else {
+              for(let j = 0; j < scratchCustomSlotType.values.length; j++){
                 scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j] + ")\\s*$){1}");
+              }
             }
         }
         // Now generate soundex equivalents so that we can match on soundex if the
@@ -1023,11 +1028,16 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
             let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
             scratchCustomSlotType.soundExValues = [];
             scratchCustomSlotType.soundExRegExpStrings = [];
-            for(let j = 0; j < scratchCustomSlotType.values.length; j++){
+            if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
+              // TODO add customRegExp handling
+            }
+            else {
+              for(let j = 0; j < scratchCustomSlotType.values.length; j++){
                 let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j], " ");
                 scratchCustomSlotType.soundExValues.push(soundexValue);
                 let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j], "\\s+");
                 scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
+              }
             }
         }
     }
