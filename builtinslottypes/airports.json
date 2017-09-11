@@ -7167,7 +7167,15 @@
     {"name":"Sanikiluaq Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
     {"name":"Taloyoak Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
     {"name":"Tanquary Fiord Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
-    {"name":"Whale Cove Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"}
+    {"name":"Whale Cove Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"nunavut"},
+    {"name":"Ajax Pickering General Hospital Heliport","alternativeNames":["Ajax Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"French River/Alban Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Alexandria Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Algoma Mills Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Allan Park Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Alliston Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Alliston Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Alliston Stevenson Memorial Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
