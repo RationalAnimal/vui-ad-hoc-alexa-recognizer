@@ -7122,7 +7122,14 @@
     {"name":"Tuktoyaktuk/James Gruben Airport","alternativeNames":["Tuktoyaktuk James Gruben Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Tulita Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
     {"name":"Tundra Mine/Salamita Mine Aerodrome","alternativeNames":["Tundra Mine Salamita Mine Aerodrome"],"priorNames":[],"country":"canada","state":"northwest territories"},
-    {"name":"Tungsten Cantung Airport","alternativeNames":["Tungsten Airport"],"priorNames":[],"country":"canada","state":"northwest territories"}
+    {"name":"Tungsten Cantung Airport","alternativeNames":["Tungsten Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Ulukhaktok/Holman Airport","alternativeNames":["Ulukhaktok Holman Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Wekweètì Airport","alternativeNames":["Wekweeti Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Whatì Airport","alternativeNames":["Whati Airport"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Whatì Water Aerodrome","alternativeNames":["Whati Water Aerodrome"],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Wrigley Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Yellowknife Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"},
+    {"name":"Yellowknife Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"northwest territories"}
 
   ]
 }
