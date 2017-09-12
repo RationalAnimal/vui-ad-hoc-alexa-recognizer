@@ -7231,7 +7231,15 @@
     {"name":"Brantford Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Brockville Regional Tackaberry Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Brussels Armstrong Field Airport","alternativeNames":["Brussels Airport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Burditt Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Burditt Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Burlington Executive Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Buttonville Municipal Airport","alternativeNames":["Toronto/Buttonville Municipal Airport", "Toronto Buttonville Municipal Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cambridge Puslinch Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cambridge Reid's Field Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Camden East Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Camden East Varty Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Campbellville Aerodrome","alternativeNames":["Bellshill Airpark"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Canton Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
