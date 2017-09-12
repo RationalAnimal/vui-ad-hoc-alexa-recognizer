@@ -7247,7 +7247,15 @@
     {"name":"Cat Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Cayuga Bruce Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Cayuga East Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Centralia Essery Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Centralia Essery Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Centralia/James T. Field Memorial Aerodrome","alternativeNames":["Centralia James T. Field Memorial Aerodrome", "Centralia/James T Field Memorial Aerodrome", "Centralia James T Field Memorial Aerodrome", "Centralia/James Field Memorial Aerodrome", "Centralia James Field Memorial Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Borden Heliport","alternativeNames":["CFB Borden"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Chapleau Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Chatham-Kent Airport","alternativeNames":["Chatham Kent Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Chatham Public General Hospital Heliport","alternativeNames":["Chatham Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cobden/Bruce McPhail Memorial Airport","alternativeNames":["Cobden Bruce McPhail Memorial Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cobourg Northumberland Hills Hospital Heliport","alternativeNames":["Cobourg Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cochrane Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
