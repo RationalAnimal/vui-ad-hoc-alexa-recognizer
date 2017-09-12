@@ -7263,7 +7263,15 @@
     {"name":"Combermere/Kamaniskeg Lake Water Aerodrome","alternativeNames":["Combermere Kamaniskeg Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Confederation Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Conn Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Constance Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Constance Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cookstown Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cookstown/Kirby Field Aerodrome","alternativeNames":["Cookstown Kirby Field Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cookstown/Tally-Ho Field Aerodrome","alternativeNames":["Cookstown Tally-Ho Field Aerodrome", "Cookstown Tally Ho Field Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cornwall Community Hospital McConnell Site Heliport","alternativeNames":["Cornwall Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cornwall Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cottam Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Creemore Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Curries Rand Private Airfield Aerodrome","alternativeNames":["Curries Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
