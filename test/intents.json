@@ -49,6 +49,15 @@
       ]
     },
     {
+      "intent": "CustomRegExpIntent",
+      "slots": [
+        {
+          "name": "CustomRegExpSlot",
+          "type": "CUSTOMREGEXP"
+        }
+      ]
+    },
+    {
       "intent": "PriceIntent",
       "slots": [
         {
