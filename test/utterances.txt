@@ -3,7 +3,7 @@ TestIntent test me
 TestIntent test please
 TestIntent	test pretty please
 TestIntent       test pleeeeeeease
-CustomRegExpIntent here is ABC123 if you see it
+CustomRegExpIntent here is {CustomRegExpSlot} if you see it
 MinionIntent One of the minions is {MinionSlot:INCLUDE_WILDCARD_MATCH}
 MinionIntent {MinionSlot}
 MinionIntent Another minion is {MinionSlot:SOUNDEX_MATCH}
