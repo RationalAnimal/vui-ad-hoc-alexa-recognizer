@@ -24,7 +24,7 @@
 		},
 		{
 			"name": "CUSTOMREGEXP",
-			"customRegExpString": "(ABC123)"
+			"customRegExpString": "(ABC123|XYZ789)"
 		}
 	],
 	"builtInIntents":[

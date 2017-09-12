@@ -651,6 +651,43 @@ AirlineIntent {AirlineSlot:CONTINENT(["north america"])} is a north american air
 then only Canadian airlines will match the first one, and only north american
 airlines will match the second one.
 
+### Custom slot types based on regular expressions
+
+In addition to the normal custom type slots - one based on a list of values - you can also define a custom slot type
+based on a regular expression.  This might be useful if you are looking for some value that has a particular format.
+For example, a serial number for a product might have a specific format and you may be looking for it in user input.
+It would be impractical to specify all the serial numbers even if you had the up to date list.  Instead, you can define
+a custom slot that will match the regular expression for the serial number and return it.
+E.g. given config.json:
+```text
+...
+{
+	"name": "CUSTOMREGEXP",
+	"customRegExpString": "(ABC123|XYZ789)"
+}
+...
+```
+
+and otherwise standard intents, utterances files, when
+
+```shell
+node matcher.js "here is XYZ789 if you see it"
+```
+
+will produce:
+
+```json
+{
+  "name": "CustomRegExpIntent",
+  "slots": {
+    "CustomRegExpSlot": {
+      "name": "CustomRegExpSlot",
+      "value": "XYZ789"
+    }
+  }
+}
+```
+
 ### Options list
 Instead of creating multiple similar utterance lines like you would do with Alexa
 utterances, you can specify variations with options lists:
