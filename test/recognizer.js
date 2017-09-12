@@ -2106,15 +2106,17 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
   describe("RegExp Custom slot type processing", function() {
     it("verify simple utterance with a  custom slot based on a simple reg exp matches", function() {
       let result = recognizer.Recognizer.matchText("here is ABC123 if you see it");
-      expect(result).to.eql(
-        {"name": "CustomRegExpIntent",
+      expect(result).to.eql({
+        "name": "CustomRegExpIntent",
           "slots": {
             "CustomRegExpSlot": {
               "name": "CustomRegExpSlot",
               "value": "ABC123"
             }
-          }});
+          }
+      });
     });
+
   });
 
   describe("Special processing", function() {
