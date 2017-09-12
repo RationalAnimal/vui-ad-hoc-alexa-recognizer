@@ -7239,7 +7239,15 @@
     {"name":"Camden East Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Camden East Varty Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Campbellville Aerodrome","alternativeNames":["Bellshill Airpark"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Canton Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Canton Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Carey Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Carleton Place Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Carleton Place District Memorial Hospital Heliport","alternativeNames":["Carleton Place Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Carp Airport","alternativeNames":["Ottawa/Carp Airport", "Ottawa Carp Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cat Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cayuga Bruce Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cayuga East Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Centralia Essery Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
