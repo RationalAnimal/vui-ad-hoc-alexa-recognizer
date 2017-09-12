@@ -7279,7 +7279,15 @@
     {"name":"Delhi Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Dorset/Kawagama Lake South Water Aerodrome","alternativeNames":["Dorset Kawagama Lake Water Aerodrome", "Dorset Kawagama Lake South Water Aerodrome", "Dorset/Kawagama Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Dryden Best Western Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Dryden Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Dryden Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Dryden Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Dundalk Tripp Field Aerodrome","alternativeNames":["Dundalk Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Dungannon Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Dunnville Haldimand War Memorial Hospital Heliport","alternativeNames":["Dunnville Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Dunrobin/Parti Field Aerodrome","alternativeNames":["Dunrobin Parti Field Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Durham Memorial Hospital Heliport","alternativeNames":["Durham Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Dutton Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Dwight Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
