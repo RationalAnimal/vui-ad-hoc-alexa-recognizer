@@ -21,6 +21,10 @@
 		{
 			"name": "MINIONS",
 			"filename": "test/minions.txt"
+		},
+		{
+			"name": "CUSTOMREGEXP",
+			"customRegExpString": "(ABC123)"
 		}
 	],
 	"builtInIntents":[
