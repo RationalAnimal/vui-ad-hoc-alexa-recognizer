@@ -58,6 +58,15 @@
       ]
     },
     {
+      "intent": "PhoneNumberIntent",
+      "slots": [
+        {
+          "name": "PhoneNumberSlot",
+          "type": "PHONENUMBER"
+        }
+      ]
+    },
+    {
       "intent": "PriceIntent",
       "slots": [
         {

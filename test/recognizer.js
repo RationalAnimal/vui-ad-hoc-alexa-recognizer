@@ -2116,6 +2116,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
       });
     });
+    it("verify simple utterance with a  custom slot based on a simple reg exp matches", function() {
+      let result = recognizer.Recognizer.matchText("here is XYZ789 if you see it");
+      expect(result).to.eql({
+        "name": "CustomRegExpIntent",
+        "slots": {
+          "CustomRegExpSlot": {
+            "name": "CustomRegExpSlot",
+            "value": "XYZ789"
+          }
+        }
+      });
+    });
 
   });
 
