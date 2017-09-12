@@ -7223,7 +7223,15 @@
     {"name":"Bracebridge South Muskoka Memorial Hospital Heliport","alternativeNames":["Bracebridge Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Bracebridge Stone Wall Farm Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Bracebridge Tinks Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Bracebridge West Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Bracebridge West Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lake Muskoka/Alport Bay Water Aerodrome","alternativeNames":["Lake Muskoka Alport Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bradford Aerodrome","alternativeNames":["Brantford Municipal Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Brampton-Caledon Airport","alternativeNames":["Brampton Caledon Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Brampton National D Heliport","alternativeNames":["Brampton Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Brantford Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Brockville Regional Tackaberry Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Brussels Armstrong Field Airport","alternativeNames":["Brussels Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Burditt Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
