@@ -351,6 +351,9 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
       for(let j = 0; j < scratchCustomSlotType.regExps.length; j++){
         scratchCustomSlotType.regExps[j].lastIndex = 0;
         if(matchResult = scratchCustomSlotType.regExps[j].exec(value)){
+          if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
+            return value;
+          }
           return scratchCustomSlotType.values[j];
         }
       }

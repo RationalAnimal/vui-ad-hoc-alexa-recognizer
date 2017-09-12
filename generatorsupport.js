@@ -1015,6 +1015,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
             scratchCustomSlotType.regExpStrings = [];
             if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
               // TODO add customRegExp handling
+              scratchCustomSlotType.regExpStrings.push("(?:^\\s*" +  scratchCustomSlotType.customRegExpString + "\\s*$){1}");
             }
             else {
               for(let j = 0; j < scratchCustomSlotType.values.length; j++){
