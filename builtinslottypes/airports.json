@@ -7271,7 +7271,15 @@
     {"name":"Cornwall Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Cottam Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Creemore Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Curries Rand Private Airfield Aerodrome","alternativeNames":["Curries Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Curries Rand Private Airfield Aerodrome","alternativeNames":["Curries Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Deep River/Rolph Airport","alternativeNames":["Deep River Rolph Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Deer Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Deer Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"De Lesseps Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Delhi Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Dorset/Kawagama Lake South Water Aerodrome","alternativeNames":["Dorset Kawagama Lake Water Aerodrome", "Dorset Kawagama Lake South Water Aerodrome", "Dorset/Kawagama Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Dryden Best Western Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Dryden Regional Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
