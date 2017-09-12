@@ -1840,8 +1840,10 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
   for(let i = 0; i < sortedMatchConfig.length; i++){
 //    console.log("_matchText, 3, i: " + i);
     let scratch = sortedMatchConfig[i];
-//    console.log("_matchText, 4, scratch: " + JSON.stringify(scratch, null, 2));
-//    console.log("_matchText, 4.1, scratch.regExpStrings: " + JSON.stringify(scratch.regExpStrings));
+//    if(i == 6){
+//      console.log("_matchText, 4, scratch: " + JSON.stringify(scratch, null, 2));
+//      console.log("_matchText, 4.1, scratch.regExpStrings: " + JSON.stringify(scratch.regExpStrings));
+//    }
     if(typeof scratch.regExpStrings !== "undefined" && Array.isArray(scratch.regExpStrings)){
       for(let k = 0; k < scratch.regExpStrings.length; k ++){
         let scratchRegExpString = scratch.regExpStrings[k];
