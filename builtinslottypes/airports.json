@@ -7255,7 +7255,15 @@
     {"name":"Chatham Public General Hospital Heliport","alternativeNames":["Chatham Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Cobden/Bruce McPhail Memorial Airport","alternativeNames":["Cobden Bruce McPhail Memorial Airport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Cobourg Northumberland Hills Hospital Heliport","alternativeNames":["Cobourg Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Cochrane Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Cochrane Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Cochrane Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Collingwood Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Collingwood/Alta Heliport","alternativeNames":["Collingwood Alta Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Collingwood General and Marine Hospital Heliport","alternativeNames":["Collingwood Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Combermere/Kamaniskeg Lake Water Aerodrome","alternativeNames":["Combermere Kamaniskeg Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Confederation Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Conn Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Constance Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
