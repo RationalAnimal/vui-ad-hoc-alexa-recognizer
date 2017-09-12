@@ -7215,7 +7215,15 @@
     {"name":"Belleville QHC Heliport","alternativeNames":["Belleville Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Belwood Baird Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Belwood Ellen Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Belwood Heurisko Pond Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Belwood Heurisko Pond Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Belwood Wright Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Blackstock/Martyn Aerodrome","alternativeNames":["Blackstock Martyn Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bolton Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bowmanville Memorial Hospital Heliport","alternativeNames":["Bowmanville Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bracebridge South Muskoka Memorial Hospital Heliport","alternativeNames":["Bracebridge Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bracebridge Stone Wall Farm Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bracebridge Tinks Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bracebridge West Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
