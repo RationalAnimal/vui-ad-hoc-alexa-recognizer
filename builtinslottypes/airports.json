@@ -7207,7 +7207,15 @@
     {"name":"Barry's Bay St. Francis Memorial Hospital Heliport","alternativeNames":["Barry's Bay St Francis Memorial Hospital Heliport", "Barry's Bay Saint Francis Memorial Hospital Heliport", "Barry's Bay Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Madawaska Valley Airpark","alternativeNames":["Barry's Bay/Madawaska Valley Airpark", "Barry's Bay Madawaska Valley Airpark"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Beamsville/Panterra Heliport","alternativeNames":["Beamsville Panterra Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Beardmore Health Centre Heliport","alternativeNames":["Beardmore Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Beardmore Health Centre Heliport","alternativeNames":["Beardmore Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Bearskin Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Beaverton Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Beaverton North Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Belleville Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Belleville QHC Heliport","alternativeNames":["Belleville Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Belwood Baird Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Belwood Ellen Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Belwood Heurisko Pond Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
