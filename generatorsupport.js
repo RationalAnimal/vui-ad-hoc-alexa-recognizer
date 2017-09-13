@@ -661,91 +661,101 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
 
     }
     else if(slotType === "TRANSCEND.Corporation"){
-      // Ignore SOUNDEX_MATCH flag for now
-      let hasWildCardMatch = false;
-      let hasIncludePriorNamesFlag = false;
-      for(let i = 0; i < slotFlags.length; i++){
-        if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
-          hasWildCardMatch = true;
+      if(matchStage === "FINAL"){
+        // Ignore SOUNDEX_MATCH flag for now
+        let hasWildCardMatch = false;
+        let hasIncludePriorNamesFlag = false;
+        for(let i = 0; i < slotFlags.length; i++){
+          if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+            hasWildCardMatch = true;
+          }
+          else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
+            hasWildCardMatch = true;
+          }
         }
-        else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
-          hasWildCardMatch = true;
+        if(hasWildCardMatch){
+          // numbers are used in cases of some names
+          return "((?:\\w|\\s|[0-9]|\-)+)";
         }
-      }
-      if(hasWildCardMatch){
-        // numbers are used in cases of some names
-        return "((?:\\w|\\s|[0-9]|\-)+)";
+        else {
+          let allCorporations = [];
+          for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i ++){
+            allCorporations.push(recognizer.builtInValues.Corporation.values[i].name);
+            if(typeof recognizer.builtInValues.Corporation.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.Corporation.values[i].alternativeNames)){
+              for(let j = 0; j < recognizer.builtInValues.Corporation.values[i].alternativeNames.length; j++){
+                allCorporations.push(recognizer.builtInValues.Corporation.values[i].alternativeNames[j]);
+              }
+            }
+            if(hasIncludePriorNamesFlag){
+              for(let j = 0; j < recognizer.builtInValues.Corporation.priorNames.length; j++){
+                allCorporations.push(recognizer.builtInValues.Corporation.values[i].priorNames[j]);
+              }
+            }
+          }
+          let replacementRegExpString = _makeReplacementRegExpString(allCorporations);
+          return replacementRegExpString;
+        }
       }
       else {
-        let allCorporations = [];
-        for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i ++){
-          allCorporations.push(recognizer.builtInValues.Corporation.values[i].name);
-          if(typeof recognizer.builtInValues.Corporation.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.Corporation.values[i].alternativeNames)){
-            for(let j = 0; j < recognizer.builtInValues.Corporation.values[i].alternativeNames.length; j++){
-              allCorporations.push(recognizer.builtInValues.Corporation.values[i].alternativeNames[j]);
-            }
-          }
-          if(hasIncludePriorNamesFlag){
-            for(let j = 0; j < recognizer.builtInValues.Corporation.priorNames.length; j++){
-              allCorporations.push(recognizer.builtInValues.Corporation.values[i].priorNames[j]);
-            }
-          }
-        }
-        let replacementRegExpString = _makeReplacementRegExpString(allCorporations);
-        return replacementRegExpString;
+        return "((?:\\w|\\s|[0-9]|\-)+)";
       }
     }
     else if(slotType === "TRANSCEND.Airport"){
-      // Ignore SOUNDEX_MATCH flag for now
-      let hasWildCardMatch = false;
-      let hasIncludePriorNamesFlag = false;
-      let hasCountryFlag = false;
-      let countries = [];
-      let hasStateFlag = false;
-      let states = [];
-      for(let i = 0; i < slotFlags.length; i++){
-        if(slotFlags[i].name === "COUNTRY"){
-          hasCountryFlag = true;
-          countries = slotFlags[i].parameters;
+      if(matchStage === "FINAL"){
+        // Ignore SOUNDEX_MATCH flag for now
+        let hasWildCardMatch = false;
+        let hasIncludePriorNamesFlag = false;
+        let hasCountryFlag = false;
+        let countries = [];
+        let hasStateFlag = false;
+        let states = [];
+        for(let i = 0; i < slotFlags.length; i++){
+          if(slotFlags[i].name === "COUNTRY"){
+            hasCountryFlag = true;
+            countries = slotFlags[i].parameters;
+          }
+          else if(slotFlags[i].name === "STATE"){
+            hasStateFlag = true;
+            states = slotFlags[i].parameters;
+          }
+          else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+            hasWildCardMatch = true;
+          }
+          else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
+            hasWildCardMatch = true;
+          }
         }
-        else if(slotFlags[i].name === "STATE"){
-          hasStateFlag = true;
-          states = slotFlags[i].parameters;
+        if(hasWildCardMatch){
+          // numbers are used in cases of some names
+          return "((?:\\w|\\s|[0-9]|\-)+)";
         }
-        else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
-          hasWildCardMatch = true;
+        else {
+          let allAirports = [];
+          for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i ++){
+            if(hasCountryFlag && countries.indexOf(recognizer.builtInValues.Airport.values[i].country) < 0){
+              continue;
+            }
+            if(hasStateFlag && states.indexOf(recognizer.builtInValues.Airport.values[i].state) < 0){
+              continue;
+            }
+            allAirports.push(recognizer.builtInValues.Airport.values[i].name);
+            if(typeof recognizer.builtInValues.Airport.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.Airport.values[i].alternativeNames)){
+              for(let j = 0; j < recognizer.builtInValues.Airport.values[i].alternativeNames.length; j++){
+                allAirports.push(recognizer.builtInValues.Airport.values[i].alternativeNames[j]);
+              }
+            }
+            if(hasIncludePriorNamesFlag && typeof recognizer.builtInValues.Airport.priorNames !== "undefined" && Array.isArray(recognizer.builtInValues.Airport.priorNames)){
+              for(let j = 0; j < recognizer.builtInValues.Airport.priorNames.length; j++){
+                allAirports.push(recognizer.builtInValues.Airport.values[i].priorNames[j]);
+              }
+            }
+          }
+          let replacementRegExpString = _makeReplacementRegExpString(allAirports);
+          return replacementRegExpString;
         }
-        else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
-          hasWildCardMatch = true;
-        }
-      }
-      if(hasWildCardMatch){
-        // numbers are used in cases of some names
-        return "((?:\\w|\\s|[0-9]|\-)+)";
       }
       else {
-        let allAirports = [];
-        for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i ++){
-          if(hasCountryFlag && countries.indexOf(recognizer.builtInValues.Airport.values[i].country) < 0){
-            continue;
-          }
-          if(hasStateFlag && states.indexOf(recognizer.builtInValues.Airport.values[i].state) < 0){
-            continue;
-          }
-          allAirports.push(recognizer.builtInValues.Airport.values[i].name);
-          if(typeof recognizer.builtInValues.Airport.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.Airport.values[i].alternativeNames)){
-            for(let j = 0; j < recognizer.builtInValues.Airport.values[i].alternativeNames.length; j++){
-              allAirports.push(recognizer.builtInValues.Airport.values[i].alternativeNames[j]);
-            }
-          }
-          if(hasIncludePriorNamesFlag && typeof recognizer.builtInValues.Airport.priorNames !== "undefined" && Array.isArray(recognizer.builtInValues.Airport.priorNames)){
-            for(let j = 0; j < recognizer.builtInValues.Airport.priorNames.length; j++){
-              allAirports.push(recognizer.builtInValues.Airport.values[i].priorNames[j]);
-            }
-          }
-        }
-        let replacementRegExpString = _makeReplacementRegExpString(allAirports);
-        return replacementRegExpString;
+        return "((?:\\w|\\s|[0-9]|\-)+)";
       }
     }
     else if(simpleSlots.indexOf(slotType) >= 0){
