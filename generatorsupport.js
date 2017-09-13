@@ -767,7 +767,12 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
     }
     else if(slotType === "TRANSCEND.DATE"){
+      if(matchStage === "FINAL"){
         return recognizer.builtInValues.DATE.replacementRegExpString;
+      }
+      else {
+        return "((?:\\w|\\s|[0-9]|\-|[/:])+)";
+      }
     }
     else if(slotType === "TRANSCEND.TIME"){
         // Ignore flags for now
