@@ -759,7 +759,12 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
     }
     else if(simpleSlots.indexOf(slotType) >= 0){
+      if(matchStage === "FINAL"){
         return getSimpleRegExpForBuiltInSlotType(slotType, slotFlags);
+      }
+      else {
+        return "((?:\\w|\\s|[0-9]|\-)+)";
+      }
     }
     else if(slotType === "TRANSCEND.DATE"){
         return recognizer.builtInValues.DATE.replacementRegExpString;
