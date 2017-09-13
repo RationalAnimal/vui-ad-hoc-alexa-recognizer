@@ -495,7 +495,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.NUMBER.replacementRegExpString;
       }
       else {
-        return  "((?:\\w|\\s|[0-9,_']|\-)+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
 //        return "((?:[0-9]|[a-z]|[A-Z]|[,.]|\\s)+)";
       }
     }
@@ -505,7 +505,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
       }
       else {
-        return "((?:[0-9|[a-z]|[A-Z]|[,.]|\\s)+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:[0-9|[a-z]|[A-Z]|[,.]|\\s)+)";
       }
     }
     else if(slotType === "TRANSCEND.US_STATE"){
@@ -530,7 +531,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
       }
       else {
-        return "((?:[a-z]|[A-Z]|[.]|\\s)+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:[a-z]|[A-Z]|[.]|\\s)+)";
       }
     }
     else if(slotType === "TRANSCEND.US_PRESIDENT"){
@@ -547,7 +549,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return _makeReplacementRegExpString(matchingStrings);
       }
       else {
-        return "((?:[0-9|[a-z]|[A-Z]|[.]|\\s)+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:[0-9|[a-z]|[A-Z]|[.]|\\s)+)";
       }
     }
     else if(slotType === "TRANSCEND.Airline"){
@@ -579,7 +582,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
         if(hasWildCardMatch){
           // numbers are used in cases of some names
-          return "((?:\\w|\\s|[0-9]|\-)+)";
+          return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//          return "((?:\\w|\\s|[0-9]|\-)+)";
         }
         else {
           let allAirlines = [];
@@ -600,7 +604,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
       }
       else {
-        return "(.+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "(.+)";
       }
     }
     else if(slotType === "TRANSCEND.SportsTeam"){
@@ -630,7 +635,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
         if(hasWildCardMatch){
           // numbers are used in cases of some names
-          return "((?:\\w|\\s|[0-9]|\-)+)";
+          return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//          return "((?:\\w|\\s|[0-9]|\-)+)";
         }
         else {
           let allSportsTeams = [];
@@ -657,7 +663,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
           return replacementRegExpString;
         }      }
       else {
-        return "((?:\\w|\\s|[0-9]|\-)+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:\\w|\\s|[0-9]|\-)+)";
       }
 
     }
@@ -676,7 +683,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
         if(hasWildCardMatch){
           // numbers are used in cases of some names
-          return "((?:\\w|\\s|[0-9]|\-)+)";
+          return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//          return "((?:\\w|\\s|[0-9]|\-)+)";
         }
         else {
           let allCorporations = [];
@@ -698,7 +706,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
       }
       else {
-        return "((?:\\w|\\s|[0-9]|\-)+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:\\w|\\s|[0-9]|\-)+)";
       }
     }
     else if(slotType === "TRANSCEND.Airport"){
@@ -728,7 +737,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
         if(hasWildCardMatch){
           // numbers are used in cases of some names
-          return "((?:\\w|\\s|[0-9]|\-)+)";
+          return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//          return "((?:\\w|\\s|[0-9]|\-)+)";
         }
         else {
           let allAirports = [];
@@ -756,7 +766,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
       }
       else {
-        return "((?:\\w|\\s|[0-9]|\-)+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:\\w|\\s|[0-9]|\-)+)";
       }
     }
     else if(simpleSlots.indexOf(slotType) >= 0){
@@ -764,7 +775,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return getSimpleRegExpForBuiltInSlotType(slotType, slotFlags);
       }
       else {
-        return "((?:\\w|\\s|[0-9]|\-)+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:\\w|\\s|[0-9]|\-)+)";
       }
     }
     else if(slotType === "TRANSCEND.DATE"){
@@ -773,7 +785,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.DATE.replacementRegExpString;
       }
       else {
-        return "((?:\\w|\\s|[0-9]|\-|[/:])+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:\\w|\\s|[0-9]|\-|[/:])+)";
       }
     }
     else if(slotType === "TRANSCEND.TIME"){
@@ -782,7 +795,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.TIME.replacementRegExpString;
       }
       else {
-        return "((?:\\w|\\s|[0-9]|\-|[/:])+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:\\w|\\s|[0-9]|\-|[/:])+)";
       }
     }
     else if(slotType === "TRANSCEND.DURATION"){
@@ -791,7 +805,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.DURATION.replacementRegExpString;
       }
       else {
-        return "((?:\\w|\\s|[0-9]|\-|[/:])+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:\\w|\\s|[0-9]|\-|[/:])+)";
       }
     }
     else if(slotType === "TRANSCEND.Month"){
@@ -800,7 +815,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.Month.replacementRegExpString;
       }
       else {
-        return "((?:\\w|\\s)+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:\\w|\\s)+)";
       }
     }
     else if(slotType === "TRANSCEND.DayOfWeek"){
@@ -809,7 +825,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
       }
       else {
-        return "((?:[a-zA-Z0-9])+)";
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:[a-zA-Z0-9])+)";
       }
     }
 
@@ -843,11 +860,13 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
                         customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
                       }
                       // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
-                      return "((?:\\w|\\s|[0-9]|\-)+)";
+                      return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//                      return "((?:\\w|\\s|[0-9]|\-)+)";
                     }
                     else if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
                       // numbers are used in cases of names like John the 1st
-                      return "((?:\\w|\\s|[0-9]|\-)+)";
+                      return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//                      return "((?:\\w|\\s|[0-9]|\-)+)";
                     }
                     else {
                       if(typeof customSlotType.replacementRegExp === "undefined"){
@@ -857,7 +876,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
                     }
                   }
                   else {
-                    return "((?:\\w|\\s|[0-9]|\-)+)";
+                    return "((?:\\w|\\s|[0-9,_']|\-)+)";
+//                    return "((?:\\w|\\s|[0-9]|\-)+)";
                   }
 
                 }
