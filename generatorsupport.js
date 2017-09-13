@@ -500,27 +500,37 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     }
     else if(slotType === "TRANSCEND.FOUR_DIGIT_NUMBER"){
         // Ignore flags for now
+      if(matchStage === "FINAL"){
         return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
+      }
+      else {
+        return "((?:[0-9|[a-z]|[A-Z]|[,.]|\\s)+)";
+      }
     }
     else if(slotType === "TRANSCEND.US_STATE"){
+      if(matchStage === "FINAL"){
         if(_hasFlag("EXCLUDE_NON_STATES", slotFlags)){
-            let states = [];
-            for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
-                if(recognizer.builtInValues.US_STATE.values[i].isState){
-                    states.push(recognizer.builtInValues.US_STATE.values[i].name);
-                }
+          let states = [];
+          for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
+            if(recognizer.builtInValues.US_STATE.values[i].isState){
+              states.push(recognizer.builtInValues.US_STATE.values[i].name);
             }
-            let statesOnlyRegExpString = _makeReplacementRegExpString(states);
-            return statesOnlyRegExpString;
+          }
+          let statesOnlyRegExpString = _makeReplacementRegExpString(states);
+          return statesOnlyRegExpString;
         }
         else {
-            let statesAndTerritories = [];
-            for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
-                statesAndTerritories.push(recognizer.builtInValues.US_STATE.values[i].name);
-            }
-            let statesAndTerritoriesRegExpString = _makeReplacementRegExpString(statesAndTerritories);
-            return statesAndTerritoriesRegExpString;
+          let statesAndTerritories = [];
+          for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
+            statesAndTerritories.push(recognizer.builtInValues.US_STATE.values[i].name);
+          }
+          let statesAndTerritoriesRegExpString = _makeReplacementRegExpString(statesAndTerritories);
+          return statesAndTerritoriesRegExpString;
         }
+      }
+      else {
+        return "((?:[a-z]|[A-Z]|[,.]|\\s)+)";
+      }
     }
     else if(slotType === "TRANSCEND.US_PRESIDENT"){
         let matchingStrings = [];
