@@ -495,7 +495,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.NUMBER.replacementRegExpString;
       }
       else {
-        return "((?:[0-9|[a-z]|[A-Z]|[,.]|\\s)+)";
+        return  "((?:\\w|\\s|[0-9,_']|\-)+)";
+//        return "((?:[0-9]|[a-z]|[A-Z]|[,.]|\\s)+)";
       }
     }
     else if(slotType === "TRANSCEND.FOUR_DIGIT_NUMBER"){
