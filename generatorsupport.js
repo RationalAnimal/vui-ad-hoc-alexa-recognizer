@@ -794,8 +794,13 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
     }
     else if(slotType === "TRANSCEND.Month"){
+      if(matchStage === "FINAL"){
         // Ignore flags for now
         return recognizer.builtInValues.Month.replacementRegExpString;
+      }
+      else {
+        return "((?:\\w|\\s)+)";
+      }
     }
     else if(slotType === "TRANSCEND.DayOfWeek"){
         // Ignore flags for now
