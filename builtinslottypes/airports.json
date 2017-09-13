@@ -7295,7 +7295,15 @@
     {"name":"East Linton Aerodrome","alternativeNames":["East Linton Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Grand Valley Black Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Grand Valley Luther Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Edenvale Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Edenvale Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Elk Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Elk Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Elliot Lake Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Elmira Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Elmira East Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Elora Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ottawa/Embrun Aerodrome","alternativeNames":["Ottawa Embrun Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Emsdale Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
