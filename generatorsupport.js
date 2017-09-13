@@ -822,9 +822,18 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
             let customSlotType = config.customSlotTypes[i];
             if(customSlotType.name === slotType){
                 if(typeof customSlotType.customRegExpString === "string" && customSlotType.customRegExpString.length > 0){
-                  // TODO add customRegExp handling
-                  customSlotType.replacementRegExp = customSlotType.customRegExpString;
-                  return customSlotType.replacementRegExp;
+                  if(matchStage === "FINAL"){
+                    customSlotType.replacementRegExp = customSlotType.customRegExpString;
+                    return customSlotType.replacementRegExp;
+                  }
+                  else {
+                    if(typeof customSlotType.customWildCardRegExpString === "string" && customSlotType.customWildCardRegExpString.length > 0){
+                        return customSlotType.customWildCardRegExpString;
+                    }
+                    else {
+                      return customSlotType.replacementRegExp;
+                    }
+                  }
                 }
                 else {
                   if(_hasFlag("SOUNDEX_MATCH", slotFlags)){
