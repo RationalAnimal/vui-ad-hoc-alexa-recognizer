@@ -768,6 +768,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
     }
     else if(slotType === "TRANSCEND.DATE"){
       if(matchStage === "FINAL"){
+        // Ignore flags for now
         return recognizer.builtInValues.DATE.replacementRegExpString;
       }
       else {
@@ -775,8 +776,13 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
     }
     else if(slotType === "TRANSCEND.TIME"){
+      if(matchStage === "FINAL"){
         // Ignore flags for now
         return recognizer.builtInValues.TIME.replacementRegExpString;
+      }
+      else {
+        return "((?:\\w|\\s|[0-9]|\-|[/:])+)";
+      }
     }
     else if(slotType === "TRANSCEND.DURATION"){
         // Ignore flags for now
