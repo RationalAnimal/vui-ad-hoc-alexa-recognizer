@@ -803,8 +803,13 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
     }
     else if(slotType === "TRANSCEND.DayOfWeek"){
+      if(matchStage === "FINAL"){
         // Ignore flags for now
         return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
+      }
+      else {
+        return "((?:[a-zA-Z0-9])+)";
+      }
     }
 
 //  else if(slotType.startsWith("TRANSCEND.")){
