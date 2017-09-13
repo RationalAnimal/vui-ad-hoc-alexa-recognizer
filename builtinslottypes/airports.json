@@ -7287,7 +7287,15 @@
     {"name":"Dunrobin/Parti Field Aerodrome","alternativeNames":["Dunrobin Parti Field Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Durham Memorial Hospital Heliport","alternativeNames":["Durham Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Dutton Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Dwight Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Dwight Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Dwight Fox Point Water Aerodrome","alternativeNames":["Dwight Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fort Hope Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ear Falls Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Earlton Timiskaming Regional Airport","alternativeNames":["Earlton Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"East Linton Aerodrome","alternativeNames":["East Linton Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Grand Valley Black Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Grand Valley Luther Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Edenvale Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
