@@ -471,7 +471,10 @@ recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpSt
 /**
  * This is the new version meant to be used with the parseutterance.js
  */
-var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFlags){
+var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFlags, matchStage){
+    if(typeof matchStage === "undefined"){
+        matchStage = "FINAL";
+    }
     slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
     let simpleSlots = [
         "TRANSCEND.US_FIRST_NAME", "TRANSCEND.Actor", "TRANSCEND.Artist", "TRANSCEND.Comic", "TRANSCEND.Dessert",
@@ -487,8 +490,13 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         "TRANSCEND.SportsEvent", "TRANSCEND.SocialMediaPlatform", "TRANSCEND.TVEpisode", "TRANSCEND.TVSeason", "TRANSCEND.TVSeries", "TRANSCEND.VideoGame"
     ];
     if(slotType === "TRANSCEND.NUMBER"){
-        // Ignore flags for now
+      // Ignore flags for now
+      if(matchStage === "FINAL"){
         return recognizer.builtInValues.NUMBER.replacementRegExpString;
+      }
+      else {
+        return "((?:[0-9|[a-z]|[A-Z]|[,.]|\\s)+)";
+      }
     }
     else if(slotType === "TRANSCEND.FOUR_DIGIT_NUMBER"){
         // Ignore flags for now
