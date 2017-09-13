@@ -603,57 +603,62 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
     }
     else if(slotType === "TRANSCEND.SportsTeam"){
-      // Ignore SOUNDEX_MATCH flag for now
-      let hasWildCardMatch = false;
-      let hasSportFlag = false;
-      let sports = [];
-      let hasLeagueFlag = false;
-      let leagues = [];
-      let hasIncludePriorNamesFlag = false;
-      for(let i = 0; i < slotFlags.length; i++){
-        if(slotFlags[i].name === "SPORT"){
-          hasSportFlag = true;
-          sports = slotFlags[i].parameters;
-        }
-        else if(slotFlags[i].name === "LEAGUE"){
-          hasLeagueFlag = true;
-          leagues = slotFlags[i].parameters;
-        }
-        else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
-          hasWildCardMatch = true;
-        }
-        else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
-          hasWildCardMatch = true;
-        }
-      }
-      if(hasWildCardMatch){
-        // numbers are used in cases of some names
-        return "((?:\\w|\\s|[0-9]|\-)+)";
-      }
-      else {
-        let allSportsTeams = [];
-        for(let i = 0; i < recognizer.builtInValues.SportsTeam.values.length; i ++){
-          if(hasSportFlag && sports.indexOf(recognizer.builtInValues.SportsTeam.values[i].sport) < 0){
-            continue;
+      if(matchStage === "FINAL"){
+        // Ignore SOUNDEX_MATCH flag for now
+        let hasWildCardMatch = false;
+        let hasSportFlag = false;
+        let sports = [];
+        let hasLeagueFlag = false;
+        let leagues = [];
+        let hasIncludePriorNamesFlag = false;
+        for(let i = 0; i < slotFlags.length; i++){
+          if(slotFlags[i].name === "SPORT"){
+            hasSportFlag = true;
+            sports = slotFlags[i].parameters;
           }
-          if(hasLeagueFlag && leagues.indexOf(recognizer.builtInValues.SportsTeam.values[i].league) < 0){
-            continue;
+          else if(slotFlags[i].name === "LEAGUE"){
+            hasLeagueFlag = true;
+            leagues = slotFlags[i].parameters;
           }
-          allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].name);
-          if(typeof recognizer.builtInValues.SportsTeam.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.SportsTeam.values[i].alternativeNames)){
+          else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+            hasWildCardMatch = true;
+          }
+          else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
+            hasWildCardMatch = true;
+          }
+        }
+        if(hasWildCardMatch){
+          // numbers are used in cases of some names
+          return "((?:\\w|\\s|[0-9]|\-)+)";
+        }
+        else {
+          let allSportsTeams = [];
+          for(let i = 0; i < recognizer.builtInValues.SportsTeam.values.length; i ++){
+            if(hasSportFlag && sports.indexOf(recognizer.builtInValues.SportsTeam.values[i].sport) < 0){
+              continue;
+            }
+            if(hasLeagueFlag && leagues.indexOf(recognizer.builtInValues.SportsTeam.values[i].league) < 0){
+              continue;
+            }
+            allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].name);
+            if(typeof recognizer.builtInValues.SportsTeam.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.SportsTeam.values[i].alternativeNames)){
               for(let j = 0; j < recognizer.builtInValues.SportsTeam.values[i].alternativeNames.length; j++){
                 allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].alternativeNames[j]);
               }
-          }
-          if(hasIncludePriorNamesFlag){
-            for(let j = 0; j < recognizer.builtInValues.SportsTeam.priorNames.length; j++){
-              allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].priorNames[j]);
+            }
+            if(hasIncludePriorNamesFlag){
+              for(let j = 0; j < recognizer.builtInValues.SportsTeam.priorNames.length; j++){
+                allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].priorNames[j]);
+              }
             }
           }
-        }
-        let replacementRegExpString = _makeReplacementRegExpString(allSportsTeams);
-        return replacementRegExpString;
+          let replacementRegExpString = _makeReplacementRegExpString(allSportsTeams);
+          return replacementRegExpString;
+        }      }
+      else {
+        return "((?:\\w|\\s|[0-9]|\-)+)";
       }
+
     }
     else if(slotType === "TRANSCEND.Corporation"){
       // Ignore SOUNDEX_MATCH flag for now
