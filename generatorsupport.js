@@ -1133,8 +1133,8 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     }
     recognizerSet.matchConfig = [];
 
-    let passThrougFunc = function(slotType, flags){
-        return _getReplacementRegExpStringGivenSlotType(slotType, config, flags);
+    let passThrougFunc = function(slotType, flags, stage){
+        return _getReplacementRegExpStringGivenSlotType(slotType, config, flags, stage);
     };
 
     // First process all the utterances

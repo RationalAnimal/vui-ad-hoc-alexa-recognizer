@@ -383,7 +383,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimiz
       regExpString += (parsedJson.parsedUtterance[i]);
     }
     else if (parsedJson.parsedUtterance[i].type === "slot") {
-      regExpString += getReplacementFunc(parsedJson.parsedUtterance[i].slotType, parsedJson.parsedUtterance[i].flags);
+      regExpString += getReplacementFunc(parsedJson.parsedUtterance[i].slotType, parsedJson.parsedUtterance[i].flags, "FINAL");
     }
     else if (parsedJson.parsedUtterance[i].type === "optionsList") {
       regExpString += "(?:";
