@@ -836,23 +836,29 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
                   }
                 }
                 else {
-                  if(_hasFlag("SOUNDEX_MATCH", slotFlags)){
-                    if(typeof customSlotType.replacementSoundExpRegExp === "undefined"){
-                      customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
+                  if(matchStage === "FINAL"){
+                    if(_hasFlag("SOUNDEX_MATCH", slotFlags)){
+                      if(typeof customSlotType.replacementSoundExpRegExp === "undefined"){
+                        customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
+                      }
+                      // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
+                      return "((?:\\w|\\s|[0-9]|\-)+)";
                     }
-                    // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
-                    return "((?:\\w|\\s|[0-9]|\-)+)";
-                  }
-                  else if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-                    // numbers are used in cases of names like John the 1st
-                    return "((?:\\w|\\s|[0-9]|\-)+)";
+                    else if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
+                      // numbers are used in cases of names like John the 1st
+                      return "((?:\\w|\\s|[0-9]|\-)+)";
+                    }
+                    else {
+                      if(typeof customSlotType.replacementRegExp === "undefined"){
+                        customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values);
+                      }
+                      return customSlotType.replacementRegExp;
+                    }
                   }
                   else {
-                    if(typeof customSlotType.replacementRegExp === "undefined"){
-                      customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values);
-                    }
-                    return customSlotType.replacementRegExp;
+                    return "((?:\\w|\\s|[0-9]|\-)+)";
                   }
+
                 }
             }
         }
