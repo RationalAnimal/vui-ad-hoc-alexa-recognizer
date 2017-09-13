@@ -28,7 +28,8 @@
 		},
 		{
 			"name": "PHONENUMBER",
-			"customRegExpString": "(\\({0,1}[0-9]{3}\\){0,1}\\s*[0-9]{3}\\s*-{0,1}\\s*[0-9]{4})"
+			"customRegExpString": "(\\({0,1}[0-9]{3}\\){0,1}\\s*[0-9]{3}\\s*-{0,1}\\s*[0-9]{4})",
+			"customWildCardRegExpString": "((?:\\(|\\)|[0-9]|\\s){10,})"
 		}
 	],
 	"builtInIntents":[
