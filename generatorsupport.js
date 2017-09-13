@@ -529,22 +529,28 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
       }
       else {
-        return "((?:[a-z]|[A-Z]|[,.]|\\s)+)";
+        return "((?:[a-z]|[A-Z]|[.]|\\s)+)";
       }
     }
     else if(slotType === "TRANSCEND.US_PRESIDENT"){
+      if(matchStage === "FINAL"){
         let matchingStrings = [];
         for(let i = 0; i < recognizer.builtInValues.US_PRESIDENT.values.length; i ++){
-            for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings.length; j ++){
-                matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings[j]);
-            }
-            for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings.length; j ++){
-                matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings[j]);
-            }
+          for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings.length; j ++){
+            matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings[j]);
+          }
+          for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings.length; j ++){
+            matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings[j]);
+          }
         }
         return _makeReplacementRegExpString(matchingStrings);
+      }
+      else {
+        return "((?:[0-9|[a-z]|[A-Z]|[.]|\\s)+)";
+      }
     }
     else if(slotType === "TRANSCEND.Airline"){
+      if(matchStage === "FINAL"){
         // Ignore SOUNDEX_MATCH flag for now
         let hasWildCardMatch = false;
         let hasCountryFlag = false;
@@ -554,43 +560,47 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         let hasTypeFlag = false;
         let types = [];
         for(let i = 0; i < slotFlags.length; i++){
-            if(slotFlags[i].name === "COUNTRY"){
-                hasCountryFlag = true;
-                countries = slotFlags[i].parameters;
-            }
-            else if(slotFlags[i].name === "CONTINENT"){
-                hasContinentFlag = true;
-                continents = slotFlags[i].parameters;
-            }
-            else if(slotFlags[i].name === "TYPE"){
-                hasTypeFlag = true;
-                types = slotFlags[i].parameters;
-            }
-            else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
-                hasWildCardMatch = true;
-            }
+          if(slotFlags[i].name === "COUNTRY"){
+            hasCountryFlag = true;
+            countries = slotFlags[i].parameters;
+          }
+          else if(slotFlags[i].name === "CONTINENT"){
+            hasContinentFlag = true;
+            continents = slotFlags[i].parameters;
+          }
+          else if(slotFlags[i].name === "TYPE"){
+            hasTypeFlag = true;
+            types = slotFlags[i].parameters;
+          }
+          else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+            hasWildCardMatch = true;
+          }
         }
         if(hasWildCardMatch){
-            // numbers are used in cases of some names
-            return "((?:\\w|\\s|[0-9]|\-)+)";
+          // numbers are used in cases of some names
+          return "((?:\\w|\\s|[0-9]|\-)+)";
         }
         else {
-            let allAirlines = [];
-            for(let i = 0; i < recognizer.builtInValues.Airline.values.length; i ++){
-                if(hasCountryFlag && countries.indexOf(recognizer.builtInValues.Airline.values[i].country) < 0){
-                    continue;
-                }
-                if(hasContinentFlag && continents.indexOf(recognizer.builtInValues.Airline.values[i].continent) < 0){
-                    continue;
-                }
-                if(hasTypeFlag && types.indexOf(recognizer.builtInValues.Airline.values[i].type) < 0){
-                    continue;
-                }
-                allAirlines.push(recognizer.builtInValues.Airline.values[i].name);
+          let allAirlines = [];
+          for(let i = 0; i < recognizer.builtInValues.Airline.values.length; i ++){
+            if(hasCountryFlag && countries.indexOf(recognizer.builtInValues.Airline.values[i].country) < 0){
+              continue;
             }
-            let replacementRegExpString = _makeReplacementRegExpString(allAirlines);
-            return replacementRegExpString;
+            if(hasContinentFlag && continents.indexOf(recognizer.builtInValues.Airline.values[i].continent) < 0){
+              continue;
+            }
+            if(hasTypeFlag && types.indexOf(recognizer.builtInValues.Airline.values[i].type) < 0){
+              continue;
+            }
+            allAirlines.push(recognizer.builtInValues.Airline.values[i].name);
+          }
+          let replacementRegExpString = _makeReplacementRegExpString(allAirlines);
+          return replacementRegExpString;
         }
+      }
+      else {
+        return "(.+)";
+      }
     }
     else if(slotType === "TRANSCEND.SportsTeam"){
       // Ignore SOUNDEX_MATCH flag for now
