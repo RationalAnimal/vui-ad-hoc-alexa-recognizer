@@ -7359,7 +7359,15 @@
     {"name":"Hearst/Carey Lake Water Aerodrome","alternativeNames":["Hearst Carey Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Hearst René Fontaine Municipal Airport","alternativeNames":["Hearst Rene Fontaine Municipal Airport", "Hearst Municipal Airport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Highgate Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Holland Landing Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Holland Landing Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Granitehill Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Hornepayne Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Hornepayne Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Hudson Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Huntsville Memorial District Hospital Heliport","alternativeNames":["Huntsville Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Huntsville/Bella Lake Water Aerodrome","alternativeNames":["Huntsville Bella Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Huntsville North Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Huntsville Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
