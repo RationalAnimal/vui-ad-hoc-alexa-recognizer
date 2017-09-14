@@ -253,9 +253,9 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimiz
       regExpString += (parsedJson.parsedUtterance[i]);
     }
     else if (parsedJson.parsedUtterance[i].type === "slot") {
-      regExpString += (wildcardReplacementString);
-//      let scratchRegExpString  = getReplacementFunc(parsedJson.parsedUtterance[i].slotType, parsedJson.parsedUtterance[i].flags, "WILDCARD");
-//      regExpString += scratchRegExpString;
+//      regExpString += (wildcardReplacementString);
+      let scratchRegExpString  = getReplacementFunc(parsedJson.parsedUtterance[i].slotType, parsedJson.parsedUtterance[i].flags, "WILDCARD");
+      regExpString += scratchRegExpString;
 
       if (_hasFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === false) {
         shouldAdd = true;
@@ -319,9 +319,9 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimiz
       regExpString += (parsedJson.parsedUtterance[i]);
     }
     else if (parsedJson.parsedUtterance[i].type === "slot") {
-      regExpString += (wildcardReplacementString);
-//      let scratchRegExpString  = getReplacementFunc(parsedJson.parsedUtterance[i].slotType, parsedJson.parsedUtterance[i].flags, "WILDCARD");
-//      regExpString += scratchRegExpString;
+//      regExpString += (wildcardReplacementString);
+      let scratchRegExpString  = getReplacementFunc(parsedJson.parsedUtterance[i].slotType, parsedJson.parsedUtterance[i].flags, "WILDCARD");
+      regExpString += scratchRegExpString;
       if (_hasFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === false) {
         shouldAdd = true;
       }

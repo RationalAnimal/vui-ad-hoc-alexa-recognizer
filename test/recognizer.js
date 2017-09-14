@@ -4197,11 +4197,12 @@ describe("utterance parser", function() {
       let intentSchema = require("./intents.json");
       let result = parser.parseUtteranceIntoJson("AnotherIntent me {blah|bleh|bleu} {SomeOtherSlot:INCLUDE_VALUES_MATCH} too { this | that | the other }", intentSchema);
       parser.cleanupParsedUtteranceJson(result, intentSchema);
+
       let config = require("./config.json");
 
-      let passThrougFunc = function(slotType, flags){
-        return generatorsupport.Recognizer.getReplacementRegExpStringGivenSlotType(slotType, config, flags);
-      }
+      let passThrougFunc = function(slotType, flags, stage){
+        return generatorsupport.Recognizer.getReplacementRegExpStringGivenSlotType(slotType, config, flags, stage);
+      };
       parser.addRegExps(result, intentSchema, passThrougFunc);
       expect(result).to.eql(
         {
@@ -4255,8 +4256,8 @@ describe("utterance parser", function() {
       parser.cleanupParsedUtteranceJson(result, intentSchema);
       let config = require("./config.json");
 
-      let passThrougFunc = function(slotType, flags){
-        return generatorsupport.Recognizer.getReplacementRegExpStringGivenSlotType(slotType, config, flags);
+      let passThrougFunc = function(slotType, flags, stage){
+        return generatorsupport.Recognizer.getReplacementRegExpStringGivenSlotType(slotType, config, flags, stage);
       };
       parser.addRegExps(result, intentSchema, passThrougFunc);
       expect(result).to.eql(
