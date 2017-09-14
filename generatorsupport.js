@@ -530,7 +530,6 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
       else {
         return "((?:[a-zA-Z.]|\\s)+)";
-//        return "((?:\\w|\\s|[0-9,_']|\-)+)";
       }
     }
     else if(slotType === "TRANSCEND.US_PRESIDENT"){
@@ -547,8 +546,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return _makeReplacementRegExpString(matchingStrings);
       }
       else {
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//        return "((?:[0-9|[a-z]|[A-Z]|[.]|\\s)+)";
+        return "((?:[0-9a-zA-Z.]|\\s)+)";
       }
     }
     else if(slotType === "TRANSCEND.Airline"){
