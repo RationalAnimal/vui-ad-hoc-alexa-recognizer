@@ -7311,7 +7311,15 @@
     {"name":"Ethel Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Sexsmith/Exeter Airport","alternativeNames":["Sexsmith Exeter Airport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Fergus Groves Memorial Community Hospital Heliport","alternativeNames":["Fergus Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Fergus Holyoake Airfield Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Fergus Holyoake Airfield Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fergus Juergensen Field Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fergus Royland Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fergus Vodarek Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Flamboro Centre Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Flesherton Smithorrs Field Aerodrome","alternativeNames":["Flesherton Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fordwich Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fort Albany Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fort Erie Heliport","alternativeNames":["Fort Erie Eurocopter Canada Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
