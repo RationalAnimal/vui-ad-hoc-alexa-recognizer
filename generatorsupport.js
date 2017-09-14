@@ -679,8 +679,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
         if(hasWildCardMatch){
           // numbers are used in cases of some names
-          return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//          return "((?:\\w|\\s|[0-9]|\-)+)";
+          return "((?:[-0-9a-zA-Z_',.&]|\\s)+)";
         }
         else {
           let allCorporations = [];
@@ -702,8 +701,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
       }
       else {
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//        return "((?:\\w|\\s|[0-9]|\-)+)";
+        return "((?:[-0-9a-zA-Z_',.&]|\\s)+)";
       }
     }
     else if(slotType === "TRANSCEND.Airport"){
