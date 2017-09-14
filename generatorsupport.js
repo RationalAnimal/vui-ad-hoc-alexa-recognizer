@@ -809,7 +809,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.Month.replacementRegExpString;
       }
       else {
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+        return "((?:\\s|[0-9a-zA-Z.])+)";
 //        return "((?:\\w|\\s)+)";
       }
     }
