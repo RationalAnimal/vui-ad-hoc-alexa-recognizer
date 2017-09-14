@@ -7367,7 +7367,15 @@
     {"name":"Huntsville Memorial District Hospital Heliport","alternativeNames":["Huntsville Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Huntsville/Bella Lake Water Aerodrome","alternativeNames":["Huntsville Bella Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Huntsville North Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Huntsville Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Huntsville Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ignace MBCHC Heliport","alternativeNames":["Ignace Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ignace Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ignace Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Innerkip Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Iroquois Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Iroquois Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kakabeka Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kapuskasing Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
