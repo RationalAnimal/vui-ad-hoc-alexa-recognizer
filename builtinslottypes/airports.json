@@ -7327,7 +7327,15 @@
     {"name":"Ganonoque Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Georgetown Georgetown and District Hospital Heliport","alternativeNames":["Georgetown Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Geraldton District Hospital Heliport","alternativeNames":["Geraldton Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Geraldton Greenstone Regional Airport","alternativeNames":["Geraldton Airport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Geraldton Greenstone Regional Airport","alternativeNames":["Geraldton Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Geraldton/Hutchison Lake Water Aerodrome","alternativeNames":["Geraldton Hutchison Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Goderich Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Gooderham/Pencil Lake Water Aerodrome","alternativeNames":["Gooderham Pencil Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Gore Bay-Manitoulin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Grand Bend Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Grand Valley Martin Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Grand Valley North Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Gravenhurst Morrison Lake Water Aerodrome","alternativeNames":["Gravenhurst Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
