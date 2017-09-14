@@ -7303,7 +7303,15 @@
     {"name":"Elmira East Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Elora Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Ottawa/Embrun Aerodrome","alternativeNames":["Ottawa Embrun Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Emsdale Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Emsdale Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Englehart Dave's Field Aerodrome","alternativeNames":["Englehart Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Englehart District Hospital Heliport","alternativeNames":["Englehart Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Essex Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Essex/Billing Airstrip","alternativeNames":["Essex Billing Airstrip"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ethel Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sexsmith/Exeter Airport","alternativeNames":["Sexsmith Exeter Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fergus Groves Memorial Community Hospital Heliport","alternativeNames":["Fergus Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fergus Holyoake Airfield Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
