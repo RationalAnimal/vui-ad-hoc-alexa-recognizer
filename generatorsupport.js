@@ -840,6 +840,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
             let customSlotType = config.customSlotTypes[i];
             if(customSlotType.name === slotType){
                 if(typeof customSlotType.customRegExpString === "string" && customSlotType.customRegExpString.length > 0){
+                  // RegEx based custom slots
                   if(matchStage === "FINAL"){
                     customSlotType.replacementRegExp = customSlotType.customRegExpString;
                     return customSlotType.replacementRegExp;
@@ -855,6 +856,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
                   }
                 }
                 else {
+                  // List based custom slots
                   if(matchStage === "FINAL"){
                     if(_hasFlag("SOUNDEX_MATCH", slotFlags)){
                       if(typeof customSlotType.replacementSoundExpRegExp === "undefined"){
