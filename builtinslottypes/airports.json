@@ -7351,7 +7351,15 @@
     {"name":"Hanover District Hospital Heliport","alternativeNames":["Hanover Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Hanover Saugeen Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Harrow Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Hastings/Sweetwater Farms Aerodrome","alternativeNames":["Hastings Sweetwater Farms Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Hastings/Sweetwater Farms Aerodrome","alternativeNames":["Hastings Sweetwater Farms Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Hawkesbury Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Hawkesbury East Airport","alternativeNames":["Hawkesbury Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Hawk Junction Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Head Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Hearst/Carey Lake Water Aerodrome","alternativeNames":["Hearst Carey Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Hearst René Fontaine Municipal Airport","alternativeNames":["Hearst Rene Fontaine Municipal Airport", "Hearst Municipal Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Highgate Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Holland Landing Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
