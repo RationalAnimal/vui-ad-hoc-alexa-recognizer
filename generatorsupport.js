@@ -849,6 +849,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
                         return customSlotType.customWildCardRegExpString;
                     }
                     else {
+                      customSlotType.replacementRegExp = customSlotType.customRegExpString;
                       return customSlotType.replacementRegExp;
                     }
                   }
