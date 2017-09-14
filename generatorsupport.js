@@ -504,7 +504,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
       }
       else {
-        return "((?:[0-9a-zA-Z]|\\s)+)";
+        return "((?:[0-9a-zA-Z,.]|\\s)+)";
       }
     }
     else if(slotType === "TRANSCEND.US_STATE"){
@@ -529,8 +529,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
       }
       else {
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//        return "((?:[a-z]|[A-Z]|[.]|\\s)+)";
+        return "((?:[a-zA-Z.]|\\s)+)";
+//        return "((?:\\w|\\s|[0-9,_']|\-)+)";
       }
     }
     else if(slotType === "TRANSCEND.US_PRESIDENT"){
