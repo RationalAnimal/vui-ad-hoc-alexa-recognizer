@@ -7335,7 +7335,15 @@
     {"name":"Grand Bend Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Grand Valley Martin Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Grand Valley North Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Gravenhurst Morrison Lake Water Aerodrome","alternativeNames":["Gravenhurst Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Gravenhurst Morrison Lake Water Aerodrome","alternativeNames":["Gravenhurst Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sudbury Airport","alternativeNames":["Greater Sudbury Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sudbury/Azilda Water Aerodrome","alternativeNames":["Sudbury Azilda Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sudbury Health Sciences North Hospital Heliport","alternativeNames":["Sudbury Hospital Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Greenbank Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Grimsby Air Park","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Guelph Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Hagersville West Haldimand General Hospital Heliport","alternativeNames":["Hagersville Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Haliburton/Stanhope Municipal Airport","alternativeNames":["Haliburton Stanhope Municipal Airport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
