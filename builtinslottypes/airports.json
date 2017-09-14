@@ -7319,7 +7319,15 @@
     {"name":"Flesherton Smithorrs Field Aerodrome","alternativeNames":["Flesherton Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Fordwich Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Fort Albany Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Fort Erie Heliport","alternativeNames":["Fort Erie Eurocopter Canada Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Fort Erie Heliport","alternativeNames":["Fort Erie Eurocopter Canada Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fort Frances Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fort Frances Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fort Severn Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Gananoque Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ganonoque Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Georgetown Georgetown and District Hospital Heliport","alternativeNames":["Georgetown Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Geraldton District Hospital Heliport","alternativeNames":["Geraldton Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Geraldton Greenstone Regional Airport","alternativeNames":["Geraldton Airport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
