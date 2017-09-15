@@ -779,7 +779,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.DATE.replacementRegExpString;
       }
       else {
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+        return "((?:\\s|[-0-9a-zA-Z,_'])+)";
 //        return "((?:\\w|\\s|[0-9]|\-|[/:])+)";
       }
     }
@@ -856,12 +856,10 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
                       }
                       // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
                       return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//                      return "((?:\\w|\\s|[0-9]|\-)+)";
                     }
                     else if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
                       // numbers are used in cases of names like John the 1st
                       return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//                      return "((?:\\w|\\s|[0-9]|\-)+)";
                     }
                     else {
                       if(typeof customSlotType.replacementRegExp === "undefined"){
@@ -872,7 +870,6 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
                   }
                   else {
                     return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//                    return "((?:\\w|\\s|[0-9]|\-)+)";
                   }
 
                 }
@@ -880,7 +877,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
     }
     // Default fallback
-    return "((?:\\w|\\s|[0-9]|\-)+)";
+    return "((?:\\s|[-0-9a-zA-Z_])+)";
 };
 
 var allPlatforms = ["TRANSCEND", "AMAZON"];
