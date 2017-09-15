@@ -753,7 +753,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
         if(hasWildCardMatch){
           // numbers are used in cases of some names
-          return "((?:[-0-9a-zA-Z_',.&]|\\s)+)";
+          return "((?:\\s|[-0-9a-zA-Z_',.&]|[^\0-~])+)";
         }
         else {
           let allCorporations = [];
