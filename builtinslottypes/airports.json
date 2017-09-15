@@ -7399,7 +7399,15 @@
     {"name":"Kirkfield/Balsam Lake Aerodrome","alternativeNames":["Kirkfield Balsam Lake Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Kirkfield/Balsam Lake Seaplane Base","alternativeNames":["Kirkfield Balsam Lake Seaplane Base"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Kirkfield Palestine Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Kirkland Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Kirkland Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Big Trout Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lac La Croix Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Port Carling/Lake Joseph Water Aerodrome","alternativeNames":["Port Carling Lake Joseph Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lake Muskoka South Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lancaster Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Laurel/Whittington Aerodrome","alternativeNames":["Laurel Whittington Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Leamington Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kawartha Lakes Lindsay Aerodrome","alternativeNames":["Kawartha Lakes Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
