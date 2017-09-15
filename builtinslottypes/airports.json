@@ -7383,7 +7383,15 @@
     {"name":"Kashechewan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Keene/Elmhirst's Resort Airport","alternativeNames":["Keene Elmhirst's Resort Airport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Keene/Elmhirst's Resort Water Aerodrome","alternativeNames":["Keene Elmhirst's Resort Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Keewaywin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Keewaywin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kennisis Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kenora Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kenora Lake of The Woods District Hospital Heliport","alternativeNames":["Kenora Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kenora Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Killarney Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Killarney Killarney Mountain Lodge Water Aerodrome","alternativeNames":["Killarney Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kincardine Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kincardine/Shepherd's Landing Airport","alternativeNames":["Kincardine Shepherd's Landing Airport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
