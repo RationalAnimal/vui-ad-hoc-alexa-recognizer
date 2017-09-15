@@ -767,19 +767,8 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
           }
         }
         if(hasWildCardMatch){
-          // numbers are used in cases of some names
-          if(recognizer.builtInValues.Airport.presentUnusualCharacters.length > 0){
-            let returnValue = "((?:\\s|[-0-9a-zA-Z,_'";
-            for(let i = 0; i < recognizer.builtInValues.Airport.presentUnusualCharacters.length; i ++){
-//              console.log("special character: " + recognizer.builtInValues.Airport.presentUnusualCharacters[i] + ", code: ", recognizer.builtInValues.Airport.presentUnusualCharacters[i].charCodeAt(0));
-              returnValue += recognizer.builtInValues.Airport.presentUnusualCharacters[i];
-            }
-            returnValue += "])+)";
-            return returnValue;
-          }
-          else {
-            return "((?:\\s|[-0-9a-zA-Z,_'])+)";
-          }
+          // TODO Need further refinements to limit the matches to international alphanumer characters, but at this time this will do
+          return "((?:\\s|[-0-9a-zA-Z,_']|[^\0-~])+)";
         }
         else {
           let allAirports = [];
@@ -807,8 +796,18 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
       }
       else {
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//        return "((?:\\w|\\s|[0-9]|\-)+)";
+        if(recognizer.builtInValues.Airport.presentUnusualCharacters.length > 0){
+          let returnValue = "((?:\\s|[-0-9a-zA-Z,_'";
+          for(let i = 0; i < recognizer.builtInValues.Airport.presentUnusualCharacters.length; i ++){
+//            console.log("special character: " + recognizer.builtInValues.Airport.presentUnusualCharacters[i] + ", code: ", recognizer.builtInValues.Airport.presentUnusualCharacters[i].charCodeAt(0));
+            returnValue += recognizer.builtInValues.Airport.presentUnusualCharacters[i];
+          }
+          returnValue += "])+)";
+          return returnValue;
+        }
+        else {
+          return "((?:\\s|[-0-9a-zA-Z,_'])+)";
+        }
       }
     }
     else if(simpleSlots.indexOf(slotType) >= 0){

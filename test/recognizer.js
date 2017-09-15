@@ -983,6 +983,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.Airport slot with special characters matches", function() {
+      let result = recognizer.Recognizer.matchText("José Aponte de la Torre Airport is an airport");
+      expect(result).to.eql(
+        {"name": "AirportIntent",
+          "slots": {
+            "AirportSlot": {
+              "name": "AirportSlot",
+              "value": "José Aponte de la Torre Airport"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.Airport slot and INCLUDE_WILDCARD_MATCH flag matches", function() {
       let result = recognizer.Recognizer.matchText("Blah Blah Airport is an unknown airport");
       expect(result).to.eql(
