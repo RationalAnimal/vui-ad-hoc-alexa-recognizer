@@ -797,8 +797,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.DURATION.replacementRegExpString;
       }
       else {
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//        return "((?:\\w|\\s|[0-9]|\-|[/:])+)";
+        return "((?:\\s|[-0-9a-zA-Z,_':])+)";
       }
     }
     else if(slotType === "TRANSCEND.Month"){
