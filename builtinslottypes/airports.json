@@ -7415,7 +7415,15 @@
     {"name":"London Pioneer Airpark Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"London University Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"London Victoria Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Lucan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Lucan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lucknow Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Vermilion Bay Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Mac Tier/Francis Island Water Aerodrome","alternativeNames":["Mac Tier Francis Island Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Madawaska Collins Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Manitouwadge Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Manitouwadge General Hospital Heliport","alternativeNames":["Manitouwadge Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Manitowaning/Manitoulin East Municipal Airport","alternativeNames":["Manitowaning Manitoulin East Municipal Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Manitowaning Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
