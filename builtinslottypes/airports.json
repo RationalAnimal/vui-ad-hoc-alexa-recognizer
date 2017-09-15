@@ -7455,7 +7455,15 @@
     {"name":"Morrisburg Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Trenton/Mountain View Airport","alternativeNames":["Trenton Mountain View Airport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Mount Brydges/Warren Field Aerodrome","alternativeNames":["Mount Brydges Warren Field Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Mount Forest Louise Marshall Hospital Heliport","alternativeNames":["Mount Forest Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Mount Forest Louise Marshall Hospital Heliport","alternativeNames":["Mount Forest Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Muskoka Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Muskrat Dam Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Opapimiskan Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Nakina Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Nakina Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lansdowne House Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Nestor Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Nestor Falls Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
