@@ -710,6 +710,30 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }});
     });
 
+    it("verify simple utterance with an AMAZON.Corporation slot matches company with special characters", function() {
+      let result = recognizer.Recognizer.matchText("Estée Lauder Companies is a highly valued company");
+      expect(result).to.eql(
+        {"name": "CorporationIntent",
+          "slots": {
+            "CorporationSlot": {
+              "name": "CorporationSlot",
+              "value": "Estée Lauder Companies"
+            }
+          }});
+    });
+
+    it("verify simple utterance with an AMAZON.Corporation with INCLUDE_WILDCARD_MATCH slot and special characters matches", function() {
+      let result = recognizer.Recognizer.matchText("Bléh corp is an unknown company");
+      expect(result).to.eql(
+        {"name": "CorporationIntent",
+          "slots": {
+            "CorporationSlot": {
+              "name": "CorporationSlot",
+              "value": "Bléh corp"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.AdministrativeArea slot matches", function() {
       let result = recognizer.Recognizer.matchText("post office in portsmouth new hampshire");
       expect(result).to.eql(
