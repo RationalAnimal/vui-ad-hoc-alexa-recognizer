@@ -398,6 +398,21 @@ recognizer.builtInValues.Director.replacementRegExpString = _makeReplacementRegE
 recognizer.builtInValues.Corporation = require("./builtinslottypes/corporations.json");
 
 recognizer.builtInValues.Airport = require("./builtinslottypes/airports.json");
+let unusualAirportCharacters = [];
+for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i++){
+  let unusualCharactersRegExp = /[^\0-~]/ig;
+  let matchResult;
+  while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Airport.values[i].name)){
+//    console.log("unusualAirportCharacters search, got matchResult: ", JSON.stringify(matchResult));
+    for(let j = 0; j < matchResult.length; j++){
+      if(matchResult[j] !== null && unusualAirportCharacters.indexOf(matchResult[j]) < 0){
+          unusualAirportCharacters.push(matchResult[j]);
+      }
+    }
+  }
+}
+recognizer.builtInValues.Airport.presentUnusualCharacters = unusualAirportCharacters;
+//console.log("unusualAirportCharacters: ", JSON.stringify(unusualAirportCharacters));
 
 recognizer.builtInValues.CivicStructure = require("./builtinslottypes/civicstructures.json");
 recognizer.builtInValues.CivicStructure.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.CivicStructure.values);
