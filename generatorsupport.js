@@ -410,6 +410,17 @@ for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i++){
       }
     }
   }
+  for(let k = 0; k < recognizer.builtInValues.Airport.values[i].alternativeNames.length; k++){
+    while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Airport.values[i].alternativeNames[k])){
+//    console.log("unusualAirportCharacters search, got matchResult: ", JSON.stringify(matchResult));
+      for(let j = 0; j < matchResult.length; j++){
+        if(matchResult[j] !== null && unusualAirportCharacters.indexOf(matchResult[j]) < 0){
+//          console.log("unusualAirportCharacters search in alternativeNames, got matchResult: ", JSON.stringify(matchResult));
+          unusualAirportCharacters.push(matchResult[j]);
+        }
+      }
+    }
+  }
 }
 recognizer.builtInValues.Airport.presentUnusualCharacters = unusualAirportCharacters;
 //console.log("unusualAirportCharacters: ", JSON.stringify(unusualAirportCharacters));
