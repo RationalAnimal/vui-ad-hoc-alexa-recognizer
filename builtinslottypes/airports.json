@@ -7439,7 +7439,15 @@
     {"name":"Maxville Bourdon Farm Aerodrome","alternativeNames":["Maxville Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"McKellar Manitouwabing Water Aerodrome","alternativeNames":["McKellar Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Meaford General Hospital Heliport","alternativeNames":["Meaford Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Melbourne Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Melbourne Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Midland/Huronia Airport","alternativeNames":["Midland Huronia Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Midland Huronia District Hospital Heliport","alternativeNames":["Midland Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Milton AFI Heliport","alternativeNames":["Milton Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Milton District Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Miminiska Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Miminiska Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Minaki/Pistol Lake Water Aerodrome","alternativeNames":["Minaki Pistol Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Mindemoya Hospital Heliport","alternativeNames":["Mindemoya Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
