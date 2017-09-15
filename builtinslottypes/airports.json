@@ -7407,7 +7407,15 @@
     {"name":"Lancaster Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Laurel/Whittington Aerodrome","alternativeNames":["Laurel Whittington Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Leamington Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Kawartha Lakes Lindsay Aerodrome","alternativeNames":["Kawartha Lakes Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Kawartha Lakes Lindsay Aerodrome","alternativeNames":["Kawartha Lakes Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Listowel Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Little Current Manitoulin Health Centre Heliport","alternativeNames":["Little Current Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"London International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"London/Chapeskie Field Airport","alternativeNames":["London Chapeskie Field Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"London Pioneer Airpark Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"London University Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"London Victoria Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lucan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
