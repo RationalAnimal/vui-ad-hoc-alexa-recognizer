@@ -7423,7 +7423,15 @@
     {"name":"Manitouwadge Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Manitouwadge General Hospital Heliport","alternativeNames":["Manitouwadge Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Manitowaning/Manitoulin East Municipal Airport","alternativeNames":["Manitowaning Manitoulin East Municipal Airport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Manitowaning Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Manitowaning Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ottawa/Manotick Hope Field Aerodrome","alternativeNames":["Ottawa/Manotick Aerodrome", "Ottawa Manotick Hope Field Aerodrome", "Ottawa Manotick Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Mansfield Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Marathon Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Marathon Wilson Memorial Hospital Heliport","alternativeNames":["Marathon Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Markdale Centre Grey General Hospital Heliport","alternativeNames":["Markdale Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Markham Airport","alternativeNames":["Toronto Markham Airport", "Toronto/Markham Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ogoki Post Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Matawatchan Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
