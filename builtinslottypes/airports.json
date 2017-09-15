@@ -7447,7 +7447,15 @@
     {"name":"Miminiska Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Miminiska Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Minaki/Pistol Lake Water Aerodrome","alternativeNames":["Minaki Pistol Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Mindemoya Hospital Heliport","alternativeNames":["Mindemoya Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Mindemoya Hospital Heliport","alternativeNames":["Mindemoya Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Minden Hospital Heliport","alternativeNames":["Minden Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Moose Factory Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Moosonee Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Moosonee Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Morrisburg Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Trenton/Mountain View Airport","alternativeNames":["Trenton Mountain View Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Mount Brydges/Warren Field Aerodrome","alternativeNames":["Mount Brydges Warren Field Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Mount Forest Louise Marshall Hospital Heliport","alternativeNames":["Mount Forest Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
