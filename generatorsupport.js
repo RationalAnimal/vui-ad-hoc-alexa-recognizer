@@ -768,8 +768,16 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
         if(hasWildCardMatch){
           // numbers are used in cases of some names
-          return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//          return "((?:\\w|\\s|[0-9]|\-)+)";
+          if(recognizer.builtInValues.Airport.presentUnusualCharacters.length > 0){
+            let returnValue = "((?:\\s|[-0-9a-zA-Z,_'";
+            for(let i = 0; i < recognizer.builtInValues.Airport.presentUnusualCharacters.length; i ++){
+//              console.log("special character: " + recognizer.builtInValues.Airport.presentUnusualCharacters[i] + ", code: ", recognizer.builtInValues.Airport.presentUnusualCharacters[i].charCodeAt(0));
+              returnValue += recognizer.builtInValues.Airport.presentUnusualCharacters[i];
+            }
+            returnValue += "])+)";
+            return returnValue;
+          }
+//          return "((?:\\w|\\s|[0-9,_']|\-)+)";
         }
         else {
           let allAirports = [];
