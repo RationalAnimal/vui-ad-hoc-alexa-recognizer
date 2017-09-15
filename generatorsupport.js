@@ -810,7 +810,6 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
       else {
         return "((?:\\s|[0-9a-zA-Z.])+)";
-//        return "((?:\\w|\\s)+)";
       }
     }
     else if(slotType === "TRANSCEND.DayOfWeek"){
@@ -819,8 +818,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
       }
       else {
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//        return "((?:[a-zA-Z0-9])+)";
+        return "((?:\\s|[0-9a-zA-Z.])+)";
       }
     }
 
