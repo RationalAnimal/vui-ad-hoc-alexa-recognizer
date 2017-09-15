@@ -7463,7 +7463,15 @@
     {"name":"Nakina Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Lansdowne House Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Nestor Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Nestor Falls Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Nestor Falls Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Nestor Falls/Sabaskong Bay Water Aerodrome","alternativeNames":["Nestor Falls Sabaskong Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"New Liskeard Temiskaming Hospital Heliport","alternativeNames":["New Liskeard Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Niagara Falls Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Niagara Falls Greater Niagara General Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Niagara Falls/Niagara South Airport","alternativeNames":["Niagara Falls Niagara South Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Summer Beaver Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Nipigon District Memorial Hospital Heliport","alternativeNames":["Nipigon Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Nixon Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
