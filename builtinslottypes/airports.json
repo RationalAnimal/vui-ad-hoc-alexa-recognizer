@@ -7391,7 +7391,15 @@
     {"name":"Killarney Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Killarney Killarney Mountain Lodge Water Aerodrome","alternativeNames":["Killarney Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Kincardine Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Kincardine/Shepherd's Landing Airport","alternativeNames":["Kincardine Shepherd's Landing Airport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Kincardine/Shepherd's Landing Airport","alternativeNames":["Kincardine Shepherd's Landing Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kincardine South Bruce Grey Health Centre Heliport","alternativeNames":["Kincardine Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kingfisher Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kingston/Norman Rogers Airport","alternativeNames":["Kingston Norman Rogers Airport", "Kingston Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kingston General Hospital Heliport","alternativeNames":["Kingston Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kirkfield/Balsam Lake Aerodrome","alternativeNames":["Kirkfield Balsam Lake Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kirkfield/Balsam Lake Seaplane Base","alternativeNames":["Kirkfield Balsam Lake Seaplane Base"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kirkfield Palestine Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kirkland Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
