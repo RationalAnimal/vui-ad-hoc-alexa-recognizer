@@ -396,6 +396,48 @@ recognizer.builtInValues.Director = require("./builtinslottypes/directors.json")
 recognizer.builtInValues.Director.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.Director.values);
 
 recognizer.builtInValues.Corporation = require("./builtinslottypes/corporations.json");
+let unusualCorporationCharacters = [];
+for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i++){
+  let unusualCharactersRegExp = /[^\0-~]/ig;
+  let matchResult;
+  while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Corporation.values[i].name)){
+//    console.log("unusualCorporationCharacters search, got matchResult: ", JSON.stringify(matchResult));
+    for(let j = 0; j < matchResult.length; j++){
+      if(matchResult[j] !== null && unusualCorporationCharacters.indexOf(matchResult[j]) < 0){
+        unusualCorporationCharacters.push(matchResult[j]);
+      }
+    }
+  }
+  for(let k = 0; k < recognizer.builtInValues.Corporation.values[i].alternativeNames.length; k++){
+    while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Corporation.values[i].alternativeNames[k])){
+//    console.log("unusualCorporationCharacters search, got matchResult: ", JSON.stringify(matchResult));
+      for(let j = 0; j < matchResult.length; j++){
+        if(matchResult[j] !== null && unusualCorporationCharacters.indexOf(matchResult[j]) < 0){
+//          console.log("unusualCorporationCharacters search in alternativeNames, got matchResult: ", JSON.stringify(matchResult));
+          unusualCorporationCharacters.push(matchResult[j]);
+        }
+      }
+    }
+  }
+  for(let k = 0; k < recognizer.builtInValues.Corporation.values[i].priorNames.length; k++){
+    while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Corporation.values[i].priorNames[k])){
+//    console.log("unusualCorporationCharacters search, got matchResult: ", JSON.stringify(matchResult));
+      for(let j = 0; j < matchResult.length; j++){
+        if(matchResult[j] !== null && unusualCorporationCharacters.indexOf(matchResult[j]) < 0){
+//          console.log("unusualCorporationCharacters search in priorNames, got matchResult: ", JSON.stringify(matchResult));
+          unusualCorporationCharacters.push(matchResult[j]);
+        }
+      }
+    }
+  }
+}
+recognizer.builtInValues.Corporation.presentUnusualCharacters = unusualCorporationCharacters;
+//console.log("unusualCorporationCharacters: ", JSON.stringify(unusualCorporationCharacters));
+
+
+
+
+
 
 recognizer.builtInValues.Airport = require("./builtinslottypes/airports.json");
 let unusualAirportCharacters = [];
