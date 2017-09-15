@@ -7502,7 +7502,15 @@
     {"name":"Ottawa Macdonald-Cartier International Airport","alternativeNames":["Macdonald-Cartier International Airport", "Macdonald Cartier International Airport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Ottawa Rockcliffe Airport","alternativeNames":["Rockcliffe Airport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Ottawa/Rockcliffe Water Aerodrome","alternativeNames":["Ottawa Rockcliffe Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Owen Sound Billy Bishop Regional Airport","alternativeNames":["Billy Bishop Regional Airport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Owen Sound Billy Bishop Regional Airport","alternativeNames":["Billy Bishop Regional Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Owen Sound Cook Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Owen Sound Grey Bruce Health Services Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Palmerston Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Palmerston District Hospital Heliport","alternativeNames":["Palmerston Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Parry Sound Area Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Parry Sound Deep Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Parry Sound Derbyshire Island Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Parry Sound Frying Pan Island-Sans Souci Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
