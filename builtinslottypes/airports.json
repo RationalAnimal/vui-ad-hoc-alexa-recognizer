@@ -7478,7 +7478,15 @@
     {"name":"North Bay/Jack Garland Airport","alternativeNames":["North Bay Jack Garland Airport", "North Bay Airport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"North Bay Regional Health Centre Heliport","alternativeNames":["North Bay Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"North Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Round Lake Weagamow Lake Airport","alternativeNames":["Round Lake Airport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Round Lake Weagamow Lake Airport","alternativeNames":["Round Lake Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Round Lake Weagamow Lake Water Aerodrome","alternativeNames":["Round Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"North Spirit Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Oakville Trafalgar Memorial Hospital Heliport","alternativeNames":["Oakville Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Omemee Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Big Hook Wilderness Camp Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Orangeville/Castlewood Field Aerodrome","alternativeNames":["Orangeville Castlewood Field Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Orangeville Headwaters Healthecare Centre Heliport","alternativeNames":["Orangeville Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Orangeville Laurel Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
