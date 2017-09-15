@@ -1007,6 +1007,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.Airport slot and INCLUDE_WILDCARD_MATCH flag with special characters matches", function() {
+      let result = recognizer.Recognizer.matchText("Blah Bléh Airport is an unknown airport");
+      expect(result).to.eql(
+        {"name": "AirportIntent",
+          "slots": {
+            "AirportSlot": {
+              "name": "AirportSlot",
+              "value": "Blah Bléh Airport"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.Airport slot and COUNTRY flag matches", function() {
       let result = recognizer.Recognizer.matchText("Birmingham Shuttlesworth is a united states airport");
       expect(result).to.eql(
