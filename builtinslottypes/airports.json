@@ -7494,7 +7494,15 @@
     {"name":"Orillia Ontario Provincial Police Heliport","alternativeNames":["Orillia Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Orono Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Orono/Hawkefield Aerodrome","alternativeNames":["Orono Hawkefield Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Oshawa Executive Airport","alternativeNames":["Toronto Oshawa Executive Airport", "Toronto/Oshawa Executive Airport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Oshawa Executive Airport","alternativeNames":["Toronto Oshawa Executive Airport", "Toronto/Oshawa Executive Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ottawa/Casselman Shea Field Aerodrome","alternativeNames":["Ottawa/Casselman Aerodrome", "Ottawa Casselman Shea Field Aerodrome", "Ottawa Casselman Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ottawa Children's Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ottawa Civic Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ottawa Dwyer Hill Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ottawa Macdonald-Cartier International Airport","alternativeNames":["Macdonald-Cartier International Airport", "Macdonald Cartier International Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ottawa Rockcliffe Airport","alternativeNames":["Rockcliffe Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ottawa/Rockcliffe Water Aerodrome","alternativeNames":["Ottawa Rockcliffe Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Owen Sound Billy Bishop Regional Airport","alternativeNames":["Billy Bishop Regional Airport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
