@@ -434,11 +434,6 @@ for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i++){
 recognizer.builtInValues.Corporation.presentUnusualCharacters = unusualCorporationCharacters;
 //console.log("unusualCorporationCharacters: ", JSON.stringify(unusualCorporationCharacters));
 
-
-
-
-
-
 recognizer.builtInValues.Airport = require("./builtinslottypes/airports.json");
 let unusualAirportCharacters = [];
 for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i++){
@@ -780,7 +775,18 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
       }
       else {
-        return "((?:[-0-9a-zA-Z_',.&]|\\s)+)";
+        if(recognizer.builtInValues.Corporation.presentUnusualCharacters.length > 0){
+          let returnValue = "((?:\\s|[-0-9a-zA-Z,_,.&'";
+          for(let i = 0; i < recognizer.builtInValues.Corporation.presentUnusualCharacters.length; i ++){
+//            console.log("special character: " + recognizer.builtInValues.Corporation.presentUnusualCharacters[i] + ", code: ", recognizer.builtInValues.Corporation.presentUnusualCharacters[i].charCodeAt(0));
+            returnValue += recognizer.builtInValues.Corporation.presentUnusualCharacters[i];
+          }
+          returnValue += "])+)";
+          return returnValue;
+        }
+        else {
+          return "((?:[-0-9a-zA-Z_',.&]|\\s)+)";
+        }
       }
     }
     else if(slotType === "TRANSCEND.Airport"){
