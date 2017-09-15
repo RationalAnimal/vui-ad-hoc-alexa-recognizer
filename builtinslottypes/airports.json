@@ -7375,7 +7375,15 @@
     {"name":"Iroquois Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Iroquois Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Kakabeka Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Kapuskasing Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Kapuskasing Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kapuskasing Sensenbrenner Hospital Heliport","alternativeNames":["Kapuskasing Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kars/Rideau Valley Air Park","alternativeNames":["Kars Rideau Valley Air Park", "Rideau Valley Air Park"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kasabonika Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kashabowie/Upper Shebandowan Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kashechewan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Keene/Elmhirst's Resort Airport","alternativeNames":["Keene Elmhirst's Resort Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Keene/Elmhirst's Resort Water Aerodrome","alternativeNames":["Keene Elmhirst's Resort Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Keewaywin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
