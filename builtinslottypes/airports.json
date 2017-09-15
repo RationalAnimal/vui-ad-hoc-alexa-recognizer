@@ -7486,7 +7486,15 @@
     {"name":"Big Hook Wilderness Camp Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Orangeville/Castlewood Field Aerodrome","alternativeNames":["Orangeville Castlewood Field Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Orangeville Headwaters Healthecare Centre Heliport","alternativeNames":["Orangeville Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Orangeville Laurel Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Orangeville Laurel Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Orangeville Rosehill Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Orillia Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Orillia/Lake St John Water Aerodrome","alternativeNames":["Orillia Lake St John Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Orillia/Matchedash Lake Water Aerodrome","alternativeNames":["Orillia Matchedash Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Orillia Ontario Provincial Police Heliport","alternativeNames":["Orillia Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Orono Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Orono/Hawkefield Aerodrome","alternativeNames":["Orono Hawkefield Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Oshawa Executive Airport","alternativeNames":["Toronto Oshawa Executive Airport", "Toronto/Oshawa Executive Airport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
