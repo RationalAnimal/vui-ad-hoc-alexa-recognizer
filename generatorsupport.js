@@ -780,7 +780,6 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
       else {
         return "((?:\\s|[-0-9a-zA-Z,_'])+)";
-//        return "((?:\\w|\\s|[0-9]|\-|[/:])+)";
       }
     }
     else if(slotType === "TRANSCEND.TIME"){
@@ -789,8 +788,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return recognizer.builtInValues.TIME.replacementRegExpString;
       }
       else {
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//        return "((?:\\w|\\s|[0-9]|\-|[/:])+)";
+        return "((?:\\s|[-0-9a-zA-Z,_'])+)";
       }
     }
     else if(slotType === "TRANSCEND.DURATION"){
