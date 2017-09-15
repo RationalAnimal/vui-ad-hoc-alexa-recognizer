@@ -7471,7 +7471,14 @@
     {"name":"Niagara Falls/Niagara South Airport","alternativeNames":["Niagara Falls Niagara South Airport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Summer Beaver Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Nipigon District Memorial Hospital Heliport","alternativeNames":["Nipigon Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Nixon Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Nixon Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Nobel/Lumsden Air Park","alternativeNames":["Nobel Lumsden Air Park"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Nobel/Sawdust Bay Water Aerodrome","alternativeNames":["Nobel Sawdust Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Norland/Trotter Aerodrome","alternativeNames":["Norland/Trotter Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"North Bay/Jack Garland Airport","alternativeNames":["North Bay Jack Garland Airport", "North Bay Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"North Bay Regional Health Centre Heliport","alternativeNames":["North Bay Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"North Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Round Lake Weagamow Lake Airport","alternativeNames":["Round Lake Airport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
