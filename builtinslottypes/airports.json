@@ -7630,7 +7630,15 @@
     {"name":"Tillsonburg Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Timmins/Victor M. Power Airport","alternativeNames":["Timmins Victor M. Power Airport", "Timmins/Victor M Power Airport", "Timmins Victor M Power Airport", "Timmins/Victor Power Airport", "Timmins Victor Power Airport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Timmins/Porcupine Lake Water Aerodrome","alternativeNames":["Timmins Porcupine Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Timmins and District Hospital Heliport","alternativeNames":["Timmins Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Timmins and District Hospital Heliport","alternativeNames":["Timmins Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Tobermory Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Billy Bishop Toronto City Airport","alternativeNames":["Toronto City Centre Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Billy Bishop Toronto City Water Aerodrome","alternativeNames":["Toronto/Billy Bishop Toronto City Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Downsview Airport","alternativeNames":["Toronto/Downsview Airport", "Toronto Downsview Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Toronto/Cardinal Couriers Heliport","alternativeNames":["Toronto Cardinal Couriers Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Toronto Hospital For Sick Children Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Toronto Pearson International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Toronto/Markham Stouffville Heliport","alternativeNames":["Toronto Markham Stouffville Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
