@@ -7606,7 +7606,15 @@
     {"name":"Stayner Aerodrome","alternativeNames":["Clearview Field"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Stewart Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Stirling Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Stoney Creek Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Stoney Creek Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Stoney Point Le Cunff Airport","alternativeNames":["Stoney Point Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Stoney Point Trepanier Aerodrome","alternativeNames":["Stoney Point Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Stouffville Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Stratford Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Strathroy Blue Yonder Airport","alternativeNames":["Strathroy Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sturgeon Falls West Nipissing General Hospital Heliport","alternativeNames":["Sturgeon Falls Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Fenelon Falls/Sturgeon Lake Water Aerodrome","alternativeNames":["Fenelon Falls Sturgeon Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sudbury/Coniston Airport","alternativeNames":["Sudbury Coniston Airport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
