@@ -7518,7 +7518,15 @@
     {"name":"Paudash Paudash Lake Water Aerodrome","alternativeNames":["Paudash Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Peawanuck Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Pelee Island Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Pembroke Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Pembroke Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Pembroke Regional Hospital Heliport","alternativeNames":["Pembroke Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Pendleton Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Perry Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Perth Great War Memorial Hospital Heliport","alternativeNames":["Perth Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Petawawa Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Peterborough Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Peterborough Regional Health Centre Heliport","alternativeNames":["Peterborough Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Pickle Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
