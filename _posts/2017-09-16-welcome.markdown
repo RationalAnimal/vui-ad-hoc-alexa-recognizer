@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Welcome!"
+date:   2017-09-16 14:47:37 -0400
+categories: welcome
+---
+Welcome
+
+This site is created so that it can become the central point for the information about VUI-AD-HOC-ALEXA-RECOGNIZER npm module.  In the near future I will be creating and linking here tutorials, code samples, news, ets.
+
+Enjoy
