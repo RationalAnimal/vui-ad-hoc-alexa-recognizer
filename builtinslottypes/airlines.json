@@ -1,0 +1,1416 @@
+{
+  "attribution" : "these values were partially taken from https://en.wikipedia.org/wiki/Lists_of_airlines, content was modified to make it suitable in text matching software and some values have been removed and/or renamed",
+  "license": "This file is released under Creative Commons Attribution-ShareAlike license:  http://creativecommons.org/licenses/by-sa/3.0/",
+  "values": [
+    {
+      "name": "Alaska Airlines",
+      "nativeName": "Alaska Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Allegiant Air",
+      "nativeName": "Allegiant Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "American Airlines",
+      "nativeName": "American Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Delta Air Lines",
+      "nativeName": "Delta Air Lines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Frontier Airlines",
+      "nativeName": "Frontier Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Frontier Airlines",
+      "nativeName": "Frontier Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "JetBlue Airways",
+      "nativeName": "JetBlue Airways",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Southwest Airlines",
+      "nativeName": "Southwest Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Spirit Airlines",
+      "nativeName": "Spirit Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Sun Country Airlines",
+      "nativeName": "Sun Country Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "United Airlines",
+      "nativeName": "United Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+    {
+      "name": "Virgin America",
+      "nativeName": "Virgin America",
+      "country": "united states",
+      "continent": "north america",
+      "type": "mainline"
+    },
+
+
+    {
+      "name": "Air Wisconsin",
+      "nativeName": "Air Wisconsin",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Cape Air",
+      "nativeName": "Cape Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "CommutAir",
+      "nativeName": "CommutAir",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Compass Airlines",
+      "nativeName": "Compass Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Contour Aviation",
+      "nativeName": "Contour Aviation",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Elite Airways",
+      "nativeName": "Elite Airways",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Endeavor Air",
+      "nativeName": "Endeavor Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Envoy Air",
+      "nativeName": "Envoy Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "ExpressJet",
+      "nativeName": "ExpressJet",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "GoJet Airlines",
+      "nativeName": "GoJet Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Great Lakes Airlines",
+      "nativeName": "Great Lakes Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Horizon Air",
+      "nativeName": "Horizon Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Island Air",
+      "nativeName": "Island Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Mesa Airlines",
+      "nativeName": "Mesa Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "PenAir",
+      "nativeName": "PenAir",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Piedmont Airlines",
+      "nativeName": "Piedmont Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "PSA Airlines",
+      "nativeName": "PSA Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Ravn Alaska",
+      "nativeName": "Ravn Alaska",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Republic Airlines",
+      "nativeName": "Republic Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Silver Airways",
+      "nativeName": "Silver Airways",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "SkyWest Airlines",
+      "nativeName": "SkyWest Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+    {
+      "name": "Trans States Airlines",
+      "nativeName": "Trans States Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "regional"
+    },
+
+    {
+      "name": "ABX Air",
+      "nativeName": "ABX Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Air Cargo Carriers",
+      "nativeName": "Air Cargo Carriers",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "AirNet Express",
+      "nativeName": "AirNet Express",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Air Transport International",
+      "nativeName": "Air Transport International",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Aloha Air Cargo",
+      "nativeName": "Aloha Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Alpine Air Express",
+      "nativeName": "Alpine Air Express",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Ameriflight",
+      "nativeName": "Ameriflight",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Amerijet International",
+      "nativeName": "Amerijet International",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Ameristar Air Cargo",
+      "nativeName": "Ameristar Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Asia Pacific Airlines",
+      "nativeName": "Asia Pacific Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Atlas Air Cargo",
+      "nativeName": "Atlas Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "C and M Airways",
+      "nativeName": "C and M Airways",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Castle Aviation",
+      "nativeName": "Castle Aviation",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Centurion Air Cargo",
+      "nativeName": "Centurion Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Contract Air Cargo",
+      "nativeName": "Contract Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Corporate Air",
+      "nativeName": "Corporate Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "CSA Air",
+      "nativeName": "CSA Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Custom Air Transport",
+      "nativeName": "Custom Air Transport",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Empire Airlines",
+      "nativeName": "Empire Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Everts Air Cargo",
+      "nativeName": "Everts Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "FedEx Express",
+      "nativeName": "FedEx Express",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Florida West International Airways",
+      "nativeName": "Florida West International Airways",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Freight Runners Express",
+      "nativeName": "Freight Runners Express",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Kalitta Air",
+      "nativeName": "Kalitta Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Key Lime Air",
+      "nativeName": "Key Lime Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Logistic Air",
+      "nativeName": "Logistic Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Lynden Air Cargo",
+      "nativeName": "Lynden Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Martinaire",
+      "nativeName": "Martinaire",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Mountain Air Cargo",
+      "nativeName": "Mountain Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "National Airlines",
+      "nativeName": "National Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Northern Air Cargo",
+      "nativeName": "Northern Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Polar Air Cargo",
+      "nativeName": "Polar Air Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Ryan Air Services",
+      "nativeName": "Ryan Air Services",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Sky Lease Cargo",
+      "nativeName": "Sky Lease Cargo",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Skyway Enterprises",
+      "nativeName": "Skyway Enterprises",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Southern Air",
+      "nativeName": "Southern Air",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Tepper Aviation",
+      "nativeName": "Tepper Aviation",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "Transair",
+      "nativeName": "Transair",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "UPS Airlines",
+      "nativeName": "UPS Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+    {
+      "name": "USA Jet Airlines",
+      "nativeName": "USA Jet Airlines",
+      "country": "united states",
+      "continent": "north america",
+      "type": "cargo"
+    },
+
+    {
+      "name":"Adlair Aviation",
+      "nativeName":"Adlair Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Adler Aviation",
+      "nativeName":"Adler Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Canada Express",
+      "nativeName":"Air Canada Express",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Canada Jetz",
+      "nativeName":"Air Canada Jetz",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Canada Rouge",
+      "nativeName":"Air Canada Rouge",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Canada",
+      "nativeName":"Air Canada",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Creebec",
+      "nativeName":"Air Creebec",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Georgian",
+      "nativeName":"Air Georgian",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Inuit",
+      "nativeName":"Air Inuit",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Labrador",
+      "nativeName":"Air Labrador",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Montmagny",
+      "nativeName":"Air Montmagny",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air North",
+      "nativeName":"Air North",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Nunavut",
+      "nativeName":"Air Nunavut",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Saguenay",
+      "nativeName":"Air Saguenay",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Spray",
+      "nativeName":"Air Spray",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Tindi",
+      "nativeName":"Air Tindi",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Air Transat",
+      "nativeName":"Air Transat",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"AirSprint",
+      "nativeName":"AirSprint",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Aklak Air",
+      "nativeName":"Aklak Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Alkan Air",
+      "nativeName":"Alkan Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Aqsaqniq Airways",
+      "nativeName":"Aqsaqniq Airways",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Atlantic Charters",
+      "nativeName":"Atlantic Charters",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Bar XH Air",
+      "nativeName":"Bar XH Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Bearskin Airlines",
+      "nativeName":"Bearskin Airlines",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Brock Air Services",
+      "nativeName":"Brock Air Services",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Buffalo Airways",
+      "nativeName":"Buffalo Airways",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Calm Air",
+      "nativeName":"Calm Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Canadian Helicopters",
+      "nativeName":"Canadian Helicopters",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Canadian North",
+      "nativeName":"Canadian North",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Capital Helicopters",
+      "nativeName":"Capital Helicopters",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Cargojet",
+      "nativeName":"Cargojet",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Central Mountain Air",
+      "nativeName":"Central Mountain Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"CHC Helicopter",
+      "nativeName":"CHC Helicopter",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Cloud Air",
+      "nativeName":"Cloud Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Corilair",
+      "nativeName":"Corilair",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Cougar Helicoptersß",
+      "nativeName":"Cougar Helicoptersß",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"DAL Aviation",
+      "nativeName":"DAL Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Discovery Air Defence",
+      "nativeName":"Discovery Air Defence",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Discovery Air Fire Services",
+      "nativeName":"Discovery Air Fire Services",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Enerjet",
+      "nativeName":"Enerjet",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Exact Air",
+      "nativeName":"Exact Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Exploits Valley Air Services",
+      "nativeName":"Exploits Valley Air Services",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Fast Air",
+      "nativeName":"Fast Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"First Air",
+      "nativeName":"First Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Flair Airlines",
+      "nativeName":"Flair Airlines",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Flightexec",
+      "nativeName":"Flightexec",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Great Slave Helicopters",
+      "nativeName":"Great Slave Helicopters",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Harbour Air Seaplanes",
+      "nativeName":"Harbour Air Seaplanes",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Harv's Air Service",
+      "nativeName":"Harv's Air Service",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Helicopter Transport Services",
+      "nativeName":"Helicopter Transport Services",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Helijet",
+      "nativeName":"Helijet",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Innu Mikun Airlines",
+      "nativeName":"Innu Mikun Airlines",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Integra Air",
+      "nativeName":"Integra Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Island Express Air",
+      "nativeName":"Island Express Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Jazz",
+      "nativeName":"Jazz",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"KD Air",
+      "nativeName":"KD Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Keewatin Air",
+      "nativeName":"Keewatin Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Kenn Borek Air",
+      "nativeName":"Kenn Borek Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"KF Cargo",
+      "nativeName":"KF Cargo",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Kitikmeot Helicopters",
+      "nativeName":"Kitikmeot Helicopters",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Kivalliq Air",
+      "nativeName":"Kivalliq Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Kootenay Direct Airlines",
+      "nativeName":"Kootenay Direct Airlines",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"LR Helicopters",
+      "nativeName":"LR Helicopters",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Maritime Air Charter",
+      "nativeName":"Maritime Air Charter",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"McMurray Aviation",
+      "nativeName":"McMurray Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Missinippi Airways",
+      "nativeName":"Missinippi Airways",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Morningstar Air Express",
+      "nativeName":"Morningstar Air Express",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Nakina Air Service",
+      "nativeName":"Nakina Air Service",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Newfoundland Helicopters",
+      "nativeName":"Newfoundland Helicopters",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"NewLeaf",
+      "nativeName":"NewLeaf",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Nolinor Aviation",
+      "nativeName":"Nolinor Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Nor-Alta Aviation",
+      "nativeName":"Nor-Alta Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"North Cariboo Air",
+      "nativeName":"North Cariboo Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"North Star Air",
+      "nativeName":"North Star Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"North-Wright Airways",
+      "nativeName":"North-Wright Airways",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Northern Air Support",
+      "nativeName":"Northern Air Support",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Northern Air",
+      "nativeName":"Northern Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Northern Thunderbird Air",
+      "nativeName":"Northern Thunderbird Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Northwestern Air",
+      "nativeName":"Northwestern Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Nunasi Helicopters",
+      "nativeName":"Nunasi Helicopters",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Ookpik Aviation",
+      "nativeName":"Ookpik Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Orca Airways",
+      "nativeName":"Orca Airways",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Ornge",
+      "nativeName":"Ornge",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Pacific Coastal Airlines",
+      "nativeName":"Pacific Coastal Airlines",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Pascan Aviation",
+      "nativeName":"Pascan Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Perimeter Aviation",
+      "nativeName":"Perimeter Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Porter Airlines",
+      "nativeName":"Porter Airlines",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Pronto Airways",
+      "nativeName":"Pronto Airways",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Propair",
+      "nativeName":"Propair",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"PAL Airlines",
+      "nativeName":"PAL Airlines",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"R1 Airlines",
+      "nativeName":"R1 Airlines",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Salt Spring Air",
+      "nativeName":"Salt Spring Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Seair Seaplanes",
+      "nativeName":"Seair Seaplanes",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Silverline Helicopters",
+      "nativeName":"Silverline Helicopters",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Sky Regional Airlines",
+      "nativeName":"Sky Regional Airlines",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"SkyLink Aviation",
+      "nativeName":"SkyLink Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"SkyLink Express",
+      "nativeName":"SkyLink Express",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"SkyNorth Air",
+      "nativeName":"SkyNorth Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Skyservice Business Aviation",
+      "nativeName":"Skyservice Business Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Starlink Aviation",
+      "nativeName":"Starlink Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Summit Air",
+      "nativeName":"Summit Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Sunwest Aviation",
+      "nativeName":"Sunwest Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Sunwing Airlines",
+      "nativeName":"Sunwing Airlines",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Superior Airways",
+      "nativeName":"Superior Airways",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Thomas Cook Airlines Canada",
+      "nativeName":"Thomas Cook Airlines Canada",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Thunder Airlines",
+      "nativeName":"Thunder Airlines",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Tofino Air",
+      "nativeName":"Tofino Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Trans Capital Air",
+      "nativeName":"Trans Capital Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Transwest Air",
+      "nativeName":"Transwest Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Unaalik Aviation",
+      "nativeName":"Unaalik Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Universal Helicopters",
+      "nativeName":"Universal Helicopters",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Vancouver Island Air",
+      "nativeName":"Vancouver Island Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"VIH Helicopters",
+      "nativeName":"VIH Helicopters",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Visionair Quebec",
+      "nativeName":"Visionair Quebec",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Voyageur Airways",
+      "nativeName":"Voyageur Airways",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Wasaya Airways",
+      "nativeName":"Wasaya Airways",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"West Coast Air",
+      "nativeName":"West Coast Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"West Wind Aviation",
+      "nativeName":"West Wind Aviation",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"WestJet Encore",
+      "nativeName":"WestJet Encore",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"WestJet",
+      "nativeName":"WestJet",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"White River Air",
+      "nativeName":"White River Air",
+      "country":"canada",
+      "continent":"north america"
+    },
+    {
+      "name":"Wilderness Air Escapes",
+      "nativeName":"Wilderness Air Escapes",
+      "country":"canada",
+      "continent":"north america"
+    },
+
+    {
+      "name":"Aeromexico",
+      "nativeName":"Aeroméxico",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "mainline"
+    },
+    {
+      "name":"Interjet",
+      "nativeName":"Interjet",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "mainline"
+    },
+    {
+      "name":"Magnicharters",
+      "nativeName":"Magnicharters",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "mainline"
+    },
+    {
+      "name":"VivaAerobus",
+      "nativeName":"VivaAerobús",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "mainline"
+    },
+    {
+      "name":"Volaris",
+      "nativeName":"Volaris",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "mainline"
+    },
+
+
+    {
+      "name":"Aeromar",
+      "nativeName":"Aeromar",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "regional"
+    },
+    {
+      "name":"Aeromexico Connect",
+      "nativeName":"Aeroméxico Connect",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "regional"
+    },
+    {
+      "name":"MAYAir",
+      "nativeName":"MAYAir",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "regional"
+    },
+    {
+      "name":"TAR Aerolineas",
+      "nativeName":"TAR Aerolineas",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "regional"
+    },
+
+    {
+      "name":"Aeronaves TSM",
+      "nativeName":"Aeronaves TSM",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "cargo"
+    },
+    {
+      "name":"Estafeta Carga Aerea",
+      "nativeName":"Estafeta Carga Aérea",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "cargo"
+    },
+    {
+      "name":"LATAM Cargo Mexico",
+      "nativeName":"LATAM Cargo México",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "cargo"
+    },
+
+
+    {
+      "name":"Aerodan",
+      "nativeName":"Aerodan",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "charter"
+    },
+    {
+      "name":"Aerodavinci",
+      "nativeName":"Aerodavinci",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "charter"
+    },
+    {
+      "name":"Aerolineas Ejecutivas",
+      "nativeName":"Aerolíneas Ejecutivas",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "charter"
+    },
+    {
+      "name":"AeroUnion",
+      "nativeName":"AeroUnion",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "charter"
+    },
+    {
+      "name":"Aviesa",
+      "nativeName":"Aviesa",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "charter"
+    },
+    {
+      "name":"Aerodan",
+      "nativeName":"Aerodan",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "charter"
+    },
+
+    {
+      "name":"Aereo Calafia",
+      "nativeName":"Aéreo Calafia",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "taxi"
+    },
+    {
+      "name":"Aereo Servicio Guerrero",
+      "nativeName":"Aéreo Servicio Guerrero",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "taxi"
+    },
+    {
+      "name":"Avioquintana",
+      "nativeName":"Avioquintana",
+      "country":"mexico",
+      "continent":"north america",
+      "type": "taxi"
+    }
+
+
+  ]
+}

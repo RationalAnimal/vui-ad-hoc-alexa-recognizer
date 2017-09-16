@@ -1,0 +1,690 @@
+{
+  "intents": [
+    {
+      "intent": "TestIntent",
+      "slots": []
+    },
+    {
+      "intent": "NumberIntent",
+      "slots": [
+        {
+          "name": "NumberSlot",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "BlahIntent",
+      "slots": [
+        {
+          "name": "BlahSlot",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "BlehSlot",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "FourDigitIntent",
+      "slots": [
+        {
+          "name": "FooSlot",
+          "type": "AMAZON.FOUR_DIGIT_NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "AnotherIntent",
+      "slots": [
+        {
+          "name": "SomeSlot",
+          "type": "SOME"
+        },
+        {
+          "name": "SomeOtherSlot",
+          "type": "SOMEOTHER"
+        }
+      ]
+    },
+    {
+      "intent": "CustomRegExpIntent",
+      "slots": [
+        {
+          "name": "CustomRegExpSlot",
+          "type": "CUSTOMREGEXP"
+        }
+      ]
+    },
+    {
+      "intent": "PhoneNumberIntent",
+      "slots": [
+        {
+          "name": "PhoneNumberSlot",
+          "type": "PHONENUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "PriceIntent",
+      "slots": [
+        {
+          "name": "PriceOneSlot",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "PriceTwoSlot",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+
+    {
+      "intent": "TranscendNumberIntent",
+      "slots": [
+        {
+          "name": "TranscendNumberOneSlot",
+          "type": "TRANSCEND.NUMBER"
+        },
+        {
+          "name": "TranscendNumberTwoSlot",
+          "type": "TRANSCEND.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "TranscendPresidentsIntent",
+      "slots": [
+        {
+          "name": "TranscendPresidentsSlot",
+          "type": "TRANSCEND.US_PRESIDENT"
+        }
+      ]
+    },
+    {
+      "intent": "ColorIntent",
+      "slots": [
+        {
+          "name": "ColorSlot",
+          "type": "AMAZON.Color"
+        }
+      ]
+    },
+    {
+      "intent": "ActorIntent",
+      "slots": [
+        {
+          "name": "ActorSlot",
+          "type": "AMAZON.Actor"
+        }
+      ]
+    },
+    {
+      "intent": "ProfessionalIntent",
+      "slots": [
+        {
+          "name": "ProfessionalSlot",
+          "type": "AMAZON.Professional"
+        }
+      ]
+    },
+    {
+      "intent": "ResidenceIntent",
+      "slots": [
+        {
+          "name": "ResidenceSlot",
+          "type": "AMAZON.Residence"
+        }
+      ]
+    },
+    {
+      "intent": "ScreeningEventIntent",
+      "slots": [
+        {
+          "name": "ScreeningEventSlot",
+          "type": "AMAZON.ScreeningEvent"
+        }
+      ]
+    },
+    {
+      "intent": "ServiceIntent",
+      "slots": [
+        {
+          "name": "ServiceSlot",
+          "type": "AMAZON.Service"
+        }
+      ]
+    },
+    {
+      "intent": "SoftwareApplicationIntent",
+      "slots": [
+        {
+          "name": "SoftwareApplicationSlot",
+          "type": "AMAZON.SoftwareApplication"
+        }
+      ]
+    },
+    {
+      "intent": "SoftwareGameIntent",
+      "slots": [
+        {
+          "name": "SoftwareGameSlot",
+          "type": "AMAZON.SoftwareGame"
+        }
+      ]
+    },
+    {
+      "intent": "VideoGameIntent",
+      "slots": [
+        {
+          "name": "VideoGameSlot",
+          "type": "AMAZON.VideoGame"
+        }
+      ]
+    },
+    {
+      "intent": "SocialMediaPlatformIntent",
+      "slots": [
+        {
+          "name": "SocialMediaPlatformSlot",
+          "type": "AMAZON.SocialMediaPlatform"
+        }
+      ]
+    },
+    {
+      "intent": "SportsEventIntent",
+      "slots": [
+        {
+          "name": "SportsEventSlot",
+          "type": "AMAZON.SportsEvent"
+        }
+      ]
+    },
+    {
+      "intent": "TVEpisodeIntent",
+      "slots": [
+        {
+          "name": "TVEpisodeSlot",
+          "type": "AMAZON.TVEpisode"
+        }
+      ]
+    },
+    {
+      "intent": "TVSeasonIntent",
+      "slots": [
+        {
+          "name": "TVSeasonSlot",
+          "type": "AMAZON.TVSeason"
+        }
+      ]
+    },
+    {
+      "intent": "TVSeriesIntent",
+      "slots": [
+        {
+          "name": "TVSeriesSlot",
+          "type": "AMAZON.TVSeries"
+        }
+      ]
+    },
+    {
+      "intent": "ArtistIntent",
+      "slots": [
+        {
+          "name": "ArtistSlot",
+          "type": "AMAZON.Artist"
+        }
+      ]
+    },
+    {
+      "intent": "AuthorIntent",
+      "slots": [
+        {
+          "name": "AuthorSlot",
+          "type": "AMAZON.Author"
+        }
+      ]
+    },
+    {
+      "intent": "BookIntent",
+      "slots": [
+        {
+          "name": "BookSlot",
+          "type": "AMAZON.Book"
+        }
+      ]
+    },
+    {
+      "intent": "BookSeriesIntent",
+      "slots": [
+        {
+          "name": "BookSeriesSlot",
+          "type": "AMAZON.BookSeries"
+        }
+      ]
+    },
+    {
+      "intent": "BroadcastChannelIntent",
+      "slots": [
+        {
+          "name": "BroadcastChannelSlot",
+          "type": "AMAZON.BroadcastChannel"
+        }
+      ]
+    },
+    {
+      "intent": "CivicStructureIntent",
+      "slots": [
+        {
+          "name": "CivicStructureSlot",
+          "type": "AMAZON.CivicStructure"
+        }
+      ]
+    },
+    {
+      "intent": "ComicIntent",
+      "slots": [
+        {
+          "name": "ComicSlot",
+          "type": "AMAZON.Comic"
+        }
+      ]
+    },
+    {
+      "intent": "CorporationIntent",
+      "slots": [
+        {
+          "name": "CorporationSlot",
+          "type": "AMAZON.Corporation"
+        }
+      ]
+    },
+    {
+      "intent": "DessertIntent",
+      "slots": [
+        {
+          "name": "DessertSlot",
+          "type": "AMAZON.Dessert"
+        }
+      ]
+    },
+    {
+      "intent": "LandmarksOrHistoricalBuildingsIntent",
+      "slots": [
+        {
+          "name": "LandmarksOrHistoricalBuildingsSlot",
+          "type": "AMAZON.LandmarksOrHistoricalBuildings"
+        }
+      ]
+    },
+    {
+      "intent": "GameIntent",
+      "slots": [
+        {
+          "name": "GameSlot",
+          "type": "AMAZON.Game"
+        }
+      ]
+    },
+    {
+      "intent": "LandformIntent",
+      "slots": [
+        {
+          "name": "LandformSlot",
+          "type": "AMAZON.Landform"
+        }
+      ]
+    },
+    {
+      "intent": "MovieSeriesIntent",
+      "slots": [
+        {
+          "name": "MovieSeriesSlot",
+          "type": "AMAZON.MovieSeries"
+        }
+      ]
+    },
+    {
+      "intent": "MovieTheaterIntent",
+      "slots": [
+        {
+          "name": "MovieTheaterSlot",
+          "type": "AMAZON.MovieTheater"
+        }
+      ]
+    },
+    {
+      "intent": "MusicianIntent",
+      "slots": [
+        {
+          "name": "MusicianSlot",
+          "type": "AMAZON.Musician"
+        }
+      ]
+    },
+    {
+      "intent": "MusicRecordingIntent",
+      "slots": [
+        {
+          "name": "MusicRecordingSlot",
+          "type": "AMAZON.MusicRecording"
+        }
+      ]
+    },
+    {
+      "intent": "MusicVideoIntent",
+      "slots": [
+        {
+          "name": "MusicVideoSlot",
+          "type": "AMAZON.MusicVideo"
+        }
+      ]
+    },
+    {
+      "intent": "MusicVenueIntent",
+      "slots": [
+        {
+          "name": "MusicVenueSlot",
+          "type": "AMAZON.MusicVenue"
+        }
+      ]
+    },
+    {
+      "intent": "MusicAlbumIntent",
+      "slots": [
+        {
+          "name": "MusicAlbumSlot",
+          "type": "AMAZON.MusicAlbum"
+        }
+      ]
+    },
+    {
+      "intent": "MusicGroupIntent",
+      "slots": [
+        {
+          "name": "MusicGroupSlot",
+          "type": "AMAZON.MusicGroup"
+        }
+      ]
+    },
+    {
+      "intent": "PersonIntent",
+      "slots": [
+        {
+          "name": "PersonOneSlot",
+          "type": "AMAZON.Person"
+        },
+        {
+          "name": "PersonTwoSlot",
+          "type": "AMAZON.Person"
+        }
+      ]
+    },
+    {
+      "intent": "WellKnownPersonIntent",
+      "slots": [
+        {
+          "name": "PersonSlot",
+          "type": "AMAZON.Person"
+        }
+      ]
+    },
+    {
+      "intent": "MusicEventIntent",
+      "slots": [
+        {
+          "name": "MusicEventSlot",
+          "type": "AMAZON.MusicEvent"
+        }
+      ]
+    },
+    {
+      "intent": "MovieIntent",
+      "slots": [
+        {
+          "name": "MovieSlot",
+          "type": "AMAZON.Movie"
+        }
+      ]
+    },
+    {
+      "intent": "MedicalOrganizationIntent",
+      "slots": [
+        {
+          "name": "MedicalOrganizationSlot",
+          "type": "AMAZON.MedicalOrganization"
+        }
+      ]
+    },
+    {
+      "intent": "OrganizationIntent",
+      "slots": [
+        {
+          "name": "OrganizationSlot",
+          "type": "AMAZON.Organization"
+        }
+      ]
+    },
+    {
+      "intent": "LocalBusinessTypeIntent",
+      "slots": [
+        {
+          "name": "LocalBusinessTypeSlot",
+          "type": "AMAZON.LocalBusinessType"
+        }
+      ]
+    },
+    {
+      "intent": "LocalBusinessIntent",
+      "slots": [
+        {
+          "name": "LocalBusinessSlot",
+          "type": "AMAZON.LocalBusiness"
+        }
+      ]
+    },
+    {
+      "intent": "FoodEstablishmentIntent",
+      "slots": [
+        {
+          "name": "FoodEstablishmentSlot",
+          "type": "AMAZON.FoodEstablishment"
+        }
+      ]
+    },
+    {
+      "intent": "FictionalCharacterIntent",
+      "slots": [
+        {
+          "name": "FictionalCharacterSlot",
+          "type": "AMAZON.FictionalCharacter"
+        }
+      ]
+    },
+    {
+      "intent": "FestivalIntent",
+      "slots": [
+        {
+          "name": "FestivalSlot",
+          "type": "AMAZON.Festival"
+        }
+      ]
+    },
+    {
+      "intent": "EducationalOrganizationIntent",
+      "slots": [
+        {
+          "name": "EducationalOrganizationSlot",
+          "type": "AMAZON.EducationalOrganization"
+        }
+      ]
+    },
+    {
+      "intent": "DirectorIntent",
+      "slots": [
+        {
+          "name": "DirectorSlot",
+          "type": "AMAZON.Director"
+        }
+      ]
+    },
+    {
+      "intent": "AthleteIntent",
+      "slots": [
+        {
+          "name": "AthleteSlot",
+          "type": "AMAZON.Athlete"
+        }
+      ]
+    },
+    {
+      "intent": "AdministrativeAreaIntent",
+      "slots": [
+        {
+          "name": "AdministrativeAreaSlot",
+          "type": "AMAZON.AdministrativeArea"
+        }
+      ]
+    },
+    {
+      "intent": "MonthIntent",
+      "slots": [
+        {
+          "name": "MonthSlot",
+          "type": "AMAZON.Month"
+        }
+      ]
+    },
+    {
+      "intent": "DayOfWeekIntent",
+      "slots": [
+        {
+          "name": "DayOfWeekSlot",
+          "type": "AMAZON.DayOfWeek"
+        }
+      ]
+    },
+    {
+      "intent": "CountryIntent",
+      "slots": [
+        {
+          "name": "CountrySlot",
+          "type": "AMAZON.Country"
+        }
+      ]
+    },
+    {
+      "intent": "RoomIntent",
+      "slots": [
+        {
+          "name": "RoomSlot",
+          "type": "AMAZON.Room"
+        }
+      ]
+    },
+    {
+      "intent": "MinionIntent",
+      "slots": [
+        {
+          "name": "MinionSlot",
+          "type": "MINIONS"
+        }
+      ]
+    },
+    {
+      "intent": "FirstNameIntent",
+      "slots": [
+        {
+          "name": "FirstNameSlot",
+          "type": "AMAZON.US_FIRST_NAME"
+        }
+      ]
+    },
+    {
+      "intent": "StateIntent",
+      "slots": [
+        {
+          "name": "StateSlot",
+          "type": "AMAZON.US_STATE"
+        }
+      ]
+    },
+    {
+      "intent": "DateIntent",
+      "slots": [
+        {
+          "name": "DateSlot",
+          "type": "AMAZON.DATE"
+        }
+      ]
+    },
+    {
+      "intent": "AirlineIntent",
+      "slots": [
+        {
+          "name": "AirlineSlot",
+          "type": "AMAZON.Airline"
+        }
+      ]
+    },
+    {
+      "intent": "AirportIntent",
+      "slots": [
+        {
+          "name": "AirportSlot",
+          "type": "AMAZON.Airport"
+        }
+      ]
+    },
+    {
+      "intent": "SportsTeamIntent",
+      "slots": [
+        {
+          "name": "SportsTeamSlot",
+          "type": "AMAZON.SportsTeam"
+        },
+        {
+          "name": "SportsTeamTwoSlot",
+          "type": "AMAZON.SportsTeam"
+        }
+      ]
+    },
+    {
+      "intent": "DurationIntent",
+      "slots": [
+        {
+          "name": "DurationSlot",
+          "type": "AMAZON.DURATION"
+        }
+      ]
+    },
+    {
+      "intent": "TimeIntent",
+      "slots": [
+        {
+          "name": "TimeSlot",
+          "type": "AMAZON.TIME"
+        }
+      ]
+    },
+    {
+      "intent": "HiIntent",
+      "slots": []
+    },
+    {
+      "intent": "HiTimeIntent",
+      "slots": []
+    },
+    {
+      "intent": "EquivalentsIntent",
+      "slots": []
+    },
+    {
+      "intent": "MisspelledIntent",
+      "slots": []
+    }
+
+
+  ]
+}

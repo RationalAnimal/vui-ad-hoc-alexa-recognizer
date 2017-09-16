@@ -1,0 +1,122 @@
+{
+  "description": "Simple domain",
+  "recognizers": [
+    {
+      "key": "blah",
+      "path": "./test/blahblahdomain/blahblahrecognizer.json"
+    },
+    {
+      "key": "blah2",
+      "path": "./test/blahblahdomain/blahblahrecognizer2.json"
+    },
+    {
+      "key": "theUsual",
+      "path": "./recognizer.json"
+    }
+  ],
+  "domains": [
+    {
+      "key": "bleh",
+      "path": "./test/blehblehdomain/blehblehdomain.json"
+    }
+  ],
+  "states": [
+    {
+      "matchCriteria": {
+        "selector": "selectthis",
+        "match": true,
+        "value": {"flow": "TEST_FLOW_2"}
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "blah2",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Thank you"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "selectthis",
+        "match": true,
+        "value": {"flow": "TEST_FLOW_3"}
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "blah2",
+          "responder": {
+            "result": {
+              "directValues": {
+                "pickMethod": "random",
+                "values": [
+                  {"text": "Thanks a bunch"},
+                  {"text": "Danke"},
+                  {"text": "I agree"}
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "selectthis",
+        "match": true,
+        "value": {"flow": "TEST_FLOW_4"}
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "blah2",
+          "responder": {
+            "result": {
+              "directValues": {
+                "pickMethod": "randomDoNotRepeat",
+                "repeatSelector": "squirrelledAwayAlreadyUsed",
+                "values": [
+                  {"text": "Thanks a bunch"},
+                  {"text": "Danke"},
+                  {"text": "I agree"}
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "selectthis",
+        "match": false,
+        "values": [{"flow": "SOME_FLOW"}, {"flow": "TEST_FLOW"}]
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "blah2",
+          "responder": {
+            "result": {
+              "functionSource": "return {\"text\":\"Thanks\"};"
+            }
+          }
+        },
+        {
+          "domain": "bleh"
+        }
+      ]
+    },
+    {
+      "matchCriteria": "default",
+      "matchSpecs": [
+        {
+          "recognizer": "blah"
+        },
+        {
+          "recognizer": "theUsual"
+        }
+      ]
+    }
+  ]
+}

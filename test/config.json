@@ -1,0 +1,71 @@
+{
+	"customSlotTypes":[
+		{
+			"name": "SOME",
+			"values": [
+				"apple",
+				"star fruit",
+				"pear",
+				"orange"
+			],
+			"transformSrcFilename": "./test/transformSome.js"
+		},
+		{
+			"name": "SOMEOTHER",
+			"values": [
+				"rose",
+				"petunia",
+				"dandelion"
+			]
+		},
+		{
+			"name": "MINIONS",
+			"filename": "test/minions.txt"
+		},
+		{
+			"name": "CUSTOMREGEXP",
+			"customRegExpString": "(ABC123|XYZ789)"
+		},
+		{
+			"name": "PHONENUMBER",
+			"customRegExpString": "(\\({0,1}[0-9]{3}\\){0,1}\\s*[0-9]{3}\\s*-{0,1}\\s*[0-9]{4})",
+			"customWildCardRegExpString": "(\\({0,1}[0-9]{3}\\){0,1}\\s*[0-9]{3}\\s*-{0,1}\\s*[0-9]{4})"
+		}
+	],
+	"builtInIntents":[
+		{
+			"name": "AMAZON.RepeatIntent",
+			"enabled": false
+		},
+		{
+			"name": "AMAZON.StopIntent",
+			"enabled": true,
+			"extendedUtterances": ["enough already", "quit now"],
+			"extendedUtterancesFilename": "test/stopIntentExtendedUtterances.txt"
+		}
+	],
+	"builtInSlots": [
+		{
+			"name": "AMAZON.US_STATE",
+			"transformSrcFilename": "./test/transformUsState.js"
+		},
+		{
+			"name": "AMAZON.Month",
+			"transformSrcFilename": "./test/transformFirstWordTitleCase.js"
+		},
+		{
+			"name": "AMAZON.US_FIRST_NAME",
+			"extendedValues": [
+				"Prince Abubu"
+			],
+			"extendedValuesFilename": "test/usFirstNameExtendedValues.txt"
+		},
+		{
+			"name": "AMAZON.Room",
+			"extendedValues": [
+				"hobbit hole"
+			],
+			"extendedValuesFilename": "test/roomExtendedValues.txt"
+		}
+	]
+}
