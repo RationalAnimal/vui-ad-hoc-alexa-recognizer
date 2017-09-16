@@ -1,8 +1,7 @@
 title: VUI-AD-HOC-ALEXA-RECOGNIZER
 author: RationalAnimal (Ilya Shubentsov)
-email: ilyafornpmpublishing@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Node.js module for building voice skills and chat bots
+  Node.js module for building voice skills, chat bots, and text parsing apps
 
 github_username:  RationalAnimal
 

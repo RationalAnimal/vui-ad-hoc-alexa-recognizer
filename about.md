@@ -8,5 +8,3 @@ We are a "royal we", or rather it's just me and my Scotty dog. I am working on m
 
 You can find the source code at GitHub: 
 [vui-ad-hoc-alexa-recognizer](https://github.com/RationalAnimal/vui-ad-hoc-alexa-recognizer)
-
-Made by [RationalAnimal](https://github.com/RationalAnimal) Copyright © 2017 Ilya Shubentsov
