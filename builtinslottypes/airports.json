@@ -7534,7 +7534,15 @@
     {"name":"Pikangikum Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Pikangikum Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Plattsville Lubitz Flying Field Aerodrome","alternativeNames":["Plattsville Aerodrome", "Lubitz Flying Field"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Plevna/Tomvale Airport","alternativeNames":["Plevna Tomvale Airport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Plevna/Tomvale Airport","alternativeNames":["Plevna Tomvale Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Pointe au Baril Station Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Poplar Hill Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Portage Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lake Muskoka/Mortimer's Point Water Aerodrome","alternativeNames":["Lake Muskoka Mortimer's Point Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lake Rosseau/Arthurlie Bay Water Aerodrome","alternativeNames":["Lake Rosseau/Arthurlie Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Port Carling Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Port Carling/Butterfly Lake Water Aerodrome","alternativeNames":["Port Carling Butterfly Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Port Carling/Fig Air Heliport","alternativeNames":["Port Carling Fig Air Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
