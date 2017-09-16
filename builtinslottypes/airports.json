@@ -7646,7 +7646,14 @@
     {"name":"Toronto/Wilson's Heliport","alternativeNames":["Toronto Wilson's Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Tottenham/Ronan Aerodrome","alternativeNames":["Tottenham Ronan Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Tottenham/Volk Airport","alternativeNames":["Tottenham Volk Airport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"CFB Trenton","alternativeNames":["Trenton Airport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"CFB Trenton","alternativeNames":["Trenton Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Tyendinaga Mohawk Airport","alternativeNames":["Tyendinaga Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ullswater Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Upsala Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Uxbridge Cottage Hospital Heliport","alternativeNames":["Uxbridge Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Vermilion Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Victor Mine Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Walkerton County Of Bruce General Hospital Heliport","alternativeNames":["Walkerton Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
