@@ -7542,7 +7542,15 @@
     {"name":"Lake Rosseau/Arthurlie Bay Water Aerodrome","alternativeNames":["Lake Rosseau/Arthurlie Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Port Carling Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Port Carling/Butterfly Lake Water Aerodrome","alternativeNames":["Port Carling Butterfly Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Port Carling/Fig Air Heliport","alternativeNames":["Port Carling Fig Air Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Port Carling/Fig Air Heliport","alternativeNames":["Port Carling Fig Air Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Port Colborne Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Port Elgin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Port Hope Millson Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Port Hope Peter's Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Arnstein Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Port Loring Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Smoky Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Port Perry/Hoskin Aerodrome","alternativeNames":["Port Perry Hoskin Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
