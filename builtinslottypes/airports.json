@@ -7598,7 +7598,15 @@
     {"name":"Slate Falls Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Smiths Falls Community Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Smiths Falls-Montague Airport","alternativeNames":["Smiths Falls-Montague Russ Beach Airport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Southampton Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Southampton Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"South River-Sundridge District Airport","alternativeNames":["Sundridge/Almaguin Highlands Aerodrome", "Sundridge Almaguin Highlands Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Springvale Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Springwater Aerodrome","alternativeNames":["Barrie Airpark"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Staunton Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Stayner Aerodrome","alternativeNames":["Clearview Field"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Stewart Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Stirling Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Stoney Creek Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
