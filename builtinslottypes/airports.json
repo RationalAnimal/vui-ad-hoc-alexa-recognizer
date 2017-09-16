@@ -7558,7 +7558,15 @@
     {"name":"Red Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Red Lake Margaret Cochenour Memorial Hospital Heliport","alternativeNames":["Red Lake Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Red Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Region of Waterloo International Airport","alternativeNames":["Kitchener Waterloo Regional Airport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Region of Waterloo International Airport","alternativeNames":["Kitchener Waterloo Regional Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Kitchener-Waterloo Grand River Hospital Heliport","alternativeNames":["Kitchener-Waterloo Heliport", "Kitchener Waterloo Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Renfrew/Black Donald Lake Water Aerodrome","alternativeNames":["Renfrew Black Donald Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Renfrew/Hurds Lake Water Aerodrome","alternativeNames":["Renfrew Hurds Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Renfrew Victoria Hospital Heliport","alternativeNames":["Renfrew Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ridgetown Carnie Airfield Aerodrome","alternativeNames":["Ridgetown Aerodrome", "Carnie Airfield"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Rockton Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Rodney New Glasgow Airport","alternativeNames":["Rodney Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lake Rosseau/Cameron Bay Water Aerodrome","alternativeNames":["Lake Rosseau Cameron Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
