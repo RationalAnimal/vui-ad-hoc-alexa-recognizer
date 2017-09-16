@@ -7577,7 +7577,12 @@
     {"name":"Sand Point Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Sandy Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Sandy Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Sarnia Chris Hadfield Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Sarnia Chris Hadfield Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sault Ste. Marie Airport","alternativeNames":["Sault Ste Marie Airport", "Sault Sainte Marie Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sault Ste. Marie Heliport","alternativeNames":["Sault Ste Marie Heliport", "Sault Sainte Marie Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sault Ste. Marie/Partridge Point Water Aerodrome","alternativeNames":["Sault Ste. Marie Partridge Point Water Aerodrome", "Sault Ste Marie/Partridge Point Water Aerodrome", "Sault Ste Marie Partridge Point Water Aerodrome", "Sault Sainte Marie/Partridge Point Water Aerodrome", "Sault Sainte Marie Partridge Point Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sault Ste. Marie Sault Area Hospital Heliport","alternativeNames":["Sault Sainte Marie Sault Area Hospital Heliport", "Sault Ste Marie Sault Area Hospital Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sault Ste. Marie Water Aerodrome","alternativeNames":["Sault Ste Marie Water Aerodrome", "Sault Sainte Marie Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
