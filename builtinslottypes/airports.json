@@ -7510,7 +7510,15 @@
     {"name":"Parry Sound Area Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Parry Sound Deep Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Parry Sound Derbyshire Island Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Parry Sound Frying Pan Island-Sans Souci Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Parry Sound Frying Pan Island-Sans Souci Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Parry Sound Harbour Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Parry Sound Huron Island Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Parry Sound Medical Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Parry Sound Roberts Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Paudash Paudash Lake Water Aerodrome","alternativeNames":["Paudash Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Peawanuck Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Pelee Island Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Pembroke Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
