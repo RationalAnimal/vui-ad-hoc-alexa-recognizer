@@ -7550,7 +7550,15 @@
     {"name":"Arnstein Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Port Loring Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Smoky Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Port Perry/Hoskin Aerodrome","alternativeNames":["Port Perry Hoskin Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Port Perry/Hoskin Aerodrome","alternativeNames":["Port Perry Hoskin Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Port Perry Lakeridge Health Heliport","alternativeNames":["Port Perry Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Port Stanton/Sparrow Lake Water Aerodrome","alternativeNames":["Port Stanton Sparrow Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Queensville Rollick Airpark Aerodrome","alternativeNames":["Queensville Aerodrome", "Rollick Airpark"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Rainy River Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Red Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Red Lake Margaret Cochenour Memorial Hospital Heliport","alternativeNames":["Red Lake Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Red Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Region of Waterloo International Airport","alternativeNames":["Kitchener Waterloo Regional Airport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
