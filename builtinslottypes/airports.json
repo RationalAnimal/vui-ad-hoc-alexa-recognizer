@@ -7566,7 +7566,11 @@
     {"name":"Ridgetown Carnie Airfield Aerodrome","alternativeNames":["Ridgetown Aerodrome", "Carnie Airfield"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Rockton Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Rodney New Glasgow Airport","alternativeNames":["Rodney Airport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Lake Rosseau/Cameron Bay Water Aerodrome","alternativeNames":["Lake Rosseau Cameron Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Lake Rosseau/Cameron Bay Water Aerodrome","alternativeNames":["Lake Rosseau Cameron Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Lake Rosseau/Morgan Bay Water Aerodrome","alternativeNames":["Lake Rosseau Morgan Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Rosseau Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sachigo Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"St. Catharines/Niagara District Airport","alternativeNames":["St Catharines/Niagara District Airport", "Saint Catharines/Niagara District Airport", "St. Catharines Niagara District Airport", "St Catharines Niagara District Airport", "Saint Catharines Niagara District Airport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
