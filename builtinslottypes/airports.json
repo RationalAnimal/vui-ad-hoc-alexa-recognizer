@@ -7614,7 +7614,15 @@
     {"name":"Strathroy Blue Yonder Airport","alternativeNames":["Strathroy Airport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Sturgeon Falls West Nipissing General Hospital Heliport","alternativeNames":["Sturgeon Falls Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Fenelon Falls/Sturgeon Lake Water Aerodrome","alternativeNames":["Fenelon Falls Sturgeon Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Sudbury/Coniston Airport","alternativeNames":["Sudbury Coniston Airport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Sudbury/Coniston Airport","alternativeNames":["Sudbury Coniston Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Blackwater Creek Sunderland Aerodrome","alternativeNames":["Blackwater Creek Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Teeswater Dent Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Teeswater Thompson Field Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Temagami/Mine Landing Water Aerodrome","alternativeNames":["Temagami Mine Landing Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Temagami Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Thamesford Harydale Farms Aerodrome","alternativeNames":["Thamesford Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Thessalon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Thunder Bay International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
