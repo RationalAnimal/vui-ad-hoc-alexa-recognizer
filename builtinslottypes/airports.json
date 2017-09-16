@@ -7526,7 +7526,15 @@
     {"name":"Petawawa Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Peterborough Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Peterborough Regional Health Centre Heliport","alternativeNames":["Peterborough Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Pickle Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Pickle Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Pickle Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Picton Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Picton Greenbush Aerodrome","alternativeNames":["Picton Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Picton Prince Edward County Hospital Heliport","alternativeNames":["Picton Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Pikangikum Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Pikangikum Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Plattsville Lubitz Flying Field Aerodrome","alternativeNames":["Plattsville Aerodrome", "Lubitz Flying Field"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Plevna/Tomvale Airport","alternativeNames":["Plevna Tomvale Airport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
