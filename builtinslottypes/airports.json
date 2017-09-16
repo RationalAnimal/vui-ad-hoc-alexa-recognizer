@@ -7570,7 +7570,14 @@
     {"name":"Lake Rosseau/Morgan Bay Water Aerodrome","alternativeNames":["Lake Rosseau Morgan Bay Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Rosseau Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Sachigo Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"St. Catharines/Niagara District Airport","alternativeNames":["St Catharines/Niagara District Airport", "Saint Catharines/Niagara District Airport", "St. Catharines Niagara District Airport", "St Catharines Niagara District Airport", "Saint Catharines Niagara District Airport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"St. Catharines/Niagara District Airport","alternativeNames":["St Catharines/Niagara District Airport", "Saint Catharines/Niagara District Airport", "St. Catharines Niagara District Airport", "St Catharines Niagara District Airport", "Saint Catharines Niagara District Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"St. Catharines Niagara Health System Heliport","alternativeNames":["St Catharines Niagara Health System Heliport", "Saint Catharines Niagara Health System Heliport", "St. Catharines Heliport", "St Catharines Heliport", "Saint Catharines Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"St. Joseph Island Airport","alternativeNames":["St Joseph Island Airport", "Saint Joseph Island Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"St. Thomas Municipal Airport","alternativeNames":["St Thomas Municipal Airport", "Saint Thomas Municipal Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sand Point Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sandy Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sandy Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Sarnia Chris Hadfield Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
