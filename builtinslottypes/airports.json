@@ -7622,7 +7622,15 @@
     {"name":"Temagami Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Thamesford Harydale Farms Aerodrome","alternativeNames":["Thamesford Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Thessalon Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Thunder Bay International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Thunder Bay International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Thunder Bay/Eldorado Aerodrome","alternativeNames":["Thunder Bay Eldorado Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Thunder Bay Health Science Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Thunder Bay Martin's Landing Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Thunder Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Tillsonburg Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Timmins/Victor M. Power Airport","alternativeNames":["Timmins Victor M. Power Airport", "Timmins/Victor M Power Airport", "Timmins Victor M Power Airport", "Timmins/Victor Power Airport", "Timmins Victor Power Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Timmins/Porcupine Lake Water Aerodrome","alternativeNames":["Timmins Porcupine Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Timmins and District Hospital Heliport","alternativeNames":["Timmins Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
