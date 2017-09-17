@@ -7768,7 +7768,15 @@
     {"name":"La Grande-4 Airport","alternativeNames":["La Grande 4 Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"La Romaine Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"La Sarre Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"La Tabatière Airport","alternativeNames":["La Tabatiere Airport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"La Tabatière Airport","alternativeNames":["La Tabatiere Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"La Tuque Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"La Tuque Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lebel-sur-Quévillon Airport","alternativeNames":["Lebel-sur-Quevillon Airport", "Lebel sur Quévillon Airport", "Lebel sur Quevillon Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Les Bergeronnes Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Les Cèdres Airport","alternativeNames":["Montréal Les Cèdres Airport", "Montreal/Les Cedres Airport", "Montreal Les Cedres Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Saint-Hubert Airport","alternativeNames":[],"priorNames":["Montréal Saint Hubert Airport", "Montreal/Saint-Hubert Airport", "Montreal Saint Hubert Airport"],"country":"canada","state":"quebec"},
+    {"name":"Louiseville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lourdes-de-Joliette Airport","alternativeNames":["Lourdes de Joliette Airport"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
