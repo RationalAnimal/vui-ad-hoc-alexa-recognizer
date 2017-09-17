@@ -7653,7 +7653,15 @@
     {"name":"Uxbridge Cottage Hospital Heliport","alternativeNames":["Uxbridge Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Vermilion Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Victor Mine Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Walkerton County Of Bruce General Hospital Heliport","alternativeNames":["Walkerton Heliport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Walkerton County Of Bruce General Hospital Heliport","alternativeNames":["Walkerton Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Wallaceburg Sydenham District Hospital Heliport","alternativeNames":["Wallaceburg Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Walter's Falls Piper Way Aerodrome","alternativeNames":["Walter's Falls Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Angling Lake/Wapekeka Airport","alternativeNames":["Angling Lake Wapekeka Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Washago Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Hamilton/Waterdown Heliport","alternativeNames":["Hamilton Waterdown Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Wawa Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Webequie Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Niagara Central Dorothy Rungeling Airport","alternativeNames":["Welland/Niagara Central Dorothy Rungeling Airport", "Welland Niagara Central Dorothy Rungeling Airport"],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
