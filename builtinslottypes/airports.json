@@ -7738,7 +7738,15 @@
     {"name":"Havre Saint-Pierre Airport","alternativeNames":["Havre Saint Pierre Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Havre Saint-Pierre Water Aerodrome","alternativeNames":["Havre Saint Pierre Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Inukjuak Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Isle-aux-Grues Airport","alternativeNames":["Isle aux Grues Airport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Isle-aux-Grues Airport","alternativeNames":["Isle aux Grues Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Ivujivik Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Joliette Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Kanawata Aeroparc","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Kangiqsualujjuaq Georges River Airport","alternativeNames":["Kangiqsualujjuaq Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Kangiqsujuaq Wakeham Bay Airport","alternativeNames":["Kangiqsujuaq Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Kangirsuk Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Kattiniq/Donaldson Airport","alternativeNames":["Kattiniq Donaldson Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Kegaska Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
