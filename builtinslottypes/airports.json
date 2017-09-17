@@ -7746,7 +7746,15 @@
     {"name":"Kangiqsujuaq Wakeham Bay Airport","alternativeNames":["Kangiqsujuaq Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Kangirsuk Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Kattiniq/Donaldson Airport","alternativeNames":["Kattiniq Donaldson Airport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Kegaska Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Kegaska Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Kuujjuaq Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Kuujjuarapik Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Île aux Coudres Airport","alternativeNames":["Ile aux Coudres Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac-à-Beauce Water Aerodrome","alternativeNames":["Lac-a-Beauce Water Aerodrome", "Lac à Beauce Water Aerodrome", "Lac a Beauce Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac-à-la-Tortue Airport","alternativeNames":["Lac-a-la-Tortue Airport", "Lac à la Tortue Airport", "Lac a la Tortue Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac-à-la-Tortue Water Aerodrome","alternativeNames":["Lac à la Tortue Water Aerodrome", "Lac-a-la-Tortue Water Aerodrome", "Lac a la Tortue Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac Beauregard Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac Berthelot Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
