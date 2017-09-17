@@ -7726,7 +7726,11 @@
     {"name":"Farnham Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Fermont Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Fontages Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Forestville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Forestville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Gaspé Michel-Pouliot Airport","alternativeNames":["Michel-Pouliot Gaspé Airport", "Michel-Pouliot Gaspe Airport", "Michel Pouliot Gaspé Airport", "Michel Pouliot Gaspe Airport", "Gaspe Michel-Pouliot Airport", "Gaspé Michel Pouliot Airport", "Gaspe Michel Pouliot Airport", "Gaspé Airport", "Gaspe Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Gatineau-Ottawa Executive Airport","alternativeNames":["Ottawa/Gatineau Airport", "Ottawa Gatineau Airport", "Gatineau Ottawa Executive Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Ottawa/Gatineau Casino Heliport","alternativeNames":["Ottawa Gatineau Casino Heliport", "Ottawa/Gatineau Heliport", "Ottawa Gatineau Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Ottawa/Gatineau Water Aerodrome","alternativeNames":["Ottawa Gatineau Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
