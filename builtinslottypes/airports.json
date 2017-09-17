@@ -7706,6 +7706,11 @@
     {"name":"Carignan Bouthiller Aerodrome","alternativeNames":["Carignan Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Cascades Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Causapscal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Charlevoix Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Charlevoix Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Chevery Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Chibougamau Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Chibougamau/Chapais Airport","alternativeNames":["Chibougamau Chapais Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Chibougamau Hydro-Québec Heliport","alternativeNames":["Chibougamau Hydro Québec Heliport", "Chibougamau Hydro Quebec Heliport", "Chibougamau Hydro Quebec Heliport", "Chibougamau Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Chibougamau/Lac Caché Water Aerodrome","alternativeNames":["Chibougamau/Lac Cache Water Aerodrome", "Chibougamau Lac Caché Water Aerodrome", "Chibougamau Lac Cache Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"}
   ]
 }
