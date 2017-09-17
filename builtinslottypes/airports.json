@@ -7754,7 +7754,13 @@
     {"name":"Lac-à-la-Tortue Airport","alternativeNames":["Lac-a-la-Tortue Airport", "Lac à la Tortue Airport", "Lac a la Tortue Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Lac-à-la-Tortue Water Aerodrome","alternativeNames":["Lac à la Tortue Water Aerodrome", "Lac-a-la-Tortue Water Aerodrome", "Lac a la Tortue Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Lac Beauregard Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Lac Berthelot Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Lac Berthelot Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"La Grande-4/Lac de la Falaise Water Aerodrome","alternativeNames":["La Grande 4 Lac de la Falaise Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac-des-Écorces/Heliport Belle-Île","alternativeNames":["Lac-des-Ecorces/Heliport Belle-Ile", "Lac des Écorces Heliport Belle Île", "Lac des Ecorces Heliport Belle Ile"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac-des-Écorces Water Aerodrome","alternativeNames":["Lac-des-Ecorces Water Aerodrome", "Lac des Écorces Water Aerodrome", "Lac des Ecorces Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Parc Gatineau Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac Etchemin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lachute Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
