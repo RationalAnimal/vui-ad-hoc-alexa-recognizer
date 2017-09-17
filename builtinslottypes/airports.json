@@ -7711,6 +7711,15 @@
     {"name":"Chibougamau Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Chibougamau/Chapais Airport","alternativeNames":["Chibougamau Chapais Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Chibougamau Hydro-Québec Heliport","alternativeNames":["Chibougamau Hydro Québec Heliport", "Chibougamau Hydro Quebec Heliport", "Chibougamau Hydro Quebec Heliport", "Chibougamau Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Chibougamau/Lac Caché Water Aerodrome","alternativeNames":["Chibougamau/Lac Cache Water Aerodrome", "Chibougamau Lac Caché Water Aerodrome", "Chibougamau Lac Cache Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Chibougamau/Lac Caché Water Aerodrome","alternativeNames":["Chibougamau/Lac Cache Water Aerodrome", "Chibougamau Lac Caché Water Aerodrome", "Chibougamau Lac Cache Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+
+    {"name":"Chicoutimi C. H. de Chicoutimi Heliport","alternativeNames":["Chicoutimi C H de Chicoutimi Heliport", "Chicoutimi Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Chicoutimi/Saint-Honore Aerodrome","alternativeNames":["Chicoutimi Saint-Honore Aerodrome", "Chicoutimi Saint Honore Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Chisasibi Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Chute-Saint-Philippe Aerodrome","alternativeNames":["Chute Saint Philippe Aerodrome", "Chute St Philippe Aerodrome", "Chute St. Philippe Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Clova/Lac Duchamp Water Aerodrome","alternativeNames":["Clova Lac Duchamp Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Manic 5/Lac Louise Water Aerodrome","alternativeNames":["Manic five/Lac Louise Water Aerodrome", "Manic 5 Lac Louise Water Aerodrome", "Manic five Lac Louise Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Dolbeau-Saint-Félicien Airport","alternativeNames":["Dolbeau-Saint-Felicien Airport", "Dolbeau Saint Félicien Airport", "Dolbeau Saint Felicien Airport", "Dolbeau St Félicien Airport", "Dolbeau St Felicien Airport", "Dolbeau St. Félicien Airport", "Dolbeau St. Felicien Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Dolbeau-Mistassini/Potvin Heli-Base Heliport","alternativeNames":["Dolbeau-Mistassini Potvin Heli-Base Heliport", "Dolbeau-Mistassini Heliport"],"priorNames":[],"country":"canada","state":"quebec"}
   ]
 }
