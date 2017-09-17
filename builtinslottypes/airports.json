@@ -7669,7 +7669,15 @@
     {"name":"White Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"White River Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Wiarton Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Ottawa Winchester District Memorial Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Ottawa Winchester District Memorial Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Windsor Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Wingham Inglis Field Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Wingham/Richard W. LeVan Aerodrome","alternativeNames":["Wingham Richard W. LeVan Aerodrome", "Wingham/Richard W LeVan Aerodrome", "Wingham Richard W LeVan Aerodrome", "Wingham/Richard LeVan Aerodrome", "Wingham Richard LeVan Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Woodstock Norm Beckham/Bob Hewitt Field Aerodrome","alternativeNames":["Woodstock Norm Beckham Bob Hewitt Field Aerodrome", "Woodstock Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Woodstock Hospital Heliport","alternativeNames":["Woodstock Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Wunnumin Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Wyevale Boker Field Airport","alternativeNames":["Wyevale Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"York Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
