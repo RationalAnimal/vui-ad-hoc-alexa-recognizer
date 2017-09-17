@@ -816,7 +816,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         }
         if(hasWildCardMatch){
           // TODO Need further refinements to limit the matches to international alphanumer characters, but at this time this will do
-          return "((?:\\s|[-0-9a-zA-Z,_']|[^\0-~])+)";
+          return "((?:\\s|[-0-9a-zA-Z,_'/]|[^\0-~])+)";
         }
         else {
           let allAirports = [];
@@ -845,7 +845,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
       else {
         if(recognizer.builtInValues.Airport.presentUnusualCharacters.length > 0){
-          let returnValue = "((?:\\s|[-0-9a-zA-Z,_'";
+          let returnValue = "((?:\\s|[-0-9a-zA-Z,_'/";
           for(let i = 0; i < recognizer.builtInValues.Airport.presentUnusualCharacters.length; i ++){
 //            console.log("special character: " + recognizer.builtInValues.Airport.presentUnusualCharacters[i] + ", code: ", recognizer.builtInValues.Airport.presentUnusualCharacters[i].charCodeAt(0));
             returnValue += recognizer.builtInValues.Airport.presentUnusualCharacters[i];
@@ -854,7 +854,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
           return returnValue;
         }
         else {
-          return "((?:\\s|[-0-9a-zA-Z,_'])+)";
+          return "((?:\\s|[-0-9a-zA-Z,_'/])+)";
         }
       }
     }
