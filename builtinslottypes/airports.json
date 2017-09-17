@@ -7661,7 +7661,15 @@
     {"name":"Hamilton/Waterdown Heliport","alternativeNames":["Hamilton Waterdown Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Wawa Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Webequie Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Niagara Central Dorothy Rungeling Airport","alternativeNames":["Welland/Niagara Central Dorothy Rungeling Airport", "Welland Niagara Central Dorothy Rungeling Airport"],"priorNames":[],"country":"canada","state":"ontario"}
+    {"name":"Niagara Central Dorothy Rungeling Airport","alternativeNames":["Welland/Niagara Central Dorothy Rungeling Airport", "Welland Niagara Central Dorothy Rungeling Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Welland County General Hospital Heliport","alternativeNames":["Welland Heliport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"West Guilford/Redstone Lake Water Aerodrome","alternativeNames":["West Guilford Redstone Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Westport/Rideau Lakes Airport","alternativeNames":["Westport Rideau Lakes Airport"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Wheatly Robinson Motorcycles Aerodrome","alternativeNames":["Wheatly Aerodrome"],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"White Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"White River Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Wiarton Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
+    {"name":"Ottawa Winchester District Memorial Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"}
 
   ]
 }
