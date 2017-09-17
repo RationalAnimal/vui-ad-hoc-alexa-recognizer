@@ -7760,7 +7760,15 @@
     {"name":"Lac-des-Écorces Water Aerodrome","alternativeNames":["Lac-des-Ecorces Water Aerodrome", "Lac des Écorces Water Aerodrome", "Lac des Ecorces Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Parc Gatineau Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Lac Etchemin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Lachute Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Lachute Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac Sébastien Water Aerodrome","alternativeNames":["Lac Sebastien Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac Sept-Îles Water Aerodrome","alternativeNames":["Lac Sept Îles Water Aerodrome", "Lac Sept Iles Water Aerodrome", "Lac Sept-Iles Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac Trévet Water Aerodrome","alternativeNames":["Lac Trevet Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"La Grande-3 Airport","alternativeNames":["La Grande 3 Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"La Grande-4 Airport","alternativeNames":["La Grande 4 Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"La Romaine Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"La Sarre Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"La Tabatière Airport","alternativeNames":["La Tabatiere Airport"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
