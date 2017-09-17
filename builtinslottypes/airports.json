@@ -7682,6 +7682,14 @@
     {"name":"Charlottetown Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"prince edward island"},
     {"name":"Charlottetown Queen Elizabeth Hospital Heliport","alternativeNames":["Charlottetown Heliport"],"priorNames":[],"country":"canada","state":"prince edward island"},
     {"name":"Summerside Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"prince edward island"},
-    {"name":"Summerside Prince County Hospital Heliport","alternativeNames":["Summerside Heliport"],"priorNames":[],"country":"canada","state":"prince edward island"}
+    {"name":"Summerside Prince County Hospital Heliport","alternativeNames":["Summerside Heliport"],"priorNames":[],"country":"canada","state":"prince edward island"},
+    {"name":"Aguanish Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Akulivik Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Alma Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Alma Rivière La Grande Décharge Water Aerodrome","alternativeNames":["Alma Riviere La Grande Decharge Water Aerodrome", "Alma Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Amos Lac Figuery Water Aerodrome","alternativeNames":["Amos Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Amos/Magny Airport","alternativeNames":["Amos Magny Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Aupaluk Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"CFB Bagotville","alternativeNames":["Bagotville Airport"],"priorNames":[],"country":"canada","state":"quebec"}
   ]
 }
