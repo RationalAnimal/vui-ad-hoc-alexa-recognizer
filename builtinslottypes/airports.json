@@ -7730,7 +7730,15 @@
     {"name":"Gaspé Michel-Pouliot Airport","alternativeNames":["Michel-Pouliot Gaspé Airport", "Michel-Pouliot Gaspe Airport", "Michel Pouliot Gaspé Airport", "Michel Pouliot Gaspe Airport", "Gaspe Michel-Pouliot Airport", "Gaspé Michel Pouliot Airport", "Gaspe Michel Pouliot Airport", "Gaspé Airport", "Gaspe Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Gatineau-Ottawa Executive Airport","alternativeNames":["Ottawa/Gatineau Airport", "Ottawa Gatineau Airport", "Gatineau Ottawa Executive Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Ottawa/Gatineau Casino Heliport","alternativeNames":["Ottawa Gatineau Casino Heliport", "Ottawa/Gatineau Heliport", "Ottawa Gatineau Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Ottawa/Gatineau Water Aerodrome","alternativeNames":["Ottawa Gatineau Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Ottawa/Gatineau Water Aerodrome","alternativeNames":["Ottawa Gatineau Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Rivière Blanche/Cardinal Aviation Water Aerodrome","alternativeNames":["Rivière Blanche Cardinal Aviation Water Aerodrome", "Riviere Blanche/Cardinal Aviation Water Aerodrome", "Riviere Blanche Cardinal Aviation Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Granby/Artopex Plus Heliport","alternativeNames":["Granby Artopex Plus Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"du Rocher-Percé Pabok Airport","alternativeNames":["du Rocher-Perce Pabok Airport", "du Rocher-Percé Airport", "du Rocher-Percé Airport",    "du Rocher Perce Pabok Airport", "du Rocher Percé Airport", "du Rocher Percé Airport", "du Rocher Percé Pabok Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Harrington Harbour Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Havre Saint-Pierre Airport","alternativeNames":["Havre Saint Pierre Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Havre Saint-Pierre Water Aerodrome","alternativeNames":["Havre Saint Pierre Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Inukjuak Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Isle-aux-Grues Airport","alternativeNames":["Isle aux Grues Airport"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
