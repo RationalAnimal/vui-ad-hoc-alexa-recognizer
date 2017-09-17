@@ -7696,10 +7696,9 @@
     {"name":"Baie-Comeau Manic 1 Airport","alternativeNames":["Baie Comeau Manic 1 Airport", "Baie-Comeau Manic one Airport", "Baie Comeau Manic one Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Baie-Comeau Water Aerodrome","alternativeNames":["Baie Comeau Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Baie-Saint-Paul Heliport","alternativeNames":["Baie Saint Paul Heliport", "Baie St Paul Heliport", "Baie St. Paul Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
-
     {"name":"Barrage Gouin Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Bécancour Heliport","alternativeNames":["Becancour Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Lourdes-de-Blanc-Sablon Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lourdes-de-Blanc-Sablon Airport","alternativeNames":["Lourdes de Blanc Sablon Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Bonaventure Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Bromont Roland Désourdy Airport","alternativeNames":["Bromont Roland Desourdy Airport", "Bromont Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Caniapiscau Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
@@ -7713,7 +7712,6 @@
     {"name":"Chibougamau/Chapais Airport","alternativeNames":["Chibougamau Chapais Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Chibougamau Hydro-Québec Heliport","alternativeNames":["Chibougamau Hydro Québec Heliport", "Chibougamau Hydro Quebec Heliport", "Chibougamau Hydro Quebec Heliport", "Chibougamau Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Chibougamau/Lac Caché Water Aerodrome","alternativeNames":["Chibougamau/Lac Cache Water Aerodrome", "Chibougamau Lac Caché Water Aerodrome", "Chibougamau Lac Cache Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
-
     {"name":"Chicoutimi C. H. de Chicoutimi Heliport","alternativeNames":["Chicoutimi C H de Chicoutimi Heliport", "Chicoutimi Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Chicoutimi/Saint-Honore Aerodrome","alternativeNames":["Chicoutimi Saint-Honore Aerodrome", "Chicoutimi Saint Honore Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Chisasibi Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
@@ -7721,6 +7719,14 @@
     {"name":"Clova/Lac Duchamp Water Aerodrome","alternativeNames":["Clova Lac Duchamp Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Manic 5/Lac Louise Water Aerodrome","alternativeNames":["Manic five/Lac Louise Water Aerodrome", "Manic 5 Lac Louise Water Aerodrome", "Manic five Lac Louise Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Dolbeau-Saint-Félicien Airport","alternativeNames":["Dolbeau-Saint-Felicien Airport", "Dolbeau Saint Félicien Airport", "Dolbeau Saint Felicien Airport", "Dolbeau St Félicien Airport", "Dolbeau St Felicien Airport", "Dolbeau St. Félicien Airport", "Dolbeau St. Felicien Airport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Dolbeau-Mistassini/Potvin Heli-Base Heliport","alternativeNames":["Dolbeau-Mistassini Potvin Heli-Base Heliport", "Dolbeau-Mistassini Heliport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Dolbeau-Mistassini/Potvin Heli-Base Heliport","alternativeNames":["Dolbeau-Mistassini Potvin Heli-Base Heliport", "Dolbeau-Mistassini Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Drummondville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Drummondville Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Eastmain River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Farnham Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Fermont Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Fontages Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Forestville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+
   ]
 }
