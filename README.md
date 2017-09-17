@@ -32,6 +32,17 @@ saving yourself time and effort by not having to manually enter all the variatio
 This module as well as related vui modules can be found here:
 https://github.com/RationalAnimal
 
+# Tutorials, Examples, Documentation
+
+I have finally gotten to a point where the major features are at a good point and I can spare some time for
+tutorials, examples, and documentation.
+To that end I have set up a web site on GitHub pages and included the first tutorial, with more on the way.
+
+https://rationalanimal.github.io/vui-ad-hoc-alexa-recognizer/
+
+I will still continue updating the module itself - the work on the tutorials, etc will be just part time, with most of
+the time going to enhancing the code.
+
 # Note on licenses
 The code in this project is distributed under the MIT license.  Some data files
 found in the builtinslottypes directory (e.g. colors.json) use values taken from Wikipedia
@@ -2212,15 +2223,6 @@ In order to specify an "output" type, simply configure it in your config file:
 By default, if you don't specify anything, the output will be "AMAZON" for compatibility
 reasons.
 
-## Examples
-
-Right now I am focusing on implementing new features and fixing bugs rather than
-creating documentation and tutorials.  Using it is relatively easy, but if you need
-to find more information than is listed here and don't want to dig through the
-code then you may want to take a look at the test directory.  If you've installed
-the npm module you will NOT have it, but you can go to the GitHub repo and
-clone it to get the full distribution.  Then look at the unit tests to see what
-you can parse and what kinds of results you will be getting.
 
 ## Transcend features supported
 
