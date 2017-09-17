@@ -7698,6 +7698,14 @@
     {"name":"Baie-Saint-Paul Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Barrage Gouin Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Bécancour Heliport","alternativeNames":["Becancour Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Lourdes-de-Blanc-Sablon Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Lourdes-de-Blanc-Sablon Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Bonaventure Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Bromont Roland Désourdy Airport","alternativeNames":["Bromont Roland Desourdy Airport", "Bromont Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Caniapiscau Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac Pau Caniapiscau Water Aerodrome","alternativeNames":["Lac Pau Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Carignan Bouthiller Aerodrome","alternativeNames":["Carignan Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Cascades Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Causapscal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Charlevoix Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
   ]
 }
