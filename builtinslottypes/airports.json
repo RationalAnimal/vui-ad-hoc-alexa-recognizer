@@ -7678,11 +7678,10 @@
     {"name":"Wunnumin Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"Wyevale Boker Field Airport","alternativeNames":["Wyevale Airport"],"priorNames":[],"country":"canada","state":"ontario"},
     {"name":"York Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"ontario"},
-    {"name":"Airport name","alternativeNames":[],"priorNames":[],"country":"canada","state":"prince edward island"},
-    {"name":"Grand River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"prince edward island"},
-    {"name":"RCAF Station Mount Pleasant","alternativeNames":[],"priorNames":[],"country":"canada","state":"prince edward island"},
-    {"name":"CFB Summerside","alternativeNames":[],"priorNames":[],"country":"canada","state":"prince edward island"},
-    {"name":"RCAF Station Charlottetown","alternativeNames":[],"priorNames":[],"country":"canada","state":"prince edward island"}
-
+    {"name":"Cable Head Airpark","alternativeNames":[],"priorNames":[],"country":"canada","state":"prince edward island"},
+    {"name":"Charlottetown Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"prince edward island"},
+    {"name":"Charlottetown Queen Elizabeth Hospital Heliport","alternativeNames":["Charlottetown Heliport"],"priorNames":[],"country":"canada","state":"prince edward island"},
+    {"name":"Summerside Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"prince edward island"},
+    {"name":"Summerside Prince County Hospital Heliport","alternativeNames":["Summerside Heliport"],"priorNames":[],"country":"canada","state":"prince edward island"}
   ]
 }
