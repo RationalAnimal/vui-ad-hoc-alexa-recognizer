@@ -7690,6 +7690,14 @@
     {"name":"Amos Lac Figuery Water Aerodrome","alternativeNames":["Amos Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Amos/Magny Airport","alternativeNames":["Amos Magny Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Aupaluk Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"CFB Bagotville","alternativeNames":["Bagotville Airport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"CFB Bagotville","alternativeNames":["Bagotville Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Baie-Comeau Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Baie-Comeau/Héli-Manicouagan Heliport","alternativeNames":["Baie-Comeau Héli-Manicouagan Heliport", "Baie-Comeau/Heli-Manicouagan Heliport", "Baie-Comeau Heli-Manicouagan Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Baie-Comeau Manic 1 Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Baie-Comeau Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Baie-Saint-Paul Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Barrage Gouin Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Bécancour Heliport","alternativeNames":["Becancour Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lourdes-de-Blanc-Sablon Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
   ]
 }
