@@ -7846,7 +7846,15 @@
     {"name":"Roberval Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Roberval Air Saguenay Water Aerodrome","alternativeNames":["Roberval Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Rougemont Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Rouyn-Noranda Airport","alternativeNames":["Rouyn Noranda Airport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Rouyn-Noranda Airport","alternativeNames":["Rouyn Noranda Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sagard Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sainte-Agathe AIM Heliport","alternativeNames":["Sainte Agathe AIM Heliport", "Sainte-Agathe Heliport", "Sainte Agathe Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sainte-Agnès-de-Dundee Aerodrome","alternativeNames":["Sainte Agnès de Dundee Aerodrome", "Sainte-Agnes-de-Dundee Aerodrome", "Sainte Agnes de Dundee Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Alphonse/Lac Cloutier Water Aerodrome","alternativeNames":["Saint Alphonse Lac Cloutier Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-André-Avellin Aerodrome","alternativeNames":["Saint André Avellin Aerodrome", "Saint-Andre-Avellin Aerodrome", "Saint Andre Avellin Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sainte-Anne-des-Monts Aerodrome","alternativeNames":["Sainte Anne des Monts Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sainte-Anne-du-Lac Aviation PLMG Inc. Aerodrome","alternativeNames":["Sainte-Anne-du-Lac Aviation PLMG Inc Aerodrome", "Sainte-Anne-du-Lac Aviation PLMG Incorporated Aerodrome", "Sainte-Anne-du-Lac Aerodrome", "Sainte Anne du Lac Aviation PLMG Inc. Aerodrome", "Sainte Anne du Lac Aviation PLMG Inc Aerodrome", "Sainte Anne du Lac Aviation PLMG Incorporated Aerodrome", "Sainte Anne du Lac Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sainte-Anne-du-Lac Water Aerodrome","alternativeNames":["Sainte Anne du Lac Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
