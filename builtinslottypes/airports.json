@@ -7817,7 +7817,15 @@
     {"name":"Natashquan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Natashquan Lac de l'Avion Water Aerodrome","alternativeNames":["Natashquan Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Nemiscau Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Neuville Airport","alternativeNames":["Quebec/Neuville Airport", "Quebec Neuville Airport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Neuville Airport","alternativeNames":["Quebec/Neuville Airport", "Quebec Neuville Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Nicolet Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Éléonore Aerodrome","alternativeNames":["Eleonore Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Parent Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Parent Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Chutes-des-Passes/Lac Margane Water Aerodrome","alternativeNames":["Chutes des Passes Lac Margane Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Pintendre Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Pontiac Airpark Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Port-Menier Airport","alternativeNames":["Port Menier Airport"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
