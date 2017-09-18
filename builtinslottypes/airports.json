@@ -7862,7 +7862,15 @@
     {"name":"Saint-Étienne-des-Grès/Hydravion Adventure Water Aerodrome","alternativeNames":["Saint Étienne des Grès Hydravion Adventure Water Aerodrome", "Saint-Etienne-des-Gres/Hydravion Adventure Water Aerodrome", "Saint Etienne des Gres Hydravion Adventure Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Saint-Bruno-de-Guigues Aerodrome","alternativeNames":["Saint Bruno de Guigues Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Saint-Dominique Aerodrome","alternativeNames":["Saint Dominique Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Saint-Donat Aerodrome","alternativeNames":["Saint Donat Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Saint-Donat Aerodrome","alternativeNames":["Saint Donat Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Esprit Aerodrome","alternativeNames":["Saint Esprit Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Ferdinand Aerodrome","alternativeNames":["Saint Ferdinand Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Frédéric Aerodrome","alternativeNames":["Saint Frédéric Aerodrome", "Saint-Frederic Aerodrome", "Saint Frederic Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Georges Aerodrome","alternativeNames":["Saint Georges Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Île Sainte-Hélène Water Airport","alternativeNames":["Montréal Île Sainte Hélène Water Airport", "Montreal/Ile Sainte-Helene Water Airport", "Montreal/Ile Sainte Helene Water Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Hyacinthe Aerodrome","alternativeNames":["Saint Hyacinthe Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Jean-Chrysostome Aerodrome","alternativeNames":["Saint Jean Chrysostome Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Jean Airport","alternativeNames":["Saint-Jean-sur-Richelieu Airport"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
