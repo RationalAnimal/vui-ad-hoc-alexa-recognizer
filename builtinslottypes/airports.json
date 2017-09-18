@@ -7797,7 +7797,11 @@
     {"name":"Montréal East AIM Heliport","alternativeNames":["Montréal East Heliport", "Montreal East AIM Heliport", "Montreal East Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Montréal/Heliport Senneville","alternativeNames":["Montréal Heliport Senneville", "Montreal/Heliport Senneville", "Montreal Heliport Senneville"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Montréal-Mirabel International Airport","alternativeNames":["Montréal Mirabel International Airport", "Montreal-Mirabel International Airport", "Montreal Mirabel International Airport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Montréal/Kruger Heliport","alternativeNames":["Montréal Kruger Heliport", "Montreal/Kruger Heliport", "Montreal Kruger Heliport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Montréal/Kruger Heliport","alternativeNames":["Montréal Kruger Heliport", "Montreal/Kruger Heliport", "Montreal Kruger Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Laval Artopex Plus Heliport","alternativeNames":["Montréal Laval Artopex Plus Heliport", "Montreal/Laval Artopex Plus Heliport", "Montreal Laval Artopex Plus Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Laval Évasion Hélicoptère Heliport","alternativeNames":["Montréal Laval Évasion Hélicoptère Heliport", "Montreal/Laval Evasion Helicoptere Heliport", "Montreal Laval Evasion Helicoptere Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Les Cèdres Heliport","alternativeNames":["Montréal Les Cèdres Heliport", "Montreal/Les Cedres Heliport", "Montreal Les Cedres Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Longueuil Centre Hospitalier Pierre-Boucher Heliport","alternativeNames":["Montreal Longueuil Centre Hospitalier Pierre Boucher Heliport", "Montreal/Longueuil Centre Hospitalier Pierre-Boucher Heliport", "Montréal Longueuil Centre Hospitalier Pierre Boucher Heliport"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
