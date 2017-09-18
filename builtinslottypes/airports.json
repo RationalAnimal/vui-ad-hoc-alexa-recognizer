@@ -7792,7 +7792,12 @@
     {"name":"Mont-Laurier Airport","alternativeNames":["Mont Laurier Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Montmagny Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Montréal/Aéroparc Île Perrot","alternativeNames":["Montréal Aéroparc Île Perrot", "Montreal/Aeroparc Ile Perrot", "Montreal Aeroparc Ile Perrot"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Montréal Bell Heliport","alternativeNames":["Montreal Bell Heliport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Montréal Bell Heliport","alternativeNames":["Montreal Bell Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Boisvert & Fils Water Airport","alternativeNames":["Montréal Boisvert and Fils Water Airport", "Montreal/Boisvert & Fils Water Airport", "Montréal Boisvert and Fils Water Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal East AIM Heliport","alternativeNames":["Montréal East Heliport", "Montreal East AIM Heliport", "Montreal East Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Heliport Senneville","alternativeNames":["Montréal Heliport Senneville", "Montreal/Heliport Senneville", "Montreal Heliport Senneville"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal-Mirabel International Airport","alternativeNames":["Montréal Mirabel International Airport", "Montreal-Mirabel International Airport", "Montreal Mirabel International Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Kruger Heliport","alternativeNames":["Montréal Kruger Heliport", "Montreal/Kruger Heliport", "Montreal Kruger Heliport"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
