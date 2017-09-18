@@ -7833,7 +7833,12 @@
     {"name":"Jean Lesage International Airport","alternativeNames":["Québec City Jean Lesage International Airport", "Quebec City Jean Lesage International Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Quebec/Capitale Hélicoptère Heliport","alternativeNames":["Quebec Capitale Hélicoptère Heliport", "Quebec/Capitale Helicoptere Heliport", "Quebec Capitale Helicoptere Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Québec City Jean Lesage International Airport","alternativeNames":["Quebec City Jean Lesage International Airport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Québec/Lac Saint-Augustin Water Airport","alternativeNames":["Québec Lac Saint Augustin Water Airport", "Quebec/Lac Saint-Augustin Water Airport", "Quebec Lac Saint Augustin Water Airport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Québec/Lac Saint-Augustin Water Airport","alternativeNames":["Québec Lac Saint Augustin Water Airport", "Quebec/Lac Saint-Augustin Water Airport", "Quebec Lac Saint Augustin Water Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"La Grande Rivière Airport","alternativeNames":["La Grande Riviere Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Renard Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Richelieu Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Richelieu/Messier Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Rimouski Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
