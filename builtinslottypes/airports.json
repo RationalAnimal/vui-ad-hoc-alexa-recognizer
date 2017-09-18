@@ -7784,7 +7784,15 @@
     {"name":"Lac Agile Mascouche Airport","alternativeNames":["Lac Agile Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Montréal/Mascouche Airport","alternativeNames":["Montréal Mascouche Airport", "Montreal/Mascouche Airport", "Montreal Mascouche Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Matagami Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Matane Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Matane Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Pourvoirie Mirage Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Mistissini Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montebello Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Mont-Joli Airport","alternativeNames":["Mont Joli Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Mont-Laurier Airport","alternativeNames":["Mont Laurier Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montmagny Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Aéroparc Île Perrot","alternativeNames":["Montréal Aéroparc Île Perrot", "Montreal/Aeroparc Ile Perrot", "Montreal Aeroparc Ile Perrot"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal Bell Heliport","alternativeNames":["Montreal Bell Heliport"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
