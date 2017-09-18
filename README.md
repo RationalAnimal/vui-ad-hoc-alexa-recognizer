@@ -34,7 +34,7 @@ https://github.com/RationalAnimal
 
 # Tutorials, Examples, Documentation
 
-I have finally gotten to a point where the major features are at a good point and I can spare some time for
+I have finally gotten to a point where the major features are at a good spot and I can spare some time for
 tutorials, examples, and documentation.
 To that end I have set up a web site on GitHub pages and included the first tutorial, with more on the way.
 
