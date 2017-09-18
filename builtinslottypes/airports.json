@@ -7838,7 +7838,15 @@
     {"name":"Renard Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Richelieu Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Richelieu/Messier Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Rimouski Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Rimouski Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Rivière-aux-Saumons Aerodrome","alternativeNames":["Rivière aux Saumons Aerodrome", "Riviere-aux-Saumons Aerodrome", "Riviere aux Saumons Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Rivière Bell Aerodrome","alternativeNames":["Riviere Bell Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Rivière-du-Loup Airport","alternativeNames":["Rivière du Loup Airport", "Riviere-du-Loup Airport", "Riviere du Loup Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Rivière-du-Loup Heliport","alternativeNames":["Rivière du Loup Heliport", "Riviere-du-Loup Heliport", "Riviere du Loup Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Roberval Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Roberval Air Saguenay Water Aerodrome","alternativeNames":["Roberval Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Rougemont Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Rouyn-Noranda Airport","alternativeNames":["Rouyn Noranda Airport"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
