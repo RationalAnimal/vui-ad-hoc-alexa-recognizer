@@ -7809,7 +7809,15 @@
     {"name":"Montréal-Pierre Elliott Trudeau International Airport","alternativeNames":["Montréal Pierre Elliott Trudeau International Airport", "Montreal-Pierre Elliott Trudeau International Airport", "Montreal Pierre Elliott Trudeau International Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Montréal/Point Zero Heliport","alternativeNames":["Montréal Point Zero Heliport", "Montreal/Point Zero Heliport", "Montreal Point Zero Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Montréal Sacre-Coeur Heliport","alternativeNames":["Montréal Sacre Coeur Heliport", "Montreal Sacre-Coeur Heliport", "Montreal Sacre Coeur Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Montréal/Saint-Hubert Heli-Inter Heliport","alternativeNames":["Montréal Saint Hubert Heli Inter Heliport", "Montreal/Saint-Hubert Heli-Inter Heliport", "Montreal Saint Hubert Heli Inter Heliport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Montréal/Saint-Hubert Heli-Inter Heliport","alternativeNames":["Montréal Saint Hubert Heli Inter Heliport", "Montreal/Saint-Hubert Heli-Inter Heliport", "Montreal Saint Hubert Heli Inter Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"La Mazaca/Mont Tremblant International Airport","alternativeNames":["La Mazaca Mont Tremblant International Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Mont-Tremblant/Heliport P3","alternativeNames":["Mont Tremblant Heliport P3", "Mont-Tremblant/Heliport P three", "Mont Tremblant Heliport P three"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Mont Tremblant International Airport","alternativeNames":["La Mazaca/Mont Tremblant International Airport", "La Mazaca Mont Tremblant International Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Rivière Bonnard Airport","alternativeNames":["Riviere Bonnard Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Natashquan Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Natashquan Lac de l'Avion Water Aerodrome","alternativeNames":["Natashquan Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Nemiscau Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Neuville Airport","alternativeNames":["Quebec/Neuville Airport", "Quebec Neuville Airport"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
