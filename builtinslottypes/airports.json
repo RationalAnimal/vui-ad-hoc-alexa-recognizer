@@ -7870,7 +7870,15 @@
     {"name":"Montréal/Île Sainte-Hélène Water Airport","alternativeNames":["Montréal Île Sainte Hélène Water Airport", "Montreal/Ile Sainte-Helene Water Airport", "Montreal/Ile Sainte Helene Water Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Saint-Hyacinthe Aerodrome","alternativeNames":["Saint Hyacinthe Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Saint-Jean-Chrysostome Aerodrome","alternativeNames":["Saint Jean Chrysostome Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Saint-Jean Airport","alternativeNames":["Saint-Jean-sur-Richelieu Airport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Saint-Jean Airport","alternativeNames":["Saint-Jean-sur-Richelieu Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Jérôme Aerodrome","alternativeNames":["Saint Jérôme Aerodrome", "Saint-Jerome Aerodrome", "Saint Jerome Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Jérôme Hydro-Québec Heliport","alternativeNames":["Saint Jérôme Hydro Québec Heliport", "Saint Jerome Hydro Quebec Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Mont-Tremblant/Saint-Jovite Airport","alternativeNames":["Mont Tremblant Saint Jovite Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Mont-Tremblant/Saint-Jovite Héli-Tremblant Heliport","alternativeNames":["Mont-Tremblant Saint Jovite Héli Tremblant Heliport", "Mont Tremblant Saint Jovite Heli Tremblant Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Lambert-de-Lauzon Aerodrome","alternativeNames":["Saint Lambert de Lauzon Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Saint-Lazare Aerodrome","alternativeNames":["Montréal Saint Lazare Aerodrome", "Montreal Saint Lazare Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Louis-de-France Aerodrome","alternativeNames":["Saint Louis de France Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Mathias Aerodrome","alternativeNames":["Saint Mathias Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
