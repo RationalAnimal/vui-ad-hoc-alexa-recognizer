@@ -7805,7 +7805,11 @@
     {"name":"Montréal/Marina Venise Heliport","alternativeNames":["Montréal Marina Venise Heliport", "Montreal/Marina Venise Heliport", "Montreal Marina Venise Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Montréal/Marina Venise Water Airport","alternativeNames":["Montréal Marina Venise Water Airport", "Montreal/Marina Venise Water Airport", "Montreal Marina Venise Water Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Montréal/Mirabel Hélico Heliport","alternativeNames":["Montréal Mirabel Hélico Heliport", "Montreal/Mirabel Helico Heliport", "Montreal Mirabel Helico Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Montréal/Passport Hélico Heliport","alternativeNames":["Montréal Passport Hélico Heliport", "Montreal/Passport Helico Heliport", "Montreal Passport Helico Heliport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Montréal/Passport Hélico Heliport","alternativeNames":["Montréal Passport Hélico Heliport", "Montreal/Passport Helico Heliport", "Montreal Passport Helico Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal-Pierre Elliott Trudeau International Airport","alternativeNames":["Montréal Pierre Elliott Trudeau International Airport", "Montreal-Pierre Elliott Trudeau International Airport", "Montreal Pierre Elliott Trudeau International Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Point Zero Heliport","alternativeNames":["Montréal Point Zero Heliport", "Montreal/Point Zero Heliport", "Montreal Point Zero Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal Sacre-Coeur Heliport","alternativeNames":["Montréal Sacre Coeur Heliport", "Montreal Sacre-Coeur Heliport", "Montreal Sacre Coeur Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Montréal/Saint-Hubert Heli-Inter Heliport","alternativeNames":["Montréal Saint Hubert Heli Inter Heliport", "Montreal/Saint-Hubert Heli-Inter Heliport", "Montreal Saint Hubert Heli Inter Heliport"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
