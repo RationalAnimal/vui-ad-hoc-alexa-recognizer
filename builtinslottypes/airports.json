@@ -7878,7 +7878,15 @@
     {"name":"Saint-Lambert-de-Lauzon Aerodrome","alternativeNames":["Saint Lambert de Lauzon Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Montréal/Saint-Lazare Aerodrome","alternativeNames":["Montréal Saint Lazare Aerodrome", "Montreal Saint Lazare Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Saint-Louis-de-France Aerodrome","alternativeNames":["Saint Louis de France Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Saint-Mathias Aerodrome","alternativeNames":["Saint Mathias Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Saint-Mathias Aerodrome","alternativeNames":["Saint Mathias Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Mathias/Grant Aerodrome","alternativeNames":["Saint Mathias Grant Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Mathias Water Aerodrome","alternativeNames":["Saint Mathias Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Mathieu-de-Beloeil Aerodrome","alternativeNames":["Saint Mathieu de Beloeil Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Michel-de-Napierville Aerodrome","alternativeNames":["Saint Michel de Napierville Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Michel-des-Saints Aerodrome","alternativeNames":["Saint Michel des Saints Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Raymond/Paquet Aerodrome","alternativeNames":["Saint Raymond Paquet Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Remi-d'Amherst/Kanata Tremblant Resort Heliport","alternativeNames":["Saint Remi d'Amherst Kanata Tremblant Resort Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sainte-Veronique Water Aerodrome","alternativeNames":["Sainte Veronique Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
