@@ -7854,7 +7854,15 @@
     {"name":"Saint-André-Avellin Aerodrome","alternativeNames":["Saint André Avellin Aerodrome", "Saint-Andre-Avellin Aerodrome", "Saint Andre Avellin Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Sainte-Anne-des-Monts Aerodrome","alternativeNames":["Sainte Anne des Monts Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Sainte-Anne-du-Lac Aviation PLMG Inc. Aerodrome","alternativeNames":["Sainte-Anne-du-Lac Aviation PLMG Inc Aerodrome", "Sainte-Anne-du-Lac Aviation PLMG Incorporated Aerodrome", "Sainte-Anne-du-Lac Aerodrome", "Sainte Anne du Lac Aviation PLMG Inc. Aerodrome", "Sainte Anne du Lac Aviation PLMG Inc Aerodrome", "Sainte Anne du Lac Aviation PLMG Incorporated Aerodrome", "Sainte Anne du Lac Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Sainte-Anne-du-Lac Water Aerodrome","alternativeNames":["Sainte Anne du Lac Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Sainte-Anne-du-Lac Water Aerodrome","alternativeNames":["Sainte Anne du Lac Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Anselme Aerodrome","alternativeNames":["Saint Anselme Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Augustin Airport","alternativeNames":["Saint Augustin Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Augustin Heliport","alternativeNames":["Saint Augustin Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Basile Marcotte Aerodrome","alternativeNames":["Saint-Basile Aerodrome", "Saint Basile Marcotte Aerodrome", "Saint Basile Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Étienne-des-Grès/Hydravion Adventure Water Aerodrome","alternativeNames":["Saint Étienne des Grès Hydravion Adventure Water Aerodrome", "Saint-Etienne-des-Gres/Hydravion Adventure Water Aerodrome", "Saint Etienne des Gres Hydravion Adventure Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Bruno-de-Guigues Aerodrome","alternativeNames":["Saint Bruno de Guigues Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Dominique Aerodrome","alternativeNames":["Saint Dominique Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Donat Aerodrome","alternativeNames":["Saint Donat Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
