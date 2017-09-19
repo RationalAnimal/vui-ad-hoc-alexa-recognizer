@@ -7954,7 +7954,15 @@
     {"name":"Cudworth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Cumberland House Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Loon Creek Airfield","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Cut Knife Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Cut Knife Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Davidson Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Davin Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Debden Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Dinsmore Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Dore Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Eatonia Elvie Smith Municipal Airport","alternativeNames":["Eatonia Municipal Airport"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Edam Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Esterhazy Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
 
   ]
 }
