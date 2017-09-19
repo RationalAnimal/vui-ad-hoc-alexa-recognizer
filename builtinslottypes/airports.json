@@ -7892,7 +7892,15 @@
     {"name":"Salluit Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Schefferville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Schefferville/Squaw Lake Water Aerodrome","alternativeNames":["Schefferville Squaw Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Senneterre Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Senneterre Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Rivière Saint-Maurice Aviation Maurice Water Aerodromee","alternativeNames":["Rivière Saint-Maurice Water Aerodrome", "Riviere Saint Maurice Aviation Maurice Water Aerodrome", "Riviere Saint Maurice Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Valleyfield Transport BRS Inc Heliport","alternativeNames":["Valleyfield Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sept-Îles Airport","alternativeNames":["Sept Îles Airport", "Sept-Iles Airport", "Sept Iles Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sept-Îles Hydro-Québec Heliport","alternativeNames":["Sept-Îles Heliport", "Sept Îles Hydro Québec Heliport", "Sept Îles Heliport", "Sept Iles Hydro Quebec Heliport", "Sept Iles Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sept-Îles/Lac Rapides Water Aerodrome","alternativeNames":["Sept Iles Lac Rapides Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sherbrooke Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sherbrooke CHUS/François Desourdy Heliport","alternativeNames":["Sherbrooke François Desourdy Heliport", "Sherbrooke CHUS/Francois Desourdy Heliport", "Sherbrooke Francois Desourdy Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Sorel Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
