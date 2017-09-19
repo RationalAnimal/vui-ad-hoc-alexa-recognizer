@@ -7946,6 +7946,15 @@
     {"name":"Charlot River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Churchbridge Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Cigar Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Collins Bay Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Collins Bay Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Coronach/Scobey Border Station Airport","alternativeNames":["Coronach Scobey Border Station Airport"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Craik Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Cree Lake/Crystal Lodge Midgett Field Aerodrome","alternativeNames":["Cree Lake/Crystal Lodge Aerodrome", "Cree Lake Crystal Lodge Aerodrome", "Cree Lake Crystal Lodge Midgett Field Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Cree Lake Crystal Lodge Water Aerodrome","alternativeNames":["Cree Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Cudworth Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Cumberland House Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Loon Creek Airfield","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Cut Knife Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+
   ]
 }
