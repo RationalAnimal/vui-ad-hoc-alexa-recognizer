@@ -7907,7 +7907,13 @@
     {"name":"Rivière Témiscamie Air Roberval Ltée Aerodrome","alternativeNames":["Rivière Témiscamie Aerodrome", "Riviere Temiscamie Air Roberval Ltee Aerodrome", "Riviere Temiscamie Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Rivière Témiscamie Water Aerodrome","alternativeNames":["Riviere Temiscamie Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Témiscaming/Lac Kipawa Water Aerodrome","alternativeNames":["Témiscaming Lac Kipawa Water Aerodrome", "Temiscaming/Lac Kipawa Water Aerodrome", "Temiscaming Lac Kipawa Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Tête-à-La-Baleine Airport","alternativeNames":["Tête à La Baleine Airport", "Tete-a-La-Baleine Airport", "Tete a La Baleine Airport"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Tête-à-La-Baleine Airport","alternativeNames":["Tête à La Baleine Airport", "Tete-a-La-Baleine Airport", "Tete a La Baleine Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Thetford Mines Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Lac Polaris Pourvoirie Mirage Inc Water Aerodrome","alternativeNames":["Lac Polaris Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Trois-Rivières Airport","alternativeNames":["Trois Rivières Airport", "Trois-Rivieres Airport", "Trois Rivieres Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Umiujaq Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Valcartier W/C J.H.L. Joe Lecomte Heliport","alternativeNames":["Valcartier W/C J.H.L. Lecomte Heliport", "Valcartier Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Valcourt Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
