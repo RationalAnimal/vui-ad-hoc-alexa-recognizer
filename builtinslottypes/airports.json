@@ -7886,7 +7886,13 @@
     {"name":"Saint-Michel-des-Saints Aerodrome","alternativeNames":["Saint Michel des Saints Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Saint-Raymond/Paquet Aerodrome","alternativeNames":["Saint Raymond Paquet Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Saint-Remi-d'Amherst/Kanata Tremblant Resort Heliport","alternativeNames":["Saint Remi d'Amherst Kanata Tremblant Resort Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Sainte-Veronique Water Aerodrome","alternativeNames":["Sainte Veronique Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Sainte-Veronique Water Aerodrome","alternativeNames":["Sainte Veronique Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Saint-Victor-de-Beauce Aerodrome","alternativeNames":["Saint Victor de Beauce Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Salaberry-de-Valleyfield Aerodrome","alternativeNames":["Salaberry de Valleyfield Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Salluit Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Schefferville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Schefferville/Squaw Lake Water Aerodrome","alternativeNames":["Schefferville Squaw Lake Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Senneterre Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
