@@ -7922,7 +7922,15 @@
     {"name":"Victoriaville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Waskaganish Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Wemindji Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Weymontachie Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Weymontachie Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Alida/Cowan Farm Private Aerodrome","alternativeNames":["Alida Cowan Farm Private Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Arborfield Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Arcola Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Assiniboia Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Axe Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Beauval Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Biggar Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Big River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
 
   ]
 }
