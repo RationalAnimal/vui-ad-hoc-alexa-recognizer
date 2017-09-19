@@ -36,9 +36,10 @@ https://github.com/RationalAnimal
 
 I have finally gotten to a point where the major features are at a good spot and I can spare some time for
 tutorials, examples, and documentation.
-To that end I have set up a web site on GitHub pages and included the first two tutorials, with more on the way.
-These two tutorials together comprise the usual "Hello World" example - the first one shows how to configure, generate,
-and test a recognizer.json file. The second tutorial shows how to write your own code to use the generated file.
+To that end I have set up a web site on GitHub pages and included the first three tutorials, with more on the way.
+The first two tutorials together comprise the usual "Hello World" example - one shows how to configure, generate,
+and test a recognizer.json file. The other tutorial shows how to write your own code to use the generated file.
+The third tutorial shows how to avoid having to manually enter and maintain a large number of related utterances.
 
 https://rationalanimal.github.io/vui-ad-hoc-alexa-recognizer/
 
