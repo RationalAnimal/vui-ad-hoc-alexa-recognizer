@@ -7913,7 +7913,16 @@
     {"name":"Trois-Rivières Airport","alternativeNames":["Trois Rivières Airport", "Trois-Rivieres Airport", "Trois Rivieres Airport"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Umiujaq Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Valcartier W/C J.H.L. Joe Lecomte Heliport","alternativeNames":["Valcartier W/C J.H.L. Lecomte Heliport", "Valcartier Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Valcourt Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Valcourt Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Val-d'Or Airport","alternativeNames":["Val d'Or Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Val-d'Or Huard Water Aerodrome","alternativeNames":["Val-d'Or Water Aerodrome", "Val d'Or Huard Water Aerodrome", "Val d'Or Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Val-d'Or/Rivière Piché Water Aerodrome","alternativeNames":["Val d'Or Rivière Piché Water Aerodrome", "Val d'Or Riviere Piche Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Val-d'Or St-Pierre Heliport","alternativeNames":["Val d'Or St Pierre Heliport", "Val d'Or Saint Pierre Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Val-d'Or St-Pierre Water Aerodrome","alternativeNames":["Val d'Or St Pierre Water Aerodrome", "Val d'Or SaintPierre Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Victoriaville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Waskaganish Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Wemindji Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Weymontachie Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
