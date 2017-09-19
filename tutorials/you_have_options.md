@@ -56,10 +56,9 @@ GreetingIntent {Hello|Hi there}{|, how are you}
 {% endhighlight %}
 
 The second set of curly brackets looks a little funny - it still has a "\|" in it but there is only one string inside - ", how are you".
-This is intentional.  What that means is that this string is optional - if it's not in the text being matched, the match will not fail because this string is there.
-Go ahead and try it. Assuming you've downloaded the tui-youhaveoptions tutorial source (or kept you index.js from the privious tutorials):
+This is intentional.  What that means is that this string is optional - if it's not in the text being matched, the match will not fail because this string isn't there.
+Go ahead and try it. Assuming you've downloaded the tui-youhaveoptions tutorial source (or kept you index.js from the privious tutorials), let's test it:
 
-Now, let's test it:
 {% highlight shell %}
 prompt> node index.js "Hi there, how are you?"
 {
