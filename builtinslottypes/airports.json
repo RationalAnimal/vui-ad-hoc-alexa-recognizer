@@ -7900,7 +7900,14 @@
     {"name":"Sept-Îles/Lac Rapides Water Aerodrome","alternativeNames":["Sept Iles Lac Rapides Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Sherbrooke Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
     {"name":"Sherbrooke CHUS/François Desourdy Heliport","alternativeNames":["Sherbrooke François Desourdy Heliport", "Sherbrooke CHUS/Francois Desourdy Heliport", "Sherbrooke Francois Desourdy Heliport"],"priorNames":[],"country":"canada","state":"quebec"},
-    {"name":"Sorel Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"}
+    {"name":"Sorel Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Stanhope Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Stanstead/Weller Airport","alternativeNames":["Stanstead Weller Airport"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Tasiujaq Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Rivière Témiscamie Air Roberval Ltée Aerodrome","alternativeNames":["Rivière Témiscamie Aerodrome", "Riviere Temiscamie Air Roberval Ltee Aerodrome", "Riviere Temiscamie Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Rivière Témiscamie Water Aerodrome","alternativeNames":["Riviere Temiscamie Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Témiscaming/Lac Kipawa Water Aerodrome","alternativeNames":["Témiscaming Lac Kipawa Water Aerodrome", "Temiscaming/Lac Kipawa Water Aerodrome", "Temiscaming Lac Kipawa Water Aerodrome"],"priorNames":[],"country":"canada","state":"quebec"},
+    {"name":"Tête-à-La-Baleine Airport","alternativeNames":["Tête à La Baleine Airport", "Tete-a-La-Baleine Airport", "Tete a La Baleine Airport"],"priorNames":[],"country":"canada","state":"quebec"}
 
   ]
 }
