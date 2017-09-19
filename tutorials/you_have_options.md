@@ -18,7 +18,7 @@ Note: if you don't want to type in all the source code, you don't have to.  This
 
 {% highlight shell %}
 prompt> npm install --save tui-youhaveoptions
-prompt> cp node_modules/tui-usinghelloworld/* .
+prompt> cp node_modules/tui-youhaveoptions/* .
 {% endhighlight %}
 
 When you created the Hello World recognizer.json file, it only contained a single utterance that it could understand. Wouldn't it be nice if all sorts of greetings
