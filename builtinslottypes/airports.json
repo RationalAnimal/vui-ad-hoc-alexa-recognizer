@@ -7962,7 +7962,15 @@
     {"name":"Dore Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Eatonia Elvie Smith Municipal Airport","alternativeNames":["Eatonia Municipal Airport"],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Edam Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Esterhazy Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Esterhazy Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Estevan Regional Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Estevan Blue Sky Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Estevan South Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Estevan St. Josephs's Hospital Heliport","alternativeNames":["Estevan Heliport", "Estevan St Josephs's Hospital Heliport", "Estevan Saint Josephs's Hospital Heliport"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Eston Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Fillmore Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Fond-du-Lac Airport","alternativeNames":["Fond du Lac Airport"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Frontier Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
 
   ]
 }
