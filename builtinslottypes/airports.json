@@ -8002,7 +8002,15 @@
     {"name":"Leask Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Lemberg Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Leoville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Little Bear Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Little Bear Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Loon Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Lucky Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Disley Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Lumsden Colhoun Airport","alternativeNames":["Lumsden Airport"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Lumsden Disley Aerodrome","alternativeNames":["Lumsden Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Luseland Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Macklin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Maidstone Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
 
   ]
 }
