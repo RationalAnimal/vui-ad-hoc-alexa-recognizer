@@ -8081,7 +8081,15 @@
     {"name":"Whitewood Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Wollaston Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Wynyard/W. B. Needham Field Aerodrome","alternativeNames":["Wynyard W. B. Needham Field Aerodrome", "Wynyard/W B Needham Field Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Yorkton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Yorkton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Beaver Creek Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Braeburn Airport","alternativeNames":["Cinnamon Bun Airstrip"],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Burwash Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Carcross Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Carcross Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Carmacks Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Chapman Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Dawson City Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"}
 
   ]
 }
