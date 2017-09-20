@@ -8041,7 +8041,15 @@
     {"name":"Poverty Valley Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Preeceville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Prince Albert Fire Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Prince Albert Glass Field Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Prince Albert Glass Field Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Quill Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Radisson Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Radville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Regina/Aerogate Aerodrome","alternativeNames":["Regina Aerogate Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Regina General Hospital Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Regina International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Regina Beach Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Reindeer Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
 
   ]
 }
