@@ -8010,7 +8010,14 @@
     {"name":"Lumsden Disley Aerodrome","alternativeNames":["Lumsden Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Luseland Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Macklin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Maidstone Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Maidstone Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Malcolm Island Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Maple Creek Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Saskatoon/Richter Field Aerodrome","alternativeNames":["Saskatoon Richter Field Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"McArthur River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Meadow Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Melfort Miller Field Aerodrome","alternativeNames":["Melfort  Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Melville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
 
   ]
 }
