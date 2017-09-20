@@ -8033,7 +8033,15 @@
     {"name":"Pelican Narrows Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Pelican Narrows Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Pierceland Turchyn Field Aerodrome","alternativeNames":["Pierceland Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Pilot Butte Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Pilot Butte Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Pinehouse Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Points North Landing Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Points North Landing Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Porcupine Plain Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Poverty Valley Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Preeceville Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Prince Albert Fire Centre Heliport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Prince Albert Glass Field Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
 
   ]
 }
