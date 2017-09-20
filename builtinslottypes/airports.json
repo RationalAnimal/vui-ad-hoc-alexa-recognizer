@@ -8056,7 +8056,15 @@
     {"name":"St. Brieux Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Sandy Bay Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Sandy Bay Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Saskatoon/Corman Air Park","alternativeNames":["Saskatoon Corman Air Park"],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Saskatoon/Corman Air Park","alternativeNames":["Saskatoon Corman Air Park"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Saskatoon Royal University Hospital Heliport","alternativeNames":["Saskatoon Heliport"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Shaunavon Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Shellbrook Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Southend/Hans Ulricksen Field Aerodrome","alternativeNames":["Southend Hans Ulricksen Field Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Southend Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Spiritwood/H & M Fast Farms Aerodrome","alternativeNames":["Spiritwood H and M Fast Farms Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Spring Valley North Airport","alternativeNames":["Spring Valley Airport"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Stony Rapids Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
 
   ]
 }
