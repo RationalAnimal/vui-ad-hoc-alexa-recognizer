@@ -8017,7 +8017,15 @@
     {"name":"McArthur River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Meadow Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Melfort Miller Field Aerodrome","alternativeNames":["Melfort  Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Melville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Melville Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Moose Jaw Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Moosomin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Neilburg Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Nekweaga Bay Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Nipawin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"North Battleford Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Odessa/Strawberry Lakes Aerodrome","alternativeNames":["Odessa Strawberry Lakes Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Otter Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
 
   ]
 }
