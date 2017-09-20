@@ -8072,7 +8072,16 @@
     {"name":"Tisdale Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Unity Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Uranium City Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Uranium City Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Uranium City Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Wadena Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Wakaw Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Watrous Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Wawota Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Weyburn Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Whitewood Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Wollaston Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Wynyard/W. B. Needham Field Aerodrome","alternativeNames":["Wynyard W. B. Needham Field Aerodrome", "Wynyard/W B Needham Field Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Yorkton Municipal Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
 
   ]
 }
