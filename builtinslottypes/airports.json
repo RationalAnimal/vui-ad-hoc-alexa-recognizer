@@ -8025,7 +8025,15 @@
     {"name":"Nipawin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"North Battleford Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Odessa/Strawberry Lakes Aerodrome","alternativeNames":["Odessa Strawberry Lakes Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Otter Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Otter Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Outlook Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Oxbow Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Pangman Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Patuanak Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Pelican Narrows Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Pelican Narrows Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Pierceland Turchyn Field Aerodrome","alternativeNames":["Pierceland Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Pilot Butte Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
 
   ]
 }
