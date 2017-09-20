@@ -74,6 +74,7 @@ let recursiveUserInput = function (){
     recursiveUserInput(); //Calling this function again to ask new question
   });
 };
+recursiveUserInput();
 {% endhighlight %}
 
 First, we ask the user to "Please type something" and get whatever he's typed in.
