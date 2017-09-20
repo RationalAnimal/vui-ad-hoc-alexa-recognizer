@@ -8064,7 +8064,15 @@
     {"name":"Southend Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Spiritwood/H & M Fast Farms Aerodrome","alternativeNames":["Spiritwood H and M Fast Farms Aerodrome"],"priorNames":[],"country":"canada","state":"saskatchewan"},
     {"name":"Spring Valley North Airport","alternativeNames":["Spring Valley Airport"],"priorNames":[],"country":"canada","state":"saskatchewan"},
-    {"name":"Stony Rapids Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
+    {"name":"Stony Rapids Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Moose Jaw/Air Vice Marshal C.M. McEwen Airport","alternativeNames":["CFB Moose Jaw", "Moose Jaw/Air Vice Marshal C. M. McEwen Airport", "Moose Jaw/Air Vice Marshal C M McEwen Airport", "Moose Jaw/Air Vice Marshal CM McEwen Airport", "Moose Jaw Air Vice Marshal C.M. McEwen Airport", "Moose Jaw Air Vice Marshal C. M. McEwen Airport", "Moose Jaw Air Vice Marshal C M McEwen Airport", "Moose Jaw Air Vice Marshal CM McEwen Airport"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Saskatoon John G. Diefenbaker International Airport","alternativeNames":["Saskatoon International Airport", "Saskatoon John G Diefenbaker International Airport", "Saskatoon John Diefenbaker International Airport"],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Stony Rapids Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Swift Current Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Tisdale Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Unity Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Uranium City Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"},
+    {"name":"Uranium City Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"saskatchewan"}
 
   ]
 }
