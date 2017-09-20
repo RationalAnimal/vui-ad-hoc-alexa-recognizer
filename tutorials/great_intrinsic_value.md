@@ -58,7 +58,7 @@ type come from?  It's a "built-in" type.  You can recognize built-in types becau
 Note that for compatibility and historical reasons you can also specify the slot type as "AMAZON.US_FIRST_NAME".  This is true for any built in slot types that exist in both Amazon slot type list and Transcend slot type list.
 For a complete up to date list of currently supported built-in slot types please see README.md file that is distributed with vui-ad-hoc-alexa-recognizer.
 
-A slot name (not to be confused with the slot type) is arbitrary and string and the programmer can pick a name he likes.  If you are using vui-ad-hoc-alexa-recognizer for work that also
+A slot name (not to be confused with the slot type) is an arbitrary string and the programmer can pick a name he likes.  If you are using vui-ad-hoc-alexa-recognizer for work that also
 crosses over to Alexa, Lex, or other voice/chat related services then you should probably use the names that won't conflict with those used by such services.
 
 Now that we have this intent has been added we need to use it in an utterance, so let's update the utterances.txt:
@@ -98,7 +98,7 @@ Imagine that you want the person to tell you his nickname, if he has one.  He ma
 My first name is John but people call me Jack
 {% endhighlight %}
 
-To make that work we need to update intents.json and utterances.txt
+To make that work we need to update intents.json and utterances.txt.
 First, update the intents.json thusly:
 
 {% highlight json %}

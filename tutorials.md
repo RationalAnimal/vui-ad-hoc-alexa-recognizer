@@ -12,3 +12,5 @@ Here you will find tutorials showing you how to use vui-ad-hoc-alexa-recognizer
 <a class="page-link" href="{{ "/Tutorials/YouHaveOptions/" | relative_url }}">You Have Options... Option Lists, that is</a>
 
 <a class="page-link" href="{{ "/Tutorials/GreatIntrinsicValue/" | relative_url }}">Great Intrinsic Value</a>
+
+<a class="page-link" href="{{ "/Tutorials/LetsTalk/" | relative_url }}">Let's Talk</a>
