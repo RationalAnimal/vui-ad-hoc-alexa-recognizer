@@ -259,6 +259,7 @@ recognizer.builtInValues.US_PHONE_NUMBER = {};
 recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString =
   "(" +
     // First, area code
+
   "(?:[(]{0,1}\\s*)" + // Area code opening parenthesis, if any
   "(?:"+
     "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){3}" +
@@ -320,7 +321,6 @@ recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString =
     ")" +
 
   ")" + // End of the subscriber portion
-
   ")\\s*";
 //console.log("recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString:" + recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString);
 recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString, "ig");
@@ -647,6 +647,15 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         // Ignore flags for now
       if(matchStage === "FINAL"){
         return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
+      }
+      else {
+        return "((?:[0-9a-zA-Z,.]|\\s)+)";
+      }
+    }
+    else if(slotType === "TRANSCEND.US_PHONE_NUMBER"){
+      // Ignore flags for now
+      if(matchStage === "FINAL"){
+        return recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString;
       }
       else {
         return "((?:[0-9a-zA-Z,.]|\\s)+)";
