@@ -8134,6 +8134,10 @@
     {"name":"Ciudad Acuña International Airport","alternativeNames":["Ciudad Acuna International Airport"],"priorNames":[],"country":"mexico","state":"Coahuila"},
     {"name":"Santa Barbara Regional Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Guerrero"},
     {"name":"Ciudad Constitución Airport","alternativeNames":["Ciudad Constitucion Airport"],"priorNames":[],"country":"mexico","state":"Baja California Sur"},
-    {"name":"Ciudad del Carmen International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Campeche"}
+    {"name":"Ciudad del Carmen International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Campeche"},
+    {"name":"Ciudad Mante National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Tamaulipas"},
+    {"name":"Abraham González International Airport","alternativeNames":["Abraham Gonzalez International Airport"],"priorNames":[],"country":"mexico","state":"Chihuahua"},
+    {"name":"Ciudad Obregón International Airport","alternativeNames":["Ciudad Obregon International Airport"],"priorNames":[],"country":"mexico","state":"Sonora"},
+    {"name":"General Pedro J. Méndez International Airport","alternativeNames":["General Pedro J Méndez International Airport", "General Pedro Méndez International Airport", "General Pedro J. Mendez International Airport", "General Pedro J Mendez International Airport", "General Pedro Mendez International Airport"],"priorNames":[],"country":"mexico","state":"Tamaulipas"}
   ]
 }
