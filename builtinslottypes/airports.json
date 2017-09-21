@@ -8097,6 +8097,14 @@
     {"name":"Haines Junction Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
     {"name":"Hyland Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
     {"name":"La Biche River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
-    {"name":"Macmillan Pass Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"}
+    {"name":"Macmillan Pass Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Mayo Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"McQuesten Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Minto Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Ogilvie Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Old Crow Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Pelly Crossing Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Pine Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Ross River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"}
   ]
 }
