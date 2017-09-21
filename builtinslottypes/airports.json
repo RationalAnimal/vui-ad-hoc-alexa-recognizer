@@ -8142,6 +8142,14 @@
     {"name":"Lic. Miguel de la Madrid Airport","alternativeNames":["Lic Miguel de la Madrid Airport"],"priorNames":[],"country":"mexico","state":"Colima"},
     {"name":"Copalar Air Force Base Num 17","alternativeNames":["Copalar Air Force Base Number 17", "Copalar Air Force Base Number seventeen"],"priorNames":[],"country":"mexico","state":"Chiapas"},
     {"name":"Cozumel International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Quintana Roo"},
-    {"name":"General Mariano Matamoros Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Morelos"}
+    {"name":"General Mariano Matamoros Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Morelos"},
+    {"name":"Federal de Bachigualato International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sinaloa"},
+    {"name":"Aeropuerto Nacional Ta Lo De Soto","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Guerrero"},
+    {"name":"General Guadalupe Victoria International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Durango"},
+    {"name":"El Ciprés Air Force Base Num 3","alternativeNames":["El Cipres Air Force Base Num 3"],"priorNames":[],"country":"mexico","state":"Baja California"},
+    {"name":"Don Miguel Hidalgo y Costilla International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Jalisco"},
+    {"name":"Campo Cuatro Milpas Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sinaloa"},
+    {"name":"General José María Yáñez International Airport","alternativeNames":["General Jose Maria Yanez International Airport"],"priorNames":[],"country":"mexico","state":"Sonora"},
+    {"name":"Guerrero Negro Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California Sur"}
   ]
 }
