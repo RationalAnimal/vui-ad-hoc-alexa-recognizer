@@ -14,6 +14,15 @@
       ]
     },
     {
+      "intent": "UsPhoneNumberIntent",
+      "slots": [
+        {
+          "name": "UsPhoneNumberSlot",
+          "type": "TRANSCEND.US_PHONE_NUMBER"
+        }
+      ]
+    },
+    {
       "intent": "BlahIntent",
       "slots": [
         {

@@ -1335,8 +1335,25 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         });
     });
+/*
+    it("verify simple utterance with one TRANSCEND.US_PHONE_NUMBER slot matches", function() {
+      let result = recognizer.Recognizer.matchText('my mobile number is (123) 456-7890');
+      expect(result).to.eql(
+        {"name": "BlahIntent",
+          "slots": {
+            "BlahSlot": {
+              "name": "BlahSlot",
+              "value": "20000"
+            },
+            "BlehSlot": {
+              "name": "BlehSlot",
+              "value": "123456789"
+            }
+          }
+        });
+    });
+ */
   });
-
   describe("Options List Matches", function() {
     it("verify AMAZON.DATE slot with two option lists and today matches and returns the correct value", function() {
       let result = recognizer.Recognizer.matchText('I can meet with you today');
