@@ -8114,6 +8114,10 @@
     {"name":"Watson Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
     {"name":"Erik Nielsen Whitehorse International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
     {"name":"Whitehorse/Cousins Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
-    {"name":"Whitehorse Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"}
+    {"name":"Whitehorse Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"General Juan N. Álvarez International Airport","alternativeNames":["General Juan N. Alvarez International Airport", "General Juan N Álvarez International Airport", "General Juan N Alvarez International Airport", "General Juan Álvarez International Airport", "General Juan Alvarez International Airport"],"priorNames":[],"country":"mexico","state":"Guerrero"},
+    {"name":"Lic. Jesús Terán Peredo International Airport","alternativeNames":["Lic. Jesus Teran Peredo International Airport", "Lic Jesús Terán Peredo International Airport", "Lic. Jesus Teran Peredo International Airport"],"priorNames":[],"country":"mexico","state":"Aguascalientes"},
+    {"name":"Agualeguas National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Nuevo León"},
+    {"name":"Álamos National Airport","alternativeNames":["Alamos National Airport"],"priorNames":[],"country":"mexico","state":"Sonora"}
   ]
 }
