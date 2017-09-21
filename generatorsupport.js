@@ -262,6 +262,15 @@ recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString =
     // First, area code
   "(?:[(]{0,1}\\s*)" + // Area code opening parenthesis, if any
   "(?:"+
+    "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){3}" +
+    "|" +
+
+    "(?:" +
+    "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){1}" +
+    "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
+    ")" +
+    "|" +
+
 
   ")" + // End of the numeric part of the area code
   "(?:[-).]{0,1}\\s*)" +
@@ -272,26 +281,26 @@ recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString =
   // Third, subscriber number
   "(?:"+
 
-  "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){4}" +
+  "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){4}" +
   "|" +
 
   "(?:" +
-  "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){2}" +
+  "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){2}" +
   "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
   ")" +
   "|" +
 
 
   "(?:" +
-  "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){1}" +
+  "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){1}" +
   "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
-  "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){1}" +
+  "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){1}" +
   ")" +
   "|" +
 
   "(?:" +
   "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
-  "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){2}" +
+  "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){2}" +
   ")" +
   "|" +
 
@@ -310,6 +319,7 @@ recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString =
   ")" + // End of the subscriber portion
 
   ")\\s*";
+//console.log("recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString:" + recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString);
 recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString, "ig");
 
 recognizer.builtInValues.Airline = require("./builtinslottypes/airlines.json");
