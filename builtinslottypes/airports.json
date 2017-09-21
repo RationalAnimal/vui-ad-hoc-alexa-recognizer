@@ -8150,6 +8150,11 @@
     {"name":"Don Miguel Hidalgo y Costilla International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Jalisco"},
     {"name":"Campo Cuatro Milpas Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sinaloa"},
     {"name":"General José María Yáñez International Airport","alternativeNames":["General Jose Maria Yanez International Airport"],"priorNames":[],"country":"mexico","state":"Sonora"},
-    {"name":"Guerrero Negro Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California Sur"}
+    {"name":"Guerrero Negro Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California Sur"},
+    {"name":"General Ignacio Pesqueira Garcia International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sonora"},
+    {"name":"Bahías de Huatulco International Airport","alternativeNames":["Bahias de Huatulco International Airport"],"priorNames":[],"country":"mexico","state":"Oaxaca"},
+    {"name":"Isla Guadalupe","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California"},
+    {"name":"Isla María Madre Naval Air Station","alternativeNames":["Isla Maria Madre Naval Air Station"],"priorNames":[],"country":"mexico","state":"Nayarit"},
+    {"name":"Isla Mujeres National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Quintana Roo"}
   ]
 }
