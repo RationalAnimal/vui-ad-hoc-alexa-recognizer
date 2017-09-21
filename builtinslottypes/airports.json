@@ -8118,6 +8118,11 @@
     {"name":"General Juan N. Álvarez International Airport","alternativeNames":["General Juan N. Alvarez International Airport", "General Juan N Álvarez International Airport", "General Juan N Alvarez International Airport", "General Juan Álvarez International Airport", "General Juan Alvarez International Airport"],"priorNames":[],"country":"mexico","state":"Guerrero"},
     {"name":"Lic. Jesús Terán Peredo International Airport","alternativeNames":["Lic. Jesus Teran Peredo International Airport", "Lic Jesús Terán Peredo International Airport", "Lic. Jesus Teran Peredo International Airport"],"priorNames":[],"country":"mexico","state":"Aguascalientes"},
     {"name":"Agualeguas National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Nuevo León"},
-    {"name":"Álamos National Airport","alternativeNames":["Alamos National Airport"],"priorNames":[],"country":"mexico","state":"Sonora"}
+    {"name":"Álamos National Airport","alternativeNames":["Alamos National Airport"],"priorNames":[],"country":"mexico","state":"Sonora"},
+    {"name":"Pablo L Sidar National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Michoacán"},
+    {"name":"Jorge Jiménez Cantú National Airport","alternativeNames":["Jorge Jimenez Cantu National Airport"],"priorNames":[],"country":"mexico","state":"State of Mexico"},
+    {"name":"Cabo San Lucas International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California Sur"},
+    {"name":"Ing. Alberto Acuña Ongay International Airport","alternativeNames":["Ing Alberto Acuña Ongay International Airport", "Ing. Alberto Acuna Ongay International Airport", "Ing Alberto Acuna Ongay International Airport"],"priorNames":[],"country":"mexico","state":"Campeche"}
+
   ]
 }
