@@ -2232,7 +2232,19 @@ reasons.
 
 ## Transcend features supported
 
-Currently there is one TRANSCEND built in slot type supported: TRANSCEND.US_PRESIDENT
+Currently there are two TRANSCEND built in slot type supported: TRANSCEND.US_PHONE_NUMBER and TRANSCEND.US_PRESIDENT.
+
+TRANSCEND.US_PHONE_NUMBER will match on seven digit number expression that's structured the way people tend to pronounce
+phone numbers.  So, either listing it out as numbers or using one/two digit word equivalents (e.g. fifteen or thirty five).
+Additionally, this slot type will accept parenthesis around the area code, dash between exchange and user number or dots
+instead, e.g.:
+
+```text
+(123) 456-7890
+123.456.7890
+123 456 7890
+one twenty three four fifty six seventy eight ninety
+```
 
 ## Alexa features supported
 
