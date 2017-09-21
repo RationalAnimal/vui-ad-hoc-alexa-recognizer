@@ -259,6 +259,18 @@ recognizer.builtInValues.US_PRESIDENT = require("./builtinslottypes/uspresidents
 recognizer.builtInValues.US_PHONE_NUMBER = {};
 recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString =
   "(" +
+    // First, area code
+  "(?:[(]{0,1}\\s*)" + // Area code opening parenthesis, if any
+  "(?:"+
+
+  ")" + // End of the numeric part of the area code
+  "(?:[-).]{0,1}\\s*)" +
+  // Second, the domain
+
+
+  "(?:[-.]{0,1}\\s*)" +
+  // Third, subscriber number
+  "(?:"+
 
   "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){4}" +
   "|" +
@@ -295,6 +307,7 @@ recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString =
   "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){0,1}\\s*){0,1}\\s*" +
   ")" +
 
+  ")" + // End of the subscriber portion
 
   ")\\s*";
 recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExp = new RegExp(recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString, "ig");
