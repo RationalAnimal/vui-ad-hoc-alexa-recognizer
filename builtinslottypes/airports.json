@@ -8105,6 +8105,15 @@
     {"name":"Old Crow Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
     {"name":"Pelly Crossing Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
     {"name":"Pine Lake Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
-    {"name":"Ross River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"}
+    {"name":"Ross River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Silver City Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Teslin Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Tincup Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Twin Creeks Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Watson Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Watson Lake Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Erik Nielsen Whitehorse International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Whitehorse/Cousins Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Whitehorse Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"}
   ]
 }
