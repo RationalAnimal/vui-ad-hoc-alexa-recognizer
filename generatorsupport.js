@@ -254,7 +254,6 @@ recognizer.builtInValues.US_STATE = require("./builtinslottypes/usstates.json");
 
 recognizer.builtInValues.US_PRESIDENT = require("./builtinslottypes/uspresidents.json");
 
-// TODO re-edit the US_PHONE_NUMBER - currently just a copy of the FOUR_DIGIT_NUMBER
 // have 3 sections - 3 digit area code, 3 digit exchange code, 4 digit subscriber number
 recognizer.builtInValues.US_PHONE_NUMBER = {};
 recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString =
@@ -269,52 +268,56 @@ recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString =
     "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){1}" +
     "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
     ")" +
-    "|" +
-
-
   ")" + // End of the numeric part of the area code
   "(?:[-).]{0,1}\\s*)" +
   // Second, the domain
+  "(?:"+
+    "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){3}" +
+    "|" +
 
-
+    "(?:" +
+    "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){1}" +
+    "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
+    ")" +
+  ")" + // End of the numeric part of the domain
   "(?:[-.]{0,1}\\s*)" +
   // Third, subscriber number
   "(?:"+
 
-  "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){4}" +
-  "|" +
+    "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){4}" +
+    "|" +
 
-  "(?:" +
-  "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){2}" +
-  "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
-  ")" +
-  "|" +
-
-
-  "(?:" +
-  "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){1}" +
-  "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
-  "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){1}" +
-  ")" +
-  "|" +
-
-  "(?:" +
-  "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
-  "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){2}" +
-  ")" +
-  "|" +
+    "(?:" +
+    "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){2}" +
+    "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
+    ")" +
+    "|" +
 
 
-  "(?:" +
-  "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){2}\\s*" +
-  ")" +
-  "|" +
+    "(?:" +
+    "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9,])\\s*){1}" +
+    "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
+    "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){1}" +
+    ")" +
+    "|" +
 
-  "(?:" +
-  "(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*thousand\\s*[,]{0,1}\\s*" +
-  "(?:(?:one|two|three|four|five|six|seven|eight|nine|[1-9])\\s*hundred\\s*){0,1}" +
-  "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){0,1}\\s*){0,1}\\s*" +
-  ")" +
+    "(?:" +
+    "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){1}\\s*){1}\\s*" +
+    "(?:(?:oh|o|zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){2}" +
+    ")" +
+    "|" +
+
+
+    "(?:" +
+    "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){2}\\s*" +
+    ")" +
+    "|" +
+
+    "(?:" +
+    "(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*thousand\\s*[,]{0,1}\\s*" +
+    "(?:(?:one|two|three|four|five|six|seven|eight|nine|[1-9])\\s*hundred\\s*){0,1}" +
+    "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine|[1-9]){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen){0,1}\\s*){0,1}\\s*" +
+    ")" +
 
   ")" + // End of the subscriber portion
 
