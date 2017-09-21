@@ -8138,6 +8138,10 @@
     {"name":"Ciudad Mante National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Tamaulipas"},
     {"name":"Abraham González International Airport","alternativeNames":["Abraham Gonzalez International Airport"],"priorNames":[],"country":"mexico","state":"Chihuahua"},
     {"name":"Ciudad Obregón International Airport","alternativeNames":["Ciudad Obregon International Airport"],"priorNames":[],"country":"mexico","state":"Sonora"},
-    {"name":"General Pedro J. Méndez International Airport","alternativeNames":["General Pedro J Méndez International Airport", "General Pedro Méndez International Airport", "General Pedro J. Mendez International Airport", "General Pedro J Mendez International Airport", "General Pedro Mendez International Airport"],"priorNames":[],"country":"mexico","state":"Tamaulipas"}
+    {"name":"General Pedro J. Méndez International Airport","alternativeNames":["General Pedro J Méndez International Airport", "General Pedro Méndez International Airport", "General Pedro J. Mendez International Airport", "General Pedro J Mendez International Airport", "General Pedro Mendez International Airport"],"priorNames":[],"country":"mexico","state":"Tamaulipas"},
+    {"name":"Lic. Miguel de la Madrid Airport","alternativeNames":["Lic Miguel de la Madrid Airport"],"priorNames":[],"country":"mexico","state":"Colima"},
+    {"name":"Copalar Air Force Base Num 17","alternativeNames":["Copalar Air Force Base Number 17", "Copalar Air Force Base Number seventeen"],"priorNames":[],"country":"mexico","state":"Chiapas"},
+    {"name":"Cozumel International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Quintana Roo"},
+    {"name":"General Mariano Matamoros Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Morelos"}
   ]
 }
