@@ -8122,7 +8122,10 @@
     {"name":"Pablo L Sidar National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Michoacán"},
     {"name":"Jorge Jiménez Cantú National Airport","alternativeNames":["Jorge Jimenez Cantu National Airport"],"priorNames":[],"country":"mexico","state":"State of Mexico"},
     {"name":"Cabo San Lucas International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California Sur"},
-    {"name":"Ing. Alberto Acuña Ongay International Airport","alternativeNames":["Ing Alberto Acuña Ongay International Airport", "Ing. Alberto Acuna Ongay International Airport", "Ing Alberto Acuna Ongay International Airport"],"priorNames":[],"country":"mexico","state":"Campeche"}
-
+    {"name":"Ing. Alberto Acuña Ongay International Airport","alternativeNames":["Ing Alberto Acuña Ongay International Airport", "Ing. Alberto Acuna Ongay International Airport", "Ing Alberto Acuna Ongay International Airport"],"priorNames":[],"country":"mexico","state":"Campeche"},
+    {"name":"Cananea National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sonora"},
+    {"name":"Cancún International Airport","alternativeNames":["Cancun International Airport"],"priorNames":[],"country":"mexico","state":"Quintana Roo"},
+    {"name":"Isla de Cedros Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California"},
+    {"name":"Captain Rogelio Castillo National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Guanajuato"}
   ]
 }
