@@ -8130,6 +8130,10 @@
     {"name":"Chetumal International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Quintana Roo"},
     {"name":"Chichen Itza International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Yucatán"},
     {"name":"General Roberto Fierro Villalobos International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Chihuahua"},
-    {"name":"Chilpancingo National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Guerrero"}
+    {"name":"Chilpancingo National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Guerrero"},
+    {"name":"Ciudad Acuña International Airport","alternativeNames":["Ciudad Acuna International Airport"],"priorNames":[],"country":"mexico","state":"Coahuila"},
+    {"name":"Santa Barbara Regional Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Guerrero"},
+    {"name":"Ciudad Constitución Airport","alternativeNames":["Ciudad Constitucion Airport"],"priorNames":[],"country":"mexico","state":"Baja California Sur"},
+    {"name":"Ciudad del Carmen International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Campeche"}
   ]
 }
