@@ -8089,7 +8089,14 @@
     {"name":"Carcross Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
     {"name":"Carmacks Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
     {"name":"Chapman Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
-    {"name":"Dawson City Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"}
-
+    {"name":"Dawson City Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Finlayson Lake Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Wiley Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Faro Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Fort Selkirk Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Haines Junction Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Hyland Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"La Biche River Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+    {"name":"Macmillan Pass Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"}
   ]
 }
