@@ -293,6 +293,11 @@ var _processMatchedNumericSlotValue = function(value){
   return value;
 };
 
+var _processMatchedUsPhoneNumberSlotValue = function(value){
+  let strippedDownValue = value.replace(/[-(.,)]/ig, " ");
+  return _processMatchedNumericSlotValue(strippedDownValue);
+};
+
 var _twoDigitFormatter = function(number){
   let returnValue = "0" + number;
   returnValue = returnValue.slice(-2);
@@ -1353,6 +1358,9 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
   let returnValue = value;
   if(slotType === "TRANSCEND.NUMBER" || slotType === "TRANSCEND.FOUR_DIGIT_NUMBER"){
     returnValue = _processMatchedNumericSlotValue(value);
+  }
+  else if(slotType === "TRANSCEND.US_PHONE_NUMBER"){
+    returnValue = _processMatchedUsPhoneNumberSlotValue(value);
   }
   else if(slotType === "TRANSCEND.DATE"){
     returnValue =  _processMatchedDateSlotValue(value, flags);
