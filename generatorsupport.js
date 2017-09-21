@@ -643,6 +643,15 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return "((?:[-0-9a-zA-Z,.]|\\s)+)";
       }
     }
+    else if(slotType === "TRANSCEND.US_PHONE_NUMBER"){
+      // Ignore flags for now
+      if(matchStage === "FINAL"){
+        return recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString;
+      }
+      else {
+        return "((?:[-0-9a-zA-Z.()]|\\s)+)";
+      }
+    }
     else if(slotType === "TRANSCEND.FOUR_DIGIT_NUMBER"){
         // Ignore flags for now
       if(matchStage === "FINAL"){

@@ -1335,24 +1335,33 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         });
     });
-/*
+
     it("verify simple utterance with one TRANSCEND.US_PHONE_NUMBER slot matches", function() {
       let result = recognizer.Recognizer.matchText('my mobile number is (123) 456-7890');
       expect(result).to.eql(
-        {"name": "BlahIntent",
+        {"name": "UsPhoneNumberIntent",
           "slots": {
-            "BlahSlot": {
-              "name": "BlahSlot",
-              "value": "20000"
-            },
-            "BlehSlot": {
-              "name": "BlehSlot",
-              "value": "123456789"
+            "UsPhoneNumberSlot": {
+              "name": "UsPhoneNumberSlot",
+              "value": "1234567890"
             }
           }
         });
     });
- */
+
+    it("verify simple utterance with one TRANSCEND.US_PHONE_NUMBER slot matches", function() {
+      let result = recognizer.Recognizer.matchText('my mobile number is one twenty three four fifty six seventy eight ninety');
+      expect(result).to.eql(
+        {"name": "UsPhoneNumberIntent",
+          "slots": {
+            "UsPhoneNumberSlot": {
+              "name": "UsPhoneNumberSlot",
+              "value": "1234567890"
+            }
+          }
+        });
+    });
+
   });
   describe("Options List Matches", function() {
     it("verify AMAZON.DATE slot with two option lists and today matches and returns the correct value", function() {
