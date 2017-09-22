@@ -8163,7 +8163,12 @@
     {"name":"Lázaro Cárdenas Airport","alternativeNames":["Lazaro Cardenas Airport"],"priorNames":[],"country":"mexico","state":"Michoacán"},
     {"name":"Del Bajío International Airport","alternativeNames":["Del Bajio International Airport"],"priorNames":[],"country":"mexico","state":"Guanajuato"},
     {"name":"Loreto International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California Sur"},
-    {"name":"Los Cabos International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California Sur"}
+    {"name":"Los Cabos International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California Sur"},
+    {"name":"Federal del Valle del Fuerte International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sinaloa"},
+    {"name":"Playa de Oro International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Colima"},
+    {"name":"General Servando Canales International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Tamaulipas"},
+    {"name":"Engineer Manuel Moreno Torres National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"San Luis Potosí"},
+    {"name":"General Rafael Buelna International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sinaloa"}
 
   ]
 }
