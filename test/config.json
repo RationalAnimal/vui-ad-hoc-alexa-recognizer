@@ -32,7 +32,7 @@
 				"footwo",
 				"bartwo"
 			],
-			"transformBuiltInName": ["toUpperCase", "addParenthesis"]
+			"transformBuiltInName": ["toUpperCase", "addParentheses"]
 		},
 		{
 			"name": "MINIONS",
