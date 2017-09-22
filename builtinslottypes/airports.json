@@ -8168,7 +8168,11 @@
     {"name":"Playa de Oro International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Colima"},
     {"name":"General Servando Canales International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Tamaulipas"},
     {"name":"Engineer Manuel Moreno Torres National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"San Luis Potosí"},
-    {"name":"General Rafael Buelna International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sinaloa"}
+    {"name":"General Rafael Buelna International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sinaloa"},
+    {"name":"Manuel Crescencio Rejón International Airport","alternativeNames":["Manuel Crescencio Rejon International Airport"],"priorNames":[],"country":"mexico","state":"Yucatán"},
+    {"name":"General Rodolfo Sánchez Taboada International Airport","alternativeNames":["General Rodolfo Sanchez Taboada International Airport"],"priorNames":[],"country":"mexico","state":"Baja California"},
+    {"name":"Aeropuerto Internacional Benito Juárez","alternativeNames":["Aeropuerto Internacional Benito Juarez"],"priorNames":[],"country":"mexico","state":"Distrito Federal"},
+    {"name":"Minatitlán/Coatzacoalcos National Airport","alternativeNames":["Minatitlán Coatzacoalcos National Airport", "Minatitlan/Coatzacoalcos National Airport", "Minatitlan Coatzacoalcos National Airport"],"priorNames":[],"country":"mexico","state":"Veracruz"}
 
   ]
 }
