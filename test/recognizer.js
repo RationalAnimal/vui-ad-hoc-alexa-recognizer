@@ -2352,6 +2352,20 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
+    it("verify that an intent with a custom slot with a built in transform function will parse", function() {
+      let result = recognizer.Recognizer.matchText("this is bar");
+      expect(result).to.eql(
+        {
+          "name": "MeaninglessIntent",
+          "slots": {
+            "MeaninglessSlot": {
+              "name": "MeaninglessSlot",
+              "value": "BAR"
+            }
+          }
+        });
+    });
+
     it("verify that an intent with a custom slot with a transform function will parse", function() {
       let result = recognizer.Recognizer.matchText("First is star fruit and then there is petunia");
       expect(result).to.eql(
