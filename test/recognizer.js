@@ -2366,6 +2366,20 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
+    it("verify that an intent with a custom slot with chained built in transform functions will parse", function() {
+      let result = recognizer.Recognizer.matchText("this too is bartwo");
+      expect(result).to.eql(
+        {
+          "name": "MeaninglessTwoIntent",
+          "slots": {
+            "MeaninglessTwoSlot": {
+              "name": "MeaninglessTwoSlot",
+              "value": "[(BARTWO)]"
+            }
+          }
+        });
+    });
+
     it("verify that an intent with a custom slot with a transform function will parse", function() {
       let result = recognizer.Recognizer.matchText("First is star fruit and then there is petunia");
       expect(result).to.eql(
