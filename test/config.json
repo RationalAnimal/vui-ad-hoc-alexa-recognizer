@@ -27,6 +27,14 @@
 			"transformBuiltInName": "toUpperCase"
 		},
 		{
+			"name": "MEANINGLESSTWO",
+			"values": [
+				"footwo",
+				"bartwo"
+			],
+			"transformBuiltInName": ["toUpperCase", "addParenthesis"]
+		},
+		{
 			"name": "MINIONS",
 			"filename": "test/minions.txt"
 		},
