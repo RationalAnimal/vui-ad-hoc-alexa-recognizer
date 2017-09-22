@@ -1653,7 +1653,15 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType){
         for(let i = 0; i < config.builtInSlots.length; i++){
             let currentSlot = config.builtInSlots[i];
             if(currentSlot.name === slotType){
+              if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
                 return currentSlot.transformSrcFilename;
+              }
+              else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
+                return "./builtintransforms" + currentSlot.transformBuiltInName + ".js";
+              }
+              else {
+                return;
+              }
             }
         }
     }
