@@ -8180,7 +8180,11 @@
     {"name":"Mulegé National Airport","alternativeNames":["Mulege National Airport"],"priorNames":[],"country":"mexico","state":"Baja California Sur"},
     {"name":"Navojoa Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sonora"},
     {"name":"Nogales International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sonora"},
-    {"name":"Nuevo Casas Grandes Municipal Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Chihuahua"}
+    {"name":"Nuevo Casas Grandes Municipal Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Chihuahua"},
+    {"name":"Quetzalcóatl International Airport","alternativeNames":["Quetzalcóatl International Airport"],"priorNames":[],"country":"mexico","state":"Tamaulipas"},
+    {"name":"Xoxocotlán International Airport","alternativeNames":["Xoxocotlán International Airport"],"priorNames":[],"country":"mexico","state":"Oaxaca"},
+    {"name":"Ing. Juan Guillermo Villasana National Airport","alternativeNames":["Ing Juan Guillermo Villasana National Airport"],"priorNames":[],"country":"mexico","state":"Hidalgo"},
+    {"name":"Palenque International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Chiapas"}
 
   ]
 }
