@@ -1163,19 +1163,20 @@ var _getBuiltinSlotPlatform = function(slotName, platforms){
 var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, config, skipExtendedValues, skipRegeneratingRegExp, skipTransformFunctions){
     let slotConfig = _getBuiltInSlotConfig(config, slotType);
     if(typeof skipExtendedValues === "undefined" || skipExtendedValues !== true){
-        let extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
-        if(typeof extendedValues !== "undefined"){
-            recognizer.builtInValues[slotTypeVar].values = recognizer.builtInValues[slotTypeVar].values.concat(extendedValues);
-        }
+      let extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+      if(typeof extendedValues !== "undefined"){
+        recognizer.builtInValues[slotTypeVar].values = recognizer.builtInValues[slotTypeVar].values.concat(extendedValues);
+      }
     }
     if(typeof skipRegeneratingRegExp === "undefined" || skipRegeneratingRegExp !== true){
-        recognizer.builtInValues[slotTypeVar].replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues[slotTypeVar].values);
-        recognizer.builtInValues[slotTypeVar].replacementRegExp = new RegExp(recognizer.builtInValues[slotTypeVar].replacementRegExpString, "ig");
+      recognizer.builtInValues[slotTypeVar].replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues[slotTypeVar].values);
+      recognizer.builtInValues[slotTypeVar].replacementRegExp = new RegExp(recognizer.builtInValues[slotTypeVar].replacementRegExpString, "ig");
     }
     if(typeof skipTransformFunctions === "undefined" || skipTransformFunctions !== true){
-        if(typeof slotConfig !== "undefined" && slotConfig !== null){
-            recognizer.builtInValues.US_FIRST_NAME.transformSrcFilename = slotConfig.transformSrcFilename;
-        }
+      if(typeof slotConfig !== "undefined" && slotConfig !== null){
+        recognizer.builtInValues[slotTypeVar].transformSrcFilename = slotConfig.transformSrcFilename;
+        recognizer.builtInValues[slotTypeVar].transformBuiltInName = slotConfig.transformBuiltInName;
+      }
     }
 };
 
