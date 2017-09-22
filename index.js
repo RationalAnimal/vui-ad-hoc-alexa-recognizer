@@ -1498,6 +1498,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
       returnValue = transform(value, intent, slot);
     }
     catch(e){
+      console.log("got e while trying to load a transform function: ", e);
     }
   }
   return returnValue;
