@@ -8176,7 +8176,11 @@
     {"name":"Venustiano Carranza International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Coahuila"},
     {"name":"General Mariano Escobedo International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Nuevo León"},
     {"name":"Del Norte International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Nuevo León"},
-    {"name":"General Francisco J. Mujica International Airport","alternativeNames":["General Francisco J Mujica International Airport", "General Francisco Mujica International Airport"],"priorNames":[],"country":"mexico","state":"Michoacán"}
+    {"name":"General Francisco J. Mujica International Airport","alternativeNames":["General Francisco J Mujica International Airport", "General Francisco Mujica International Airport"],"priorNames":[],"country":"mexico","state":"Michoacán"},
+    {"name":"Mulegé National Airport","alternativeNames":["Mulege National Airport"],"priorNames":[],"country":"mexico","state":"Baja California Sur"},
+    {"name":"Navojoa Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sonora"},
+    {"name":"Nogales International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sonora"},
+    {"name":"Nuevo Casas Grandes Municipal Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Chihuahua"}
 
   ]
 }
