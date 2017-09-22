@@ -1494,8 +1494,16 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
   let transformFilename = _getSlotTransformSrcFilenameFromRecognizer(recognizerSet, intent, slot);
   if(typeof transformFilename !== "undefined"){
     try {
-      let transform = require(transformFilename);
-      returnValue = transform(value, intent, slot);
+      if(Array.isArray(transformFilename)){
+        for(let i = 0; i < transformFilename.length; i ++){
+          let transform = require(transformFilename[i]);
+          returnValue = transform(returnValue, intent, slot);
+        }
+      }
+      else {
+        let transform = require(transformFilename);
+        returnValue = transform(returnValue, intent, slot);
+      }
     }
     catch(e){
       console.log("got e while trying to load a transform function: ", e);

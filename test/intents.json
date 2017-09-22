@@ -45,6 +45,15 @@
       ]
     },
     {
+      "intent": "MeaninglessTwoIntent",
+      "slots": [
+        {
+          "name": "MeaninglessTwoSlot",
+          "type": "MEANINGLESSTWO"
+        }
+      ]
+    },
+    {
       "intent": "FourDigitIntent",
       "slots": [
         {

@@ -5,6 +5,7 @@ TestIntent	test pretty please
 TestIntent       test pleeeeeeease
 CustomRegExpIntent here is {CustomRegExpSlot} if you see it
 MeaninglessIntent this is {MeaninglessSlot}
+MeaninglessTwoIntent this too is {MeaninglessTwoSlot}
 UsPhoneNumberIntent my mobile number is {UsPhoneNumberSlot}
 PhoneNumberIntent my phone number is {PhoneNumberSlot}
 MinionIntent One of the minions is {MinionSlot:INCLUDE_WILDCARD_MATCH}
