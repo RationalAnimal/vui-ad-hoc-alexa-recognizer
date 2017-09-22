@@ -1657,7 +1657,7 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType){
                 return currentSlot.transformSrcFilename;
               }
               else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
-                return "./builtintransforms" + currentSlot.transformBuiltInName + ".js";
+                return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
               }
               else {
                 return;
@@ -1673,7 +1673,7 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType){
                 return currentSlot.transformSrcFilename;
               }
               else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
-                return "./builtintransforms" + currentSlot.transformBuiltInName + ".js";
+                return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
               }
               else {
                 return;
