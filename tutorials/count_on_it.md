@@ -32,7 +32,7 @@ Before we dive right into using this slot type, it's important to understand wha
 A number in vui-ad-hoc-alexa-recognizer is NOT what you would strictly consider a number in Mathematics.  A number, instead, is any continuous
 numeric or count input.  For instance "one two three" is considered a single number, rather than three separate consecutive numbers.
 There is a reason to this madness.  And that reason is that in chat bots and especially voice services the users will often either spell
-out a whole number digit by digit or by a group of digits.  For example, if you zip code is "12345" do you say
+out a whole number digit by digit or by a group of digits.  For example, if your zip code is "12345" do you say
 "my zip code is twelve thousand three hundred forty five"? No, you don't.  You say "my zip code is one two three four five".
 Or for a phone number, if your phone number is "(123) 456-7890" you might say "my phone number is one two three four fifty six seventy eight ninety".
 So, vui-ad-hoc-alexa-recognizer will do its best to string these together to form a single number.
