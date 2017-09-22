@@ -19,6 +19,8 @@ prompt> npm init
 
 Note: if you don't want to type in all the source code, you don't have to.  This tutorial is available as an npm module.  Simply load the module, then copy all the files to your current directory:
 
+*the earlier version of this module had a bug, but it should be working now*
+
 {% highlight shell %}
 prompt> npm install --save tui-letstalk
 prompt> cp node_modules/tui-letstalk/* .
