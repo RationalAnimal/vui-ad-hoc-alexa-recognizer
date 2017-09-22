@@ -36,6 +36,8 @@ At the beginning we'll have the usual:
 {% highlight javascript %}
 'use strict'
 let vui = require("vui-ad-hoc-alexa-recognizer");
+// Now load and parse the recognizer.json file
+let recognizer = require('./recognizer.json');
 {% endhighlight %}
 
 Now we need a way to read user input:
@@ -55,7 +57,7 @@ Now we are ready for the actual "chat botty" portion.  We'll put it into a recur
 {% highlight javascript %}
 let recursiveUserInput = function (){
   rl.question('Please type something: ', function (answer) {
-    let result = vui.Recognizer.matchText(answer);
+    let result = vui.Recognizer.matchText(answer, undefined, undefined, recognizer);
     if(typeof result === "undefined"){
       console.log("Sorry, I didn't understand you.  Please try again");
     }
@@ -104,6 +106,9 @@ let state = {};
 
 let vui = require("vui-ad-hoc-alexa-recognizer");
 
+// Now load and parse the recognizer.json file
+let recognizer = require('./recognizer.json');
+
 // Needed to read user input
 const readline = require('readline');
 const rl = readline.createInterface({
@@ -116,7 +121,7 @@ let recursiveUserInput = function (){
     if (answer === 'EXIT'){
       return rl.close();
     }
-    let result = vui.Recognizer.matchText(answer);
+    let result = vui.Recognizer.matchText(answer, undefined, undefined, recognizer);
     if(typeof result === "undefined"){
       console.log("Sorry, I didn't understand you.  Please try again");
     }
