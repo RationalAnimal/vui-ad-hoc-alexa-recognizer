@@ -8184,7 +8184,11 @@
     {"name":"Quetzalcóatl International Airport","alternativeNames":["Quetzalcóatl International Airport"],"priorNames":[],"country":"mexico","state":"Tamaulipas"},
     {"name":"Xoxocotlán International Airport","alternativeNames":["Xoxocotlán International Airport"],"priorNames":[],"country":"mexico","state":"Oaxaca"},
     {"name":"Ing. Juan Guillermo Villasana National Airport","alternativeNames":["Ing Juan Guillermo Villasana National Airport"],"priorNames":[],"country":"mexico","state":"Hidalgo"},
-    {"name":"Palenque International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Chiapas"}
+    {"name":"Palenque International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Chiapas"},
+    {"name":"León Gonzalez Pie de la Cuesta Air Force Base Num 7","alternativeNames":["Leon Gonzalez Pie de la Cuesta Air Force Base Num 7"],"priorNames":[],"country":"mexico","state":"Guerrero"},
+    {"name":"Piedras Negras International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Coahuila"},
+    {"name":"Playa del Carmen National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Quintana Roo"},
+    {"name":"El Tajín National Airport","alternativeNames":["El Tajin National Airport"],"priorNames":[],"country":"mexico","state":"Veracruz"}
 
   ]
 }
