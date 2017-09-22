@@ -866,6 +866,8 @@ values.  If you actually do have a need for them, you have two options:
 
 ### Transform functions
 
+#### Custom transform functions
+
 You can transform matched values before returning them.  You do this by specifying
 transform functions in the config file, here are examples for the built in and
 custom slot types:
@@ -928,6 +930,22 @@ This will only solve half a problem.  Once you match it and send it to your Alex
 backend, it will choke on this.  So, you can add a transform function to map
 "the duck tibble" to "deductible" before sending it off to Alexa backend.
 
+#### Built in transform functions
+
+In addition to being able to write your own custom transform functions you can also use some built in ones.  You can
+see the currently available ones in the builtintransforms directory.
+To use them, specify "transformBuiltInName" member instead of the "transformSrcFilename":
+
+```json
+{
+  "name": "MEANINGLESS",
+  "values": [
+    "foo",
+    "bar"
+  ],
+  "transformBuiltInName": "toUpperCase"
+}
+```
 ### Dollar values
 
 If a service like Cortana passes a dollar value, e.g. $1000, it will be mapped
