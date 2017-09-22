@@ -8188,7 +8188,11 @@
     {"name":"León Gonzalez Pie de la Cuesta Air Force Base Num 7","alternativeNames":["Leon Gonzalez Pie de la Cuesta Air Force Base Num 7"],"priorNames":[],"country":"mexico","state":"Guerrero"},
     {"name":"Piedras Negras International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Coahuila"},
     {"name":"Playa del Carmen National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Quintana Roo"},
-    {"name":"El Tajín National Airport","alternativeNames":["El Tajin National Airport"],"priorNames":[],"country":"mexico","state":"Veracruz"}
+    {"name":"El Tajín National Airport","alternativeNames":["El Tajin National Airport"],"priorNames":[],"country":"mexico","state":"Veracruz"},
+    {"name":"Hermanos Serdán International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Puebla"},
+    {"name":"Puerto Escondido International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Oaxaca"},
+    {"name":"Puerto Peñasco International Airport","alternativeNames":["Puerto Penasco International Airport"],"priorNames":[],"country":"mexico","state":"Sonora"},
+    {"name":"Lic. Gustavo Díaz Ordaz International Airport","alternativeNames":["Lic Gustavo Díaz Ordaz International Airport"],"priorNames":[],"country":"mexico","state":"Jalisco"}
 
   ]
 }
