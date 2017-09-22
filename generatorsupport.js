@@ -1657,7 +1657,21 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType){
                 return currentSlot.transformSrcFilename;
               }
               else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
-                return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
+                if(typeof currentSlot.transformBuiltInName === "string"){
+                  // No need to treat arrays specially since we are not reconstructing individual names
+                  return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
+                }
+                else if(Array.isArray(currentSlot.transformBuiltInName)){
+                  let returnValue = [];
+                  for(let j = 0; j < currentSlot.transformBuiltInName.length; j++){
+                    returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
+                  }
+                  return returnValue;
+                }
+                else {
+                  // An error in configuration?
+                  return;
+                }
               }
               else {
                 return;
