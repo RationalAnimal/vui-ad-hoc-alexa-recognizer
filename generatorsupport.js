@@ -1654,11 +1654,11 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType){
             let currentSlot = config.builtInSlots[i];
             if(currentSlot.name === slotType){
               if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
+                // No need to treat arrays specially since we are not reconstructing individual names
                 return currentSlot.transformSrcFilename;
               }
               else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
                 if(typeof currentSlot.transformBuiltInName === "string"){
-                  // No need to treat arrays specially since we are not reconstructing individual names
                   return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
                 }
                 else if(Array.isArray(currentSlot.transformBuiltInName)){
@@ -1684,10 +1684,24 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType){
             let currentSlot = config.customSlotTypes[i];
             if(currentSlot.name === slotType){
               if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
+                // No need to treat arrays specially since we are not reconstructing individual names
                 return currentSlot.transformSrcFilename;
               }
               else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
-                return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
+                if(typeof currentSlot.transformBuiltInName === "string"){
+                  return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
+                }
+                else if(Array.isArray(currentSlot.transformBuiltInName)){
+                  let returnValue = [];
+                  for(let j = 0; j < currentSlot.transformBuiltInName.length; j++){
+                    returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
+                  }
+                  return returnValue;
+                }
+                else {
+                  // An error in configuration?
+                  return;
+                }
               }
               else {
                 return;
