@@ -1,5 +1,8 @@
 'use strict'
-module.exports = function(value, intentName, slotName){
+module.exports = function(value, intentName, slotName, slotType){
+	if(slotType !== "TRANSCEND.US_PHONE_NUMBER"){
+		return value;
+	}
 	if(typeof value != "undefined" && value != null){
 		let returnValue = "(";
 		returnValue += value.substring(0,3);
