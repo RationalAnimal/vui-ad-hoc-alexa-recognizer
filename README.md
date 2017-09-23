@@ -874,27 +874,27 @@ custom slot types:
 
 ```json
 {
-	"customSlotTypes":[
-		{
-			"name": "SOME",
-			"values": [
-				"apple",
-				"star fruit",
-				"pear",
-				"orange"
-			],
-			"transformSrcFilename": "./test/transformSome.js"			
-		}
-	],
-	"builtInSlots": [
-		{
-			"name": "AMAZON.US_STATE",
-			"transformSrcFilename": "./test/transformUsState.js"
-		},
+  "customSlotTypes":[
     {
-			"name": "AMAZON.Month",
-			"transformSrcFilename": "./test/transformFirstWordTitleCase.js.js"
-		}
+      "name": "SOME",
+      "values": [
+        "apple",
+        "star fruit",
+        "pear",
+        "orange"
+      ],
+      "transformSrcFilename": "./test/transformSome.js"			
+    }
+  ],
+  "builtInSlots": [
+    {
+      "name": "AMAZON.US_STATE",
+      "transformSrcFilename": "./test/transformUsState.js"
+    },
+    {
+      "name": "AMAZON.Month",
+      "transformSrcFilename": "./test/transformFirstWordTitleCase.js.js"
+    }
   ]
 }
 ```
@@ -930,6 +930,17 @@ This will only solve half a problem.  Once you match it and send it to your Alex
 backend, it will choke on this.  So, you can add a transform function to map
 "the duck tibble" to "deductible" before sending it off to Alexa backend.
 
+When you write a custom transform function be aware that it has this signature:
+
+```javascript
+function(value, intentName, slotName, slotType)
+```
+
+And that it returns a transformed value (or undefined if the input value is undefined or null).
+You can use the other arguments to change how your function may transform the matched value.
+For example, you may specify a particular transform function of a slot type, but you may check within your function
+that the slot name equals a particular slot name and change the transformation.
+
 #### Built in transform functions
 
 In addition to being able to write your own custom transform functions you can also use some built in ones.  You can
@@ -946,6 +957,24 @@ To use them, specify "transformBuiltInName" member instead of the "transformSrcF
   "transformBuiltInName": "toUpperCase"
 }
 ```
+
+#### Chaining transform functions
+
+Both custom and built in transform functions can be chained simply by specifying an array instead of a single value in
+the configuration file, for example:
+
+```json
+{
+  "name": "MEANINGLESS",
+  "values": [
+    "foo",
+    "bar"
+  ],
+  "transformBuiltInName": ["toUpperCase", "addParentheses", "addSquareBrackets"]
+}
+```
+
+
 ### Dollar values
 
 If a service like Cortana passes a dollar value, e.g. $1000, it will be mapped
