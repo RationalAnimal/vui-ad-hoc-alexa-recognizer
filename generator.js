@@ -25,6 +25,7 @@ SOFTWARE.
 */
 'use strict'
 var fs = require('fs');
+var path = require('path');
 var readline = require('readline');
 var recognizer = require('./generatorsupport.js');
 var utilities = require('./utilities.js')
@@ -52,8 +53,10 @@ for(var i = 2; i < process.argv.length - 1; i += 2){
   if(process.argv[i] == "-c" || process.argv[i] == "--config"){
     var configFileName = process.argv[j];
   }
-  else if(process.argv[i] == "-s" || process.argv[i] == "--sourcebase"){
+  else if(process.argv[i] == "--sourcebase"){
     var baseSourceDirectory = process.argv[j];
+    var resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
+//    console.log("typeof resolvedBaseDir: " + (typeof resolvedBaseDir) + ", resolvedBaseDir: " + resolvedBaseDir);
   }
   else if(process.argv[i] == "-i" || process.argv[i] == "--intents"){
     var intentsFileName = process.argv[j];
@@ -104,20 +107,26 @@ if(typeof configFileName == "undefined"){
   config = defaultCortanaConfig;
 }
 else {
+  // compute actual config file name when combined with base source directory
+  if(typeof resolvedBaseDir === "string"){
+    var resolvedConfigFileName = path.join(resolvedBaseDir, configFileName);
+//    console.log("resolvedConfigFileName 1: " + resolvedConfigFileName);
+  }
+  else {
+    var resolvedConfigFileName = path.resolve(configFileName);
+//    console.log("resolvedConfigFileName 2: " + resolvedConfigFileName);
+  }
+
   try {
-    config = require(configFileName);
+    config = require(resolvedConfigFileName);
   }
   catch(e){
-    try{
-      config = require("./" + configFileName);
-    }
-    catch(e2){
-      console.log("Unable to load Configuration file.");
-      usage();
-      process.exit(1);
-    }
+    console.log("Unable to load Configuration file.");
+    usage();
+    process.exit(1);
   }
 }
+
 var intents = [];
 if(typeof intentsFileName != "undefined"){
   try {
