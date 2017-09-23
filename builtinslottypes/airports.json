@@ -8215,7 +8215,12 @@
     {"name":"Cupul National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Yucatán"},
     {"name":"Lic. Adolfo López Mateos International Airport","alternativeNames":["Lic Adolfo López Mateos International Airport",
       "Lic. Adolfo Lopez Mateos International Airport", "Lic Adolfo Lopez Mateos International Airport"],"priorNames":[],"country":"mexico","state":"State of Mexico"},
-    {"name":"Francisco Sarabia International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Coahuila"}
+    {"name":"Francisco Sarabia International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Coahuila"},
+    {"name":"Tulum Naval Air Station","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Quintana Roo"},
+    {"name":"Zapotiltic National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Jalisco"},
+    {"name":"Angel Albino Corzo International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Chiapas"},
+    {"name":"Terán Air Force Base Num 6","alternativeNames":["Teran Air Force Base Num 6"],"priorNames":[],"country":"mexico","state":"Chiapas"},
+    {"name":"Uruapan International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Michoacán"}
 
   ]
 }
