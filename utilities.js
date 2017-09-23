@@ -28,9 +28,7 @@ var fs = require('fs');
 var path = require('path');
 
 var utilities = {};
-utilities.loadStringListFromFile = function(fileName, resolvedBaseDir){
-  var fileExist = false;
-  // compute actual file name when combined with base source directory
+utilities.resolveFileName = function(fileName, resolvedBaseDir){
   let resolvedFileName = fileName;
   if(typeof resolvedBaseDir === "string"){
     resolvedFileName = path.join(resolvedBaseDir, fileName);
@@ -38,6 +36,13 @@ utilities.loadStringListFromFile = function(fileName, resolvedBaseDir){
   else {
     resolvedFileName = path.resolve(fileName);
   }
+  return resolvedFileName;
+};
+
+utilities.loadStringListFromFile = function(fileName, resolvedBaseDir){
+  var fileExist = false;
+  // compute actual file name when combined with base source directory
+  let resolvedFileName = this.resolveFileName(fileName, resolvedBaseDir);
 
   if (fs.existsSync(resolvedFileName)) {
     // The file name exists and is complete
