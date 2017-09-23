@@ -2374,7 +2374,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           "slots": {
             "MeaninglessTwoSlot": {
               "name": "MeaninglessTwoSlot",
-              "value": "[(BARTWO)]"
+              "value": "<[(BARTWO)]>"
             }
           }
         });
