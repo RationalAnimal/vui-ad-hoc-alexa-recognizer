@@ -129,14 +129,14 @@ else {
 
 var intents = [];
 if(typeof intentsFileName !== "undefined"){
-  // compute actual config file name when combined with base source directory
+  // compute actual intents file name when combined with base source directory
   if(typeof resolvedBaseDir === "string"){
     var resolvedIntentsFileName = path.join(resolvedBaseDir, intentsFileName);
-//    console.log("resolvedIntentsFileName 1: " + resolvedConfigFileName);
+//    console.log("resolvedIntentsFileName 1: " + resolvedIntentsFileName);
   }
   else {
     var resolvedIntentsFileName = path.resolve(intentsFileName);
-//    console.log("resolvedIntentsFileName 2: " + resolvedConfigFileName);
+//    console.log("resolvedIntentsFileName 2: " + resolvedIntentsFileName);
   }
 
   try {
@@ -187,7 +187,17 @@ if(Array.isArray(config.customSlotTypes)){
 
 var resultJson;
 if(typeof utterancesFileName !== "undefined"){
-  utterances = utilities.loadStringListFromFile(utterancesFileName);
+  // compute actual utterances file name when combined with base source directory
+  if(typeof resolvedBaseDir === "string"){
+    var resolvedUtterancesFileName = path.join(resolvedBaseDir, utterancesFileName);
+//    console.log("resolvedUtterancesFileName 1: " + resolvedUtterancesFileName);
+  }
+  else {
+    var resolvedUtterancesFileName = path.resolve(utterancesFileName);
+//    console.log("resolvedUtterancesFileName 2: " + resolvedUtterancesFileName);
+  }
+
+  utterances = utilities.loadStringListFromFile(resolvedUtterancesFileName);
 }
 if(typeof interactionModel !== "undefined"){
   // Get the info from interactionModel
