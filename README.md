@@ -943,7 +943,20 @@ that the slot name equals a particular slot name and change the transformation.
 
 #### Built in transform functions
 
-In addition to being able to write your own custom transform functions you can also use some built in ones.  You can
+In addition to being able to write your own custom transform functions you can also use some built in ones.
+The current list is:
+
+```text
+addAngleBrackets - surrounds the matched value with <>
+addParentheses - surrounds the matched value with ()
+addSquareBrackets - surrounds the matched value with []
+formatAsUsPhoneNumber1 - formats TRANSCEND.US_PHONE_NUMBER matched value as (111) 111-1111
+formatAsUsPhoneNumber2 - formats TRANSCEND.US_PHONE_NUMBER matched value as 111.111.1111
+toLowerCase - converts the matched value to lower case
+toUpperCase - converts the matched value to upper case
+```
+
+You can also
 see the currently available ones in the builtintransforms directory.
 To use them, specify "transformBuiltInName" member instead of the "transformSrcFilename":
 
