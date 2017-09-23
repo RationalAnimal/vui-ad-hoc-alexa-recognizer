@@ -25,7 +25,6 @@ SOFTWARE.
 */
 'use strict'
 var fs = require('fs');
-var path = require('path');
 var readline = require('readline');
 var recognizer = require('./generatorsupport.js');
 var utilities = require('./utilities.js')
@@ -108,12 +107,7 @@ if(typeof configFileName === "undefined"){
 }
 else {
   // compute actual config file name when combined with base source directory
-  if(typeof resolvedBaseDir === "string"){
-    var resolvedConfigFileName = path.join(resolvedBaseDir, configFileName);
-  }
-  else {
-    var resolvedConfigFileName = path.resolve(configFileName);
-  }
+  var resolvedConfigFileName = utilities.resolveFileName(configFileName, resolvedBaseDir);
 
   try {
     config = require(resolvedConfigFileName);
@@ -128,12 +122,7 @@ else {
 var intents = [];
 if(typeof intentsFileName !== "undefined"){
   // compute actual intents file name when combined with base source directory
-  if(typeof resolvedBaseDir === "string"){
-    var resolvedIntentsFileName = path.join(resolvedBaseDir, intentsFileName);
-  }
-  else {
-    var resolvedIntentsFileName = path.resolve(intentsFileName);
-  }
+  var resolvedIntentsFileName = utilities.resolveFileName(intentsFileName, resolvedBaseDir);
 
   try {
     intents = require(resolvedIntentsFileName);
