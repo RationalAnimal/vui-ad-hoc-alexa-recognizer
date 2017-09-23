@@ -8196,7 +8196,11 @@
     {"name":"Querétaro International Airport","alternativeNames":["Queretaro International Airport"],"priorNames":[],"country":"mexico","state":"Querétaro"},
     {"name":"General Lucio Blanco International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Tamaulipas"},
     {"name":"Salina Cruz Naval Air Station","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Oaxaca"},
-    {"name":"Plan de Guadalupe International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Coahuila"}
+    {"name":"Plan de Guadalupe International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Coahuila"},
+    {"name":"San Cristóbal de las Casas National Airport","alternativeNames":["San Cristobal de las Casas National Airport"],"priorNames":[],"country":"mexico","state":"Chiapas"},
+    {"name":"San Felipe International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California"},
+    {"name":"Ponciano Arriaga International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"San Luis Potosí"},
+    {"name":"San Luis Río Colorado Airport","alternativeNames":["San Luis Rio Colorado Airport"],"priorNames":[],"country":"mexico","state":"Sonora"}
 
   ]
 }
