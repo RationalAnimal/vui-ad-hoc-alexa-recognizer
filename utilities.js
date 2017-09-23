@@ -29,6 +29,9 @@ var path = require('path');
 
 var utilities = {};
 utilities.resolveFileName = function(fileName, resolvedBaseDir){
+  if(typeof fileName === "undefined" || fileName === null){
+    return;
+  }
   let resolvedFileName = fileName;
   if(typeof resolvedBaseDir === "string"){
     resolvedFileName = path.join(resolvedBaseDir, fileName);
@@ -68,6 +71,6 @@ utilities.loadStringListFromFile = function(fileName, resolvedBaseDir){
     return result;
   }
   return; // nothing
-}
+};
 
 module.exports = utilities;
