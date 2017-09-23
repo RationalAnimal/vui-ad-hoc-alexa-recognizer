@@ -8204,7 +8204,11 @@
     {"name":"Santa Lucía Air Force Base Num 1","alternativeNames":[],"priorNames":[],"country":"mexico","state":"State of Mexico"},
     {"name":"Palo Verde Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California Sur"},
     {"name":"General Francisco Javier Mina International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Tamaulipas"},
-    {"name":"Tamuín National Airport","alternativeNames":["Tamuin National Airport"],"priorNames":[],"country":"mexico","state":"San Luis Potosí"}
+    {"name":"Tamuín National Airport","alternativeNames":["Tamuin National Airport"],"priorNames":[],"country":"mexico","state":"San Luis Potosí"},
+    {"name":"Tapachula International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Chiapas"},
+    {"name":"Teacapan Naval Air Station","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sinaloa"},
+    {"name":"Tehuacán National Airport","alternativeNames":["Tehuacan National Airport"],"priorNames":[],"country":"mexico","state":"Puebla"},
+    {"name":"Amado Nervo National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Nayarit"}
 
   ]
 }
