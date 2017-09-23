@@ -25,23 +25,28 @@ SOFTWARE.
 */
 'use strict'
 var fs = require('fs');
+var path = require('path');
 
 var utilities = {};
-utilities.loadStringListFromFile = function(fileName){
+utilities.loadStringListFromFile = function(fileName, resolvedBaseDir){
   var fileExist = false;
-  if (fs.existsSync(fileName)) {
-    // The file name exists and is complete
-    fileExist = true;
+  // compute actual file name when combined with base source directory
+  let resolvedFileName = fileName;
+  if(typeof resolvedBaseDir === "string"){
+    resolvedFileName = path.join(resolvedBaseDir, fileName);
   }
-  else if(fs.existsSync("./" + fileName)){
-    // Need to prepend "./"
-    fileName = "./" + fileName;
+  else {
+    resolvedFileName = path.resolve(fileName);
+  }
+
+  if (fs.existsSync(resolvedFileName)) {
+    // The file name exists and is complete
     fileExist = true;
   }
   if(fileExist == true){
     // TODO replace with a lean solution that doesn't have to read the whole file
     // at once
-    var lines = fs.readFileSync(fileName, 'utf-8')
+    var lines = fs.readFileSync(resolvedFileName, 'utf-8')
     .split(/\n\r|\n|\r/);
 //    console.log("Loaded lines from file: " + JSON.stringify(lines, null, 2))
     var result = [];

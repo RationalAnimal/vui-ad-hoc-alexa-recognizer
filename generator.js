@@ -110,11 +110,9 @@ else {
   // compute actual config file name when combined with base source directory
   if(typeof resolvedBaseDir === "string"){
     var resolvedConfigFileName = path.join(resolvedBaseDir, configFileName);
-//    console.log("resolvedConfigFileName 1: " + resolvedConfigFileName);
   }
   else {
     var resolvedConfigFileName = path.resolve(configFileName);
-//    console.log("resolvedConfigFileName 2: " + resolvedConfigFileName);
   }
 
   try {
@@ -132,11 +130,9 @@ if(typeof intentsFileName !== "undefined"){
   // compute actual intents file name when combined with base source directory
   if(typeof resolvedBaseDir === "string"){
     var resolvedIntentsFileName = path.join(resolvedBaseDir, intentsFileName);
-//    console.log("resolvedIntentsFileName 1: " + resolvedIntentsFileName);
   }
   else {
     var resolvedIntentsFileName = path.resolve(intentsFileName);
-//    console.log("resolvedIntentsFileName 2: " + resolvedIntentsFileName);
   }
 
   try {
@@ -151,7 +147,7 @@ if(typeof intentsFileName !== "undefined"){
 
 var utterances = [];
 var doTheProcessing = function(){
-  return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances, optimizations);
+  return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances, optimizations, resolvedBaseDir);
 }
 var _done = function(json){
   console.log(JSON.stringify(resultJson, null, 2));
@@ -164,7 +160,7 @@ if(Array.isArray(config.customSlotTypes)){
   for(let i = 0; i < config.customSlotTypes.length; i++){
     let customSlotType = config.customSlotTypes[i];
     if(typeof customSlotType.filename !== "undefined"){
-      let values = utilities.loadStringListFromFile(customSlotType.filename);
+      let values = utilities.loadStringListFromFile(customSlotType.filename, resolvedBaseDir);
       if(typeof values !== "undefined"){
         if(typeof customSlotType.values !== "undefined"){
           for(let j = 0; j < values.length; j++){
@@ -187,17 +183,7 @@ if(Array.isArray(config.customSlotTypes)){
 
 var resultJson;
 if(typeof utterancesFileName !== "undefined"){
-  // compute actual utterances file name when combined with base source directory
-  if(typeof resolvedBaseDir === "string"){
-    var resolvedUtterancesFileName = path.join(resolvedBaseDir, utterancesFileName);
-//    console.log("resolvedUtterancesFileName 1: " + resolvedUtterancesFileName);
-  }
-  else {
-    var resolvedUtterancesFileName = path.resolve(utterancesFileName);
-//    console.log("resolvedUtterancesFileName 2: " + resolvedUtterancesFileName);
-  }
-
-  utterances = utilities.loadStringListFromFile(resolvedUtterancesFileName);
+  utterances = utilities.loadStringListFromFile(utterancesFileName, resolvedBaseDir);
 }
 if(typeof interactionModel !== "undefined"){
   // Get the info from interactionModel
