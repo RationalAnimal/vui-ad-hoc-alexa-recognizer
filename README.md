@@ -952,6 +952,7 @@ addParentheses - surrounds the matched value with ()
 addSquareBrackets - surrounds the matched value with []
 formatAsUsPhoneNumber1 - formats TRANSCEND.US_PHONE_NUMBER matched value as (111) 111-1111
 formatAsUsPhoneNumber2 - formats TRANSCEND.US_PHONE_NUMBER matched value as 111.111.1111
+formatAsUsPhoneNumber3 - formats TRANSCEND.US_PHONE_NUMBER matched value as 111 111 1111
 toLowerCase - converts the matched value to lower case
 toUpperCase - converts the matched value to upper case
 ```
