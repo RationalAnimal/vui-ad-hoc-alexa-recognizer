@@ -1497,12 +1497,12 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
       if(Array.isArray(transformFilename)){
         for(let i = 0; i < transformFilename.length; i ++){
           let transform = require(transformFilename[i]);
-          returnValue = transform(returnValue, intent, slot);
+          returnValue = transform(returnValue, intent, slot, slotType);
         }
       }
       else {
         let transform = require(transformFilename);
-        returnValue = transform(returnValue, intent, slot);
+        returnValue = transform(returnValue, intent, slot, slotType);
       }
     }
     catch(e){
