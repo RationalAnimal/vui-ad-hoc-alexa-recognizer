@@ -25,6 +25,7 @@
  */
 'use strict';
 var fs = require('fs');
+let path = require('path');
 var soundex = require('./soundex.js');
 var utilities = require('./utilities.js');
 var parser = require('./parseutterance.js');
@@ -1174,7 +1175,11 @@ var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, con
     }
     if(typeof skipTransformFunctions === "undefined" || skipTransformFunctions !== true){
       if(typeof slotConfig !== "undefined" && slotConfig !== null){
-        recognizer.builtInValues[slotTypeVar].transformSrcFilename = slotConfig.transformSrcFilename;
+        let resolvedTransformSrcFilename = slotConfig.transformSrcFilename;
+        if(typeof slotConfig.transformSrcFilename === "string"){
+          utilities.resolveFileName(slotConfig.transformSrcFilename, resolvedBaseDir);
+        }
+        recognizer.builtInValues[slotTypeVar].transformSrcFilename = resolvedTransformSrcFilename;
         recognizer.builtInValues[slotTypeVar].transformBuiltInName = slotConfig.transformBuiltInName;
       }
     }
