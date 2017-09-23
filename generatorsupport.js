@@ -1174,11 +1174,16 @@ var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, con
     }
     if(typeof skipTransformFunctions === "undefined" || skipTransformFunctions !== true){
       if(typeof slotConfig !== "undefined" && slotConfig !== null){
-        let resolvedTransformSrcFilename = slotConfig.transformSrcFilename;
         if(typeof slotConfig.transformSrcFilename === "string"){
-          utilities.resolveFileName(slotConfig.transformSrcFilename, resolvedBaseDir);
+          recognizer.builtInValues[slotTypeVar].transformSrcFilename = utilities.resolveFileName(slotConfig.transformSrcFilename, resolvedBaseDir);
         }
-        recognizer.builtInValues[slotTypeVar].transformSrcFilename = resolvedTransformSrcFilename;
+        else if(Array.isArray(slotConfig.transformSrcFilename)){
+          let resolvedArray = [];
+          for(let i = 0; i < slotConfig.transformSrcFilename.length; i ++){
+            resolvedArray.push(utilities.resolveFileName(slotConfig.transformSrcFilename[i], resolvedBaseDir))
+          }
+          recognizer.builtInValues[slotTypeVar].transformSrcFilename = resolvedArray;
+        }
         recognizer.builtInValues[slotTypeVar].transformBuiltInName = slotConfig.transformBuiltInName;
       }
     }
@@ -1360,7 +1365,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 builtInSlotTypesUsedByUtterances.push(translatedSlotType);
             }
             let slotToPush = {"name": parsedSlot.name, "type": parsedSlot.slotType, "flags": parsedSlot.flags};
-            let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, parsedSlot.slotType);
+            let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, parsedSlot.slotType, resolvedBaseDir);
             if(typeof slotTypeTransformSrcFilename !== "undefined"){
                 slotToPush.transformSrcFilename = slotTypeTransformSrcFilename;
             }
@@ -1653,14 +1658,26 @@ var _getBuiltInSlotConfig = function(config, slotName){
     // Nothing found - return undefined
 };
 
-var _getSlotTypeTransformSrcFilename = function(config, slotType){
+var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBaseDir){
     if(typeof config.builtInSlots !== "undefined" && Array.isArray(config.builtInSlots)){
         for(let i = 0; i < config.builtInSlots.length; i++){
             let currentSlot = config.builtInSlots[i];
             if(currentSlot.name === slotType){
               if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
-                // No need to treat arrays specially since we are not reconstructing individual names
-                return currentSlot.transformSrcFilename;
+                if(typeof currentSlot.transformSrcFilename === 'string'){
+                  return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBaseDir);
+                }
+                else if(Array.isArray(currentSlot.transformSrcFilename)){
+                  let returnValue = [];
+                  for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
+                    returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBaseDir));
+                  }
+                  return returnValue;
+                }
+                else {
+                  // An error in configuration?
+                  return;
+                }
               }
               else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
                 if(typeof currentSlot.transformBuiltInName === "string"){
@@ -1689,8 +1706,20 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType){
             let currentSlot = config.customSlotTypes[i];
             if(currentSlot.name === slotType){
               if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
-                // No need to treat arrays specially since we are not reconstructing individual names
-                return currentSlot.transformSrcFilename;
+                if(typeof currentSlot.transformSrcFilename === 'string'){
+                  return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBaseDir);
+                }
+                else if(Array.isArray(currentSlot.transformSrcFilename)){
+                  let returnValue = [];
+                  for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
+                    returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBaseDir));
+                  }
+                  return returnValue;
+                }
+                else {
+                  // An error in configuration?
+                  return;
+                }
               }
               else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
                 if(typeof currentSlot.transformBuiltInName === "string"){
