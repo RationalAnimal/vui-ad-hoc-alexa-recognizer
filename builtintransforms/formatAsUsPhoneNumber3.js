@@ -1,7 +1,7 @@
 'use strict'
 /**
  * Format a 10 digit phone number like this:
- * 111 1111111
+ * 111 111 1111
  * @param value - the phone number to format
  * @param intentName - the intent name, ignored here since this is a built in transform function.
  * @param slotName - the slot name, ignored here since this is a built in transform function.
