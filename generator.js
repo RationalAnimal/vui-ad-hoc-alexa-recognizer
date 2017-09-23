@@ -50,21 +50,21 @@ var usage = function(){
 var optimizations = {"multistage": true};
 for(var i = 2; i < process.argv.length - 1; i += 2){
   var j = i + 1;
-  if(process.argv[i] == "-c" || process.argv[i] == "--config"){
+  if(process.argv[i] === "-c" || process.argv[i] === "--config"){
     var configFileName = process.argv[j];
   }
-  else if(process.argv[i] == "--sourcebase"){
+  else if(process.argv[i] === "--sourcebase"){
     var baseSourceDirectory = process.argv[j];
     var resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
 //    console.log("typeof resolvedBaseDir: " + (typeof resolvedBaseDir) + ", resolvedBaseDir: " + resolvedBaseDir);
   }
-  else if(process.argv[i] == "-i" || process.argv[i] == "--intents"){
+  else if(process.argv[i] === "-i" || process.argv[i] === "--intents"){
     var intentsFileName = process.argv[j];
   }
-  else if(process.argv[i] == "-u" || process.argv[i] == "--utterances"){
+  else if(process.argv[i] === "-u" || process.argv[i] === "--utterances"){
     var utterancesFileName = process.argv[j];
   }
-  else if(process.argv[i] == "--interactionmodel"){
+  else if(process.argv[i] === "--interactionmodel"){
     var interactionModelFileName = process.argv[j];
   }
   else if(process.argv[i] === "--optimizations" && process.argv[j] === 'SINGLE-STAGE'){
@@ -72,20 +72,20 @@ for(var i = 2; i < process.argv.length - 1; i += 2){
   }
 }
 
-if(typeof interactionModelFileName != "undefined" && (typeof utterancesFileName != "undefined" || typeof intentsFileName != "undefined")){
+if(typeof interactionModelFileName !== "undefined" && (typeof utterancesFileName !== "undefined" || typeof intentsFileName !== "undefined")){
   console.log("Must use either --interactionmodel argument OR the pair of --intents and --utterances, but NOT both.");
   usage();
   process.exit(1);
 }
 
-if(typeof interactionModelFileName == "undefined" && typeof intentsFileName == "undefined"){
+if(typeof interactionModelFileName === "undefined" && typeof intentsFileName === "undefined"){
   console.log("Must use either --interactionmodel argument or --intents argument.");
   usage();
   process.exit(1);
 }
 
 var interactionModel;
-if(typeof interactionModelFileName != "undefined"){
+if(typeof interactionModelFileName !== "undefined"){
   try {
     interactionModel = require(interactionModelFileName);
   }
@@ -103,7 +103,7 @@ if(typeof interactionModelFileName != "undefined"){
 }
 
 var config;
-if(typeof configFileName == "undefined"){
+if(typeof configFileName === "undefined"){
   config = defaultCortanaConfig;
 }
 else {
@@ -128,13 +128,13 @@ else {
 }
 
 var intents = [];
-if(typeof intentsFileName != "undefined"){
+if(typeof intentsFileName !== "undefined"){
   try {
-    var intents = require(intentsFileName);
+    intents = require(intentsFileName);
   }
   catch(e){
     try{
-      var intents = require("./" + intentsFileName);
+      intents = require("./" + intentsFileName);
     }
     catch(e2){
       console.log("Unable to load Intents file.");
@@ -158,9 +158,9 @@ var _done = function(json){
 if(Array.isArray(config.customSlotTypes)){
   for(let i = 0; i < config.customSlotTypes.length; i++){
     let customSlotType = config.customSlotTypes[i];
-    if(typeof customSlotType.filename != "undefined"){
+    if(typeof customSlotType.filename !== "undefined"){
       let values = utilities.loadStringListFromFile(customSlotType.filename);
-      if(typeof values != "undefined"){
+      if(typeof values !== "undefined"){
         if(typeof customSlotType.values !== "undefined"){
           for(let j = 0; j < values.length; j++){
             if(customSlotType.values.indexOf(values[j]) < 0){
@@ -181,12 +181,12 @@ if(Array.isArray(config.customSlotTypes)){
 }
 
 var resultJson;
-if(typeof utterancesFileName != "undefined"){
+if(typeof utterancesFileName !== "undefined"){
   utterances = utilities.loadStringListFromFile(utterancesFileName);
 }
 if(typeof interactionModel !== "undefined"){
   // Get the info from interactionModel
-  if(typeof interactionModel.intents != "undefined"){
+  if(typeof interactionModel.intents !== "undefined"){
     for(let i = 0; i < interactionModel.intents.length; i ++){
       let intent = interactionModel.intents[i];
       let currentUtterances = [];
@@ -195,7 +195,7 @@ if(typeof interactionModel !== "undefined"){
         currentUtterances.push(intent.name + " " + intent.samples[j]);
       }
       let oldStyleIntent = {"intent":intent.name, "slots":[]};
-      if(typeof intent.slots != "undefined"){
+      if(typeof intent.slots !== "undefined"){
         for(let j = 0; j < intent.slots.length; j ++){
           // Add intent slot level utterance
           for(let k = 0; k < intent.slots[j].samples.length; k++){
@@ -207,25 +207,25 @@ if(typeof interactionModel !== "undefined"){
       intents.push(oldStyleIntent);
     }
   }
-  if(typeof interactionModel.types != "undefined"){
+  if(typeof interactionModel.types !== "undefined"){
     for(let i = 0; i < interactionModel.types.length; i++){
       let currentSlotType = interactionModel.types[i];
-      if(typeof config.customSlotTypes == "undefined"){
+      if(typeof config.customSlotTypes === "undefined"){
         config.customSlotTypes = [];
       }
       let customSlotType = undefined;
       // Find the custom slot type within the config
       for(let j = 0; j < config.customSlotTypes.length; j ++){
-        if(config.customSlotTypes[j].name == currentSlotType.name){
+        if(config.customSlotTypes[j].name === currentSlotType.name){
           customSlotType = config.customSlotTypes[i];
           break;
         }
       }
-      if(typeof customSlotType == "undefined"){
+      if(typeof customSlotType === "undefined"){
         customSlotType = {"name":currentSlotType.name, "values":[]};
         config.customSlotTypes.push(customSlotType);
       }
-      if(typeof customSlotType.values == "undefined"){
+      if(typeof customSlotType.values === "undefined"){
         customSlotType.values = [];
       }
       // Now add all the missing values from the interactionModel's custom type to config's custom types
