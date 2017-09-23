@@ -949,6 +949,7 @@ The current list is:
 
 ```text
 addAngleBrackets - surrounds the matched value with <>
+addCurlyBrackets - surrounds the matched value with {}
 addParentheses - surrounds the matched value with ()
 addSquareBrackets - surrounds the matched value with []
 formatAsUsPhoneNumber1 - formats TRANSCEND.US_PHONE_NUMBER matched value as (111) 111-1111
