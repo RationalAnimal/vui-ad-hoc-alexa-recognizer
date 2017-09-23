@@ -129,18 +129,23 @@ else {
 
 var intents = [];
 if(typeof intentsFileName !== "undefined"){
+  // compute actual config file name when combined with base source directory
+  if(typeof resolvedBaseDir === "string"){
+    var resolvedIntentsFileName = path.join(resolvedBaseDir, intentsFileName);
+//    console.log("resolvedIntentsFileName 1: " + resolvedConfigFileName);
+  }
+  else {
+    var resolvedIntentsFileName = path.resolve(intentsFileName);
+//    console.log("resolvedIntentsFileName 2: " + resolvedConfigFileName);
+  }
+
   try {
-    intents = require(intentsFileName);
+    intents = require(resolvedIntentsFileName);
   }
   catch(e){
-    try{
-      intents = require("./" + intentsFileName);
-    }
-    catch(e2){
-      console.log("Unable to load Intents file.");
-      usage();
-      process.exit(1);
-    }
+    console.log("Unable to load Intents file.");
+    usage();
+    process.exit(1);
   }
 }
 
