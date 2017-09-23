@@ -8192,7 +8192,11 @@
     {"name":"Hermanos Serdán International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Puebla"},
     {"name":"Puerto Escondido International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Oaxaca"},
     {"name":"Puerto Peñasco International Airport","alternativeNames":["Puerto Penasco International Airport"],"priorNames":[],"country":"mexico","state":"Sonora"},
-    {"name":"Lic. Gustavo Díaz Ordaz International Airport","alternativeNames":["Lic Gustavo Díaz Ordaz International Airport"],"priorNames":[],"country":"mexico","state":"Jalisco"}
+    {"name":"Lic. Gustavo Díaz Ordaz International Airport","alternativeNames":["Lic Gustavo Díaz Ordaz International Airport"],"priorNames":[],"country":"mexico","state":"Jalisco"},
+    {"name":"Querétaro International Airport","alternativeNames":["Queretaro International Airport"],"priorNames":[],"country":"mexico","state":"Querétaro"},
+    {"name":"General Lucio Blanco International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Tamaulipas"},
+    {"name":"Salina Cruz Naval Air Station","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Oaxaca"},
+    {"name":"Plan de Guadalupe International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Coahuila"}
 
   ]
 }
