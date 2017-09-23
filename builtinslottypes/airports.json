@@ -8200,7 +8200,11 @@
     {"name":"San Cristóbal de las Casas National Airport","alternativeNames":["San Cristobal de las Casas National Airport"],"priorNames":[],"country":"mexico","state":"Chiapas"},
     {"name":"San Felipe International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California"},
     {"name":"Ponciano Arriaga International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"San Luis Potosí"},
-    {"name":"San Luis Río Colorado Airport","alternativeNames":["San Luis Rio Colorado Airport"],"priorNames":[],"country":"mexico","state":"Sonora"}
+    {"name":"San Luis Río Colorado Airport","alternativeNames":["San Luis Rio Colorado Airport"],"priorNames":[],"country":"mexico","state":"Sonora"},
+    {"name":"Santa Lucía Air Force Base Num 1","alternativeNames":[],"priorNames":[],"country":"mexico","state":"State of Mexico"},
+    {"name":"Palo Verde Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Baja California Sur"},
+    {"name":"General Francisco Javier Mina International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Tamaulipas"},
+    {"name":"Tamuín National Airport","alternativeNames":["Tamuin National Airport"],"priorNames":[],"country":"mexico","state":"San Luis Potosí"}
 
   ]
 }
