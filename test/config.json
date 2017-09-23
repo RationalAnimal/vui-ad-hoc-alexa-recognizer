@@ -36,7 +36,7 @@
 		},
 		{
 			"name": "MINIONS",
-			"filename": "test/minions.txt"
+			"filename": "minions.txt"
 		},
 		{
 			"name": "CUSTOMREGEXP",
@@ -57,7 +57,7 @@
 			"name": "AMAZON.StopIntent",
 			"enabled": true,
 			"extendedUtterances": ["enough already", "quit now"],
-			"extendedUtterancesFilename": "test/stopIntentExtendedUtterances.txt"
+			"extendedUtterancesFilename": "stopIntentExtendedUtterances.txt"
 		}
 	],
 	"builtInSlots": [

@@ -1160,10 +1160,10 @@ var _getBuiltinSlotPlatform = function(slotName, platforms){
     return _getBuiltinIntentPlatform(slotName, platforms);
 };
 
-var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, config, skipExtendedValues, skipRegeneratingRegExp, skipTransformFunctions){
+var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, config, skipExtendedValues, skipRegeneratingRegExp, skipTransformFunctions, resolvedBaseDir){
     let slotConfig = _getBuiltInSlotConfig(config, slotType);
     if(typeof skipExtendedValues === "undefined" || skipExtendedValues !== true){
-      let extendedValues = _getBuiltInSlotExtendedValues(slotConfig);
+      let extendedValues = _getBuiltInSlotExtendedValues(slotConfig, resolvedBaseDir);
       if(typeof extendedValues !== "undefined"){
         recognizer.builtInValues[slotTypeVar].values = recognizer.builtInValues[slotTypeVar].values.concat(extendedValues);
       }
@@ -1213,7 +1213,7 @@ var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
     return recognizer.builtInValues[suffix].replacementRegExpString;
 };
 
-var _generateRunTimeJson = function(config, interactionModel, intents, utterances, optimizations){
+var _generateRunTimeJson = function(config, interactionModel, intents, utterances, optimizations, resolvedBaseDir){
     if(typeof config === "undefined" || config === null){
         config = {};
     }
@@ -1395,7 +1395,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "cancel", "never mind", "forget it"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1411,7 +1411,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "help", "help me", "can you help me"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1427,7 +1427,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "loop off"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1443,7 +1443,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "loop", "loop on", "keep repeating this song"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1459,7 +1459,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "next", "skip", "skip forward"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1475,7 +1475,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "no", "no thanks"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1491,7 +1491,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "pause", "pause that"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1507,7 +1507,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "go back", "skip back", "back up"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1523,7 +1523,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "repeat", "say that again", "repeat that"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1539,7 +1539,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "resume", "continue", "keep going"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1555,7 +1555,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "stop shuffling", "shuffle off", "turn off shuffle"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1571,7 +1571,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "shuffle", "shuffle on", "shuffle the music", "shuffle mode"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1587,7 +1587,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "start over", "restart", "start again"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1603,7 +1603,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "stop", "off", "shut up"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1619,7 +1619,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                 "yes", "yes please", "sure"
             ]
         };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig);
+        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
         if(typeof extendedUtterances !== "undefined"){
             builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
         }
@@ -1712,14 +1712,14 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType){
     }
 };
 
-var _getBuiltInSlotExtendedValues = function(slotConfig){
+var _getBuiltInSlotExtendedValues = function(slotConfig, resolvedBaseDir){
     let returnValue;
     if(typeof slotConfig !== "undefined" && slotConfig !== null){
         if(typeof slotConfig.extendedValues !== "undefined"){
             returnValue = [].concat(slotConfig.extendedValues);
         }
         if(typeof slotConfig.extendedValuesFilename !== "undefined"){
-            let loadedFromFile = utilities.loadStringListFromFile(slotConfig.extendedValuesFilename);
+            let loadedFromFile = utilities.loadStringListFromFile(slotConfig.extendedValuesFilename, resolvedBaseDir);
             if(typeof loadedFromFile !== "undefined" && Array.isArray(loadedFromFile)){
                 if(typeof returnValue === "undefined"){
                     returnValue = [];
@@ -1745,14 +1745,14 @@ var _getBuiltInIntentConfig = function(config, intentName){
     // Nothing found - return undefined
 };
 
-var _getBuiltInIntentExtendedUtterances = function(intentConfig){
+var _getBuiltInIntentExtendedUtterances = function(intentConfig, resolvedBaseDir){
     let returnValue;
     if(typeof intentConfig !== "undefined" && intentConfig !== null){
         if(typeof intentConfig.extendedUtterances !== "undefined"){
             returnValue = [].concat(intentConfig.extendedUtterances);
         }
         if(typeof intentConfig.extendedUtterancesFilename !== "undefined"){
-            let loadedFromFile = utilities.loadStringListFromFile(intentConfig.extendedUtterancesFilename);
+            let loadedFromFile = utilities.loadStringListFromFile(intentConfig.extendedUtterancesFilename, resolvedBaseDir);
             if(typeof loadedFromFile !== "undefined" && Array.isArray(loadedFromFile)){
                 if(typeof returnValue === "undefined"){
                     returnValue = [];
