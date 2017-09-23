@@ -8208,7 +8208,14 @@
     {"name":"Tapachula International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Chiapas"},
     {"name":"Teacapan Naval Air Station","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Sinaloa"},
     {"name":"Tehuacán National Airport","alternativeNames":["Tehuacan National Airport"],"priorNames":[],"country":"mexico","state":"Puebla"},
-    {"name":"Amado Nervo National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Nayarit"}
+    {"name":"Amado Nervo National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Nayarit"},
+    {"name":"General Abelardo L. Rodríguez International Airport","alternativeNames":["General Abelardo L. Rodriguez International Airport",
+      "General Abelardo L Rodríguez International Airport", "General Abelardo L Rodriguez International Airport",
+      "General Abelardo Rodríguez International Airport", "General Abelardo Rodriguez International Airport"],"priorNames":[],"country":"mexico","state":"Baja California"},
+    {"name":"Cupul National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Yucatán"},
+    {"name":"Lic. Adolfo López Mateos International Airport","alternativeNames":["Lic Adolfo López Mateos International Airport",
+      "Lic. Adolfo Lopez Mateos International Airport", "Lic Adolfo Lopez Mateos International Airport"],"priorNames":[],"country":"mexico","state":"State of Mexico"},
+    {"name":"Francisco Sarabia International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Coahuila"}
 
   ]
 }
