@@ -8220,7 +8220,13 @@
     {"name":"Zapotiltic National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Jalisco"},
     {"name":"Angel Albino Corzo International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Chiapas"},
     {"name":"Terán Air Force Base Num 6","alternativeNames":["Teran Air Force Base Num 6"],"priorNames":[],"country":"mexico","state":"Chiapas"},
-    {"name":"Uruapan International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Michoacán"}
+    {"name":"Uruapan International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Michoacán"},
+    {"name":"General Heriberto Jara International Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Veracruz"},
+    {"name":"Carlos Rovirosa Pérez International Airport","alternativeNames":["Carlos Rovirosa Perez International Airport"],"priorNames":[],"country":"mexico","state":"Tabasco"},
+    {"name":"El Lencero Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Veracruz"},
+    {"name":"General Leobardo C. Ruiz International Airport","alternativeNames":["General Leobardo C Ruiz International Airport", "General Leobardo Ruiz International Airport"],"priorNames":[],"country":"mexico","state":"Zacatecas"},
+    {"name":"Zamora National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Michoacán"},
+    {"name":"Zapopan Air Force Base Num 5","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Jalisco"}
 
   ]
 }
