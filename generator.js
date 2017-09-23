@@ -38,6 +38,7 @@ var defaultCortanaConfig = {
 
 var usage = function(){
   console.log('Usage: node ' + process.argv[1] + ':');
+  console.log('  --sourcebase BaseSourceDirectory that is the base for the other file references on the command line or in the config file');
   console.log('  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.');
   console.log('  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.');
   console.log('  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.');
@@ -50,6 +51,9 @@ for(var i = 2; i < process.argv.length - 1; i += 2){
   var j = i + 1;
   if(process.argv[i] == "-c" || process.argv[i] == "--config"){
     var configFileName = process.argv[j];
+  }
+  else if(process.argv[i] == "-s" || process.argv[i] == "--sourcebase"){
+    var baseSourceDirectory = process.argv[j];
   }
   else if(process.argv[i] == "-i" || process.argv[i] == "--intents"){
     var intentsFileName = process.argv[j];
