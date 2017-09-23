@@ -25,7 +25,6 @@
  */
 'use strict';
 var fs = require('fs');
-let path = require('path');
 var soundex = require('./soundex.js');
 var utilities = require('./utilities.js');
 var parser = require('./parseutterance.js');
