@@ -681,6 +681,7 @@ For example, a serial number for a product might have a specific format and you 
 It would be impractical to specify all the serial numbers even if you had the up to date list.  Instead, you can define
 a custom slot that will match the regular expression for the serial number and return it.
 E.g. given config.json:
+
 ```text
 ...
 {
@@ -708,6 +709,18 @@ will produce:
     }
   }
 }
+```
+
+You can also load the reg ex for a custom slot from a file.  This can be useful for sharing the same reg ex between many
+different recognizers.  To do this, use customRegExpFile member instead of customRegExpString:
+
+```text
+...
+{
+	"name": "CUSTOMREGEXP",
+	"customRegExpFile": "customRegExpFile.txt"
+}
+...
 ```
 
 ### Options list
