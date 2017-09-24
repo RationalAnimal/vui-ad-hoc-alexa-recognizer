@@ -27,7 +27,8 @@ SOFTWARE.
 var fs = require('fs');
 var readline = require('readline');
 var recognizer = require('./generatorsupport.js');
-var utilities = require('./utilities.js')
+var utilities = require('./utilities.js');
+let jsonutilities = require('./jsonutilities.js');
 
 var defaultCortanaConfig = {
   "AMAZON.HelpIntent": {
@@ -141,7 +142,7 @@ var doTheProcessing = function(){
 var _done = function(json){
   console.log(JSON.stringify(resultJson, null, 2));
   console.log("Was saved to recognizer.json");
-}
+};
 
 // Now crawl over the config and load any custom slot values where they have
 // been specified via file name rather than directly.
@@ -156,8 +157,24 @@ if(Array.isArray(config.customSlotTypes)){
       if(customSlotType.filename.toLowerCase().endsWith(".json") === true){
         let resolvedFileName = utilities.resolveFileName(customSlotType.filename, resolvedBaseDir);
         let values = require(resolvedFileName);
-        // TODO continue here.
-
+        for(let j = 0; j < values.length; j ++){
+          if(customSlotType.values.length === 0){
+            customSlotType.values.push(values[j]);
+          }
+          else {
+            let needToAdd = true;
+            for(let k = 0; k < customSlotType.values.length; k++){
+              if(jsonutilities.compareCustomSlotValues(values[j], customSlotType.values[k])){
+                // Value is there - skip
+                needToAdd = false;
+                break;
+              }
+            }
+            if(needToAdd){
+              customSlotType.values.push(values[j]);
+            }
+          }
+        }
       }
       else {
         let values = utilities.loadStringListFromFile(customSlotType.filename, resolvedBaseDir);
