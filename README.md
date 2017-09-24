@@ -956,6 +956,7 @@ formatAsUsPhoneNumber1 - formats TRANSCEND.US_PHONE_NUMBER matched value as (111
 formatAsUsPhoneNumber2 - formats TRANSCEND.US_PHONE_NUMBER matched value as 111.111.1111
 formatAsUsPhoneNumber3 - formats TRANSCEND.US_PHONE_NUMBER matched value as 111 111 1111
 removeDigits - removes all digits from the matched value
+removeNonDigits - removes all non-digits from the matched value
 stateToCode - converts passed in US state name to the corresponding postal code.  Does NOT convert territories.
 toLowerCase - converts the matched value to lower case
 toUpperCase - converts the matched value to upper case
