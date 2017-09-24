@@ -8243,7 +8243,15 @@
     {"name":"Collarenebri Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Condobolin Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Coolah Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
-    {"name":"Cooma - Polo Flat Airport","alternativeNames":["Cooma Polo Flat Airport"],"priorNames":[],"country":"australia","state":"new south wales"}
+    {"name":"Cooma - Polo Flat Airport","alternativeNames":["Cooma Polo Flat Airport"],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Cooma - Snowy Mountains Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Coonabarabran Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Coonamble Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Cootamundra Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Corowa Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Cowra Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Cudal Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Deniliquin Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"}
 
   ]
 }
