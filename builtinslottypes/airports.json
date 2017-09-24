@@ -8267,7 +8267,15 @@
     {"name":"Inverell Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Kempsey Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Lake Macquarie Airport","alternativeNames":[],"priorNames":["Belmont Airport"],"country":"australia","state":"new south wales"},
-    {"name":"Lightning Ridge Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"}
+    {"name":"Lightning Ridge Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Lismore Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Lord Howe Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Maitland Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Merimbula Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Moree Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Moruya Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Mudgee Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Mungindi Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"}
 
   ]
 }
