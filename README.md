@@ -961,6 +961,7 @@ removeDollar - removes all occurrences of $s from the matched value
 removeNonDigits - removes all non-digits from the matched value
 removeNonAlphanumericCharacters - removes all non alphanumeric characters from the matched value
 removeNonWordCharacters - same as removeNonAlphanumericCharacters, but allows underscore. Removes anything that's not a number, letter, or underscore from the matched value.
+removePeriod - removes all occurrences of . from the matched value
 removePoundSign - removes all occurrences of #s from the matched value
 removeWhiteSpaces - removes all continuous sequences of any white space characters from the matched value
 replaceWhiteSpacesWithSpace - replaces all continuous sequences of any white space characters in the matched value with a single space
