@@ -26,7 +26,7 @@ SOFTWARE.
 'use strict'
 
 var utilities = {};
-utilities.compareCustomSlotValue = function(arg1, arg2){
+utilities.compareCustomSlotValues = function(arg1, arg2){
   if(typeof arg1 !== typeof arg2){
     return false;
   }
