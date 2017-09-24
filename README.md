@@ -952,6 +952,7 @@ addAngleBrackets - surrounds the matched value with <>
 addCurlyBrackets - surrounds the matched value with {}
 addParentheses - surrounds the matched value with ()
 addSquareBrackets - surrounds the matched value with []
+codeToState - converts passed in US state postal code to the corresponding state name.  Does NOT convert territories.
 formatAsUsPhoneNumber1 - formats TRANSCEND.US_PHONE_NUMBER matched value as (111) 111-1111
 formatAsUsPhoneNumber2 - formats TRANSCEND.US_PHONE_NUMBER matched value as 111.111.1111
 formatAsUsPhoneNumber3 - formats TRANSCEND.US_PHONE_NUMBER matched value as 111 111 1111
