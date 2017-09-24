@@ -959,7 +959,8 @@ removeDigits - removes all digits from the matched value
 removeDollar - removes all occurrences of $s from the matched value
 removeNonDigits - removes all non-digits from the matched value
 removePoundSign - removes all occurrences of #s from the matched value
-replaceWhiteSpacesWithSpace - replaces all continuous sequences of any white space characters in the provided value with a single space
+removeWhiteSpaces - removes all continuous sequences of any white space characters from the matched value
+replaceWhiteSpacesWithSpace - replaces all continuous sequences of any white space characters in the matched value with a single space
 stateToCode - converts passed in US state name to the corresponding postal code.  Does NOT convert territories.
 toLowerCase - converts the matched value to lower case
 toUpperCase - converts the matched value to upper case
