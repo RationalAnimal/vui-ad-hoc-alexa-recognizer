@@ -24,20 +24,20 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 'use strict'
-var fs = require('fs');
-var readline = require('readline');
-var recognizer = require('./generatorsupport.js');
-var utilities = require('./utilities.js');
+let fs = require('fs');
+let readline = require('readline');
+let recognizer = require('./generatorsupport.js');
+let utilities = require('./utilities.js');
 let jsonutilities = require('./jsonutilities.js');
 
-var defaultCortanaConfig = {
+let defaultCortanaConfig = {
   "AMAZON.HelpIntent": {
     "generate": true,
     "utterances": ["help", "help."]
   }
 };
 
-var usage = function(){
+let usage = function(){
   console.log('Usage: node ' + process.argv[1] + ':');
   console.log('  --sourcebase BaseSourceDirectory that is the base for the other file references on the command line or in the config file');
   console.log('  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.');
@@ -47,9 +47,9 @@ var usage = function(){
   console.log('  --optimizations [SINGLE-STAGE] optional. SINGLE-STAGE means no pre-matches using wildcards.  Depending on the recognizer, this may be slower or faster');
 };
 
-var optimizations = {"multistage": true};
-for(var i = 2; i < process.argv.length - 1; i += 2){
-  var j = i + 1;
+let optimizations = {"multistage": true};
+for(let i = 2; i < process.argv.length - 1; i += 2){
+  let j = i + 1;
   if(process.argv[i] === "-c" || process.argv[i] === "--config"){
     var configFileName = process.argv[j];
   }
@@ -84,7 +84,7 @@ if(typeof interactionModelFileName === "undefined" && typeof intentsFileName ===
   process.exit(1);
 }
 
-var interactionModel;
+let interactionModel;
 if(typeof interactionModelFileName !== "undefined"){
   try {
     interactionModel = require(interactionModelFileName);
@@ -99,16 +99,15 @@ if(typeof interactionModelFileName !== "undefined"){
       process.exit(1);
     }
   }
-
 }
 
-var config;
+let config;
 if(typeof configFileName === "undefined"){
   config = defaultCortanaConfig;
 }
 else {
   // compute actual config file name when combined with base source directory
-  var resolvedConfigFileName = utilities.resolveFileName(configFileName, resolvedBaseDir);
+  let resolvedConfigFileName = utilities.resolveFileName(configFileName, resolvedBaseDir);
 
   try {
     config = require(resolvedConfigFileName);
@@ -120,10 +119,10 @@ else {
   }
 }
 
-var intents = [];
+let intents = [];
 if(typeof intentsFileName !== "undefined"){
   // compute actual intents file name when combined with base source directory
-  var resolvedIntentsFileName = utilities.resolveFileName(intentsFileName, resolvedBaseDir);
+  let resolvedIntentsFileName = utilities.resolveFileName(intentsFileName, resolvedBaseDir);
 
   try {
     intents = require(resolvedIntentsFileName);
@@ -135,11 +134,11 @@ if(typeof intentsFileName !== "undefined"){
   }
 }
 
-var utterances = [];
-var doTheProcessing = function(){
+let utterances = [];
+let doTheProcessing = function(){
   return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances, optimizations, resolvedBaseDir);
-}
-var _done = function(json){
+};
+let _done = function(json){
   console.log(JSON.stringify(resultJson, null, 2));
   console.log("Was saved to recognizer.json");
 };
@@ -150,7 +149,7 @@ if(Array.isArray(config.customSlotTypes)){
   for(let i = 0; i < config.customSlotTypes.length; i++){
     let customSlotType = config.customSlotTypes[i];
     if(typeof customSlotType.filename !== "undefined"){
-      // TODO Load either an array of simple strings OR an array of JSON objects.
+      // Load either an array of simple strings OR an array of JSON objects.
       // If the file name ends in (case insensitive) .json then assume JSON, else text.
       // If it's an array of JSON objects, then each object MUST contain a "value" field that will contain the
       // actual value.  May also contain other fields, such as "alternativeValues", "priorValues", etc.
@@ -193,7 +192,7 @@ if(Array.isArray(config.customSlotTypes)){
       }
     }
     else if(typeof customSlotType.customRegExpString !== "undefined"){
-      // Add the code to parse the customRegExpString and add it to the customSlotType
+      // Add the code to parse the customRegExpString from a file and add it to the customSlotType
       // TODO add customRegExp handling
     }
   }
