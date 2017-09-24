@@ -956,6 +956,7 @@ codeToState - converts passed in US state postal code to the corresponding state
 formatAsUsPhoneNumber1 - formats TRANSCEND.US_PHONE_NUMBER matched value as (111) 111-1111
 formatAsUsPhoneNumber2 - formats TRANSCEND.US_PHONE_NUMBER matched value as 111.111.1111
 formatAsUsPhoneNumber3 - formats TRANSCEND.US_PHONE_NUMBER matched value as 111 111 1111
+formatAsUsPhoneNumber4 - formats TRANSCEND.US_PHONE_NUMBER matched value as 111-111-1111
 removeDigits - removes all digits from the matched value
 removeDollar - removes all occurrences of $s from the matched value
 removeNonDigits - removes all non-digits from the matched value
