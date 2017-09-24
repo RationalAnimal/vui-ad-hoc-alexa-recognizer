@@ -8283,7 +8283,15 @@
     {"name":"Newcastle Airport","alternativeNames":["RAAF Williamtown"],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Nyngan Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Orange Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
-    {"name":"Palm Beach Water Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"}
+    {"name":"Palm Beach Water Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Parkes Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Pooncarie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Port Macquarie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Quirindi Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Scone Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Somersby Airfield","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Bankstown Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Sydney Airport","alternativeNames":["Kingsford Smith Airport"],"priorNames":[],"country":"australia","state":"new south wales"}
 
   ]
 }
