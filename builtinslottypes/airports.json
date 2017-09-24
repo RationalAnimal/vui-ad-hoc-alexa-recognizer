@@ -8227,7 +8227,15 @@
     {"name":"General Leobardo C. Ruiz International Airport","alternativeNames":["General Leobardo C Ruiz International Airport", "General Leobardo Ruiz International Airport"],"priorNames":[],"country":"mexico","state":"zacatecas"},
     {"name":"Zamora National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"michoacán"},
     {"name":"Zapopan Air Force Base Num 5","alternativeNames":[],"priorNames":[],"country":"mexico","state":"jalisco"},
-    {"name":"Canberra International Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"australian capital territory"}
+    {"name":"Canberra International Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"australian capital territory"},
+    {"name":"Albury Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Armidale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Ballina Byron Gateway Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Balranald Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Bathurst Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Bourke Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Brewarrina Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Broken Hill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"}
 
   ]
 }
