@@ -904,7 +904,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
           }
         }
         if(hasWildCardMatch){
-          // TODO Need further refinements to limit the matches to international alphanumer characters, but at this time this will do
+          // TODO Need further refinements to limit the matches to international alphanumerical characters, but at this time this will do
           return "((?:\\s|[-0-9a-zA-Z,_'/]|[^\0-~])+)";
         }
         else {
@@ -1038,7 +1038,6 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
                       return "((?:\\w|\\s|[0-9,_']|\-)+)";
                     }
                     else if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-                      // numbers are used in cases of names like John the 1st
                       return "((?:\\w|\\s|[0-9,_']|\-)+)";
                     }
                     else {

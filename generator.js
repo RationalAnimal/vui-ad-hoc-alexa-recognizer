@@ -30,6 +30,8 @@ let recognizer = require('./generatorsupport.js');
 let utilities = require('./utilities.js');
 let jsonutilities = require('./jsonutilities.js');
 
+let resultJson;
+
 let defaultCortanaConfig = {
   "AMAZON.HelpIntent": {
     "generate": true,
@@ -48,24 +50,31 @@ let usage = function(){
 };
 
 let optimizations = {"multistage": true};
+let configFileName;
+let intentsFileName;
+let utterancesFileName;
+let interactionModelFileName;
+let baseSourceDirectory;
+let resolvedBaseDir;
+
 for(let i = 2; i < process.argv.length - 1; i += 2){
   let j = i + 1;
   if(process.argv[i] === "-c" || process.argv[i] === "--config"){
-    var configFileName = process.argv[j];
+    configFileName = process.argv[j];
   }
   else if(process.argv[i] === "--sourcebase"){
-    var baseSourceDirectory = process.argv[j];
-    var resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
+    baseSourceDirectory = process.argv[j];
+    resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
 //    console.log("typeof resolvedBaseDir: " + (typeof resolvedBaseDir) + ", resolvedBaseDir: " + resolvedBaseDir);
   }
   else if(process.argv[i] === "-i" || process.argv[i] === "--intents"){
-    var intentsFileName = process.argv[j];
+    intentsFileName = process.argv[j];
   }
   else if(process.argv[i] === "-u" || process.argv[i] === "--utterances"){
-    var utterancesFileName = process.argv[j];
+    utterancesFileName = process.argv[j];
   }
   else if(process.argv[i] === "--interactionmodel"){
-    var interactionModelFileName = process.argv[j];
+    interactionModelFileName = process.argv[j];
   }
   else if(process.argv[i] === "--optimizations" && process.argv[j] === 'SINGLE-STAGE'){
     optimizations.multistage = false;
@@ -198,7 +207,6 @@ if(Array.isArray(config.customSlotTypes)){
   }
 }
 
-var resultJson;
 if(typeof utterancesFileName !== "undefined"){
   utterances = utilities.loadStringListFromFile(utterancesFileName, resolvedBaseDir);
 }
