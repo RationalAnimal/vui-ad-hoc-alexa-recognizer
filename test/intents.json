@@ -85,6 +85,15 @@
       ]
     },
     {
+      "intent": "CustomRegExpTwoIntent",
+      "slots": [
+        {
+          "name": "CustomRegExpTwoSlot",
+          "type": "CUSTOMREGEXPTWO"
+        }
+      ]
+    },
+    {
       "intent": "PhoneNumberIntent",
       "slots": [
         {

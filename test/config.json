@@ -43,6 +43,10 @@
 			"customRegExpString": "(ABC123|XYZ789)"
 		},
 		{
+			"name": "CUSTOMREGEXPTWO",
+			"customRegExpFile": "customRegExpFile.txt"
+		},
+		{
 			"name": "PHONENUMBER",
 			"customRegExpString": "(\\({0,1}[0-9]{3}\\){0,1}\\s*[0-9]{3}\\s*-{0,1}\\s*[0-9]{4})",
 			"customWildCardRegExpString": "(\\({0,1}[0-9]{3}\\){0,1}\\s*[0-9]{3}\\s*-{0,1}\\s*[0-9]{4})"

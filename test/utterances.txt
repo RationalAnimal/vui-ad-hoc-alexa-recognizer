@@ -4,6 +4,7 @@ TestIntent test please
 TestIntent	test pretty please
 TestIntent       test pleeeeeeease
 CustomRegExpIntent here is {CustomRegExpSlot} if you see it
+CustomRegExpTwoIntent here is the second {CustomRegExpTwoSlot}
 MeaninglessIntent this is {MeaninglessSlot}
 MeaninglessTwoIntent this too is {MeaninglessTwoSlot}
 UsPhoneNumberIntent my mobile number is {UsPhoneNumberSlot}

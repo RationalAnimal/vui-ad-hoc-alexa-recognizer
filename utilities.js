@@ -24,10 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 'use strict'
-var fs = require('fs');
-var path = require('path');
+let fs = require('fs');
+let path = require('path');
 
-var utilities = {};
+let utilities = {};
 utilities.resolveFileName = function(fileName, resolvedBaseDir){
   if(typeof fileName === "undefined" || fileName === null){
     return;
@@ -43,7 +43,7 @@ utilities.resolveFileName = function(fileName, resolvedBaseDir){
 };
 
 utilities.loadStringListFromFile = function(fileName, resolvedBaseDir){
-  var fileExist = false;
+  let fileExist = false;
   // compute actual file name when combined with base source directory
   let resolvedFileName = this.resolveFileName(fileName, resolvedBaseDir);
 
@@ -52,14 +52,11 @@ utilities.loadStringListFromFile = function(fileName, resolvedBaseDir){
     fileExist = true;
   }
   if(fileExist == true){
-    // TODO replace with a lean solution that doesn't have to read the whole file
-    // at once
-    var lines = fs.readFileSync(resolvedFileName, 'utf-8')
-    .split(/\n\r|\n|\r/);
-//    console.log("Loaded lines from file: " + JSON.stringify(lines, null, 2))
-    var result = [];
-    var skipCount = 0;
-    for(var i = 0; i < lines.length; i++){
+    // TODO replace with a lean solution that doesn't have to read the whole file at once
+    let lines = fs.readFileSync(resolvedFileName, 'utf-8').split(/\n\r|\n|\r/);
+    let result = [];
+    let skipCount = 0;
+    for(let i = 0; i < lines.length; i++){
       if(lines[i].trim().length > 0){
         result[i - skipCount] = lines[i];
       }
@@ -67,10 +64,22 @@ utilities.loadStringListFromFile = function(fileName, resolvedBaseDir){
         skipCount++;
       }
     }
-//    console.log("Resulting lines from file: " + JSON.stringify(result, null, 2))
     return result;
   }
-  return; // nothing
+};
+
+utilities.loadStringFromFile = function(fileName, resolvedBaseDir){
+  let fileExist = false;
+  // compute actual file name when combined with base source directory
+  let resolvedFileName = this.resolveFileName(fileName, resolvedBaseDir);
+
+  if (fs.existsSync(resolvedFileName)) {
+    // The file name exists and is complete
+    fileExist = true;
+  }
+  if(fileExist == true){
+    return fs.readFileSync(resolvedFileName, 'utf-8');
+  }
 };
 
 module.exports = utilities;
