@@ -149,17 +149,29 @@ if(Array.isArray(config.customSlotTypes)){
   for(let i = 0; i < config.customSlotTypes.length; i++){
     let customSlotType = config.customSlotTypes[i];
     if(typeof customSlotType.filename !== "undefined"){
-      let values = utilities.loadStringListFromFile(customSlotType.filename, resolvedBaseDir);
-      if(typeof values !== "undefined"){
-        if(typeof customSlotType.values !== "undefined"){
-          for(let j = 0; j < values.length; j++){
-            if(customSlotType.values.indexOf(values[j]) < 0){
-              customSlotType.values.push(values[j]);
+      // TODO Load either an array of simple strings OR an array of JSON objects.
+      // If the file name ends in (case insensitive) .json then assume JSON, else text.
+      // If it's an array of JSON objects, then each object MUST contain a "value" field that will contain the
+      // actual value.  May also contain other fields, such as "alternativeValues", "priorValues", etc.
+      if(customSlotType.filename.toLowerCase().endsWith(".json") === true){
+        let resolvedFileName = utilities.resolveFileName(customSlotType.filename, resolvedBaseDir);
+        let values = require(resolvedFileName);
+        // TODO continue here.
+
+      }
+      else {
+        let values = utilities.loadStringListFromFile(customSlotType.filename, resolvedBaseDir);
+        if(typeof values !== "undefined"){
+          if(typeof customSlotType.values !== "undefined"){
+            for(let j = 0; j < values.length; j++){
+              if(customSlotType.values.indexOf(values[j]) < 0){
+                customSlotType.values.push(values[j]);
+              }
             }
           }
-        }
-        else {
-          customSlotType.values = values;
+          else {
+            customSlotType.values = values;
+          }
         }
       }
     }
