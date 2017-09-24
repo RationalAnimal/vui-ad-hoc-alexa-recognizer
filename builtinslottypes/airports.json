@@ -8115,6 +8115,7 @@
     {"name":"Erik Nielsen Whitehorse International Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
     {"name":"Whitehorse/Cousins Airport","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
     {"name":"Whitehorse Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"canada","state":"yukon"},
+
     {"name":"General Juan N. Álvarez International Airport","alternativeNames":["General Juan N. Alvarez International Airport", "General Juan N Álvarez International Airport", "General Juan N Alvarez International Airport", "General Juan Álvarez International Airport", "General Juan Alvarez International Airport"],"priorNames":[],"country":"mexico","state":"Guerrero"},
     {"name":"Lic. Jesús Terán Peredo International Airport","alternativeNames":["Lic. Jesus Teran Peredo International Airport", "Lic Jesús Terán Peredo International Airport", "Lic. Jesus Teran Peredo International Airport"],"priorNames":[],"country":"mexico","state":"Aguascalientes"},
     {"name":"Agualeguas National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Nuevo León"},
@@ -8226,7 +8227,10 @@
     {"name":"El Lencero Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Veracruz"},
     {"name":"General Leobardo C. Ruiz International Airport","alternativeNames":["General Leobardo C Ruiz International Airport", "General Leobardo Ruiz International Airport"],"priorNames":[],"country":"mexico","state":"Zacatecas"},
     {"name":"Zamora National Airport","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Michoacán"},
-    {"name":"Zapopan Air Force Base Num 5","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Jalisco"}
+    {"name":"Zapopan Air Force Base Num 5","alternativeNames":[],"priorNames":[],"country":"mexico","state":"Jalisco"},
+
+
+    {"name":"Canberra International Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"australian capital territory"}
 
   ]
 }
