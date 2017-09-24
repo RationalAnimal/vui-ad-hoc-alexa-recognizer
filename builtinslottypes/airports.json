@@ -8275,7 +8275,15 @@
     {"name":"Moree Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Moruya Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Mudgee Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
-    {"name":"Mungindi Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"}
+    {"name":"Mungindi Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Nambucca Heads Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Narrabri Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Narrandera Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Narromine Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Newcastle Airport","alternativeNames":["RAAF Williamtown"],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Nyngan Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Orange Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Palm Beach Water Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"}
 
   ]
 }
