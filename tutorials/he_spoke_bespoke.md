@@ -78,8 +78,12 @@ ZipCodeIntent {ZipCodeSlot} is {my|the} {zip|zip code|postal code}
 IceCreamFlavorIntent {my favorite|the best} ice cream {|flavor} is {IceCreamFlavorSlot}
 {% endhighlight %}
 
-Now (don't forget to regenerate recognizer.jso if you haven't downloaded the tutorial module) if you run the index.js
-you can test to verify that you are getting your values back:
+if you haven't downloaded the tutorial module don't forget to regenerate recognizer.json: 
+{% highlight text %}
+prompt> node node_modules/vui-ad-hoc-alexa-recognizer/generator.js --sourcebase . --config config.json --intents intents.json --utterances utterances.txt
+{% endhighlight %}
+
+Now if you run the index.js you can to verify that you are getting your values back:
 
 {% highlight text %}
 prompt> node index.js "my favorite ice cream is vanilla"
@@ -134,7 +138,7 @@ So, let's verify that this works.  First, make sure you have regenerated the rec
 prompt> node node_modules/vui-ad-hoc-alexa-recognizer/generator.js --sourcebase . --config config.json --intents intents.json --utterances utterances.txt
 {% endhighlight %}
 
-Note the --sourcebase . arguments.  What that means is use the current directory ( the ".") as the source directory to look for other files for.  Any files
+Note the "--sourcebase ." arguments.  What that means is "use the current directory - '.' - as the source directory to look for other files".  Any files
 specified on the command line or in the config.json file will be relative to this directory.
 
 Now, if everything went well, you should have a brand new recognizer.json file in your current directory. (If you got an error, make sure you have 
