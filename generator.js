@@ -191,9 +191,9 @@ if(Array.isArray(config.customSlotTypes)){
         }
       }
     }
-    else if(typeof customSlotType.customRegExpString !== "undefined"){
-      // Add the code to parse the customRegExpString from a file and add it to the customSlotType
-      // TODO add customRegExp handling
+    else if(typeof customSlotType.customRegExpFile === "string"){
+      // Parse the customRegExpString from a file and add it to the customSlotType
+      customSlotType.customRegExpString = utilities.loadStringFromFile(customSlotType.customRegExpFile, resolvedBaseDir);
     }
   }
 }

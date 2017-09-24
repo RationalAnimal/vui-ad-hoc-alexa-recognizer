@@ -2202,6 +2202,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         }
       });
     });
+    it("verify simple utterance with a custom slot based on a simple reg exp loaded from a file matches", function() {
+      let result = recognizer.Recognizer.matchText("here is the second XYZ789");
+      expect(result).to.eql({
+        "name": "CustomRegExpTwoIntent",
+        "slots": {
+          "CustomRegExpTwoSlot": {
+            "name": "CustomRegExpTwoSlot",
+            "value": "XYZ789"
+          }
+        }
+      });
+    });
 
   });
 
