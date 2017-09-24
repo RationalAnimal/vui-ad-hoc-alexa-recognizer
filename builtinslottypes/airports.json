@@ -8235,7 +8235,15 @@
     {"name":"Bathurst Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Bourke Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Brewarrina Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
-    {"name":"Broken Hill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"}
+    {"name":"Broken Hill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Camden Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Cessnock Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Cobar Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Coffs Harbour Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Collarenebri Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Condobolin Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Coolah Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Cooma - Polo Flat Airport","alternativeNames":["Cooma Polo Flat Airport"],"priorNames":[],"country":"australia","state":"new south wales"}
 
   ]
 }
