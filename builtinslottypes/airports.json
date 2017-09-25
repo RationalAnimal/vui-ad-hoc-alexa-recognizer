@@ -8431,7 +8431,15 @@
     {"name":"Camooweal Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Cape Flattery Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Carpentaria Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Charleville Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Charleville Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Charters Towers Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Cherrabah Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Chillagoe Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Chinchilla Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Clermont Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Cloncurry Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Cluny Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Coconut Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
