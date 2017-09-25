@@ -1360,7 +1360,27 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
             }
             else {
               for(let j = 0; j < scratchCustomSlotType.values.length; j++){
-                scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j] + ")\\s*$){1}");
+                if(typeof scratchCustomSlotType.values[j] === "string"){
+                  scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j] + ")\\s*$){1}");
+                }
+                else if(typeof scratchCustomSlotType.values[j] !== "undefined" && scratchCustomSlotType.values[j] !== null && typeof scratchCustomSlotType.values[j].value === "string"){
+                  if(typeof scratchCustomSlotType.values[j].synonyms !== "undefined" && Array.isArray(scratchCustomSlotType.values[j].synonyms)){
+                    let scratchRegExpString  = "(?:^\\s*(" + scratchCustomSlotType.values[j].value;
+                    for(let k = 0; k < scratchCustomSlotType.values[j].synonyms.length; k++){
+                      scratchRegExpString += "|";
+                      scratchRegExpString += scratchCustomSlotType.values[j].synonyms[k];
+                    }
+                    scratchRegExpString += ")\\s*$){1}";
+                    scratchCustomSlotType.regExpStrings.push(scratchRegExpString);
+                  }
+                  else {
+                    // Just a single value wrapped in an object
+                    scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j].value + ")\\s*$){1}");
+                  }
+                }
+                else {
+                  throw new Error("Custom slot list value is neither a string nor an object with value field that's a string.");
+                }
               }
             }
         }

@@ -21,8 +21,11 @@
 		{
 			"name": "MEANINGLESS",
 			"values": [
-				"foo",
-				"bar"
+              "foo",
+              {
+                "value": "bar",
+                "synonyms": ["boom", "bam"]
+              }
 			],
 			"transformBuiltInName": "toUpperCase"
 		},
