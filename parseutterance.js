@@ -684,7 +684,7 @@ var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, i
   for(let i = parsingRange.start; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i++){
     let currentLetter = utteranceArray[i];
     switch(currentLetter){
-    case "{":
+    case "{":{
       if(scratch.length > 0){
         returnValue.push(scratch);
       }
@@ -703,6 +703,7 @@ var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, i
       }
       i = curlyRange.end;
       break;
+    }
     default:
       scratch += currentLetter;
       break;
@@ -727,7 +728,7 @@ var _parseJsonArray = function(utteranceArray, parsingRange, intentSchema){
   for(let i = parsingRange.start; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
     accumulatedValue += utteranceArray[i];
     switch(utteranceArray[i]){
-    case "]":
+    case "]":{
       try {
         returnValue = JSON.parse(accumulatedValue);
         parsingRange.end = i;
@@ -737,6 +738,7 @@ var _parseJsonArray = function(utteranceArray, parsingRange, intentSchema){
         // Ignore all errors - we are simply trying blindly so errors don't mean anything
       }
       break;
+    }
     default:
       break;
     }
@@ -753,15 +755,17 @@ var _parseFlagParameters = function(utteranceArray, parsingRange, intentSchema){
   let returnValue = [];
   for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
     switch(utteranceArray[i]){
-    case "[":
+    case "[":{
       let jsonArrayRange = {"start": i, "end": -1};
       let jsonArrayResult = _parseJsonArray(utteranceArray, jsonArrayRange, intentSchema);
       returnValue = jsonArrayResult;
       i = jsonArrayRange.end;
       break;
-    case ")":
+    }
+    case ")":{
       parsingRange.end = i;
       return returnValue;
+    }
     case " ":
     case "\f":
     case "\n":
@@ -800,7 +804,7 @@ var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
         accumulatedValue = "";
       }
       break;
-    case "(":
+    case "(":{
       returnValue.push({"name": accumulatedValue});
       accumulatedValue = "";
       let flagsRange = {"start": i, "end": -1};
@@ -808,6 +812,7 @@ var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
       returnValue[returnValue.length - 1].parameters = flagsResult;
       i = flagsRange.end;
       break;
+    }
     case " ":
     case "\f":
     case "\n":
@@ -869,7 +874,7 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
       }
       returnValue.flags.push(accumulatedValue);
       return returnValue;
-    case ":":
+    case ":":{
       if(_isSlotName(accumulatedValue, intentName, intentSchema) === false){
         error.error = "slot name " + accumulatedValue + " does not exist within intent schema";
         error.position = i;
@@ -883,6 +888,7 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
       parsingRange.end = flagsRange.end;
       returnValue.flags = flagsResult;
       return returnValue;
+    }
     case " ":
     case "\f":
     case "\n":
@@ -1268,76 +1274,13 @@ var _parseEquivalentText = function(utteranceArray, parsingRange){
   let words = [];
   for(let i = parsingRange.start + 2; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
     switch(utteranceArray[i]){
-    case "}":
+    case "}": {
       parsingRange.end = i;
       words.push(accumulatedValue);
       accumulatedValue = "";
       let equivalentsReturnValue = _processParsedEquivalentsWords(words, [defaultEquivalents, misspellingEquivalents]);
-      //        console.log("returnValue: ", JSON.stringify(equivalentsReturnValue, null, 2));
       return equivalentsReturnValue;
-      /* TODO REMOVE THIS OLDER CODE THAT WORKS FOR SINGLE WORD EQUIVALENTS ONLY
-        // Now actually create the return value and return it
-//        let returnValue = {"type": "equivalents", "equivalents": []};
-        let returnValue = [];
-        let arrayOfArrays = [];
-        // for now simply do a one word substitution using defaultEquivalents
-        // build an array of arrays
-        for(let j = 0; j < words.length; j ++){
-          let currentArray = [words[j].toLowerCase()];
-          for(let k = 0; k < defaultEquivalents.singleWordSynonyms.length; k++){
-            if(defaultEquivalents.singleWordSynonyms[k].words.indexOf(words[j].toLowerCase()) >= 0){
-              for(let l = 0; l < defaultEquivalents.singleWordSynonyms[k].synonyms.length; l++){
-                currentArray = currentArray.concat(defaultEquivalents.singleWordSynonyms[k].synonyms[l].values);
-              }
-            }
-          }
-          // Here we have the full currentArray - simply push it
-          arrayOfArrays.push(currentArray);
-        }
-        if(arrayOfArrays.length === 0){
-          return returnValue;
-        }
-        for(let j = 0; j < arrayOfArrays.length; j ++){
-          if(arrayOfArrays[j].length === 1){
-            if(j > 0){
-              if(typeof returnValue[returnValue.length - 1] === "string") {
-                // concatenate strings rather than pushing the string
-                returnValue[returnValue.length - 1] = returnValue[returnValue.length - 1] + " " + arrayOfArrays[j][0];
-              }
-              else {
-                // push the string with a space prepended.
-                returnValue.push(" " + arrayOfArrays[j][0]);
-              }
-            }
-            else {
-              // Push the string itself
-              returnValue.push(arrayOfArrays[j][0]);
-            }
-          }
-          else {
-            // Push the text equivalents object, appending or inserting a space if needed.
-            if(j > 0){
-              if(typeof returnValue[returnValue.length - 1] === "string") {
-                // concatenate an extra space to the end
-                returnValue[returnValue.length - 1] = returnValue[returnValue.length - 1] + " ";
-              }
-              else {
-                // push the empty string.
-                returnValue.push(" ");
-              }
-            }
-            let scratch = {"type": "equivalents", "equivalents": []};
-            for(let k = 0; k < arrayOfArrays[j].length; k++){
-              if(scratch.equivalents.indexOf(arrayOfArrays[j][k]) < 0){
-                scratch.equivalents.push(arrayOfArrays[j][k]);
-              }
-            }
-            returnValue.push(scratch);
-          }
-        }
-//        console.log("equivalent: " + JSON.stringify(returnValue, null, 2));
-        return returnValue;
-        */
+    }
     case ",":
     case ".":
     case "!":
