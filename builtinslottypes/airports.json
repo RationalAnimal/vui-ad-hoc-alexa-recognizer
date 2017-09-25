@@ -8339,7 +8339,15 @@
     {"name":"Lake Evella Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"South Goulburn Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"The Granites Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
-    {"name":"Groote Eylandt Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"}
+    {"name":"Groote Eylandt Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Oenpelli Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Henbury Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Hermannsburg Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Humbert River Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Inverway Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Jabiru Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Wave Hill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Docker River Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"}
 
   ]
 }
