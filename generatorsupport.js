@@ -94,7 +94,7 @@ let _makeReplacementRegExpString = function(arrayToConvert){
  * @private
  */
 let _makeFullRegExpString = function(arrayToConvert){
-  let regExString = _makeReplacementRegExpString(arrayToUse);
+  let regExString = _makeReplacementRegExpString(arrayToConvert);
   // Now split regExString into non-white space parts and reconstruct the
   // whole thing with any sequence of white spaces replaced with a white space
   // reg exp.
