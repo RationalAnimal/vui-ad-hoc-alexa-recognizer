@@ -8371,7 +8371,13 @@
     {"name":"Mount Swan Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"Mount Valley Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"Mulga Park Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
-    {"name":"Napperby Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"}
+    {"name":"Napperby Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Newry Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Ngukurr Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Gove Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Numbulwar Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Nutwood Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Peppimenarti Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"}
 
   ]
 }
