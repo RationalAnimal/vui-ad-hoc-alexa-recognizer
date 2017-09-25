@@ -31,51 +31,85 @@ var parser = require('./parseutterance.js');
 var recognizer = {};
 var constants = require('./constants.js');
 
-var _makeReplacementRegExpString = function(arrayToConvert){
-    let returnValue = "((?:";
-    let appendBar = false;
-    for(let i = 0; i < arrayToConvert.length; i++){
-      if(appendBar){
-        returnValue += "|";
-      }
-      else {
-        appendBar = true;
-      }
-      if(typeof arrayToConvert[i] === "string"){
-        returnValue += "" + arrayToConvert[i] + "\\s*";
-      }
-      else {
-        if(typeof arrayToConvert[i].value === "string"){
-          returnValue += "" + arrayToConvert[i].value + "\\s*";
-          if(typeof arrayToConvert[i].synonyms !== "undefined" && Array.isArray(arrayToConvert[i].synonyms)){
-            for(let j = 0; j < arrayToConvert[i].synonyms.length; j++){
-              returnValue += "|" + arrayToConvert[i].synonyms[j] + "\\s*";
-            }
+/**
+ * Call to convert an array of objects and strings into an array of strings.  Objects MUST have a "value" field which is
+ * a string (will be added to the return value) and MAY have a "synonyms" field which MUST be an array of strings.
+ * If exists, contents of "synonyms" will be added to the return value.
+ * @param arrayToConvert - array of strings and objects.
+ * @returns {Array} - array of strings
+ * @private
+ */
+let _unfoldCustomValuesIntoStringArray = function(arrayToConvert){
+  let returnValue = [];
+  for(let i = 0; i < arrayToConvert.length; i++){
+    if(typeof arrayToConvert[i] === "string"){
+      returnValue.push(arrayToConvert[i]);
+    }
+    else {
+      if(typeof arrayToConvert[i].value === "string"){
+        returnValue.push(arrayToConvert[i].value);
+        if(typeof arrayToConvert[i].synonyms !== "undefined" && Array.isArray(arrayToConvert[i].synonyms)){
+          for(let j = 0; j < arrayToConvert[i].synonyms.length; j++){
+            returnValue.push(arrayToConvert[i].synonyms[j]);
           }
         }
       }
     }
-    returnValue += ")+)";
-    return returnValue;
+  }
+  return returnValue;
 };
 
-var _makeFullRegExpString = function(arrayToConvert){
-    let regExString = _makeReplacementRegExpString(arrayToConvert);
-    // Now split regExString into non-white space parts and reconstruct the
-    // whole thing with any sequence of white spaces replaced with a white space
-    // reg exp.
-    let splitRegEx = regExString.split(/\s+/);
-    let reconstructedRegEx = "^\\s*";
-    for(let j = 0; j < splitRegEx.length; j++){
-        if(splitRegEx[j].length > 0){
-            if(j > 0){
-                reconstructedRegEx += "\\s+";
-            }
-            reconstructedRegEx += splitRegEx[j];
-        }
+/**
+ * Call to convert an array of objects and strings into a regular expression string.
+ * The array is first converted into an array of strings using _unfoldCustomValuesIntoStringArray.
+ * The resulting regular expression is such that it will match on any of the converted string values, possibly with
+ * extra white spaces at the end.
+ * @param arrayToConvert - array of strings and objects
+ * @returns {string} - a string representing the regular expression
+ * @private
+ */
+let _makeReplacementRegExpString = function(arrayToConvert){
+  let arrayToUse = _unfoldCustomValuesIntoStringArray(arrayToConvert);
+  let returnValue = "((?:";
+  let appendBar = false;
+  for(let i = 0; i < arrayToUse.length; i++){
+    if(appendBar){
+      returnValue += "|";
     }
-    reconstructedRegEx += "\\s*[.?!]?\\s*$";
-    return reconstructedRegEx;
+    else {
+      appendBar = true;
+    }
+    returnValue += "" + arrayToUse[i] + "\\s*";
+    }
+  returnValue += ")+)";
+  return returnValue;
+};
+
+/**
+ * Call to convert a regular expression string produced by _makeReplacementRegExpString into a regular expression
+ * string that will match on the entire string (i.e. includes ^ and $), match on any white spaces rather than just the
+ * specific ones supplied in the input, and will also allow common sentense ending punctuation, such as .!? at the end.
+ * @param arrayToConvert - array of strings and objects
+ * @returns {string} - a string representing the regular expression
+ * @private
+ */
+let _makeFullRegExpString = function(arrayToConvert){
+  let regExString = _makeReplacementRegExpString(arrayToConvert);
+  // Now split regExString into non-white space parts and reconstruct the
+  // whole thing with any sequence of white spaces replaced with a white space
+  // reg exp.
+  let splitRegEx = regExString.split(/\s+/);
+  let reconstructedRegEx = "^\\s*";
+  for(let j = 0; j < splitRegEx.length; j++){
+    if(splitRegEx[j].length > 0){
+      if(j > 0){
+        reconstructedRegEx += "\\s+";
+      }
+      reconstructedRegEx += splitRegEx[j];
+    }
+  }
+  reconstructedRegEx += "\\s*[.?!]?\\s*$";
+  return reconstructedRegEx;
 };
 
 recognizer.Recognizer = class {
