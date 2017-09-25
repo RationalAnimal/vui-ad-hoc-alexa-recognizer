@@ -8407,7 +8407,15 @@
     {"name":"Batavia Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Bedourie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Betoota Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Biloela Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Biloela Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Birdsville Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Bizant Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Blackall Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Blackwater Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Bloomfield River Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Boigu Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Bollon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Bolwarra Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
