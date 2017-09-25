@@ -338,7 +338,12 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
       for(let j = 0; j < scratchCustomSlotType.soundExRegExpStrings.length; j++){
         scratchCustomSlotType.soundExRegExps[j].lastIndex = 0;
         if(matchResult = scratchCustomSlotType.soundExRegExps[j].exec(soundexValue)){
-          return scratchCustomSlotType.values[j];
+          if(typeof scratchCustomSlotType.values[j] === "string"){
+            return scratchCustomSlotType.values[j];
+          }
+          else {
+            return scratchCustomSlotType.values[j].value;
+          }
         }
       }
       // If we are here, that means our wildcard pattern didn't match any of the
@@ -360,7 +365,12 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
           if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
             return value;
           }
-          return scratchCustomSlotType.values[j];
+          if(typeof scratchCustomSlotType.values[j] === "string"){
+            return scratchCustomSlotType.values[j];
+          }
+          else {
+            return scratchCustomSlotType.values[j].value;
+          }
         }
       }
     }
