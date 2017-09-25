@@ -12,7 +12,7 @@ Provides natural language understanding/processing capability to enable easy imp
 High performance run time in only 2 lines of code - 'require' to include it, and the call to process the text.
 These can run anywhere Node.js is running - backend, browser, mobile apps, etc with or without internet connection.
 Has a rich set of built in intents and extensible slots (equivalent to Alexa's),
-custom slots (both list based and regular expression based), slot flags, parametrized flags, transformation functions,
+custom slots (both list based and regular expression based), synonyms, slot flags, parametrized flags, transformation functions,
 SoundEx matching, wild card matching, option lists, text equivalents sets, unlimited sets of recognizers to build large
 segmented apps, domains with state specific processing, builtin and custom chainable responders, sub-domains (trusted and
 non-trusted), etc.
@@ -672,6 +672,43 @@ AirlineIntent {AirlineSlot:CONTINENT(["north america"])} is a north american air
 ```
 then only Canadian airlines will match the first one, and only north american
 airlines will match the second one.
+
+### Custom list based slot types with synonyms
+
+You can create a very simple custom slot type based on a list of simple values, loaded either from config.json or a separate
+text file. But you can also load "values" which are objects.  These objects must themselves contain a "value" field
+that replaces the simple field. In addition, these objects can also contain a field "synonyms" which must be an array
+of strings.  For example, here is a custom slot type defined in a config.json:
+
+```json
+{
+  "name": "KITCHENSTUFF",
+  "values": [
+    "Spoon",
+    {
+      "value": "Pan",
+      "synonyms": [
+        "Skillet"
+      ]
+    }
+  ]
+}
+```
+
+This will match on "spoon", "pan", and "skillet".  Furthermore, and this is the real value of the synonyms, when
+matching on the "skillet", the actual returned value will be "Pan".
+
+Couple of important points:
+
+* You can mix strings and objects within config.json
+* If you want to specify json objects in a separate file then you MUST use a file with a .json extension and it must
+contain valid json
+* Whatever you specify in a file that does NOT have .json extension will be loaded as plain strings (one per line) even
+if it contains valid json
+
+#### Synonyms and SOUNDEX
+
+Custom slot type that has synonyms will work with SOUNDEX flag just like one without synonyms.
 
 ### Custom slot types based on regular expressions
 
