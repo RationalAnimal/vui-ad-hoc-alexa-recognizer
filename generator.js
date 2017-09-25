@@ -23,12 +23,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-'use strict'
-let fs = require('fs');
-let readline = require('readline');
-let recognizer = require('./generatorsupport.js');
-let utilities = require('./utilities.js');
-let jsonutilities = require('./jsonutilities.js');
+"use strict";
+let fs = require("fs");
+let recognizer = require("./generatorsupport.js");
+let utilities = require("./utilities.js");
+let jsonutilities = require("./jsonutilities.js");
 
 let resultJson;
 
@@ -40,14 +39,14 @@ let defaultCortanaConfig = {
 };
 
 let usage = function(){
-  console.log('Usage: node ' + process.argv[1] + ':');
-  console.log('  --sourcebase BaseSourceDirectory that is the base for the other file references on the command line or in the config file');
-  console.log('  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.');
-  console.log('  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.');
-  console.log('  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.');
-  console.log('  --utterances UtterancesFileName specify utterances file name, optional.  This is "optional" only in the sense that it CAN be omitted, but in practice it is required.  There only time you would invoke this function without an utterance file argument is if your skill generates only build in intents, which would make it rather useless.');
-  console.log('  --optimizations [SINGLE-STAGE] optional. SINGLE-STAGE means no pre-matches using wildcards.  Depending on the recognizer, this may be slower or faster');
-  console.log('  --suppressRecognizerDisplay does not send recognizer.json to console')
+  console.log("Usage: node " + process.argv[1] + ":");
+  console.log("  --sourcebase BaseSourceDirectory that is the base for the other file references on the command line or in the config file");
+  console.log("  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.");
+  console.log("  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.");
+  console.log("  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.");
+  console.log("  --utterances UtterancesFileName specify utterances file name, optional.  This is \"optional\" only in the sense that it CAN be omitted, but in practice it is required.  There only time you would invoke this function without an utterance file argument is if your skill generates only build in intents, which would make it rather useless.");
+  console.log("  --optimizations [SINGLE-STAGE] optional. SINGLE-STAGE means no pre-matches using wildcards.  Depending on the recognizer, this may be slower or faster");
+  console.log("  --suppressRecognizerDisplay does not send recognizer.json to console");
 };
 
 let optimizations = {"multistage": true};
@@ -72,7 +71,7 @@ for(let i = 2; i < process.argv.length; i ++){
       i++;
       baseSourceDirectory = process.argv[j];
       resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
-//    console.log("typeof resolvedBaseDir: " + (typeof resolvedBaseDir) + ", resolvedBaseDir: " + resolvedBaseDir);
+      //    console.log("typeof resolvedBaseDir: " + (typeof resolvedBaseDir) + ", resolvedBaseDir: " + resolvedBaseDir);
     }
   }
   else if(process.argv[i] === "-i" || process.argv[i] === "--intents"){
@@ -93,7 +92,7 @@ for(let i = 2; i < process.argv.length; i ++){
       interactionModelFileName = process.argv[j];
     }
   }
-  else if(process.argv[i] === "--optimizations" && process.argv[j] === 'SINGLE-STAGE'){
+  else if(process.argv[i] === "--optimizations" && process.argv[j] === "SINGLE-STAGE"){
     if(j < process.argv.length) {
       i++;
       optimizations.multistage = false;
@@ -290,4 +289,4 @@ if(typeof interactionModel !== "undefined"){
 }
 
 resultJson = doTheProcessing();
-fs.writeFile('recognizer.json', JSON.stringify(resultJson), 'utf8', _done(resultJson));
+fs.writeFile("recognizer.json", JSON.stringify(resultJson), "utf8", _done(resultJson));

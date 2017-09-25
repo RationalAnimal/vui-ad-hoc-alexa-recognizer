@@ -23,13 +23,13 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-'use strict';
-var fs = require('fs');
-var soundex = require('./soundex.js');
-var utilities = require('./utilities.js');
-var parser = require('./parseutterance.js');
+"use strict";
+//var fs = require("fs");
+var soundex = require("./soundex.js");
+var utilities = require("./utilities.js");
+var parser = require("./parseutterance.js");
 var recognizer = {};
-var constants = require('./constants.js');
+//var constants = require("./constants.js");
 
 /**
  * Call to convert an array of objects and strings into an array of strings.  Objects MUST have a "value" field which is
@@ -80,7 +80,7 @@ let _makeReplacementRegExpString = function(arrayToConvert){
       appendBar = true;
     }
     returnValue += "" + arrayToUse[i] + "\\s*";
-    }
+  }
   returnValue += ")+)";
   return returnValue;
 };
@@ -170,7 +170,7 @@ recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExp = new RegExp(recogn
 
 recognizer.builtInValues.DATE = require("./builtinslottypes/dates.json");
 {
-    let fullCalendarDateString1 =
+  let fullCalendarDateString1 =
         "(?:January|February|March|April|May|June|July|August|September|October|November|December){0,1}\\s*" +
         "(?:first|1st|second|2nd|third|3rd|fourth|4th|fifth|5th|sixth|6th|seventh|7th|eighth|8th|nineth|9th|tenth|10th|" +
         "eleventh|11th|twelfth|12th|thirteenth|13th|fourteenth|14th|fifteenth|15th|sixteenth|16th|seventeenth|17th|eighteenth|18th|nineteenth|19th|twentieth|20th|" +
@@ -188,18 +188,18 @@ recognizer.builtInValues.DATE = require("./builtinslottypes/dates.json");
         "|" +
         "(?:(?:zero|one|two|three|four|five|six|seven|eight|nine|[0-9])\\s*){4}" +
         ")";
-    recognizer.builtInValues.DATE.values.push(fullCalendarDateString1);
+  recognizer.builtInValues.DATE.values.push(fullCalendarDateString1);
 }
 recognizer.builtInValues.DATE.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.DATE.values);
 recognizer.builtInValues.DATE.replacementRegExp = new RegExp(recognizer.builtInValues.DATE.replacementRegExpString, "ig");
 
 recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
 {
-    let hourOnlyString =
+  let hourOnlyString =
         "\\s*(?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}\\s*(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*";
 
-    recognizer.builtInValues.TIME.values.push(hourOnlyString);
-    let hourAndMinutesString1 =
+  recognizer.builtInValues.TIME.values.push(hourOnlyString);
+  let hourAndMinutesString1 =
         "\\s*" +
         "(?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}\\s*" +
         "(?:zero zero|zero oh|zero 0|oh oh|oh zero|oh 0|0 zero|0 oh|00|0 0|" +
@@ -221,20 +221,20 @@ recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
         "(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}" +
         "\\s*";
 
-    recognizer.builtInValues.TIME.values.push(hourAndMinutesString1);
+  recognizer.builtInValues.TIME.values.push(hourAndMinutesString1);
 
-    recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) midnight\\s*)");
-    recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) midnight\\s*)");
-    recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) midnight\\s*)");
-    recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) noon\\s*)");
-    recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) noon\\s*)");
-    recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) noon\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) midnight\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) midnight\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) midnight\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) noon\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) noon\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) noon\\s*)");
 
-    recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) (?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*)");
-    recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) (?:one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24)\\s*(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*)");
-    recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) (?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:past|after) (?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*quarter (?:to|before) (?:one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24)\\s*(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*)");
+  recognizer.builtInValues.TIME.values.push("(?:\\s*half (?:past|after) (?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*)");
 
-    let hourAndMinutesString2 =
+  let hourAndMinutesString2 =
         "\\s*" +
         "(?:one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|" +
         "ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|" +
@@ -245,9 +245,9 @@ recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
         "(?:zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24){1}\\s*" +
         "(?:o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}" +
         "\\s*";
-    recognizer.builtInValues.TIME.values.push(hourAndMinutesString2);
+  recognizer.builtInValues.TIME.values.push(hourAndMinutesString2);
 
-    let hourString3 =
+  let hourString3 =
         "\\s*" +
         "(?:" +
         "oh one hundred|zero one hundred|one hundred|oh 1 hundred|zero 1 hundred|1 hundred|oh 100|0100|100|" +
@@ -275,7 +275,7 @@ recognizer.builtInValues.TIME = require("./builtinslottypes/times.json");
         "twenty four hundred|24 hundred|24 100|2400" +
         "){1}\\s*(?:hours|hour){0,1}" +
         "\\s*";
-    recognizer.builtInValues.TIME.values.push(hourString3);
+  recognizer.builtInValues.TIME.values.push(hourString3);
 
 
 }
@@ -285,7 +285,7 @@ recognizer.builtInValues.TIME.replacementRegExp = new RegExp(recognizer.builtInV
 recognizer.builtInValues.DURATION = {};
 recognizer.builtInValues.DURATION.values = [];
 {
-    let generalDurationString =
+  let generalDurationString =
         "\\s*" +
         "(?:.+\\s*years{0,1}){0,1}\\s*" +
         "(?:.+\\s*months{0,1}){0,1}\\s*" +
@@ -295,7 +295,7 @@ recognizer.builtInValues.DURATION.values = [];
         "(?:.+\\s*minutes{0,1}){0,1}\\s*" +
         "(?:.+\\s*seconds{0,1}){0,1}\\s*" +
         "\\s*";
-    recognizer.builtInValues.DURATION.values.push(generalDurationString);
+  recognizer.builtInValues.DURATION.values.push(generalDurationString);
 }
 recognizer.builtInValues.DURATION.replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues.DURATION.values);
 recognizer.builtInValues.DURATION.replacementRegExp = new RegExp(recognizer.builtInValues.DURATION.replacementRegExpString, "ig");
@@ -308,7 +308,7 @@ recognizer.builtInValues.US_PRESIDENT = require("./builtinslottypes/uspresidents
 recognizer.builtInValues.US_PHONE_NUMBER = {};
 recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString =
   "(" +
-    // First, area code
+  // First, area code
 
   "(?:[(]{0,1}\\s*)" + // Area code opening parenthesis, if any
   "(?:"+
@@ -522,7 +522,7 @@ for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i++){
   let unusualCharactersRegExp = /[^\0-~]/ig;
   let matchResult;
   while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Corporation.values[i].name)){
-//    console.log("unusualCorporationCharacters search, got matchResult: ", JSON.stringify(matchResult));
+    //    console.log("unusualCorporationCharacters search, got matchResult: ", JSON.stringify(matchResult));
     for(let j = 0; j < matchResult.length; j++){
       if(matchResult[j] !== null && unusualCorporationCharacters.indexOf(matchResult[j]) < 0){
         unusualCorporationCharacters.push(matchResult[j]);
@@ -531,10 +531,10 @@ for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i++){
   }
   for(let k = 0; k < recognizer.builtInValues.Corporation.values[i].alternativeNames.length; k++){
     while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Corporation.values[i].alternativeNames[k])){
-//    console.log("unusualCorporationCharacters search, got matchResult: ", JSON.stringify(matchResult));
+      //    console.log("unusualCorporationCharacters search, got matchResult: ", JSON.stringify(matchResult));
       for(let j = 0; j < matchResult.length; j++){
         if(matchResult[j] !== null && unusualCorporationCharacters.indexOf(matchResult[j]) < 0){
-//          console.log("unusualCorporationCharacters search in alternativeNames, got matchResult: ", JSON.stringify(matchResult));
+          //          console.log("unusualCorporationCharacters search in alternativeNames, got matchResult: ", JSON.stringify(matchResult));
           unusualCorporationCharacters.push(matchResult[j]);
         }
       }
@@ -542,10 +542,10 @@ for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i++){
   }
   for(let k = 0; k < recognizer.builtInValues.Corporation.values[i].priorNames.length; k++){
     while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Corporation.values[i].priorNames[k])){
-//    console.log("unusualCorporationCharacters search, got matchResult: ", JSON.stringify(matchResult));
+      //    console.log("unusualCorporationCharacters search, got matchResult: ", JSON.stringify(matchResult));
       for(let j = 0; j < matchResult.length; j++){
         if(matchResult[j] !== null && unusualCorporationCharacters.indexOf(matchResult[j]) < 0){
-//          console.log("unusualCorporationCharacters search in priorNames, got matchResult: ", JSON.stringify(matchResult));
+          //          console.log("unusualCorporationCharacters search in priorNames, got matchResult: ", JSON.stringify(matchResult));
           unusualCorporationCharacters.push(matchResult[j]);
         }
       }
@@ -561,19 +561,19 @@ for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i++){
   let unusualCharactersRegExp = /[^\0-~]/ig;
   let matchResult;
   while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Airport.values[i].name)){
-//    console.log("unusualAirportCharacters search, got matchResult: ", JSON.stringify(matchResult));
+    //    console.log("unusualAirportCharacters search, got matchResult: ", JSON.stringify(matchResult));
     for(let j = 0; j < matchResult.length; j++){
       if(matchResult[j] !== null && unusualAirportCharacters.indexOf(matchResult[j]) < 0){
-          unusualAirportCharacters.push(matchResult[j]);
+        unusualAirportCharacters.push(matchResult[j]);
       }
     }
   }
   for(let k = 0; k < recognizer.builtInValues.Airport.values[i].alternativeNames.length; k++){
     while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Airport.values[i].alternativeNames[k])){
-//    console.log("unusualAirportCharacters search, got matchResult: ", JSON.stringify(matchResult));
+      //    console.log("unusualAirportCharacters search, got matchResult: ", JSON.stringify(matchResult));
       for(let j = 0; j < matchResult.length; j++){
         if(matchResult[j] !== null && unusualAirportCharacters.indexOf(matchResult[j]) < 0){
-//          console.log("unusualAirportCharacters search in alternativeNames, got matchResult: ", JSON.stringify(matchResult));
+          //          console.log("unusualAirportCharacters search in alternativeNames, got matchResult: ", JSON.stringify(matchResult));
           unusualAirportCharacters.push(matchResult[j]);
         }
       }
@@ -581,10 +581,10 @@ for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i++){
   }
   for(let k = 0; k < recognizer.builtInValues.Airport.values[i].priorNames.length; k++){
     while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Airport.values[i].priorNames[k])){
-//    console.log("unusualAirportCharacters search, got matchResult: ", JSON.stringify(matchResult));
+      //    console.log("unusualAirportCharacters search, got matchResult: ", JSON.stringify(matchResult));
       for(let j = 0; j < matchResult.length; j++){
         if(matchResult[j] !== null && unusualAirportCharacters.indexOf(matchResult[j]) < 0){
-//          console.log("unusualAirportCharacters search in priorNames, got matchResult: ", JSON.stringify(matchResult));
+          //          console.log("unusualAirportCharacters search in priorNames, got matchResult: ", JSON.stringify(matchResult));
           unusualAirportCharacters.push(matchResult[j]);
         }
       }
@@ -667,575 +667,575 @@ recognizer.builtInValues.Room.replacementRegExpString = _makeReplacementRegExpSt
  * This is the new version meant to be used with the parseutterance.js
  */
 var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFlags, matchStage){
-    if(typeof matchStage === "undefined"){
-        matchStage = "FINAL";
+  if(typeof matchStage === "undefined"){
+    matchStage = "FINAL";
+  }
+  slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
+  let simpleSlots = [
+    "TRANSCEND.US_FIRST_NAME", "TRANSCEND.Actor", "TRANSCEND.Artist", "TRANSCEND.Comic", "TRANSCEND.Dessert",
+    "TRANSCEND.LandmarksOrHistoricalBuildings", "TRANSCEND.Landform", "TRANSCEND.MovieSeries", "TRANSCEND.MovieTheater",
+    "TRANSCEND.MusicAlbum", "TRANSCEND.Musician", "TRANSCEND.MusicGroup", "TRANSCEND.MusicEvent", "TRANSCEND.Movie",
+    "TRANSCEND.MedicalOrganization", "TRANSCEND.LocalBusinessType", "TRANSCEND.LocalBusiness", "TRANSCEND.Game",
+    "TRANSCEND.FoodEstablishment", "TRANSCEND.FictionalCharacter", "TRANSCEND.Festival", "TRANSCEND.EducationalOrganization",
+    "TRANSCEND.Director", "TRANSCEND.CivicStructure", "TRANSCEND.BroadcastChannel",
+    "TRANSCEND.BookSeries", "TRANSCEND.Book", "TRANSCEND.Author", "TRANSCEND.Athlete",
+    "TRANSCEND.AdministrativeArea", "TRANSCEND.Country", "TRANSCEND.Color", "TRANSCEND.Room", "TRANSCEND.MusicRecording",
+    "TRANSCEND.MusicVenue", "TRANSCEND.MusicVideo", "TRANSCEND.Organization", "TRANSCEND.Person", "TRANSCEND.Professional",
+    "TRANSCEND.Residence", "TRANSCEND.ScreeningEvent", "TRANSCEND.Service", "TRANSCEND.SoftwareApplication", "TRANSCEND.SoftwareGame",
+    "TRANSCEND.SportsEvent", "TRANSCEND.SocialMediaPlatform", "TRANSCEND.TVEpisode", "TRANSCEND.TVSeason", "TRANSCEND.TVSeries", "TRANSCEND.VideoGame"
+  ];
+  if(slotType === "TRANSCEND.NUMBER"){
+    // Ignore flags for now
+    if(matchStage === "FINAL"){
+      return recognizer.builtInValues.NUMBER.replacementRegExpString;
     }
-    slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
-    let simpleSlots = [
-        "TRANSCEND.US_FIRST_NAME", "TRANSCEND.Actor", "TRANSCEND.Artist", "TRANSCEND.Comic", "TRANSCEND.Dessert",
-        "TRANSCEND.LandmarksOrHistoricalBuildings", "TRANSCEND.Landform", "TRANSCEND.MovieSeries", "TRANSCEND.MovieTheater",
-        "TRANSCEND.MusicAlbum", "TRANSCEND.Musician", "TRANSCEND.MusicGroup", "TRANSCEND.MusicEvent", "TRANSCEND.Movie",
-        "TRANSCEND.MedicalOrganization", "TRANSCEND.LocalBusinessType", "TRANSCEND.LocalBusiness", "TRANSCEND.Game",
-        "TRANSCEND.FoodEstablishment", "TRANSCEND.FictionalCharacter", "TRANSCEND.Festival", "TRANSCEND.EducationalOrganization",
-        "TRANSCEND.Director", "TRANSCEND.CivicStructure", "TRANSCEND.BroadcastChannel",
-        "TRANSCEND.BookSeries", "TRANSCEND.Book", "TRANSCEND.Author", "TRANSCEND.Athlete",
-        "TRANSCEND.AdministrativeArea", "TRANSCEND.Country", "TRANSCEND.Color", "TRANSCEND.Room", "TRANSCEND.MusicRecording",
-        "TRANSCEND.MusicVenue", "TRANSCEND.MusicVideo", "TRANSCEND.Organization", "TRANSCEND.Person", "TRANSCEND.Professional",
-        "TRANSCEND.Residence", "TRANSCEND.ScreeningEvent", "TRANSCEND.Service", "TRANSCEND.SoftwareApplication", "TRANSCEND.SoftwareGame",
-        "TRANSCEND.SportsEvent", "TRANSCEND.SocialMediaPlatform", "TRANSCEND.TVEpisode", "TRANSCEND.TVSeason", "TRANSCEND.TVSeries", "TRANSCEND.VideoGame"
-    ];
-    if(slotType === "TRANSCEND.NUMBER"){
-      // Ignore flags for now
-      if(matchStage === "FINAL"){
-        return recognizer.builtInValues.NUMBER.replacementRegExpString;
-      }
-      else {
-        return "((?:[-0-9a-zA-Z,.]|\\s)+)";
-      }
+    else {
+      return "((?:[-0-9a-zA-Z,.]|\\s)+)";
     }
-    else if(slotType === "TRANSCEND.US_PHONE_NUMBER"){
-      // Ignore flags for now
-      if(matchStage === "FINAL"){
-        return recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString;
-      }
-      else {
-        return "((?:[-0-9a-zA-Z.()]|\\s)+)";
-      }
+  }
+  else if(slotType === "TRANSCEND.US_PHONE_NUMBER"){
+    // Ignore flags for now
+    if(matchStage === "FINAL"){
+      return recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString;
     }
-    else if(slotType === "TRANSCEND.FOUR_DIGIT_NUMBER"){
-        // Ignore flags for now
-      if(matchStage === "FINAL"){
-        return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
-      }
-      else {
-        return "((?:[0-9a-zA-Z,.]|\\s)+)";
-      }
+    else {
+      return "((?:[-0-9a-zA-Z.()]|\\s)+)";
     }
-    else if(slotType === "TRANSCEND.US_PHONE_NUMBER"){
-      // Ignore flags for now
-      if(matchStage === "FINAL"){
-        return recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString;
-      }
-      else {
-        return "((?:[0-9a-zA-Z,.]|\\s)+)";
-      }
+  }
+  else if(slotType === "TRANSCEND.FOUR_DIGIT_NUMBER"){
+    // Ignore flags for now
+    if(matchStage === "FINAL"){
+      return recognizer.builtInValues.FOUR_DIGIT_NUMBER.replacementRegExpString;
     }
-    else if(slotType === "TRANSCEND.US_STATE"){
-      if(matchStage === "FINAL"){
-        if(_hasFlag("EXCLUDE_NON_STATES", slotFlags)){
-          let states = [];
-          for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
-            if(recognizer.builtInValues.US_STATE.values[i].isState){
-              states.push(recognizer.builtInValues.US_STATE.values[i].name);
-            }
-          }
-          let statesOnlyRegExpString = _makeReplacementRegExpString(states);
-          return statesOnlyRegExpString;
-        }
-        else {
-          let statesAndTerritories = [];
-          for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
-            statesAndTerritories.push(recognizer.builtInValues.US_STATE.values[i].name);
-          }
-          let statesAndTerritoriesRegExpString = _makeReplacementRegExpString(statesAndTerritories);
-          return statesAndTerritoriesRegExpString;
-        }
-      }
-      else {
-        return "((?:[a-zA-Z.]|\\s)+)";
-      }
+    else {
+      return "((?:[0-9a-zA-Z,.]|\\s)+)";
     }
-    else if(slotType === "TRANSCEND.US_PRESIDENT"){
-      if(matchStage === "FINAL"){
-        let matchingStrings = [];
-        for(let i = 0; i < recognizer.builtInValues.US_PRESIDENT.values.length; i ++){
-          for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings.length; j ++){
-            matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings[j]);
-          }
-          for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings.length; j ++){
-            matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings[j]);
-          }
-        }
-        return _makeReplacementRegExpString(matchingStrings);
-      }
-      else {
-        return "((?:[0-9a-zA-Z.]|\\s)+)";
-      }
+  }
+  else if(slotType === "TRANSCEND.US_PHONE_NUMBER"){
+    // Ignore flags for now
+    if(matchStage === "FINAL"){
+      return recognizer.builtInValues.US_PHONE_NUMBER.replacementRegExpString;
     }
-    else if(slotType === "TRANSCEND.Airline"){
-      if(matchStage === "FINAL"){
-        // Ignore SOUNDEX_MATCH flag for now
-        let hasWildCardMatch = false;
-        let hasCountryFlag = false;
-        let countries = [];
-        let hasContinentFlag = false;
-        let continents = [];
-        let hasTypeFlag = false;
-        let types = [];
-        for(let i = 0; i < slotFlags.length; i++){
-          if(slotFlags[i].name === "COUNTRY"){
-            hasCountryFlag = true;
-            countries = slotFlags[i].parameters;
-          }
-          else if(slotFlags[i].name === "CONTINENT"){
-            hasContinentFlag = true;
-            continents = slotFlags[i].parameters;
-          }
-          else if(slotFlags[i].name === "TYPE"){
-            hasTypeFlag = true;
-            types = slotFlags[i].parameters;
-          }
-          else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
-            hasWildCardMatch = true;
-          }
-        }
-        if(hasWildCardMatch){
-          // numbers are used in cases of some names
-          return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//          return "((?:\\w|\\s|[0-9]|\-)+)";
-        }
-        else {
-          let allAirlines = [];
-          for(let i = 0; i < recognizer.builtInValues.Airline.values.length; i ++){
-            if(hasCountryFlag && countries.indexOf(recognizer.builtInValues.Airline.values[i].country) < 0){
-              continue;
-            }
-            if(hasContinentFlag && continents.indexOf(recognizer.builtInValues.Airline.values[i].continent) < 0){
-              continue;
-            }
-            if(hasTypeFlag && types.indexOf(recognizer.builtInValues.Airline.values[i].type) < 0){
-              continue;
-            }
-            allAirlines.push(recognizer.builtInValues.Airline.values[i].name);
-          }
-          let replacementRegExpString = _makeReplacementRegExpString(allAirlines);
-          return replacementRegExpString;
-        }
-      }
-      else {
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//        return "(.+)";
-      }
+    else {
+      return "((?:[0-9a-zA-Z,.]|\\s)+)";
     }
-    else if(slotType === "TRANSCEND.SportsTeam"){
-      if(matchStage === "FINAL"){
-        // Ignore SOUNDEX_MATCH flag for now
-        let hasWildCardMatch = false;
-        let hasSportFlag = false;
-        let sports = [];
-        let hasLeagueFlag = false;
-        let leagues = [];
-        let hasIncludePriorNamesFlag = false;
-        for(let i = 0; i < slotFlags.length; i++){
-          if(slotFlags[i].name === "SPORT"){
-            hasSportFlag = true;
-            sports = slotFlags[i].parameters;
-          }
-          else if(slotFlags[i].name === "LEAGUE"){
-            hasLeagueFlag = true;
-            leagues = slotFlags[i].parameters;
-          }
-          else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
-            hasWildCardMatch = true;
-          }
-          else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
-            hasWildCardMatch = true;
-          }
-        }
-        if(hasWildCardMatch){
-          // numbers are used in cases of some names
-          return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//          return "((?:\\w|\\s|[0-9]|\-)+)";
-        }
-        else {
-          let allSportsTeams = [];
-          for(let i = 0; i < recognizer.builtInValues.SportsTeam.values.length; i ++){
-            if(hasSportFlag && sports.indexOf(recognizer.builtInValues.SportsTeam.values[i].sport) < 0){
-              continue;
-            }
-            if(hasLeagueFlag && leagues.indexOf(recognizer.builtInValues.SportsTeam.values[i].league) < 0){
-              continue;
-            }
-            allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].name);
-            if(typeof recognizer.builtInValues.SportsTeam.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.SportsTeam.values[i].alternativeNames)){
-              for(let j = 0; j < recognizer.builtInValues.SportsTeam.values[i].alternativeNames.length; j++){
-                allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].alternativeNames[j]);
-              }
-            }
-            if(hasIncludePriorNamesFlag){
-              for(let j = 0; j < recognizer.builtInValues.SportsTeam.priorNames.length; j++){
-                allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].priorNames[j]);
-              }
-            }
-          }
-          let replacementRegExpString = _makeReplacementRegExpString(allSportsTeams);
-          return replacementRegExpString;
-        }      }
-      else {
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//        return "((?:\\w|\\s|[0-9]|\-)+)";
-      }
-
-    }
-    else if(slotType === "TRANSCEND.Corporation"){
-      if(matchStage === "FINAL"){
-        // Ignore SOUNDEX_MATCH flag for now
-        let hasWildCardMatch = false;
-        let hasIncludePriorNamesFlag = false;
-        for(let i = 0; i < slotFlags.length; i++){
-          if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
-            hasWildCardMatch = true;
-          }
-          else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
-            hasWildCardMatch = true;
-          }
-        }
-        if(hasWildCardMatch){
-          // numbers are used in cases of some names
-          return "((?:\\s|[-0-9a-zA-Z_',.&]|[^\0-~])+)";
-        }
-        else {
-          let allCorporations = [];
-          for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i ++){
-            allCorporations.push(recognizer.builtInValues.Corporation.values[i].name);
-            if(typeof recognizer.builtInValues.Corporation.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.Corporation.values[i].alternativeNames)){
-              for(let j = 0; j < recognizer.builtInValues.Corporation.values[i].alternativeNames.length; j++){
-                allCorporations.push(recognizer.builtInValues.Corporation.values[i].alternativeNames[j]);
-              }
-            }
-            if(hasIncludePriorNamesFlag){
-              for(let j = 0; j < recognizer.builtInValues.Corporation.priorNames.length; j++){
-                allCorporations.push(recognizer.builtInValues.Corporation.values[i].priorNames[j]);
-              }
-            }
-          }
-          let replacementRegExpString = _makeReplacementRegExpString(allCorporations);
-          return replacementRegExpString;
-        }
-      }
-      else {
-        if(recognizer.builtInValues.Corporation.presentUnusualCharacters.length > 0){
-          let returnValue = "((?:\\s|[-0-9a-zA-Z,_,.&'";
-          for(let i = 0; i < recognizer.builtInValues.Corporation.presentUnusualCharacters.length; i ++){
-//            console.log("special character: " + recognizer.builtInValues.Corporation.presentUnusualCharacters[i] + ", code: ", recognizer.builtInValues.Corporation.presentUnusualCharacters[i].charCodeAt(0));
-            returnValue += recognizer.builtInValues.Corporation.presentUnusualCharacters[i];
-          }
-          returnValue += "])+)";
-          return returnValue;
-        }
-        else {
-          return "((?:[-0-9a-zA-Z_',.&]|\\s)+)";
-        }
-      }
-    }
-    else if(slotType === "TRANSCEND.Airport"){
-      if(matchStage === "FINAL"){
-        // Ignore SOUNDEX_MATCH flag for now
-        let hasWildCardMatch = false;
-        let hasIncludePriorNamesFlag = false;
-        let hasCountryFlag = false;
-        let countries = [];
-        let hasStateFlag = false;
+  }
+  else if(slotType === "TRANSCEND.US_STATE"){
+    if(matchStage === "FINAL"){
+      if(_hasFlag("EXCLUDE_NON_STATES", slotFlags)){
         let states = [];
-        for(let i = 0; i < slotFlags.length; i++){
-          if(slotFlags[i].name === "COUNTRY"){
-            hasCountryFlag = true;
-            countries = slotFlags[i].parameters;
-          }
-          else if(slotFlags[i].name === "STATE"){
-            hasStateFlag = true;
-            states = slotFlags[i].parameters;
-          }
-          else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
-            hasWildCardMatch = true;
-          }
-          else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
-            hasWildCardMatch = true;
+        for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
+          if(recognizer.builtInValues.US_STATE.values[i].isState){
+            states.push(recognizer.builtInValues.US_STATE.values[i].name);
           }
         }
-        if(hasWildCardMatch){
-          // TODO Need further refinements to limit the matches to international alphanumerical characters, but at this time this will do
-          return "((?:\\s|[-0-9a-zA-Z,_'/]|[^\0-~])+)";
-        }
-        else {
-          let allAirports = [];
-          for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i ++){
-            if(hasCountryFlag && countries.indexOf(recognizer.builtInValues.Airport.values[i].country) < 0){
-              continue;
-            }
-            if(hasStateFlag && states.indexOf(recognizer.builtInValues.Airport.values[i].state) < 0){
-              continue;
-            }
-            allAirports.push(recognizer.builtInValues.Airport.values[i].name);
-            if(typeof recognizer.builtInValues.Airport.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.Airport.values[i].alternativeNames)){
-              for(let j = 0; j < recognizer.builtInValues.Airport.values[i].alternativeNames.length; j++){
-                allAirports.push(recognizer.builtInValues.Airport.values[i].alternativeNames[j]);
-              }
-            }
-            if(hasIncludePriorNamesFlag && typeof recognizer.builtInValues.Airport.priorNames !== "undefined" && Array.isArray(recognizer.builtInValues.Airport.priorNames)){
-              for(let j = 0; j < recognizer.builtInValues.Airport.priorNames.length; j++){
-                allAirports.push(recognizer.builtInValues.Airport.values[i].priorNames[j]);
-              }
-            }
-          }
-          let replacementRegExpString = _makeReplacementRegExpString(allAirports);
-          return replacementRegExpString;
-        }
+        let statesOnlyRegExpString = _makeReplacementRegExpString(states);
+        return statesOnlyRegExpString;
       }
       else {
-        if(recognizer.builtInValues.Airport.presentUnusualCharacters.length > 0){
-          let returnValue = "((?:\\s|[-0-9a-zA-Z,_'/";
-          for(let i = 0; i < recognizer.builtInValues.Airport.presentUnusualCharacters.length; i ++){
-//            console.log("special character: " + recognizer.builtInValues.Airport.presentUnusualCharacters[i] + ", code: ", recognizer.builtInValues.Airport.presentUnusualCharacters[i].charCodeAt(0));
-            returnValue += recognizer.builtInValues.Airport.presentUnusualCharacters[i];
-          }
-          returnValue += "])+)";
-          return returnValue;
+        let statesAndTerritories = [];
+        for(let i = 0; i < recognizer.builtInValues.US_STATE.values.length; i ++){
+          statesAndTerritories.push(recognizer.builtInValues.US_STATE.values[i].name);
         }
-        else {
-          return "((?:\\s|[-0-9a-zA-Z,_'/])+)";
-        }
+        let statesAndTerritoriesRegExpString = _makeReplacementRegExpString(statesAndTerritories);
+        return statesAndTerritoriesRegExpString;
       }
     }
-    else if(simpleSlots.indexOf(slotType) >= 0){
-      if(matchStage === "FINAL"){
-        return getSimpleRegExpForBuiltInSlotType(slotType, slotFlags);
+    else {
+      return "((?:[a-zA-Z.]|\\s)+)";
+    }
+  }
+  else if(slotType === "TRANSCEND.US_PRESIDENT"){
+    if(matchStage === "FINAL"){
+      let matchingStrings = [];
+      for(let i = 0; i < recognizer.builtInValues.US_PRESIDENT.values.length; i ++){
+        for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings.length; j ++){
+          matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].matchingStrings[j]);
+        }
+        for(let j = 0; j < recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings.length; j ++){
+          matchingStrings.push(recognizer.builtInValues.US_PRESIDENT.values[i].ordinalMatchingStrings[j]);
+        }
       }
-      else {
+      return _makeReplacementRegExpString(matchingStrings);
+    }
+    else {
+      return "((?:[0-9a-zA-Z.]|\\s)+)";
+    }
+  }
+  else if(slotType === "TRANSCEND.Airline"){
+    if(matchStage === "FINAL"){
+      // Ignore SOUNDEX_MATCH flag for now
+      let hasWildCardMatch = false;
+      let hasCountryFlag = false;
+      let countries = [];
+      let hasContinentFlag = false;
+      let continents = [];
+      let hasTypeFlag = false;
+      let types = [];
+      for(let i = 0; i < slotFlags.length; i++){
+        if(slotFlags[i].name === "COUNTRY"){
+          hasCountryFlag = true;
+          countries = slotFlags[i].parameters;
+        }
+        else if(slotFlags[i].name === "CONTINENT"){
+          hasContinentFlag = true;
+          continents = slotFlags[i].parameters;
+        }
+        else if(slotFlags[i].name === "TYPE"){
+          hasTypeFlag = true;
+          types = slotFlags[i].parameters;
+        }
+        else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+          hasWildCardMatch = true;
+        }
+      }
+      if(hasWildCardMatch){
+        // numbers are used in cases of some names
         return "((?:\\w|\\s|[0-9,_']|\-)+)";
-//        return "((?:\\w|\\s|[0-9]|\-)+)";
-      }
-    }
-    else if(slotType === "TRANSCEND.DATE"){
-      if(matchStage === "FINAL"){
-        // Ignore flags for now
-        return recognizer.builtInValues.DATE.replacementRegExpString;
+        //          return "((?:\\w|\\s|[0-9]|\-)+)";
       }
       else {
-        return "((?:\\s|[-0-9a-zA-Z,_'])+)";
-      }
-    }
-    else if(slotType === "TRANSCEND.TIME"){
-      if(matchStage === "FINAL"){
-        // Ignore flags for now
-        return recognizer.builtInValues.TIME.replacementRegExpString;
-      }
-      else {
-        return "((?:\\s|[-0-9a-zA-Z,_'])+)";
-      }
-    }
-    else if(slotType === "TRANSCEND.DURATION"){
-      if(matchStage === "FINAL"){
-        // Ignore flags for now
-        return recognizer.builtInValues.DURATION.replacementRegExpString;
-      }
-      else {
-        return "((?:\\s|[-0-9a-zA-Z,_':])+)";
-      }
-    }
-    else if(slotType === "TRANSCEND.Month"){
-      if(matchStage === "FINAL"){
-        // Ignore flags for now
-        return recognizer.builtInValues.Month.replacementRegExpString;
-      }
-      else {
-        return "((?:\\s|[0-9a-zA-Z.])+)";
-      }
-    }
-    else if(slotType === "TRANSCEND.DayOfWeek"){
-      if(matchStage === "FINAL"){
-        // Ignore flags for now
-        return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
-      }
-      else {
-        return "((?:\\s|[0-9a-zA-Z.])+)";
-      }
-    }
-
-//  else if(slotType.startsWith("TRANSCEND.")){
-//    // TODO add handling of other built in TRANSCEND/Amazon slot types, for now just return the value
-//    return "((?:\\w|\\s|[0-9]|\-)+)";
-//  }
-    // Here we are dealing with custom slots.
-    if(typeof config !== "undefined" && Array.isArray(config.customSlotTypes)){
-        for(let i = 0; i < config.customSlotTypes.length; i++){
-            let customSlotType = config.customSlotTypes[i];
-            if(customSlotType.name === slotType){
-                if(typeof customSlotType.customRegExpString === "string" && customSlotType.customRegExpString.length > 0){
-                  // RegEx based custom slots
-                  if(matchStage === "FINAL"){
-                    customSlotType.replacementRegExp = customSlotType.customRegExpString;
-                    return customSlotType.replacementRegExp;
-                  }
-                  else {
-                    if(typeof customSlotType.customWildCardRegExpString === "string" && customSlotType.customWildCardRegExpString.length > 0){
-                        return customSlotType.customWildCardRegExpString;
-                    }
-                    else {
-                      customSlotType.replacementRegExp = customSlotType.customRegExpString;
-                      return customSlotType.replacementRegExp;
-                    }
-                  }
-                }
-                else {
-                  // List based custom slots
-                  if(matchStage === "FINAL"){
-                    if(_hasFlag("SOUNDEX_MATCH", slotFlags)){
-                      if(typeof customSlotType.replacementSoundExpRegExp === "undefined"){
-                        customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
-                      }
-                      // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
-                      return "((?:\\w|\\s|[0-9,_']|\-)+)";
-                    }
-                    else if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-                      return "((?:\\w|\\s|[0-9,_']|\-)+)";
-                    }
-                    else {
-                      if(typeof customSlotType.replacementRegExp === "undefined"){
-                        customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values);
-                      }
-                      return customSlotType.replacementRegExp;
-                    }
-                  }
-                  else {
-                    return "((?:\\w|\\s|[0-9,_']|\-)+)";
-                  }
-
-                }
-            }
+        let allAirlines = [];
+        for(let i = 0; i < recognizer.builtInValues.Airline.values.length; i ++){
+          if(hasCountryFlag && countries.indexOf(recognizer.builtInValues.Airline.values[i].country) < 0){
+            continue;
+          }
+          if(hasContinentFlag && continents.indexOf(recognizer.builtInValues.Airline.values[i].continent) < 0){
+            continue;
+          }
+          if(hasTypeFlag && types.indexOf(recognizer.builtInValues.Airline.values[i].type) < 0){
+            continue;
+          }
+          allAirlines.push(recognizer.builtInValues.Airline.values[i].name);
         }
+        let replacementRegExpString = _makeReplacementRegExpString(allAirlines);
+        return replacementRegExpString;
+      }
     }
-    // Default fallback
-    return "((?:\\s|[-0-9a-zA-Z_])+)";
+    else {
+      return "((?:\\w|\\s|[0-9,_']|\-)+)";
+      //        return "(.+)";
+    }
+  }
+  else if(slotType === "TRANSCEND.SportsTeam"){
+    if(matchStage === "FINAL"){
+      // Ignore SOUNDEX_MATCH flag for now
+      let hasWildCardMatch = false;
+      let hasSportFlag = false;
+      let sports = [];
+      let hasLeagueFlag = false;
+      let leagues = [];
+      let hasIncludePriorNamesFlag = false;
+      for(let i = 0; i < slotFlags.length; i++){
+        if(slotFlags[i].name === "SPORT"){
+          hasSportFlag = true;
+          sports = slotFlags[i].parameters;
+        }
+        else if(slotFlags[i].name === "LEAGUE"){
+          hasLeagueFlag = true;
+          leagues = slotFlags[i].parameters;
+        }
+        else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+          hasWildCardMatch = true;
+        }
+        else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
+          hasWildCardMatch = true;
+        }
+      }
+      if(hasWildCardMatch){
+        // numbers are used in cases of some names
+        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+        //          return "((?:\\w|\\s|[0-9]|\-)+)";
+      }
+      else {
+        let allSportsTeams = [];
+        for(let i = 0; i < recognizer.builtInValues.SportsTeam.values.length; i ++){
+          if(hasSportFlag && sports.indexOf(recognizer.builtInValues.SportsTeam.values[i].sport) < 0){
+            continue;
+          }
+          if(hasLeagueFlag && leagues.indexOf(recognizer.builtInValues.SportsTeam.values[i].league) < 0){
+            continue;
+          }
+          allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].name);
+          if(typeof recognizer.builtInValues.SportsTeam.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.SportsTeam.values[i].alternativeNames)){
+            for(let j = 0; j < recognizer.builtInValues.SportsTeam.values[i].alternativeNames.length; j++){
+              allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].alternativeNames[j]);
+            }
+          }
+          if(hasIncludePriorNamesFlag){
+            for(let j = 0; j < recognizer.builtInValues.SportsTeam.priorNames.length; j++){
+              allSportsTeams.push(recognizer.builtInValues.SportsTeam.values[i].priorNames[j]);
+            }
+          }
+        }
+        let replacementRegExpString = _makeReplacementRegExpString(allSportsTeams);
+        return replacementRegExpString;
+      }      }
+    else {
+      return "((?:\\w|\\s|[0-9,_']|\-)+)";
+      //        return "((?:\\w|\\s|[0-9]|\-)+)";
+    }
+
+  }
+  else if(slotType === "TRANSCEND.Corporation"){
+    if(matchStage === "FINAL"){
+      // Ignore SOUNDEX_MATCH flag for now
+      let hasWildCardMatch = false;
+      let hasIncludePriorNamesFlag = false;
+      for(let i = 0; i < slotFlags.length; i++){
+        if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+          hasWildCardMatch = true;
+        }
+        else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
+          hasWildCardMatch = true;
+        }
+      }
+      if(hasWildCardMatch){
+        // numbers are used in cases of some names
+        return "((?:\\s|[-0-9a-zA-Z_',.&]|[^\0-~])+)";
+      }
+      else {
+        let allCorporations = [];
+        for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i ++){
+          allCorporations.push(recognizer.builtInValues.Corporation.values[i].name);
+          if(typeof recognizer.builtInValues.Corporation.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.Corporation.values[i].alternativeNames)){
+            for(let j = 0; j < recognizer.builtInValues.Corporation.values[i].alternativeNames.length; j++){
+              allCorporations.push(recognizer.builtInValues.Corporation.values[i].alternativeNames[j]);
+            }
+          }
+          if(hasIncludePriorNamesFlag){
+            for(let j = 0; j < recognizer.builtInValues.Corporation.priorNames.length; j++){
+              allCorporations.push(recognizer.builtInValues.Corporation.values[i].priorNames[j]);
+            }
+          }
+        }
+        let replacementRegExpString = _makeReplacementRegExpString(allCorporations);
+        return replacementRegExpString;
+      }
+    }
+    else {
+      if(recognizer.builtInValues.Corporation.presentUnusualCharacters.length > 0){
+        let returnValue = "((?:\\s|[-0-9a-zA-Z,_,.&'";
+        for(let i = 0; i < recognizer.builtInValues.Corporation.presentUnusualCharacters.length; i ++){
+          //            console.log("special character: " + recognizer.builtInValues.Corporation.presentUnusualCharacters[i] + ", code: ", recognizer.builtInValues.Corporation.presentUnusualCharacters[i].charCodeAt(0));
+          returnValue += recognizer.builtInValues.Corporation.presentUnusualCharacters[i];
+        }
+        returnValue += "])+)";
+        return returnValue;
+      }
+      else {
+        return "((?:[-0-9a-zA-Z_',.&]|\\s)+)";
+      }
+    }
+  }
+  else if(slotType === "TRANSCEND.Airport"){
+    if(matchStage === "FINAL"){
+      // Ignore SOUNDEX_MATCH flag for now
+      let hasWildCardMatch = false;
+      let hasIncludePriorNamesFlag = false;
+      let hasCountryFlag = false;
+      let countries = [];
+      let hasStateFlag = false;
+      let states = [];
+      for(let i = 0; i < slotFlags.length; i++){
+        if(slotFlags[i].name === "COUNTRY"){
+          hasCountryFlag = true;
+          countries = slotFlags[i].parameters;
+        }
+        else if(slotFlags[i].name === "STATE"){
+          hasStateFlag = true;
+          states = slotFlags[i].parameters;
+        }
+        else if(slotFlags[i].name === "INCLUDE_WILDCARD_MATCH"){
+          hasWildCardMatch = true;
+        }
+        else if(slotFlags[i].name === "INCLUDE_PRIOR_NAMES"){
+          hasWildCardMatch = true;
+        }
+      }
+      if(hasWildCardMatch){
+        // TODO Need further refinements to limit the matches to international alphanumerical characters, but at this time this will do
+        return "((?:\\s|[-0-9a-zA-Z,_'/]|[^\0-~])+)";
+      }
+      else {
+        let allAirports = [];
+        for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i ++){
+          if(hasCountryFlag && countries.indexOf(recognizer.builtInValues.Airport.values[i].country) < 0){
+            continue;
+          }
+          if(hasStateFlag && states.indexOf(recognizer.builtInValues.Airport.values[i].state) < 0){
+            continue;
+          }
+          allAirports.push(recognizer.builtInValues.Airport.values[i].name);
+          if(typeof recognizer.builtInValues.Airport.values[i].alternativeNames !== "undefined" && Array.isArray(recognizer.builtInValues.Airport.values[i].alternativeNames)){
+            for(let j = 0; j < recognizer.builtInValues.Airport.values[i].alternativeNames.length; j++){
+              allAirports.push(recognizer.builtInValues.Airport.values[i].alternativeNames[j]);
+            }
+          }
+          if(hasIncludePriorNamesFlag && typeof recognizer.builtInValues.Airport.priorNames !== "undefined" && Array.isArray(recognizer.builtInValues.Airport.priorNames)){
+            for(let j = 0; j < recognizer.builtInValues.Airport.priorNames.length; j++){
+              allAirports.push(recognizer.builtInValues.Airport.values[i].priorNames[j]);
+            }
+          }
+        }
+        let replacementRegExpString = _makeReplacementRegExpString(allAirports);
+        return replacementRegExpString;
+      }
+    }
+    else {
+      if(recognizer.builtInValues.Airport.presentUnusualCharacters.length > 0){
+        let returnValue = "((?:\\s|[-0-9a-zA-Z,_'/";
+        for(let i = 0; i < recognizer.builtInValues.Airport.presentUnusualCharacters.length; i ++){
+          //            console.log("special character: " + recognizer.builtInValues.Airport.presentUnusualCharacters[i] + ", code: ", recognizer.builtInValues.Airport.presentUnusualCharacters[i].charCodeAt(0));
+          returnValue += recognizer.builtInValues.Airport.presentUnusualCharacters[i];
+        }
+        returnValue += "])+)";
+        return returnValue;
+      }
+      else {
+        return "((?:\\s|[-0-9a-zA-Z,_'/])+)";
+      }
+    }
+  }
+  else if(simpleSlots.indexOf(slotType) >= 0){
+    if(matchStage === "FINAL"){
+      return getSimpleRegExpForBuiltInSlotType(slotType, slotFlags);
+    }
+    else {
+      return "((?:\\w|\\s|[0-9,_']|\-)+)";
+      //        return "((?:\\w|\\s|[0-9]|\-)+)";
+    }
+  }
+  else if(slotType === "TRANSCEND.DATE"){
+    if(matchStage === "FINAL"){
+      // Ignore flags for now
+      return recognizer.builtInValues.DATE.replacementRegExpString;
+    }
+    else {
+      return "((?:\\s|[-0-9a-zA-Z,_'])+)";
+    }
+  }
+  else if(slotType === "TRANSCEND.TIME"){
+    if(matchStage === "FINAL"){
+      // Ignore flags for now
+      return recognizer.builtInValues.TIME.replacementRegExpString;
+    }
+    else {
+      return "((?:\\s|[-0-9a-zA-Z,_'])+)";
+    }
+  }
+  else if(slotType === "TRANSCEND.DURATION"){
+    if(matchStage === "FINAL"){
+      // Ignore flags for now
+      return recognizer.builtInValues.DURATION.replacementRegExpString;
+    }
+    else {
+      return "((?:\\s|[-0-9a-zA-Z,_':])+)";
+    }
+  }
+  else if(slotType === "TRANSCEND.Month"){
+    if(matchStage === "FINAL"){
+      // Ignore flags for now
+      return recognizer.builtInValues.Month.replacementRegExpString;
+    }
+    else {
+      return "((?:\\s|[0-9a-zA-Z.])+)";
+    }
+  }
+  else if(slotType === "TRANSCEND.DayOfWeek"){
+    if(matchStage === "FINAL"){
+      // Ignore flags for now
+      return recognizer.builtInValues.DayOfWeek.replacementRegExpString;
+    }
+    else {
+      return "((?:\\s|[0-9a-zA-Z.])+)";
+    }
+  }
+
+  //  else if(slotType.startsWith("TRANSCEND.")){
+  //    // TODO add handling of other built in TRANSCEND/Amazon slot types, for now just return the value
+  //    return "((?:\\w|\\s|[0-9]|\-)+)";
+  //  }
+  // Here we are dealing with custom slots.
+  if(typeof config !== "undefined" && Array.isArray(config.customSlotTypes)){
+    for(let i = 0; i < config.customSlotTypes.length; i++){
+      let customSlotType = config.customSlotTypes[i];
+      if(customSlotType.name === slotType){
+        if(typeof customSlotType.customRegExpString === "string" && customSlotType.customRegExpString.length > 0){
+          // RegEx based custom slots
+          if(matchStage === "FINAL"){
+            customSlotType.replacementRegExp = customSlotType.customRegExpString;
+            return customSlotType.replacementRegExp;
+          }
+          else {
+            if(typeof customSlotType.customWildCardRegExpString === "string" && customSlotType.customWildCardRegExpString.length > 0){
+              return customSlotType.customWildCardRegExpString;
+            }
+            else {
+              customSlotType.replacementRegExp = customSlotType.customRegExpString;
+              return customSlotType.replacementRegExp;
+            }
+          }
+        }
+        else {
+          // List based custom slots
+          if(matchStage === "FINAL"){
+            if(_hasFlag("SOUNDEX_MATCH", slotFlags)){
+              if(typeof customSlotType.replacementSoundExpRegExp === "undefined"){
+                customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
+              }
+              // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
+              return "((?:\\w|\\s|[0-9,_']|\-)+)";
+            }
+            else if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
+              return "((?:\\w|\\s|[0-9,_']|\-)+)";
+            }
+            else {
+              if(typeof customSlotType.replacementRegExp === "undefined"){
+                customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values);
+              }
+              return customSlotType.replacementRegExp;
+            }
+          }
+          else {
+            return "((?:\\w|\\s|[0-9,_']|\-)+)";
+          }
+
+        }
+      }
+    }
+  }
+  // Default fallback
+  return "((?:\\s|[-0-9a-zA-Z_])+)";
 };
 
 var allPlatforms = ["TRANSCEND", "AMAZON"];
 
 var _scanIntentsAndSlotsForPlatform = function(config, intents, utterances){
-    // If the config file specifies the input and output platform type(s) then
-    // skip the parsing.
-    let acceptedInputPlatforms = allPlatforms.concat(["ALL"]);
-    let acceptedOutputPlatforms = allPlatforms.concat([]);
-    if(typeof config === "undefined" || config === null){
-        // TODO Add a separate constants file containing all the constants, including error messages.
-        throw {"error": "MISSING_CONFIG", "message": "Programmer error - no config passed in."};
+  // If the config file specifies the input and output platform type(s) then
+  // skip the parsing.
+  let acceptedInputPlatforms = allPlatforms.concat(["ALL"]);
+  let acceptedOutputPlatforms = allPlatforms.concat([]);
+  if(typeof config === "undefined" || config === null){
+    // TODO Add a separate constants file containing all the constants, including error messages.
+    throw {"error": "MISSING_CONFIG", "message": "Programmer error - no config passed in."};
+  }
+  if(typeof intents === "undefined" || config === null){
+    // TODO Add a separate constants file containing all the constants, including error messages.
+    throw {"error": "MISSING_INTENTS", "message": "Programmer error - no utterances passed in."};
+  }
+  if(typeof utterances === "undefined" || config === null){
+    // TODO Add a separate constants file containing all the constants, including error messages.
+    throw {"error": "MISSING_UTTERANCES", "message": "Programmer error - no utterances passed in."};
+  }
+
+  let outputSpecified = false;
+  let inputsSpecified = false;
+  if(typeof config.platform !== "undefined" && config.platform !== null){
+    if(Array.isArray(config.platform.input) && config.platform.input.length > 0 && typeof config.platform.output === "string"){
+      let scannedInputs = [];
+      for(let i = 0; i < config.platform.input.length; i ++){
+        if(acceptedInputPlatforms.indexOf(config.platform.input[i]) >= 0){
+          inputsSpecified = true;
+          scannedInputs.push(config.platform.input[i]);
+        }
+      }
+      config.platform.input = scannedInputs;
     }
-    if(typeof intents === "undefined" || config === null){
-        // TODO Add a separate constants file containing all the constants, including error messages.
-        throw {"error": "MISSING_INTENTS", "message": "Programmer error - no utterances passed in."};
+    if(acceptedOutputPlatforms.indexOf(config.platform.output) >= 0){
+      outputSpecified = true;
     }
-    if(typeof utterances === "undefined" || config === null){
-        // TODO Add a separate constants file containing all the constants, including error messages.
-        throw {"error": "MISSING_UTTERANCES", "message": "Programmer error - no utterances passed in."};
+    else {
+      config.platform.output = undefined;
+    }
+    if(inputsSpecified && outputSpecified){
+      // nothing to do - exit
+      return;
+    }
+  }
+
+  if(inputsSpecified === false){
+    // Scan through intents looking for "platform" intents or slot types.
+    let scannedInputs = [];
+
+    if(typeof config.builtInIntents !== "undefined" && config.builtInIntents !== null){
+      for(let i = 0; i < config.builtInIntents.length; i ++){
+        let builtInIntent = config.builtInIntents[i];
+        if(builtInIntent.enabled){
+          let platform = _getBuiltinIntentPlatform(builtInIntent.name, acceptedInputPlatforms);
+          if(typeof platform !== "undefined" && platform !== null && scannedInputs.indexOf(platform) < 0){
+            scannedInputs.push(platform);
+            inputsSpecified = true;
+          }
+        }
+      }
     }
 
-    let outputSpecified = false;
-    let inputsSpecified = false;
-    if(typeof config.platform !== "undefined" && config.platform !== null){
-        if(Array.isArray(config.platform.input) && config.platform.input.length > 0 && typeof config.platform.output === "string"){
-            let scannedInputs = [];
-            for(let i = 0; i < config.platform.input.length; i ++){
-                if(acceptedInputPlatforms.indexOf(config.platform.input[i]) >= 0){
-                    inputsSpecified = true;
-                    scannedInputs.push(config.platform.input[i]);
-                }
-            }
-            config.platform.input = scannedInputs;
+    if(typeof config.builtInSlots !== "undefined" && config.builtInSlots !== null){
+      for(let i = 0; i < config.builtInSlots.length; i ++){
+        let builtInSlot = config.builtInSlots[i];
+        let platform = _getBuiltinSlotPlatform(builtInSlot.name, acceptedInputPlatforms);
+        if(typeof platform !== "undefined" && platform !== null && scannedInputs.indexOf(platform) < 0){
+          scannedInputs.push(platform);
+          inputsSpecified = true;
         }
-        if(acceptedOutputPlatforms.indexOf(config.platform.output) >= 0){
-            outputSpecified = true;
-        }
-        else {
-            config.platform.output = undefined;
-        }
-        if(inputsSpecified && outputSpecified){
-            // nothing to do - exit
-            return;
-        }
+      }
     }
-
-    if(inputsSpecified === false){
-        // Scan through intents looking for "platform" intents or slot types.
-        let scannedInputs = [];
-
-        if(typeof config.builtInIntents !== "undefined" && config.builtInIntents !== null){
-            for(let i = 0; i < config.builtInIntents.length; i ++){
-                let builtInIntent = config.builtInIntents[i];
-                if(builtInIntent.enabled){
-                    let platform = _getBuiltinIntentPlatform(builtInIntent.name, acceptedInputPlatforms);
-                    if(typeof platform !== "undefined" && platform !== null && scannedInputs.indexOf(platform) < 0){
-                        scannedInputs.push(platform);
-                        inputsSpecified = true;
-                    }
-                }
-            }
-        }
-
-        if(typeof config.builtInSlots !== "undefined" && config.builtInSlots !== null){
-            for(let i = 0; i < config.builtInSlots.length; i ++){
-                let builtInSlot = config.builtInSlots[i];
-                let platform = _getBuiltinSlotPlatform(builtInSlot.name, acceptedInputPlatforms);
-                if(typeof platform !== "undefined" && platform !== null && scannedInputs.indexOf(platform) < 0){
-                    scannedInputs.push(platform);
-                    inputsSpecified = true;
-                }
-            }
-        }
-        if(typeof config.platform === "undefined" || config.platform === null){
-            config.platform = {"input": []};
-        }
-        if(typeof config.platform.input === "undefined" || config.platform.input === null || Array.isArray(config.platform.input) ===  false){
-            config.platform.input = [];
-        }
-        for(let i = 0; i < scannedInputs.length; i++){
-            if(config.platform.input.indexOf(scannedInputs[i]) < 0){
-                config.platform.input.push(scannedInputs[i]);
-            }
-        }
+    if(typeof config.platform === "undefined" || config.platform === null){
+      config.platform = {"input": []};
     }
-    // Finally set the output if not already set.
-    if(outputSpecified === false){
-        config.platform.output = "AMAZON";
+    if(typeof config.platform.input === "undefined" || config.platform.input === null || Array.isArray(config.platform.input) ===  false){
+      config.platform.input = [];
     }
-    if(inputsSpecified === false){
-        config.platform.input.push(config.platform.output);
+    for(let i = 0; i < scannedInputs.length; i++){
+      if(config.platform.input.indexOf(scannedInputs[i]) < 0){
+        config.platform.input.push(scannedInputs[i]);
+      }
     }
+  }
+  // Finally set the output if not already set.
+  if(outputSpecified === false){
+    config.platform.output = "AMAZON";
+  }
+  if(inputsSpecified === false){
+    config.platform.input.push(config.platform.output);
+  }
 };
 
 /**
  Current implementation is indistiguishable from the intent version, so simply call it here.
  */
 var _getBuiltinSlotPlatform = function(slotName, platforms){
-    return _getBuiltinIntentPlatform(slotName, platforms);
+  return _getBuiltinIntentPlatform(slotName, platforms);
 };
 
 var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, config, skipExtendedValues, skipRegeneratingRegExp, skipTransformFunctions, resolvedBaseDir){
-    let slotConfig = _getBuiltInSlotConfig(config, slotType);
-    if(typeof skipExtendedValues === "undefined" || skipExtendedValues !== true){
-      let extendedValues = _getBuiltInSlotExtendedValues(slotConfig, resolvedBaseDir);
-      if(typeof extendedValues !== "undefined"){
-        recognizer.builtInValues[slotTypeVar].values = recognizer.builtInValues[slotTypeVar].values.concat(extendedValues);
+  let slotConfig = _getBuiltInSlotConfig(config, slotType);
+  if(typeof skipExtendedValues === "undefined" || skipExtendedValues !== true){
+    let extendedValues = _getBuiltInSlotExtendedValues(slotConfig, resolvedBaseDir);
+    if(typeof extendedValues !== "undefined"){
+      recognizer.builtInValues[slotTypeVar].values = recognizer.builtInValues[slotTypeVar].values.concat(extendedValues);
+    }
+  }
+  if(typeof skipRegeneratingRegExp === "undefined" || skipRegeneratingRegExp !== true){
+    recognizer.builtInValues[slotTypeVar].replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues[slotTypeVar].values);
+    recognizer.builtInValues[slotTypeVar].replacementRegExp = new RegExp(recognizer.builtInValues[slotTypeVar].replacementRegExpString, "ig");
+  }
+  if(typeof skipTransformFunctions === "undefined" || skipTransformFunctions !== true){
+    if(typeof slotConfig !== "undefined" && slotConfig !== null){
+      if(typeof slotConfig.transformSrcFilename === "string"){
+        recognizer.builtInValues[slotTypeVar].transformSrcFilename = utilities.resolveFileName(slotConfig.transformSrcFilename, resolvedBaseDir);
       }
-    }
-    if(typeof skipRegeneratingRegExp === "undefined" || skipRegeneratingRegExp !== true){
-      recognizer.builtInValues[slotTypeVar].replacementRegExpString = _makeReplacementRegExpString(recognizer.builtInValues[slotTypeVar].values);
-      recognizer.builtInValues[slotTypeVar].replacementRegExp = new RegExp(recognizer.builtInValues[slotTypeVar].replacementRegExpString, "ig");
-    }
-    if(typeof skipTransformFunctions === "undefined" || skipTransformFunctions !== true){
-      if(typeof slotConfig !== "undefined" && slotConfig !== null){
-        if(typeof slotConfig.transformSrcFilename === "string"){
-          recognizer.builtInValues[slotTypeVar].transformSrcFilename = utilities.resolveFileName(slotConfig.transformSrcFilename, resolvedBaseDir);
+      else if(Array.isArray(slotConfig.transformSrcFilename)){
+        let resolvedArray = [];
+        for(let i = 0; i < slotConfig.transformSrcFilename.length; i ++){
+          resolvedArray.push(utilities.resolveFileName(slotConfig.transformSrcFilename[i], resolvedBaseDir));
         }
-        else if(Array.isArray(slotConfig.transformSrcFilename)){
-          let resolvedArray = [];
-          for(let i = 0; i < slotConfig.transformSrcFilename.length; i ++){
-            resolvedArray.push(utilities.resolveFileName(slotConfig.transformSrcFilename[i], resolvedBaseDir))
-          }
-          recognizer.builtInValues[slotTypeVar].transformSrcFilename = resolvedArray;
-        }
-        recognizer.builtInValues[slotTypeVar].transformBuiltInName = slotConfig.transformBuiltInName;
+        recognizer.builtInValues[slotTypeVar].transformSrcFilename = resolvedArray;
       }
+      recognizer.builtInValues[slotTypeVar].transformBuiltInName = slotConfig.transformBuiltInName;
     }
+  }
 };
 
 //TODO remove duplicate copies of this and move them to a common js file later
@@ -1243,7 +1243,7 @@ var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, con
 // USED IN GENERATE
 // USED IN EXPORTED
 var _getBuiltInSlotTypeSuffix = function(slotType){
-    return slotType.replace(/^AMAZON\./, '').replace(/^TRANSCEND\./, '');
+  return slotType.replace(/^AMAZON\./, "").replace(/^TRANSCEND\./, "");
 };
 
 //TODO remove duplicate copies of this and move them to a common js file later
@@ -1251,502 +1251,502 @@ var _getBuiltInSlotTypeSuffix = function(slotType){
 // USED IN GENERATE
 // USED IN EXPORTED
 var _isBuiltInSlotType = function(slotType){
-    if(slotType.startsWith("AMAZON.") || slotType.startsWith("TRANSCEND.")){
-        return true;
-    }
-    return false;
+  if(slotType.startsWith("AMAZON.") || slotType.startsWith("TRANSCEND.")){
+    return true;
+  }
+  return false;
 };
 
 var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
-    if(_isBuiltInSlotType(slotType) === false){
-        return;
-    }
-    if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-        // number are used in cases of names like John the 1st
-        return "((?:\\w|\\s|[0-9]|\-)+)";
-    }
-    let suffix = _getBuiltInSlotTypeSuffix(slotType);
-//    console.log("getSimpleRegExpForBuiltInSlotType, suffix: <" + suffix + ">");
-//    console.log("getSimpleRegExpForBuiltInSlotType, returning: " + recognizer.builtInValues[suffix].replacementRegExpString);
-    return recognizer.builtInValues[suffix].replacementRegExpString;
+  if(_isBuiltInSlotType(slotType) === false){
+    return;
+  }
+  if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
+    // number are used in cases of names like John the 1st
+    return "((?:\\w|\\s|[0-9]|\-)+)";
+  }
+  let suffix = _getBuiltInSlotTypeSuffix(slotType);
+  //    console.log("getSimpleRegExpForBuiltInSlotType, suffix: <" + suffix + ">");
+  //    console.log("getSimpleRegExpForBuiltInSlotType, returning: " + recognizer.builtInValues[suffix].replacementRegExpString);
+  return recognizer.builtInValues[suffix].replacementRegExpString;
 };
 
 var _generateRunTimeJson = function(config, interactionModel, intents, utterances, optimizations, resolvedBaseDir){
-    if(typeof config === "undefined" || config === null){
-        config = {};
-    }
-    _scanIntentsAndSlotsForPlatform(config, intents, utterances);
+  if(typeof config === "undefined" || config === null){
+    config = {};
+  }
+  _scanIntentsAndSlotsForPlatform(config, intents, utterances);
 
-//  console.log("_generateRunTimeJson, config: ", JSON.stringify(config));
-//  console.log("_generateRunTimeJson, intents: ", JSON.stringify(intents));
-//  console.log("_generateRunTimeJson, utterances: ", JSON.stringify(utterances));
-    // First, extend the built in slot values with values from config
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_FIRST_NAME", "US_FIRST_NAME", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Actor", "Actor", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Comic", "Comic", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Dessert", "Dessert", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LandmarksOrHistoricalBuildings", "LandmarksOrHistoricalBuildings", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Landform", "Landform", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MovieSeries", "MovieSeries", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MovieTheater", "MovieTheater", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicAlbum", "MusicAlbum", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Musician", "Musician", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicRecording", "MusicRecording", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicVenue", "MusicVenue", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicVideo", "MusicVideo", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Person", "Person", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicGroup", "MusicGroup", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicEvent", "MusicEvent", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Movie", "Movie", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MedicalOrganization", "MedicalOrganization", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Organization", "Organization", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LocalBusinessType", "LocalBusinessType", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LocalBusiness", "LocalBusiness", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Game", "Game", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.FoodEstablishment", "FoodEstablishment", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.FictionalCharacter", "FictionalCharacter", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Festival", "Festival", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.EducationalOrganization", "EducationalOrganization", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Director", "Director", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.CivicStructure", "CivicStructure", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.BroadcastChannel", "BroadcastChannel", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.BookSeries", "BookSeries", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Book", "Book", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Author", "Author", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Professional", "Professional", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Residence", "Residence", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.ScreeningEvent", "ScreeningEvent", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Service", "Service", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SoftwareApplication", "SoftwareApplication", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SoftwareGame", "SoftwareGame", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SocialMediaPlatform", "SocialMediaPlatform", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SportsEvent", "SportsEvent", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.TVEpisode", "TVEpisode", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.TVSeason", "TVSeason", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.TVSeries", "TVSeries", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.VideoGame", "VideoGame", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Athlete", "Athlete", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.AdministrativeArea", "AdministrativeArea", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Room", "Room", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Color", "Color", config);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Country", "Country", config);
-    // Don't update the values from the config files for these slot types and don't regenerate the regexp
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_PRESIDENT", "US_PRESIDENT", config, true, true);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_STATE", "US_STATE", config, true, true);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Airline", "Airline", config, true, true);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SportsTeam", "SportsTeam", config, true, true);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Corporation", "Corporation", config, true, true);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Airport", "Airport", config, true, true);
-    // Don't update the values from the config files for these slot types
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Month", "Month", config, true);
-    _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.DayOfWeek", "DayOfWeek", config, true);
+  //  console.log("_generateRunTimeJson, config: ", JSON.stringify(config));
+  //  console.log("_generateRunTimeJson, intents: ", JSON.stringify(intents));
+  //  console.log("_generateRunTimeJson, utterances: ", JSON.stringify(utterances));
+  // First, extend the built in slot values with values from config
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_FIRST_NAME", "US_FIRST_NAME", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Actor", "Actor", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Comic", "Comic", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Dessert", "Dessert", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LandmarksOrHistoricalBuildings", "LandmarksOrHistoricalBuildings", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Landform", "Landform", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MovieSeries", "MovieSeries", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MovieTheater", "MovieTheater", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicAlbum", "MusicAlbum", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Musician", "Musician", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicRecording", "MusicRecording", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicVenue", "MusicVenue", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicVideo", "MusicVideo", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Person", "Person", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicGroup", "MusicGroup", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MusicEvent", "MusicEvent", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Movie", "Movie", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.MedicalOrganization", "MedicalOrganization", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Organization", "Organization", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LocalBusinessType", "LocalBusinessType", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.LocalBusiness", "LocalBusiness", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Game", "Game", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.FoodEstablishment", "FoodEstablishment", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.FictionalCharacter", "FictionalCharacter", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Festival", "Festival", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.EducationalOrganization", "EducationalOrganization", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Director", "Director", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.CivicStructure", "CivicStructure", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.BroadcastChannel", "BroadcastChannel", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.BookSeries", "BookSeries", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Book", "Book", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Author", "Author", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Professional", "Professional", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Residence", "Residence", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.ScreeningEvent", "ScreeningEvent", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Service", "Service", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SoftwareApplication", "SoftwareApplication", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SoftwareGame", "SoftwareGame", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SocialMediaPlatform", "SocialMediaPlatform", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SportsEvent", "SportsEvent", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.TVEpisode", "TVEpisode", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.TVSeason", "TVSeason", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.TVSeries", "TVSeries", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.VideoGame", "VideoGame", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Athlete", "Athlete", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.AdministrativeArea", "AdministrativeArea", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Room", "Room", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Color", "Color", config);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Country", "Country", config);
+  // Don't update the values from the config files for these slot types and don't regenerate the regexp
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_PRESIDENT", "US_PRESIDENT", config, true, true);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.US_STATE", "US_STATE", config, true, true);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Airline", "Airline", config, true, true);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.SportsTeam", "SportsTeam", config, true, true);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Corporation", "Corporation", config, true, true);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Airport", "Airport", config, true, true);
+  // Don't update the values from the config files for these slot types
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.Month", "Month", config, true);
+  _updateBuiltInSlotTypeValuesFromConfig("TRANSCEND.DayOfWeek", "DayOfWeek", config, true);
 
-    let recognizerSet = {};
-    recognizerSet.platform = config.platform;
+  let recognizerSet = {};
+  recognizerSet.platform = config.platform;
 
-    if(typeof config !== "undefined" && typeof config.customSlotTypes !== "undefined"){
-        recognizerSet.customSlotTypes = config.customSlotTypes;
-        // Iterate over all the values and create a corresponding array of match
-        // regular expressions so that the exact value is returned rather than what
-        // was passed in, say from Cortana.  This is needed because Alexa respects
-        // capitalization, etc, while Cortana gratuitously capitalizes first letters
-        // and adds periods and other punctuations at the end.
-        for(let i = 0; i < recognizerSet.customSlotTypes.length; i++){
-            let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
-            scratchCustomSlotType.regExpStrings = [];
-            if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
-              // TODO add customRegExp handling
-              scratchCustomSlotType.regExpStrings.push("(?:^\\s*" +  scratchCustomSlotType.customRegExpString + "\\s*$){1}");
+  if(typeof config !== "undefined" && typeof config.customSlotTypes !== "undefined"){
+    recognizerSet.customSlotTypes = config.customSlotTypes;
+    // Iterate over all the values and create a corresponding array of match
+    // regular expressions so that the exact value is returned rather than what
+    // was passed in, say from Cortana.  This is needed because Alexa respects
+    // capitalization, etc, while Cortana gratuitously capitalizes first letters
+    // and adds periods and other punctuations at the end.
+    for(let i = 0; i < recognizerSet.customSlotTypes.length; i++){
+      let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
+      scratchCustomSlotType.regExpStrings = [];
+      if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
+        // TODO add customRegExp handling
+        scratchCustomSlotType.regExpStrings.push("(?:^\\s*" +  scratchCustomSlotType.customRegExpString + "\\s*$){1}");
+      }
+      else {
+        for(let j = 0; j < scratchCustomSlotType.values.length; j++){
+          if(typeof scratchCustomSlotType.values[j] === "string"){
+            scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j] + ")\\s*$){1}");
+          }
+          else if(typeof scratchCustomSlotType.values[j] !== "undefined" && scratchCustomSlotType.values[j] !== null && typeof scratchCustomSlotType.values[j].value === "string"){
+            if(typeof scratchCustomSlotType.values[j].synonyms !== "undefined" && Array.isArray(scratchCustomSlotType.values[j].synonyms)){
+              let scratchRegExpString  = "(?:^\\s*(" + scratchCustomSlotType.values[j].value;
+              for(let k = 0; k < scratchCustomSlotType.values[j].synonyms.length; k++){
+                scratchRegExpString += "|";
+                scratchRegExpString += scratchCustomSlotType.values[j].synonyms[k];
+              }
+              scratchRegExpString += ")\\s*$){1}";
+              scratchCustomSlotType.regExpStrings.push(scratchRegExpString);
             }
             else {
-              for(let j = 0; j < scratchCustomSlotType.values.length; j++){
-                if(typeof scratchCustomSlotType.values[j] === "string"){
-                  scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j] + ")\\s*$){1}");
-                }
-                else if(typeof scratchCustomSlotType.values[j] !== "undefined" && scratchCustomSlotType.values[j] !== null && typeof scratchCustomSlotType.values[j].value === "string"){
-                  if(typeof scratchCustomSlotType.values[j].synonyms !== "undefined" && Array.isArray(scratchCustomSlotType.values[j].synonyms)){
-                    let scratchRegExpString  = "(?:^\\s*(" + scratchCustomSlotType.values[j].value;
-                    for(let k = 0; k < scratchCustomSlotType.values[j].synonyms.length; k++){
-                      scratchRegExpString += "|";
-                      scratchRegExpString += scratchCustomSlotType.values[j].synonyms[k];
-                    }
-                    scratchRegExpString += ")\\s*$){1}";
-                    scratchCustomSlotType.regExpStrings.push(scratchRegExpString);
-                  }
-                  else {
-                    // Just a single value wrapped in an object
-                    scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j].value + ")\\s*$){1}");
-                  }
+              // Just a single value wrapped in an object
+              scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j].value + ")\\s*$){1}");
+            }
+          }
+          else {
+            throw new Error("Custom slot list value is neither a string nor an object with value field that's a string.");
+          }
+        }
+      }
+    }
+    // Now generate soundex equivalents so that we can match on soundex if the
+    // regular match fails
+    for(let i = 0; i < recognizerSet.customSlotTypes.length; i++){
+      let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
+      scratchCustomSlotType.soundExValues = [];
+      scratchCustomSlotType.soundExRegExpStrings = [];
+      if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
+        // TODO add customRegExp handling - is this really needed?
+      }
+      else {
+        for(let j = 0; j < scratchCustomSlotType.values.length; j++){
+          if(typeof scratchCustomSlotType.values[j] === "string"){
+            let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j], " ");
+            scratchCustomSlotType.soundExValues.push(soundexValue);
+            let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j], "\\s+");
+            scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
+          }
+          else if(typeof scratchCustomSlotType.values[j] !== "undefined" && scratchCustomSlotType.values[j] !== null && typeof scratchCustomSlotType.values[j].value === "string"){
+            if(typeof scratchCustomSlotType.values[j].synonyms !== "undefined" && Array.isArray(scratchCustomSlotType.values[j].synonyms)){
+              let soundexValueArray = [];
+              soundexValueArray.push(soundex.simple.soundEx(scratchCustomSlotType.values[j].value, " "));
+              let soundexRegExpStringArray = [];
+              soundexRegExpStringArray.push(soundex.simple.soundEx(scratchCustomSlotType.values[j].value, "\\s+"));
+              for(let k = 0; k < scratchCustomSlotType.values[j].synonyms.length; k++){
+                let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].synonyms[k], " ");
+                soundexValueArray.push(soundexValue);
+              }
+              scratchCustomSlotType.soundExValues.push(soundexValueArray);
+              for(let k = 0; k < scratchCustomSlotType.values[j].synonyms.length; k++){
+                let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].synonyms[k], "\\s+");
+                soundexRegExpStringArray.push(soundexValue);
+              }
+              let regExString = "(?:^\\s*(";
+              let addBar = false;
+              for(let k = 0; k < soundexRegExpStringArray.length; k++){
+                if(addBar){
+                  regExString += "|";
                 }
                 else {
-                  throw new Error("Custom slot list value is neither a string nor an object with value field that's a string.");
+                  addBar = true;
                 }
+                regExString += soundexRegExpStringArray[k];
               }
-            }
-        }
-        // Now generate soundex equivalents so that we can match on soundex if the
-        // regular match fails
-        for(let i = 0; i < recognizerSet.customSlotTypes.length; i++){
-            let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
-            scratchCustomSlotType.soundExValues = [];
-            scratchCustomSlotType.soundExRegExpStrings = [];
-            if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
-              // TODO add customRegExp handling - is this really needed?
+              regExString += ")\\s*){1}";
+              scratchCustomSlotType.soundExRegExpStrings.push(regExString);
             }
             else {
-              for(let j = 0; j < scratchCustomSlotType.values.length; j++){
-                if(typeof scratchCustomSlotType.values[j] === "string"){
-                  let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j], " ");
-                  scratchCustomSlotType.soundExValues.push(soundexValue);
-                  let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j], "\\s+");
-                  scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
-                }
-                else if(typeof scratchCustomSlotType.values[j] !== "undefined" && scratchCustomSlotType.values[j] !== null && typeof scratchCustomSlotType.values[j].value === "string"){
-                  if(typeof scratchCustomSlotType.values[j].synonyms !== "undefined" && Array.isArray(scratchCustomSlotType.values[j].synonyms)){
-                    let soundexValueArray = [];
-                    soundexValueArray.push(soundex.simple.soundEx(scratchCustomSlotType.values[j].value, " "));
-                    let soundexRegExpStringArray = [];
-                    soundexRegExpStringArray.push(soundex.simple.soundEx(scratchCustomSlotType.values[j].value, "\\s+"));
-                    for(let k = 0; k < scratchCustomSlotType.values[j].synonyms.length; k++){
-                      let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].synonyms[k], " ");
-                      soundexValueArray.push(soundexValue);
-                    }
-                    scratchCustomSlotType.soundExValues.push(soundexValueArray);
-                    for(let k = 0; k < scratchCustomSlotType.values[j].synonyms.length; k++){
-                      let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].synonyms[k], "\\s+");
-                      soundexRegExpStringArray.push(soundexValue);
-                    }
-                    let regExString = "(?:^\\s*(";
-                    let addBar = false;
-                    for(let k = 0; k < soundexRegExpStringArray.length; k++){
-                      if(addBar){
-                        regExString += "|";
-                      }
-                      else {
-                        addBar = true;
-                      }
-                      regExString += soundexRegExpStringArray[k];
-                    }
-                    regExString += ")\\s*){1}";
-                    scratchCustomSlotType.soundExRegExpStrings.push(regExString);
-                  }
-                  else {
-                    let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, " ");
-                    scratchCustomSlotType.soundExValues.push(soundexValue);
-                    let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, "\\s+");
-                    scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
-                  }
-                }
-                else {
-                  throw new Error("Custom slot list value is neither a string nor an object with value field that's a string.");
-                }
-              }
+              let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, " ");
+              scratchCustomSlotType.soundExValues.push(soundexValue);
+              let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, "\\s+");
+              scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
             }
+          }
+          else {
+            throw new Error("Custom slot list value is neither a string nor an object with value field that's a string.");
+          }
         }
+      }
     }
-    recognizerSet.matchConfig = [];
+  }
+  recognizerSet.matchConfig = [];
 
-    let passThrougFunc = function(slotType, flags, stage){
-        return _getReplacementRegExpStringGivenSlotType(slotType, config, flags, stage);
-    };
+  let passThrougFunc = function(slotType, flags, stage){
+    return _getReplacementRegExpStringGivenSlotType(slotType, config, flags, stage);
+  };
 
     // First process all the utterances
     // keep track of all the built in slot types used by utterances so that they can be added to the recognizerSet
-    let builtInSlotTypesUsedByUtterances = [];
-    for(let i = 0; i < utterances.length; i ++){
-        if(utterances[i].trim() === ""){
-            continue;
-        }
-        let result = parser.parseUtteranceIntoJson(utterances[i], intents);
-        parser.cleanupParsedUtteranceJson(result, intents);
-
-        parser.addRegExps(result, intents, passThrougFunc, optimizations);
-
-        let currentValue = {};
-        currentValue.slots = [];
-
-        for(let j = 0; j < result.parsedUtterance.length; j ++){
-            if(result.parsedUtterance[j].type !== "slot"){
-                continue;
-            }
-            let parsedSlot = result.parsedUtterance[j];
-            let translatedSlotType = _getTranslatedSlotTypeForInternalLookup(parsedSlot.slotType);
-            if(_isBuiltInSlotType(translatedSlotType) && builtInSlotTypesUsedByUtterances.indexOf(translatedSlotType) < 0){
-                builtInSlotTypesUsedByUtterances.push(translatedSlotType);
-            }
-            let slotToPush = {"name": parsedSlot.name, "type": parsedSlot.slotType, "flags": parsedSlot.flags};
-            let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, parsedSlot.slotType, resolvedBaseDir);
-            if(typeof slotTypeTransformSrcFilename !== "undefined"){
-                slotToPush.transformSrcFilename = slotTypeTransformSrcFilename;
-            }
-            currentValue.slots.push(slotToPush);
-        }
-
-        currentValue.intent = result.intentName;
-        currentValue.regExpStrings = result.regExpStrings;
-        recognizerSet.matchConfig.push(currentValue);
+  let builtInSlotTypesUsedByUtterances = [];
+  for(let i = 0; i < utterances.length; i ++){
+    if(utterances[i].trim() === ""){
+      continue;
     }
-    // Now add builtin slot type info to the recognizerSet
-    // Add number slot because it's needed even if it's not used directly
-    if(builtInSlotTypesUsedByUtterances.indexOf("TRANSCEND.NUMBER") < 0){
-        builtInSlotTypesUsedByUtterances.push("TRANSCEND.NUMBER");
-    }
-    recognizerSet.builtInSlotTypes = [];
-    for(let i = 0; i < builtInSlotTypesUsedByUtterances.length; i++){
-        let builtInSlotTypeSuffix = _getBuiltInSlotTypeSuffix(builtInSlotTypesUsedByUtterances[i]);
-        let builtInSlotTypeValues = recognizer.builtInValues[builtInSlotTypeSuffix].values;
-        let builtInSlotType = {
-            "name": builtInSlotTypesUsedByUtterances[i],
-            "values": builtInSlotTypeValues
-        };
-        recognizerSet.builtInSlotTypes.push(builtInSlotType);
-    }
-    // Now process all the built in intents.  Note that their triggering
-    // utterances will NOT be part of "utterances" arg, but instead will be in config.
-    recognizerSet.builtInIntents = [];
-    let intentConfig;
+    let result = parser.parseUtteranceIntoJson(utterances[i], intents);
+    parser.cleanupParsedUtteranceJson(result, intents);
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.CancelIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.CancelIntent",
-            "utterances": [
-                "cancel", "never mind", "forget it"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+    parser.addRegExps(result, intents, passThrougFunc, optimizations);
+
+    let currentValue = {};
+    currentValue.slots = [];
+
+    for(let j = 0; j < result.parsedUtterance.length; j ++){
+      if(result.parsedUtterance[j].type !== "slot"){
+        continue;
+      }
+      let parsedSlot = result.parsedUtterance[j];
+      let translatedSlotType = _getTranslatedSlotTypeForInternalLookup(parsedSlot.slotType);
+      if(_isBuiltInSlotType(translatedSlotType) && builtInSlotTypesUsedByUtterances.indexOf(translatedSlotType) < 0){
+        builtInSlotTypesUsedByUtterances.push(translatedSlotType);
+      }
+      let slotToPush = {"name": parsedSlot.name, "type": parsedSlot.slotType, "flags": parsedSlot.flags};
+      let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, parsedSlot.slotType, resolvedBaseDir);
+      if(typeof slotTypeTransformSrcFilename !== "undefined"){
+        slotToPush.transformSrcFilename = slotTypeTransformSrcFilename;
+      }
+      currentValue.slots.push(slotToPush);
     }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.HelpIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.HelpIntent",
-            "utterances": [
-                "help", "help me", "can you help me"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
-    }
+    currentValue.intent = result.intentName;
+    currentValue.regExpStrings = result.regExpStrings;
+    recognizerSet.matchConfig.push(currentValue);
+  }
+  // Now add builtin slot type info to the recognizerSet
+  // Add number slot because it's needed even if it's not used directly
+  if(builtInSlotTypesUsedByUtterances.indexOf("TRANSCEND.NUMBER") < 0){
+    builtInSlotTypesUsedByUtterances.push("TRANSCEND.NUMBER");
+  }
+  recognizerSet.builtInSlotTypes = [];
+  for(let i = 0; i < builtInSlotTypesUsedByUtterances.length; i++){
+    let builtInSlotTypeSuffix = _getBuiltInSlotTypeSuffix(builtInSlotTypesUsedByUtterances[i]);
+    let builtInSlotTypeValues = recognizer.builtInValues[builtInSlotTypeSuffix].values;
+    let builtInSlotType = {
+      "name": builtInSlotTypesUsedByUtterances[i],
+      "values": builtInSlotTypeValues
+    };
+    recognizerSet.builtInSlotTypes.push(builtInSlotType);
+  }
+  // Now process all the built in intents.  Note that their triggering
+  // utterances will NOT be part of "utterances" arg, but instead will be in config.
+  recognizerSet.builtInIntents = [];
+  let intentConfig;
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.LoopOffIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.LoopOffIntent",
-            "utterances": [
-                "loop off"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.CancelIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.CancelIntent",
+      "utterances": [
+        "cancel", "never mind", "forget it"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.LoopOnIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.LoopOnIntent",
-            "utterances": [
-                "loop", "loop on", "keep repeating this song"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.HelpIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.HelpIntent",
+      "utterances": [
+        "help", "help me", "can you help me"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.NextIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.NextIntent",
-            "utterances": [
-                "next", "skip", "skip forward"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.LoopOffIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.LoopOffIntent",
+      "utterances": [
+        "loop off"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.NoIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.NoIntent",
-            "utterances": [
-                "no", "no thanks"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.LoopOnIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.LoopOnIntent",
+      "utterances": [
+        "loop", "loop on", "keep repeating this song"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.PauseIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.PauseIntent",
-            "utterances": [
-                "pause", "pause that"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.NextIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.NextIntent",
+      "utterances": [
+        "next", "skip", "skip forward"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.PreviousIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.PreviousIntent",
-            "utterances": [
-                "go back", "skip back", "back up"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.NoIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.NoIntent",
+      "utterances": [
+        "no", "no thanks"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.RepeatIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.RepeatIntent",
-            "utterances": [
-                "repeat", "say that again", "repeat that"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.PauseIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.PauseIntent",
+      "utterances": [
+        "pause", "pause that"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.ResumeIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.ResumeIntent",
-            "utterances": [
-                "resume", "continue", "keep going"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.PreviousIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.PreviousIntent",
+      "utterances": [
+        "go back", "skip back", "back up"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.ShuffleOffIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.ShuffleOffIntent",
-            "utterances": [
-                "stop shuffling", "shuffle off", "turn off shuffle"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.RepeatIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.RepeatIntent",
+      "utterances": [
+        "repeat", "say that again", "repeat that"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.ShuffleOnIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.ShuffleOnIntent",
-            "utterances": [
-                "shuffle", "shuffle on", "shuffle the music", "shuffle mode"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.ResumeIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.ResumeIntent",
+      "utterances": [
+        "resume", "continue", "keep going"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.StartOverIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.StartOverIntent",
-            "utterances": [
-                "start over", "restart", "start again"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.ShuffleOffIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.ShuffleOffIntent",
+      "utterances": [
+        "stop shuffling", "shuffle off", "turn off shuffle"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.StopIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.StopIntent",
-            "utterances": [
-                "stop", "off", "shut up"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.ShuffleOnIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.ShuffleOnIntent",
+      "utterances": [
+        "shuffle", "shuffle on", "shuffle the music", "shuffle mode"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.YesIntent");
-    if(_isBuiltInIntentEnabled(intentConfig)){
-        let builtinIntent = {
-            "name": "TRANSCEND.YesIntent",
-            "utterances": [
-                "yes", "yes please", "sure"
-            ]
-        };
-        let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
-        if(typeof extendedUtterances !== "undefined"){
-            builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
-        }
-        builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
-        recognizerSet.builtInIntents.push(builtinIntent);
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.StartOverIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.StartOverIntent",
+      "utterances": [
+        "start over", "restart", "start again"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
 
-    return recognizerSet;
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.StopIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.StopIntent",
+      "utterances": [
+        "stop", "off", "shut up"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  intentConfig = _getBuiltInIntentConfig(config, "TRANSCEND.YesIntent");
+  if(_isBuiltInIntentEnabled(intentConfig)){
+    let builtinIntent = {
+      "name": "TRANSCEND.YesIntent",
+      "utterances": [
+        "yes", "yes please", "sure"
+      ]
+    };
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    if(typeof extendedUtterances !== "undefined"){
+      builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
+    }
+    builtinIntent.regExpString = _makeFullRegExpString(builtinIntent.utterances);
+    recognizerSet.builtInIntents.push(builtinIntent);
+  }
+
+  return recognizerSet;
 };
 
 recognizer.Recognizer.generateRunTimeJson = _generateRunTimeJson;
@@ -1756,182 +1756,182 @@ recognizer.Recognizer.getReplacementRegExpStringGivenSlotType = _getReplacementR
 recognizer.Recognizer.prototype.getReplacementRegExpStringGivenSlotType = _getReplacementRegExpStringGivenSlotType;
 
 var _getBuiltInSlotConfig = function(config, slotName){
-    let scratchSlotName = _getBuiltInNameWithoutPlatform(slotName);
-    if(typeof config !== "undefined" && Array.isArray(config.builtInSlots)){
-        for(let i = 0; i < config.builtInSlots.length; i ++){
-            let slotConfig = config.builtInSlots[i];
-            if(_getBuiltInNameWithoutPlatform(slotConfig.name) === scratchSlotName){
-                return slotConfig;
-            }
-        }
+  let scratchSlotName = _getBuiltInNameWithoutPlatform(slotName);
+  if(typeof config !== "undefined" && Array.isArray(config.builtInSlots)){
+    for(let i = 0; i < config.builtInSlots.length; i ++){
+      let slotConfig = config.builtInSlots[i];
+      if(_getBuiltInNameWithoutPlatform(slotConfig.name) === scratchSlotName){
+        return slotConfig;
+      }
     }
-    // Nothing found - return undefined
+  }
+  // Nothing found - return undefined
 };
 
 var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBaseDir){
-    if(typeof config.builtInSlots !== "undefined" && Array.isArray(config.builtInSlots)){
-        for(let i = 0; i < config.builtInSlots.length; i++){
-            let currentSlot = config.builtInSlots[i];
-            if(currentSlot.name === slotType){
-              if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
-                if(typeof currentSlot.transformSrcFilename === 'string'){
-                  return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBaseDir);
-                }
-                else if(Array.isArray(currentSlot.transformSrcFilename)){
-                  let returnValue = [];
-                  for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
-                    returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBaseDir));
-                  }
-                  return returnValue;
-                }
-                else {
-                  // An error in configuration?
-                  return;
-                }
-              }
-              else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
-                if(typeof currentSlot.transformBuiltInName === "string"){
-                  return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
-                }
-                else if(Array.isArray(currentSlot.transformBuiltInName)){
-                  let returnValue = [];
-                  for(let j = 0; j < currentSlot.transformBuiltInName.length; j++){
-                    returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
-                  }
-                  return returnValue;
-                }
-                else {
-                  // An error in configuration?
-                  return;
-                }
-              }
-              else {
-                return;
-              }
+  if(typeof config.builtInSlots !== "undefined" && Array.isArray(config.builtInSlots)){
+    for(let i = 0; i < config.builtInSlots.length; i++){
+      let currentSlot = config.builtInSlots[i];
+      if(currentSlot.name === slotType){
+        if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
+          if(typeof currentSlot.transformSrcFilename === "string"){
+            return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBaseDir);
+          }
+          else if(Array.isArray(currentSlot.transformSrcFilename)){
+            let returnValue = [];
+            for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
+              returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBaseDir));
             }
+            return returnValue;
+          }
+          else {
+            // An error in configuration?
+            return;
+          }
         }
-    }
-    if(typeof config.customSlotTypes !== "undefined" && Array.isArray(config.customSlotTypes)){
-        for(let i = 0; i < config.customSlotTypes.length; i++){
-            let currentSlot = config.customSlotTypes[i];
-            if(currentSlot.name === slotType){
-              if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
-                if(typeof currentSlot.transformSrcFilename === 'string'){
-                  return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBaseDir);
-                }
-                else if(Array.isArray(currentSlot.transformSrcFilename)){
-                  let returnValue = [];
-                  for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
-                    returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBaseDir));
-                  }
-                  return returnValue;
-                }
-                else {
-                  // An error in configuration?
-                  return;
-                }
-              }
-              else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
-                if(typeof currentSlot.transformBuiltInName === "string"){
-                  return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
-                }
-                else if(Array.isArray(currentSlot.transformBuiltInName)){
-                  let returnValue = [];
-                  for(let j = 0; j < currentSlot.transformBuiltInName.length; j++){
-                    returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
-                  }
-                  return returnValue;
-                }
-                else {
-                  // An error in configuration?
-                  return;
-                }
-              }
-              else {
-                return;
-              }
+        else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
+          if(typeof currentSlot.transformBuiltInName === "string"){
+            return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
+          }
+          else if(Array.isArray(currentSlot.transformBuiltInName)){
+            let returnValue = [];
+            for(let j = 0; j < currentSlot.transformBuiltInName.length; j++){
+              returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
             }
+            return returnValue;
+          }
+          else {
+            // An error in configuration?
+            return;
+          }
         }
+        else {
+          return;
+        }
+      }
     }
+  }
+  if(typeof config.customSlotTypes !== "undefined" && Array.isArray(config.customSlotTypes)){
+    for(let i = 0; i < config.customSlotTypes.length; i++){
+      let currentSlot = config.customSlotTypes[i];
+      if(currentSlot.name === slotType){
+        if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
+          if(typeof currentSlot.transformSrcFilename === "string"){
+            return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBaseDir);
+          }
+          else if(Array.isArray(currentSlot.transformSrcFilename)){
+            let returnValue = [];
+            for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
+              returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBaseDir));
+            }
+            return returnValue;
+          }
+          else {
+            // An error in configuration?
+            return;
+          }
+        }
+        else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
+          if(typeof currentSlot.transformBuiltInName === "string"){
+            return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
+          }
+          else if(Array.isArray(currentSlot.transformBuiltInName)){
+            let returnValue = [];
+            for(let j = 0; j < currentSlot.transformBuiltInName.length; j++){
+              returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
+            }
+            return returnValue;
+          }
+          else {
+            // An error in configuration?
+            return;
+          }
+        }
+        else {
+          return;
+        }
+      }
+    }
+  }
 };
 
 var _getBuiltInSlotExtendedValues = function(slotConfig, resolvedBaseDir){
-    let returnValue;
-    if(typeof slotConfig !== "undefined" && slotConfig !== null){
-        if(typeof slotConfig.extendedValues !== "undefined"){
-            returnValue = [].concat(slotConfig.extendedValues);
-        }
-        if(typeof slotConfig.extendedValuesFilename !== "undefined"){
-            let loadedFromFile = utilities.loadStringListFromFile(slotConfig.extendedValuesFilename, resolvedBaseDir);
-            if(typeof loadedFromFile !== "undefined" && Array.isArray(loadedFromFile)){
-                if(typeof returnValue === "undefined"){
-                    returnValue = [];
-                }
-                returnValue = returnValue.concat(loadedFromFile);
-            }
-        }
+  let returnValue;
+  if(typeof slotConfig !== "undefined" && slotConfig !== null){
+    if(typeof slotConfig.extendedValues !== "undefined"){
+      returnValue = [].concat(slotConfig.extendedValues);
     }
-    return returnValue;
+    if(typeof slotConfig.extendedValuesFilename !== "undefined"){
+      let loadedFromFile = utilities.loadStringListFromFile(slotConfig.extendedValuesFilename, resolvedBaseDir);
+      if(typeof loadedFromFile !== "undefined" && Array.isArray(loadedFromFile)){
+        if(typeof returnValue === "undefined"){
+          returnValue = [];
+        }
+        returnValue = returnValue.concat(loadedFromFile);
+      }
+    }
+  }
+  return returnValue;
 };
 
 var _getBuiltInIntentConfig = function(config, intentName){
-    let scratchIntentName = _getBuiltInNameWithoutPlatform(intentName);
+  let scratchIntentName = _getBuiltInNameWithoutPlatform(intentName);
 
-    if(typeof config !== "undefined" && Array.isArray(config.builtInIntents)){
-        for(let i = 0; i < config.builtInIntents.length; i ++){
-            let intentConfig = config.builtInIntents[i];
-            if(_getBuiltInNameWithoutPlatform(intentConfig.name) === scratchIntentName){
-                return intentConfig;
-            }
-        }
+  if(typeof config !== "undefined" && Array.isArray(config.builtInIntents)){
+    for(let i = 0; i < config.builtInIntents.length; i ++){
+      let intentConfig = config.builtInIntents[i];
+      if(_getBuiltInNameWithoutPlatform(intentConfig.name) === scratchIntentName){
+        return intentConfig;
+      }
     }
-    // Nothing found - return undefined
+  }
+  // Nothing found - return undefined
 };
 
 var _getBuiltInIntentExtendedUtterances = function(intentConfig, resolvedBaseDir){
-    let returnValue;
-    if(typeof intentConfig !== "undefined" && intentConfig !== null){
-        if(typeof intentConfig.extendedUtterances !== "undefined"){
-            returnValue = [].concat(intentConfig.extendedUtterances);
-        }
-        if(typeof intentConfig.extendedUtterancesFilename !== "undefined"){
-            let loadedFromFile = utilities.loadStringListFromFile(intentConfig.extendedUtterancesFilename, resolvedBaseDir);
-            if(typeof loadedFromFile !== "undefined" && Array.isArray(loadedFromFile)){
-                if(typeof returnValue === "undefined"){
-                    returnValue = [];
-                }
-                returnValue = returnValue.concat(loadedFromFile);
-            }
-        }
+  let returnValue;
+  if(typeof intentConfig !== "undefined" && intentConfig !== null){
+    if(typeof intentConfig.extendedUtterances !== "undefined"){
+      returnValue = [].concat(intentConfig.extendedUtterances);
     }
-    return returnValue;
+    if(typeof intentConfig.extendedUtterancesFilename !== "undefined"){
+      let loadedFromFile = utilities.loadStringListFromFile(intentConfig.extendedUtterancesFilename, resolvedBaseDir);
+      if(typeof loadedFromFile !== "undefined" && Array.isArray(loadedFromFile)){
+        if(typeof returnValue === "undefined"){
+          returnValue = [];
+        }
+        returnValue = returnValue.concat(loadedFromFile);
+      }
+    }
+  }
+  return returnValue;
 };
 
 var _isBuiltInIntentEnabled = function(intentConfig){
-    if(typeof intentConfig !== "undefined" && (typeof intentConfig.enabled !== "undefined" && intentConfig.enabled === false)){
-        return false;
-    }
-    return true;
+  if(typeof intentConfig !== "undefined" && (typeof intentConfig.enabled !== "undefined" && intentConfig.enabled === false)){
+    return false;
+  }
+  return true;
 };
 
 var _getTranslatedSlotTypeForOutput = function(slotType, platformConfig){
-    let periodIndex = slotType.indexOf('.');
-    if(periodIndex < 0){
-        return slotType;
-    }
-    let sansPlatform = slotType.substring(periodIndex);
+  let periodIndex = slotType.indexOf(".");
+  if(periodIndex < 0){
+    return slotType;
+  }
+  let sansPlatform = slotType.substring(periodIndex);
 
-    let scratch = platformConfig.output + sansPlatform;
-    return scratch;
+  let scratch = platformConfig.output + sansPlatform;
+  return scratch;
 };
 
 var _getBuiltInNameWithoutPlatform = function(name){
-    let periodIndex = name.indexOf('.');
-    if(periodIndex < 0){
-        return name;
-    }
-    let sansPlatform = name.substring(periodIndex + 1);
-    return sansPlatform;
+  let periodIndex = name.indexOf(".");
+  if(periodIndex < 0){
+    return name;
+  }
+  let sansPlatform = name.substring(periodIndex + 1);
+  return sansPlatform;
 };
 
 /**
@@ -1944,24 +1944,24 @@ var _getBuiltInNameWithoutPlatform = function(name){
  * only the platforms currently understood by this module will be returned.
  */
 var _getBuiltinIntentPlatform = function(intentName, platforms){
-    let periodIndex = intentName.indexOf('.');
-    if(periodIndex < 0){
-        return;
-    }
-    let platformPrefix = intentName.substring(0, periodIndex);
-    if(allPlatforms.indexOf(platformPrefix) < 0){
-        return;
-    }
-    // Here we have an acceptable platform.  Return it if it's in "platforms"
-    // parameter or if platforms parameter contains "ANY"
-    if(platforms.indexOf("ANY") > 0){
-        return platformPrefix;
-    }
+  let periodIndex = intentName.indexOf(".");
+  if(periodIndex < 0){
+    return;
+  }
+  let platformPrefix = intentName.substring(0, periodIndex);
+  if(allPlatforms.indexOf(platformPrefix) < 0){
+    return;
+  }
+  // Here we have an acceptable platform.  Return it if it's in "platforms"
+  // parameter or if platforms parameter contains "ANY"
+  if(platforms.indexOf("ANY") > 0){
+    return platformPrefix;
+  }
 
-    let scratch = platformPrefix + ".";
-    if(intentName.startsWith(scratch)){
-        return platformPrefix;
-    }
+  let scratch = platformPrefix + ".";
+  if(intentName.startsWith(scratch)){
+    return platformPrefix;
+  }
 };
 
 /**
@@ -1972,28 +1972,28 @@ var _getBuiltinIntentPlatform = function(intentName, platforms){
 // USED IN GENERATE
 // TODO refactor out - currently in two places
 var _getTranslatedSlotTypeForInternalLookup = function(slotType){
-    let periodIndex = slotType.indexOf('.');
-    if(periodIndex < 0){
-        return slotType;
-    }
-    let sansPlatform = slotType.substring(periodIndex);
+  let periodIndex = slotType.indexOf(".");
+  if(periodIndex < 0){
+    return slotType;
+  }
+  let sansPlatform = slotType.substring(periodIndex);
 
-    let scratch = "TRANSCEND" + sansPlatform;
-    return scratch;
+  let scratch = "TRANSCEND" + sansPlatform;
+  return scratch;
 };
 // USED IN MATCH
 // USED IN GENERATE
 // TODO refactor out - currently in two places
 var _hasFlag = function(flagName, flags){
-    if(typeof flagName === "undefined" || typeof flags === "undefined" || Array.isArray(flags) === false){
-        return false;
-    }
-    for(let i = 0; i < flags.length; i++){
-        if(flags[i].name === flagName){
-            return true;
-        }
-    }
+  if(typeof flagName === "undefined" || typeof flags === "undefined" || Array.isArray(flags) === false){
     return false;
+  }
+  for(let i = 0; i < flags.length; i++){
+    if(flags[i].name === flagName){
+      return true;
+    }
+  }
+  return false;
 };
 
 module.exports = recognizer;

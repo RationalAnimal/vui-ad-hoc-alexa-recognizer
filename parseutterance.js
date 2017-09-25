@@ -23,7 +23,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-'use strict'
+"use strict";
 
 var parser = {};
 var regexputilities = require("./regexputils.js");
@@ -31,27 +31,27 @@ var defaultEquivalents = require("./equivalents/default.json");
 var misspellingEquivalents = require("./equivalents/misspellings.json");
 
 var _parseUtteranceIntoJson = function(utterance, intentSchema){
-	let returnValue = {};
-	// First get the intent name
-	let parsedIntent = _splitIntentName(utterance);
-	let utteranceString;
-	if(typeof parsedIntent !== "undefined"){
-	  if(typeof parsedIntent.intentName === "undefined"){
-			return returnValue;
-		}
-		returnValue.intentName = parsedIntent.intentName;
-		if(typeof parsedIntent.utteranceString === "undefined"){
-			returnValue.parsedUtterance = [];
-			return returnValue;
-		}
-		utteranceString = parsedIntent.utteranceString;
-	}
-	else {
-		return returnValue;
-	}
+  let returnValue = {};
+  // First get the intent name
+  let parsedIntent = _splitIntentName(utterance);
+  let utteranceString;
+  if(typeof parsedIntent !== "undefined"){
+    if(typeof parsedIntent.intentName === "undefined"){
+      return returnValue;
+    }
+    returnValue.intentName = parsedIntent.intentName;
+    if(typeof parsedIntent.utteranceString === "undefined"){
+      returnValue.parsedUtterance = [];
+      return returnValue;
+    }
+    utteranceString = parsedIntent.utteranceString;
+  }
+  else {
+    return returnValue;
+  }
 
-	let utteranceArray = utteranceString.split('');
-	let parsingRange = {"start": 0, "end": -1};
+  let utteranceArray = utteranceString.split("");
+  let parsingRange = {"start": 0, "end": -1};
   returnValue.parsedUtterance = _parseUtteranceString(utteranceArray, parsingRange, returnValue.intentName, intentSchema);
   return returnValue;
 };
@@ -59,48 +59,48 @@ var _parseUtteranceIntoJson = function(utterance, intentSchema){
 let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES", "STATE", "COUNTRY", "CONTINENT", "TYPE", "LEAGUE", "SPORT", "INCLUDE_PRIOR_NAMES", "EXCLUDE_PRIOR_NAMES"];
 var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
   // First get rid of invalid flags.
-	for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
-		if(parsedJson.parsedUtterance[i].type === "slot"){
-			if(typeof parsedJson.parsedUtterance[i].flags !== "undefined"){
-				for(let j = parsedJson.parsedUtterance[i].flags.length - 1; j >= 0; j --){
-					if(allowedSlotFlags.indexOf(parsedJson.parsedUtterance[i].flags[j].name) < 0){
-						parsedJson.parsedUtterance[i].flags.splice(j, 1);
-					}
-				}
-			}
-		}
-	}
+  for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
+    if(parsedJson.parsedUtterance[i].type === "slot"){
+      if(typeof parsedJson.parsedUtterance[i].flags !== "undefined"){
+        for(let j = parsedJson.parsedUtterance[i].flags.length - 1; j >= 0; j --){
+          if(allowedSlotFlags.indexOf(parsedJson.parsedUtterance[i].flags[j].name) < 0){
+            parsedJson.parsedUtterance[i].flags.splice(j, 1);
+          }
+        }
+      }
+    }
+  }
 
-	// Now remove flags that are inappropriate for slot types
-	for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
-		if(parsedJson.parsedUtterance[i].type === "slot"){
-			// Remove EXCLUDE_YEAR_ONLY_DATES if this is NOT a built in date type.
-			if(_hasFlag("EXCLUDE_YEAR_ONLY_DATES", parsedJson.parsedUtterance[i].name, parsedJson)){
-				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "DATE" ){
-					// We are all set, this is allowed
-				}
-				else {
-					// Remove it
-					_removeFlag("EXCLUDE_YEAR_ONLY_DATES", parsedJson.parsedUtterance[i].name, parsedJson)
-				}
-			}
-			// Remove SOUNDEX_MATCH flag is this is a built in slot
-			if(_hasFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)){
-				if(_isBuiltInSlot(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema) === true){
-					// Remove it
-					_removeFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)
-				}
-			}
-			// Remove EXCLUDE_NON_STATES if this is NOT a built in US_STATE type.
-			if(_hasFlag("EXCLUDE_NON_STATES", parsedJson.parsedUtterance[i].name, parsedJson)){
-				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "US_STATE" ){
-					// We are all set, this is allowed
-				}
-				else {
-					// Remove it
-					_removeFlag("EXCLUDE_NON_STATES", parsedJson.parsedUtterance[i].name, parsedJson)
-				}
-			}
+  // Now remove flags that are inappropriate for slot types
+  for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
+    if(parsedJson.parsedUtterance[i].type === "slot"){
+      // Remove EXCLUDE_YEAR_ONLY_DATES if this is NOT a built in date type.
+      if(_hasFlag("EXCLUDE_YEAR_ONLY_DATES", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "DATE" ){
+          // We are all set, this is allowed
+        }
+        else {
+          // Remove it
+          _removeFlag("EXCLUDE_YEAR_ONLY_DATES", parsedJson.parsedUtterance[i].name, parsedJson);
+        }
+      }
+      // Remove SOUNDEX_MATCH flag is this is a built in slot
+      if(_hasFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_isBuiltInSlot(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema) === true){
+          // Remove it
+          _removeFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+        }
+      }
+      // Remove EXCLUDE_NON_STATES if this is NOT a built in US_STATE type.
+      if(_hasFlag("EXCLUDE_NON_STATES", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "US_STATE" ){
+          // We are all set, this is allowed
+        }
+        else {
+          // Remove it
+          _removeFlag("EXCLUDE_NON_STATES", parsedJson.parsedUtterance[i].name, parsedJson);
+        }
+      }
       // Remove SPORT if this is NOT a built in SportsTeam type.
       if(_hasFlag("SPORT", parsedJson.parsedUtterance[i].name, parsedJson)){
         if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "SportsTeam" ){
@@ -108,7 +108,7 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
         }
         else {
           // Remove it
-          _removeFlag("SPORT", parsedJson.parsedUtterance[i].name, parsedJson)
+          _removeFlag("SPORT", parsedJson.parsedUtterance[i].name, parsedJson);
         }
       }
       // Remove LEAGUE if this is NOT a built in SportsTeam type.
@@ -118,7 +118,7 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
         }
         else {
           // Remove it
-          _removeFlag("LEAGUE", parsedJson.parsedUtterance[i].name, parsedJson)
+          _removeFlag("LEAGUE", parsedJson.parsedUtterance[i].name, parsedJson);
         }
       }
       // Remove INCLUDE_PRIOR_NAMES if this is NOT a built in SportsTeam or Corporation or Airport type.
@@ -131,7 +131,7 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
         }
         else {
           // Remove it
-          _removeFlag("INCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)
+          _removeFlag("INCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson);
         }
       }
       // Remove EXCLUDE_PRIOR_NAMES if this is NOT a built in SportsTeam or Corporation or Airport type.
@@ -144,21 +144,21 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
         }
         else {
           // Remove it
-          _removeFlag("EXCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson)
+          _removeFlag("EXCLUDE_PRIOR_NAMES", parsedJson.parsedUtterance[i].name, parsedJson);
         }
       }
       // Remove COUNTRY if this is NOT a built in Airline or Airport type.
-			if(_hasFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)){
-				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airline" ||
+      if(_hasFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airline" ||
           _getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airport"
         ){
-					// We are all set, this is allowed
-				}
-				else {
-					// Remove it
-					_removeFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson)
-				}
-			}
+          // We are all set, this is allowed
+        }
+        else {
+          // Remove it
+          _removeFlag("COUNTRY", parsedJson.parsedUtterance[i].name, parsedJson);
+        }
+      }
       // Remove STATE if this is NOT a built in Airport type.
       if(_hasFlag("STATE", parsedJson.parsedUtterance[i].name, parsedJson)){
         if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airport") {
@@ -166,78 +166,78 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
         }
         else {
           // Remove it
-          _removeFlag("STATE", parsedJson.parsedUtterance[i].name, parsedJson)
+          _removeFlag("STATE", parsedJson.parsedUtterance[i].name, parsedJson);
         }
       }
       // Remove CONTINENT if this is NOT a built in Airline type.
-			if(_hasFlag("CONTINENT", parsedJson.parsedUtterance[i].name, parsedJson)){
-				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airline" ){
-					// We are all set, this is allowed
-				}
-				else {
-					// Remove it
-					_removeFlag("CONTINENT", parsedJson.parsedUtterance[i].name, parsedJson)
-				}
-			}
-			// Remove TYPE if this is NOT a built in Airline type.
-			if(_hasFlag("TYPE", parsedJson.parsedUtterance[i].name, parsedJson)){
-				if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airline" ){
-					// We are all set, this is allowed
-				}
-				else {
-					// Remove it
-					_removeFlag("TYPE", parsedJson.parsedUtterance[i].name, parsedJson)
-				}
-			}
+      if(_hasFlag("CONTINENT", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airline" ){
+          // We are all set, this is allowed
+        }
+        else {
+          // Remove it
+          _removeFlag("CONTINENT", parsedJson.parsedUtterance[i].name, parsedJson);
+        }
+      }
+      // Remove TYPE if this is NOT a built in Airline type.
+      if(_hasFlag("TYPE", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_getBuiltInSlotTypeSuffix(_getSlotType(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema)) === "Airline" ){
+          // We are all set, this is allowed
+        }
+        else {
+          // Remove it
+          _removeFlag("TYPE", parsedJson.parsedUtterance[i].name, parsedJson);
+        }
+      }
 
-		}
-	}
+    }
+  }
 
 
-	for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
-		if(parsedJson.parsedUtterance[i].type === "slot"){
-			if(typeof parsedJson.parsedUtterance[i].flags === "undefined" || parsedJson.parsedUtterance[i].flags.length === 0){
-				// Now, add default flags to any slot that doesn't have any at all.
-				parsedJson.parsedUtterance[i].flags = [];
-				parsedJson.parsedUtterance[i].flags.push({"name":"INCLUDE_VALUES_MATCH"});
-				parsedJson.parsedUtterance[i].flags.push({"name":"EXCLUDE_WILDCARD_MATCH"});
-			}
-			else {
-				// Here we DO have some flags.  All the fictitious ones have already been removed.
-				// But we may still have either invalid combinations or missing flags
-				if(_hasFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === true){
-					_removeFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
-					_removeFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
-					_removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
-					_removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
-					_addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
-					_addFlag({"name": "EXCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
-				}
-				else {
-					// We are not doing SOUNDEX_MATCH here
-					if(_hasFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === true){
-						_removeFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
-						_removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
-						_removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
-						_addFlag({"name": "EXCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+  for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
+    if(parsedJson.parsedUtterance[i].type === "slot"){
+      if(typeof parsedJson.parsedUtterance[i].flags === "undefined" || parsedJson.parsedUtterance[i].flags.length === 0){
+        // Now, add default flags to any slot that doesn't have any at all.
+        parsedJson.parsedUtterance[i].flags = [];
+        parsedJson.parsedUtterance[i].flags.push({"name":"INCLUDE_VALUES_MATCH"});
+        parsedJson.parsedUtterance[i].flags.push({"name":"EXCLUDE_WILDCARD_MATCH"});
+      }
+      else {
+        // Here we DO have some flags.  All the fictitious ones have already been removed.
+        // But we may still have either invalid combinations or missing flags
+        if(_hasFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === true){
+          _removeFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+          _removeFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+          _removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+          _removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+          _addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+          _addFlag({"name": "EXCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+        }
+        else {
+          // We are not doing SOUNDEX_MATCH here
+          if(_hasFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === true){
+            _removeFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+            _removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+            _removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+            _addFlag({"name": "EXCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
           }
-					else if(_hasFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === true){
-						_removeFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
-						_removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
-						_removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
-						_addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+          else if(_hasFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === true){
+            _removeFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+            _removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+            _removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+            _addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
           }
-					else {
-						_removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
-						_removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
-						_addFlag({"name": "INCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
-						_addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
-					}
+          else {
+            _removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+            _removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+            _addFlag({"name": "INCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+            _addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+          }
 
-				}
-			}
-		}
-	}
+        }
+      }
+    }
+  }
 };
 
 var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimizations) {
@@ -245,7 +245,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimiz
   parsedJson.regExpStrings = [];
 
   // First add "complete" wildcard regexp - one that replaces slots and options lists with wildcards
-  let regExpString = '';
+  let regExpString = "";
   let shouldAdd = false;
   let addZeroOccurrence = false;
   for (let i = 0; i < parsedJson.parsedUtterance.length; i++) {
@@ -253,7 +253,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimiz
       regExpString += (parsedJson.parsedUtterance[i]);
     }
     else if (parsedJson.parsedUtterance[i].type === "slot") {
-//      regExpString += (wildcardReplacementString);
+      //      regExpString += (wildcardReplacementString);
       let scratchRegExpString  = getReplacementFunc(parsedJson.parsedUtterance[i].slotType, parsedJson.parsedUtterance[i].flags, "WILDCARD");
       regExpString += scratchRegExpString;
 
@@ -265,7 +265,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimiz
       // TODO add only if the number of options exceeds a threshold
       regExpString += (wildcardReplacementString);
       for (let l = 0; l < parsedJson.parsedUtterance[i].options.length; l++) {
-        if (parsedJson.parsedUtterance[i].options[l] === '') {
+        if (parsedJson.parsedUtterance[i].options[l] === "") {
           regExpString += "{0,1}";
         }
       }
@@ -296,7 +296,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimiz
     else if (parsedJson.parsedUtterance[i].type === "equivalents") {
       regExpString += (wildcardReplacementString);
       for (let l = 0; l < parsedJson.parsedUtterance[i].equivalents.length; l++) {
-        if (parsedJson.parsedUtterance[i].equivalents[l] === '') {
+        if (parsedJson.parsedUtterance[i].equivalents[l] === "") {
           regExpString += "{0,1}";
         }
       }
@@ -311,7 +311,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimiz
     regExpString = regexputilities.reconstructRegExpWithWhiteSpaces(regExpString, true);
     parsedJson.regExpStrings.push(regExpString);
   }
-  regExpString = '';
+  regExpString = "";
   shouldAdd = false;
   // Now add wildcard matching for slots only
   for (let i = 0; i < parsedJson.parsedUtterance.length; i++) {
@@ -319,7 +319,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimiz
       regExpString += (parsedJson.parsedUtterance[i]);
     }
     else if (parsedJson.parsedUtterance[i].type === "slot") {
-//      regExpString += (wildcardReplacementString);
+      //      regExpString += (wildcardReplacementString);
       let scratchRegExpString  = getReplacementFunc(parsedJson.parsedUtterance[i].slotType, parsedJson.parsedUtterance[i].flags, "WILDCARD");
       regExpString += scratchRegExpString;
       if (_hasFlag("INCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === false) {
@@ -381,7 +381,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimiz
       parsedJson.regExpStrings.push(regExpString);
     }
   }
-  regExpString = '';
+  regExpString = "";
   // Finally add the full match
   for (let i = 0; i < parsedJson.parsedUtterance.length; i++) {
     if (typeof parsedJson.parsedUtterance[i] === "string") {
@@ -471,24 +471,24 @@ var _makeRegExpForEquivalentsSet = function(equivalentsSet){
     regExpString += ")";
   }
   regExpString += ")";
-//  console.log("makeRegExpForEquivalentsSet: " + regExpString);
+  //  console.log("makeRegExpForEquivalentsSet: " + regExpString);
   return regExpString;
 };
 
 var _unfoldParsedJson = function(parsedJson, prependIntentNameOnOutput){
-	let resultArray = [];
-	if(parsedJson.parsedUtterance.length >= 1){
-		if(typeof parsedJson.parsedUtterance[0] === "string"){
-			resultArray.push(parsedJson.parsedUtterance[0]);
-		}
-		else if(parsedJson.parsedUtterance[0].type === "slot"){
-			resultArray.push("{" + parsedJson.parsedUtterance[0].name + "}");
-		}
-		else if(parsedJson.parsedUtterance[0].type === "optionsList"){
-			for(let i = 0; i < parsedJson.parsedUtterance[0].options.length; i++){
-				resultArray.push(parsedJson.parsedUtterance[0].options[i]);
-			}
-		}
+  let resultArray = [];
+  if(parsedJson.parsedUtterance.length >= 1){
+    if(typeof parsedJson.parsedUtterance[0] === "string"){
+      resultArray.push(parsedJson.parsedUtterance[0]);
+    }
+    else if(parsedJson.parsedUtterance[0].type === "slot"){
+      resultArray.push("{" + parsedJson.parsedUtterance[0].name + "}");
+    }
+    else if(parsedJson.parsedUtterance[0].type === "optionsList"){
+      for(let i = 0; i < parsedJson.parsedUtterance[0].options.length; i++){
+        resultArray.push(parsedJson.parsedUtterance[0].options[i]);
+      }
+    }
     else if(parsedJson.parsedUtterance[0].type === "equivalentsSet"){
       let scratchUnfolded = _unfoldEquivalentsSet(parsedJson.parsedUtterance[0]);
       for(let i = 0; i < scratchUnfolded.length; i++){
@@ -500,32 +500,32 @@ var _unfoldParsedJson = function(parsedJson, prependIntentNameOnOutput){
         resultArray.push(parsedJson.parsedUtterance[0].equivalents[i]);
       }
     }
-	}
-	for(let i = 1; i < parsedJson.parsedUtterance.length; i ++){
-		if(parsedJson.parsedUtterance.length >= 1){
-			if(typeof parsedJson.parsedUtterance[i] === "string"){
-				for(let j = 0; j < resultArray.length; j++){
-					resultArray[j] += parsedJson.parsedUtterance[i];
-				}
-			}
-			else if(parsedJson.parsedUtterance[i].type === "slot"){
-				for(let j = 0; j < resultArray.length; j++){
-					resultArray[j] += ("{" + parsedJson.parsedUtterance[i].name + "}");
-				}
-			}
-			else if(parsedJson.parsedUtterance[i].type === "optionsList"){
-				let currentArraySize = resultArray.length;
-				let optionsListSize = parsedJson.parsedUtterance[i].options.length;
-				let newResultArray = [];
-				for(let j = 0; j < currentArraySize; j++){
-					for(let k = 0; k < optionsListSize; k++){
-						newResultArray.push(resultArray[j] + parsedJson.parsedUtterance[i].options[k]);
-					}
-				}
-				resultArray = newResultArray;
-			}
-			else if(parsedJson.parsedUtterance[i].type === "equivalentsSet"){
-			  let scratchUnfolded = _unfoldEquivalentsSet(parsedJson.parsedUtterance[i]);
+  }
+  for(let i = 1; i < parsedJson.parsedUtterance.length; i ++){
+    if(parsedJson.parsedUtterance.length >= 1){
+      if(typeof parsedJson.parsedUtterance[i] === "string"){
+        for(let j = 0; j < resultArray.length; j++){
+          resultArray[j] += parsedJson.parsedUtterance[i];
+        }
+      }
+      else if(parsedJson.parsedUtterance[i].type === "slot"){
+        for(let j = 0; j < resultArray.length; j++){
+          resultArray[j] += ("{" + parsedJson.parsedUtterance[i].name + "}");
+        }
+      }
+      else if(parsedJson.parsedUtterance[i].type === "optionsList"){
+        let currentArraySize = resultArray.length;
+        let optionsListSize = parsedJson.parsedUtterance[i].options.length;
+        let newResultArray = [];
+        for(let j = 0; j < currentArraySize; j++){
+          for(let k = 0; k < optionsListSize; k++){
+            newResultArray.push(resultArray[j] + parsedJson.parsedUtterance[i].options[k]);
+          }
+        }
+        resultArray = newResultArray;
+      }
+      else if(parsedJson.parsedUtterance[i].type === "equivalentsSet"){
+        let scratchUnfolded = _unfoldEquivalentsSet(parsedJson.parsedUtterance[i]);
         let currentArraySize = resultArray.length;
         let equivalentsSize = scratchUnfolded.length;
         let newResultArray = [];
@@ -548,14 +548,14 @@ var _unfoldParsedJson = function(parsedJson, prependIntentNameOnOutput){
         resultArray = newResultArray;
       }
     }
-	}
-	if(prependIntentNameOnOutput === true){
+  }
+  if(prependIntentNameOnOutput === true){
     for(let i = 0; i < resultArray.length; i++){
       resultArray[i] = parsedJson.intentName + " " + resultArray[i];
 
     }
-	}
-	return resultArray;
+  }
+  return resultArray;
 };
 
 var _unfoldEquivalentsSet = function(parsedEquivalentsSetJson) {
@@ -578,15 +578,15 @@ var _unfoldEquivalentsSet = function(parsedEquivalentsSetJson) {
 
 //TODO remove duplicate copies of this and move them to a common js file later
 var _getBuiltInSlotTypeSuffix = function(slotType){
-	return slotType.replace(/^AMAZON\./, '').replace(/^TRANSCEND\./, '');
+  return slotType.replace(/^AMAZON\./, "").replace(/^TRANSCEND\./, "");
 };
 
 var _isBuiltInSlot = function(slotName, intentName, intentSchema){
-	let slotType = _getSlotType(slotName, intentName, intentSchema);
-	if(slotType.startsWith("AMAZON.") || slotType.startsWith("TRANSCEND.")){
-		return true;
-	}
-	return false;
+  let slotType = _getSlotType(slotName, intentName, intentSchema);
+  if(slotType.startsWith("AMAZON.") || slotType.startsWith("TRANSCEND.")){
+    return true;
+  }
+  return false;
 };
 
 var _getSlotType = function(slotName, intentName, intentSchema){
@@ -603,32 +603,32 @@ var _getSlotType = function(slotName, intentName, intentSchema){
 };
 
 var _addFlag = function(flagObject, slotName, parsedJson){
-	if(typeof parsedJson !== "undefined" && typeof parsedJson.parsedUtterance !== "undefined" && Array.isArray(parsedJson.parsedUtterance)){
-		for (let i = 0; i < parsedJson.parsedUtterance.length; i++){
-			if(parsedJson.parsedUtterance[i].type === "slot" && parsedJson.parsedUtterance[i].name === slotName){
-				if(typeof parsedJson.parsedUtterance[i].flags === "undefined"){
-					parsedJson.parsedUtterance[i].flags = [];
-				}
-				parsedJson.parsedUtterance[i].flags.push(flagObject);
-			}
-		}
-	}
+  if(typeof parsedJson !== "undefined" && typeof parsedJson.parsedUtterance !== "undefined" && Array.isArray(parsedJson.parsedUtterance)){
+    for (let i = 0; i < parsedJson.parsedUtterance.length; i++){
+      if(parsedJson.parsedUtterance[i].type === "slot" && parsedJson.parsedUtterance[i].name === slotName){
+        if(typeof parsedJson.parsedUtterance[i].flags === "undefined"){
+          parsedJson.parsedUtterance[i].flags = [];
+        }
+        parsedJson.parsedUtterance[i].flags.push(flagObject);
+      }
+    }
+  }
 };
 
 var _removeFlag = function(flagName, slotName, parsedJson){
-	if(typeof parsedJson !== "undefined" && typeof parsedJson.parsedUtterance !== "undefined" && Array.isArray(parsedJson.parsedUtterance)){
-		for (let i = 0; i < parsedJson.parsedUtterance.length; i++){
-			if(parsedJson.parsedUtterance[i].type === "slot" && parsedJson.parsedUtterance[i].name === slotName){
-				if(typeof parsedJson.parsedUtterance[i].flags !== "undefined"){
-					for(let j = parsedJson.parsedUtterance[i].flags.length - 1; j >= 0; j --){
-						if(parsedJson.parsedUtterance[i].flags[j].name === flagName){
-							parsedJson.parsedUtterance[i].flags.splice(j, 1);
-						}
-					}
-				}
-			}
-		}
-	}
+  if(typeof parsedJson !== "undefined" && typeof parsedJson.parsedUtterance !== "undefined" && Array.isArray(parsedJson.parsedUtterance)){
+    for (let i = 0; i < parsedJson.parsedUtterance.length; i++){
+      if(parsedJson.parsedUtterance[i].type === "slot" && parsedJson.parsedUtterance[i].name === slotName){
+        if(typeof parsedJson.parsedUtterance[i].flags !== "undefined"){
+          for(let j = parsedJson.parsedUtterance[i].flags.length - 1; j >= 0; j --){
+            if(parsedJson.parsedUtterance[i].flags[j].name === flagName){
+              parsedJson.parsedUtterance[i].flags.splice(j, 1);
+            }
+          }
+        }
+      }
+    }
+  }
 };
 
 var _hasFlag = function(flagName, slotName, parsedJson) {
@@ -679,171 +679,171 @@ var _multiplyArrays = function(sourceTarget, additional){
 start and end, inclusively of both.
 */
 var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, intentSchema){
-	let scratch = '';
-	let returnValue = [];
-	for(let i = parsingRange.start; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i++){
-		let currentLetter = utteranceArray[i];
-		switch(currentLetter){
-			case '{':
-				if(scratch.length > 0){
-					returnValue.push(scratch);
-				}
-				scratch = '';
-				// Handle anything that starts with a curly bracket - slot, options list, etc
-				let curlyRange = {"start": i, "end": -1}
-				let curlyResult = _parseCurlyBrackets(utteranceArray, curlyRange, intentName, intentSchema);
-//				console.log("curlyResult: ", curlyResult);
-        if(typeof curlyResult !== "undefined" && Array.isArray(curlyResult)){
-          for(let j = 0; j < curlyResult.length; j++){
-            returnValue.push(curlyResult[j]);
-          }
+  let scratch = "";
+  let returnValue = [];
+  for(let i = parsingRange.start; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i++){
+    let currentLetter = utteranceArray[i];
+    switch(currentLetter){
+    case "{":
+      if(scratch.length > 0){
+        returnValue.push(scratch);
+      }
+      scratch = "";
+      // Handle anything that starts with a curly bracket - slot, options list, etc
+      let curlyRange = {"start": i, "end": -1};
+      let curlyResult = _parseCurlyBrackets(utteranceArray, curlyRange, intentName, intentSchema);
+      //				console.log("curlyResult: ", curlyResult);
+      if(typeof curlyResult !== "undefined" && Array.isArray(curlyResult)){
+        for(let j = 0; j < curlyResult.length; j++){
+          returnValue.push(curlyResult[j]);
         }
-        else {
-          returnValue.push(curlyResult);
-        }
-				i = curlyRange.end;
-				break;
-			default:
-				scratch += currentLetter;
-				break;
-		}
-	}
-	if(scratch.length > 0){
-		returnValue.push(scratch);
-	}
-	return returnValue;
+      }
+      else {
+        returnValue.push(curlyResult);
+      }
+      i = curlyRange.end;
+      break;
+    default:
+      scratch += currentLetter;
+      break;
+    }
+  }
+  if(scratch.length > 0){
+    returnValue.push(scratch);
+  }
+  return returnValue;
 };
 
 var _parseJsonArray = function(utteranceArray, parsingRange, intentSchema){
-	// Really brute force method - user JSON.parse and attempt at each ]
-	let error = {"error": "", "position": -1};
-	if(utteranceArray[parsingRange.start] !== '['){
-		error.error = "parsing JSON array doesn't start with [", utteranceArray.slice(parsingRange.start).join("");
-		error.position = parsingRange.start;
-		throw error;
-	}
-	let accumulatedValue = '';
-	let returnValue = [];
-	for(let i = parsingRange.start; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
-		accumulatedValue += utteranceArray[i];
-		switch(utteranceArray[i]){
-			case "]":
-				try {
-					returnValue = JSON.parse(accumulatedValue);
-					parsingRange.end = i;
-					return returnValue;
-				}
-				catch(e){
-					// Ignore all errors - we are simply trying blindly so errors don't mean anything
-				}
-				break;
-			default:
-				break;
-		}
-	}
+  // Really brute force method - user JSON.parse and attempt at each ]
+  let error = {"error": "", "position": -1};
+  if(utteranceArray[parsingRange.start] !== "["){
+    error.error = "parsing JSON array doesn't start with [", utteranceArray.slice(parsingRange.start).join("");
+    error.position = parsingRange.start;
+    throw error;
+  }
+  let accumulatedValue = "";
+  let returnValue = [];
+  for(let i = parsingRange.start; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+    accumulatedValue += utteranceArray[i];
+    switch(utteranceArray[i]){
+    case "]":
+      try {
+        returnValue = JSON.parse(accumulatedValue);
+        parsingRange.end = i;
+        return returnValue;
+      }
+      catch(e){
+        // Ignore all errors - we are simply trying blindly so errors don't mean anything
+      }
+      break;
+    default:
+      break;
+    }
+  }
 };
 
 var _parseFlagParameters = function(utteranceArray, parsingRange, intentSchema){
-	let error = {"error": "", "position": -1};
-	if(utteranceArray[parsingRange.start] !== '('){
-		error.error = "parsing slot doesn't start with (";
-		error.position = parsingRange.start;
-		throw error;
-	}
-	let returnValue = [];
-	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
-		switch(utteranceArray[i]){
-			case "[":
-				let jsonArrayRange = {"start": i, "end": -1};
-				let jsonArrayResult = _parseJsonArray(utteranceArray, jsonArrayRange, intentSchema);
-				returnValue = jsonArrayResult;
-				i = jsonArrayRange.end;
-				break;
-			case ")":
-				parsingRange.end = i;
-				return returnValue;
-      case " ":
-      case "\f":
-      case "\n":
-      case "\r":
-      case "\t":
-      case "\v":
-					break;
-			default:
-				error.position = i;
-				error.error = "unexpected character while parsing flag parameters at position: " + error.position + ": " + utteranceArray[i] + ", in the utterance: " + utteranceArray.join("");
-				throw error;
-		}
-	}
+  let error = {"error": "", "position": -1};
+  if(utteranceArray[parsingRange.start] !== "("){
+    error.error = "parsing slot doesn't start with (";
+    error.position = parsingRange.start;
+    throw error;
+  }
+  let returnValue = [];
+  for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+    switch(utteranceArray[i]){
+    case "[":
+      let jsonArrayRange = {"start": i, "end": -1};
+      let jsonArrayResult = _parseJsonArray(utteranceArray, jsonArrayRange, intentSchema);
+      returnValue = jsonArrayResult;
+      i = jsonArrayRange.end;
+      break;
+    case ")":
+      parsingRange.end = i;
+      return returnValue;
+    case " ":
+    case "\f":
+    case "\n":
+    case "\r":
+    case "\t":
+    case "\v":
+      break;
+    default:
+      error.position = i;
+      error.error = "unexpected character while parsing flag parameters at position: " + error.position + ": " + utteranceArray[i] + ", in the utterance: " + utteranceArray.join("");
+      throw error;
+    }
+  }
 };
 
 var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
-	let error = {"error": "", "position": -1};
-	if(utteranceArray[parsingRange.start] !== ':'){
-		error.error = "parsing slot doesn't start with :";
-		error.position = parsingRange.start;
+  let error = {"error": "", "position": -1};
+  if(utteranceArray[parsingRange.start] !== ":"){
+    error.error = "parsing slot doesn't start with :";
+    error.position = parsingRange.start;
     throw error;
-	}
-	let accumulatedValue = '';
-	let returnValue = [];
-	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
-		switch(utteranceArray[i]){
-			case "}":
-				parsingRange.end = i;
-				if(accumulatedValue.length > 0){
-					returnValue.push({"name": accumulatedValue});
-				}
-				return returnValue;
-			case ",":
-				if(accumulatedValue.length > 0){
-					returnValue.push({"name": accumulatedValue});
-					accumulatedValue = '';
-				}
-				break;
-			case "(":
-				returnValue.push({"name": accumulatedValue});
-				accumulatedValue = '';
-				let flagsRange = {"start": i, "end": -1};
-				let flagsResult = _parseFlagParameters(utteranceArray, flagsRange, intentSchema);
-				returnValue[returnValue.length - 1].parameters = flagsResult;
-				i = flagsRange.end;
-				break;
-			case " ":
-			case "\f":
-			case "\n":
-			case "\r":
-			case "\t":
-			case "\v":
-				break;
-			default:
-				// simply accumulate the characters
-				accumulatedValue += utteranceArray[i];
-		}
-	}
+  }
+  let accumulatedValue = "";
+  let returnValue = [];
+  for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+    switch(utteranceArray[i]){
+    case "}":
+      parsingRange.end = i;
+      if(accumulatedValue.length > 0){
+        returnValue.push({"name": accumulatedValue});
+      }
+      return returnValue;
+    case ",":
+      if(accumulatedValue.length > 0){
+        returnValue.push({"name": accumulatedValue});
+        accumulatedValue = "";
+      }
+      break;
+    case "(":
+      returnValue.push({"name": accumulatedValue});
+      accumulatedValue = "";
+      let flagsRange = {"start": i, "end": -1};
+      let flagsResult = _parseFlagParameters(utteranceArray, flagsRange, intentSchema);
+      returnValue[returnValue.length - 1].parameters = flagsResult;
+      i = flagsRange.end;
+      break;
+    case " ":
+    case "\f":
+    case "\n":
+    case "\r":
+    case "\t":
+    case "\v":
+      break;
+    default:
+      // simply accumulate the characters
+      accumulatedValue += utteranceArray[i];
+    }
+  }
 };
 
 var _parseOptionsList = function(utteranceArray, parsingRange, intentName, intentSchema) {
   let error = {"error": "", "position": -1};
-  if (utteranceArray[parsingRange.start] !== '{') {
+  if (utteranceArray[parsingRange.start] !== "{") {
     error.error = "parsing options list doesn't start with {";
     error.position = parsingRange.start;
   }
-  let accumulatedValue = '';
+  let accumulatedValue = "";
   let returnValue = {"type": "optionsList", "options": []};
 
   for (let i = parsingRange.start + 1; i < (parsingRange.end < 0 ? utteranceArray.length : parsingRange.end + 1); i++) {
     switch (utteranceArray[i]) {
-      case "}":
-        parsingRange.end = i;
-        returnValue.options.push(accumulatedValue);
-        return returnValue;
-      case "|":
-        returnValue.options.push(accumulatedValue);
-        accumulatedValue = '';
-        break;
-      default:
-        // simply accumulate the characters
-        accumulatedValue += utteranceArray[i];
+    case "}":
+      parsingRange.end = i;
+      returnValue.options.push(accumulatedValue);
+      return returnValue;
+    case "|":
+      returnValue.options.push(accumulatedValue);
+      accumulatedValue = "";
+      break;
+    default:
+      // simply accumulate the characters
+      accumulatedValue += utteranceArray[i];
     }
   }
   error.error = "parsing options list ran out of characters to parse before completing slot parsing";
@@ -852,52 +852,52 @@ var _parseOptionsList = function(utteranceArray, parsingRange, intentName, inten
 };
 
 var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, intentSchema){
-	let error = {"error": "", "position": -1};
-	if(utteranceArray[parsingRange.start] !== '{'){
-		error.error = "parsing slot doesn't start with {";
-		error.position = parsingRange.start;
+  let error = {"error": "", "position": -1};
+  if(utteranceArray[parsingRange.start] !== "{"){
+    error.error = "parsing slot doesn't start with {";
+    error.position = parsingRange.start;
     throw error;
-	}
-	let accumulatedValue = '';
-	let returnValue = {"type": "slot"};
-	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
-		switch(utteranceArray[i]){
-			case "}":
-				parsingRange.end = i;
-				if(typeof returnValue.flags === "undefined"){
-					returnValue.flags = [];
-				}
-				returnValue.flags.push(accumulatedValue);
-				return returnValue;
-			case ":":
-				if(_isSlotName(accumulatedValue, intentName, intentSchema) === false){
-					error.error = "slot name " + accumulatedValue + " does not exist within intent schema";
-					error.position = i;
-					throw error;
-				}
-				returnValue.slotType = _getSlotType(accumulatedValue, intentName, intentSchema);
-				returnValue.name = accumulatedValue;
-				accumulatedValue = '';
-				let flagsRange = {"start": i, "end": -1};
-				let flagsResult = _parseFlags(utteranceArray, flagsRange);
-				parsingRange.end = flagsRange.end;
-				returnValue.flags = flagsResult;
-				return returnValue;
-      case " ":
-      case "\f":
-      case "\n":
-      case "\r":
-      case "\t":
-      case "\v":
-				break;
-			default:
-				// simply accumulate the characters
-				accumulatedValue += utteranceArray[i];
-		}
-	}
-	error.error = "parsing slot ran out of characters to parse before completing slot parsing";
-	error.position = -1;
-	throw error;
+  }
+  let accumulatedValue = "";
+  let returnValue = {"type": "slot"};
+  for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+    switch(utteranceArray[i]){
+    case "}":
+      parsingRange.end = i;
+      if(typeof returnValue.flags === "undefined"){
+        returnValue.flags = [];
+      }
+      returnValue.flags.push(accumulatedValue);
+      return returnValue;
+    case ":":
+      if(_isSlotName(accumulatedValue, intentName, intentSchema) === false){
+        error.error = "slot name " + accumulatedValue + " does not exist within intent schema";
+        error.position = i;
+        throw error;
+      }
+      returnValue.slotType = _getSlotType(accumulatedValue, intentName, intentSchema);
+      returnValue.name = accumulatedValue;
+      accumulatedValue = "";
+      let flagsRange = {"start": i, "end": -1};
+      let flagsResult = _parseFlags(utteranceArray, flagsRange);
+      parsingRange.end = flagsRange.end;
+      returnValue.flags = flagsResult;
+      return returnValue;
+    case " ":
+    case "\f":
+    case "\n":
+    case "\r":
+    case "\t":
+    case "\v":
+      break;
+    default:
+      // simply accumulate the characters
+      accumulatedValue += utteranceArray[i];
+    }
+  }
+  error.error = "parsing slot ran out of characters to parse before completing slot parsing";
+  error.position = -1;
+  throw error;
 };
 
 /**
@@ -908,7 +908,7 @@ var _parseSlotWithFlags = function(utteranceArray, parsingRange, intentName, int
  * @private
  */
 var _getWordEquivalents = function(word, dataSet){
-  if(typeof word !== 'string' || typeof dataSet === "undefined" || typeof dataSet.singleWordSynonyms === "undefined"){
+  if(typeof word !== "string" || typeof dataSet === "undefined" || typeof dataSet.singleWordSynonyms === "undefined"){
     return undefined;
   }
   word = word.toLowerCase();
@@ -964,7 +964,7 @@ var _getWordsEquivalentsForDataSets = function(words, dataSets){
  */
 var _getPhraseEquivalents = function(phrase, dataSet){
   phrase = phrase.toLowerCase();
-  if(typeof phrase !== 'string' || typeof dataSet === "undefined" || typeof dataSet.equivalentPhrases === "undefined"){
+  if(typeof phrase !== "string" || typeof dataSet === "undefined" || typeof dataSet.equivalentPhrases === "undefined"){
     return undefined;
   }
   let equivalentPhrases = dataSet.equivalentPhrases;
@@ -1031,7 +1031,7 @@ var _compactMultiWordEquivalentsByFitRating = function(matchesObject){
 var _convertArrayToEquivalentsObjectOrString = function(arg){
   if(typeof arg !== "undefined" && arg !== null && Array.isArray(arg) && arg.length > 1){
     let returnValue = {"type":"equivalents", "equivalents": [].concat(arg)};
-//    console.log("converting array to eq. object: ", JSON.stringify(returnValue, null, 2));
+    //    console.log("converting array to eq. object: ", JSON.stringify(returnValue, null, 2));
     return returnValue;
   }
   if(typeof arg !== "undefined" && arg !== null && Array.isArray(arg) && arg.length === 1){
@@ -1144,15 +1144,15 @@ var _processParsedEquivalentsWords = function(words, dataSets){
   for(let i = 0; i < dataSets.length; i ++){
     result = _findMultiWordEquivalents(words, result, dataSets[i]);
   }
-//  console.log("_processParsedEquivalentsWords, 1, result: ", JSON.stringify(result, null, 2) );
+  //  console.log("_processParsedEquivalentsWords, 1, result: ", JSON.stringify(result, null, 2) );
   _compactMultiWordEquivalentsByFitRating(result);
-//  console.log("_processParsedEquivalentsWords, 2, result: ", JSON.stringify(result, null, 2) );
+  //  console.log("_processParsedEquivalentsWords, 2, result: ", JSON.stringify(result, null, 2) );
   let wordEquivalents = _getWordsEquivalentsForDataSets(words, dataSets);
-//  console.log("_processParsedEquivalentsWords, 3, wordEquivalents: ", JSON.stringify(wordEquivalents, null, 2) );
+  //  console.log("_processParsedEquivalentsWords, 3, wordEquivalents: ", JSON.stringify(wordEquivalents, null, 2) );
   let multiWordResult = _generatePossibleMultiWordUtterances(words, result, wordEquivalents, 0);
-//  console.log("_processParsedEquivalentsWords, 4, multiWordResult: ", JSON.stringify(multiWordResult, null, 2) );
+  //  console.log("_processParsedEquivalentsWords, 4, multiWordResult: ", JSON.stringify(multiWordResult, null, 2) );
   let removedDuplicates = _stripRedundantTextEquivalents(multiWordResult);
-//  console.log("_processParsedEquivalentsWords, 5, removedDuplicates: ", JSON.stringify(removedDuplicates, null, 2) );
+  //  console.log("_processParsedEquivalentsWords, 5, removedDuplicates: ", JSON.stringify(removedDuplicates, null, 2) );
   return removedDuplicates;
 };
 
@@ -1170,7 +1170,7 @@ var _stripRedundantTextEquivalents = function(parsedEquivalentsSetJson){
     return parsedEquivalentsSetJson;
   }
   // Here we need to look at removing duplicates.  Note that this may not be possible or even desirable in all cases.
-//  console.log("duplicate count: " + duplicateCount);
+  //  console.log("duplicate count: " + duplicateCount);
   let argCopy = JSON.parse(JSON.stringify(parsedEquivalentsSetJson));
   let excluded = [];
   for(let i = 0; i < argCopy.equivalentsSet.length; i++){
@@ -1215,15 +1215,15 @@ var _stripRedundantTextEquivalents = function(parsedEquivalentsSetJson){
 var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
 //  console.log("_findMultiWordEquivalents, 1, previousMatches: " + JSON.stringify(previousMatches));
   let returnValue = (typeof previousMatches !== "undefined" && typeof previousMatches.matches !== "undefined" && Array.isArray(previousMatches.matches) ? previousMatches : {"matches":[]});
-//  console.log("_findMultiWordEquivalents, 2, returnValue: " + JSON.stringify(returnValue));
+  //  console.log("_findMultiWordEquivalents, 2, returnValue: " + JSON.stringify(returnValue));
   let dataSetPhrases = dataSet.equivalentPhrases;
   if(typeof dataSetPhrases === "undefined" || Array.isArray(dataSetPhrases) === false){
-//    console.log("exiting _findMultiWordEquivalents, 1, dataSet: ", JSON.stringify(dataSet, null, 2));
+    //    console.log("exiting _findMultiWordEquivalents, 1, dataSet: ", JSON.stringify(dataSet, null, 2));
     return returnValue;
   }
   for(let i = 0; i < words.length; i ++){
     for(let j = i; j < words.length; j++){
-      let currentPhrase = '';
+      let currentPhrase = "";
       for (let k = i; k <=j; k++){
         if(k !== i){
           currentPhrase += " ";
@@ -1232,7 +1232,7 @@ var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
       }
       // Now we have a phrase - find it in the dataSet
       let found = _getPhraseEquivalents(currentPhrase, dataSet);
-//      console.log("_findMultiWordEquivalents, found: ", JSON.stringify(found, null, 2));
+      //      console.log("_findMultiWordEquivalents, found: ", JSON.stringify(found, null, 2));
       // "unfold" the found values
       for(let l = 0; l < found.length; l ++){
         let match = {"phrase": currentPhrase, "startWordIndex": i, "endWordIndex":j, "equivalents": found[l]};
@@ -1240,7 +1240,7 @@ var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
       }
     }
   }
-//  console.log("_findMultiWordEquivalents, exiting, returnValue: " + JSON.stringify(returnValue));
+  //  console.log("_findMultiWordEquivalents, exiting, returnValue: " + JSON.stringify(returnValue));
 
   return returnValue;
 };
@@ -1257,25 +1257,25 @@ var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
  */
 var _parseEquivalentText = function(utteranceArray, parsingRange){
   let error = {"error": "", "position": -1};
-  if(utteranceArray[parsingRange.start] !== '{' || utteranceArray[parsingRange.start + 1] !== '~'){
+  if(utteranceArray[parsingRange.start] !== "{" || utteranceArray[parsingRange.start + 1] !== "~"){
     error.error = "parsing equivalent text doesn't start with {~";
     error.position = parsingRange.start;
     throw error;
   }
-  let accumulatedValue = '';
-//  defaultEquivalents
+  let accumulatedValue = "";
+  //  defaultEquivalents
 
   let words = [];
   for(let i = parsingRange.start + 2; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
     switch(utteranceArray[i]){
-      case "}":
-        parsingRange.end = i;
-        words.push(accumulatedValue);
-        accumulatedValue = '';
-        let equivalentsReturnValue = _processParsedEquivalentsWords(words, [defaultEquivalents, misspellingEquivalents]);
-//        console.log("returnValue: ", JSON.stringify(equivalentsReturnValue, null, 2));
-        return equivalentsReturnValue;
-        /* TODO REMOVE THIS OLDER CODE THAT WORKS FOR SINGLE WORD EQUIVALENTS ONLY
+    case "}":
+      parsingRange.end = i;
+      words.push(accumulatedValue);
+      accumulatedValue = "";
+      let equivalentsReturnValue = _processParsedEquivalentsWords(words, [defaultEquivalents, misspellingEquivalents]);
+      //        console.log("returnValue: ", JSON.stringify(equivalentsReturnValue, null, 2));
+      return equivalentsReturnValue;
+      /* TODO REMOVE THIS OLDER CODE THAT WORKS FOR SINGLE WORD EQUIVALENTS ONLY
         // Now actually create the return value and return it
 //        let returnValue = {"type": "equivalents", "equivalents": []};
         let returnValue = [];
@@ -1338,32 +1338,32 @@ var _parseEquivalentText = function(utteranceArray, parsingRange){
 //        console.log("equivalent: " + JSON.stringify(returnValue, null, 2));
         return returnValue;
         */
-			case ",":
-      case ".":
-      case "!":
-      case "?":
-        if(accumulatedValue.length > 0){
-          words.push(accumulatedValue);
-          accumulatedValue = '';
-        }
-        words.push(utteranceArray[i]);
-				break;
-      case " ":
-      case "\f":
-      case "\n":
-      case "\r":
-      case "\t":
-      case "\v":
-      	if(accumulatedValue.length > 0){
-          words.push(accumulatedValue);
-          accumulatedValue = '';
-				}
-        break;
-      default:
-        // simply accumulate the characters
-        accumulatedValue += utteranceArray[i];
+    case ",":
+    case ".":
+    case "!":
+    case "?":
+      if(accumulatedValue.length > 0){
+        words.push(accumulatedValue);
+        accumulatedValue = "";
+      }
+      words.push(utteranceArray[i]);
+      break;
+    case " ":
+    case "\f":
+    case "\n":
+    case "\r":
+    case "\t":
+    case "\v":
+      if(accumulatedValue.length > 0){
+        words.push(accumulatedValue);
+        accumulatedValue = "";
+      }
+      break;
+    default:
+      // simply accumulate the characters
+      accumulatedValue += utteranceArray[i];
     }
-	}
+  }
   error.error = "parsing equivalent text ran out of characters to parse before completing parsing";
   error.position = -1;
   throw error;
@@ -1380,74 +1380,74 @@ encountered before } and there is only one word then it's a slot without flags.
 Else it's an option list with just one option.
 */
 var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentName, intentSchema){
-	let error = {"error": "", "position": -1};
-	if(utteranceArray[parsingRange.start] !== '{'){
-		error.error = "parsing curly brackets doesn't start with {";
-		error.position = parsingRange.start;
+  let error = {"error": "", "position": -1};
+  if(utteranceArray[parsingRange.start] !== "{"){
+    error.error = "parsing curly brackets doesn't start with {";
+    error.position = parsingRange.start;
     throw error;
-	}
-	if(utteranceArray[parsingRange.start + 1] === "~"){
-	  // this is a text equivalent
+  }
+  if(utteranceArray[parsingRange.start + 1] === "~"){
+    // this is a text equivalent
     return _parseEquivalentText(utteranceArray, parsingRange);
   }
-	let accumulatedValue = '';
-	for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
-		switch(utteranceArray[i]){
-			case "}":
-				parsingRange.end = i;
-				if(_isSlotName(accumulatedValue, intentName, intentSchema)){
-					let slotType = _getSlotType(accumulatedValue, intentName, intentSchema);
-					return {"type": "slot", "name": accumulatedValue, "slotType": slotType};
-				}
-				else {
-					return {"type": "optionsList", "options": [accumulatedValue]};
-				}
-			case "|":
-			  // this is an options list
-				return _parseOptionsList(utteranceArray, parsingRange, intentName, intentSchema);
-			case ":":
-				// this is a slot with options
-				return _parseSlotWithFlags(utteranceArray, parsingRange, intentName, intentSchema);
-			default:
-				// simply accumulate the characters
-				accumulatedValue += utteranceArray[i];
-		}
-	}
-	error.error = "parsing curly brackets ran out of characters before encountering }";
-	error.position = -1;;
+  let accumulatedValue = "";
+  for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
+    switch(utteranceArray[i]){
+    case "}":
+      parsingRange.end = i;
+      if(_isSlotName(accumulatedValue, intentName, intentSchema)){
+        let slotType = _getSlotType(accumulatedValue, intentName, intentSchema);
+        return {"type": "slot", "name": accumulatedValue, "slotType": slotType};
+      }
+      else {
+        return {"type": "optionsList", "options": [accumulatedValue]};
+      }
+    case "|":
+      // this is an options list
+      return _parseOptionsList(utteranceArray, parsingRange, intentName, intentSchema);
+    case ":":
+      // this is a slot with options
+      return _parseSlotWithFlags(utteranceArray, parsingRange, intentName, intentSchema);
+    default:
+      // simply accumulate the characters
+      accumulatedValue += utteranceArray[i];
+    }
+  }
+  error.error = "parsing curly brackets ran out of characters before encountering }";
+  error.position = -1;
   throw error;
 };
 
 var _splitIntentName = function(utterance){
-	let returnValue = {};
-	let intentRegExp = /^\s*((?:\w|[-])+)\s*(.+)\s*/ig;
+  let returnValue = {};
+  let intentRegExp = /^\s*((?:\w|[-])+)\s*(.+)\s*/ig;
 
   let matchResult = intentRegExp.exec(utterance);
   if(matchResult){
     returnValue = {
       "intentName": matchResult[1],
-			"utteranceString": matchResult[2]
+      "utteranceString": matchResult[2]
     };
-		return returnValue;
+    return returnValue;
   }
-	return;
+  return;
 };
 
 var _isSlotName = function(slotName, intentName, intentSchema){
-	let trimmedName = slotName.replace(/^\s*/,'').replace(/\s*$/,'');
-	for(let i = 0; i < intentSchema.intents.length; i++){
-		if(intentSchema.intents[i].intent !== intentName){
-			continue;
-		}
-		let intentSlots = intentSchema.intents[i].slots;
+  let trimmedName = slotName.replace(/^\s*/,"").replace(/\s*$/,"");
+  for(let i = 0; i < intentSchema.intents.length; i++){
+    if(intentSchema.intents[i].intent !== intentName){
+      continue;
+    }
+    let intentSlots = intentSchema.intents[i].slots;
 
-		for(let j = 0; j < intentSlots.length; j++){
-			if(intentSlots[j].name === trimmedName){
-				return true;
-			}
-		}
-	}
-	return false;
+    for(let j = 0; j < intentSlots.length; j++){
+      if(intentSlots[j].name === trimmedName){
+        return true;
+      }
+    }
+  }
+  return false;
 };
 
 parser.parseUtteranceIntoJson = _parseUtteranceIntoJson;
