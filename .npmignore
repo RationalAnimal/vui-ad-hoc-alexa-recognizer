@@ -11,3 +11,5 @@ staticfilerecognizer.js
 builtinslottypes/uslastnames.json
 mydomain.json
 mystate.json
+npm-debug.log
+.idea
