@@ -36,6 +36,15 @@
       ]
     },
     {
+      "intent": "KitchenStuffIntent",
+      "slots": [
+        {
+          "name": "KitchenStuffSlot",
+          "type": "KITCHENSTUFF"
+        }
+      ]
+    },
+    {
       "intent": "MeaninglessIntent",
       "slots": [
         {
