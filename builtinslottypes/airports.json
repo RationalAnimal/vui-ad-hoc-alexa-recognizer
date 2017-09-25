@@ -8399,7 +8399,15 @@
     {"name":"Arrabury Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Augustus Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Aurukun Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Ayr Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Ayr Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Badu Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Ballera Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Northern Peninsula Airport","alternativeNames":["Bamaga/Injinoo Airport", "Bamaga Injinoo Airport"],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Barcaldine Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Batavia Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Bedourie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Betoota Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Biloela Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
