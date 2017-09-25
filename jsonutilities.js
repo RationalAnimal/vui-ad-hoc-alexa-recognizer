@@ -33,7 +33,7 @@ utilities.compareCustomSlotValues = function(arg1, arg2){
   if(typeof arg1 === "string"){
     return (arg1 === arg2);
   }
-  return (typeof arg1.name === "string" && arg1.name === arg2.name);
+  return (typeof arg1.value === "string" && arg1.value === arg2.name);
 };
 
 module.exports = utilities;

@@ -33,11 +33,23 @@ var constants = require('./constants.js');
 
 var _makeReplacementRegExpString = function(arrayToConvert){
     let returnValue = "((?:";
+    let appendBar = false;
     for(let i = 0; i < arrayToConvert.length; i++){
-        if(i > 0){
-            returnValue += "|";
-        }
+      if(appendBar){
+        returnValue += "|";
+      }
+      else {
+        appendBar = true;
+      }
+      if(typeof arrayToConvert[i] === "string"){
         returnValue += "" + arrayToConvert[i] + "\\s*";
+      }
+      else {
+        if(typeof arrayToConvert[i].value === "string"){
+          returnValue += "" + arrayToConvert[i].value + "\\s*";
+          // TODO add code here to add synonyms
+        }
+      }
     }
     returnValue += ")+)";
     return returnValue;
