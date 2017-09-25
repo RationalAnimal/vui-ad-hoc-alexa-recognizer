@@ -8299,7 +8299,15 @@
     {"name":"Tibooburra Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Tocumwal Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Tumut Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
-    {"name":"Wagga Wagga Airport","alternativeNames":["RAAF Base Wagga"],"priorNames":[],"country":"australia","state":"new south wales"}
+    {"name":"Wagga Wagga Airport","alternativeNames":["RAAF Base Wagga"],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Walcha Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Walgett Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Warnervale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Warren Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"West Wyalong Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Wilcannia Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Illawarra Regional Airport","alternativeNames":["Wollongong Airport"],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Young Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"}
 
   ]
 }
