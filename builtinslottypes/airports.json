@@ -8323,7 +8323,15 @@
     {"name":"Delissaville Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"Borroloola Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"Bickerton Island Airport","alternativeNames":["Milyakburra Airport"],"priorNames":[],"country":"australia","state":"northern territory"},
-    {"name":"Brunette Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"}
+    {"name":"Brunette Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Camfield Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Coolibah Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Cresswell Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Croker Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Kalkgurung Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Daly River Mission Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Daly Waters Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Darwin International Airport","alternativeNames":["RAAF Darwin"],"priorNames":[],"country":"australia","state":"northern territory"}
 
   ]
 }
