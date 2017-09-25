@@ -23,9 +23,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-'use strict'
-let fs = require('fs');
-let path = require('path');
+"use strict";
+let fs = require("fs");
+let path = require("path");
 
 let utilities = {};
 utilities.resolveFileName = function(fileName, resolvedBaseDir){
@@ -53,7 +53,7 @@ utilities.loadStringListFromFile = function(fileName, resolvedBaseDir){
   }
   if(fileExist == true){
     // TODO replace with a lean solution that doesn't have to read the whole file at once
-    let lines = fs.readFileSync(resolvedFileName, 'utf-8').split(/\n\r|\n|\r/);
+    let lines = fs.readFileSync(resolvedFileName, "utf-8").split(/\n\r|\n|\r/);
     let result = [];
     let skipCount = 0;
     for(let i = 0; i < lines.length; i++){
@@ -78,7 +78,7 @@ utilities.loadStringFromFile = function(fileName, resolvedBaseDir){
     fileExist = true;
   }
   if(fileExist == true){
-    return fs.readFileSync(resolvedFileName, 'utf-8');
+    return fs.readFileSync(resolvedFileName, "utf-8");
   }
 };
 
