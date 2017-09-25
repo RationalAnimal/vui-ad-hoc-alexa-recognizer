@@ -8291,7 +8291,15 @@
     {"name":"Scone Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Somersby Airfield","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Bankstown Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
-    {"name":"Sydney Airport","alternativeNames":["Kingsford Smith Airport"],"priorNames":[],"country":"australia","state":"new south wales"}
+    {"name":"Sydney Airport","alternativeNames":["Kingsford Smith Airport"],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Rose Bay Water Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Tamworth Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Taree Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Temora Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Tibooburra Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Tocumwal Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Tumut Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"Wagga Wagga Airport","alternativeNames":["RAAF Base Wagga"],"priorNames":[],"country":"australia","state":"new south wales"}
 
   ]
 }
