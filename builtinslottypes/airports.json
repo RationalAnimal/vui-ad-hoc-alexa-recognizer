@@ -8384,7 +8384,14 @@
     {"name":"Roper Bar Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"Roper Valley Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"Smith Point Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
-    {"name":"Tennant Creek Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"}
+    {"name":"Tennant Creek Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Timber Creek Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Tobermorey Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Ayers Rock Airport","alternativeNames":["Connellan Airport"],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Victoria River Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Port Keats Airfield","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Wollogorang Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Yuendumu Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"}
 
   ]
 }

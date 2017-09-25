@@ -47,6 +47,7 @@ let usage = function(){
   console.log('  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.');
   console.log('  --utterances UtterancesFileName specify utterances file name, optional.  This is "optional" only in the sense that it CAN be omitted, but in practice it is required.  There only time you would invoke this function without an utterance file argument is if your skill generates only build in intents, which would make it rather useless.');
   console.log('  --optimizations [SINGLE-STAGE] optional. SINGLE-STAGE means no pre-matches using wildcards.  Depending on the recognizer, this may be slower or faster');
+  console.log('  --suppressRecognizerDisplay does not send recognizer.json to console')
 };
 
 let optimizations = {"multistage": true};
@@ -56,28 +57,50 @@ let utterancesFileName;
 let interactionModelFileName;
 let baseSourceDirectory;
 let resolvedBaseDir;
+let suppressRecognizerDisplay = false;
 
-for(let i = 2; i < process.argv.length - 1; i += 2){
+for(let i = 2; i < process.argv.length; i ++){
   let j = i + 1;
   if(process.argv[i] === "-c" || process.argv[i] === "--config"){
-    configFileName = process.argv[j];
+    if(j < process.argv.length){
+      i ++;
+      configFileName = process.argv[j];
+    }
   }
   else if(process.argv[i] === "--sourcebase"){
-    baseSourceDirectory = process.argv[j];
-    resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
+    if(j < process.argv.length) {
+      i++;
+      baseSourceDirectory = process.argv[j];
+      resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
 //    console.log("typeof resolvedBaseDir: " + (typeof resolvedBaseDir) + ", resolvedBaseDir: " + resolvedBaseDir);
+    }
   }
   else if(process.argv[i] === "-i" || process.argv[i] === "--intents"){
-    intentsFileName = process.argv[j];
+    if(j < process.argv.length) {
+      i++;
+      intentsFileName = process.argv[j];
+    }
   }
   else if(process.argv[i] === "-u" || process.argv[i] === "--utterances"){
-    utterancesFileName = process.argv[j];
+    if(j < process.argv.length) {
+      i++;
+      utterancesFileName = process.argv[j];
+    }
   }
   else if(process.argv[i] === "--interactionmodel"){
-    interactionModelFileName = process.argv[j];
+    if(j < process.argv.length) {
+      i++;
+      interactionModelFileName = process.argv[j];
+    }
   }
   else if(process.argv[i] === "--optimizations" && process.argv[j] === 'SINGLE-STAGE'){
-    optimizations.multistage = false;
+    if(j < process.argv.length) {
+      i++;
+      optimizations.multistage = false;
+    }
+  }
+  else if(process.argv[i] === "--suppressRecognizerDisplay"){
+    suppressRecognizerDisplay = true;
   }
 }
 
@@ -148,7 +171,9 @@ let doTheProcessing = function(){
   return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances, optimizations, resolvedBaseDir);
 };
 let _done = function(json){
-  console.log(JSON.stringify(resultJson, null, 2));
+  if(suppressRecognizerDisplay === false){
+    console.log(JSON.stringify(resultJson, null, 2));
+  }
   console.log("Was saved to recognizer.json");
 };
 
