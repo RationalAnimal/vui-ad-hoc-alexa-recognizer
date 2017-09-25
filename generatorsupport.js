@@ -791,7 +791,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
       if(hasWildCardMatch){
         // numbers are used in cases of some names
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+        return "((?:\\w|\\s|[0-9,_']|-)+)";
         //          return "((?:\\w|\\s|[0-9]|\-)+)";
       }
       else {
@@ -813,7 +813,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
     }
     else {
-      return "((?:\\w|\\s|[0-9,_']|\-)+)";
+      return "((?:\\w|\\s|[0-9,_']|-)+)";
       //        return "(.+)";
     }
   }
@@ -844,7 +844,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       }
       if(hasWildCardMatch){
         // numbers are used in cases of some names
-        return "((?:\\w|\\s|[0-9,_']|\-)+)";
+        return "((?:\\w|\\s|[0-9,_']|-)+)";
         //          return "((?:\\w|\\s|[0-9]|\-)+)";
       }
       else {
@@ -872,7 +872,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         return replacementRegExpString;
       }      }
     else {
-      return "((?:\\w|\\s|[0-9,_']|\-)+)";
+      return "((?:\\w|\\s|[0-9,_']|-)+)";
       //        return "((?:\\w|\\s|[0-9]|\-)+)";
     }
 
@@ -1002,7 +1002,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
       return getSimpleRegExpForBuiltInSlotType(slotType, slotFlags);
     }
     else {
-      return "((?:\\w|\\s|[0-9,_']|\-)+)";
+      return "((?:\\w|\\s|[0-9,_']|-)+)";
       //        return "((?:\\w|\\s|[0-9]|\-)+)";
     }
   }
@@ -1085,10 +1085,10 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
                 customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
               }
               // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
-              return "((?:\\w|\\s|[0-9,_']|\-)+)";
+              return "((?:\\w|\\s|[0-9,_']|-)+)";
             }
             else if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
-              return "((?:\\w|\\s|[0-9,_']|\-)+)";
+              return "((?:\\w|\\s|[0-9,_']|-)+)";
             }
             else {
               if(typeof customSlotType.replacementRegExp === "undefined"){
@@ -1098,7 +1098,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
             }
           }
           else {
-            return "((?:\\w|\\s|[0-9,_']|\-)+)";
+            return "((?:\\w|\\s|[0-9,_']|-)+)";
           }
 
         }
@@ -1263,7 +1263,7 @@ var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
   }
   if(_hasFlag("INCLUDE_WILDCARD_MATCH", slotFlags)){
     // number are used in cases of names like John the 1st
-    return "((?:\\w|\\s|[0-9]|\-)+)";
+    return "((?:\\w|\\s|[0-9]|-)+)";
   }
   let suffix = _getBuiltInSlotTypeSuffix(slotType);
   //    console.log("getSimpleRegExpForBuiltInSlotType, suffix: <" + suffix + ">");

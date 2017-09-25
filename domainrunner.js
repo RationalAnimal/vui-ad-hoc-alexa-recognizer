@@ -23,12 +23,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-'use strict'
-var fs = require('fs');
+"use strict";
+//var fs = require("fs");
 
 var usage = function(){
-  console.log('Usage: node ' + process.argv[1] + ' --domain <path to a domain> --state <path to state json> --outputState [true|false] --builtinaccessor [basic|readonly]');
-  console.log('To exit type "EXIT"');
+  console.log("Usage: node " + process.argv[1] + " --domain <path to a domain> --state <path to state json> --outputState [true|false] --builtinaccessor [basic|readonly]");
+  console.log("To exit type \"EXIT\"");
 };
 
 if (process.argv.length < 5) {
@@ -47,49 +47,49 @@ let stateAccessor;
 for(let i = 2; i < process.argv.length; i += 2){
   let argSpecifier = process.argv[i];
   switch(argSpecifier){
-    case "--domain":
-      domainPath = process.argv[i + 1];
-      break;
-    case "--state":
-      statePath = process.argv[i + 1];
-      break;
-    case "--outputState":
+  case "--domain":
+    domainPath = process.argv[i + 1];
+    break;
+  case "--state":
+    statePath = process.argv[i + 1];
+    break;
+  case "--outputState":
+    try{
+      outputState = JSON.parse(process.argv[i + 1]);
+    }
+    catch(e){
+      outputState = false;
+    }
+    break;
+  case "--builtinaccessor":
+    switch (process.argv[i + 1]){
+    case "basic":
       try{
-        outputState = JSON.parse(process.argv[i + 1]);
+        accessorSource = require("./builtinstateaccessors/basic.js");
       }
       catch(e){
-        outputState = false;
+        console.log("Unable to load basic.js, error: " + e);
+        usage();
+        process.exit(1);
       }
       break;
-    case "--builtinaccessor":
-      switch (process.argv[i + 1]){
-        case "basic":
-          try{
-            accessorSource = require("./builtinstateaccessors/basic.js");
-          }
-          catch(e){
-            console.log("Unable to load basic.js, error: " + e);
-            usage();
-            process.exit(1);
-          }
-          break;
-        case "readonly":
-          try{
-            accessorSource = require("./builtinstateaccessors/basicreadonly.js");
-          }
-          catch(e){
-            console.log("Unable to load basicreadonly.js, error: " + e);
-            usage();
-            process.exit(1);
-          }
-          break;
-        default:
-          break;
+    case "readonly":
+      try{
+        accessorSource = require("./builtinstateaccessors/basicreadonly.js");
+      }
+      catch(e){
+        console.log("Unable to load basicreadonly.js, error: " + e);
+        usage();
+        process.exit(1);
       }
       break;
     default:
-      usage();
-      process.exit(1);
+      break;
+    }
+    break;
+  default:
+    usage();
+    process.exit(1);
   }
 }
 
@@ -147,7 +147,7 @@ if(typeof stateAccessor === "undefined" || stateAccessor === null){
 
 let recognizer = require("./index.js");
 
-const readline = require('readline');
+const readline = require("readline");
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -155,15 +155,15 @@ const rl = readline.createInterface({
 });
 
 let recursiveUserInput = function (){
-  rl.question('Please type user text: ', function (answer) {
-    if (answer === 'EXIT'){
+  rl.question("Please type user text: ", function (answer) {
+    if (answer === "EXIT"){
       return rl.close();
     }
-    console.log('Your text was: "' + answer + '"');
+    console.log("Your text was: \"" + answer + "\"");
     let result = recognizer.Recognizer.matchDomain(answer, domain, stateAccessor, [], state);
-    console.log('Domain response: ', JSON.stringify(result, null, 2));
+    console.log("Domain response: ", JSON.stringify(result, null, 2));
     if(outputState === true){
-      console.log('State object: ', JSON.stringify(state, null, 2));
+      console.log("State object: ", JSON.stringify(state, null, 2));
     }
     recursiveUserInput(); //Calling this function again to ask new question
   });
