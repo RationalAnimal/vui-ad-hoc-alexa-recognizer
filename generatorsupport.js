@@ -1382,11 +1382,40 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
                   scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
                 }
                 else if(typeof scratchCustomSlotType.values[j] !== "undefined" && scratchCustomSlotType.values[j] !== null && typeof scratchCustomSlotType.values[j].value === "string"){
-                  // TODO add synonym support.
-                  let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, " ");
-                  scratchCustomSlotType.soundExValues.push(soundexValue);
-                  let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, "\\s+");
-                  scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
+                  if(typeof scratchCustomSlotType.values[j].synonyms !== "undefined" && Array.isArray(scratchCustomSlotType.values[j].synonyms)){
+                    let soundexValueArray = [];
+                    soundexValueArray.push(soundex.simple.soundEx(scratchCustomSlotType.values[j].value, " "));
+                    let soundexRegExpStringArray = [];
+                    soundexRegExpStringArray.push(soundex.simple.soundEx(scratchCustomSlotType.values[j].value, "\\s+"));
+                    for(let k = 0; k < scratchCustomSlotType.values[j].synonyms.length; k++){
+                      let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].synonyms[k], " ");
+                      soundexValueArray.push(soundexValue);
+                    }
+                    scratchCustomSlotType.soundExValues.push(soundexValueArray);
+                    for(let k = 0; k < scratchCustomSlotType.values[j].synonyms.length; k++){
+                      let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].synonyms[k], "\\s+");
+                      soundexRegExpStringArray.push(soundexValue);
+                    }
+                    let regExString = "(?:^\\s*(";
+                    let addBar = false;
+                    for(let k = 0; k < soundexRegExpStringArray.length; k++){
+                      if(addBar){
+                        regExString += "|";
+                      }
+                      else {
+                        addBar = true;
+                      }
+                      regExString += soundexRegExpStringArray[k];
+                    }
+                    regExString += ")\\s*){1}";
+                    scratchCustomSlotType.soundExRegExpStrings.push(regExString);
+                  }
+                  else {
+                    let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, " ");
+                    scratchCustomSlotType.soundExValues.push(soundexValue);
+                    let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, "\\s+");
+                    scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
+                  }
                 }
                 else {
                   throw new Error("Custom slot list value is neither a string nor an object with value field that's a string.");
