@@ -8315,7 +8315,15 @@
     {"name":"Angus Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"Anthony Lagoon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"Finke Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
-    {"name":"Austral Downs Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"}
+    {"name":"Austral Downs Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Auvergne Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Baniyala Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Barkly Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Bathurst Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Delissaville Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Borroloola Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Bickerton Island Airport","alternativeNames":["Milyakburra Airport"],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Brunette Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"}
 
   ]
 }
