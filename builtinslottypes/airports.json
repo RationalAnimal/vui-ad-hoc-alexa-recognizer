@@ -8355,7 +8355,15 @@
     {"name":"Kurundi Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"Hooker Creek Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"Lake Nash Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
-    {"name":"Limbunya Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"}
+    {"name":"Limbunya Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Lissadell Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"MacDonald Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Mainoru Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Maningrida Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Manners Creek Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Marqua Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Snake Bay Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"Milingimbi Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"}
 
   ]
 }
