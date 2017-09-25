@@ -695,8 +695,9 @@ of strings.  For example, here is a custom slot type defined in a config.json:
 }
 ```
 
-This will match on "spoon", "pan", and "skillet".  Furthermore, and this is the real value of the synonyms, when
-matching on the "skillet", the actual returned value will be "Pan".
+This will match on "spoon", "pan", and "skillet".  Furthermore, **and this is the real value of the synonyms**, when
+matching on the "skillet", the actual returned value will be "Pan" (othersied you could have simply added more values
+instead of using synonyms).
 
 Couple of important points:
 

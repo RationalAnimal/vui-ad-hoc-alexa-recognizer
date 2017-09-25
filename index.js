@@ -23,14 +23,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-'use strict'
-var fs = require('fs');
-var soundex = require('./soundex.js');
-var utilities = require('./utilities.js');
-//var parser = require('./parseutterance.js');
+"use strict";
+var fs = require("fs");
+var soundex = require("./soundex.js");
 var recognizer = {};
-var constants = require('./constants.js');
-let responder = require('./responder.js');
+var constants = require("./constants.js");
+let responder = require("./responder.js");
 
 /**
 * Call this to translate the slot from whatever type it was actually reported into
@@ -40,7 +38,7 @@ let responder = require('./responder.js');
 // USED IN GENERATE
 // TODO refactor out - currently in two places
 var _getTranslatedSlotTypeForInternalLookup = function(slotType){
-  let periodIndex = slotType.indexOf('.');
+  let periodIndex = slotType.indexOf(".");
   if(periodIndex < 0){
     return slotType;
   }
@@ -51,7 +49,7 @@ var _getTranslatedSlotTypeForInternalLookup = function(slotType){
 };
 
 var _getTranslatedIntentForOutput = function(intent, platformConfig){
-  let periodIndex = intent.indexOf('.');
+  let periodIndex = intent.indexOf(".");
   if(periodIndex < 0){
     return intent;
   }
@@ -77,7 +75,7 @@ var _hasFlag = function(flagName, flags){
 
 var _getOrderOfMagnitude = function(number){
   let oom = Math.floor(Math.log10(number));
-//  console.log("_getOrderOfMagnitude, number: " + number + ", oom: " + oom);
+  //  console.log("_getOrderOfMagnitude, number: " + number + ", oom: " + oom);
   return oom;
 };
 
@@ -167,7 +165,7 @@ var _processMatchedNumericSlotValue = function(value){
   value = value.replace(/trillion/ig, "1000000000000");
 
   value = value.replace(/and/ig, " ");
-//  console.log("_processMatchedNumericSlotValue, 1.1, value: " + JSON.stringify(value));
+  //  console.log("_processMatchedNumericSlotValue, 1.1, value: " + JSON.stringify(value));
 
   value = value.split(/\s+/);
   let convertedValues = [];
@@ -214,9 +212,9 @@ var _processMatchedNumericSlotValue = function(value){
       let currentOrderOfMagnitude = _getOrderOfMagnitude(value[i]);
       let accummulatedOrderOfMagnitude = _getOrderOfMagnitude(accummulatedStack[accummulatedStack.length - 1]);
       if(
-          ((accummulatedOrderOfMagnitude < currentOrderOfMagnitude) && value[i] === 100) ||
+        ((accummulatedOrderOfMagnitude < currentOrderOfMagnitude) && value[i] === 100) ||
           ((accummulatedOrderOfMagnitude < currentOrderOfMagnitude) && currentOrderOfMagnitude > 2)
-        ){
+      ){
         // The new value's order of magnitude is larger than the entire accumulated
         // value and new value's order of magnitude is at least 2.  This means
         // we multiply them.
@@ -319,10 +317,10 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
   for(let i = 0; i < recognizerSet.customSlotTypes.length; i++){
     let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
     if(scratchCustomSlotType.name !== slotType){
-//      console.log("_processMatchedCustomSlotValueByType, 2");
+      //      console.log("_processMatchedCustomSlotValueByType, 2");
       continue;
     }
-//    console.log("_processMatchedCustomSlotValueByType, 3");
+    //    console.log("_processMatchedCustomSlotValueByType, 3");
     if(_hasFlag("SOUNDEX_MATCH", flags)){
       // do regular expression matching
       if(typeof scratchCustomSlotType.soundExRegExps === "undefined"){
@@ -337,7 +335,8 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
 
       for(let j = 0; j < scratchCustomSlotType.soundExRegExpStrings.length; j++){
         scratchCustomSlotType.soundExRegExps[j].lastIndex = 0;
-        if(matchResult = scratchCustomSlotType.soundExRegExps[j].exec(soundexValue)){
+        matchResult = scratchCustomSlotType.soundExRegExps[j].exec(soundexValue);
+        if(matchResult){
           if(typeof scratchCustomSlotType.values[j] === "string"){
             return scratchCustomSlotType.values[j];
           }
@@ -361,7 +360,8 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
       let matchResult;
       for(let j = 0; j < scratchCustomSlotType.regExps.length; j++){
         scratchCustomSlotType.regExps[j].lastIndex = 0;
-        if(matchResult = scratchCustomSlotType.regExps[j].exec(value)){
+        matchResult = scratchCustomSlotType.regExps[j].exec(value);
+        if(matchResult){
           if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
             return value;
           }
@@ -412,8 +412,9 @@ var _processMatchedTimeSlotValue = function(value){
   "^\\s*(zero|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23){1}\\s*(o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*$";
 
   regExp = new RegExp(hourOnlyString, "ig");
-  if(matchResult = regExp.exec(value)){
-//    console.log("matching time, hour only, matchResult: " + JSON.stringify(matchResult));
+  matchResult = regExp.exec(value);
+  if(matchResult){
+    //    console.log("matching time, hour only, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
     let specifier = matchResult[2];
     if(typeof hour === "undefined" || hour === null || hour.length === 0 ){
@@ -495,7 +496,7 @@ var _processMatchedTimeSlotValue = function(value){
 
   regExp = new RegExp(hourAndMinutesString1, "ig");
   if(matchResult = regExp.exec(value)){
-//    console.log("matching time, hour and minutes, matchResult: " + JSON.stringify(matchResult));
+    //    console.log("matching time, hour and minutes, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
     let minutes = matchResult[2];
     let specifier = matchResult[3];
@@ -568,7 +569,7 @@ var _processMatchedTimeSlotValue = function(value){
 
   regExp = new RegExp(quarterPastHour1, "ig");
   if(matchResult = regExp.exec(value)){
-//    console.log("matching quarter after hour, matchResult: " + JSON.stringify(matchResult));
+    //    console.log("matching quarter after hour, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
     let specifier = matchResult[2];
     hour = _processMatchedNumericSlotValue(hour);
@@ -603,7 +604,7 @@ var _processMatchedTimeSlotValue = function(value){
           numericHour = 0;
         }
       }
-//      console.log("quarter past, hour: " + numericHour);
+      //      console.log("quarter past, hour: " + numericHour);
       return "" + _twoDigitFormatter(numericHour) + ":15";
     }
   }
@@ -612,7 +613,7 @@ var _processMatchedTimeSlotValue = function(value){
 
   regExp = new RegExp(halfPastHour1, "ig");
   if(matchResult = regExp.exec(value)){
-//    console.log("matching half after hour, matchResult: " + JSON.stringify(matchResult));
+    //    console.log("matching half after hour, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
     let specifier = matchResult[2];
     hour = _processMatchedNumericSlotValue(hour);
@@ -656,7 +657,7 @@ var _processMatchedTimeSlotValue = function(value){
 
   regExp = new RegExp(quarterToHour1, "ig");
   if(matchResult = regExp.exec(value)){
-//    console.log("matching quarter to hour, matchResult: " + JSON.stringify(matchResult));
+    //    console.log("matching quarter to hour, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
     hour = _processMatchedNumericSlotValue(hour);
 
@@ -717,14 +718,14 @@ var _processMatchedTimeSlotValue = function(value){
   "\\s*$";
   regExp = new RegExp(hourAndMinutesString2, "ig");
   if(matchResult = regExp.exec(value)){
-//    console.log("matching time, hour and minutes, matchResult: " + JSON.stringify(matchResult));
+    //    console.log("matching time, hour and minutes, matchResult: " + JSON.stringify(matchResult));
     let minutes = matchResult[1];
     let hour = matchResult[3];
     let beforeAfter = matchResult[2];
     let specifier = matchResult[4];
     hour = _processMatchedNumericSlotValue(hour);
     minutes = _processMatchedNumericSlotValue(minutes);
-//      console.log("matching time, hour and minutes, specifier: " + specifier);
+    //      console.log("matching time, hour and minutes, specifier: " + specifier);
     let numericHour = parseInt(hour);
     if(specifier === "am" || specifier === "a.m."){
       // Nothing to do really.  Either we have an hour that's < 12 or the use misspoke but we can't correct it.
@@ -776,7 +777,7 @@ var _processMatchedTimeSlotValue = function(value){
         numericHour = 0;
         hour = "0";
       }
-      return _twoDigitFormatter(numericHour) + ":" + _twoDigitFormatter(minutes)
+      return _twoDigitFormatter(numericHour) + ":" + _twoDigitFormatter(minutes);
     }
     else {
       // Subtract minutes from hour, a.k.a. add minutes + 30 to the previous hour
@@ -790,7 +791,7 @@ var _processMatchedTimeSlotValue = function(value){
       }
       let numericMinute = parseInt(minutes);
       numericMinute = (60 - numericMinute);
-      return _twoDigitFormatter(numericHour) + ":" + _twoDigitFormatter(numericMinute)
+      return _twoDigitFormatter(numericHour) + ":" + _twoDigitFormatter(numericMinute);
     }
   }
 
@@ -871,7 +872,7 @@ var _processMatchedDurationSlotValue = function(value){
         years = "" + years;
         gotDuration = true;
       }
-//      console.log("years: " + years);
+      //      console.log("years: " + years);
     }
     else if(/month/ig.exec(matchResult[1])){
       let scratchSubValue = matchResult[1].replace(/months?/, "");
@@ -884,7 +885,7 @@ var _processMatchedDurationSlotValue = function(value){
         months = "" + months;
         gotDuration = true;
       }
-//      console.log("months: " + months);
+      //      console.log("months: " + months);
     }
     else if(/week/ig.exec(matchResult[1])){
       let scratchSubValue = matchResult[1].replace(/weeks?/, "");
@@ -897,7 +898,7 @@ var _processMatchedDurationSlotValue = function(value){
         weeks = "" + weeks;
         gotDuration = true;
       }
-//      console.log("weeks: " + weeks);
+      //      console.log("weeks: " + weeks);
     }
     else if(/day/ig.exec(matchResult[1])){
       let scratchSubValue = matchResult[1].replace(/days?/, "");
@@ -910,7 +911,7 @@ var _processMatchedDurationSlotValue = function(value){
         days = "" + days;
         gotDuration = true;
       }
-//      console.log("days: " + days);
+      //      console.log("days: " + days);
     }
     else if(/hour/ig.exec(matchResult[1])){
       let scratchSubValue = matchResult[1].replace(/hours?/, "");
@@ -924,7 +925,7 @@ var _processMatchedDurationSlotValue = function(value){
         gotDuration = true;
         gotTimePortion = true;
       }
-//      console.log("hours: " + hours);
+      //      console.log("hours: " + hours);
     }
     else if(/minute/ig.exec(matchResult[1])){
       let scratchSubValue = matchResult[1].replace(/minutes?/, "");
@@ -938,7 +939,7 @@ var _processMatchedDurationSlotValue = function(value){
         gotDuration = true;
         gotTimePortion = true;
       }
-//      console.log("minutes: " + minutes);
+      //      console.log("minutes: " + minutes);
     }
     else if(/second/ig.exec(matchResult[1])){
       let scratchSubValue = matchResult[1].replace(/seconds?/, "");
@@ -952,10 +953,10 @@ var _processMatchedDurationSlotValue = function(value){
         gotDuration = true;
         gotTimePortion = true;
       }
-//      console.log("seconds: " + seconds);
+      //      console.log("seconds: " + seconds);
     }
     regExp.lastIndex = 0;
-    matchResult = regExp.exec(remainingValue)
+    matchResult = regExp.exec(remainingValue);
   }
   if(gotDuration){
     let returnValue = "P";
@@ -1214,7 +1215,7 @@ var _processMatchedDateSlotValue = function(value, flags){
   "eleventh|11th|twelfth|12th|thirteenth|13th|fourteenth|14th|fifteenth|15th|sixteenth|16th|seventeenth|17th|eighteenth|18th|nineteenth|19th|twentieth|20th|" +
   "twenty first|21st|twenty second|22nd|thwenty third|23rd|twenty fourth|24th|twenty fifth|25th|twenty sixth|26th|twenty seventh|27th|" +
   "twenty eighth|28th|twenty ninth|29th|thirtieth|30th|thirty first|31st){0,1}\\s*" +
-/*
+    /*
   "(one|first|1st|two|second|2nd|three|third|3rd|four|fourth|4th|five|fifth|5th|six|sixth|6th|seven|seventh|7th|eight|eighth|8th|nine|nineth|9th|ten|tenth|10th|" +
   "eleven|eleventh|11th|twelve|twelfth|12th|thirteen|thirteenth|13th|fourteen|fourteenth|14th|fifteen|fifteenth|15th|sixteen|sixteenth|16th|seventeen|seventeenth|17th|eighteen|eighteenth|18th|nineteen|nineteenth|19th|twenty|twentieth|20th|" +
   "twenty one|twenty first|21st|twenty two|twenty second|22nd|twenty three|thwenty third|23rd|twenty four|twenty fourth|24th|twenty five|twenty fifth|25th|twenty six|twenty sixth|26th|twenty seven|twenty seventh|27th|" +
@@ -1225,7 +1226,7 @@ var _processMatchedDateSlotValue = function(value, flags){
     "(?:" +
       "(?:one thousand|two thousand){0,1}\\s*(?:(?:one|two|three|four|five|six|seven|eight|nine)\\s*hundred){0,1}\\s*" + "(?:and\\s*){0,1}(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,1}\\s*"+
     ")" +
-  // then as two two digit numbers, e.g. nineteen forty five
+    // then as two two digit numbers, e.g. nineteen forty five
     "|" +
     "(?:(?:(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety){0,1}\\s*(?:one|two|three|four|five|six|seven|eight|nine){0,1}\\s*)|(?:ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)\\s*){0,2}\\s*" +
     // then as four digits, e.g. 1945
@@ -1340,7 +1341,7 @@ var _getWeekOfYear = function(dateToProcess){
   let weekNumber = weeksDiff + weekStartingValue;
   if(weekNumber === 0){
     // This means it's the last week of previous year.
-    return (_getWeekOfYear(new Date("" + year + "/12/31")))
+    return (_getWeekOfYear(new Date("" + year + "/12/31")));
   }
   return "" + year + "-W" + _twoDigitFormatter(weekNumber);
 
@@ -1365,7 +1366,7 @@ var _findExactCaseBuiltInValue = function(value, slotType, recognizerSet){
 var _processMatchedSlotValueByType = function(value, slotType, flags, slot, intent, recognizerSet){
 //  console.log("_processMatchedSlotValueByType, entered");
   slotType = _getTranslatedSlotTypeForInternalLookup(slotType);
-//  console.log("_processMatchedSlotValueByType, 1, slotType: " + slotType + ", value: " + value);
+  //  console.log("_processMatchedSlotValueByType, 1, slotType: " + slotType + ", value: " + value);
   let returnValue = value;
   if(slotType === "TRANSCEND.NUMBER" || slotType === "TRANSCEND.FOUR_DIGIT_NUMBER"){
     returnValue = _processMatchedNumericSlotValue(value);
@@ -1424,51 +1425,51 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
       let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.Corporation");
       let scratchValue = returnValue.toUpperCase();
       outsideloop:
-        for(let i = 0; i < builtInSlotValues.length; i ++){
-          if(builtInSlotValues[i].name.toUpperCase() === scratchValue){
-            returnValue = builtInSlotValues[i].name;
-            break outsideloop;
-          }
-          if(typeof builtInSlotValues[i].alternativeNames !== "undefined" && Array.isArray(builtInSlotValues[i].alternativeNames)){
-            for(let j = 0; j < builtInSlotValues[i].alternativeNames.length; j++){
-              if(builtInSlotValues[i].alternativeNames[j].toUpperCase() === scratchValue){
-                returnValue = builtInSlotValues[i].name;
-                break outsideloop;
-              }
-            }
-          }
-          for(let j = 0; j < builtInSlotValues[i].priorNames.length; j++){
-            if(builtInSlotValues[i].priorNames[j].toUpperCase() === scratchValue){
-              returnValue = builtInSlotValues[i].priorNames[j];
+      for(let i = 0; i < builtInSlotValues.length; i ++){
+        if(builtInSlotValues[i].name.toUpperCase() === scratchValue){
+          returnValue = builtInSlotValues[i].name;
+          break outsideloop;
+        }
+        if(typeof builtInSlotValues[i].alternativeNames !== "undefined" && Array.isArray(builtInSlotValues[i].alternativeNames)){
+          for(let j = 0; j < builtInSlotValues[i].alternativeNames.length; j++){
+            if(builtInSlotValues[i].alternativeNames[j].toUpperCase() === scratchValue){
+              returnValue = builtInSlotValues[i].name;
               break outsideloop;
             }
           }
         }
+        for(let j = 0; j < builtInSlotValues[i].priorNames.length; j++){
+          if(builtInSlotValues[i].priorNames[j].toUpperCase() === scratchValue){
+            returnValue = builtInSlotValues[i].priorNames[j];
+            break outsideloop;
+          }
+        }
+      }
     }
     else if(slotType === "TRANSCEND.Airport"){
       let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.Airport");
       let scratchValue = returnValue.toUpperCase();
       outsideloop:
-        for(let i = 0; i < builtInSlotValues.length; i ++){
-          if(builtInSlotValues[i].name.toUpperCase() === scratchValue){
-            returnValue = builtInSlotValues[i].name;
-            break outsideloop;
-          }
-          if(typeof builtInSlotValues[i].alternativeNames !== "undefined" && Array.isArray(builtInSlotValues[i].alternativeNames)){
-            for(let j = 0; j < builtInSlotValues[i].alternativeNames.length; j++){
-              if(builtInSlotValues[i].alternativeNames[j].toUpperCase() === scratchValue){
-                returnValue = builtInSlotValues[i].name;
-                break outsideloop;
-              }
-            }
-          }
-          for(let j = 0; j < builtInSlotValues[i].priorNames.length; j++){
-            if(builtInSlotValues[i].priorNames[j].toUpperCase() === scratchValue){
-              returnValue = builtInSlotValues[i].priorNames[j];
+      for(let i = 0; i < builtInSlotValues.length; i ++){
+        if(builtInSlotValues[i].name.toUpperCase() === scratchValue){
+          returnValue = builtInSlotValues[i].name;
+          break outsideloop;
+        }
+        if(typeof builtInSlotValues[i].alternativeNames !== "undefined" && Array.isArray(builtInSlotValues[i].alternativeNames)){
+          for(let j = 0; j < builtInSlotValues[i].alternativeNames.length; j++){
+            if(builtInSlotValues[i].alternativeNames[j].toUpperCase() === scratchValue){
+              returnValue = builtInSlotValues[i].name;
               break outsideloop;
             }
           }
         }
+        for(let j = 0; j < builtInSlotValues[i].priorNames.length; j++){
+          if(builtInSlotValues[i].priorNames[j].toUpperCase() === scratchValue){
+            returnValue = builtInSlotValues[i].priorNames[j];
+            break outsideloop;
+          }
+        }
+      }
     }
     else if(slotType === "TRANSCEND.US_STATE"){
       let builtInSlotValues = _getBuiltInSlotValuesFromRecognizer(recognizerSet, "TRANSCEND.US_STATE");
@@ -1487,7 +1488,7 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
         if(builtInSlotValues[i].name.toLowerCase() === scratchValue ||
            builtInSlotValues[i].matchingStrings.indexOf(scratchValue) > 0 ||
            builtInSlotValues[i].ordinalMatchingStrings.indexOf(scratchValue) > 0
-          ){
+        ){
           returnValue = builtInSlotValues[i].name;
           break;
         }
@@ -1543,7 +1544,7 @@ let _isSubObject = function(subObject, withinObject){
   }
   for(let key in subObject) {
     if(subObject.hasOwnProperty(key)){
-//      if(subObject[key] !== withinObject[key] && _isSubObject(subObject[key], withinObject[key]) === false){
+      //      if(subObject[key] !== withinObject[key] && _isSubObject(subObject[key], withinObject[key]) === false){
       if(_isSubObject(subObject[key], withinObject[key]) === false){
         return false;
       }
@@ -1573,7 +1574,7 @@ let _isSubObjectAny = function(subObject, withinArray){
  */
 let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
   if(
-      (state.matchCriteria === "default") ||
+    (state.matchCriteria === "default") ||
       (
         (typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object") &&
         (
@@ -1584,7 +1585,7 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
         )
       )
   ) {
-      return true;
+    return true;
   }
   return false;
 };
@@ -1602,21 +1603,21 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
 //  console.log("_matchTextDomain, 1");
   let domainToUse;
   if(typeof domain === "string"){
-//    console.log("_matchTextDomain, 2");
+    //    console.log("_matchTextDomain, 2");
     // We need to load the domain
     domainToUse = require(domain);
   }
   else if(typeof domain === "object" && domain != null){
-//    console.log("_matchTextDomain, 3");
+    //    console.log("_matchTextDomain, 3");
     domainToUse = domain;
   }
   else {
-//    console.log("_matchTextDomain, 4");
+    //    console.log("_matchTextDomain, 4");
     return undefined;
   }
   if((typeof domainToUse.recognizers === "undefined" || Array.isArray(domainToUse.recognizers) === false) &&
      (typeof domainToUse.domains     === "undefined" || Array.isArray(domainToUse.domains)     === false)){
-//    console.log("_matchTextDomain, 5");
+    //    console.log("_matchTextDomain, 5");
     return undefined;
   }
   if(typeof stateSelectors === "undefined" || stateSelectors === null || Array.isArray(stateSelectors) === false){
@@ -1624,10 +1625,10 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
   }
   // Now populate all the recognizers.
   let recognizers = {};
-//  console.log("_matchTextDomain, 6");
+  //  console.log("_matchTextDomain, 6");
   if(typeof domainToUse.recognizers !== "undefined" && Array.isArray(domainToUse.recognizers)){
     for(let i = 0; i < domainToUse.recognizers.length; i ++){
-//    console.log("_matchTextDomain, 7, i: " + i);
+      //    console.log("_matchTextDomain, 7, i: " + i);
       let currentRecognizer = domainToUse.recognizers[i];
       if(typeof currentRecognizer.path === "string" && typeof currentRecognizer.key !== "undefined"){
         try{
@@ -1661,17 +1662,17 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
     }
   }
 
-//  for (let key in recognizers) {
-//    if (recognizers.hasOwnProperty(key)) {
-//      console.log("_matchTextDomain, 12, key: " + key);
-//    }
-//  }
+  //  for (let key in recognizers) {
+  //    if (recognizers.hasOwnProperty(key)) {
+  //      console.log("_matchTextDomain, 12, key: " + key);
+  //    }
+  //  }
 
   // Now actually try to get the match
   for(let i = 0; i < domainToUse.states.length; i++){
-//    console.log("_matchTextDomain, 13, i: " + i);
+    //    console.log("_matchTextDomain, 13, i: " + i);
     let state = domainToUse.states[i];
-//    console.log("_matchTextDomain, 14");
+    //    console.log("_matchTextDomain, 14");
     if(_checkStateMatchCriteria(state, stateAccessor, applicationState)){
       for(let j = 0; j < state.matchSpecs.length; j ++){
         if(typeof state.matchSpecs[j].recognizer !== "undefined"){
@@ -1688,7 +1689,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
               returnObject.result = {};
               for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
                 let newResult = responder.produceResult(match.name, stateAccessor, stateSelectors, state.matchSpecs[j].responders[k]);
-                console.log("newResult: ", JSON.stringify(newResult, null, 2));
+//                console.log("newResult: ", JSON.stringify(newResult, null, 2));
                 returnObject.result = responder.combineResponses(returnObject.result, newResult, state.matchSpecs[j].responders[k].result.combineRule);
               }
             }
@@ -1736,11 +1737,11 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
       }
     }
     else {
-//      console.log("_matchTextDomain, 20");
+      //      console.log("_matchTextDomain, 20");
       // TODO continue from here.
     }
   }
-//  console.log("_matchTextDomain, 21");
+  //  console.log("_matchTextDomain, 21");
   return undefined;
 };
 
@@ -1748,23 +1749,23 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
 // NOT IN GENERATE
 var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recognizerToUse){
   //  console.log("_matchText, 1");
-    let recognizerSet;
-    if(typeof recognizerToUse !== "undefined" && recognizerToUse !== null){
-      recognizerSet = recognizerToUse;
-    }
-    else {
-      if (fs.existsSync("./recognizer.json")) {
+  let recognizerSet;
+  if(typeof recognizerToUse !== "undefined" && recognizerToUse !== null){
+    recognizerSet = recognizerToUse;
+  }
+  else {
+    if (fs.existsSync("./recognizer.json")) {
     //    console.log("_matchText, 1.1");
-        recognizerSet = require("./recognizer.json");
-      }
-      else if (fs.existsSync("../../recognizer.json")){
+      recognizerSet = require("./recognizer.json");
+    }
+    else if (fs.existsSync("../../recognizer.json")){
     //    console.log("_matchText, 1.2");
-        recognizerSet = require("../../recognizer.json");
-      }
+      recognizerSet = require("../../recognizer.json");
     }
-    if(typeof recognizerSet === "undefined"){
-      throw {"error": constants.errorCodes.MISSING_RECOGNIZER, "message": "Unable to load recognizer.json"};
-    }
+  }
+  if(typeof recognizerSet === "undefined"){
+    throw {"error": constants.errorCodes.MISSING_RECOGNIZER, "message": "Unable to load recognizer.json"};
+  }
 
   // First, correct some of Microsoft's "deviations"
   // Do this only if the number slot type is used
@@ -1782,15 +1783,15 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     let regExpNonGlobal = new RegExp(regExpString, "i");
     let dollarMatchResult;
     while(dollarMatchResult = regExp.exec(stringToMatch)){
-  //    console.log("dollarMatchResult: " + JSON.stringify(dollarMatchResult));
+      //    console.log("dollarMatchResult: " + JSON.stringify(dollarMatchResult));
       if(dollarMatchResult === null){
         continue;
       }
       let dollarlessMatch = dollarMatchResult[0].substring(1);
-  //    console.log("dollarlessMatch: " + JSON.stringify(dollarlessMatch));
+      //    console.log("dollarlessMatch: " + JSON.stringify(dollarlessMatch));
       regExpNonGlobal.lastIndex = 0;
       stringToMatch = stringToMatch.replace(regExpNonGlobal, dollarlessMatch + " dollars ");
-  //    console.log("stringToMatch: " + JSON.stringify(stringToMatch));
+      //    console.log("stringToMatch: " + JSON.stringify(stringToMatch));
       regExp.lastIndex = 0;
     }
     // Now separate all leading zeros so that they don't get lost later in the parsing.
@@ -1815,7 +1816,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     }
   }
 
-//  console.log("_matchText, 2, recognizerSet: " + JSON.stringify(recognizerSet));
+  //  console.log("_matchText, 2, recognizerSet: " + JSON.stringify(recognizerSet));
   let originalMatchConfig = [].concat(recognizerSet.matchConfig);
 
   if(typeof intentsSequence !== "undefined" && intentsSequence !== null){
@@ -1866,30 +1867,30 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
   }
 
   for(let i = 0; i < sortedMatchConfig.length; i++){
-//    console.log("_matchText, 3, i: " + i);
+    //    console.log("_matchText, 3, i: " + i);
     let scratch = sortedMatchConfig[i];
-//    if(i == 6){
-//      console.log("_matchText, 4, scratch: " + JSON.stringify(scratch, null, 2));
-//      console.log("_matchText, 4.1, scratch.regExpStrings: " + JSON.stringify(scratch.regExpStrings));
-//    }
+    //    if(i == 6){
+    //      console.log("_matchText, 4, scratch: " + JSON.stringify(scratch, null, 2));
+    //      console.log("_matchText, 4.1, scratch.regExpStrings: " + JSON.stringify(scratch.regExpStrings));
+    //    }
     if(typeof scratch.regExpStrings !== "undefined" && Array.isArray(scratch.regExpStrings)){
       for(let k = 0; k < scratch.regExpStrings.length; k ++){
         let scratchRegExpString = scratch.regExpStrings[k];
-//        console.log("_matchText, 4.1.0, scratch.regExpString: " + scratchRegExpString);
+        //        console.log("_matchText, 4.1.0, scratch.regExpString: " + scratchRegExpString);
         let scratchRegExp = new RegExp(scratchRegExpString, "ig");
         if(k === (scratch.regExpStrings.length - 1)){
           // This is the final reg exp
           let matchResult;
           while(matchResult = scratchRegExp.exec(stringToMatch)){
-//            console.log("_matchText, 4.1.1, matchResult: ", JSON.stringify(matchResult, null, 2));
-//            for(let j = matchResult.length - 1; j >= 0; j--){
-//              console.log("_matchText, 4.1.1.1, matchResult[" + j + "]: ", matchResult[j]);
-//              if(matchResult[j] === null || typeof matchResult[j] == "undefined"){
-//                console.log("_matchText, 4.1.1.2, matchResult[" + j + "]: ", matchResult[j]);
-//                matchResult.splice(j, 1);
-//              }
-//            }
-//            console.log("_matchText, 4.1.2, matchResult: ", JSON.stringify(matchResult, null, 2));
+            //            console.log("_matchText, 4.1.1, matchResult: ", JSON.stringify(matchResult, null, 2));
+            //            for(let j = matchResult.length - 1; j >= 0; j--){
+            //              console.log("_matchText, 4.1.1.1, matchResult[" + j + "]: ", matchResult[j]);
+            //              if(matchResult[j] === null || typeof matchResult[j] == "undefined"){
+            //                console.log("_matchText, 4.1.1.2, matchResult[" + j + "]: ", matchResult[j]);
+            //                matchResult.splice(j, 1);
+            //              }
+            //            }
+            //            console.log("_matchText, 4.1.2, matchResult: ", JSON.stringify(matchResult, null, 2));
             multistage: {
               if(matchResult !== null){
                 let returnValue = {};
@@ -1915,11 +1916,11 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
           let scratchMatchResult = scratchRegExp.test(stringToMatch);
           if(scratchMatchResult){
             // we are good to try the real one.
-//            console.log("_matchText, 4.2, scratchMatchResult: ", JSON.stringify(scratchMatchResult, null, 2));
+            //            console.log("_matchText, 4.2, scratchMatchResult: ", JSON.stringify(scratchMatchResult, null, 2));
           }
           else {
             // This is definitely not a match - continue
-//            console.log("_matchText, 4.2.1");
+            //            console.log("_matchText, 4.2.1");
             break;
           }
         }
@@ -1933,13 +1934,14 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     let scratch = recognizerSet.builtInIntents[i];
     if(typeof scratch.regExp === "undefined"){
       scratch.regExp = new RegExp(scratch.regExpString, "ig");
-//      console.log("scratch.regExp: " + scratch.regExp);
-//      scratch.regExp = new RegExp("^\\s*((?:help\\s*|help\\s+me\\s*|can\\s+you\\s+help\\s+me\\s*)+)\\s*[.]?\\s*$", "ig");
+      //      console.log("scratch.regExp: " + scratch.regExp);
+      //      scratch.regExp = new RegExp("^\\s*((?:help\\s*|help\\s+me\\s*|can\\s+you\\s+help\\s+me\\s*)+)\\s*[.]?\\s*$", "ig");
     }
     let matchResult;
     scratch.regExp.lastIndex = 0;
-    if(matchResult = scratch.regExp.exec(stringToMatch)){
-//      console.log("matchResult: " + JSON.stringify(matchResult));
+    matchResult = scratch.regExp.exec(stringToMatch);
+    if(matchResult){
+      //      console.log("matchResult: " + JSON.stringify(matchResult));
       let returnValue = {};
       returnValue.name = _getTranslatedIntentForOutput(scratch.name, recognizerSet.platform);
       returnValue.slots = {};
