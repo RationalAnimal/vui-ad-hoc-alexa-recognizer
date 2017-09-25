@@ -1371,14 +1371,26 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
             scratchCustomSlotType.soundExValues = [];
             scratchCustomSlotType.soundExRegExpStrings = [];
             if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
-              // TODO add customRegExp handling
+              // TODO add customRegExp handling - is this really needed?
             }
             else {
               for(let j = 0; j < scratchCustomSlotType.values.length; j++){
-                let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j], " ");
-                scratchCustomSlotType.soundExValues.push(soundexValue);
-                let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j], "\\s+");
-                scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
+                if(typeof scratchCustomSlotType.values[j] === "string"){
+                  let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j], " ");
+                  scratchCustomSlotType.soundExValues.push(soundexValue);
+                  let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j], "\\s+");
+                  scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
+                }
+                else if(typeof scratchCustomSlotType.values[j] !== "undefined" && scratchCustomSlotType.values[j] !== null && typeof scratchCustomSlotType.values[j].value === "string"){
+                  // TODO add synonym support.
+                  let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, " ");
+                  scratchCustomSlotType.soundExValues.push(soundexValue);
+                  let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, "\\s+");
+                  scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
+                }
+                else {
+                  throw new Error("Custom slot list value is neither a string nor an object with value field that's a string.");
+                }
               }
             }
         }
