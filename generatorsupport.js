@@ -47,7 +47,11 @@ var _makeReplacementRegExpString = function(arrayToConvert){
       else {
         if(typeof arrayToConvert[i].value === "string"){
           returnValue += "" + arrayToConvert[i].value + "\\s*";
-          // TODO add code here to add synonyms
+          if(typeof arrayToConvert[i].synonyms !== "undefined" && Array.isArray(arrayToConvert[i].synonyms)){
+            for(let j = 0; j < arrayToConvert[i].synonyms.length; j++){
+              returnValue += "|" + arrayToConvert[i].synonyms[j] + "\\s*";
+            }
+          }
         }
       }
     }
