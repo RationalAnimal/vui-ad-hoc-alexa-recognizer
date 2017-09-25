@@ -8439,7 +8439,15 @@
     {"name":"Clermont Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Cloncurry Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Cluny Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Coconut Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Coconut Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Coen Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Collinsville Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Cooinda Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Cooktown Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Croydon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Cunnamulla Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Dalby Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Darnley Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
