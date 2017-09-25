@@ -2176,6 +2176,74 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
   });
 
+  describe("Synonym processing", function() {
+    it("verify simple utterance with an custom slot that uses synonyms still matches on main value", function() {
+      let result = recognizer.Recognizer.matchText("You will find a pan in the kitchen");
+      expect(result).to.eql(
+        {"name": "KitchenStuffIntent",
+          "slots": {
+            "KitchenStuffSlot": {
+              "name": "KitchenStuffSlot",
+              "value": "Pan"
+            }
+          }});
+    });
+    it("verify simple utterance with an custom slot matches on synonym", function() {
+      let result = recognizer.Recognizer.matchText("You will find a skillet in the kitchen");
+      expect(result).to.eql(
+        {"name": "KitchenStuffIntent",
+          "slots": {
+            "KitchenStuffSlot": {
+              "name": "KitchenStuffSlot",
+              "value": "Pan"
+            }
+          }});
+    });
+    it("verify simple utterance with an custom slot that uses synonyms matches on SOUNDEX of the main value", function() {
+      let result = recognizer.Recognizer.matchText("Is a pan in the kitchen");
+      expect(result).to.eql(
+        {"name": "KitchenStuffIntent",
+          "slots": {
+            "KitchenStuffSlot": {
+              "name": "KitchenStuffSlot",
+              "value": "Pan"
+            }
+          }});
+    });
+    it("verify simple utterance with an custom slot that uses synonyms matches on SOUNDEX of the changed main value", function() {
+      let result = recognizer.Recognizer.matchText("Is a pon in the kitchen");
+      expect(result).to.eql(
+        {"name": "KitchenStuffIntent",
+          "slots": {
+            "KitchenStuffSlot": {
+              "name": "KitchenStuffSlot",
+              "value": "Pan"
+            }
+          }});
+    });
+    it("verify simple utterance with an custom slot that uses synonyms matches on SOUNDEX of the synonym value", function() {
+      let result = recognizer.Recognizer.matchText("Is a skillet in the kitchen");
+      expect(result).to.eql(
+        {"name": "KitchenStuffIntent",
+          "slots": {
+            "KitchenStuffSlot": {
+              "name": "KitchenStuffSlot",
+              "value": "Pan"
+            }
+          }});
+    });
+    it("verify simple utterance with an custom slot that uses synonyms matches on SOUNDEX of the changed synonym value", function() {
+      let result = recognizer.Recognizer.matchText("Is a skiled in the kitchen");
+      expect(result).to.eql(
+        {"name": "KitchenStuffIntent",
+          "slots": {
+            "KitchenStuffSlot": {
+              "name": "KitchenStuffSlot",
+              "value": "Pan"
+            }
+          }});
+    });
+  });
 
   describe("RegExp Custom slot type processing", function() {
     it("verify simple utterance with a  custom slot based on a simple reg exp matches", function() {

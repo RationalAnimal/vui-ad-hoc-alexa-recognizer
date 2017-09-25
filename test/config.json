@@ -1,5 +1,17 @@
 {
 	"customSlotTypes":[
+      {
+        "name": "KITCHENSTUFF",
+        "values": [
+          "Spoon",
+          {
+            "value": "Pan",
+            "synonyms": [
+              "Skillet"
+            ]
+          }
+        ]
+      },
 		{
 			"name": "SOME",
 			"values": [
@@ -29,7 +41,7 @@
 			],
 			"transformBuiltInName": "toUpperCase"
 		},
-		{
+        {
 			"name": "MEANINGLESSTWO",
 			"values": [
 				"footwo",
