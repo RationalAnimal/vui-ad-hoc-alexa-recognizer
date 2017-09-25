@@ -31,29 +31,38 @@ var parser = require('./parseutterance.js');
 var recognizer = {};
 var constants = require('./constants.js');
 
-var _makeReplacementRegExpString = function(arrayToConvert){
-    let returnValue = "((?:";
-    let appendBar = false;
-    for(let i = 0; i < arrayToConvert.length; i++){
-      if(appendBar){
-        returnValue += "|";
-      }
-      else {
-        appendBar = true;
-      }
-      if(typeof arrayToConvert[i] === "string"){
-        returnValue += "" + arrayToConvert[i] + "\\s*";
-      }
-      else {
-        if(typeof arrayToConvert[i].value === "string"){
-          returnValue += "" + arrayToConvert[i].value + "\\s*";
-          if(typeof arrayToConvert[i].synonyms !== "undefined" && Array.isArray(arrayToConvert[i].synonyms)){
-            for(let j = 0; j < arrayToConvert[i].synonyms.length; j++){
-              returnValue += "|" + arrayToConvert[i].synonyms[j] + "\\s*";
-            }
+let _unfoldCustomValuesIntoStringArray = function(arrayToConvert){
+  let returnValue = [];
+  for(let i = 0; i < arrayToConvert.length; i++){
+    if(typeof arrayToConvert[i] === "string"){
+      returnValue.push(arrayToConvert[i]);
+    }
+    else {
+      if(typeof arrayToConvert[i].value === "string"){
+        returnValue.push(arrayToConvert[i].value);
+        if(typeof arrayToConvert[i].synonyms !== "undefined" && Array.isArray(arrayToConvert[i].synonyms)){
+          for(let j = 0; j < arrayToConvert[i].synonyms.length; j++){
+            returnValue.push(arrayToConvert[i].synonyms[j]);
           }
         }
       }
+    }
+  }
+  return returnValue;
+};
+
+let _makeReplacementRegExpString = function(arrayToConvert){
+  let arrayToUse = _unfoldCustomValuesIntoStringArray(arrayToConvert);
+  let returnValue = "((?:";
+  let appendBar = false;
+  for(let i = 0; i < arrayToUse.length; i++){
+    if(appendBar){
+      returnValue += "|";
+    }
+    else {
+      appendBar = true;
+    }
+    returnValue += "" + arrayToConvert[i] + "\\s*";
     }
     returnValue += ")+)";
     return returnValue;
