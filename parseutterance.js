@@ -241,7 +241,7 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
 };
 
 var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimizations) {
-  let wildcardReplacementString = "((?:\\w|\\s|[0-9,_']|\-)+)";
+  let wildcardReplacementString = "((?:\\w|\\s|[0-9,_']|-)+)";
   parsedJson.regExpStrings = [];
 
   // First add "complete" wildcard regexp - one that replaces slots and options lists with wildcards
