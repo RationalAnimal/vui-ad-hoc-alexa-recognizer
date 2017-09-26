@@ -1,6 +1,6 @@
 ---
 layout: page
-title: He spoke bespoke
+title: He Spoke Bespoke
 permalink: /Tutorials/HeSpokeBespoke/
 ---
 You've now see a couple of different built in slot types and used them in a mini chat bot.  There are a lot more of these built in

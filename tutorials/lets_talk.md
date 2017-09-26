@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Let's talk 
+title: Let's Talk 
 permalink: /Tutorials/LetsTalk/
 ---
 
