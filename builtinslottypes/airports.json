@@ -8535,7 +8535,15 @@
     {"name":"Moreton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Morney Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Mornington Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Mount Gordon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Mount Gordon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Mount Isa Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Murray Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Musgrave Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Muttaburra Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Nappa Merrie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"New Laura Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"New Moon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Noosa Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
