@@ -171,7 +171,7 @@ let doTheProcessing = function(){
 };
 let _done = function(json){
   if(suppressRecognizerDisplay === false){
-    console.log(JSON.stringify(resultJson, null, 2));
+    console.log(JSON.stringify(json, null, 2));
   }
   console.log("Was saved to recognizer.json");
 };

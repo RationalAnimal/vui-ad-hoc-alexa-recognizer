@@ -39,7 +39,7 @@ if (process.argv.length < 3) {
 var stringToMatch = process.argv[2];
 var recognizerToUse;
 var recognizerToUseFileName = process.argv[3];
-if(typeof recognizerToUseFileName != "undefined" && recognizerToUseFileName != null){
+if(typeof recognizerToUseFileName !== "undefined" && recognizerToUseFileName !== null){
   try{
     recognizerToUse = require(recognizerToUseFileName);
   }
@@ -49,6 +49,6 @@ if(typeof recognizerToUseFileName != "undefined" && recognizerToUseFileName != n
 }
 var doTheProcessing = function(){
   return recognizer.Recognizer.matchText(stringToMatch, undefined, undefined, recognizerToUse);
-}
+};
 var result = doTheProcessing();
 console.log(JSON.stringify(result, null, 2));

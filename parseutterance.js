@@ -715,7 +715,7 @@ var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, i
   return returnValue;
 };
 
-var _parseJsonArray = function(utteranceArray, parsingRange, intentSchema){
+var _parseJsonArray = function(utteranceArray, parsingRange, intentSchema){ // eslint-disable-line no-unused-vars
   // Really brute force method - user JSON.parse and attempt at each ]
   let error = {"error": "", "position": -1};
   if(utteranceArray[parsingRange.start] !== "["){
@@ -827,7 +827,7 @@ var _parseFlags = function(utteranceArray, parsingRange, intentSchema){
   }
 };
 
-var _parseOptionsList = function(utteranceArray, parsingRange, intentName, intentSchema) {
+var _parseOptionsList = function(utteranceArray, parsingRange, intentName, intentSchema) { // eslint-disable-line no-unused-vars
   let error = {"error": "", "position": -1};
   if (utteranceArray[parsingRange.start] !== "{") {
     error.error = "parsing options list doesn't start with {";
