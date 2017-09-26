@@ -37,17 +37,20 @@ https://github.com/RationalAnimal
 I have finally gotten to a point where the major features are at a good spot and I can spare some time for
 tutorials, examples, and documentation.
 To that end I have set up a web site on GitHub pages and included the first nine tutorials, with more on the way.
-The first two tutorials together comprise the usual "Hello World" example - one shows how to configure, generate,
-and test a recognizer.json file. The other tutorial shows how to write your own code to use the generated file.
-The third tutorial shows how to avoid having to manually enter and maintain a large number of related utterances.
-The forth one shows how to get information back from the user via built in slot types.
-The fifth one shows to to build an actual chat bot - a small app that takes input from the user, parses it, stores
-some values in the state for future use, and responds to the user based on the parsed information and state.
-The sixth one shows the use of what is probably the singularly most useful built in slot type - NUMBER.
-The seventh one shows how to define the simplest type of a custom slot - list based custom slot.
-The eighth shows how to use, configure, and turn off built in intents.
-And the last one demostrates custom slots that use synonyms to simplify the code that has to deal with multiple
-values that map to a smaller subset.
+* "Hello World" and "Using Hello World" - these two tutorials together comprise the usual "Hello World" example - 
+one shows how to configure, generate, and test a recognizer.json file. 
+The other tutorial shows how to write your own code to use the generated file.
+* "You Have Options... Option Lists, That Is" - this tutorial shows how to avoid having to manually enter and maintain a
+large number of related utterances.
+* "Great Intrinsic Value" - this one shows how to get information back from the user via BUILT IN slot types.
+* "Let's Talk" - here the user is shown to to build an actual chat bot - a small app that takes input from the user,
+parses it, stores some values in the state for future use, and responds to the user based on the parsed
+information and state.
+* "Count on it" - introduces the use of what is probably the singularly most useful built in slot type - NUMBER.
+* "He Spoke Bespoke" - deals with how to define the simplest type of a custom slot - list based custom slot.
+* "Known Intentions" - deals with another built in feature: shows how to use, configure, and turn off built in intents.
+* "It's All the Same to Me" - demonstrates custom slots that use synonyms to simplify the code that has to deal with
+multiple values that map to a smaller subset.
 
 *NOTE: there was a minor bug in the tutorial code for tutorial 5 that prevented the talk.js from working unless you copied the recognizer.json into node/vui-ad-hoc-alexa-recognizer directory.  That bug is now fixed.*
 
@@ -988,7 +991,7 @@ backend, it will choke on this.  So, you can add a transform function to map
 When you write a custom transform function be aware that it has this signature:
 
 ```javascript
-function(value, intentName, slotName, slotType)
+function someTransformFunction(value, intentName, slotName, slotType){/* do something and return transformed value*/};
 ```
 
 And that it returns a transformed value (or undefined if the input value is undefined or null).
