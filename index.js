@@ -1572,7 +1572,8 @@ let _isSubObjectAny = function(subObject, withinArray){
  * @returns {boolean} - true if state condition matches, false otherwise
  * @private
  */
-let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
+// TODO examine code to see why applicationState is being passed. This does not seem to be needed anymore and should be removed.
+let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){ // eslint-disable-line no-unused-vars
   if(
     (state.matchCriteria === "default") ||
       (
