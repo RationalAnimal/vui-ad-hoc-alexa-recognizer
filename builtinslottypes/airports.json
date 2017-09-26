@@ -8479,7 +8479,15 @@
     {"name":"Greenvale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Gregory Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Gympie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Great Barrier Reef Airport","alternativeNames":["Hamilton Island Airport"],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Great Barrier Reef Airport","alternativeNames":["Hamilton Island Airport"],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Headingly Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Heathlands Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Helensvale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Hervey Bay Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Hopevale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Horn Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Hughenden Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Iffley Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
