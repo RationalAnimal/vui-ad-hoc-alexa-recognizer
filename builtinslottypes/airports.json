@@ -8519,7 +8519,15 @@
     {"name":"Lyndhurst Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Mabuiag Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Mackay Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Mareeba Airfield","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Mareeba Airfield","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Marion Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Sunshine Coast Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Maryborough Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Merluna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Middlemount Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Miles Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Miners Lake Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Mitchell Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
