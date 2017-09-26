@@ -8503,7 +8503,15 @@
     {"name":"Koolatah Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Koolburra Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Kowanyama Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Kubin Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Kubin Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Lady Elliot Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Lakefield Airport","alternativeNames":["Rinyirru Airport"],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Lakeland Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Laura Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Lawn Hill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Linda Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Lindeman Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Lizard Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
