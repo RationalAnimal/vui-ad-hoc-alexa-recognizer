@@ -8471,7 +8471,15 @@
     {"name":"Georgetown Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Gladstone Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Gayndah Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Glengyle Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Glengyle Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Glenormiston Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Gold Coast Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Goondiwindi Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Great Keppel Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Greenvale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Gregory Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Gympie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Great Barrier Reef Airport","alternativeNames":["Hamilton Island Airport"],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
