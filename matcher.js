@@ -23,13 +23,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-'use strict'
-var fs = require('fs');
-var recognizer = require('./index.js');
+"use strict";
+//var fs = require('fs');
+var recognizer = require("./index.js");
 
 var usage = function(){
-  console.log('Usage: node ' + process.argv[1] + ' "string to match"' + ' <path to a non-standard recognizer>');
-}
+  console.log("Usage: node " + process.argv[1] + " string to match" + " path_to_a_non-standard_recognizer");
+};
 
 // Make sure we got all the arguments on the command line.
 if (process.argv.length < 3) {
@@ -48,7 +48,7 @@ if(typeof recognizerToUseFileName != "undefined" && recognizerToUseFileName != n
   }
 }
 var doTheProcessing = function(){
-  return recognizer.Recognizer.matchText(stringToMatch);
+  return recognizer.Recognizer.matchText(stringToMatch, undefined, undefined, recognizerToUse);
 }
 var result = doTheProcessing();
 console.log(JSON.stringify(result, null, 2));

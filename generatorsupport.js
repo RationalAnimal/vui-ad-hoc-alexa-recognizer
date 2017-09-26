@@ -521,7 +521,7 @@ let unusualCorporationCharacters = [];
 for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i++){
   let unusualCharactersRegExp = /[^\0-~]/ig;
   let matchResult;
-  while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Corporation.values[i].name)){
+  while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Corporation.values[i].name)){ // eslint-disable-line no-cond-assign
     //    console.log("unusualCorporationCharacters search, got matchResult: ", JSON.stringify(matchResult));
     for(let j = 0; j < matchResult.length; j++){
       if(matchResult[j] !== null && unusualCorporationCharacters.indexOf(matchResult[j]) < 0){
@@ -530,7 +530,7 @@ for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i++){
     }
   }
   for(let k = 0; k < recognizer.builtInValues.Corporation.values[i].alternativeNames.length; k++){
-    while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Corporation.values[i].alternativeNames[k])){
+    while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Corporation.values[i].alternativeNames[k])){ // eslint-disable-line no-cond-assign
       //    console.log("unusualCorporationCharacters search, got matchResult: ", JSON.stringify(matchResult));
       for(let j = 0; j < matchResult.length; j++){
         if(matchResult[j] !== null && unusualCorporationCharacters.indexOf(matchResult[j]) < 0){
@@ -541,7 +541,7 @@ for(let i = 0; i < recognizer.builtInValues.Corporation.values.length; i++){
     }
   }
   for(let k = 0; k < recognizer.builtInValues.Corporation.values[i].priorNames.length; k++){
-    while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Corporation.values[i].priorNames[k])){
+    while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Corporation.values[i].priorNames[k])){ // eslint-disable-line no-cond-assign
       //    console.log("unusualCorporationCharacters search, got matchResult: ", JSON.stringify(matchResult));
       for(let j = 0; j < matchResult.length; j++){
         if(matchResult[j] !== null && unusualCorporationCharacters.indexOf(matchResult[j]) < 0){
@@ -560,7 +560,7 @@ let unusualAirportCharacters = [];
 for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i++){
   let unusualCharactersRegExp = /[^\0-~]/ig;
   let matchResult;
-  while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Airport.values[i].name)){
+  while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Airport.values[i].name)){ // eslint-disable-line no-cond-assign
     //    console.log("unusualAirportCharacters search, got matchResult: ", JSON.stringify(matchResult));
     for(let j = 0; j < matchResult.length; j++){
       if(matchResult[j] !== null && unusualAirportCharacters.indexOf(matchResult[j]) < 0){
@@ -569,7 +569,7 @@ for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i++){
     }
   }
   for(let k = 0; k < recognizer.builtInValues.Airport.values[i].alternativeNames.length; k++){
-    while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Airport.values[i].alternativeNames[k])){
+    while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Airport.values[i].alternativeNames[k])){ // eslint-disable-line no-cond-assign
       //    console.log("unusualAirportCharacters search, got matchResult: ", JSON.stringify(matchResult));
       for(let j = 0; j < matchResult.length; j++){
         if(matchResult[j] !== null && unusualAirportCharacters.indexOf(matchResult[j]) < 0){
@@ -580,7 +580,7 @@ for(let i = 0; i < recognizer.builtInValues.Airport.values.length; i++){
     }
   }
   for(let k = 0; k < recognizer.builtInValues.Airport.values[i].priorNames.length; k++){
-    while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Airport.values[i].priorNames[k])){
+    while(matchResult = unusualCharactersRegExp.exec(recognizer.builtInValues.Airport.values[i].priorNames[k])){ // eslint-disable-line no-cond-assign
       //    console.log("unusualAirportCharacters search, got matchResult: ", JSON.stringify(matchResult));
       for(let j = 0; j < matchResult.length; j++){
         if(matchResult[j] !== null && unusualAirportCharacters.indexOf(matchResult[j]) < 0){
