@@ -495,7 +495,7 @@ var _processMatchedTimeSlotValue = function(value){
   "\\s*$";
 
   regExp = new RegExp(hourAndMinutesString1, "ig");
-  if(matchResult = regExp.exec(value)){
+  if(matchResult = regExp.exec(value)){ // eslint-disable-line no-cond-assign
     //    console.log("matching time, hour and minutes, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
     let minutes = matchResult[2];
@@ -568,7 +568,7 @@ var _processMatchedTimeSlotValue = function(value){
   let quarterPastHour1 = "^\\s*(?:quarter (?:past|after) (zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*$)";
 
   regExp = new RegExp(quarterPastHour1, "ig");
-  if(matchResult = regExp.exec(value)){
+  if(matchResult = regExp.exec(value)){ // eslint-disable-line no-cond-assign
     //    console.log("matching quarter after hour, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
     let specifier = matchResult[2];
@@ -612,7 +612,7 @@ var _processMatchedTimeSlotValue = function(value){
   let halfPastHour1 = "^\\s*(?:half (?:past|after) (zero|oh|0|one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23)\\s*(o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*$)";
 
   regExp = new RegExp(halfPastHour1, "ig");
-  if(matchResult = regExp.exec(value)){
+  if(matchResult = regExp.exec(value)){ // eslint-disable-line no-cond-assign
     //    console.log("matching half after hour, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
     let specifier = matchResult[2];
@@ -656,7 +656,7 @@ var _processMatchedTimeSlotValue = function(value){
   let quarterToHour1 = "^\\s*(?:quarter (?:to|before) (one|1|two|2|three|3|four|4|five|5|six|6|seven|7|eight|8|nine|9|ten|10|eleven|11|twelve|12|thirteen|13|fourteen|14|fifteen|15|sixteen|16|seventeen|17|eighteen|18|nineteen|19|twenty|20|twenty one|21|twenty two|22|twenty three|23|twenty four|24)\\s*(o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}\\s*$)";
 
   regExp = new RegExp(quarterToHour1, "ig");
-  if(matchResult = regExp.exec(value)){
+  if(matchResult = regExp.exec(value)){ // eslint-disable-line no-cond-assign
     //    console.log("matching quarter to hour, matchResult: " + JSON.stringify(matchResult));
     let hour = matchResult[1];
     hour = _processMatchedNumericSlotValue(hour);
@@ -717,7 +717,7 @@ var _processMatchedTimeSlotValue = function(value){
     "(o'clock|am|pm|a\\.m\\.|p\\.m\\.|in the morning|in the afternoon|in the evening|at night){0,1}" +
   "\\s*$";
   regExp = new RegExp(hourAndMinutesString2, "ig");
-  if(matchResult = regExp.exec(value)){
+  if(matchResult = regExp.exec(value)){ // eslint-disable-line no-cond-assign
     //    console.log("matching time, hour and minutes, matchResult: " + JSON.stringify(matchResult));
     let minutes = matchResult[1];
     let hour = matchResult[3];
@@ -828,7 +828,7 @@ var _processMatchedTimeSlotValue = function(value){
     "){1}\\s*(?:hours|hour){0,1}" +
   "\\s*$";
   regExp = new RegExp(hourString3, "ig");
-  if(matchResult = regExp.exec(value)){
+  if(matchResult = regExp.exec(value)){ // eslint-disable-line no-cond-assign
   //    console.log("matching time, hour and minutes, matchResult: " + JSON.stringify(matchResult));
     let time = matchResult[1];
     time = _processMatchedNumericSlotValue(time);
@@ -1087,7 +1087,7 @@ var _processMatchedDateSlotValue = function(value, flags){
   }
 
   regExp = /^\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s*\.*$/ig;
-  if(matchResult = regExp.exec(value)){
+  if(matchResult = regExp.exec(value)){ // eslint-disable-line no-cond-assign
     let month = matchResult[1];
     month = month.replace(/January/ig, 1);
     month = month.replace(/February/ig, 2);
@@ -1113,7 +1113,7 @@ var _processMatchedDateSlotValue = function(value, flags){
   }
 
   regExp = /^\s*(last January|last February|last March|last April|last May|last June|last July|last August|last September|last October|last November|last December)\s*\.*$/ig;
-  if(matchResult = regExp.exec(value)){
+  if(matchResult = regExp.exec(value)){ // eslint-disable-line no-cond-assign
     let month = matchResult[1];
     month = month.replace(/last January/ig, 1);
     month = month.replace(/last February/ig, 2);
@@ -1142,7 +1142,7 @@ var _processMatchedDateSlotValue = function(value, flags){
   }
 
   regExp = /^\s*(next January|next February|next March|next April|next May|next June|next July|next August|next September|next October|next November|next December)\s*\.*$/ig;
-  if(matchResult = regExp.exec(value)){
+  if(matchResult = regExp.exec(value)){ // eslint-disable-line no-cond-assign
     let month = matchResult[1];
     month = month.replace(/next January/ig, 1);
     month = month.replace(/next February/ig, 2);
@@ -1235,7 +1235,7 @@ var _processMatchedDateSlotValue = function(value, flags){
   "){0,1}\\.*$";
 
   regExp = new RegExp(fullCalendarDateString1, "ig");
-  if(matchResult = regExp.exec(value)){
+  if(matchResult = regExp.exec(value)){ // eslint-disable-line no-cond-assign
     let month = matchResult[1];
     let dayOfMonth = matchResult[2];
     let year = matchResult[3];
@@ -1689,7 +1689,6 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
               returnObject.result = {};
               for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
                 let newResult = responder.produceResult(match.name, stateAccessor, stateSelectors, state.matchSpecs[j].responders[k]);
-//                console.log("newResult: ", JSON.stringify(newResult, null, 2));
                 returnObject.result = responder.combineResponses(returnObject.result, newResult, state.matchSpecs[j].responders[k].result.combineRule);
               }
             }
@@ -1782,7 +1781,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     let regExp = new RegExp(regExpString, "ig");
     let regExpNonGlobal = new RegExp(regExpString, "i");
     let dollarMatchResult;
-    while(dollarMatchResult = regExp.exec(stringToMatch)){
+    while(dollarMatchResult = regExp.exec(stringToMatch)){ // eslint-disable-line no-cond-assign
       //    console.log("dollarMatchResult: " + JSON.stringify(dollarMatchResult));
       if(dollarMatchResult === null){
         continue;
@@ -1797,7 +1796,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     // Now separate all leading zeros so that they don't get lost later in the parsing.
     regExp = /(^0[0-9])/;
     let leadingZeroMatchResult;
-    if(leadingZeroMatchResult = regExp.exec(stringToMatch)){
+    if(leadingZeroMatchResult = regExp.exec(stringToMatch)){ // eslint-disable-line no-cond-assign
       if(leadingZeroMatchResult !== null){
         let replacementString = "0 " + leadingZeroMatchResult[0].substring(1);
         stringToMatch = stringToMatch.replace(/(^0[0-9])/, replacementString);
@@ -1806,7 +1805,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     }
 
     regExp = /([^0-9]0[0-9])/ig;
-    while(leadingZeroMatchResult = regExp.exec(stringToMatch)){
+    while(leadingZeroMatchResult = regExp.exec(stringToMatch)){ // eslint-disable-line no-cond-assign
       if(leadingZeroMatchResult === null){
         continue;
       }
@@ -1881,7 +1880,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
         if(k === (scratch.regExpStrings.length - 1)){
           // This is the final reg exp
           let matchResult;
-          while(matchResult = scratchRegExp.exec(stringToMatch)){
+          while(matchResult = scratchRegExp.exec(stringToMatch)){ // eslint-disable-line no-cond-assign
             //            console.log("_matchText, 4.1.1, matchResult: ", JSON.stringify(matchResult, null, 2));
             //            for(let j = matchResult.length - 1; j >= 0; j--){
             //              console.log("_matchText, 4.1.1.1, matchResult[" + j + "]: ", matchResult[j]);
