@@ -23,18 +23,18 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-'use strict'
-var fs = require('fs');
-var utilities = require('./utilities.js')
-var parser = require('./parseutterance.js');
+"use strict";
+var fs = require("fs");
+var utilities = require("./utilities.js");
+var parser = require("./parseutterance.js");
 
 var usage = function(){
-  console.log('Usage: node ' + process.argv[1] + ' <sampleutterance.txt>');
-  console.log('  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.');
-  console.log('  --utterances UtterancesFileName specify input utterances file name.');
-  console.log('  --intents IntentsSchemaFileName specify intent schema file name used for slot name validation.');
-	console.log('  -o --output OutputFileName specify output utterances or interaction model file name.');
-}
+  console.log("Usage: node " + process.argv[1] + " <sampleutterance.txt>");
+  console.log("  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.");
+  console.log("  --utterances UtterancesFileName specify input utterances file name.");
+  console.log("  --intents IntentsSchemaFileName specify intent schema file name used for slot name validation.");
+  console.log("  -o --output OutputFileName specify output utterances or interaction model file name.");
+};
 for(let i = 2; i < process.argv.length - 1; i += 2){
   let j = i + 1;
   if(process.argv[i] == "-i" || process.argv[i] == "--input" || process.argv[i] == "--utterances"){
@@ -80,7 +80,7 @@ if(typeof interactionModelFileName != "undefined" && (typeof inputFileName != "u
 
 var transformTranscendNativeType = function(nativeType){
   return nativeType.replace(/^TRANSCEND./, "TRANSCEND__");
-}
+};
 
 var cleanupInteractionModel = function(interactionModel){
   let returnValue = {};
@@ -136,8 +136,8 @@ var cleanupInteractionModel = function(interactionModel){
   // Now add any custom types
   returnValue.types = [];
   if(transcendSlotTypesToAdd.indexOf("TRANSCEND.US_PRESIDENT") >= 0){
-    let scratchType = {"name":transformTranscendNativeType("TRANSCEND.US_PRESIDENT"), "values":[]}
-    let presidents = require('./builtinslottypes/uspresidents.json');
+    let scratchType = {"name":transformTranscendNativeType("TRANSCEND.US_PRESIDENT"), "values":[]};
+    let presidents = require("./builtinslottypes/uspresidents.json");
     for(let i = 0; i < presidents.values.length; i ++){
       scratchType.values.push({"name": {"value": presidents.values[i].name}});
     }
@@ -161,50 +161,52 @@ var cleanupInteractionModel = function(interactionModel){
   if(typeof dialog != "undefined"){
     returnValue.dialog = JSON.parse(JSON.stringify(dialog));
   }
-//  console.log("returnValue: ", JSON.stringify(returnValue, null, 2));
+  //  console.log("returnValue: ", JSON.stringify(returnValue, null, 2));
   return returnValue;
 };
 
 if(typeof interactionModel != "undefined"){
   let cleanedUpModel = cleanupInteractionModel(interactionModel);
   let file = fs.createWriteStream(outputFileName);
-  file.on('error', function(error) { /* add error handling here */ });
+  file.on("error", function(error) { console.log("Encountered an error trying to alexify interaction model: ", error);});
   file.write(JSON.stringify(cleanedUpModel, null, 2));
   file.end(function(){console.log("Result was saved to " + outputFileName);});
-  return;
 }
+else {
+  var values = utilities.loadStringListFromFile(inputFileName);
+  var parsedUtterances = [];
 
-var values = utilities.loadStringListFromFile(inputFileName);
-var parsedUtterances = [];
-
-try{
-  var intentSchema = require(intentsFileName);
-}
-catch(e){
+  let intentSchema;
   try{
-    var intentSchema = require("./" + intentsFileName);
+    intentSchema = require(intentsFileName);
   }
-  catch(e2){
-    console.log("Unable to load IntentsSchema file.");
-    usage();
-    process.exit(1);
+  catch(e){
+    try{
+      intentSchema = require("./" + intentsFileName);
+    }
+    catch(e2){
+      console.log("Unable to load IntentsSchema file.");
+      usage();
+      process.exit(1);
+    }
   }
+
+  for(let i = 0; i < values.length; i ++){
+    let result = parser.parseUtteranceIntoJson(values[i], intentSchema);
+    parser.cleanupParsedUtteranceJson(result, intentSchema);
+    let unfoldedResultArray = parser.unfoldParsedJson(result, true);
+
+    for(let j = 0; j < unfoldedResultArray.length; j++){
+      parsedUtterances.push(unfoldedResultArray[j]);
+    }
+  }
+
+  var file = fs.createWriteStream(outputFileName);
+  file.on("error", function(error) { console.log("Encountered an error trying to write out alexified output: ", error);});
+  for(let i = 0; i < parsedUtterances.length; i++){
+    file.write(parsedUtterances[i] + "\n");
+  }
+  file.end(function(){console.log("Result was saved to " + outputFileName);});
 }
 
-for(let i = 0; i < values.length; i ++){
-  let result = parser.parseUtteranceIntoJson(values[i], intentSchema);
-  parser.cleanupParsedUtteranceJson(result, intentSchema);
-  let unfoldedResultArray = parser.unfoldParsedJson(result, true);
-
-  for(let j = 0; j < unfoldedResultArray.length; j++){
-    parsedUtterances.push(unfoldedResultArray[j]);
-  }
-}
-
-var file = fs.createWriteStream(outputFileName);
-file.on('error', function(error) { /* add error handling here */ });
-for(let i = 0; i < parsedUtterances.length; i++){
-  file.write(parsedUtterances[i] + '\n');
-}
-file.end(function(){console.log("Result was saved to " + outputFileName);});
 
