@@ -44,7 +44,8 @@ The forth one shows how to get information back from the user via built in slot 
 The fifth one shows to to build an actual chat bot - a small app that takes input from the user, parses it, stores
 some values in the state for future use, and responds to the user based on the parsed information and state.
 The sixth one shows the use of what is probably the singularly most useful built in slot type - NUMBER.
-And the last one shows how to define the simplest type of a custom slot - list based custom slot.
+The seventh one shows how to define the simplest type of a custom slot - list based custom slot.
+And the last one shows how to use, configure, and turn off built in intents.
 
 *NOTE: there was a minor bug in the tutorial code for tutorial 5 that prevented the talk.js from working unless you copied the recognizer.json into node/vui-ad-hoc-alexa-recognizer directory.  That bug is now fixed.*
 
