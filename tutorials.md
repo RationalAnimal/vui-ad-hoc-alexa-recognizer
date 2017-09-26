@@ -20,3 +20,6 @@ Here you will find tutorials showing you how to use vui-ad-hoc-alexa-recognizer
 <a class="page-link" href="{{ "/Tutorials/HeSpokeBespoke/" | relative_url }}">He Spoke Bespoke</a>
 
 <a class="page-link" href="{{ "/Tutorials/KnownIntentions/" | relative_url }}">Known Intentions</a>
+
+<a class="page-link" href="{{ "/Tutorials/ItsAllTheSameToMe/" | relative_url }}">It's All the Same to Me</a>
+
