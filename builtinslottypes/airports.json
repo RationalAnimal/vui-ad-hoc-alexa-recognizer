@@ -8511,7 +8511,15 @@
     {"name":"Lawn Hill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Linda Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Lindeman Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Lizard Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Lizard Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Lockhart River Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Longreach Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Lorraine Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Lotus Vale Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Lyndhurst Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Mabuiag Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Mackay Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Mareeba Airfield","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
