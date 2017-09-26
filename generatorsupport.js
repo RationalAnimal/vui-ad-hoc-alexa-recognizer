@@ -1914,7 +1914,8 @@ var _isBuiltInIntentEnabled = function(intentConfig){
   return true;
 };
 
-var _getTranslatedSlotTypeForOutput = function(slotType, platformConfig){
+// TODO determine if the function below is still useful or has been replaced
+var _getTranslatedSlotTypeForOutput = function(slotType, platformConfig){ // eslint-disable-line no-unused-vars
   let periodIndex = slotType.indexOf(".");
   if(periodIndex < 0){
     return slotType;
