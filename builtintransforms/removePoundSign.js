@@ -33,7 +33,7 @@
  * @returns {*} either either the value with all the # removed or undefined if
  * the input is undefined or null
  */
-module.exports = function(value, intentName, slotName, slotType){
+module.exports = function(value, intentName, slotName, slotType){ // eslint-disable-line no-unused-vars
   if(typeof value !== "undefined" && value !== null){
     let returnValue = value.replace(/#/g, "");
     return returnValue;
