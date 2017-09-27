@@ -8543,7 +8543,15 @@
     {"name":"Nappa Merrie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"New Laura Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"New Moon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Noosa Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Noosa Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Normanton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Oban Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Orientos Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Orpheus Island Resort Waterport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Osborne Mine Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Palm Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"The Monument Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Edward River Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
