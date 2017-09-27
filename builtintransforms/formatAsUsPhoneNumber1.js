@@ -23,7 +23,7 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-'use strict'
+"use strict";
 /**
  * Format a 10 digit phone number like this:
  * (111) 111-1111

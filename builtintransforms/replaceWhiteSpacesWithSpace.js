@@ -23,7 +23,7 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-'use strict'
+"use strict";
 /**
  * Replaces all continuous sequences of any white space characters in the provided value with a single space.
  * @param value - in which to perform replacements
@@ -34,9 +34,9 @@
  * the input is undefined or null
  */
 module.exports = function(value, intentName, slotName, slotType){
-	if(typeof value !== "undefined" && value !== null){
-		let returnValue = value.replace(/\s+/g, ' ');
-		return returnValue;
-	}
-	return value;
+  if(typeof value !== "undefined" && value !== null){
+    let returnValue = value.replace(/\s+/g, " ");
+    return returnValue;
+  }
+  return value;
 };
