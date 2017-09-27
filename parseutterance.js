@@ -56,7 +56,7 @@ var _parseUtteranceIntoJson = function(utterance, intentSchema){
   return returnValue;
 };
 
-let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES", "STATE", "COUNTRY", "CONTINENT", "TYPE", "LEAGUE", "SPORT", "INCLUDE_PRIOR_NAMES", "EXCLUDE_PRIOR_NAMES"];
+let allowedSlotFlags = ["INCLUDE_VALUES_MATCH", "EXCLUDE_VALUES_MATCH", "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH", "INCLUDE_SYNONYMS_MATCH", "EXCLUDE_SYNONYMS_MATCH", "SOUNDEX_MATCH", "EXCLUDE_YEAR_ONLY_DATES", "EXCLUDE_NON_STATES", "STATE", "COUNTRY", "CONTINENT", "TYPE", "LEAGUE", "SPORT", "INCLUDE_PRIOR_NAMES", "EXCLUDE_PRIOR_NAMES"];
 var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
   // First get rid of invalid flags.
   for(let i = 0; i < parsedJson.parsedUtterance.length; i ++){
@@ -84,11 +84,25 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
           _removeFlag("EXCLUDE_YEAR_ONLY_DATES", parsedJson.parsedUtterance[i].name, parsedJson);
         }
       }
-      // Remove SOUNDEX_MATCH flag is this is a built in slot
+      // Remove SOUNDEX_MATCH flag if this is a built in slot
       if(_hasFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)){
         if(_isBuiltInSlot(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema) === true){
           // Remove it
           _removeFlag("SOUNDEX_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+        }
+      }
+      // Remove INCLUDE_SYNONYMS_MATCH flag if this is a built in slot
+      if(_hasFlag("INCLUDE_SYNONYMS_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_isBuiltInSlot(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema) === true){
+          // Remove it
+          _removeFlag("INCLUDE_SYNONYMS_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+        }
+      }
+      // Remove EXCLUDE_SYNONYMS_MATCH flag if this is a built in slot
+      if(_hasFlag("EXCLUDE_SYNONYMS_MATCH", parsedJson.parsedUtterance[i].name, parsedJson)){
+        if(_isBuiltInSlot(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema) === true){
+          // Remove it
+          _removeFlag("EXCLUDE_SYNONYMS_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
         }
       }
       // Remove EXCLUDE_NON_STATES if this is NOT a built in US_STATE type.
@@ -219,6 +233,8 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
             _removeFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
             _removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
             _removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+            _removeFlag("INCLUDE_SYNONYMS_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+            _removeFlag("EXCLUDE_SYNONYMS_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
             _addFlag({"name": "EXCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
           }
           else if(_hasFlag("INCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === true){
@@ -226,14 +242,29 @@ var _cleanupParsedUtteranceJson = function(parsedJson, intentSchema){
             _removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
             _removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
             _addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+            if(_isBuiltInSlot(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema) === true){
+              if(_hasFlag("INCLUDE_SYNONYMS_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === true){
+                _removeFlag("INCLUDE_SYNONYMS_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+              }
+              else if(_hasFlag("EXCLUDE_SYNONYMS_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === false){
+                _addFlag({"name": "INCLUDE_SYNONYMS_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+              }
+            }
           }
           else {
             _removeFlag("EXCLUDE_VALUES_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
             _removeFlag("EXCLUDE_WILDCARD_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
             _addFlag({"name": "INCLUDE_VALUES_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
             _addFlag({"name": "EXCLUDE_WILDCARD_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+            if(_isBuiltInSlot(parsedJson.parsedUtterance[i].name, parsedJson.intentName, intentSchema) === true){
+              if(_hasFlag("INCLUDE_SYNONYMS_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === true){
+                _removeFlag("INCLUDE_SYNONYMS_MATCH", parsedJson.parsedUtterance[i].name, parsedJson);
+              }
+              else if(_hasFlag("EXCLUDE_SYNONYMS_MATCH", parsedJson.parsedUtterance[i].name, parsedJson) === false){
+                _addFlag({"name": "INCLUDE_SYNONYMS_MATCH"}, parsedJson.parsedUtterance[i].name, parsedJson);
+              }
+            }
           }
-
         }
       }
     }
