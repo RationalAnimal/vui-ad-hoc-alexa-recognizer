@@ -8567,7 +8567,15 @@
     {"name":"Sandringham Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Silver Plains Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"South Galway Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Southport Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Southport Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Spring Creek Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Springvale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"St George Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"St Pauls Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Stanthorpe Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Stephens Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Strathmore Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Warraber Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
