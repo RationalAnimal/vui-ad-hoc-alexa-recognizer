@@ -8597,7 +8597,14 @@
     {"name":"Waverney Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Weipa Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Windorah Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Winton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Winton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Whitsunday - Shute Harbour Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Wondai Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Wondoola Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Donnington Airpark","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Wrotham Park Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Yam Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Yorke Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
