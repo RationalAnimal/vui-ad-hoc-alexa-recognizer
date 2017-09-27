@@ -23,7 +23,7 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-'use strict'
+"use strict";
 
 /**
  * Call to take either a string or an array of strings where each such string can contain periods and convert to a

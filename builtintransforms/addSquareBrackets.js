@@ -25,7 +25,7 @@
  */
 "use strict";
 module.exports = function(value, intentName, slotName, slotType){ // eslint-disable-line no-unused-vars
-  if(typeof value != "undefined" && value != null){
+  if(typeof value !== "undefined" && value !== null){
     let returnValue = "[" + value + "]";
     return returnValue;
   }
