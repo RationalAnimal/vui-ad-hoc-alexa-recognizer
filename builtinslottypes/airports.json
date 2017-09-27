@@ -8559,7 +8559,15 @@
     {"name":"Robinhood Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Rockhampton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Rokeby Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Roma Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Roma Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Roseberth Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Rosella Plains Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Rutland Plains Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Saibai Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Sandringham Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Silver Plains Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"South Galway Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Southport Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
