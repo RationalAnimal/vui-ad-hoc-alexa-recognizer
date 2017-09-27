@@ -23,7 +23,7 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-'use strict'
+"use strict";
 /**
  * Removes non alphanumeric characters from the provided value
  * @param value - from which to remove non alphanumeric characters
@@ -34,9 +34,9 @@
  * the input is undefined or null
  */
 module.exports = function(value, intentName, slotName, slotType){
-	if(typeof value !== "undefined" && value !== null){
-		let returnValue = JSON.stringify(value).replace(/[^0-9a-z]/gi, '');
-		return returnValue;
-	}
-	return value;
+  if(typeof value !== "undefined" && value !== null){
+    let returnValue = JSON.stringify(value).replace(/[^0-9a-z]/gi, "");
+    return returnValue;
+  }
+  return value;
 };
