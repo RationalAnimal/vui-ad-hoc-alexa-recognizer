@@ -335,7 +335,7 @@ var _addRegExps = function(parsedJson, intentSchema, getReplacementFunc, optimiz
     }
   }
 
-  if (typeof optimizations !== "undefined" && optimizations.multistage == false){
+  if (typeof optimizations !== "undefined" && optimizations.multistage === false){
     shouldAdd = false;
   }
   if (shouldAdd) {
