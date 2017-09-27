@@ -8604,7 +8604,15 @@
     {"name":"Donnington Airpark","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Wrotham Park Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Yam Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Yorke Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Yorke Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Adelaide Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Parafield Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Alton Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Amata Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"American River Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Andamooka Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Balcanoona Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Ceduna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"}
 
   ]
 }
