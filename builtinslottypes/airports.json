@@ -8612,7 +8612,15 @@
     {"name":"American River Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
     {"name":"Andamooka Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
     {"name":"Balcanoona Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
-    {"name":"Ceduna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"}
+    {"name":"Ceduna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Cleve Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Clifton Hills Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Coober Pedy Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Coorabie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Cordillo Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Cowarie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Cowell Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Dulkaninna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"}
 
   ]
 }
