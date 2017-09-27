@@ -8583,7 +8583,14 @@
     {"name":"Tewantin Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Thangool Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Thargomindah Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
-    {"name":"Theodore Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"Theodore Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Thylungra Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Toowoomba Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Brisbane West Wellcamp Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Torwood Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Townsville Airport","alternativeNames":["RAAF Townsville"],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Trepell Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"Undara Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
   ]
 }
