@@ -8620,7 +8620,15 @@
     {"name":"Cordillo Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
     {"name":"Cowarie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
     {"name":"Cowell Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
-    {"name":"Dulkaninna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"}
+    {"name":"Dulkaninna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Etadunna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Gawler Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Hawker Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Indulkana Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Innamincka Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Kimba Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Kingscote Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Leigh Creek Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"}
 
   ]
 }
