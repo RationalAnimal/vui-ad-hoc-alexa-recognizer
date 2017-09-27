@@ -8628,7 +8628,15 @@
     {"name":"Innamincka Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
     {"name":"Kimba Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
     {"name":"Kingscote Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
-    {"name":"Leigh Creek Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"}
+    {"name":"Leigh Creek Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Loxton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Lock Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Marla Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Marree Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Merty Merty Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Millicent Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Minnipa Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Minlaton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"}
 
   ]
 }
