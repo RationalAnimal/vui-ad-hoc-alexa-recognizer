@@ -37,6 +37,14 @@ https://github.com/RationalAnimal
 I have finally gotten to a point where the major features are at a good spot and I can spare some time for
 tutorials, examples, and documentation.
 To that end I have set up a web site on GitHub pages and included the first nine tutorials, with more on the way.
+
+Here is the website:
+https://rationalanimal.github.io/vui-ad-hoc-alexa-recognizer/
+
+## Recognizer Tutorials
+
+The first set of tutorials deals with the lower level, i.e. recognizer functionality:
+
 * "Hello World" and "Using Hello World" - these two tutorials together comprise the usual "Hello World" example - 
 one shows how to configure, generate, and test a recognizer.json file. 
 The other tutorial shows how to write your own code to use the generated file.
@@ -52,9 +60,9 @@ information and state.
 * "It's All the Same to Me" - demonstrates custom slots that use synonyms to simplify the code that has to deal with
 multiple values that map to a smaller subset.
 
-*NOTE: there was a minor bug in the tutorial code for tutorial 5 that prevented the talk.js from working unless you copied the recognizer.json into node/vui-ad-hoc-alexa-recognizer directory.  That bug is now fixed.*
+## Domain Tutorials
 
-https://rationalanimal.github.io/vui-ad-hoc-alexa-recognizer/
+I will be putting together domain tutorials after there is a comprehensive list of recognizer tutorials in place.
 
 I will still continue updating the module itself - the work on the tutorials, etc will be just part time, with most of
 the time going to enhancing the code.
