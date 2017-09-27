@@ -23,25 +23,25 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-'use strict'
+"use strict";
 
-let _getState = function(key){
+let _getState = function(key){ // eslint-disable-line no-unused-vars
   // NOOP
 };
 
-let _getStateChain = function(keyArray){
+let _getStateChain = function(keyArray){ // eslint-disable-line no-unused-vars
   // NOOP
 };
 
-let _setState = function(someKey, newValue){
+let _setState = function(someKey, newValue){ // eslint-disable-line no-unused-vars
   // NOOP
 };
 
-let _setStateChain = function(someKeyArray, newValue){
+let _setStateChain = function(someKeyArray, newValue){ // eslint-disable-line no-unused-vars
   // NOOP
 };
 
-let _mergeReplaceState = function(keyArray, newState) {
+let _mergeReplaceState = function(keyArray, newState) { // eslint-disable-line no-unused-vars
   // NOOP
 };
 

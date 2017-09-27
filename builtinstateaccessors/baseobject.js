@@ -23,9 +23,9 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
-'use strict'
+"use strict";
 
-let accessorUtils = require("./utils.js")
+let accessorUtils = require("./utils.js");
 
 let _getState = function(key){
   let result = accessorUtils.getSubObject(this.applicationState, key);
