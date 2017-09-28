@@ -1094,7 +1094,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
           if(matchStage === "FINAL"){
             if(_hasFlag("SOUNDEX_MATCH", slotFlags)){
               if(typeof customSlotType.replacementSoundExpRegExp === "undefined"){
-                customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues);
+                customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues, true);
               }
               // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
               return "((?:\\w|\\s|[0-9,_']|-)+)";
@@ -1104,7 +1104,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
             }
             else {
               if(typeof customSlotType.replacementRegExp === "undefined"){
-                customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values);
+                customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values, true);
               }
               return customSlotType.replacementRegExp;
             }
