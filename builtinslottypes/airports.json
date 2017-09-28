@@ -8719,7 +8719,15 @@
     {"name":"Warracknabeal Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
     {"name":"Warrnambool Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
     {"name":"Welshpool Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
-    {"name":"Yarrawonga Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"}
+    {"name":"Yarrawonga Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Albany Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Argyle Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Balgo Hill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Barimunya Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Barrow Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Beagle Bay Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Bedford Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Beverley Springs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
 
   ]
 }
