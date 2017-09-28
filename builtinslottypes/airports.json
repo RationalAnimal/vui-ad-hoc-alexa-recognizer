@@ -8644,7 +8644,15 @@
     {"name":"Mulka Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
     {"name":"Mungeranie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
     {"name":"Olympic Dam Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
-    {"name":"Oodnadatta Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"}
+    {"name":"Oodnadatta Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Pandie Pandie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Parndana Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Penneshaw Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Penong Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Port Augusta Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Port Lincoln Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Port Pirie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Prominent Hill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"}
 
   ]
 }
