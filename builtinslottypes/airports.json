@@ -8668,7 +8668,14 @@
     {"name":"George Town Aerodrome","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
     {"name":"Queenstown Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
     {"name":"Hobart International Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
-    {"name":"Cambridge Aerodrome","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"}
+    {"name":"Cambridge Aerodrome","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"King Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"Latrobe Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"Launceston Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"St Helens Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"Smithton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"Strahan Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"Burnie Airport","alternativeNames":["Wynyard Airport"],"priorNames":[],"country":"australia","state":"tasmania"}
 
   ]
 }
