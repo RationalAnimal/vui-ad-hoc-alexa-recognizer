@@ -8691,7 +8691,14 @@
     {"name":"Echuca Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
     {"name":"Geelong Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
     {"name":"Hamilton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
-    {"name":"Hopetoun Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"}
+    {"name":"Hopetoun Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Horsham Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Kerang Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Latrobe Regional Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Leongatha Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Mallacoota Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Mangalore Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Maryborough Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"}
 
   ]
 }
