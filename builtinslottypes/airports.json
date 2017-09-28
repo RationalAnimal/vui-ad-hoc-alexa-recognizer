@@ -8661,7 +8661,14 @@
     {"name":"Whyalla Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
     {"name":"Wudinna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
     {"name":"Yalata Mission Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
-    {"name":"Yorketown Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"}
+    {"name":"Yorketown Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"Cape Barren Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"Devonport Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"Flinders Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"George Town Aerodrome","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"Queenstown Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"Hobart International Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"Cambridge Aerodrome","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"}
 
   ]
 }
