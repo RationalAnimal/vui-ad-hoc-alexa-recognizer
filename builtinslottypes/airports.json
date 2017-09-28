@@ -8705,7 +8705,14 @@
     {"name":"Mildura Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
     {"name":"Mount Hotham Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
     {"name":"Nhill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
-    {"name":"Orbost Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"}
+    {"name":"Orbost Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Ouyen Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Porepunkah - Mount Buffalo Airport","alternativeNames":["Porepunkah Mount Buffalo Airport"],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Portland Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Robinvale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"West Sale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Shepparton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Stawell Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"}
 
   ]
 }
