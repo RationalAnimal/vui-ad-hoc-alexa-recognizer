@@ -24,12 +24,10 @@
  SOFTWARE.
  */
 "use strict";
-//var fs = require("fs");
 var soundex = require("./soundex.js");
 var utilities = require("./utilities.js");
 var parser = require("./parseutterance.js");
 var recognizer = {};
-//var constants = require("./constants.js");
 
 /**
  * Call to convert an array of objects and strings into an array of strings.  Objects MUST have a "value" field which is
@@ -100,11 +98,15 @@ let _makeReplacementRegExpString = function(arrayToConvert, useSynonyms){
  * string that will match on the entire string (i.e. includes ^ and $), match on any white spaces rather than just the
  * specific ones supplied in the input, and will also allow common sentense ending punctuation, such as .!? at the end.
  * @param arrayToConvert - array of strings and objects
+ * @param useSynonyms - if true (default) will use synonyms when found.  Else, will skip them.
  * @returns {string} - a string representing the regular expression
  * @private
  */
-let _makeFullRegExpString = function(arrayToConvert){
-  let regExString = _makeReplacementRegExpString(arrayToConvert);
+let _makeFullRegExpString = function(arrayToConvert, useSynonyms){
+  if(typeof useSynonyms === "undefined" || useSynonyms === null){
+    useSynonyms = true;
+  }
+  let regExString = _makeReplacementRegExpString(arrayToConvert, useSynonyms);
   // Now split regExString into non-white space parts and reconstruct the
   // whole thing with any sequence of white spaces replaced with a white space
   // reg exp.
