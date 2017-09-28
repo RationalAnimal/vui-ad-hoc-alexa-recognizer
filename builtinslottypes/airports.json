@@ -8698,7 +8698,14 @@
     {"name":"Leongatha Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
     {"name":"Mallacoota Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
     {"name":"Mangalore Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
-    {"name":"Maryborough Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"}
+    {"name":"Maryborough Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Melbourne Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Essendon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Moorabbin Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Mildura Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Mount Hotham Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Nhill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Orbost Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"}
 
   ]
 }
