@@ -8683,7 +8683,15 @@
     {"name":"Bairnsdale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
     {"name":"Ballarat Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
     {"name":"Barwon Heads Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
-    {"name":"Benalla Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"}
+    {"name":"Benalla Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Bendigo Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Bright Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Colac Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Corryong Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Echuca Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Geelong Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Hamilton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Hopetoun Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"}
 
   ]
 }
