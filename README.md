@@ -59,6 +59,8 @@ information and state.
 * "Known Intentions" - deals with another built in feature: shows how to use, configure, and turn off built in intents.
 * "It's All the Same to Me" - demonstrates custom slots that use synonyms to simplify the code that has to deal with
 multiple values that map to a smaller subset.
+* "Wild (Card) Thing" - explains how to get values from the user that are not part of the "accepted" set, i.e. using
+wildcard matches.
 
 ## Domain Tutorials
 
