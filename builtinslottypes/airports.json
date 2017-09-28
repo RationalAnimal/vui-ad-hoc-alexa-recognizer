@@ -8675,7 +8675,15 @@
     {"name":"St Helens Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
     {"name":"Smithton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
     {"name":"Strahan Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"tasmania"},
-    {"name":"Burnie Airport","alternativeNames":["Wynyard Airport"],"priorNames":[],"country":"australia","state":"tasmania"}
+    {"name":"Burnie Airport","alternativeNames":["Wynyard Airport"],"priorNames":[],"country":"australia","state":"tasmania"},
+    {"name":"Apollo Bay Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Ararat Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Avalon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Bacchus Marsh Airfield","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Bairnsdale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Ballarat Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Barwon Heads Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Benalla Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"}
 
   ]
 }
