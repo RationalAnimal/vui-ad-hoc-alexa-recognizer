@@ -8712,7 +8712,14 @@
     {"name":"Robinvale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
     {"name":"West Sale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
     {"name":"Shepparton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
-    {"name":"Stawell Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"}
+    {"name":"Stawell Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Swan Hill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Tooradin Airfield","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Wangaratta Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Warracknabeal Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Warrnambool Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Welshpool Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"Yarrawonga Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"}
 
   ]
 }
