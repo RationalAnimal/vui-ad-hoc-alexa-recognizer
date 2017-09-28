@@ -36,10 +36,14 @@ var recognizer = {};
  * a string (will be added to the return value) and MAY have a "synonyms" field which MUST be an array of strings.
  * If exists, contents of "synonyms" will be added to the return value.
  * @param arrayToConvert - array of strings and objects.
+ * @param useSynonyms - if true (default) will use synonyms when found.  Else, will skip them.
  * @returns {Array} - array of strings
  * @private
  */
-let _unfoldCustomValuesIntoStringArray = function(arrayToConvert){
+let _unfoldCustomValuesIntoStringArray = function(arrayToConvert, useSynonyms){
+  if(typeof useSynonyms === "undefined" || useSynonyms === null){
+    useSynonyms = true;
+  }
   let returnValue = [];
   for(let i = 0; i < arrayToConvert.length; i++){
     if(typeof arrayToConvert[i] === "string"){
@@ -48,9 +52,11 @@ let _unfoldCustomValuesIntoStringArray = function(arrayToConvert){
     else {
       if(typeof arrayToConvert[i].value === "string"){
         returnValue.push(arrayToConvert[i].value);
-        if(typeof arrayToConvert[i].synonyms !== "undefined" && Array.isArray(arrayToConvert[i].synonyms)){
-          for(let j = 0; j < arrayToConvert[i].synonyms.length; j++){
-            returnValue.push(arrayToConvert[i].synonyms[j]);
+        if(useSynonyms){
+          if(typeof arrayToConvert[i].synonyms !== "undefined" && Array.isArray(arrayToConvert[i].synonyms)){
+            for(let j = 0; j < arrayToConvert[i].synonyms.length; j++){
+              returnValue.push(arrayToConvert[i].synonyms[j]);
+            }
           }
         }
       }
@@ -65,11 +71,15 @@ let _unfoldCustomValuesIntoStringArray = function(arrayToConvert){
  * The resulting regular expression is such that it will match on any of the converted string values, possibly with
  * extra white spaces at the end.
  * @param arrayToConvert - array of strings and objects
+ * @param useSynonyms - if true (default) will use synonyms when found.  Else, will skip them.
  * @returns {string} - a string representing the regular expression
  * @private
  */
-let _makeReplacementRegExpString = function(arrayToConvert){
-  let arrayToUse = _unfoldCustomValuesIntoStringArray(arrayToConvert);
+let _makeReplacementRegExpString = function(arrayToConvert, useSynonyms){
+  if(typeof useSynonyms === "undefined" || useSynonyms === null){
+    useSynonyms = true;
+  }
+  let arrayToUse = _unfoldCustomValuesIntoStringArray(arrayToConvert, useSynonyms);
   let returnValue = "((?:";
   let appendBar = false;
   for(let i = 0; i < arrayToUse.length; i++){
