@@ -107,7 +107,7 @@ all provided values and return back the original capitalization, but only if it 
 the user typed.
 
 So, what slot types can you use wildcard matching with?  Many, but not all.  Basically, wherever it makes sense, vui-ad-hoc-alexa-recognizer
-will let you use it, but where it doesn't it won't.  For instance, using wildcards with a numeric slot typedoes not make sense.  But with a
+will let you use it, but where it doesn't it won't.  For instance, using wildcards with a numeric slot type does not make sense.  But with a
 first name slot it does.  Some slots are more "gray area": US_STATE is a textual slot, but it does not allow wildcard matches since there is
 a fixed and unchanging list.  On the other hand Corporation, Airline, Airport, and other similar large frequently changing sets do allow
 wildcard matching.  Since the slot type list is changing often, I will not try to put these specifications here.  Instead, specific slot types
