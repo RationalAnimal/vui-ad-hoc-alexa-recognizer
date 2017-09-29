@@ -1406,6 +1406,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
       let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
       scratchCustomSlotType.soundExValues = [];
       scratchCustomSlotType.soundExRegExpStrings = [];
+      scratchCustomSlotType.soundExRegExpNoSynonymsStrings = [];
       if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
         // TODO add customRegExp handling - is this really needed?
       }
@@ -1416,6 +1417,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
             scratchCustomSlotType.soundExValues.push(soundexValue);
             let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j], "\\s+");
             scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
+            scratchCustomSlotType.soundExRegExpNoSynonymsStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
           }
           else if(typeof scratchCustomSlotType.values[j] !== "undefined" && scratchCustomSlotType.values[j] !== null && typeof scratchCustomSlotType.values[j].value === "string"){
             if(typeof scratchCustomSlotType.values[j].synonyms !== "undefined" && Array.isArray(scratchCustomSlotType.values[j].synonyms)){
@@ -1446,6 +1448,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
               }
               regExString += ")\\s*){1}";
               scratchCustomSlotType.soundExRegExpStrings.push(regExString);
+              scratchCustomSlotType.soundExRegExpNoSynonymsStrings.push("(?:^\\s*(" +  soundex.simple.soundEx(scratchCustomSlotType.values[j].value, "\\s+") + ")\\s*){1}");
             }
             else {
               // Object value without synonyms
@@ -1453,6 +1456,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
               scratchCustomSlotType.soundExValues.push(soundexValue);
               let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, "\\s+");
               scratchCustomSlotType.soundExRegExpStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
+              scratchCustomSlotType.soundExRegExpNoSynonymsStrings.push("(?:^\\s*(" +  soundexRegExpString + ")\\s*){1}");
             }
           }
           else {
