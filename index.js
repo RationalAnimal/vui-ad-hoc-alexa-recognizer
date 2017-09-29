@@ -323,33 +323,64 @@ var _processMatchedCustomSlotValueByType = function(value, slotType, flags, reco
     //    console.log("_processMatchedCustomSlotValueByType, 3");
     if(_hasFlag("SOUNDEX_MATCH", flags)){
       // do regular expression matching
-      if(typeof scratchCustomSlotType.soundExRegExps === "undefined"){
-        scratchCustomSlotType.soundExRegExps = [];
-        for(let j = 0; j < scratchCustomSlotType.soundExRegExpStrings.length; j++){
-          scratchCustomSlotType.soundExRegExps.push(new RegExp(scratchCustomSlotType.soundExRegExpStrings[j], "ig"));
+      if(_hasFlag("EXCLUDE_SYNONYMS_MATCH", flags) === false){
+        // This is the INCLUDE_SYNONYMS_MATCH case.
+        if(typeof scratchCustomSlotType.soundExRegExps === "undefined"){
+          scratchCustomSlotType.soundExRegExps = [];
+          for(let j = 0; j < scratchCustomSlotType.soundExRegExpStrings.length; j++){
+            scratchCustomSlotType.soundExRegExps.push(new RegExp(scratchCustomSlotType.soundExRegExpStrings[j], "ig"));
+          }
         }
       }
+      else {
+        if(typeof scratchCustomSlotType.soundExRegExpsNoSynonyms === "undefined"){
+          scratchCustomSlotType.soundExRegExpsNoSynonyms = [];
+          for(let j = 0; j < scratchCustomSlotType.soundExRegExpNoSynonymsStrings.length; j++){
+            scratchCustomSlotType.soundExRegExpsNoSynonyms.push(new RegExp(scratchCustomSlotType.soundExRegExpNoSynonymsStrings[j], "ig"));
+          }
+        }
+      }
+
       // Now attempt to match.  If successful - return the corresponding value.
       let matchResult;
       let soundexValue = soundex.simple.soundEx(value, " ");
 
-      for(let j = 0; j < scratchCustomSlotType.soundExRegExpStrings.length; j++){
-        scratchCustomSlotType.soundExRegExps[j].lastIndex = 0;
-        matchResult = scratchCustomSlotType.soundExRegExps[j].exec(soundexValue);
-        if(matchResult){
-          if(typeof scratchCustomSlotType.values[j] === "string"){
-            return scratchCustomSlotType.values[j];
-          }
-          else {
-            return scratchCustomSlotType.values[j].value;
+      if(_hasFlag("EXCLUDE_SYNONYMS_MATCH", flags) === false) {
+        // This is the INCLUDE_SYNONYMS_MATCH case.
+        for(let j = 0; j < scratchCustomSlotType.soundExRegExpStrings.length; j++){
+          scratchCustomSlotType.soundExRegExps[j].lastIndex = 0;
+          matchResult = scratchCustomSlotType.soundExRegExps[j].exec(soundexValue);
+          if(matchResult){
+            if(typeof scratchCustomSlotType.values[j] === "string"){
+              return scratchCustomSlotType.values[j];
+            }
+            else {
+              return scratchCustomSlotType.values[j].value;
+            }
           }
         }
       }
+      else {
+        for(let j = 0; j < scratchCustomSlotType.soundExRegExpNoSynonymsStrings.length; j++){
+          scratchCustomSlotType.soundExRegExpsNoSynonyms[j].lastIndex = 0;
+          matchResult = scratchCustomSlotType.soundExRegExpsNoSynonyms[j].exec(soundexValue);
+          if(matchResult){
+            if(typeof scratchCustomSlotType.values[j] === "string"){
+              return scratchCustomSlotType.values[j];
+            }
+            else {
+              return scratchCustomSlotType.values[j].value;
+            }
+          }
+        }
+      }
+
       // If we are here, that means our wildcard pattern didn't match any of the
       // soundex values.  Return undefined to indicate this.
       return;
     }
     else {
+      // Regular, as opposed to SOUNDEX, match
       if(typeof scratchCustomSlotType.regExps === "undefined"){
         scratchCustomSlotType.regExps = [];
         for(let j = 0; j < scratchCustomSlotType.regExpStrings.length; j++){
