@@ -8822,7 +8822,14 @@
     {"name":"Rottnest Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Roy Hill Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Sandstone Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
-    {"name":"Shay Gap Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
+    {"name":"Shay Gap Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Southern Cross Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Shaw River Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Springvale Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Sturt Creek Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Sunrise Dam Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Tableland Homestead Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Telfer Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
 
   ]
 }
