@@ -8815,7 +8815,14 @@
     {"name":"Paraburdoo Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Pardoo Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Perth Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
-    {"name":"Port Hedland International Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
+    {"name":"Port Hedland International Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Bellburn Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Ravensthorpe Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Roebourne Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Rottnest Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Roy Hill Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Sandstone Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Shay Gap Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
 
   ]
 }
