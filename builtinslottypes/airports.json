@@ -8845,7 +8845,9 @@
     {"name":"Yalgoo Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Yandicoogina Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Yeelirrie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
-    {"name":"Christmas Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"christmas island"}
+    {"name":"Christmas Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"christmas island"},
+    {"name":"Cocos Islands Airport","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"cocos islands"}
+
 
 
   ]
