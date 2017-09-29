@@ -8849,7 +8849,14 @@
     {"name":"Cocos Islands Airport","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"cocos islands"},
     {"name":"Jervis Bay Airport","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"jervis bay territory"},
     {"name":"Norfolk Island Airport","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"norfolk island"},
-    {"name":"Wilkins Runway","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"australian antarctic territory"}
+    {"name":"Wilkins Runway","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"australian antarctic territory"},
+    {"name":"RAAF Pearce","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"RAAF Darwin","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"RAAF Curtin","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"RAAF Learmonth","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"RAAF Gingin","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"RAAF Glenbrook","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"RAAF Amberley","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
 
 
 
