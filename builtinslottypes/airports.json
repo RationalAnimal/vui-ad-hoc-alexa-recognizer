@@ -8829,7 +8829,14 @@
     {"name":"Sturt Creek Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Sunrise Dam Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Tableland Homestead Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
-    {"name":"Telfer Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
+    {"name":"Telfer Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Theda Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Tom Price Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Useless Loop Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Wallal Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Turkey Creek Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Warrawagine Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"West Angelas Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
 
   ]
 }
