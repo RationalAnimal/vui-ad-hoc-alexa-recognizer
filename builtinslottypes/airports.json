@@ -8847,7 +8847,9 @@
     {"name":"Yeelirrie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Christmas Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"christmas island"},
     {"name":"Cocos Islands Airport","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"cocos islands"},
-    {"name":"Jervis Bay Airport","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"jervis bay territory"}
+    {"name":"Jervis Bay Airport","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"jervis bay territory"},
+    {"name":"Norfolk Island Airport","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"norfolk island"}
+
 
 
 
