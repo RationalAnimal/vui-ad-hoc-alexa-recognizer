@@ -1370,6 +1370,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     for(let i = 0; i < recognizerSet.customSlotTypes.length; i++){
       let scratchCustomSlotType = recognizerSet.customSlotTypes[i];
       scratchCustomSlotType.regExpStrings = [];
+      scratchCustomSlotType.regExpNoSynonymsStrings = [];
       if(typeof scratchCustomSlotType.customRegExpString === "string" && scratchCustomSlotType.customRegExpString.length > 0){
         // TODO add customRegExp handling
         scratchCustomSlotType.regExpStrings.push("(?:^\\s*" +  scratchCustomSlotType.customRegExpString + "\\s*$){1}");
@@ -1378,6 +1379,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         for(let j = 0; j < scratchCustomSlotType.values.length; j++){
           if(typeof scratchCustomSlotType.values[j] === "string"){
             scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j] + ")\\s*$){1}");
+            scratchCustomSlotType.regExpNoSynonymsStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j] + ")\\s*$){1}");
           }
           else if(typeof scratchCustomSlotType.values[j] !== "undefined" && scratchCustomSlotType.values[j] !== null && typeof scratchCustomSlotType.values[j].value === "string"){
             if(typeof scratchCustomSlotType.values[j].synonyms !== "undefined" && Array.isArray(scratchCustomSlotType.values[j].synonyms)){
@@ -1393,6 +1395,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
               // Just a single value wrapped in an object
               scratchCustomSlotType.regExpStrings.push("(?:^\\s*(" +  scratchCustomSlotType.values[j].value + ")\\s*$){1}");
             }
+            scratchCustomSlotType.regExpNoSynonymsStrings.push("(?:^\\s*(" + scratchCustomSlotType.values[j].value + ")\\s*$){1}");
           }
           else {
             throw new Error("Custom slot list value is neither a string nor an object with value field that's a string.");
