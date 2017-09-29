@@ -1092,9 +1092,13 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
         else {
           // List based custom slots
           if(matchStage === "FINAL"){
+            let useSynonyms = true;
+            if(_hasFlag("EXCLUDE_SYNONYMS_MATCH", slotFlags)){
+              useSynonyms = false;
+            }
             if(_hasFlag("SOUNDEX_MATCH", slotFlags)){
               if(typeof customSlotType.replacementSoundExpRegExp === "undefined"){
-                customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues, true);
+                customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues, useSynonyms);
               }
               // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
               return "((?:\\w|\\s|[0-9,_']|-)+)";
@@ -1104,7 +1108,7 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
             }
             else {
               if(typeof customSlotType.replacementRegExp === "undefined"){
-                customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values, true);
+                customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values, useSynonyms);
               }
               return customSlotType.replacementRegExp;
             }
@@ -1443,6 +1447,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
               scratchCustomSlotType.soundExRegExpStrings.push(regExString);
             }
             else {
+              // Object value without synonyms
               let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, " ");
               scratchCustomSlotType.soundExValues.push(soundexValue);
               let soundexRegExpString = soundex.simple.soundEx(scratchCustomSlotType.values[j].value, "\\s+");
