@@ -8727,7 +8727,15 @@
     {"name":"Barrow Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Beagle Bay Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Bedford Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
-    {"name":"Beverley Springs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
+    {"name":"Beverley Springs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Boolgeeda Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Broome International Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Bunbury Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Busselton Regional Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Caiguna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Carlton Hill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Carnarvon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Cherrabun Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
 
   ]
 }
