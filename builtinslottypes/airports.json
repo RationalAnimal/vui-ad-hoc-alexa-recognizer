@@ -8735,7 +8735,15 @@
     {"name":"Caiguna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Carlton Hill Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Carnarvon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
-    {"name":"Cherrabun Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
+    {"name":"Cherrabun Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Christmas Creek Mine Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Christmas Creek Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Collie Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Coolawanyah Station Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Coondewanna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Cue Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Dalgaranga Gold Mine Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Denham Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
 
   ]
 }
