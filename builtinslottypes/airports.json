@@ -8775,7 +8775,15 @@
     {"name":"Kalgoorlie-Boulder Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Kambalda Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Karara Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
-    {"name":"Solomon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
+    {"name":"Solomon Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Karratha Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Katanning Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Kimberley Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Kununurra Airport","alternativeNames":["East Kimberley Regional Airport"],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Lake Gregory Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Lansdowne Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Laverton Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Leinster Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
 
   ]
 }
