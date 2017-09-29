@@ -8751,7 +8751,15 @@
     {"name":"Drysdale River Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Eneabba Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Esperance Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
-    {"name":"Eucla Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
+    {"name":"Eucla Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Learmonth Airport / RAAF Learmonth","alternativeNames":["Learmonth Airport", "RAAF Learmonth"],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Fitzroy Crossing Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Flora Valley Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Forrest Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Forrest River Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Fossil Downs Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Fortescue Dave Forrest Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Gascoyne Junction Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
 
   ]
 }
