@@ -8848,7 +8848,8 @@
     {"name":"Christmas Island Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"christmas island"},
     {"name":"Cocos Islands Airport","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"cocos islands"},
     {"name":"Jervis Bay Airport","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"jervis bay territory"},
-    {"name":"Norfolk Island Airport","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"norfolk island"}
+    {"name":"Norfolk Island Airport","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"norfolk island"},
+    {"name":"Wilkins Runway","alternativeNames":["Keeling Islands Airport"],"priorNames":[],"country":"australia","state":"australian antarctic territory"}
 
 
 
