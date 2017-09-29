@@ -8872,8 +8872,9 @@
     {"name":"Robertson Barracks","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
     {"name":"Williamson Airfield","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"Dochra Airfield","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
-    {"name":"Lavarack Barracks","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
-
+    {"name":"Lavarack Barracks","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"HMAS Albatross","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"HMAS Stirling","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
 
 
 
