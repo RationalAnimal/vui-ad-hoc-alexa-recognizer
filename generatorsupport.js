@@ -1419,15 +1419,16 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
           }
           else if(typeof scratchCustomSlotType.values[j] !== "undefined" && scratchCustomSlotType.values[j] !== null && typeof scratchCustomSlotType.values[j].value === "string"){
             if(typeof scratchCustomSlotType.values[j].synonyms !== "undefined" && Array.isArray(scratchCustomSlotType.values[j].synonyms)){
+              let soundexValueObject = {"value": soundex.simple.soundEx(scratchCustomSlotType.values[j].value, " ")};
               let soundexValueArray = [];
-              soundexValueArray.push(soundex.simple.soundEx(scratchCustomSlotType.values[j].value, " "));
               let soundexRegExpStringArray = [];
               soundexRegExpStringArray.push(soundex.simple.soundEx(scratchCustomSlotType.values[j].value, "\\s+"));
               for(let k = 0; k < scratchCustomSlotType.values[j].synonyms.length; k++){
                 let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].synonyms[k], " ");
                 soundexValueArray.push(soundexValue);
               }
-              scratchCustomSlotType.soundExValues.push(soundexValueArray);
+              soundexValueObject.synonyms = soundexValueArray;
+              scratchCustomSlotType.soundExValues.push(soundexValueObject);
               for(let k = 0; k < scratchCustomSlotType.values[j].synonyms.length; k++){
                 let soundexValue = soundex.simple.soundEx(scratchCustomSlotType.values[j].synonyms[k], "\\s+");
                 soundexRegExpStringArray.push(soundexValue);
