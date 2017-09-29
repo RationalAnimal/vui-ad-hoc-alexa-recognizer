@@ -8874,7 +8874,15 @@
     {"name":"Dochra Airfield","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
     {"name":"Lavarack Barracks","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
     {"name":"HMAS Albatross","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
-    {"name":"HMAS Stirling","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
+    {"name":"HMAS Stirling","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Hinton-in-the-Hedges Airfield","alternativeNames":["Hinton in the Hedges Airfield"],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Turweston Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Bruntingthorpe Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"East Midlands Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Coningsby","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Cranwell","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Derby Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Barkston Heath","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
 
 
