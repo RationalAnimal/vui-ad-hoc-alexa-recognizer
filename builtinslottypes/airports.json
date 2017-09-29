@@ -8856,7 +8856,16 @@
     {"name":"RAAF Learmonth","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"RAAF Gingin","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"RAAF Glenbrook","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
-    {"name":"RAAF Amberley","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"}
+    {"name":"RAAF Amberley","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"RAAF Tindal","alternativeNames":[],"priorNames":[],"country":"australia","state":"northern territory"},
+    {"name":"RAAF Williamtown","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"RAAF Williams","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"RAAF Richmond","alternativeNames":[],"priorNames":[],"country":"australia","state":"new south wales"},
+    {"name":"RAAF East Sale","alternativeNames":[],"priorNames":[],"country":"australia","state":"victoria"},
+    {"name":"RAAF Edinburgh","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"},
+    {"name":"RAAF Townsville","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"RAAF Scherger","alternativeNames":[],"priorNames":[],"country":"australia","state":"queensland"},
+    {"name":"RAAF Woomera","alternativeNames":[],"priorNames":[],"country":"australia","state":"south australia"}
 
 
 
