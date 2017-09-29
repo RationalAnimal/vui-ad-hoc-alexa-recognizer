@@ -66,9 +66,6 @@ wildcard matches.
 
 I will be putting together domain tutorials after there is a comprehensive list of recognizer tutorials in place.
 
-I will still continue updating the module itself - the work on the tutorials, etc will be just part time, with most of
-the time going to enhancing the code.
-
 # Note on licenses
 The code in this project is distributed under the MIT license.  Some data files
 found in the builtinslottypes directory (e.g. colors.json) use values taken from Wikipedia

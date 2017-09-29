@@ -8743,7 +8743,15 @@
     {"name":"Coondewanna Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Cue Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
     {"name":"Dalgaranga Gold Mine Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
-    {"name":"Denham Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
+    {"name":"Denham Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Curtin Airport / RAAF Curtin","alternativeNames":["Curtin Airport", "RAAF Curtin"],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Derby Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Dongara Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Doongan Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Drysdale River Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Eneabba Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Esperance Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"},
+    {"name":"Eucla Airport","alternativeNames":[],"priorNames":[],"country":"australia","state":"western australia"}
 
   ]
 }
