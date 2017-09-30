@@ -149,7 +149,7 @@ Success! **NOT SO FAST**
 Now try a zip code utterance:
 
 {% highlight text %}
-node index.js "my zip code is 12345"
+prompt> node index.js "my zip code is 12345"
 {
   "name": "MyFirstNameIntent",
   "slots": {
