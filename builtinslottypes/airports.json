@@ -9078,7 +9078,14 @@
     {"name":"Sumburgh Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
     {"name":"Eday Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
     {"name":"Edinburgh Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
-    {"name":"Fair Isle Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"}
+    {"name":"Fair Isle Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Foula Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Islay Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Fife Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"RAF Kinloss","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Sanday Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"RAF Leuchars","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"RAF Lossiemouth","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"}
 
   ]
 }
