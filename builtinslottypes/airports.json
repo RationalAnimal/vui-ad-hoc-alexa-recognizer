@@ -8946,7 +8946,15 @@
     {"name":"London Heathrow Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"RAF Northolt","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"London City Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"London Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"London Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Boulmer","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Eshott Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Durham Tees Valley Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Newcastle Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Barrow/Walney Island Airport","alternativeNames":["Barrow Walney Island Airport", "Barrow Airport", "Walney Island Airport"],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Blackpool Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Carlisle Lake District Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"City Airport Manchester","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
 
 
