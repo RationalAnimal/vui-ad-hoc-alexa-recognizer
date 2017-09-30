@@ -9010,10 +9010,15 @@
     {"name":"Henstridge Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Dunkeswell Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Hullavington Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"Bournemouth Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
-
-
-
+    {"name":"Bournemouth Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Cotswold Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Lyneham","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Cornwall Airport Newquay / RAF St Mawgan","alternativeNames":["Cornwall Airport Newquay", "RAF St Mawgan"],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RNAS Predannack","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Netheravon Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Oaksey Park Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Perranporth Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Portland Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
   ]
 }
