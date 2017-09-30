@@ -8986,7 +8986,15 @@
     {"name":"Lydd Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Lashenden Headcorn Airfield","alternativeNames":["Lashenden Airfield", "Headcorn Airfield"],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Redhill Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"RAF Odiham","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"RAF Odiham","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Chalgrove Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Popham Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Rochester Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Isle of Wight/Sandown Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Chichester/Goodwood Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Weston-on-the-Green","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"White Waltham Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Blackbushe Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
 
 
