@@ -8978,7 +8978,15 @@
     {"name":"Denham Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Goodwood Racecourse Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Hammerwood Helipad","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"RAF Halton","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"RAF Halton","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Wycombe Air Park/Booker Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"London Oxford Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Shoreham Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Lasham Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Lydd Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Lashenden Headcorn Airfield","alternativeNames":["Lashenden Airfield", "Headcorn Airfield"],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Redhill Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Odiham","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
 
 
