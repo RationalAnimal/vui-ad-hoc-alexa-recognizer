@@ -9026,7 +9026,15 @@
     {"name":"Truro Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"former RAF Upavon","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Bristol Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"RAF Weston Zoyland","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"RAF Weston Zoyland","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Wroughton","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RNAS Merryfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RNAS Yeovilton","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Yeovil Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Cosford","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Coventry Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Birmingham Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Shobdon Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
   ]
 }
