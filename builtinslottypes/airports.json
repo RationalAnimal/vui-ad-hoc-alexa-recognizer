@@ -9085,7 +9085,14 @@
     {"name":"RAF Kinloss","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
     {"name":"Sanday Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
     {"name":"RAF Leuchars","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
-    {"name":"RAF Lossiemouth","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"}
+    {"name":"RAF Lossiemouth","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Out Skerries Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Papa Stour Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Papa Westray Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Glasgow Prestwick Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Glasgow International Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Kirkwall Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Perth Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"}
 
   ]
 }
