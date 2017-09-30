@@ -8922,7 +8922,15 @@
     {"name":"Elmsett Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"RAF Lakenheath","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"London Luton Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"RAF Marham","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"RAF Marham","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Mildenhall","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"North Weald Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Norwich Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Seething Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Old Buckenham Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Coltishall","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Shuttleworth Old Warden Aerodrome","alternativeNames":["Shuttleworth Aerodrome", "Old Warden Aerodrome"],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Peterborough Business Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
 
 
