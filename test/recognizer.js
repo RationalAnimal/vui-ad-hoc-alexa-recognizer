@@ -2188,6 +2188,17 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
             }
           }});
     });
+    it("verify simple utterance with an custom slot that uses synonyms but has EXCLUDE_SYNONYMS_MATCH flag still matches on main value", function() {
+      let result = recognizer.Recognizer.matchText("You may find a pan in the kitchen");
+      expect(result).to.eql(
+        {"name": "KitchenStuffIntent",
+          "slots": {
+            "KitchenStuffSlot": {
+              "name": "KitchenStuffSlot",
+              "value": "Pan"
+            }
+          }});
+    });
     it("verify simple utterance with an custom slot matches on synonym", function() {
       let result = recognizer.Recognizer.matchText("You will find a skillet in the kitchen");
       expect(result).to.eql(
@@ -2199,6 +2210,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
             }
           }});
     });
+    /*
+    it("verify simple utterance with an custom slot matches on synonym", function() {
+      let result = recognizer.Recognizer.matchText("You may find a skillet in the kitchen");
+      expect(result).to.eql(
+        {"name": "KitchenStuffIntent",
+          "slots": {
+            "KitchenStuffSlot": {
+              "name": "KitchenStuffSlot",
+              "value": "Pan"
+            }
+          }});
+    });
+    */
     it("verify simple utterance with an custom slot that uses synonyms matches on SOUNDEX of the main value", function() {
       let result = recognizer.Recognizer.matchText("Is a pan in the kitchen");
       expect(result).to.eql(

@@ -6,6 +6,7 @@ scratch*
 recognizer.js
 staticfilerecognizer.js
 builtinslottypes/uslastnames.json
+uslastnames.json
 mydomain.json
 mystate.json
 npm-debug.log
