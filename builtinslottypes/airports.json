@@ -9049,7 +9049,15 @@
     {"name":"Doncaster Sheffield Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Crosland Moor Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Humberside Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"RAF Leconfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"RAF Leconfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Leeds Bradford International Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Leeds Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Leeming","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Linton-on-Ouse","alternativeNames":["RAF Linton on Ouse"],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Sandtoft Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Sherburn-in-Elmet Airfield","alternativeNames":["Sherburn in Elmet Airfield"],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Topcliffe","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Full Sutton Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
   ]
 }
