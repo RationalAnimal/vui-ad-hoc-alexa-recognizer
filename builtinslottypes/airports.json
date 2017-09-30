@@ -8943,7 +8943,7 @@
     {"name":"Panshanger Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"London Biggin Hill Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Damyns Hall Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"London Heathrow Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"London Heathrow Airport","alternativeNames":["Heathrow Airport", "Heathrow"],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"RAF Northolt","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"London City Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"London Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
@@ -9002,7 +9002,15 @@
     {"name":"Cheltenham Racecourse Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Gloucestershire Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Exeter Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"Colerne Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"Colerne Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Davidstow Moor","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Fairford","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Eaglescott Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RNAS Culdrose","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Henstridge Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Dunkeswell Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Hullavington Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Bournemouth Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
 
 
