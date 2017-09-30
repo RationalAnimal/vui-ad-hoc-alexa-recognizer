@@ -8930,7 +8930,15 @@
     {"name":"Old Buckenham Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"RAF Coltishall","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Shuttleworth Old Warden Aerodrome","alternativeNames":["Shuttleworth Aerodrome", "Old Warden Aerodrome"],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"Peterborough Business Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"Peterborough Business Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Peterborough/Sibson Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Shipdham Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Wyton","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Little Gransden Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"London Southend Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"London Stansted Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Stapleford Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Wattisham Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
 
 
