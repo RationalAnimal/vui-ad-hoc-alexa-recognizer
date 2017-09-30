@@ -9057,7 +9057,12 @@
     {"name":"Sandtoft Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Sherburn-in-Elmet Airfield","alternativeNames":["Sherburn in Elmet Airfield"],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"RAF Topcliffe","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"Full Sutton Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"Full Sutton Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Belfast International Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"northern ireland"},
+    {"name":"George Best Belfast City Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"northern ireland"},
+    {"name":"City of Derry Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"northern ireland"},
+    {"name":"Enniskillen/St Angelo Airport","alternativeNames":["Enniskillen St Angelo Airport", "Enniskillen/St. Angelo Airport", "Enniskillen St. Angelo Airport", "Enniskillen/Saint Angelo Airport", "Enniskillen Saint Angelo Airport"],"priorNames":[],"country":"united kingdom","state":"northern ireland"},
+    {"name":"Newtownards Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"northern ireland"}
 
   ]
 }
