@@ -9119,7 +9119,9 @@
     {"name":"RAF Andreas","alternativeNames":[],"priorNames":[],"country":"british crown dependencies","state":"isle of man"},
     {"name":"Guernsey Airport","alternativeNames":[],"priorNames":[],"country":"british crown dependencies","state":"guernsey"},
     {"name":"Isle of Man Airport","alternativeNames":[],"priorNames":[],"country":"british crown dependencies","state":"isle of man"},
-    {"name":"Jersey Airport","alternativeNames":[],"priorNames":[],"country":"british crown dependencies","state":"jersey"}
+    {"name":"Jersey Airport","alternativeNames":[],"priorNames":[],"country":"british crown dependencies","state":"jersey"},
+
+    {"name":"Clayton J. Lloyd International Airport","alternativeNames":["Clayton J Lloyd International Airport", "Clayton Lloyd International Airport"],"priorNames":[],"country":"united kingdom","state":"anguilla"}
 
   ]
 }
