@@ -9114,7 +9114,12 @@
     {"name":"Swansea Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
     {"name":"Cardiff Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
     {"name":"RAF Saint Athan","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
-    {"name":"Welshpool Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"}
+    {"name":"Welshpool Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"Alderney Airport","alternativeNames":[],"priorNames":[],"country":"british crown dependencies","state":"alderney"},
+    {"name":"RAF Andreas","alternativeNames":[],"priorNames":[],"country":"british crown dependencies","state":"isle of man"},
+    {"name":"Guernsey Airport","alternativeNames":[],"priorNames":[],"country":"british crown dependencies","state":"guernsey"},
+    {"name":"Isle of Man Airport","alternativeNames":[],"priorNames":[],"country":"british crown dependencies","state":"isle of man"},
+    {"name":"Jersey Airport","alternativeNames":[],"priorNames":[],"country":"british crown dependencies","state":"jersey"}
 
   ]
 }
