@@ -9107,7 +9107,14 @@
     {"name":"Cardiff Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
     {"name":"Haverfordwest Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
     {"name":"Chester Hawarden Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
-    {"name":"Llanbedr Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"}
+    {"name":"Llanbedr Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"Anglesey Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"RAF Valley","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"Pembrey Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"Swansea Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"Cardiff Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"RAF Saint Athan","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"Welshpool Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"}
 
   ]
 }
