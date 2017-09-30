@@ -9100,7 +9100,14 @@
     {"name":"Tiree Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
     {"name":"Westray Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
     {"name":"Whalsay Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
-    {"name":"Wick Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"}
+    {"name":"Wick Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Aberporth Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"RAF Mona","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"Caernarfon Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"Cardiff Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"Haverfordwest Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"Chester Hawarden Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"},
+    {"name":"Llanbedr Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"wales"}
 
   ]
 }
