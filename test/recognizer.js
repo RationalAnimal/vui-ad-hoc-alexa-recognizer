@@ -2210,19 +2210,12 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
             }
           }});
     });
-    /*
-    it("verify simple utterance with an custom slot matches on synonym", function() {
+
+    it("verify simple utterance with an custom slot does not match on synonym when it has EXCLUDE_SYNONYMS_MATCH flag", function() {
       let result = recognizer.Recognizer.matchText("You may find a skillet in the kitchen");
-      expect(result).to.eql(
-        {"name": "KitchenStuffIntent",
-          "slots": {
-            "KitchenStuffSlot": {
-              "name": "KitchenStuffSlot",
-              "value": "Pan"
-            }
-          }});
+      expect(typeof result).to.eql("undefined");
     });
-    */
+
     it("verify simple utterance with an custom slot that uses synonyms matches on SOUNDEX of the main value", function() {
       let result = recognizer.Recognizer.matchText("Is a pan in the kitchen");
       expect(result).to.eql(

@@ -1097,9 +1097,11 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
               useSynonyms = false;
             }
             if(_hasFlag("SOUNDEX_MATCH", slotFlags)){
+              /*
               if(typeof customSlotType.replacementSoundExpRegExp === "undefined"){
                 customSlotType.replacementSoundExpRegExp = _makeReplacementRegExpString(customSlotType.soundExValues, useSynonyms);
               }
+               */
               // Returning wildcard match because the first pass will be on matching on anything, THEN matching on soundex values
               return "((?:\\w|\\s|[0-9,_']|-)+)";
             }
@@ -1107,10 +1109,13 @@ var _getReplacementRegExpStringGivenSlotType = function(slotType, config, slotFl
               return "((?:\\w|\\s|[0-9,_']|-)+)";
             }
             else {
+              /*
               if(typeof customSlotType.replacementRegExp === "undefined"){
                 customSlotType.replacementRegExp = _makeReplacementRegExpString(customSlotType.values, useSynonyms);
               }
               return customSlotType.replacementRegExp;
+              */
+              return _makeReplacementRegExpString(customSlotType.values, useSynonyms);
             }
           }
           else {
