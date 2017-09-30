@@ -9092,7 +9092,15 @@
     {"name":"Glasgow Prestwick Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
     {"name":"Glasgow International Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
     {"name":"Kirkwall Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
-    {"name":"Perth Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"}
+    {"name":"Perth Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Stornoway Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Broadford Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Stronsay Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Tingwall Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Tiree Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Westray Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Whalsay Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Wick Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"}
 
   ]
 }
