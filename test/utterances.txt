@@ -6,6 +6,7 @@ TestIntent       test pleeeeeeease
 KitchenStuffIntent You will find {a |the |}{KitchenStuffSlot} in the kitchen
 KitchenStuffIntent You may find {a |the |}{KitchenStuffSlot:EXCLUDE_SYNONYMS_MATCH} in the kitchen
 KitchenStuffIntent Is {a |the |}{KitchenStuffSlot:SOUNDEX_MATCH} in the kitchen
+KitchenStuffIntent there is {a |the |}{KitchenStuffSlot:SOUNDEX_MATCH,EXCLUDE_SYNONYMS_MATCH} in the kitchen
 CustomRegExpIntent here is {CustomRegExpSlot} if you see it
 CustomRegExpTwoIntent here is the second {CustomRegExpTwoSlot}
 MeaninglessIntent this is {MeaninglessSlot}

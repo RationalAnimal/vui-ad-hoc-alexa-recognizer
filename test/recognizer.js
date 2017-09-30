@@ -2227,6 +2227,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
             }
           }});
     });
+
+    it("verify simple utterance with an custom slot that uses synonyms still matches on SOUNDEX of the main value when it has EXLUDE_SYNONYMS_MATCH flag", function() {
+      let result = recognizer.Recognizer.matchText("there is a pan in the kitchen");
+      expect(result).to.eql(
+        {"name": "KitchenStuffIntent",
+          "slots": {
+            "KitchenStuffSlot": {
+              "name": "KitchenStuffSlot",
+              "value": "Pan"
+            }
+          }});
+    });
+
     it("verify simple utterance with an custom slot that uses synonyms matches on SOUNDEX of the changed main value", function() {
       let result = recognizer.Recognizer.matchText("Is a pon in the kitchen");
       expect(result).to.eql(
