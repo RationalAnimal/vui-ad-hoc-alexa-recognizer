@@ -2251,6 +2251,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
             }
           }});
     });
+
+    it("verify simple utterance with an custom slot that uses synonyms matches on SOUNDEX of the changed main value when it has EXLUDE_SYNONYMS_MATCH flag", function() {
+      let result = recognizer.Recognizer.matchText("There is a pon in the kitchen");
+      expect(result).to.eql(
+        {"name": "KitchenStuffIntent",
+          "slots": {
+            "KitchenStuffSlot": {
+              "name": "KitchenStuffSlot",
+              "value": "Pan"
+            }
+          }});
+    });
+
     it("verify simple utterance with an custom slot that uses synonyms matches on SOUNDEX of the synonym value", function() {
       let result = recognizer.Recognizer.matchText("Is a skillet in the kitchen");
       expect(result).to.eql(
@@ -2262,6 +2275,12 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
             }
           }});
     });
+
+    it("verify simple utterance with an custom slot that uses synonyms does not matches on SOUNDEX of the synonym value when it has EXLUDE_SYNONYMS_MATCH flag", function() {
+      let result = recognizer.Recognizer.matchText("There is a skillet in the kitchen");
+      expect(typeof result).to.eql("undefined");
+    });
+
     it("verify simple utterance with an custom slot that uses synonyms matches on SOUNDEX of the changed synonym value", function() {
       let result = recognizer.Recognizer.matchText("Is a skiled in the kitchen");
       expect(result).to.eql(
@@ -2273,6 +2292,12 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
             }
           }});
     });
+
+    it("verify simple utterance with an custom slot that uses synonyms does not match on SOUNDEX of the changed synonym value when it has EXLUDE_SYNONYMS_MATCH flag", function() {
+      let result = recognizer.Recognizer.matchText("There is a skiled in the kitchen");
+      expect(typeof result).to.eql("undefined");
+    });
+
   });
 
   describe("RegExp Custom slot type processing", function() {
