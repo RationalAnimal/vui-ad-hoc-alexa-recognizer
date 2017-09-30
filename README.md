@@ -61,6 +61,8 @@ information and state.
 multiple values that map to a smaller subset.
 * "Wild (Card) Thing" - explains how to get values from the user that are not part of the "accepted" set, i.e. using
 wildcard matches.
+* "Express Yourself Regularly" - explains how to use regular expressions based custom slots to get user input that
+matches a particular pattern rather than specific list of values. 
 
 ## Domain Tutorials
 
