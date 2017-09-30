@@ -9034,7 +9034,15 @@
     {"name":"RAF Cosford","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Coventry Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Birmingham Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"Shobdon Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"Shobdon Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Sleap Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Tatenhill Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Ternhill","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Wellesbourne Mountford Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Wolverhampton Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Bagby Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Beverley/Linley Hill Airfield","alternativeNames":["Beverley Linley Hill Airfield", "Linley Hill Airfield", "Beverley Airfield"],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Brough Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
   ]
 }
