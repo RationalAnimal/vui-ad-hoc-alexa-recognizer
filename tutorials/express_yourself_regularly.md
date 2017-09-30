@@ -404,7 +404,7 @@ SwearIntent {AnythingBeforeSlot}{SwearSlot}{AnythingAfterSlot}
 So, if the user says something like:
 
 {% highlight text %}
-hear it is ab1234567 you idiots
+here it is ab1234567 you idiots
 {% endhighlight %}
 
 you'll be able to extract the account number using the first pass with a regular recognizer.json and you can also detect that the user is frustrated
