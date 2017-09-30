@@ -9018,7 +9018,15 @@
     {"name":"Netheravon Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Oaksey Park Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Perranporth Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"Portland Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"Portland Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Old Sarum Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Compton Abbas Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Land's End Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"St Mary's Airport","alternativeNames":["Saint Mary's Airport", "St. Mary's Airport"],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Truro Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"former RAF Upavon","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Bristol Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Weston Zoyland","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
   ]
 }
