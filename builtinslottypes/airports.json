@@ -9042,7 +9042,14 @@
     {"name":"Wolverhampton Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Bagby Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Beverley/Linley Hill Airfield","alternativeNames":["Beverley Linley Hill Airfield", "Linley Hill Airfield", "Beverley Airfield"],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"Brough Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"Brough Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Breighton Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"East Leeds Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Dishforth","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Doncaster Sheffield Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Crosland Moor Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Humberside Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Leconfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
   ]
 }
