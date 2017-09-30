@@ -8954,7 +8954,15 @@
     {"name":"Barrow/Walney Island Airport","alternativeNames":["Barrow Walney Island Airport", "Barrow Airport", "Walney Island Airport"],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Blackpool Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Carlisle Lake District Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"City Airport Manchester","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"City Airport Manchester","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Woodvale","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Liverpool John Lennon Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Warton Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Manchester Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Abingdon","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Thruxton Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Army Air Corps Middle Wallop","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Ascot Racecourse Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
 
 
