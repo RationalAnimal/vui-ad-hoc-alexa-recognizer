@@ -8938,7 +8938,15 @@
     {"name":"London Southend Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"London Stansted Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
     {"name":"Stapleford Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
-    {"name":"Wattisham Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
+    {"name":"Wattisham Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Honington","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Panshanger Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"London Biggin Hill Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"Damyns Hall Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"London Heathrow Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"RAF Northolt","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"London City Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"},
+    {"name":"London Heliport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"england"}
 
 
 
