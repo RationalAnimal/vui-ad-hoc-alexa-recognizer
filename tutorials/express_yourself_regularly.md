@@ -420,5 +420,19 @@ let recognizer = require('./recognizer.json');
 let result = vui.Recognizer.matchText(stringToMatch, undefined, undefined, recognizer);
 {% endhighlight %}
 
+so you could add a second pass like this:
+
+{% highlight javascript %}
+// Now load and parse the recognizer.json file
+let recognizer = require('./recognizer.json');
+// and the swear recognizer file
+let swearRecognizer = require('./swearrecognizer.json');
+
+// Now make the actual call to match the text to intent 
+let result = vui.Recognizer.matchText(stringToMatch, undefined, undefined, recognizer);
+// and another one to match the text to swear to swear intent
+let swearResult = vui.Recognizer.matchText(stringToMatch, undefined, undefined, swearRecognizer);
+{% endhighlight %}
+
 In later tutorials you will see how to use domains - they build on top of the recognizer functionality - that make using multiple recognizer files
 easy.  They even make it easy to use them conditionally.
