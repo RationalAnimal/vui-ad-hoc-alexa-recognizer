@@ -613,25 +613,27 @@ slot values in the matching pattern.
 2. "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH" - to include/exclude
 a wildcard in the matching pattern.
 3. "SOUNDEX_MATCH" - to use SoundEx for matching.
-4. "EXCLUDE_YEAR_ONLY_DATES" - this flag is only applied to the AMAZON.DATE type
+4. "INCLUDE_SYNONYMS_MATCH", "EXCLUDE_SYNONYMS_MATCH" - to include/exclude
+synonym values in the matching pattern.  This is only relevant for custom slot types that actually use synonyms.
+5. "EXCLUDE_YEAR_ONLY_DATES" - this flag is only applied to the AMAZON.DATE type
 slot and turns off parsing of a single number as a year.  This is useful when
 there are otherwise identical utterances that may match on a number or on a date.  If the year only
 match is allowed then there is no way to differentiate between the two.
-5. "EXCLUDE_NON_STATES" - this flag is only applied to the AMAZON.US_STATE type
+6. "EXCLUDE_NON_STATES" - this flag is only applied to the AMAZON.US_STATE type
 slot and turns off parsing of US territories and D.C.
-6. "STATE" - this is a parametrized flag (see below).  currently
+7. "STATE" - this is a parametrized flag (see below).  currently
 it only applies to the AMAZON.Airport slot type and it restricts the matches to
 the specified states.
-7. "COUNTRY" - this is a parametrized flag (see below).  currently
+8. "COUNTRY" - this is a parametrized flag (see below).  currently
 it only applies to the AMAZON.Airline and AMAZON.Airport slot types and it restricts the matches to
 the specified countries.
-8. "CONTINENT", "TYPE" - these are parametrized flags (see below).  currently
+9. "CONTINENT", "TYPE" - these are parametrized flags (see below).  currently
 they only apply to the AMAZON.Airline slot type and they restrict the matches to
 the specified countries and continents.
-9. "SPORT", "LEAGUE" - these are parametrized flags (see below).  currently
+10. "SPORT", "LEAGUE" - these are parametrized flags (see below).  currently
 they only apply to the AMAZON.SportsTeam slot type and they restrict the matches to
 the specified sports and leagues.
-10. "INCLUDE_PRIOR_NAMES", "EXCLUDE_PRIOR_NAMES" - Currently these only apply to the AMAZON.SportsTeam and AMAZON.Corporation
+11. "INCLUDE_PRIOR_NAMES", "EXCLUDE_PRIOR_NAMES" - Currently these only apply to the AMAZON.SportsTeam and AMAZON.Corporation
 slot type and they include/exclude the prior team (or corporation) names in the search. Default is EXCLUDE_PRIOR_NAMES.
 
 If you don't specify any of these, then
@@ -2397,7 +2399,7 @@ Currently, you can parse:
 2. Utterances without slots
 3. Utterances with custom slots
 4. Utterances with all the numbers/date/time/duration built in slot types: AMAZON.NUMBER, AMAZON.FOUR_DIGIT_NUMBER, AMAZON.DATE, AMAZON.TIME, AMAZON.DURATION
-5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Airline (all US, Canadian, Mexican airlines), AMAZON.Airport (USA airports, Canada non-defunct airports and heliports, Mexico airports, Australia airports, UK England airports), AMAZON.Color, AMAZON.Corporation, AMAZON.Country, AMAZON.DayOfWeek, AMAZON.Month, AMAZON.Room, AMAZON.SocialMediaPlatform, AMAZON.SportsTeam (includes NFL, CFL, NBA, MLB, NHL, and MLS teams)
+5. Utterances with these list built in slot types: AMAZON.US_STATE, AMAZON.US_FIRST_NAME, AMAZON.Airline (all US, Canadian, Mexican airlines), AMAZON.Airport (USA airports, Canada non-defunct airports and heliports, Mexico airports, Australia airports, UK England and Northern Ireland airports), AMAZON.Color, AMAZON.Corporation, AMAZON.Country, AMAZON.DayOfWeek, AMAZON.Month, AMAZON.Room, AMAZON.SocialMediaPlatform, AMAZON.SportsTeam (includes NFL, CFL, NBA, MLB, NHL, and MLS teams)
 6. Utterances with these list built in slot types with nominal support (see Nominal Support section): AMAZON.Actor, AMAZON.AdministrativeArea, AMAZON.Artist, AMAZON.Athlete, AMAZON.Author, AMAZON.Book, AMAZON.BookSeries, AMAZON.BroadcastChannel, AMAZON.CivicStructure, AMAZON.Comic, AMAZON.Dessert, AMAZON.Director, AMAZON.EducationalOrganization, AMAZON.Festival, AMAZON.FictionalCharacter, AMAZON.FoodEstablishment, AMAZON.Game, AMAZON.Landform, AMAZON.LandmarksOrHistoricalBuildings, AMAZON.LocalBusiness, AMAZON.LocalBusinessType, AMAZON.MedicalOrganization, AMAZON.Movie, AMAZON.MovieSeries, AMAZON.MovieTheater, AMAZON.MusicAlbum, AMAZON.MusicGroup, AMAZON.Musician, AMAZON.MusicRecording, AMAZON.MusicVenue, AMAZON.MusicVideo, AMAZON.Organization, AMAZON.Person, AMAZON.Professional, AMAZON.Residence, AMAZON.ScreeningEvent, AMAZON.Service, AMAZON.SoftwareApplication, AMAZON.SoftwareGame, AMAZON.SportsEvent, AMAZON.TVEpisode, AMAZON.TVSeason, AMAZON.TVSeries, AMAZON.VideoGame
 
 More Amazon built in slot types are coming shortly
