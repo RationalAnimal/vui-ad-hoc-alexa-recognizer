@@ -9070,7 +9070,15 @@
     {"name":"Campbeltown Airport RAF Machrihanish","alternativeNames":["Campbeltown Airport", "RAF Machrihanish"],"priorNames":[],"country":"united kingdom","state":"scotland"},
     {"name":"Coll Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
     {"name":"Colonsay Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
-    {"name":"North Ronaldsay Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"}
+    {"name":"North Ronaldsay Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Cumbernauld Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Inverness Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Scatsta Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Dundee Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Sumburgh Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Eday Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Edinburgh Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Fair Isle Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"}
 
   ]
 }
