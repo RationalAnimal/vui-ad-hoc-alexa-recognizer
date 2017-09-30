@@ -9062,7 +9062,15 @@
     {"name":"George Best Belfast City Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"northern ireland"},
     {"name":"City of Derry Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"northern ireland"},
     {"name":"Enniskillen/St Angelo Airport","alternativeNames":["Enniskillen St Angelo Airport", "Enniskillen/St. Angelo Airport", "Enniskillen St. Angelo Airport", "Enniskillen/Saint Angelo Airport", "Enniskillen Saint Angelo Airport"],"priorNames":[],"country":"united kingdom","state":"northern ireland"},
-    {"name":"Newtownards Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"northern ireland"}
+    {"name":"Newtownards Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"northern ireland"},
+    {"name":"Aberdeen International Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Oban Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Benbecula Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Barra Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Campbeltown Airport RAF Machrihanish","alternativeNames":["Campbeltown Airport", "RAF Machrihanish"],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Coll Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"Colonsay Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"},
+    {"name":"North Ronaldsay Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"scotland"}
 
   ]
 }
