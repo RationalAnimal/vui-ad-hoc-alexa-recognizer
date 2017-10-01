@@ -9258,7 +9258,15 @@
     {"name":"Heringsdorf Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"mecklenburg-vorpommern"},
     {"name":"Hof-Plauen Airport","alternativeNames":["Hof Plauen Airport"],"priorNames":[],"country":"germany","state":"bavaria"},
     {"name":"Hoppstädten-Weiersbach Airfield","alternativeNames":["Hoppstädten Weiersbach Airfield", "Hoppstadten-Weiersbach Airfield", "Hoppstadten Weiersbach Airfield"],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
-    {"name":"Ingolstadt Manching Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"}
+    {"name":"Ingolstadt Manching Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Kassel Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"hesse"},
+    {"name":"Kiel Airport","alternativeNames":["Kiel Holtenau Airport"],"priorNames":[],"country":"germany","state":"schleswig-holstein"},
+    {"name":"Flughafen Lahr","alternativeNames":[],"priorNames":[],"country":"germany","state":"baden-württemberg"},
+    {"name":"Langenlonsheim Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
+    {"name":"Leipzig/Halle Airport","alternativeNames":["Leipzig Halle Airport", "Schkeuditz Airport"],"priorNames":[],"country":"germany","state":"saxony"},
+    {"name":"Lübeck Airport","alternativeNames":["Blankensee Airport", "Lubeck Airport"],"priorNames":[],"country":"germany","state":"schleswig-holstein"},
+    {"name":"Magdeburg-Cochstedt Airport","alternativeNames":["Magdeburg Cochstedt Airport"],"priorNames":[],"country":"germany","state":"saxony-anhalt"},
+    {"name":"Mainz Finthen Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"rhineland-palatinate"}
 
   ]
 }
