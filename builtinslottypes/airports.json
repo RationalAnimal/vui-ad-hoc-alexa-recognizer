@@ -9242,7 +9242,15 @@
     {"name":"Düsseldorf Airport","alternativeNames":["Dusseldorf Airport"],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
     {"name":"Düsseldorf Mönchengladbach Airport","alternativeNames":["Dusseldorf Monchengladbach Airport"],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
     {"name":"Frankfurt Egelsbach Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"hesse"},
-    {"name":"Emden Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"}
+    {"name":"Emden Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Erfurt-Weimar Airport","alternativeNames":["Erfurt Weimar Airport"],"priorNames":[],"country":"germany","state":"thuringia"},
+    {"name":"Frankfurt Airport","alternativeNames":["Frankfurt am Main Airport", "Rhein-Main Airport", "Rhein Main Airport"],"priorNames":[],"country":"germany","state":"hesse"},
+    {"name":"Flugplatz Freiburg","alternativeNames":[],"priorNames":[],"country":"germany","state":"baden-württemberg"},
+    {"name":"Friedrichshafen Airport","alternativeNames":["Bodensee Airport Friedrichshafen"],"priorNames":[],"country":"germany","state":"baden-württemberg"},
+    {"name":"Giebelstadt Airport / Giebelstadt Army Airfield","alternativeNames":["Giebelstadt Airport Giebelstadt Army Airfield", "Giebelstadt Airport", "Giebelstadt Army Airfield"],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Frankfurt-Hahn Airport","alternativeNames":["Frankfurt Hahn Airport"],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
+    {"name":"Hamburg Airport","alternativeNames":["Hamburg-Fuhlsbüttel Airport", "Hamburg Fuhlsbüttel Airport", "Hamburg-Fuhlsbuttel Airport", "Hamburg Fuhlsbuttel Airport"],"priorNames":[],"country":"germany","state":"hamburg"},
+    {"name":"Hamburg Finkenwerder Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"hamburg"}
 
   ]
 }
