@@ -9298,7 +9298,15 @@
     {"name":"Fritzlar Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"hesse"},
     {"name":"Fürstenfeldbruck Air Base","alternativeNames":["Furstenfeldbruck Air Base"],"priorNames":[],"country":"germany","state":"bavaria"},
     {"name":"NATO Air Base Geilenkirchen","alternativeNames":[],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
-    {"name":"Grafenwöhr Army Airfield","alternativeNames":["Grafenwohr Army Airfield"],"priorNames":[],"country":"germany","state":"bavaria"}
+    {"name":"Grafenwöhr Army Airfield","alternativeNames":["Grafenwohr Army Airfield"],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Hohenfels Army Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Hohn Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"schleswig-holstein"},
+    {"name":"Holzdorf Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"Saxony-Anhalt / Brandenburg"},
+    {"name":"Jever Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Landsberg-Lech Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Laupheim Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"baden-württemberg"},
+    {"name":"Lechfeld Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Coleman Army Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"baden-württemberg"}
 
   ]
 }
