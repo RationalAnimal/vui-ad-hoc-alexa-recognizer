@@ -9169,7 +9169,15 @@
     {"name":"Palmerston North Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Kapiti Coast Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Picton Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
-    {"name":"Queenstown International Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"}
+    {"name":"Queenstown International Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Rotorua Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Ryan's Creek Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Takaka Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Taupo Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Tauranga Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Thames Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Richard Pearse Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Wanaka Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"}
 
   ]
 }
