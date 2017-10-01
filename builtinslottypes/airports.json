@@ -9185,7 +9185,15 @@
     {"name":"Whangarei Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Whitianga Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Alexandra Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
-    {"name":"Ashburton Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"}
+    {"name":"Ashburton Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Ardmore Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Mercer Airfield","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Balclutha Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Coromandel Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Cromwell Racecourse Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Dannevirke Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Dargaville Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Feilding Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"}
 
   ]
 }
