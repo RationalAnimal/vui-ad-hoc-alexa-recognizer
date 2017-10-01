@@ -9138,7 +9138,6 @@
     {"name":"John A. Osborne Airport","alternativeNames":["Gerald's Airport"],"priorNames":[],"country":"united kingdom","state":"montserrat"},
     {"name":"RAF Ascension Island","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"saint helena"},
     {"name":"Saint Helena Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"saint helena"},
-
     {"name":"Harold Charles International Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"turks and caicos islands"},
     {"name":"JAGS McCartney International Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"turks and caicos islands"},
     {"name":"Middle Caicos Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"turks and caicos islands"},
@@ -9147,7 +9146,6 @@
     {"name":"Providenciales International Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"turks and caicos islands"},
     {"name":"Salt Cay Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"turks and caicos islands"},
     {"name":"South Caicos Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"turks and caicos islands"},
-
     {"name":"Auckland Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Blenheim Airport","alternativeNames":["BWoodbourne Airport"],"priorNames":[],"country":"new zealand"},
     {"name":"Chatham Islands Tuuta Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
@@ -9155,8 +9153,15 @@
     {"name":"Dunedin International Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Gisborne Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Great Barrier Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
-    {"name":"Hamilton Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"}
-
+    {"name":"Hamilton Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Hokitika Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Invercargill Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Kaikoura Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Kaitaia Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Kerikeri Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Hood Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Mount Cook Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Napier Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"}
 
   ]
 }
