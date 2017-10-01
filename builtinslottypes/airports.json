@@ -9201,7 +9201,24 @@
     {"name":"Haast Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Greymouth Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Hastings Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
-    {"name":"Kaikohe Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"}
+    {"name":"Kaikohe Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Kaikoura Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Lake Tekapo Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Mandeville Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Milford Sound Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Motueka Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"RNZAF Base Ohakea","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Omarama Airfield","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Parakai Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Pauanui Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Rangiora Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Manapouri Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Pukaki Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Waiheke Island Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Wairoa Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Waiouru Airbase","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"RNZAF Base Auckland","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Wigram Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"}
 
   ]
 }
