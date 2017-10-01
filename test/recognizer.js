@@ -1055,6 +1055,18 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }});
     });
 
+    it("verify simple utterance with an AMAZON.Airport slot and COUNTRY flag matches", function() {
+      let result = recognizer.Recognizer.matchText("Ashburton Aerodrome is an airport in new zealand");
+      expect(result).to.eql(
+        {"name": "AirportIntent",
+          "slots": {
+            "AirportSlot": {
+              "name": "AirportSlot",
+              "value": "Ashburton Aerodrome"
+            }
+          }});
+    });
+
     it("verify simple utterance with an AMAZON.Airport slot and a non-matching COUNTRY flag matches doesn't match", function() {
       let result = recognizer.Recognizer.matchText("Birmingham Shuttlesworth is a canadian airport");
       expect(typeof result).to.equal("undefined");
