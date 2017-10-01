@@ -9134,8 +9134,9 @@
     {"name":"Edward Bodden Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"cayman islands"},
     {"name":"Port Stanley Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"falkland islands"},
     {"name":"RAF Mount Pleasant","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"falkland islands"},
+    {"name":"Gibraltar International Airport","alternativeNames":["North Front Airport"],"priorNames":[],"country":"united kingdom","state":"gibraltar"},
 
-    {"name":"Gibraltar International Airport","alternativeNames":["North Front Airport"],"priorNames":[],"country":"united kingdom","state":"gibraltar"}
+    {"name":"John A. Osborne Airport","alternativeNames":["Gerald's Airport"],"priorNames":[],"country":"united kingdom","state":"montserrat"}
 
 
   ]
