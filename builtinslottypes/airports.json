@@ -9124,9 +9124,12 @@
     {"name":"L.F. Wade International Airport","alternativeNames":["L. F. Wade International Airport", "LF Wade International Airport", "L F Wade International Airport"],"priorNames":["Bermuda International"],"country":"united kingdom","state":"bermuda"},
     {"name":"NAS Bermuda","alternativeNames":[],"priorNames":["Kindley AFB"],"country":"united kingdom","state":"bermuda"},
     {"name":"RNAS Boaz Island","alternativeNames":["HMS Malabar"],"priorNames":[],"country":"united kingdom","state":"bermuda"},
+    {"name":"Naval Support Facility Diego Garcia","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"british indian ocean territory"},
 
-    {"name":"Naval Support Facility Diego Garcia","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"british indian ocean territory"}
-
+    {"name":"Auguste George Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"british virgin islands"},
+    {"name":"Terrance B. Lettsome International Airport","alternativeNames":["Terrance B Lettsome International Airport", "Terrance Lettsome International Airport"],"priorNames":[],"country":"united kingdom","state":"british virgin islands"},
+    {"name":"Virgin Gorda Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"british virgin islands"},
+    {"name":"North Sound Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"british virgin islands"}
 
   ]
 }
