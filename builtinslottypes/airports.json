@@ -9146,8 +9146,16 @@
     {"name":"Pine Cay Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"turks and caicos islands"},
     {"name":"Providenciales International Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"turks and caicos islands"},
     {"name":"Salt Cay Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"turks and caicos islands"},
-    {"name":"South Caicos Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"turks and caicos islands"}
+    {"name":"South Caicos Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"turks and caicos islands"},
 
+    {"name":"Auckland Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Blenheim Airport","alternativeNames":["BWoodbourne Airport"],"priorNames":[],"country":"new zealand"},
+    {"name":"Chatham Islands Tuuta Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Christchurch International Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Dunedin International Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Gisborne Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Great Barrier Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Hamilton Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"}
 
 
   ]
