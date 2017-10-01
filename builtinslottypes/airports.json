@@ -9218,7 +9218,15 @@
     {"name":"Wairoa Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Waiouru Airbase","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"RNZAF Base Auckland","alternativeNames":[],"priorNames":[],"country":"new zealand"},
-    {"name":"Wigram Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"}
+    {"name":"Wigram Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Merzbrück Airport","alternativeNames":["Merzbruck Airport", "Aachen-Merzbrück Airport", "Aachen-Merzbruck Airport", "Aachen Merzbrück Airport", "Aachen Merzbruck Airport"],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Allendorf Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"hesse"},
+    {"name":"Leipzig-Altenburg Airport","alternativeNames":["Leipzig Altenburg Airport"],"priorNames":["Altenburg-Nobitz Airport", "Altenburg Nobitz Airport"],"country":"germany","state":"thuringia"},
+    {"name":"Augsburg Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Bad Gandersheim Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Bad Kissingen Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Karlsruhe/Baden-Baden Airport","alternativeNames":["Karlsruhe Baden Baden Airport"],"priorNames":[],"country":"germany","state":"baden-württemberg"},
+    {"name":"Berlin Brandenburg Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"brandenburg"}
 
   ]
 }
