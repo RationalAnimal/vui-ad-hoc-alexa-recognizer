@@ -9177,7 +9177,15 @@
     {"name":"Tauranga Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Thames Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Richard Pearse Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
-    {"name":"Wanaka Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"}
+    {"name":"Wanaka Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Wellington International Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Westport Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Whakatane Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Whanganui Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Whangarei Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Whitianga Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Alexandra Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Ashburton Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"}
 
   ]
 }
