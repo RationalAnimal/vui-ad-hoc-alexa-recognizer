@@ -9226,7 +9226,15 @@
     {"name":"Bad Gandersheim Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
     {"name":"Bad Kissingen Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
     {"name":"Karlsruhe/Baden-Baden Airport","alternativeNames":["Karlsruhe Baden Baden Airport"],"priorNames":[],"country":"germany","state":"baden-württemberg"},
-    {"name":"Berlin Brandenburg Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"brandenburg"}
+    {"name":"Berlin Brandenburg Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"brandenburg"},
+    {"name":"Berlin Schönefeld Airport","alternativeNames":["Berlin Schonefeld Airport"],"priorNames":[],"country":"germany","state":"brandenburg"},
+    {"name":"Berlin Tegel Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"berlin"},
+    {"name":"Bindlacher Berg Airport","alternativeNames":["Bayreuth Airport"],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Bitburg Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
+    {"name":"Borkum Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Achmer Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Braunschweig-Wolfsburg Airport","alternativeNames":["Braunschweig Wolfsburg Airport"],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Bremen Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"free hanseatic city of bremen"}
 
   ]
 }
