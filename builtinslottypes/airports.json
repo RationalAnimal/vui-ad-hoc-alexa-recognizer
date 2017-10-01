@@ -9290,7 +9290,15 @@
     {"name":"Bamberg Army Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
     {"name":"Baumholder Army Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
     {"name":"Büchel Air Base","alternativeNames":["Buchel Air Base"],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
-    {"name":"Bückeburg Air Base","alternativeNames":["Buckeburg Air Base"],"priorNames":[],"country":"germany","state":"lower saxony"}
+    {"name":"Bückeburg Air Base","alternativeNames":["Buckeburg Air Base"],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Celle Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Diepholz Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Erding Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Faßberg Air Base","alternativeNames":["Fasberg Air Base", "Fassberg Air Base"],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Fritzlar Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"hesse"},
+    {"name":"Fürstenfeldbruck Air Base","alternativeNames":["Furstenfeldbruck Air Base"],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"NATO Air Base Geilenkirchen","alternativeNames":[],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Grafenwöhr Army Airfield","alternativeNames":["Grafenwohr Army Airfield"],"priorNames":[],"country":"germany","state":"bavaria"}
 
   ]
 }
