@@ -26,3 +26,5 @@ Here you will find tutorials showing you how to use vui-ad-hoc-alexa-recognizer
 <a class="page-link" href="{{ "/Tutorials/WildThing/" | relative_url }}">Wild (Card) Thing</a>
 
 <a class="page-link" href="{{ "/Tutorials/ExpressYouselfRegularly/" | relative_url }}">Express Yourself Regularly</a>
+
+<a class="page-link" href="{{ "/Tutorials/ThatSoundsLikeYou/" | relative_url }}">That Sounds Like You</a>
