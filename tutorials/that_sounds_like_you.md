@@ -59,6 +59,8 @@ prompt> node index.js "I think that ice cream is called chokolat"
 }
 {% endhighlight %}
 
+If your slot value consists of multiple words, each will be converted to a SOUNDEX value and matched.
+
 Note that SOUNDEX_MATCH only applies to custom list based slots.  Also, vui-ad-hoc-alexa-recognizer will silently remove flags that are not compatible with each other
 (more on the rules for doing this in a later tutorial). However you shouldn't specify unnecessary flags anyway because sometimes the choices that vui-ad-hoc-alexa-recognizer
 might make for you aren't what you want.
