@@ -27,6 +27,7 @@ AirportIntent {AirportSlot:INCLUDE_WILDCARD_MATCH} is an unknown airport
 AirportIntent {AirportSlot:COUNTRY(["united states"])} is a united states airport
 AirportIntent {AirportSlot:COUNTRY(["canada"])} is a canadian airport
 AirportIntent {AirportSlot:STATE(["alabama"])} is an airport in alabama
+AirportIntent {AirportSlot:COUNTRY(["new zealand"])} is an airport in new zealand
 AirlineIntent is {AirlineSlot} a budget airline
 AirlineIntent {AirlineSlot} is a regional airline
 AirlineIntent {AirlineSlot:COUNTRY(["canada"])} is a canadian airline
