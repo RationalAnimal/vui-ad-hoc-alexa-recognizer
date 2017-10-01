@@ -9266,7 +9266,15 @@
     {"name":"Leipzig/Halle Airport","alternativeNames":["Leipzig Halle Airport", "Schkeuditz Airport"],"priorNames":[],"country":"germany","state":"saxony"},
     {"name":"Lübeck Airport","alternativeNames":["Blankensee Airport", "Lubeck Airport"],"priorNames":[],"country":"germany","state":"schleswig-holstein"},
     {"name":"Magdeburg-Cochstedt Airport","alternativeNames":["Magdeburg Cochstedt Airport"],"priorNames":[],"country":"germany","state":"saxony-anhalt"},
-    {"name":"Mainz Finthen Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"rhineland-palatinate"}
+    {"name":"Mainz Finthen Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
+    {"name":"Mannheim City Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"baden-württemberg"},
+    {"name":"Memmingen Airport","alternativeNames":[],"priorNames":["Allgäu Airport/Memmingen", "Allgäu Airport Memmingen", "Allgäu Airport", "Allgau Airport"],"country":"germany","state":"bavaria"},
+    {"name":"Munich Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Münster Osnabrück International Airport","alternativeNames":["Munster Osnabruck International Airport"],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Nannhausen Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
+    {"name":"Neubrandenburg Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"mecklenburg-vorpommern"},
+    {"name":"Nuremberg Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Paderborn Lippstadt Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"north rhine-westphalia"}
 
   ]
 }
