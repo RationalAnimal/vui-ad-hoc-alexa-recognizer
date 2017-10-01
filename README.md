@@ -64,7 +64,7 @@ wildcard matches.
 * "Express Yourself Regularly" - explains how to use regular expressions based custom slots to get user input that
 matches a particular pattern rather than specific list of values.
 * "That Sounds Like You" - explains how to use SOUNDEX matching to process words that sound similar.  This helps with
-commonly substituted words in chat bots and words that sound the same but aren't spelled the same way.
+commonly substituted words in chat bots and words that sound the same but aren't spelled the same way in voice services.
 
 ## Domain Tutorials
 

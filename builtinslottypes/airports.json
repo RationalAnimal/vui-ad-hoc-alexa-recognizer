@@ -9250,7 +9250,15 @@
     {"name":"Giebelstadt Airport / Giebelstadt Army Airfield","alternativeNames":["Giebelstadt Airport Giebelstadt Army Airfield", "Giebelstadt Airport", "Giebelstadt Army Airfield"],"priorNames":[],"country":"germany","state":"bavaria"},
     {"name":"Frankfurt-Hahn Airport","alternativeNames":["Frankfurt Hahn Airport"],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
     {"name":"Hamburg Airport","alternativeNames":["Hamburg-Fuhlsbüttel Airport", "Hamburg Fuhlsbüttel Airport", "Hamburg-Fuhlsbuttel Airport", "Hamburg Fuhlsbuttel Airport"],"priorNames":[],"country":"germany","state":"hamburg"},
-    {"name":"Hamburg Finkenwerder Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"hamburg"}
+    {"name":"Hamburg Finkenwerder Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"hamburg"},
+    {"name":"Hannover Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Heide-Büsum Airport","alternativeNames":["Heide Büsum Airport", "Heide-Busum Airport", "Heide Busum Airport"],"priorNames":[],"country":"germany","state":"schleswig-holstein"},
+    {"name":"Uetersen Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"schleswig-holstein"},
+    {"name":"Heligoland Airport","alternativeNames":["Helgoland-Düne Airport", "Helgoland Düne Airport", "Helgoland-Dune Airport", "Helgoland Dune Airport"],"priorNames":[],"country":"germany","state":"schleswig-holstein"},
+    {"name":"Heringsdorf Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"mecklenburg-vorpommern"},
+    {"name":"Hof-Plauen Airport","alternativeNames":["Hof Plauen Airport"],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Hoppstädten-Weiersbach Airfield","alternativeNames":["Hoppstädten Weiersbach Airfield", "Hoppstadten-Weiersbach Airfield", "Hoppstadten Weiersbach Airfield"],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
+    {"name":"Ingolstadt Manching Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"}
 
   ]
 }
