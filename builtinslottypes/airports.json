@@ -9234,7 +9234,15 @@
     {"name":"Borkum Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
     {"name":"Achmer Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
     {"name":"Braunschweig-Wolfsburg Airport","alternativeNames":["Braunschweig Wolfsburg Airport"],"priorNames":[],"country":"germany","state":"lower saxony"},
-    {"name":"Bremen Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"free hanseatic city of bremen"}
+    {"name":"Bremen Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"free hanseatic city of bremen"},
+    {"name":"Cologne Bonn Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Sea-Airport Cuxhaven/Nordholz","alternativeNames":["Sea Airport Cuxhaven Nordholz"],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Dortmund Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Dresden Airport","alternativeNames":["Dresden-Klotzsche Airport","Dresden Klotzsche Airport"],"priorNames":[],"country":"germany","state":"saxony"},
+    {"name":"Düsseldorf Airport","alternativeNames":["Dusseldorf Airport"],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Düsseldorf Mönchengladbach Airport","alternativeNames":["Dusseldorf Monchengladbach Airport"],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Frankfurt Egelsbach Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"hesse"},
+    {"name":"Emden Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"}
 
   ]
 }
