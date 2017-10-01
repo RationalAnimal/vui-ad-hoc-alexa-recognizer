@@ -9129,10 +9129,12 @@
     {"name":"Terrance B. Lettsome International Airport","alternativeNames":["Terrance B Lettsome International Airport", "Terrance Lettsome International Airport"],"priorNames":[],"country":"united kingdom","state":"british virgin islands"},
     {"name":"Virgin Gorda Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"british virgin islands"},
     {"name":"North Sound Water Aerodrome","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"british virgin islands"},
-
     {"name":"Owen Roberts International Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"cayman islands"},
     {"name":"Charles Kirkconnell International Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"cayman islands"},
-    {"name":"Edward Bodden Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"cayman islands"}
+    {"name":"Edward Bodden Airfield","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"cayman islands"},
+
+    {"name":"Port Stanley Airport","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"falkland islands"},
+    {"name":"RAF Mount Pleasant","alternativeNames":[],"priorNames":[],"country":"united kingdom","state":"falkland islands"}
 
   ]
 }
