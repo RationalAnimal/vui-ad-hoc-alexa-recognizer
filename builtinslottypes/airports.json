@@ -9282,7 +9282,15 @@
     {"name":"Stadtlohn-Vreden Airport","alternativeNames":["Stadtlohn Vreden Airport"],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
     {"name":"Stuttgart Airport","alternativeNames":[],"priorNames":["Stuttgart Army Airfield","Stuttgart Echterdingen Airport"],"country":"germany","state":"baden-württemberg"},
     {"name":"Trier-Föhren Airport","alternativeNames":["Trier Föhren Airport", "Trier-Fohren Airport", "Trier Fohren Airport"],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
-    {"name":"Wangerooge Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"}
+    {"name":"Wangerooge Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Weeze Airport","alternativeNames":["Niederrhein Airport"],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Sylt Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"schleswig-holstein"},
+    {"name":"Zweibrücken Airport","alternativeNames":["Zweibrucken Airport"],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
+    {"name":"Altenstadt Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Bamberg Army Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Baumholder Army Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
+    {"name":"Büchel Air Base","alternativeNames":["Buchel Air Base"],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
+    {"name":"Bückeburg Air Base","alternativeNames":["Buckeburg Air Base"],"priorNames":[],"country":"germany","state":"lower saxony"}
 
   ]
 }
