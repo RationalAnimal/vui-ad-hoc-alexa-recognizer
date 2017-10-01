@@ -9274,7 +9274,15 @@
     {"name":"Nannhausen Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
     {"name":"Neubrandenburg Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"mecklenburg-vorpommern"},
     {"name":"Nuremberg Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
-    {"name":"Paderborn Lippstadt Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"north rhine-westphalia"}
+    {"name":"Paderborn Lippstadt Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Rechlin-Lärz Airfield","alternativeNames":["Rechlin Lärz Airfield", "Rechlin-Larz Airfield", "Rechlin Larz Airfield"],"priorNames":[],"country":"germany","state":"mecklenburg-vorpommern"},
+    {"name":"Rostock-Laage Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"mecklenburg-vorpommern"},
+    {"name":"Saarbrücken Airport","alternativeNames":["Saarbrucken Airport", "Ensheim Airport"],"priorNames":[],"country":"germany","state":"saarland"},
+    {"name":"Siegerland Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Stadtlohn-Vreden Airport","alternativeNames":["Stadtlohn Vreden Airport"],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Stuttgart Airport","alternativeNames":[],"priorNames":["Stuttgart Army Airfield","Stuttgart Echterdingen Airport"],"country":"germany","state":"baden-württemberg"},
+    {"name":"Trier-Föhren Airport","alternativeNames":["Trier Föhren Airport", "Trier-Fohren Airport", "Trier Fohren Airport"],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
+    {"name":"Wangerooge Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"}
 
   ]
 }
