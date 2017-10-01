@@ -9314,7 +9314,17 @@
     {"name":"Nörvenich Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
     {"name":"Ramstein Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
     {"name":"Rheine-Bentlage Air Base","alternativeNames":["Rheine Bentlage Air Base"],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
-    {"name":"Roth Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"}
+    {"name":"Roth Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Schleswig Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"schleswig-holstein"},
+    {"name":"Spangdahlem Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"rhineland-palatinate"},
+    {"name":"Wiesbaden Army Airfield","alternativeNames":[],"priorNames":[],"country":"germany","state":"hesse"},
+    {"name":"Wittmundhafen Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Wunstorf Air Base","alternativeNames":[],"priorNames":[],"country":"germany","state":"lower saxony"},
+    {"name":"Berlin Tempelhof Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"berlin"},
+    {"name":"Bremerhaven Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"free hanseatic city of bremen"},
+    {"name":"Cologne Butzweilerhof Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Hopsten-Dreierwalde Airfield","alternativeNames":["Hopsten Dreierwalde Airfield"],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
+    {"name":"Munich-Riem Airport","alternativeNames":["Munich Riem Airport"],"priorNames":[],"country":"germany","state":"bavaria"}
 
   ]
 }
