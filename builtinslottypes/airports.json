@@ -9161,7 +9161,15 @@
     {"name":"Kerikeri Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Hood Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
     {"name":"Mount Cook Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
-    {"name":"Napier Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"}
+    {"name":"Napier Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Nelson Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"New Plymouth Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"North Shore Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Oamaru Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Palmerston North Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Kapiti Coast Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Picton Aerodrome","alternativeNames":[],"priorNames":[],"country":"new zealand"},
+    {"name":"Queenstown International Airport","alternativeNames":[],"priorNames":[],"country":"new zealand"}
 
   ]
 }
