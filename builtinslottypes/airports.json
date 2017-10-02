@@ -9359,7 +9359,16 @@
     {"name":"Hacketstown Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
     {"name":"Killenaule Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
     {"name":"Letterkenny Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
-    {"name":"Moneygall Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"}
+    {"name":"Moneygall Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Gowran Grange Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Powerscourt Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Spanish Point Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Moyne Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Finner Camp Heliport","alternativeNames":["Finner Camp"],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Casement Aerodrome","alternativeNames":["Baldonnel Aerodrome"],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Castlebar Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Castleforbes Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Gormanston Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"}
 
   ]
 }
