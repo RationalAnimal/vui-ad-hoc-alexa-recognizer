@@ -9331,7 +9331,14 @@
     {"name":"Weston Airport","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
     {"name":"Galway Airport","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
     {"name":"Kerry Airport","alternativeNames":["Farranfore Airport"],"priorNames":[],"country":"republic of ireland"},
-    {"name":"Ireland West Airport Knock","alternativeNames":[],"priorNames":[],"country":"republic of ireland"}
+    {"name":"Ireland West Airport Knock","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Shannon Airport","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Sligo Airport","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Waterford Airport","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Abbeyfeale Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Abbeyshrule Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Athboy Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Bantry Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"}
 
   ]
 }
