@@ -9368,7 +9368,14 @@
     {"name":"Casement Aerodrome","alternativeNames":["Baldonnel Aerodrome"],"priorNames":[],"country":"republic of ireland"},
     {"name":"Castlebar Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
     {"name":"Castleforbes Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
-    {"name":"Gormanston Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"}
+    {"name":"Gormanston Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"L'Aquila-Preturo Airport","alternativeNames":["L'Aquila Preturo Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Abruzzo Airport","alternativeNames":["Pescara Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Aosta Corrado Gex Airport","alternativeNames":["Aosta Airport", "Corrado Gex Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Bari-Palese Karol Wojtyla Airport","alternativeNames":["Bari-Palese Airport", "Bari Palese Airport", "Karol Wojtyla Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Brindisi-Casale Orazio Pierozzi Airport","alternativeNames":["Salento Airport","Brindisi-Casale Airport", "Brindisi Casale Airport", "Orazio Pierozzi Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Gioia del Colle Air Base","alternativeNames":["Antonio Ramirez", "Antonio Ramirez Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Foggia Gino Lisa Airport","alternativeNames":["Foggia Airport", "Gino Lisa Airport"],"priorNames":[],"country":"italy"}
 
   ]
 }
