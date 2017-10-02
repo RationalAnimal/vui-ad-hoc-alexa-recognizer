@@ -9382,7 +9382,13 @@
     {"name":"Taranto-Grottaglie Marcello Arlotta Airport","alternativeNames":["Taranto-Grottaglie Airport", "Taranto Grottaglie Airport", "Marcello Arlotta Airport"],"priorNames":[],"country":"italy"},
     {"name":"Basilicata Enrico Mattei Airfield","alternativeNames":["Basilicata Airfield", "Enrico Mattei Airfield"],"priorNames":[],"country":"italy"},
     {"name":"Crotone Sant'Anna Airport","alternativeNames":["Crotone Airport", "Sant'Anna Airport"],"priorNames":[],"country":"italy"},
-    {"name":"Lamezia Terme Airport","alternativeNames":[],"priorNames":[],"country":"italy"}
+    {"name":"Lamezia Terme Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Reggio Calabria Tito Minniti Airport","alternativeNames":["Reggio Calabria Airport", "Tito Minniti Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Capua Oreste Salomone Airport","alternativeNames":["Capua Airport", "Oreste Salomone Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Caserta-Grazzanise Carlo Romagnoli Airport","alternativeNames":["Caserta-Grazzanise Airport", "Caserta Grazzanise Airport", "Caserta-Grazzanise Carlo Romagnoli Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Naples-Capodichino Ugo Niutta Airport","alternativeNames":["Naples-Capodichino Airport", "Naples Capodichino Airport", "Ugo Niutta Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Salerno Costa d'Amalfi Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Bologna-Borgo Panigale Guglielmo Marconi Airport","alternativeNames":["Bologna-Borgo Panigale Airport", "Bologna Borgo Panigale Airport", "Guglielmo Marconi Airport"],"priorNames":[],"country":"italy"}
 
   ]
 }
