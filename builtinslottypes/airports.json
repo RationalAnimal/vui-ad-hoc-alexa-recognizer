@@ -9345,7 +9345,14 @@
     {"name":"Connemara Airport","alternativeNames":["Minna Airport"],"priorNames":[],"country":"republic of ireland"},
     {"name":"Coonagh Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
     {"name":"Inisheer Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
-    {"name":"Inishmaan Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"}
+    {"name":"Inishmaan Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Inishmore Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Kilrush Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Kilkenny Airport","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Erinagh Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Newcastle Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Rathcoole Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Trevet Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"}
 
   ]
 }
