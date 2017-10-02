@@ -9375,7 +9375,14 @@
     {"name":"Bari-Palese Karol Wojtyla Airport","alternativeNames":["Bari-Palese Airport", "Bari Palese Airport", "Karol Wojtyla Airport"],"priorNames":[],"country":"italy"},
     {"name":"Brindisi-Casale Orazio Pierozzi Airport","alternativeNames":["Salento Airport","Brindisi-Casale Airport", "Brindisi Casale Airport", "Orazio Pierozzi Airport"],"priorNames":[],"country":"italy"},
     {"name":"Gioia del Colle Air Base","alternativeNames":["Antonio Ramirez", "Antonio Ramirez Airport"],"priorNames":[],"country":"italy"},
-    {"name":"Foggia Gino Lisa Airport","alternativeNames":["Foggia Airport", "Gino Lisa Airport"],"priorNames":[],"country":"italy"}
+    {"name":"Foggia Gino Lisa Airport","alternativeNames":["Foggia Airport", "Gino Lisa Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Foggia-Amendola Luigi Rovelli Airport","alternativeNames":["Foggia-Amendola Airport", "Foggia Amendola Airport", "Luigi Rovelli Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Lecce Galatina Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Martina Franca Air Base","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Taranto-Grottaglie Marcello Arlotta Airport","alternativeNames":["Taranto-Grottaglie Airport", "Taranto Grottaglie Airport", "Marcello Arlotta Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Basilicata Enrico Mattei Airfield","alternativeNames":["Basilicata Airfield", "Enrico Mattei Airfield"],"priorNames":[],"country":"italy"},
+    {"name":"Crotone Sant'Anna Airport","alternativeNames":["Crotone Airport", "Sant'Anna Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Lamezia Terme Airport","alternativeNames":[],"priorNames":[],"country":"italy"}
 
   ]
 }
