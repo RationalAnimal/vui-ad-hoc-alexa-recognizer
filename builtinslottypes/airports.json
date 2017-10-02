@@ -9324,7 +9324,14 @@
     {"name":"Bremerhaven Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"free hanseatic city of bremen"},
     {"name":"Cologne Butzweilerhof Airport","alternativeNames":[],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
     {"name":"Hopsten-Dreierwalde Airfield","alternativeNames":["Hopsten Dreierwalde Airfield"],"priorNames":[],"country":"germany","state":"north rhine-westphalia"},
-    {"name":"Munich-Riem Airport","alternativeNames":["Munich Riem Airport"],"priorNames":[],"country":"germany","state":"bavaria"}
+    {"name":"Munich-Riem Airport","alternativeNames":["Munich Riem Airport"],"priorNames":[],"country":"germany","state":"bavaria"},
+    {"name":"Cork Airport","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Donegal Airport","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Dublin Airport","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Weston Airport","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Galway Airport","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Kerry Airport","alternativeNames":["Farranfore Airport"],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Ireland West Airport Knock","alternativeNames":[],"priorNames":[],"country":"republic of ireland"}
 
   ]
 }
