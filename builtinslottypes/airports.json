@@ -9338,7 +9338,14 @@
     {"name":"Abbeyfeale Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
     {"name":"Abbeyshrule Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
     {"name":"Athboy Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
-    {"name":"Bantry Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"}
+    {"name":"Bantry Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Belmullet Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Birr Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Clonbullogue Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Connemara Airport","alternativeNames":["Minna Airport"],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Coonagh Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Inisheer Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Inishmaan Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"}
 
   ]
 }
