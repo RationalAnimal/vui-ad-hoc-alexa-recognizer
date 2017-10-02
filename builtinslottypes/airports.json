@@ -9352,7 +9352,14 @@
     {"name":"Erinagh Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
     {"name":"Newcastle Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
     {"name":"Rathcoole Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
-    {"name":"Trevet Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"}
+    {"name":"Trevet Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Trim Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Brittas Bay Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Ballyboughal Airfield www.eibb.ie","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Hacketstown Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Killenaule Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Letterkenny Airfield","alternativeNames":[],"priorNames":[],"country":"republic of ireland"},
+    {"name":"Moneygall Aerodrome","alternativeNames":[],"priorNames":[],"country":"republic of ireland"}
 
   ]
 }
