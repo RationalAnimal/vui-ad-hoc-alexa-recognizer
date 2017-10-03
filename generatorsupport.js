@@ -1776,6 +1776,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
+  // TODO Now loop over config mixIns field and generate all the mix ins.
   return recognizerSet;
 };
 

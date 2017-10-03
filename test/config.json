@@ -106,7 +106,21 @@
 	"mixIns": [
 		{
 			"intentMatchRegExString": "(.*)",
-			"mixInBuiltInName": ["sentiment"]
+			"mixInBuiltInName": ["noop"],
+			"arguments": [
+				{
+					"log": true
+				}
+			]
+		},
+		{
+			"intentMatchRegExString": "(PersonalInfoIntent)",
+			"mixInBuiltInName": ["findRegEx"],
+			"arguments": [
+				{
+					"regExString": "(years old|y.o.)"
+				}
+			]
 		}
 	]
 }
