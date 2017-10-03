@@ -1777,6 +1777,27 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
   }
 
   // TODO Now loop over config mixIns field and generate all the mix ins.
+  if(typeof config.mixIns !== "undefined" && Array.isArray(config.mixIns)){
+    recognizerSet.mixIns = [];
+    for(let i = 0; i < config.mixIns.length; i++){
+      let mixIn = {};
+      mixIn.intentMatchRegExString = config.mixIns[i].intentMatchRegExString;
+      mixIn.arguments = config.mixIns[i].arguments;
+      if(typeof config.mixIns[i].mixInBuiltInName === "string"){
+        // TODO confirm that this is correct
+        mixIn.file = "./builtinmixins/" + config.mixIns[i].mixInBuiltInName + ".js";
+      }
+      else if(typeof config.mixIns[i].mixInSrcFilename === "string"){
+        mixIn.file = config.mixIns[i].mixInSrcFileName;
+      }
+      else {
+        // Invalid config - no mix in executable specified.
+        // TODO throw error
+        continue;
+      }
+      recognizerSet.mixIns.push(mixIn);
+    }
+  }
   return recognizerSet;
 };
 
