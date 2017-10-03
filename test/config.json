@@ -102,5 +102,11 @@
 			],
 			"extendedValuesFilename": "test/roomExtendedValues.txt"
 		}
+	],
+	"mixIns": [
+		{
+			"intentMatchRegExString": "(.*)",
+			"mixInBuiltInName": ["sentiment"]
+		}
 	]
 }
