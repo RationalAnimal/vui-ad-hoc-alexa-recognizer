@@ -1784,10 +1784,10 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
       mixIn.intentMatchRegExString = config.mixIns[i].intentMatchRegExString;
       mixIn.arguments = config.mixIns[i].arguments;
       if(typeof config.mixIns[i].mixInBuiltInName === "string"){
-        // TODO confirm that this is correct
         mixIn.file = "./builtinmixins/" + config.mixIns[i].mixInBuiltInName + ".js";
       }
       else if(typeof config.mixIns[i].mixInSrcFilename === "string"){
+        // TODO create a function similar to transforms to resolve the file name
         mixIn.file = config.mixIns[i].mixInSrcFileName;
       }
       else {

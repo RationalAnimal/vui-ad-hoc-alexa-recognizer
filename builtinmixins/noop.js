@@ -26,11 +26,11 @@
 "use strict";
 module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-unused-vars
   let intentName;
-  let utterances;
+  let utterance;
   let priorResult;
   if(typeof standardArgs !== "undefined"){
     intentName = standardArgs.intentName;
-    utterances = standardArgs.utterances;
+    utterance = standardArgs.utterance;
     priorResult = standardArgs.priorResult;
   }
   if(typeof customArgs !== "undefined" && customArgs.log === true){
