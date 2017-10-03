@@ -22,18 +22,20 @@
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
-*/
-"use strict";
-module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-unused-vars
-  let intentName;
-  let utterances;
-  let priorResult;
-  if(typeof standardArgs !== "undefined"){
-    intentName = standardArgs.intentName;
-    utterances = standardArgs.utterances;
-    priorResult = standardArgs.priorResult;
-  }
-  if(typeof customArgs !== "undefined" && customArgs.log === true){
-    console.log("noop built in mix in match called");
-  }
-};
+ */
+ "use strict";
+ module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-unused-vars
+   let intentName;
+   let utterances;
+   let priorResult;
+   if(typeof standardArgs !== "undefined"){
+     intentName = standardArgs.intentName;
+     utterances = standardArgs.utterances;
+     priorResult = standardArgs.priorResult;
+   }
+   if(typeof customArgs !== "undefined" && typeof customArgs.regExString === "string"){
+     // TODO add code to find all matches of the supplied reg ex and update the prior
+     // result with the findings.
+   }
+   //return;
+ };
