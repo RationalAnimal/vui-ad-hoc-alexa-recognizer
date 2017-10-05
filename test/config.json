@@ -105,6 +105,7 @@
 	],
 	"mixIns": [
 		{
+      "name": "loggingMixIn",
 			"intentMatchRegExString": "(.*)",
 			"mixInBuiltInName": ["noop"],
 			"arguments": [
@@ -114,6 +115,7 @@
 			]
 		},
 		{
+      "name": "ageSearchMixIn",
 			"intentMatchRegExString": "(PersonalInfoIntent)",
 			"mixInBuiltInName": ["findRegEx"],
 			"arguments": [
