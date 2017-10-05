@@ -1801,6 +1801,32 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
   return recognizerSet;
 };
 
+var _getMixInSrcFilename = function(config, mixInName, resolvedBaseDir){// eslint-disable-line no-unused-vars
+  if(typeof config.mixIns !== "undefined" && Array.isArray(config.mixIns)){
+    for(let i = 0; i < config.mixIns.length; i++){
+      let currentMixIn = config.mixIns[i];
+      if(currentMixIn.name === mixInName){
+        if(typeof currentMixIn.mixInBuiltInName !== "undefined" && currentMixIn.mixInBuiltInName !== null){
+          if(typeof currentMixIn.mixInBuiltInName === "string"){
+            return "./builtinmixins/" + currentMixIn.mixInBuiltInName + ".js";
+          }
+          else if(Array.isArray(currentMixIn.mixInBuiltInName)){
+            let returnValue = [];
+            for(let j = 0; j < currentMixIn.mixInBuiltInName.length; j++){
+              returnValue.push("./builtinmixins/" + currentMixIn.mixInBuiltInName[j] + ".js");
+            }
+            return returnValue;
+          }
+          else {
+            // An error in configuration?
+            return;
+          }
+        }
+      }
+    }
+  }
+};
+
 recognizer.Recognizer.generateRunTimeJson = _generateRunTimeJson;
 recognizer.Recognizer.prototype.generateRunTimeJson = _generateRunTimeJson;
 
