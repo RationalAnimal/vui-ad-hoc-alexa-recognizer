@@ -9410,6 +9410,14 @@
         "Pietro Savorgnan di Brazzà Airport", "Pietro Savorgnan di Brazza Airport",
         "Trieste Ronchi dei Legionari Airport"
       ], "priorNames":[],"country":"italy"
-    }
+    },
+    {"name":"Centocelle Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Frosinone Girolamo Moscardini Airport","alternativeNames":["Frosinone Airport", "Girolamo Moscardini Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Guidonia Alfredo Barbieri Airport","alternativeNames":["Guidonia Airport", "Alfredo Barbieri Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Latina Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Pratica di Mare Air Force Base","alternativeNames":["Mario de Bernardi Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Rieti Airport","alternativeNames":["G. Ciuffelli Airport", "G Ciuffelli Airport", "Ciuffelli Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Rome-Fiumicino Leonardo da Vinci Airport","alternativeNames":["Rome Fiumicino Leonardo da Vinci Airport", "Rome-Fiumicino Airport", "Rome Fiumicino Airport", "Leonardo da Vinci Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Rome Ciampino Giovan Battista Pastine Airport","alternativeNames":["Rome Ciampino Airport", "Giovan Battista Pastine Airport"],"priorNames":[],"country":"italy"}
   ]
 }
