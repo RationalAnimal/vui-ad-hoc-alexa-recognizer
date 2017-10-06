@@ -1305,6 +1305,13 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, config){
   let equivalentsSets = [];
   if(typeof config !== "undefined" && config !== null && typeof config.textEquivalents !== "undefined" && Array.isArray(config.textEquivalents) === true){
     // load the config specified text equivalents
+    for(let i = 0; i < config.textEquivalents.length; i++){
+      if(typeof config.textEquivalents[i].equivalentSetBuiltInName === "string"){
+        let scratchEquivalent = require("./equivalents/" + config.textEquivalents[i].equivalentSetBuiltInName + ".json");
+        equivalentsSets.push(scratchEquivalent);
+      }
+      // else if ... file name
+    }
   }
   else {
     equivalentsSets.push(defaultEquivalents);

@@ -124,5 +124,13 @@
 				}
 			]
 		}
+	],
+	"textEquivalents": [
+		{
+			"equivalentSetBuiltInName": "default"
+		},
+		{
+			"equivalentSetBuiltInName": "misspellings"
+		}
 	]
 }
