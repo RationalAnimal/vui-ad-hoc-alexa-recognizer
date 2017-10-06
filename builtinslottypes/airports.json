@@ -9418,6 +9418,16 @@
     {"name":"Pratica di Mare Air Force Base","alternativeNames":["Mario de Bernardi Airport"],"priorNames":[],"country":"italy"},
     {"name":"Rieti Airport","alternativeNames":["G. Ciuffelli Airport", "G Ciuffelli Airport", "Ciuffelli Airport"],"priorNames":[],"country":"italy"},
     {"name":"Rome-Fiumicino Leonardo da Vinci Airport","alternativeNames":["Rome Fiumicino Leonardo da Vinci Airport", "Rome-Fiumicino Airport", "Rome Fiumicino Airport", "Leonardo da Vinci Airport"],"priorNames":[],"country":"italy"},
-    {"name":"Rome Ciampino Giovan Battista Pastine Airport","alternativeNames":["Rome Ciampino Airport", "Giovan Battista Pastine Airport"],"priorNames":[],"country":"italy"}
+    {"name":"Rome Ciampino Giovan Battista Pastine Airport","alternativeNames":["Rome Ciampino Airport", "Giovan Battista Pastine Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Rome Urbe Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Rome Viterbo Airport","alternativeNames":["Viterbo Air Force Base", "Tommaso Fabbri Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Villanova d'Albenga Clemente Panero Airport","alternativeNames":["Villanova d'Albenga Airport", "Clemente Panero Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Genoa Cristoforo Colombo Airport","alternativeNames":["Genoa Airport", "Cristoforo Colombo Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Sarzana Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Bergamo-Orio al Serio Il Caravaggio Airport","alternativeNames":["Bergamo-Orio al Serio Airport", "Bergamo Orio al Serio Airport", "Bergamo Orio al Serio Il Caravaggio Airport", "Il Caravaggio Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Brescia-Montichiari Gabriele D'Annunzio Airport","alternativeNames":["Brescia Montichiari Gabriele D'Annunzio Airport", "Brescia-Montichiari Airport", "Brescia Montichiari Airport", "Gabriele D'Annunzio Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Ghedi Air Base","alternativeNames":[],"priorNames":[],"country":"italy"}
+
+
   ]
 }
