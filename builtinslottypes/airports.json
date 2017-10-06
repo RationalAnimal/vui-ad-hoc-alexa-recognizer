@@ -9396,7 +9396,20 @@
     {"name":"Lugo di Romagna Francesco Baracca Airport","alternativeNames":["Lugo di Romagna Airport", "Francesco Baracca Airport"],"priorNames":[],"country":"italy"},
     {"name":"Modena Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
     {"name":"Parma Giuseppe Verdi Airport","alternativeNames":["Parma Airport", "Giuseppe Verdi Airport"],"priorNames":[],"country":"italy"},
-    {"name":"Piacenza-San Damiano Gaetano Mazza Airport","alternativeNames":["Piacenza-San Damiano Airport", "Piacenza San Damiano Airport", "Gaetano Mazza Airport"],"priorNames":[],"country":"italy"}
-
+    {"name":"Piacenza-San Damiano Gaetano Mazza Airport","alternativeNames":["Piacenza-San Damiano Airport", "Piacenza San Damiano Airport", "Gaetano Mazza Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Ravenna Gastone Novelli Airport","alternativeNames":["Ravenna Airport", "Gastone Novelli Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Reggio Emilia Ferdinando Bonazzi Airport","alternativeNames":["Reggio Emilia Airport", "Ferdinando Bonazzi Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Rimini-Miramare Federico Fellini Airport","alternativeNames":["Rimini-Miramare Airport", "Rimini Miramare Airport", "Federico Fellini Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Aviano Air Base","alternativeNames":["Maurizio Pagliano & Luigi Gori", "Maurizio Pagliano and Luigi Gori"],"priorNames":[],"country":"italy"},
+    {"name":"Udine-Campoformido Airport","alternativeNames":["Udine Campoformido Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Rivolto Mario Visentini Airport","alternativeNames":["Rivolto Airport", "Mario Visentini Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Friuli-Venezia Giulia Pietro Savorgnan di Brazzà Airport","alternativeNames":
+      [
+        "Friuli-Venezia Giulia Pietro Savorgnan di Brazza Airport", "Friuli Venezia Giulia Pietro Savorgnan di Brazzà Airport", "Friuli Venezia Giulia Pietro Savorgnan di Brazza Airport",
+        "Friuli-Venezia Giulia Airport", "Friuli Venezia Giulia Airport", " Pietro Savorgnan di Brazzà Airport", "Friuli-Venezia Giulia Pietro Savorgnan di Brazza Airport",
+        "Pietro Savorgnan di Brazzà Airport", "Pietro Savorgnan di Brazza Airport",
+        "Trieste Ronchi dei Legionari Airport"
+      ], "priorNames":[],"country":"italy"
+    }
   ]
 }
