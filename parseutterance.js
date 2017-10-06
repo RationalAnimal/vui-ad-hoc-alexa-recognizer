@@ -30,7 +30,7 @@ var regexputilities = require("./regexputils.js");
 var defaultEquivalents = require("./equivalents/default.json");
 var misspellingEquivalents = require("./equivalents/misspellings.json");
 
-var _parseUtteranceIntoJson = function(utterance, intentSchema){
+var _parseUtteranceIntoJson = function(utterance, intentSchema, config){
   let returnValue = {};
   // First get the intent name
   let parsedIntent = _splitIntentName(utterance);
@@ -52,7 +52,7 @@ var _parseUtteranceIntoJson = function(utterance, intentSchema){
 
   let utteranceArray = utteranceString.split("");
   let parsingRange = {"start": 0, "end": -1};
-  returnValue.parsedUtterance = _parseUtteranceString(utteranceArray, parsingRange, returnValue.intentName, intentSchema);
+  returnValue.parsedUtterance = _parseUtteranceString(utteranceArray, parsingRange, returnValue.intentName, intentSchema, config);
   return returnValue;
 };
 
@@ -709,7 +709,7 @@ var _multiplyArrays = function(sourceTarget, additional){
 * Call to parse a portion of utteranceArray specified by parsingRange
 start and end, inclusively of both.
 */
-var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, intentSchema){
+var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, intentSchema, config){
   let scratch = "";
   let returnValue = [];
   for(let i = parsingRange.start; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i++){
@@ -722,7 +722,7 @@ var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, i
       scratch = "";
       // Handle anything that starts with a curly bracket - slot, options list, etc
       let curlyRange = {"start": i, "end": -1};
-      let curlyResult = _parseCurlyBrackets(utteranceArray, curlyRange, intentName, intentSchema);
+      let curlyResult = _parseCurlyBrackets(utteranceArray, curlyRange, intentName, intentSchema, config);
       //				console.log("curlyResult: ", curlyResult);
       if(typeof curlyResult !== "undefined" && Array.isArray(curlyResult)){
         for(let j = 0; j < curlyResult.length; j++){
@@ -1289,10 +1289,11 @@ var _findMultiWordEquivalents = function(words, previousMatches, dataSet){
  * @param parsingRange
  * @param intentName
  * @param intentSchema
+ * @param config
  * returns {}
  * @private
  */
-var _parseEquivalentText = function(utteranceArray, parsingRange){
+var _parseEquivalentText = function(utteranceArray, parsingRange, config){
   let error = {"error": "", "position": -1};
   if(utteranceArray[parsingRange.start] !== "{" || utteranceArray[parsingRange.start + 1] !== "~"){
     error.error = "parsing equivalent text doesn't start with {~";
@@ -1301,6 +1302,14 @@ var _parseEquivalentText = function(utteranceArray, parsingRange){
   }
   let accumulatedValue = "";
   //  defaultEquivalents
+  let equivalentsSets = [];
+  if(typeof config !== "undefined" && config !== null && typeof config.textEquivalents !== "undefined" && Array.isArray(config.textEquivalents) === true){
+    // load the config specified text equivalents
+  }
+  else {
+    equivalentsSets.push(defaultEquivalents);
+    equivalentsSets.push(misspellingEquivalents);
+  }
 
   let words = [];
   for(let i = parsingRange.start + 2; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
@@ -1309,7 +1318,7 @@ var _parseEquivalentText = function(utteranceArray, parsingRange){
       parsingRange.end = i;
       words.push(accumulatedValue);
       accumulatedValue = "";
-      let equivalentsReturnValue = _processParsedEquivalentsWords(words, [defaultEquivalents, misspellingEquivalents]);
+      let equivalentsReturnValue = _processParsedEquivalentsWords(words, equivalentsSets);
       return equivalentsReturnValue;
     }
     case ",":
@@ -1353,7 +1362,7 @@ The decision is made on whether : or | is encountered first. If neither is
 encountered before } and there is only one word then it's a slot without flags.
 Else it's an option list with just one option.
 */
-var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentName, intentSchema){
+var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentName, intentSchema, config){
   let error = {"error": "", "position": -1};
   if(utteranceArray[parsingRange.start] !== "{"){
     error.error = "parsing curly brackets doesn't start with {";
@@ -1362,7 +1371,7 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentName, int
   }
   if(utteranceArray[parsingRange.start + 1] === "~"){
     // this is a text equivalent
-    return _parseEquivalentText(utteranceArray, parsingRange);
+    return _parseEquivalentText(utteranceArray, parsingRange, config);
   }
   let accumulatedValue = "";
   for(let i = parsingRange.start + 1; i < (parsingRange.end < 0?utteranceArray.length:parsingRange.end + 1); i ++){
