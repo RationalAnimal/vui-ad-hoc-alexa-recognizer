@@ -9388,7 +9388,15 @@
     {"name":"Caserta-Grazzanise Carlo Romagnoli Airport","alternativeNames":["Caserta-Grazzanise Airport", "Caserta Grazzanise Airport", "Caserta-Grazzanise Carlo Romagnoli Airport"],"priorNames":[],"country":"italy"},
     {"name":"Naples-Capodichino Ugo Niutta Airport","alternativeNames":["Naples-Capodichino Airport", "Naples Capodichino Airport", "Ugo Niutta Airport"],"priorNames":[],"country":"italy"},
     {"name":"Salerno Costa d'Amalfi Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
-    {"name":"Bologna-Borgo Panigale Guglielmo Marconi Airport","alternativeNames":["Bologna-Borgo Panigale Airport", "Bologna Borgo Panigale Airport", "Guglielmo Marconi Airport"],"priorNames":[],"country":"italy"}
+    {"name":"Bologna-Borgo Panigale Guglielmo Marconi Airport","alternativeNames":["Bologna-Borgo Panigale Airport", "Bologna Borgo Panigale Airport", "Guglielmo Marconi Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Carpi Budrione Danilo Ascari Airport","alternativeNames":["Carpi Budrione Airport", "Danilo Ascari Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Cervia Air Force Base","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Ferrara Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Forlì Luigi Ridolfi Airport","alternativeNames":["Forlì Airport", "Forli Airport", "Luigi Ridolfi Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Lugo di Romagna Francesco Baracca Airport","alternativeNames":["Lugo di Romagna Airport", "Francesco Baracca Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Modena Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Parma Giuseppe Verdi Airport","alternativeNames":["Parma Airport", "Giuseppe Verdi Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Piacenza-San Damiano Gaetano Mazza Airport","alternativeNames":["Piacenza-San Damiano Airport", "Piacenza San Damiano Airport", "Gaetano Mazza Airport"],"priorNames":[],"country":"italy"}
 
   ]
 }
