@@ -9469,7 +9469,16 @@
     {"name":"Foligno Giorgio Franceschi Airport","alternativeNames":["Foligno Airport", "Giorgio Franceschi Airport"],"priorNames":[],"country":"italy"},
     {"name":"Perugia-Sant'Egidio Adamo Giuglietti Airport","alternativeNames":["Perugia Sant Egidio Adamo Giuglietti Airport", "Perugia-Sant'Egidio Airport", "Perugia Sant Egidio Airport", "Adamo Giuglietti Airport"],"priorNames":[],"country":"italy"},
     {"name":"Asiago Romeo Sartori Airport","alternativeNames":["Asiago Airport", "Romeo SartoriAirport"],"priorNames":[],"country":"italy"},
-    {"name":"Belluno Arturo dell'Oro Airport","alternativeNames":["Belluno Airport", "Arturo dell'Oro Airport", "Arturo dell Oro Airport"],"priorNames":[],"country":"italy"}
+    {"name":"Belluno Arturo dell'Oro Airport","alternativeNames":["Belluno Airport", "Arturo dell'Oro Airport", "Arturo dell Oro Airport"],"priorNames":[],"country":"italy"},
+
+    {"name":"Padua Gino Allegri Airport","alternativeNames":["Padua Airport", "Gino Allegri Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Treviso-Sant'Angelo Antonio Canova Airport","alternativeNames":["Treviso Sant Angelo Antonio Canova Airport", "Treviso-Sant'Angelo Airport", "Treviso Sant Angelo Airport", "Antonio Canova Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Treviso-Istrana Airport","alternativeNames":["Treviso Istrana Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Venice Marco Polo Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Venice-Lido Giovanni Nicelli Airport","alternativeNames":["Venice Lido Giovanni Nicelli Airport", "Venice-Lido Airport", "Venice Lido Airport", "Giovanni Nicelli Airport", "Venezia/Lido Airport", "Venezia Lido Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Verona-Villafranca Valerio Catullo Airport","alternativeNames":["Verona Villafranca Valerio Catullo Airport", "Verona-Villafranca Airport", "Verona Villafranca Airport", "Valerio Catullo Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Verona-Boscomantico Airport","alternativeNames":["Verona Boscomantico Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Vicenza Tommaso Dal Molin Airport","alternativeNames":["Vicenza Airport", "Tommaso Dal Molin Airport"],"priorNames":[],"country":"italy"}
 
 
 
