@@ -186,37 +186,38 @@ if(typeof interactionModel != "undefined"){
   file.end(function(){console.log("Result was saved to " + outputFileName);});
 }
 else {
-  var values = utilities.loadStringListFromFile(inputFileName);
+  var values = utilities.loadStringListFromFile(inputFileName, resolvedBaseDir);
+
   var parsedUtterances = [];
 
   let intentSchema;
-  try{
-    intentSchema = require(intentsFileName);
-  }
-  catch(e){
-    try{
-      intentSchema = require("./" + intentsFileName);
+  if(typeof intentsFileName !== "undefined"){
+    // compute actual intents file name when combined with base source directory
+    let resolvedIntentsFileName = utilities.resolveFileName(intentsFileName, resolvedBaseDir);
+
+    try {
+      intentSchema = require(resolvedIntentsFileName);
     }
-    catch(e2){
-      console.log("Unable to load IntentsSchema file.");
+    catch(e){
+      console.log("Unable to load Intents file.");
       usage();
       process.exit(1);
     }
   }
 
-  try{
-    var config = require(configFileName);
+  // compute actual config file name when combined with base source directory
+  let resolvedConfigFileName = utilities.resolveFileName(configFileName, resolvedBaseDir);
+  let config;
+
+  try {
+    config = require(resolvedConfigFileName);
   }
-  catch(e2){
-    try{
-      config = require("./" + configFileName);
-    }
-    catch(e2){
-      console.log("Unable to load Config file.");
-      usage();
-      process.exit(1);
-    }
+  catch(e){
+    console.log("Unable to load Configuration file.");
+    usage();
+    process.exit(1);
   }
+
   for(let i = 0; i < values.length; i ++){
     let result = parser.parseUtteranceIntoJson(values[i], intentSchema, config, resolvedBaseDir);
     parser.cleanupParsedUtteranceJson(result, intentSchema);
