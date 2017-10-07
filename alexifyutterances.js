@@ -34,6 +34,7 @@ var usage = function(){
   console.log("  --utterances UtterancesFileName specify input utterances file name.");
   console.log("  --intents IntentsSchemaFileName specify intent schema file name used for slot name validation.");
   console.log("  --config ConfigFileName specify config file name used text equivalents loading.");
+  console.log("  --sourcebase BaseSourceDirectory that is the base for the other file references on the command line or in the config file");
   console.log("  -o --output OutputFileName specify output utterances or interaction model file name.");
 };
 for(let i = 2; i < process.argv.length - 1; i += 2){
@@ -50,6 +51,14 @@ for(let i = 2; i < process.argv.length - 1; i += 2){
   else if(process.argv[i] == "--config"){
     var configFileName = process.argv[j];
   }
+  else if(process.argv[i] === "--sourcebase"){
+    if(j < process.argv.length) {
+      i++;
+      var baseSourceDirectory = process.argv[j];
+      var resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
+    }
+  }
+
   else if(process.argv[i] == "--interactionmodel"){
     var interactionModelFileName = process.argv[j];
   }
@@ -71,7 +80,7 @@ if(typeof interactionModelFileName != "undefined"){
   }
 }
 
-if((typeof interactionModelFileName === "undefined" && (typeof inputFileName === "undefined" || typeof intentsFileName === "undefined")) || typeof outputFileName === "undefined" || typeof configFileName === "undefined"){
+if((typeof interactionModelFileName === "undefined" && (typeof inputFileName === "undefined" || typeof intentsFileName === "undefined")) || typeof outputFileName === "undefined" || typeof configFileName === "undefined" || typeof resolvedBaseDir === "undefined"){
   usage();
   process.exit(1);
 }
@@ -195,9 +204,21 @@ else {
     }
   }
 
-
+  try{
+    var config = require(configFileName);
+  }
+  catch(e2){
+    try{
+      config = require("./" + configFileName);
+    }
+    catch(e2){
+      console.log("Unable to load Config file.");
+      usage();
+      process.exit(1);
+    }
+  }
   for(let i = 0; i < values.length; i ++){
-    let result = parser.parseUtteranceIntoJson(values[i], intentSchema);
+    let result = parser.parseUtteranceIntoJson(values[i], intentSchema, config, resolvedBaseDir);
     parser.cleanupParsedUtteranceJson(result, intentSchema);
     let unfoldedResultArray = parser.unfoldParsedJson(result, true);
 
