@@ -9520,7 +9520,14 @@
     {"name":"Scharnstein Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
     {"name":"Heliport Sanatorium Dr. Schenk","alternativeNames":["Heliport Sanatorium Dr Schenk", "Heliport Sanatorium Doctor Schenk"],"priorNames":[],"country":"austria"},
     {"name":"Schwaz Heliport","alternativeNames":[],"priorNames":[],"country":"austria"},
-    {"name":"Seitenstetten Airport","alternativeNames":[],"priorNames":[],"country":"austria"}
+    {"name":"Seitenstetten Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Spitzerberg Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Stockerau Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Leoben-Timmersdorf Airport","alternativeNames":["Leoben Timmersdorf Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Trausdorf Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Brumowski Air Base","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Lanzen-Turnau Airport","alternativeNames":["Lanzen Turnau Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Vienna International Airport","alternativeNames":["Schwechat Airport"],"priorNames":[],"country":"austria"}
 
 
 
