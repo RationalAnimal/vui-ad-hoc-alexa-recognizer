@@ -1,0 +1,24 @@
+{
+  "singleWordSynonyms":[
+    {
+      "words":["accept","except"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["accept","except"]}
+      ]
+    },
+    {
+      "words":["accessary", "accessory"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["accessary", "accessory"]}
+      ]
+    }
+  ],
+  "equivalentPhrases":[
+    {
+      "phrases":["I'll"],
+      "equivalents":[
+        {"fitRating":1, "values":["aisle", "I'll", "isle"]}
+      ]
+    }
+  ]
+}
