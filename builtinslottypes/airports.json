@@ -9448,7 +9448,14 @@
     {"name":"Oristano-Fenosu Airport","alternativeNames":["Oristano Fenosu Airport"],"priorNames":[],"country":"italy"},
     {"name":"Tortolì-Arbatax Airport","alternativeNames":["Tortoli-Arbatax Airport", "Tortolì Arbatax Airport", "Tortoli Arbatax Airport"],"priorNames":[],"country":"italy"},
     {"name":"Catania-Fontanarossa Vincenzo Bellini Airport","alternativeNames":["Catania Fontanarossa Vincenzo Bellini Airport", "Catania-Fontanarossa Airport", "Catania Fontanarossa Airport", "Vincenzo Bellini Airport"],"priorNames":[],"country":"italy"},
-    {"name":"Comiso Vincenzo Magliocco Airport","alternativeNames":["Comiso Airport", "Vincenzo Magliocco Airport"],"priorNames":[],"country":"italy"}
+    {"name":"Comiso Vincenzo Magliocco Airport","alternativeNames":["Comiso Airport", "Vincenzo Magliocco Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Lampedusa Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Palermo-Punta Raisi Falcone & Borsellino Airport","alternativeNames":["Palermo Punta Raisi Falcone and Borsellino Airport", "Palermo-Punta Raisi Airport", "Palermo Punta Raisi Airport", "Falcone & Borsellino Airport", "Falcone and Borsellino Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Palermo-Boccadifalco Emanuele Notarbartolo Airport","alternativeNames":["Palermo Boccadifalco Emanuele Notarbartolo Airport", "Palermo-Boccadifalco Airport", "Palermo Boccadifalco Airport", "Emanuele Notarbartolo Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Pantelleria Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Naval Air Station Sigonella","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Trapani-Birgi Vincenzo Florio Airport","alternativeNames":["Trapani Birgi Vincenzo Florio Airport", "Trapani-Birgi Airport", "Trapani Birgi Airport", "Vincenzo Florio Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Bolzano-Dolomiti Francesco Baracca Airport","alternativeNames":["Bolzano Dolomiti Francesco Baracca Airport", "Bolzano-Dolomiti Airport", "Bolzano Dolomiti Airport", "Francesco Baracca Airport"],"priorNames":[],"country":"italy"}
 
 
 
