@@ -131,6 +131,9 @@
 		},
 		{
 			"equivalentSetBuiltInName": "misspellings"
+		},
+		{
+			"equivalentSetSrcFilename": "./test/sampleEquivalentSet.json"
 		}
 	]
 }

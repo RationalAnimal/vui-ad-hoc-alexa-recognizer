@@ -1487,7 +1487,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     if(utterances[i].trim() === ""){
       continue;
     }
-    let result = parser.parseUtteranceIntoJson(utterances[i], intents, config);
+    let result = parser.parseUtteranceIntoJson(utterances[i], intents, config, resolvedBaseDir);
     parser.cleanupParsedUtteranceJson(result, intents);
 
     parser.addRegExps(result, intents, passThrougFunc, optimizations);
