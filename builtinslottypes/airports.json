@@ -9513,7 +9513,14 @@
     {"name":"Reutte-Höfen Airport","alternativeNames":["Reutte Höfen Airport", "Reutte-Hofen Airport", "Reutte Hofen Airport"],"priorNames":[],"country":"austria"},
     {"name":"Ried-Kirchheim Airport","alternativeNames":["Ried Kirchheim Airport"],"priorNames":[],"country":"austria"},
     {"name":"Salzburg Airport","alternativeNames":["W. A. Mozart Airport", "W A Mozart Airport", "Mozart Airport"],"priorNames":[],"country":"austria"},
-    {"name":"Sankt Georgen Airport","alternativeNames":[],"priorNames":[],"country":"austria"}
+    {"name":"Sankt Georgen Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Sankt Johann Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Sankt Johann in Tirol Heliport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Schärding-Suben Airport","alternativeNames":["Schärding Suben Airport", "Scharding-Suben Airport", "Scharding Suben Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Scharnstein Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Heliport Sanatorium Dr. Schenk","alternativeNames":["Heliport Sanatorium Dr Schenk", "Heliport Sanatorium Doctor Schenk"],"priorNames":[],"country":"austria"},
+    {"name":"Schwaz Heliport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Seitenstetten Airport","alternativeNames":[],"priorNames":[],"country":"austria"}
 
 
 
