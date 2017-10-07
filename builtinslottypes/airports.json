@@ -9527,7 +9527,15 @@
     {"name":"Trausdorf Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
     {"name":"Brumowski Air Base","alternativeNames":[],"priorNames":[],"country":"austria"},
     {"name":"Lanzen-Turnau Airport","alternativeNames":["Lanzen Turnau Airport"],"priorNames":[],"country":"austria"},
-    {"name":"Vienna International Airport","alternativeNames":["Schwechat Airport"],"priorNames":[],"country":"austria"}
+    {"name":"Vienna International Airport","alternativeNames":["Schwechat Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Völtendorf Airport","alternativeNames":["Voltendorf Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Weiz-Unterfladnitz Airport","alternativeNames":["Weiz Unterfladnitz Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Wels Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Wiener Neustadt East Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Wiener Neustadt West Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Wolfsberg Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Zell am See Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Zeltweg Air Base","alternativeNames":[],"priorNames":[],"country":"austria"}
 
 
 
