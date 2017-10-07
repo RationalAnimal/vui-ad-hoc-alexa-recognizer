@@ -9462,7 +9462,14 @@
     {"name":"Florence-Peretola Amerigo Vespucci Airport","alternativeNames":["Florence Peretola Amerigo Vespucci Airport", "Florence-Peretola Airport", "Florence Peretola Airport", "Amerigo Vespucci Airport"],"priorNames":[],"country":"italy"},
     {"name":"Grosseto Airport","alternativeNames":["Maremma Corrado Baccarini Airport", "Maremma Airport", "Corrado Baccarini Airport"],"priorNames":[],"country":"italy"},
     {"name":"Lucca-Tassignano Enrico Squaglia Airport","alternativeNames":["Lucca Tassignano Enrico Squaglia Airport", "Lucca-Tassignano Airport", "Lucca Tassignano Airport", "Enrico Squaglia Airport"],"priorNames":[],"country":"italy"},
-    {"name":"Marina di Campo Teseo Tesei Airport","alternativeNames":["Marina di Campo Airport", "Teseo Tesei Airport"],"priorNames":[],"country":"italy"}
+    {"name":"Marina di Campo Teseo Tesei Airport","alternativeNames":["Marina di Campo Airport", "Teseo Tesei Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Pisa-San Giusto Galileo Galilei Airport","alternativeNames":["Pisa San Giusto Galileo Galilei Airport", "Pisa-San Giusto Airport", "Pisa San Giusto Airport", "Galileo Galilei Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Pontedera Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Siena-Ampugnano Airport","alternativeNames":["Siena Ampugnano Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Foligno Giorgio Franceschi Airport","alternativeNames":["Foligno Airport", "Giorgio Franceschi Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Perugia-Sant'Egidio Adamo Giuglietti Airport","alternativeNames":["Perugia Sant Egidio Adamo Giuglietti Airport", "Perugia-Sant'Egidio Airport", "Perugia Sant Egidio Airport", "Adamo Giuglietti Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Asiago Romeo Sartori Airport","alternativeNames":["Asiago Airport", "Romeo SartoriAirport"],"priorNames":[],"country":"italy"},
+    {"name":"Belluno Arturo dell'Oro Airport","alternativeNames":["Belluno Airport", "Arturo dell'Oro Airport", "Arturo dell Oro Airport"],"priorNames":[],"country":"italy"}
 
 
 
