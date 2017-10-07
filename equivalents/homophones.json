@@ -32,6 +32,30 @@
         {"fitRating":1, "values":["ax", "axe"]},
         {"fitRating":0.85, "values":["acts"]}
       ]
+    },
+    {
+      "words":["ad","add"],
+      "synonyms":[
+        {"fitRating":1, "values":["ad","add"]}
+      ]
+    },
+    {
+      "words":["adds","adz","adze"],
+      "synonyms":[
+        {"fitRating":1, "values":["adds","adz","adze"]}
+      ]
+    },
+    {
+      "words":["adherence","adherents"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["adherence","adherents"]}
+      ]
+    },
+    {
+      "words":["adolescence","adolescents"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["adolescence","adolescents"]}
+      ]
     }
   ],
   "equivalentPhrases":[
