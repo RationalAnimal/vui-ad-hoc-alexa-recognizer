@@ -133,7 +133,7 @@
 			"equivalentSetBuiltInName": "misspellings"
 		},
 		{
-			"equivalentSetSrcFilename": "./test/sampleEquivalentSet.json"
+			"equivalentSetSrcFilename": "./sampleEquivalentSet.json"
 		}
 	]
 }

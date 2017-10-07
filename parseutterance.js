@@ -1312,7 +1312,8 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, config, resolv
         equivalentsSets.push(scratchEquivalent);
       }
       else if(typeof config.textEquivalents[i].equivalentSetSrcFilename === "string") {
-        equivalentsSets.push(utilities.resolveFileName(config.textEquivalents[i].equivalentSetSrcFilename, resolvedBaseDir));
+        let scratchEquivalent = require(utilities.resolveFileName(config.textEquivalents[i].equivalentSetSrcFilename, resolvedBaseDir));
+        equivalentsSets.push(scratchEquivalent);
       }
     }
   }
