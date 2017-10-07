@@ -9506,7 +9506,14 @@
     {"name":"Micheldorf Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
     {"name":"Niederöblarn Airport","alternativeNames":["Niederoblarn Airport"],"priorNames":[],"country":"austria"},
     {"name":"Nötsch im Gailtal Airport","alternativeNames":["Notsch im Gailtal Airport"],"priorNames":[],"country":"austria"},
-    {"name":"Ottenschlag Airport","alternativeNames":[],"priorNames":[],"country":"austria"}
+    {"name":"Ottenschlag Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Pinkafeld Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Punitz-Güssing Airport","alternativeNames":["Punitz Güssing Airport", "Punitz-Gussing Airport", "Punitz Gussing Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Retzer Land Heliport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Reutte-Höfen Airport","alternativeNames":["Reutte Höfen Airport", "Reutte-Hofen Airport", "Reutte Hofen Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Ried-Kirchheim Airport","alternativeNames":["Ried Kirchheim Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Salzburg Airport","alternativeNames":["W. A. Mozart Airport", "W A Mozart Airport", "Mozart Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Sankt Georgen Airport","alternativeNames":[],"priorNames":[],"country":"austria"}
 
 
 
