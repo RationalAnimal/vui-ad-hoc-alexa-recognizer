@@ -118,3 +118,4 @@ HiTimeIntent {~How are you can you tell me please what is the acceptable time to
 EquivalentsIntent {~How are you today my friend can you please tell me what I want today}
 MisspelledIntent {~Absence makes the heart grow stronger}
 MisspelledIntent {~absence acceptable accidentally accommodate achieve acknowledge acquaintance allegiance their}
+HalfDozenIntent {~I would like six donuts please}

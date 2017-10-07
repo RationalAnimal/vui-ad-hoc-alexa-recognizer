@@ -728,6 +728,10 @@
     {
       "intent": "MisspelledIntent",
       "slots": []
+    },
+    {
+      "intent": "HalfDozenIntent",
+      "slots": []
     }
 
 
