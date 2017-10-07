@@ -9455,7 +9455,14 @@
     {"name":"Pantelleria Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
     {"name":"Naval Air Station Sigonella","alternativeNames":[],"priorNames":[],"country":"italy"},
     {"name":"Trapani-Birgi Vincenzo Florio Airport","alternativeNames":["Trapani Birgi Vincenzo Florio Airport", "Trapani-Birgi Airport", "Trapani Birgi Airport", "Vincenzo Florio Airport"],"priorNames":[],"country":"italy"},
-    {"name":"Bolzano-Dolomiti Francesco Baracca Airport","alternativeNames":["Bolzano Dolomiti Francesco Baracca Airport", "Bolzano-Dolomiti Airport", "Bolzano Dolomiti Airport", "Francesco Baracca Airport"],"priorNames":[],"country":"italy"}
+    {"name":"Bolzano-Dolomiti Francesco Baracca Airport","alternativeNames":["Bolzano Dolomiti Francesco Baracca Airport", "Bolzano-Dolomiti Airport", "Bolzano Dolomiti Airport", "Francesco Baracca Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Toblach Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
+    {"name":"Trento Gianni Caproni Airport","alternativeNames":["Trento Airport", "Gianni Caproni Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Arezzo-Molin Bianco Airport","alternativeNames":["Arezzo Molin Bianco Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Florence-Peretola Amerigo Vespucci Airport","alternativeNames":["Florence Peretola Amerigo Vespucci Airport", "Florence-Peretola Airport", "Florence Peretola Airport", "Amerigo Vespucci Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Grosseto Airport","alternativeNames":["Maremma Corrado Baccarini Airport", "Maremma Airport", "Corrado Baccarini Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Lucca-Tassignano Enrico Squaglia Airport","alternativeNames":["Lucca Tassignano Enrico Squaglia Airport", "Lucca-Tassignano Airport", "Lucca Tassignano Airport", "Enrico Squaglia Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Marina di Campo Teseo Tesei Airport","alternativeNames":["Marina di Campo Airport", "Teseo Tesei Airport"],"priorNames":[],"country":"italy"}
 
 
 
