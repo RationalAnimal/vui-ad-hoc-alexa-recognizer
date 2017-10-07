@@ -9470,7 +9470,6 @@
     {"name":"Perugia-Sant'Egidio Adamo Giuglietti Airport","alternativeNames":["Perugia Sant Egidio Adamo Giuglietti Airport", "Perugia-Sant'Egidio Airport", "Perugia Sant Egidio Airport", "Adamo Giuglietti Airport"],"priorNames":[],"country":"italy"},
     {"name":"Asiago Romeo Sartori Airport","alternativeNames":["Asiago Airport", "Romeo SartoriAirport"],"priorNames":[],"country":"italy"},
     {"name":"Belluno Arturo dell'Oro Airport","alternativeNames":["Belluno Airport", "Arturo dell'Oro Airport", "Arturo dell Oro Airport"],"priorNames":[],"country":"italy"},
-
     {"name":"Padua Gino Allegri Airport","alternativeNames":["Padua Airport", "Gino Allegri Airport"],"priorNames":[],"country":"italy"},
     {"name":"Treviso-Sant'Angelo Antonio Canova Airport","alternativeNames":["Treviso Sant Angelo Antonio Canova Airport", "Treviso-Sant'Angelo Airport", "Treviso Sant Angelo Airport", "Antonio Canova Airport"],"priorNames":[],"country":"italy"},
     {"name":"Treviso-Istrana Airport","alternativeNames":["Treviso Istrana Airport"],"priorNames":[],"country":"italy"},
@@ -9485,7 +9484,15 @@
     {"name":"Hohenems-Dornbirn Airport","alternativeNames":["Hohenems Dornbirn Airport"],"priorNames":[],"country":"austria"},
     {"name":"Eferding Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
     {"name":"Feldkirchen-Ossiacher See Airport","alternativeNames":["Feldkirchen Ossiacher See Airport"],"priorNames":[],"country":"austria"},
-    {"name":"Glainach-Ferlach Airport","alternativeNames":["Glainach Ferlach Airport"],"priorNames":[],"country":"austria"}
+    {"name":"Glainach-Ferlach Airport","alternativeNames":["Glainach Ferlach Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Freistadt Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Friesach-Hirth Airport","alternativeNames":["Friesach Hirth Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Fürstenfeld Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Gmunden Laarkirchen Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Graz Airport","alternativeNames":["Thalerhof Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Hofkirchen Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Innsbruck Airport","alternativeNames":["Kranebitten Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Kapfenberg Airport","alternativeNames":[],"priorNames":[],"country":"austria"}
 
 
 
