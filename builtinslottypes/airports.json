@@ -9492,7 +9492,14 @@
     {"name":"Graz Airport","alternativeNames":["Thalerhof Airport"],"priorNames":[],"country":"austria"},
     {"name":"Hofkirchen Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
     {"name":"Innsbruck Airport","alternativeNames":["Kranebitten Airport"],"priorNames":[],"country":"austria"},
-    {"name":"Kapfenberg Airport","alternativeNames":[],"priorNames":[],"country":"austria"}
+    {"name":"Kapfenberg Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Klagenfurt Airport","alternativeNames":["Woerthersee Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Krems-Langenlois Airport","alternativeNames":["Krems Langenlois Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Kufstein-Langkampfen Airport","alternativeNames":["Kufstein Langkampfen Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Leopoldsdorf im Marchfelde Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Lienz-Nikolsdorf Airport","alternativeNames":["Lienz Nikolsdorf Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Linz Airport","alternativeNames":["Blue Danube Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Linz-East Airport","alternativeNames":["Linz East Airport"],"priorNames":[],"country":"austria"}
 
 
 
