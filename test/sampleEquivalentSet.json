@@ -1,0 +1,24 @@
+{
+  "singleWordSynonyms":[
+    {
+      "words":["six"],
+      "synonyms":[
+        {"fitRating":1, "values":["half a dozen"]}
+      ]
+    },
+    {
+      "words":["about"],
+      "synonyms":[
+        {"fitRating":0.99, "values":["approximately",""]}
+      ]
+    }
+  ],
+  "equivalentPhrases":[
+    {
+      "phrases":["half a dozen"],
+      "equivalents":[
+        {"fitRating":1, "values":["six"]}
+      ]
+    }
+  ]
+}

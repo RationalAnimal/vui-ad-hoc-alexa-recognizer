@@ -1312,7 +1312,7 @@ var _parseEquivalentText = function(utteranceArray, parsingRange, config, resolv
         equivalentsSets.push(scratchEquivalent);
       }
       else if(typeof config.textEquivalents[i].equivalentSetSrcFilename === "string") {
-        return utilities.resolveFileName(config.textEquivalents[i].equivalentSetSrcFilename, resolvedBaseDir);
+        equivalentsSets.push(utilities.resolveFileName(config.textEquivalents[i].equivalentSetSrcFilename, resolvedBaseDir));
       }
     }
   }
