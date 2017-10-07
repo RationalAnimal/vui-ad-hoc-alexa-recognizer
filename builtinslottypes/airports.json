@@ -9478,7 +9478,14 @@
     {"name":"Venice-Lido Giovanni Nicelli Airport","alternativeNames":["Venice Lido Giovanni Nicelli Airport", "Venice-Lido Airport", "Venice Lido Airport", "Giovanni Nicelli Airport", "Venezia/Lido Airport", "Venezia Lido Airport"],"priorNames":[],"country":"italy"},
     {"name":"Verona-Villafranca Valerio Catullo Airport","alternativeNames":["Verona Villafranca Valerio Catullo Airport", "Verona-Villafranca Airport", "Verona Villafranca Airport", "Valerio Catullo Airport"],"priorNames":[],"country":"italy"},
     {"name":"Verona-Boscomantico Airport","alternativeNames":["Verona Boscomantico Airport"],"priorNames":[],"country":"italy"},
-    {"name":"Vicenza Tommaso Dal Molin Airport","alternativeNames":["Vicenza Airport", "Tommaso Dal Molin Airport"],"priorNames":[],"country":"italy"}
+    {"name":"Vicenza Tommaso Dal Molin Airport","alternativeNames":["Vicenza Airport", "Tommaso Dal Molin Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Military Airport Aigen im Ennstal","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Bad Vöslau Airport","alternativeNames":["Bad Voslau Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Dobersberg Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Hohenems-Dornbirn Airport","alternativeNames":["Hohenems Dornbirn Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Eferding Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Feldkirchen-Ossiacher See Airport","alternativeNames":["Feldkirchen Ossiacher See Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Glainach-Ferlach Airport","alternativeNames":["Glainach Ferlach Airport"],"priorNames":[],"country":"austria"}
 
 
 
