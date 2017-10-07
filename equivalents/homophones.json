@@ -1,4 +1,6 @@
 {
+  "attribution" : "these values were partially taken from https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Homophones, content was modified to make it suitable in text matching software and some values have been removed and/or renamed and/or added",
+  "license": "This file is released under Creative Commons Attribution-ShareAlike license:  http://creativecommons.org/licenses/by-sa/3.0/",
   "singleWordSynonyms":[
     {
       "words":["accept","except"],
@@ -10,6 +12,25 @@
       "words":["accessary", "accessory"],
       "synonyms":[
         {"fitRating":0.95, "values":["accessary", "accessory"]}
+      ]
+    },
+    {
+      "words":["acclamation","acclimation"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["acclamation","acclimation"]}
+      ]
+    },
+    {
+      "words":["acts"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["ax", "axe"]}
+      ]
+    },
+    {
+      "words":["ax", "axe"],
+      "synonyms":[
+        {"fitRating":1, "values":["ax", "axe"]},
+        {"fitRating":0.85, "values":["acts"]}
       ]
     }
   ],
