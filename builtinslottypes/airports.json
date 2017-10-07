@@ -9441,7 +9441,14 @@
     {"name":"Cuneo-Levaldigi Turin Olympics Airport","alternativeNames":["Cuneo Levaldigi Turin Olympics Airport", "Cuneo Levaldigi Airport", "Cuneo-Levaldigi Airport", "Turin Olympics Airport"],"priorNames":[],"country":"italy"},
     {"name":"Turin-Caselle Sandro Pertini Airport","alternativeNames":["Turin Caselle Sandro Pertini Airport", "Turin-Caselle Airport", "Turin Caselle Airport", "Sandro Pertini Airport"],"priorNames":[],"country":"italy"},
     {"name":"Turin-Aeritalia Edoardo Agnelli Airport","alternativeNames":["Turin Aeritalia Edoardo Agnelli Airport", "Turin-Aeritalia Airport", "Turin Aeritalia Airport", "Edoardo Agnelli Airport"],"priorNames":[],"country":"italy"},
-    {"name":"Alghero-Fertilia Riviera del Corallo Airport","alternativeNames":["Alghero Fertilia Riviera del Corallo Airport", "Alghero-Fertilia Airport", "Alghero Fertilia Airport", "Riviera del Corallo Airport"],"priorNames":[],"country":"italy"}
+    {"name":"Alghero-Fertilia Riviera del Corallo Airport","alternativeNames":["Alghero Fertilia Riviera del Corallo Airport", "Alghero-Fertilia Airport", "Alghero Fertilia Airport", "Riviera del Corallo Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Cagliari-Elmas Mario Mameli Airport","alternativeNames":["Cagliari Elmas Mario Mameli Airport", "Cagliari-Elmas Airport", "Cagliari Elmas Airport", "Mario Mameli Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Decimomannu Air Base","alternativeNames":["G. Farina Airport", "G Farina Airport", "Farina Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Olbia - Costa Smeralda Airport","alternativeNames":["Olbia Costa Smeralda Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Oristano-Fenosu Airport","alternativeNames":["Oristano Fenosu Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Tortolì-Arbatax Airport","alternativeNames":["Tortoli-Arbatax Airport", "Tortolì Arbatax Airport", "Tortoli Arbatax Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Catania-Fontanarossa Vincenzo Bellini Airport","alternativeNames":["Catania Fontanarossa Vincenzo Bellini Airport", "Catania-Fontanarossa Airport", "Catania Fontanarossa Airport", "Vincenzo Bellini Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Comiso Vincenzo Magliocco Airport","alternativeNames":["Comiso Airport", "Vincenzo Magliocco Airport"],"priorNames":[],"country":"italy"}
 
 
 
