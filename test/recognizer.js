@@ -4423,6 +4423,15 @@ describe("utterance parser", function() {
         });
     });
 
+    it("verify that an intent with custom set of equivalents will parse correctly", function() {
+      let result = recognizer.Recognizer.matchText("I would like six donuts");
+      expect(result).to.eql(
+        {
+          "name": "HalfDozenIntent",
+          "slots": {}
+        });
+    });
+
     /*
         it("verify simple utterance with text equivalents parses and cleans up correctly and then unfolds correctly", function() {
           let intentSchema = require("./intents.json");
