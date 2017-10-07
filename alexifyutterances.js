@@ -33,6 +33,7 @@ var usage = function(){
   console.log("  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.");
   console.log("  --utterances UtterancesFileName specify input utterances file name.");
   console.log("  --intents IntentsSchemaFileName specify intent schema file name used for slot name validation.");
+  console.log("  --config ConfigFileName specify config file name used text equivalents loading.");
   console.log("  -o --output OutputFileName specify output utterances or interaction model file name.");
 };
 for(let i = 2; i < process.argv.length - 1; i += 2){
@@ -45,6 +46,9 @@ for(let i = 2; i < process.argv.length - 1; i += 2){
   }
   else if(process.argv[i] == "--intents"){
     var intentsFileName = process.argv[j];
+  }
+  else if(process.argv[i] == "--config"){
+    var configFileName = process.argv[j];
   }
   else if(process.argv[i] == "--interactionmodel"){
     var interactionModelFileName = process.argv[j];
@@ -67,12 +71,12 @@ if(typeof interactionModelFileName != "undefined"){
   }
 }
 
-if((typeof interactionModelFileName == "undefined" && (typeof inputFileName == "undefined" || typeof intentsFileName == "undefined")) || typeof outputFileName == "undefined"){
+if((typeof interactionModelFileName === "undefined" && (typeof inputFileName === "undefined" || typeof intentsFileName === "undefined")) || typeof outputFileName === "undefined" || typeof configFileName === "undefined"){
   usage();
   process.exit(1);
 }
 
-if(typeof interactionModelFileName != "undefined" && (typeof inputFileName != "undefined" || typeof intentsFileName != "undefined")){
+if(typeof interactionModelFileName !== "undefined" && (typeof inputFileName !== "undefined" || typeof intentsFileName !== "undefined")){
   console.log("Must use either --interactionmodel argument OR the pair of --intents and --input, but NOT both.");
   usage();
   process.exit(1);
@@ -91,7 +95,7 @@ var cleanupInteractionModel = function(interactionModel){
     let inputIntent = intents[i];
     let outputIntent = {"name":inputIntent.name, "samples":[], "slots":[]};
     let oldStyleIntent = {"intent":inputIntent.name, "slots":[]};
-    for(let j = 0; typeof inputIntent.slots != "undefined" && j < inputIntent.slots.length; j ++){
+    for(let j = 0; typeof inputIntent.slots !== "undefined" && j < inputIntent.slots.length; j ++){
       oldStyleIntent.slots.push({"name":inputIntent.slots[j].name, "type":inputIntent.slots[j].type});
     }
     let oldStyleIntentSchema = {"intents":[oldStyleIntent]};
@@ -190,6 +194,7 @@ else {
       process.exit(1);
     }
   }
+
 
   for(let i = 0; i < values.length; i ++){
     let result = parser.parseUtteranceIntoJson(values[i], intentSchema);
