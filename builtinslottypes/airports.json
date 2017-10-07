@@ -9427,7 +9427,6 @@
     {"name":"Bergamo-Orio al Serio Il Caravaggio Airport","alternativeNames":["Bergamo-Orio al Serio Airport", "Bergamo Orio al Serio Airport", "Bergamo Orio al Serio Il Caravaggio Airport", "Il Caravaggio Airport"],"priorNames":[],"country":"italy"},
     {"name":"Brescia-Montichiari Gabriele D'Annunzio Airport","alternativeNames":["Brescia Montichiari Gabriele D'Annunzio Airport", "Brescia-Montichiari Airport", "Brescia Montichiari Airport", "Gabriele D'Annunzio Airport"],"priorNames":[],"country":"italy"},
     {"name":"Ghedi Air Base","alternativeNames":[],"priorNames":[],"country":"italy"},
-
     {"name":"Migliaro Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
     {"name":"Milan-Malpensa Airport","alternativeNames":["Milan Malpensa Airport"],"priorNames":[],"country":"italy"},
     {"name":"Milan-Linate Enrico Forlanini Airport","alternativeNames":["Milan Linate Enrico Forlanini Airport", "Milan-Linate Airport", "Milan Linate Airport", "Enrico Forlanini Airport"],"priorNames":[],"country":"italy"},
@@ -9435,7 +9434,15 @@
     {"name":"Varese-Venegono Airport","alternativeNames":["Varese Venegono Airport"],"priorNames":[],"country":"italy"},
     {"name":"Vergiate Airport","alternativeNames":[],"priorNames":[],"country":"italy"},
     {"name":"Voghera-Rivanazzano Airport","alternativeNames":["Voghera Rivanazzano Airport"],"priorNames":[],"country":"italy"},
-    {"name":"Ancona-Falconara Raffaello Sanzio Airport","alternativeNames":["Ancona Falconara Raffaello Sanzio Airport", "Ancona-Falconara Airport", "Ancona Falconara Airport", "Raffaello Sanzio Airport"],"priorNames":[],"country":"italy"}
+    {"name":"Ancona-Falconara Raffaello Sanzio Airport","alternativeNames":["Ancona Falconara Raffaello Sanzio Airport", "Ancona-Falconara Airport", "Ancona Falconara Airport", "Raffaello Sanzio Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Fano Enzo Omiccioli Airport","alternativeNames":["Fano  Airport", "Enzo Omiccioli Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Biella-Cerrione Airport","alternativeNames":["Biella Cerrione Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Cameri Natale & Silvio Palli Airport","alternativeNames":["Cameri Natale and Silvio Palli Airport", "Cameri  Airport", "Natale & Silvio Palli Airport", "Natale and Silvio Palli Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Cuneo-Levaldigi Turin Olympics Airport","alternativeNames":["Cuneo Levaldigi Turin Olympics Airport", "Cuneo Levaldigi Airport", "Cuneo-Levaldigi Airport", "Turin Olympics Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Turin-Caselle Sandro Pertini Airport","alternativeNames":["Turin Caselle Sandro Pertini Airport", "Turin-Caselle Airport", "Turin Caselle Airport", "Sandro Pertini Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Turin-Aeritalia Edoardo Agnelli Airport","alternativeNames":["Turin Aeritalia Edoardo Agnelli Airport", "Turin-Aeritalia Airport", "Turin Aeritalia Airport", "Edoardo Agnelli Airport"],"priorNames":[],"country":"italy"},
+    {"name":"Alghero-Fertilia Riviera del Corallo Airport","alternativeNames":["Alghero Fertilia Riviera del Corallo Airport", "Alghero-Fertilia Airport", "Alghero Fertilia Airport", "Riviera del Corallo Airport"],"priorNames":[],"country":"italy"}
+
 
 
   ]
