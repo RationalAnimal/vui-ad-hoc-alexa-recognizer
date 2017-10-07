@@ -9499,7 +9499,14 @@
     {"name":"Leopoldsdorf im Marchfelde Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
     {"name":"Lienz-Nikolsdorf Airport","alternativeNames":["Lienz Nikolsdorf Airport"],"priorNames":[],"country":"austria"},
     {"name":"Linz Airport","alternativeNames":["Blue Danube Airport"],"priorNames":[],"country":"austria"},
-    {"name":"Linz-East Airport","alternativeNames":["Linz East Airport"],"priorNames":[],"country":"austria"}
+    {"name":"Linz-East Airport","alternativeNames":["Linz East Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Mariazell Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Mauterndorf Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Mayerhofen Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Micheldorf Airport","alternativeNames":[],"priorNames":[],"country":"austria"},
+    {"name":"Niederöblarn Airport","alternativeNames":["Niederoblarn Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Nötsch im Gailtal Airport","alternativeNames":["Notsch im Gailtal Airport"],"priorNames":[],"country":"austria"},
+    {"name":"Ottenschlag Airport","alternativeNames":[],"priorNames":[],"country":"austria"}
 
 
 
