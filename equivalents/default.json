@@ -1,7 +1,7 @@
 {
   "singleWordSynonyms":[
     {
-      "words":["want","wish", "like", "would like", "need"],
+      "words":["want","wish", "like", "need"],
       "synonyms":[
         {"fitRating":1, "values":["want", "wish", "like", "would like", "need"]},
         {"fitRating":0.9, "values":["prefer"]}
@@ -28,6 +28,13 @@
       "equivalents":[
         {"fitRating":1, "values":["how are you", "how are you doing"]},
         {"fitRating":0.99, "values":["hi", "hello", "good morning", "good day", "good evening", "good night", "whats up", "hey"]}
+      ]
+    },
+    {
+      "phrases":["would like"],
+      "equivalents":[
+        {"fitRating":1, "values":["want", "wish", "like", "would like", "need"]},
+        {"fitRating":0.9, "values":["prefer"]}
       ]
     }
   ]
