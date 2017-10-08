@@ -40,9 +40,9 @@
       ]
     },
     {
-      "words":["adds","adz","adze"],
+      "words":["adds","adz","adze","ads"],
       "synonyms":[
-        {"fitRating":1, "values":["adds","adz","adze"]}
+        {"fitRating":1, "values":["adds","adz","adze","ads"]}
       ]
     },
     {
@@ -88,9 +88,9 @@
       ]
     },
     {
-      "words":["air","ere","heir"],
+      "words":["air","ere","heir", "are", "err" ],
       "synonyms":[
-        {"fitRating":1, "values":["air","ere","heir"]}
+        {"fitRating":1, "values":["air","ere","heir", "are", "e'er", "err"]}
       ]
     },
     {
@@ -182,9 +182,33 @@
       "synonyms":[
         {"fitRating":0.95, "values":["aural","oral"]}
       ]
+    },
+    {
+      "words":["away","aweigh"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["away","aweigh"]}
+      ]
+    },
+    {
+      "words":["awe","oar","or","ore"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["awe","oar","or","ore"]}
+      ]
+    },
+    {
+      "words":["axel","axil","axle"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["axel","axil","axle"]}
+      ]
     }
   ],
   "equivalentPhrases":[
+    {
+      "phrases":["e'er"],
+      "equivalents":[
+        {"fitRating":1, "values":["air","ere","heir", "are", "e'er", "err"]}
+      ]
+    },
     {
       "phrases":["I'll"],
       "equivalents":[
