@@ -218,6 +218,24 @@
       "synonyms":[
         {"fitRating":1, "values":["bail","bale"]}
       ]
+    },
+    {
+      "words":["bait","bate"],
+      "synonyms":[
+        {"fitRating":1, "values":["bait","bate"]}
+      ]
+    },
+    {
+      "words":["baize","bays"],
+      "synonyms":[
+        {"fitRating":1, "values":["baize","bays"]}
+      ]
+    },
+    {
+      "words":["bald","balled","bawled"],
+      "synonyms":[
+        {"fitRating":1, "values":["bald","balled","bawled"]}
+      ]
     }
   ],
   "equivalentPhrases":[
