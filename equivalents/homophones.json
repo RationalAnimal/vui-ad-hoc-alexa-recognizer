@@ -347,7 +347,6 @@
         {"fitRating":0.95, "values":["beat","beet"]}
       ]
     },
-
     {
       "words":["beer","bier"],
       "synonyms":[
@@ -364,6 +363,24 @@
       "words":["berry","bury"],
       "synonyms":[
         {"fitRating":0.9, "values":["berry","bury"]}
+      ]
+    },
+    {
+      "words":["berth","birth"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["berth","birth"]}
+      ]
+    },
+    {
+      "words":["better","bettor"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["better","bettor"]}
+      ]
+    },
+    {
+      "words":["bight","bite","byte"],
+      "synonyms":[
+        {"fitRating":1, "values":["bight","bite","byte"]}
       ]
     }
 
