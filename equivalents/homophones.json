@@ -290,6 +290,24 @@
       "synonyms":[
         {"fitRating":0.9, "values":["bases","basis","basses"]}
       ]
+    },
+    {
+      "words":["bay","bey"],
+      "synonyms":[
+        {"fitRating":1, "values":["bay","bey"]}
+      ]
+    },
+    {
+      "words":["bazaar","bizarre"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["bazaar","bizarre"]}
+      ]
+    },
+    {
+      "words":["be","bee"],
+      "synonyms":[
+        {"fitRating":1, "values":["be","bee"]}
+      ]
     }
   ],
   "equivalentPhrases":[
