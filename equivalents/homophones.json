@@ -382,7 +382,27 @@
       "synonyms":[
         {"fitRating":1, "values":["bight","bite","byte"]}
       ]
+    },
+    {
+      "words":["billed","build"],
+      "synonyms":[
+        {"fitRating":1, "values":["billed","build"]}
+      ]
+    },
+    {
+      "words":["bird","burred"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["bird","burred"]}
+      ]
+    },
+    {
+      "words":["bitten", "bittern"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["bitten", "bittern"]}
+      ]
     }
+
+
 
   ],
   "equivalentPhrases":[
