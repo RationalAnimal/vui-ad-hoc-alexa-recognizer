@@ -200,6 +200,24 @@
       "synonyms":[
         {"fitRating":0.95, "values":["axel","axil","axle"]}
       ]
+    },
+    {
+      "words":["aye","eye","I"],
+      "synonyms":[
+        {"fitRating":1, "values":["aye","eye","I"]}
+      ]
+    },
+    {
+      "words":["bade","bayed"],
+      "synonyms":[
+        {"fitRating":1, "values":["bade","bayed"]}
+      ]
+    },
+    {
+      "words":["bail","bale"],
+      "synonyms":[
+        {"fitRating":1, "values":["bail","bale"]}
+      ]
     }
   ],
   "equivalentPhrases":[
