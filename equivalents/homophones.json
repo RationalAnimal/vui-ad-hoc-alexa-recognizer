@@ -70,9 +70,21 @@
       ]
     },
     {
-      "words":["affect","effect"],
+      "words":["aid","aide"],
       "synonyms":[
-        {"fitRating":0.85, "values":["affect","effect"]}
+        {"fitRating":1, "values":["aid","aide"]}
+      ]
+    },
+    {
+      "words":["ail","ale"],
+      "synonyms":[
+        {"fitRating":1, "values":["ail","ale"]}
+      ]
+    },
+    {
+      "words":["air","ere","heir"],
+      "synonyms":[
+        {"fitRating":1, "values":["air","ere","heir"]}
       ]
     }
   ],
