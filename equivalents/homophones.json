@@ -76,9 +76,9 @@
       ]
     },
     {
-      "words":["aid","aide"],
+      "words":["aid","aide","ade"],
       "synonyms":[
-        {"fitRating":1, "values":["aid","aide"]}
+        {"fitRating":1, "values":["aid","aide","ade"]}
       ]
     },
     {
@@ -97,6 +97,12 @@
       "words":["aisle", "isle"],
       "synonyms":[
         {"fitRating":1, "values":["aisle", "I'll", "isle"]}
+      ]
+    },
+    {
+      "words":["ait","ate","eight"],
+      "synonyms":[
+        {"fitRating":1, "values":["ait","ate","eight"]}
       ]
     },
     {
@@ -145,6 +151,18 @@
       "words":["are","our"],
       "synonyms":[
         {"fitRating":0.7, "values":["are","our"]}
+      ]
+    },
+    {
+      "words":["aren't","aunt"],
+      "synonyms":[
+        {"fitRating":0.75, "values":["aren't","aunt"]}
+      ]
+    },
+    {
+      "words":["ascent","assent"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["ascent","assent"]}
       ]
     }
   ],
