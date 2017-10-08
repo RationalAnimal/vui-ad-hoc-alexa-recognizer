@@ -110,6 +110,24 @@
       "synonyms":[
         {"fitRating":0.9, "values":["allowed","aloud"]}
       ]
+    },
+    {
+      "words":["allude","elude"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["allude","elude"]}
+      ]
+    },
+    {
+      "words":["alms","arms"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["alms","arms"]}
+      ]
+    },
+    {
+      "words":["altar","alter"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["altar","alter"]}
+      ]
     }
   ],
   "equivalentPhrases":[
