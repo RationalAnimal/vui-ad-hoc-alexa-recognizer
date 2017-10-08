@@ -236,6 +236,24 @@
       "synonyms":[
         {"fitRating":1, "values":["bald","balled","bawled"]}
       ]
+    },
+    {
+      "words":["ball","bawl"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["ball","bawl"]}
+      ]
+    },
+    {
+      "words":["band","banned"],
+      "synonyms":[
+        {"fitRating":1, "values":["band","banned"]}
+      ]
+    },
+    {
+      "words":["bard","barred"],
+      "synonyms":[
+        {"fitRating":1, "values":["bard","barred"]}
+      ]
     }
   ],
   "equivalentPhrases":[
