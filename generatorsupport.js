@@ -1783,18 +1783,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
       // First, loop through all the bundles and load all the resolved file names so we don't have to deal with
       // that logic later.
       for(let i = 0; i < config.mixIns.bundles.length; i++){
-        if(typeof config.mixIns.bundles[i].mixInBuiltInName === "string"){
-          config.mixIns.bundles[i].resolvedFileName = "./builtinmixins/" + config.mixIns[i].mixInBuiltInName + ".js";
-        }
-        else if(typeof config.mixIns.bundles[i].mixInSrcFilename === "string"){
-          // TODO create a function similar to transforms to resolve the file name
-          config.mixIns.bundles[i].resolvedFileName = config.mixIns[i].mixInSrcFileName;
-        }
-        else {
-          // Invalid config - no mix in executable specified.
-          // TODO throw error
-          continue;
-        }
+        config.mixIns.bundles[i].resolvedFileNames = _getMixInSrcFilename(config, config.mixIns.bundles[i].bundleName, resolvedBaseDir);
       }
     }
     /*
@@ -1821,25 +1810,22 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
   return recognizerSet;
 };
 
-var _getMixInSrcFilename = function(config, mixInName, resolvedBaseDir){// eslint-disable-line no-unused-vars
-  if(typeof config.mixIns !== "undefined" && Array.isArray(config.mixIns)){
-    for(let i = 0; i < config.mixIns.length; i++){
-      let currentMixIn = config.mixIns[i];
-      if(currentMixIn.name === mixInName){
-        if(typeof currentMixIn.mixInBuiltInName !== "undefined" && currentMixIn.mixInBuiltInName !== null){
-          if(typeof currentMixIn.mixInBuiltInName === "string"){
-            return "./builtinmixins/" + currentMixIn.mixInBuiltInName + ".js";
-          }
-          else if(Array.isArray(currentMixIn.mixInBuiltInName)){
-            let returnValue = [];
-            for(let j = 0; j < currentMixIn.mixInBuiltInName.length; j++){
-              returnValue.push("./builtinmixins/" + currentMixIn.mixInBuiltInName[j] + ".js");
+var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBaseDir){// eslint-disable-line no-unused-vars
+  if(typeof config.mixIns !== "undefined" && typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles)){
+    for(let i = 0; i < config.mixIns.bundles.length; i++){
+      let currentMixIn = config.mixIns.bundles[i];
+      if(currentMixIn.bundleName === mixInBundleName){
+        let returnValue = [];
+        for(let j = 0; j < currentMixIn.mixInCode.length; j ++){
+          if(typeof currentMixIn.mixInCode[j].mixInBuiltInName !== "undefined" && currentMixIn.mixInCode[j].mixInBuiltInName !== null){
+            if(typeof currentMixIn.mixInCode[j].mixInBuiltInName === "string"){
+              returnValue.push("./builtinmixins/" + currentMixIn.mixInCode[j].mixInBuiltInName + ".js");
             }
-            return returnValue;
-          }
-          else {
-            // An error in configuration?
-            return;
+            else {
+              // An error in configuration?
+              // TODO throw an error?
+              return;
+            }
           }
         }
       }

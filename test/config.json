@@ -107,7 +107,11 @@
 		"bundles": [
 			{
 				"bundleName": "loggingMixIn",
-				"mixInBuiltInName": ["noop"],
+				"mixInCode": [
+					{
+						"mixInBuiltInName": "noop"
+					}
+				],
 				"arguments": [
 					{
 						"log": true
@@ -116,7 +120,11 @@
 			},
 			{
 				"bundleName": "ageSearchMixIn",
-				"mixInBuiltInName": ["findRegEx"],
+				"mixInCode": [
+					{
+						"mixInBuiltInName": "findRegEx"
+					}
+				],
 				"arguments": [
 					{
 						"regExString": "(years old|y.o.)"
@@ -125,7 +133,7 @@
 			}
 
 		],
-		"specs": [
+		"appliesTo": [
 			{
 				"bundleName": "loggingMixIn",
 				"intentMatchRegExString": "(.*)"
