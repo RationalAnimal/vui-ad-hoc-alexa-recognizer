@@ -328,7 +328,27 @@
       "synonyms":[
         {"fitRating":1, "values":["beat","beet"]}
       ]
+    },
+
+    {
+      "words":["bin"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["bean","been"]}
+      ]
+    },
+    {
+      "words":["beau","bo","bow"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["beau","bo","bow"]}
+      ]
+    },
+    {
+      "words":["beat","beet"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["beat","beet"]}
+      ]
     }
+
   ],
   "equivalentPhrases":[
     {
