@@ -56,6 +56,24 @@
       "synonyms":[
         {"fitRating":0.85, "values":["adolescence","adolescents"]}
       ]
+    },
+    {
+      "words":["aeration","erration"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["aeration","erration"]}
+      ]
+    },
+    {
+      "words":["aerie","airy"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["aerie","airy"]}
+      ]
+    },
+    {
+      "words":["affect","effect"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["affect","effect"]}
+      ]
     }
   ],
   "equivalentPhrases":[
