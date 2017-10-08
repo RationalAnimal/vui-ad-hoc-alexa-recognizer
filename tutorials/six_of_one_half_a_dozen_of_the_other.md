@@ -35,8 +35,9 @@ features discussed here will not work with earlier versions.
 
 So what is a text equivalent? It's exactly what it sounds like - some text that's equivalent to another text.  Such text may be bundled into a
 text equivalents set.  Then you can specify in your config.json file which one(s) to use to generate your recognizer.json file.
-vui-ad-hoc-alexa-recognizer comes with two small sets - default.json and misspelings.json.  Default is a tiny (at this time) set designed more
-as an example than a real set.  Misspellings.json is a text equivalent set of common misspelings.  You can also create your own set and use it.
+vui-ad-hoc-alexa-recognizer comes with three relatively small sets - default.json, homophones.json, and misspelings.json.  Default is a tiny (at this time) set designed more
+as an example than a real set.  Homophones.json is a set of words that sound the same but aren't spelled the same.
+Misspellings.json is a text equivalent set of common misspelings.  You can also create your own set and use it.
 Multiple sets can be used together.  Using these sets is very easy.  All you have to do is enclose the text you wish to use the sets with
 in a set of curly brackets with a tilde character.
 
@@ -312,8 +313,9 @@ variations, special vocabularies, etc.
 
 ### Typos
 
-Included with vui-ad-hoc-alexa-recognizer are two data sets (currently, probably will be more in the future).
-One is a small default set, the other is misspellings.json which contains common misspellings and typos.
+Included with vui-ad-hoc-alexa-recognizer are three data sets (currently, probably will be more in the future).
+One is a small default set, the second is homophones.json listing common words/expressions that sound the same
+but aren't, and the third is misspellings.json which contains common misspellings and typos.
 By using such data sets you don't have to guard every utterance against all possible typos with
 option lists.  As long as you have an equivalence between a word/phrase and potentional typos, these typos
 will be understood at run time.  So you don't have to worry about the user typing "aer" instead of "are"
@@ -328,7 +330,8 @@ words and an empty string.  That would effectively allow all such words to be sk
 
 ### Homophones 
 
-Homophones are words that sound the same but have different spelling.  You could use a data set that
+Homophones are words that sound the same but have different spelling.  You could use either the provided
+homphones.json or your own data set that
 contains homophones and still be able to process user input (for slot values you could use SOUNDEX matching).
 
 ### Chatbots vs voice services
