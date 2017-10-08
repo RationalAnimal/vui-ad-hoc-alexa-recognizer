@@ -128,6 +128,24 @@
       "synonyms":[
         {"fitRating":0.9, "values":["altar","alter"]}
       ]
+    },
+    {
+      "words":["appose","oppose"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["appose","oppose"]}
+      ]
+    },
+    {
+      "words":["arc","ark"],
+      "synonyms":[
+        {"fitRating":1, "values":["arc","ark"]}
+      ]
+    },
+    {
+      "words":["are","our"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["are","our"]}
+      ]
     }
   ],
   "equivalentPhrases":[
