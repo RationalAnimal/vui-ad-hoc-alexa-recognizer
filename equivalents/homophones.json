@@ -164,6 +164,24 @@
       "synonyms":[
         {"fitRating":0.95, "values":["ascent","assent"]}
       ]
+    },
+    {
+      "words":["auger","augur"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["auger","augur"]}
+      ]
+    },
+    {
+      "words":["auk","orc"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["auk","orc"]}
+      ]
+    },
+    {
+      "words":["aural","oral"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["aural","oral"]}
+      ]
     }
   ],
   "equivalentPhrases":[
