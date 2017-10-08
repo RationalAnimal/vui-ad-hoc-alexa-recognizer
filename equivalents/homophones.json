@@ -254,6 +254,24 @@
       "synonyms":[
         {"fitRating":1, "values":["bard","barred"]}
       ]
+    },
+    {
+      "words":["bare","bear"],
+      "synonyms":[
+        {"fitRating":1, "values":["bare","bear"]}
+      ]
+    },
+    {
+      "words":["bark","barque"],
+      "synonyms":[
+        {"fitRating":1, "values":["bark","barque"]}
+      ]
+    },
+    {
+      "words":["baron","barren"],
+      "synonyms":[
+        {"fitRating":1, "values":["baron","barren"]}
+      ]
     }
   ],
   "equivalentPhrases":[
