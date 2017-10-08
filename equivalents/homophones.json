@@ -329,7 +329,6 @@
         {"fitRating":1, "values":["beat","beet"]}
       ]
     },
-
     {
       "words":["bin"],
       "synonyms":[
@@ -346,6 +345,25 @@
       "words":["beat","beet"],
       "synonyms":[
         {"fitRating":0.95, "values":["beat","beet"]}
+      ]
+    },
+
+    {
+      "words":["beer","bier"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["beer","bier"]}
+      ]
+    },
+    {
+      "words":["bel","bell","belle"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["bel","bell","belle"]}
+      ]
+    },
+    {
+      "words":["berry","bury"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["berry","bury"]}
       ]
     }
 
