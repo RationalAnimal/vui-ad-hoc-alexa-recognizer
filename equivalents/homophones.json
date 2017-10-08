@@ -308,6 +308,26 @@
       "synonyms":[
         {"fitRating":1, "values":["be","bee"]}
       ]
+    },
+
+    {
+      "words":["beach","beech"],
+      "synonyms":[
+        {"fitRating":1, "values":["beach","beech"]}
+      ]
+    },
+    {
+      "words":["bean","been"],
+      "synonyms":[
+        {"fitRating":1, "values":["bean","been"]},
+        {"fitRating":0.9, "values":["bin"]}
+      ]
+    },
+    {
+      "words":["beat","beet"],
+      "synonyms":[
+        {"fitRating":1, "values":["beat","beet"]}
+      ]
     }
   ],
   "equivalentPhrases":[
