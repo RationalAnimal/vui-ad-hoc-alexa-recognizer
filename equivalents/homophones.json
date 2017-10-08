@@ -400,6 +400,24 @@
       "synonyms":[
         {"fitRating":0.8, "values":["bitten", "bittern"]}
       ]
+    },
+    {
+      "words":["blew","blue"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["blew","blue"]}
+      ]
+    },
+    {
+      "words":["bloc","block"],
+      "synonyms":[
+        {"fitRating":1, "values":["bloc","block"]}
+      ]
+    },
+    {
+      "words":["boar","boor","bore"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["boar","boor","bore"]}
+      ]
     }
 
 
