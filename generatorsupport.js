@@ -1777,8 +1777,27 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
   }
 
   // TODO Now loop over config mixIns field and generate all the mix ins.
-  if(typeof config.mixIns !== "undefined" && Array.isArray(config.mixIns)){
-    recognizerSet.mixIns = [];
+  if(typeof config.mixIns !== "undefined"){
+    if(typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles) && typeof config.mixIns.specs !== "undefined" && Array.isArray(config.mixIns.specs)){
+      recognizerSet.mixIns = [];
+      // First, loop through all the bundles and load all the resolved file names so we don't have to deal with
+      // that logic later.
+      for(let i = 0; i < config.mixIns.bundles.length; i++){
+        if(typeof config.mixIns.bundles[i].mixInBuiltInName === "string"){
+          config.mixIns.bundles[i].resolvedFileName = "./builtinmixins/" + config.mixIns[i].mixInBuiltInName + ".js";
+        }
+        else if(typeof config.mixIns.bundles[i].mixInSrcFilename === "string"){
+          // TODO create a function similar to transforms to resolve the file name
+          config.mixIns.bundles[i].resolvedFileName = config.mixIns[i].mixInSrcFileName;
+        }
+        else {
+          // Invalid config - no mix in executable specified.
+          // TODO throw error
+          continue;
+        }
+      }
+    }
+    /*
     for(let i = 0; i < config.mixIns.length; i++){
       let mixIn = {};
       mixIn.intentMatchRegExString = config.mixIns[i].intentMatchRegExString;
@@ -1797,6 +1816,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
       }
       recognizerSet.mixIns.push(mixIn);
     }
+    */
   }
   return recognizerSet;
 };

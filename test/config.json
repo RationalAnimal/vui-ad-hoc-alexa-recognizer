@@ -103,28 +103,39 @@
 			"extendedValuesFilename": "test/roomExtendedValues.txt"
 		}
 	],
-	"mixIns": [
-		{
-        	"name": "loggingMixIn",
-			"intentMatchRegExString": "(.*)",
-			"mixInBuiltInName": ["noop"],
-			"arguments": [
-				{
-					"log": true
-				}
-			]
-		},
-		{
-			"name": "ageSearchMixIn",
-			"intentMatchRegExString": "(PersonalInfoIntent)",
-			"mixInBuiltInName": ["findRegEx"],
-			"arguments": [
-				{
-					"regExString": "(years old|y.o.)"
-				}
-			]
-		}
-	],
+	"mixIns": {
+		"bundles": [
+			{
+				"bundleName": "loggingMixIn",
+				"mixInBuiltInName": ["noop"],
+				"arguments": [
+					{
+						"log": true
+					}
+				]
+			},
+			{
+				"bundleName": "ageSearchMixIn",
+				"mixInBuiltInName": ["findRegEx"],
+				"arguments": [
+					{
+						"regExString": "(years old|y.o.)"
+					}
+				]
+			}
+
+		],
+		"specs": [
+			{
+				"bundleName": "loggingMixIn",
+				"intentMatchRegExString": "(.*)"
+			},
+			{
+				"bundleName": "ageSearchMixIn",
+				"intentMatchRegExString": "(PersonalInfoIntent)"
+			}
+		]
+	},
 	"textEquivalents": [
 		{
 			"equivalentSetBuiltInName": "default"
