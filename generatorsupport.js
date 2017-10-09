@@ -1785,29 +1785,35 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
       for(let i = 0; i < config.mixIns.bundles.length; i++){
         config.mixIns.bundles[i].resolvedFileNames = _getMixInSrcFilename(config, config.mixIns.bundles[i].bundleName, resolvedBaseDir);
       }
+      // Now, loop through all the "appliesTo" array members and create corresponding  recognizer entries
+      for(let i = 0; i < config.mixIns.appliesTo.length; i++){
+        let currentBundle = _getMixInBundle(config, config.mixIns.applieTo[i].bundleName);
+        for(let j = 0; j < intents.length; j ++){
+          let regEx = new RegExp(config.mixIns.appliesTo.intentMatchRegExString, "ig");
+          if(regEx.test(intents[j].intent)){
+            // TODO continue here
+            console.log("currentBundle: ", currentBundle);
+            //let mixIn = {};
+            //recognizerSet.mixIns.push(mixIn);
+
+          }
+        }
+
+      }
     }
-    /*
-    for(let i = 0; i < config.mixIns.length; i++){
-      let mixIn = {};
-      mixIn.intentMatchRegExString = config.mixIns[i].intentMatchRegExString;
-      mixIn.arguments = config.mixIns[i].arguments;
-      if(typeof config.mixIns[i].mixInBuiltInName === "string"){
-        mixIn.file = "./builtinmixins/" + config.mixIns[i].mixInBuiltInName + ".js";
-      }
-      else if(typeof config.mixIns[i].mixInSrcFilename === "string"){
-        // TODO create a function similar to transforms to resolve the file name
-        mixIn.file = config.mixIns[i].mixInSrcFileName;
-      }
-      else {
-        // Invalid config - no mix in executable specified.
-        // TODO throw error
-        continue;
-      }
-      recognizerSet.mixIns.push(mixIn);
-    }
-    */
   }
   return recognizerSet;
+};
+
+var _getMixInBundle = function(config, mixInBundleName){
+  if(typeof config.mixIns !== "undefined" && typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles)){
+    for(let i = 0; i < config.mixIns.bundles.length; i++){
+      let currentMixIn = config.mixIns.bundles[i];
+      if(currentMixIn.bundleName === mixInBundleName){
+        return currentMixIn;
+      }
+    }
+  }
 };
 
 var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBaseDir){
