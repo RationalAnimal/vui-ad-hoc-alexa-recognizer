@@ -546,8 +546,6 @@
         {"fitRating":0.9, "values":["broach","brooch"]}
       ]
     },
-
-
     {
       "words":["bus","buss"],
       "synonyms":[
@@ -562,6 +560,25 @@
     },
     {
       "words":["but","butt"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["but","butt"]}
+      ]
+    },
+
+    {
+      "words":["bi","buy","by","bye"],
+      "synonyms":[
+        {"fitRating":1, "values":["bi","buy","by","bye"]}
+      ]
+    },
+    {
+      "words":["buyer","byre"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["buyer","byre"]}
+      ]
+    },
+    {
+      "words":["calendar","calender"],
       "synonyms":[
         {"fitRating":0.95, "values":["but","butt"]}
       ]
