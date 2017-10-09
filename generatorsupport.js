@@ -1776,7 +1776,6 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     recognizerSet.builtInIntents.push(builtinIntent);
   }
 
-  // TODO Now loop over config mixIns field and generate all the mix ins.
   if(typeof config.mixIns !== "undefined"){
     if(typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles) && typeof config.mixIns.specs !== "undefined" && Array.isArray(config.mixIns.specs)){
       recognizerSet.mixIns = [];
@@ -1785,21 +1784,28 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
       for(let i = 0; i < config.mixIns.bundles.length; i++){
         config.mixIns.bundles[i].resolvedFileNames = _getMixInSrcFilename(config, config.mixIns.bundles[i].bundleName, resolvedBaseDir);
       }
-      // Now, loop through all the "appliesTo" array members and create corresponding  recognizer entries
-      for(let i = 0; i < config.mixIns.appliesTo.length; i++){
-        let currentBundle = _getMixInBundle(config, config.mixIns.applieTo[i].bundleName);
-        for(let j = 0; j < intents.length; j ++){
-          let regEx = new RegExp(config.mixIns.appliesTo.intentMatchRegExString, "ig");
-          if(regEx.test(intents[j].intent)){
-            // TODO continue here
-            console.log("currentBundle: ", currentBundle);
-            //let mixIn = {};
-            //recognizerSet.mixIns.push(mixIn);
-
+      // Loop through all the custom intents and see which bundles apply to each intent
+      for(let i = 0; i < intents.length; i++){
+        let intentMixIns = [];
+        let intent = intents[i];
+        // Loop through all "appliesTo" entries and if the intent matches, add the corresponding mix in
+        for(let j = 0; j < config.mixIns.appliesTo.length; j++){
+          let regExp = new RegExp(config.mixIns.appliesTo[j].intentMatchRegExString, "ig");
+          if(regExp.test(intent.intent) === true){
+            // This intent matches, add it to intentMixIn
+            let bundle = _getMixInBundle(config, config.mixIns.appliesTo[j].bundleName);
+            // Now push source/args combination onto intentMixIn for all mixins in this bundle
+            for(let k=0; k < bundle.resolvedFileNames.length; k++){
+              intentMixIns.push({"resolvedFileName": bundle.resolvedFileNames[k], "arguments": bundle.arguments[k]});
+            }
           }
         }
-
+        if(intentMixIns.length > 0){
+          // We have some mix ins that need to be added to the current intent
+          recognizerSet.mixIns[intent.intent] = intentMixIns;
+        }
       }
+      // TODO loop over the built-in intents as well and add their mix-ins
     }
   }
   return recognizerSet;

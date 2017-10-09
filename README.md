@@ -65,8 +65,10 @@ wildcard matches.
 matches a particular pattern rather than specific list of values.
 * "That Sounds Like You" - explains how to use SOUNDEX matching to process words that sound similar.  This helps with
 commonly substituted words in chat bots and words that sound the same but aren't spelled the same way in voice services.
-* "Six of One, Half a Dozen of the Other" - covers text equivalents sets and their use.  This allows solving many
-different issues - from typos, to homophones, to special vocabularies, etc...
+* "Six of One, Half a Dozen of the Other" - covers text equivalents sets and their use.  Text equivalents lets you
+define words and phrases that are equivalent to each other so that you need only to specify a simple utterance and
+have vui-ad-hoc-alexa-recognizer match on any variation of that utterances that may result from using text equivalents.
+This allows solving many different issues - from typos, to homophones, to special vocabularies, etc...
 
 ## Domain Tutorials
 
