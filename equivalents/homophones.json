@@ -436,6 +436,24 @@
       "synonyms":[
         {"fitRating":0.9, "values":["bode","bowed"]}
       ]
+    },
+    {
+      "words":["bold","bolled","bowled"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["bold","bolled","bowled"]}
+      ]
+    },
+    {
+      "words":["bolder","boulder","bowlder"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["bolder","boulder","bowlder"]}
+      ]
+    },
+    {
+      "words":["bole","boll","bowl"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["bole","boll","bowl"]}
+      ]
     }
 
 
