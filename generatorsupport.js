@@ -1805,7 +1805,43 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
           recognizerSet.mixIns[intent.intent] = intentMixIns;
         }
       }
-      // TODO loop over the built-in intents as well and add their mix-ins
+      // TODO refactor built in intents list into a common place.
+      let builtInIntentsNames = [
+        "TRANSCEND.CancelIntent",
+        "TRANSCEND.HelpIntent",
+        "TRANSCEND.LoopOffIntent",
+        "TRANSCEND.LoopOnIntent",
+        "TRANSCEND.NextIntent",
+        "TRANSCEND.NoIntent",
+        "TRANSCEND.PauseIntent",
+        "TRANSCEND.PreviousIntent",
+        "TRANSCEND.RepeatIntent",
+        "TRANSCEND.ResumeIntent",
+        "TRANSCEND.ShuffleOffIntent",
+        "TRANSCEND.ShuffleOnIntent",
+        "TRANSCEND.StartOverIntent",
+        "TRANSCEND.StopIntent",
+        "TRANSCEND.YesIntent"
+      ];
+      for(let i = 0; i < builtInIntentsNames.length; i++){
+        let intentMixIns = [];
+        // Loop through all "appliesTo" entries and if the intent matches, add the corresponding mix in
+        for(let j = 0; j < config.mixIns.appliesTo.length; j++){
+          let regExp = new RegExp(config.mixIns.appliesTo[j].intentMatchRegExString, "ig");
+          if(regExp.test(builtInIntentsNames[i]) === true){
+            // This intent matches, add it to intentMixIn
+            let bundle = _getMixInBundle(config, config.mixIns.appliesTo[j].bundleName);
+            // Now push source/args combination onto intentMixIn for all mixins in this bundle
+            for(let k=0; k < bundle.resolvedFileNames.length; k++){
+              intentMixIns.push({"resolvedFileName": bundle.resolvedFileNames[k], "arguments": bundle.arguments[k]});
+            }
+          }
+        }
+        if(intentMixIns.length > 0){
+          // We have some mix ins that need to be added to the current intent
+          recognizerSet.mixIns[builtInIntentsNames[i]] = intentMixIns;
+        }
+      }
     }
   }
   return recognizerSet;
