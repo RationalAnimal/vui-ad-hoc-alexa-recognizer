@@ -396,6 +396,12 @@
       ]
     },
     {
+      "words":["birr","bur","burr"],
+      "synonyms":[
+        {"fitRating":1, "values":["birr","bur","burr"]}
+      ]
+    },
+    {
       "words":["bitten", "bittern"],
       "synonyms":[
         {"fitRating":0.8, "values":["bitten", "bittern"]}
@@ -487,6 +493,20 @@
     },
     {
       "words":["brae","bray"],
+      "synonyms":[
+        {"fitRating":1, "values":["brae","bray"]}
+      ]
+    },
+
+
+    {
+      "words":["braise","braize","brays","braze"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["braise","braize","brays","braze"]}
+      ]
+    },
+    {
+      "words":["brake","break"],
       "synonyms":[
         {"fitRating":1, "values":["brae","bray"]}
       ]
