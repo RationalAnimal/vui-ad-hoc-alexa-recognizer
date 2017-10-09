@@ -418,6 +418,24 @@
       "synonyms":[
         {"fitRating":0.8, "values":["boar","boor","bore"]}
       ]
+    },
+    {
+      "words":["board","bored"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["board","bored"]}
+      ]
+    },
+    {
+      "words":["boarder","border"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["boarder","border"]}
+      ]
+    },
+    {
+      "words":["bode","bowed"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["bode","bowed"]}
+      ]
     }
 
 
