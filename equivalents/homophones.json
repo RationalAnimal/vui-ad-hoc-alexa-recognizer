@@ -472,6 +472,24 @@
       "synonyms":[
         {"fitRating":0.8, "values":["borough","burro","burrow"]}
       ]
+    },
+    {
+      "words":["bough","bow"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["bough","bow"]}
+      ]
+    },
+    {
+      "words":["boy","buoy"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["boy","buoy"]}
+      ]
+    },
+    {
+      "words":["brae","bray"],
+      "synonyms":[
+        {"fitRating":1, "values":["brae","bray"]}
+      ]
     }
 
 
