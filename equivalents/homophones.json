@@ -454,6 +454,24 @@
       "synonyms":[
         {"fitRating":0.9, "values":["bole","boll","bowl"]}
       ]
+    },
+    {
+      "words":["boos","booze"],
+      "synonyms":[
+        {"fitRating":1, "values":["boos","booze"]}
+      ]
+    },
+    {
+      "words":["born","borne","bourn","bourne"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["born","borne","bourn","bourne"]}
+      ]
+    },
+    {
+      "words":["borough","burro","burrow"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["borough","burro","burrow"]}
+      ]
     }
 
 
