@@ -497,8 +497,6 @@
         {"fitRating":1, "values":["brae","bray"]}
       ]
     },
-
-
     {
       "words":["braise","braize","brays","braze"],
       "synonyms":[
@@ -509,6 +507,25 @@
       "words":["brake","break"],
       "synonyms":[
         {"fitRating":1, "values":["brae","bray"]}
+      ]
+    },
+
+    {
+      "words":["breach","breech"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["breach","breech"]}
+      ]
+    },
+    {
+      "words":["bread","bred"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["bread","bred"]}
+      ]
+    },
+    {
+      "words":["brewed","brood"],
+      "synonyms":[
+        {"fitRating":0.75, "values":["brewed","brood"]}
       ]
     }
 
