@@ -528,8 +528,6 @@
         {"fitRating":0.75, "values":["brewed","brood"]}
       ]
     },
-
-
     {
       "words":["brews","bruise"],
       "synonyms":[
@@ -546,6 +544,26 @@
       "words":["broach","brooch"],
       "synonyms":[
         {"fitRating":0.9, "values":["broach","brooch"]}
+      ]
+    },
+
+
+    {
+      "words":["bus","buss"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["bus","buss"]}
+      ]
+    },
+    {
+      "words":["bused","bust"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["bused","bust"]}
+      ]
+    },
+    {
+      "words":["but","butt"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["but","butt"]}
       ]
     }
 
