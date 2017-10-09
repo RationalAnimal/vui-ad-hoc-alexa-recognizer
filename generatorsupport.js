@@ -1810,26 +1810,33 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
   return recognizerSet;
 };
 
-var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBaseDir){// eslint-disable-line no-unused-vars
+var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBaseDir){
   if(typeof config.mixIns !== "undefined" && typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles)){
+    let returnValue = [];
     for(let i = 0; i < config.mixIns.bundles.length; i++){
       let currentMixIn = config.mixIns.bundles[i];
       if(currentMixIn.bundleName === mixInBundleName){
-        let returnValue = [];
         for(let j = 0; j < currentMixIn.mixInCode.length; j ++){
           if(typeof currentMixIn.mixInCode[j].mixInBuiltInName !== "undefined" && currentMixIn.mixInCode[j].mixInBuiltInName !== null){
             if(typeof currentMixIn.mixInCode[j].mixInBuiltInName === "string"){
               returnValue.push("./builtinmixins/" + currentMixIn.mixInCode[j].mixInBuiltInName + ".js");
             }
             else {
-              // An error in configuration?
-              // TODO throw an error?
-              return;
+              throw {"error": "MISCONFIGURED_MIX_IN_BUILT_IN_NAME", "message": "Programmer error - mix in bundle has mixInBuiltInName but it's not a string"};
+            }
+          }
+          else if(typeof currentMixIn.mixInCode[j].mixInSrcFileName !== "undefined" && currentMixIn.mixInCode[j].mixInSrcFileName !== null){
+            if(typeof currentMixIn.mixInCode[j].mixInSrcFileName === "string"){
+              returnValue.push(utilities.resolveFileName(currentMixIn.mixInCode[j].mixInSrcFileName, resolvedBaseDir));
+            }
+            else {
+              throw {"error": "MISCONFIGURED_MIX_IN_SRC_NAME", "message": "Programmer error - mix in bundle has mixInSrcFileName but it's not a string"};
             }
           }
         }
       }
     }
+    return returnValue;
   }
 };
 
