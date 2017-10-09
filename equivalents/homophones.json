@@ -582,8 +582,6 @@
         {"fitRating":0.95, "values":["but","butt"]}
       ]
     },
-
-
     {
       "words":["cache","cash"],
       "synonyms":[
@@ -600,6 +598,25 @@
       "words":["callous","callus"],
       "synonyms":[
         {"fitRating":0.95, "values":["callous","callus"]}
+      ]
+    },
+
+    {
+      "words":["can't","cant"],
+      "synonyms":[
+        {"fitRating":1, "values":["can't","cant"]}
+      ]
+    },
+    {
+      "words":["cannon","canon"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["cannon","canon"]}
+      ]
+    },
+    {
+      "words":["canter","cantor"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["canter","cantor"]}
       ]
     }
 
