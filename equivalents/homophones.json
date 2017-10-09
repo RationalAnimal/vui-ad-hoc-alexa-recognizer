@@ -564,7 +564,6 @@
         {"fitRating":0.95, "values":["but","butt"]}
       ]
     },
-
     {
       "words":["bi","buy","by","bye"],
       "synonyms":[
@@ -581,6 +580,26 @@
       "words":["calendar","calender"],
       "synonyms":[
         {"fitRating":0.95, "values":["but","butt"]}
+      ]
+    },
+
+
+    {
+      "words":["cache","cash"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["cache","cash"]}
+      ]
+    },
+    {
+      "words":["call","caul","col"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["call","caul","col"]}
+      ]
+    },
+    {
+      "words":["callous","callus"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["callous","callus"]}
       ]
     }
 
