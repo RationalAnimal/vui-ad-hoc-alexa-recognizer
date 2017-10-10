@@ -816,8 +816,6 @@
         {"fitRating":0.95, "values":["clew","clue"]}
       ]
     },
-
-
     {
       "words":["click","clique"],
       "synonyms":[
@@ -834,6 +832,26 @@
       "words":["close","cloze","clothes"],
       "synonyms":[
         {"fitRating":0.95, "values":["close","cloze","clothes"]}
+      ]
+    },
+
+
+    {
+      "words":["coal","cole","kohl"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["coal","cole","kohl"]}
+      ]
+    },
+    {
+      "words":["coaled","cold"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["coaled","cold"]}
+      ]
+    },
+    {
+      "words":["coarse","corse","course"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["coarse","corse","course"]}
       ]
     }
 
