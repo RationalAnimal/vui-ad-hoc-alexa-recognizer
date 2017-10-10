@@ -744,12 +744,16 @@
         {"fitRating":0.9, "values":["chased","chaste"]}
       ]
     },
-
-
     {
       "words":["cheap","cheep"],
       "synonyms":[
         {"fitRating":0.95, "values":["cheap","cheep"]}
+      ]
+    },
+    {
+      "words":["check","cheque"],
+      "synonyms":[
+        {"fitRating":1, "values":["check","cheque"]}
       ]
     },
     {
@@ -762,6 +766,20 @@
       "words":["chic","sheik"],
       "synonyms":[
         {"fitRating":0.95, "values":["chic","sheik"]}
+      ]
+    },
+
+
+    {
+      "words":["Chile","chili","chilly"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["Chile","chili","chilly"]}
+      ]
+    },
+    {
+      "words":["choir","quire"],
+      "synonyms":[
+        {"fitRating":1, "values":["choir","quire"]}
       ]
     }
 
