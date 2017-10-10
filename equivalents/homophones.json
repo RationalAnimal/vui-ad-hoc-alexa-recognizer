@@ -654,8 +654,6 @@
         {"fitRating":0.90, "values":["cedar","ceder","seeder"]}
       ]
     },
-
-
     {
       "words":["cede","seed"],
       "synonyms":[
@@ -672,6 +670,26 @@
       "words":["ceiling","sealing","seeling"],
       "synonyms":[
         {"fitRating":1, "values":["ceiling","sealing","seeling"]}
+      ]
+    },
+
+
+    {
+      "words":["cell","sell"],
+      "synonyms":[
+        {"fitRating":1, "values":["cell","sell"]}
+      ]
+    },
+    {
+      "words":["cellar","seller"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["cellar","seller"]}
+      ]
+    },
+    {
+      "words":["censer","censor","sensor"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["censer","censor","sensor"]}
       ]
     }
 
