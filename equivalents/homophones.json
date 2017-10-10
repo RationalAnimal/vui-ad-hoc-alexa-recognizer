@@ -798,9 +798,6 @@
         {"fitRating":1, "values":["cite","sight","site"]}
       ]
     },
-
-
-
     {
       "words":["clack","claque"],
       "synonyms":[
@@ -817,6 +814,26 @@
       "words":["clew","clue"],
       "synonyms":[
         {"fitRating":0.95, "values":["clew","clue"]}
+      ]
+    },
+
+
+    {
+      "words":["click","clique"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["click","clique"]}
+      ]
+    },
+    {
+      "words":["climb","clime"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["climb","clime"]}
+      ]
+    },
+    {
+      "words":["close","cloze","clothes"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["close","cloze","clothes"]}
       ]
     }
 
