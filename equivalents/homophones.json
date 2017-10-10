@@ -780,8 +780,6 @@
         {"fitRating":1, "values":["choir","quire"]}
       ]
     },
-
-
     {
       "words":["chord","cord","cored"],
       "synonyms":[
@@ -798,6 +796,27 @@
       "words":["cite","sight","site"],
       "synonyms":[
         {"fitRating":1, "values":["cite","sight","site"]}
+      ]
+    },
+
+
+
+    {
+      "words":["clack","claque"],
+      "synonyms":[
+        {"fitRating":1, "values":["clack","claque"]}
+      ]
+    },
+    {
+      "words":["clause","claws"],
+      "synonyms":[
+        {"fitRating":1, "values":["clause","claws"]}
+      ]
+    },
+    {
+      "words":["clew","clue"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["clew","clue"]}
       ]
     }
 
