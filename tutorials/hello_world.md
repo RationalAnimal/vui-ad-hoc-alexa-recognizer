@@ -80,6 +80,7 @@ Let's create the intents.json file containing this text:
       "intent": "GreetingIntent",
       "slots": []
     }
+  ]
 }
 {% endhighlight %}
 
