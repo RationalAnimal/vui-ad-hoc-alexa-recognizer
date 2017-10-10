@@ -1777,7 +1777,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
   }
 
   if(typeof config.mixIns !== "undefined"){
-    if(typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles) && typeof config.mixIns.specs !== "undefined" && Array.isArray(config.mixIns.specs)){
+    if(typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles) && typeof config.mixIns.appliesTo !== "undefined" && Array.isArray(config.mixIns.appliesTo)){
       recognizerSet.mixIns = [];
       // First, loop through all the bundles and load all the resolved file names so we don't have to deal with
       // that logic later.
