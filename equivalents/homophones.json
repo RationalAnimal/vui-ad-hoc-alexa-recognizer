@@ -726,8 +726,6 @@
         {"fitRating":1, "values":["chaise","chase"]}
       ]
     },
-
-
     {
       "words":["chalk","chock"],
       "synonyms":[
@@ -744,6 +742,26 @@
       "words":["chased","chaste"],
       "synonyms":[
         {"fitRating":0.9, "values":["chased","chaste"]}
+      ]
+    },
+
+
+    {
+      "words":["cheap","cheep"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["cheap","cheep"]}
+      ]
+    },
+    {
+      "words":["chews","choose"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["chews","choose"]}
+      ]
+    },
+    {
+      "words":["chic","sheik"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["chic","sheik"]}
       ]
     }
 
