@@ -600,7 +600,6 @@
         {"fitRating":0.95, "values":["callous","callus"]}
       ]
     },
-
     {
       "words":["can't","cant"],
       "synonyms":[
@@ -617,6 +616,26 @@
       "words":["canter","cantor"],
       "synonyms":[
         {"fitRating":0.85, "values":["canter","cantor"]}
+      ]
+    },
+
+
+    {
+      "words":["caries","carries"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["caries","carries"]}
+      ]
+    },
+    {
+      "words":["cast","caste"],
+      "synonyms":[
+        {"fitRating":1, "values":["cast","caste"]}
+      ]
+    },
+    {
+      "words":["caster","castor"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["caster","castor"]}
       ]
     }
 
