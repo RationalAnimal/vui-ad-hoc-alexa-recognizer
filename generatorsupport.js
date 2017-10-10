@@ -1778,7 +1778,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
 
   if(typeof config.mixIns !== "undefined"){
     if(typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles) && typeof config.mixIns.appliesTo !== "undefined" && Array.isArray(config.mixIns.appliesTo)){
-      recognizerSet.mixIns = [];
+      recognizerSet.mixIns = {};
       // First, loop through all the bundles and load all the resolved file names so we don't have to deal with
       // that logic later.
       for(let i = 0; i < config.mixIns.bundles.length; i++){
@@ -1839,11 +1839,19 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         }
         if(intentMixIns.length > 0){
           // We have some mix ins that need to be added to the current intent
-          recognizerSet.mixIns[builtInIntentsNames[i]] = intentMixIns;
+          // Note that there may already be something set for that intent, so check for that and
+          // concatenate if needed.
+          if(typeof recognizerSet.mixIns[builtInIntentsNames[i]] !== "undefined" && Array.isArray(recognizerSet.mixIns[builtInIntentsNames[i]])){
+            recognizerSet.mixIns[builtInIntentsNames[i]] = recognizerSet.mixIns[builtInIntentsNames[i]].concat(intentMixIns);
+          }
+          else {
+            recognizerSet.mixIns[builtInIntentsNames[i]] = intentMixIns;
+          }
         }
       }
     }
   }
+
   return recognizerSet;
 };
 
