@@ -618,8 +618,6 @@
         {"fitRating":0.85, "values":["canter","cantor"]}
       ]
     },
-
-
     {
       "words":["caries","carries"],
       "synonyms":[
@@ -636,6 +634,26 @@
       "words":["caster","castor"],
       "synonyms":[
         {"fitRating":0.85, "values":["caster","castor"]}
+      ]
+    },
+
+
+    {
+      "words":["caught","court"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["caught","court"]}
+      ]
+    },
+    {
+      "words":["caw","core","corps"],
+      "synonyms":[
+        {"fitRating":0.90, "values":["caw","core","corps"]}
+      ]
+    },
+    {
+      "words":["cedar","ceder","seeder"],
+      "synonyms":[
+        {"fitRating":0.90, "values":["cedar","ceder","seeder"]}
       ]
     }
 
