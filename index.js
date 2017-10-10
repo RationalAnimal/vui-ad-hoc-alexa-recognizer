@@ -1976,12 +1976,24 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
       let returnValue = {};
       returnValue.name = _getTranslatedIntentForOutput(scratch.name, recognizerSet.platform);
       returnValue.slots = {};
+      // Now call the mix in code before returning
+      if(typeof recognizerSet.mizIns !== "undefined"){
+        let mixIn = recognizerSet.mixIns[returnValue.name];
+        if(typeof mixIn !== "undefined" && mixIn !== null){
+          _applyMixIns(mixIn.resolvedFileName, returnValue.name, stringToMatch, returnValue, mixIn.arguments);
+        }
+      }
       return returnValue;
     }
   }
 
 };
 
+var _applyMixIns = function(mixInFilePath, intent, utterance, returnValue, mixInSpecificArgs){// eslint-disable-line no-unused-vars
+  let mixIn = require(mixInFilePath);
+  let standardArgs = {"intentName": intent, "utterance": utterance, "priorResult": returnValue};
+  mixIn(standardArgs, mixInSpecificArgs);
+};
 
 // USED IN MATCH
 // NOT IN GENERATE
