@@ -768,8 +768,6 @@
         {"fitRating":0.95, "values":["chic","sheik"]}
       ]
     },
-
-
     {
       "words":["Chile","chili","chilly"],
       "synonyms":[
@@ -780,6 +778,26 @@
       "words":["choir","quire"],
       "synonyms":[
         {"fitRating":1, "values":["choir","quire"]}
+      ]
+    },
+
+
+    {
+      "words":["chord","cord","cored"],
+      "synonyms":[
+        {"fitRating":1, "values":["chord","cord","cored"]}
+      ]
+    },
+    {
+      "words":["chute","shoot"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["chute","shoot"]}
+      ]
+    },
+    {
+      "words":["cite","sight","site"],
+      "synonyms":[
+        {"fitRating":1, "values":["cite","sight","site"]}
       ]
     }
 
