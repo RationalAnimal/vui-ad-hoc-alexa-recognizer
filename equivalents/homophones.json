@@ -708,8 +708,6 @@
         {"fitRating":0.9, "values":["cere","sear","seer","sere"]}
       ]
     },
-
-
     {
       "words":["cereal","serial"],
       "synonyms":[
@@ -726,6 +724,26 @@
       "words":["chaise","chase"],
       "synonyms":[
         {"fitRating":1, "values":["chaise","chase"]}
+      ]
+    },
+
+
+    {
+      "words":["chalk","chock"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["chalk","chock"]}
+      ]
+    },
+    {
+      "words":["chance","chants"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["chance","chants"]}
+      ]
+    },
+    {
+      "words":["chased","chaste"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["chased","chaste"]}
       ]
     }
 
