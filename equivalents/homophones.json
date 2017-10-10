@@ -690,8 +690,6 @@
         {"fitRating":0.9, "values":["censer","censor","sensor"]}
       ]
     },
-
-
     {
       "words":["cense","cents","scents","sense"],
       "synonyms":[
@@ -708,6 +706,26 @@
       "words":["cere","sear","seer","sere"],
       "synonyms":[
         {"fitRating":0.9, "values":["cere","sear","seer","sere"]}
+      ]
+    },
+
+
+    {
+      "words":["cereal","serial"],
+      "synonyms":[
+        {"fitRating":1, "values":["cereal","serial"]}
+      ]
+    },
+    {
+      "words":["cession","session"],
+      "synonyms":[
+        {"fitRating":1, "values":["cession","session"]}
+      ]
+    },
+    {
+      "words":["chaise","chase"],
+      "synonyms":[
+        {"fitRating":1, "values":["chaise","chase"]}
       ]
     }
 
