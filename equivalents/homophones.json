@@ -636,8 +636,6 @@
         {"fitRating":0.85, "values":["caster","castor"]}
       ]
     },
-
-
     {
       "words":["caught","court"],
       "synonyms":[
@@ -654,6 +652,26 @@
       "words":["cedar","ceder","seeder"],
       "synonyms":[
         {"fitRating":0.90, "values":["cedar","ceder","seeder"]}
+      ]
+    },
+
+
+    {
+      "words":["cede","seed"],
+      "synonyms":[
+        {"fitRating":0.90, "values":["cedar","ceder","seeder"]}
+      ]
+    },
+    {
+      "words":["cees","seas","sees","seize"],
+      "synonyms":[
+        {"fitRating":0.90, "values":["cees","seas","sees","seize"]}
+      ]
+    },
+    {
+      "words":["ceiling","sealing","seeling"],
+      "synonyms":[
+        {"fitRating":1, "values":["ceiling","sealing","seeling"]}
       ]
     }
 
