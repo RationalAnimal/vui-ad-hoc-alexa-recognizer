@@ -1982,6 +1982,11 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
 
 };
 
+var _applyMixIns = function(mixInFilePath, intent, utterance, returnValue, mixInSpecificArgs){// eslint-disable-line no-unused-vars
+  let mixIn = require(mixInFilePath);
+  let standardArgs = {"intentName": intent, "utterance": utterance, "priorResult": returnValue};
+  mixIn(standardArgs, mixInSpecificArgs);
+};
 
 // USED IN MATCH
 // NOT IN GENERATE
