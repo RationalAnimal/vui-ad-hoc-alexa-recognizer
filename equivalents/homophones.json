@@ -672,8 +672,6 @@
         {"fitRating":1, "values":["ceiling","sealing","seeling"]}
       ]
     },
-
-
     {
       "words":["cell","sell"],
       "synonyms":[
@@ -690,6 +688,26 @@
       "words":["censer","censor","sensor"],
       "synonyms":[
         {"fitRating":0.9, "values":["censer","censor","sensor"]}
+      ]
+    },
+
+
+    {
+      "words":["cense","cents","scents","sense"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["cense","cents","scents","sense"]}
+      ]
+    },
+    {
+      "words":["cent","scent","sent"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["cent","scent","sent"]}
+      ]
+    },
+    {
+      "words":["cere","sear","seer","sere"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["cere","sear","seer","sere"]}
       ]
     }
 
