@@ -33,12 +33,8 @@ module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-u
     utterance = standardArgs.utterance;
     priorResult = standardArgs.priorResult;
   }
-  for(var prop in obj) {
-    if(obj.hasOwnProperty(prop))
-      return;
-  }
-  if(JSON.stringify(priorResult.slots) === JSON.stringify({})){
-    priorResults.slots["CountSlot"] = {
+  if(typeof priorResult.slots.CountSlot === "undefined"){
+    priorResult.slots["CountSlot"] = {
       "name": "CountSlot",
       "value": "1"
     };

@@ -119,3 +119,9 @@ EquivalentsIntent {~How are you today my friend can you please tell me what I wa
 MisspelledIntent {~Absence makes the heart grow stronger}
 MisspelledIntent {~absence acceptable accidentally accommodate achieve acknowledge acquaintance allegiance their}
 HalfDozenIntent {~I would like six donuts please}
+VagueCountIntent I would like some appetizers
+VagueCountIntent I would like a few appetizers
+VagueCountIntent I would like an appetizer
+VagueCountIntent I would like a {couple|pair} of appetizers
+VagueCountIntent I would like {CountSlot} {appetizer|appetizers}
+
