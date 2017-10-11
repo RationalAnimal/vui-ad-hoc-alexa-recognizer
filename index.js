@@ -1978,7 +1978,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
       returnValue.slots = {};
       // Now call the mix in code before returning
       if(typeof recognizerSet.mixIns !== "undefined"){
-        let mixIns = recognizerSet.mixIns[returnValue.name];
+        let mixIns = recognizerSet.mixIns[scratch.name];
         if(typeof mixIns !== "undefined" && Array.isArray(mixIns) === true){
           for (let j = 0; j < mixIns.length; j++){
             let mixIn = mixIns[j];
