@@ -1137,7 +1137,7 @@ In addition to the built in functionality you can define your own code to run fo
 
 Imagine you have an intent on which you want to do some post processing.  For example, you may have an intent that
 collects some numerical input from the user.  You might ask the user: "How many television sets do you have".  And you
-may define multiple utterances to recognizer - some contain just the number, some might be a full sentence containing a
+may define multiple utterances to recognize - some contain just the number, some might be a full sentence containing a
 number: "I have 2 television sets". But... the user might say something like "I have a television set" or "I have a couple
 of television sets".  Now, these two last utterances do NOT contain an explicit number, but they DO implicitly specify
 the count.  You could construct several intents (NumberOfTvSetIntent, OneTvSetIntent, TwoTvSetsIntent) and then map
@@ -1169,7 +1169,41 @@ as slot values so that the business logic would simply use them?  Well, that's w
 ```
 
 Now, after a successful match on TvCountIntent, ./injecttvcountslotvalue.js will run and add the corresponding slot
-and value to the result.
+and value to the result.  What would this code look like?  Something like this:
+
+```javascript
+"use strict";
+module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-unused-vars
+  let intentName;
+  let utterance;
+  let priorResult;
+  if(typeof standardArgs !== "undefined"){
+    intentName = standardArgs.intentName;
+    utterance = standardArgs.utterance;
+    priorResult = standardArgs.priorResult;
+  }
+  if(typeof priorResult.slots.CountSlot === "undefined"){
+    if(utterance.endsWith("a television set")){
+      priorResult.slots["CountSlot"] = {
+        "name": "CountSlot",
+        "value": "1"
+      };
+    }
+    else if(utterance.endsWith("a couple of television sets")){
+      priorResult.slots["CountSlot"] = {
+        "name": "CountSlot",
+        "value": "2"
+      };
+    }
+  }
+};
+```
+First, note the signature - two arguments are passed in, both are objects with multiple (potentially) fields.
+The first one is passed to your mix in by vui-ad-hoc-alexa-recognizer automatically.  It contains intent name,
+utterance that matched, and the result to be returned to the user.
+
+Here this code checks to see if the result already has a CountSlot value.  If not - it will attempt to determine whether
+it's 1 or 2 by looking at the utterance and updating the result with "injected" CountSlot.
 
 ### Dollar values
 
