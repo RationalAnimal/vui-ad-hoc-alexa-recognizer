@@ -1936,6 +1936,19 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
                   }
                   returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
                 }
+                // Now call the mix in code before returning
+                if(typeof recognizerSet.mixIns !== "undefined"){
+                  let mixIns = recognizerSet.mixIns[scratch.intent];
+                  if(typeof mixIns !== "undefined" && Array.isArray(mixIns) === true){
+                    for (let j = 0; j < mixIns.length; j++){
+                      let mixIn = mixIns[j];
+                      if(typeof mixIn !== "undefined" && mixIn !== null){
+                        _applyMixIns(mixIn.resolvedFileName, returnValue.name, stringToMatch, returnValue, mixIn.arguments);
+                      }
+                    }
+                  }
+                }
+
                 return returnValue;
               }
             }
