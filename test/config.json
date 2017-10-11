@@ -136,7 +136,7 @@
 		"appliesTo": [
 			{
 				"bundleName": "loggingMixIn",
-				"intentMatchRegExString": "(.*)"
+				"intentMatchRegExString": "(ThisShouldNotMatch.*)"
 			},
 			{
 				"bundleName": "ageSearchMixIn",
