@@ -13,7 +13,7 @@ High performance run time in only 2 lines of code - 'require' to include it, and
 These can run anywhere Node.js is running - backend, browser, mobile apps, etc with or without internet connection.
 Has a rich set of built in intents and extensible slots (equivalent to Alexa's),
 custom slots (both list based and regular expression based), synonyms, slot flags, parametrized flags, transformation functions,
-SoundEx matching, wild card matching, option lists, text equivalents sets, unlimited sets of recognizers to build large
+SoundEx matching, wild card matching, option lists, text equivalents sets, mix-in post processing, unlimited sets of recognizers to build large
 segmented apps, domains with state specific processing, builtin and custom chainable responders, sub-domains (trusted and
 non-trusted), etc.
 
@@ -1076,6 +1076,19 @@ the configuration file, for example:
 }
 ```
 
+### Mix-ins
+
+Sometimes you may want to do some additional processing of the result before returning it.  It could be almost anything,
+for example:
+
+* add logging to all matches
+* compute sentiment score and add it to the result
+* adjust/update/replace matched slot values
+
+and many other possible examples.
+
+Mix-in (or add on) processing allows you to do that and you can do it mostly through configuration (some coding may be
+required)
 
 ### Dollar values
 
