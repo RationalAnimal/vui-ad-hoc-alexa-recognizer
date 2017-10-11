@@ -1802,10 +1802,20 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         }
         if(intentMixIns.length > 0){
           // We have some mix ins that need to be added to the current intent
-          recognizerSet.mixIns[intent.intent] = intentMixIns;
+          // Note that there may already be something set for that intent, so check for that and
+          // concatenate if needed.
+          if(typeof recognizerSet.mixIns[intent.intent] !== "undefined" && Array.isArray(recognizerSet.mixIns[intent.intent]) === true){
+            recognizerSet.mixIns[intent.intent] = recognizerSet.mixIns[intent.intent].concat(intentMixIns);
+          }
+          else {
+            recognizerSet.mixIns[intent.intent] = intentMixIns;
+          }
+
+
+
         }
       }
-      // TODO refactor built in intents list into a common place.
+      // TODO replace this list with the one already in recognizerSet
       let builtInIntentsNames = [
         "TRANSCEND.CancelIntent",
         "TRANSCEND.HelpIntent",
@@ -1841,7 +1851,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
           // We have some mix ins that need to be added to the current intent
           // Note that there may already be something set for that intent, so check for that and
           // concatenate if needed.
-          if(typeof recognizerSet.mixIns[builtInIntentsNames[i]] !== "undefined" && Array.isArray(recognizerSet.mixIns[builtInIntentsNames[i]])){
+          if(typeof recognizerSet.mixIns[builtInIntentsNames[i]] !== "undefined" && Array.isArray(recognizerSet.mixIns[builtInIntentsNames[i]]) === true){
             recognizerSet.mixIns[builtInIntentsNames[i]] = recognizerSet.mixIns[builtInIntentsNames[i]].concat(intentMixIns);
           }
           else {
