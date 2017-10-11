@@ -1090,6 +1090,87 @@ and many other possible examples.
 Mix-in (or add on) processing allows you to do that and you can do it mostly through configuration (some coding may be
 required)
 
+#### Built in mix-ins
+
+Currently there are only a few built in mix-in and they are there mostly for the demonstration purposes.  One is a
+simple logging mix-in, two count characters and words and add the count to the result, and one is still being written.
+Once a good set of built in mix-in is ready I will update this section.  Meanwhile here is a little bit of documentation
+on how to use them.
+
+Imagine that you update you config.json file to add the mixIns section like this:
+
+```json
+"mixIns": {
+  "bundles": [
+    {
+      "bundleName": "loggingMixIn",
+      "mixInCode": [
+        {
+          "mixInBuiltInName": "noop"
+        }
+      ],
+      "arguments": [
+        {
+          "log": true
+        }
+      ]
+    }
+  ],
+  "appliesTo": [
+    {
+      "bundleName": "loggingMixIn",
+      "intentMatchRegExString": "(.*)"
+    }
+  ]
+}
+```
+
+What this does is defines a mix in "bundle" (i.e. bundle of the code - noop - and argument) and give it a name "loggingMixIn".
+Then it specifies that this "bundle" applies to every intent (i.e. "appliesTo" field has a pairing of this bundle with
+the "intentMatchRegExString" which matches on every intent: (.*)).  As a result, the "noop" mix in will run after every
+match and log the results.  You can modify which intents it applies to by chaning the matching reg exp.  The code that
+will actually be run is  noop.js located in the builtinmixins directory.
+
+#### Custom mix-ins
+
+In addition to the built in functionality you can define your own code to run for some intents.
+
+Imagine you have an intent on which you want to do some post processing.  For example, you may have an intent that
+collects some numerical input from the user.  You might ask the user: "How many television sets do you have".  And you
+may define multiple utterances to recognizer - some contain just the number, some might be a full sentence containing a
+number: "I have 2 television sets". But... the user might say something like "I have a television set" or "I have a couple
+of television sets".  Now, these two last utterances do NOT contain an explicit number, but they DO implicitly specify
+the count.  You could construct several intents (NumberOfTvSetIntent, OneTvSetIntent, TwoTvSetsIntent) and then map
+corresponding utterances to their intents and the "handler" code would know about the implied counts in the 1 and 2 TV sets
+intents.  However, that requires a complication of the code and potentially mixing parsing and business logic together.
+Wouldn't it be nice if we simply could somehow "extract" the counts (1 and 2 respectively) and add them to the result
+as slot values so that the business logic would simply use them?  Well, that's what a custom mix-in would let you do.
+
+```json
+"mixIns": {
+  "bundles": [
+    {
+      "bundleName": "tvCountMixIn",
+      "mixInCode": [
+        {
+          "mixInSrcFileName": "./injecttvcountslotvalue.js"
+        }
+      ],
+      "arguments": []
+    }
+  ],
+  "appliesTo": [
+    {
+      "bundleName": "tvCountMixIn",
+      "intentMatchRegExString": "(TvCountIntent)"
+    }
+  ]
+}
+```
+
+Now, after a successful match on TvCountIntent, ./injecttvcountslotvalue.js will run and add the corresponding slot
+and value to the result.
+
 ### Dollar values
 
 If a service like Cortana passes a dollar value, e.g. $1000, it will be mapped
