@@ -1815,30 +1815,13 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
 
         }
       }
-      // TODO replace this list with the one already in recognizerSet
-      let builtInIntentsNames = [
-        "TRANSCEND.CancelIntent",
-        "TRANSCEND.HelpIntent",
-        "TRANSCEND.LoopOffIntent",
-        "TRANSCEND.LoopOnIntent",
-        "TRANSCEND.NextIntent",
-        "TRANSCEND.NoIntent",
-        "TRANSCEND.PauseIntent",
-        "TRANSCEND.PreviousIntent",
-        "TRANSCEND.RepeatIntent",
-        "TRANSCEND.ResumeIntent",
-        "TRANSCEND.ShuffleOffIntent",
-        "TRANSCEND.ShuffleOnIntent",
-        "TRANSCEND.StartOverIntent",
-        "TRANSCEND.StopIntent",
-        "TRANSCEND.YesIntent"
-      ];
-      for(let i = 0; i < builtInIntentsNames.length; i++){
+      for(let i = 0; i < recognizerSet.builtInIntents.length; i ++){
+        let scratch = recognizerSet.builtInIntents[i];
         let intentMixIns = [];
         // Loop through all "appliesTo" entries and if the intent matches, add the corresponding mix in
         for(let j = 0; j < config.mixIns.appliesTo.length; j++){
           let regExp = new RegExp(config.mixIns.appliesTo[j].intentMatchRegExString, "ig");
-          if(regExp.test(builtInIntentsNames[i]) === true){
+          if(regExp.test(scratch.name) === true){
             // This intent matches, add it to intentMixIn
             let bundle = _getMixInBundle(config, config.mixIns.appliesTo[j].bundleName);
             // Now push source/args combination onto intentMixIn for all mixins in this bundle
@@ -1851,11 +1834,11 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
           // We have some mix ins that need to be added to the current intent
           // Note that there may already be something set for that intent, so check for that and
           // concatenate if needed.
-          if(typeof recognizerSet.mixIns[builtInIntentsNames[i]] !== "undefined" && Array.isArray(recognizerSet.mixIns[builtInIntentsNames[i]]) === true){
-            recognizerSet.mixIns[builtInIntentsNames[i]] = recognizerSet.mixIns[builtInIntentsNames[i]].concat(intentMixIns);
+          if(typeof recognizerSet.mixIns[scratch.name] !== "undefined" && Array.isArray(recognizerSet.mixIns[scratch.name]) === true){
+            recognizerSet.mixIns[scratch.name] = recognizerSet.mixIns[scratch.name].concat(intentMixIns);
           }
           else {
-            recognizerSet.mixIns[builtInIntentsNames[i]] = intentMixIns;
+            recognizerSet.mixIns[scratch.name] = intentMixIns;
           }
         }
       }
