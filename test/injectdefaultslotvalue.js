@@ -34,9 +34,30 @@ module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-u
     priorResult = standardArgs.priorResult;
   }
   if(typeof priorResult.slots.CountSlot === "undefined"){
-    priorResult.slots["CountSlot"] = {
-      "name": "CountSlot",
-      "value": "1"
-    };
+    if(utterance.endsWith("an appetizer")){
+      priorResult.slots["CountSlot"] = {
+        "name": "CountSlot",
+        "value": "1"
+      };
+    }
+    else if(utterance.endsWith("a couple of appetizers") || utterance.endsWith("a pair of appetizers")){
+      priorResult.slots["CountSlot"] = {
+        "name": "CountSlot",
+        "value": "2"
+      };
+    }
+    else if(utterance.endsWith("some appetizers")){
+      priorResult.slots["CountSlot"] = {
+        "name": "CountSlot",
+        "value": "3"
+      };
+    }
+    else if(utterance.endsWith("few appetizers")){
+      priorResult.slots["CountSlot"] = {
+        "name": "CountSlot",
+        "value": "4"
+      };
+    }
+
   }
 };
