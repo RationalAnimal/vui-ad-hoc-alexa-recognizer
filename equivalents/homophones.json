@@ -834,8 +834,6 @@
         {"fitRating":0.95, "values":["close","cloze","clothes"]}
       ]
     },
-
-
     {
       "words":["coal","cole","kohl"],
       "synonyms":[
@@ -852,6 +850,26 @@
       "words":["coarse","corse","course"],
       "synonyms":[
         {"fitRating":0.95, "values":["coarse","corse","course"]}
+      ]
+    },
+
+
+    {
+      "words":["coated","coded"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["coated","coded"]}
+      ]
+    },
+    {
+      "words":["cocks","cox"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["cocks","cox"]}
+      ]
+    },
+    {
+      "words":["coign","coin","quoin"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["coign","coin","quoin"]}
       ]
     }
 

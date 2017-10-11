@@ -1948,7 +1948,6 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
                     }
                   }
                 }
-
                 return returnValue;
               }
             }
