@@ -870,8 +870,6 @@
         {"fitRating":0.95, "values":["coign","coin","quoin"]}
       ]
     },
-
-
     {
       "words":["colonel","kernel"],
       "synonyms":[
@@ -888,6 +886,26 @@
       "words":["complement","compliment"],
       "synonyms":[
         {"fitRating":0.95, "values":["complement","compliment"]}
+      ]
+    },
+
+
+    {
+      "words":["contingence","contingents"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["contingence","contingents"]}
+      ]
+    },
+    {
+      "words":["coo","coup"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["coo","coup"]}
+      ]
+    },
+    {
+      "words":["coop","coupe"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["coop","coupe"]}
       ]
     }
 
