@@ -1785,9 +1785,9 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         config.mixIns.bundles[i].resolvedFileNames = _getMixInSrcFilename(config, config.mixIns.bundles[i].bundleName, resolvedBaseDir);
       }
       // Loop through all the custom intents and see which bundles apply to each intent
-      for(let i = 0; i < intents.length; i++){
+      for(let i = 0; i < intents.intents.length; i++){
         let intentMixIns = [];
-        let intent = intents[i];
+        let intent = intents.intents[i];
         // Loop through all "appliesTo" entries and if the intent matches, add the corresponding mix in
         for(let j = 0; j < config.mixIns.appliesTo.length; j++){
           let regExp = new RegExp(config.mixIns.appliesTo[j].intentMatchRegExString, "ig");
@@ -1810,9 +1810,6 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
           else {
             recognizerSet.mixIns[intent.intent] = intentMixIns;
           }
-
-
-
         }
       }
       for(let i = 0; i < recognizerSet.builtInIntents.length; i ++){
