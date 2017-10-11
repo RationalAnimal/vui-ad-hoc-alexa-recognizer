@@ -139,8 +139,16 @@
 						"regExString": "(years old|y.o.)"
 					}
 				]
+			},
+			{
+				"bundleName": "defaultCountMixIn",
+				"mixInCode": [
+					{
+						"mixInSrcFileName": "./injectdefaultslotvalue.js"
+					}
+				],
+				"arguments": []
 			}
-
 		],
 		"appliesTo": [
 			{
@@ -154,6 +162,10 @@
 			{
 				"bundleName": "ageSearchMixIn",
 				"intentMatchRegExString": "(PersonalInfoIntent)"
+			},
+			{
+				"bundleName": "defaultCountMixIn",
+				"intentMatchRegExString": "(VagueCountIntent)"
 			}
 		]
 	},

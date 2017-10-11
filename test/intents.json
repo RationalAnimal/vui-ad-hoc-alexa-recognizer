@@ -732,7 +732,17 @@
     {
       "intent": "HalfDozenIntent",
       "slots": []
+    },
+    {
+      "intent": "VagueCountIntent",
+      "slots": [
+        {
+          "name": "CountSlot",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
     }
+
 
 
   ]
