@@ -119,6 +119,15 @@
 				]
 			},
 			{
+				"bundleName": "wordCountMixIn",
+				"mixInCode": [
+					{
+						"mixInBuiltInName": "wordcount"
+					}
+				],
+				"arguments": []
+			},
+			{
 				"bundleName": "ageSearchMixIn",
 				"mixInCode": [
 					{
@@ -137,6 +146,10 @@
 			{
 				"bundleName": "loggingMixIn",
 				"intentMatchRegExString": "(ThisShouldNotMatch.*)"
+			},
+			{
+				"bundleName": "wordCountMixIn",
+				"intentMatchRegExString": "(TRANSCEND[.]Cancel)"
 			},
 			{
 				"bundleName": "ageSearchMixIn",
