@@ -852,8 +852,6 @@
         {"fitRating":0.95, "values":["coarse","corse","course"]}
       ]
     },
-
-
     {
       "words":["coated","coded"],
       "synonyms":[
@@ -870,6 +868,26 @@
       "words":["coign","coin","quoin"],
       "synonyms":[
         {"fitRating":0.95, "values":["coign","coin","quoin"]}
+      ]
+    },
+
+
+    {
+      "words":["colonel","kernel"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["colonel","kernel"]}
+      ]
+    },
+    {
+      "words":["complacent","complaisant"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["complacent","complaisant"]}
+      ]
+    },
+    {
+      "words":["complement","compliment"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["complement","compliment"]}
       ]
     }
 
