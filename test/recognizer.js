@@ -2608,6 +2608,74 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
     });
   });
 
+  describe("Mix in processing", function() {
+    it("verify an utterance containing actual count slot matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("I would like five appetizers");
+      expect(result).to.eql(
+        {
+          "name": "VagueCountIntent",
+          "slots": {
+            "CountSlot": {
+              "name": "CountSlot",
+              "value": "5"
+            }
+          }
+        });
+    });
+    it("verify an utterance containing implied count of one matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("I would like an appetizer");
+      expect(result).to.eql(
+        {
+          "name": "VagueCountIntent",
+          "slots": {
+            "CountSlot": {
+              "name": "CountSlot",
+              "value": "1"
+            }
+          }
+        });
+    });
+    it("verify an utterance containing implied count of two matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("I would like a couple of appetizers");
+      expect(result).to.eql(
+        {
+          "name": "VagueCountIntent",
+          "slots": {
+            "CountSlot": {
+              "name": "CountSlot",
+              "value": "2"
+            }
+          }
+        });
+    });
+    it("verify an utterance containing implied count of three matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("I would like some appetizers");
+      expect(result).to.eql(
+        {
+          "name": "VagueCountIntent",
+          "slots": {
+            "CountSlot": {
+              "name": "CountSlot",
+              "value": "3"
+            }
+          }
+        });
+    });
+    it("verify an utterance containing implied count of four matches and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("I would like a few appetizers");
+      expect(result).to.eql(
+        {
+          "name": "VagueCountIntent",
+          "slots": {
+            "CountSlot": {
+              "name": "CountSlot",
+              "value": "4"
+            }
+          }
+        });
+    });
+  });
+
   /*
     describe("TRANSCEND.US_LAST_NAME processing", function() {
       it("get timing of loading entire last name json", function() {
