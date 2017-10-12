@@ -906,8 +906,6 @@
         {"fitRating":0.95, "values":["coop","coupe"]}
       ]
     },
-
-
     {
       "words":["cops","copse"],
       "synonyms":[
@@ -924,6 +922,26 @@
       "words":["cosign","cosine"],
       "synonyms":[
         {"fitRating":1, "values":["cosign","cosine"]}
+      ]
+    },
+
+
+    {
+      "words":["council","counsel"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["council","counsel"]}
+      ]
+    },
+    {
+      "words":["councilor","counselor"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["councilor","counselor"]}
+      ]
+    },
+    {
+      "words":["cousin","cozen"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["cousin","cozen"]}
       ]
     }
 
