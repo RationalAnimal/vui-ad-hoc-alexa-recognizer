@@ -1796,7 +1796,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
             let bundle = _getMixInBundle(config, config.mixIns.appliesTo[j].bundleName);
             // Now push source/args combination onto intentMixIn for all mixins in this bundle
             for(let k=0; k < bundle.resolvedFileNames.length; k++){
-              intentMixIns.push({"resolvedFileName": bundle.resolvedFileNames[k], "arguments": bundle.arguments[k]});
+              intentMixIns.push({"resolvedFileName": bundle.resolvedFileNames[k], "arguments": bundle.mixInCode[k].arguments});
             }
           }
         }
@@ -1823,7 +1823,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
             let bundle = _getMixInBundle(config, config.mixIns.appliesTo[j].bundleName);
             // Now push source/args combination onto intentMixIn for all mixins in this bundle
             for(let k=0; k < bundle.resolvedFileNames.length; k++){
-              intentMixIns.push({"resolvedFileName": bundle.resolvedFileNames[k], "arguments": bundle.arguments[k]});
+              intentMixIns.push({"resolvedFileName": bundle.resolvedFileNames[k], "arguments": bundle.mixInCode[k].arguments});
             }
           }
         }

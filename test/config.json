@@ -109,12 +109,10 @@
 				"bundleName": "loggingMixIn",
 				"mixInCode": [
 					{
-						"mixInBuiltInName": "noop"
-					}
-				],
-				"arguments": [
-					{
-						"log": true
+						"mixInBuiltInName": "noop",
+						"arguments": {
+							"log": true
+						}
 					}
 				]
 			},
@@ -122,21 +120,19 @@
 				"bundleName": "wordCountMixIn",
 				"mixInCode": [
 					{
-						"mixInBuiltInName": "wordcount"
+						"mixInBuiltInName": "wordcount",
+						"arguments": {}
 					}
-				],
-				"arguments": []
+				]
 			},
 			{
 				"bundleName": "ageSearchMixIn",
 				"mixInCode": [
 					{
-						"mixInBuiltInName": "findRegEx"
-					}
-				],
-				"arguments": [
-					{
-						"regExString": "(years old|y.o.)"
+						"mixInBuiltInName": "findRegEx",
+						"arguments": {
+							"regExString": "(years old|y.o.)"
+						}
 					}
 				]
 			},
@@ -144,25 +140,27 @@
 				"bundleName": "defaultCountMixIn",
 				"mixInCode": [
 					{
-						"mixInSrcFileName": "./injectdefaultslotvalue.js"
+						"mixInSrcFileName": "./injectdefaultslotvalue.js",
+						"arguments": {}
 					}
-				],
-				"arguments": []
+				]
 			},
 			{
 				"bundleName": "morphingIntentBundle",
 				"mixInCode": [
 					{
-						"mixInBuiltInName": "removeslots"
+						"mixInBuiltInName": "removeslots",
+						"arguments": {}
 					},
 					{
-						"mixInBuiltInName": "adddefaultslots"
+						"mixInBuiltInName": "adddefaultslots",
+						"arguments": {"slotsToAdd":{"DateSlot": {"name": "DateSlot", "value": "2017-10-12"}}}
 					},
 					{
-						"mixInBuiltInName": "changeintent"
+						"mixInBuiltInName": "changeintent",
+						"arguments": {"newIntent": "DateIntent"}
 					}
-				],
-				"arguments": [{}, {"slotsToAdd":{"DateSlot": {"name": "DateSlot", "value": "2017-10-12"}}}, {"newIntent": "DateIntent"}]
+				]
 			}
 		],
 		"appliesTo": [
