@@ -978,8 +978,6 @@
         {"fitRating":0.9, "values":["curb","kerb"]}
       ]
     },
-
-
     {
       "words":["currant","current"],
       "synonyms":[
@@ -996,6 +994,26 @@
       "words":["cymbol","symbol"],
       "synonyms":[
         {"fitRating":0.9, "values":["cymbol","symbol"]}
+      ]
+    },
+
+
+    {
+      "words":["dam","damn"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["dam","damn"]}
+      ]
+    },
+    {
+      "words":["Dane","deign"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["Dane","deign"]}
+      ]
+    },
+    {
+      "words":["days","daze"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["days","daze"]}
       ]
     }
 
