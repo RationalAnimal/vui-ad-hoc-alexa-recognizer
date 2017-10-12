@@ -2684,7 +2684,12 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
       expect(result).to.eql(
         {
           "name": "MorphingIntent",
-          "slots": {}
+          "slots": {
+            "DateSlot": {
+              "name": "DateSlot",
+              "value": "2017-10-12"
+            }
+          }
         });
     });
 

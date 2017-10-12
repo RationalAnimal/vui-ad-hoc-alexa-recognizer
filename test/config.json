@@ -154,9 +154,12 @@
 				"mixInCode": [
 					{
 						"mixInBuiltInName": "removeslots"
+					},
+					{
+						"mixInBuiltInName": "adddefaultslots"
 					}
 				],
-				"arguments": []
+				"arguments": [{}, {"slotsToAdd":{"DateSlot": {"name": "DateSlot", "value": "2017-10-12"}}}]
 			}
 		],
 		"appliesTo": [
