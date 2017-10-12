@@ -36,7 +36,7 @@ https://github.com/RationalAnimal
 
 I have finally gotten to a point where the major features are at a good spot and I can spare some time for
 tutorials, examples, and documentation.
-To that end I have set up a web site on GitHub pages and included the first nine tutorials, with more on the way.
+To that end I have set up a web site on GitHub pages and included the first set of tutorials, with more on the way.
 
 Here is the website:
 https://rationalanimal.github.io/vui-ad-hoc-alexa-recognizer/

@@ -924,8 +924,6 @@
         {"fitRating":1, "values":["cosign","cosine"]}
       ]
     },
-
-
     {
       "words":["council","counsel"],
       "synonyms":[
@@ -942,6 +940,26 @@
       "words":["cousin","cozen"],
       "synonyms":[
         {"fitRating":0.9, "values":["cousin","cozen"]}
+      ]
+    },
+
+
+    {
+      "words":["coward","cowered","cowherd"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["coward","cowered","cowherd"]}
+      ]
+    },
+    {
+      "words":["creak","creek"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["creak","creek"]}
+      ]
+    },
+    {
+      "words":["crewed","crude"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["crewed","crude"]}
       ]
     }
 
