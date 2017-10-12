@@ -34,7 +34,7 @@ module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-u
     priorResult = standardArgs.priorResult;
   }
   if(typeof utterance === "string"){
-    let words = utterance.split(" ");
+    let words = utterance.split("\\s+");
     priorResult.wordCount = words.length;
   }
 };
