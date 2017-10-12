@@ -996,8 +996,6 @@
         {"fitRating":0.9, "values":["cymbol","symbol"]}
       ]
     },
-
-
     {
       "words":["dam","damn"],
       "synonyms":[
@@ -1014,6 +1012,26 @@
       "words":["days","daze"],
       "synonyms":[
         {"fitRating":0.95, "values":["days","daze"]}
+      ]
+    },
+
+
+    {
+      "words":["dear","deer"],
+      "synonyms":[
+        {"fitRating":1, "values":["dear","deer"]}
+      ]
+    },
+    {
+      "words":["dense","dents"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["dense","dents"]}
+      ]
+    },
+    {
+      "words":["dependence","dependents"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["dependence","dependents"]}
       ]
     }
 
