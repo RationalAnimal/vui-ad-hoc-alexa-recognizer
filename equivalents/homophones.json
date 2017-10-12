@@ -1014,8 +1014,6 @@
         {"fitRating":0.95, "values":["days","daze"]}
       ]
     },
-
-
     {
       "words":["dear","deer"],
       "synonyms":[
@@ -1032,6 +1030,26 @@
       "words":["dependence","dependents"],
       "synonyms":[
         {"fitRating":0.7, "values":["dependence","dependents"]}
+      ]
+    },
+
+
+    {
+      "words":["descent","dissent"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["descent","dissent"]}
+      ]
+    },
+    {
+      "words":["desert","dessert"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["desert","dessert"]}
+      ]
+    },
+    {
+      "words":["deviser","divisor"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["deviser","divisor"]}
       ]
     }
 
