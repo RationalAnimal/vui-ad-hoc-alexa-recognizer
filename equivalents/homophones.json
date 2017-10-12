@@ -960,8 +960,6 @@
         {"fitRating":0.9, "values":["crewed","crude"]}
       ]
     },
-
-
     {
       "words":["crews","cruise","crus","cruse"],
       "synonyms":[
@@ -978,6 +976,26 @@
       "words":["curb","kerb"],
       "synonyms":[
         {"fitRating":0.9, "values":["curb","kerb"]}
+      ]
+    },
+
+
+    {
+      "words":["currant","current"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["currant","current"]}
+      ]
+    },
+    {
+      "words":["curser","cursor"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["curser","cursor"]}
+      ]
+    },
+    {
+      "words":["cymbol","symbol"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["cymbol","symbol"]}
       ]
     }
 
