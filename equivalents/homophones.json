@@ -888,8 +888,6 @@
         {"fitRating":0.95, "values":["complement","compliment"]}
       ]
     },
-
-
     {
       "words":["contingence","contingents"],
       "synonyms":[
@@ -907,7 +905,28 @@
       "synonyms":[
         {"fitRating":0.95, "values":["coop","coupe"]}
       ]
+    },
+
+
+    {
+      "words":["cops","copse"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["cops","copse"]}
+      ]
+    },
+    {
+      "words":["correspondence","correspondents"],
+      "synonyms":[
+        {"fitRating":0.75, "values":["correspondence","correspondents"]}
+      ]
+    },
+    {
+      "words":["cosign","cosine"],
+      "synonyms":[
+        {"fitRating":1, "values":["cosign","cosine"]}
+      ]
     }
+
 
 
 
