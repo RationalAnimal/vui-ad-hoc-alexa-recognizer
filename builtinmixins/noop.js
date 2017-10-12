@@ -34,6 +34,18 @@ module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-u
     priorResult = standardArgs.priorResult;
   }
   if(typeof customArgs !== "undefined" && customArgs.log === true){
-    console.log("noop built in mix in match called");
+    console.log("noop built in mix in called");
+    if(typeof standardArgs !== "undefined"){
+      console.log("noop standardArgs: ", JSON.stringify(standardArgs));
+    }
+    else {
+      console.log("noop standardArgs: undefined");
+    }
+    if(typeof customArgs !== "undefined"){
+      console.log("noop customArgs: ", JSON.stringify(customArgs));
+    }
+    else {
+      console.log("noop customArgs: undefined");
+    }
   }
 };
