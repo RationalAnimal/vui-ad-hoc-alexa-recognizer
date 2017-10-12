@@ -157,9 +157,12 @@
 					},
 					{
 						"mixInBuiltInName": "adddefaultslots"
+					},
+					{
+						"mixInBuiltInName": "changeintent"
 					}
 				],
-				"arguments": [{}, {"slotsToAdd":{"DateSlot": {"name": "DateSlot", "value": "2017-10-12"}}}]
+				"arguments": [{}, {"slotsToAdd":{"DateSlot": {"name": "DateSlot", "value": "2017-10-12"}}}, {"newIntent": "DateIntent"}]
 			}
 		],
 		"appliesTo": [
