@@ -942,8 +942,6 @@
         {"fitRating":0.9, "values":["cousin","cozen"]}
       ]
     },
-
-
     {
       "words":["coward","cowered","cowherd"],
       "synonyms":[
@@ -960,6 +958,26 @@
       "words":["crewed","crude"],
       "synonyms":[
         {"fitRating":0.9, "values":["crewed","crude"]}
+      ]
+    },
+
+
+    {
+      "words":["crews","cruise","crus","cruse"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["crews","cruise","crus","cruse"]}
+      ]
+    },
+    {
+      "words":["cue","kyu","queue"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["cue","kyu","queue"]}
+      ]
+    },
+    {
+      "words":["curb","kerb"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["curb","kerb"]}
       ]
     }
 
