@@ -2683,7 +2683,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
       let result = recognizer.Recognizer.matchText("Morph me 3 times");
       expect(result).to.eql(
         {
-          "name": "MorphingIntent",
+          "name": "DateIntent",
           "slots": {
             "DateSlot": {
               "name": "DateSlot",
