@@ -1032,8 +1032,6 @@
         {"fitRating":0.7, "values":["dependence","dependents"]}
       ]
     },
-
-
     {
       "words":["descent","dissent"],
       "synonyms":[
@@ -1050,6 +1048,26 @@
       "words":["deviser","divisor"],
       "synonyms":[
         {"fitRating":0.85, "values":["deviser","divisor"]}
+      ]
+    },
+
+
+    {
+      "words":["dew","do","doux","due"],
+      "synonyms":[
+        {"fitRating":0.70, "values":["dew","do","doux","due"]}
+      ]
+    },
+    {
+      "words":["die","dye"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["die","dye"]}
+      ]
+    },
+    {
+      "words":["dire","dyer"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["dire","dyer"]}
       ]
     }
 
