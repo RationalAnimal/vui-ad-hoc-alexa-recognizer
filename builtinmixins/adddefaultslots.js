@@ -47,7 +47,7 @@ module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-u
     for (let slot in slotsToAdd) {
       if (slotsToAdd.hasOwnProperty(slot)) {
         if(typeof priorResult.slots.slot === "undefined" || priorResult.slots.slot === null){
-          priorResult.slots.slot = slot;
+          priorResult.slots[slot] = slotsToAdd[slot];
         }
       }
     }
