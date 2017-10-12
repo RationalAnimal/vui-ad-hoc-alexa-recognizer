@@ -148,6 +148,15 @@
 					}
 				],
 				"arguments": []
+			},
+			{
+				"bundleName": "morphingIntentBundle",
+				"mixInCode": [
+					{
+						"mixInBuiltInName": "removeslots"
+					}
+				],
+				"arguments": []
 			}
 		],
 		"appliesTo": [
@@ -170,6 +179,10 @@
 			{
 				"bundleName": "defaultCountMixIn",
 				"intentMatchRegExString": "(VagueCountIntent)"
+			},
+			{
+				"bundleName": "morphingIntentBundle",
+				"intentMatchRegExString": "(MorphingIntent)"
 			}
 		]
 	},
