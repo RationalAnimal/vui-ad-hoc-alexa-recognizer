@@ -164,6 +164,10 @@
 				"intentMatchRegExString": "(PersonalInfoIntent)"
 			},
 			{
+				"bundleName": "wordCountMixIn",
+				"intentMatchRegExString": "(VagueCountIntent)"
+			},
+			{
 				"bundleName": "defaultCountMixIn",
 				"intentMatchRegExString": "(VagueCountIntent)"
 			}

@@ -2619,7 +2619,8 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
               "name": "CountSlot",
               "value": "5"
             }
-          }
+          },
+          "wordCount": 1
         });
     });
     it("verify an utterance containing implied count of one matches and returns the correct value", function() {
@@ -2632,7 +2633,8 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
               "name": "CountSlot",
               "value": "1"
             }
-          }
+          },
+          "wordCount": 1
         });
     });
     it("verify an utterance containing implied count of two matches and returns the correct value", function() {
@@ -2645,7 +2647,8 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
               "name": "CountSlot",
               "value": "2"
             }
-          }
+          },
+          "wordCount": 1
         });
     });
     it("verify an utterance containing implied count of three matches and returns the correct value", function() {
@@ -2658,7 +2661,8 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
               "name": "CountSlot",
               "value": "3"
             }
-          }
+          },
+          "wordCount": 1
         });
     });
     it("verify an utterance containing implied count of four matches and returns the correct value", function() {
@@ -2671,7 +2675,8 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
               "name": "CountSlot",
               "value": "4"
             }
-          }
+          },
+          "wordCount": 1
         });
     });
   });
