@@ -1092,10 +1092,14 @@ required)
 
 #### Built in mix-ins
 
-Currently there are only a few built in mix-in and they are there mostly for the demonstration purposes.  One is a
-simple logging mix-in, two count characters and words and add the count to the result, and one is still being written.
-Once a good set of built in mix-in is ready I will update this section.  Meanwhile here is a little bit of documentation
-on how to use them.
+Currently there are only about seven built in mix ins.  Here is the list with a short description for each:
+* adddefaultslots - can be used to inject slot(s) with hard coded values
+* changeintent - can be used to change the matched intent to another one
+* charactercount - counts the characters in the matched utterance and attaches this count to the result
+* findRegEx - still a work in progress
+* noop - a simple logging mix in.  Does not modify the result in any way, simply logs it to console
+* removeslots - removes all matched slots from the result
+* wordcount counts the words in the matched utterance and attaches this count to the result
 
 Imagine that you update you config.json file to add the mixIns section like this:
 
@@ -1106,12 +1110,10 @@ Imagine that you update you config.json file to add the mixIns section like this
       "bundleName": "loggingMixIn",
       "mixInCode": [
         {
-          "mixInBuiltInName": "noop"
-        }
-      ],
-      "arguments": [
-        {
-          "log": true
+          "mixInBuiltInName": "noop",
+          "arguments": {
+            "log": true
+          }
         }
       ]
     }
@@ -1129,7 +1131,7 @@ What this does is defines a mix in "bundle" (i.e. bundle of the code - noop - an
 Then it specifies that this "bundle" applies to every intent (i.e. "appliesTo" field has a pairing of this bundle with
 the "intentMatchRegExString" which matches on every intent: (.*)).  As a result, the "noop" mix in will run after every
 match and log the results.  You can modify which intents it applies to by chaning the matching reg exp.  The code that
-will actually be run is  noop.js located in the builtinmixins directory:
+will actually be run is noop.js located in the builtinmixins directory:
 
 ```javascript
 "use strict";
@@ -1166,6 +1168,13 @@ utterance that matched, and the result to be returned to the user.
 The second one contains the arguments specified in the config.json: {"log": true} passed to this function on your
 behalf by vui-ad-hoc-alexa-recognizer.
 
+You might be wondering why some of these exist.  After all, why have code that removes parts of the result produced by
+the matching process.  Here is a simple "for instance": You are encountering issues with some intent(s).  You don't want
+to delete the code nor do you want to change skill definitions.  You just want to temporarily disable these intents.
+So, you may remove all the slot values, then change the intent name to something like "RemovedIntent" which will handle
+any such cases and will respond to the user with "I am sorry, I didn't get that" essentially disabling the intents.
+Or you may have decided that you want to experiment with changing the conversation flow and remap an intent to a closely
+related, but different one.
 
 #### Custom mix-ins
 
@@ -1189,10 +1198,10 @@ as slot values so that the business logic would simply use them?  Well, that's w
       "bundleName": "tvCountMixIn",
       "mixInCode": [
         {
-          "mixInSrcFileName": "./injecttvcountslotvalue.js"
+          "mixInSrcFileName": "./injecttvcountslotvalue.js",
+          "arguments": {}
         }
-      ],
-      "arguments": []
+      ]
     }
   ],
   "appliesTo": [
