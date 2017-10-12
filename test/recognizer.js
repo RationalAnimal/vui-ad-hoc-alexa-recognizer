@@ -2679,6 +2679,15 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           "wordCount": 1
         });
     });
+    it("verify a match on an intent with slots matches, is modified accordingly by mix ins into a different result, and returns the correct value", function() {
+      let result = recognizer.Recognizer.matchText("Morph me 3 times");
+      expect(result).to.eql(
+        {
+          "name": "MorphingIntent",
+          "slots": {}
+        });
+    });
+
   });
 
   /*

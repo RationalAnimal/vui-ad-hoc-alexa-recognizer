@@ -741,6 +741,15 @@
           "type": "AMAZON.NUMBER"
         }
       ]
+    },
+    {
+      "intent": "MorphingIntent",
+      "slots": [
+        {
+          "name": "CountSlot",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
     }
 
 
