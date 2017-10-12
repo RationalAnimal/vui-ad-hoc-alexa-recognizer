@@ -1129,7 +1129,43 @@ What this does is defines a mix in "bundle" (i.e. bundle of the code - noop - an
 Then it specifies that this "bundle" applies to every intent (i.e. "appliesTo" field has a pairing of this bundle with
 the "intentMatchRegExString" which matches on every intent: (.*)).  As a result, the "noop" mix in will run after every
 match and log the results.  You can modify which intents it applies to by chaning the matching reg exp.  The code that
-will actually be run is  noop.js located in the builtinmixins directory.
+will actually be run is  noop.js located in the builtinmixins directory:
+
+```javascript
+"use strict";
+module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-unused-vars
+  let intentName;
+  let utterance;
+  let priorResult;
+  if(typeof standardArgs !== "undefined"){
+    intentName = standardArgs.intentName;
+    utterance = standardArgs.utterance;
+    priorResult = standardArgs.priorResult;
+  }
+  if(typeof customArgs !== "undefined" && customArgs.log === true){
+    console.log("noop built in mix in called");
+    if(typeof standardArgs !== "undefined"){
+      console.log("noop standardArgs: ", JSON.stringify(standardArgs));
+    }
+    else {
+      console.log("noop standardArgs: undefined");
+    }
+    if(typeof customArgs !== "undefined"){
+      console.log("noop customArgs: ", JSON.stringify(customArgs));
+    }
+    else {
+      console.log("noop customArgs: undefined");
+    }
+  }
+};
+```
+
+Note the signature - two arguments are passed in, both are objects.
+The first one is passed to your mix in by vui-ad-hoc-alexa-recognizer automatically.  It contains intent name,
+utterance that matched, and the result to be returned to the user.
+The second one contains the arguments specified in the config.json: {"log": true} passed to this function on your
+behalf by vui-ad-hoc-alexa-recognizer.
+
 
 #### Custom mix-ins
 
@@ -1198,9 +1234,11 @@ module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-u
   }
 };
 ```
-First, note the signature - two arguments are passed in, both are objects with multiple (potentially) fields.
+Note the signature - just as with the built in mix ins two arguments are passed in, 
+both are objects with multiple (potentially) fields.
 The first one is passed to your mix in by vui-ad-hoc-alexa-recognizer automatically.  It contains intent name,
 utterance that matched, and the result to be returned to the user.
+The second one contains the arguments specified in the config.json (nothing in this case).
 
 Here this code checks to see if the result already has a CountSlot value.  If not - it will attempt to determine whether
 it's 1 or 2 by looking at the utterance and updating the result with "injected" CountSlot.
