@@ -33,9 +33,18 @@
      utterance = standardArgs.utterance;
      priorResult = standardArgs.priorResult;
    }
-   if(typeof customArgs !== "undefined" && typeof customArgs.regExString === "string"){
-     // TODO add code to find all matches of the supplied reg ex and update the prior
-     // result with the findings.
+   if(typeof priorResult === "undefined" && priorResult === null){
+     return;
    }
-   //return;
+   if(typeof customArgs !== "undefined" && typeof customArgs.regExString === "string"){
+     let regExp = new RegExp(customArgs.regExString, "ig");
+     let matchResult;
+     let matchCount = 0;
+     while(matchResult = scratchRegExp.exec(stringToMatch)) {// eslint-disable-line no-cond-assign
+       matchCount ++;
+     }
+     if(matchCount > 0){
+       priorResult.regExpMatch = {"regExp": customArgs.regExStrin, "matchCount": matchCount};
+     }
+   }
  };
