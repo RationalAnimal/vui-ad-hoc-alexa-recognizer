@@ -159,6 +159,10 @@
 					{
 						"mixInBuiltInName": "changeintent",
 						"arguments": {"newIntent": "DateIntent"}
+					},
+					{
+						"mixInBuiltInName": "countregexp",
+						"arguments": {"regExpString": "(e)"}
 					}
 				]
 			}

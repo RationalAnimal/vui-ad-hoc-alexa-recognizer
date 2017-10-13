@@ -2689,6 +2689,10 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
               "name": "DateSlot",
               "value": "2017-10-12"
             }
+          },
+          "regExpMatch": {
+            "regExp": "(e)",
+            "matchCount": 2
           }
         });
     });
