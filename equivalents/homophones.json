@@ -1122,8 +1122,6 @@
         {"fitRating":0.95, "values":["earn","erne","urn"]}
       ]
     },
-
-
     {
       "words":["eau","o","oh","owe"],
       "synonyms":[
@@ -1140,6 +1138,25 @@
       "words":["eery","eyrie"],
       "synonyms":[
         {"fitRating":0.75, "values":["eery","eyrie"]}
+      ]
+    },
+
+    {
+      "words":["either","ether"],
+      "synonyms":[
+        {"fitRating":0.75, "values":["either","ether"]}
+      ]
+    },
+    {
+      "words":["emigrant","immigrant"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["emigrant","immigrant"]}
+      ]
+    },
+    {
+      "words":["ensure","insure"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["ensure","insure"]}
       ]
     }
 
