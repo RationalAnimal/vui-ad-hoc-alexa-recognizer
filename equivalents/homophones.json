@@ -1068,9 +1068,6 @@
         {"fitRating":0.95, "values":["dire","dyer"]}
       ]
     },
-
-
-
     {
       "words":["discreet","discrete"],
       "synonyms":[
@@ -1087,6 +1084,26 @@
       "words":["done","dun"],
       "synonyms":[
         {"fitRating":0.95, "values":["done","dun"]}
+      ]
+    },
+
+
+    {
+      "words":["does","doughs","doze"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["does","doughs","doze"]}
+      ]
+    },
+    {
+      "words":["douse","dowse"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["douse","dowse"]}
+      ]
+    },
+    {
+      "words":["draft","draught"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["draft","draught"]}
       ]
     }
 
