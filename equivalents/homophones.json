@@ -1266,8 +1266,6 @@
         {"fitRating":0.7, "values":["feudal","futile"]}
       ]
     },
-
-
     {
       "words":["few","phew"],
       "synonyms":[
@@ -1284,6 +1282,26 @@
       "words":["file","phial"],
       "synonyms":[
         {"fitRating":0.95, "values":["file","phial"]}
+      ]
+    },
+
+
+    {
+      "words":["find","fined"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["find","fined"]}
+      ]
+    },
+    {
+      "words":["finish","Finnish"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["finish","Finnish"]}
+      ]
+    },
+    {
+      "words":["fir","fur"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["fir","fur"]}
       ]
     }
 
