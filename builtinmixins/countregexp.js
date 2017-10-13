@@ -36,15 +36,18 @@
    if(typeof priorResult === "undefined" && priorResult === null){
      return;
    }
-   if(typeof customArgs !== "undefined" && typeof customArgs.regExString === "string"){
-     let regExp = new RegExp(customArgs.regExString, "ig");
+   console.log("standardArgs: ", JSON.stringify(standardArgs));
+   console.log("customArgs: ", JSON.stringify(customArgs));
+   if(typeof customArgs !== "undefined" && typeof customArgs.regExpString === "string"){
+     console.log("customArgs.regExpString: " + customArgs.regExpString);
+     let regExp = new RegExp(customArgs.regExpString, "ig");
      let matchResult;
      let matchCount = 0;
-     while(matchResult = scratchRegExp.exec(stringToMatch)) {// eslint-disable-line no-cond-assign
+     while(matchResult = regExp.exec(utterance)) {// eslint-disable-line no-cond-assign;
        matchCount ++;
      }
      if(matchCount > 0){
-       priorResult.regExpMatch = {"regExp": customArgs.regExStrin, "matchCount": matchCount};
+       priorResult.regExpMatch = {"regExp": customArgs.regExpString, "matchCount": matchCount};
      }
    }
  };

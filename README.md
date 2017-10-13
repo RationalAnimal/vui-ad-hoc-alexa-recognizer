@@ -1096,7 +1096,7 @@ Currently there are only about seven built in mix ins.  Here is the list with a 
 * adddefaultslots - can be used to inject slot(s) with hard coded values
 * changeintent - can be used to change the matched intent to another one
 * charactercount - counts the characters in the matched utterance and attaches this count to the result
-* findRegEx - still a work in progress
+* countregexp - counts the occurence of the specified reg exp and attaches this count to the result
 * noop - a simple logging mix in.  Does not modify the result in any way, simply logs it to console
 * removeslots - removes all matched slots from the result
 * wordcount counts the words in the matched utterance and attaches this count to the result
