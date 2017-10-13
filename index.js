@@ -1937,8 +1937,8 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
                   returnValue.slots[scratch.slots[j - 1].name] = {"name": scratch.slots[j - 1].name, "value": processedMatchResult};
                 }
                 // Now call the mix in code before returning
-                if(typeof recognizerSet.mixIns !== "undefined"){
-                  let mixIns = recognizerSet.mixIns[scratch.intent];
+                if(typeof recognizerSet.mixIns !== "undefined" && typeof recognizerSet.mixIns.intents !== "undefined"){
+                  let mixIns = recognizerSet.mixIns.intents[scratch.intent];
                   if(typeof mixIns !== "undefined" && Array.isArray(mixIns) === true){
                     for (let j = 0; j < mixIns.length; j++){
                       let mixIn = mixIns[j];
@@ -1952,8 +1952,8 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
               }
             }
           }
-
         }
+        // TODO looks like leftover code from refactoring - verify it's not need and remove or expand if still needed.
         else {
           // This is a preliminary reg exp
           let scratchMatchResult = scratchRegExp.test(stringToMatch);
@@ -1989,8 +1989,8 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
       returnValue.name = _getTranslatedIntentForOutput(scratch.name, recognizerSet.platform);
       returnValue.slots = {};
       // Now call the mix in code before returning
-      if(typeof recognizerSet.mixIns !== "undefined"){
-        let mixIns = recognizerSet.mixIns[scratch.name];
+      if(typeof recognizerSet.mixIns !== "undefined"  && typeof recognizerSet.mixIns.intents !== "undefined"){
+        let mixIns = recognizerSet.mixIns.intents[scratch.name];
         if(typeof mixIns !== "undefined" && Array.isArray(mixIns) === true){
           for (let j = 0; j < mixIns.length; j++){
             let mixIn = mixIns[j];
