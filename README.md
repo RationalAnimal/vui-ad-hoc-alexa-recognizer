@@ -69,6 +69,9 @@ commonly substituted words in chat bots and words that sound the same but aren't
 define words and phrases that are equivalent to each other so that you need only to specify a simple utterance and
 have vui-ad-hoc-alexa-recognizer match on any variation of that utterance that may result from using text equivalents.
 This allows solving many different issues - from typos, to homophones, to special vocabularies, etc...
+* "Would You Like Some Fries with That?" - introduces the concept of "mix in" (aka "add on") processing.
+Shows how you can use mix ins to cleanly separate matching and business logic, change matching through configuration and
+mix in application, add logging, and more.
 
 ## Domain Tutorials
 
