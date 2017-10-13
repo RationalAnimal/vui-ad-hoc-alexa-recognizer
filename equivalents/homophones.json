@@ -1212,8 +1212,6 @@
         {"fitRating":0.85, "values":["fairy","ferry"]}
       ]
     },
-
-
     {
       "words":["faro","farrow","pharoah"],
       "synonyms":[
@@ -1230,6 +1228,26 @@
       "words":["fate","fete","fête"],
       "synonyms":[
         {"fitRating":0.9, "values":["fate","fete","fête"]}
+      ]
+    },
+
+
+    {
+      "words":["faun","fawn"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["faun","fawn"]}
+      ]
+    },
+    {
+      "words":["fay","fey"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["fay","fey"]}
+      ]
+    },
+    {
+      "words":["faze","phase"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["faze","phase"]}
       ]
     }
 
