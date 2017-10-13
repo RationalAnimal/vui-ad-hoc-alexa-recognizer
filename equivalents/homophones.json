@@ -1302,7 +1302,6 @@
         {"fitRating":0.95, "values":["fir","fur"]}
       ]
     },
-
     {
       "words":["firs","furs","furze"],
       "synonyms":[
@@ -1319,6 +1318,26 @@
       "words":["flair","flare"],
       "synonyms":[
         {"fitRating":0.95, "values":["flair","flare"]}
+      ]
+    },
+
+
+    {
+      "words":["flaw","floor"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["flaw","floor"]}
+      ]
+    },
+    {
+      "words":["flea","flee"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["flea","flee"]}
+      ]
+    },
+    {
+      "words":["flew","flu","flue"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["flew","flu","flue"]}
       ]
     }
 
