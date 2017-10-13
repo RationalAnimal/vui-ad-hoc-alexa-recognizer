@@ -36,10 +36,7 @@
    if(typeof priorResult === "undefined" && priorResult === null){
      return;
    }
-   console.log("standardArgs: ", JSON.stringify(standardArgs));
-   console.log("customArgs: ", JSON.stringify(customArgs));
    if(typeof customArgs !== "undefined" && typeof customArgs.regExpString === "string"){
-     console.log("customArgs.regExpString: " + customArgs.regExpString);
      let regExp = new RegExp(customArgs.regExpString, "ig");
      let matchResult;
      let matchCount = 0;

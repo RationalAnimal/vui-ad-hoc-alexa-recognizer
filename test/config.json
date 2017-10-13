@@ -170,7 +170,7 @@
 		"appliesTo": [
 			{
 				"bundleName": "loggingMixIn",
-				"intentMatchRegExString": "(ThisShouldNotMatch.*)"
+				"unmatched": false
 			},
 			{
 				"bundleName": "wordCountMixIn",

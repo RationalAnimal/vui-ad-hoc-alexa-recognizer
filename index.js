@@ -2007,7 +2007,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
   for(let i = 0; i < recognizerSet.mixIns.unmatched.length; i++){
     let mixIn = recognizerSet.mixIns.unmatched[i];
     if(typeof mixIn !== "undefined" && mixIn !== null){
-      _applyMixIns(mixIn.resolvedFileName, undefined, undefined, undefined, mixIn.arguments);
+      _applyMixIns(mixIn.resolvedFileName, undefined, stringToMatch, undefined, mixIn.arguments);
     }
   }
 };

@@ -1252,6 +1252,30 @@ The second one contains the arguments specified in the config.json (nothing in t
 Here this code checks to see if the result already has a CountSlot value.  If not - it will attempt to determine whether
 it's 1 or 2 by looking at the utterance and updating the result with "injected" CountSlot.
 
+#### Applying mix ins whne there is no match
+
+Sometimes you may want to apply a particular mix in NOT when there is an intent match, but when there is NOT one.
+A typical commont example is replacing all non-matches with a default intent, e.g. "UnknownIntent".
+You can easily do this by specifying "unmatched": true in your config.json:
+
+```json
+{
+  "bundleName": "loggingMixIn",
+  "unmatched": true
+}
+```
+
+You can even combine both matched intent and unmatched specifications:
+```json
+{
+  "bundleName": "loggingMixIn",
+  "intentMatchRegExString": "(.*)",
+  "unmatched": true
+}
+```
+
+the above will execute on EVERY match attempt, whether it successfully matches or not.
+
 ### Dollar values
 
 If a service like Cortana passes a dollar value, e.g. $1000, it will be mapped

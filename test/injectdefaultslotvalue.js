@@ -33,7 +33,7 @@ module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-u
     utterance = standardArgs.utterance;
     priorResult = standardArgs.priorResult;
   }
-  if(typeof priorResult.slots.CountSlot === "undefined"){
+  if(typeof priorResult !== "undefined" && priorResult !== null && typeof priorResult.slots !== "undefined" && priorResult.slots !== null && typeof priorResult.slots.CountSlot === "undefined"){
     if(utterance.endsWith("an appetizer")){
       priorResult.slots["CountSlot"] = {
         "name": "CountSlot",
