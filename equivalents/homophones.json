@@ -1230,8 +1230,6 @@
         {"fitRating":0.9, "values":["fate","fete","fête"]}
       ]
     },
-
-
     {
       "words":["faun","fawn"],
       "synonyms":[
@@ -1248,6 +1246,26 @@
       "words":["faze","phase"],
       "synonyms":[
         {"fitRating":0.95, "values":["faze","phase"]}
+      ]
+    },
+
+
+    {
+      "words":["feat","feet"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["feat","feet"]}
+      ]
+    },
+    {
+      "words":["ferrule","ferule"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["ferrule","ferule"]}
+      ]
+    },
+    {
+      "words":["feudal","futile"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["feudal","futile"]}
       ]
     }
 
