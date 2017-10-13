@@ -1853,6 +1853,10 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
           // Not an unmatched appliesTo
           continue;
         }
+        let bundle = _getMixInBundle(config, config.mixIns.appliesTo[j].bundleName);
+        for(let k=0; k < bundle.resolvedFileNames.length; k++){
+          recognizerSet.mixIns.unmatched.push({"resolvedFileName": bundle.resolvedFileNames[k], "arguments": bundle.mixInCode[k].arguments});
+        }
       }
 
     }
