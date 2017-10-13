@@ -30,3 +30,5 @@ Here you will find tutorials showing you how to use vui-ad-hoc-alexa-recognizer
 <a class="page-link" href="{{ "/Tutorials/ThatSoundsLikeYou/" | relative_url }}">That Sounds Like You</a>
 
 <a class="page-link" href="{{ "/Tutorials/SixOfOneHalfADozenOfTheOther/" | relative_url }}">Six of One, Half a Dozen of the Other</a>
+
+<a class="page-link" href="{{ "/Tutorials/WouldYouLikeSomeFriesWithThat/" | relative_url }}">Would You Like Some Fries with That?</a>
