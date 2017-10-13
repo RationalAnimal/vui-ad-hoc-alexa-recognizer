@@ -1158,8 +1158,6 @@
         {"fitRating":0.9, "values":["ensure","insure"]}
       ]
     },
-
-
     {
       "words":["eutopia","utopia"],
       "synonyms":[
@@ -1176,6 +1174,27 @@
       "words":["ewes","use","yews"],
       "synonyms":[
         {"fitRating":0.95, "values":["ewes","use","yews"]}
+      ]
+    },
+
+
+
+    {
+      "words":["eyed","I'd"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["eyed","I'd"]}
+      ]
+    },
+    {
+      "words":["fain","fane","feign"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["fain","fane","feign"]}
+      ]
+    },
+    {
+      "words":["faint","feint"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["faint","feint"]}
       ]
     }
 
