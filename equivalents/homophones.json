@@ -1248,8 +1248,6 @@
         {"fitRating":0.95, "values":["faze","phase"]}
       ]
     },
-
-
     {
       "words":["feat","feet"],
       "synonyms":[
@@ -1266,6 +1264,26 @@
       "words":["feudal","futile"],
       "synonyms":[
         {"fitRating":0.7, "values":["feudal","futile"]}
+      ]
+    },
+
+
+    {
+      "words":["few","phew"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["few","phew"]}
+      ]
+    },
+    {
+      "words":["fie","phi"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["fie","phi"]}
+      ]
+    },
+    {
+      "words":["file","phial"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["file","phial"]}
       ]
     }
 
