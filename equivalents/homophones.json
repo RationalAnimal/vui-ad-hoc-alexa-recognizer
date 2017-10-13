@@ -1320,8 +1320,6 @@
         {"fitRating":0.95, "values":["flair","flare"]}
       ]
     },
-
-
     {
       "words":["flaw","floor"],
       "synonyms":[
@@ -1338,6 +1336,26 @@
       "words":["flew","flu","flue"],
       "synonyms":[
         {"fitRating":0.95, "values":["flew","flu","flue"]}
+      ]
+    },
+
+
+    {
+      "words":["flecks","flex"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["flecks","flex"]}
+      ]
+    },
+    {
+      "words":["floe","flow"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["floe","flow"]}
+      ]
+    },
+    {
+      "words":["flour","flower"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["flour","flower"]}
       ]
     }
 
