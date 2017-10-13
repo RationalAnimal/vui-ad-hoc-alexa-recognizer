@@ -1778,7 +1778,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
 
   if(typeof config.mixIns !== "undefined"){
     if(typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles) && typeof config.mixIns.appliesTo !== "undefined" && Array.isArray(config.mixIns.appliesTo)){
-      recognizerSet.mixIns = {};
+      recognizerSet.mixIns = {"intents": {}};
       // First, loop through all the bundles and load all the resolved file names so we don't have to deal with
       // that logic later.
       for(let i = 0; i < config.mixIns.bundles.length; i++){
@@ -1804,11 +1804,11 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
           // We have some mix ins that need to be added to the current intent
           // Note that there may already be something set for that intent, so check for that and
           // concatenate if needed.
-          if(typeof recognizerSet.mixIns[intent.intent] !== "undefined" && Array.isArray(recognizerSet.mixIns[intent.intent]) === true){
-            recognizerSet.mixIns[intent.intent] = recognizerSet.mixIns[intent.intent].concat(intentMixIns);
+          if(typeof recognizerSet.mixIns.intents[intent.intent] !== "undefined" && Array.isArray(recognizerSet.mixIns.intents[intent.intent]) === true){
+            recognizerSet.mixIns.intents[intent.intent] = recognizerSet.mixIns.intents[intent.intent].concat(intentMixIns);
           }
           else {
-            recognizerSet.mixIns[intent.intent] = intentMixIns;
+            recognizerSet.mixIns.intents[intent.intent] = intentMixIns;
           }
         }
       }
@@ -1831,11 +1831,11 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
           // We have some mix ins that need to be added to the current intent
           // Note that there may already be something set for that intent, so check for that and
           // concatenate if needed.
-          if(typeof recognizerSet.mixIns[scratch.name] !== "undefined" && Array.isArray(recognizerSet.mixIns[scratch.name]) === true){
-            recognizerSet.mixIns[scratch.name] = recognizerSet.mixIns[scratch.name].concat(intentMixIns);
+          if(typeof recognizerSet.mixIns.intents[scratch.name] !== "undefined" && Array.isArray(recognizerSet.mixIns.intents[scratch.name]) === true){
+            recognizerSet.mixIns.intents[scratch.name] = recognizerSet.mixIns.intents[scratch.name].concat(intentMixIns);
           }
           else {
-            recognizerSet.mixIns[scratch.name] = intentMixIns;
+            recognizerSet.mixIns.intents[scratch.name] = intentMixIns;
           }
         }
       }
