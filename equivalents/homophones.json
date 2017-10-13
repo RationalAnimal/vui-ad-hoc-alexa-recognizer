@@ -1140,7 +1140,6 @@
         {"fitRating":0.75, "values":["eery","eyrie"]}
       ]
     },
-
     {
       "words":["either","ether"],
       "synonyms":[
@@ -1157,6 +1156,26 @@
       "words":["ensure","insure"],
       "synonyms":[
         {"fitRating":0.9, "values":["ensure","insure"]}
+      ]
+    },
+
+
+    {
+      "words":["eutopia","utopia"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["eutopia","utopia"]}
+      ]
+    },
+    {
+      "words":["ewe","yew","you","U"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["ewe","yew","you","U"]}
+      ]
+    },
+    {
+      "words":["ewes","use","yews"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["ewes","use","yews"]}
       ]
     }
 
