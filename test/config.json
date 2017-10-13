@@ -153,12 +153,12 @@
 						"arguments": {}
 					},
 					{
-						"mixInBuiltInName": "adddefaultslots",
-						"arguments": {"slotsToAdd":{"DateSlot": {"name": "DateSlot", "value": "2017-10-12"}}}
-					},
-					{
 						"mixInBuiltInName": "changeintent",
 						"arguments": {"newIntent": "DateIntent"}
+					},
+					{
+						"mixInBuiltInName": "adddefaultslots",
+						"arguments": {"slotsToAdd":{"DateSlot": {"name": "DateSlot", "value": "2017-10-12"}}}
 					},
 					{
 						"mixInBuiltInName": "countregexp",
