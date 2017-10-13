@@ -1086,8 +1086,6 @@
         {"fitRating":0.95, "values":["done","dun"]}
       ]
     },
-
-
     {
       "words":["does","doughs","doze"],
       "synonyms":[
@@ -1104,6 +1102,26 @@
       "words":["draft","draught"],
       "synonyms":[
         {"fitRating":0.95, "values":["draft","draught"]}
+      ]
+    },
+
+
+    {
+      "words":["dual","duel"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["dual","duel"]}
+      ]
+    },
+    {
+      "words":["ducked","duct"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["ducked","duct"]}
+      ]
+    },
+    {
+      "words":["earn","erne","urn"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["earn","erne","urn"]}
       ]
     }
 
