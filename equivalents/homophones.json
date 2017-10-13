@@ -1104,8 +1104,6 @@
         {"fitRating":0.95, "values":["draft","draught"]}
       ]
     },
-
-
     {
       "words":["dual","duel"],
       "synonyms":[
@@ -1122,6 +1120,26 @@
       "words":["earn","erne","urn"],
       "synonyms":[
         {"fitRating":0.95, "values":["earn","erne","urn"]}
+      ]
+    },
+
+
+    {
+      "words":["eau","o","oh","owe"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["eau","o","oh","owe"]}
+      ]
+    },
+    {
+      "words":["eaves","eves","Yves"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["eaves","eves","Yves"]}
+      ]
+    },
+    {
+      "words":["eery","eyrie"],
+      "synonyms":[
+        {"fitRating":0.75, "values":["eery","eyrie"]}
       ]
     }
 
