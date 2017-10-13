@@ -2003,7 +2003,13 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
       return returnValue;
     }
   }
-
+  // If we are here that means we are about to return undefined.  Check for any mix in code that applies to unmatched
+  for(let i = 0; i < recognizerSet.mixIns.unmatched.length; i++){
+    let mixIn = recognizerSet.mixIns.unmatched[i];
+    if(typeof mixIn !== "undefined" && mixIn !== null){
+      _applyMixIns(mixIn.resolvedFileName, undefined, undefined, undefined, mixIn.arguments);
+    }
+  }
 };
 
 var _applyMixIns = function(mixInFilePath, intent, utterance, returnValue, mixInSpecificArgs){// eslint-disable-line no-unused-vars

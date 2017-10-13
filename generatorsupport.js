@@ -1858,7 +1858,6 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
           recognizerSet.mixIns.unmatched.push({"resolvedFileName": bundle.resolvedFileNames[k], "arguments": bundle.mixInCode[k].arguments});
         }
       }
-
     }
   }
 
