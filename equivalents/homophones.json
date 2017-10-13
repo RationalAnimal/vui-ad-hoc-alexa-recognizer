@@ -1050,8 +1050,6 @@
         {"fitRating":0.85, "values":["deviser","divisor"]}
       ]
     },
-
-
     {
       "words":["dew","do","doux","due"],
       "synonyms":[
@@ -1069,9 +1067,28 @@
       "synonyms":[
         {"fitRating":0.95, "values":["dire","dyer"]}
       ]
+    },
+
+
+
+    {
+      "words":["discreet","discrete"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["discreet","discrete"]}
+      ]
+    },
+    {
+      "words":["doe","doh","dough"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["doe","doh","dough"]}
+      ]
+    },
+    {
+      "words":["done","dun"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["done","dun"]}
+      ]
     }
-
-
 
 
   ],
