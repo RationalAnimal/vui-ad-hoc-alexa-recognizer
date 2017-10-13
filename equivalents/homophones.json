@@ -1176,9 +1176,6 @@
         {"fitRating":0.95, "values":["ewes","use","yews"]}
       ]
     },
-
-
-
     {
       "words":["eyed","I'd"],
       "synonyms":[
@@ -1195,6 +1192,26 @@
       "words":["faint","feint"],
       "synonyms":[
         {"fitRating":0.95, "values":["faint","feint"]}
+      ]
+    },
+
+
+    {
+      "words":["fah","far"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["fah","far"]}
+      ]
+    },
+    {
+      "words":["fair","fare"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["fair","fare"]}
+      ]
+    },
+    {
+      "words":["fairy","ferry"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["fairy","ferry"]}
       ]
     }
 
