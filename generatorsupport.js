@@ -1778,7 +1778,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
 
   if(typeof config.mixIns !== "undefined"){
     if(typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles) && typeof config.mixIns.appliesTo !== "undefined" && Array.isArray(config.mixIns.appliesTo)){
-      recognizerSet.mixIns = {"intents": {}};
+      recognizerSet.mixIns = {"intents": {}, "unmatched": []};
       // First, loop through all the bundles and load all the resolved file names so we don't have to deal with
       // that logic later.
       for(let i = 0; i < config.mixIns.bundles.length; i++){
@@ -1790,6 +1790,10 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         let intent = intents.intents[i];
         // Loop through all "appliesTo" entries and if the intent matches, add the corresponding mix in
         for(let j = 0; j < config.mixIns.appliesTo.length; j++){
+          if(typeof config.mixIns.appliesTo[j].intentMatchRegExString === "undefined" || config.mixIns.appliesTo[j].intentMatchRegExString === null){
+            // Not an intent matched appliesTo
+            continue;
+          }
           let regExp = new RegExp(config.mixIns.appliesTo[j].intentMatchRegExString, "ig");
           if(regExp.test(intent.intent) === true){
             // This intent matches, add it to intentMixIn
@@ -1817,6 +1821,10 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         let intentMixIns = [];
         // Loop through all "appliesTo" entries and if the intent matches, add the corresponding mix in
         for(let j = 0; j < config.mixIns.appliesTo.length; j++){
+          if(typeof config.mixIns.appliesTo[j].intentMatchRegExString === "undefined" || config.mixIns.appliesTo[j].intentMatchRegExString === null){
+            // Not an intent matched appliesTo
+            continue;
+          }
           let regExp = new RegExp(config.mixIns.appliesTo[j].intentMatchRegExString, "ig");
           if(regExp.test(scratch.name) === true){
             // This intent matches, add it to intentMixIn
@@ -1839,6 +1847,14 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
           }
         }
       }
+      // Loop through all the bundles and see which of them should apply to non-matches
+      for(let j = 0; j < config.mixIns.appliesTo.length; j++){
+        if(config.mixIns.appliesTo[j].unmatched !== true){
+          // Not an unmatched appliesTo
+          continue;
+        }
+      }
+
     }
   }
 
