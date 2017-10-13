@@ -2004,12 +2004,28 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
     }
   }
   // If we are here that means we are about to return undefined.  Check for any mix in code that applies to unmatched
+  let returnValue;
   for(let i = 0; i < recognizerSet.mixIns.unmatched.length; i++){
     let mixIn = recognizerSet.mixIns.unmatched[i];
+    let scratchReturnValue;
+    if(typeof returnValue === "undefined"){
+      scratchReturnValue = {};
+    }
+    else {
+      scratchReturnValue = returnValue;
+    }
     if(typeof mixIn !== "undefined" && mixIn !== null){
-      _applyMixIns(mixIn.resolvedFileName, undefined, stringToMatch, undefined, mixIn.arguments);
+      _applyMixIns(mixIn.resolvedFileName, scratchReturnValue.name, stringToMatch, scratchReturnValue, mixIn.arguments);
+    }
+    // Check to see if scratchReturnValue has changed.  If so, update returnValue
+    if(JSON.stringify(scratchReturnValue) === JSON.stringify({})){
+      // Nothing to do
+    }
+    else {
+      returnValue = scratchReturnValue;
     }
   }
+  return returnValue;
 };
 
 var _applyMixIns = function(mixInFilePath, intent, utterance, returnValue, mixInSpecificArgs){// eslint-disable-line no-unused-vars

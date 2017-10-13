@@ -1227,7 +1227,7 @@ module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-u
     utterance = standardArgs.utterance;
     priorResult = standardArgs.priorResult;
   }
-  if(typeof priorResult.slots.CountSlot === "undefined"){
+  if(typeof priorResult !== "undefined" && priorResult !== null && typeof priorResult.slots !== "undefined" && priorResult.slots !== null && typeof priorResult.slots.CountSlot === "undefined"){
     if(utterance.endsWith("a television set")){
       priorResult.slots["CountSlot"] = {
         "name": "CountSlot",
@@ -1252,15 +1252,15 @@ The second one contains the arguments specified in the config.json (nothing in t
 Here this code checks to see if the result already has a CountSlot value.  If not - it will attempt to determine whether
 it's 1 or 2 by looking at the utterance and updating the result with "injected" CountSlot.
 
-#### Applying mix ins whne there is no match
+#### Applying mix ins when there is no match
 
-Sometimes you may want to apply a particular mix in NOT when there is an intent match, but when there is NOT one.
+Sometimes you may want to apply a particular mix in NOT when there IS an intent match, but when there ISN'T one.
 A typical commont example is replacing all non-matches with a default intent, e.g. "UnknownIntent".
 You can easily do this by specifying "unmatched": true in your config.json:
 
 ```json
 {
-  "bundleName": "loggingMixIn",
+  "bundleName": "SetIntentMixIn",
   "unmatched": true
 }
 ```
