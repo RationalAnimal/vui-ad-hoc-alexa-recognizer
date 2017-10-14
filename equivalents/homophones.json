@@ -1518,8 +1518,6 @@
         {"fitRating":0.95, "values":["gored","gourd"]}
       ]
     },
-
-
     {
       "words":["gorilla","guerilla"],
       "synonyms":[
@@ -1536,6 +1534,26 @@
       "words":["grate","great"],
       "synonyms":[
         {"fitRating":0.95, "values":["grate","great"]}
+      ]
+    },
+
+
+    {
+      "words":["grays","greys","graze"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["grays","greys","graze"]}
+      ]
+    },
+    {
+      "words":["greave","grieve"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["greave","grieve"]}
+      ]
+    },
+    {
+      "words":["grisly","grizzly"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["grisly","grizzly"]}
       ]
     }
 
