@@ -1338,8 +1338,6 @@
         {"fitRating":0.95, "values":["flew","flu","flue"]}
       ]
     },
-
-
     {
       "words":["flecks","flex"],
       "synonyms":[
@@ -1356,6 +1354,26 @@
       "words":["flour","flower"],
       "synonyms":[
         {"fitRating":0.95, "values":["flour","flower"]}
+      ]
+    },
+
+
+    {
+      "words":["foaled","fold"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["foaled","fold"]}
+      ]
+    },
+    {
+      "words":["for","fore","four"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["for","fore","four"]}
+      ]
+    },
+    {
+      "words":["forego","forgo"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["forego","forgo"]}
       ]
     }
 
