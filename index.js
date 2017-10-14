@@ -25,7 +25,6 @@ SOFTWARE.
 */
 "use strict";
 let fs = require("fs");
-let path = require("path");
 let soundex = require("./soundex.js");
 let recognizer = {};
 let constants = require("./constants.js");
@@ -1539,12 +1538,12 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
     try {
       if(Array.isArray(transformFilename)){
         for(let i = 0; i < transformFilename.length; i ++){
-          let transform = require(path.resolve(transformFilename[i]));
+          let transform = require(transformFilename[i]);
           returnValue = transform(returnValue, intent, slot, slotType);
         }
       }
       else {
-        let transform = require(path.resolve(transformFilename));
+        let transform = require(transformFilename);
         returnValue = transform(returnValue, intent, slot, slotType);
       }
     }
@@ -1638,7 +1637,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
   if(typeof domain === "string"){
     //    console.log("_matchTextDomain, 2");
     // We need to load the domain
-    domainToUse = require(path.resolve(domain));
+    domainToUse = require(domain);
   }
   else if(typeof domain === "object" && domain != null){
     //    console.log("_matchTextDomain, 3");
@@ -1665,7 +1664,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
       let currentRecognizer = domainToUse.recognizers[i];
       if(typeof currentRecognizer.path === "string" && typeof currentRecognizer.key !== "undefined"){
         try{
-          recognizers[currentRecognizer.key] = require(path.resolve(currentRecognizer.path));
+          recognizers[currentRecognizer.key] = require(currentRecognizer.path);
         }
         catch(e){
           // TODO handle failure to load recognizer
@@ -1683,7 +1682,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
       let currentDomain = domainToUse.domains[i];
       if(typeof currentDomain.path === "string" && typeof currentDomain.key !== "undefined"){
         try{
-          domains[currentDomain.key] = require(path.resolve(currentDomain.path));
+          domains[currentDomain.key] = require(currentDomain.path);
         }
         catch(e){
           // TODO handle failure to load recognizer
@@ -2030,7 +2029,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
 };
 
 var _applyMixIns = function(mixInFilePath, intent, utterance, returnValue, mixInSpecificArgs){// eslint-disable-line no-unused-vars
-  let mixIn = require(path.resolve(mixInFilePath));
+  let mixIn = require(mixInFilePath);
   let standardArgs = {"intentName": intent, "utterance": utterance, "priorResult": returnValue};
   mixIn(standardArgs, mixInSpecificArgs);
 };
