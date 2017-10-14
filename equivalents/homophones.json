@@ -1494,8 +1494,6 @@
         {"fitRating":0.95, "values":["giro","gyro"]}
       ]
     },
-
-
     {
       "words":["gnaw","nor"],
       "synonyms":[
@@ -1518,6 +1516,26 @@
       "words":["gored","gourd"],
       "synonyms":[
         {"fitRating":0.95, "values":["gored","gourd"]}
+      ]
+    },
+
+
+    {
+      "words":["gorilla","guerilla"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["gorilla","guerilla"]}
+      ]
+    },
+    {
+      "words":["grade","grayed","greyed"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["grade","grayed","greyed"]}
+      ]
+    },
+    {
+      "words":["grate","great"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["grate","great"]}
       ]
     }
 
