@@ -1892,7 +1892,7 @@ var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBaseDir){
           }
           else if(typeof currentMixIn.mixInCode[j].mixInSrcFileName !== "undefined" && currentMixIn.mixInCode[j].mixInSrcFileName !== null){
             if(typeof currentMixIn.mixInCode[j].mixInSrcFileName === "string"){
-              returnValue.push(utilities.joinPaths(currentMixIn.mixInCode[j].mixInSrcFileName, resolvedBaseDir));
+              returnValue.push(utilities.resolveFileName(currentMixIn.mixInCode[j].mixInSrcFileName, resolvedBaseDir));
             }
             else {
               throw {"error": "MISCONFIGURED_MIX_IN_SRC_NAME", "message": "Programmer error - mix in bundle has mixInSrcFileName but it's not a string"};
