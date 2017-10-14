@@ -34,7 +34,7 @@ utilities.resolveFileName = function(fileName, resolvedBaseDir){
   }
   let resolvedFileName = fileName;
   if(typeof resolvedBaseDir === "string"){
-    resolvedFileName = path.resolve(path.join(resolvedBaseDir, fileName));
+    resolvedFileName = path.join(resolvedBaseDir, fileName);
   }
   else {
     resolvedFileName = path.resolve(fileName);

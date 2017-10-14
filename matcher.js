@@ -25,7 +25,6 @@ SOFTWARE.
 */
 "use strict";
 let recognizer = require("./index.js");
-let path = require("path");
 
 let usage = function(){
   console.log("Usage: node " + process.argv[1] + " string to match" + " path_to_a_non-standard_recognizer");
@@ -41,7 +40,7 @@ let recognizerToUse;
 let recognizerToUseFileName = process.argv[3];
 if(typeof recognizerToUseFileName !== "undefined" && recognizerToUseFileName !== null){
   try{
-    recognizerToUse = require(path.resolve(recognizerToUseFileName));
+    recognizerToUse = require(recognizerToUseFileName);
   }
   catch(e){
     console.log("failed to load a custom recognizer with this error: ", e);
