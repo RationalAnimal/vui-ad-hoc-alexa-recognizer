@@ -1356,8 +1356,6 @@
         {"fitRating":0.95, "values":["flour","flower"]}
       ]
     },
-
-
     {
       "words":["foaled","fold"],
       "synonyms":[
@@ -1374,6 +1372,25 @@
       "words":["forego","forgo"],
       "synonyms":[
         {"fitRating":0.95, "values":["forego","forgo"]}
+      ]
+    },
+
+    {
+      "words":["foreword","forward"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["foreword","forward"]}
+      ]
+    },
+    {
+      "words":["fort","fought"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["fort","fought"]}
+      ]
+    },
+    {
+      "words":["forth","fourth"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["forth","fourth"]}
       ]
     }
 
