@@ -1446,8 +1446,6 @@
         {"fitRating":0.95, "values":["gallop","galop"]}
       ]
     },
-
-
     {
       "words":["gamble","gambol"],
       "synonyms":[
@@ -1464,6 +1462,25 @@
       "words":["gel","jell"],
       "synonyms":[
         {"fitRating":0.95, "values":["gel","jell"]}
+      ]
+    },
+
+    {
+      "words":["gene","jean"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["gene","jean"]}
+      ]
+    },
+    {
+      "words":["genes","jeans"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["genes","jeans"]}
+      ]
+    },
+    {
+      "words":["gild","gilled","guild"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["gild","gilled","guild"]}
       ]
     }
 
