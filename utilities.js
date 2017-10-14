@@ -34,7 +34,7 @@ utilities.resolveFileName = function(fileName, resolvedBaseDir){
   }
   let resolvedFileName = fileName;
   if(typeof resolvedBaseDir === "string"){
-    resolvedFileName = path.join(resolvedBaseDir, fileName);
+    resolvedFileName = path.resolve(path.join(resolvedBaseDir, fileName));
   }
   else {
     resolvedFileName = path.resolve(fileName);
@@ -82,7 +82,7 @@ utilities.loadStringListFromFile = function(fileName, resolvedBaseDir){
     // The file name exists and is complete
     fileExist = true;
   }
-  if(fileExist == true){
+  if(fileExist === true){
     // TODO replace with a lean solution that doesn't have to read the whole file at once
     let lines = fs.readFileSync(resolvedFileName, "utf-8").split(/\n\r|\n|\r/);
     let result = [];
@@ -108,7 +108,7 @@ utilities.loadStringFromFile = function(fileName, resolvedBaseDir){
     // The file name exists and is complete
     fileExist = true;
   }
-  if(fileExist == true){
+  if(fileExist === true){
     return fs.readFileSync(resolvedFileName, "utf-8");
   }
 };

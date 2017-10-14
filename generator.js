@@ -167,7 +167,7 @@ if(typeof intentsFileName !== "undefined"){
 
 let utterances = [];
 let doTheProcessing = function(){
-  return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances, optimizations, resolvedBaseDir);
+  return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances, optimizations, baseSourceDirectory);
 };
 let _done = function(json){
   if(suppressRecognizerDisplay === false){
