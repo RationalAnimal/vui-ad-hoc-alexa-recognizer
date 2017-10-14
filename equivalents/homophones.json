@@ -1410,8 +1410,6 @@
         {"fitRating":0.95, "values":["frees","freeze","frieze"]}
       ]
     },
-
-
     {
       "words":["friar","fryer"],
       "synonyms":[
@@ -1428,6 +1426,26 @@
       "words":["gage","gauge"],
       "synonyms":[
         {"fitRating":0.95, "values":["gage","gauge"]}
+      ]
+    },
+
+
+    {
+      "words":["gait","gate"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["gait","gate"]}
+      ]
+    },
+    {
+      "words":["galipot","gallipot"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["galipot","gallipot"]}
+      ]
+    },
+    {
+      "words":["gallop","galop"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["gallop","galop"]}
       ]
     }
 
