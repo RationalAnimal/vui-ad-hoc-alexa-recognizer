@@ -42,6 +42,25 @@ utilities.resolveFileName = function(fileName, resolvedBaseDir){
   return resolvedFileName;
 };
 
+utilities.getRelativeFile = function(fileName, resolvedBaseDir){
+  if(typeof fileName === "undefined" || fileName === null){
+    return;
+  }
+  let resolvedFileName = fileName;
+  if(typeof resolvedBaseDir === "string"){
+    resolvedFileName = path.join(resolvedBaseDir, fileName);
+  }
+  else {
+    resolvedFileName = path.resolve(fileName);
+  }
+  let relativeFilePath = path.relative(resolvedBaseDir, resolvedFileName);
+  if(path.isAbsolute(relativeFilePath) === false){
+    relativeFilePath = path.join("./", relativeFilePath);
+    //relativeFilePath = path.normalize(relativeFilePath);
+  }
+  return relativeFilePath;
+};
+
 utilities.joinPaths = function(fileName, baseDir){
   if(typeof fileName === "undefined" || fileName === null){
     return;
@@ -51,7 +70,6 @@ utilities.joinPaths = function(fileName, baseDir){
     joinedFileName = path.join(baseDir, fileName);
   }
   path.normalize(joinedFileName);
-  console.log("joinPaths: " + joinedFileName);
   return joinedFileName;
 };
 
