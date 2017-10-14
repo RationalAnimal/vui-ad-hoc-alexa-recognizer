@@ -1482,8 +1482,6 @@
         {"fitRating":0.95, "values":["gild","gilled","guild"]}
       ]
     },
-
-
     {
       "words":["gilt","guilt"],
       "synonyms":[
@@ -1496,10 +1494,30 @@
         {"fitRating":0.95, "values":["giro","gyro"]}
       ]
     },
+
+
+    {
+      "words":["gnaw","nor"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["gnaw","nor"]}
+      ]
+    },
     {
       "words":["gneiss","nice"],
       "synonyms":[
         {"fitRating":0.95, "values":["gneiss","nice"]}
+      ]
+    },
+    {
+      "words":["gnu","knew","new","nu"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["gnu","knew","new","nu"]}
+      ]
+    },
+    {
+      "words":["gored","gourd"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["gored","gourd"]}
       ]
     }
 
