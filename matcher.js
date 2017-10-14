@@ -24,10 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 "use strict";
-//var fs = require('fs');
-var recognizer = require("./index.js");
+let recognizer = require("./index.js");
+let path = require("path");
 
-var usage = function(){
+let usage = function(){
   console.log("Usage: node " + process.argv[1] + " string to match" + " path_to_a_non-standard_recognizer");
 };
 
@@ -36,19 +36,19 @@ if (process.argv.length < 3) {
   usage();
   process.exit(1);
 }
-var stringToMatch = process.argv[2];
-var recognizerToUse;
-var recognizerToUseFileName = process.argv[3];
+let stringToMatch = process.argv[2];
+let recognizerToUse;
+let recognizerToUseFileName = process.argv[3];
 if(typeof recognizerToUseFileName !== "undefined" && recognizerToUseFileName !== null){
   try{
-    recognizerToUse = require(recognizerToUseFileName);
+    recognizerToUse = require(path.resolve(recognizerToUseFileName));
   }
   catch(e){
     console.log("failed to load a custom recognizer with this error: ", e);
   }
 }
-var doTheProcessing = function(){
+let doTheProcessing = function(){
   return recognizer.Recognizer.matchText(stringToMatch, undefined, undefined, recognizerToUse);
 };
-var result = doTheProcessing();
+let result = doTheProcessing();
 console.log(JSON.stringify(result, null, 2));
