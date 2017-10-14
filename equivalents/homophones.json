@@ -1536,8 +1536,6 @@
         {"fitRating":0.95, "values":["grate","great"]}
       ]
     },
-
-
     {
       "words":["grays","greys","graze"],
       "synonyms":[
@@ -1554,6 +1552,26 @@
       "words":["grisly","grizzly"],
       "synonyms":[
         {"fitRating":0.95, "values":["grisly","grizzly"]}
+      ]
+    },
+
+
+    {
+      "words":["groan","grown"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["groan","grown"]}
+      ]
+    },
+    {
+      "words":["guessed","guest"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["guessed","guest"]}
+      ]
+    },
+    {
+      "words":["guide","guyed"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["guide","guyed"]}
       ]
     }
 
