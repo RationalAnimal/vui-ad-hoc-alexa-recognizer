@@ -1374,7 +1374,6 @@
         {"fitRating":0.95, "values":["forego","forgo"]}
       ]
     },
-
     {
       "words":["foreword","forward"],
       "synonyms":[
@@ -1391,6 +1390,25 @@
       "words":["forth","fourth"],
       "synonyms":[
         {"fitRating":0.95, "values":["forth","fourth"]}
+      ]
+    },
+
+    {
+      "words":["foul","fowl"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["foul","fowl"]}
+      ]
+    },
+    {
+      "words":["franc","frank"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["franc","frank"]}
+      ]
+    },
+    {
+      "words":["frees","freeze","frieze"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["frees","freeze","frieze"]}
       ]
     }
 
