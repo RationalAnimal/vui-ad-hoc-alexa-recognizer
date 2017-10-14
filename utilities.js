@@ -42,6 +42,19 @@ utilities.resolveFileName = function(fileName, resolvedBaseDir){
   return resolvedFileName;
 };
 
+utilities.joinPaths = function(fileName, baseDir){
+  if(typeof fileName === "undefined" || fileName === null){
+    return;
+  }
+  let joinedFileName = fileName;
+  if(typeof baseDir === "string"){
+    joinedFileName = path.join(baseDir, fileName);
+  }
+  path.normalize(joinedFileName);
+  console.log("joinPaths: " + joinedFileName);
+  return joinedFileName;
+};
+
 utilities.loadStringListFromFile = function(fileName, resolvedBaseDir){
   let fileExist = false;
   // compute actual file name when combined with base source directory
