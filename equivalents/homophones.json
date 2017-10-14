@@ -1428,8 +1428,6 @@
         {"fitRating":0.95, "values":["gage","gauge"]}
       ]
     },
-
-
     {
       "words":["gait","gate"],
       "synonyms":[
@@ -1446,6 +1444,26 @@
       "words":["gallop","galop"],
       "synonyms":[
         {"fitRating":0.95, "values":["gallop","galop"]}
+      ]
+    },
+
+
+    {
+      "words":["gamble","gambol"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["gamble","gambol"]}
+      ]
+    },
+    {
+      "words":["gays","gaze"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["gays","gaze"]}
+      ]
+    },
+    {
+      "words":["gel","jell"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["gel","jell"]}
       ]
     }
 
