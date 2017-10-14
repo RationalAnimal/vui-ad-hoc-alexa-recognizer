@@ -1392,7 +1392,6 @@
         {"fitRating":0.95, "values":["forth","fourth"]}
       ]
     },
-
     {
       "words":["foul","fowl"],
       "synonyms":[
@@ -1409,6 +1408,26 @@
       "words":["frees","freeze","frieze"],
       "synonyms":[
         {"fitRating":0.95, "values":["frees","freeze","frieze"]}
+      ]
+    },
+
+
+    {
+      "words":["friar","fryer"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["friar","fryer"]}
+      ]
+    },
+    {
+      "words":["furs","furze"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["furs","furze"]}
+      ]
+    },
+    {
+      "words":["gage","gauge"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["gage","gauge"]}
       ]
     }
 
