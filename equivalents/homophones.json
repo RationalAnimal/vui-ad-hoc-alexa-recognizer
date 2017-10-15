@@ -1554,8 +1554,6 @@
         {"fitRating":0.95, "values":["grisly","grizzly"]}
       ]
     },
-
-
     {
       "words":["groan","grown"],
       "synonyms":[
@@ -1572,6 +1570,26 @@
       "words":["guide","guyed"],
       "synonyms":[
         {"fitRating":0.95, "values":["guide","guyed"]}
+      ]
+    },
+
+
+    {
+      "words":["guise","guys"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["guise","guys"]}
+      ]
+    },
+    {
+      "words":["hail","hale"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hail","hale"]}
+      ]
+    },
+    {
+      "words":["hair","hare"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hair","hare"]}
       ]
     }
 
