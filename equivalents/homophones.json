@@ -1590,8 +1590,6 @@
         {"fitRating":0.95, "values":["hair","hare"]}
       ]
     },
-
-
     {
       "words":["hairy","harry"],
       "synonyms":[
@@ -1608,6 +1606,26 @@
       "words":["halve","have"],
       "synonyms":[
         {"fitRating":0.95, "values":["halve","have"]}
+      ]
+    },
+
+
+    {
+      "words":["hangar","hanger"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hangar","hanger"]}
+      ]
+    },
+    {
+      "words":["hart","heart"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hart","heart"]}
+      ]
+    },
+    {
+      "words":["haw","hoar","whore"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["haw","hoar","whore"]}
       ]
     }
 
