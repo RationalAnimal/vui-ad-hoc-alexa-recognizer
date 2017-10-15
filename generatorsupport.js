@@ -1783,6 +1783,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
       // First, loop through all the bundles and load all the resolved file names so we don't have to deal with
       // that logic later.
       for(let i = 0; i < config.mixIns.bundles.length; i++){
+        // TODO DIRECTORIES - likely need to use a different one here
         config.mixIns.bundles[i].resolvedFileNames = _getMixInSrcFilename(config, config.mixIns.bundles[i].bundleName, resolvedBuildTimeSourceDirectory);
       }
       // Loop through all the custom intents and see which bundles apply to each intent
@@ -1876,6 +1877,7 @@ var _getMixInBundle = function(config, mixInBundleName){
   }
 };
 
+// TODO DIRECTORIES - likely need to use a different one here
 var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBuildTimeSourceDirectory){
   if(typeof config.mixIns !== "undefined" && typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles)){
     let returnValue = [];
@@ -1893,6 +1895,7 @@ var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBuildTimeSo
           }
           else if(typeof currentMixIn.mixInCode[j].mixInSrcFileName !== "undefined" && currentMixIn.mixInCode[j].mixInSrcFileName !== null){
             if(typeof currentMixIn.mixInCode[j].mixInSrcFileName === "string"){
+              // TODO DIRECTORIES - likely need to use a different one here
               returnValue.push(utilities.resolveFileName(currentMixIn.mixInCode[j].mixInSrcFileName, resolvedBuildTimeSourceDirectory));
             }
             else {
@@ -1925,6 +1928,7 @@ var _getBuiltInSlotConfig = function(config, slotName){
   // Nothing found - return undefined
 };
 
+// TODO DIRECTORIES - likely need to use a different one here
 var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBuildTimeSourceDirectory){
   if(typeof config.builtInSlots !== "undefined" && Array.isArray(config.builtInSlots)){
     for(let i = 0; i < config.builtInSlots.length; i++){
@@ -1932,11 +1936,13 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBuildT
       if(currentSlot.name === slotType){
         if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
           if(typeof currentSlot.transformSrcFilename === "string"){
+            // TODO DIRECTORIES - likely need to use a different one here
             return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory);
           }
           else if(Array.isArray(currentSlot.transformSrcFilename)){
             let returnValue = [];
             for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
+              // TODO DIRECTORIES - likely need to use a different one here
               returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBuildTimeSourceDirectory));
             }
             return returnValue;
@@ -1974,11 +1980,13 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBuildT
       if(currentSlot.name === slotType){
         if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
           if(typeof currentSlot.transformSrcFilename === "string"){
+            // TODO DIRECTORIES - likely need to use a different one here
             return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory);
           }
           else if(Array.isArray(currentSlot.transformSrcFilename)){
             let returnValue = [];
             for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
+              // TODO DIRECTORIES - likely need to use a different one here
               returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBuildTimeSourceDirectory));
             }
             return returnValue;
