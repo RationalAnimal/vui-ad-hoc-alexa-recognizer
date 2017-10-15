@@ -1662,8 +1662,6 @@
         {"fitRating":0.95, "values":["heard","herd"]}
       ]
     },
-
-
     {
       "words":["heated","heeded"],
       "synonyms":[
@@ -1680,6 +1678,26 @@
       "words":["hew","hue"],
       "synonyms":[
         {"fitRating":0.95, "values":["hew","hue"]}
+      ]
+    },
+
+
+    {
+      "words":["heigh", "hi","hie","high"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["heigh", "hi","hie","high"]}
+      ]
+    },
+    {
+      "words":["higher","hire"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["higher","hire"]}
+      ]
+    },
+    {
+      "words":["him","hymn"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["him","hymn"]}
       ]
     }
 
