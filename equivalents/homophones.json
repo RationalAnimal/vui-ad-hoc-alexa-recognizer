@@ -1680,8 +1680,6 @@
         {"fitRating":0.95, "values":["hew","hue"]}
       ]
     },
-
-
     {
       "words":["heigh", "hi","hie","high"],
       "synonyms":[
@@ -1698,6 +1696,26 @@
       "words":["him","hymn"],
       "synonyms":[
         {"fitRating":0.95, "values":["him","hymn"]}
+      ]
+    },
+
+
+    {
+      "words":["ho","hoe"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["ho","hoe"]}
+      ]
+    },
+    {
+      "words":["hoard","horde","hoared","whored"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hoard","horde","hoared","whored"]}
+      ]
+    },
+    {
+      "words":["hoarse","horse"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hoarse","horse"]}
       ]
     }
 
