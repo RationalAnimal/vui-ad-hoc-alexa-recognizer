@@ -1626,8 +1626,6 @@
         {"fitRating":0.95, "values":["haw","hoar","whore"]}
       ]
     },
-
-
     {
       "words":["hay","hey"],
       "synonyms":[
@@ -1644,6 +1642,26 @@
       "words":["heal","heel","he'll"],
       "synonyms":[
         {"fitRating":0.95, "values":["heal","heel","he'll"]}
+      ]
+    },
+
+
+    {
+      "words":["he'd","heed"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["he'd","heed"]}
+      ]
+    },
+    {
+      "words":["hear","here"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hear","here"]}
+      ]
+    },
+    {
+      "words":["heard","herd"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["heard","herd"]}
       ]
     }
 
