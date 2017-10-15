@@ -1572,8 +1572,6 @@
         {"fitRating":0.95, "values":["guide","guyed"]}
       ]
     },
-
-
     {
       "words":["guise","guys"],
       "synonyms":[
@@ -1590,6 +1588,26 @@
       "words":["hair","hare"],
       "synonyms":[
         {"fitRating":0.95, "values":["hair","hare"]}
+      ]
+    },
+
+
+    {
+      "words":["hairy","harry"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["hairy","harry"]}
+      ]
+    },
+    {
+      "words":["hall","haul"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hall","haul"]}
+      ]
+    },
+    {
+      "words":["halve","have"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["halve","have"]}
       ]
     }
 
