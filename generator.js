@@ -41,6 +41,7 @@ let defaultCortanaConfig = {
 let usage = function(){
   console.log("Usage: node " + process.argv[1] + ":");
   console.log("  --sourcebase BaseSourceDirectory that is the base for the other file references on the command line or in the config file");
+  console.log("  --buildtimesourcebase BuildTimeBaseSourceDirectory that is the base for the other file references on the command line or in the config file at build time.  Will override --sourcebase value for build time directory, if both are supplied");
   console.log("  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.");
   console.log("  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.");
   console.log("  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.");
@@ -56,6 +57,8 @@ let utterancesFileName;
 let interactionModelFileName;
 let baseSourceDirectory;
 let resolvedBaseSourceDirectory;
+let buildTimeSourceDirectory;
+let resolvedBuildTimeSourceDirectory;
 let suppressRecognizerDisplay = false;
 
 for(let i = 2; i < process.argv.length; i ++){
@@ -71,6 +74,14 @@ for(let i = 2; i < process.argv.length; i ++){
       i++;
       baseSourceDirectory = process.argv[j];
       resolvedBaseSourceDirectory = fs.realpathSync(baseSourceDirectory);
+      //    console.log("typeof resolvedBaseSourceDirectory: " + (typeof resolvedBaseSourceDirectory) + ", resolvedBaseSourceDirectory: " + resolvedBaseSourceDirectory);
+    }
+  }
+  else if(process.argv[i] === "--buildtimesourcebase"){
+    if(j < process.argv.length) {
+      i++;
+      buildTimeSourceDirectory = process.argv[j];
+      resolvedBuildTimeSourceDirectory = fs.realpathSync(buildTimeSourceDirectory);
       //    console.log("typeof resolvedBaseSourceDirectory: " + (typeof resolvedBaseSourceDirectory) + ", resolvedBaseSourceDirectory: " + resolvedBaseSourceDirectory);
     }
   }
@@ -168,11 +179,17 @@ if(typeof intentsFileName !== "undefined"){
 let utterances = [];
 let directories = {};
 if(typeof baseSourceDirectory !== "undefined" && baseSourceDirectory !== null){
-  // We have undifferentiated - build vs run time - directory for source.  Set it first, then overwrite with specific ones
+  // We have undifferentiated - build vs run time - directory for source.  Set it first, then overwrite with specific ones.
   directories.buildTimeSourceDirectory = baseSourceDirectory;
   directories.runTimeSourceDirectory = baseSourceDirectory;
   directories.resolvedBuildTimeSourceDirectory = resolvedBaseSourceDirectory;
 }
+if(typeof buildTimeSourceDirectory !== "undefined" && buildTimeSourceDirectory !== null){
+  // We have actual build time directory for source, set it.
+  directories.buildTimeSourceDirectory = buildTimeSourceDirectory;
+  directories.resolvedBuildTimeSourceDirectory = resolvedBuildTimeSourceDirectory;
+}
+
 let doTheProcessing = function(){
   return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances, optimizations, directories);
 };
