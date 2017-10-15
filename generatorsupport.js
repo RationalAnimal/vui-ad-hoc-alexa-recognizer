@@ -1230,10 +1230,10 @@ var _getBuiltinSlotPlatform = function(slotName, platforms){
   return _getBuiltinIntentPlatform(slotName, platforms);
 };
 
-var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, config, skipExtendedValues, skipRegeneratingRegExp, skipTransformFunctions, resolvedBaseDir){
+var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, config, skipExtendedValues, skipRegeneratingRegExp, skipTransformFunctions, resolvedBuildTimeSourceDirectory){
   let slotConfig = _getBuiltInSlotConfig(config, slotType);
   if(typeof skipExtendedValues === "undefined" || skipExtendedValues !== true){
-    let extendedValues = _getBuiltInSlotExtendedValues(slotConfig, resolvedBaseDir);
+    let extendedValues = _getBuiltInSlotExtendedValues(slotConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedValues !== "undefined"){
       recognizer.builtInValues[slotTypeVar].values = recognizer.builtInValues[slotTypeVar].values.concat(extendedValues);
     }
@@ -1245,12 +1245,12 @@ var _updateBuiltInSlotTypeValuesFromConfig = function(slotType, slotTypeVar, con
   if(typeof skipTransformFunctions === "undefined" || skipTransformFunctions !== true){
     if(typeof slotConfig !== "undefined" && slotConfig !== null){
       if(typeof slotConfig.transformSrcFilename === "string"){
-        recognizer.builtInValues[slotTypeVar].transformSrcFilename = utilities.resolveFileName(slotConfig.transformSrcFilename, resolvedBaseDir);
+        recognizer.builtInValues[slotTypeVar].transformSrcFilename = utilities.resolveFileName(slotConfig.transformSrcFilename, resolvedBuildTimeSourceDirectory);
       }
       else if(Array.isArray(slotConfig.transformSrcFilename)){
         let resolvedArray = [];
         for(let i = 0; i < slotConfig.transformSrcFilename.length; i ++){
-          resolvedArray.push(utilities.resolveFileName(slotConfig.transformSrcFilename[i], resolvedBaseDir));
+          resolvedArray.push(utilities.resolveFileName(slotConfig.transformSrcFilename[i], resolvedBuildTimeSourceDirectory));
         }
         recognizer.builtInValues[slotTypeVar].transformSrcFilename = resolvedArray;
       }
@@ -1293,7 +1293,7 @@ var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
 };
 
 var _generateRunTimeJson = function(config, interactionModel, intents, utterances, optimizations, directories){
-  let resolvedBaseDir = directories.resolvedBuildTimeSourceDirectory;
+  let resolvedBuildTimeSourceDirectory = directories.resolvedBuildTimeSourceDirectory;
   if(typeof config === "undefined" || config === null){
     config = {};
   }
@@ -1488,7 +1488,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
     if(utterances[i].trim() === ""){
       continue;
     }
-    let result = parser.parseUtteranceIntoJson(utterances[i], intents, config, resolvedBaseDir);
+    let result = parser.parseUtteranceIntoJson(utterances[i], intents, config, resolvedBuildTimeSourceDirectory);
     parser.cleanupParsedUtteranceJson(result, intents);
 
     parser.addRegExps(result, intents, passThrougFunc, optimizations);
@@ -1506,7 +1506,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         builtInSlotTypesUsedByUtterances.push(translatedSlotType);
       }
       let slotToPush = {"name": parsedSlot.name, "type": parsedSlot.slotType, "flags": parsedSlot.flags};
-      let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, parsedSlot.slotType, resolvedBaseDir);
+      let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, parsedSlot.slotType, resolvedBuildTimeSourceDirectory);
       if(typeof slotTypeTransformSrcFilename !== "undefined"){
         slotToPush.transformSrcFilename = slotTypeTransformSrcFilename;
       }
@@ -1545,7 +1545,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "cancel", "never mind", "forget it"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1561,7 +1561,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "help", "help me", "can you help me"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1577,7 +1577,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "loop off"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1593,7 +1593,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "loop", "loop on", "keep repeating this song"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1609,7 +1609,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "next", "skip", "skip forward"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1625,7 +1625,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "no", "no thanks"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1641,7 +1641,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "pause", "pause that"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1657,7 +1657,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "go back", "skip back", "back up"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1673,7 +1673,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "repeat", "say that again", "repeat that"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1689,7 +1689,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "resume", "continue", "keep going"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1705,7 +1705,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "stop shuffling", "shuffle off", "turn off shuffle"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1721,7 +1721,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "shuffle", "shuffle on", "shuffle the music", "shuffle mode"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1737,7 +1737,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "start over", "restart", "start again"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1753,7 +1753,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "stop", "off", "shut up"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1769,7 +1769,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         "yes", "yes please", "sure"
       ]
     };
-    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBaseDir);
+    let extendedUtterances = _getBuiltInIntentExtendedUtterances(intentConfig, resolvedBuildTimeSourceDirectory);
     if(typeof extendedUtterances !== "undefined"){
       builtinIntent.utterances = builtinIntent.utterances.concat(extendedUtterances);
     }
@@ -1783,7 +1783,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
       // First, loop through all the bundles and load all the resolved file names so we don't have to deal with
       // that logic later.
       for(let i = 0; i < config.mixIns.bundles.length; i++){
-        config.mixIns.bundles[i].resolvedFileNames = _getMixInSrcFilename(config, config.mixIns.bundles[i].bundleName, resolvedBaseDir);
+        config.mixIns.bundles[i].resolvedFileNames = _getMixInSrcFilename(config, config.mixIns.bundles[i].bundleName, resolvedBuildTimeSourceDirectory);
       }
       // Loop through all the custom intents and see which bundles apply to each intent
       for(let i = 0; i < intents.intents.length; i++){
@@ -1876,7 +1876,7 @@ var _getMixInBundle = function(config, mixInBundleName){
   }
 };
 
-var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBaseDir){
+var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBuildTimeSourceDirectory){
   if(typeof config.mixIns !== "undefined" && typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles)){
     let returnValue = [];
     for(let i = 0; i < config.mixIns.bundles.length; i++){
@@ -1893,7 +1893,7 @@ var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBaseDir){
           }
           else if(typeof currentMixIn.mixInCode[j].mixInSrcFileName !== "undefined" && currentMixIn.mixInCode[j].mixInSrcFileName !== null){
             if(typeof currentMixIn.mixInCode[j].mixInSrcFileName === "string"){
-              returnValue.push(utilities.resolveFileName(currentMixIn.mixInCode[j].mixInSrcFileName, resolvedBaseDir));
+              returnValue.push(utilities.resolveFileName(currentMixIn.mixInCode[j].mixInSrcFileName, resolvedBuildTimeSourceDirectory));
             }
             else {
               throw {"error": "MISCONFIGURED_MIX_IN_SRC_NAME", "message": "Programmer error - mix in bundle has mixInSrcFileName but it's not a string"};
@@ -1925,19 +1925,19 @@ var _getBuiltInSlotConfig = function(config, slotName){
   // Nothing found - return undefined
 };
 
-var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBaseDir){
+var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBuildTimeSourceDirectory){
   if(typeof config.builtInSlots !== "undefined" && Array.isArray(config.builtInSlots)){
     for(let i = 0; i < config.builtInSlots.length; i++){
       let currentSlot = config.builtInSlots[i];
       if(currentSlot.name === slotType){
         if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
           if(typeof currentSlot.transformSrcFilename === "string"){
-            return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBaseDir);
+            return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory);
           }
           else if(Array.isArray(currentSlot.transformSrcFilename)){
             let returnValue = [];
             for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
-              returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBaseDir));
+              returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBuildTimeSourceDirectory));
             }
             return returnValue;
           }
@@ -1974,12 +1974,12 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBaseDi
       if(currentSlot.name === slotType){
         if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
           if(typeof currentSlot.transformSrcFilename === "string"){
-            return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBaseDir);
+            return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory);
           }
           else if(Array.isArray(currentSlot.transformSrcFilename)){
             let returnValue = [];
             for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
-              returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBaseDir));
+              returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBuildTimeSourceDirectory));
             }
             return returnValue;
           }
@@ -2012,14 +2012,14 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBaseDi
   }
 };
 
-var _getBuiltInSlotExtendedValues = function(slotConfig, resolvedBaseDir){
+var _getBuiltInSlotExtendedValues = function(slotConfig, resolvedBuildTimeSourceDirectory){
   let returnValue;
   if(typeof slotConfig !== "undefined" && slotConfig !== null){
     if(typeof slotConfig.extendedValues !== "undefined"){
       returnValue = [].concat(slotConfig.extendedValues);
     }
     if(typeof slotConfig.extendedValuesFilename !== "undefined"){
-      let loadedFromFile = utilities.loadStringListFromFile(slotConfig.extendedValuesFilename, resolvedBaseDir);
+      let loadedFromFile = utilities.loadStringListFromFile(slotConfig.extendedValuesFilename, resolvedBuildTimeSourceDirectory);
       if(typeof loadedFromFile !== "undefined" && Array.isArray(loadedFromFile)){
         if(typeof returnValue === "undefined"){
           returnValue = [];
@@ -2045,14 +2045,14 @@ var _getBuiltInIntentConfig = function(config, intentName){
   // Nothing found - return undefined
 };
 
-var _getBuiltInIntentExtendedUtterances = function(intentConfig, resolvedBaseDir){
+var _getBuiltInIntentExtendedUtterances = function(intentConfig, resolvedBuildTimeSourceDirectory){
   let returnValue;
   if(typeof intentConfig !== "undefined" && intentConfig !== null){
     if(typeof intentConfig.extendedUtterances !== "undefined"){
       returnValue = [].concat(intentConfig.extendedUtterances);
     }
     if(typeof intentConfig.extendedUtterancesFilename !== "undefined"){
-      let loadedFromFile = utilities.loadStringListFromFile(intentConfig.extendedUtterancesFilename, resolvedBaseDir);
+      let loadedFromFile = utilities.loadStringListFromFile(intentConfig.extendedUtterancesFilename, resolvedBuildTimeSourceDirectory);
       if(typeof loadedFromFile !== "undefined" && Array.isArray(loadedFromFile)){
         if(typeof returnValue === "undefined"){
           returnValue = [];
