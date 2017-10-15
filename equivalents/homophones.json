@@ -1608,8 +1608,6 @@
         {"fitRating":0.95, "values":["halve","have"]}
       ]
     },
-
-
     {
       "words":["hangar","hanger"],
       "synonyms":[
@@ -1626,6 +1624,26 @@
       "words":["haw","hoar","whore"],
       "synonyms":[
         {"fitRating":0.95, "values":["haw","hoar","whore"]}
+      ]
+    },
+
+
+    {
+      "words":["hay","hey"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hay","hey"]}
+      ]
+    },
+    {
+      "words":["hays","haze"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hays","haze"]}
+      ]
+    },
+    {
+      "words":["heal","heel","he'll"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["heal","heel","he'll"]}
       ]
     }
 
