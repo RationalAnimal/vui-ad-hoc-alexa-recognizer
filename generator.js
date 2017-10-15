@@ -44,6 +44,7 @@ let usage = function(){
   console.log("  --buildtimesourcebase BuildTimeBaseSourceDirectory that is the base for the other file references on the command line or in the config file at build time.  Will override --sourcebase value for build time directory, if both are supplied");
   console.log("  --runtimesourcebase RunTimeBaseSourceDirectory that is the base for the other file references (e.g. in the config file) at run time.  Will override --sourcebase value for run time directory, if both are supplied");
   console.log("  --vuibase BaseVuiDirectory that is the base for the other file references on the command line or in the config file.  This will be used for both build and run time vui base unless overridden by other command line arguments. Defaults to ./node_modules/vui-ad-hoc-alexa-recognizer");
+  console.log("  --buildtimevuibase BuildTimeBaseVuiDirectory that is the base for the other file references on the command line or in the config file at build time.  Will override --vuibase value for build time directory, if both are supplied");
   console.log("  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.");
   console.log("  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.");
   console.log("  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.");
@@ -66,6 +67,8 @@ let runTimeSourceDirectory;
 
 let baseVuiDirectory;
 let resolvedBaseVuiDirectory;
+let buildTimeVuiDirectory;
+let resolvedBuildTimeVuiDirectory;
 
 let suppressRecognizerDisplay = false;
 
@@ -102,6 +105,13 @@ for(let i = 2; i < process.argv.length; i ++){
       i++;
       baseVuiDirectory = process.argv[j];
       resolvedBaseVuiDirectory = fs.realpathSync(baseVuiDirectory);
+    }
+  }
+  else if(process.argv[i] === "--buildtimevuibase"){
+    if(j < process.argv.length) {
+      i++;
+      buildTimeVuiDirectory = process.argv[j];
+      resolvedBuildTimeVuiDirectory = fs.realpathSync(buildTimeVuiDirectory);
     }
   }
   else if(process.argv[i] === "-i" || process.argv[i] === "--intents"){
@@ -154,6 +164,11 @@ if(typeof baseVuiDirectory !== "undefined" && baseVuiDirectory !== null){
   directories.buildTimeVuiDirectory = baseVuiDirectory;
   directories.runTimeVuiDirectory = baseVuiDirectory;
   directories.resolvedBuildTimeVuiDirectory = resolvedBaseVuiDirectory;
+}
+if(typeof buildTimeVuiDirectory !== "undefined" && buildTimeVuiDirectory !== null){
+  // We have actual run time directory for vui-ad-hoc-alexa-recognizer, set it.
+  directories.buildTimeVuiDirectory = buildTimeVuiDirectory;
+  directories.resolvedBuildTimeVuiDirectory = resolvedBuildTimeVuiDirectory;
 }
 
 if(typeof interactionModelFileName !== "undefined" && (typeof utterancesFileName !== "undefined" || typeof intentsFileName !== "undefined")){
