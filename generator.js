@@ -43,6 +43,7 @@ let usage = function(){
   console.log("  --sourcebase BaseSourceDirectory that is the base for the other file references on the command line or in the config file.  This will be used for both build and run time source base unless overridden by other command line arguments.");
   console.log("  --buildtimesourcebase BuildTimeBaseSourceDirectory that is the base for the other file references on the command line or in the config file at build time.  Will override --sourcebase value for build time directory, if both are supplied");
   console.log("  --runtimesourcebase RunTimeBaseSourceDirectory that is the base for the other file references (e.g. in the config file) at run time.  Will override --sourcebase value for run time directory, if both are supplied");
+  console.log("  --vuibase BaseVuiDirectory that is the base for the other file references on the command line or in the config file.  This will be used for both build and run time vui base unless overridden by other command line arguments. Defaults to ./node_modules/vui-ad-hoc-alexa-recognizer");
   console.log("  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.");
   console.log("  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.");
   console.log("  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.");
@@ -56,11 +57,16 @@ let configFileName;
 let intentsFileName;
 let utterancesFileName;
 let interactionModelFileName;
+
 let baseSourceDirectory;
 let resolvedBaseSourceDirectory;
 let buildTimeSourceDirectory;
 let resolvedBuildTimeSourceDirectory;
 let runTimeSourceDirectory;
+
+let baseVuiDirectory;
+let resolvedBaseVuiDirectory;
+
 let suppressRecognizerDisplay = false;
 
 for(let i = 2; i < process.argv.length; i ++){
@@ -76,7 +82,6 @@ for(let i = 2; i < process.argv.length; i ++){
       i++;
       baseSourceDirectory = process.argv[j];
       resolvedBaseSourceDirectory = fs.realpathSync(baseSourceDirectory);
-      //    console.log("typeof resolvedBaseSourceDirectory: " + (typeof resolvedBaseSourceDirectory) + ", resolvedBaseSourceDirectory: " + resolvedBaseSourceDirectory);
     }
   }
   else if(process.argv[i] === "--buildtimesourcebase"){
@@ -84,13 +89,19 @@ for(let i = 2; i < process.argv.length; i ++){
       i++;
       buildTimeSourceDirectory = process.argv[j];
       resolvedBuildTimeSourceDirectory = fs.realpathSync(buildTimeSourceDirectory);
-      //    console.log("typeof resolvedBaseSourceDirectory: " + (typeof resolvedBaseSourceDirectory) + ", resolvedBaseSourceDirectory: " + resolvedBaseSourceDirectory);
     }
   }
   else if(process.argv[i] === "--runtimesourcebase"){
     if(j < process.argv.length) {
       i++;
       runTimeSourceDirectory = process.argv[j];
+    }
+  }
+  else if(process.argv[i] === "--vuibase"){
+    if(j < process.argv.length) {
+      i++;
+      baseVuiDirectory = process.argv[j];
+      resolvedBaseVuiDirectory = fs.realpathSync(baseVuiDirectory);
     }
   }
   else if(process.argv[i] === "-i" || process.argv[i] === "--intents"){
@@ -137,6 +148,12 @@ if(typeof buildTimeSourceDirectory !== "undefined" && buildTimeSourceDirectory !
 if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== null){
   // We have actual run time directory for source, set it.
   directories.runTimeSourceDirectory = runTimeSourceDirectory;
+}
+if(typeof baseVuiDirectory !== "undefined" && baseVuiDirectory !== null){
+  // We have undifferentiated - build vs run time - directory for vui-ad-hoc-alexa-recognizer.  Set it first, then overwrite with specific ones.
+  directories.buildTimeVuiDirectory = baseVuiDirectory;
+  directories.runTimeVuiDirectory = baseVuiDirectory;
+  directories.resolvedBuildTimeVuiDirectory = resolvedBaseVuiDirectory;
 }
 
 if(typeof interactionModelFileName !== "undefined" && (typeof utterancesFileName !== "undefined" || typeof intentsFileName !== "undefined")){
