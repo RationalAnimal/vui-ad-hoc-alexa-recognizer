@@ -55,7 +55,7 @@ let intentsFileName;
 let utterancesFileName;
 let interactionModelFileName;
 let baseSourceDirectory;
-let resolvedBaseDir;
+let resolvedBaseSourceDirectory;
 let suppressRecognizerDisplay = false;
 
 for(let i = 2; i < process.argv.length; i ++){
@@ -70,8 +70,8 @@ for(let i = 2; i < process.argv.length; i ++){
     if(j < process.argv.length) {
       i++;
       baseSourceDirectory = process.argv[j];
-      resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
-      //    console.log("typeof resolvedBaseDir: " + (typeof resolvedBaseDir) + ", resolvedBaseDir: " + resolvedBaseDir);
+      resolvedBaseSourceDirectory = fs.realpathSync(baseSourceDirectory);
+      //    console.log("typeof resolvedBaseSourceDirectory: " + (typeof resolvedBaseSourceDirectory) + ", resolvedBaseSourceDirectory: " + resolvedBaseSourceDirectory);
     }
   }
   else if(process.argv[i] === "-i" || process.argv[i] === "--intents"){
@@ -138,7 +138,7 @@ if(typeof configFileName === "undefined"){
 }
 else {
   // compute actual config file name when combined with base source directory
-  let resolvedConfigFileName = utilities.resolveFileName(configFileName, resolvedBaseDir);
+  let resolvedConfigFileName = utilities.resolveFileName(configFileName, resolvedBaseSourceDirectory);
 
   try {
     config = require(resolvedConfigFileName);
@@ -153,7 +153,7 @@ else {
 let intents = [];
 if(typeof intentsFileName !== "undefined"){
   // compute actual intents file name when combined with base source directory
-  let resolvedIntentsFileName = utilities.resolveFileName(intentsFileName, resolvedBaseDir);
+  let resolvedIntentsFileName = utilities.resolveFileName(intentsFileName, resolvedBaseSourceDirectory);
 
   try {
     intents = require(resolvedIntentsFileName);
@@ -166,8 +166,15 @@ if(typeof intentsFileName !== "undefined"){
 }
 
 let utterances = [];
+let directories = {};
+if(typeof baseSourceDirectory !== "undefined" && baseSourceDirectory !== null){
+  // We have undifferentiated - build vs run time - directory for source.  Set it first, then overwrite with specific ones
+  directories.buildTimeSourceDirectory = baseSourceDirectory;
+  directories.runTimeSourceDirectory = baseSourceDirectory;
+  directories.resolvedBuildTimeSourceDirectory = resolvedBaseSourceDirectory;
+}
 let doTheProcessing = function(){
-  return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances, optimizations, resolvedBaseDir);
+  return recognizer.Recognizer.generateRunTimeJson(config, interactionModel, intents, utterances, optimizations, directories);
 };
 let _done = function(json){
   if(suppressRecognizerDisplay === false){
@@ -187,7 +194,7 @@ if(Array.isArray(config.customSlotTypes)){
       // If it's an array of JSON objects, then each object MUST contain a "value" field that will contain the
       // actual value.  May also contain other fields, such as "alternativeValues", "priorValues", etc.
       if(customSlotType.filename.toLowerCase().endsWith(".json") === true){
-        let resolvedFileName = utilities.resolveFileName(customSlotType.filename, resolvedBaseDir);
+        let resolvedFileName = utilities.resolveFileName(customSlotType.filename, resolvedBaseSourceDirectory);
         let values = require(resolvedFileName);
         for(let j = 0; j < values.length; j ++){
           if(customSlotType.values.length === 0){
@@ -209,7 +216,7 @@ if(Array.isArray(config.customSlotTypes)){
         }
       }
       else {
-        let values = utilities.loadStringListFromFile(customSlotType.filename, resolvedBaseDir);
+        let values = utilities.loadStringListFromFile(customSlotType.filename, resolvedBaseSourceDirectory);
         if(typeof values !== "undefined"){
           if(typeof customSlotType.values !== "undefined"){
             for(let j = 0; j < values.length; j++){
@@ -226,13 +233,13 @@ if(Array.isArray(config.customSlotTypes)){
     }
     else if(typeof customSlotType.customRegExpFile === "string"){
       // Parse the customRegExpString from a file and add it to the customSlotType
-      customSlotType.customRegExpString = utilities.loadStringFromFile(customSlotType.customRegExpFile, resolvedBaseDir);
+      customSlotType.customRegExpString = utilities.loadStringFromFile(customSlotType.customRegExpFile, resolvedBaseSourceDirectory);
     }
   }
 }
 
 if(typeof utterancesFileName !== "undefined"){
-  utterances = utilities.loadStringListFromFile(utterancesFileName, resolvedBaseDir);
+  utterances = utilities.loadStringListFromFile(utterancesFileName, resolvedBaseSourceDirectory);
 }
 if(typeof interactionModel !== "undefined"){
   // Get the info from interactionModel

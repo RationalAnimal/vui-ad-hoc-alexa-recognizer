@@ -1292,7 +1292,8 @@ var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
   return recognizer.builtInValues[suffix].replacementRegExpString;
 };
 
-var _generateRunTimeJson = function(config, interactionModel, intents, utterances, optimizations, resolvedBaseDir){
+var _generateRunTimeJson = function(config, interactionModel, intents, utterances, optimizations, directories){
+  let resolvedBaseDir = directories.resolvedBuildTimeSourceDirectory;
   if(typeof config === "undefined" || config === null){
     config = {};
   }
