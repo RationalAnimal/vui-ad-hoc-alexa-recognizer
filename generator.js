@@ -174,7 +174,7 @@ if(typeof configFileName === "undefined"){
 }
 else {
   // compute actual config file name when combined with base source directory
-  let resolvedConfigFileName = utilities.resolveFileName(configFileName, resolvedBaseSourceDirectory);
+  let resolvedConfigFileName = utilities.resolveFileName(configFileName, directories.resolvedBuildTimeSourceDirectory);
 
   try {
     config = require(resolvedConfigFileName);
@@ -189,7 +189,7 @@ else {
 let intents = [];
 if(typeof intentsFileName !== "undefined"){
   // compute actual intents file name when combined with base source directory
-  let resolvedIntentsFileName = utilities.resolveFileName(intentsFileName, resolvedBaseSourceDirectory);
+  let resolvedIntentsFileName = utilities.resolveFileName(intentsFileName, directories.resolvedBuildTimeSourceDirectory);
 
   try {
     intents = require(resolvedIntentsFileName);
@@ -224,7 +224,7 @@ if(Array.isArray(config.customSlotTypes)){
       // If it's an array of JSON objects, then each object MUST contain a "value" field that will contain the
       // actual value.  May also contain other fields, such as "alternativeValues", "priorValues", etc.
       if(customSlotType.filename.toLowerCase().endsWith(".json") === true){
-        let resolvedFileName = utilities.resolveFileName(customSlotType.filename, resolvedBaseSourceDirectory);
+        let resolvedFileName = utilities.resolveFileName(customSlotType.filename, directories.resolvedBuildTimeSourceDirectory);
         let values = require(resolvedFileName);
         for(let j = 0; j < values.length; j ++){
           if(customSlotType.values.length === 0){
@@ -246,7 +246,7 @@ if(Array.isArray(config.customSlotTypes)){
         }
       }
       else {
-        let values = utilities.loadStringListFromFile(customSlotType.filename, resolvedBaseSourceDirectory);
+        let values = utilities.loadStringListFromFile(customSlotType.filename, directories.resolvedBuildTimeSourceDirectory);
         if(typeof values !== "undefined"){
           if(typeof customSlotType.values !== "undefined"){
             for(let j = 0; j < values.length; j++){
@@ -263,13 +263,13 @@ if(Array.isArray(config.customSlotTypes)){
     }
     else if(typeof customSlotType.customRegExpFile === "string"){
       // Parse the customRegExpString from a file and add it to the customSlotType
-      customSlotType.customRegExpString = utilities.loadStringFromFile(customSlotType.customRegExpFile, resolvedBaseSourceDirectory);
+      customSlotType.customRegExpString = utilities.loadStringFromFile(customSlotType.customRegExpFile, directories.resolvedBuildTimeSourceDirectory);
     }
   }
 }
 
 if(typeof utterancesFileName !== "undefined"){
-  utterances = utilities.loadStringListFromFile(utterancesFileName, resolvedBaseSourceDirectory);
+  utterances = utilities.loadStringListFromFile(utterancesFileName, directories.resolvedBuildTimeSourceDirectory);
 }
 if(typeof interactionModel !== "undefined"){
   // Get the info from interactionModel
