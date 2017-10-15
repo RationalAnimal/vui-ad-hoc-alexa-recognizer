@@ -1698,8 +1698,6 @@
         {"fitRating":0.95, "values":["him","hymn"]}
       ]
     },
-
-
     {
       "words":["ho","hoe"],
       "synonyms":[
@@ -1716,6 +1714,26 @@
       "words":["hoarse","horse"],
       "synonyms":[
         {"fitRating":0.95, "values":["hoarse","horse"]}
+      ]
+    },
+
+
+    {
+      "words":["hoes","hose"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hoes","hose"]}
+      ]
+    },
+    {
+      "words":["hold","holed"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hold","holed"]}
+      ]
+    },
+    {
+      "words":["hole","whole"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hole","whole"]}
       ]
     }
 
