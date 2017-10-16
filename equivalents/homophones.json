@@ -1824,8 +1824,6 @@
         {"fitRating":0.95, "values":["jewel","joule"]}
       ]
     },
-
-
     {
       "words":["key","quay"],
       "synonyms":[
@@ -1842,6 +1840,25 @@
       "words":["knead","kneed","need"],
       "synonyms":[
         {"fitRating":0.95, "values":["knead","kneed","need"]}
+      ]
+    },
+
+    {
+      "words":["knew","new"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["knew","new"]}
+      ]
+    },
+    {
+      "words":["knight","night"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["knight","night"]}
+      ]
+    },
+    {
+      "words":["knit","nit"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["knit","nit"]}
       ]
     }
 
