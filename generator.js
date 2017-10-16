@@ -28,6 +28,7 @@ let fs = require("fs");
 let recognizer = require("./generatorsupport.js");
 let utilities = require("./utilities.js");
 let jsonutilities = require("./jsonutilities.js");
+let path = require("path");
 
 let resultJson;
 
@@ -183,6 +184,23 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
   directories.runTimeVuiDirectory = runTimeVuiDirectory;
 }
 // TODO Now populate default values if none have been entered
+{
+  let scratchDirectories = {};
+  if(typeof directories.buildTimeSourceDirectory !== "undefined" && directories.buildTimeSourceDirectory !== null){
+    scratchDirectories.buildTimeSourceDirectory = directories.buildTimeSourceDirectory;
+  }
+  else {
+    scratchDirectories.buildTimeSourceDirectory = ".";
+  }
+  if(typeof directories.buildTimeVuiDirectory !== "undefined" && directories.buildTimeVuiDirectory !== null){
+    scratchDirectories.buildTimeVuiDirectory = directories.buildTimeVuiDirectory;
+  }
+  else {
+    scratchDirectories.buildTimeVuiDirectory = "./node_modules/vui-ad-hoc-alex-recognizer/";
+  }
+  scratchDirectories.buildTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.buildTimeSourceDirectory), path.resolve(scratchDirectories.buildTimeVuiDirectory));
+  scratchDirectories.buildTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.buildTimeVuiDirectory), path.resolve(scratchDirectories.buildTimeSourceDirectory));
+}
 
 if(typeof interactionModelFileName !== "undefined" && (typeof utterancesFileName !== "undefined" || typeof intentsFileName !== "undefined")){
   console.log("Must use either --interactionmodel argument OR the pair of --intents and --utterances, but NOT both.");
