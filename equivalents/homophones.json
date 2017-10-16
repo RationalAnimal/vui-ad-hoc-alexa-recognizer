@@ -1842,7 +1842,6 @@
         {"fitRating":0.95, "values":["knead","kneed","need"]}
       ]
     },
-
     {
       "words":["knew","new"],
       "synonyms":[
@@ -1859,6 +1858,25 @@
       "words":["knit","nit"],
       "synonyms":[
         {"fitRating":0.95, "values":["knit","nit"]}
+      ]
+    },
+
+    {
+      "words":["knob","nob"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["knob","nob"]}
+      ]
+    },
+    {
+      "words":["knock","nock"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["knock","nock"]}
+      ]
+    },
+    {
+      "words":["knot","naught","not"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["knot","naught","not"]}
       ]
     }
 
