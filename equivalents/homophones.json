@@ -1716,8 +1716,6 @@
         {"fitRating":0.95, "values":["hoarse","horse"]}
       ]
     },
-
-
     {
       "words":["hoes","hose"],
       "synonyms":[
@@ -1734,6 +1732,26 @@
       "words":["hole","whole"],
       "synonyms":[
         {"fitRating":0.95, "values":["hole","whole"]}
+      ]
+    },
+
+
+    {
+      "words":["holey", "holy", "wholly"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["holey", "holy", "wholly"]}
+      ]
+    },
+    {
+      "words":["hostel","hostile"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hostel","hostile"]}
+      ]
+    },
+    {
+      "words":["hour", "our"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["hour", "our"]}
       ]
     }
 
