@@ -183,7 +183,6 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
   // We have actual run time directory for source, set it.
   directories.runTimeVuiDirectory = runTimeVuiDirectory;
 }
-// TODO Now populate default values if none have been entered
 {
   let scratchDirectories = {};
   if(typeof directories.buildTimeSourceDirectory !== "undefined" && directories.buildTimeSourceDirectory !== null){
@@ -215,6 +214,8 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
   else {
     scratchDirectories.runTimeVuiDirectory = "./node_modules/vui-ad-hoc-alex-recognizer/";
   }
+  scratchDirectories.runTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.runTimeSourceDirectory), path.resolve(scratchDirectories.runTimeVuiDirectory));
+  scratchDirectories.runTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.runTimeVuiDirectory), path.resolve(scratchDirectories.runTimeSourceDirectory));
 }
 
 if(typeof interactionModelFileName !== "undefined" && (typeof utterancesFileName !== "undefined" || typeof intentsFileName !== "undefined")){
