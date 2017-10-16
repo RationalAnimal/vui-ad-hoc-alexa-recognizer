@@ -1734,8 +1734,6 @@
         {"fitRating":0.95, "values":["hole","whole"]}
       ]
     },
-
-
     {
       "words":["holey", "holy", "wholly"],
       "synonyms":[
@@ -1752,6 +1750,26 @@
       "words":["hour", "our"],
       "synonyms":[
         {"fitRating":0.95, "values":["hour", "our"]}
+      ]
+    },
+
+
+    {
+      "words":["idle","idol","idyll","idyl"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["idle","idol","idyll","idyl"]}
+      ]
+    },
+    {
+      "words":["immanent","imminent"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["immanent","imminent"]}
+      ]
+    },
+    {
+      "words":["in","inn"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["in","inn"]}
       ]
     }
 
