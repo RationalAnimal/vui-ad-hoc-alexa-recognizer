@@ -1770,8 +1770,6 @@
         {"fitRating":0.95, "values":["in","inn"]}
       ]
     },
-
-
     {
       "words":["incidence","incidents"],
       "synonyms":[
@@ -1788,6 +1786,26 @@
       "words":["indict","indite"],
       "synonyms":[
         {"fitRating":0.95, "values":["indict","indite"]}
+      ]
+    },
+
+
+    {
+      "words":["instance","instants"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["instance","instants"]}
+      ]
+    },
+    {
+      "words":["intense","intents"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["intense","intents"]}
+      ]
+    },
+    {
+      "words":["intension","intention"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["intension","intention"]}
       ]
     }
 
