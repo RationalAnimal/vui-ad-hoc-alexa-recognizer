@@ -1752,8 +1752,6 @@
         {"fitRating":0.95, "values":["hour", "our"]}
       ]
     },
-
-
     {
       "words":["idle","idol","idyll","idyl"],
       "synonyms":[
@@ -1770,6 +1768,26 @@
       "words":["in","inn"],
       "synonyms":[
         {"fitRating":0.95, "values":["in","inn"]}
+      ]
+    },
+
+
+    {
+      "words":["incidence","incidents"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["incidence","incidents"]}
+      ]
+    },
+    {
+      "words":["incite","insight"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["incite","insight"]}
+      ]
+    },
+    {
+      "words":["indict","indite"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["indict","indite"]}
       ]
     }
 
