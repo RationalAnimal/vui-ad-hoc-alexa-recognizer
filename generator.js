@@ -200,6 +200,9 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
   }
   scratchDirectories.buildTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.buildTimeSourceDirectory), path.resolve(scratchDirectories.buildTimeVuiDirectory));
   scratchDirectories.buildTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.buildTimeVuiDirectory), path.resolve(scratchDirectories.buildTimeSourceDirectory));
+  scratchDirectories.resolvedBuildTimeVuiDirectory = path.resolve(".");
+  scratchDirectories.resolvedBuildTimeSourceDirectory = path.resolve(scratchDirectories.resolvedBuildTimeVuiDirectory, scratchDirectories.buildTimeVuiToSourceDelta);
+  // At this time we have all the build time "bits", now do the same for run time.
 }
 
 if(typeof interactionModelFileName !== "undefined" && (typeof utterancesFileName !== "undefined" || typeof intentsFileName !== "undefined")){
