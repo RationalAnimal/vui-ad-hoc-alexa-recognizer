@@ -1806,7 +1806,6 @@
         {"fitRating":0.95, "values":["intension","intention"]}
       ]
     },
-
     {
       "words":["it's","its"],
       "synonyms":[
@@ -1823,6 +1822,26 @@
       "words":["jewel","joule"],
       "synonyms":[
         {"fitRating":0.95, "values":["jewel","joule"]}
+      ]
+    },
+
+
+    {
+      "words":["key","quay"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["key","quay"]}
+      ]
+    },
+    {
+      "words":["knave","nave"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["knave","nave"]}
+      ]
+    },
+    {
+      "words":["knead","kneed","need"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["knead","kneed","need"]}
       ]
     }
 

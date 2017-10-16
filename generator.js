@@ -182,6 +182,7 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
   // We have actual run time directory for source, set it.
   directories.runTimeVuiDirectory = runTimeVuiDirectory;
 }
+// TODO Now populate default values if none have been entered
 
 if(typeof interactionModelFileName !== "undefined" && (typeof utterancesFileName !== "undefined" || typeof intentsFileName !== "undefined")){
   console.log("Must use either --interactionmodel argument OR the pair of --intents and --utterances, but NOT both.");
