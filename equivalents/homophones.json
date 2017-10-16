@@ -1788,8 +1788,6 @@
         {"fitRating":0.95, "values":["indict","indite"]}
       ]
     },
-
-
     {
       "words":["instance","instants"],
       "synonyms":[
@@ -1806,6 +1804,25 @@
       "words":["intension","intention"],
       "synonyms":[
         {"fitRating":0.95, "values":["intension","intention"]}
+      ]
+    },
+
+    {
+      "words":["it's","its"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["it's","its"]}
+      ]
+    },
+    {
+      "words":["jam","jamb"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["jam","jamb"]}
+      ]
+    },
+    {
+      "words":["jewel","joule"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["jewel","joule"]}
       ]
     }
 
