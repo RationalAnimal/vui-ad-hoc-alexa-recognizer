@@ -206,8 +206,10 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
     scratchDirectories.buildTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.buildTimeVuiDirectory), path.resolve(scratchDirectories.buildTimeSourceDirectory));
   }
   else if(path.isAbsolute(scratchDirectories.buildTimeSourceDirectory) === true && path.isAbsolute(scratchDirectories.buildTimeVuiDirectory) === false){
-    scratchDirectories.buildTimeSourceToVuiDelta = path.relative(scratchDirectories.buildTimeSourceDirectory, path.resolve(scratchDirectories.buildTimeVuiDirectory));
-    scratchDirectories.buildTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.buildTimeVuiDirectory), scratchDirectories.buildTimeSourceDirectory);
+    // build time vui directory is absolute, source is relative.  Assume that source is relative to vui and compute deltas.  vui to source delta is just the source path.
+    scratchDirectories.buildTimeVuiToSourceDelta = scratchDirectories.buildTimeSourceDirectory;
+    // To "reverse" the source, simply compute relative path from it to .
+    scratchDirectories.buildTimeSourceToVuiDelta = path.relative(scratchDirectories.buildTimeSourceDirectory, ".");
   }
   else if(path.isAbsolute(scratchDirectories.buildTimeSourceDirectory) === false && path.isAbsolute(scratchDirectories.buildTimeVuiDirectory) === true){
     scratchDirectories.buildTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.buildTimeSourceDirectory), scratchDirectories.buildTimeVuiDirectory);
