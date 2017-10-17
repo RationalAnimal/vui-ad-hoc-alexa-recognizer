@@ -197,10 +197,12 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
   else {
     scratchDirectories.buildTimeVuiDirectory = "./node_modules/vui-ad-hoc-alex-recognizer/";
   }
-  scratchDirectories.buildTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.buildTimeSourceDirectory), path.resolve(scratchDirectories.buildTimeVuiDirectory));
-  scratchDirectories.buildTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.buildTimeVuiDirectory), path.resolve(scratchDirectories.buildTimeSourceDirectory));
-  scratchDirectories.resolvedBuildTimeVuiDirectory = path.resolve(".");
-  scratchDirectories.resolvedBuildTimeSourceDirectory = path.resolve(scratchDirectories.resolvedBuildTimeVuiDirectory, scratchDirectories.buildTimeVuiToSourceDelta);
+  if(path.isAbsolute(scratchDirectories.buildTimeSourceDirectory) && path.isAbsolute(scratchDirectories.buildTimeVuiDirectory)){
+    scratchDirectories.buildTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.buildTimeSourceDirectory), path.resolve(scratchDirectories.buildTimeVuiDirectory));
+    scratchDirectories.buildTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.buildTimeVuiDirectory), path.resolve(scratchDirectories.buildTimeSourceDirectory));
+  }
+  //scratchDirectories.resolvedBuildTimeVuiDirectory = path.resolve(".");
+  //scratchDirectories.resolvedBuildTimeSourceDirectory = path.resolve(scratchDirectories.resolvedBuildTimeVuiDirectory, scratchDirectories.buildTimeVuiToSourceDelta);
   // At this time we have all the build time "bits", now do the same for run time.
   if(typeof directories.runTimeSourceDirectory !== "undefined" && directories.runTimeSourceDirectory !== null){
     scratchDirectories.runTimeSourceDirectory = directories.runTimeSourceDirectory;
