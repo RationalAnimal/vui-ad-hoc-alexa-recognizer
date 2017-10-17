@@ -228,7 +228,6 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
   else {
     scratchDirectories.runTimeVuiDirectory = "./node_modules/vui-ad-hoc-alex-recognizer/";
   }
-  // Compute the delta ONLY if it's computable.  Else throw an exception.
   if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === true && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === true){
     // Two absolute paths - deltas are computable
     scratchDirectories.runTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.runTimeSourceDirectory), path.resolve(scratchDirectories.runTimeVuiDirectory));
@@ -238,6 +237,12 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
     // Two relative paths - assume that they are relative to the same reference path, thus deltas are computable
     scratchDirectories.runTimeSourceToVuiDelta = path.relative(scratchDirectories.runTimeSourceDirectory, scratchDirectories.runTimeVuiDirectory);
     scratchDirectories.runTimeVuiToSourceDelta = path.relative(scratchDirectories.runTimeVuiDirectory, scratchDirectories.runTimeSourceDirectory);
+  }
+  else if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === false && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === true){
+    // run time vui directory is absolute, source is relative.  Assume that source is relative to vui and compute deltas.  vui to source delta is just the source path.
+    scratchDirectories.runTimeVuiToSourceDelta = scratchDirectories.runTimeSourceDirectory;
+    // To "reverse" the source, simply compute relative path from it to .
+    scratchDirectories.runTimeSourceToVuiDelta = path.relative(scratchDirectories.runTimeSourceDirectory, ".");
   }
 
 
