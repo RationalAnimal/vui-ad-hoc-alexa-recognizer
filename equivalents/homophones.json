@@ -1878,8 +1878,6 @@
         {"fitRating":0.95, "values":["knot","naught","not"]}
       ]
     },
-
-
     {
       "words":["know","no"],
       "synonyms":[
@@ -1896,6 +1894,26 @@
       "words":["laager","lager"],
       "synonyms":[
         {"fitRating":0.95, "values":["laager","lager"]}
+      ]
+    },
+
+
+    {
+      "words":["lac","lack"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lac","lack"]}
+      ]
+    },
+    {
+      "words":["lacks","lax"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lacks","lax"]}
+      ]
+    },
+    {
+      "words":["lade","laid"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lade","laid"]}
       ]
     }
 
