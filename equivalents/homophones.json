@@ -1860,7 +1860,6 @@
         {"fitRating":0.95, "values":["knit","nit"]}
       ]
     },
-
     {
       "words":["knob","nob"],
       "synonyms":[
@@ -1877,6 +1876,26 @@
       "words":["knot","naught","not"],
       "synonyms":[
         {"fitRating":0.95, "values":["knot","naught","not"]}
+      ]
+    },
+
+
+    {
+      "words":["know","no"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["know","no"]}
+      ]
+    },
+    {
+      "words":["knows","noes","nose"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["knows","noes","nose"]}
+      ]
+    },
+    {
+      "words":["laager","lager"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["laager","lager"]}
       ]
     }
 
