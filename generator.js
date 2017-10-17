@@ -234,6 +234,9 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
   // Now copy some of these values to the "real" directories object
   directories.buildTimeSourceToVuiDelta = scratchDirectories.buildTimeSourceToVuiDelta;
   directories.buildTimeVuiToSourceDelta = scratchDirectories.buildTimeVuiToSourceDelta;
+
+  directories.runTimeSourceToVuiDelta = scratchDirectories.runTimeSourceToVuiDelta;
+  directories.runTimeVuiToSourceDelta = scratchDirectories.runTimeVuiToSourceDelta;
 }
 
 if(typeof interactionModelFileName !== "undefined" && (typeof utterancesFileName !== "undefined" || typeof intentsFileName !== "undefined")){
