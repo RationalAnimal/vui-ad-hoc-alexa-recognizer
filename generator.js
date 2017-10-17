@@ -216,6 +216,10 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
   }
   scratchDirectories.runTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.runTimeSourceDirectory), path.resolve(scratchDirectories.runTimeVuiDirectory));
   scratchDirectories.runTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.runTimeVuiDirectory), path.resolve(scratchDirectories.runTimeSourceDirectory));
+
+  // Now copy some of these values to the "real" directories object
+  directories.buildTimeSourceToVuiDelta = scratchDirectories.buildTimeSourceToVuiDelta;
+  directories.buildTimeVuiToSourceDelta = scratchDirectories.buildTimeVuiToSourceDelta;
 }
 
 if(typeof interactionModelFileName !== "undefined" && (typeof utterancesFileName !== "undefined" || typeof intentsFileName !== "undefined")){
