@@ -197,7 +197,11 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
   else {
     scratchDirectories.buildTimeVuiDirectory = "./node_modules/vui-ad-hoc-alex-recognizer/";
   }
-  if(path.isAbsolute(scratchDirectories.buildTimeSourceDirectory) && path.isAbsolute(scratchDirectories.buildTimeVuiDirectory)){
+  if(path.isAbsolute(scratchDirectories.buildTimeSourceDirectory) === true && path.isAbsolute(scratchDirectories.buildTimeVuiDirectory) === true){
+    scratchDirectories.buildTimeSourceToVuiDelta = path.relative(scratchDirectories.buildTimeSourceDirectory, scratchDirectories.buildTimeVuiDirectory);
+    scratchDirectories.buildTimeVuiToSourceDelta = path.relative(scratchDirectories.buildTimeVuiDirectory, scratchDirectories.buildTimeSourceDirectory);
+  }
+  else if(path.isAbsolute(scratchDirectories.buildTimeSourceDirectory) === false && path.isAbsolute(scratchDirectories.buildTimeVuiDirectory) === false){
     scratchDirectories.buildTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.buildTimeSourceDirectory), path.resolve(scratchDirectories.buildTimeVuiDirectory));
     scratchDirectories.buildTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.buildTimeVuiDirectory), path.resolve(scratchDirectories.buildTimeSourceDirectory));
   }
