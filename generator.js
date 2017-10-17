@@ -209,8 +209,12 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
     scratchDirectories.buildTimeSourceToVuiDelta = path.relative(scratchDirectories.buildTimeSourceDirectory, path.resolve(scratchDirectories.buildTimeVuiDirectory));
     scratchDirectories.buildTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.buildTimeVuiDirectory), scratchDirectories.buildTimeSourceDirectory);
   }
-  //scratchDirectories.resolvedBuildTimeVuiDirectory = path.resolve(".");
-  //scratchDirectories.resolvedBuildTimeSourceDirectory = path.resolve(scratchDirectories.resolvedBuildTimeVuiDirectory, scratchDirectories.buildTimeVuiToSourceDelta);
+  else if(path.isAbsolute(scratchDirectories.buildTimeSourceDirectory) === false && path.isAbsolute(scratchDirectories.buildTimeVuiDirectory) === true){
+    scratchDirectories.buildTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.buildTimeSourceDirectory), scratchDirectories.buildTimeVuiDirectory);
+    scratchDirectories.buildTimeVuiToSourceDelta = path.relative(scratchDirectories.buildTimeVuiDirectory, path.resolve(scratchDirectories.buildTimeSourceDirectory));
+  }
+  scratchDirectories.resolvedBuildTimeVuiDirectory = path.resolve(".");
+  scratchDirectories.resolvedBuildTimeSourceDirectory = path.resolve(scratchDirectories.resolvedBuildTimeVuiDirectory, scratchDirectories.buildTimeVuiToSourceDelta);
   // At this time we have all the build time "bits", now do the same for run time.
   if(typeof directories.runTimeSourceDirectory !== "undefined" && directories.runTimeSourceDirectory !== null){
     scratchDirectories.runTimeSourceDirectory = directories.runTimeSourceDirectory;
