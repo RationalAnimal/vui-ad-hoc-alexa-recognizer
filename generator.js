@@ -228,8 +228,12 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
   else {
     scratchDirectories.runTimeVuiDirectory = "./node_modules/vui-ad-hoc-alex-recognizer/";
   }
-  scratchDirectories.runTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.runTimeSourceDirectory), path.resolve(scratchDirectories.runTimeVuiDirectory));
-  scratchDirectories.runTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.runTimeVuiDirectory), path.resolve(scratchDirectories.runTimeSourceDirectory));
+  // Compute the delta ONLY if it's computable.  Else throw an exception.
+  if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === true && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === true){
+    // Two absolute paths - deltas are computable
+    scratchDirectories.runTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.runTimeSourceDirectory), path.resolve(scratchDirectories.runTimeVuiDirectory));
+    scratchDirectories.runTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.runTimeVuiDirectory), path.resolve(scratchDirectories.runTimeSourceDirectory));
+  }
 
   // Now copy some of these values to the "real" directories object
   directories.buildTimeSourceToVuiDelta = scratchDirectories.buildTimeSourceToVuiDelta;
