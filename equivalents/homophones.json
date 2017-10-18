@@ -2058,8 +2058,6 @@
         {"fitRating":0.95, "values":["lickerish","licorice"]}
       ]
     },
-
-
     {
       "words":["lie","lye"],
       "synonyms":[
@@ -2076,6 +2074,26 @@
       "words":["links","lynx"],
       "synonyms":[
         {"fitRating":0.95, "values":["links","lynx"]}
+      ]
+    },
+
+
+    {
+      "words":["lo","low"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lo","low"]}
+      ]
+    },
+    {
+      "words":["load","lode","lowed"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["load","lode","lowed"]}
+      ]
+    },
+    {
+      "words":["loan","lone"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["loan","lone"]}
       ]
     }
 
