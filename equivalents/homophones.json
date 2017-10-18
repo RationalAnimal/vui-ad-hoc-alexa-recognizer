@@ -1914,8 +1914,6 @@
         {"fitRating":0.95, "values":["lade","laid"]}
       ]
     },
-
-
     {
       "words":["lain","lane"],
       "synonyms":[
@@ -1932,6 +1930,26 @@
       "words":["lam","lamb"],
       "synonyms":[
         {"fitRating":0.95, "values":["lam","lamb"]}
+      ]
+    },
+
+
+    {
+      "words":["Lapps","laps","lapse"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["Lapps","laps","lapse"]}
+      ]
+    },
+    {
+      "words":["larva","lava"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["larva","lava"]}
+      ]
+    },
+    {
+      "words":["law","lore"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["law","lore"]}
       ]
     }
 
