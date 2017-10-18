@@ -2022,9 +2022,6 @@
         {"fitRating":0.95, "values":["let's","lets"]}
       ]
     },
-
-
-
     {
       "words":["levee","levy"],
       "synonyms":[
@@ -2041,6 +2038,26 @@
       "words":["lichen","liken"],
       "synonyms":[
         {"fitRating":0.95, "values":["lichen","liken"]}
+      ]
+    },
+
+
+    {
+      "words":["licence","license"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["licence","license"]}
+      ]
+    },
+    {
+      "words":["licker","liquor"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["licker","liquor"]}
+      ]
+    },
+    {
+      "words":["lickerish","licorice"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lickerish","licorice"]}
       ]
     }
 
