@@ -2004,8 +2004,6 @@
         {"fitRating":0.7, "values":["lends","lens"]}
       ]
     },
-
-
     {
       "words":["lessen","lesson"],
       "synonyms":[
@@ -2022,6 +2020,44 @@
       "words":["let's","lets"],
       "synonyms":[
         {"fitRating":0.95, "values":["let's","lets"]}
+      ]
+    },
+    {
+      "words":["levee","levy"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["levee","levy"]}
+      ]
+    },
+    {
+      "words":["liar","lier","lyre"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["liar","lier","lyre"]}
+      ]
+    },
+    {
+      "words":["lichen","liken"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lichen","liken"]}
+      ]
+    },
+
+
+    {
+      "words":["licence","license"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["licence","license"]}
+      ]
+    },
+    {
+      "words":["licker","liquor"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["licker","liquor"]}
+      ]
+    },
+    {
+      "words":["lickerish","licorice"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lickerish","licorice"]}
       ]
     }
 
