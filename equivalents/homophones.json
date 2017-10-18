@@ -2040,8 +2040,6 @@
         {"fitRating":0.95, "values":["lichen","liken"]}
       ]
     },
-
-
     {
       "words":["licence","license"],
       "synonyms":[
@@ -2058,6 +2056,26 @@
       "words":["lickerish","licorice"],
       "synonyms":[
         {"fitRating":0.95, "values":["lickerish","licorice"]}
+      ]
+    },
+
+
+    {
+      "words":["lie","lye"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lie","lye"]}
+      ]
+    },
+    {
+      "words":["lieu","loo"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lieu","loo"]}
+      ]
+    },
+    {
+      "words":["links","lynx"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["links","lynx"]}
       ]
     }
 
