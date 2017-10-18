@@ -1986,8 +1986,6 @@
         {"fitRating":0.95, "values":["leak","leek"]}
       ]
     },
-
-
     {
       "words":["lean","lien"],
       "synonyms":[
@@ -2004,6 +2002,26 @@
       "words":["lends","lens"],
       "synonyms":[
         {"fitRating":0.7, "values":["lends","lens"]}
+      ]
+    },
+
+
+    {
+      "words":["lessen","lesson"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lessen","lesson"]}
+      ]
+    },
+    {
+      "words":["lesser","lessor"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lesser","lessor"]}
+      ]
+    },
+    {
+      "words":["let's","lets"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["let's","lets"]}
       ]
     }
 
