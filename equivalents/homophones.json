@@ -1950,8 +1950,6 @@
         {"fitRating":0.7, "values":["law","lore"]}
       ]
     },
-
-
     {
       "words":["lase","lays","laze","leis"],
       "synonyms":[
@@ -1968,6 +1966,26 @@
       "words":["lea","lee"],
       "synonyms":[
         {"fitRating":0.95, "values":["lea","lee"]}
+      ]
+    },
+
+
+    {
+      "words":["leach","leech"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["leach","leech"]}
+      ]
+    },
+    {
+      "words":["lead","led"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lead","led"]}
+      ]
+    },
+    {
+      "words":["leak","leek"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["leak","leek"]}
       ]
     }
 
