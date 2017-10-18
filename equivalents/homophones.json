@@ -1896,8 +1896,6 @@
         {"fitRating":0.95, "values":["laager","lager"]}
       ]
     },
-
-
     {
       "words":["lac","lack"],
       "synonyms":[
@@ -1914,6 +1912,26 @@
       "words":["lade","laid"],
       "synonyms":[
         {"fitRating":0.95, "values":["lade","laid"]}
+      ]
+    },
+
+
+    {
+      "words":["lain","lane"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lain","lane"]}
+      ]
+    },
+    {
+      "words":["lair","layer"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lair","layer"]}
+      ]
+    },
+    {
+      "words":["lam","lamb"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lam","lamb"]}
       ]
     }
 
