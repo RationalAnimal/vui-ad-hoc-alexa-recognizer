@@ -1968,8 +1968,6 @@
         {"fitRating":0.95, "values":["lea","lee"]}
       ]
     },
-
-
     {
       "words":["leach","leech"],
       "synonyms":[
@@ -1986,6 +1984,26 @@
       "words":["leak","leek"],
       "synonyms":[
         {"fitRating":0.95, "values":["leak","leek"]}
+      ]
+    },
+
+
+    {
+      "words":["lean","lien"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lean","lien"]}
+      ]
+    },
+    {
+      "words":["leased","least"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["leased","least"]}
+      ]
+    },
+    {
+      "words":["lends","lens"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["lends","lens"]}
       ]
     }
 
