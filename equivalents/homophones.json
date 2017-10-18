@@ -1932,8 +1932,6 @@
         {"fitRating":0.95, "values":["lam","lamb"]}
       ]
     },
-
-
     {
       "words":["Lapps","laps","lapse"],
       "synonyms":[
@@ -1950,6 +1948,26 @@
       "words":["law","lore"],
       "synonyms":[
         {"fitRating":0.7, "values":["law","lore"]}
+      ]
+    },
+
+
+    {
+      "words":["lase","lays","laze","leis"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lase","lays","laze","leis"]}
+      ]
+    },
+    {
+      "words":["lay","ley","lei"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lay","ley","lei"]}
+      ]
+    },
+    {
+      "words":["lea","lee"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["lea","lee"]}
       ]
     }
 
