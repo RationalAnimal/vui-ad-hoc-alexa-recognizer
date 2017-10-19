@@ -75,7 +75,6 @@ let resolvedBuildTimeVuiDirectory;
 let runTimeVuiDirectory;
 
 let runTimeExeDirectory;
-let resolvedRunTimeExeDirectory;
 
 let suppressRecognizerDisplay = false;
 
@@ -125,7 +124,6 @@ for(let i = 2; i < process.argv.length; i ++){
     if(j < process.argv.length) {
       i++;
       runTimeVuiDirectory = process.argv[j];
-      resolvedRunTimeExeDirectory = path.resolve(runTimeExeDirectory);
     }
   }
   else if(process.argv[i] === "--runtime"){
@@ -194,9 +192,9 @@ if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== n
   // We have actual run time directory for vui-ad-hoc-alexa-recognizer, set it.
   directories.runTimeVuiDirectory = runTimeVuiDirectory;
 }
-if(typeof resolvedRunTimeExeDirectory !== "undefined" && resolvedRunTimeExeDirectory !== null){
+if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
   // We have run time exe directory - where the original script to be run will be located, set it
-  directories.resolvedRunTimeExeDirectory = resolvedRunTimeExeDirectory;
+  directories.runTimeExeDirectory = runTimeExeDirectory;
 }
 {
   let scratchDirectories = {};
@@ -269,6 +267,13 @@ if(typeof resolvedRunTimeExeDirectory !== "undefined" && resolvedRunTimeExeDirec
     // To "reverse" the source, simply compute relative path from it to .
     scratchDirectories.runTimeSourceToVuiDelta = path.relative(scratchDirectories.runTimeSourceDirectory, ".");
   }
+  if(typeof directories.runTimeExeDirectory !== "undefined" && directories.runTimeExeDirectory !== null){
+    scratchDirectories.runTimeExeDirectory = runTimeExeDirectory;
+  }
+  else {
+    scratchDirectories.runTimeExeDirectory = ".";
+  }
+
 
 
 
