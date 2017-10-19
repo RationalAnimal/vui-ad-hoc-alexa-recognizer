@@ -2256,8 +2256,6 @@
         {"fitRating":0.95, "values":["meat","meet","mete"]}
       ]
     },
-
-
     {
       "words":["miner","minor","mynah"],
       "synonyms":[
@@ -2274,6 +2272,27 @@
       "words":["mind","mined"],
       "synonyms":[
         {"fitRating":0.95, "values":["mind","mined"]}
+      ]
+    },
+
+
+
+    {
+      "words":["miner","minor"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["miner","minor"]}
+      ]
+    },
+    {
+      "words":["missed","mist"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["missed","mist"]}
+      ]
+    },
+    {
+      "words":["moat","mote"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["moat","mote"]}
       ]
     }
 
