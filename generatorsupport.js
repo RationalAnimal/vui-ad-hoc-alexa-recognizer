@@ -1928,7 +1928,7 @@ var _getBuiltInSlotConfig = function(config, slotName){
   // Nothing found - return undefined
 };
 
-// TODO DIRECTORIES - likely need to use a different one here
+// TODO DIRECTORIES - likely need to use a different one here - need runtime vui/exe to source delta here
 var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBuildTimeSourceDirectory){
   if(typeof config.builtInSlots !== "undefined" && Array.isArray(config.builtInSlots)){
     for(let i = 0; i < config.builtInSlots.length; i++){
@@ -1937,12 +1937,12 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBuildT
         let returnValue = [];
         if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
           if(typeof currentSlot.transformSrcFilename === "string"){
-            // TODO DIRECTORIES - likely need to use a different one here
+            // TODO DIRECTORIES - likely need to use a different one here - need runtime vui/exe to source delta here
             returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory));
           }
           else if(Array.isArray(currentSlot.transformSrcFilename)){
             for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
-              // TODO DIRECTORIES - likely need to use a different one here
+              // TODO DIRECTORIES - likely need to use a different one here - need runtime vui/exe to source delta here
               returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBuildTimeSourceDirectory));
             }
           }
@@ -1971,12 +1971,12 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBuildT
         let returnValue = [];
         if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
           if(typeof currentSlot.transformSrcFilename === "string"){
-            // TODO DIRECTORIES - likely need to use a different one here
+            // TODO DIRECTORIES - likely need to use a different one here - need runtime vui/exe to source delta here
             returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory));
           }
           else if(Array.isArray(currentSlot.transformSrcFilename)){
             for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
-              // TODO DIRECTORIES - likely need to use a different one here
+              // TODO DIRECTORIES - likely need to use a different one here - need runtime vui/exe to source delta here
               returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBuildTimeSourceDirectory));
             }
           }
