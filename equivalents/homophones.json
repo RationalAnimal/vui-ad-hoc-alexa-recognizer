@@ -2130,8 +2130,6 @@
         {"fitRating":0.95, "values":["made","maid"]}
       ]
     },
-
-
     {
       "words":["mail","male"],
       "synonyms":[
@@ -2148,6 +2146,26 @@
       "words":["maize","Mays","maze"],
       "synonyms":[
         {"fitRating":0.95, "values":["maize","Mays","maze"]}
+      ]
+    },
+
+
+    {
+      "words":["mall","moll","maul","mawl"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["mall","moll","maul","mawl"]}
+      ]
+    },
+    {
+      "words":["manna","manner","manor"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["manna","manner","manor"]}
+      ]
+    },
+    {
+      "words":["mantel","mantle"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["mantel","mantle"]}
       ]
     }
 
