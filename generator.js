@@ -42,17 +42,17 @@ let defaultCortanaConfig = {
 let usage = function(){
   console.log("Usage: node " + process.argv[1] + ":");
   console.log("  --sourcebase BaseSourceDirectory that is the base for the other file references on the command line or in the config file.  This will be used for both build and run time source base unless overridden by other command line arguments.");
-  console.log("  --buildtimesourcebase BuildTimeBaseSourceDirectory that is the base for the other file references on the command line or in the config file at build time.  Will override --sourcebase value for build time directory, if both are supplied");
-  console.log("  --runtimesourcebase RunTimeBaseSourceDirectory that is the base for the other file references (e.g. in the config file) at run time.  Will override --sourcebase value for run time directory, if both are supplied");
-  console.log("  --vuibase BaseVuiDirectory that is the location of vui-ad-hoc-alexa-recognizer.  This will be used for both build and run time vui base unless overridden by other command line arguments. Defaults to ./node_modules/vui-ad-hoc-alexa-recognizer");
-  console.log("  --buildtimevuibase BuildTimeBaseVuiDirectory that is the location of vui-ad-hoc-alexa-recornizer executable files at build time.  Will override --vuibase value for build time directory, if both are supplied");
-  console.log("  --runtimevuibase RunTimeBaseVuiDirectory that is the location of vui-ad-hoc-alexa-recognizer executable files at run time.  Will override --vuibase value for run time directory, if both are supplied");
-  console.log("  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.");
-  console.log("  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.");
-  console.log("  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.");
-  console.log("  --utterances UtterancesFileName specify utterances file name, optional.  This is \"optional\" only in the sense that it CAN be omitted, but in practice it is required.  There only time you would invoke this function without an utterance file argument is if your skill generates only build in intents, which would make it rather useless.");
-  console.log("  --optimizations [SINGLE-STAGE] optional. SINGLE-STAGE means no pre-matches using wildcards.  Depending on the recognizer, this may be slower or faster");
-  console.log("  --suppressRecognizerDisplay does not send recognizer.json to console");
+  //console.log("  --buildtimesourcebase BuildTimeBaseSourceDirectory that is the base for the other file references on the command line or in the config file at build time.  Will override --sourcebase value for build time directory, if both are supplied");
+  //console.log("  --runtimesourcebase RunTimeBaseSourceDirectory that is the base for the other file references (e.g. in the config file) at run time.  Will override --sourcebase value for run time directory, if both are supplied");
+  //console.log("  --vuibase BaseVuiDirectory that is the location of vui-ad-hoc-alexa-recognizer.  This will be used for both build and run time vui base unless overridden by other command line arguments. Defaults to ./node_modules/vui-ad-hoc-alexa-recognizer");
+  //console.log("  --buildtimevuibase BuildTimeBaseVuiDirectory that is the location of vui-ad-hoc-alexa-recornizer executable files at build time.  Will override --vuibase value for build time directory, if both are supplied");
+  //console.log("  --runtimevuibase RunTimeBaseVuiDirectory that is the location of vui-ad-hoc-alexa-recognizer executable files at run time.  Will override --vuibase value for run time directory, if both are supplied");
+  //console.log("  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.");
+  //console.log("  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.");
+  //console.log("  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.");
+  //console.log("  --utterances UtterancesFileName specify utterances file name, optional.  This is \"optional\" only in the sense that it CAN be omitted, but in practice it is required.  There only time you would invoke this function without an utterance file argument is if your skill generates only build in intents, which would make it rather useless.");
+  //console.log("  --optimizations [SINGLE-STAGE] optional. SINGLE-STAGE means no pre-matches using wildcards.  Depending on the recognizer, this may be slower or faster");
+  //console.log("  --suppressRecognizerDisplay does not send recognizer.json to console");
 };
 
 let optimizations = {"multistage": true};
