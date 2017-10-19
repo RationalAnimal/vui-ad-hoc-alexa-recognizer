@@ -2220,8 +2220,6 @@
         {"fitRating":0.95, "values":["me","mi"]}
       ]
     },
-
-
     {
       "words":["mead","Mede","meed"],
       "synonyms":[
@@ -2236,6 +2234,26 @@
     },
     {
       "words":["meat","meet","mete"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["meat","meet","mete"]}
+      ]
+    },
+
+
+    {
+      "words":["meter","metre"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["meter","metre"]}
+      ]
+    },
+    {
+      "words":["might","mite"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["might","mite"]}
+      ]
+    },
+    {
+      "words":["miner","minor","mynah"],
       "synonyms":[
         {"fitRating":0.95, "values":["meat","meet","mete"]}
       ]
