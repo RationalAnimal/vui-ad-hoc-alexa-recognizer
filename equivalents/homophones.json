@@ -2238,8 +2238,6 @@
         {"fitRating":0.95, "values":["meat","meet","mete"]}
       ]
     },
-
-
     {
       "words":["meter","metre"],
       "synonyms":[
@@ -2256,6 +2254,26 @@
       "words":["miner","minor","mynah"],
       "synonyms":[
         {"fitRating":0.95, "values":["meat","meet","mete"]}
+      ]
+    },
+
+
+    {
+      "words":["miner","minor","mynah"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["meat","meet","mete"]}
+      ]
+    },
+    {
+      "words":["mince","mints"],
+      "synonyms":[
+        {"fitRating":0.85, "values":["mince","mints"]}
+      ]
+    },
+    {
+      "words":["mind","mined"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["mind","mined"]}
       ]
     }
 
