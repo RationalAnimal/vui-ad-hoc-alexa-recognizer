@@ -2166,8 +2166,6 @@
         {"fitRating":0.95, "values":["mantel","mantle"]}
       ]
     },
-
-
     {
       "words":["mare","mayor"],
       "synonyms":[
@@ -2184,6 +2182,26 @@
       "words":["marshal","martial"],
       "synonyms":[
         {"fitRating":0.95, "values":["marshal","martial"]}
+      ]
+    },
+
+
+    {
+      "words":["marten","martin"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["marten","martin"]}
+      ]
+    },
+    {
+      "words":["mask","masque"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["mask","masque"]}
+      ]
+    },
+    {
+      "words":["massed","mast"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["massed","mast"]}
       ]
     }
 
