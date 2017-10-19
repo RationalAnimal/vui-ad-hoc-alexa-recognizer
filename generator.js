@@ -47,6 +47,7 @@ let usage = function(){
   //console.log("  --vuibase BaseVuiDirectory that is the location of vui-ad-hoc-alexa-recognizer.  This will be used for both build and run time vui base unless overridden by other command line arguments. Defaults to ./node_modules/vui-ad-hoc-alexa-recognizer");
   //console.log("  --buildtimevuibase BuildTimeBaseVuiDirectory that is the location of vui-ad-hoc-alexa-recornizer executable files at build time.  Will override --vuibase value for build time directory, if both are supplied");
   //console.log("  --runtimevuibase RunTimeBaseVuiDirectory that is the location of vui-ad-hoc-alexa-recognizer executable files at run time.  Will override --vuibase value for run time directory, if both are supplied");
+  //console.log("  --runtime RunTimeBaseExeDirectory that is the location of javascript executable files at run time.");
   //console.log("  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.");
   //console.log("  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.");
   //console.log("  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.");
@@ -72,6 +73,9 @@ let resolvedBaseVuiDirectory;
 let buildTimeVuiDirectory;
 let resolvedBuildTimeVuiDirectory;
 let runTimeVuiDirectory;
+
+let runTimeExeDirectory;
+let resolvedRunTimeExeDirectory;
 
 let suppressRecognizerDisplay = false;
 
@@ -121,6 +125,13 @@ for(let i = 2; i < process.argv.length; i ++){
     if(j < process.argv.length) {
       i++;
       runTimeVuiDirectory = process.argv[j];
+      resolvedRunTimeExeDirectory = path.resolve(runTimeExeDirectory);
+    }
+  }
+  else if(process.argv[i] === "--runtime"){
+    if(j < process.argv.length) {
+      i++;
+      runTimeExeDirectory = process.argv[j];
     }
   }
   else if(process.argv[i] === "-i" || process.argv[i] === "--intents"){
@@ -180,8 +191,12 @@ if(typeof buildTimeVuiDirectory !== "undefined" && buildTimeVuiDirectory !== nul
   directories.resolvedBuildTimeVuiDirectory = resolvedBuildTimeVuiDirectory;
 }
 if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== null){
-  // We have actual run time directory for source, set it.
+  // We have actual run time directory for vui-ad-hoc-alexa-recognizer, set it.
   directories.runTimeVuiDirectory = runTimeVuiDirectory;
+}
+if(typeof resolvedRunTimeExeDirectory !== "undefined" && resolvedRunTimeExeDirectory !== null){
+  // We have run time exe directory - where the original script to be run will be located, set it
+  directories.resolvedRunTimeExeDirectory = resolvedRunTimeExeDirectory;
 }
 {
   let scratchDirectories = {};
