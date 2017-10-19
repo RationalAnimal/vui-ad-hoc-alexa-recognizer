@@ -1934,43 +1934,33 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBuildT
     for(let i = 0; i < config.builtInSlots.length; i++){
       let currentSlot = config.builtInSlots[i];
       if(currentSlot.name === slotType){
+        let returnValue = [];
         if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
           if(typeof currentSlot.transformSrcFilename === "string"){
             // TODO DIRECTORIES - likely need to use a different one here
-            return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory);
+            returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory));
           }
           else if(Array.isArray(currentSlot.transformSrcFilename)){
-            let returnValue = [];
             for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
               // TODO DIRECTORIES - likely need to use a different one here
               returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBuildTimeSourceDirectory));
             }
-            return returnValue;
-          }
-          else {
-            // An error in configuration?
-            return;
           }
         }
-        else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
+        if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
           if(typeof currentSlot.transformBuiltInName === "string"){
-            return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
+            returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName + ".js");
           }
           else if(Array.isArray(currentSlot.transformBuiltInName)){
-            let returnValue = [];
             for(let j = 0; j < currentSlot.transformBuiltInName.length; j++){
               returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
             }
-            return returnValue;
-          }
-          else {
-            // An error in configuration?
-            return;
           }
         }
-        else {
-          return;
+        if(returnValue.length > 0){
+          return returnValue;
         }
+        return;
       }
     }
   }
@@ -1978,43 +1968,33 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBuildT
     for(let i = 0; i < config.customSlotTypes.length; i++){
       let currentSlot = config.customSlotTypes[i];
       if(currentSlot.name === slotType){
+        let returnValue = [];
         if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
           if(typeof currentSlot.transformSrcFilename === "string"){
             // TODO DIRECTORIES - likely need to use a different one here
-            return utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory);
+            returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory));
           }
           else if(Array.isArray(currentSlot.transformSrcFilename)){
-            let returnValue = [];
             for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
               // TODO DIRECTORIES - likely need to use a different one here
               returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBuildTimeSourceDirectory));
             }
-            return returnValue;
-          }
-          else {
-            // An error in configuration?
-            return;
           }
         }
-        else if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
+        if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
           if(typeof currentSlot.transformBuiltInName === "string"){
-            return "./builtintransforms/" + currentSlot.transformBuiltInName + ".js";
+            returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName + ".js");
           }
           else if(Array.isArray(currentSlot.transformBuiltInName)){
-            let returnValue = [];
             for(let j = 0; j < currentSlot.transformBuiltInName.length; j++){
               returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
             }
-            return returnValue;
-          }
-          else {
-            // An error in configuration?
-            return;
           }
         }
-        else {
-          return;
+        if(returnValue.length > 0){
+          return returnValue;
         }
+        return;
       }
     }
   }
