@@ -2076,8 +2076,6 @@
         {"fitRating":0.95, "values":["links","lynx"]}
       ]
     },
-
-
     {
       "words":["lo","low"],
       "synonyms":[
@@ -2094,6 +2092,27 @@
       "words":["loan","lone"],
       "synonyms":[
         {"fitRating":0.95, "values":["loan","lone"]}
+      ]
+    },
+
+
+
+    {
+      "words":["loch","lock"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["loch","lock"]}
+      ]
+    },
+    {
+      "words":["locks","lox"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["locks","lox"]}
+      ]
+    },
+    {
+      "words":["loop","loupe"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["loop","loupe"]}
       ]
     }
 
