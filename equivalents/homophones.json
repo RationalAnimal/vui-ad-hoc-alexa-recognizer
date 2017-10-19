@@ -2094,9 +2094,6 @@
         {"fitRating":0.95, "values":["loan","lone"]}
       ]
     },
-
-
-
     {
       "words":["loch","lock"],
       "synonyms":[
@@ -2113,6 +2110,26 @@
       "words":["loop","loupe"],
       "synonyms":[
         {"fitRating":0.95, "values":["loop","loupe"]}
+      ]
+    },
+
+
+    {
+      "words":["loos","lose"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["loos","lose"]}
+      ]
+    },
+    {
+      "words":["loot","lute"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["loot","lute"]}
+      ]
+    },
+    {
+      "words":["made","maid"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["made","maid"]}
       ]
     }
 
