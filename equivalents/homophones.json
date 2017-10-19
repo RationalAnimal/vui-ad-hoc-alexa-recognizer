@@ -2112,8 +2112,6 @@
         {"fitRating":0.95, "values":["loop","loupe"]}
       ]
     },
-
-
     {
       "words":["loos","lose"],
       "synonyms":[
@@ -2130,6 +2128,26 @@
       "words":["made","maid"],
       "synonyms":[
         {"fitRating":0.95, "values":["made","maid"]}
+      ]
+    },
+
+
+    {
+      "words":["mail","male"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["mail","male"]}
+      ]
+    },
+    {
+      "words":["main","mane"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["main","mane"]}
+      ]
+    },
+    {
+      "words":["maize","Mays","maze"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["maize","Mays","maze"]}
       ]
     }
 
