@@ -2184,8 +2184,6 @@
         {"fitRating":0.95, "values":["marshal","martial"]}
       ]
     },
-
-
     {
       "words":["marten","martin"],
       "synonyms":[
@@ -2202,6 +2200,26 @@
       "words":["massed","mast"],
       "synonyms":[
         {"fitRating":0.95, "values":["massed","mast"]}
+      ]
+    },
+
+
+    {
+      "words":["mat","matte"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["mat","matte"]}
+      ]
+    },
+    {
+      "words":["maw","more"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["maw","more"]}
+      ]
+    },
+    {
+      "words":["me","mi"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["me","mi"]}
       ]
     }
 
