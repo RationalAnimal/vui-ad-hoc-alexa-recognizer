@@ -2274,9 +2274,6 @@
         {"fitRating":0.95, "values":["mind","mined"]}
       ]
     },
-
-
-
     {
       "words":["miner","minor"],
       "synonyms":[
@@ -2293,6 +2290,26 @@
       "words":["moat","mote"],
       "synonyms":[
         {"fitRating":0.95, "values":["moat","mote"]}
+      ]
+    },
+
+
+    {
+      "words":["mode","mowed"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["mode","mowed"]}
+      ]
+    },
+    {
+      "words":["mold","moled","mould"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["mold","moled","mould"]}
+      ]
+    },
+    {
+      "words":["mood","mooed"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["mood","mooed"]}
       ]
     }
 
