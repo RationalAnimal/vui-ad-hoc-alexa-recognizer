@@ -2202,8 +2202,6 @@
         {"fitRating":0.95, "values":["massed","mast"]}
       ]
     },
-
-
     {
       "words":["mat","matte"],
       "synonyms":[
@@ -2220,6 +2218,26 @@
       "words":["me","mi"],
       "synonyms":[
         {"fitRating":0.95, "values":["me","mi"]}
+      ]
+    },
+
+
+    {
+      "words":["mead","Mede","meed"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["mead","Mede","meed"]}
+      ]
+    },
+    {
+      "words":["mean","mien"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["mean","mien"]}
+      ]
+    },
+    {
+      "words":["meat","meet","mete"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["meat","meet","mete"]}
       ]
     }
 
