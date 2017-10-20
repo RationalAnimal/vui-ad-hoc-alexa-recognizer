@@ -47,7 +47,7 @@ let usage = function(){
   //console.log("  --vuibase BaseVuiDirectory that is the location of vui-ad-hoc-alexa-recognizer.  This will be used for both build and run time vui base unless overridden by other command line arguments. Defaults to ./node_modules/vui-ad-hoc-alexa-recognizer");
   //console.log("  --buildtimevuibase BuildTimeBaseVuiDirectory that is the location of vui-ad-hoc-alexa-recornizer executable files at build time.  Will override --vuibase value for build time directory, if both are supplied");
   //console.log("  --runtimevuibase RunTimeBaseVuiDirectory that is the location of vui-ad-hoc-alexa-recognizer executable files at run time.  Will override --vuibase value for run time directory, if both are supplied");
-  //console.log("  --runtime RunTimeBaseExeDirectory that is the location of javascript executable files at run time.");
+  //console.log("  --runtime RunTimeExeDirectory that is the location of javascript executable files at run time.");
   //console.log("  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.");
   //console.log("  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.");
   //console.log("  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.");
@@ -277,6 +277,11 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
     // Two absolute paths - deltas are computable
     scratchDirectories.runTimeSourceToExeDelta = path.relative(path.resolve(scratchDirectories.runTimeSourceDirectory), path.resolve(scratchDirectories.runTimeExeDirectory));
     scratchDirectories.runTimeExeToSourceDelta = path.relative(path.resolve(scratchDirectories.runTimeExeDirectory), path.resolve(scratchDirectories.runTimeSourceDirectory));
+  }
+  else if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === false && path.isAbsolute(scratchDirectories.runTimeExeDirectory) === false){
+    // Two relative paths - assume that they are relative to the same reference path, thus deltas are computable
+    scratchDirectories.runTimeSourceToExeDelta = path.relative(scratchDirectories.runTimeSourceDirectory, scratchDirectories.runTimeExeDirectory);
+    scratchDirectories.runTimeExeToSourceDelta = path.relative(scratchDirectories.runTimeExeDirectory, scratchDirectories.runTimeSourceDirectory);
   }
 
 
