@@ -47,7 +47,7 @@ let usage = function(){
   //console.log("  --vuibase BaseVuiDirectory that is the location of vui-ad-hoc-alexa-recognizer.  This will be used for both build and run time vui base unless overridden by other command line arguments. Defaults to ./node_modules/vui-ad-hoc-alexa-recognizer");
   //console.log("  --buildtimevuibase BuildTimeBaseVuiDirectory that is the location of vui-ad-hoc-alexa-recornizer executable files at build time.  Will override --vuibase value for build time directory, if both are supplied");
   //console.log("  --runtimevuibase RunTimeBaseVuiDirectory that is the location of vui-ad-hoc-alexa-recognizer executable files at run time.  Will override --vuibase value for run time directory, if both are supplied");
-  //console.log("  --runtime RunTimeExeDirectory that is the location of javascript executable files at run time.");
+  //console.log("  --runtimeexebase RunTimeBaseExeDirectory that is the location of javascript executable files at run time.");
   //console.log("  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.");
   //console.log("  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.");
   //console.log("  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.");
@@ -296,15 +296,15 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
     scratchDirectories.runTimeSourceToExeDelta = path.relative(scratchDirectories.runTimeSourceDirectory, ".");
   }
 
-
-
-
   // Now copy some of these values to the "real" directories object
   directories.buildTimeSourceToVuiDelta = scratchDirectories.buildTimeSourceToVuiDelta;
   directories.buildTimeVuiToSourceDelta = scratchDirectories.buildTimeVuiToSourceDelta;
 
   directories.runTimeSourceToVuiDelta = scratchDirectories.runTimeSourceToVuiDelta;
   directories.runTimeVuiToSourceDelta = scratchDirectories.runTimeVuiToSourceDelta;
+
+  directories.runTimeSourceToExeDelta = scratchDirectories.runTimeSourceToExeDelta;
+  directories.runTimeExeToSourceDelta = scratchDirectories.runTimeExeToSourceDelta;
 }
 
 if(typeof interactionModelFileName !== "undefined" && (typeof utterancesFileName !== "undefined" || typeof intentsFileName !== "undefined")){
