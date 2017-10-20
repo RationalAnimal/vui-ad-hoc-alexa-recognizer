@@ -2328,8 +2328,6 @@
         {"fitRating":0.95, "values":["morning","mourning"]}
       ]
     },
-
-
     {
       "words":["muscle","mussel"],
       "synonyms":[
@@ -2346,6 +2344,26 @@
       "words":["naval","navel"],
       "synonyms":[
         {"fitRating":0.95, "values":["naval","navel"]}
+      ]
+    },
+
+
+    {
+      "words":["nay","nee","neigh"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["nay","nee","neigh"]}
+      ]
+    },
+    {
+      "words":["nicks","nix"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["nicks","nix"]}
+      ]
+    },
+    {
+      "words":["nigh","nye"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["nigh","nye"]}
       ]
     }
 
