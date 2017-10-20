@@ -2382,8 +2382,6 @@
         {"fitRating":0.95, "values":["od","odd"]}
       ]
     },
-
-
     {
       "words":["ode","owed"],
       "synonyms":[
@@ -2400,6 +2398,26 @@
       "words":["once","wants"],
       "synonyms":[
         {"fitRating":0.95, "values":["once","wants"]}
+      ]
+    },
+
+
+    {
+      "words":["one","won"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["one","won"]}
+      ]
+    },
+    {
+      "words":["oohs","ooze"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["oohs","ooze"]}
+      ]
+    },
+    {
+      "words":["overseas","oversees"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["overseas","oversees"]}
       ]
     }
 
