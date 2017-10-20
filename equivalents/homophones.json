@@ -2346,8 +2346,6 @@
         {"fitRating":0.95, "values":["naval","navel"]}
       ]
     },
-
-
     {
       "words":["nay","nee","neigh"],
       "synonyms":[
@@ -2364,6 +2362,26 @@
       "words":["nigh","nye"],
       "synonyms":[
         {"fitRating":0.95, "values":["nigh","nye"]}
+      ]
+    },
+
+
+    {
+      "words":["none","nun"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["none","nun"]}
+      ]
+    },
+    {
+      "words":["oar","o'er","or","ore"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["oar","o'er","or","ore"]}
+      ]
+    },
+    {
+      "words":["od","odd"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["od","odd"]}
       ]
     }
 
