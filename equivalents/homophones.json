@@ -2400,8 +2400,6 @@
         {"fitRating":0.95, "values":["once","wants"]}
       ]
     },
-
-
     {
       "words":["one","won"],
       "synonyms":[
@@ -2418,6 +2416,27 @@
       "words":["overseas","oversees"],
       "synonyms":[
         {"fitRating":0.95, "values":["overseas","oversees"]}
+      ]
+    },
+
+
+
+    {
+      "words":["paced","paste"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["paced","paste"]}
+      ]
+    },
+    {
+      "words":["packed","pact"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["packed","pact"]}
+      ]
+    },
+    {
+      "words":["packs","pax"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["packs","pax"]}
       ]
     }
 
