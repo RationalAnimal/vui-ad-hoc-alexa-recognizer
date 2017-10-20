@@ -273,6 +273,11 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
   else {
     scratchDirectories.runTimeExeDirectory = ".";
   }
+  if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === true && path.isAbsolute(scratchDirectories.runTimeExeDirectory) === true){
+    // Two absolute paths - deltas are computable
+    scratchDirectories.runTimeSourceToExeDelta = path.relative(path.resolve(scratchDirectories.runTimeSourceDirectory), path.resolve(scratchDirectories.runTimeExeDirectory));
+    scratchDirectories.runTimeExeToSourceDelta = path.relative(path.resolve(scratchDirectories.runTimeExeDirectory), path.resolve(scratchDirectories.runTimeSourceDirectory));
+  }
 
 
 
