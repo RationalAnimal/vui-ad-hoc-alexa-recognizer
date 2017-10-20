@@ -289,6 +289,12 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
     // To "reverse" the exe, simply compute relative path from it to .
     scratchDirectories.runTimeSourceToExeDelta = path.relative(scratchDirectories.runTimeExeDirectory, ".");
   }
+  else if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === false && path.isAbsolute(scratchDirectories.runTimeExeDirectory) === true){
+    // run time exe directory is absolute, source is relative.  Assume that source is relative to exe and compute deltas.  exe to source delta is just the source path.
+    scratchDirectories.runTimeExeToSourceDelta = scratchDirectories.runTimeSourceDirectory;
+    // To "reverse" the source, simply compute relative path from it to .
+    scratchDirectories.runTimeSourceToExeDelta = path.relative(scratchDirectories.runTimeSourceDirectory, ".");
+  }
 
 
 
