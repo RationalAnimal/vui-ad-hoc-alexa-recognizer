@@ -2310,8 +2310,6 @@
         {"fitRating":0.95, "values":["mood","mooed"]}
       ]
     },
-
-
     {
       "words":["moor, more, mhorr"],
       "synonyms":[
@@ -2328,6 +2326,26 @@
       "words":["morning","mourning"],
       "synonyms":[
         {"fitRating":0.95, "values":["morning","mourning"]}
+      ]
+    },
+
+
+    {
+      "words":["muscle","mussel"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["muscle","mussel"]}
+      ]
+    },
+    {
+      "words":["mussed","must"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["mussed","must"]}
+      ]
+    },
+    {
+      "words":["naval","navel"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["naval","navel"]}
       ]
     }
 
