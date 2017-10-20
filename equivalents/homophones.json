@@ -2292,8 +2292,6 @@
         {"fitRating":0.95, "values":["moat","mote"]}
       ]
     },
-
-
     {
       "words":["mode","mowed"],
       "synonyms":[
@@ -2310,6 +2308,26 @@
       "words":["mood","mooed"],
       "synonyms":[
         {"fitRating":0.95, "values":["mood","mooed"]}
+      ]
+    },
+
+
+    {
+      "words":["moor, more, mhorr"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["moor, more, mhorr"]}
+      ]
+    },
+    {
+      "words":["moose","mousse"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["moose","mousse"]}
+      ]
+    },
+    {
+      "words":["morning","mourning"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["morning","mourning"]}
       ]
     }
 
