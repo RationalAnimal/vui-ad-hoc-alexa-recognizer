@@ -2364,8 +2364,6 @@
         {"fitRating":0.95, "values":["nigh","nye"]}
       ]
     },
-
-
     {
       "words":["none","nun"],
       "synonyms":[
@@ -2382,6 +2380,26 @@
       "words":["od","odd"],
       "synonyms":[
         {"fitRating":0.95, "values":["od","odd"]}
+      ]
+    },
+
+
+    {
+      "words":["ode","owed"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["ode","owed"]}
+      ]
+    },
+    {
+      "words":["oh","owe"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["oh","owe"]}
+      ]
+    },
+    {
+      "words":["once","wants"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["once","wants"]}
       ]
     }
 
