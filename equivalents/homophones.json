@@ -2454,8 +2454,6 @@
         {"fitRating":0.95, "values":["pair","pare","pear"]}
       ]
     },
-
-
     {
       "words":["pairish","parish","pearish","perish"],
       "synonyms":[
@@ -2472,6 +2470,27 @@
       "words":["pascal","paschal"],
       "synonyms":[
         {"fitRating":0.95, "values":["pascal","paschal"]}
+      ]
+    },
+
+
+
+    {
+      "words":["passed","past"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["passed","past"]}
+      ]
+    },
+    {
+      "words":["paten","patten","pattern"],
+      "synonyms":[
+        {"fitRating":0.8, "values":["paten","patten","pattern"]}
+      ]
+    },
+    {
+      "words":["patience","patients"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["patience","patients"]}
       ]
     }
 
