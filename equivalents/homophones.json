@@ -2490,9 +2490,6 @@
         {"fitRating":0.95, "values":["patience","patients"]}
       ]
     },
-
-
-
     {
       "words":["pause","paws"],
       "synonyms":[
@@ -2507,10 +2504,24 @@
         {"fitRating":0.95, "values": ["pores","pours"]}
       ]
     },
+
+
     {
       "words":["pawn","porn"],
       "synonyms":[
-        {"fitRating":0.95, "values":["patience","patients"]}
+        {"fitRating":0.95, "values":["pawn","porn"]}
+      ]
+    },
+    {
+      "words":["pea","pee"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pea","pee"]}
+      ]
+    },
+    {
+      "words":["peace","piece"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["peace","piece"]}
       ]
     }
 
