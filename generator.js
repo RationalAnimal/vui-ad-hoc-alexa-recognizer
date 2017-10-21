@@ -246,28 +246,6 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
   else {
     scratchDirectories.runTimeVuiDirectory = "./node_modules/vui-ad-hoc-alexa-recognizer/";
   }
-  if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === true && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === true){
-    // Two absolute paths - deltas are computable
-    scratchDirectories.runTimeSourceToVuiDelta = path.relative(path.resolve(scratchDirectories.runTimeSourceDirectory), path.resolve(scratchDirectories.runTimeVuiDirectory));
-    scratchDirectories.runTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.runTimeVuiDirectory), path.resolve(scratchDirectories.runTimeSourceDirectory));
-  }
-  else if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === false && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === false){
-    // Two relative paths - assume that they are relative to the same reference path, thus deltas are computable
-    scratchDirectories.runTimeSourceToVuiDelta = path.relative(scratchDirectories.runTimeSourceDirectory, scratchDirectories.runTimeVuiDirectory);
-    scratchDirectories.runTimeVuiToSourceDelta = path.relative(scratchDirectories.runTimeVuiDirectory, scratchDirectories.runTimeSourceDirectory);
-  }
-  else if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === true && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === false){
-    // run time source directory is absolute, vui is relative.  Assume that vui is relative to source and compute deltas.  vui to source delta is just the vui path.
-    scratchDirectories.runTimeVuiToSourceDelta = scratchDirectories.runTimeVuiDirectory;
-    // To "reverse" the vui, simply compute relative path from it to .
-    scratchDirectories.runTimeSourceToVuiDelta = path.relative(scratchDirectories.runTimeVuiDirectory, ".");
-  }
-  else if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === false && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === true){
-    // run time vui directory is absolute, source is relative.  Assume that source is relative to vui and compute deltas.  vui to source delta is just the source path.
-    scratchDirectories.runTimeVuiToSourceDelta = scratchDirectories.runTimeSourceDirectory;
-    // To "reverse" the source, simply compute relative path from it to .
-    scratchDirectories.runTimeSourceToVuiDelta = path.relative(scratchDirectories.runTimeSourceDirectory, ".");
-  }
   if(typeof directories.runTimeExeDirectory !== "undefined" && directories.runTimeExeDirectory !== null){
     scratchDirectories.runTimeExeDirectory = directories.runTimeExeDirectory;
   }
