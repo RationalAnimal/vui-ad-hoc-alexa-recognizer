@@ -2504,8 +2504,6 @@
         {"fitRating":0.95, "values": ["pores","pours"]}
       ]
     },
-
-
     {
       "words":["pawn","porn"],
       "synonyms":[
@@ -2522,6 +2520,27 @@
       "words":["peace","piece"],
       "synonyms":[
         {"fitRating":0.95, "values":["peace","piece"]}
+      ]
+    },
+
+
+
+    {
+      "words":["peak","peek","peke","pique"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["peak","peek","peke","pique"]}
+      ]
+    },
+    {
+      "words":["peal","peel"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["peal","peel"]}
+      ]
+    },
+    {
+      "words":["pearl","purl"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pearl","purl"]}
       ]
     }
 
