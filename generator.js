@@ -296,16 +296,24 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
     scratchDirectories.runTimeSourceToExeDelta = path.relative(scratchDirectories.runTimeSourceDirectory, ".");
   }
 
+  // Computing exe to vui-ad-hoc-alex-recognizer directory deltas (both ways)
   if(path.isAbsolute(scratchDirectories.runTimeExeDirectory) === true && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === true){
     // Two absolute paths - deltas are computable
     scratchDirectories.runTimeExeToVuiDelta = path.relative(path.resolve(scratchDirectories.runTimeExeDirectory), path.resolve(scratchDirectories.runTimeVuiDirectory));
     scratchDirectories.runTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.runTimeVuiDirectory), path.resolve(scratchDirectories.runTimeExeDirectory));
   }
-  else if(path.isAbsolute(scratchDirectories.runTimeExeDirectory) === false && path.isAbsolute(scratchDirectories.runTimeExeDirectory) === false){
+  else if(path.isAbsolute(scratchDirectories.runTimeExeDirectory) === false && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === false){
     // Two relative paths - assume that they are relative to the same reference path, thus deltas are computable
     scratchDirectories.runTimeExeToVuiDelta = path.relative(scratchDirectories.runTimeExeDirectory, scratchDirectories.runTimeVuiDirectory);
     scratchDirectories.runTimeVuiToExeDelta = path.relative(scratchDirectories.runTimeVuiDirectory, scratchDirectories.runTimeExeDirectory);
   }
+  else if(path.isAbsolute(scratchDirectories.runTimeExeDirectory) === true && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === false){
+    // run time exe directory is absolute, vui is relative.  Assume that vui is relative to exe and compute deltas.  vui to exe delta is just the vui path.
+    scratchDirectories.runTimeVuiToExeDelta = scratchDirectories.runTimeVuiDirectory;
+    // To "reverse" the vui, simply compute relative path from it to .
+    scratchDirectories.runTimeExeToVuiDelta = path.relative(scratchDirectories.runTimeVuiDirectory, ".");
+  }
+
 
 
 
