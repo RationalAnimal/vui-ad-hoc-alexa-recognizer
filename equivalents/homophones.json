@@ -2559,9 +2559,6 @@
         {"fitRating":0.95, "values":["peer","pier"]}
       ]
     },
-
-
-
     {
       "words":["penance","pennants"],
       "synonyms":[
@@ -2578,6 +2575,27 @@
       "words":["pi","pie"],
       "synonyms":[
         {"fitRating":0.95, "values":["pi","pie"]}
+      ]
+    },
+
+
+
+    {
+      "words":["pica","pika"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pica","pika"]}
+      ]
+    },
+    {
+      "words":["place","plaice"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["place","plaice"]}
+      ]
+    },
+    {
+      "words":["plain","plane"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["plain","plane"]}
       ]
     }
 
