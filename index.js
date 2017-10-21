@@ -1944,7 +1944,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
                     for (let j = 0; j < mixIns.length; j++){
                       let mixIn = mixIns[j];
                       if(typeof mixIn !== "undefined" && mixIn !== null){
-                        _applyMixIns(mixIn.resolvedFileName, returnValue.name, stringToMatch, returnValue, mixIn.arguments);
+                        _applyMixIns(path.resolve(mixIn.resolvedFileName), returnValue.name, stringToMatch, returnValue, mixIn.arguments);
                       }
                     }
                   }
@@ -2030,7 +2030,7 @@ var _matchText = function(stringToMatch, intentsSequence, excludeIntents, recogn
 };
 
 var _applyMixIns = function(mixInFilePath, intent, utterance, returnValue, mixInSpecificArgs){// eslint-disable-line no-unused-vars
-  let mixIn = require(mixInFilePath);
+  let mixIn = require(path.resolve(mixInFilePath));
   let standardArgs = {"intentName": intent, "utterance": utterance, "priorResult": returnValue};
   mixIn(standardArgs, mixInSpecificArgs);
 };

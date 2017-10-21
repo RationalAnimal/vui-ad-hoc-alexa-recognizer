@@ -1786,8 +1786,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
       // First, loop through all the bundles and load all the resolved file names so we don't have to deal with
       // that logic later.
       for(let i = 0; i < config.mixIns.bundles.length; i++){
-        // TODO DIRECTORIES - likely need to use a different one here
-        config.mixIns.bundles[i].resolvedFileNames = _getMixInSrcFilename(config, config.mixIns.bundles[i].bundleName, resolvedBuildTimeSourceDirectory);
+        config.mixIns.bundles[i].resolvedFileNames = _getMixInSrcFilename(config, config.mixIns.bundles[i].bundleName, runTimeExeToSourceDelta, runTimeExeToVuiDelta);
       }
       // Loop through all the custom intents and see which bundles apply to each intent
       for(let i = 0; i < intents.intents.length; i++){
@@ -1880,8 +1879,7 @@ var _getMixInBundle = function(config, mixInBundleName){
   }
 };
 
-// TODO DIRECTORIES - likely need to use a different one here
-var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBuildTimeSourceDirectory){
+var _getMixInSrcFilename = function(config, mixInBundleName, runTimeExeToSourceDelta, runTimeExeToVuiDelta){
   if(typeof config.mixIns !== "undefined" && typeof config.mixIns.bundles !== "undefined" && Array.isArray(config.mixIns.bundles)){
     let returnValue = [];
     for(let i = 0; i < config.mixIns.bundles.length; i++){
@@ -1890,7 +1888,7 @@ var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBuildTimeSo
         for(let j = 0; j < currentMixIn.mixInCode.length; j ++){
           if(typeof currentMixIn.mixInCode[j].mixInBuiltInName !== "undefined" && currentMixIn.mixInCode[j].mixInBuiltInName !== null){
             if(typeof currentMixIn.mixInCode[j].mixInBuiltInName === "string"){
-              returnValue.push("./builtinmixins/" + currentMixIn.mixInCode[j].mixInBuiltInName + ".js");
+              returnValue.push(path.join(runTimeExeToVuiDelta, "./builtinmixins/" + currentMixIn.mixInCode[j].mixInBuiltInName + ".js"));
             }
             else {
               throw {"error": "MISCONFIGURED_MIX_IN_BUILT_IN_NAME", "message": "Programmer error - mix in bundle has mixInBuiltInName but it's not a string"};
@@ -1898,8 +1896,7 @@ var _getMixInSrcFilename = function(config, mixInBundleName, resolvedBuildTimeSo
           }
           else if(typeof currentMixIn.mixInCode[j].mixInSrcFileName !== "undefined" && currentMixIn.mixInCode[j].mixInSrcFileName !== null){
             if(typeof currentMixIn.mixInCode[j].mixInSrcFileName === "string"){
-              // TODO DIRECTORIES - likely need to use a different one here
-              returnValue.push(utilities.resolveFileName(currentMixIn.mixInCode[j].mixInSrcFileName, resolvedBuildTimeSourceDirectory));
+              returnValue.push(path.join(runTimeExeToSourceDelta, currentMixIn.mixInCode[j].mixInSrcFileName));
             }
             else {
               throw {"error": "MISCONFIGURED_MIX_IN_SRC_NAME", "message": "Programmer error - mix in bundle has mixInSrcFileName but it's not a string"};
