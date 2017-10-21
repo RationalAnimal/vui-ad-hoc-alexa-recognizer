@@ -2472,9 +2472,6 @@
         {"fitRating":0.95, "values":["pascal","paschal"]}
       ]
     },
-
-
-
     {
       "words":["passed","past"],
       "synonyms":[
@@ -2489,6 +2486,29 @@
     },
     {
       "words":["patience","patients"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["patience","patients"]}
+      ]
+    },
+
+
+
+    {
+      "words":["pause","paws"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pause","paws"]},
+        {"fitRating":0.7, "values": ["pores","pours"]}
+      ]
+    },
+    {
+      "words":["pores","pours"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["pause","paws"]},
+        {"fitRating":0.95, "values": ["pores","pours"]}
+      ]
+    },
+    {
+      "words":["pawn","porn"],
       "synonyms":[
         {"fitRating":0.95, "values":["patience","patients"]}
       ]
