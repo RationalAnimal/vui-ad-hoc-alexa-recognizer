@@ -2522,9 +2522,6 @@
         {"fitRating":0.95, "values":["peace","piece"]}
       ]
     },
-
-
-
     {
       "words":["peak","peek","peke","pique"],
       "synonyms":[
@@ -2542,7 +2539,29 @@
       "synonyms":[
         {"fitRating":0.95, "values":["pearl","purl"]}
       ]
+    },
+
+
+    {
+      "words":["pedal","peddle"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pedal","peddle"]},
+        {"fitRating":0.7, "values": ["petal"]}
+      ]
+    },
+    {
+      "words":["petal"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["pedal","peddle"]}
+      ]
+    },
+    {
+      "words":["peer","pier"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["peer","pier"]}
+      ]
     }
+
 
 
 
