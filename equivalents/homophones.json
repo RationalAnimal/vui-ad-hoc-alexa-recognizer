@@ -2631,9 +2631,6 @@
         {"fitRating":0.95, "values":["pole","poll"]}
       ]
     },
-
-
-
     {
       "words":["poof","pouffe"],
       "synonyms":[
@@ -2652,8 +2649,27 @@
       "synonyms":[
         {"fitRating":0.7, "values":["poor","pour"]}
       ]
-    }
+    },
 
+
+
+    {
+      "words":["populace","populous"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["populace","populous"]}
+      ]
+    },
+    {
+      "words":["practice","practise"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["practice","practise"]}
+      ]
+    },{
+      "words":["praise","prase","prays","preys"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["praise","prase","prays","preys"]}
+      ]
+    }
 
 
 
