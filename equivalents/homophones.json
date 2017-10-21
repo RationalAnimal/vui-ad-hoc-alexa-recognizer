@@ -2613,9 +2613,6 @@
         {"fitRating":0.95, "values":["pleas","please"]}
       ]
     },
-
-
-
     {
       "words":["plum","plumb"],
       "synonyms":[
@@ -2632,6 +2629,28 @@
       "words":["pole","poll"],
       "synonyms":[
         {"fitRating":0.95, "values":["pole","poll"]}
+      ]
+    },
+
+
+
+    {
+      "words":["poof","pouffe"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["poof","pouffe"]}
+      ]
+    },
+    {
+      "words":["poor","pour"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["poor","pour"]},
+        {"fitRating":0.7, "values":["pore"]}
+      ]
+    },
+    {
+      "words":["pore"],
+      "synonyms":[
+        {"fitRating":0.7, "values":["poor","pour"]}
       ]
     }
 
