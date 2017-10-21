@@ -2595,9 +2595,6 @@
         {"fitRating":0.95, "values":["plain","plane"]}
       ]
     },
-
-
-
     {
       "words":["plainer","planar","planer"],
       "synonyms":[
@@ -2614,6 +2611,27 @@
       "words":["pleas","please"],
       "synonyms":[
         {"fitRating":0.95, "values":["pleas","please"]}
+      ]
+    },
+
+
+
+    {
+      "words":["plum","plumb"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["plum","plumb"]}
+      ]
+    },
+    {
+      "words":["polar","poler","poller"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["polar","poler","poller"]}
+      ]
+    },
+    {
+      "words":["pole","poll"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pole","poll"]}
       ]
     }
 
