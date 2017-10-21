@@ -199,6 +199,7 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
 }
 {
   let scratchDirectories = {};
+  // First, ensure that all essential directories are set, either via command line args or defaults
   if(typeof directories.buildTimeSourceDirectory !== "undefined" && directories.buildTimeSourceDirectory !== null){
     scratchDirectories.buildTimeSourceDirectory = directories.buildTimeSourceDirectory;
   }
@@ -211,6 +212,26 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
   else {
     scratchDirectories.buildTimeVuiDirectory = "./node_modules/vui-ad-hoc-alex-recognizer/";
   }
+  // Here we have all the build time "bits", now do the same for run time.
+  if(typeof directories.runTimeSourceDirectory !== "undefined" && directories.runTimeSourceDirectory !== null){
+    scratchDirectories.runTimeSourceDirectory = directories.runTimeSourceDirectory;
+  }
+  else {
+    scratchDirectories.runTimeSourceDirectory = ".";
+  }
+  if(typeof directories.runTimeVuiDirectory !== "undefined" && directories.runTimeVuiDirectory !== null){
+    scratchDirectories.runTimeVuiDirectory = directories.runTimeVuiDirectory;
+  }
+  else {
+    scratchDirectories.runTimeVuiDirectory = "./node_modules/vui-ad-hoc-alexa-recognizer/";
+  }
+  if(typeof directories.runTimeExeDirectory !== "undefined" && directories.runTimeExeDirectory !== null){
+    scratchDirectories.runTimeExeDirectory = directories.runTimeExeDirectory;
+  }
+  else {
+    scratchDirectories.runTimeExeDirectory = ".";
+  }
+
   if(path.isAbsolute(scratchDirectories.buildTimeSourceDirectory) === true && path.isAbsolute(scratchDirectories.buildTimeVuiDirectory) === true){
     scratchDirectories.buildTimeSourceToVuiDelta = path.relative(scratchDirectories.buildTimeSourceDirectory, scratchDirectories.buildTimeVuiDirectory);
     scratchDirectories.buildTimeVuiToSourceDelta = path.relative(scratchDirectories.buildTimeVuiDirectory, scratchDirectories.buildTimeSourceDirectory);
@@ -231,27 +252,7 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
     // To "reverse" the source, simply compute relative path from it to .
     scratchDirectories.buildTimeSourceToVuiDelta = path.relative(scratchDirectories.buildTimeSourceDirectory, ".");
   }
-  scratchDirectories.resolvedBuildTimeVuiDirectory = path.resolve(".");
-  scratchDirectories.resolvedBuildTimeSourceDirectory = path.resolve(scratchDirectories.resolvedBuildTimeVuiDirectory, scratchDirectories.buildTimeVuiToSourceDelta);
-  // At this time we have all the build time "bits", now do the same for run time.
-  if(typeof directories.runTimeSourceDirectory !== "undefined" && directories.runTimeSourceDirectory !== null){
-    scratchDirectories.runTimeSourceDirectory = directories.runTimeSourceDirectory;
-  }
-  else {
-    scratchDirectories.runTimeSourceDirectory = ".";
-  }
-  if(typeof directories.runTimeVuiDirectory !== "undefined" && directories.runTimeVuiDirectory !== null){
-    scratchDirectories.runTimeVuiDirectory = directories.runTimeVuiDirectory;
-  }
-  else {
-    scratchDirectories.runTimeVuiDirectory = "./node_modules/vui-ad-hoc-alexa-recognizer/";
-  }
-  if(typeof directories.runTimeExeDirectory !== "undefined" && directories.runTimeExeDirectory !== null){
-    scratchDirectories.runTimeExeDirectory = directories.runTimeExeDirectory;
-  }
-  else {
-    scratchDirectories.runTimeExeDirectory = ".";
-  }
+
   // Computing exe to source directory deltas (both ways)
   if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === true && path.isAbsolute(scratchDirectories.runTimeExeDirectory) === true){
     // Two absolute paths - deltas are computable
