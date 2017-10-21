@@ -273,6 +273,7 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
   else {
     scratchDirectories.runTimeExeDirectory = ".";
   }
+  // Computing exe to source directory deltas (both ways)
   if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === true && path.isAbsolute(scratchDirectories.runTimeExeDirectory) === true){
     // Two absolute paths - deltas are computable
     scratchDirectories.runTimeSourceToExeDelta = path.relative(path.resolve(scratchDirectories.runTimeSourceDirectory), path.resolve(scratchDirectories.runTimeExeDirectory));
@@ -313,9 +314,12 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
     // To "reverse" the vui, simply compute relative path from it to .
     scratchDirectories.runTimeExeToVuiDelta = path.relative(scratchDirectories.runTimeVuiDirectory, ".");
   }
-
-
-
+  else if(path.isAbsolute(scratchDirectories.runTimeExeDirectory) === false && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === true){
+    // run time vui directory is absolute, exe is relative.  Assume that exe is relative to vui and compute deltas.  vui to exe delta is just the exe path.
+    scratchDirectories.runTimeVuiToExeDelta = scratchDirectories.runTimeExeDirectory;
+    // To "reverse" the exe, simply compute relative path from it to .
+    scratchDirectories.runTimeExeToVuiDelta = path.relative(scratchDirectories.runTimeExeDirectory, ".");
+  }
 
   // Now copy some of these values to the "real" directories object
   directories.buildTimeSourceToVuiDelta = scratchDirectories.buildTimeSourceToVuiDelta;
