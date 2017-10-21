@@ -2418,9 +2418,6 @@
         {"fitRating":0.95, "values":["overseas","oversees"]}
       ]
     },
-
-
-
     {
       "words":["paced","paste"],
       "synonyms":[
@@ -2437,6 +2434,26 @@
       "words":["packs","pax"],
       "synonyms":[
         {"fitRating":0.95, "values":["packs","pax"]}
+      ]
+    },
+
+
+    {
+      "words":["pail","pale"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pail","pale"]}
+      ]
+    },
+    {
+      "words":["pain","pane"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pain","pane"]}
+      ]
+    },
+    {
+      "words":["pair","pare","pear"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pair","pare","pear"]}
       ]
     }
 
