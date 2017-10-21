@@ -1638,6 +1638,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
   if(typeof domain === "string"){
     //    console.log("_matchTextDomain, 2");
     // We need to load the domain
+    // TODO add code to properly resolve domains at run time
     domainToUse = require(domain);
   }
   else if(typeof domain === "object" && domain != null){
@@ -1665,6 +1666,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
       let currentRecognizer = domainToUse.recognizers[i];
       if(typeof currentRecognizer.path === "string" && typeof currentRecognizer.key !== "undefined"){
         try{
+          // TODO add code to properly resolve recognizers at run time
           recognizers[currentRecognizer.key] = require(currentRecognizer.path);
         }
         catch(e){
@@ -1683,6 +1685,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
       let currentDomain = domainToUse.domains[i];
       if(typeof currentDomain.path === "string" && typeof currentDomain.key !== "undefined"){
         try{
+          // TODO add code to properly resolve domains at run time
           domains[currentDomain.key] = require(currentDomain.path);
         }
         catch(e){
