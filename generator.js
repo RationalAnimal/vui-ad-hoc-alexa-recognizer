@@ -323,18 +323,8 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
   }
 
   // Now copy some of these values to the "real" directories object
-  directories.buildTimeSourceToVuiDelta = scratchDirectories.buildTimeSourceToVuiDelta;
-  directories.buildTimeVuiToSourceDelta = scratchDirectories.buildTimeVuiToSourceDelta;
-
-  directories.runTimeSourceToVuiDelta = scratchDirectories.runTimeSourceToVuiDelta;
-  directories.runTimeVuiToSourceDelta = scratchDirectories.runTimeVuiToSourceDelta;
-
-  directories.runTimeSourceToExeDelta = scratchDirectories.runTimeSourceToExeDelta;
   directories.runTimeExeToSourceDelta = scratchDirectories.runTimeExeToSourceDelta;
-
-  directories.runTimeVuiToExeDelta = scratchDirectories.runTimeVuiToExeDelta;
   directories.runTimeExeToVuiDelta = scratchDirectories.runTimeExeToVuiDelta;
-
 }
 
 if(typeof interactionModelFileName !== "undefined" && (typeof utterancesFileName !== "undefined" || typeof intentsFileName !== "undefined")){
@@ -351,6 +341,7 @@ if(typeof interactionModelFileName === "undefined" && typeof intentsFileName ===
 
 let interactionModel;
 if(typeof interactionModelFileName !== "undefined"){
+  // TODO update this code and other "interaction model" code to use directories object
   try {
     interactionModel = require(interactionModelFileName);
   }

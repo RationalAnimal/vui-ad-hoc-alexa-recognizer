@@ -1928,7 +1928,6 @@ var _getBuiltInSlotConfig = function(config, slotName){
   // Nothing found - return undefined
 };
 
-// TODO DIRECTORIES - likely need to use a different one here - need runtime vui/exe to source delta here
 var _getSlotTypeTransformSrcFilename = function(config, slotType, runTimeExeToSourceDelta, runTimeExeToVuiDelta){
   if(typeof config.builtInSlots !== "undefined" && Array.isArray(config.builtInSlots)){
     for(let i = 0; i < config.builtInSlots.length; i++){
@@ -1950,12 +1949,10 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType, runTimeExeToSo
         if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
           if(typeof currentSlot.transformBuiltInName === "string"){
             returnValue.push(path.join(runTimeExeToVuiDelta, "./builtintransforms/" + currentSlot.transformBuiltInName + ".js"));
-            //returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName + ".js");
           }
           else if(Array.isArray(currentSlot.transformBuiltInName)){
             for(let j = 0; j < currentSlot.transformBuiltInName.length; j++){
               returnValue.push(path.join(runTimeExeToVuiDelta, "./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js"));
-              //returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
             }
           }
         }
@@ -1986,12 +1983,10 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType, runTimeExeToSo
         if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
           if(typeof currentSlot.transformBuiltInName === "string"){
             returnValue.push(path.join(runTimeExeToVuiDelta, "./builtintransforms/" + currentSlot.transformBuiltInName + ".js"));
-            //returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName + ".js");
           }
           else if(Array.isArray(currentSlot.transformBuiltInName)){
             for(let j = 0; j < currentSlot.transformBuiltInName.length; j++){
               returnValue.push(path.join(runTimeExeToVuiDelta, "./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js"));
-              //returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
             }
           }
         }
