@@ -2436,8 +2436,6 @@
         {"fitRating":0.95, "values":["packs","pax"]}
       ]
     },
-
-
     {
       "words":["pail","pale"],
       "synonyms":[
@@ -2455,7 +2453,29 @@
       "synonyms":[
         {"fitRating":0.95, "values":["pair","pare","pear"]}
       ]
+    },
+
+
+    {
+      "words":["pairish","parish","pearish","perish"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pairish","parish","pearish","perish"]}
+      ]
+    },
+    {
+      "words":["palate","palette","pallet"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["palate","palette","pallet"]}
+      ]
+    },
+    {
+      "words":["pascal","paschal"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pascal","paschal"]}
+      ]
     }
+
+
 
 
   ],
