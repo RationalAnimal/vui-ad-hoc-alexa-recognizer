@@ -24,6 +24,7 @@
  SOFTWARE.
  */
 "use strict";
+let path = require("path");
 var soundex = require("./soundex.js");
 var utilities = require("./utilities.js");
 var parser = require("./parseutterance.js");
@@ -1294,6 +1295,8 @@ var getSimpleRegExpForBuiltInSlotType = function(slotType, slotFlags){
 
 var _generateRunTimeJson = function(config, interactionModel, intents, utterances, optimizations, directories){
   let resolvedBuildTimeSourceDirectory = directories.resolvedBuildTimeSourceDirectory;
+  let runTimeExeToSourceDelta = directories.runTimeExeToSourceDelta;
+  let runTimeExeToVuiDelta = directories.runTimeExeToVuiDelta;
   if(typeof config === "undefined" || config === null){
     config = {};
   }
@@ -1506,7 +1509,7 @@ var _generateRunTimeJson = function(config, interactionModel, intents, utterance
         builtInSlotTypesUsedByUtterances.push(translatedSlotType);
       }
       let slotToPush = {"name": parsedSlot.name, "type": parsedSlot.slotType, "flags": parsedSlot.flags};
-      let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, parsedSlot.slotType, resolvedBuildTimeSourceDirectory);
+      let slotTypeTransformSrcFilename = _getSlotTypeTransformSrcFilename(config, parsedSlot.slotType, runTimeExeToSourceDelta, runTimeExeToVuiDelta);
       if(typeof slotTypeTransformSrcFilename !== "undefined"){
         slotToPush.transformSrcFilename = slotTypeTransformSrcFilename;
       }
@@ -1929,7 +1932,7 @@ var _getBuiltInSlotConfig = function(config, slotName){
 };
 
 // TODO DIRECTORIES - likely need to use a different one here - need runtime vui/exe to source delta here
-var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBuildTimeSourceDirectory){
+var _getSlotTypeTransformSrcFilename = function(config, slotType, runTimeExeToSourceDelta, runTimeExeToVuiDelta){
   if(typeof config.builtInSlots !== "undefined" && Array.isArray(config.builtInSlots)){
     for(let i = 0; i < config.builtInSlots.length; i++){
       let currentSlot = config.builtInSlots[i];
@@ -1937,23 +1940,25 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBuildT
         let returnValue = [];
         if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
           if(typeof currentSlot.transformSrcFilename === "string"){
-            // TODO DIRECTORIES - likely need to use a different one here - need runtime vui/exe to source delta here
-            returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory));
+            returnValue.push(path.join(runTimeExeToSourceDelta, currentSlot.transformSrcFilename));
+            //returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory));
           }
           else if(Array.isArray(currentSlot.transformSrcFilename)){
             for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
-              // TODO DIRECTORIES - likely need to use a different one here - need runtime vui/exe to source delta here
-              returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBuildTimeSourceDirectory));
+              returnValue.push(path.join(runTimeExeToSourceDelta, currentSlot.transformSrcFilename[j]));
+              //returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBuildTimeSourceDirectory));
             }
           }
         }
         if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
           if(typeof currentSlot.transformBuiltInName === "string"){
-            returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName + ".js");
+            returnValue.push(path.join(runTimeExeToVuiDelta, "./builtintransforms/" + currentSlot.transformBuiltInName + ".js"));
+            //returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName + ".js");
           }
           else if(Array.isArray(currentSlot.transformBuiltInName)){
             for(let j = 0; j < currentSlot.transformBuiltInName.length; j++){
-              returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
+              returnValue.push(path.join(runTimeExeToVuiDelta, "./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js"));
+              //returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
             }
           }
         }
@@ -1971,23 +1976,25 @@ var _getSlotTypeTransformSrcFilename = function(config, slotType, resolvedBuildT
         let returnValue = [];
         if(typeof currentSlot.transformSrcFilename !== "undefined" && currentSlot.transformSrcFilename !== null){
           if(typeof currentSlot.transformSrcFilename === "string"){
-            // TODO DIRECTORIES - likely need to use a different one here - need runtime vui/exe to source delta here
-            returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory));
+            returnValue.push(path.join(runTimeExeToSourceDelta, currentSlot.transformSrcFilename));
+            //returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename, resolvedBuildTimeSourceDirectory));
           }
           else if(Array.isArray(currentSlot.transformSrcFilename)){
             for(let j = 0; j < currentSlot.transformSrcFilename.length; j++){
-              // TODO DIRECTORIES - likely need to use a different one here - need runtime vui/exe to source delta here
-              returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBuildTimeSourceDirectory));
+              returnValue.push(path.join(runTimeExeToSourceDelta, currentSlot.transformSrcFilename[j]));
+              //returnValue.push(utilities.resolveFileName(currentSlot.transformSrcFilename[j], resolvedBuildTimeSourceDirectory));
             }
           }
         }
         if(typeof currentSlot.transformBuiltInName !== "undefined" && currentSlot.transformBuiltInName !== null){
           if(typeof currentSlot.transformBuiltInName === "string"){
-            returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName + ".js");
+            returnValue.push(path.join(runTimeExeToVuiDelta, "./builtintransforms/" + currentSlot.transformBuiltInName + ".js"));
+            //returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName + ".js");
           }
           else if(Array.isArray(currentSlot.transformBuiltInName)){
             for(let j = 0; j < currentSlot.transformBuiltInName.length; j++){
-              returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
+              returnValue.push(path.join(runTimeExeToVuiDelta, "./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js"));
+              //returnValue.push("./builtintransforms/" + currentSlot.transformBuiltInName[j] + ".js");
             }
           }
         }

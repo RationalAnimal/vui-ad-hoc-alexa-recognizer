@@ -126,10 +126,11 @@ for(let i = 2; i < process.argv.length; i ++){
       runTimeVuiDirectory = process.argv[j];
     }
   }
-  else if(process.argv[i] === "--runtime"){
+  else if(process.argv[i] === "--runtimeexebase"){
     if(j < process.argv.length) {
       i++;
       runTimeExeDirectory = process.argv[j];
+      console.log("got runTimeExeDirectory: " + runTimeExeDirectory);
     }
   }
   else if(process.argv[i] === "-i" || process.argv[i] === "--intents"){
@@ -188,7 +189,7 @@ if(typeof buildTimeVuiDirectory !== "undefined" && buildTimeVuiDirectory !== nul
   directories.buildTimeVuiDirectory = buildTimeVuiDirectory;
   directories.resolvedBuildTimeVuiDirectory = resolvedBuildTimeVuiDirectory;
 }
-if(typeof runTimeSourceDirectory !== "undefined" && runTimeSourceDirectory !== null){
+if(typeof runTimeVuiDirectory !== "undefined" && runTimeVuiDirectory !== null){
   // We have actual run time directory for vui-ad-hoc-alexa-recognizer, set it.
   directories.runTimeVuiDirectory = runTimeVuiDirectory;
 }
@@ -243,7 +244,7 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
     scratchDirectories.runTimeVuiDirectory = directories.runTimeVuiDirectory;
   }
   else {
-    scratchDirectories.runTimeVuiDirectory = "./node_modules/vui-ad-hoc-alex-recognizer/";
+    scratchDirectories.runTimeVuiDirectory = "./node_modules/vui-ad-hoc-alexa-recognizer/";
   }
   if(path.isAbsolute(scratchDirectories.runTimeSourceDirectory) === true && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === true){
     // Two absolute paths - deltas are computable
@@ -268,7 +269,7 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
     scratchDirectories.runTimeSourceToVuiDelta = path.relative(scratchDirectories.runTimeSourceDirectory, ".");
   }
   if(typeof directories.runTimeExeDirectory !== "undefined" && directories.runTimeExeDirectory !== null){
-    scratchDirectories.runTimeExeDirectory = runTimeExeDirectory;
+    scratchDirectories.runTimeExeDirectory = directories.runTimeExeDirectory;
   }
   else {
     scratchDirectories.runTimeExeDirectory = ".";
@@ -301,7 +302,7 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
   if(path.isAbsolute(scratchDirectories.runTimeExeDirectory) === true && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === true){
     // Two absolute paths - deltas are computable
     scratchDirectories.runTimeExeToVuiDelta = path.relative(path.resolve(scratchDirectories.runTimeExeDirectory), path.resolve(scratchDirectories.runTimeVuiDirectory));
-    scratchDirectories.runTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.runTimeVuiDirectory), path.resolve(scratchDirectories.runTimeExeDirectory));
+    scratchDirectories.runTimeVuiToExeDelta = path.relative(path.resolve(scratchDirectories.runTimeVuiDirectory), path.resolve(scratchDirectories.runTimeExeDirectory));
   }
   else if(path.isAbsolute(scratchDirectories.runTimeExeDirectory) === false && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === false){
     // Two relative paths - assume that they are relative to the same reference path, thus deltas are computable
@@ -330,6 +331,10 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
 
   directories.runTimeSourceToExeDelta = scratchDirectories.runTimeSourceToExeDelta;
   directories.runTimeExeToSourceDelta = scratchDirectories.runTimeExeToSourceDelta;
+
+  directories.runTimeVuiToExeDelta = scratchDirectories.runTimeVuiToExeDelta;
+  directories.runTimeExeToVuiDelta = scratchDirectories.runTimeExeToVuiDelta;
+
 }
 
 if(typeof interactionModelFileName !== "undefined" && (typeof utterancesFileName !== "undefined" || typeof intentsFileName !== "undefined")){

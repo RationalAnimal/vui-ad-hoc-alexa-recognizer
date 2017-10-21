@@ -25,6 +25,7 @@ SOFTWARE.
 */
 "use strict";
 let fs = require("fs");
+let path = require("path");
 let soundex = require("./soundex.js");
 let recognizer = {};
 let constants = require("./constants.js");
@@ -1538,12 +1539,12 @@ var _processMatchedSlotValueByType = function(value, slotType, flags, slot, inte
     try {
       if(Array.isArray(transformFilename)){
         for(let i = 0; i < transformFilename.length; i ++){
-          let transform = require(transformFilename[i]);
+          let transform = require(path.resolve(transformFilename[i]));
           returnValue = transform(returnValue, intent, slot, slotType);
         }
       }
       else {
-        let transform = require(transformFilename);
+        let transform = require(path.resolve(transformFilename));
         returnValue = transform(returnValue, intent, slot, slotType);
       }
     }
