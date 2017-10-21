@@ -2577,9 +2577,6 @@
         {"fitRating":0.95, "values":["pi","pie"]}
       ]
     },
-
-
-
     {
       "words":["pica","pika"],
       "synonyms":[
@@ -2596,6 +2593,27 @@
       "words":["plain","plane"],
       "synonyms":[
         {"fitRating":0.95, "values":["plain","plane"]}
+      ]
+    },
+
+
+
+    {
+      "words":["plainer","planar","planer"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["plainer","planar","planer"]}
+      ]
+    },
+    {
+      "words":["plait","plate"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["plait","plate"]}
+      ]
+    },
+    {
+      "words":["pleas","please"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pleas","please"]}
       ]
     }
 
