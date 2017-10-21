@@ -2540,8 +2540,6 @@
         {"fitRating":0.95, "values":["pearl","purl"]}
       ]
     },
-
-
     {
       "words":["pedal","peddle"],
       "synonyms":[
@@ -2559,6 +2557,27 @@
       "words":["peer","pier"],
       "synonyms":[
         {"fitRating":0.95, "values":["peer","pier"]}
+      ]
+    },
+
+
+
+    {
+      "words":["penance","pennants"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["penance","pennants"]}
+      ]
+    },
+    {
+      "words":["per","purr"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["per","purr"]}
+      ]
+    },
+    {
+      "words":["pi","pie"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pi","pie"]}
       ]
     }
 
