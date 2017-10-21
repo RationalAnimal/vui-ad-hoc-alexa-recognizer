@@ -296,6 +296,13 @@ if(typeof runTimeExeDirectory !== "undefined" && runTimeExeDirectory !== null){
     scratchDirectories.runTimeSourceToExeDelta = path.relative(scratchDirectories.runTimeSourceDirectory, ".");
   }
 
+  if(path.isAbsolute(scratchDirectories.runTimeExeDirectory) === true && path.isAbsolute(scratchDirectories.runTimeVuiDirectory) === true){
+    // Two absolute paths - deltas are computable
+    scratchDirectories.runTimeExeToVuiDelta = path.relative(path.resolve(scratchDirectories.runTimeExeDirectory), path.resolve(scratchDirectories.runTimeVuiDirectory));
+    scratchDirectories.runTimeVuiToSourceDelta = path.relative(path.resolve(scratchDirectories.runTimeVuiDirectory), path.resolve(scratchDirectories.runTimeExeDirectory));
+  }
+
+
   // Now copy some of these values to the "real" directories object
   directories.buildTimeSourceToVuiDelta = scratchDirectories.buildTimeSourceToVuiDelta;
   directories.buildTimeVuiToSourceDelta = scratchDirectories.buildTimeVuiToSourceDelta;
