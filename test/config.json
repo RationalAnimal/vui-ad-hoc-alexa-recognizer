@@ -170,8 +170,8 @@
 				"bundleName": "afinnSentimentBundle",
 				"mixInCode": [
 					{
-						"mixInBuiltInName": "adddefaultslots",
-						"arguments": {"ratingDataSetFiles": "./afinn111.json"}
+						"mixInBuiltInName": "afinn",
+						"arguments": {"ratingDataSetFiles": ["./afinn111.json"]}
 					}
 				]
 			}
@@ -200,6 +200,10 @@
 			{
 				"bundleName": "morphingIntentBundle",
 				"intentMatchRegExString": "(MorphingIntent)"
+			},
+			{
+				"bundleName": "afinnSentimentBundle",
+				"intentMatchRegExString": "(AfinnIntent)"
 			}
 		]
 	},
