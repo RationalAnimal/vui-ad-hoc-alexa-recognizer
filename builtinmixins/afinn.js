@@ -52,7 +52,7 @@
      let regExp = new RegExp(dataSet.scoredWords[i].regExpString, "ig");
      let matchResult;
      while(matchResult = regExp.exec(utterance)) {// eslint-disable-line no-cond-assign;
-       runningScore += dataSet.scoredWords[i].rating;
+       runningScore += dataSet.scoredWords[i].score;
      }
    }
    if(typeof priorResult === "undefined" || priorResult === null){
