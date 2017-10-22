@@ -25,6 +25,7 @@
  */
  "use strict";
  module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-unused-vars
+   console.log("AFINN sentiment analysis called, customArgs: ", JSON.stringify(customArgs, null, 2));
    let intentName;
    let utterance;
    let priorResult;
@@ -43,6 +44,7 @@
    }
    else {
      // We don't have a data set - exit.
+     console.log("AFINN sentiment analysis - can't load data set, exiting");
      return;
    }
    let runningScore = 0;

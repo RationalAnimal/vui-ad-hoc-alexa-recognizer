@@ -87,6 +87,8 @@ the builtinslottypes directory.  You will need to provide your own versions of
 these files.  Note that only some of those files have a
 different license - you DON'T need to delete the entire directory to remove them.
 Simply search in builtinslottypes directory for "license" and/or "attribution"
+Also, AFINN related JSON data files in the builtinmixins directory are a modification of the original files (see
+attribution within the files) distributed under Apache 2.0 license.
 
 # Installation
 
