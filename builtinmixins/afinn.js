@@ -40,6 +40,9 @@
    if(typeof customArgs !== "undefined" && typeof customArgs.ratingDataSetFile === "string"){
      dataSet = require(customArgs.ratingDataSetFile);
    }
+   else if(typeof customArgs !== "undefined" && typeof customArgs.ratingDataSetFile !== "undefined" && Array.isArray(customArgs.ratingDataSetFiles)){
+     // TODO iterate over all data sets and combine them into one.
+   }
    else {
      // We don't have a data set - exit.
      return;
