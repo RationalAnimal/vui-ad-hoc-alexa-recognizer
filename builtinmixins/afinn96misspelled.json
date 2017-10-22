@@ -93,7 +93,13 @@
     {"word":"apologize","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apologize)(:?$|[^a-zA-Z]+))"},
     {"word":"apologized","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apologized)(:?$|[^a-zA-Z]+))"},
     {"word":"apologizes","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apologizes)(:?$|[^a-zA-Z]+))"},
-    {"word":"apologizing","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apologizing)(:?$|[^a-zA-Z]+))"}
+    {"word":"apologizing","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apologizing)(:?$|[^a-zA-Z]+))"},
+    {"word":"apologie","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apologie)(:?$|[^a-zA-Z]+))"},
+    {"word":"arest","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(arest)(:?$|[^a-zA-Z]+))"},
+    {"word":"arests","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(arests)(:?$|[^a-zA-Z]+))"},
+    {"word":"arested","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(arested)(:?$|[^a-zA-Z]+))"},
+    {"word":"arogant","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(arogant)(:?$|[^a-zA-Z]+))"}
+
 
 
 
