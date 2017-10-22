@@ -1286,8 +1286,9 @@ the above will execute on EVERY match attempt, whether it successfully matches o
 #### AFINN
 
 You can use afinn built in mix in for sentiment analysis.  Currently it only supports AFINN96 data set.  More data sets
-are on the way.  Some of them will be "alternative basic sets" - AFINN111 and AFINN165.  Others are additional data sets
-that can be added to the base set, such as scored misspelled words.
+are on the way.  Some of them will be "alternative base sets" - AFINN111 and AFINN165.  Others are additional data sets
+that can be added to the base set, such as scored misspelled words (afin96misspelled.json data set 
+is partially done) or emoji data set.
 This mix in takes a single argument and returns a single
 score.  For example, given this config snippet:
 
@@ -1313,6 +1314,20 @@ might attach this "sentiment.AFINN.score" to the result:
       "score": -3
     }
   }
+}
+```
+
+or, if you choose to use multiple data sets at the same time:
+
+```json
+{
+  "bundleName": "afinnSentimentBundle",
+  "mixInCode": [
+    {
+      "mixInBuiltInName": "afinn",
+      "arguments": {"ratingDataSetFiles": ["./afinn96.json", "./afinn96misspelled.json"]}
+    }
+  ]
 }
 ```
 
