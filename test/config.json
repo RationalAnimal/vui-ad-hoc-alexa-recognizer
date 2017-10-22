@@ -165,6 +165,15 @@
 						"arguments": {"regExpString": "(e)"}
 					}
 				]
+			},
+			{
+				"bundleName": "afinnSentimentBundle",
+				"mixInCode": [
+					{
+						"mixInBuiltInName": "adddefaultslots",
+						"arguments": {"ratingDataSetFiles": "./afinn111.json"}
+					}
+				]
 			}
 		],
 		"appliesTo": [

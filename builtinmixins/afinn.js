@@ -33,11 +33,12 @@
      utterance = standardArgs.utterance;
      priorResult = standardArgs.priorResult;
    }
-   let dataSet = [];
-   if(typeof customArgs !== "undefined" && typeof customArgs.ratingDataSetFile !== "undefined" && Array.isArray(customArgs.ratingDataSetFiles)){
+   let dataSet = {"scoredWords": []};
+   if(typeof customArgs !== "undefined" && typeof customArgs.ratingDataSetFiles !== "undefined" && Array.isArray(customArgs.ratingDataSetFiles)){
      for(let i = 0; i < customArgs.ratingDataSetFiles.length; i++){
        let scratchDataSet = require(customArgs.ratingDataSetFiles[i]);
-       dataSet = dataSet.concat(scratchDataSet);
+       //scoredWords
+       dataSet.scoredWords = dataSet.scoredWords.concat(scratchDataSet.scoredWords);
      }
    }
    else {
@@ -45,11 +46,11 @@
      return;
    }
    let runningScore = 0;
-   for(let i = 0; i < dataSet.length; i++){
-     let regExp = new RegExp(dataSet[i].regExpString, "ig");
+   for(let i = 0; i < dataSet.scoredWords.length; i++){
+     let regExp = new RegExp(dataSet.scoredWords[i].regExpString, "ig");
      let matchResult;
      while(matchResult = regExp.exec(utterance)) {// eslint-disable-line no-cond-assign;
-       runningScore += dataSet[i].rating;
+       runningScore += dataSet.scoredWords[i].rating;
      }
    }
    if(typeof priorResult === "undefined" || priorResult === null){
