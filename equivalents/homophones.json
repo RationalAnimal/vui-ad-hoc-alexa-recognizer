@@ -2704,8 +2704,6 @@
         {"fitRating":0.95, "values":["prier","prior"]}
       ]
     },
-
-
     {
       "words":["pries","prize"],
       "synonyms":[
@@ -2722,6 +2720,27 @@
       "words":["principal","principle"],
       "synonyms":[
         {"fitRating":0.95, "values":["principal","principle"]}
+      ]
+    },
+
+
+
+    {
+      "words":["profit","prophet"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["profit","prophet"]}
+      ]
+    },
+    {
+      "words":["psis","sighs","size"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["psis","sighs","size"]}
+      ]
+    },
+    {
+      "words":["rack","wrack"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["rack","wrack"]}
       ]
     }
 
