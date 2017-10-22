@@ -1285,8 +1285,35 @@ the above will execute on EVERY match attempt, whether it successfully matches o
 
 #### AFINN
 
-Currently AFINN based sentiment analysis is being implemented as a built in mix in.  This is a work in progress and this
-section will be updated as work is progresses.
+You can use afinn built in mix in for sentiment analysis.  Currently it only supports AFINN96 data set.
+It takes a single argument and returns a single
+score.  For example, given this config snippet:
+
+```json
+{
+  "bundleName": "afinnSentimentBundle",
+  "mixInCode": [
+    {
+      "mixInBuiltInName": "afinn",
+      "arguments": {"ratingDataSetFiles": ["./afinn96.json"]}
+    }
+  ]
+}
+```
+
+will attach the "sentiment.AFINN.score" to the result:
+```json
+{
+  "name": "AfinnIntent",
+  "slots": {},
+  "sentiment": {
+    "AFINN": {
+      "score": -3
+    }
+  }
+}
+```
+
 
 ### Dollar values
 
