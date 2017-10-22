@@ -2722,9 +2722,6 @@
         {"fitRating":0.95, "values":["principal","principle"]}
       ]
     },
-
-
-
     {
       "words":["profit","prophet"],
       "synonyms":[
@@ -2738,9 +2735,27 @@
       ]
     },
     {
+      "words":["quarts","quartz"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["quarts","quartz"]}
+      ]
+    },
+    {
       "words":["rack","wrack"],
       "synonyms":[
         {"fitRating":0.95, "values":["rack","wrack"]}
+      ]
+    },
+    {
+      "words":["raid","rayed"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["raid","rayed"]}
+      ]
+    },
+    {
+      "words":["rail","rale"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["rail","rale"]}
       ]
     }
 
