@@ -68,7 +68,15 @@
     {"word":"amaized","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(amaized)(:?$|[^a-zA-Z]+))"},
     {"word":"amasing","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(amasing)(:?$|[^a-zA-Z]+))"},
     {"word":"amaizing","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(amaizing)(:?$|[^a-zA-Z]+))"},
-    {"word":"ambicious","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ambicious)(:?$|[^a-zA-Z]+))"}
+    {"word":"ambicious","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ambicious)(:?$|[^a-zA-Z]+))"},
+    {"word":"amuze","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(amuze)(:?$|[^a-zA-Z]+))"},
+    {"word":"amuzed","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(amuzed)(:?$|[^a-zA-Z]+))"},
+    {"word":"amuzement","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(amuzement)(:?$|[^a-zA-Z]+))"},
+    {"word":"amuzements","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(amuzements)(:?$|[^a-zA-Z]+))"},
+    {"word":"anoy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(anoy)(:?$|[^a-zA-Z]+))"},
+    {"word":"anoys","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(anoys)(:?$|[^a-zA-Z]+))"},
+    {"word":"anoying","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(anoying)(:?$|[^a-zA-Z]+))"}
+
 
 
   ]
