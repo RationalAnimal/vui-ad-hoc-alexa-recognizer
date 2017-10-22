@@ -2650,9 +2650,6 @@
         {"fitRating":0.7, "values":["poor","pour"]}
       ]
     },
-
-
-
     {
       "words":["populace","populous"],
       "synonyms":[
@@ -2664,10 +2661,32 @@
       "synonyms":[
         {"fitRating":0.95, "values":["practice","practise"]}
       ]
-    },{
+    },
+    {
       "words":["praise","prase","prays","preys"],
       "synonyms":[
         {"fitRating":0.95, "values":["praise","prase","prays","preys"]}
+      ]
+    },
+
+
+
+    {
+      "words":["pray","prey"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pray","prey"]}
+      ]
+    },
+    {
+      "words":["precedence","precedents"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["precedence","precedents"]}
+      ]
+    },
+    {
+      "words":["premier","premiere"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["premier","premiere"]}
       ]
     }
 
