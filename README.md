@@ -1285,8 +1285,10 @@ the above will execute on EVERY match attempt, whether it successfully matches o
 
 #### AFINN
 
-You can use afinn built in mix in for sentiment analysis.  Currently it only supports AFINN96 data set.
-It takes a single argument and returns a single
+You can use afinn built in mix in for sentiment analysis.  Currently it only supports AFINN96 data set.  More data sets
+are on the way.  Some of them will be "alternative basic sets" - AFINN111 and AFINN165.  Others are additional data sets
+that can be added to the base set, such as scored misspelled words.
+This mix in takes a single argument and returns a single
 score.  For example, given this config snippet:
 
 ```json
@@ -1301,7 +1303,7 @@ score.  For example, given this config snippet:
 }
 ```
 
-will attach the "sentiment.AFINN.score" to the result:
+might attach this "sentiment.AFINN.score" to the result:
 ```json
 {
   "name": "AfinnIntent",
@@ -1313,7 +1315,6 @@ will attach the "sentiment.AFINN.score" to the result:
   }
 }
 ```
-
 
 ### Dollar values
 
