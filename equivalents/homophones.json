@@ -2686,8 +2686,6 @@
         {"fitRating":0.95, "values":["premier","premiere"]}
       ]
     },
-
-
     {
       "words":["presence","presents"],
       "synonyms":[
@@ -2704,6 +2702,26 @@
       "words":["prier","prior"],
       "synonyms":[
         {"fitRating":0.95, "values":["prier","prior"]}
+      ]
+    },
+
+
+    {
+      "words":["pries","prize"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pries","prize"]}
+      ]
+    },
+    {
+      "words":["prince","prints"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["prince","prints"]}
+      ]
+    },
+    {
+      "words":["principal","principle"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["principal","principle"]}
       ]
     }
 
