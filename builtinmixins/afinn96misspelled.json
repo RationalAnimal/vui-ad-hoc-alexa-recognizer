@@ -85,7 +85,16 @@
     {"word":"applauded","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(applauded)(:?$|[^a-zA-Z]+))"},
     {"word":"aplaudes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aplaudes)(:?$|[^a-zA-Z]+))"},
     {"word":"aplauding","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aplauding)(:?$|[^a-zA-Z]+))"},
-    {"word":"aplause","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aplause)(:?$|[^a-zA-Z]+))"}
+    {"word":"aplause","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aplause)(:?$|[^a-zA-Z]+))"},
+    {"word":"apreciation","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apreciation)(:?$|[^a-zA-Z]+))"},
+    {"word":"aproval","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aproval)(:?$|[^a-zA-Z]+))"},
+    {"word":"aproved","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aproved)(:?$|[^a-zA-Z]+))"},
+    {"word":"aproves","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aproves)(:?$|[^a-zA-Z]+))"},
+    {"word":"apologize","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apologize)(:?$|[^a-zA-Z]+))"},
+    {"word":"apologized","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apologized)(:?$|[^a-zA-Z]+))"},
+    {"word":"apologizes","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apologizes)(:?$|[^a-zA-Z]+))"},
+    {"word":"apologizing","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apologizing)(:?$|[^a-zA-Z]+))"}
+
 
 
 
