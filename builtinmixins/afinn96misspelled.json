@@ -75,7 +75,18 @@
     {"word":"amuzements","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(amuzements)(:?$|[^a-zA-Z]+))"},
     {"word":"anoy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(anoy)(:?$|[^a-zA-Z]+))"},
     {"word":"anoys","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(anoys)(:?$|[^a-zA-Z]+))"},
-    {"word":"anoying","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(anoying)(:?$|[^a-zA-Z]+))"}
+    {"word":"anoying","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(anoying)(:?$|[^a-zA-Z]+))"},
+    {"word":"anctious","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(anctious)(:?$|[^a-zA-Z]+))"},
+    {"word":"anziety","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(anziety)(:?$|[^a-zA-Z]+))"},
+    {"word":"apocaliptic","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apocaliptic)(:?$|[^a-zA-Z]+))"},
+    {"word":"apalling","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apalling)(:?$|[^a-zA-Z]+))"},
+    {"word":"appaling","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(appaling)(:?$|[^a-zA-Z]+))"},
+    {"word":"apaling","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(apaling)(:?$|[^a-zA-Z]+))"},
+    {"word":"applauded","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(applauded)(:?$|[^a-zA-Z]+))"},
+    {"word":"aplaudes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aplaudes)(:?$|[^a-zA-Z]+))"},
+    {"word":"aplauding","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aplauding)(:?$|[^a-zA-Z]+))"},
+    {"word":"aplause","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aplause)(:?$|[^a-zA-Z]+))"}
+
 
 
 
