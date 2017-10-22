@@ -33,15 +33,12 @@
      utterance = standardArgs.utterance;
      priorResult = standardArgs.priorResult;
    }
-   if(typeof priorResult === "undefined" && priorResult === null){
-     return;
-   }
-   let dataSet;
-   if(typeof customArgs !== "undefined" && typeof customArgs.ratingDataSetFile === "string"){
-     dataSet = require(customArgs.ratingDataSetFile);
-   }
-   else if(typeof customArgs !== "undefined" && typeof customArgs.ratingDataSetFile !== "undefined" && Array.isArray(customArgs.ratingDataSetFiles)){
-     // TODO iterate over all data sets and combine them into one.
+   let dataSet = [];
+   if(typeof customArgs !== "undefined" && typeof customArgs.ratingDataSetFile !== "undefined" && Array.isArray(customArgs.ratingDataSetFiles)){
+     for(let i = 0; i < customArgs.ratingDataSetFiles.length; i++){
+       let scratchDataSet = require(customArgs.ratingDataSetFiles[i]);
+       dataSet = dataSet.concat(scratchDataSet);
+     }
    }
    else {
      // We don't have a data set - exit.
@@ -55,5 +52,15 @@
        runningScore += dataSet[i].rating;
      }
    }
-   priorResult.sentimentScore = runningScore;
+   if(typeof priorResult === "undefined" || priorResult === null){
+     standardArgs.priorResult = {};
+     priorResult = standardArgs.priorResult;
+   }
+   if(typeof priorResult.sentiment === "undefined" || priorResult.sentiment === null){
+     standardArgs.priorResult.sentiment = {};
+   }
+   if(typeof priorResult.sentiment.AFINN === "undefined" || priorResult.sentiment.AFINN === null){
+     standardArgs.priorResult.sentiment.AFINN = {};
+   }
+   priorResult.sentiment.AFINN.score = runningScore;
  };

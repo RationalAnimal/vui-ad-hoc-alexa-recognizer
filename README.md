@@ -1279,6 +1279,13 @@ You can even combine both matched intent and unmatched specifications:
 
 the above will execute on EVERY match attempt, whether it successfully matches or not.
 
+### Sentiment Analysys
+
+#### AFINN
+
+Currently AFINN based sentiment analysis is being implemented as a built in mix in.  This is a work in progress and this
+section will be updated as work is progresses.
+
 ### Dollar values
 
 If a service like Cortana passes a dollar value, e.g. $1000, it will be mapped
