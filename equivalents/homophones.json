@@ -2741,6 +2741,12 @@
       ]
     },
     {
+      "words":["quean","queen"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["quean","queen"]}
+      ]
+    },
+    {
       "words":["rack","wrack"],
       "synonyms":[
         {"fitRating":0.95, "values":["rack","wrack"]}
@@ -2756,6 +2762,18 @@
       "words":["rail","rale"],
       "synonyms":[
         {"fitRating":0.95, "values":["rail","rale"]}
+      ]
+    },
+    {
+      "words":["rain","reign","rein"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["rain","reign","rein"]}
+      ]
+    },
+    {
+      "words":["raise","rays","raze"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["raise","rays","raze"]}
       ]
     }
 
