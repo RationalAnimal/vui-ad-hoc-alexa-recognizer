@@ -55,8 +55,14 @@
     {"word":"aggretion","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aggretion)(:?$|[^a-zA-Z]+))"},
     {"word":"agression","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(agression)(:?$|[^a-zA-Z]+))"},
     {"word":"aggresion","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aggresion)(:?$|[^a-zA-Z]+))"},
-    {"word":"agression","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(agresion)(:?$|[^a-zA-Z]+))"}
-
+    {"word":"agression","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(agresion)(:?$|[^a-zA-Z]+))"},
+    {"word":"aggretions","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aggretions)(:?$|[^a-zA-Z]+))"},
+    {"word":"agressions","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(agressions)(:?$|[^a-zA-Z]+))"},
+    {"word":"aggresions","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aggresions)(:?$|[^a-zA-Z]+))"},
+    {"word":"agresions","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(agresions)(:?$|[^a-zA-Z]+))"},
+    {"word":"agred","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(agred)(:?$|[^a-zA-Z]+))"},
+    {"word":"alienasion","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(alienasion)(:?$|[^a-zA-Z]+))"},
+    {"word":"allergic","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(allergic)(:?$|[^a-zA-Z]+))"}
 
 
   ]
