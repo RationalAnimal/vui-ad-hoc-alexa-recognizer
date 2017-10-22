@@ -2668,9 +2668,6 @@
         {"fitRating":0.95, "values":["praise","prase","prays","preys"]}
       ]
     },
-
-
-
     {
       "words":["pray","prey"],
       "synonyms":[
@@ -2688,9 +2685,27 @@
       "synonyms":[
         {"fitRating":0.95, "values":["premier","premiere"]}
       ]
+    },
+
+
+    {
+      "words":["presence","presents"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["presence","presents"]}
+      ]
+    },
+    {
+      "words":["pride","pried"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["pride","pried"]}
+      ]
+    },
+    {
+      "words":["prier","prior"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["prier","prior"]}
+      ]
     }
-
-
 
 
   ],
