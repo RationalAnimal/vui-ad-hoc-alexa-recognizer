@@ -217,7 +217,24 @@
     {"word":"colisions","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(colisions)(:?$|[^a-zA-Z]+))"},
     {"word":"coluding","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(coluding)(:?$|[^a-zA-Z]+))"},
     {"word":"comend","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comend)(:?$|[^a-zA-Z]+))"},
-    {"word":"comended","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comended)(:?$|[^a-zA-Z]+))"}
+    {"word":"comended","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comended)(:?$|[^a-zA-Z]+))"},
+    {"word":"comit","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comit)(:?$|[^a-zA-Z]+))"},
+    {"word":"committ","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(committ)(:?$|[^a-zA-Z]+))"},
+    {"word":"comitment","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comitment)(:?$|[^a-zA-Z]+))"},
+    {"word":"committment","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(committment)(:?$|[^a-zA-Z]+))"},
+    {"word":"comitted","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comitted)(:?$|[^a-zA-Z]+))"},
+    {"word":"commited","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(commited)(:?$|[^a-zA-Z]+))"},
+    {"word":"comited","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comited)(:?$|[^a-zA-Z]+))"},
+    {"word":"comitting","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comitting)(:?$|[^a-zA-Z]+))"},
+    {"word":"commiting","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(commiting)(:?$|[^a-zA-Z]+))"},
+    {"word":"comiting","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comiting)(:?$|[^a-zA-Z]+))"},
+    {"word":"comits","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comits)(:?$|[^a-zA-Z]+))"},
+    {"word":"comprihensive","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comprihensive)(:?$|[^a-zA-Z]+))"},
+    {"word":"confidance","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(confidance)(:?$|[^a-zA-Z]+))"},
+    {"word":"confuzing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(confuzing)(:?$|[^a-zA-Z]+))"},
+    {"word":"confuze","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(confuze)(:?$|[^a-zA-Z]+))"},
+    {"word":"confuzed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(confuzed)(:?$|[^a-zA-Z]+))"}
+
 
 
   ]
