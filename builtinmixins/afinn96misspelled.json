@@ -257,7 +257,19 @@
     {"word":"criticise","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(criticise)(:?$|[^a-zA-Z]+))"},
     {"word":"criticised","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(criticised)(:?$|[^a-zA-Z]+))"},
     {"word":"criticises","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(criticises)(:?$|[^a-zA-Z]+))"},
-    {"word":"criticising","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(criticising)(:?$|[^a-zA-Z]+))"}
+    {"word":"criticising","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(criticising)(:?$|[^a-zA-Z]+))"},
+    {"word":"curce","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(curce)(:?$|[^a-zA-Z]+))"},
+    {"word":"cuting","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cuting)(:?$|[^a-zA-Z]+))"},
+    {"word":"cynisism","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cynisism)(:?$|[^a-zA-Z]+))"},
+    {"word":"cynicizm","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cynicizm)(:?$|[^a-zA-Z]+))"},
+    {"word":"dam","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dam)(:?$|[^a-zA-Z]+))"},
+    {"word":"damed","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(damed)(:?$|[^a-zA-Z]+))"},
+    {"word":"demonstrasion","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(demonstrasion)(:?$|[^a-zA-Z]+))"},
+    {"word":"dead lock","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dead\\s+lock)(:?$|[^a-zA-Z]+))"},
+    {"word":"deerly","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deerly)(:?$|[^a-zA-Z]+))"},
+    {"word":"defening","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(defening)(:?$|[^a-zA-Z]+))"},
+    {"word":"det","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(det)(:?$|[^a-zA-Z]+))"}
+
 
 
 
