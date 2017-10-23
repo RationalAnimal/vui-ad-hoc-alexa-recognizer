@@ -98,7 +98,25 @@
     {"word":"arest","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(arest)(:?$|[^a-zA-Z]+))"},
     {"word":"arests","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(arests)(:?$|[^a-zA-Z]+))"},
     {"word":"arested","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(arested)(:?$|[^a-zA-Z]+))"},
-    {"word":"arogant","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(arogant)(:?$|[^a-zA-Z]+))"}
+    {"word":"arogant","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(arogant)(:?$|[^a-zA-Z]+))"},
+    {"word":"asassination","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(asassination)(:?$|[^a-zA-Z]+))"},
+    {"word":"assasination","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(assasination)(:?$|[^a-zA-Z]+))"},
+    {"word":"asasination","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(asasination)(:?$|[^a-zA-Z]+))"},
+    {"word":"asassinations","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(asassinations)(:?$|[^a-zA-Z]+))"},
+    {"word":"assasinations","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(assasinations)(:?$|[^a-zA-Z]+))"},
+    {"word":"asasinations","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(asasinations)(:?$|[^a-zA-Z]+))"},
+    {"word":"aset","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(aset)(:?$|[^a-zA-Z]+))"},
+    {"word":"asets","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(asets)(:?$|[^a-zA-Z]+))"},
+    {"word":"ashole","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ashole)(:?$|[^a-zA-Z]+))"},
+    {"word":"atack","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atack)(:?$|[^a-zA-Z]+))"},
+    {"word":"atacked","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atacked)(:?$|[^a-zA-Z]+))"},
+    {"word":"atacking","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atacking)(:?$|[^a-zA-Z]+))"},
+    {"word":"atacks","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atacks)(:?$|[^a-zA-Z]+))"},
+    {"word":"atract","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atract)(:?$|[^a-zA-Z]+))"},
+    {"word":"atracts","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atracts)(:?$|[^a-zA-Z]+))"},
+    {"word":"atracting","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atracting)(:?$|[^a-zA-Z]+))"},
+    {"word":"atraction","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atraction)(:?$|[^a-zA-Z]+))"},
+    {"word":"atractions","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atractions)(:?$|[^a-zA-Z]+))"}
 
 
 
