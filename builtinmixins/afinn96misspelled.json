@@ -169,6 +169,20 @@
     {"word":"carefull","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(carefull)(:?$|[^a-zA-Z]+))"},
     {"word":"carefuly","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(carefuly)(:?$|[^a-zA-Z]+))"},
     {"word":"cears","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cears)(:?$|[^a-zA-Z]+))"},
-    {"word":"catastrofic","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(catastrofic)(:?$|[^a-zA-Z]+))"}
+    {"word":"catastrofic","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(catastrofic)(:?$|[^a-zA-Z]+))"},
+    {"word":"cashin in","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cashin\\s+in)(:?$|[^a-zA-Z]+))"},
+    {"word":"casaulty","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(casaulty)(:?$|[^a-zA-Z]+))"},
+    {"word":"celebrait","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(celebrait)(:?$|[^a-zA-Z]+))"},
+    {"word":"celebraited","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(celebraited)(:?$|[^a-zA-Z]+))"},
+    {"word":"celebraites","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(celebraites)(:?$|[^a-zA-Z]+))"},
+    {"word":"celebraiting","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(celebraiting)(:?$|[^a-zA-Z]+))"},
+    {"word":"censer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(censer)(:?$|[^a-zA-Z]+))"},
+    {"word":"censered","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(censered)(:?$|[^a-zA-Z]+))"},
+    {"word":"censers","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(censers)(:?$|[^a-zA-Z]+))"},
+    {"word":"certane","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(certane)(:?$|[^a-zA-Z]+))"},
+    {"word":"chalenge","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chalenge)(:?$|[^a-zA-Z]+))"},
+    {"word":"chear","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chear)(:?$|[^a-zA-Z]+))"},
+    {"word":"cheerfull","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cheerfull)(:?$|[^a-zA-Z]+))"},
+    {"word":"chears","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chears)(:?$|[^a-zA-Z]+))"}
   ]
 }
