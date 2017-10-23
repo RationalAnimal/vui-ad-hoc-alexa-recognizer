@@ -293,9 +293,16 @@
     {"word":"denounses","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(denounses)(:?$|[^a-zA-Z]+))"},
     {"word":"denie","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(denie)(:?$|[^a-zA-Z]+))"},
     {"word":"depresed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(depresed)(:?$|[^a-zA-Z]+))"},
-    {"word":"depresing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(depresing)(:?$|[^a-zA-Z]+))"}
-
-
+    {"word":"depresing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(depresing)(:?$|[^a-zA-Z]+))"},
+    {"word":"derale","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(derale)(:?$|[^a-zA-Z]+))"},
+    {"word":"derales","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(derales)(:?$|[^a-zA-Z]+))"},
+    {"word":"dezire","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dezire)(:?$|[^a-zA-Z]+))"},
+    {"word":"dezired","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dezired)(:?$|[^a-zA-Z]+))"},
+    {"word":"derizion","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(derizion)(:?$|[^a-zA-Z]+))"},
+    {"word":"despare","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(despare)(:?$|[^a-zA-Z]+))"},
+    {"word":"despares","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(despares)(:?$|[^a-zA-Z]+))"},
+    {"word":"desperete","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(desperete)(:?$|[^a-zA-Z]+))"},
+    {"word":"desperetely","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(desperetely)(:?$|[^a-zA-Z]+))"}
 
 
   ]
