@@ -233,7 +233,21 @@
     {"word":"confidance","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(confidance)(:?$|[^a-zA-Z]+))"},
     {"word":"confuzing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(confuzing)(:?$|[^a-zA-Z]+))"},
     {"word":"confuze","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(confuze)(:?$|[^a-zA-Z]+))"},
-    {"word":"confuzed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(confuzed)(:?$|[^a-zA-Z]+))"}
+    {"word":"confuzed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(confuzed)(:?$|[^a-zA-Z]+))"},
+    {"word":"congratulait","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(congratulait)(:?$|[^a-zA-Z]+))"},
+    {"word":"conspirasy","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(conspirasy)(:?$|[^a-zA-Z]+))"},
+    {"word":"controvercial","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(controvercial)(:?$|[^a-zA-Z]+))"},
+    {"word":"controvercially","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(controvercially)(:?$|[^a-zA-Z]+))"},
+    {"word":"controversialy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(controversialy)(:?$|[^a-zA-Z]+))"},
+    {"word":"controversialy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(controversialy)(:?$|[^a-zA-Z]+))"},
+    {"word":"convinse","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(convinse)(:?$|[^a-zA-Z]+))"},
+    {"word":"convinsed","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(convinsed)(:?$|[^a-zA-Z]+))"},
+    {"word":"convinses","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(convinses)(:?$|[^a-zA-Z]+))"},
+    {"word":"cortesy","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cortesy)(:?$|[^a-zA-Z]+))"},
+    {"word":"cover up","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cover\\s+up)(:?$|[^a-zA-Z]+))"},
+    {"word":"cosiness","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cosiness)(:?$|[^a-zA-Z]+))"},
+    {"word":"crasy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(crasy)(:?$|[^a-zA-Z]+))"}
+
 
 
 
