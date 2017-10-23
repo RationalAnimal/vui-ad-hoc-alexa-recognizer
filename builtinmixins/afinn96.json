@@ -175,7 +175,7 @@
     {"word":"boring","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(boring)(:?$|[^a-zA-Z]+))"},
     {"word":"bother","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bother)(:?$|[^a-zA-Z]+))"},
     {"word":"boycott","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(boycott)(:?$|[^a-zA-Z]+))"},
-    {"word":"boycots","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(boycots)(:?$|[^a-zA-Z]+))"},
+    {"word":"boycotts","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(boycotts)(:?$|[^a-zA-Z]+))"},
     {"word":"boycotted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(boycotted)(:?$|[^a-zA-Z]+))"},
     {"word":"boycotting","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(boycotting)(:?$|[^a-zA-Z]+))"},
     {"word":"brainwashing","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(brainwashing)(:?$|[^a-zA-Z]+))"},
