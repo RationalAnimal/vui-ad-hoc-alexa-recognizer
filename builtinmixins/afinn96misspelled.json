@@ -279,7 +279,22 @@
     {"word":"difender","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(difender)(:?$|[^a-zA-Z]+))"},
     {"word":"difenders","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(iefenders)(:?$|[^a-zA-Z]+))"},
     {"word":"deferr","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deferr)(:?$|[^a-zA-Z]+))"},
-    {"word":"deferring","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deferring)(:?$|[^a-zA-Z]+))"}
+    {"word":"defering","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(defering)(:?$|[^a-zA-Z]+))"},
+    {"word":"defisit","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(defisit)(:?$|[^a-zA-Z]+))"},
+    {"word":"deley","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deley)(:?$|[^a-zA-Z]+))"},
+    {"word":"deleyed","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deleyed)(:?$|[^a-zA-Z]+))"},
+    {"word":"delite","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(delite)(:?$|[^a-zA-Z]+))"},
+    {"word":"delited","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(delited)(:?$|[^a-zA-Z]+))"},
+    {"word":"denyed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(denyed)(:?$|[^a-zA-Z]+))"},
+    {"word":"denyer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(denyer)(:?$|[^a-zA-Z]+))"},
+    {"word":"denyers","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(denyers)(:?$|[^a-zA-Z]+))"},
+    {"word":"denyes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(denyes)(:?$|[^a-zA-Z]+))"},
+    {"word":"denounse","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(denounse)(:?$|[^a-zA-Z]+))"},
+    {"word":"denounses","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(denounses)(:?$|[^a-zA-Z]+))"},
+    {"word":"denie","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(denie)(:?$|[^a-zA-Z]+))"},
+    {"word":"depresed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(depresed)(:?$|[^a-zA-Z]+))"},
+    {"word":"depresing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(depresing)(:?$|[^a-zA-Z]+))"}
+
 
 
 

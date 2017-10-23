@@ -349,7 +349,7 @@
     {"word":"defender","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(defender)(:?$|[^a-zA-Z]+))"},
     {"word":"defenders","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(defenders)(:?$|[^a-zA-Z]+))"},
     {"word":"defer","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(defer)(:?$|[^a-zA-Z]+))"},
-    {"word":"defering","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(defering)(:?$|[^a-zA-Z]+))"},
+    {"word":"deferring","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deferring)(:?$|[^a-zA-Z]+))"},
     {"word":"deficit","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deficit)(:?$|[^a-zA-Z]+))"},
     {"word":"delay","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(delay)(:?$|[^a-zA-Z]+))"},
     {"word":"delayed","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(delayed)(:?$|[^a-zA-Z]+))"},
