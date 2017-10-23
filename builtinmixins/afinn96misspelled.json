@@ -302,7 +302,13 @@
     {"word":"despare","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(despare)(:?$|[^a-zA-Z]+))"},
     {"word":"despares","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(despares)(:?$|[^a-zA-Z]+))"},
     {"word":"desperete","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(desperete)(:?$|[^a-zA-Z]+))"},
-    {"word":"desperetely","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(desperetely)(:?$|[^a-zA-Z]+))"}
+    {"word":"desperetely","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(desperetely)(:?$|[^a-zA-Z]+))"},
+    {"word":"detane","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(detane)(:?$|[^a-zA-Z]+))"},
+    {"word":"detaned","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(detaned)(:?$|[^a-zA-Z]+))"},
+    {"word":"detension","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(detension)(:?$|[^a-zA-Z]+))"},
+    {"word":"dick head","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dick\\s+head)(:?$|[^a-zA-Z]+))"},
+    {"word":"dificult","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dificult)(:?$|[^a-zA-Z]+))"}
+
 
 
   ]
