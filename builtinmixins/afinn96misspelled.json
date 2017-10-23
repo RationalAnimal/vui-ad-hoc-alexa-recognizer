@@ -117,10 +117,20 @@
     {"word":"atracting","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atracting)(:?$|[^a-zA-Z]+))"},
     {"word":"atraction","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atraction)(:?$|[^a-zA-Z]+))"},
     {"word":"atractions","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atractions)(:?$|[^a-zA-Z]+))"}
-
-
-
-
+    {"word":"osome","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(osome)(:?$|[^a-zA-Z]+))"},
+    {"word":"oful","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(oful)(:?$|[^a-zA-Z]+))"},
+    {"word":"bamboosle","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bamboosle)(:?$|[^a-zA-Z]+))"},
+    {"word":"bamboosled","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bamboosled)(:?$|[^a-zA-Z]+))"},
+    {"word":"bamboosles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bamboosles)(:?$|[^a-zA-Z]+))"},
+    {"word":"barier","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(barier)(:?$|[^a-zA-Z]+))"},
+    {"word":"batle","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(batle)(:?$|[^a-zA-Z]+))"},
+    {"word":"batles","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(batles)(:?$|[^a-zA-Z]+))"},
+    {"word":"beeting","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(beeting)(:?$|[^a-zA-Z]+))"},
+    {"word":"beautifull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(beautifull)(:?$|[^a-zA-Z]+))"},
+    {"word":"butiful","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(butiful)(:?$|[^a-zA-Z]+))"},
+    {"word":"beutiful","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(beutiful)(:?$|[^a-zA-Z]+))"},
+    {"word":"bautiful","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(eautiful)(:?$|[^a-zA-Z]+))"},
+    {"word":"benifit","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(benifit)(:?$|[^a-zA-Z]+))"}
 
 
   ]
