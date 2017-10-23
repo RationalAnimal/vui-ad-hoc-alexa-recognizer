@@ -203,7 +203,22 @@
     {"word":"chear","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chear)(:?$|[^a-zA-Z]+))"},
     {"word":"chears","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chears)(:?$|[^a-zA-Z]+))"},
     {"word":"cheared","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cheared)(:?$|[^a-zA-Z]+))"},
-    {"word":"clue less","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(clue\\s+less)(:?$|[^a-zA-Z]+))"}
+    {"word":"clue less","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(clue\\s+less)(:?$|[^a-zA-Z]+))"},
+    {"word":"cok","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cok)(:?$|[^a-zA-Z]+))"},
+    {"word":"cock sucker","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cock\\s+sucker)(:?$|[^a-zA-Z]+))"},
+    {"word":"colapse","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(colapse)(:?$|[^a-zA-Z]+))"},
+    {"word":"colapsed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(colapsed)(:?$|[^a-zA-Z]+))"},
+    {"word":"colapses","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(colapses)(:?$|[^a-zA-Z]+))"},
+    {"word":"colapsing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(colapsing)(:?$|[^a-zA-Z]+))"},
+    {"word":"colide","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(colide)(:?$|[^a-zA-Z]+))"},
+    {"word":"colides","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(colides)(:?$|[^a-zA-Z]+))"},
+    {"word":"coliding","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(coliding)(:?$|[^a-zA-Z]+))"},
+    {"word":"colision","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(colision)(:?$|[^a-zA-Z]+))"},
+    {"word":"colisions","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(colisions)(:?$|[^a-zA-Z]+))"},
+    {"word":"coluding","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(coluding)(:?$|[^a-zA-Z]+))"},
+    {"word":"comend","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comend)(:?$|[^a-zA-Z]+))"},
+    {"word":"comended","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(comended)(:?$|[^a-zA-Z]+))"}
+
 
   ]
 }
