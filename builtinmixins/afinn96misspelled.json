@@ -130,8 +130,15 @@
     {"word":"butiful","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(butiful)(:?$|[^a-zA-Z]+))"},
     {"word":"beutiful","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(beutiful)(:?$|[^a-zA-Z]+))"},
     {"word":"bautiful","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(eautiful)(:?$|[^a-zA-Z]+))"},
-    {"word":"benifit","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(benifit)(:?$|[^a-zA-Z]+))"}
-
+    {"word":"benifit","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(benifit)(:?$|[^a-zA-Z]+))"},
+    {"word":"benifits","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(benifits)(:?$|[^a-zA-Z]+))"},
+    {"word":"betrayel","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(betrayel)(:?$|[^a-zA-Z]+))"},
+    {"word":"beter","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(beter)(:?$|[^a-zA-Z]+))"},
+    {"word":"beetch","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(beetch)(:?$|[^a-zA-Z]+))"},
+    {"word":"beetches","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(beetches)(:?$|[^a-zA-Z]+))"},
+    {"word":"bizare","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bizare)(:?$|[^a-zA-Z]+))"},
+    {"word":"bles","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bles)(:?$|[^a-zA-Z]+))"},
+    {"word":"blis","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(blis)(:?$|[^a-zA-Z]+))"}
 
   ]
 }
