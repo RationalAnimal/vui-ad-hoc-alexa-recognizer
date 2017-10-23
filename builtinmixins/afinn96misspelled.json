@@ -183,6 +183,17 @@
     {"word":"chalenge","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chalenge)(:?$|[^a-zA-Z]+))"},
     {"word":"chear","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chear)(:?$|[^a-zA-Z]+))"},
     {"word":"cheerfull","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cheerfull)(:?$|[^a-zA-Z]+))"},
-    {"word":"chears","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chears)(:?$|[^a-zA-Z]+))"}
+    {"word":"chears","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chears)(:?$|[^a-zA-Z]+))"},
+    {"word":"cheary","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cheary)(:?$|[^a-zA-Z]+))"},
+    {"word":"chiling","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chiling)(:?$|[^a-zA-Z]+))"},
+    {"word":"cleen","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cleen)(:?$|[^a-zA-Z]+))"},
+    {"word":"cleaner","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cleaner)(:?$|[^a-zA-Z]+))"},
+    {"word":"cleer","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cleer)(:?$|[^a-zA-Z]+))"},
+    {"word":"chanse","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chanse)(:?$|[^a-zA-Z]+))"},
+    {"word":"chances","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chances)(:?$|[^a-zA-Z]+))"},
+    {"word":"kaos","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(kaos)(:?$|[^a-zA-Z]+))"},
+    {"word":"kaotic","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(kaotic)(:?$|[^a-zA-Z]+))"},
+    {"word":"caos","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(caos)(:?$|[^a-zA-Z]+))"},
+    {"word":"caotic","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(caotic)(:?$|[^a-zA-Z]+))"}
   ]
 }
