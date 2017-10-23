@@ -246,7 +246,18 @@
     {"word":"cortesy","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cortesy)(:?$|[^a-zA-Z]+))"},
     {"word":"cover up","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cover\\s+up)(:?$|[^a-zA-Z]+))"},
     {"word":"cosiness","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cosiness)(:?$|[^a-zA-Z]+))"},
-    {"word":"crasy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(crasy)(:?$|[^a-zA-Z]+))"}
+    {"word":"crasy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(crasy)(:?$|[^a-zA-Z]+))"},
+    {"word":"cryed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cryed)(:?$|[^a-zA-Z]+))"},
+    {"word":"crimenal","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(crimenal)(:?$|[^a-zA-Z]+))"},
+    {"word":"crimenals","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(crimenals)(:?$|[^a-zA-Z]+))"},
+    {"word":"critisize","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(critisize)(:?$|[^a-zA-Z]+))"},
+    {"word":"critisized","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(critisized)(:?$|[^a-zA-Z]+))"},
+    {"word":"critisizes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(critisizes)(:?$|[^a-zA-Z]+))"},
+    {"word":"critisizing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(critisizing)(:?$|[^a-zA-Z]+))"},
+    {"word":"criticise","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(criticise)(:?$|[^a-zA-Z]+))"},
+    {"word":"criticised","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(criticised)(:?$|[^a-zA-Z]+))"},
+    {"word":"criticises","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(criticises)(:?$|[^a-zA-Z]+))"},
+    {"word":"criticising","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(criticising)(:?$|[^a-zA-Z]+))"}
 
 
 
