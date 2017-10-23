@@ -156,8 +156,19 @@
     {"word":"bulied","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bulied)(:?$|[^a-zA-Z]+))"},
     {"word":"buly","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(buly)(:?$|[^a-zA-Z]+))"},
     {"word":"bulying","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bulying)(:?$|[^a-zA-Z]+))"},
-
-
-
+    {"word":"bumer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bumer)(:?$|[^a-zA-Z]+))"},
+    {"word":"bommer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bommer)(:?$|[^a-zA-Z]+))"},
+    {"word":"cam","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cam)(:?$|[^a-zA-Z]+))"},
+    {"word":"camed","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(camed)(:?$|[^a-zA-Z]+))"},
+    {"word":"caming","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(caming)(:?$|[^a-zA-Z]+))"},
+    {"word":"cams","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cams)(:?$|[^a-zA-Z]+))"},
+    {"word":"cant stand","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cant\\s+stand)(:?$|[^a-zA-Z]+))"},
+    {"word":"can not stand","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(can\\s+not\\s+stand)(:?$|[^a-zA-Z]+))"},
+    {"word":"cear","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cear)(:?$|[^a-zA-Z]+))"},
+    {"word":"care free","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(care\\s+free)(:?$|[^a-zA-Z]+))"},
+    {"word":"carefull","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(carefull)(:?$|[^a-zA-Z]+))"},
+    {"word":"carefuly","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(carefuly)(:?$|[^a-zA-Z]+))"},
+    {"word":"cears","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cears)(:?$|[^a-zA-Z]+))"},
+    {"word":"catastrofic","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(catastrofic)(:?$|[^a-zA-Z]+))"}
   ]
 }
