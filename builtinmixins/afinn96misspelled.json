@@ -194,6 +194,16 @@
     {"word":"kaos","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(kaos)(:?$|[^a-zA-Z]+))"},
     {"word":"kaotic","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(kaotic)(:?$|[^a-zA-Z]+))"},
     {"word":"caos","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(caos)(:?$|[^a-zA-Z]+))"},
-    {"word":"caotic","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(caotic)(:?$|[^a-zA-Z]+))"}
+    {"word":"caotic","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(caotic)(:?$|[^a-zA-Z]+))"},
+    {"word":"cheet","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cheet)(:?$|[^a-zA-Z]+))"},
+    {"word":"cheeter","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cheeter)(:?$|[^a-zA-Z]+))"},
+    {"word":"cheeters","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cheaeers)(:?$|[^a-zA-Z]+))"},
+    {"word":"cheets","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cheets)(:?$|[^a-zA-Z]+))"},
+    {"word":"cheated","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cheated)(:?$|[^a-zA-Z]+))"},
+    {"word":"chear","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chear)(:?$|[^a-zA-Z]+))"},
+    {"word":"chears","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(chears)(:?$|[^a-zA-Z]+))"},
+    {"word":"cheared","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(cheared)(:?$|[^a-zA-Z]+))"},
+    {"word":"clue less","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(clue\\s+less)(:?$|[^a-zA-Z]+))"}
+
   ]
 }
