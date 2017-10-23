@@ -145,7 +145,18 @@
     {"word":"boycot","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(boycot)(:?$|[^a-zA-Z]+))"},
     {"word":"boycots","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(boycots)(:?$|[^a-zA-Z]+))"},
     {"word":"boycoted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(boycoted)(:?$|[^a-zA-Z]+))"},
-    {"word":"boycoting","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(boycoting)(:?$|[^a-zA-Z]+))"}
+    {"word":"boycoting","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(boycoting)(:?$|[^a-zA-Z]+))"},
+    {"word":"brain washing","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(brain\\s+washing)(:?$|[^a-zA-Z]+))"},
+    {"word":"braiv","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(braiv)(:?$|[^a-zA-Z]+))"},
+    {"word":"breath taking","score":5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(breath\\s+taking)(:?$|[^a-zA-Z]+))"},
+    {"word":"break through","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(break\\s+through)(:?$|[^a-zA-Z]+))"},
+    {"word":"briliant","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(briliant)(:?$|[^a-zA-Z]+))"},
+    {"word":"brok","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(brok)(:?$|[^a-zA-Z]+))"},
+    {"word":"bull shit","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bull\\s+shit)(:?$|[^a-zA-Z]+))"},
+    {"word":"bulied","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bulied)(:?$|[^a-zA-Z]+))"},
+    {"word":"buly","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(buly)(:?$|[^a-zA-Z]+))"},
+    {"word":"bulying","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bulying)(:?$|[^a-zA-Z]+))"},
+
 
 
   ]
