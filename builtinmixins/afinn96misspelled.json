@@ -268,9 +268,18 @@
     {"word":"dead lock","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dead\\s+lock)(:?$|[^a-zA-Z]+))"},
     {"word":"deerly","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deerly)(:?$|[^a-zA-Z]+))"},
     {"word":"defening","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(defening)(:?$|[^a-zA-Z]+))"},
-    {"word":"det","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(det)(:?$|[^a-zA-Z]+))"}
-
-
+    {"word":"det","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(det)(:?$|[^a-zA-Z]+))"},
+    {"word":"deseive","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deseive)(:?$|[^a-zA-Z]+))"},
+    {"word":"deseived","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deseived)(:?$|[^a-zA-Z]+))"},
+    {"word":"deseives","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deseives)(:?$|[^a-zA-Z]+))"},
+    {"word":"deseiving","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deseiving)(:?$|[^a-zA-Z]+))"},
+    {"word":"deseption","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deseption)(:?$|[^a-zA-Z]+))"},
+    {"word":"difect","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(difect)(:?$|[^a-zA-Z]+))"},
+    {"word":"difects","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(difects)(:?$|[^a-zA-Z]+))"},
+    {"word":"difender","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(difender)(:?$|[^a-zA-Z]+))"},
+    {"word":"difenders","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(iefenders)(:?$|[^a-zA-Z]+))"},
+    {"word":"deferr","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deferr)(:?$|[^a-zA-Z]+))"},
+    {"word":"deferring","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deferring)(:?$|[^a-zA-Z]+))"}
 
 
 
