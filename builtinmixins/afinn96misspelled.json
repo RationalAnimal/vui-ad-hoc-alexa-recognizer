@@ -401,8 +401,21 @@
     {"word":"exausted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exausted)(:?$|[^a-zA-Z]+))"},
     {"word":"exosted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exosted)(:?$|[^a-zA-Z]+))"},
     {"word":"expeled","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(expeled)(:?$|[^a-zA-Z]+))"},
-    {"word":"expeling","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(expeling)(:?$|[^a-zA-Z]+))"}
-
+    {"word":"expeling","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(expeling)(:?$|[^a-zA-Z]+))"},
+    {"word":"expoze","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(expoze)(:?$|[^a-zA-Z]+))"},
+    {"word":"expozed","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(expozed)(:?$|[^a-zA-Z]+))"},
+    {"word":"expozes","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(expozes)(:?$|[^a-zA-Z]+))"},
+    {"word":"expozing","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(expozing)(:?$|[^a-zA-Z]+))"},
+    {"word":"fabulos","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fabulos)(:?$|[^a-zA-Z]+))"},
+    {"word":"facinate","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(facinate)(:?$|[^a-zA-Z]+))"},
+    {"word":"facinated","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(facinated)(:?$|[^a-zA-Z]+))"},
+    {"word":"facinating","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(facinating)(:?$|[^a-zA-Z]+))"},
+    {"word":"fagot","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fagot)(:?$|[^a-zA-Z]+))"},
+    {"word":"fagots","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fagots)(:?$|[^a-zA-Z]+))"},
+    {"word":"faik","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(faik)(:?$|[^a-zA-Z]+))"},
+    {"word":"faling","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(faling)(:?$|[^a-zA-Z]+))"},
+    {"word":"falcify","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(falcify)(:?$|[^a-zA-Z]+))"},
+    {"word":"falcified","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(falcified)(:?$|[^a-zA-Z]+))"}
 
 
   ]
