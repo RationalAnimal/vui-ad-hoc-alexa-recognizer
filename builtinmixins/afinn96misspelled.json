@@ -393,7 +393,15 @@
     {"word":"exagerate","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exagerate)(:?$|[^a-zA-Z]+))"},
     {"word":"exagerated","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exagerated)(:?$|[^a-zA-Z]+))"},
     {"word":"exagerates","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exagerates)(:?$|[^a-zA-Z]+))"},
-    {"word":"exagerating","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exagerating)(:?$|[^a-zA-Z]+))"}
+    {"word":"exagerating","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exagerating)(:?$|[^a-zA-Z]+))"},
+    {"word":"excelence","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(excelence)(:?$|[^a-zA-Z]+))"},
+    {"word":"excelent","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(excelent)(:?$|[^a-zA-Z]+))"},
+    {"word":"exitement","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exitement)(:?$|[^a-zA-Z]+))"},
+    {"word":"excuze","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(excuze)(:?$|[^a-zA-Z]+))"},
+    {"word":"exausted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exausted)(:?$|[^a-zA-Z]+))"},
+    {"word":"exosted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exosted)(:?$|[^a-zA-Z]+))"},
+    {"word":"expeled","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(expeled)(:?$|[^a-zA-Z]+))"},
+    {"word":"expeling","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(expeling)(:?$|[^a-zA-Z]+))"}
 
 
 
