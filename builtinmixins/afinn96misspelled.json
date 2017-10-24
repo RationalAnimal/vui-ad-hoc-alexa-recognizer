@@ -355,11 +355,36 @@
     {"word":"dreems","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dreems)(:?$|[^a-zA-Z]+))"},
     {"word":"droun","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(droun)(:?$|[^a-zA-Z]+))"},
     {"word":"drouned","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(drouned)(:?$|[^a-zA-Z]+))"},
-    {"word":"drouns","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(drouns)(:?$|[^a-zA-Z]+))"}
-
-
-
-
+    {"word":"drouns","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(drouns)(:?$|[^a-zA-Z]+))"},
+    {"word":"dubius","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dubius)(:?$|[^a-zA-Z]+))"},
+    {"word":"dum","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dum)(:?$|[^a-zA-Z]+))"},
+    {"word":"disfunction","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disfunction)(:?$|[^a-zA-Z]+))"},
+    {"word":"eeger","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(eeger)(:?$|[^a-zA-Z]+))"},
+    {"word":"eese","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(eese)(:?$|[^a-zA-Z]+))"},
+    {"word":"eaze","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(eaze)(:?$|[^a-zA-Z]+))"},
+    {"word":"earie","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(earie)(:?$|[^a-zA-Z]+))"},
+    {"word":"efective","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(efective)(:?$|[^a-zA-Z]+))"},
+    {"word":"efectively","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(efectively)(:?$|[^a-zA-Z]+))"},
+    {"word":"embarass","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embarass)(:?$|[^a-zA-Z]+))"},
+    {"word":"embarassed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embarassed)(:?$|[^a-zA-Z]+))"},
+    {"word":"embarasses","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embarasses)(:?$|[^a-zA-Z]+))"},
+    {"word":"embarassing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embarassing)(:?$|[^a-zA-Z]+))"},
+    {"word":"embarras","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embarras)(:?$|[^a-zA-Z]+))"},
+    {"word":"embarrased","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embarrased)(:?$|[^a-zA-Z]+))"},
+    {"word":"embarrases","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embarrases)(:?$|[^a-zA-Z]+))"},
+    {"word":"embarrasing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embarrasing)(:?$|[^a-zA-Z]+))"},
+    {"word":"embaras","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embaras)(:?$|[^a-zA-Z]+))"},
+    {"word":"embarased","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embarased)(:?$|[^a-zA-Z]+))"},
+    {"word":"embarases","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embarases)(:?$|[^a-zA-Z]+))"},
+    {"word":"embarasing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embarasing)(:?$|[^a-zA-Z]+))"},
+    {"word":"embrase","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(embrase)(:?$|[^a-zA-Z]+))"},
+    {"word":"emergensy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(emergensy)(:?$|[^a-zA-Z]+))"},
+    {"word":"encorage","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(encorage)(:?$|[^a-zA-Z]+))"},
+    {"word":"encorages","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(encorages)(:?$|[^a-zA-Z]+))"},
+    {"word":"encoraged","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(encoraged)(:?$|[^a-zA-Z]+))"},
+    {"word":"encurage","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(encurage)(:?$|[^a-zA-Z]+))"},
+    {"word":"encurages","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(encurages)(:?$|[^a-zA-Z]+))"},
+    {"word":"encuraged","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(encuraged)(:?$|[^a-zA-Z]+))"}
 
 
   ]
