@@ -307,7 +307,18 @@
     {"word":"detaned","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(detaned)(:?$|[^a-zA-Z]+))"},
     {"word":"detension","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(detension)(:?$|[^a-zA-Z]+))"},
     {"word":"dick head","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dick\\s+head)(:?$|[^a-zA-Z]+))"},
-    {"word":"dificult","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dificult)(:?$|[^a-zA-Z]+))"}
+    {"word":"dificult","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dificult)(:?$|[^a-zA-Z]+))"},
+    {"word":"dilema","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dilema)(:?$|[^a-zA-Z]+))"},
+    {"word":"disapear","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapear)(:?$|[^a-zA-Z]+))"},
+    {"word":"disapears","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapears)(:?$|[^a-zA-Z]+))"},
+    {"word":"disapeared","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapeared)(:?$|[^a-zA-Z]+))"},
+    {"word":"disapoint","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapoint)(:?$|[^a-zA-Z]+))"},
+    {"word":"disapointed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapointed)(:?$|[^a-zA-Z]+))"},
+    {"word":"disapointing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapointing)(:?$|[^a-zA-Z]+))"},
+    {"word":"disapointment","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapointment)(:?$|[^a-zA-Z]+))"},
+    {"word":"disapointments","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapointments)(:?$|[^a-zA-Z]+))"},
+    {"word":"disapoints","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapoints)(:?$|[^a-zA-Z]+))"}
+
 
 
 
