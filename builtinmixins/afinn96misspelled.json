@@ -317,7 +317,19 @@
     {"word":"disapointing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapointing)(:?$|[^a-zA-Z]+))"},
     {"word":"disapointment","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapointment)(:?$|[^a-zA-Z]+))"},
     {"word":"disapointments","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapointments)(:?$|[^a-zA-Z]+))"},
-    {"word":"disapoints","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapoints)(:?$|[^a-zA-Z]+))"}
+    {"word":"disapoints","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(disapoints)(:?$|[^a-zA-Z]+))"},
+    {"word":"dizaster","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dizaster)(:?$|[^a-zA-Z]+))"},
+    {"word":"dizasters","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dizasters)(:?$|[^a-zA-Z]+))"},
+    {"word":"dizastrous","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dizastrous)(:?$|[^a-zA-Z]+))"},
+    {"word":"descord","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(descord)(:?$|[^a-zA-Z]+))"},
+    {"word":"desgust","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(desgust)(:?$|[^a-zA-Z]+))"},
+    {"word":"desgusting","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(desgusting)(:?$|[^a-zA-Z]+))"},
+    {"word":"deshonest","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(deshonest)(:?$|[^a-zA-Z]+))"},
+    {"word":"desmayed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(desmayed)(:?$|[^a-zA-Z]+))"},
+    {"word":"despute","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(despute)(:?$|[^a-zA-Z]+))"},
+    {"word":"desputed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(desputed)(:?$|[^a-zA-Z]+))"},
+    {"word":"desputes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(desputes)(:?$|[^a-zA-Z]+))"},
+    {"word":"desputing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(desputing)(:?$|[^a-zA-Z]+))"}
 
 
 
