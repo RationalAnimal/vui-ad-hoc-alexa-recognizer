@@ -384,7 +384,17 @@
     {"word":"encoraged","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(encoraged)(:?$|[^a-zA-Z]+))"},
     {"word":"encurage","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(encurage)(:?$|[^a-zA-Z]+))"},
     {"word":"encurages","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(encurages)(:?$|[^a-zA-Z]+))"},
-    {"word":"encuraged","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(encuraged)(:?$|[^a-zA-Z]+))"}
+    {"word":"encuraged","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(encuraged)(:?$|[^a-zA-Z]+))"},
+    {"word":"enlitening","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(enlitening)(:?$|[^a-zA-Z]+))"},
+    {"word":"inslave","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inslave)(:?$|[^a-zA-Z]+))"},
+    {"word":"inslaved","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inslaved)(:?$|[^a-zA-Z]+))"},
+    {"word":"inslaves","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inslaves)(:?$|[^a-zA-Z]+))"},
+    {"word":"envys","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(envys)(:?$|[^a-zA-Z]+))"},
+    {"word":"exagerate","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exagerate)(:?$|[^a-zA-Z]+))"},
+    {"word":"exagerated","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exagerated)(:?$|[^a-zA-Z]+))"},
+    {"word":"exagerates","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exagerates)(:?$|[^a-zA-Z]+))"},
+    {"word":"exagerating","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(exagerating)(:?$|[^a-zA-Z]+))"}
+
 
 
   ]
