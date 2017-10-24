@@ -429,7 +429,7 @@
     {"word":"distorted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(distorted)(:?$|[^a-zA-Z]+))"},
     {"word":"distorting","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(distorting)(:?$|[^a-zA-Z]+))"},
     {"word":"distorts","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(distorts)(:?$|[^a-zA-Z]+))"},
-    {"word":"dissy","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dissy)(:?$|[^a-zA-Z]+))"},
+    {"word":"dizzy","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(dizzy)(:?$|[^a-zA-Z]+))"},
     {"word":"distract","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(distract)(:?$|[^a-zA-Z]+))"},
     {"word":"distracted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(distracted)(:?$|[^a-zA-Z]+))"},
     {"word":"distracts","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(distracts)(:?$|[^a-zA-Z]+))"},
