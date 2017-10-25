@@ -466,7 +466,14 @@
     {"word":"gros","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(gros)(:?$|[^a-zA-Z]+))"},
     {"word":"hapiness","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hapiness)(:?$|[^a-zA-Z]+))"},
     {"word":"hapy","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hapy)(:?$|[^a-zA-Z]+))"},
-    {"word":"harmfull","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(harmfull)(:?$|[^a-zA-Z]+))"}
+    {"word":"harmfull","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(harmfull)(:?$|[^a-zA-Z]+))"},
+    {"word":"highlite","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(highlite)(:?$|[^a-zA-Z]+))"},
+    {"word":"hopefull","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hopefull)(:?$|[^a-zA-Z]+))"},
+    {"word":"hopeles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hopeles)(:?$|[^a-zA-Z]+))"},
+    {"word":"hopelesness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hopelesness)(:?$|[^a-zA-Z]+))"},
+    {"word":"horible","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(horible)(:?$|[^a-zA-Z]+))"},
+    {"word":"horific","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(horific)(:?$|[^a-zA-Z]+))"}
+
 
 
 
