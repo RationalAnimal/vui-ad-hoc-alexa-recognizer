@@ -444,7 +444,16 @@
     {"word":"frodulent","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(frodulent)(:?$|[^a-zA-Z]+))"},
     {"word":"frensy","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(frensy)(:?$|[^a-zA-Z]+))"},
     {"word":"frendly","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(frendly)(:?$|[^a-zA-Z]+))"},
-    {"word":"fritened","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fritened)(:?$|[^a-zA-Z]+))"}
+    {"word":"fritened","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fritened)(:?$|[^a-zA-Z]+))"},
+    {"word":"fulfil","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fulfil)(:?$|[^a-zA-Z]+))"},
+    {"word":"fulfiled","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fulfiled)(:?$|[^a-zA-Z]+))"},
+    {"word":"fulfils","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fulfils)(:?$|[^a-zA-Z]+))"},
+    {"word":"funy","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(funy)(:?$|[^a-zA-Z]+))"},
+    {"word":"furios","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(furios)(:?$|[^a-zA-Z]+))"},
+    {"word":"hale","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hale)(:?$|[^a-zA-Z]+))"},
+    {"word":"haled","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(haled)(:?$|[^a-zA-Z]+))"},
+    {"word":"helples","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(helples)(:?$|[^a-zA-Z]+))"},
+    {"word":"helps","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(helps)(:?$|[^a-zA-Z]+))"}
 
 
 
