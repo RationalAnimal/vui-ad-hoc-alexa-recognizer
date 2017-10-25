@@ -425,7 +425,16 @@
     {"word":"favours","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(favours)(:?$|[^a-zA-Z]+))"},
     {"word":"favourite","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(favourite)(:?$|[^a-zA-Z]+))"},
     {"word":"favourites","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(favourites)(:?$|[^a-zA-Z]+))"},
-    {"word":"favourited","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(favourited)(:?$|[^a-zA-Z]+))"}
+    {"word":"favourited","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(favourited)(:?$|[^a-zA-Z]+))"},
+    {"word":"feer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(feer)(:?$|[^a-zA-Z]+))"},
+    {"word":"feerful","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(feerful)(:?$|[^a-zA-Z]+))"},
+    {"word":"fearfull","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fearfull)(:?$|[^a-zA-Z]+))"},
+    {"word":"fearles","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fearles)(:?$|[^a-zA-Z]+))"},
+    {"word":"fedup","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fedup)(:?$|[^a-zA-Z]+))"},
+    {"word":"feebel","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(feebel)(:?$|[^a-zA-Z]+))"},
+    {"word":"felanies","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(felanies)(:?$|[^a-zA-Z]+))"},
+    {"word":"fite","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fite)(:?$|[^a-zA-Z]+))"}
+
 
 
 
