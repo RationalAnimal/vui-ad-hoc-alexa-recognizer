@@ -476,7 +476,16 @@
     {"word":"hugz","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hugz)(:?$|[^a-zA-Z]+))"},
     {"word":"hukster","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(huckster)(:?$|[^a-zA-Z]+))"},
     {"word":"humerous","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(humerous)(:?$|[^a-zA-Z]+))"},
-    {"word":"hurah","score":5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hurah)(:?$|[^a-zA-Z]+))"}
+    {"word":"hurah","score":5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hurah)(:?$|[^a-zA-Z]+))"},
+    {"word":"histeria","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(histeria)(:?$|[^a-zA-Z]+))"},
+    {"word":"grouth","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(grouth)(:?$|[^a-zA-Z]+))"},
+    {"word":"ignorence","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ignorence)(:?$|[^a-zA-Z]+))"},
+    {"word":"ilegal","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ilegal)(:?$|[^a-zA-Z]+))"},
+    {"word":"illigal","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(illigal)(:?$|[^a-zA-Z]+))"},
+    {"word":"iliteracy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(iliteracy)(:?$|[^a-zA-Z]+))"},
+    {"word":"ilness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ilness)(:?$|[^a-zA-Z]+))"},
+    {"word":"ilnesses","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ilnesses)(:?$|[^a-zA-Z]+))"}
+
 
 
 
