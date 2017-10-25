@@ -437,8 +437,14 @@
     {"word":"fitnes","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fitnes)(:?$|[^a-zA-Z]+))"},
     {"word":"flag ship","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(flag\\s+ship)(:?$|[^a-zA-Z]+))"},
     {"word":"forgetfull","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(forgetfull)(:?$|[^a-zA-Z]+))"},
-    {"word":"forgoten","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(forgoten)(:?$|[^a-zA-Z]+))"}
-
+    {"word":"forgoten","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(forgoten)(:?$|[^a-zA-Z]+))"},
+    {"word":"frod","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(frod)(:?$|[^a-zA-Z]+))"},
+    {"word":"frodster","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(frodster)(:?$|[^a-zA-Z]+))"},
+    {"word":"frodsters","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(frodsters)(:?$|[^a-zA-Z]+))"},
+    {"word":"frodulent","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(frodulent)(:?$|[^a-zA-Z]+))"},
+    {"word":"frensy","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(frensy)(:?$|[^a-zA-Z]+))"},
+    {"word":"frendly","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(frendly)(:?$|[^a-zA-Z]+))"},
+    {"word":"fritened","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fritened)(:?$|[^a-zA-Z]+))"}
 
 
 
