@@ -433,7 +433,12 @@
     {"word":"fedup","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fedup)(:?$|[^a-zA-Z]+))"},
     {"word":"feebel","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(feebel)(:?$|[^a-zA-Z]+))"},
     {"word":"felanies","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(felanies)(:?$|[^a-zA-Z]+))"},
-    {"word":"fite","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fite)(:?$|[^a-zA-Z]+))"}
+    {"word":"fite","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fite)(:?$|[^a-zA-Z]+))"},
+    {"word":"fitnes","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fitnes)(:?$|[^a-zA-Z]+))"},
+    {"word":"flag ship","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(flag\\s+ship)(:?$|[^a-zA-Z]+))"},
+    {"word":"forgetfull","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(forgetfull)(:?$|[^a-zA-Z]+))"},
+    {"word":"forgoten","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(forgoten)(:?$|[^a-zA-Z]+))"}
+
 
 
 
