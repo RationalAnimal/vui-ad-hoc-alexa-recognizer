@@ -116,7 +116,7 @@
     {"word":"atracts","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atracts)(:?$|[^a-zA-Z]+))"},
     {"word":"atracting","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atracting)(:?$|[^a-zA-Z]+))"},
     {"word":"atraction","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atraction)(:?$|[^a-zA-Z]+))"},
-    {"word":"atractions","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atractions)(:?$|[^a-zA-Z]+))"}
+    {"word":"atractions","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(atractions)(:?$|[^a-zA-Z]+))"},
     {"word":"osome","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(osome)(:?$|[^a-zA-Z]+))"},
     {"word":"oful","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(oful)(:?$|[^a-zA-Z]+))"},
     {"word":"bamboosle","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(bamboosle)(:?$|[^a-zA-Z]+))"},
@@ -453,7 +453,16 @@
     {"word":"hale","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hale)(:?$|[^a-zA-Z]+))"},
     {"word":"haled","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(haled)(:?$|[^a-zA-Z]+))"},
     {"word":"helples","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(helples)(:?$|[^a-zA-Z]+))"},
-    {"word":"helps","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(helps)(:?$|[^a-zA-Z]+))"}
+    {"word":"gane","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(gane)(:?$|[^a-zA-Z]+))"},
+    {"word":"ganed","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ganed)(:?$|[^a-zA-Z]+))"},
+    {"word":"ganing","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ganing)(:?$|[^a-zA-Z]+))"},
+    {"word":"ganes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ganes)(:?$|[^a-zA-Z]+))"},
+    {"word":"gost","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(gost)(:?$|[^a-zA-Z]+))"},
+    {"word":"glorius","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(glorius)(:?$|[^a-zA-Z]+))"},
+    {"word":"god damn","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(god\\s+damn)(:?$|[^a-zA-Z]+))"},
+    {"word":"graic","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(graic)(:?$|[^a-zA-Z]+))"},
+    {"word":"gratefull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(gratefull)(:?$|[^a-zA-Z]+))"}
+
 
 
 
