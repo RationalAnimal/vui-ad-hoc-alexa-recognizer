@@ -415,7 +415,18 @@
     {"word":"faik","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(faik)(:?$|[^a-zA-Z]+))"},
     {"word":"faling","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(faling)(:?$|[^a-zA-Z]+))"},
     {"word":"falcify","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(falcify)(:?$|[^a-zA-Z]+))"},
-    {"word":"falcified","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(falcified)(:?$|[^a-zA-Z]+))"}
+    {"word":"falcified","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(falcified)(:?$|[^a-zA-Z]+))"},
+    {"word":"faim","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(faim)(:?$|[^a-zA-Z]+))"},
+    {"word":"funtastic","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(funtastic)(:?$|[^a-zA-Z]+))"},
+    {"word":"farse","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(farse)(:?$|[^a-zA-Z]+))"},
+    {"word":"fashist","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fashist)(:?$|[^a-zA-Z]+))"},
+    {"word":"fashists","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(fashists)(:?$|[^a-zA-Z]+))"},
+    {"word":"favour","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(favour)(:?$|[^a-zA-Z]+))"},
+    {"word":"favours","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(favours)(:?$|[^a-zA-Z]+))"},
+    {"word":"favourite","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(favourite)(:?$|[^a-zA-Z]+))"},
+    {"word":"favourites","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(favourites)(:?$|[^a-zA-Z]+))"},
+    {"word":"favourited","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(favourited)(:?$|[^a-zA-Z]+))"}
+
 
 
   ]
