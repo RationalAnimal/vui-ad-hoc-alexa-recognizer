@@ -717,7 +717,7 @@
     {"word":"hugs","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hugs)(:?$|[^a-zA-Z]+))"},
     {"word":"huge","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(huge)(:?$|[^a-zA-Z]+))"},
     {"word":"huckster","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(huckster)(:?$|[^a-zA-Z]+))"},
-    {"word":"humerous","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(humerous)(:?$|[^a-zA-Z]+))"},
+    {"word":"humorous","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(humorous)(:?$|[^a-zA-Z]+))"},
     {"word":"humor","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(humor)(:?$|[^a-zA-Z]+))"},
     {"word":"humour","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(humour)(:?$|[^a-zA-Z]+))"},
     {"word":"hurrah","score":5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hurrah)(:?$|[^a-zA-Z]+))"},

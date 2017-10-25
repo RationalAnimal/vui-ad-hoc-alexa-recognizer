@@ -472,7 +472,11 @@
     {"word":"hopeles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hopeles)(:?$|[^a-zA-Z]+))"},
     {"word":"hopelesness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hopelesness)(:?$|[^a-zA-Z]+))"},
     {"word":"horible","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(horible)(:?$|[^a-zA-Z]+))"},
-    {"word":"horific","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(horific)(:?$|[^a-zA-Z]+))"}
+    {"word":"horific","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(horific)(:?$|[^a-zA-Z]+))"},
+    {"word":"hugz","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hugz)(:?$|[^a-zA-Z]+))"},
+    {"word":"hukster","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(huckster)(:?$|[^a-zA-Z]+))"},
+    {"word":"humerous","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(humerous)(:?$|[^a-zA-Z]+))"},
+    {"word":"hurah","score":5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hurah)(:?$|[^a-zA-Z]+))"}
 
 
 
