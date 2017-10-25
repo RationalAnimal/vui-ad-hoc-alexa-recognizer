@@ -460,8 +460,13 @@
     {"word":"gost","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(gost)(:?$|[^a-zA-Z]+))"},
     {"word":"glorius","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(glorius)(:?$|[^a-zA-Z]+))"},
     {"word":"god damn","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(god\\s+damn)(:?$|[^a-zA-Z]+))"},
-    {"word":"graic","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(graic)(:?$|[^a-zA-Z]+))"},
-    {"word":"gratefull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(gratefull)(:?$|[^a-zA-Z]+))"}
+    {"word":"grais","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(grais)(:?$|[^a-zA-Z]+))"},
+    {"word":"gratefull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(gratefull)(:?$|[^a-zA-Z]+))"},
+    {"word":"great","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(great)(:?$|[^a-zA-Z]+))"},
+    {"word":"gros","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(gros)(:?$|[^a-zA-Z]+))"},
+    {"word":"hapiness","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hapiness)(:?$|[^a-zA-Z]+))"},
+    {"word":"hapy","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hapy)(:?$|[^a-zA-Z]+))"},
+    {"word":"harmfull","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(harmfull)(:?$|[^a-zA-Z]+))"}
 
 
 
