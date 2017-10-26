@@ -2775,6 +2775,28 @@
       "synonyms":[
         {"fitRating":0.95, "values":["raise","rays","raze"]}
       ]
+    },
+
+
+
+    {
+      "words":["raiser","razer"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["raiser","razer"]},
+        {"fitRating":0.9, "values":["razor"]}
+      ]
+    },
+    {
+      "words":["razor"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["raiser","razer"]}
+      ]
+    },
+    {
+      "words":["rap","wrap"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["rap","wrap"]}
+      ]
     }
 
 
