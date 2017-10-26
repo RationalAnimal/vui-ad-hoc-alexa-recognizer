@@ -507,7 +507,15 @@
     {"word":"inefectively","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inefectively)(:?$|[^a-zA-Z]+))"},
     {"word":"inovate","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inovate)(:?$|[^a-zA-Z]+))"},
     {"word":"inovates","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inovates)(:?$|[^a-zA-Z]+))"},
-    {"word":"inovation","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inovation)(:?$|[^a-zA-Z]+))"}
+    {"word":"inovation","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inovation)(:?$|[^a-zA-Z]+))"},
+    {"word":"incensitivity","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(incensitivity)(:?$|[^a-zA-Z]+))"},
+    {"word":"incipid","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(incipid)(:?$|[^a-zA-Z]+))"},
+    {"word":"insperation","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(insperation)(:?$|[^a-zA-Z]+))"},
+    {"word":"insperational","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(insperational)(:?$|[^a-zA-Z]+))"},
+    {"word":"inspere","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inspere)(:?$|[^a-zA-Z]+))"},
+    {"word":"insperes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(insperes)(:?$|[^a-zA-Z]+))"},
+    {"word":"inspering","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inspering)(:?$|[^a-zA-Z]+))"}
+
 
 
 
