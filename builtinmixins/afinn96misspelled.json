@@ -484,7 +484,16 @@
     {"word":"illigal","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(illigal)(:?$|[^a-zA-Z]+))"},
     {"word":"iliteracy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(iliteracy)(:?$|[^a-zA-Z]+))"},
     {"word":"ilness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ilness)(:?$|[^a-zA-Z]+))"},
-    {"word":"ilnesses","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ilnesses)(:?$|[^a-zA-Z]+))"}
+    {"word":"ilnesses","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ilnesses)(:?$|[^a-zA-Z]+))"},
+    {"word":"impoze","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impoze)(:?$|[^a-zA-Z]+))"},
+    {"word":"impozed","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impozed)(:?$|[^a-zA-Z]+))"},
+    {"word":"impozes","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impozes)(:?$|[^a-zA-Z]+))"},
+    {"word":"impozing","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impozing)(:?$|[^a-zA-Z]+))"},
+    {"word":"impres","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impres)(:?$|[^a-zA-Z]+))"},
+    {"word":"impresed","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impresed)(:?$|[^a-zA-Z]+))"},
+    {"word":"impreses","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impreses)(:?$|[^a-zA-Z]+))"},
+    {"word":"impresive","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impresive)(:?$|[^a-zA-Z]+))"}
+
 
 
 
