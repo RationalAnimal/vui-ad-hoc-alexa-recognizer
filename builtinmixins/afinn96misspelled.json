@@ -560,7 +560,11 @@
     {"word":"niglect","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(niglect)(:?$|[^a-zA-Z]+))"},
     {"word":"niglected","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(niglected)(:?$|[^a-zA-Z]+))"},
     {"word":"niglecting","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(niglecting)(:?$|[^a-zA-Z]+))"},
-    {"word":"niglects","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(niglects)(:?$|[^a-zA-Z]+))"}
+    {"word":"niglects","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(niglects)(:?$|[^a-zA-Z]+))"},
+    {"word":"nervos","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(nervos)(:?$|[^a-zA-Z]+))"},
+    {"word":"non sense","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(non\\s+sense)(:?$|[^a-zA-Z]+))"},
+    {"word":"obliterete","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(obliterete)(:?$|[^a-zA-Z]+))"},
+    {"word":"oblitereted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(oblitereted)(:?$|[^a-zA-Z]+))"}
 
 
 
