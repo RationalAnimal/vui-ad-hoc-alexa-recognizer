@@ -581,13 +581,21 @@
     {"word":"oportunity","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(oportunity)(:?$|[^a-zA-Z]+))"},
     {"word":"oportunities","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(oportunities)(:?$|[^a-zA-Z]+))"},
     {"word":"optimizm","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(optimizm)(:?$|[^a-zA-Z]+))"},
-
     {"word":"out reach","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(out\\s+reach)(:?$|[^a-zA-Z]+))"},
     {"word":"out standing","score":5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(out\\s+standing)(:?$|[^a-zA-Z]+))"},
     {"word":"over load","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+load)(:?$|[^a-zA-Z]+))"},
     {"word":"over react","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+react)(:?$|[^a-zA-Z]+))"},
     {"word":"over reacts","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+reacts)(:?$|[^a-zA-Z]+))"},
-    {"word":"over reacted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+reacted)(:?$|[^a-zA-Z]+))"}
+    {"word":"over reacted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+reacted)(:?$|[^a-zA-Z]+))"},
+    {"word":"over sell","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+sell)(:?$|[^a-zA-Z]+))"},
+    {"word":"over selling","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+selling)(:?$|[^a-zA-Z]+))"},
+    {"word":"over sells","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+sells)(:?$|[^a-zA-Z]+))"},
+    {"word":"over simplification","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+simplification)(:?$|[^a-zA-Z]+))"},
+    {"word":"over simplified","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+simplified)(:?$|[^a-zA-Z]+))"},
+    {"word":"over simplifies","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+simplifies)(:?$|[^a-zA-Z]+))"},
+    {"word":"over simplify","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+simplify)(:?$|[^a-zA-Z]+))"},
+    {"word":"over weight","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+weight)(:?$|[^a-zA-Z]+))"}
+
 
 
 
