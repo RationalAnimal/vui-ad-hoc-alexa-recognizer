@@ -2776,9 +2776,6 @@
         {"fitRating":0.95, "values":["raise","rays","raze"]}
       ]
     },
-
-
-
     {
       "words":["raiser","razer"],
       "synonyms":[
@@ -2796,6 +2793,24 @@
       "words":["rap","wrap"],
       "synonyms":[
         {"fitRating":0.95, "values":["rap","wrap"]}
+      ]
+    },
+    {
+      "words":["rapped","rapt","wrapped"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["rapped","rapt","wrapped"]}
+      ]
+    },
+    {
+      "words":["raw","roar"],
+      "synonyms":[
+        {"fitRating":0.9, "values":["raw","roar"]}
+      ]
+    },
+    {
+      "words":["read","rede","reed"],
+      "synonyms":[
+        {"fitRating":0.95, "values":["read","rede","reed"]}
       ]
     }
 
