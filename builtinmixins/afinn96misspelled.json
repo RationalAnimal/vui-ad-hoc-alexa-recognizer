@@ -542,7 +542,13 @@
     {"word":"loozes","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(loozes)(:?$|[^a-zA-Z]+))"},
     {"word":"lozing","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(lozing)(:?$|[^a-zA-Z]+))"},
     {"word":"made up","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(made\\s+up)(:?$|[^a-zA-Z]+))"},
-    {"word":"madnes","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(madnes)(:?$|[^a-zA-Z]+))"}
+    {"word":"madnes","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(madnes)(:?$|[^a-zA-Z]+))"},
+    {"word":"mater","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mater)(:?$|[^a-zA-Z]+))"},
+    {"word":"maters","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(maters)(:?$|[^a-zA-Z]+))"},
+    {"word":"meaningfull","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(meaningfull)(:?$|[^a-zA-Z]+))"},
+    {"word":"meaningles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(meaningles)(:?$|[^a-zA-Z]+))"},
+    {"word":"mesing up","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mesing\\s+)(:?$|[^a-zA-Z]+))"}
+
 
 
 
