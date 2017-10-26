@@ -537,7 +537,12 @@
     {"word":"leeve","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(leeve)(:?$|[^a-zA-Z]+))"},
     {"word":"libelos","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(libelos)(:?$|[^a-zA-Z]+))"},
     {"word":"loby","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(loby)(:?$|[^a-zA-Z]+))"},
-    {"word":"lobying","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(lobying)(:?$|[^a-zA-Z]+))"}
+    {"word":"lobying","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(lobying)(:?$|[^a-zA-Z]+))"},
+    {"word":"looze","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(looze)(:?$|[^a-zA-Z]+))"},
+    {"word":"loozes","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(loozes)(:?$|[^a-zA-Z]+))"},
+    {"word":"lozing","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(lozing)(:?$|[^a-zA-Z]+))"},
+    {"word":"made up","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(made\\s+up)(:?$|[^a-zA-Z]+))"},
+    {"word":"madnes","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(madnes)(:?$|[^a-zA-Z]+))"}
 
 
 
