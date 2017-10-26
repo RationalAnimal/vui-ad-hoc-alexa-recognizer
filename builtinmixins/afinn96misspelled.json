@@ -547,7 +547,14 @@
     {"word":"maters","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(maters)(:?$|[^a-zA-Z]+))"},
     {"word":"meaningfull","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(meaningfull)(:?$|[^a-zA-Z]+))"},
     {"word":"meaningles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(meaningles)(:?$|[^a-zA-Z]+))"},
-    {"word":"mesing up","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mesing\\s+)(:?$|[^a-zA-Z]+))"}
+    {"word":"mesing up","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mesing\\s+)(:?$|[^a-zA-Z]+))"},
+    {"word":"mindles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mindles)(:?$|[^a-zA-Z]+))"},
+    {"word":"misleeding","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(misleeding)(:?$|[^a-zA-Z]+))"},
+    {"word":"mischeef","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mischeef)(:?$|[^a-zA-Z]+))"},
+    {"word":"mischeefs","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mischeefs)(:?$|[^a-zA-Z]+))"},
+    {"word":"mother fucker","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mother\\s+fucker)(:?$|[^a-zA-Z]+))"},
+    {"word":"mother fucking","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mother\\s+fucking)(:?$|[^a-zA-Z]+))"}
+
 
 
 
