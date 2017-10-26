@@ -502,7 +502,13 @@
     {"word":"inductrinate","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inductrinate)(:?$|[^a-zA-Z]+))"},
     {"word":"inductrinated","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inductrinated)(:?$|[^a-zA-Z]+))"},
     {"word":"inductrinates","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(indUctrinates)(:?$|[^a-zA-Z]+))"},
-    {"word":"inductrinating","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inductrinating)(:?$|[^a-zA-Z]+))"}
+    {"word":"inductrinating","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inductrinating)(:?$|[^a-zA-Z]+))"},
+    {"word":"inefective","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inefective)(:?$|[^a-zA-Z]+))"},
+    {"word":"inefectively","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inefectively)(:?$|[^a-zA-Z]+))"},
+    {"word":"inovate","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inovate)(:?$|[^a-zA-Z]+))"},
+    {"word":"inovates","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inovates)(:?$|[^a-zA-Z]+))"},
+    {"word":"inovation","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inovation)(:?$|[^a-zA-Z]+))"}
+
 
 
 
