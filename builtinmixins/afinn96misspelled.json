@@ -531,7 +531,13 @@
     {"word":"laufing","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(laufing)(:?$|[^a-zA-Z]+))"},
     {"word":"lonched","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(lonched)(:?$|[^a-zA-Z]+))"},
     {"word":"law suit","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(law\\s+suit)(:?$|[^a-zA-Z]+))"},
-    {"word":"law suits","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(law\\s+suits)(:?$|[^a-zA-Z]+))"}
+    {"word":"law suits","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(law\\s+suits)(:?$|[^a-zA-Z]+))"},
+    {"word":"leek","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(leek)(:?$|[^a-zA-Z]+))"},
+    {"word":"leeked","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(leeked)(:?$|[^a-zA-Z]+))"},
+    {"word":"leeve","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(leeve)(:?$|[^a-zA-Z]+))"},
+    {"word":"libelos","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(libelos)(:?$|[^a-zA-Z]+))"},
+    {"word":"loby","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(loby)(:?$|[^a-zA-Z]+))"},
+    {"word":"lobying","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(lobying)(:?$|[^a-zA-Z]+))"}
 
 
 
