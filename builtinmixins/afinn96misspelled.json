@@ -518,7 +518,14 @@
     {"word":"interupting","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(interupting)(:?$|[^a-zA-Z]+))"},
     {"word":"interuption","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(interuption)(:?$|[^a-zA-Z]+))"},
     {"word":"irational","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(irational)(:?$|[^a-zA-Z]+))"},
-    {"word":"ireversible","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ireversible)(:?$|[^a-zA-Z]+))"}
+    {"word":"ireversible","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ireversible)(:?$|[^a-zA-Z]+))"},
+    {"word":"jack ass","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(jack\\s+ass)(:?$|[^a-zA-Z]+))"},
+    {"word":"jack asses","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(jack\\s+asses)(:?$|[^a-zA-Z]+))"},
+    {"word":"jackas","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(jackas)(:?$|[^a-zA-Z]+))"},
+    {"word":"jackases","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(jackases)(:?$|[^a-zA-Z]+))"},
+    {"word":"laged","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(laged)(:?$|[^a-zA-Z]+))"},
+    {"word":"laging","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(laging)(:?$|[^a-zA-Z]+))"}
+
 
 
 
