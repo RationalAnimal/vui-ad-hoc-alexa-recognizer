@@ -512,9 +512,13 @@
     {"word":"incipid","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(incipid)(:?$|[^a-zA-Z]+))"},
     {"word":"insperation","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(insperation)(:?$|[^a-zA-Z]+))"},
     {"word":"insperational","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(insperational)(:?$|[^a-zA-Z]+))"},
-    {"word":"inspere","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inspere)(:?$|[^a-zA-Z]+))"},
-    {"word":"insperes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(insperes)(:?$|[^a-zA-Z]+))"},
-    {"word":"inspering","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inspering)(:?$|[^a-zA-Z]+))"}
+    {"word":"interupt","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(interupt)(:?$|[^a-zA-Z]+))"},
+    {"word":"interupted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(interupted)(:?$|[^a-zA-Z]+))"},
+    {"word":"interupts","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(interupts)(:?$|[^a-zA-Z]+))"},
+    {"word":"interupting","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(interupting)(:?$|[^a-zA-Z]+))"},
+    {"word":"interuption","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(interuption)(:?$|[^a-zA-Z]+))"},
+    {"word":"irational","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(irational)(:?$|[^a-zA-Z]+))"},
+    {"word":"ireversible","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ireversible)(:?$|[^a-zA-Z]+))"}
 
 
 
