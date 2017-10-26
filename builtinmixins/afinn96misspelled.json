@@ -568,7 +568,16 @@
     {"word":"obsene","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(obsene)(:?$|[^a-zA-Z]+))"},
     {"word":"obsceene","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(obsceene)(:?$|[^a-zA-Z]+))"},
     {"word":"off line","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(off\\s+line)(:?$|[^a-zA-Z]+))"},
-    {"word":"off-line","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(off-line)(:?$|[^a-zA-Z]+))"}
+    {"word":"off-line","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(off-line)(:?$|[^a-zA-Z]+))"},
+    {"word":"ubsolete","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ubsolete)(:?$|[^a-zA-Z]+))"},
+    {"word":"ubstacle","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ubstacle)(:?$|[^a-zA-Z]+))"},
+    {"word":"ubstacles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ubstacles)(:?$|[^a-zA-Z]+))"},
+    {"word":"ofend","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ofend)(:?$|[^a-zA-Z]+))"},
+    {"word":"ofended","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ofended)(:?$|[^a-zA-Z]+))"},
+    {"word":"ofender","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ofender)(:?$|[^a-zA-Z]+))"},
+    {"word":"ofending","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ofending)(:?$|[^a-zA-Z]+))"},
+    {"word":"ofends","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ofends)(:?$|[^a-zA-Z]+))"}
+
 
 
 
