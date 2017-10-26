@@ -576,7 +576,11 @@
     {"word":"ofended","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ofended)(:?$|[^a-zA-Z]+))"},
     {"word":"ofender","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ofender)(:?$|[^a-zA-Z]+))"},
     {"word":"ofending","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ofending)(:?$|[^a-zA-Z]+))"},
-    {"word":"ofends","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ofends)(:?$|[^a-zA-Z]+))"}
+    {"word":"ofends","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ofends)(:?$|[^a-zA-Z]+))"},
+    {"word":"ominus","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ominos)(:?$|[^a-zA-Z]+))"},
+    {"word":"oportunity","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(oportunity)(:?$|[^a-zA-Z]+))"},
+    {"word":"oportunities","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(oportunities)(:?$|[^a-zA-Z]+))"},
+    {"word":"optimizm","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(optimizm)(:?$|[^a-zA-Z]+))"}
 
 
 
