@@ -564,19 +564,11 @@
     {"word":"nervos","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(nervos)(:?$|[^a-zA-Z]+))"},
     {"word":"non sense","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(non\\s+sense)(:?$|[^a-zA-Z]+))"},
     {"word":"obliterete","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(obliterete)(:?$|[^a-zA-Z]+))"},
-    {"word":"oblitereted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(oblitereted)(:?$|[^a-zA-Z]+))"}
-
-
-
-
-
-
-
-
-
-
-
-
+    {"word":"oblitereted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(oblitereted)(:?$|[^a-zA-Z]+))"},
+    {"word":"obsene","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(obsene)(:?$|[^a-zA-Z]+))"},
+    {"word":"obsceene","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(obsceene)(:?$|[^a-zA-Z]+))"},
+    {"word":"off line","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(off\\s+line)(:?$|[^a-zA-Z]+))"},
+    {"word":"off-line","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(off-line)(:?$|[^a-zA-Z]+))"}
 
 
 
