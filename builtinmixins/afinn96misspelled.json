@@ -580,7 +580,14 @@
     {"word":"ominus","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ominos)(:?$|[^a-zA-Z]+))"},
     {"word":"oportunity","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(oportunity)(:?$|[^a-zA-Z]+))"},
     {"word":"oportunities","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(oportunities)(:?$|[^a-zA-Z]+))"},
-    {"word":"optimizm","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(optimizm)(:?$|[^a-zA-Z]+))"}
+    {"word":"optimizm","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(optimizm)(:?$|[^a-zA-Z]+))"},
+
+    {"word":"out reach","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(out\\s+reach)(:?$|[^a-zA-Z]+))"},
+    {"word":"out standing","score":5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(out\\s+standing)(:?$|[^a-zA-Z]+))"},
+    {"word":"over load","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+load)(:?$|[^a-zA-Z]+))"},
+    {"word":"over react","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+react)(:?$|[^a-zA-Z]+))"},
+    {"word":"over reacts","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+reacts)(:?$|[^a-zA-Z]+))"},
+    {"word":"over reacted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+reacted)(:?$|[^a-zA-Z]+))"}
 
 
 
