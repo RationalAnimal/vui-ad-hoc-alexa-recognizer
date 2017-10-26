@@ -524,7 +524,14 @@
     {"word":"jackas","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(jackas)(:?$|[^a-zA-Z]+))"},
     {"word":"jackases","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(jackases)(:?$|[^a-zA-Z]+))"},
     {"word":"laged","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(laged)(:?$|[^a-zA-Z]+))"},
-    {"word":"laging","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(laging)(:?$|[^a-zA-Z]+))"}
+    {"word":"laging","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(laging)(:?$|[^a-zA-Z]+))"},
+    {"word":"land mark","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(land\\s+mark)(:?$|[^a-zA-Z]+))"},
+    {"word":"lauf","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(lauf)(:?$|[^a-zA-Z]+))"},
+    {"word":"laufs","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(laufs)(:?$|[^a-zA-Z]+))"},
+    {"word":"laufing","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(laufing)(:?$|[^a-zA-Z]+))"},
+    {"word":"lonched","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(lonched)(:?$|[^a-zA-Z]+))"},
+    {"word":"law suit","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(law\\s+suit)(:?$|[^a-zA-Z]+))"},
+    {"word":"law suits","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(law\\s+suits)(:?$|[^a-zA-Z]+))"}
 
 
 
