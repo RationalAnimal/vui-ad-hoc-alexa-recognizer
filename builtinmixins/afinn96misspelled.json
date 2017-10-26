@@ -492,7 +492,13 @@
     {"word":"impres","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impres)(:?$|[^a-zA-Z]+))"},
     {"word":"impresed","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impresed)(:?$|[^a-zA-Z]+))"},
     {"word":"impreses","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impreses)(:?$|[^a-zA-Z]+))"},
-    {"word":"impresive","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impresive)(:?$|[^a-zA-Z]+))"}
+    {"word":"impresive","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(impresive)(:?$|[^a-zA-Z]+))"},
+    {"word":"improvment","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(improvment)(:?$|[^a-zA-Z]+))"},
+    {"word":"incompitence","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(incompitence)(:?$|[^a-zA-Z]+))"},
+    {"word":"inconvinient","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(inconvinient)(:?$|[^a-zA-Z]+))"},
+    {"word":"increese","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(increese)(:?$|[^a-zA-Z]+))"},
+    {"word":"increesed","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(increesed)(:?$|[^a-zA-Z]+))"}
+
 
 
 
