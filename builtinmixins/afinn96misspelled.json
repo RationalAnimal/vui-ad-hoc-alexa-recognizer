@@ -553,7 +553,15 @@
     {"word":"mischeef","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mischeef)(:?$|[^a-zA-Z]+))"},
     {"word":"mischeefs","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mischeefs)(:?$|[^a-zA-Z]+))"},
     {"word":"mother fucker","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mother\\s+fucker)(:?$|[^a-zA-Z]+))"},
-    {"word":"mother fucking","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mother\\s+fucking)(:?$|[^a-zA-Z]+))"}
+    {"word":"mother fucking","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mother\\s+fucking)(:?$|[^a-zA-Z]+))"},
+    {"word":"merder","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(merder)(:?$|[^a-zA-Z]+))"},
+    {"word":"merderer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(merderer)(:?$|[^a-zA-Z]+))"},
+    {"word":"mith","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(mith)(:?$|[^a-zA-Z]+))"},
+    {"word":"niglect","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(niglect)(:?$|[^a-zA-Z]+))"},
+    {"word":"niglected","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(niglected)(:?$|[^a-zA-Z]+))"},
+    {"word":"niglecting","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(niglecting)(:?$|[^a-zA-Z]+))"},
+    {"word":"niglects","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(niglects)(:?$|[^a-zA-Z]+))"}
+
 
 
 
