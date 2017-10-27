@@ -698,7 +698,12 @@
     {"word":"ridiculos","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ridiculos)(:?$|[^a-zA-Z]+))"},
     {"word":"riged","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(riged)(:?$|[^a-zA-Z]+))"},
     {"word":"rigoros","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rigoros)(:?$|[^a-zA-Z]+))"},
-    {"word":"rigorosly","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rigorosly)(:?$|[^a-zA-Z]+))"}
+    {"word":"rigorosly","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rigorosly)(:?$|[^a-zA-Z]+))"},
+    {"word":"ruen","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ruen)(:?$|[^a-zA-Z]+))"},
+    {"word":"rueining","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ruening)(:?$|[^a-zA-Z]+))"},
+    {"word":"sabatage","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sabatage)(:?$|[^a-zA-Z]+))"},
+    {"word":"saden","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(saden)(:?$|[^a-zA-Z]+))"},
+    {"word":"sapy","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sapy)(:?$|[^a-zA-Z]+))"}
 
 
 
