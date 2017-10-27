@@ -647,7 +647,14 @@
     {"word":"prosicute","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prosicute)(:?$|[^a-zA-Z]+))"},
     {"word":"prosicuted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prosicuted)(:?$|[^a-zA-Z]+))"},
     {"word":"prosicutes","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prosicutes)(:?$|[^a-zA-Z]+))"},
-    {"word":"prosicution","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prosicution)(:?$|[^a-zA-Z]+))"}
+    {"word":"prosicution","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prosicution)(:?$|[^a-zA-Z]+))"},
+    {"word":"seudoscience","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(seudoscience)(:?$|[^a-zA-Z]+))"},
+    {"word":"psudoscience","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(psudoscience)(:?$|[^a-zA-Z]+))"},
+    {"word":"sudoscience","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sudoscience)(:?$|[^a-zA-Z]+))"},
+    {"word":"pseudo science","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pseudo\\s+science)(:?$|[^a-zA-Z]+))"},
+    {"word":"panish","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(panish)(:?$|[^a-zA-Z]+))"},
+    {"word":"panishes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(panishes)(:?$|[^a-zA-Z]+))"}
+
 
 
 
