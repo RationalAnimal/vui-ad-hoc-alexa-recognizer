@@ -1017,7 +1017,7 @@
     {"word":"poverty","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(poverty)(:?$|[^a-zA-Z]+))"},
     {"word":"praise","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(praise)(:?$|[^a-zA-Z]+))"},
     {"word":"praised","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(praised)(:?$|[^a-zA-Z]+))"},
-    {"word":"prases","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prases)(:?$|[^a-zA-Z]+))"},
+    {"word":"praises","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(praises)(:?$|[^a-zA-Z]+))"},
     {"word":"praising","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(praising)(:?$|[^a-zA-Z]+))"},
     {"word":"pray","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pray)(:?$|[^a-zA-Z]+))"},
     {"word":"praying","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(praying)(:?$|[^a-zA-Z]+))"},

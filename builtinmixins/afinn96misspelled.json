@@ -624,7 +624,11 @@
     {"word":"pospone","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pospone)(:?$|[^a-zA-Z]+))"},
     {"word":"posponed","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(posponed)(:?$|[^a-zA-Z]+))"},
     {"word":"pospones","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pospones)(:?$|[^a-zA-Z]+))"},
-    {"word":"posponing","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(posponing)(:?$|[^a-zA-Z]+))"}
+    {"word":"posponing","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(posponing)(:?$|[^a-zA-Z]+))"},
+    {"word":"prase","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prase)(:?$|[^a-zA-Z]+))"},
+    {"word":"prased","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prased)(:?$|[^a-zA-Z]+))"},
+    {"word":"prases","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prases)(:?$|[^a-zA-Z]+))"},
+    {"word":"prasing","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prasing)(:?$|[^a-zA-Z]+))"}
 
 
 
