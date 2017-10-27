@@ -692,7 +692,13 @@
     {"word":"rezolves","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezolves)(:?$|[^a-zA-Z]+))"},
     {"word":"rezolving","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezolving)(:?$|[^a-zA-Z]+))"},
     {"word":"responsable","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(responsable)(:?$|[^a-zA-Z]+))"},
-    {"word":"restles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(restles)(:?$|[^a-zA-Z]+))"}
+    {"word":"restles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(restles)(:?$|[^a-zA-Z]+))"},
+    {"word":"retaned","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(retaned)(:?$|[^a-zA-Z]+))"},
+    {"word":"reech","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(reech)(:?$|[^a-zA-Z]+))"},
+    {"word":"ridiculos","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ridiculos)(:?$|[^a-zA-Z]+))"},
+    {"word":"riged","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(riged)(:?$|[^a-zA-Z]+))"},
+    {"word":"rigoros","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rigoros)(:?$|[^a-zA-Z]+))"},
+    {"word":"rigorosly","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rigorosly)(:?$|[^a-zA-Z]+))"}
 
 
 
