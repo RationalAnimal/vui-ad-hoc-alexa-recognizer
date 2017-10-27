@@ -654,12 +654,17 @@
     {"word":"pseudo science","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pseudo\\s+science)(:?$|[^a-zA-Z]+))"},
     {"word":"panish","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(panish)(:?$|[^a-zA-Z]+))"},
     {"word":"panishes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(panishes)(:?$|[^a-zA-Z]+))"},
-
     {"word":"reiny","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(reiny)(:?$|[^a-zA-Z]+))"},
     {"word":"reech","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(reech)(:?$|[^a-zA-Z]+))"},
     {"word":"reeches","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(reeches)(:?$|[^a-zA-Z]+))"},
     {"word":"reeched","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(reeched)(:?$|[^a-zA-Z]+))"},
-    {"word":"reeching","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(reeching)(:?$|[^a-zA-Z]+))"}
+    {"word":"reeching","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(reeching)(:?$|[^a-zA-Z]+))"},
+    {"word":"recomend","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(recomend)(:?$|[^a-zA-Z]+))"},
+    {"word":"recomended","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(recomended)(:?$|[^a-zA-Z]+))"},
+    {"word":"recomends","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(recomends)(:?$|[^a-zA-Z]+))"},
+    {"word":"refuze","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(refuze)(:?$|[^a-zA-Z]+))"},
+    {"word":"refuzed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(refuzed)(:?$|[^a-zA-Z]+))"},
+    {"word":"refuzing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(refuzing)(:?$|[^a-zA-Z]+))"}
 
 
 
