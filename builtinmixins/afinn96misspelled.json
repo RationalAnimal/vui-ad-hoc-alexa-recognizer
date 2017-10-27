@@ -706,7 +706,15 @@
     {"word":"sapy","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sapy)(:?$|[^a-zA-Z]+))"},
     {"word":"scandalos","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(scandalos)(:?$|[^a-zA-Z]+))"},
     {"word":"scape goat","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(scape\\s+goat)(:?$|[^a-zA-Z]+))"},
-    {"word":"scape goats","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(scape\\s+goats)(:?$|[^a-zA-Z]+))"}
+    {"word":"scape goats","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(scape\\s+goats)(:?$|[^a-zA-Z]+))"},
+    {"word":"scaire","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(scaire)(:?$|[^a-zA-Z]+))"},
+    {"word":"scaired","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(scaired)(:?$|[^a-zA-Z]+))"},
+    {"word":"selfishnes","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(selfishnes)(:?$|[^a-zA-Z]+))"},
+    {"word":"sentense","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sentense)(:?$|[^a-zA-Z]+))"},
+    {"word":"sentensed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sentensed)(:?$|[^a-zA-Z]+))"},
+    {"word":"sentensing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sentensing)(:?$|[^a-zA-Z]+))"},
+    {"word":"sentenses","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sentenses)(:?$|[^a-zA-Z]+))"}
+
 
 
 
