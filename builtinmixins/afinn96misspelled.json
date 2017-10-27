@@ -686,7 +686,14 @@
     {"word":"rezign","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezign)(:?$|[^a-zA-Z]+))"},
     {"word":"rezigned","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezigned)(:?$|[^a-zA-Z]+))"},
     {"word":"rezigning","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezigning)(:?$|[^a-zA-Z]+))"},
-    {"word":"rezigns","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezigns)(:?$|[^a-zA-Z]+))"}
+    {"word":"rezigns","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezigns)(:?$|[^a-zA-Z]+))"},
+    {"word":"rezolve","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezolve)(:?$|[^a-zA-Z]+))"},
+    {"word":"rezolved","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezolved)(:?$|[^a-zA-Z]+))"},
+    {"word":"rezolves","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezolves)(:?$|[^a-zA-Z]+))"},
+    {"word":"rezolving","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezolving)(:?$|[^a-zA-Z]+))"},
+    {"word":"responsable","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(responsable)(:?$|[^a-zA-Z]+))"},
+    {"word":"restles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(restles)(:?$|[^a-zA-Z]+))"}
+
 
 
 
