@@ -668,7 +668,11 @@
     {"word":"regect","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(regect)(:?$|[^a-zA-Z]+))"},
     {"word":"regected","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(regected)(:?$|[^a-zA-Z]+))"},
     {"word":"regects","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(regects)(:?$|[^a-zA-Z]+))"},
-    {"word":"regecting","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(regecting)(:?$|[^a-zA-Z]+))"}
+    {"word":"regecting","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(regecting)(:?$|[^a-zA-Z]+))"},
+    {"word":"rejoise","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rejoise)(:?$|[^a-zA-Z]+))"},
+    {"word":"rejoised","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rejoised)(:?$|[^a-zA-Z]+))"},
+    {"word":"rejoises","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rejoises)(:?$|[^a-zA-Z]+))"},
+    {"word":"rejoising","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rejoising)(:?$|[^a-zA-Z]+))"}
 
 
 
