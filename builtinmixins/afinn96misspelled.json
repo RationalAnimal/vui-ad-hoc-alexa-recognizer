@@ -678,7 +678,15 @@
     {"word":"remarckable","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(remarckable)(:?$|[^a-zA-Z]+))"},
     {"word":"resque","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(resque)(:?$|[^a-zA-Z]+))"},
     {"word":"resqued","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(resqued)(:?$|[^a-zA-Z]+))"},
-    {"word":"resques","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(resques)(:?$|[^a-zA-Z]+))"}
+    {"word":"resques","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(resques)(:?$|[^a-zA-Z]+))"},
+    {"word":"resine","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(resine)(:?$|[^a-zA-Z]+))"},
+    {"word":"resined","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(resined)(:?$|[^a-zA-Z]+))"},
+    {"word":"resining","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(resining)(:?$|[^a-zA-Z]+))"},
+    {"word":"resines","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(resines)(:?$|[^a-zA-Z]+))"},
+    {"word":"rezign","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezign)(:?$|[^a-zA-Z]+))"},
+    {"word":"rezigned","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezigned)(:?$|[^a-zA-Z]+))"},
+    {"word":"rezigning","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezigning)(:?$|[^a-zA-Z]+))"},
+    {"word":"rezigns","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rezigns)(:?$|[^a-zA-Z]+))"}
 
 
 
