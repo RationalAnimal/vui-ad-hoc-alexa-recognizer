@@ -601,7 +601,15 @@
     {"word":"peece","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(peece)(:?$|[^a-zA-Z]+))"},
     {"word":"peeceful","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(peeceful)(:?$|[^a-zA-Z]+))"},
     {"word":"peacefull","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(peacefull)(:?$|[^a-zA-Z]+))"},
-    {"word":"peecefully","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(peecefully)(:?$|[^a-zA-Z]+))"}
+    {"word":"peecefully","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(peecefully)(:?$|[^a-zA-Z]+))"},
+    {"word":"perjery","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(perjery)(:?$|[^a-zA-Z]+))"},
+    {"word":"perpetretor","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(perpetretor)(:?$|[^a-zA-Z]+))"},
+    {"word":"perpetretors","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(perpetretors)(:?$|[^a-zA-Z]+))"},
+    {"word":"pessimizm","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pessimizm)(:?$|[^a-zA-Z]+))"},
+    {"word":"picturesqe","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(picturesqe)(:?$|[^a-zA-Z]+))"},
+    {"word":"picturesqu","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(picturesqu)(:?$|[^a-zA-Z]+))"},
+    {"word":"picturesc","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(picturesc)(:?$|[^a-zA-Z]+))"}
+
 
 
 
