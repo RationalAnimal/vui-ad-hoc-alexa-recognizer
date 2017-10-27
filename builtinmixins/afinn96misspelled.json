@@ -594,7 +594,14 @@
     {"word":"over simplified","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+simplified)(:?$|[^a-zA-Z]+))"},
     {"word":"over simplifies","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+simplifies)(:?$|[^a-zA-Z]+))"},
     {"word":"over simplify","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+simplify)(:?$|[^a-zA-Z]+))"},
-    {"word":"over weight","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+weight)(:?$|[^a-zA-Z]+))"}
+    {"word":"over weight","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(over\\s+weight)(:?$|[^a-zA-Z]+))"},
+    {"word":"oximoron","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(oximoron)(:?$|[^a-zA-Z]+))"},
+    {"word":"paradocs","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(paradocs)(:?$|[^a-zA-Z]+))"},
+    {"word":"pathetick","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pathetick)(:?$|[^a-zA-Z]+))"},
+    {"word":"peece","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(peece)(:?$|[^a-zA-Z]+))"},
+    {"word":"peeceful","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(peeceful)(:?$|[^a-zA-Z]+))"},
+    {"word":"peacefull","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(peacefull)(:?$|[^a-zA-Z]+))"},
+    {"word":"peecefully","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(peecefully)(:?$|[^a-zA-Z]+))"}
 
 
 
