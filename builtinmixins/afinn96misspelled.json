@@ -703,7 +703,11 @@
     {"word":"rueining","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(ruening)(:?$|[^a-zA-Z]+))"},
     {"word":"sabatage","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sabatage)(:?$|[^a-zA-Z]+))"},
     {"word":"saden","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(saden)(:?$|[^a-zA-Z]+))"},
-    {"word":"sapy","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sapy)(:?$|[^a-zA-Z]+))"}
+    {"word":"sapy","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sapy)(:?$|[^a-zA-Z]+))"},
+    {"word":"scandalos","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(scandalos)(:?$|[^a-zA-Z]+))"},
+    {"word":"scape goat","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(scape\\s+goat)(:?$|[^a-zA-Z]+))"},
+    {"word":"scape goats","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(scape\\s+goats)(:?$|[^a-zA-Z]+))"}
+
 
 
 
