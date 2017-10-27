@@ -643,7 +643,11 @@
     {"word":"pramoted","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pramoted)(:?$|[^a-zA-Z]+))"},
     {"word":"pramotes","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pramotes)(:?$|[^a-zA-Z]+))"},
     {"word":"pramoting","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pramoting)(:?$|[^a-zA-Z]+))"},
-    {"word":"prapaganda","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prapaganda)(:?$|[^a-zA-Z]+))"}
+    {"word":"prapaganda","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prapaganda)(:?$|[^a-zA-Z]+))"},
+    {"word":"prosicute","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prosicute)(:?$|[^a-zA-Z]+))"},
+    {"word":"prosicuted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prosicuted)(:?$|[^a-zA-Z]+))"},
+    {"word":"prosicutes","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prosicutes)(:?$|[^a-zA-Z]+))"},
+    {"word":"prosicution","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prosicution)(:?$|[^a-zA-Z]+))"}
 
 
 
