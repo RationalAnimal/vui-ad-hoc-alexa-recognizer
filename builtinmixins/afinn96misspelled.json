@@ -634,7 +634,16 @@
     {"word":"prik","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prik)(:?$|[^a-zA-Z]+))"},
     {"word":"pric","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pric)(:?$|[^a-zA-Z]+))"},
     {"word":"profeteer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(profeteer)(:?$|[^a-zA-Z]+))"},
-    {"word":"profitiar","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(profitiar)(:?$|[^a-zA-Z]+))"}
+    {"word":"profitiar","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(profitiar)(:?$|[^a-zA-Z]+))"},
+    {"word":"progres","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(progres)(:?$|[^a-zA-Z]+))"},
+    {"word":"promize","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(promize)(:?$|[^a-zA-Z]+))"},
+    {"word":"promized","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(promized)(:?$|[^a-zA-Z]+))"},
+    {"word":"promizes","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(promizes)(:?$|[^a-zA-Z]+))"},
+    {"word":"pramote","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(promote)(:?$|[^a-zA-Z]+))"},
+    {"word":"pramoted","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pramoted)(:?$|[^a-zA-Z]+))"},
+    {"word":"pramotes","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pramotes)(:?$|[^a-zA-Z]+))"},
+    {"word":"pramoting","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pramoting)(:?$|[^a-zA-Z]+))"},
+    {"word":"prapaganda","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prapaganda)(:?$|[^a-zA-Z]+))"}
 
 
 
