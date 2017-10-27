@@ -713,7 +713,12 @@
     {"word":"sentense","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sentense)(:?$|[^a-zA-Z]+))"},
     {"word":"sentensed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sentensed)(:?$|[^a-zA-Z]+))"},
     {"word":"sentensing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sentensing)(:?$|[^a-zA-Z]+))"},
-    {"word":"sentenses","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sentenses)(:?$|[^a-zA-Z]+))"}
+    {"word":"sentenses","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sentenses)(:?$|[^a-zA-Z]+))"},
+    {"word":"shamefull","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shamefull)(:?$|[^a-zA-Z]+))"},
+    {"word":"shreu","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shreu)(:?$|[^a-zA-Z]+))"},
+    {"word":"shit head","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shit\\s+head)(:?$|[^a-zA-Z]+))"},
+    {"word":"shity","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shity)(:?$|[^a-zA-Z]+))"}
+
 
 
 
