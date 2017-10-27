@@ -721,7 +721,12 @@
     {"word":"shok","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shok)(:?$|[^a-zA-Z]+))"},
     {"word":"shoks","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shoks)(:?$|[^a-zA-Z]+))"},
     {"word":"shoked","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shoked)(:?$|[^a-zA-Z]+))"},
-    {"word":"shoking","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shoking)(:?$|[^a-zA-Z]+))"}
+    {"word":"shoking","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shoking)(:?$|[^a-zA-Z]+))"},
+    {"word":"short sighted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(short\\s+sighted)(:?$|[^a-zA-Z]+))"},
+    {"word":"short sightness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(short\\s+sightness)(:?$|[^a-zA-Z]+))"},
+    {"word":"short sightedness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(short\\s+sightedness)(:?$|[^a-zA-Z]+))"},
+    {"word":"shie","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shie)(:?$|[^a-zA-Z]+))"}
+
 
 
 
