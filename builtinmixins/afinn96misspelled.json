@@ -653,7 +653,13 @@
     {"word":"sudoscience","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sudoscience)(:?$|[^a-zA-Z]+))"},
     {"word":"pseudo science","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pseudo\\s+science)(:?$|[^a-zA-Z]+))"},
     {"word":"panish","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(panish)(:?$|[^a-zA-Z]+))"},
-    {"word":"panishes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(panishes)(:?$|[^a-zA-Z]+))"}
+    {"word":"panishes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(panishes)(:?$|[^a-zA-Z]+))"},
+
+    {"word":"reiny","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(reiny)(:?$|[^a-zA-Z]+))"},
+    {"word":"reech","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(reech)(:?$|[^a-zA-Z]+))"},
+    {"word":"reeches","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(reeches)(:?$|[^a-zA-Z]+))"},
+    {"word":"reeched","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(reeched)(:?$|[^a-zA-Z]+))"},
+    {"word":"reeching","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(reeching)(:?$|[^a-zA-Z]+))"}
 
 
 
