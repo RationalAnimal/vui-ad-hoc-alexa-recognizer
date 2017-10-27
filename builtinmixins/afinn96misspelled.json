@@ -628,7 +628,14 @@
     {"word":"prase","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prase)(:?$|[^a-zA-Z]+))"},
     {"word":"prased","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prased)(:?$|[^a-zA-Z]+))"},
     {"word":"prases","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prases)(:?$|[^a-zA-Z]+))"},
-    {"word":"prasing","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prasing)(:?$|[^a-zA-Z]+))"}
+    {"word":"prasing","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prasing)(:?$|[^a-zA-Z]+))"},
+    {"word":"prepaired","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prepaired)(:?$|[^a-zA-Z]+))"},
+    {"word":"pressure","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pressure)(:?$|[^a-zA-Z]+))"},
+    {"word":"prik","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prik)(:?$|[^a-zA-Z]+))"},
+    {"word":"pric","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pric)(:?$|[^a-zA-Z]+))"},
+    {"word":"profeteer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(profeteer)(:?$|[^a-zA-Z]+))"},
+    {"word":"profitiar","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(profitiar)(:?$|[^a-zA-Z]+))"}
+
 
 
 

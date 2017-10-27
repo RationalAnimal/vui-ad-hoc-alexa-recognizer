@@ -1024,7 +1024,7 @@
     {"word":"prays","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prays)(:?$|[^a-zA-Z]+))"},
     {"word":"prblm","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prblm)(:?$|[^a-zA-Z]+))"},
     {"word":"prblms","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prblms)(:?$|[^a-zA-Z]+))"},
-    {"word":"prepaired","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prepaired)(:?$|[^a-zA-Z]+))"},
+    {"word":"prepared","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(prepared)(:?$|[^a-zA-Z]+))"},
     {"word":"pressure","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pressure)(:?$|[^a-zA-Z]+))"},
     {"word":"pretend","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pretend)(:?$|[^a-zA-Z]+))"},
     {"word":"pretends","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pretends)(:?$|[^a-zA-Z]+))"},
