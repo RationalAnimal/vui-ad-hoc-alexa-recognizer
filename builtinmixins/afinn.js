@@ -47,18 +47,16 @@
      console.log("AFINN sentiment analysis - can't load data set, exiting");
      return;
    }
-   // Compute a single reg exp for all words/expressions
-   let completeRegExpString = "(:?(:?^|[^a-zA-Z]+)(";
-   for(let i = 0; i < dataSet.scoredWords.length; i++){
-     if(i > 0){
-       completeRegExpString += "|";
+
+   // Sort the array by how many words are in a "word", in descending order
+   dataSet.scoredWords.sort(
+     function(a,b){
+       let aSplit = a.word.split(/\s+/);
+       let bSplit = b.word.split(/\s+/);
+       return (aSplit.length - bSplit.length);
      }
-     completeRegExpString += dataSet.scoredWords[i].word;
-   }
-   completeRegExpString += ")(:?$|[^a-zA-Z]+))"; // eslint-disable-line no-unused-vars
-
+   );
    let runningScore = 0;
-
    for(let i = 0; i < dataSet.scoredWords.length; i++){
      let regExp = new RegExp(dataSet.scoredWords[i].regExpString, "ig");
      let matchResult;
