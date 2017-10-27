@@ -664,7 +664,11 @@
     {"word":"recomends","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(recomends)(:?$|[^a-zA-Z]+))"},
     {"word":"refuze","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(refuze)(:?$|[^a-zA-Z]+))"},
     {"word":"refuzed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(refuzed)(:?$|[^a-zA-Z]+))"},
-    {"word":"refuzing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(refuzing)(:?$|[^a-zA-Z]+))"}
+    {"word":"refuzing","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(refuzing)(:?$|[^a-zA-Z]+))"},
+    {"word":"regect","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(regect)(:?$|[^a-zA-Z]+))"},
+    {"word":"regected","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(regected)(:?$|[^a-zA-Z]+))"},
+    {"word":"regects","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(regects)(:?$|[^a-zA-Z]+))"},
+    {"word":"regecting","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(regecting)(:?$|[^a-zA-Z]+))"}
 
 
 
