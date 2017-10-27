@@ -608,7 +608,15 @@
     {"word":"pessimizm","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pessimizm)(:?$|[^a-zA-Z]+))"},
     {"word":"picturesqe","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(picturesqe)(:?$|[^a-zA-Z]+))"},
     {"word":"picturesqu","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(picturesqu)(:?$|[^a-zA-Z]+))"},
-    {"word":"picturesc","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(picturesc)(:?$|[^a-zA-Z]+))"}
+    {"word":"picturesc","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(picturesc)(:?$|[^a-zA-Z]+))"},
+    {"word":"pleese","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pleese)(:?$|[^a-zA-Z]+))"},
+    {"word":"pleaze","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pleaze)(:?$|[^a-zA-Z]+))"},
+    {"word":"pleesed","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pleesed)(:?$|[^a-zA-Z]+))"},
+    {"word":"pleazed","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pleazed)(:?$|[^a-zA-Z]+))"},
+    {"word":"poisen","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(poisen)(:?$|[^a-zA-Z]+))"},
+    {"word":"poisened","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(poisened)(:?$|[^a-zA-Z]+))"},
+    {"word":"poisens","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(poisens)(:?$|[^a-zA-Z]+))"}
+
 
 
 
