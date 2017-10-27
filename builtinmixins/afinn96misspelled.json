@@ -620,7 +620,11 @@
     {"word":"polutes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(polutes)(:?$|[^a-zA-Z]+))"},
     {"word":"poluted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(poluted)(:?$|[^a-zA-Z]+))"},
     {"word":"poluter","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(poluter)(:?$|[^a-zA-Z]+))"},
-    {"word":"poluters","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(poluters)(:?$|[^a-zA-Z]+))"}
+    {"word":"poluters","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(poluters)(:?$|[^a-zA-Z]+))"},
+    {"word":"pospone","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pospone)(:?$|[^a-zA-Z]+))"},
+    {"word":"posponed","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(posponed)(:?$|[^a-zA-Z]+))"},
+    {"word":"pospones","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(pospones)(:?$|[^a-zA-Z]+))"},
+    {"word":"posponing","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(posponing)(:?$|[^a-zA-Z]+))"}
 
 
 
