@@ -672,7 +672,13 @@
     {"word":"rejoise","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rejoise)(:?$|[^a-zA-Z]+))"},
     {"word":"rejoised","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rejoised)(:?$|[^a-zA-Z]+))"},
     {"word":"rejoises","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rejoises)(:?$|[^a-zA-Z]+))"},
-    {"word":"rejoising","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rejoising)(:?$|[^a-zA-Z]+))"}
+    {"word":"rejoising","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(rejoising)(:?$|[^a-zA-Z]+))"},
+    {"word":"relaksed","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(relaksed)(:?$|[^a-zA-Z]+))"},
+    {"word":"remarcable","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(remarcable)(:?$|[^a-zA-Z]+))"},
+    {"word":"remarckable","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(remarckable)(:?$|[^a-zA-Z]+))"},
+    {"word":"resque","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(resque)(:?$|[^a-zA-Z]+))"},
+    {"word":"resqued","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(resqued)(:?$|[^a-zA-Z]+))"},
+    {"word":"resques","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(resques)(:?$|[^a-zA-Z]+))"}
 
 
 
