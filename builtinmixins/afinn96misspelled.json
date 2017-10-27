@@ -717,7 +717,11 @@
     {"word":"shamefull","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shamefull)(:?$|[^a-zA-Z]+))"},
     {"word":"shreu","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shreu)(:?$|[^a-zA-Z]+))"},
     {"word":"shit head","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shit\\s+head)(:?$|[^a-zA-Z]+))"},
-    {"word":"shity","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shity)(:?$|[^a-zA-Z]+))"}
+    {"word":"shity","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shity)(:?$|[^a-zA-Z]+))"},
+    {"word":"shok","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shok)(:?$|[^a-zA-Z]+))"},
+    {"word":"shoks","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shoks)(:?$|[^a-zA-Z]+))"},
+    {"word":"shoked","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shoked)(:?$|[^a-zA-Z]+))"},
+    {"word":"shoking","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shoking)(:?$|[^a-zA-Z]+))"}
 
 
 
