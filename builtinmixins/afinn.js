@@ -79,6 +79,14 @@
      }
    );
 
+   // Remove duplicated words
+   for(let i = 0; i < dataSet.scoredWords.length - 1; i++){
+     if(dataSet.scoredWords[i].word === dataSet.scoredWords[i+1].word){
+       dataSet.scoredWords.splice(i, 1);
+       i--;
+     }
+   }
+
    let runningScore = 0;
    let scratchUtterance = utterance;
    for(let i = 0; i < dataSet.scoredWords.length; i++){
@@ -91,7 +99,7 @@
      }
      // Remove the matched string if it's multiword to make sure it won't be matched on again by substrings.
      if(matchFound && dataSet.scoredWords[i].wordCount > 1){
-       scratchUtterance = scratchUtterance.replace(new RegExp(dataSet.scoredWords[i].regExpString), "#unmatchable%@");
+       scratchUtterance = scratchUtterance.replace(new RegExp(dataSet.scoredWords[i].regExpString), "#unmatchable#");
      }
    }
    if(typeof priorResult === "undefined" || priorResult === null){
