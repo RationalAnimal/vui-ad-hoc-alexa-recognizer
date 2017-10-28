@@ -736,7 +736,11 @@
     {"word":"sleeplesnes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sleeplesnes)(:?$|[^a-zA-Z]+))"},
     {"word":"smeer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(smeer)(:?$|[^a-zA-Z]+))"},
     {"word":"son of a bitch","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(son\\s+of\\s+a\\s+bitch)(:?$|[^a-zA-Z]+))"},
-    {"word":"stabed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stabed)(:?$|[^a-zA-Z]+))"}
+    {"word":"stabed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stabed)(:?$|[^a-zA-Z]+))"},
+    {"word":"stal","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stal)(:?$|[^a-zA-Z]+))"},
+    {"word":"staled","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(staled)(:?$|[^a-zA-Z]+))"},
+    {"word":"staling","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(staling)(:?$|[^a-zA-Z]+))"},
+
 
 
 
