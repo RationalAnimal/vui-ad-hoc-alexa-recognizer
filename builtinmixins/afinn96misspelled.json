@@ -740,6 +740,11 @@
     {"word":"stal","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stal)(:?$|[^a-zA-Z]+))"},
     {"word":"staled","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(staled)(:?$|[^a-zA-Z]+))"},
     {"word":"staling","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(staling)(:?$|[^a-zA-Z]+))"},
+    {"word":"stimulete","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stimulete)(:?$|[^a-zA-Z]+))"},
+    {"word":"stimuleted","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stimuleted)(:?$|[^a-zA-Z]+))"},
+    {"word":"stimuletes","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stimuletes)(:?$|[^a-zA-Z]+))"},
+    {"word":"stimuleting","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stimuleting)(:?$|[^a-zA-Z]+))"}
+
 
 
 
