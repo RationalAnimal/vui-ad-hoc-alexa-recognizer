@@ -765,7 +765,11 @@
     {"word":"suporter","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suporter)(:?$|[^a-zA-Z]+))"},
     {"word":"suporters","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suporters)(:?$|[^a-zA-Z]+))"},
     {"word":"suportive","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suportive)(:?$|[^a-zA-Z]+))"},
-    {"word":"suports","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suports)(:?$|[^a-zA-Z]+))"}
+    {"word":"suports","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suports)(:?$|[^a-zA-Z]+))"},
+    {"word":"survivor","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(survivor)(:?$|[^a-zA-Z]+))"},
+    {"word":"straiht","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(straiht)(:?$|[^a-zA-Z]+))"},
+    {"word":"strait","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(strait)(:?$|[^a-zA-Z]+))"},
+    {"word":"strate","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(strate)(:?$|[^a-zA-Z]+))"}
 
 
 
