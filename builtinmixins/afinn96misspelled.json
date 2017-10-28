@@ -787,7 +787,12 @@
     {"word":"suport","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suport)(:?$|[^a-zA-Z]+))"},
     {"word":"suported","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suported)(:?$|[^a-zA-Z]+))"},
     {"word":"suporting","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suporting)(:?$|[^a-zA-Z]+))"},
-    {"word":"suports","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suports)(:?$|[^a-zA-Z]+))"}
+    {"word":"suports","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suports)(:?$|[^a-zA-Z]+))"},
+    {"word":"swindel","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(swindel)(:?$|[^a-zA-Z]+))"},
+    {"word":"swindele","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(swindele)(:?$|[^a-zA-Z]+))"},
+    {"word":"swindeles","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(swindeles)(:?$|[^a-zA-Z]+))"},
+    {"word":"swindels","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(swindels)(:?$|[^a-zA-Z]+))"},
+    {"word":"swindeling","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(swindeling)(:?$|[^a-zA-Z]+))"}
 
 
 
