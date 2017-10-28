@@ -769,8 +769,14 @@
     {"word":"survivor","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(survivor)(:?$|[^a-zA-Z]+))"},
     {"word":"straiht","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(straiht)(:?$|[^a-zA-Z]+))"},
     {"word":"strait","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(strait)(:?$|[^a-zA-Z]+))"},
-    {"word":"strate","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(strate)(:?$|[^a-zA-Z]+))"}
-
+    {"word":"strate","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(strate)(:?$|[^a-zA-Z]+))"},
+    {"word":"streight","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(streight)(:?$|[^a-zA-Z]+))"},
+    {"word":"streser","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(streser)(:?$|[^a-zA-Z]+))"},
+    {"word":"stresers","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stresers)(:?$|[^a-zA-Z]+))"},
+    {"word":"stresser","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stresser)(:?$|[^a-zA-Z]+))"},
+    {"word":"stressers","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stressers)(:?$|[^a-zA-Z]+))"},
+    {"word":"stresor","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stresor)(:?$|[^a-zA-Z]+))"},
+    {"word":"stresors","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stresors)(:?$|[^a-zA-Z]+))"}
 
 
 
