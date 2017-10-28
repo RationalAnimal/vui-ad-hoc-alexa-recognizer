@@ -55,10 +55,10 @@
        let bSplit = b.word.split(/\s+/);
        if(aSplit.length === bSplit.length){
          if (a.word < b.word){
-           return -1;
+           return 1;
          }
          else if (a.word > b.word){
-           return 1;
+           return -1;
          }
          else {
            // This should never happen here, but technically is possible.
@@ -66,12 +66,12 @@
          }
        }
        if(a.word.startsWith(b.word)){
-         return 1;
-       }
-       if(b.word.startsWith(a.word)){
          return -1;
        }
-       return (aSplit.length - bSplit.length);
+       if(b.word.startsWith(a.word)){
+         return 1;
+       }
+       return (bSplit.length - aSplit.length);
      }
    );
    let runningScore = 0;
