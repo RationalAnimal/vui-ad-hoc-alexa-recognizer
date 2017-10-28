@@ -743,7 +743,19 @@
     {"word":"stimulete","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stimulete)(:?$|[^a-zA-Z]+))"},
     {"word":"stimuleted","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stimuleted)(:?$|[^a-zA-Z]+))"},
     {"word":"stimuletes","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stimuletes)(:?$|[^a-zA-Z]+))"},
-    {"word":"stimuleting","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stimuleting)(:?$|[^a-zA-Z]+))"}
+    {"word":"stimuleting","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stimuleting)(:?$|[^a-zA-Z]+))"},
+    {"word":"stoping","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stoping)(:?$|[^a-zA-Z]+))"},
+    {"word":"stoped","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stoped)(:?$|[^a-zA-Z]+))"},
+    {"word":"stuning","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stuning)(:?$|[^a-zA-Z]+))"},
+    {"word":"sucess","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sucess)(:?$|[^a-zA-Z]+))"},
+    {"word":"succes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(succes)(:?$|[^a-zA-Z]+))"},
+    {"word":"successfull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(successfull)(:?$|[^a-zA-Z]+))"},
+    {"word":"sucessful","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sucessful)(:?$|[^a-zA-Z]+))"},
+    {"word":"succesful","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(succesful)(:?$|[^a-zA-Z]+))"},
+    {"word":"sucesful","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sucesful)(:?$|[^a-zA-Z]+))"},
+    {"word":"sucessfull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sucessfull)(:?$|[^a-zA-Z]+))"},
+    {"word":"succesfull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(succesfull)(:?$|[^a-zA-Z]+))"},
+    {"word":"sucesfull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sucesfull)(:?$|[^a-zA-Z]+))"}
 
 
 
