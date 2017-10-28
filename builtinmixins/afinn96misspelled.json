@@ -816,7 +816,12 @@
     {"word":"thriled","score":5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(thriled)(:?$|[^a-zA-Z]+))"},
     {"word":"totaletarian","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(totaletarian)(:?$|[^a-zA-Z]+))"},
     {"word":"totaletarianism","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(totaletarianism)(:?$|[^a-zA-Z]+))"},
-    {"word":"toothles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(toothles)(:?$|[^a-zA-Z]+))"}
+    {"word":"toothles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(toothles)(:?$|[^a-zA-Z]+))"},
+    {"word":"tortere","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(tortere)(:?$|[^a-zA-Z]+))"},
+    {"word":"tortered","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(tortered)(:?$|[^a-zA-Z]+))"},
+    {"word":"torteres","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(torteres)(:?$|[^a-zA-Z]+))"},
+    {"word":"tortering","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(tortering)(:?$|[^a-zA-Z]+))"}
+
 
 
 
