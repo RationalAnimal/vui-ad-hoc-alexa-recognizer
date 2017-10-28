@@ -776,7 +776,10 @@
     {"word":"stresser","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stresser)(:?$|[^a-zA-Z]+))"},
     {"word":"stressers","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stressers)(:?$|[^a-zA-Z]+))"},
     {"word":"stresor","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stresor)(:?$|[^a-zA-Z]+))"},
-    {"word":"stresors","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stresors)(:?$|[^a-zA-Z]+))"}
+    {"word":"stresors","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stresors)(:?$|[^a-zA-Z]+))"},
+    {"word":"stryke","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stryke)(:?$|[^a-zA-Z]+))"},
+    {"word":"strik","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(strik)(:?$|[^a-zA-Z]+))"},
+    {"word":"substancial","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(substancial)(:?$|[^a-zA-Z]+))"}
 
 
 
