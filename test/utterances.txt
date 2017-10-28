@@ -127,3 +127,5 @@ VagueCountIntent I would like {CountSlot} {appetizer|appetizers}
 MorphingIntent Morph me {CountSlot} times
 AfinnIntent AFINN this is terrible
 AfinnIntent AFINN this is terrible and weird and accidental
+AfinnIntent AFINN this is something cool
+AfinnIntent AFINN this is cool stuff
