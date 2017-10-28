@@ -80,11 +80,18 @@
    );
 
    let runningScore = 0;
+   let scratchUtterance = utterance;
    for(let i = 0; i < dataSet.scoredWords.length; i++){
      let regExp = new RegExp(dataSet.scoredWords[i].regExpString, "ig");
      let matchResult;
-     while(matchResult = regExp.exec(utterance)) {// eslint-disable-line no-cond-assign;
+     let matchFound = false;
+     while(matchResult = regExp.exec(scratchUtterance)) {// eslint-disable-line no-cond-assign;
        runningScore += dataSet.scoredWords[i].score;
+       matchFound = true;
+     }
+     // Remove the matched string if it's multiword to make sure it won't be matched on again by substrings.
+     if(matchFound && dataSet.scoredWords[i].wordCount > 1){
+       scratchUtterance = scratchUtterance.replace(new RegExp(dataSet.scoredWords[i].regExpString), "#unmatchable%@");
      }
    }
    if(typeof priorResult === "undefined" || priorResult === null){
