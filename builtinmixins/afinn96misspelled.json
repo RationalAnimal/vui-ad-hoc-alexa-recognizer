@@ -796,8 +796,16 @@
     {"word":"terible","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terible)(:?$|[^a-zA-Z]+))"},
     {"word":"teribly","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(teribly)(:?$|[^a-zA-Z]+))"},
     {"word":"terific","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terific)(:?$|[^a-zA-Z]+))"},
-    {"word":"teror","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(teror)(:?$|[^a-zA-Z]+))"}
-
+    {"word":"teror","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(teror)(:?$|[^a-zA-Z]+))"},
+    {"word":"terorize","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terorize)(:?$|[^a-zA-Z]+))"},
+    {"word":"terorized","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terorized)(:?$|[^a-zA-Z]+))"},
+    {"word":"terorizes","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terorizes)(:?$|[^a-zA-Z]+))"},
+    {"word":"terrorise","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terrorise)(:?$|[^a-zA-Z]+))"},
+    {"word":"terrorised","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terrorised)(:?$|[^a-zA-Z]+))"},
+    {"word":"terrorises","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terrorises)(:?$|[^a-zA-Z]+))"},
+    {"word":"terorise","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terorise)(:?$|[^a-zA-Z]+))"},
+    {"word":"terorised","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terorised)(:?$|[^a-zA-Z]+))"},
+    {"word":"terorises","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terorises)(:?$|[^a-zA-Z]+))"}
 
 
   ]
