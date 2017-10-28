@@ -1340,7 +1340,7 @@
     {"word":"threat","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(threat)(:?$|[^a-zA-Z]+))"},
     {"word":"threaten","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(threaten)(:?$|[^a-zA-Z]+))"},
     {"word":"threatens","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(threatens)(:?$|[^a-zA-Z]+))"},
-    {"word":"threating","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(threating)(:?$|[^a-zA-Z]+))"},
+    {"word":"threatening","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(threatening)(:?$|[^a-zA-Z]+))"},
     {"word":"threats","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(threats)(:?$|[^a-zA-Z]+))"},
     {"word":"thrilled","score":5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(thrilled)(:?$|[^a-zA-Z]+))"},
     {"word":"tired","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(tired)(:?$|[^a-zA-Z]+))"},
