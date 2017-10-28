@@ -725,7 +725,11 @@
     {"word":"short sighted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(short\\s+sighted)(:?$|[^a-zA-Z]+))"},
     {"word":"short sightness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(short\\s+sightness)(:?$|[^a-zA-Z]+))"},
     {"word":"short sightedness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(short\\s+sightedness)(:?$|[^a-zA-Z]+))"},
-    {"word":"shie","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shie)(:?$|[^a-zA-Z]+))"}
+    {"word":"shie","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(shie)(:?$|[^a-zA-Z]+))"},
+    {"word":"sily","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sily)(:?$|[^a-zA-Z]+))"},
+    {"word":"silensing","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(silensing)(:?$|[^a-zA-Z]+))"},
+    {"word":"sinfull","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sinfull)(:?$|[^a-zA-Z]+))"},
+    {"word":"single minded","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(single\\s+minded)(:?$|[^a-zA-Z]+))"}
 
 
 
