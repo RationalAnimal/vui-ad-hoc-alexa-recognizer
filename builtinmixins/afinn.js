@@ -53,6 +53,18 @@
      function(a,b){
        let aSplit = a.word.split(/\s+/);
        let bSplit = b.word.split(/\s+/);
+       if(aSplit.length == bSplit.length){
+         if (a.word < b.word){
+           return -1;
+         }
+         else if (a.word > b.word){
+           return 1;
+         }
+         else {
+           // This should never happen here, but technically is possible.
+           return 0;
+         }
+       }
        return (aSplit.length - bSplit.length);
      }
    );
