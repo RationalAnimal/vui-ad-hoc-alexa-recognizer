@@ -758,7 +758,15 @@
     {"word":"sucesfull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sucesfull)(:?$|[^a-zA-Z]+))"},
     {"word":"sufer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sufer)(:?$|[^a-zA-Z]+))"},
     {"word":"sufers","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sufers)(:?$|[^a-zA-Z]+))"},
-    {"word":"suiside","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suiside)(:?$|[^a-zA-Z]+))"}
+    {"word":"suiside","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suiside)(:?$|[^a-zA-Z]+))"},
+    {"word":"sun shine","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sun\\s+shine)(:?$|[^a-zA-Z]+))"},
+    {"word":"suport","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suport)(:?$|[^a-zA-Z]+))"},
+    {"word":"suported","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suported)(:?$|[^a-zA-Z]+))"},
+    {"word":"suporter","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suporter)(:?$|[^a-zA-Z]+))"},
+    {"word":"suporters","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suporters)(:?$|[^a-zA-Z]+))"},
+    {"word":"suportive","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suportive)(:?$|[^a-zA-Z]+))"},
+    {"word":"suports","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suports)(:?$|[^a-zA-Z]+))"}
+
 
 
 
