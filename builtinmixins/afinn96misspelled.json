@@ -755,7 +755,10 @@
     {"word":"sucesful","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sucesful)(:?$|[^a-zA-Z]+))"},
     {"word":"sucessfull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sucessfull)(:?$|[^a-zA-Z]+))"},
     {"word":"succesfull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(succesfull)(:?$|[^a-zA-Z]+))"},
-    {"word":"sucesfull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sucesfull)(:?$|[^a-zA-Z]+))"}
+    {"word":"sucesfull","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sucesfull)(:?$|[^a-zA-Z]+))"},
+    {"word":"sufer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sufer)(:?$|[^a-zA-Z]+))"},
+    {"word":"sufers","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sufers)(:?$|[^a-zA-Z]+))"},
+    {"word":"suiside","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suiside)(:?$|[^a-zA-Z]+))"}
 
 
 
