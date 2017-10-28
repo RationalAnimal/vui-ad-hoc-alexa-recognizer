@@ -810,10 +810,14 @@
     {"word":"thoughtles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(thoughtles)(:?$|[^a-zA-Z]+))"},
     {"word":"thoutful","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(thoutful)(:?$|[^a-zA-Z]+))"},
     {"word":"thoutless","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(thoutless)(:?$|[^a-zA-Z]+))"},
-
     {"word":"threatene","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(threatene)(:?$|[^a-zA-Z]+))"},
     {"word":"threatenes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(threatenes)(:?$|[^a-zA-Z]+))"},
-    {"word":"threating","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(threating)(:?$|[^a-zA-Z]+))"}
+    {"word":"threating","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(threating)(:?$|[^a-zA-Z]+))"},
+    {"word":"thriled","score":5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(thriled)(:?$|[^a-zA-Z]+))"},
+    {"word":"totaletarian","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(totaletarian)(:?$|[^a-zA-Z]+))"},
+    {"word":"totaletarianism","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(totaletarianism)(:?$|[^a-zA-Z]+))"},
+    {"word":"toothles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(toothles)(:?$|[^a-zA-Z]+))"}
+
 
 
 
