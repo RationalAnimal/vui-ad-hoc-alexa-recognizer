@@ -783,7 +783,11 @@
     {"word":"suk","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suk)(:?$|[^a-zA-Z]+))"},
     {"word":"suks","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suks)(:?$|[^a-zA-Z]+))"},
     {"word":"sufer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sufer)(:?$|[^a-zA-Z]+))"},
-    {"word":"sufering","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sufering)(:?$|[^a-zA-Z]+))"}
+    {"word":"sufering","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sufering)(:?$|[^a-zA-Z]+))"},
+    {"word":"suport","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suport)(:?$|[^a-zA-Z]+))"},
+    {"word":"suported","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suported)(:?$|[^a-zA-Z]+))"},
+    {"word":"suporting","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suporting)(:?$|[^a-zA-Z]+))"},
+    {"word":"suports","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(suports)(:?$|[^a-zA-Z]+))"}
 
 
 
