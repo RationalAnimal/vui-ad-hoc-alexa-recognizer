@@ -805,7 +805,12 @@
     {"word":"terrorises","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terrorises)(:?$|[^a-zA-Z]+))"},
     {"word":"terorise","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terorise)(:?$|[^a-zA-Z]+))"},
     {"word":"terorised","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terorised)(:?$|[^a-zA-Z]+))"},
-    {"word":"terorises","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terorises)(:?$|[^a-zA-Z]+))"}
+    {"word":"terorises","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terorises)(:?$|[^a-zA-Z]+))"},
+    {"word":"thoughtfull","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(thoughtfull)(:?$|[^a-zA-Z]+))"},
+    {"word":"thoughtles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(thoughtles)(:?$|[^a-zA-Z]+))"},
+    {"word":"thoutful","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(thoutful)(:?$|[^a-zA-Z]+))"},
+    {"word":"thoutless","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(thoutless)(:?$|[^a-zA-Z]+))"}
+
 
 
   ]
