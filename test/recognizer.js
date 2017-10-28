@@ -2696,6 +2696,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         });
     });
+    it("verify sentiment analysis is computed correctly for a single term", function() {
+      let result = recognizer.Recognizer.matchText("AFINN this is terrible");
+      expect(result).to.eql(
+        {
+          "name": "AfinnIntent",
+          "slots": {},
+          "sentiment": {
+            "AFINN": {
+              "score": -3
+            }
+          }
+        });
+    });
 
   });
 

@@ -25,7 +25,7 @@
  */
  "use strict";
  module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-unused-vars
-   console.log("AFINN sentiment analysis called, customArgs: ", JSON.stringify(customArgs, null, 2));
+   //console.log("AFINN sentiment analysis called, customArgs: ", JSON.stringify(customArgs, null, 2));
    let intentName;
    let utterance;
    let priorResult;
