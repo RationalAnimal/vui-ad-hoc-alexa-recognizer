@@ -729,7 +729,11 @@
     {"word":"sily","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sily)(:?$|[^a-zA-Z]+))"},
     {"word":"silensing","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(silensing)(:?$|[^a-zA-Z]+))"},
     {"word":"sinfull","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sinfull)(:?$|[^a-zA-Z]+))"},
-    {"word":"single minded","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(single\\s+minded)(:?$|[^a-zA-Z]+))"}
+    {"word":"single minded","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(single\\s+minded)(:?$|[^a-zA-Z]+))"},
+    {"word":"skeptisism","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(skeptisism)(:?$|[^a-zA-Z]+))"},
+    {"word":"sleeplesness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sleeplesness)(:?$|[^a-zA-Z]+))"},
+    {"word":"sleeplessnes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sleeplessnes)(:?$|[^a-zA-Z]+))"},
+    {"word":"sleeplesnes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sleeplesnes)(:?$|[^a-zA-Z]+))"}
 
 
 
