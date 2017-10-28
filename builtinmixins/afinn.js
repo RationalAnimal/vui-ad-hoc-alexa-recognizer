@@ -48,6 +48,12 @@
      return;
    }
 
+   // Pre-compute word count to improve performance
+   for(let i = 0; i < dataSet.scoredWords.length; i++){
+     let split = dataSet.scoredWords[i].word.split(/\s+/);
+     dataSet.scoredWords[i].wordCount = split.length;
+   }
+
    // Sort the array by how many words are in a "word", then the "word" itself, in descending order
    dataSet.scoredWords.sort(
      function(a,b){
