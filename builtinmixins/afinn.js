@@ -57,9 +57,7 @@
    // Sort the array by how many words are in a "word", then the "word" itself, in descending order
    dataSet.scoredWords.sort(
      function(a,b){
-       let aSplit = a.word.split(/\s+/);
-       let bSplit = b.word.split(/\s+/);
-       if(aSplit.length === bSplit.length){
+       if(a.wordCount === b.wordCount){
          if (a.word < b.word){
            return 1;
          }
@@ -77,7 +75,7 @@
        if(b.word.startsWith(a.word)){
          return 1;
        }
-       return (bSplit.length - aSplit.length);
+       return (b.wordCount - a.wordCount);
      }
    );
 
