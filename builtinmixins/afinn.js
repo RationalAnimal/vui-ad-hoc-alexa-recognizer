@@ -48,7 +48,7 @@
      return;
    }
 
-   // Sort the array by how many words are in a "word", in descending order
+   // Sort the array by how many words are in a "word", then the "word" itself, in descending order
    dataSet.scoredWords.sort(
      function(a,b){
        let aSplit = a.word.split(/\s+/);
@@ -74,6 +74,7 @@
        return (bSplit.length - aSplit.length);
      }
    );
+
    let runningScore = 0;
    for(let i = 0; i < dataSet.scoredWords.length; i++){
      let regExp = new RegExp(dataSet.scoredWords[i].regExpString, "ig");
