@@ -733,7 +733,11 @@
     {"word":"skeptisism","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(skeptisism)(:?$|[^a-zA-Z]+))"},
     {"word":"sleeplesness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sleeplesness)(:?$|[^a-zA-Z]+))"},
     {"word":"sleeplessnes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sleeplessnes)(:?$|[^a-zA-Z]+))"},
-    {"word":"sleeplesnes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sleeplesnes)(:?$|[^a-zA-Z]+))"}
+    {"word":"sleeplesnes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(sleeplesnes)(:?$|[^a-zA-Z]+))"},
+    {"word":"smeer","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(smeer)(:?$|[^a-zA-Z]+))"},
+    {"word":"son of a bitch","score":-5,"regExpString":"(:?(:?^|[^a-zA-Z]+)(son\\s+of\\s+a\\s+bitch)(:?$|[^a-zA-Z]+))"},
+    {"word":"stabed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(stabed)(:?$|[^a-zA-Z]+))"}
+
 
 
 
