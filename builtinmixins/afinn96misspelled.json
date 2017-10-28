@@ -792,23 +792,11 @@
     {"word":"swindele","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(swindele)(:?$|[^a-zA-Z]+))"},
     {"word":"swindeles","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(swindeles)(:?$|[^a-zA-Z]+))"},
     {"word":"swindels","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(swindels)(:?$|[^a-zA-Z]+))"},
-    {"word":"swindeling","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(swindeling)(:?$|[^a-zA-Z]+))"}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    {"word":"swindeling","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(swindeling)(:?$|[^a-zA-Z]+))"},
+    {"word":"terible","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terible)(:?$|[^a-zA-Z]+))"},
+    {"word":"teribly","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(teribly)(:?$|[^a-zA-Z]+))"},
+    {"word":"terific","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(terific)(:?$|[^a-zA-Z]+))"},
+    {"word":"teror","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(teror)(:?$|[^a-zA-Z]+))"}
 
 
 
