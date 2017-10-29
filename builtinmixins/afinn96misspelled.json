@@ -859,7 +859,12 @@
     {"word":"vulnereble","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(vulnereble)(:?$|[^a-zA-Z]+))"},
     {"word":"yah","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yeh)(:?$|[^a-zA-Z]+))"},
     {"word":"yees","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yees)(:?$|[^a-zA-Z]+))"},
-    {"word":"yeeees","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yeeees)(:?$|[^a-zA-Z]+))"}
+    {"word":"yeeees","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yeeees)(:?$|[^a-zA-Z]+))"},
+    {"word":"yuky","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yuky)(:?$|[^a-zA-Z]+))"},
+    {"word":"yuckie","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yuckie)(:?$|[^a-zA-Z]+))"},
+    {"word":"yumy","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yumy)(:?$|[^a-zA-Z]+))"},
+    {"word":"yumie","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yumie)(:?$|[^a-zA-Z]+))"},
+    {"word":"yummie","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yummie)(:?$|[^a-zA-Z]+))"}
 
 
 
