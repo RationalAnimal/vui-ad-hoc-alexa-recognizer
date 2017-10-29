@@ -839,7 +839,12 @@
     {"word":"under mine","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(under\\s+mine)(:?$|[^a-zA-Z]+))"},
     {"word":"under mines","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(under\\s+mines)(:?$|[^a-zA-Z]+))"},
     {"word":"under mined","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(under\\s+mined)(:?$|[^a-zA-Z]+))"},
-    {"word":"under mining","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(under\\s+mining)(:?$|[^a-zA-Z]+))"}
+    {"word":"under mining","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(under\\s+mining)(:?$|[^a-zA-Z]+))"},
+    {"word":"uneesy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uneesy)(:?$|[^a-zA-Z]+))"},
+    {"word":"uneazy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uneazy)(:?$|[^a-zA-Z]+))"},
+    {"word":"uneezy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uneezy)(:?$|[^a-zA-Z]+))"},
+    {"word":"unemploiment","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unemploiment)(:?$|[^a-zA-Z]+))"}
+
 
 
 
