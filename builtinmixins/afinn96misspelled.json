@@ -835,7 +835,11 @@
     {"word":"unbeleivable","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unbeleivable)(:?$|[^a-zA-Z]+))"},
     {"word":"uncleer","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uncleer)(:?$|[^a-zA-Z]+))"},
     {"word":"unconvinsed","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unconvinsed)(:?$|[^a-zA-Z]+))"},
-    {"word":"unconfermed","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unconfermed)(:?$|[^a-zA-Z]+))"}
+    {"word":"unconfermed","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unconfermed)(:?$|[^a-zA-Z]+))"},
+    {"word":"under mine","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(under\\s+mine)(:?$|[^a-zA-Z]+))"},
+    {"word":"under mines","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(under\\s+mines)(:?$|[^a-zA-Z]+))"},
+    {"word":"under mined","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(under\\s+mined)(:?$|[^a-zA-Z]+))"},
+    {"word":"under mining","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(under\\s+mining)(:?$|[^a-zA-Z]+))"}
 
 
 
