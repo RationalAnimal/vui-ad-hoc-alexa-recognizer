@@ -888,7 +888,12 @@
     {"word":"worned","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worned)(:?$|[^a-zA-Z]+))"},
     {"word":"worns","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worns)(:?$|[^a-zA-Z]+))"},
     {"word":"waiste","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(waiste)(:?$|[^a-zA-Z]+))"},
-    {"word":"waisted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(waisted)(:?$|[^a-zA-Z]+))"}
+    {"word":"waisted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(waisted)(:?$|[^a-zA-Z]+))"},
+    {"word":"waisting","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(waisting)(:?$|[^a-zA-Z]+))"},
+    {"word":"weekness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weekness)(:?$|[^a-zA-Z]+))"},
+    {"word":"welth","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(welth)(:?$|[^a-zA-Z]+))"},
+    {"word":"welthy","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weelthy)(:?$|[^a-zA-Z]+))"}
+
 
   ]
 }
