@@ -855,7 +855,11 @@
     {"word":"useles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(useles)(:?$|[^a-zA-Z]+))"},
     {"word":"uselesness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uselesness)(:?$|[^a-zA-Z]+))"},
     {"word":"uselessnes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uselessnes)(:?$|[^a-zA-Z]+))"},
-    {"word":"uselesnes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uselesnes)(:?$|[^a-zA-Z]+))"}
+    {"word":"uselesnes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uselesnes)(:?$|[^a-zA-Z]+))"},
+    {"word":"vulnereble","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(vulnereble)(:?$|[^a-zA-Z]+))"},
+    {"word":"yah","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yeh)(:?$|[^a-zA-Z]+))"},
+    {"word":"yees","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yees)(:?$|[^a-zA-Z]+))"},
+    {"word":"yeeees","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yeeees)(:?$|[^a-zA-Z]+))"}
 
 
 
