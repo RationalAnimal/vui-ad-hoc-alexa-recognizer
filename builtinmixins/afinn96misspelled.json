@@ -864,12 +864,12 @@
     {"word":"yuckie","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yuckie)(:?$|[^a-zA-Z]+))"},
     {"word":"yumy","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yumy)(:?$|[^a-zA-Z]+))"},
     {"word":"yumie","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yumie)(:?$|[^a-zA-Z]+))"},
-    {"word":"yummie","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yummie)(:?$|[^a-zA-Z]+))"}
-
-
-
-
-
+    {"word":"yummie","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(yummie)(:?$|[^a-zA-Z]+))"},
+    {"word":"vegue","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(vegue)(:?$|[^a-zA-Z]+))"},
+    {"word":"verdect","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(verdect)(:?$|[^a-zA-Z]+))"},
+    {"word":"verdects","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(verdects)(:?$|[^a-zA-Z]+))"},
+    {"word":"virdict","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(virdict)(:?$|[^a-zA-Z]+))"},
+    {"word":"virdicts","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(virdicts)(:?$|[^a-zA-Z]+))"}
 
 
   ]
