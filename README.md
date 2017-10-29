@@ -1286,10 +1286,10 @@ the above will execute on EVERY match attempt, whether it successfully matches o
 
 #### AFINN
 
-You can use afinn built in mix in for sentiment analysis.  Currently it only supports AFINN96 data set.  More data sets
-are on the way.  Some of them will be "alternative base sets" - AFINN111 and AFINN165.  Others are additional data sets
-that can be added to the base set, such as scored misspelled words (afin96misspelled.json data set 
-is partially done) or emoji data set.
+You can use afinn built in mix in for sentiment analysis.  Currently it supports AFINN96 and AFINN111 data sets.
+Also, there is an AFINN96 misspelled words data set that is partially done.
+More data sets are on the way.  Some of them will be "alternative base sets" - AFINN165.  Others are additional data sets
+that can be added to the base set, such as scored misspelled words or emoji data set.
 This mix in takes a single argument and returns a single
 score.  For example, given this config snippet:
 
@@ -1299,7 +1299,7 @@ score.  For example, given this config snippet:
   "mixInCode": [
     {
       "mixInBuiltInName": "afinn",
-      "arguments": {"ratingDataSetFiles": ["./afinn96.json"]}
+      "arguments": {"ratingDataSetFiles": ["./afinn96.json", "./afinn96misspelled.json"]}
     }
   ]
 }
