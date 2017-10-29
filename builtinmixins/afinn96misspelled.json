@@ -875,7 +875,11 @@
     {"word":"violense","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(violense)(:?$|[^a-zA-Z]+))"},
     {"word":"vurtuous","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(vurtuous)(:?$|[^a-zA-Z]+))"},
     {"word":"virtuos","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(virtuos)(:?$|[^a-zA-Z]+))"},
-    {"word":"visionery","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(visionery)(:?$|[^a-zA-Z]+))"}
+    {"word":"visionery","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(visionery)(:?$|[^a-zA-Z]+))"},
+    {"word":"vitemin","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(vitemin)(:?$|[^a-zA-Z]+))"},
+    {"word":"vulnereble","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(vulnereble)(:?$|[^a-zA-Z]+))"},
+    {"word":"walk out","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(walk\\s+out)(:?$|[^a-zA-Z]+))"},
+    {"word":"walk outs","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(walk\\s+outs)(:?$|[^a-zA-Z]+))"}
 
   ]
 }
