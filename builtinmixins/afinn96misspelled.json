@@ -895,7 +895,12 @@
     {"word":"welthy","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weelthy)(:?$|[^a-zA-Z]+))"},
     {"word":"weap","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weap)(:?$|[^a-zA-Z]+))"},
     {"word":"weaping","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weaping)(:?$|[^a-zA-Z]+))"},
-    {"word":"weerd","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weerd)(:?$|[^a-zA-Z]+))"}
+    {"word":"weerd","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weerd)(:?$|[^a-zA-Z]+))"},
+    {"word":"white wash","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(white\\s+wash)(:?$|[^a-zA-Z]+))"},
+    {"word":"hore","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hore)(:?$|[^a-zA-Z]+))"},
+    {"word":"wilingness","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(wilingness)(:?$|[^a-zA-Z]+))"},
+    {"word":"willingnes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(willingnes)(:?$|[^a-zA-Z]+))"},
+    {"word":"wilingnes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(wilingnes)(:?$|[^a-zA-Z]+))"}
 
 
   ]
