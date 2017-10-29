@@ -884,7 +884,11 @@
     {"word":"war fare","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(war\\s+fare)(:?$|[^a-zA-Z]+))"},
     {"word":"wormth","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(wormth)(:?$|[^a-zA-Z]+))"},
     {"word":"worning","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worning)(:?$|[^a-zA-Z]+))"},
-    {"word":"wornings","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(wornings)(:?$|[^a-zA-Z]+))"}
+    {"word":"wornings","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(wornings)(:?$|[^a-zA-Z]+))"},
+    {"word":"worned","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worned)(:?$|[^a-zA-Z]+))"},
+    {"word":"worns","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worns)(:?$|[^a-zA-Z]+))"},
+    {"word":"waiste","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(waiste)(:?$|[^a-zA-Z]+))"},
+    {"word":"waisted","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(waisted)(:?$|[^a-zA-Z]+))"}
 
   ]
 }
