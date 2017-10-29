@@ -846,7 +846,13 @@
     {"word":"unemploiment","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unemploiment)(:?$|[^a-zA-Z]+))"},
     {"word":"unhapy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unhapy)(:?$|[^a-zA-Z]+))"},
     {"word":"unimpresed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unimpresed)(:?$|[^a-zA-Z]+))"},
-    {"word":"unprofesional","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unprofesional)(:?$|[^a-zA-Z]+))"}
+    {"word":"unprofesional","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unprofesional)(:?$|[^a-zA-Z]+))"},
+    {"word":"upseting","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(upseting)(:?$|[^a-zA-Z]+))"},
+    {"word":"usefull","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(usefull)(:?$|[^a-zA-Z]+))"},
+    {"word":"usefullness","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(usefullness)(:?$|[^a-zA-Z]+))"},
+    {"word":"usefulnes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(usefulnes)(:?$|[^a-zA-Z]+))"},
+    {"word":"usefulLnes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(usefullnes)(:?$|[^a-zA-Z]+))"}
+
 
 
 
