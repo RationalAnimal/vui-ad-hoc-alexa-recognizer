@@ -892,7 +892,10 @@
     {"word":"waisting","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(waisting)(:?$|[^a-zA-Z]+))"},
     {"word":"weekness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weekness)(:?$|[^a-zA-Z]+))"},
     {"word":"welth","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(welth)(:?$|[^a-zA-Z]+))"},
-    {"word":"welthy","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weelthy)(:?$|[^a-zA-Z]+))"}
+    {"word":"welthy","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weelthy)(:?$|[^a-zA-Z]+))"},
+    {"word":"weap","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weap)(:?$|[^a-zA-Z]+))"},
+    {"word":"weaping","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weaping)(:?$|[^a-zA-Z]+))"},
+    {"word":"weerd","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weerd)(:?$|[^a-zA-Z]+))"}
 
 
   ]
