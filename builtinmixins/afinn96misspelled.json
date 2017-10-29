@@ -820,7 +820,12 @@
     {"word":"tortere","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(tortere)(:?$|[^a-zA-Z]+))"},
     {"word":"tortered","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(tortered)(:?$|[^a-zA-Z]+))"},
     {"word":"torteres","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(torteres)(:?$|[^a-zA-Z]+))"},
-    {"word":"tortering","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(tortering)(:?$|[^a-zA-Z]+))"}
+    {"word":"tortering","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(tortering)(:?$|[^a-zA-Z]+))"},
+    {"word":"tragick","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(tragick)(:?$|[^a-zA-Z]+))"},
+    {"word":"trama","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(trama)(:?$|[^a-zA-Z]+))"},
+    {"word":"tramatic","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(tramatic)(:?$|[^a-zA-Z]+))"},
+    {"word":"treeson","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(treeson)(:?$|[^a-zA-Z]+))"}
+
 
 
 
