@@ -843,7 +843,11 @@
     {"word":"uneesy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uneesy)(:?$|[^a-zA-Z]+))"},
     {"word":"uneazy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uneazy)(:?$|[^a-zA-Z]+))"},
     {"word":"uneezy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uneezy)(:?$|[^a-zA-Z]+))"},
-    {"word":"unemploiment","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unemploiment)(:?$|[^a-zA-Z]+))"}
+    {"word":"unemploiment","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unemploiment)(:?$|[^a-zA-Z]+))"},
+    {"word":"unhapy","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unhapy)(:?$|[^a-zA-Z]+))"},
+    {"word":"unimpresed","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unimpresed)(:?$|[^a-zA-Z]+))"},
+    {"word":"unprofesional","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unprofesional)(:?$|[^a-zA-Z]+))"}
+
 
 
 
