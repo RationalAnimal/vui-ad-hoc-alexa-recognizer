@@ -828,12 +828,11 @@
     {"word":"trikery","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(trikery)(:?$|[^a-zA-Z]+))"},
     {"word":"troubel","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(troubel)(:?$|[^a-zA-Z]+))"},
     {"word":"troubeled","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(troubeled)(:?$|[^a-zA-Z]+))"},
-    {"word":"troubels","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(troubels)(:?$|[^a-zA-Z]+))"}
-
-
-
-
-
+    {"word":"troubels","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(troubels)(:?$|[^a-zA-Z]+))"},
+    {"word":"tru","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(tru)(:?$|[^a-zA-Z]+))"},
+    {"word":"unaceptable","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unaceptable)(:?$|[^a-zA-Z]+))"},
+    {"word":"unaproved","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unaproved)(:?$|[^a-zA-Z]+))"},
+    {"word":"unbeleivable","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(unbeleivable)(:?$|[^a-zA-Z]+))"}
 
 
   ]
