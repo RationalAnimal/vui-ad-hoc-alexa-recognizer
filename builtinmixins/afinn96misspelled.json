@@ -869,7 +869,10 @@
     {"word":"verdect","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(verdect)(:?$|[^a-zA-Z]+))"},
     {"word":"verdects","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(verdects)(:?$|[^a-zA-Z]+))"},
     {"word":"virdict","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(virdict)(:?$|[^a-zA-Z]+))"},
-    {"word":"virdicts","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(virdicts)(:?$|[^a-zA-Z]+))"}
+    {"word":"virdicts","score":-1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(virdicts)(:?$|[^a-zA-Z]+))"},
+    {"word":"victem","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(victem)(:?$|[^a-zA-Z]+))"},
+    {"word":"victems","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(victems)(:?$|[^a-zA-Z]+))"},
+    {"word":"violense","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(violense)(:?$|[^a-zA-Z]+))"}
 
 
   ]
