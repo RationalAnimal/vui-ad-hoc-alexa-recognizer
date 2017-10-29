@@ -851,7 +851,12 @@
     {"word":"usefull","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(usefull)(:?$|[^a-zA-Z]+))"},
     {"word":"usefullness","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(usefullness)(:?$|[^a-zA-Z]+))"},
     {"word":"usefulnes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(usefulnes)(:?$|[^a-zA-Z]+))"},
-    {"word":"usefulLnes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(usefullnes)(:?$|[^a-zA-Z]+))"}
+    {"word":"usefulLnes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(usefullnes)(:?$|[^a-zA-Z]+))"},
+    {"word":"useles","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(useles)(:?$|[^a-zA-Z]+))"},
+    {"word":"uselesness","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uselesness)(:?$|[^a-zA-Z]+))"},
+    {"word":"uselessnes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uselessnes)(:?$|[^a-zA-Z]+))"},
+    {"word":"uselesnes","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(uselesnes)(:?$|[^a-zA-Z]+))"}
+
 
 
 
