@@ -57,42 +57,44 @@
      return;
    }
 
-   // Pre-compute word count to improve performance
-   for(let i = 0; i < dataSet.scoredWords.length; i++){
-     let split = dataSet.scoredWords[i].word.split(/\s+/);
-     dataSet.scoredWords[i].wordCount = split.length;
-   }
+   if(precomputed === false){
+     // Pre-compute word count to improve performance
+     for(let i = 0; i < dataSet.scoredWords.length; i++){
+       let split = dataSet.scoredWords[i].word.split(/\s+/);
+       dataSet.scoredWords[i].wordCount = split.length;
+     }
 
-   // Sort the array by how many words are in a "word", then the "word" itself, in descending order
-   dataSet.scoredWords.sort(
-     function(a,b){
-       if(a.wordCount === b.wordCount){
-         if (a.word < b.word){
-           return 1;
+     // Sort the array by how many words are in a "word", then the "word" itself, in descending order
+     dataSet.scoredWords.sort(
+       function(a,b){
+         if(a.wordCount === b.wordCount){
+           if (a.word < b.word){
+             return 1;
+           }
+           else if (a.word > b.word){
+             return -1;
+           }
+           else {
+             // This should never happen here, but technically is possible.
+             return 0;
+           }
          }
-         else if (a.word > b.word){
+         if(a.word.startsWith(b.word)){
            return -1;
          }
-         else {
-           // This should never happen here, but technically is possible.
-           return 0;
+         if(b.word.startsWith(a.word)){
+           return 1;
          }
+         return (b.wordCount - a.wordCount);
        }
-       if(a.word.startsWith(b.word)){
-         return -1;
-       }
-       if(b.word.startsWith(a.word)){
-         return 1;
-       }
-       return (b.wordCount - a.wordCount);
-     }
-   );
+     );
 
-   // Remove duplicated words
-   for(let i = 0; i < dataSet.scoredWords.length - 1; i++){
-     if(dataSet.scoredWords[i].word === dataSet.scoredWords[i+1].word){
-       dataSet.scoredWords.splice(i, 1);
-       i--;
+     // Remove duplicated words
+     for(let i = 0; i < dataSet.scoredWords.length - 1; i++){
+       if(dataSet.scoredWords[i].word === dataSet.scoredWords[i+1].word){
+         dataSet.scoredWords.splice(i, 1);
+         i--;
+       }
      }
    }
 
