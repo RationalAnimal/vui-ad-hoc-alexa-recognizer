@@ -915,7 +915,11 @@
     {"word":"worce","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worce)(:?$|[^a-zA-Z]+))"},
     {"word":"worcen","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worcen)(:?$|[^a-zA-Z]+))"},
     {"word":"worcened","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worcened)(:?$|[^a-zA-Z]+))"},
-    {"word":"worcening","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worcening)(:?$|[^a-zA-Z]+))"}
+    {"word":"worcening","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worcening)(:?$|[^a-zA-Z]+))"},
+    {"word":"worcens","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worcens)(:?$|[^a-zA-Z]+))"},
+    {"word":"zelot","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(zelot)(:?$|[^a-zA-Z]+))"},
+    {"word":"zelots","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(zelots)(:?$|[^a-zA-Z]+))"}
+
 
   ]
 }
