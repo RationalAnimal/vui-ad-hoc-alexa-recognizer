@@ -907,8 +907,15 @@
     {"word":"weeshing","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weeshing)(:?$|[^a-zA-Z]+))"},
     {"word":"withdral","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(withdral)(:?$|[^a-zA-Z]+))"},
     {"word":"wonderfull","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(wonderfull)(:?$|[^a-zA-Z]+))"},
-    {"word":"woo hoo","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(woo\\s+hoo)(:?$|[^a-zA-Z]+))"}
-
+    {"word":"woo hoo","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(woo\\s+hoo)(:?$|[^a-zA-Z]+))"},
+    {"word":"wory","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(wory)(:?$|[^a-zA-Z]+))"},
+    {"word":"worrie","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worrie)(:?$|[^a-zA-Z]+))"},
+    {"word":"woried","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(woried)(:?$|[^a-zA-Z]+))"},
+    {"word":"worying","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worying)(:?$|[^a-zA-Z]+))"},
+    {"word":"worce","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worce)(:?$|[^a-zA-Z]+))"},
+    {"word":"worcen","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worcen)(:?$|[^a-zA-Z]+))"},
+    {"word":"worcened","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worcened)(:?$|[^a-zA-Z]+))"},
+    {"word":"worcening","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(worcening)(:?$|[^a-zA-Z]+))"}
 
   ]
 }
