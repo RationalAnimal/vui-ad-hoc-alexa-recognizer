@@ -900,7 +900,11 @@
     {"word":"hore","score":-4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(hore)(:?$|[^a-zA-Z]+))"},
     {"word":"wilingness","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(wilingness)(:?$|[^a-zA-Z]+))"},
     {"word":"willingnes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(willingnes)(:?$|[^a-zA-Z]+))"},
-    {"word":"wilingnes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(wilingnes)(:?$|[^a-zA-Z]+))"}
+    {"word":"wilingnes","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(wilingnes)(:?$|[^a-zA-Z]+))"},
+    {"word":"winer","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(win\\s+win)(:?$|[^a-zA-Z]+))"},
+    {"word":"weesh","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weesh)(:?$|[^a-zA-Z]+))"},
+    {"word":"weeshes","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weeshes)(:?$|[^a-zA-Z]+))"},
+    {"word":"weeshing","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weeshing)(:?$|[^a-zA-Z]+))"}
 
 
   ]
