@@ -43,10 +43,12 @@
        dataSet.scoredWords = scratchDataSet.scoredWords;
        precomputed = true;
      }
-     for(let i = 0; i < customArgs.ratingDataSetFiles.length; i++){
-       let scratchDataSet = require(customArgs.ratingDataSetFiles[i]);
-       dataSet.scoredWords = dataSet.scoredWords.concat(scratchDataSet.scoredWords);
-       precomputed = false;
+     if(typeof customArgs.ratingDataSetFiles !== "undefined" && customArgs.ratingDataSetFiles !== null){
+       for(let i = 0; i < customArgs.ratingDataSetFiles.length; i++){
+         let scratchDataSet = require(customArgs.ratingDataSetFiles[i]);
+         dataSet.scoredWords = dataSet.scoredWords.concat(scratchDataSet.scoredWords);
+         precomputed = false;
+       }
      }
    }
    else {
