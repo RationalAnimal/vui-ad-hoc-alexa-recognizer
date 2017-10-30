@@ -2736,6 +2736,46 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
+    it("verify sentiment analysis is computed correctly for a single term", function() {
+      let result = recognizer.Recognizer.matchText("AFINN Precompiled Two this is terrible");
+      expect(result).to.eql(
+        {
+          "name": "AfinnPrecompiledTwoIntent",
+          "slots": {},
+          "sentiment": {
+            "AFINN": {
+              "score": -3
+            }
+          }
+        });
+    });
+    it("verify sentiment analysis is computed correctly for a single term", function() {
+      let result = recognizer.Recognizer.matchText("AFINN Precompiled Two this is something cool");
+      expect(result).to.eql(
+        {
+          "name": "AfinnPrecompiledTwoIntent",
+          "slots": {},
+          "sentiment": {
+            "AFINN": {
+              "score": 1
+            }
+          }
+        });
+    });
+    it("verify sentiment analysis is computed correctly for a single term", function() {
+      let result = recognizer.Recognizer.matchText("AFINN Precompiled Two this is cool stuff");
+      expect(result).to.eql(
+        {
+          "name": "AfinnPrecompiledTwoIntent",
+          "slots": {},
+          "sentiment": {
+            "AFINN": {
+              "score": 3
+            }
+          }
+        });
+    });
+
   });
 
   /*

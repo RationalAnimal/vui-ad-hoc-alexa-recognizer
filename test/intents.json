@@ -754,9 +754,11 @@
     {
       "intent": "AfinnIntent",
       "slots": []
+    },
+    {
+      "intent": "AfinnPrecompiledTwoIntent",
+      "slots": []
     }
-
-
 
   ]
 }

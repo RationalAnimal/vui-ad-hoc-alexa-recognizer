@@ -129,3 +129,7 @@ AfinnIntent AFINN this is terrible
 AfinnIntent AFINN this is terrible and weird and accidental
 AfinnIntent AFINN this is something cool
 AfinnIntent AFINN this is cool stuff
+AfinnPrecompiledTwoIntent AFINN Precompiled Two this is terrible
+AfinnPrecompiledTwoIntent AFINN Precompiled Two this is terrible and weird and accidental
+AfinnPrecompiledTwoIntent AFINN Precompiled Two this is something cool
+AfinnPrecompiledTwoIntent AFINN Precompiled Two this is cool stuff

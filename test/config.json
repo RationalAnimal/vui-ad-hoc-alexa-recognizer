@@ -174,6 +174,15 @@
 						"arguments": {"ratingDataSetFiles": ["./afinn96.json", "./afinn96misspelled.json"]}
 					}
 				]
+			},
+			{
+				"bundleName": "afinnPrecompiledTwoSentimentBundle",
+				"mixInCode": [
+					{
+						"mixInBuiltInName": "afinn",
+						"arguments": {"precomputedDataSet": "./afinn96withmisspelledwords_precompiled.json"}
+					}
+				]
 			}
 		],
 		"appliesTo": [
@@ -204,6 +213,10 @@
 			{
 				"bundleName": "afinnSentimentBundle",
 				"intentMatchRegExString": "(AfinnIntent)"
+			},
+			{
+				"bundleName": "afinnPrecompiledTwoSentimentBundle",
+				"intentMatchRegExString": "(AfinnPrecompiledTwoIntent)"
 			}
 		]
 	},
