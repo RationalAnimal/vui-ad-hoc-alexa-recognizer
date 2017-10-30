@@ -1287,7 +1287,7 @@ the above will execute on EVERY match attempt, whether it successfully matches o
 #### AFINN
 
 You can use afinn built in mix in for sentiment analysis.  Currently it supports AFINN96 and AFINN111 data sets.
-Also, there is an AFINN96 misspelled words data set that is partially done.
+Also, there is an AFINN96 misspelled words data set that includes misspelled versions of the words in AFINN96.
 More data sets are on the way.  Some of them will be "alternative base sets" - AFINN165.  Others are additional data sets
 that can be added to the base set, such as scored misspelled words or emoji data set.
 This mix in takes a single argument and returns a single
