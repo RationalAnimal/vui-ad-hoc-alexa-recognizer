@@ -904,7 +904,10 @@
     {"word":"winer","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(win\\s+win)(:?$|[^a-zA-Z]+))"},
     {"word":"weesh","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weesh)(:?$|[^a-zA-Z]+))"},
     {"word":"weeshes","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weeshes)(:?$|[^a-zA-Z]+))"},
-    {"word":"weeshing","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weeshing)(:?$|[^a-zA-Z]+))"}
+    {"word":"weeshing","score":1,"regExpString":"(:?(:?^|[^a-zA-Z]+)(weeshing)(:?$|[^a-zA-Z]+))"},
+    {"word":"withdral","score":-3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(withdral)(:?$|[^a-zA-Z]+))"},
+    {"word":"wonderfull","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(wonderfull)(:?$|[^a-zA-Z]+))"},
+    {"word":"woo hoo","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(woo\\s+hoo)(:?$|[^a-zA-Z]+))"}
 
 
   ]
