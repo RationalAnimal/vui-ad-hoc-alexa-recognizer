@@ -1332,6 +1332,31 @@ or, if you choose to use multiple data sets at the same time:
 }
 ```
 
+#### Precompiled sentiment data sets
+
+When you specify the data sets for sentiment analysis you should be aware that it may have some performance implications.
+For your convenience you can specify the data set(s) individually as many as you'd like as part of the "ratingDataSetFiles"
+array.  However, this would then mean that the sentiment analysis code would have to do extra work at run time.  Namely,
+merge the data sets, sort, remove duplicates, etc.  You can eliminate these steps if you use "precompiled" data sets.
+These include one or more data sets already merged, sorted, etc.  You can specify only one such file since the intention
+is to create a single precompiled file that does not need to be processed further.
+So, instead of the "ratingDataSetFiles" array, please use "precomputedDataSet" field:
+
+```json
+{
+  "bundleName": "afinnSentimentBundle",
+  "mixInCode": [
+    {
+      "mixInBuiltInName": "afinn",
+      "arguments": {"precomputedDataSet": "./afinn96withmisspelledwords_precompiled.json"}
+    }
+  ]
+}
+```
+
+Currently there is only one precomputed data set - afinn96withmisspelledwords_precompiled.json - but more are coming
+soon.  Also, there will be a utility in the future to create these sets yourself
+
 ### Dollar values
 
 If a service like Cortana passes a dollar value, e.g. $1000, it will be mapped
