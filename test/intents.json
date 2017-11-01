@@ -758,6 +758,10 @@
     {
       "intent": "AfinnPrecompiledTwoIntent",
       "slots": []
+    },
+    {
+      "intent": "AfinnEmoticonIntent",
+      "slots": []
     }
 
   ]
