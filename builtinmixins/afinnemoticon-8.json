@@ -67,11 +67,9 @@
     {"word":"8D","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(8D)(:?$|[^a-zA-Z]+))","caseInsensitive":false},
     {"word":"X-D","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(X\\-D)(:?$|[^a-zA-Z]+))","caseInsensitive":false},
     {"word":"XD","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(XD)(:?$|[^a-zA-Z]+))","caseInsensitive":false},
-    {"word":"XOXOXO","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(XOXOXO)(:?$|[^a-zA-Z]+))","caseInsensitive":true},
+    {"word":"XOXOXO","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)((:?XO){3,4})(:?$|[^a-zA-Z]+))","caseInsensitive":true},
     {"word":"x-D","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(x\\-D)(:?$|[^a-zA-Z]+))","caseInsensitive":false},
     {"word":"xD","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)(xD)(:?$|[^a-zA-Z]+))","caseInsensitive":false},
-    {"word":"xo","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)((:?xo){1,2})(:?$|[^a-zA-Z]+))","caseInsensitive":true},
-    {"word":"xoxoxo","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(xoxoxo)(:?$|[^a-zA-Z]+))","caseInsensitive":true},
-    {"word":"xoxoxoxo","score":4,"regExpString":"(:?(:?^|[^a-zA-Z]+)(xoxoxoxo)(:?$|[^a-zA-Z]+))","caseInsensitive":true}
+    {"word":"xo","score":3,"regExpString":"(:?(:?^|[^a-zA-Z]+)((:?xo){1,2})(:?$|[^a-zA-Z]+))","caseInsensitive":true}
   ]
 }
