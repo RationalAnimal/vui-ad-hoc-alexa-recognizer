@@ -135,3 +135,4 @@ AfinnPrecompiledTwoIntent AFINN Precompiled Two this is something cool
 AfinnPrecompiledTwoIntent AFINN Precompiled Two this is cool stuff
 AfinnEmoticonIntent AFINNEMOTE :)
 AfinnEmoticonIntent AFINNEMOTE :(
+AfinnEmoticonIntent AFINNEMOTE :|
