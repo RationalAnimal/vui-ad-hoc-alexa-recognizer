@@ -706,6 +706,10 @@ var _multiplyArrays = function(sourceTarget, additional){
   return sourceTarget;
 };
 
+let escapeRegExp = function(text) {
+  return text.replace(/[-[\]{}()*+?.,\\^$|#]/g, "\\$&");
+};
+
 /**
 * Call to parse a portion of utteranceArray specified by parsingRange
 start and end, inclusively of both.
@@ -737,7 +741,7 @@ var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, i
       break;
     }
     default:
-      scratch += currentLetter;
+      scratch += escapeRegExp(currentLetter);
       break;
     }
   }
