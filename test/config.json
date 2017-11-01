@@ -183,6 +183,15 @@
 						"arguments": {"precomputedDataSet": "./afinn96withmisspelledwords_precompiled.json"}
 					}
 				]
+			},
+			{
+				"bundleName": "afinnEmoticonSentimentBundle",
+				"mixInCode": [
+					{
+						"mixInBuiltInName": "afinn",
+						"arguments": {"ratingDataSetFiles": ["./afinnemoticon-8.json"]}
+					}
+				]
 			}
 		],
 		"appliesTo": [
@@ -217,6 +226,10 @@
 			{
 				"bundleName": "afinnPrecompiledTwoSentimentBundle",
 				"intentMatchRegExString": "(AfinnPrecompiledTwoIntent)"
+			},
+			{
+				"bundleName": "afinnEmoticonSentimentBundle",
+				"intentMatchRegExString": "(AfinnEmoticonIntent)"
 			}
 		]
 	},
