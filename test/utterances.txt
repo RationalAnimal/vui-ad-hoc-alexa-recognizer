@@ -154,3 +154,4 @@ AfinnEmoticonIntent AFINNEMOTE :-*
 AfinnEmoticonIntent AFINNEMOTE :-D
 AfinnEmoticonIntent AFINNEMOTE :-P
 AfinnEmoticonIntent AFINNEMOTE :-S
+AfinnEmoticonIntent AFINNEMOTE :-p
