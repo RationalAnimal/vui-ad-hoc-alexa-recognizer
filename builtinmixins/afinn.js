@@ -101,7 +101,13 @@
    let runningScore = 0;
    let scratchUtterance = utterance;
    for(let i = 0; i < dataSet.scoredWords.length; i++){
-     let regExp = new RegExp(dataSet.scoredWords[i].regExpString, "ig");
+     let regExp;
+     if(dataSet.scoredWords[i].caseInsensitive === false){
+       regExp = new RegExp(dataSet.scoredWords[i].regExpString, "g");
+     }
+     else {
+       regExp = new RegExp(dataSet.scoredWords[i].regExpString, "ig");
+     }
      let matchResult;
      let matchFound = false;
      while(matchResult = regExp.exec(scratchUtterance)) {// eslint-disable-line no-cond-assign;
