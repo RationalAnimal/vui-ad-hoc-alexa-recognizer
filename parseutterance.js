@@ -740,6 +740,7 @@ var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, i
     case "{":{
       // First verify whether this might be an emoticon.  Currently only following emoticon contain {
       // :{
+      // :-{
       // Remember that the preceding and the following character (if present) must be white space.
       // Process :{ here
       if(isPotentialEmoticon(utteranceArray, i - 1, i) && utteranceArray[i-1] === ":"){
@@ -748,6 +749,13 @@ var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, i
         scratch += escapeRegExp(currentLetter);
         break;
       }
+      else if(isPotentialEmoticon(utteranceArray, i - 2, i) && utteranceArray[i-1] === "-" && utteranceArray[i-2] === ":"){
+        // This is emoticon :-{
+        // Treat it as normal text
+        scratch += escapeRegExp(currentLetter);
+        break;
+      }
+
       if(scratch.length > 0){
         returnValue.push(scratch);
       }

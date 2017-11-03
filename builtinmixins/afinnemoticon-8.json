@@ -9,6 +9,7 @@
     {"word":":[","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(:\\[)(:?$|[^a-zA-Z]+))","caseInsensitive":true},
     {"word":":}","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(:\\})(:?$|[^a-zA-Z]+))","caseInsensitive":true},
     {"word":":{","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(:\\{)(:?$|[^a-zA-Z]+))","caseInsensitive":true},
+    {"word":":-{","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(:\\-\\{)(:?$|[^a-zA-Z]+))","caseInsensitive":true},
     {"word":":/","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(:\\/)(:?$|[^a-zA-Z]+))","caseInsensitive":true},
     {"word":":\\","score":-2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(:\\\\)(:?$|[^a-zA-Z]+))","caseInsensitive":true},
     {"word":":*","score":2,"regExpString":"(:?(:?^|[^a-zA-Z]+)(:\\*)(:?$|[^a-zA-Z]+))","caseInsensitive":true},
