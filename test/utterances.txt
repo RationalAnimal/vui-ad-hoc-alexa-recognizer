@@ -182,3 +182,6 @@ AfinnEmoticonIntent AFINNEMOTE :{
 AfinnEmoticonIntent AFINNEMOTE :-{
 AfinnEmoticonIntent AFINNEMOTE <3
 AfinnEmoticonIntent AFINNEMOTE :-))
+AfinnEmoticonIntent AFINNEMOTE :-)))))))))
+AfinnEmoticonIntent AFINNEMOTE :-))))))))) :-))
+
