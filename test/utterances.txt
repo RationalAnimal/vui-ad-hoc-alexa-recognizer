@@ -177,3 +177,4 @@ AfinnEmoticonIntent AFINNEMOTE =\
 AfinnEmoticonIntent AFINNEMOTE =^/
 AfinnEmoticonIntent AFINNEMOTE =P
 AfinnEmoticonIntent AFINNEMOTE \o/
+AfinnEmoticonIntent AFINNEMOTE ♥
