@@ -720,8 +720,11 @@ let isPotentialEmoticon = function(utteranceArray, startingIndex, endingIndex){
   if(endingIndex < 0 || endingIndex >= utteranceArray.length || endingIndex <= startingIndex){
     return false;
   }
-  // TODO add code here to verify that preceding and following charaters, if present, are white spaces.
-  return true;
+  if((startingIndex === 0 || /\s/.test(utteranceArray[startingIndex - 1])) && (endingIndex === utteranceArray.length - 1 || /\s/.test(utteranceArray[endingIndex + 1]))){
+    // Potential emoticon is surrounded by white space or start/end.
+    return true;
+  }
+  return false;
 };
 
 /**
