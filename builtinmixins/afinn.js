@@ -111,12 +111,16 @@
      let matchResult;
      let matchFound = false;
      while(matchResult = regExp.exec(scratchUtterance)) {// eslint-disable-line no-cond-assign;
+       //console.log("matchResult: ", JSON.stringify(matchResult));
        runningScore += dataSet.scoredWords[i].score;
        matchFound = true;
      }
      // Remove the matched string make sure it won't be matched on again by substrings.
      if(matchFound){
-       scratchUtterance = scratchUtterance.replace(new RegExp(dataSet.scoredWords[i].regExpString), "#unmatchable#");
+       //console.log("about to replace matched: ", JSON.stringify(dataSet.scoredWords[i]));
+       //console.log("scratchUtterance before replace: " + scratchUtterance);
+       scratchUtterance = scratchUtterance.replace(new RegExp(dataSet.scoredWords[i].regExpString), " #unmatchable# ");
+       //console.log("scratchUtterance after replace: " + scratchUtterance);
      }
    }
    if(typeof priorResult === "undefined" || priorResult === null){
