@@ -163,3 +163,4 @@ AfinnEmoticonIntent AFINNEMOTE :p
 AfinnEmoticonIntent AFINNEMOTE :o)
 AfinnEmoticonIntent AFINNEMOTE :'(
 AfinnEmoticonIntent AFINNEMOTE (:
+AfinnEmoticonIntent AFINNEMOTE ):
