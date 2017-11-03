@@ -114,8 +114,8 @@
        runningScore += dataSet.scoredWords[i].score;
        matchFound = true;
      }
-     // Remove the matched string if it's multiword to make sure it won't be matched on again by substrings.
-     if(matchFound && dataSet.scoredWords[i].wordCount > 1){
+     // Remove the matched string make sure it won't be matched on again by substrings.
+     if(matchFound){
        scratchUtterance = scratchUtterance.replace(new RegExp(dataSet.scoredWords[i].regExpString), "#unmatchable#");
      }
    }
