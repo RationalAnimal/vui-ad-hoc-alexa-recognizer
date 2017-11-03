@@ -710,6 +710,20 @@ let escapeRegExp = function(text) {
   return text.replace(/[-[\]{}()*+?.,\\^$|#]/g, "\\$&");
 };
 
+let isPotentialEmoticon = function(utteranceArray, startingIndex, endingIndex){
+  if(typeof utteranceArray === "undefined" || utteranceArray === null || Array.isArray(utteranceArray) === false){
+    return false;
+  }
+  if(startingIndex < 0 || startingIndex >= utteranceArray.length){
+    return false;
+  }
+  if(endingIndex < 0 || endingIndex >= utteranceArray.length || endingIndex <= startingIndex){
+    return false;
+  }
+  // TODO add code here to verify that preceding and following charaters, if present, are white spaces.
+  return true;
+};
+
 /**
 * Call to parse a portion of utteranceArray specified by parsingRange
 start and end, inclusively of both.
@@ -721,6 +735,16 @@ var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, i
     let currentLetter = utteranceArray[i];
     switch(currentLetter){
     case "{":{
+      // First verify whether this might be an emoticon.  Currently only following emoticon contain {
+      // :{
+      // Remember that the preceding and the following character (if present) must be white space.
+      // Process :{ here
+      if(isPotentialEmoticon(utteranceArray, i - 1, i) && utteranceArray[i-1] === ":"){
+        // This is emoticon :{
+        // Treat it as normal text
+        scratch += escapeRegExp(currentLetter);
+        break;
+      }
       if(scratch.length > 0){
         returnValue.push(scratch);
       }
