@@ -59,6 +59,7 @@
     {"word":":((","score":-3,"regExpString":"(:?(:?^|\\s+)(:\\(\\()(:?$|\\s+))","caseInsensitive":true},
     {"word":":((((((","score":-4,"regExpString":"(:?(:?^|\\s+)(:\\({6,10})(:?$|\\s+))","caseInsensitive":true},
     {"word":";((","score":-3,"regExpString":"(:?(:?^|\\s+)(;\\({2,3})(:?$|\\s+))","caseInsensitive":true},
+    {"word":";((((((","score":-4,"regExpString":"(:?(:?^|\\s+)(;\\({6,10})(:?$|\\s+))","caseInsensitive":true},
     {"word":";))","score":3,"regExpString":"(:?(:?^|\\s+)(;\\){2,3})(:?$|\\s+))","caseInsensitive":true},
     {"word":"<3","score":3,"regExpString":"(:?(:?^|\\s+)(<3)(:?$|\\s+))","caseInsensitive":true},
     {"word":"<33","score":3,"regExpString":"(:?(:?^|\\s+)(<33)(:?$|\\s+))","caseInsensitive":true},
