@@ -109,27 +109,12 @@ if(continueProcessing){
     }
   }
 
-  let scratchUtterance = "";
-  for(let i = 0; i < dataSet.scoredWords.length; i++){
-    let regExp;
-    if(dataSet.scoredWords[i].caseInsensitive === false){
-      regExp = new RegExp(dataSet.scoredWords[i].regExpString, "g");
-    }
-    else {
-      regExp = new RegExp(dataSet.scoredWords[i].regExpString, "ig");
-    }
-    let matchResult; // eslint-disable-line no-unused-vars
-    let matchFound = false;
-    while(matchResult = regExp.exec(scratchUtterance)) {// eslint-disable-line no-cond-assign
-      //console.log("matchResult: ", JSON.stringify(matchResult));
-      matchFound = true;
-    }
-    // Remove the matched string make sure it won't be matched on again by substrings.
-    if(matchFound){
-      //console.log("about to replace matched: ", JSON.stringify(dataSet.scoredWords[i]));
-      //console.log("scratchUtterance before replace: " + scratchUtterance);
-      scratchUtterance = scratchUtterance.replace(new RegExp(dataSet.scoredWords[i].regExpString), " #unmatchable# ");
-      //console.log("scratchUtterance after replace: " + scratchUtterance);
-    }
-  }
+  let _done = function(json){
+    //if(suppressRecognizerDisplay === false){
+    console.log(JSON.stringify(json, null, 2));
+    //}
+    console.log("Was saved to " + outputFileName);
+  };
+
+  fs.writeFile(outputFileName, JSON.stringify(dataSet), "utf8", _done(dataSet));
 }
