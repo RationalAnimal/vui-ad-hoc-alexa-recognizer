@@ -64,55 +64,48 @@ if(typeof outputFileName === "undefined" || inputFileNames.length === 0){
   continueProcessing = false;
 }
 let dataSet = {"scoredWords": []};
-let precomputed = false;
-let customArgs;
 if(continueProcessing){
-  if(typeof customArgs.ratingDataSetFiles !== "undefined" && customArgs.ratingDataSetFiles !== null){
-    for(let i = 0; i < customArgs.ratingDataSetFiles.length; i++){
-      let scratchDataSet = require(customArgs.ratingDataSetFiles[i]);
-      dataSet.scoredWords = dataSet.scoredWords.concat(scratchDataSet.scoredWords);
-      precomputed = false;
-    }
+  for(let i = 0; i < inputFileNames.length; i++){
+    let scratchDataSet = require(inputFileNames[i]);
+    dataSet.scoredWords = dataSet.scoredWords.concat(scratchDataSet.scoredWords);
   }
 
-  if(precomputed === false){
-    // Pre-compute word count to improve performance
-    for(let i = 0; i < dataSet.scoredWords.length; i++){
-      let split = dataSet.scoredWords[i].word.split(/\s+/);
-      dataSet.scoredWords[i].wordCount = split.length;
-    }
+  // Pre-compute word count to improve performance
+  for(let i = 0; i < dataSet.scoredWords.length; i++){
+    let split = dataSet.scoredWords[i].word.split(/\s+/);
+    dataSet.scoredWords[i].wordCount = split.length;
+  }
 
-    // Sort the array by how many words are in a "word", then the "word" itself, in descending order
-    dataSet.scoredWords.sort(
-      function(a,b){
-        if(a.wordCount === b.wordCount){
-          if (a.word < b.word){
-            return 1;
-          }
-          else if (a.word > b.word){
-            return -1;
-          }
-          else {
-            // This should never happen here, but technically is possible.
-            return 0;
-          }
-        }
-        if(a.word.startsWith(b.word)){
-          return -1;
-        }
-        if(b.word.startsWith(a.word)){
+  // Sort the array by how many words are in a "word", then the "word" itself, in descending order
+  dataSet.scoredWords.sort(
+    function(a,b){
+      if(a.wordCount === b.wordCount){
+        if (a.word < b.word){
           return 1;
         }
-        return (b.wordCount - a.wordCount);
+        else if (a.word > b.word){
+          return -1;
+        }
+        else {
+          // This should never happen here, but technically is possible.
+          return 0;
+        }
       }
-    );
+      if(a.word.startsWith(b.word)){
+        return -1;
+      }
+      if(b.word.startsWith(a.word)){
+        return 1;
+      }
+      return (b.wordCount - a.wordCount);
+    }
+  );
 
-    // Remove duplicated words
-    for(let i = 0; i < dataSet.scoredWords.length - 1; i++){
-      if(dataSet.scoredWords[i].word === dataSet.scoredWords[i+1].word){
-        dataSet.scoredWords.splice(i, 1);
-        i--;
-      }
+  // Remove duplicated words
+  for(let i = 0; i < dataSet.scoredWords.length - 1; i++){
+    if(dataSet.scoredWords[i].word === dataSet.scoredWords[i+1].word){
+      dataSet.scoredWords.splice(i, 1);
+      i--;
     }
   }
 
