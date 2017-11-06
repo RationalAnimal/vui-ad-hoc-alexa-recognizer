@@ -25,6 +25,7 @@
  */
 "use strict";
 let fs = require("fs");// eslint-disable-line no-unused-vars
+let path = require("path");
 
 let usage = function(){
   console.log("Usage: node " + process.argv[1] + " <sampleutterance.txt>");
@@ -73,7 +74,7 @@ if(typeof outputFileName === "undefined" || inputFileNames.length === 0){
 let dataSet = {"scoredWords": []};
 if(continueProcessing){
   for(let i = 0; i < inputFileNames.length; i++){
-    let scratchDataSet = require(inputFileNames[i]);
+    let scratchDataSet = require(path.resolve(inputFileNames[i]));
     dataSet.scoredWords = dataSet.scoredWords.concat(scratchDataSet.scoredWords);
   }
 
