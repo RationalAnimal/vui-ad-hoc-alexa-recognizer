@@ -30,18 +30,23 @@ let usage = function(){
   console.log("Usage: node " + process.argv[1] + " <sampleutterance.txt>");
   console.log("  -i --input InputFileNames - specify a list of input file names.");
   console.log("  -o --output OutputFileName specify output combined file name.");
+  console.log("  --suppressResultDisplay does not send the output file contents to console");
 };
 
 let parsingFiles = "none";
 let inputFileNames = [];
 let outputFileName;
 let continueProcessing = true;
+let suppressResultDisplay = false;
 for(let i = 2; i < process.argv.length; i ++){
   if(process.argv[i] === "-i" || process.argv[i] === "--input"){
     parsingFiles = "input";
   }
   else if(process.argv[i] === "-o" || process.argv[i] === "--output"){
     parsingFiles = "output";
+  }
+  else if(process.argv[i] === "--suppressResultDisplay"){
+    suppressResultDisplay = true;
   }
   else {
     switch(parsingFiles){
@@ -52,6 +57,7 @@ for(let i = 2; i < process.argv.length; i ++){
       outputFileName = process.argv[i];
       break;
     default:
+      console.log("Please confirm the arguments");
       usage();
       continueProcessing = false;
       break;
@@ -60,6 +66,7 @@ for(let i = 2; i < process.argv.length; i ++){
 }
 
 if(typeof outputFileName === "undefined" || inputFileNames.length === 0){
+  console.log("You need to specify the output file name");
   usage();
   continueProcessing = false;
 }
@@ -110,9 +117,9 @@ if(continueProcessing){
   }
 
   let _done = function(json){
-    //if(suppressRecognizerDisplay === false){
-    console.log(JSON.stringify(json, null, 2));
-    //}
+    if(suppressResultDisplay === false){
+      console.log(JSON.stringify(json, null, 2));
+    }
     console.log("Was saved to " + outputFileName);
   };
 
