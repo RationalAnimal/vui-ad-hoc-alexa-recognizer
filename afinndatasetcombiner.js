@@ -24,7 +24,7 @@
  SOFTWARE.
  */
 "use strict";
-let fs = require("fs");// eslint-disable-line no-unused-vars
+let fs = require("fs");
 let path = require("path");
 
 let usage = function(){
@@ -58,7 +58,7 @@ for(let i = 2; i < process.argv.length; i ++){
       outputFileName = process.argv[i];
       break;
     default:
-      console.log("Please confirm the arguments");
+      console.log("Please confirm that all the arguments were correct");
       usage();
       continueProcessing = false;
       break;
@@ -67,7 +67,7 @@ for(let i = 2; i < process.argv.length; i ++){
 }
 
 if(typeof outputFileName === "undefined" || inputFileNames.length === 0){
-  console.log("You need to specify the output file name");
+  console.log("You need to specify the output file name.");
   usage();
   continueProcessing = false;
 }
@@ -78,7 +78,6 @@ if(continueProcessing){
     dataSet.scoredWords = dataSet.scoredWords.concat(scratchDataSet.scoredWords);
   }
 
-  // Pre-compute word count to improve performance
   for(let i = 0; i < dataSet.scoredWords.length; i++){
     let split = dataSet.scoredWords[i].word.split(/\s+/);
     dataSet.scoredWords[i].wordCount = split.length;
@@ -121,7 +120,7 @@ if(continueProcessing){
     if(suppressResultDisplay === false){
       console.log(JSON.stringify(json, null, 2));
     }
-    console.log("Was saved to " + outputFileName);
+    console.log("Combined file was saved to " + outputFileName);
   };
 
   fs.writeFile(outputFileName, JSON.stringify(dataSet), "utf8", _done(dataSet));
