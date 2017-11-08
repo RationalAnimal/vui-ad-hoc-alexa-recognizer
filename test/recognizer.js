@@ -4504,6 +4504,21 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
+    it("verify sentiment analysis is computed correctly for a single emoji", function() {
+      let result = recognizer.Recognizer.matchText("AFINNEMOTE :^(");
+      expect(result).to.eql(
+        {
+          "name": "AfinnEmoticonIntent",
+          "slots": {},
+          "sentiment": {
+            "AFINN": {
+              "score": -2
+            }
+          }
+        });
+    });
+
+
   });
 
   /*
