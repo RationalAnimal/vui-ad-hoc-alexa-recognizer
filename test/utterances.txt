@@ -134,7 +134,19 @@ AfinnPrecompiledTwoIntent AFINN Precompiled Two this is terrible and weird and a
 AfinnPrecompiledTwoIntent AFINN Precompiled Two this is something cool
 AfinnPrecompiledTwoIntent AFINN Precompiled Two this is cool stuff
 AfinnEmoticonIntent AFINNEMOTE :)
+AfinnEmoticonIntent AFINNEMOTE :))
+AfinnEmoticonIntent AFINNEMOTE :)))))))))
+AfinnEmoticonIntent AFINNEMOTE :))))))))) :))
+AfinnEmoticonIntent AFINNEMOTE :) :))))))))) :))
+AfinnEmoticonIntent AFINNEMOTE :) :)) :))))))))) :))
+AfinnEmoticonIntent AFINNEMOTE :) :))))))) :)) :))))))))) :))
 AfinnEmoticonIntent AFINNEMOTE :(
+AfinnEmoticonIntent AFINNEMOTE :((
+AfinnEmoticonIntent AFINNEMOTE :((((((
+AfinnEmoticonIntent AFINNEMOTE :(((((( :((
+AfinnEmoticonIntent AFINNEMOTE :( :(((((( :((
+AfinnEmoticonIntent AFINNEMOTE :( :(( :(((((( :((
+AfinnEmoticonIntent AFINNEMOTE :( :((((((((( :(( :(((((( :((
 AfinnEmoticonIntent AFINNEMOTE :|
 AfinnEmoticonIntent AFINNEMOTE :]
 AfinnEmoticonIntent AFINNEMOTE :[
@@ -143,7 +155,19 @@ AfinnEmoticonIntent AFINNEMOTE :/
 AfinnEmoticonIntent AFINNEMOTE :\
 AfinnEmoticonIntent AFINNEMOTE :*
 AfinnEmoticonIntent AFINNEMOTE :-)
+AfinnEmoticonIntent AFINNEMOTE :-))
+AfinnEmoticonIntent AFINNEMOTE :-)))))))))
+AfinnEmoticonIntent AFINNEMOTE :-))))))))) :-))
+AfinnEmoticonIntent AFINNEMOTE :-) :-))))))))) :-))
+AfinnEmoticonIntent AFINNEMOTE :-) :-)) :-))))))))) :-))
+AfinnEmoticonIntent AFINNEMOTE :-) :-))))))) :-)) :-))))))))) :-))
 AfinnEmoticonIntent AFINNEMOTE :-(
+AfinnEmoticonIntent AFINNEMOTE :-((
+AfinnEmoticonIntent AFINNEMOTE :-((((((
+AfinnEmoticonIntent AFINNEMOTE :-(((((( :-((
+AfinnEmoticonIntent AFINNEMOTE :-( :-(((((( :-((
+AfinnEmoticonIntent AFINNEMOTE :-( :-(( :-(((((( :-((
+AfinnEmoticonIntent AFINNEMOTE :-( :-((((((((( :-(( :-(((((( :-((
 AfinnEmoticonIntent AFINNEMOTE :-|
 AfinnEmoticonIntent AFINNEMOTE :-]
 AfinnEmoticonIntent AFINNEMOTE :-[
@@ -168,7 +192,19 @@ AfinnEmoticonIntent AFINNEMOTE (-:
 AfinnEmoticonIntent AFINNEMOTE )-:
 AfinnEmoticonIntent AFINNEMOTE ;-(
 AfinnEmoticonIntent AFINNEMOTE ;)
+AfinnEmoticonIntent AFINNEMOTE ;))
+AfinnEmoticonIntent AFINNEMOTE ;))))))
+AfinnEmoticonIntent AFINNEMOTE ;)))))) ;))
+AfinnEmoticonIntent AFINNEMOTE ;) ;)))))) ;))
+AfinnEmoticonIntent AFINNEMOTE ;) ;)) ;)))))) ;))
+AfinnEmoticonIntent AFINNEMOTE ;) ;))))))))) ;)) ;)))))) ;))
 AfinnEmoticonIntent AFINNEMOTE ;(
+AfinnEmoticonIntent AFINNEMOTE ;((
+AfinnEmoticonIntent AFINNEMOTE ;((((((
+AfinnEmoticonIntent AFINNEMOTE ;(((((( ;((
+AfinnEmoticonIntent AFINNEMOTE ;( ;(((((( ;((
+AfinnEmoticonIntent AFINNEMOTE ;( ;(( ;(((((( ;((
+AfinnEmoticonIntent AFINNEMOTE ;( ;((((((((( ;(( ;(((((( ;((
 AfinnEmoticonIntent AFINNEMOTE ;-)
 AfinnEmoticonIntent AFINNEMOTE ;-D
 AfinnEmoticonIntent AFINNEMOTE =(
@@ -180,43 +216,7 @@ AfinnEmoticonIntent AFINNEMOTE \o/
 AfinnEmoticonIntent AFINNEMOTE ♥
 AfinnEmoticonIntent AFINNEMOTE :{
 AfinnEmoticonIntent AFINNEMOTE :-{
-AfinnEmoticonIntent AFINNEMOTE :-))
-AfinnEmoticonIntent AFINNEMOTE :-)))))))))
-AfinnEmoticonIntent AFINNEMOTE :-))))))))) :-))
-AfinnEmoticonIntent AFINNEMOTE :-) :-))))))))) :-))
-AfinnEmoticonIntent AFINNEMOTE :-) :-)) :-))))))))) :-))
-AfinnEmoticonIntent AFINNEMOTE :-) :-))))))) :-)) :-))))))))) :-))
 AfinnEmoticonIntent AFINNEMOTE ://
-AfinnEmoticonIntent AFINNEMOTE :))
-AfinnEmoticonIntent AFINNEMOTE :)))))))))
-AfinnEmoticonIntent AFINNEMOTE :))))))))) :))
-AfinnEmoticonIntent AFINNEMOTE :) :))))))))) :))
-AfinnEmoticonIntent AFINNEMOTE :) :)) :))))))))) :))
-AfinnEmoticonIntent AFINNEMOTE :) :))))))) :)) :))))))))) :))
-AfinnEmoticonIntent AFINNEMOTE :-((
-AfinnEmoticonIntent AFINNEMOTE :-((((((
-AfinnEmoticonIntent AFINNEMOTE :-(((((( :-((
-AfinnEmoticonIntent AFINNEMOTE :-( :-(((((( :-((
-AfinnEmoticonIntent AFINNEMOTE :-( :-(( :-(((((( :-((
-AfinnEmoticonIntent AFINNEMOTE :-( :-((((((((( :-(( :-(((((( :-((
-AfinnEmoticonIntent AFINNEMOTE :((
-AfinnEmoticonIntent AFINNEMOTE :((((((
-AfinnEmoticonIntent AFINNEMOTE :(((((( :((
-AfinnEmoticonIntent AFINNEMOTE :( :(((((( :((
-AfinnEmoticonIntent AFINNEMOTE :( :(( :(((((( :((
-AfinnEmoticonIntent AFINNEMOTE :( :((((((((( :(( :(((((( :((
-AfinnEmoticonIntent AFINNEMOTE ;((
-AfinnEmoticonIntent AFINNEMOTE ;((((((
-AfinnEmoticonIntent AFINNEMOTE ;(((((( ;((
-AfinnEmoticonIntent AFINNEMOTE ;( ;(((((( ;((
-AfinnEmoticonIntent AFINNEMOTE ;( ;(( ;(((((( ;((
-AfinnEmoticonIntent AFINNEMOTE ;( ;((((((((( ;(( ;(((((( ;((
-AfinnEmoticonIntent AFINNEMOTE ;))
-AfinnEmoticonIntent AFINNEMOTE ;))))))
-AfinnEmoticonIntent AFINNEMOTE ;)))))) ;))
-AfinnEmoticonIntent AFINNEMOTE ;) ;)))))) ;))
-AfinnEmoticonIntent AFINNEMOTE ;) ;)) ;)))))) ;))
-AfinnEmoticonIntent AFINNEMOTE ;) ;))))))))) ;)) ;)))))) ;))
 AfinnEmoticonIntent AFINNEMOTE ;-((
 AfinnEmoticonIntent AFINNEMOTE ;-((((((
 AfinnEmoticonIntent AFINNEMOTE ;-(((((( ;-((
@@ -241,12 +241,14 @@ AfinnEmoticonIntent AFINNEMOTE :'(((((( :'((
 AfinnEmoticonIntent AFINNEMOTE :'( :'(((((( :'((
 AfinnEmoticonIntent AFINNEMOTE :'( :'(( :'(((((( :'((
 AfinnEmoticonIntent AFINNEMOTE :'( :'((((((((( :'(( :'(((((( :'((
+AfinnEmoticonIntent AFINNEMOTE ;')
 AfinnEmoticonIntent AFINNEMOTE ;'))
 AfinnEmoticonIntent AFINNEMOTE ;'))))))
 AfinnEmoticonIntent AFINNEMOTE ;')))))) ;'))
 AfinnEmoticonIntent AFINNEMOTE ;') ;')))))) ;'))
 AfinnEmoticonIntent AFINNEMOTE ;') ;')) ;')))))) ;'))
 AfinnEmoticonIntent AFINNEMOTE ;') ;'))))))))) ;')) ;')))))) ;'))
+AfinnEmoticonIntent AFINNEMOTE ;'(
 AfinnEmoticonIntent AFINNEMOTE ;'((
 AfinnEmoticonIntent AFINNEMOTE ;'((((((
 AfinnEmoticonIntent AFINNEMOTE ;'(((((( ;'((
@@ -308,12 +310,4 @@ AfinnEmoticonIntent AFINNEMOTE ='(((((( ='((
 AfinnEmoticonIntent AFINNEMOTE ='( ='(((((( ='((
 AfinnEmoticonIntent AFINNEMOTE ='( ='(( ='(((((( ='((
 AfinnEmoticonIntent AFINNEMOTE ='( ='((((((((( ='(( ='(((((( ='((
-AfinnEmoticonIntent AFINNEMOTE ;')
-AfinnEmoticonIntent AFINNEMOTE ;'))
-AfinnEmoticonIntent AFINNEMOTE ;'))))))
-AfinnEmoticonIntent AFINNEMOTE ;')))))) ;'))
-AfinnEmoticonIntent AFINNEMOTE ;') ;')))))) ;'))
-AfinnEmoticonIntent AFINNEMOTE ;') ;')) ;')))))) ;'))
-AfinnEmoticonIntent AFINNEMOTE ;') ;'))))))))) ;')) ;')))))) ;'))
-AfinnEmoticonIntent AFINNEMOTE ;'(
 AfinnEmoticonIntent AFINNEMOTE <3
