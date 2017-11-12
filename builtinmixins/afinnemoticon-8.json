@@ -48,6 +48,7 @@
     {"word":":o)","score":2,"regExpString":"(:?(:?^|\\s+)(:o\\))(:?$|\\s+))","caseInsensitive":false},
     {"word":":'(","score":-2,"regExpString":"(:?(:?^|\\s+)(:'\\()(:?$|\\s+))","caseInsensitive":true},
     {"word":"(:","score":2,"regExpString":"(:?(:?^|\\s+)(\\(:)(:?$|\\s+))","caseInsensitive":true},
+    {"word":"((:","score":3,"regExpString":"(:?(:?^|\\s+)(\\({2,5}:)(:?$|\\s+))","caseInsensitive":true},
     {"word":"):","score":-2,"regExpString":"(:?(:?^|\\s+)(\\):)(:?$|\\s+))","caseInsensitive":true},
     {"word":"(-:","score":2,"regExpString":"(:?(:?^|\\s+)(\\(\\-:)(:?$|\\s+))","caseInsensitive":true},
     {"word":")-:","score":-2,"regExpString":"(:?(:?^|\\s+)(\\)\\-:)(:?$|\\s+))","caseInsensitive":true},
