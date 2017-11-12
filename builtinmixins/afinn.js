@@ -25,8 +25,8 @@
  */
  "use strict";
  module.exports = function(standardArgs, customArgs){ // eslint-disable-line no-unused-vars
-//   console.log("AFINN sentiment analysis called, customArgs: ", JSON.stringify(customArgs, null, 2));
-//   console.log("AFINN sentiment analysis called, standardArgs: ", JSON.stringify(standardArgs, null, 2));
+   //console.log("AFINN sentiment analysis called, customArgs: ", JSON.stringify(customArgs, null, 2));
+   //console.log("AFINN sentiment analysis called, standardArgs: ", JSON.stringify(standardArgs, null, 2));
    let intentName;
    let utterance;
    let priorResult;
@@ -68,6 +68,12 @@
      dataSet.scoredWords.sort(
        function(a,b){
          if(a.wordCount === b.wordCount){
+           if(a.word.indexOf(b.word) !== -1){
+             return -1;
+           }
+           if(b.word.indexOf(a.word) !== -1){
+             return 1;
+           }
            if (a.word < b.word){
              return 1;
            }
