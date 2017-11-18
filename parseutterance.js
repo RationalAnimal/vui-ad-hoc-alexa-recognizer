@@ -738,7 +738,7 @@ var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, i
     let currentLetter = utteranceArray[i];
     switch(currentLetter){
     case "{":{
-      // First verify whether this might be an emoticon.  Currently only following emoticon contain {
+      // First verify whether this might be an emoticon.  Currently only following emoticons contain {
       // :{
       // :-{
       // Remember that the preceding and the following character (if present) must be white space.
