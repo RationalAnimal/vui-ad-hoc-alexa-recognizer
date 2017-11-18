@@ -303,6 +303,7 @@ AfinnEmoticonIntent AFINNEMOTE :'P
 AfinnEmoticonIntent AFINNEMOTE :'S
 AfinnEmoticonIntent AFINNEMOTE :'p
 AfinnEmoticonIntent AFINNEMOTE :'/
+AfinnEmoticonIntent AFINNEMOTE :'\
 AfinnEmoticonIntent AFINNEMOTE :^)
 AfinnEmoticonIntent AFINNEMOTE :^))
 AfinnEmoticonIntent AFINNEMOTE :^))))))
