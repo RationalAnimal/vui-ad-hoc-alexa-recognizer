@@ -749,6 +749,14 @@ var _parseUtteranceString = function(utteranceArray, parsingRange, intentName, i
         scratch += escapeRegExp(currentLetter);
         break;
       }
+      // Process {: here
+      if(isPotentialEmoticon(utteranceArray, i, i + 1) && utteranceArray[i+1] === ":"){
+        // This is emoticon }:
+        // Treat it as normal text
+        scratch += escapeRegExp(currentLetter);
+        break;
+      }
+      // Process :-{ here
       else if(isPotentialEmoticon(utteranceArray, i - 2, i) && utteranceArray[i-1] === "-" && utteranceArray[i-2] === ":"){
         // This is emoticon :-{
         // Treat it as normal text
