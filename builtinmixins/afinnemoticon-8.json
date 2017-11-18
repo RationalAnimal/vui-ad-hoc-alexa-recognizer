@@ -33,6 +33,7 @@
     {"word":":{","score":-2,"regExpString":"(?:(?:^|\\s+)(:\\{)(?:$|\\s+))","caseInsensitive":true},
     {"word":"}:","score":-2,"regExpString":"(?:(?:^|\\s+)(\\}:)(?:$|\\s+))","caseInsensitive":true},
     {"word":":/","score":-2,"regExpString":"(?:(?:^|\\s+)(:\\/)(?:$|\\s+))","caseInsensitive":true},
+    {"word":"\\:","score":-2,"regExpString":"(?:(?:^|\\s+)(\\\\:)(?:$|\\s+))","caseInsensitive":true},
     {"word":":\\","score":-2,"regExpString":"(?:(?:^|\\s+)(:\\\\)(?:$|\\s+))","caseInsensitive":true},
     {"word":":*","score":2,"regExpString":"(?:(?:^|\\s+)(:\\*)(?:$|\\s+))","caseInsensitive":true},
     {"word":":D","score":3,"regExpString":"(?:(?:^|\\s+)(:D)(?:$|\\s+))","caseInsensitive":false},
