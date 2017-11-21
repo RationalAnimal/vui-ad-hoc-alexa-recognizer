@@ -158,6 +158,7 @@
     {"word":":^>","score":2,"regExpString":"(?:(?:^|\\s+)(:\\^>)(?:$|\\s+))","caseInsensitive":true},
     {"word":"<^:","score":2,"regExpString":"(?:(?:^|\\s+)(<\\^:)(?:$|\\s+))","caseInsensitive":true},
     {"word":":^*","score":2,"regExpString":"(?:(?:^|\\s+)(:\\^\\*)(?:$|\\s+))","caseInsensitive":true},
+    {"word":"*^:","score":2,"regExpString":"(?:(?:^|\\s+)(\\*\\^:)(?:$|\\s+))","caseInsensitive":true},
     {"word":":o)","score":2,"regExpString":"(?:(?:^|\\s+)(:o\\))(?:$|\\s+))","caseInsensitive":false},
     {"word":";-(","score":-2,"regExpString":"(?:(?:^|\\s+)(;\\-\\()(?:$|\\s+))","caseInsensitive":true},
     {"word":";)","score":2,"regExpString":"(?:(?:^|\\s+)(;\\))(?:$|\\s+))","caseInsensitive":true},
