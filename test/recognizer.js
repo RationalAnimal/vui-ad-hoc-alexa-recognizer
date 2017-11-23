@@ -5269,7 +5269,7 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           "slots": {},
           "sentiment": {
             "AFINN": {
-              "score": 7
+              "score": 9
             }
           }
         });
