@@ -1354,8 +1354,22 @@ So, instead of the "ratingDataSetFiles" array, please use "precomputedDataSet" f
 }
 ```
 
-Currently there is only one precomputed data set - afinn96withmisspelledwords_precompiled.json - but more are coming
-soon.  Also, there will be a utility in the future to create these sets yourself
+Currently there is only one precomputed data set - afinn96withmisspelledwords_precompiled.json - but you can make a set
+yourself it you need it.
+
+#### Making your own precompiled sets
+If you want to create a custom precompiled set you can use provided afinndatasetcombiner.js utility to do so.  You can
+run it without arguments to get the usage info, but it's really simple:
+
+```shell
+node afinndatasetcombined.js -i <input file1> ... <input file2> -o <output file> 
+```
+
+e.g.
+
+```shell
+node afinndatasetcombiner.js -i builtinmixins/afinn96.json builtinmixins/afinn96misspelled.json builtinmixins/afinnemoticon-8.json -o builtinmixins/afinn96withmisspelledwordsandemoticons_precompiled.json
+```
 
 ### Dollar values
 
