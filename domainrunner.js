@@ -103,13 +103,12 @@ let domain;
 
 try{
   domain = require(domainPath);
-  domain.ownPath = path.resolve(domainPath);
-
+  domain.ownPath = path.resolve(path.dirname(require.main.filename), domainPath);
 }
 catch(e){
   try{
     domain = require("./" + domainPath);
-    domain.ownPath = path.resolve("./" + domainPath);
+    domain.ownPath = path.resolve(path.dirname(require.main.filename), "./" + domainPath);
   }
   catch(e2){
     console.log("Unable to load specified domain, error: " + e);

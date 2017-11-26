@@ -1640,7 +1640,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
     // We need to load the domain
     // TODO add code to properly resolve domains at run time
     domainToUse = require(domain);
-    domainToUse.ownPath = path.resolve(domain);
+    domainToUse.ownPath = path.resolve(path.dirname(require.main.filename), domain);
   }
   else if(typeof domain === "object" && domain != null){
     //    console.log("_matchTextDomain, 3");
