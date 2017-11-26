@@ -50,7 +50,7 @@ let _responderFunction = function(match, stateAccessor, selectorArray, args){
   if(typeof args !== "undefined" && args !== null &&
      typeof args.directValue !== "undefined" && args.directValue !== null &&
      typeof args.directValue[intent] !== "undefined" && args.directValue[intent] !== null){
-    let result = arg.directValue[intent];
+    let result = args.directValue[intent];
     return result;
   }
   return {};
