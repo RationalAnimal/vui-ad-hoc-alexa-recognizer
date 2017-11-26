@@ -45,7 +45,6 @@ SOFTWARE.
  * @private
  */
 let _responderFunction = function(match, stateAccessor, selectorArray, args){
-  console.log(args);
   let intent = match.name;
   if(typeof args !== "undefined" && args !== null &&
      typeof args.directValue !== "undefined" && args.directValue !== null &&
