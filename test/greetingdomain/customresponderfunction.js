@@ -25,12 +25,13 @@ SOFTWARE.
 */
 'use strict';
 
-let _responderFunction = function(intent, stateAccessor, selectorArray){
+let _responderFunction = function(match, stateAccessor, selectorArray){
 //  console.log("START of logging from customresponderfunction.js");
 //  console.log("intent:", JSON.stringify(intent));
 //  console.log("stateAccessor:", JSON.stringify(stateAccessor));
 //  console.log("selectorArray:", JSON.stringify(selectorArray));
 //  console.log("END of logging from customresponderfunction.js");
+  let intent = match.name;
   if(intent === "GreetingIntent"){
     try{
       stateAccessor.mergeReplaceState(selectorArray, {"customfunctionmodulewasrun": "true"});

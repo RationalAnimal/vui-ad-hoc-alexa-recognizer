@@ -42,7 +42,7 @@ responder.combineRules = [
   }
 ];
 */
-let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, responderSpec){
+let _produceResult = function(match, stateAccessor, stateSelectors, responderSpec){
   if(typeof responderSpec === "undefined" || responderSpec === null){
     return;
   }
@@ -70,8 +70,8 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, resp
   if(typeof responderSpec.result !== "undefined" && responderSpec.result !== null){
     if(typeof responderSpec.result.functionSource === "string"){
       try{
-        let scratchFunc = new Function("intent", "stateAccessor", "selectorArray", "state", responderSpec.result.functionSource);
-        let result = scratchFunc(matchedIntent, stateAccessor, stateSelectors);
+        let scratchFunc = new Function("match", "stateAccessor", "selectorArray", "state", responderSpec.result.functionSource);
+        let result = scratchFunc(match, stateAccessor, stateSelectors);
         return result;
       }
       catch(e){
@@ -81,7 +81,7 @@ let _produceResult = function(matchedIntent, stateAccessor, stateSelectors, resp
     else if(typeof responderSpec.result.functionModule === "string"){
       try{
         let scratchFunc = require(responderSpec.result.functionModule);
-        let result = scratchFunc(matchedIntent, stateAccessor, stateSelectors);
+        let result = scratchFunc(match, stateAccessor, stateSelectors);
         return result;
       }
       catch(e){
