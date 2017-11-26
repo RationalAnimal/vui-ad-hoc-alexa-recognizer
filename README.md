@@ -2092,7 +2092,8 @@ Where the contents of "./test/greetingdomain/customresponderfunction.js" are:
 ```javascript
 'use strict';
 
-let _responderFunction = function(intent, stateAccessor, selectorArray){
+let _responderFunction = function(match, stateAccessor, selectorArray){
+  let intent = match.name;
   if(intent === "GreetingIntent"){
     stateAccessor.mergeReplaceState(selectorArray, {"customfunctionmodulewasrun": "true"});
     return {
@@ -2109,12 +2110,6 @@ Now, if you re-run the domain runner, you will get this:
 ```text
 Please type user text: hi there
 Your text was: "hi there"
-START of logging from customresponderfunction.js
-intent: "GreetingIntent"
-stateAccessor: {}
-selectorArray: ["greetingdomain"]
-state: {}
-END of logging from customresponderfunction.js
 Domain response:  {
   "match": {
     "name": "GreetingIntent",
@@ -2140,7 +2135,6 @@ State object:  {
 
 Note that the function correctly ran, the "result" includes the text from it combined with the text from other responders,
 state object was correctly adjusted as well.
-and logging shows that correct argument values were passed in.
 
 #### Setting state object directly
 

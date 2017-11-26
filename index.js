@@ -1735,13 +1735,13 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
             let returnObject = {"match": match};
             if(typeof state.matchSpecs[j].responder !== "undefined"){
               // TODO add code to get the intent name regardless of platform
-              returnObject.result = responder.produceResult(match.name, stateAccessor, stateSelectors, state.matchSpecs[j].responder);
+              returnObject.result = responder.produceResult(match, stateAccessor, stateSelectors, state.matchSpecs[j].responder);
             }
             else if(typeof state.matchSpecs[j].responders !== "undefined" && Array.isArray(state.matchSpecs[j].responders)){
               // TODO add code to get the intent name regardless of platform
               returnObject.result = {};
               for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
-                let newResult = responder.produceResult(match.name, stateAccessor, stateSelectors, state.matchSpecs[j].responders[k]);
+                let newResult = responder.produceResult(match, stateAccessor, stateSelectors, state.matchSpecs[j].responders[k]);
                 returnObject.result = responder.combineResponses(returnObject.result, newResult, state.matchSpecs[j].responders[k].result.combineRule);
               }
             }
