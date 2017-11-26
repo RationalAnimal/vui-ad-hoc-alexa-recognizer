@@ -68,10 +68,20 @@ let _produceResult = function(match, stateAccessor, stateSelectors, responderSpe
     }
   }
   if(typeof responderSpec.result !== "undefined" && responderSpec.result !== null){
-    if(typeof responderSpec.result.functionSource === "string"){
+    if(typeof responderSpec.result.builtInResponderFunction === "string"){
       try{
-        let scratchFunc = new Function("match", "stateAccessor", "selectorArray", "state", responderSpec.result.functionSource);
-        let result = scratchFunc(match, stateAccessor, stateSelectors);
+        let scratchFunc = require("./builtindomainresponders" + responderSpec.result.builtInResponderFunction + ".js");
+        let result = scratchFunc(match, stateAccessor, stateSelectors, responderSpec.result.functionArguments);
+        return result;
+      }
+      catch(e){
+        return;
+      }
+    }
+    else if(typeof responderSpec.result.functionSource === "string"){
+      try{
+        let scratchFunc = new Function("match", "stateAccessor", "selectorArray", "args", responderSpec.result.functionSource);
+        let result = scratchFunc(match, stateAccessor, stateSelectors, responderSpec.result.functionArguments);
         return result;
       }
       catch(e){
@@ -81,7 +91,7 @@ let _produceResult = function(match, stateAccessor, stateSelectors, responderSpe
     else if(typeof responderSpec.result.functionModule === "string"){
       try{
         let scratchFunc = require(responderSpec.result.functionModule);
-        let result = scratchFunc(match, stateAccessor, stateSelectors);
+        let result = scratchFunc(match, stateAccessor, stateSelectors, responderSpec.result.functionArguments);
         return result;
       }
       catch(e){
