@@ -70,7 +70,7 @@ let _produceResult = function(match, stateAccessor, stateSelectors, responderSpe
   if(typeof responderSpec.result !== "undefined" && responderSpec.result !== null){
     if(typeof responderSpec.result.builtInResponderFunction === "string"){
       try{
-        let scratchFunc = require("./builtindomainresponders" + responderSpec.result.builtInResponderFunction + ".js");
+        let scratchFunc = require("./builtindomainresponders/" + responderSpec.result.builtInResponderFunction + ".js");
         let result = scratchFunc(match, stateAccessor, stateSelectors, responderSpec.result.functionArguments);
         return result;
       }
