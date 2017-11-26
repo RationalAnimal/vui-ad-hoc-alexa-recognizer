@@ -25,19 +25,35 @@ SOFTWARE.
 */
 'use strict';
 
-let _responderFunction = function(match, stateAccessor, selectorArray){
+/**
+ * This responder function will produce the direct value response based on intent name
+ * @param match - recognizer match result
+ * @param stateAccessor - state accessor to read the state (NOT used in this function)
+ * @param selectorArray - selector of the substate (NOT used in this function)
+ * @param args - arguments passed in from the domain configuration (or elsewhere).  Should look something like this:
+ * {
+ *   "directValue": {
+ *     "intentName1": {
+ *       "text": "blah1"
+ *     },
+ *     "intentName2": {
+ *       "text": "blah2"
+ *     }
+ *   }
+ * }
+ * @returns result object
+ * @private
+ */
+let _responderFunction = function(match, stateAccessor, selectorArray, args){
+  console.log(args);
   let intent = match.name;
-  if(intent === "GreetingIntent"){
-    try{
-      stateAccessor.mergeReplaceState(selectorArray, {"customfunctionmodulewasrun": "true"});
-    }
-    catch(e){
-      console.log("caught e: ", e);
-    }
-    return {
-      "text": "Hi from the custom function module"
-    };
+  if(typeof args !== "undefined" && args !== null &&
+     typeof args.directValues !== "undefined" && args.directValues !== null &&
+     typeof args.directValues[intent] !== "undefined" && args.directValues[intent] !== null){
+    let result = arg.directValues[intent];
+    return result;
   }
+  return {};
 };
 
 module.exports = _responderFunction;
