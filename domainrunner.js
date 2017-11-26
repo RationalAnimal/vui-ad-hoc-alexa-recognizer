@@ -25,6 +25,7 @@ SOFTWARE.
 */
 "use strict";
 //var fs = require("fs");
+let path = require("path");
 
 var usage = function(){
   console.log("Usage: node " + process.argv[1] + " --domain <path to a domain> --state <path to state json> --outputState [true|false] --builtinaccessor [basic|readonly]");
@@ -102,10 +103,13 @@ let domain;
 
 try{
   domain = require(domainPath);
+  domain.ownPath = path.resolve(domainPath);
+
 }
 catch(e){
   try{
     domain = require("./" + domainPath);
+    domain.ownPath = path.resolve("./" + domainPath);
   }
   catch(e2){
     console.log("Unable to load specified domain, error: " + e);
