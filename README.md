@@ -2067,7 +2067,7 @@ For example:
 }
 ```
 
-When this function is created at run time, it will be created with these 4 arguments: 'intent', 'stateAccessor', 'selectorArray', 'state'
+When this function is created at run time, it will be created with these 4 arguments: 'match', 'stateAccessor', 'selectorArray', 'state'
 and the corresponding values will be passed in.  If you need to, go ahead and use them in your function body
 
 #### Custom responders modules
@@ -2092,7 +2092,7 @@ Where the contents of "./test/greetingdomain/customresponderfunction.js" are:
 ```javascript
 'use strict';
 
-let _responderFunction = function(match, stateAccessor, selectorArray){
+let _responderFunction = function(match, stateAccessor, selectorArray, state){
   let intent = match.name;
   if(intent === "GreetingIntent"){
     stateAccessor.mergeReplaceState(selectorArray, {"customfunctionmodulewasrun": "true"});
