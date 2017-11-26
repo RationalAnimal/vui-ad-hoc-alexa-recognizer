@@ -1640,6 +1640,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
     // We need to load the domain
     // TODO add code to properly resolve domains at run time
     domainToUse = require(domain);
+    domainToUse.ownPath = path.resolve(domain);
   }
   else if(typeof domain === "object" && domain != null){
     //    console.log("_matchTextDomain, 3");
@@ -1664,7 +1665,23 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
     for(let i = 0; i < domainToUse.recognizers.length; i ++){
       //    console.log("_matchTextDomain, 7, i: " + i);
       let currentRecognizer = domainToUse.recognizers[i];
-      if(typeof currentRecognizer.path === "string" && typeof currentRecognizer.key !== "undefined"){
+      if(typeof currentRecognizer.pathSpec === "object" && typeof currentRecognizer.key !== "undefined"){
+        // This means that we will be reading how the path is to be interpreted.
+        switch(currentRecognizer.pathSpec.type){
+        case "RELATIVE_TO_DOMAIN":
+          try {
+            let domainDir = path.parse(domainToUse.ownPath).dir;
+            let recognizerPath = path.resolve(domainDir, currentRecognizer.pathSpec.path);
+            recognizers[currentRecognizer.key] = require(recognizerPath);
+          }
+          catch(e){
+            // TODO handle failure to load recognizer
+          }
+          break;
+        }
+      }
+      else if(typeof currentRecognizer.path === "string" && typeof currentRecognizer.key !== "undefined"){
+        // This means the path has been entered relative to the vui code
         try{
           // TODO add code to properly resolve recognizers at run time
           recognizers[currentRecognizer.key] = require(currentRecognizer.path);
