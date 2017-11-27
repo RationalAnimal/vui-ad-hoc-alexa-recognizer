@@ -561,4 +561,4 @@ Now rerun the domain runner and experiment with different answers, repeating the
 propmt> node node_modules/vui-ad-hoc-alexa-recognizer/domainrunner.js --domain ../../chitchatdomain.json --state ../../state.json --outputState true --builtinaccessor basic
 {% endhighlight %}
 
-To summ up - you've seen how to create a whole interaction (although a very simple one) without writing any conversation specific code.
+To sum up - you've seen how to create a whole interaction (although a very simple one) without writing any conversation specific code.
