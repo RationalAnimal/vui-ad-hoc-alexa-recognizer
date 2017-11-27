@@ -73,7 +73,7 @@ let _responderFunction = function(match, stateAccessor, selectorArray, args){
       if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values) &&
         typeof directValues.repeatSelector !== "undefined" && directValues.repeatSelector !== null){
 
-        let updatedStateSelectors = [].concat(stateSelectors);
+        let updatedStateSelectors = [].concat(selectorArray);
         updatedStateSelectors.push(directValues.repeatSelector);
         let usedValues = stateAccessor.getStateChain(updatedStateSelectors);
         if(typeof usedValues === "undefined" || Array.isArray(usedValues) !== true){
