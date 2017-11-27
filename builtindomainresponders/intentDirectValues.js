@@ -32,12 +32,22 @@ SOFTWARE.
  * @param selectorArray - selector of the substate (NOT used in this function)
  * @param args - arguments passed in from the domain configuration (or elsewhere).  Should look something like this:
  * {
- *   "directValue": {
+ *   "directValues": {
  *     "intentName1": {
- *       "text": "blah1"
+ *       "pickMethod": "random",
+ *       "values": [
+ *         "text": "blah1 a",
+ *         "text": "blah1 b",
+ *         "text": "blah1 c"
+ *       ]
  *     },
  *     "intentName2": {
- *       "text": "blah2"
+ *       "pickMethod": "random",
+ *       "values": [
+ *         "text": "blah2 a",
+ *         "text": "blah2 b",
+ *         "text": "blah2 c"
+ *       ]
  *     }
  *   }
  * }
@@ -47,10 +57,16 @@ SOFTWARE.
 let _responderFunction = function(match, stateAccessor, selectorArray, args){
   let intent = match.name;
   if(typeof args !== "undefined" && args !== null &&
-     typeof args.directValue !== "undefined" && args.directValue !== null &&
-     typeof args.directValue[intent] !== "undefined" && args.directValue[intent] !== null){
-    let result = args.directValue[intent];
-    return result;
+     typeof args.directValues !== "undefined" && args.directValues !== null &&
+     typeof args.directValues[intent] !== "undefined" && args.directValues[intent] !== null){
+
+    let directValues = args.directValues[intent];
+    if(directValues.pickMethod === "random"){
+      if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values)){
+        let randomIndex = Math.floor(Math.random() * directValues.values.length);
+        return directValues.values[randomIndex];
+      }
+    }
   }
   return {};
 };
