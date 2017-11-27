@@ -76,7 +76,10 @@ mix in application, add logging, and more.
 
 ## Domain Tutorials
 
-I will be putting together domain tutorials after there is a comprehensive list of recognizer tutorials in place.
+Finally, here is the first domain tutorial:
+
+* "Hello Domain" - this is a very simple, introductory example of a domain that doesn't use the state nor any of the
+advanced features, but does respond to every handled intent without the need for any conversation specific code.
 
 # Note on licenses
 The code in this project is distributed under the MIT license.  Some data files
