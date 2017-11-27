@@ -3,7 +3,9 @@ layout: page
 title: Tutorials
 permalink: /Tutorials/
 ---
-Here you will find tutorials showing you how to use vui-ad-hoc-alexa-recognizer
+Here you will find tutorials showing you how to use vui-ad-hoc-alexa-recognizer.
+
+## Recognizer tutorials
 
 <a class="page-link" href="{{ "/Tutorials/HelloWorld/" | relative_url }}">Hello World</a>
 
@@ -32,3 +34,7 @@ Here you will find tutorials showing you how to use vui-ad-hoc-alexa-recognizer
 <a class="page-link" href="{{ "/Tutorials/SixOfOneHalfADozenOfTheOther/" | relative_url }}">Six of One, Half a Dozen of the Other</a>
 
 <a class="page-link" href="{{ "/Tutorials/WouldYouLikeSomeFriesWithThat/" | relative_url }}">Would You Like Some Fries with That?</a>
+
+## Domain tutorials
+
+<a class="page-link" href="{{ "/Tutorials/HelloDomain/" | relative_url }}">Hello Domain</a>
