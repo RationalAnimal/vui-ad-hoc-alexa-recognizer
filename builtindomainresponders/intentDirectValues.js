@@ -51,6 +51,30 @@ SOFTWARE.
  *     }
  *   }
  * }
+ * or this:
+ * {
+ *   "directValues": {
+ *     "intentName1": {
+ *       "pickMethod": "randomDoNotRepeat",
+ *       "repeatSelector": "usedSelector1",
+ *       "values": [
+ *         "text": "blah1 a",
+ *         "text": "blah1 b",
+ *         "text": "blah1 c"
+ *       ]
+ *     },
+ *     "intentName2": {
+ *       "pickMethod": "randomDoNotRepeat",
+ *       "repeatSelector": "usedSelector2",
+ *       "values": [
+ *         "text": "blah2 a",
+ *         "text": "blah2 b",
+ *         "text": "blah2 c"
+ *       ]
+ *     }
+ *   }
+ * }
+ *
  * @returns object
  * @private
  */
@@ -67,8 +91,27 @@ let _responderFunction = function(match, stateAccessor, selectorArray, args){
         return directValues.values[randomIndex];
       }
     }
+    else if(directValues.pickMethod === "sequenceWrapping"){
+      if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values) &&
+        typeof directValues.repeatSelector !== "undefined" && directValues.repeatSelector !== null){
 
-
+        let updatedStateSelectors = [].concat(selectorArray);
+        updatedStateSelectors.push(directValues.repeatSelector);
+        //let usedValues = stateAccessor.getStateChain(updatedStateSelectors);
+        let lastIndex = stateAccessor.getStateChain(updatedStateSelectors);
+        if(typeof lastIndex === "undefined" || lastIndex === null){
+          lastIndex = 0;
+        }
+        let currentIndex = lastIndex + 1;
+        if(currentIndex >= directValues.values.length){
+          // This means all the values have been used - reset
+          currentIndex = 0;
+        }
+        let returnValue = directValues.values[currentIndex];
+        stateAccessor.setStateChain(updatedStateSelectors, currentIndex);
+        return returnValue;
+      }
+    }
     else if(directValues.pickMethod === "randomDoNotRepeat"){
       if(typeof directValues.values !== "undefined" && Array.isArray(directValues.values) &&
         typeof directValues.repeatSelector !== "undefined" && directValues.repeatSelector !== null){
@@ -103,11 +146,6 @@ let _responderFunction = function(match, stateAccessor, selectorArray, args){
         return returnValue;
       }
     }
-
-
-
-
-
   }
   return {};
 };
