@@ -736,6 +736,7 @@ AfinnEmoticonIntent AFINNEMOTE =]]
 AfinnEmoticonIntent AFINNEMOTE =]]]]]]
 AfinnEmoticonIntent AFINNEMOTE =]]]]]] =]]
 AfinnEmoticonIntent AFINNEMOTE =] =]]]]]] =]]
+AfinnEmoticonIntent AFINNEMOTE =] =]] =]]]]]] =]]
 AfinnEmoticonIntent AFINNEMOTE =')
 AfinnEmoticonIntent AFINNEMOTE ='))
 AfinnEmoticonIntent AFINNEMOTE ='))))))
