@@ -360,6 +360,7 @@
     {"word":"*=","score":2,"regExpString":"(?:(?:^|\\s+)(\\*=)(?:$|\\s+))","caseInsensitive":true},
     {"word":"=D","score":3,"regExpString":"(?:(?:^|\\s+)(=D)(?:$|\\s+))","caseInsensitive":false},
     {"word":"=P","score":3,"regExpString":"(?:(?:^|\\s+)(=P)(?:$|\\s+))","caseInsensitive":false},
+    {"word":"=S","score":-2,"regExpString":"(?:(?:^|\\s+)(=S)(?:$|\\s+))","caseInsensitive":false},
     {"word":"=')","score":2,"regExpString":"(?:(?:^|\\s+)(='\\))(?:$|\\s+))","caseInsensitive":true},
     {"word":"='))","score":3,"regExpString":"(?:(?:^|\\s+)(='\\){2,5})(?:$|\\s+))","caseInsensitive":true},
     {"word":"='))))))","score":4,"regExpString":"(?:(?:^|\\s+)(='\\){6,10})(?:$|\\s+))","caseInsensitive":true},
