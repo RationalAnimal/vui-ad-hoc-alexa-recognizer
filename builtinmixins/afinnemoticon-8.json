@@ -429,6 +429,7 @@
     {"word":"='[[[[[[","score":-4,"regExpString":"(?:(?:^|\\s+)(='\\[{6,10})(?:$|\\s+))","caseInsensitive":true},
     {"word":"]'=","score":-2,"regExpString":"(?:(?:^|\\s+)(\\]'=)(?:$|\\s+))","caseInsensitive":true},
     {"word":"]]'=","score":-3,"regExpString":"(?:(?:^|\\s+)(\\]{2,5}'=)(?:$|\\s+))","caseInsensitive":true},
+    {"word":"]]]]]]'=","score":-4,"regExpString":"(?:(?:^|\\s+)(\\]{6,10}'=)(?:$|\\s+))","caseInsensitive":true},
     {"word":"=(","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\()(?:$|\\s+))","caseInsensitive":true},
     {"word":"=/","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\/)(?:$|\\s+))","caseInsensitive":true},
     {"word":"=\\","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\\\)(?:$|\\s+))","caseInsensitive":true},
