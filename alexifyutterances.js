@@ -33,10 +33,12 @@ var usage = function(){
   console.log("  --interactionmodel InteractionModelFileName specify combined json file name of the file that has intents, utterances, custom slot values, prompts, and dialogs all in one.");
   console.log("  --utterances UtterancesFileName specify input utterances file name.");
   console.log("  --intents IntentsSchemaFileName specify intent schema file name used for slot name validation.");
-  console.log("  --config ConfigFileName specify config file name used text equivalents loading.");
+  console.log("  --config ConfigFileName specify config file name used for text equivalents loading.");
+  console.log("  --noconfig specify instead of --config for those cases when there is no need for the config file");
   console.log("  --sourcebase BaseSourceDirectory that is the base for the other file references on the command line or in the config file");
   console.log("  -o --output OutputFileName specify output utterances or interaction model file name.");
 };
+let noconfig = false;
 for(let i = 2; i < process.argv.length - 1; i += 2){
   let j = i + 1;
   if(process.argv[i] == "-i" || process.argv[i] == "--input" || process.argv[i] == "--utterances"){
@@ -51,6 +53,10 @@ for(let i = 2; i < process.argv.length - 1; i += 2){
   else if(process.argv[i] == "--config"){
     var configFileName = process.argv[j];
   }
+  else if(process.argv[i] == "--noconfig"){
+    i--;
+    noconfig = true;
+  }
   else if(process.argv[i] === "--sourcebase"){
     if(j < process.argv.length) {
       i++;
@@ -58,7 +64,6 @@ for(let i = 2; i < process.argv.length - 1; i += 2){
       var resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
     }
   }
-
   else if(process.argv[i] == "--interactionmodel"){
     var interactionModelFileName = process.argv[j];
   }
@@ -80,7 +85,7 @@ if(typeof interactionModelFileName != "undefined"){
   }
 }
 
-if((typeof interactionModelFileName === "undefined" && (typeof inputFileName === "undefined" || typeof intentsFileName === "undefined")) || typeof outputFileName === "undefined" || typeof configFileName === "undefined" || typeof resolvedBaseDir === "undefined"){
+if((typeof interactionModelFileName === "undefined" && (typeof inputFileName === "undefined" || typeof intentsFileName === "undefined")) || typeof outputFileName === "undefined" || (typeof configFileName === "undefined" && noconfig === false) || typeof resolvedBaseDir === "undefined"){
   usage();
   process.exit(1);
 }
@@ -206,16 +211,21 @@ else {
   }
 
   // compute actual config file name when combined with base source directory
-  let resolvedConfigFileName = utilities.resolveFileName(configFileName, resolvedBaseDir);
   let config;
 
-  try {
-    config = require(resolvedConfigFileName);
+  if(noconfig === true){
+    config = {};
   }
-  catch(e){
-    console.log("Unable to load Configuration file.");
-    usage();
-    process.exit(1);
+  else {
+    let resolvedConfigFileName = utilities.resolveFileName(configFileName, resolvedBaseDir);
+    try {
+      config = require(resolvedConfigFileName);
+    }
+    catch(e){
+      console.log("Unable to load Configuration file.");
+      usage();
+      process.exit(1);
+    }
   }
 
   for(let i = 0; i < values.length; i ++){
