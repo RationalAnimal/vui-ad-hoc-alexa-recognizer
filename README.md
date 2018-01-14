@@ -918,7 +918,7 @@ Alexa, they need to be stripped from the utterance file.  For that use
 alexifyutterances.js utility:
 
 ```shell
-node alexifyutterances.js --utterances test/utterances.txt --intents test/intents.json --output testutterances.txt
+node alexifyutterances.js --utterances test/utterances.txt --intents test/intents.json --output testutterances.txt --noconfig
 Result was saved to testutterances.txt
 ```
 
@@ -935,7 +935,7 @@ features supported by this module.  E.g. you can options lists or slot flags or 
 Then run it through the alexifyutterances.js and the result will be importable back into Alexa console:
 
 ```shell
-node alexifyutterances.js --interactionmodel test/interactionmodel.json --output alexifiedmodel.json
+node alexifyutterances.js --interactionmodel test/interactionmodel.json --output alexifiedmodel.json --noconfig
 Result was saved to alexifiedmodel.json
 ```
 
