@@ -41,33 +41,37 @@ var usage = function(){
 let noconfig = false;
 var resolvedBaseDir = fs.realpathSync(".");
 
-for(let i = 2; i < process.argv.length - 1; i += 2){
+for(let i = 2; i < process.argv.length; i++){
   let j = i + 1;
   if(process.argv[i] == "-i" || process.argv[i] == "--input" || process.argv[i] == "--utterances"){
     var inputFileName = process.argv[j];
+    i++;
   }
   else if(process.argv[i] == "-o" || process.argv[i] == "--output"){
     var outputFileName = process.argv[j];
+    i++;
   }
   else if(process.argv[i] == "--intents"){
     var intentsFileName = process.argv[j];
+    i++;
   }
   else if(process.argv[i] == "--config"){
     var configFileName = process.argv[j];
+    i++;
   }
   else if(process.argv[i] == "--noconfig"){
-    i--;
     noconfig = true;
   }
   else if(process.argv[i] === "--sourcebase"){
     if(j < process.argv.length) {
-      i++;
       var baseSourceDirectory = process.argv[j];
       resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
     }
+    i++;
   }
   else if(process.argv[i] == "--interactionmodel"){
     var interactionModelFileName = process.argv[j];
+    i++;
   }
 }
 
