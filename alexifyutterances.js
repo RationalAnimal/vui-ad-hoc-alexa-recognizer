@@ -39,6 +39,8 @@ var usage = function(){
   console.log("  -o --output OutputFileName specify output utterances or interaction model file name.");
 };
 let noconfig = false;
+var resolvedBaseDir = fs.realpathSync(".");
+
 for(let i = 2; i < process.argv.length - 1; i += 2){
   let j = i + 1;
   if(process.argv[i] == "-i" || process.argv[i] == "--input" || process.argv[i] == "--utterances"){
@@ -61,15 +63,16 @@ for(let i = 2; i < process.argv.length - 1; i += 2){
     if(j < process.argv.length) {
       i++;
       var baseSourceDirectory = process.argv[j];
-      var resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
+      resolvedBaseDir = fs.realpathSync(baseSourceDirectory);
     }
   }
   else if(process.argv[i] == "--interactionmodel"){
     var interactionModelFileName = process.argv[j];
   }
 }
+
 var interactionModel;
-if(typeof interactionModelFileName != "undefined"){
+if(typeof interactionModelFileName !== "undefined"){
   try {
     interactionModel = require(interactionModelFileName);
   }
@@ -86,6 +89,7 @@ if(typeof interactionModelFileName != "undefined"){
 }
 
 if((typeof interactionModelFileName === "undefined" && (typeof inputFileName === "undefined" || typeof intentsFileName === "undefined")) || typeof outputFileName === "undefined" || (typeof configFileName === "undefined" && noconfig === false) || typeof resolvedBaseDir === "undefined"){
+  console.log("Missing required arguments");
   usage();
   process.exit(1);
 }
