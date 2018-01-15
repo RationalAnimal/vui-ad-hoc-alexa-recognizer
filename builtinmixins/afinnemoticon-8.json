@@ -433,6 +433,7 @@
     {"word":"='|","score":-1,"regExpString":"(?:(?:^|\\s+)(='\\|)(?:$|\\s+))","caseInsensitive":true},
     {"word":"|'=","score":-1,"regExpString":"(?:(?:^|\\s+)(\\|'=)(?:$|\\s+))","caseInsensitive":true},
     {"word":"='?","score":-1,"regExpString":"(?:(?:^|\\s+)(='\\?)(?:$|\\s+))","caseInsensitive":true},
+    {"word":"='*","score":2,"regExpString":"(?:(?:^|\\s+)(='\\*)(?:$|\\s+))","caseInsensitive":true},
     {"word":"=(","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\()(?:$|\\s+))","caseInsensitive":true},
     {"word":"=/","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\/)(?:$|\\s+))","caseInsensitive":true},
     {"word":"=\\","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\\\)(?:$|\\s+))","caseInsensitive":true},
