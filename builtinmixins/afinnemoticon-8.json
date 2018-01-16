@@ -444,6 +444,7 @@
     {"word":"q'=","score":3,"regExpString":"(?:(?:^|\\s+)(q'=)(?:$|\\s+))","caseInsensitive":false},
     {"word":"='/","score":-2,"regExpString":"(?:(?:^|\\s+)(='/)(?:$|\\s+))","caseInsensitive":true},
     {"word":"\\'=","score":-2,"regExpString":"(?:(?:^|\\s+)(\\\\'=)(?:$|\\s+))","caseInsensitive":true},
+    {"word":"='\\","score":-2,"regExpString":"(?:(?:^|\\s+)(='\\\\)(?:$|\\s+))","caseInsensitive":true},
     {"word":"=(","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\()(?:$|\\s+))","caseInsensitive":true},
     {"word":"=/","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\/)(?:$|\\s+))","caseInsensitive":true},
     {"word":"=\\","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\\\)(?:$|\\s+))","caseInsensitive":true},
