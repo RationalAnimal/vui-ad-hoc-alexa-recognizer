@@ -901,4 +901,5 @@ AfinnEmoticonIntent AFINNEMOTE S'=
 AfinnEmoticonIntent AFINNEMOTE ='p
 AfinnEmoticonIntent AFINNEMOTE d'=
 AfinnEmoticonIntent AFINNEMOTE q'=
+AfinnEmoticonIntent AFINNEMOTE ='/
 AfinnEmoticonIntent AFINNEMOTE <3
