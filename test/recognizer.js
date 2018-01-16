@@ -10035,6 +10035,20 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
         });
     });
 
+    it("verify sentiment analysis is computed correctly for single emoji", function() {
+      let result = recognizer.Recognizer.matchText("AFINNEMOTE d'=");
+      expect(result).to.eql(
+        {
+          "name": "AfinnEmoticonIntent",
+          "slots": {},
+          "sentiment": {
+            "AFINN": {
+              "score": 3
+            }
+          }
+        });
+    });
+
 
     it("verify sentiment analysis is computed correctly for single emoji", function() {
       let result = recognizer.Recognizer.matchText("AFINNEMOTE ;']]");
