@@ -1461,7 +1461,7 @@ var _parseCurlyBrackets = function(utteranceArray, parsingRange, intentName, int
 
 var _splitIntentName = function(utterance){
   let returnValue = {};
-  let intentRegExp = /^\s*((?:\w|[-])+)\s*(.+)\s*/ig;
+  let intentRegExp = /^\s*((?:\w|[-.])+)\s*(.+)\s*/ig;
 
   let matchResult = intentRegExp.exec(utterance);
   if(matchResult){
