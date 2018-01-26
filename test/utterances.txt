@@ -966,4 +966,5 @@ AfinnEmoticonIntent AFINNEMOTE |^=
 AfinnEmoticonIntent AFINNEMOTE =^?
 AfinnEmoticonIntent AFINNEMOTE =^*
 AfinnEmoticonIntent AFINNEMOTE *^=
+AfinnEmoticonIntent AFINNEMOTE =^D
 AfinnEmoticonIntent AFINNEMOTE <3
