@@ -36,9 +36,7 @@
     {"word":"\\:","score":-2,"regExpString":"(?:(?:^|\\s+)(\\\\:)(?:$|\\s+))","caseInsensitive":true},
     {"word":":\\","score":-2,"regExpString":"(?:(?:^|\\s+)(:\\\\)(?:$|\\s+))","caseInsensitive":true},
     {"word":"/:","score":-2,"regExpString":"(?:(?:^|\\s+)(/:)(?:$|\\s+))","caseInsensitive":true},
-
     {"word":"://","score":0,"regExpString":"(?:(?:^|\\s+)(:\\/\\/)(?:$|\\s+))","caseInsensitive":true},
-
     {"word":":*","score":2,"regExpString":"(?:(?:^|\\s+)(:\\*)(?:$|\\s+))","caseInsensitive":true},
     {"word":"*:","score":2,"regExpString":"(?:(?:^|\\s+)(\\*:)(?:$|\\s+))","caseInsensitive":true},
     {"word":":D","score":3,"regExpString":"(?:(?:^|\\s+)(:D)(?:$|\\s+))","caseInsensitive":false},
@@ -482,10 +480,10 @@
     {"word":"=^p","score":3,"regExpString":"(?:(?:^|\\s+)(=\\^p)(?:$|\\s+))","caseInsensitive":false},
     {"word":"d^=","score":3,"regExpString":"(?:(?:^|\\s+)(d\\^=)(?:$|\\s+))","caseInsensitive":false},
     {"word":"q^=","score":3,"regExpString":"(?:(?:^|\\s+)(q\\^=)(?:$|\\s+))","caseInsensitive":false},
+    {"word":"=^/","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\^/)(?:$|\\s+))","caseInsensitive":true},
     {"word":"=(","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\()(?:$|\\s+))","caseInsensitive":true},
     {"word":"=/","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\/)(?:$|\\s+))","caseInsensitive":true},
     {"word":"=\\","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\\\)(?:$|\\s+))","caseInsensitive":true},
-    {"word":"=^/","score":-1,"regExpString":"(?:(?:^|\\s+)(=\\^\\/)(?:$|\\s+))","caseInsensitive":true},
     {"word":"=P","score":3,"regExpString":"(?:(?:^|\\s+)(=P)(?:$|\\s+))","caseInsensitive":false},
     {"word":"\\o/","score":3,"regExpString":"(?:(?:^|\\s+)(\\\\o/)(?:$|\\s+))","caseInsensitive":false},
     {"word":"♥","score":3,"regExpString":"(?:(?:^|\\s+)(♥)(?:$|\\s+))","caseInsensitive":true},
