@@ -974,3 +974,7 @@ AfinnEmoticonIntent AFINNEMOTE d^=
 AfinnEmoticonIntent AFINNEMOTE q^=
 AfinnEmoticonIntent AFINNEMOTE =^/
 AfinnEmoticonIntent AFINNEMOTE <3
+AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON :)
+AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON :))
+
+AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON :) :))
