@@ -30,6 +30,7 @@
    let intentName;
    let utterance;
    let priorResult;
+   let commonalityThreshold;
    if(typeof standardArgs !== "undefined"){
      intentName = standardArgs.intentName;
      utterance = standardArgs.utterance;
@@ -49,6 +50,9 @@
          dataSet.scoredWords = dataSet.scoredWords.concat(scratchDataSet.scoredWords);
          precomputed = false;
        }
+     }
+     if(typeof customArgs.commonalityThreshold !== "undefined"){
+       commonalityThreshold = customArgs.commonalityThreshold;
      }
    }
    else {
@@ -108,6 +112,9 @@
    let scratchUtterance = utterance;
    for(let i = 0; i < dataSet.scoredWords.length; i++){
      let regExp;
+     if(typeof commonalityThreshold !== "undefined" && (typeof dataSet.scoredWords[i].commonality !== "undefined" && dataSet.scoredWords[i].commonality > commonalityThreshold)){
+       continue;
+     }
      if(dataSet.scoredWords[i].caseInsensitive === false){
        regExp = new RegExp(dataSet.scoredWords[i].regExpString, "g");
      }

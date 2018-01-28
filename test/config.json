@@ -192,6 +192,15 @@
 						"arguments": {"ratingDataSetFiles": ["./afinnemoticon-8.json"]}
 					}
 				]
+			},
+			{
+				"bundleName": "afinnEmoticonSentimentMostCommonBundle",
+				"mixInCode": [
+					{
+						"mixInBuiltInName": "afinn",
+						"arguments": {"ratingDataSetFiles": ["./afinnemoticon-8.json"], "commonalityThreshold": 1}
+					}
+				]
 			}
 		],
 		"appliesTo": [
@@ -230,6 +239,10 @@
 			{
 				"bundleName": "afinnEmoticonSentimentBundle",
 				"intentMatchRegExString": "(AfinnEmoticonIntent)"
+			},
+			{
+				"bundleName": "afinnEmoticonSentimentMostCommonBundle",
+				"intentMatchRegExString": "(AfinnEmoticonMostCommonIntent)"
 			}
 		]
 	},
