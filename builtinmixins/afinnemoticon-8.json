@@ -47,7 +47,7 @@
     {"word":":}","score":2,"regExpString":"(?:(?:^|\\s+)(:\\})(?:$|\\s+))","caseInsensitive":true,"commonality":2},
     {"word":"{:","score":2,"regExpString":"(?:(?:^|\\s+)(\\{:)(?:$|\\s+))","caseInsensitive":true,"commonality":2},
     {"word":":{","score":-2,"regExpString":"(?:(?:^|\\s+)(:\\{)(?:$|\\s+))","caseInsensitive":true,"commonality":2},
-    {"word":"}:","score":-2,"regExpString":"(?:(?:^|\\s+)(\\}:)(?:$|\\s+))","caseInsensitive":true},
+    {"word":"}:","score":-2,"regExpString":"(?:(?:^|\\s+)(\\}:)(?:$|\\s+))","caseInsensitive":true,"commonality":2},
     {"word":":/","score":-2,"regExpString":"(?:(?:^|\\s+)(:\\/)(?:$|\\s+))","caseInsensitive":true},
     {"word":"\\:","score":-2,"regExpString":"(?:(?:^|\\s+)(\\\\:)(?:$|\\s+))","caseInsensitive":true},
     {"word":":\\","score":-2,"regExpString":"(?:(?:^|\\s+)(:\\\\)(?:$|\\s+))","caseInsensitive":true},
