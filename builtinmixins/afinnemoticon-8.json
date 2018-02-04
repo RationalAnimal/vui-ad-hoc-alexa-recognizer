@@ -60,7 +60,7 @@
     {"word":":S","score":-2,"regExpString":"(?:(?:^|\\s+)(:S)(?:$|\\s+))","caseInsensitive":false,"commonality":2},
     {"word":"S:","score":-2,"regExpString":"(?:(?:^|\\s+)(S:)(?:$|\\s+))","caseInsensitive":false,"commonality":2},
     {"word":":p","score":3,"regExpString":"(?:(?:^|\\s+)(:p)(?:$|\\s+))","caseInsensitive":false,"commonality":1},
-    {"word":"d:","score":3,"regExpString":"(?:(?:^|\\s+)(d:)(?:$|\\s+))","caseInsensitive":false},
+    {"word":"d:","score":3,"regExpString":"(?:(?:^|\\s+)(d:)(?:$|\\s+))","caseInsensitive":false,"commonality":1},
     {"word":"q:","score":3,"regExpString":"(?:(?:^|\\s+)(q:)(?:$|\\s+))","caseInsensitive":false},
     {"word":":-)","score":2,"regExpString":"(?:(?:^|\\s+)(:\\-\\))(?:$|\\s+))","caseInsensitive":true},
     {"word":":-))","score":3,"regExpString":"(?:(?:^|\\s+)(:\\-\\){2,5})(?:$|\\s+))","caseInsensitive":true},
