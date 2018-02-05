@@ -80,7 +80,6 @@ Finally, here is the first two domain tutorial:
 
 * "Hello Domain" - this is a very simple, introductory example of a domain that doesn't use the state nor any of the
 advanced features, but does respond to every handled intent without the need for any conversation specific code.
-* "Affairs of the State" - introduction to various aspects of state use within domains
 
 # Articles
 
