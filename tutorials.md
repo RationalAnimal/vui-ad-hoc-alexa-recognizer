@@ -38,3 +38,5 @@ Here you will find tutorials showing you how to use vui-ad-hoc-alexa-recognizer.
 ## Domain tutorials
 
 <a class="page-link" href="{{ "/Tutorials/HelloDomain/" | relative_url }}">Hello Domain</a>
+
+<a class="page-link" href="{{ "/Tutorials/AffairsOfTheState/" | relative_url }}">Affairs of the State</a>
