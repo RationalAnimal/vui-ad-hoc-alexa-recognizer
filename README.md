@@ -76,10 +76,19 @@ mix in application, add logging, and more.
 
 ## Domain Tutorials
 
-Finally, here is the first domain tutorial:
+Finally, here is the first two domain tutorial:
 
 * "Hello Domain" - this is a very simple, introductory example of a domain that doesn't use the state nor any of the
 advanced features, but does respond to every handled intent without the need for any conversation specific code.
+* "Affairs of the State" - introduction to various aspects of state use within domains
+
+# Articles
+
+In addition to tutorials I will from time to time publish articles related to either chatbots/voice services in general
+or vui-ad-hoc-alexa-recognizer in particular (or some of both).  They are located on the same website as the tutorials.
+Here is the first of these:
+
+* "Better Way of Building Better Chatbots" at https://rationalanimal.github.io/vui-ad-hoc-alexa-recognizer/Articles/BetterWayOfBuildingBetterChatbots/
 
 # Note on licenses
 The code in this project is distributed under the MIT license.  Some data files
