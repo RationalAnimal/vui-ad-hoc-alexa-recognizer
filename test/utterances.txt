@@ -1119,3 +1119,4 @@ AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON :-P
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON :-S
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON :-p
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON d-:
+AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON q-:
