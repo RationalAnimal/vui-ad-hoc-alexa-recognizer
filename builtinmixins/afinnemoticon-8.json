@@ -176,7 +176,7 @@
     {"word":"d':","score":3,"regExpString":"(?:(?:^|\\s+)(d':)(?:$|\\s+))","caseInsensitive":false,"commonality":1},
     {"word":"q':","score":3,"regExpString":"(?:(?:^|\\s+)(q':)(?:$|\\s+))","caseInsensitive":false,"commonality":1},
     {"word":":'/","score":-2,"regExpString":"(?:(?:^|\\s+)(:'\\/)(?:$|\\s+))","caseInsensitive":true,"commonality":2},
-    {"word":"\\':","score":-2,"regExpString":"(?:(?:^|\\s+)(\\\\':)(?:$|\\s+))","caseInsensitive":true},
+    {"word":"\\':","score":-2,"regExpString":"(?:(?:^|\\s+)(\\\\':)(?:$|\\s+))","caseInsensitive":true,"commonality":2},
     {"word":":'\\","score":-2,"regExpString":"(?:(?:^|\\s+)(:'\\\\)(?:$|\\s+))","caseInsensitive":true},
     {"word":"/':","score":-2,"regExpString":"(?:(?:^|\\s+)(/':)(?:$|\\s+))","caseInsensitive":true},
     {"word":":^)","score":2,"regExpString":"(?:(?:^|\\s+)(:\\^\\))(?:$|\\s+))","caseInsensitive":true},
