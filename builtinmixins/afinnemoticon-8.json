@@ -236,7 +236,7 @@
     {"word":":^/","score":-2,"regExpString":"(?:(?:^|\\s+)(:\\^\\/)(?:$|\\s+))","caseInsensitive":true,"commonality":2},
     {"word":"\\^:","score":-2,"regExpString":"(?:(?:^|\\s+)(\\\\\\^:)(?:$|\\s+))","caseInsensitive":true,"commonality":2},
     {"word":":^\\","score":-2,"regExpString":"(?:(?:^|\\s+)(:\\^\\\\)(?:$|\\s+))","caseInsensitive":true,"commonality":2},
-    {"word":"/^:","score":-2,"regExpString":"(?:(?:^|\\s+)(\\/\\^:)(?:$|\\s+))","caseInsensitive":true},
+    {"word":"/^:","score":-2,"regExpString":"(?:(?:^|\\s+)(\\/\\^:)(?:$|\\s+))","caseInsensitive":true,"commonality":2},
     {"word":":o)","score":2,"regExpString":"(?:(?:^|\\s+)(:o\\))(?:$|\\s+))","caseInsensitive":false},
     {"word":";)","score":2,"regExpString":"(?:(?:^|\\s+)(;\\))(?:$|\\s+))","caseInsensitive":true},
     {"word":";))","score":3,"regExpString":"(?:(?:^|\\s+)(;\\){2,3})(?:$|\\s+))","caseInsensitive":true},
