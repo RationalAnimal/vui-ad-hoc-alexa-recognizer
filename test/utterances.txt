@@ -1272,3 +1272,4 @@ AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON \^:
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON :^\
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON /^:
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON :o)
+AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON ;)
