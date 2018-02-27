@@ -19286,6 +19286,19 @@ describe("vui-ad-hoc-alexa-recognizer", function() {
           }
         });
     });
+    it("verify sentiment analysis is computed correctly for a single emoji with commonality threshold", function() {
+      let result = recognizer.Recognizer.matchText("AFINNEMOTECOMMON *;");
+      expect(result).to.eql(
+        {
+          "name": "AfinnEmoticonMostCommonIntent",
+          "slots": {},
+          "sentiment": {
+            "AFINN": {
+              "score": 0
+            }
+          }
+        });
+    });
 
   });
 
