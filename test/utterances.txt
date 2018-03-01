@@ -1337,3 +1337,4 @@ AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON ;p
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON d;
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON q;
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON ;/
+AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON ;\
