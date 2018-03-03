@@ -1336,7 +1336,7 @@ var _processMatchedDateSlotValue = function(value, flags){
       // Get the closest in the future year and return the full date
       let today = new Date();
       year = today.getFullYear();
-      if(today.getMonth() + 1 > month || (today.getMonth() + 1 === month && (today.getDate() > dayOfMonth))){
+      if(today.getMonth() + 1 > parseInt(month,10) || ((today.getMonth() + 1 === parseInt(month,10)) && (today.getDate() > parseInt(dayOfMonth,10)))){
         year++;
       }
       return "" + _fourDigitFormatter(year) + "-" + _twoDigitFormatter(month) + "-" + _twoDigitFormatter(dayOfMonth);
