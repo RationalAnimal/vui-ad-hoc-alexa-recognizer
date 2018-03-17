@@ -1243,16 +1243,16 @@ var _processMatchedDateSlotValue = function(value, flags){
 
   let fullCalendarDateString1 =
   "^(January|February|March|April|May|June|July|August|September|October|November|December){0,1}\\s*" +
-  "(first|1st|second|2nd|third|3rd|fourth|4th|fifth|5th|sixth|6th|seventh|7th|eighth|8th|nineth|9th|tenth|10th|" +
+  "(first|1st|second|2nd|third|3rd|fourth|4th|fifth|5th|sixth|6th|seventh|7th|eighth|8th|ninth|9th|tenth|10th|" +
   "eleventh|11th|twelfth|12th|thirteenth|13th|fourteenth|14th|fifteenth|15th|sixteenth|16th|seventeenth|17th|eighteenth|18th|nineteenth|19th|twentieth|20th|" +
-  "twenty first|21st|twenty second|22nd|thwenty third|23rd|twenty fourth|24th|twenty fifth|25th|twenty sixth|26th|twenty seventh|27th|" +
+  "twenty first|21st|twenty second|22nd|twenty third|23rd|twenty fourth|24th|twenty fifth|25th|twenty sixth|26th|twenty seventh|27th|" +
   "twenty eighth|28th|twenty ninth|29th|thirtieth|30th|thirty first|31st){0,1}\\s*" +
-    /*
-  "(one|first|1st|two|second|2nd|three|third|3rd|four|fourth|4th|five|fifth|5th|six|sixth|6th|seven|seventh|7th|eight|eighth|8th|nine|nineth|9th|ten|tenth|10th|" +
+  /*
+  "(one|first|1st|two|second|2nd|three|third|3rd|four|fourth|4th|five|fifth|5th|six|sixth|6th|seven|seventh|7th|eight|eighth|8th|nine|ninth|9th|ten|tenth|10th|" +
   "eleven|eleventh|11th|twelve|twelfth|12th|thirteen|thirteenth|13th|fourteen|fourteenth|14th|fifteen|fifteenth|15th|sixteen|sixteenth|16th|seventeen|seventeenth|17th|eighteen|eighteenth|18th|nineteen|nineteenth|19th|twenty|twentieth|20th|" +
-  "twenty one|twenty first|21st|twenty two|twenty second|22nd|twenty three|thwenty third|23rd|twenty four|twenty fourth|24th|twenty five|twenty fifth|25th|twenty six|twenty sixth|26th|twenty seven|twenty seventh|27th|" +
+  "twenty one|twenty first|21st|twenty two|twenty second|22nd|twenty three|twenty third|23rd|twenty four|twenty fourth|24th|twenty five|twenty fifth|25th|twenty six|twenty sixth|26th|twenty seven|twenty seventh|27th|" +
   "twenty eight|twenty eighth|28th|twenty nine|twenty ninth|29th|thirty|thirtieth|30th|thirty one|thirty first|31st){1}\\s*" +
-*/
+  */
   // Now the year, first as spelled out number, e.g. one thousand nine hundred forty five
   "(" +
     "(?:" +
