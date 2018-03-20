@@ -402,7 +402,7 @@
     {"word":";'*","score":2,"regExpString":"(?:(?:^|\\s+)(;'\\*)(?:$|\\s+))","caseInsensitive":true,"commonality":2},
     {"word":"*';","score":2,"regExpString":"(?:(?:^|\\s+)(\\*';)(?:$|\\s+))","caseInsensitive":true,"commonality":2},
     {"word":";'D","score":3,"regExpString":"(?:(?:^|\\s+)(;'D)(?:$|\\s+))","caseInsensitive":false,"commonality":1},
-    {"word":";'P","score":3,"regExpString":"(?:(?:^|\\s+)(;'P)(?:$|\\s+))","caseInsensitive":false},
+    {"word":";'P","score":3,"regExpString":"(?:(?:^|\\s+)(;'P)(?:$|\\s+))","caseInsensitive":false,"commonality":1},
     {"word":";'S","score":-2,"regExpString":"(?:(?:^|\\s+)(;'S)(?:$|\\s+))","caseInsensitive":false},
     {"word":"S';","score":-2,"regExpString":"(?:(?:^|\\s+)(S';)(?:$|\\s+))","caseInsensitive":false},
     {"word":";'p","score":3,"regExpString":"(?:(?:^|\\s+)(;'p)(?:$|\\s+))","caseInsensitive":false},
