@@ -76,7 +76,7 @@ mix in application, add logging, and more.
 
 ## Domain Tutorials
 
-Finally, here is the first two domain tutorial:
+Finally, here is the first domain tutorial:
 
 * "Hello Domain" - this is a very simple, introductory example of a domain that doesn't use the state nor any of the
 advanced features, but does respond to every handled intent without the need for any conversation specific code.
