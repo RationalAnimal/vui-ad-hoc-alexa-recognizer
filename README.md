@@ -2389,6 +2389,15 @@ you would specify something like:
 Just as for single values, you can set "match" to be false to indicate that the match will succeed if the state does
 NOT match ANY of the provided values
 
+##### Testing for null in the match criteria
+
+Sometimes you just need to test whether a value is a null or not.  A simpler and more concise way of doing it
+is like this:
+
+```text
+"isNull": true
+```
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
