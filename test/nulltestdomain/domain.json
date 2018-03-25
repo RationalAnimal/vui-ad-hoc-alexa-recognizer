@@ -2,38 +2,24 @@
   "description": "Simple domain",
   "recognizers": [
     {
-      "key": "greeting",
-      "path": "./test/nulltestdomain/recognizer.json"
+      "key": "nulltest",
+      "path": "./test/nulltestdomain/nulltestrecognizer.json"
     }
   ],
   "states": [
     {
-      "matchCriteria": "default",
+      "matchCriteria": {
+        "selector": "someNullValue",
+        "isNull": true
+      },
       "matchSpecs": [
         {
-          "recognizer": "greeting",
-          "responders": [
-            {
-              "result": {
-                "combineRule": "setTo",
-                "functionModule": "./test/greetingdomain/customresponderfunction.js"
-              }
-            },
-            {
-              "result": {
-                "combineRule": "mergeAppend",
-                "directValues": {
-                  "pickMethod": "randomDoNotRepeat",
-                  "repeatSelector": "greetingAlreadyUsed",
-                  "values": [
-                    {"text": "Hi", "ssml": "<speak>Hi</speak>"},
-                    {"text": "Hello", "ssml": "<speak>Hello</speak>"},
-                    {"text": "Nice to meet you", "ssml": "<speak>Nice to meet you</speak>"}
-                  ]
-                }
-              }
+          "recognizer": "nulltest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Null test recognizer used"}
             }
-          ]
+          }
         }
       ]
     }

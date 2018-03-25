@@ -2391,8 +2391,8 @@ NOT match ANY of the provided values
 
 ##### Testing for null in the match criteria
 
-Sometimes you just need to test whether a value is a null or not.  A simpler and more concise way of doing it
-is like this:
+Sometimes you just need to test whether a value is a null or not.
+Here is a simple and concise way of doing it:
 
 ```text
 "isNull": true
