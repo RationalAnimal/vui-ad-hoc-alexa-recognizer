@@ -1597,6 +1597,7 @@ let _isSubObjectAny = function(subObject, withinArray){
   return false;
 };
 
+
 /**
  * Call this function to determine whether state matches or not.
  * @param state - a single "state" from the domain file's "states" field
@@ -1608,16 +1609,17 @@ let _isSubObjectAny = function(subObject, withinArray){
 let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){ // eslint-disable-line no-unused-vars
   if(
     (state.matchCriteria === "default") ||
+    (
+      (typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object") &&
       (
-        (typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object") &&
-        (
-          ((state.matchCriteria.match === true) && _isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) ||
-          ((state.matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) === false) ||
-          ((state.matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) ||
-          ((state.matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) === false)
-        )
+        ((state.matchCriteria.match === true) && _isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) ||
+        ((state.matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) === false) ||
+        ((state.matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) ||
+        ((state.matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) === false) ||
+        ((state.matchCriteria.isNull === true) && (stateAccessor.getState(state.matchCriteria.selector) === null))
       )
-  ) {
+    )
+  ){
     return true;
   }
   return false;
