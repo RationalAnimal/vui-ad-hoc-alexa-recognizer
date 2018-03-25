@@ -1,9 +1,9 @@
 {
-  "description": "Simple greeting domain",
+  "description": "Simple domain",
   "recognizers": [
     {
       "key": "greeting",
-      "path": "./test/greetingdomain/greetingrecognizer.json"
+      "path": "./test/nulltestdomain/recognizer.json"
     }
   ],
   "states": [
