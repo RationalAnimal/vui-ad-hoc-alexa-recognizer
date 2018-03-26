@@ -21630,11 +21630,11 @@ describe("domain parsing", function() {
 
     it("verify multi recognizer domain with null test match criteria and a hardcoded accessor parses", function () {
       let domain = require("../test/nulltestdomain/domain.json");
-      let stateAccessor = {
-        "getState": function(selector){
-          return null;
-        }
-      };
+
+      let applicationState = {"someNullValue": null};
+      let basicStateAccessor = require("../builtinstateaccessors/basic.js");
+      let stateAccessor = new basicStateAccessor(applicationState);
+
       let result = recognizer.Recognizer.matchDomain("testing whether we match on a null testing criteria", domain, stateAccessor);
       expect(result).to.eql(
         {
