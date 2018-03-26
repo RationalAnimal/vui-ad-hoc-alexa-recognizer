@@ -29,14 +29,14 @@ let accessorUtils = require("./utils.js");
 
 let _getState = function(key){
   let result = accessorUtils.getSubObject(this.applicationState, key);
-  if(typeof result !== "undefined" && result != null){
+  if(typeof result !== "undefined"){
     return JSON.parse(JSON.stringify(result));
   }
 };
 
 let _getStateChain = function(keyArray){
   let result = accessorUtils.getSubObject(this.applicationState, keyArray);
-  if(typeof result !== "undefined" && result != null){
+  if(typeof result !== "undefined"){
     return JSON.parse(JSON.stringify(result));
   }
 };

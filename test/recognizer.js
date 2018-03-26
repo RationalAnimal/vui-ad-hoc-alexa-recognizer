@@ -21628,6 +21628,28 @@ describe("domain parsing", function() {
       );
     });
 
+    it("verify multi recognizer domain with null test match criteria and a hardcoded accessor parses", function () {
+      let domain = require("../test/nulltestdomain/domain.json");
+      let stateAccessor = {
+        "getState": function(selector){
+          return null;
+        }
+      };
+      let result = recognizer.Recognizer.matchDomain("testing whether we match on a null testing criteria", domain, stateAccessor);
+      expect(result).to.eql(
+        {
+          "match":
+            {
+              "name": "NullMatchingCriteriaTestingIntent",
+              "slots": {}
+            },
+          "result": {
+            "text": "Null test recognizer used"
+          }
+        }
+      );
+    });
+
     it("verify multi recognizer domain with non default match criteria and a state sub select accessor parses", function () {
       let domain = require("../test/blahblahdomain/blahblahdomain.json");
       let applicationState = {

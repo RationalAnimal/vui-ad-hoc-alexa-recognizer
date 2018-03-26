@@ -3,7 +3,7 @@
   "recognizers": [
     {
       "key": "nulltest",
-      "path": "./test/nulltestdomain/nulltestrecognizer.json"
+      "path": "./test/nulltestdomain/nullrecognizer.json"
     }
   ],
   "states": [
