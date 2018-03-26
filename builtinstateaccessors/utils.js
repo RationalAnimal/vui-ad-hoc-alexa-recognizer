@@ -85,6 +85,9 @@ let _getSubObject = function(object, keyArray, depth){
     let result = object;
     for(let i = 0; i < limit; i++){
       result = result[unfoldedKeys[i]];
+      if(result === null && i === limit - 1){
+        return result;
+      }
       if(typeof result === "undefined" || result === null){
         return;
       }

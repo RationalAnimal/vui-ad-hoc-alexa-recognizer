@@ -29,6 +29,9 @@ let accessorUtils = require("./utils.js");
 
 let _getState = function(key){
   let result = accessorUtils.getSubObject(this.applicationState, key);
+  if(result === null){
+    return null;
+  }
   if(typeof result !== "undefined"){
     return JSON.parse(JSON.stringify(result));
   }
@@ -36,6 +39,9 @@ let _getState = function(key){
 
 let _getStateChain = function(keyArray){
   let result = accessorUtils.getSubObject(this.applicationState, keyArray);
+  if(result === null){
+    return null;
+  }
   if(typeof result !== "undefined"){
     return JSON.parse(JSON.stringify(result));
   }
