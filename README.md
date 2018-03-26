@@ -2392,10 +2392,16 @@ NOT match ANY of the provided values
 ##### Testing for null in the match criteria
 
 Sometimes you just need to test whether a value is a null or not.
-Here is a simple and concise way of doing it:
+Here is a simple and concise way of checking whether a value is null:
 
 ```text
 "isNull": true
+```
+
+Similarly, here is how you would check if the value is not null:
+
+```text
+"isNull": false
 ```
 
 #### Subdomains
