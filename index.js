@@ -1616,7 +1616,8 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
         ((state.matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) === false) ||
         ((state.matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) ||
         ((state.matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) === false) ||
-        ((state.matchCriteria.isNull === true) && (stateAccessor.getState(state.matchCriteria.selector) === null))
+        ((state.matchCriteria.isNull === true) && (stateAccessor.getState(state.matchCriteria.selector) === null)) ||
+        ((state.matchCriteria.isNull === false) && (stateAccessor.getState(state.matchCriteria.selector) !== null))
       )
     )
   ){
