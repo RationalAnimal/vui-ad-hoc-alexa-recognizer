@@ -2415,6 +2415,7 @@ Similarly, here is how you would check if the value is not null:
 ##### Testing for undefined in the match criteria
 
 Testing for undefined is another common test that you may want to perform.
+This would typically be done when you want to test whether some state value has been set.
 The specification is similar to testing for null:
 
 ```text
