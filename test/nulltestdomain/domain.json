@@ -8,6 +8,10 @@
     {
       "key": "notnulltest",
       "path": "./test/nulltestdomain/notnullrecognizer.json"
+    },
+    {
+      "key": "undefinedtest",
+      "path": "./test/nulltestdomain/undefinedrecognizer.json"
     }
 
   ],
@@ -39,6 +43,22 @@
           "responder": {
             "result": {
               "directValue": {"text": "Not null test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "someNotNullValue",
+        "isUndefined": true
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "undefinedtest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Undefined test recognizer used"}
             }
           }
         }
