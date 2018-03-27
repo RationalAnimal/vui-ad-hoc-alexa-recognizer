@@ -2412,6 +2412,15 @@ Similarly, here is how you would check if the value is not null:
 }
 ```
 
+##### Testing for undefined in the match criteria
+
+Testing for undefined is another common test that you may want to perform.
+The specification is similar to testing for null:
+
+```text
+  "isUndefined": true
+```
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
