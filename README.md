@@ -2422,6 +2422,12 @@ The specification is similar to testing for null:
   "isUndefined": true
 ```
 
+Similarly, here is how you would check if the value is not undefined:
+
+```text
+  "isUndefined": false
+```
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
