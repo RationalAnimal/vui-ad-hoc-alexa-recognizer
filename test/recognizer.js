@@ -21806,7 +21806,7 @@ describe("domain parsing", function() {
       );
     });
 
-    it("verify multi recognizer domain with null test match criteria and a basic accessor parses", function () {
+    it("verify multi recognizer domain with not null test match criteria and a basic accessor parses", function () {
       let domain = require("../test/nulltestdomain/domain.json");
 
       let applicationState = {"someNotNullValue": null};
@@ -21823,6 +21823,28 @@ describe("domain parsing", function() {
             },
           "result": {
             "text": "Not null test recognizer used"
+          }
+        }
+      );
+    });
+
+    it("verify multi recognizer domain with undefined test match criteria and a basic accessor parses", function () {
+      let domain = require("../test/nulltestdomain/domain.json");
+
+      let applicationState = {};
+      let basicStateAccessor = require("../builtinstateaccessors/basic.js");
+      let stateAccessor = new basicStateAccessor(applicationState);
+
+      let result = recognizer.Recognizer.matchDomain("testing whether we match on an undefined testing criteria", domain, stateAccessor);
+      expect(result).to.eql(
+        {
+          "match":
+            {
+              "name": "UndefinedMatchingCriteriaTestingIntent",
+              "slots": {}
+            },
+          "result": {
+            "text": "Undefined test recognizer used"
           }
         }
       );
