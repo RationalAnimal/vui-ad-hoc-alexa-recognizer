@@ -4,7 +4,12 @@
     {
       "key": "nulltest",
       "path": "./test/nulltestdomain/nullrecognizer.json"
+    },
+    {
+      "key": "notnulltest",
+      "path": "./test/nulltestdomain/notnullrecognizer.json"
     }
+
   ],
   "states": [
     {
@@ -22,6 +27,23 @@
           }
         }
       ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "someNotNullValue",
+        "isNull": true
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "notnulltest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Not null test recognizer used"}
+            }
+          }
+        }
+      ]
     }
+
   ]
 }

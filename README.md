@@ -2384,6 +2384,8 @@ you would specify something like:
 "values": [{"status": "yes"}, {"status": "tbd"}]
 ```
 
+this will match if the "status" is either "yes" or "tbd"
+
 ##### Non-default multi-valued negative match criteria
 
 Just as for single values, you can set "match" to be false to indicate that the match will succeed if the state does
