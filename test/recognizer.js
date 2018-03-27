@@ -21732,7 +21732,7 @@ describe("domain parsing", function() {
       );
     });
 
-    it("verify multi recognizer domain with null test match criteria and a hardcoded accessor parses", function () {
+    it("verify multi recognizer domain with null test match criteria and a basic accessor parses", function () {
       let domain = require("../test/nulltestdomain/domain.json");
 
       let applicationState = {"someNullValue": null};
@@ -21749,6 +21749,28 @@ describe("domain parsing", function() {
             },
           "result": {
             "text": "Null test recognizer used"
+          }
+        }
+      );
+    });
+
+    it("verify multi recognizer domain with null test match criteria and a basic accessor parses", function () {
+      let domain = require("../test/nulltestdomain/domain.json");
+
+      let applicationState = {"someNotNullValue": null};
+      let basicStateAccessor = require("../builtinstateaccessors/basic.js");
+      let stateAccessor = new basicStateAccessor(applicationState);
+
+      let result = recognizer.Recognizer.matchDomain("testing whether we match on a not null testing criteria", domain, stateAccessor);
+      expect(result).to.eql(
+        {
+          "match":
+            {
+              "name": "NotNullMatchingCriteriaTestingIntent",
+              "slots": {}
+            },
+          "result": {
+            "text": "Not null test recognizer used"
           }
         }
       );

@@ -1612,12 +1612,12 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
     (
       (typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object") &&
       (
-        ((state.matchCriteria.match === true) && _isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) ||
-        ((state.matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) === false) ||
-        ((state.matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) ||
-        ((state.matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) === false) ||
-        ((state.matchCriteria.isNull === true) && (stateAccessor.getState(state.matchCriteria.selector) === null)) ||
-        ((state.matchCriteria.isNull === false) && (stateAccessor.getState(state.matchCriteria.selector) !== null))
+        ((state.matchCriteria.match === true) && _isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) || // Matching on a specific value
+        ((state.matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) === false) || // Matching on NOT specific value
+        ((state.matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) || // Matching on the value being one of values in the list
+        ((state.matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) === false) || // Matching on the value NOT being one of values in the list
+        ((state.matchCriteria.isNull === true) && (stateAccessor.getState(state.matchCriteria.selector) === null)) || // Matching on the value being null
+        ((state.matchCriteria.isNull === false) && (stateAccessor.getState(state.matchCriteria.selector) !== null)) // Matching on the value NOT being null
       )
     )
   ){
