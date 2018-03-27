@@ -1,0 +1,1 @@
+NotUndefinedMatchingCriteriaTestingIntent testing whether we match on a not undefined testing criteria

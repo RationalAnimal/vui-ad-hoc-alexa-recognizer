@@ -1608,7 +1608,7 @@ let _isSubObjectAny = function(subObject, withinArray){
 // TODO examine code to see why applicationState is being passed. This does not seem to be needed anymore and should be removed.
 let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){ // eslint-disable-line no-unused-vars
   if(
-    (state.matchCriteria === "default") ||
+    (state.matchCriteria === "default") || // default match - no conditions
     (
       (typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object") &&
       (
