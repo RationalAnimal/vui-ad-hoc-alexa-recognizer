@@ -1120,7 +1120,7 @@ Currently there are only about seven built in mix ins.  Here is the list with a 
 
 Imagine that you update you config.json file to add the mixIns section like this:
 
-```json
+```text
 "mixIns": {
   "bundles": [
     {
@@ -1208,7 +1208,7 @@ intents.  However, that requires a complication of the code and potentially mixi
 Wouldn't it be nice if we simply could somehow "extract" the counts (1 and 2 respectively) and add them to the result
 as slot values so that the business logic would simply use them?  Well, that's what a custom mix-in would let you do.
 
-```json
+```text
 "mixIns": {
   "bundles": [
     {
@@ -2445,7 +2445,7 @@ Here is how you could do it:
 ```
 
 Note that unlike isNull or isUndefined there is no way to specify "false" (i.e. negative) condition.
-This can be done using lessThan or lessThanOrEqual tests.
+This can be done using lessThan or lessThanOrEqual tests (lessThanOrEqual is not yet implemented).
 
 #### Subdomains
 
