@@ -21850,6 +21850,28 @@ describe("domain parsing", function() {
       );
     });
 
+    it("verify multi recognizer domain with not undefined test match criteria and a basic accessor parses", function () {
+      let domain = require("../test/nulltestdomain/domain.json");
+
+      let applicationState = {"someNotUndefinedValue": "some value"};
+      let basicStateAccessor = require("../builtinstateaccessors/basic.js");
+      let stateAccessor = new basicStateAccessor(applicationState);
+
+      let result = recognizer.Recognizer.matchDomain("testing whether we match on a not undefined testing criteria", domain, stateAccessor);
+      expect(result).to.eql(
+        {
+          "match":
+            {
+              "name": "NotUndefinedMatchingCriteriaTestingIntent",
+              "slots": {}
+            },
+          "result": {
+            "text": "Not undefined test recognizer used"
+          }
+        }
+      );
+    });
+
     it("verify multi recognizer domain with non default match criteria and a state sub select accessor parses", function () {
       let domain = require("../test/blahblahdomain/blahblahdomain.json");
       let applicationState = {
