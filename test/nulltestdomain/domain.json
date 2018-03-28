@@ -12,8 +12,11 @@
     {
       "key": "undefinedtest",
       "path": "./test/nulltestdomain/undefinedrecognizer.json"
+    },
+    {
+      "key": "notundefinedtest",
+      "path": "./test/nulltestdomain/notundefinedrecognizer.json"
     }
-
   ],
   "states": [
     {
@@ -63,7 +66,24 @@
           }
         }
       ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "someNotUndefinedValue",
+        "isUndefined": false
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "notundefinedtest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Not undefined test recognizer used"}
+            }
+          }
+        }
+      ]
     }
+
 
   ]
 }

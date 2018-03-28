@@ -2419,13 +2419,19 @@ This would typically be done when you want to test whether some state value has 
 The specification is similar to testing for null:
 
 ```text
+"matchCriteria": {
+  "selector": "some.selector",
   "isUndefined": true
+}
 ```
 
 Similarly, here is how you would check if the value is not undefined:
 
 ```text
+"matchCriteria": {
+  "selector": "some.selector",
   "isUndefined": false
+}
 ```
 
 #### Subdomains
