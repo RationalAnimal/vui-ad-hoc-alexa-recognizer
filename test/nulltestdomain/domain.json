@@ -16,6 +16,10 @@
     {
       "key": "notundefinedtest",
       "path": "./test/nulltestdomain/notundefinedrecognizer.json"
+    },
+    {
+      "key": "greaterthantest",
+      "path": "./test/nulltestdomain/greaterthanrecognizer.json"
     }
   ],
   "states": [
@@ -78,6 +82,22 @@
           "responder": {
             "result": {
               "directValue": {"text": "Not undefined test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "someGreaterThanValue",
+        "greaterThan": 4
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "greaterthantest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Greater than test recognizer used"}
             }
           }
         }
