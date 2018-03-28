@@ -2440,7 +2440,7 @@ Testing for a numeric value being greater than a reference value is also fairly 
 Here is how you could do it:
 
 ```text
-  "selector": "startedEnrollment",
+  "selector": "some.threshold",
   "greaterThan": 5
 ```
 
