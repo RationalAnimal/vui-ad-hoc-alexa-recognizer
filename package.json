@@ -1,6 +1,6 @@
 {
   "name": "vui-ad-hoc-alexa-recognizer",
-  "version": "1.4.239",
+  "version": "1.4.240",
   "description": "Provides natural language understanding/processing to enable easy implementation of chat bots and voice services. High performance run time in only 2 lines of code - 'require' to include it, and the call to process the text. These can run anywhere Node.js is running - backend, browser, mobile apps, etc with or without internet connection. Build-time is highly configurable and has many features - a rich set of built in intents and slots (roughly equivalent to Alexa's) with the ability to expand them, custom slots (both list based with synonym support and regular expression based), slot flags, parametrized flags, transformation functions, SoundEx matching, wild card matching, option lists, text equivalents, unlimited sets of recognizers to build large segmented apps, domains with state specific processing, builtin and custom chainable responders, sub-domains (trusted and non-trusted), etc.",
   "main": "index.js",
   "scripts": {
