@@ -2444,6 +2444,9 @@ Here is how you could do it:
   "greaterThan": 5
 ```
 
+Note that unlike isNull or isUndefined there is no way to specify "false" (i.e. negative) condition.
+This can be done using lessThan or lessThanOrEqual tests.
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
