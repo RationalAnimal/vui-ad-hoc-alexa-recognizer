@@ -2434,6 +2434,16 @@ Similarly, here is how you would check if the value is not undefined:
 }
 ```
 
+##### Testing for a numeric value being greater than a reference value in the match criteria
+
+Testing for a numeric value being greater than a reference value is also fairly common.
+Here is how you could do it:
+
+```text
+  "selector": "startedEnrollment",
+  "greaterThan": 5
+```
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
