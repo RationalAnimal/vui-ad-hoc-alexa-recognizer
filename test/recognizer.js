@@ -21887,7 +21887,7 @@ describe("domain parsing", function() {
     it("verify multi recognizer domain with not null test match criteria and a basic accessor parses", function () {
       let domain = require("../test/nulltestdomain/domain.json");
 
-      let applicationState = {"someNotNullValue": null};
+      let applicationState = {"someNotNullValue": "not null"};
       let basicStateAccessor = require("../builtinstateaccessors/basic.js");
       let stateAccessor = new basicStateAccessor(applicationState);
 
@@ -21945,6 +21945,28 @@ describe("domain parsing", function() {
             },
           "result": {
             "text": "Not undefined test recognizer used"
+          }
+        }
+      );
+    });
+
+    it("verify multi recognizer domain with greater than test match criteria and a basic accessor parses", function () {
+      let domain = require("../test/nulltestdomain/domain.json");
+
+      let applicationState = {"someGreaterThanValue": 5};
+      let basicStateAccessor = require("../builtinstateaccessors/basic.js");
+      let stateAccessor = new basicStateAccessor(applicationState);
+
+      let result = recognizer.Recognizer.matchDomain("testing whether we match on a number being greater than a reference value testing criteria", domain, stateAccessor);
+      expect(result).to.eql(
+        {
+          "match":
+            {
+              "name": "GreaterThanMatchingCriteriaTestingIntent",
+              "slots": {}
+            },
+          "result": {
+            "text": "Greater than test recognizer used"
           }
         }
       );
