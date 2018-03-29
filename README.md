@@ -2464,6 +2464,16 @@ for a numberic value being greater than or equal to a reference value:
 Similar to greaterThan there is no way to specify "false" (i.e. negative) condition.
 This can instead be done using lessThan (lessThan is not yet implemented).
 
+##### Testing for a numeric value being less than a reference value in the match criteria
+
+You can also test for a numeric value being less than a reference value:
+
+```text
+"selector": "some.threshold",
+"lessThan": 10
+```
+
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
