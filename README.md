@@ -2447,7 +2447,7 @@ Here is how you could do it:
 ```
 
 Note that unlike isNull or isUndefined there is no way to specify "false" (i.e. negative) condition.
-This can be effectively done using lessThanOrEqual test (lessThanOrEqual is not yet implemented).
+This can instead be done using lessThanOrEqual test (lessThanOrEqual is not yet implemented).
 
 ##### Testing for a numeric value being greater than or equal to a reference value in the match criteria
 
@@ -2462,7 +2462,7 @@ for a numberic value being greater than or equal to a reference value:
 ```
 
 Similar to greaterThan there is no way to specify "false" (i.e. negative) condition.
-This can effectively be done using lessThan (lessThan is not yet implemented).
+This can instead be done using lessThan (lessThan is not yet implemented).
 
 #### Subdomains
 

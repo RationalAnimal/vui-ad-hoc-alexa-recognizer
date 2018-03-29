@@ -110,7 +110,7 @@
     {
       "matchCriteria": {
         "selector": "someGreaterThanOrEqualValue",
-        "greaterThan": 4
+        "greaterThanOrEqual": 4
       },
       "matchSpecs": [
         {
