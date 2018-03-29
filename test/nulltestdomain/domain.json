@@ -42,7 +42,7 @@
     {
       "matchCriteria": {
         "selector": "someNotNullValue",
-        "isNull": true
+        "isNull": false
       },
       "matchSpecs": [
         {
@@ -57,7 +57,7 @@
     },
     {
       "matchCriteria": {
-        "selector": "someNotNullValue",
+        "selector": "someUndefinedValue",
         "isUndefined": true
       },
       "matchSpecs": [

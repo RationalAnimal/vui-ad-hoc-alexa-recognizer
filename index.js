@@ -1620,7 +1620,7 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
         ((state.matchCriteria.isNull === false) && (stateAccessor.getState(state.matchCriteria.selector) !== null)) || // Matching on the value NOT being null
         ((state.matchCriteria.isUndefined === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "undefined")) || // Matching on the value being undefined
         ((state.matchCriteria.isUndefined === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) !== "undefined")) || // Matching on the value NOT being undefined
-        ((Number.isNaN(state.matchCriteria.greaterThan) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === true) && (0 + stateAccessor.getState(state.matchCriteria.selector) > state.matchCriteria.greaterThan))  // Matching on the value being numeric and being greater than a reference value
+        ((Number.isNaN(state.matchCriteria.greaterThan) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === false) && (0 + stateAccessor.getState(state.matchCriteria.selector) > state.matchCriteria.greaterThan))  // Matching on the value being numeric and being greater than a reference value
       )
     )
   ){
