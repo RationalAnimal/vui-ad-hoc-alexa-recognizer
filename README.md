@@ -2445,7 +2445,20 @@ Here is how you could do it:
 ```
 
 Note that unlike isNull or isUndefined there is no way to specify "false" (i.e. negative) condition.
-This can be done using lessThan or lessThanOrEqual tests (lessThanOrEqual is not yet implemented).
+This can be done using lessThanOrEqual test (lessThanOrEqual is not yet implemented).
+
+##### Testing for a numeric value being greater than or equal to a reference value in the match criteria
+
+Similar to testing for a numeric value being greater than a reference value, you can test
+for a numberic value being greater than or equal to a reference value:
+
+```text
+  "selector": "some.threshold",
+  "greaterThanOrEqual": 5
+```
+
+Note that unlike isNull or isUndefined there is no way to specify "false" (i.e. negative) condition.
+This can be done using lessThan (lessThan is not yet implemented).
 
 #### Subdomains
 
