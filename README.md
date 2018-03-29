@@ -2440,8 +2440,10 @@ Testing for a numeric value being greater than a reference value is also fairly 
 Here is how you could do it:
 
 ```text
+"matchCriteria": {
   "selector": "some.threshold",
   "greaterThan": 5
+}
 ```
 
 Note that unlike isNull or isUndefined there is no way to specify "false" (i.e. negative) condition.
@@ -2453,8 +2455,10 @@ Similar to testing for a numeric value being greater than a reference value, you
 for a numberic value being greater than or equal to a reference value:
 
 ```text
+"matchCriteria": {
   "selector": "some.threshold",
   "greaterThanOrEqual": 5
+}
 ```
 
 Note that unlike isNull or isUndefined there is no way to specify "false" (i.e. negative) condition.
