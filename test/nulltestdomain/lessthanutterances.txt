@@ -1,0 +1,1 @@
+LessThanMatchingCriteriaTestingIntent testing whether we match on a number being less than a reference value testing criteria
