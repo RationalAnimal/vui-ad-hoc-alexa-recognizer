@@ -22024,7 +22024,7 @@ describe("domain parsing", function() {
       );
     });
 
-    it("verify multi recognizer domain with greater than test match criteria and a basic accessor parses", function () {
+    it("verify multi recognizer domain with greater than or equal test match criteria and a basic accessor parses", function () {
       let domain = require("../test/nulltestdomain/domain.json");
 
       let applicationState = {"someGreaterThanOrEqualValue": 4};
@@ -22041,6 +22041,28 @@ describe("domain parsing", function() {
             },
           "result": {
             "text": "Greater than or equal test recognizer used"
+          }
+        }
+      );
+    });
+
+    it("verify multi recognizer domain with less than test match criteria and a basic accessor parses", function () {
+      let domain = require("../test/nulltestdomain/domain.json");
+
+      let applicationState = {"someLessThanValue": 7};
+      let basicStateAccessor = require("../builtinstateaccessors/basic.js");
+      let stateAccessor = new basicStateAccessor(applicationState);
+
+      let result = recognizer.Recognizer.matchDomain("testing whether we match on a number being less than a reference value testing criteria", domain, stateAccessor);
+      expect(result).to.eql(
+        {
+          "match":
+            {
+              "name": "LessThanMatchingCriteriaTestingIntent",
+              "slots": {}
+            },
+          "result": {
+            "text": "Less than test recognizer used"
           }
         }
       );
