@@ -52,7 +52,7 @@ The other tutorial shows how to write your own code to use the generated file.
 * "You Have Options... Option Lists, That Is" - this tutorial shows how to avoid having to manually enter and maintain a
 large number of related utterances.
 * "Great Intrinsic Value" - this one shows how to get information back from the user via BUILT IN slot types.
-* "Let's Talk" - here the user is shown to to build an actual chat bot - a small app that takes input from the user,
+* "Let's Talk" - here the user is shown how to build an actual chat bot - a small app that takes input from the user,
 parses it, stores some values in the state for future use, and responds to the user based on the parsed
 information and state.
 * "Count on it" - introduces the use of what is probably the singularly most useful built in slot type - NUMBER.
@@ -114,13 +114,13 @@ This module provides the ability to match user's text input (possibly from speec
 slot values as well as the ability to configure return values and state updates right within it.
 There are two levels of functionality - a lower level allowing a match of a string against a single recognizer, returning
 an intent match with parsed out slot values and a higher level "domain" functionality that allows configuring an
-entire app, returning not just a match but results and even updating the state.
+entire app, returning not just a match but results and even updating the current state.
 
 ## "Recognizer" (or lower level) functionality
 npm module that provides VUI (voice user interface) special ad-hoc recognizer
-designed to parse raw text from the user and map it to the Alexa intents.
+designed to parse raw text from the user and map it to intents.
 This could be useful in many cases.  If
-you already have an Alexa skill and would like to convert it to Cortana or to
+you already have an Alexa skill and would like to convert it to
 Google assistant, or some other service, this module makes it really easy. Many skills can be converted
 in less than an hour.
 Also you can use this to quickly create a skill or an app even if you don't already have an Alexa skill.
@@ -128,10 +128,9 @@ You will simply need to create the
 required intents, utterances, and (optionally) custom slot value files (equivalent of which
 you'd have to do anyway).
 It uses the same two files (intents and utterances) that are used to configure Alexa skills.
-(It also supports the "beta" Alexa configuration, but I don't recommend using it yet as Amazon hasn't worked out all
-the kinks yet).
-This allows easy "middleware" implementation that can be placed between a Cortana
-or Google assistant skill and the Alexa backend.  If you have custom slots and
+(It also supports the "beta" Alexa configuration, but I don't recommend using it yet as).
+This allows easy "middleware" implementation that can be placed between
+Google assistant (or other service) and the Alexa backend.  If you have custom slots and
 you want to use exact or SoundEx matches on those slots, then you would also need
 file(s) listing these values.
 Supports almost all Alexa features - built in intents, all major built in slot types,
@@ -140,7 +139,6 @@ as well as "extra" features, such as the ability to do wildcard or SoundEx
 matches, transforming the values before sending them to be processed, text equivalents matching (such as misspellings,
 equivalent words or phrases, homophones and more) etc.
 Additional configuration can be added through config file.
-This can be used either by itself or as part of other vui-xxx projects.
 You can also use it without any backend service whatsoever - simply use it with your javascript
 code same way you would use any other npm module.  It will provide complete
 utterance parsing and slot values mapping.  Simply use simple branching
@@ -215,10 +213,9 @@ Domains are a higher level of parsing than recognizers.  Domains do use "recogni
 
 ## "Recognizer" (or lower level) functionality
 
-It has two pieces of functionality: first, run it offline to generate a recognizer.json file
-that will be used in matching/parsing the text; second add two lines of
-code to your app/skill to use it to match the raw
-text at run time using the generated recognizer.json file.
+It has two pieces of functionality:
+* run it offline to generate a recognizer.json file that will be used in matching/parsing the text
+* add two lines of code to your app/skill to use it to match the raw text at run time using the generated recognizer.json file.
 
 Imagine you already have an Alexa skill and you would like to port it to Cortana
 or Google Assistant (or even if you don't but want to create a chat bot/service from scratch).
@@ -320,7 +317,7 @@ prompts/dialogs/confirmations.  The support for this is being added to various p
 (including the generator and alexifyer) and is functional.  However, until Amazon finishes the beta testing, this will not be finalized and
 may change.
 
-* NOTE: AT THIS TIME I DO NOT RECOMMEND USING INTERACTION MODEL FILES - TOO MANY ISSUES ON THE AMAZON SIDE.
+* NOTE: AT THIS TIME I DO NOT RECOMMEND USING INTERACTION MODEL FILES - WHILE I HAVE FINISHED THE SUPPORT, I HAVE NOT TESTED IT FULLY
 
 ### Generate recognizer.json file
 
@@ -331,7 +328,9 @@ the generator, e.g.:
 ```shell
 node generator.js --intents test/intents.json --utterances test/utterances.txt --config test/config.json
 ```
- (the example intents.json, utterances.txt, and config.json files are included in the test directory)
+
+(the example intents.json, utterances.txt, and config.json files are included in the test directory)
+
 This will produce a recognizer.json in the current directory.
 
 Additionally, there is beta support for the beta interaction model builder by Amazon.  To use it specify --interactionmodel
@@ -341,7 +340,7 @@ parameter instead of --intents and --utterances:
 node generator.js --interactionmodel test/interactionmodel.json --config test/config.json
 ```
 
-* NOTE: AT THIS TIME I DO NOT RECOMMEND USING INTERACTION MODEL FILES - TOO MANY ISSUES ON THE AMAZON SIDE.
+* NOTE: AT THIS TIME I DO NOT RECOMMEND USING INTERACTION MODEL FILES - WHILE I HAVE FINISHED THE SUPPORT, I HAVE NOT TESTED IT FULLY
 
 Note that you can use the extra features in the interactionmodel.json file just as you could with intents.json and
 utterances.txt (e.g. options lists, slot flags, TRANSCEND specific slot types).  Simply use alexifyutterances.js (see later) to prepare interactionmodel.json for import into Alexa
@@ -353,11 +352,26 @@ For usage, simply run the generator without any arguments:
 node generator.js
 ```
 
+and the generator command will list the needed arguments, e.g.:
+
+```shell
+Usage: node /Users/ilya/AlexaProjects/vui-ad-hoc-alexa-recognizer/vui-ad-hoc-alexa-recognizer/generator.js:
+  --sourcebase BaseSourceDirectory that is the base for the other file references on the command line or in the config file.  This will be used for both build and run time source base unless overridden by other command line arguments.
+  --buildtimesourcebase BuildTimeBaseSourceDirectory that is the base for the other file references on the command line or in the config file at build time.  Will override --sourcebase value for build time directory, if both are supplied
+  --runtimesourcebase RunTimeBaseSourceDirectory that is the base for the other file references (e.g. in the config file) at run time.  Will override --sourcebase value for run time directory, if both are supplied
+  --vuibase BaseVuiDirectory that is the location of vui-ad-hoc-alexa-recognizer.  This will be used for both build and run time vui base unless overridden by other command line arguments. Defaults to ./node_modules/vui-ad-hoc-alexa-recognizer
+  --buildtimevuibase BuildTimeBaseVuiDirectory that is the location of vui-ad-hoc-alexa-recornizer executable files at build time.  Will override --vuibase value for build time directory, if both are supplied
+  --runtimevuibase RunTimeBaseVuiDirectory that is the location of vui-ad-hoc-alexa-recognizer executable files at run time.  Will override --vuibase value for run time directory, if both are supplied
+  --runtimeexebase RunTimeBaseExeDirectory that is the location of javascript executable files at run time.
+  --config ConfigFileName specify configuration file name, optional.  If not specified default values are used.
+  --intents IntentsFileName specify intents file name, required.  There is no point in using this without specifying this file.
+  --utterances UtterancesFileName specify utterances file name, optional.  This is "optional" only in the sense that it CAN be omitted, but in practice it is required.  There only time you would invoke this function without an utterance file argument is if your skill generates only build in intents, which would make it rather useless.
+  --optimizations [SINGLE-STAGE] optional. SINGLE-STAGE means no pre-matches using wildcards.  Depending on the recognizer, this may be slower or faster
+  --suppressRecognizerDisplay does not send recognizer.json to console
+```
+
 Note here that you should already have the intents.json and utterances.txt files
-as these files are used to configure the Alexa skill.  config.json is optional,
-but highly recommended if you have custom slots that are used by themselves (not
-within a large utterance).  This is where you can provide the values of your
-custom slot types (either directly or by providing a file name to load them from).
+as these files are used to configure the Alexa skill.
 
 Also, you can specify how to parse built in intents in the config.json.
 For example:
