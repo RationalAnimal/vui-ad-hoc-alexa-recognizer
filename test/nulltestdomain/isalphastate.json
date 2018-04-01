@@ -1,4 +1,3 @@
 {
-  "selector": "some.value",
-  "isAlpha": true
+  "somevalue": "samplealpha"
 }
