@@ -2486,8 +2486,10 @@ You can also test for a numeric value being less than a reference value:
 To test for a numeric value being less than or equal to a reference value:
 
 ```text
-"selector": "some.threshold",
-"lessThanOrEqual": 10
+"matchCriteria": {
+  "selector": "some.threshold",
+  "lessThanOrEqual": 10
+}
 ```
 
 #### Subdomains
