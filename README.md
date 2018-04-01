@@ -2479,6 +2479,14 @@ You can also test for a numeric value being less than a reference value:
 "lessThan": 10
 ```
 
+##### Testing for a numeric value being less than or equal to a reference value in the match criteria
+
+To test for a numeric value being less than or equal to a reference value:
+
+```text
+"selector": "some.threshold",
+"lessThanOrEqual": 10
+```
 
 #### Subdomains
 

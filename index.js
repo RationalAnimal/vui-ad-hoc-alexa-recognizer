@@ -1622,7 +1622,8 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
         ((state.matchCriteria.isUndefined === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) !== "undefined")) || // Matching on the value NOT being undefined
         ((Number.isNaN(state.matchCriteria.greaterThan) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === false) && (stateAccessor.getState(state.matchCriteria.selector) > state.matchCriteria.greaterThan)) || // Matching on the value being numeric and being greater than a reference value
         ((Number.isNaN(state.matchCriteria.greaterThanOrEqual) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === false) && (stateAccessor.getState(state.matchCriteria.selector) >= state.matchCriteria.greaterThanOrEqual)) || // Matching on the value being numeric and being greater than or equal to a reference value
-        ((Number.isNaN(state.matchCriteria.lessThan) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === false) && (stateAccessor.getState(state.matchCriteria.selector) < state.matchCriteria.lessThan)) // Matching on the value being numeric and being less than a reference value
+        ((Number.isNaN(state.matchCriteria.lessThan) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === false) && (stateAccessor.getState(state.matchCriteria.selector) < state.matchCriteria.lessThan)) || // Matching on the value being numeric and being less than a reference value
+        ((Number.isNaN(state.matchCriteria.lessThanOrEqual) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === false) && (stateAccessor.getState(state.matchCriteria.selector) < state.matchCriteria.lessThanOrEqual)) // Matching on the value being numeric and being less than or equal to a reference value
       )
     )
   ){
