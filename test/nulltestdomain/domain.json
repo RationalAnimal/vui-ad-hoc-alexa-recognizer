@@ -28,6 +28,10 @@
     {
       "key": "lessthantest",
       "path": "./test/nulltestdomain/lessthanrecognizer.json"
+    },
+    {
+      "key": "lessthanorequaltest",
+      "path": "./test/nulltestdomain/lessthanorequalrecognizer.json"
     }
   ],
   "states": [
@@ -138,6 +142,22 @@
           "responder": {
             "result": {
               "directValue": {"text": "Less than test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "someLessThanOrEqualValue",
+        "lessThan": 10
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "lessthanorequaltest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Less than or equal test recognizer used"}
             }
           }
         }
