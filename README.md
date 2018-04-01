@@ -750,7 +750,7 @@ of strings.  For example, here is a custom slot type defined in a config.json:
 ```
 
 This will match on "spoon", "pan", and "skillet".  Furthermore, **and this is the real value of the synonyms**, when
-matching on the "skillet", the actual returned value will be "Pan" (othersied you could have simply added more values
+matching on the "skillet", the actual returned value will be "Pan" (otherwise you could have simply added more values
 instead of using synonyms).
 
 Couple of important points:
@@ -783,7 +783,7 @@ E.g. given config.json:
 ...
 ```
 
-and otherwise standard intents, utterances files, when
+and otherwise standard intents and utterances files, when
 
 ```shell
 node matcher.js "here is XYZ789 if you see it"
@@ -964,7 +964,7 @@ Result was saved to alexifiedmodel.json
 ### Nominal support for some built in list slots
 
 Many of the list slots (e.g. AMAZON.Actor) have very large value lists.  These
-are often not needed in a typical vui skill.  Thus, a compromize support is
+are often not needed in a typical vui skill.  Thus, a compromise support is
 provided for them.  They are there and can be used, but they only have a few
 values.  If you actually do have a need for them, you have two options:
 1. You can provide your own expansion list of values in the config.json file
@@ -1028,7 +1028,7 @@ you will get (note the capitalized first letter of the month):
 See the test directory for more examples.
 
 There are many reasons you may want to do this: transforming states into postal
-code or fixing issues with speach recognition, etc.
+code or fixing issues with speech recognition, etc.
 For example, a particular service may not understand some spoken phrases well.
 One that I've ran into is the word "deductible" is understood to be "the duck tibble".
 This will never match.  Well, you could add this to your list of acceptable values.
@@ -1107,6 +1107,8 @@ the configuration file, for example:
 }
 ```
 
+will apply all the specified transforms.
+
 ### Mix-ins
 
 Sometimes you may want to do some additional processing of the result before returning it.  It could be almost anything,
@@ -1161,7 +1163,7 @@ Imagine that you update you config.json file to add the mixIns section like this
 What this does is defines a mix in "bundle" (i.e. bundle of the code - noop - and argument) and give it a name "loggingMixIn".
 Then it specifies that this "bundle" applies to every intent (i.e. "appliesTo" field has a pairing of this bundle with
 the "intentMatchRegExString" which matches on every intent: (.*)).  As a result, the "noop" mix in will run after every
-match and log the results.  You can modify which intents it applies to by chaning the matching reg exp.  The code that
+match and log the results.  You can modify which intents it applies to by chaining the matching reg exp.  The code that
 will actually be run is noop.js located in the builtinmixins directory:
 
 ```javascript
@@ -1286,7 +1288,7 @@ it's 1 or 2 by looking at the utterance and updating the result with "injected" 
 #### Applying mix ins when there is no match
 
 Sometimes you may want to apply a particular mix in NOT when there IS an intent match, but when there ISN'T one.
-A typical commont example is replacing all non-matches with a default intent, e.g. "UnknownIntent".
+A typical common example is replacing all non-matches with a default intent, e.g. "UnknownIntent".
 You can easily do this by specifying "unmatched": true in your config.json:
 
 ```json
@@ -1307,7 +1309,7 @@ You can even combine both matched intent and unmatched specifications:
 
 the above will execute on EVERY match attempt, whether it successfully matches or not.
 
-### Sentiment Analysys
+### Sentiment Analysis
 
 #### AFINN
 
@@ -1343,27 +1345,13 @@ might attach this "sentiment.AFINN.score" to the result:
 }
 ```
 
-or, if you choose to use multiple data sets at the same time:
-
-```json
-{
-  "bundleName": "afinnSentimentBundle",
-  "mixInCode": [
-    {
-      "mixInBuiltInName": "afinn",
-      "arguments": {"ratingDataSetFiles": ["./afinn96.json", "./afinn96misspelled.json"]}
-    }
-  ]
-}
-```
-
 #### Precompiled sentiment data sets
 
 When you specify the data sets for sentiment analysis you should be aware that it may have some performance implications.
 For your convenience you can specify the data set(s) individually as many as you'd like as part of the "ratingDataSetFiles"
 array.  However, this would then mean that the sentiment analysis code would have to do extra work at run time.  Namely,
 merge the data sets, sort, remove duplicates, etc.  You can eliminate these steps if you use "precompiled" data sets.
-These include one or more data sets already merged, sorted, etc.  You can specify only one such file since the intention
+These include one or more data sets already merged, sorted, etc.  You can specify only one such file since the intent
 is to create a single precompiled file that does not need to be processed further.
 So, instead of the "ratingDataSetFiles" array, please use "precomputedDataSet" field:
 
@@ -1383,6 +1371,7 @@ Currently there is only one precomputed data set - afinn96withmisspelledwords_pr
 yourself it you need it.
 
 #### Making your own precompiled sets
+
 If you want to create a custom precompiled set you can use provided afinndatasetcombiner.js utility to do so.  You can
 run it without arguments to get the usage info, but it's really simple:
 
@@ -1477,7 +1466,7 @@ try to match first. (Currently it only supports custom intents, but that's not
 a problem since built in intents are very fast).  Then this call
 will likely execute much faster.  Since most of the time you know what the next
 likely answers (i.e. utterances) are going to be, you can provide them to the
-matching call.
+matching call.  For example, the following call will try to match CountryIntent first:
 
 ```javascript
 let result = recognizer.Recognizer.matchText("have you been to France", ["CountryIntent"]);
@@ -1490,7 +1479,7 @@ be excluded from the matching process.  This is useful if you have intents that
 have very large sets of custom values and you are pretty sure you don't want to
 parse then in a particular place in your skill (i.e. if you are in a flow that
 does not include some intents then you should be able to exclude them from
-parsing).
+parsing).  The following call will try to match CountryIntent first and will not even try to match FirstNameIntent:
 
 ```javascript
 let result = recognizer.Recognizer.matchText("have you been to France", ["CountryIntent"], ["FirstNameIntent"]);
@@ -1499,7 +1488,8 @@ let result = recognizer.Recognizer.matchText("have you been to France", ["Countr
 ### Alternate recognizer files
 
 In addition to the intent parsing order and intent exclusion lists you can pass
-an alternate recognizer file to use in the matching call.
+an alternate recognizer file to use in the matching call. (Note that the "normal" behavior is to assume a recognizer
+named "recognizer.json".  Explicitly specifying the recognizer simply overrides the default.)
 
 ```javascript
 let result = recognizer.Recognizer.matchText("have you been to France", ["CountryIntent"], ["FirstNameIntent"], alternativeRecognizer);
@@ -1561,6 +1551,8 @@ will return
   }
 }
 ```
+
+Note that "Stewart" matched on "steward"
 
 ## "Domain" (higher level) functionality
 
