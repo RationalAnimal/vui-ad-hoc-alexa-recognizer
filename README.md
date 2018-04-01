@@ -2504,7 +2504,14 @@ To test for a string value consiting entirely of alpha characters (a through z, 
 ```
 
 Note that specifying "isAlpha": false does NOT test for whether the entire string is composed of non-alpha characters.
-Instead it's testing for whether ANY of the characters are not alpha.
+Instead it's testing for whether ANY of the characters are not alpha:
+
+```text
+"matchCriteria": {
+  "selector": "some.value",
+  "isAlpha": false
+}
+```
 
 #### Subdomains
 
