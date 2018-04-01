@@ -600,8 +600,8 @@ Please note that matcher.js is just a convenience and also serves as an example.
 You will NOT be using it at run time (most likely, though some might find the use
 for it).
 
-You will probably deploy your code (that uses the parser) to some middleware
-layer, like this:
+If you are porting an existing Alexa skill (to, for example, Cortana),
+you will probably deploy your code (that uses the parser) to some middleware layer, like this:
 
 ```
 Alexa  -------------->    Alexa   <-- middleware <---- Cortana
@@ -614,9 +614,9 @@ then call it same way matcher.js does, get the resulting json and update the
 intent in the request from "None" to the resulting json.  The backend Lambda can
 then process it further.
 
-Notice that this module currently is being written as a primarily stand alone
-solution for the Alexa to Cortana (or Google Assistant) porting.  However, it
-will be retrofitted later to fit into the vui-xxx framework.
+If you are using vui-ad-hoc-alexa-recognizer for new development you have two main options:
+* use it just for NLP to map utterances to intents, which you will then use for branching code
+* use higher level domain functionality to define much of your app/skill
 
 ### Matched custom slot values
 
@@ -625,7 +625,7 @@ Alexa appears to respect capitalization of the custom slot values (or it sends
 lower case versions) while Cortana capitalizes the first letter under some
 circumstances, but not always, and also adds a period at the end of utterances
 or even other punctuation signs (I've seen entering a zip code changed from
-"12345" to "Is 12345 ?"). To keep Cortana
+"12345" to "Is 12345 ?"). To keep Cortana (as well as other "misbehaving" services)
 behaving consistently, the returned matches use the capitalization of the custom
 slot values supplied in the config file rather than what Cortana will send.
 Thus, if your custom slot value (in the config file) is "petunia" then "petunia"
@@ -649,7 +649,7 @@ flags:
 slot values in the matching pattern.
 2. "INCLUDE_WILDCARD_MATCH", "EXCLUDE_WILDCARD_MATCH" - to include/exclude
 a wildcard in the matching pattern.
-3. "SOUNDEX_MATCH" - to use SoundEx for matching.
+3. "SOUNDEX_MATCH" - to use SoundEx for matching (will match on values that sound like desired values, but are not necessarily spelled the same)
 4. "INCLUDE_SYNONYMS_MATCH", "EXCLUDE_SYNONYMS_MATCH" - to include/exclude
 synonym values in the matching pattern.  This is only relevant for custom slot types that actually use synonyms.
 5. "EXCLUDE_YEAR_ONLY_DATES" - this flag is only applied to the AMAZON.DATE type
@@ -666,7 +666,7 @@ it only applies to the AMAZON.Airline and AMAZON.Airport slot types and it restr
 the specified countries.
 9. "CONTINENT", "TYPE" - these are parametrized flags (see below).  currently
 they only apply to the AMAZON.Airline slot type and they restrict the matches to
-the specified countries and continents.
+the specified types and continents.
 10. "SPORT", "LEAGUE" - these are parametrized flags (see below).  currently
 they only apply to the AMAZON.SportsTeam slot type and they restrict the matches to
 the specified sports and leagues.
@@ -686,7 +686,7 @@ It would typically not be useful (at this time with only these sets of flags)
 to specify INCLUDE... for both or EXCLUDE... for both wildcard and value matches
 unless you are specify SOUNDEX_MATCH.  If you are going to include
 wildcard then there is no reason to include values as well - it will only slow
-down the parsing.  If you exclude both then it will be as if you removed that slot
+down the parsing.  If you exclude both then it will be the same as if you had removed that slot
 from the utterance completely.  For this reason, parsing ignores these combinations.
 If you specify INCLUDE_WILDCARD_MATCH then only the wild card will be used.
 If you specify both EXCLUDE_VALUES_MATCH and EXCLUDE_WILDCARD_MATCH then only
