@@ -169,7 +169,7 @@
     },
     {
       "matchCriteria": {
-        "selector": "some.value",
+        "selector": "somevalue",
         "isAlpha": true
       },
       "matchSpecs": [
