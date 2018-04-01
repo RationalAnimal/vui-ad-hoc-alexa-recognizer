@@ -32,6 +32,10 @@
     {
       "key": "lessthanorequaltest",
       "path": "./test/nulltestdomain/lessthanorequalrecognizer.json"
+    },
+    {
+      "key": "isalphatest",
+      "path": "./test/nulltestdomain/isalpharecognizer.json"
     }
   ],
   "states": [
@@ -158,6 +162,22 @@
           "responder": {
             "result": {
               "directValue": {"text": "Less than or equal test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "some.value",
+        "isAlpha": true
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "isalphatest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Is alpha test recognizer used"}
             }
           }
         }
