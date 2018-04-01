@@ -2503,6 +2503,9 @@ To test for a string value consiting entirely of alpha characters (a through z, 
 }
 ```
 
+Note that specifying "isAlpha": false does NOT test for whether the entire string is composed of non-alpha characters.
+Instead it's testing for whether ANY of the characters are not alpha.
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
