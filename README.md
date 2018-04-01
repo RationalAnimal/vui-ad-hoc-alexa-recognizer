@@ -2475,8 +2475,10 @@ This can instead be done using lessThan (lessThan is not yet implemented).
 You can also test for a numeric value being less than a reference value:
 
 ```text
-"selector": "some.threshold",
-"lessThan": 10
+"matchCriteria": {
+  "selector": "some.threshold",
+  "lessThan": 10
+}
 ```
 
 ##### Testing for a numeric value being less than or equal to a reference value in the match criteria
