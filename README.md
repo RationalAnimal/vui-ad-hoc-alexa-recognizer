@@ -2492,6 +2492,15 @@ To test for a numeric value being less than or equal to a reference value:
 }
 ```
 
+##### Testing for a string value consisting only of alpha characters in the match criteria
+
+To test for a string value consiting entirely of alpha characters (a through z, case insensitive):
+
+```text
+"selector": "some.threshold",
+"isAlpha": true
+```
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
