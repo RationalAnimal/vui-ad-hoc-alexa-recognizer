@@ -1607,6 +1607,9 @@ let _isSubObjectAny = function(subObject, withinArray){
  */
 // TODO examine code to see why applicationState is being passed. This does not seem to be needed anymore and should be removed.
 let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){ // eslint-disable-line no-unused-vars
+  //console.log("_checkStateMatchCriteria, enter");
+  //console.log("_checkStateMatchCriteria, state: " + JSON.stringify(state, null, 2));
+  //console.log("_checkStateMatchCriteria, stateAccessor.getState(state.matchCriteria.selector): " + stateAccessor.getState(state.matchCriteria.selector));
   if(
     (state.matchCriteria === "default") || // default match - no conditions
     (
@@ -1629,8 +1632,10 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
       )
     )
   ){
+    //console.log("_checkStateMatchCriteria, returning true");
     return true;
   }
+  //console.log("_checkStateMatchCriteria, returning false");
   return false;
 };
 

@@ -1,1 +1,1 @@
-IsAlphaMatchingCriteriaTestingIntent testing whether we match on an is alpha testing criteria
+IsNotAlphaMatchingCriteriaTestingIntent testing whether we match on an is not alpha testing criteria

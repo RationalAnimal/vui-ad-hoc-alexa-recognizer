@@ -1,7 +1,7 @@
 {
   "intents": [
     {
-      "intent": "IsAlphaMatchingCriteriaTestingIntent",
+      "intent": "IsNotAlphaMatchingCriteriaTestingIntent",
       "slots": []
     }
   ]
