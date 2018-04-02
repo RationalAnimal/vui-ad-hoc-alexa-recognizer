@@ -36,6 +36,10 @@
     {
       "key": "isalphatest",
       "path": "./test/nulltestdomain/isalpharecognizer.json"
+    },
+    {
+      "key": "isnotalphatest",
+      "path": "./test/nulltestdomain/isnotalpharecognizer.json"
     }
   ],
   "states": [
@@ -178,6 +182,22 @@
           "responder": {
             "result": {
               "directValue": {"text": "Is alpha test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "somevalue",
+        "isAlpha": false
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "isnotalphatest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Is not alpha test recognizer used"}
             }
           }
         }
