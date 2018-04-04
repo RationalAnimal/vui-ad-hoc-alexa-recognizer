@@ -1628,7 +1628,8 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
         ((Number.isNaN(state.matchCriteria.lessThan) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === false) && (stateAccessor.getState(state.matchCriteria.selector) < state.matchCriteria.lessThan)) || // Matching on the value being numeric and being less than a reference value
         ((Number.isNaN(state.matchCriteria.lessThanOrEqual) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === false) && (stateAccessor.getState(state.matchCriteria.selector) <= state.matchCriteria.lessThanOrEqual)) || // Matching on the value being numeric and being less than or equal to a reference value
         ((state.matchCriteria.isAlpha === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-zA-Z]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) )) || // Matching on the value being all alpha
-        ((state.matchCriteria.isAlpha === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-zA-Z]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === false)) // Matching on the value being at least partially non-alpha
+        ((state.matchCriteria.isAlpha === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-zA-Z]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === false)) || // Matching on the value being at least partially non-alpha
+        ((state.matchCriteria.isNumeric === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) )) // Matching on the string value being all numeric characters
       )
     )
   ){
