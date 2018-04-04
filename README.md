@@ -2494,7 +2494,7 @@ To test for a numeric value being less than or equal to a reference value:
 
 ##### Testing for a string value consisting only of alpha characters in the match criteria
 
-To test for a string value consiting entirely of alpha characters (a through z, case insensitive):
+To test for a string value consisting entirely of alpha characters (a through z, case insensitive):
 
 ```text
 "matchCriteria": {
@@ -2511,6 +2511,15 @@ Instead it's testing for whether ANY of the characters are not alpha:
   "selector": "some.value",
   "isAlpha": false
 }
+```
+
+##### Testing for a string value consisting only of numeric characters in the match criteria
+
+To test for a string value consisting entirely of numeric characters:
+
+```text
+"selector": "some.value",
+"isNumeric": true
 ```
 
 #### Subdomains
