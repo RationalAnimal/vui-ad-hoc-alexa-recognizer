@@ -1,0 +1,8 @@
+{
+  "intents": [
+    {
+      "intent": "IsNumericMatchingCriteriaTestingIntent",
+      "slots": []
+    }
+  ]
+}

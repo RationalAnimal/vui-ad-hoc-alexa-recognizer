@@ -2518,8 +2518,10 @@ Instead it's testing for whether ANY of the characters are not alpha:
 To test for a string value consisting entirely of numeric characters:
 
 ```text
-"selector": "some.value",
-"isNumeric": true
+"matchCriteria": {
+  "selector": "some.value",
+  "isNumeric": true
+}
 ```
 
 #### Subdomains
