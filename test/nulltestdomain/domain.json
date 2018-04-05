@@ -210,7 +210,7 @@
     {
       "matchCriteria": {
         "selector": "somevalue",
-        "isAlpha": true
+        "isNumeric": true
       },
       "matchSpecs": [
         {
