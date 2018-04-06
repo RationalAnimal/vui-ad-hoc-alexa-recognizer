@@ -2526,8 +2526,10 @@ To test for a string value consisting entirely of numeric characters:
 
 Again, specifying "isNumeric": false tests for whether ANY of the characters are not alpha:
 ```text
-"selector": "some.value",
-"isNumeric": false
+"matchCriteria": {
+  "selector": "some.value",
+  "isNumeric": false
+}
 ```
 
 
