@@ -2537,8 +2537,10 @@ Again, specifying "isNumeric": false tests for whether ANY of the characters are
 To test for a string value consisting entirely of alpha numeric characters:
 
 ```text
-"selector": "some.value",
-"isAlphaNumeric": true
+"matchCriteria": {
+  "selector": "some.value",
+  "isAlphaNumeric": true
+}
 ```
 
 
