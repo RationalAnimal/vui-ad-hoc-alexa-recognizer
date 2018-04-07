@@ -2543,6 +2543,11 @@ To test for a string value consisting entirely of alpha numeric characters:
 }
 ```
 
+Again, specifying "isAlphaNumeric": false tests for whether ANY of the characters are not alpha numeric:
+```text
+"selector": "some.value",
+"isAlphaNumeric": false
+```
 
 #### Subdomains
 
