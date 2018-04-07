@@ -2532,6 +2532,14 @@ Again, specifying "isNumeric": false tests for whether ANY of the characters are
 }
 ```
 
+##### Testing for a string value consisting only of numeric characters in the match criteria
+
+To test for a string value consisting entirely of alpha numeric characters:
+
+```text
+"selector": "some.value",
+"isAlphaNumeric": true
+```
 
 
 #### Subdomains
