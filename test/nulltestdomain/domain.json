@@ -48,6 +48,10 @@
     {
       "key": "isnotnumerictest",
       "path": "./test/nulltestdomain/isnotnumericrecognizer.json"
+    },
+    {
+      "key": "isalphanumerictest",
+      "path": "./test/nulltestdomain/isalphanumericrecognizer.json"
     }
   ],
   "states": [
@@ -238,6 +242,22 @@
           "responder": {
             "result": {
               "directValue": {"text": "Is not numeric test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "somevalue",
+        "isAlphaNumeric": true
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "isalphanumerictest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Is alpha numeric test recognizer used"}
             }
           }
         }
