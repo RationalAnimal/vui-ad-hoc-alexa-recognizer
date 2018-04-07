@@ -1630,7 +1630,7 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
         ((state.matchCriteria.isAlpha === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-zA-Z]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) )) || // Matching on the value being all alpha
         ((state.matchCriteria.isAlpha === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-zA-Z]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === false)) || // Matching on the value being at least partially non-alpha
         ((state.matchCriteria.isNumeric === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) )) || // Matching on the string value being all numeric characters
-        ((state.matchCriteria.isAlpha === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === false)) // Matching on the value being at least partially non-numeric
+        ((state.matchCriteria.isNumeric === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === false)) // Matching on the value being at least partially non-numeric
       )
     )
   ){

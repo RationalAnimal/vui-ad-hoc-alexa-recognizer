@@ -44,6 +44,10 @@
     {
       "key": "isnumerictest",
       "path": "./test/nulltestdomain/isnumericrecognizer.json"
+    },
+    {
+      "key": "isnotnumerictest",
+      "path": "./test/nulltestdomain/isnotnumericrecognizer.json"
     }
   ],
   "states": [
@@ -218,6 +222,22 @@
           "responder": {
             "result": {
               "directValue": {"text": "Is numeric test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "somevalue",
+        "isNumeric": false
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "isnotnumerictest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Is not numeric test recognizer used"}
             }
           }
         }
