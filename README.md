@@ -2551,6 +2551,15 @@ Again, specifying "isAlphaNumeric": false tests for whether ANY of the character
 }
 ```
 
+##### Testing for a string value consisting only of numeric characters in the match criteria
+
+To test for a string value consisting entirely of white space characters:
+
+```text
+"selector": "some.value",
+"isWhiteSpace": true
+```
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
