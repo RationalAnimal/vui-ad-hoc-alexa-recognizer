@@ -1632,7 +1632,8 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
         ((state.matchCriteria.isNumeric === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) )) || // Matching on the string value being all numeric characters
         ((state.matchCriteria.isNumeric === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === false)) || // Matching on the value being at least partially non-numeric
         ((state.matchCriteria.isAlphaNumeric === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-zA-Z0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) )) || // Matching on the value being all alpha numeric
-        ((state.matchCriteria.isAlphaNumeric === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-zA-Z0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector) === false) )) // Matching on the value being at least partially non alpha numeric
+        ((state.matchCriteria.isAlphaNumeric === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-zA-Z0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector) === false) )) || // Matching on the value being at least partially non alpha numeric
+        ((state.matchCriteria.isWhiteSpace === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^\s+$/.test(stateAccessor.getState(state.matchCriteria.selector)) )) // Matching on the value being all whitespace
       )
     )
   ){
