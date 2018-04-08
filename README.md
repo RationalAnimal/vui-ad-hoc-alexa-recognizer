@@ -2556,8 +2556,10 @@ Again, specifying "isAlphaNumeric": false tests for whether ANY of the character
 To test for a string value consisting entirely of white space characters:
 
 ```text
-"selector": "some.value",
-"isWhiteSpace": true
+"matchCriteria": {
+  "selector": "some.value",
+  "isWhiteSpace": true
+}
 ```
 
 #### Subdomains

@@ -56,6 +56,10 @@
     {
       "key": "isnotalphanumerictest",
       "path": "./test/nulltestdomain/isnotalphanumericrecognizer.json"
+    },
+    {
+      "key": "iswhitespacetest",
+      "path": "./test/nulltestdomain/iswhitespacerecognizer.json"
     }
   ],
   "states": [
@@ -278,6 +282,22 @@
           "responder": {
             "result": {
               "directValue": {"text": "Is not alpha numeric test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "somevalue",
+        "isWhiteSpace": true
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "iswhitespacetest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Is white space test recognizer used"}
             }
           }
         }
