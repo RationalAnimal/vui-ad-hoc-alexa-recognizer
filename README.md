@@ -2564,8 +2564,10 @@ To test for a string value consisting entirely of white space characters:
 
 As before, specifying "isWhiteSpace": false tests for whether ANY of the characters are not white space:
 ```text
-"selector": "some.value",
-"isWhiteSpace": false
+"matchCriteria": {
+  "selector": "some.value",
+  "isWhiteSpace": false
+}
 ```
 
 #### Subdomains
