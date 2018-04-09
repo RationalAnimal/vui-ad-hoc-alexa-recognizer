@@ -1,0 +1,1 @@
+IsNotWhiteSpaceMatchingCriteriaTestingIntent testing whether we match on an is not white space testing criteria
