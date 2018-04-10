@@ -60,6 +60,10 @@
     {
       "key": "iswhitespacetest",
       "path": "./test/nulltestdomain/iswhitespacerecognizer.json"
+    },
+    {
+      "key": "isnotwhitespacetest",
+      "path": "./test/nulltestdomain/isnotwhitespacerecognizer.json"
     }
   ],
   "states": [
@@ -298,6 +302,22 @@
           "responder": {
             "result": {
               "directValue": {"text": "Is white space test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "somevalue",
+        "isWhiteSpace": false
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "isnotwhitespacetest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Is not white space test recognizer used"}
             }
           }
         }
