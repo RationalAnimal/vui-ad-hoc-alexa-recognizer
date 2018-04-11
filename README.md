@@ -2575,8 +2575,10 @@ As before, specifying "isWhiteSpace": false tests for whether ANY of the charact
 To test for a string value consisting entirely of upper case characters:
 
 ```text
-"selector": "some.value",
-"isUpperCase": true
+"matchCriteria": {
+  "selector": "some.value",
+  "isUpperCase": true
+}
 ```
 
 #### Subdomains
