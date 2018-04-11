@@ -2532,7 +2532,7 @@ Again, specifying "isNumeric": false tests for whether ANY of the characters are
 }
 ```
 
-##### Testing for a string value consisting only of numeric characters in the match criteria
+##### Testing for a string value consisting only of alpha numeric characters in the match criteria
 
 To test for a string value consisting entirely of alpha numeric characters:
 
@@ -2551,7 +2551,7 @@ Again, specifying "isAlphaNumeric": false tests for whether ANY of the character
 }
 ```
 
-##### Testing for a string value consisting only of numeric characters in the match criteria
+##### Testing for a string value consisting only of white space characters in the match criteria
 
 To test for a string value consisting entirely of white space characters:
 
@@ -2568,6 +2568,15 @@ As before, specifying "isWhiteSpace": false tests for whether ANY of the charact
   "selector": "some.value",
   "isWhiteSpace": false
 }
+```
+
+##### Testing for a string value consisting only of upper case in the match criteria
+
+To test for a string value consisting entirely of upper case characters:
+
+```text
+"selector": "some.value",
+"isUpperCase": true
 ```
 
 #### Subdomains
