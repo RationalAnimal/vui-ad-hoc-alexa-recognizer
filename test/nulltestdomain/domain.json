@@ -64,6 +64,10 @@
     {
       "key": "isnotwhitespacetest",
       "path": "./test/nulltestdomain/isnotwhitespacerecognizer.json"
+    },
+    {
+      "key": "isuppercasetest",
+      "path": "./test/nulltestdomain/isuppercaserecognizer.json"
     }
   ],
   "states": [
@@ -318,6 +322,22 @@
           "responder": {
             "result": {
               "directValue": {"text": "Is not white space test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "somevalue",
+        "isUpperCase": true
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "isuppercasetest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Is upper case test recognizer used"}
             }
           }
         }
