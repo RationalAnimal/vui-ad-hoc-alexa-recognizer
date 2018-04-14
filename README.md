@@ -2581,6 +2581,12 @@ To test for a string value consisting entirely of upper case characters:
 }
 ```
 
+Again, specifying "isUpperCase": false tests for whether ANY of the characters are not upper case:
+```text
+"selector": "some.value",
+"isUpperCase": false
+```
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
