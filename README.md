@@ -2589,6 +2589,15 @@ Again, specifying "isUpperCase": false tests for whether ANY of the characters a
 }
 ```
 
+##### Testing for a string value consisting only of lower case in the match criteria
+
+To test for a string value consisting entirely of lower case characters:
+
+```text
+"selector": "some.value",
+"isLowerCase": true
+```
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
