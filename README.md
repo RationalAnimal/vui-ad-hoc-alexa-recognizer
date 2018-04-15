@@ -2594,8 +2594,10 @@ Again, specifying "isUpperCase": false tests for whether ANY of the characters a
 To test for a string value consisting entirely of lower case characters:
 
 ```text
-"selector": "some.value",
-"isLowerCase": true
+"matchCriteria": {
+  "selector": "some.value",
+  "isLowerCase": true
+}
 ```
 
 #### Subdomains

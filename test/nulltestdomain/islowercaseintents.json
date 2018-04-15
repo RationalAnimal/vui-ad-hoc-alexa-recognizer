@@ -1,0 +1,8 @@
+{
+  "intents": [
+    {
+      "intent": "IsLowerCaseMatchingCriteriaTestingIntent",
+      "slots": []
+    }
+  ]
+}
