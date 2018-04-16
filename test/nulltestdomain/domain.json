@@ -72,6 +72,10 @@
     {
       "key": "isnotuppercasetest",
       "path": "./test/nulltestdomain/isnotuppercaserecognizer.json"
+    },
+    {
+      "key": "islowercasetest",
+      "path": "./test/nulltestdomain/islowercaserecognizer.json"
     }
   ],
   "states": [
@@ -358,6 +362,22 @@
           "responder": {
             "result": {
               "directValue": {"text": "Is not upper case test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "somevalue",
+        "isLowerCase": true
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "islowercasetest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Is lower case test recognizer used"}
             }
           }
         }
