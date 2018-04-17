@@ -2602,8 +2602,10 @@ To test for a string value consisting entirely of lower case characters:
 
 Same as with other isXxx, specifying "isLowerCase": false tests for whether ANY of the characters are not lower case:
 ```text
-"selector": "some.value",
-"isLowerCase": false
+"matchCriteria": {
+  "selector": "some.value",
+  "isLowerCase": false
+}
 ```
 
 #### Subdomains
