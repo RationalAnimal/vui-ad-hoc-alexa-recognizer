@@ -1,0 +1,1 @@
+IsNotLowerCaseMatchingCriteriaTestingIntent testing whether we match on an is not lower case testing criteria
