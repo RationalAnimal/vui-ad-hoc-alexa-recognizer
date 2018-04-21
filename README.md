@@ -2608,6 +2608,16 @@ Same as with other isXxx, specifying "isLowerCase": false tests for whether ANY 
 }
 ```
 
+##### Testing for a string value containing a substring in the match criteria
+
+To test for a string value containing a substring:
+
+```text
+"selector": "some.value",
+"containsSubstring": true
+"substring": "somesubstring"
+```
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
