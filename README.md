@@ -2613,9 +2613,11 @@ Same as with other isXxx, specifying "isLowerCase": false tests for whether ANY 
 To test for a string value containing a substring:
 
 ```text
-"selector": "some.value",
-"containsSubstring": true
-"substring": "somesubstring"
+"matchCriteria": {
+  "selector": "some.value",
+  "containsSubstring": true
+  "substring": "somesubstring"
+}
 ```
 
 #### Subdomains
