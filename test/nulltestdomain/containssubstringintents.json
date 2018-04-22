@@ -1,0 +1,8 @@
+{
+  "intents": [
+    {
+      "intent": "ContainsSubstringMatchingCriteriaTestingIntent",
+      "slots": []
+    }
+  ]
+}
