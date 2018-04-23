@@ -80,6 +80,10 @@
     {
       "key": "isnotlowercasetest",
       "path": "./test/nulltestdomain/isnotlowercaserecognizer.json"
+    },
+    {
+      "key": "containssubstringtest",
+      "path": "./test/nulltestdomain/containssubstringrecognizer.json"
     }
   ],
   "states": [
@@ -398,6 +402,23 @@
           "responder": {
             "result": {
               "directValue": {"text": "Is not lower case test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "someSubstringValue",
+        "containsSubstring": true,
+        "substring": "def"
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "containssubstringtest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Contains substring test recognizer used"}
             }
           }
         }
