@@ -1594,3 +1594,4 @@ AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON *=
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON =D
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON =P
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON =S
+AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON S=
