@@ -2620,6 +2620,16 @@ To test for a string value containing a substring:
 }
 ```
 
+Specifying "containsSubstring": false tests to ensure that the specified substring is NOT contained:
+
+```text
+"matchCriteria": {
+  "selector": "some.value",
+  "containsSubstring": true
+  "substring": "somesubstring"
+}
+```
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
