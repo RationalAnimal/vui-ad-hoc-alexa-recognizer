@@ -1639,7 +1639,8 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
         ((state.matchCriteria.isUpperCase === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[A-Z]+$/.test(stateAccessor.getState(state.matchCriteria.selector))  === false)) || // Matching on the value being at least partially non upper case alpha
         ((state.matchCriteria.isLowerCase === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-z]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === true)) || // Matching on the value being all upper case alpha
         ((state.matchCriteria.isLowerCase === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-z]+$/.test(stateAccessor.getState(state.matchCriteria.selector))  === false)) || // Matching on the value being at least partially non upper case alpha
-        ((state.matchCriteria.containsSubstring === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && ((new RegExp(state.matchCriteria.substring)).test(stateAccessor.getState(state.matchCriteria.selector)) === true)) // Matching on the value containing a substring
+        ((state.matchCriteria.containsSubstring === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && ((new RegExp(state.matchCriteria.substring)).test(stateAccessor.getState(state.matchCriteria.selector)) === true)) || // Matching on the value containing a substring
+        ((state.matchCriteria.containsSubstring === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && ((new RegExp(state.matchCriteria.substring)).test(stateAccessor.getState(state.matchCriteria.selector)) === false)) // Matching on the value at least partially not containing a substring
       )
     )
   ){
