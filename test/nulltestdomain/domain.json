@@ -84,6 +84,10 @@
     {
       "key": "containssubstringtest",
       "path": "./test/nulltestdomain/containssubstringrecognizer.json"
+    },
+    {
+      "key": "doesnotcontainsubstringtest",
+      "path": "./test/nulltestdomain/doesnotcontainsubstringrecognizer.json"
     }
   ],
   "states": [
@@ -419,6 +423,23 @@
           "responder": {
             "result": {
               "directValue": {"text": "Contains substring test recognizer used"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "matchCriteria": {
+        "selector": "someSubstringValue",
+        "containsSubstring": false,
+        "substring": "xyz"
+      },
+      "matchSpecs": [
+        {
+          "recognizer": "doesnotcontainsubstringtest",
+          "responder": {
+            "result": {
+              "directValue": {"text": "Does not contain substring test recognizer used"}
             }
           }
         }
