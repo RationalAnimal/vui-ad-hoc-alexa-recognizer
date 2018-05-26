@@ -2625,7 +2625,7 @@ Specifying "containsSubstring": false tests to ensure that the specified substri
 ```text
 "matchCriteria": {
   "selector": "some.value",
-  "containsSubstring": true
+  "containsSubstring": false
   "substring": "somesubstring"
 }
 ```
