@@ -1,1 +1,1 @@
-DoesNotContainSubstringMatchingCriteriaTestingIntent testing whether we match on a string containing a substring testing criteria
+DoesNotContainSubstringMatchingCriteriaTestingIntent testing whether we match on a string not containing a substring testing criteria
