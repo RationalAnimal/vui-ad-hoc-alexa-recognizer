@@ -1616,10 +1616,11 @@ let _checkStateMatchCriteria = function(state, stateAccessor){
  * Call this function to determine whether match criteria matches or not.
  * @param matchCriteria - match criteria to check
  * @param stateAccessor - the state accessor object to use to access the state
+ * @param slots - slots and their values from the match
  * @returns {boolean} - true if state condition matches, false otherwise
  * @private
  */
-let _checkMatchCriteria = function(matchCriteria, stateAccessor){
+let _checkMatchCriteria = function(matchCriteria, stateAccessor, slots){ // eslint-disable-line no-unused-vars
   if(
     (matchCriteria === "default") || // default match - no conditions
     (
@@ -1772,7 +1773,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
             if(typeof state.matchSpecs[j].responder !== "undefined"){
               let responderMatched = true;
               if((typeof state.matchSpecs[j].responder.matchCriteria !== "undefined" && state.matchSpecs[j].responder.matchCriteria !== null) &&
-                 _checkMatchCriteria(state.matchSpecs[j].responder.matchCriteria, stateAccessor) !== true){
+                 _checkMatchCriteria(state.matchSpecs[j].responder.matchCriteria, stateAccessor, match.slots) !== true){
                 responderMatched = false;
               }
               if(responderMatched === true){
@@ -1785,7 +1786,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
               for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
                 let responderMatched = true;
                 if((typeof state.matchSpecs[j].responders[k].matchCriteria !== "undefined" && state.matchSpecs[j].responders[k].matchCriteria !== null) &&
-                  _checkMatchCriteria(state.matchSpecs[j].responders[k].matchCriteria, stateAccessor) !== true){
+                  _checkMatchCriteria(state.matchSpecs[j].responders[k].matchCriteria, stateAccessor, match.slots) !== true){
                   responderMatched = false;
                 }
                 if(responderMatched === true){
