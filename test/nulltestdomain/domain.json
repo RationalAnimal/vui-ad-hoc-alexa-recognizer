@@ -225,6 +225,7 @@
     },
     {
       "matchCriteria": {
+        "type": "state",
         "selector": "somevalue",
         "isAlpha": true
       },
@@ -321,6 +322,7 @@
     },
     {
       "matchCriteria": {
+        "type": "state",
         "selector": "somevalue",
         "isWhiteSpace": true
       },
@@ -353,6 +355,7 @@
     },
     {
       "matchCriteria": {
+        "type": "state",
         "selector": "somevalue",
         "isUpperCase": true
       },
@@ -451,6 +454,7 @@
     },
     {
       "matchCriteria": {
+        "type": "state",
         "selector": "conditionalResponderValue",
         "isUndefined": false
       },
@@ -460,6 +464,7 @@
           "responders": [
             {
               "matchCriteria": {
+                "type": "state",
                 "selector": "conditionalResponderValue.useResponder1",
                 "isUndefined": false
               },
@@ -470,6 +475,7 @@
             },
             {
               "matchCriteria": {
+                "type": "state",
                 "selector": "conditionalResponderValue.useResponder3",
                 "isUndefined": false
               },
@@ -481,6 +487,7 @@
             },
             {
               "matchCriteria": {
+                "type": "state",
                 "selector": "conditionalResponderValue.useResponder2",
                 "isUndefined": false
               },
