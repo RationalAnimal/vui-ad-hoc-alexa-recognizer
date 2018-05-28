@@ -23833,6 +23833,33 @@ describe("domain parsing", function() {
       );
     });
 
+    it("verify multi recognizer domain with conditional responders (using responder match criteria) and a basic accessor parses", function () {
+      let domain = require("../test/nulltestdomain/domain.json");
+
+      let applicationState = {
+        "conditionalResponderValue": {
+          "useResponder1": true,
+          "useResponder2": true
+        }
+      };
+      let basicStateAccessor = require("../builtinstateaccessors/basic.js");
+      let stateAccessor = new basicStateAccessor(applicationState);
+
+      let result = recognizer.Recognizer.matchDomain("testing whether we properly process conditional responders", domain, stateAccessor);
+      expect(result).to.eql(
+        {
+          "match":
+            {
+              "name": "ConditionalResponderTestingIntent",
+              "slots": {}
+            },
+          "result": {
+            "text": "Conditional responder 1  Conditional responder 2"
+          }
+        }
+      );
+    });
+
     it("verify multi recognizer domain with non default match criteria and a state sub select accessor parses", function () {
       let domain = require("../test/blahblahdomain/blahblahdomain.json");
       let applicationState = {

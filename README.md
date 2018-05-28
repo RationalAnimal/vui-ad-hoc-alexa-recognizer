@@ -2630,6 +2630,99 @@ Specifying "containsSubstring": false tests to ensure that the specified substri
 }
 ```
 
+#### Match criteria within responders
+
+So far you have seen match criteria used only to specify whether a particular recognizer is to be used.  This gives a lot
+of flexibility.  However if limited to just this case, this arrangement makes conditional use of responders difficult.
+That's why you can also use the match criteria within a responder as well:
+
+```json
+{
+  "matchCriteria": {
+    "selector": "conditionalResponderValue",
+    "isUndefined": false
+  },
+  "matchSpecs": [
+    {
+      "recognizer": "conditionalrespondertest",
+      "responders": [
+        {
+          "matchCriteria": {
+            "selector": "conditionalResponderValue.useResponder1",
+            "isUndefined": false
+          },
+          "result": {
+            "directValue": {
+              "text": "Conditional responder 1"}
+          }
+        },
+        {
+          "matchCriteria": {
+            "selector": "conditionalResponderValue.useResponder3",
+            "isUndefined": false
+          },
+          "result": {
+            "combineRule": "mergeAppend",
+            "directValue": {
+              "text": "Conditional responder 3"}
+          }
+        },
+        {
+          "matchCriteria": {
+            "selector": "conditionalResponderValue.useResponder2",
+            "isUndefined": false
+          },
+          "result": {
+            "combineRule": "mergeAppend",
+            "directValue": {
+              "text": "Conditional responder 2"}
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+In the example above match criteria is used both ways - to restrict when to use the recognizer as well as to restrict
+when to apply a particular responder.  Here, if the state has a defined "conditionalResponderValue" then the recognizer
+will be applied.  However, each of the 3 responders also have their own match criteria. If a particular responder's
+match criteria is not met then that responder will not contribute to the response.  For example, if the state object is:
+
+```json
+{
+  "conditionalResponderValue": {
+    "useResponder1": true,
+    "useResponder2": true
+  }
+}
+```
+
+and we match on the utterance, only 2 out of 3 responders will contribute to the result:
+
+```json
+{
+  "match": {
+    "name": "ConditionalResponderTestingIntent",
+    "slots": {}
+  },
+  "result": {
+    "text": "Conditional responder 1  Conditional responder 2"
+  }
+}
+```
+
+##### Using conditional responders
+
+Conditional responders are a very powerful tool.  You can create a different output depending on the current state.
+For example, imagine if your user says something like "I would like to get two tickets for today's 7:30 showing of Deadpool 27".
+If your user is already authenticated and the credit card info is on file, you can respond with
+"your etickets have been ordered, please see your email".  However, if the user has not yet authenticated you can
+respond with "please log in first so we can help you".
+
+Note that you could still do this without conditional responders, but you would have to create multiple recognizers to
+accomplish that and it would unnecessarily complicate the code.
+
 #### Subdomains
 
 If domains simply added results and state awareness and manipulation they would already be a pretty big improvement over
