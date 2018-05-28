@@ -1606,37 +1606,51 @@ let _isSubObjectAny = function(subObject, withinArray){
  * @private
  */
 let _checkStateMatchCriteria = function(state, stateAccessor){
+  if(typeof state !== "undefined" && state !== null && _checkMatchCriteria(state.matchCriteria, stateAccessor) === true){// default match - no conditions
+    return true;
+  }
+  return false;
+};
+
+/**
+ * Call this function to determine whether match criteria matches or not.
+ * @param matchCriteria - match criteria to check
+ * @param stateAccessor - the state accessor object to use to access the state
+ * @returns {boolean} - true if state condition matches, false otherwise
+ * @private
+ */
+let _checkMatchCriteria = function(matchCriteria, stateAccessor){
   if(
-    (state.matchCriteria === "default") || // default match - no conditions
+    (matchCriteria === "default") || // default match - no conditions
     (
-      (typeof state.matchCriteria === "object" && state.matchCriteria !== null && typeof stateAccessor === "object") &&
+      (typeof matchCriteria === "object" && matchCriteria !== null && typeof stateAccessor === "object") &&
       (
-        ((state.matchCriteria.match === true) && _isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) || // Matching on a specific value
-        ((state.matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.value)) === false) || // Matching on NOT specific value
-        ((state.matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) || // Matching on the value being one of values in the list
-        ((state.matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(state.matchCriteria.selector), state.matchCriteria.values)) === false) || // Matching on the value NOT being one of values in the list
-        ((state.matchCriteria.isNull === true) && (stateAccessor.getState(state.matchCriteria.selector) === null)) || // Matching on the value being null
-        ((state.matchCriteria.isNull === false) && (stateAccessor.getState(state.matchCriteria.selector) !== null)) || // Matching on the value NOT being null
-        ((state.matchCriteria.isUndefined === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "undefined")) || // Matching on the value being undefined
-        ((state.matchCriteria.isUndefined === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) !== "undefined")) || // Matching on the value NOT being undefined
-        ((Number.isNaN(state.matchCriteria.greaterThan) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === false) && (stateAccessor.getState(state.matchCriteria.selector) > state.matchCriteria.greaterThan)) || // Matching on the value being numeric and being greater than a reference value
-        ((Number.isNaN(state.matchCriteria.greaterThanOrEqual) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === false) && (stateAccessor.getState(state.matchCriteria.selector) >= state.matchCriteria.greaterThanOrEqual)) || // Matching on the value being numeric and being greater than or equal to a reference value
-        ((Number.isNaN(state.matchCriteria.lessThan) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === false) && (stateAccessor.getState(state.matchCriteria.selector) < state.matchCriteria.lessThan)) || // Matching on the value being numeric and being less than a reference value
-        ((Number.isNaN(state.matchCriteria.lessThanOrEqual) === false) && (Number.isNaN(stateAccessor.getState(state.matchCriteria.selector)) === false) && (stateAccessor.getState(state.matchCriteria.selector) <= state.matchCriteria.lessThanOrEqual)) || // Matching on the value being numeric and being less than or equal to a reference value
-        ((state.matchCriteria.isAlpha === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-zA-Z]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === true)) || // Matching on the value being all alpha
-        ((state.matchCriteria.isAlpha === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-zA-Z]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === false)) || // Matching on the value being at least partially non-alpha
-        ((state.matchCriteria.isNumeric === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === true)) || // Matching on the string value being all numeric characters
-        ((state.matchCriteria.isNumeric === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === false)) || // Matching on the value being at least partially non-numeric
-        ((state.matchCriteria.isAlphaNumeric === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-zA-Z0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === true)) || // Matching on the value being all alpha numeric
-        ((state.matchCriteria.isAlphaNumeric === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-zA-Z0-9]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === false)) || // Matching on the value being at least partially non alpha numeric
-        ((state.matchCriteria.isWhiteSpace === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^\s+$/.test(stateAccessor.getState(state.matchCriteria.selector))  === true)) || // Matching on the value being all whitespace
-        ((state.matchCriteria.isWhiteSpace === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^\s+$/.test(stateAccessor.getState(state.matchCriteria.selector))  === false)) || // Matching on the value being at least partially non whitespace
-        ((state.matchCriteria.isUpperCase === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[A-Z]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === true)) || // Matching on the value being all upper case alpha
-        ((state.matchCriteria.isUpperCase === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[A-Z]+$/.test(stateAccessor.getState(state.matchCriteria.selector))  === false)) || // Matching on the value being at least partially non upper case alpha
-        ((state.matchCriteria.isLowerCase === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-z]+$/.test(stateAccessor.getState(state.matchCriteria.selector)) === true)) || // Matching on the value being all upper case alpha
-        ((state.matchCriteria.isLowerCase === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && (/^[a-z]+$/.test(stateAccessor.getState(state.matchCriteria.selector))  === false)) || // Matching on the value being at least partially non upper case alpha
-        ((state.matchCriteria.containsSubstring === true) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && ((new RegExp(state.matchCriteria.substring)).test(stateAccessor.getState(state.matchCriteria.selector)) === true)) || // Matching on the value containing a substring
-        ((state.matchCriteria.containsSubstring === false) && (typeof stateAccessor.getState(state.matchCriteria.selector) === "string") && ((new RegExp(state.matchCriteria.substring)).test(stateAccessor.getState(state.matchCriteria.selector)) === false)) // Matching on the value at least partially not containing a substring
+        ((matchCriteria.match === true) && _isSubObject(stateAccessor.getState(matchCriteria.selector), matchCriteria.value)) || // Matching on a specific value
+        ((matchCriteria.match === false) && (_isSubObject(stateAccessor.getState(matchCriteria.selector), matchCriteria.value)) === false) || // Matching on NOT specific value
+        ((matchCriteria.match === true) && _isSubObjectAny(stateAccessor.getState(matchCriteria.selector), matchCriteria.values)) || // Matching on the value being one of values in the list
+        ((matchCriteria.match === false) && (_isSubObjectAny(stateAccessor.getState(matchCriteria.selector), matchCriteria.values)) === false) || // Matching on the value NOT being one of values in the list
+        ((matchCriteria.isNull === true) && (stateAccessor.getState(matchCriteria.selector) === null)) || // Matching on the value being null
+        ((matchCriteria.isNull === false) && (stateAccessor.getState(matchCriteria.selector) !== null)) || // Matching on the value NOT being null
+        ((matchCriteria.isUndefined === true) && (typeof stateAccessor.getState(matchCriteria.selector) === "undefined")) || // Matching on the value being undefined
+        ((matchCriteria.isUndefined === false) && (typeof stateAccessor.getState(matchCriteria.selector) !== "undefined")) || // Matching on the value NOT being undefined
+        ((Number.isNaN(matchCriteria.greaterThan) === false) && (Number.isNaN(stateAccessor.getState(matchCriteria.selector)) === false) && (stateAccessor.getState(matchCriteria.selector) > matchCriteria.greaterThan)) || // Matching on the value being numeric and being greater than a reference value
+        ((Number.isNaN(matchCriteria.greaterThanOrEqual) === false) && (Number.isNaN(stateAccessor.getState(matchCriteria.selector)) === false) && (stateAccessor.getState(matchCriteria.selector) >= matchCriteria.greaterThanOrEqual)) || // Matching on the value being numeric and being greater than or equal to a reference value
+        ((Number.isNaN(matchCriteria.lessThan) === false) && (Number.isNaN(stateAccessor.getState(matchCriteria.selector)) === false) && (stateAccessor.getState(matchCriteria.selector) < matchCriteria.lessThan)) || // Matching on the value being numeric and being less than a reference value
+        ((Number.isNaN(matchCriteria.lessThanOrEqual) === false) && (Number.isNaN(stateAccessor.getState(matchCriteria.selector)) === false) && (stateAccessor.getState(matchCriteria.selector) <= matchCriteria.lessThanOrEqual)) || // Matching on the value being numeric and being less than or equal to a reference value
+        ((matchCriteria.isAlpha === true) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && (/^[a-zA-Z]+$/.test(stateAccessor.getState(matchCriteria.selector)) === true)) || // Matching on the value being all alpha
+        ((matchCriteria.isAlpha === false) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && (/^[a-zA-Z]+$/.test(stateAccessor.getState(matchCriteria.selector)) === false)) || // Matching on the value being at least partially non-alpha
+        ((matchCriteria.isNumeric === true) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && (/^[0-9]+$/.test(stateAccessor.getState(matchCriteria.selector)) === true)) || // Matching on the string value being all numeric characters
+        ((matchCriteria.isNumeric === false) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && (/^[0-9]+$/.test(stateAccessor.getState(matchCriteria.selector)) === false)) || // Matching on the value being at least partially non-numeric
+        ((matchCriteria.isAlphaNumeric === true) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && (/^[a-zA-Z0-9]+$/.test(stateAccessor.getState(matchCriteria.selector)) === true)) || // Matching on the value being all alpha numeric
+        ((matchCriteria.isAlphaNumeric === false) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && (/^[a-zA-Z0-9]+$/.test(stateAccessor.getState(matchCriteria.selector)) === false)) || // Matching on the value being at least partially non alpha numeric
+        ((matchCriteria.isWhiteSpace === true) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && (/^\s+$/.test(stateAccessor.getState(matchCriteria.selector))  === true)) || // Matching on the value being all whitespace
+        ((matchCriteria.isWhiteSpace === false) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && (/^\s+$/.test(stateAccessor.getState(matchCriteria.selector))  === false)) || // Matching on the value being at least partially non whitespace
+        ((matchCriteria.isUpperCase === true) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && (/^[A-Z]+$/.test(stateAccessor.getState(matchCriteria.selector)) === true)) || // Matching on the value being all upper case alpha
+        ((matchCriteria.isUpperCase === false) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && (/^[A-Z]+$/.test(stateAccessor.getState(matchCriteria.selector))  === false)) || // Matching on the value being at least partially non upper case alpha
+        ((matchCriteria.isLowerCase === true) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && (/^[a-z]+$/.test(stateAccessor.getState(matchCriteria.selector)) === true)) || // Matching on the value being all upper case alpha
+        ((matchCriteria.isLowerCase === false) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && (/^[a-z]+$/.test(stateAccessor.getState(matchCriteria.selector))  === false)) || // Matching on the value being at least partially non upper case alpha
+        ((matchCriteria.containsSubstring === true) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && ((new RegExp(matchCriteria.substring)).test(stateAccessor.getState(matchCriteria.selector)) === true)) || // Matching on the value containing a substring
+        ((matchCriteria.containsSubstring === false) && (typeof stateAccessor.getState(matchCriteria.selector) === "string") && ((new RegExp(matchCriteria.substring)).test(stateAccessor.getState(matchCriteria.selector)) === false)) // Matching on the value at least partially not containing a substring
       )
     )
   ){
@@ -1756,15 +1770,29 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
           if(typeof match !== "undefined" && match !== null){
             let returnObject = {"match": match};
             if(typeof state.matchSpecs[j].responder !== "undefined"){
-              // TODO add code to get the intent name regardless of platform
-              returnObject.result = responder.produceResult(match, stateAccessor, stateSelectors, state.matchSpecs[j].responder);
+              let responderMatched = true;
+              if((typeof state.matchSpecs[j].responder.matchCriteria !== "undefined" && state.matchSpecs[j].responder.matchCriteria !== null) &&
+                 _checkMatchCriteria(state.matchSpecs[j].responder.matchCriteria, stateAccessor) !== true){
+                responderMatched = false;
+              }
+              if(responderMatched === true){
+                // TODO add code to get the intent name regardless of platform
+                returnObject.result = responder.produceResult(match, stateAccessor, stateSelectors, state.matchSpecs[j].responder);
+              }
             }
             else if(typeof state.matchSpecs[j].responders !== "undefined" && Array.isArray(state.matchSpecs[j].responders)){
-              // TODO add code to get the intent name regardless of platform
               returnObject.result = {};
               for(let k = 0; k < state.matchSpecs[j].responders.length; k++){
-                let newResult = responder.produceResult(match, stateAccessor, stateSelectors, state.matchSpecs[j].responders[k]);
-                returnObject.result = responder.combineResponses(returnObject.result, newResult, state.matchSpecs[j].responders[k].result.combineRule);
+                let responderMatched = true;
+                if((typeof state.matchSpecs[j].responders[k].matchCriteria !== "undefined" && state.matchSpecs[j].responders[k].matchCriteria !== null) &&
+                  _checkMatchCriteria(state.matchSpecs[j].responders[k].matchCriteria, stateAccessor) !== true){
+                  responderMatched = false;
+                }
+                if(responderMatched === true){
+                  // TODO add code to get the intent name regardless of platform
+                  let newResult = responder.produceResult(match, stateAccessor, stateSelectors, state.matchSpecs[j].responders[k]);
+                  returnObject.result = responder.combineResponses(returnObject.result, newResult, state.matchSpecs[j].responders[k].result.combineRule);
+                }
               }
             }
             return returnObject;
