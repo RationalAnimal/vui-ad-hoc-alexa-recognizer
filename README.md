@@ -2288,6 +2288,7 @@ If you update your domain file to include that, e.g.:
 "states": [
   {
     "matchCriteria": {
+      "type": "state",
       "selector": "startedEnrollment",
       "match": true,
       "value": {"status": "yes"}
@@ -2350,6 +2351,7 @@ the provided value:
 "states": [
   {
     "matchCriteria": {
+      "type": "state",
       "selector": "startedEnrollment",
       "match": false,
       "value": {"status": "yes"}
@@ -2404,6 +2406,7 @@ Here is a simple and concise way of checking whether a value is null:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.selector",
   "isNull": true
 }
@@ -2413,6 +2416,7 @@ Similarly, here is how you would check if the value is not null:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.selector",
   "isNull": false
 }
@@ -2426,6 +2430,7 @@ The specification is similar to testing for null:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.selector",
   "isUndefined": true
 }
@@ -2435,6 +2440,7 @@ Similarly, here is how you would check if the value is not undefined:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.selector",
   "isUndefined": false
 }
@@ -2447,6 +2453,7 @@ Here is how you could do it:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.threshold",
   "greaterThan": 5
 }
@@ -2462,6 +2469,7 @@ for a numberic value being greater than or equal to a reference value:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.threshold",
   "greaterThanOrEqual": 4
 }
@@ -2476,6 +2484,7 @@ You can also test for a numeric value being less than a reference value:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.threshold",
   "lessThan": 10
 }
@@ -2487,6 +2496,7 @@ To test for a numeric value being less than or equal to a reference value:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.threshold",
   "lessThanOrEqual": 10
 }
@@ -2498,6 +2508,7 @@ To test for a string value consisting entirely of alpha characters (a through z,
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "isAlpha": true
 }
@@ -2508,6 +2519,7 @@ Instead it's testing for whether ANY of the characters are not alpha:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "isAlpha": false
 }
@@ -2519,6 +2531,7 @@ To test for a string value consisting entirely of numeric characters:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "isNumeric": true
 }
@@ -2527,6 +2540,7 @@ To test for a string value consisting entirely of numeric characters:
 Again, specifying "isNumeric": false tests for whether ANY of the characters are not alpha:
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "isNumeric": false
 }
@@ -2538,6 +2552,7 @@ To test for a string value consisting entirely of alpha numeric characters:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "isAlphaNumeric": true
 }
@@ -2546,6 +2561,7 @@ To test for a string value consisting entirely of alpha numeric characters:
 Again, specifying "isAlphaNumeric": false tests for whether ANY of the characters are not alpha numeric:
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "isAlphaNumeric": false
 }
@@ -2557,6 +2573,7 @@ To test for a string value consisting entirely of white space characters:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "isWhiteSpace": true
 }
@@ -2565,6 +2582,7 @@ To test for a string value consisting entirely of white space characters:
 As before, specifying "isWhiteSpace": false tests for whether ANY of the characters are not white space:
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "isWhiteSpace": false
 }
@@ -2576,6 +2594,7 @@ To test for a string value consisting entirely of upper case characters:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "isUpperCase": true
 }
@@ -2584,6 +2603,7 @@ To test for a string value consisting entirely of upper case characters:
 Again, specifying "isUpperCase": false tests for whether ANY of the characters are not upper case:
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "isUpperCase": false
 }
@@ -2595,6 +2615,7 @@ To test for a string value consisting entirely of lower case characters:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "isLowerCase": true
 }
@@ -2603,6 +2624,7 @@ To test for a string value consisting entirely of lower case characters:
 Same as with other isXxx, specifying "isLowerCase": false tests for whether ANY of the characters are not lower case:
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "isLowerCase": false
 }
@@ -2614,6 +2636,7 @@ To test for a string value containing a substring:
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "containsSubstring": true
   "substring": "somesubstring"
@@ -2624,6 +2647,7 @@ Specifying "containsSubstring": false tests to ensure that the specified substri
 
 ```text
 "matchCriteria": {
+  "type": "state",
   "selector": "some.value",
   "containsSubstring": false
   "substring": "somesubstring"
@@ -2639,6 +2663,7 @@ That's why you can also use the match criteria within a responder as well:
 ```json
 {
   "matchCriteria": {
+    "type": "state",
     "selector": "conditionalResponderValue",
     "isUndefined": false
   },
@@ -2648,6 +2673,7 @@ That's why you can also use the match criteria within a responder as well:
       "responders": [
         {
           "matchCriteria": {
+            "type": "state",
             "selector": "conditionalResponderValue.useResponder1",
             "isUndefined": false
           },
@@ -2658,6 +2684,7 @@ That's why you can also use the match criteria within a responder as well:
         },
         {
           "matchCriteria": {
+            "type": "state",
             "selector": "conditionalResponderValue.useResponder3",
             "isUndefined": false
           },
@@ -2669,6 +2696,7 @@ That's why you can also use the match criteria within a responder as well:
         },
         {
           "matchCriteria": {
+            "type": "state",
             "selector": "conditionalResponderValue.useResponder2",
             "isUndefined": false
           },
