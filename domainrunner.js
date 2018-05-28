@@ -89,6 +89,7 @@ for(let i = 2; i < process.argv.length; i += 2){
     }
     break;
   default:
+    console.log("unknown argument: " + argSpecifier);
     usage();
     process.exit(1);
   }
@@ -163,7 +164,7 @@ let recursiveUserInput = function (){
       return rl.close();
     }
     console.log("Your text was: \"" + answer + "\"");
-    let result = recognizer.Recognizer.matchDomain(answer, domain, stateAccessor, [], state);
+    let result = recognizer.Recognizer.matchDomain(answer, domain, stateAccessor, []);
     console.log("Domain response: ", JSON.stringify(result, null, 2));
     if(outputState === true){
       console.log("State object: ", JSON.stringify(state, null, 2));

@@ -1605,11 +1605,7 @@ let _isSubObjectAny = function(subObject, withinArray){
  * @returns {boolean} - true if state condition matches, false otherwise
  * @private
  */
-// TODO examine code to see why applicationState is being passed. This does not seem to be needed anymore and should be removed.
-let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){ // eslint-disable-line no-unused-vars
-  //console.log("_checkStateMatchCriteria, enter");
-  //console.log("_checkStateMatchCriteria, state: " + JSON.stringify(state, null, 2));
-  //console.log("_checkStateMatchCriteria, stateAccessor.getState(state.matchCriteria.selector): " + stateAccessor.getState(state.matchCriteria.selector));
+let _checkStateMatchCriteria = function(state, stateAccessor){
   if(
     (state.matchCriteria === "default") || // default match - no conditions
     (
@@ -1644,10 +1640,8 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
       )
     )
   ){
-    //console.log("_checkStateMatchCriteria, returning true");
     return true;
   }
-  //console.log("_checkStateMatchCriteria, returning false");
   return false;
 };
 
@@ -1660,7 +1654,7 @@ let _checkStateMatchCriteria = function(state, stateAccessor, applicationState){
  * @returns {object}
  * @private
  */
-var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelectors, applicationState){
+var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelectors){
 //  console.log("_matchTextDomain, 1");
   let domainToUse;
   if(typeof domain === "string"){
@@ -1754,7 +1748,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
     //    console.log("_matchTextDomain, 13, i: " + i);
     let state = domainToUse.states[i];
     //    console.log("_matchTextDomain, 14");
-    if(_checkStateMatchCriteria(state, stateAccessor, applicationState)){
+    if(_checkStateMatchCriteria(state, stateAccessor)){
       for(let j = 0; j < state.matchSpecs.length; j ++){
         if(typeof state.matchSpecs[j].recognizer !== "undefined"){
           let scratchRecognizer = recognizers[state.matchSpecs[j].recognizer];
@@ -1787,7 +1781,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
               if(typeof scratchDomainSelector === "string"){
                 // This is a short hand notation for an untrusted domain with a given selector and no specified location for untrusted state store.
                 let subAccessor = stateAccessor.createSubAccessor(updatedSelectors, {"read": false, "write": false, "selector": scratchDomainSelector});
-                let result = _matchTextDomain(stringToMatch, scratchDomain, subAccessor, [], applicationState);
+                let result = _matchTextDomain(stringToMatch, scratchDomain, subAccessor, []);
                 if(typeof result !== "undefined" && result !== null){
                   return result;
                 }
@@ -1797,7 +1791,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
                 if(scratchDomainTrusted.read === true && scratchDomainTrusted.write === true){
                   // This means the domain is fully trusted.
                   let subAccessor = stateAccessor.createSubAccessor(updatedSelectors, scratchDomainTrusted);
-                  let result = _matchTextDomain(stringToMatch, scratchDomain, subAccessor, [], applicationState);
+                  let result = _matchTextDomain(stringToMatch, scratchDomain, subAccessor, []);
                   if(typeof result !== "undefined" && result !== null){
                     return result;
                   }
@@ -1805,7 +1799,7 @@ var _matchTextDomain = function(stringToMatch, domain, stateAccessor, stateSelec
                 else if(scratchDomainTrusted.read === false && scratchDomainTrusted.write === false){
                   // This means the domain is fully trusted.
                   let subAccessor = stateAccessor.createSubAccessor(updatedSelectors, scratchDomainTrusted);
-                  let result = _matchTextDomain(stringToMatch, scratchDomain, subAccessor, [], applicationState);
+                  let result = _matchTextDomain(stringToMatch, scratchDomain, subAccessor, []);
                   if(typeof result !== "undefined" && result !== null){
                     return result;
                   }
