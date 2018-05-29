@@ -23860,6 +23860,35 @@ describe("domain parsing", function() {
       );
     });
 
+
+
+    it("verify multi recognizer domain with conditional slot responders (using responder slot match criteria) and a basic accessor parses", function () {
+      let domain = require("../test/nulltestdomain/domain.json");
+
+      let applicationState = {};
+      let basicStateAccessor = require("../builtinstateaccessors/basic.js");
+      let stateAccessor = new basicStateAccessor(applicationState);
+
+      let result = recognizer.Recognizer.matchDomain("testing whether we match on a slot value of 5 being equal to a value testing criteria", domain, stateAccessor);
+      expect(result).to.eql(
+        {
+          "match":
+            {
+              "name": "SlotEqualsNumberMatchingCriteriaTestingIntent",
+              "slots": {
+                "NumberSlot": {
+                  "name": "NumberSlot",
+                  "value": "5"
+                }
+              }
+            },
+          "result": {
+            "text": "Responder for matching hardcoded number 5  Responder for NOT matching hardcoded number 9"
+          }
+        }
+      );
+    });
+
     it("verify multi recognizer domain with non default match criteria and a state sub select accessor parses", function () {
       let domain = require("../test/blahblahdomain/blahblahdomain.json");
       let applicationState = {
