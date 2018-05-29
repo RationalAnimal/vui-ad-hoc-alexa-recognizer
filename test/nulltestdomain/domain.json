@@ -92,6 +92,10 @@
     {
       "key": "conditionalrespondertest",
       "path": "./test/nulltestdomain/conditionalresponderrecognizer.json"
+    },
+    {
+      "key": "slotequalstest",
+      "path": "./test/nulltestdomain/slotequalsrecognizer.json"
     }
   ],
   "states": [
@@ -495,6 +499,57 @@
                 "combineRule": "mergeAppend",
                 "directValue": {
                   "text": "Conditional responder 2"}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "matchCriteria": "default",
+      "matchSpecs": [
+        {
+          "recognizer": "slotequalstest",
+          "responders": [
+            {
+              "matchCriteria": {
+                "type": "slot",
+                "slot": "NumberSlot",
+                "value": "5",
+                "match": true
+              },
+              "result": {
+                "directValue": {
+                  "text": "Responder for matching hardcoded number 5"
+                }
+              }
+            },
+            {
+              "matchCriteria": {
+                "type": "slot",
+                "slot": "NumberSlot",
+                "value": "7",
+                "match": true
+              },
+              "result": {
+                "combineRule": "mergeAppend",
+                "directValue": {
+                  "text": "Responder for matching hardcoded number 7"
+                }
+              }
+            },
+            {
+              "matchCriteria": {
+                "type": "slot",
+                "slot": "NumberSlot",
+                "value": "9",
+                "match": false
+              },
+              "result": {
+                "combineRule": "mergeAppend",
+                "directValue": {
+                  "text": "Responder for NOT matching hardcoded number 9"
+                }
               }
             }
           ]

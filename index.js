@@ -1621,6 +1621,13 @@ let _checkStateMatchCriteria = function(state, stateAccessor){
  * @private
  */
 let _checkMatchCriteria = function(matchCriteria, stateAccessor, slots){ // eslint-disable-line no-unused-vars
+  /*
+  console.log("_checkMatchCriteria, entered, matchCriteria: " + JSON.stringify(matchCriteria, null, 2));
+  if(typeof slots !== "undefined"){
+    console.log("_checkMatchCriteria, slots: " + JSON.stringify(slots, null, 2));
+  }
+  */
+
   if(
     (matchCriteria === "default") || // default match - no conditions
     (
@@ -1660,16 +1667,18 @@ let _checkMatchCriteria = function(matchCriteria, stateAccessor, slots){ // esli
         (
           (matchCriteria.type === "slot" && typeof matchCriteria.slot === "string" && matchCriteria.slot.length > 0) && // Matching on some slot related test
           (
-            ((matchCriteria.match === true) && slots[matchCriteria.slot] === matchCriteria.value) || // Matching on a specific value
-            ((matchCriteria.match === false) && slots[matchCriteria.slot] !== matchCriteria.value) // Matching on NOT specific value
+            ((matchCriteria.match === true) && slots[matchCriteria.slot].value === matchCriteria.value) || // Matching on a specific value
+            ((matchCriteria.match === false) && slots[matchCriteria.slot].value !== matchCriteria.value) // Matching on NOT specific value
             // TODO add other slot related tests
           )
         )
       )
     )
   ){
+    //console.log("_checkMatchCriteria, returning true");
     return true;
   }
+  //console.log("_checkMatchCriteria, returning false");
   return false;
 };
 

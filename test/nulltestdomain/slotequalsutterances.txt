@@ -1,0 +1,1 @@
+SlotEqualsNumberMatchingCriteriaTestingIntent testing whether we match on a slot value of {NumberSlot} being equal to a value testing criteria

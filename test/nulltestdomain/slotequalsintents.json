@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "intent": "SlotEqualsNumberMatchingCriteriaTestingIntent",
+      "slots": [
+        {
+          "name": "NumberSlot",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    }
+  ]
+}
