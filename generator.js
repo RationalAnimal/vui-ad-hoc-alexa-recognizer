@@ -494,4 +494,8 @@ if(typeof interactionModel !== "undefined"){
 }
 
 resultJson = doTheProcessing();
-fs.writeFile("recognizer.json", JSON.stringify(resultJson), "utf8", _done(resultJson));
+fs.writeFile("recognizer.json", JSON.stringify(resultJson), "utf8", (err) => {
+  if (err) throw err;
+  _done(resultJson);
+  console.log("The file has been saved!");
+});
