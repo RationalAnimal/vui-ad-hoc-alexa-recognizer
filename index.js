@@ -1658,9 +1658,12 @@ let _checkMatchCriteria = function(matchCriteria, stateAccessor, slots){ // esli
           )
         ) ||
         (
-          (matchCriteria.type === "slot") //&& // Matching on some slot related test
-          // TODO add slot related tests
-
+          (matchCriteria.type === "slot" && typeof matchCriteria.slot === "string" && matchCriteria.slot.length > 0) && // Matching on some slot related test
+          (
+            ((matchCriteria.match === true) && slots[matchCriteria.slot] === matchCriteria.value) || // Matching on a specific value
+            ((matchCriteria.match === false) && slots[matchCriteria.slot] !== matchCriteria.value) // Matching on NOT specific value
+            // TODO add other slot related tests
+          )
         )
       )
     )

@@ -2254,7 +2254,7 @@ Note that you can also select a different built-in accessor when using domainrun
 on the command line.
 
 
-#### Non-default single value match criteria
+#### Non-default single value state match criteria
 
 So far you've only seen default match criteria, meaning you've only seen a domain using a single recognizer without any
 regard to anything else.  Here is the relevant snippet from the domain file:
@@ -2341,7 +2341,7 @@ So this showed how you can specify which recognizer(s) to use based on some crit
 
 Note that "default" criteria will always match.
 
-##### Non-default single value negative match criteria
+#### Non-default single value negative match criteria
 
 You can also set the "match" to false, indicating that this match criteria will succeed if the state does NOT match
 the provided value:
@@ -2394,12 +2394,12 @@ you would specify something like:
 
 this will match if the "status" is either "yes" or "tbd"
 
-##### Non-default multi-valued negative match criteria
+#### Non-default multi-valued negative match criteria
 
 Just as for single values, you can set "match" to be false to indicate that the match will succeed if the state does
 NOT match ANY of the provided values
 
-##### Testing for null in the match criteria
+#### Testing for null in the match criteria
 
 Sometimes you just need to test whether a value is a null or not.
 Here is a simple and concise way of checking whether a value is null:
@@ -2422,7 +2422,7 @@ Similarly, here is how you would check if the value is not null:
 }
 ```
 
-##### Testing for undefined in the match criteria
+#### Testing for undefined in the match criteria
 
 Testing for undefined is another common test that you may want to perform.
 This would typically be done when you want to test whether some state value has been set.
@@ -2446,7 +2446,7 @@ Similarly, here is how you would check if the value is not undefined:
 }
 ```
 
-##### Testing for a numeric value being greater than a reference value in the match criteria
+#### Testing for a numeric value being greater than a reference value in the match criteria
 
 Testing for a numeric value being greater than a reference value is also fairly common.
 Here is how you could do it:
@@ -2462,7 +2462,7 @@ Here is how you could do it:
 Note that unlike isNull or isUndefined there is no way to specify "false" (i.e. negative) condition.
 This can instead be done using lessThanOrEqual test (lessThanOrEqual is not yet implemented).
 
-##### Testing for a numeric value being greater than or equal to a reference value in the match criteria
+#### Testing for a numeric value being greater than or equal to a reference value in the match criteria
 
 Similar to testing for a numeric value being greater than a reference value, you can test
 for a numberic value being greater than or equal to a reference value:
@@ -2478,7 +2478,7 @@ for a numberic value being greater than or equal to a reference value:
 Similar to greaterThan there is no way to specify "false" (i.e. negative) condition.
 This can instead be done using lessThan (lessThan is not yet implemented).
 
-##### Testing for a numeric value being less than a reference value in the match criteria
+#### Testing for a numeric value being less than a reference value in the match criteria
 
 You can also test for a numeric value being less than a reference value:
 
@@ -2490,7 +2490,7 @@ You can also test for a numeric value being less than a reference value:
 }
 ```
 
-##### Testing for a numeric value being less than or equal to a reference value in the match criteria
+#### Testing for a numeric value being less than or equal to a reference value in the match criteria
 
 To test for a numeric value being less than or equal to a reference value:
 
@@ -2502,7 +2502,7 @@ To test for a numeric value being less than or equal to a reference value:
 }
 ```
 
-##### Testing for a string value consisting only of alpha characters in the match criteria
+#### Testing for a string value consisting only of alpha characters in the match criteria
 
 To test for a string value consisting entirely of alpha characters (a through z, case insensitive):
 
@@ -2525,7 +2525,7 @@ Instead it's testing for whether ANY of the characters are not alpha:
 }
 ```
 
-##### Testing for a string value consisting only of numeric characters in the match criteria
+#### Testing for a string value consisting only of numeric characters in the match criteria
 
 To test for a string value consisting entirely of numeric characters:
 
@@ -2546,7 +2546,7 @@ Again, specifying "isNumeric": false tests for whether ANY of the characters are
 }
 ```
 
-##### Testing for a string value consisting only of alpha numeric characters in the match criteria
+#### Testing for a string value consisting only of alpha numeric characters in the match criteria
 
 To test for a string value consisting entirely of alpha numeric characters:
 
@@ -2567,7 +2567,7 @@ Again, specifying "isAlphaNumeric": false tests for whether ANY of the character
 }
 ```
 
-##### Testing for a string value consisting only of white space characters in the match criteria
+#### Testing for a string value consisting only of white space characters in the match criteria
 
 To test for a string value consisting entirely of white space characters:
 
@@ -2588,7 +2588,7 @@ As before, specifying "isWhiteSpace": false tests for whether ANY of the charact
 }
 ```
 
-##### Testing for a string value consisting only of upper case in the match criteria
+#### Testing for a string value consisting only of upper case in the match criteria
 
 To test for a string value consisting entirely of upper case characters:
 
@@ -2609,7 +2609,7 @@ Again, specifying "isUpperCase": false tests for whether ANY of the characters a
 }
 ```
 
-##### Testing for a string value consisting only of lower case in the match criteria
+#### Testing for a string value consisting only of lower case in the match criteria
 
 To test for a string value consisting entirely of lower case characters:
 
@@ -2630,7 +2630,7 @@ Same as with other isXxx, specifying "isLowerCase": false tests for whether ANY 
 }
 ```
 
-##### Testing for a string value containing a substring in the match criteria
+#### Testing for a string value containing a substring in the match criteria
 
 To test for a string value containing a substring:
 
@@ -2750,6 +2750,44 @@ respond with "please log in first so we can help you".
 
 Note that you could still do this without conditional responders, but you would have to create multiple recognizers to
 accomplish that and it would unnecessarily complicate the code.
+
+#### Slot test match criteria
+
+If you are using match criteria with responders then you can also test slot values.  This does not make sense when using
+match criteria as a recognizer use condition.  That's because you don't have the intent (and thus slots) parsed yet when
+you are deciding whether to use the recognizer - the recognizer is the one doing the parsing.  But with responders you
+DO have parsed slot values.  What follows is a description of the various slot tests available with match criteria.
+
+#### Non-default single value slot match criteria
+
+Use this when you want to compare the slot value to a single predefined value, e.g.:
+
+```json
+{
+  "matchCriteria": "default",
+  "matchSpecs": [
+    {
+      "recognizer": "conditionalrespondertest",
+      "responders": [
+        {
+          "matchCriteria": {
+            "type": "slot",
+            "slot": "NumberSlot",
+            "value": 5
+          },
+          "result": {
+            "directValue": {
+              "text": "You said 5"}
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+In this case, if the slot value parsed out of the utterance for the NumberSlot equals 5 then the domain will add
+"You said 5" to the result's text.  Else, nothing will be added.
 
 #### Subdomains
 
