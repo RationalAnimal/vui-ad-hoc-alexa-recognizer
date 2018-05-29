@@ -2773,7 +2773,8 @@ Use this when you want to compare the slot value to a single predefined value, e
           "matchCriteria": {
             "type": "slot",
             "slot": "NumberSlot",
-            "value": 5
+            "value": "5",
+            "match": true
           },
           "result": {
             "directValue": {
