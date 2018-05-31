@@ -1675,7 +1675,7 @@ let _checkMatchCriteria = function(matchCriteria, stateAccessor, slots){ // esli
         (
           (matchCriteria.type === "compound") && // Matching on some slot related test
           (
-            ((typeof matchCriteria.joiningComputation !== "undefined" && matchCriteria.joiningComputation !== null) && matchCriteria.joiningComputation.type === "logicalOperator" && typeof matchCriteria.joiningComputation.logicalOperator !== "undefined" && matchCriteria.joiningComputation.logicalOperator.toLowerCase() === "and") || // Use logical AND operator to combine
+            ((typeof matchCriteria.joiningComputation !== "undefined" && matchCriteria.joiningComputation !== null) && matchCriteria.joiningComputation.type === "logicalOperator" && typeof matchCriteria.joiningComputation.logicalOperator !== "undefined" && matchCriteria.joiningComputation.logicalOperator.toLowerCase() === "and" && matchCriteria.subMatches.reduce((prevVal, elem) => prevVal && _checkMatchCriteria(elem, stateAccessor, slots), true)) || // Use logical AND operator to combine
             ((typeof matchCriteria.joiningComputation !== "undefined" && matchCriteria.joiningComputation !== null) && matchCriteria.joiningComputation.type === "logicalOperator" && typeof matchCriteria.joiningComputation.logicalOperator !== "undefined" && matchCriteria.joiningComputation.logicalOperator.toLowerCase() === "or")  // Use logical AND operator to combine
           )
         )
