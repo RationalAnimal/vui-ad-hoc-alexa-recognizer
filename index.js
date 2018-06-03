@@ -1612,6 +1612,12 @@ let _checkStateMatchCriteria = function(state, stateAccessor){
   return false;
 };
 
+let _xor = function(arg1, arg2){
+  if( arg1 ? !arg2 : arg2 ) {
+    return true;
+  }
+  return false;
+};
 /**
  * Call this function to determine whether match criteria matches or not.
  * @param matchCriteria - match criteria to check
@@ -1676,7 +1682,8 @@ let _checkMatchCriteria = function(matchCriteria, stateAccessor, slots){ // esli
           (matchCriteria.type === "compound") && // Matching on some slot related test
           (
             ((typeof matchCriteria.joiningComputation !== "undefined" && matchCriteria.joiningComputation !== null) && matchCriteria.joiningComputation.type === "logicalOperator" && typeof matchCriteria.joiningComputation.logicalOperator !== "undefined" && matchCriteria.joiningComputation.logicalOperator.toLowerCase() === "and" && matchCriteria.subMatches.reduce((prevVal, elem) => prevVal && _checkMatchCriteria(elem, stateAccessor, slots), true)) || // Use logical AND operator to combine
-            ((typeof matchCriteria.joiningComputation !== "undefined" && matchCriteria.joiningComputation !== null) && matchCriteria.joiningComputation.type === "logicalOperator" && typeof matchCriteria.joiningComputation.logicalOperator !== "undefined" && matchCriteria.joiningComputation.logicalOperator.toLowerCase() === "or" && matchCriteria.subMatches.reduce((prevVal, elem) => prevVal || _checkMatchCriteria(elem, stateAccessor, slots), true))  // Use logical OR operator to combine
+            ((typeof matchCriteria.joiningComputation !== "undefined" && matchCriteria.joiningComputation !== null) && matchCriteria.joiningComputation.type === "logicalOperator" && typeof matchCriteria.joiningComputation.logicalOperator !== "undefined" && matchCriteria.joiningComputation.logicalOperator.toLowerCase() === "or" && matchCriteria.subMatches.reduce((prevVal, elem) => prevVal || _checkMatchCriteria(elem, stateAccessor, slots), true))  || // Use logical OR operator to combine
+            ((typeof matchCriteria.joiningComputation !== "undefined" && matchCriteria.joiningComputation !== null) && matchCriteria.joiningComputation.type === "logicalOperator" && typeof matchCriteria.joiningComputation.logicalOperator !== "undefined" && matchCriteria.joiningComputation.logicalOperator.toLowerCase() === "xor" && matchCriteria.subMatches.reduce((prevVal, elem) => _xor(prevVal, _checkMatchCriteria(elem, stateAccessor, slots)), true))  // Use logical XOR operator to combine
           )
         )
       )
