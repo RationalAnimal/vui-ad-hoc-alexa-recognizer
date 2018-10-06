@@ -694,8 +694,6 @@
     {"word":"=^\\","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\^\\\\)(?:$|\\s+))","caseInsensitive":true,"commonality":1},
     {"word":"/^=","score":-2,"regExpString":"(?:(?:^|\\s+)(/\\^=)(?:$|\\s+))","caseInsensitive":true,"commonality":1},
     {"word":"\\^=","score":-2,"regExpString":"(?:(?:^|\\s+)(\\\\\\^=)(?:$|\\s+))","caseInsensitive":true,"commonality":1},
-    {"word":"=/","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\/)(?:$|\\s+))","caseInsensitive":true},
-    {"word":"=\\","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\\\)(?:$|\\s+))","caseInsensitive":true},
     {"word":"=P","score":3,"regExpString":"(?:(?:^|\\s+)(=P)(?:$|\\s+))","caseInsensitive":false},
     {"word":"\\o/","score":3,"regExpString":"(?:(?:^|\\s+)(\\\\o/)(?:$|\\s+))","caseInsensitive":false},
     {"word":"♥","score":3,"regExpString":"(?:(?:^|\\s+)(♥)(?:$|\\s+))","caseInsensitive":true},
