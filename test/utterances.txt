@@ -1792,6 +1792,7 @@ AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON =^/
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON =^\
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON /^=
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON \^=
+AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON \o/
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON 8))
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON 8)))
 
