@@ -694,7 +694,7 @@
     {"word":"=^\\","score":-2,"regExpString":"(?:(?:^|\\s+)(=\\^\\\\)(?:$|\\s+))","caseInsensitive":true,"commonality":1},
     {"word":"/^=","score":-2,"regExpString":"(?:(?:^|\\s+)(/\\^=)(?:$|\\s+))","caseInsensitive":true,"commonality":1},
     {"word":"\\^=","score":-2,"regExpString":"(?:(?:^|\\s+)(\\\\\\^=)(?:$|\\s+))","caseInsensitive":true,"commonality":1},
-    {"word":"\\o/","score":3,"regExpString":"(?:(?:^|\\s+)(\\\\o/)(?:$|\\s+))","caseInsensitive":false},
+    {"word":"\\o/","score":3,"regExpString":"(?:(?:^|\\s+)(\\\\o/)(?:$|\\s+))","caseInsensitive":false,"commonality":1},
     {"word":"♥","score":3,"regExpString":"(?:(?:^|\\s+)(♥)(?:$|\\s+))","caseInsensitive":true},
     {"word":"<3","score":3,"regExpString":"(?:(?:^|\\s+)(<3)(?:$|\\s+))","caseInsensitive":true},
     {"word":"<33","score":3,"regExpString":"(?:(?:^|\\s+)(<33)(?:$|\\s+))","caseInsensitive":true},
