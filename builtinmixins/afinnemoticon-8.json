@@ -695,7 +695,7 @@
     {"word":"/^=","score":-2,"regExpString":"(?:(?:^|\\s+)(/\\^=)(?:$|\\s+))","caseInsensitive":true,"commonality":1},
     {"word":"\\^=","score":-2,"regExpString":"(?:(?:^|\\s+)(\\\\\\^=)(?:$|\\s+))","caseInsensitive":true,"commonality":1},
     {"word":"\\o/","score":3,"regExpString":"(?:(?:^|\\s+)(\\\\o/)(?:$|\\s+))","caseInsensitive":false,"commonality":1},
-    {"word":"♥","score":3,"regExpString":"(?:(?:^|\\s+)(♥)(?:$|\\s+))","caseInsensitive":true},
+    {"word":"♥","score":3,"regExpString":"(?:(?:^|\\s+)(♥)(?:$|\\s+))","caseInsensitive":true,"commonality":1},
     {"word":"<3","score":3,"regExpString":"(?:(?:^|\\s+)(<3)(?:$|\\s+))","caseInsensitive":true},
     {"word":"<33","score":3,"regExpString":"(?:(?:^|\\s+)(<33)(?:$|\\s+))","caseInsensitive":true},
     {"word":"<333","score":4,"regExpString":"(?:(?:^|\\s+)(<3{3,9})(?:$|\\s+))","caseInsensitive":true},
