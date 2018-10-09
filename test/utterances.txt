@@ -1795,6 +1795,7 @@ AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON \^=
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON \o/
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON ♥
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON <3
+AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON <33
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON 8))
 AfinnEmoticonMostCommonIntent AFINNEMOTECOMMON 8)))
 
