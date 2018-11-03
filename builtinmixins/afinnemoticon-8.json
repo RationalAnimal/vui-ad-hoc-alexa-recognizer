@@ -707,6 +707,7 @@
     {"word":"8(","score":-2,"regExpString":"(?:(?:^|\\s+)(8\\()(?:$|\\s+))","caseInsensitive":true,"commonality":1},
     {"word":"8((","score":-3,"regExpString":"(?:(?:^|\\s+)(8\\({2,3})(?:$|\\s+))","caseInsensitive":true, "commonality":2},
     {"word":"8((((","score":-3,"regExpString":"(?:(?:^|\\s+)(8\\({4})(?:$|\\s+))","caseInsensitive":true, "commonality":3},
+    {"word":"8(((((","score":-3,"regExpString":"(?:(?:^|\\s+)(8\\({5})(?:$|\\s+))","caseInsensitive":true, "commonality":4},
     {"word":"8-D","score":3,"regExpString":"(?:(?:^|\\s+)(8\\-D)(?:$|\\s+))","caseInsensitive":false},
     {"word":"8-)","score":2,"regExpString":"(?:(?:^|\\s+)(8\\-\\))(?:$|\\s+))","caseInsensitive":true},
     {"word":"8-(","score":-2,"regExpString":"(?:(?:^|\\s+)(8\\-\\()(?:$|\\s+))","caseInsensitive":true},
