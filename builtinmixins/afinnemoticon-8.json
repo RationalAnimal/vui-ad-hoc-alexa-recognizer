@@ -706,6 +706,7 @@
     {"word":"8))))))","score":4,"regExpString":"(?:(?:^|\\s+)(8\\){6,10})(?:$|\\s+))","caseInsensitive":true, "commonality":5},
     {"word":"(8","score":2,"regExpString":"(?:(?:^|\\s+)(\\(8)(?:$|\\s+))","caseInsensitive":true,"commonality":1},
     {"word":"((8","score":3,"regExpString":"(?:(?:^|\\s+)(\\({2,3}8)(?:$|\\s+))","caseInsensitive":true, "commonality":2},
+    {"word":"((((8","score":3,"regExpString":"(?:(?:^|\\s+)(\\({4}8\\){4})(?:$|\\s+))","caseInsensitive":true, "commonality":3},
     {"word":"8(","score":-2,"regExpString":"(?:(?:^|\\s+)(8\\()(?:$|\\s+))","caseInsensitive":true,"commonality":1},
     {"word":"8((","score":-3,"regExpString":"(?:(?:^|\\s+)(8\\({2,3})(?:$|\\s+))","caseInsensitive":true, "commonality":2},
     {"word":"8((((","score":-3,"regExpString":"(?:(?:^|\\s+)(8\\({4})(?:$|\\s+))","caseInsensitive":true, "commonality":3},
