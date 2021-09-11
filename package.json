@@ -14,14 +14,18 @@
     "prepublish": "npm run test"
   },
   "author": "Ilya Shubentsov",
-  "contributors": ["Ilya Shubentsov"],
+  "contributors": [
+    "Ilya Shubentsov"
+  ],
   "copyright": "Copyright 2017 Ilya Shubentsov",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/RationalAnimal/vui-ad-hoc-alexa-recognizer"
   },
-  "bugs": {"url": "https://github.com/RationalAnimal/vui-ad-hoc-alexa-recognizer/issues"},
+  "bugs": {
+    "url": "https://github.com/RationalAnimal/vui-ad-hoc-alexa-recognizer/issues"
+  },
   "homepage": "https://rationalanimal.github.io/vui-ad-hoc-alexa-recognizer",
   "dependencies": {},
   "devDependencies": {
